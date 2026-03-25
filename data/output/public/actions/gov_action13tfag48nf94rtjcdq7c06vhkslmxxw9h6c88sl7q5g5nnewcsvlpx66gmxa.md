@@ -1,27 +1,27 @@
 # Rationale: gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpx66gmxa
-Recommendation: **ABSTAIN**
-Score: `0.0` | Confidence: `0.0`
+Recommendation: **YES**
+Score: `0.2667` | Confidence: `0.7867`
 
 ## Facts
-- Data freshness check failed: data is 33645s old, max allowed is 21600s
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (4), reducing confidence.
 
 ## Inferences
-- Cannot produce reliable recommendation with stale data.
+- Network DRep distribution used as one signal, not authority.
 
 ## Uncertainty
-- All scoring suspended until fresh data is available.
+- Rule-based system; does not infer unstated intent.
 
 ## Reproducibility
-- input_hash: `e46c7c27a8728e974bc72f494abc36adc8f94e162ca6f198548ce5dcc7641bef`
-- snapshot_bundle_hash: `fd8cbd00d6de85026a470bf22bf26c12f023f1c092323af64abecaf700caa183`
+- input_hash: `b60d057a2e84cf6ccaf7724b1892cdcf461a46122a0afa7735989c6fe592ef7a`
+- snapshot_bundle_hash: `f0f4c4f124479008a1a05a81abbf4405c774f1e53c3f869f86b136e2574c0190`
 - soul_commit: `f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45`
 - soul_text_hash: `541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16`
-- resource_registry_commit: `0fd74e583b7d111d006ad29e04832a857647d381`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot`
-- snapshot_age_seconds: `33645`
-- uncertainty_band: `LOW`
-- evidence_depth_score: `2`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.303, "YES": 0.303}`
-
-- **DATA STALE**: age exceeded threshold
+- resource_registry_commit: `1b763701345e0cf335d389cef8dcd8dbea7cc5db`
+- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- snapshot_age_seconds: `10009`
+- uncertainty_band: `MEDIUM`
+- evidence_depth_score: `4`
+- decision_probs: `{"ABSTAIN": 0.1892, "NO": 0.1892, "YES": 0.6217}`
 

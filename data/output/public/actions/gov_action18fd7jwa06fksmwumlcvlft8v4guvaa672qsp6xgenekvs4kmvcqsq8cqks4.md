@@ -1,27 +1,25 @@
 # Rationale: gov_action18fd7jwa06fksmwumlcvlft8v4guvaa672qsp6xgenekvs4kmvcqsq8cqks4
-Recommendation: **ABSTAIN**
-Score: `0.0` | Confidence: `0.0`
+Recommendation: **YES**
+Score: `0.5` | Confidence: `1.0`
 
 ## Facts
-- Data freshness check failed: data is 33644s old, max allowed is 21600s
+- Pinned anchor document is available for this action.
 
 ## Inferences
-- Cannot produce reliable recommendation with stale data.
+- Network DRep distribution used as one signal, not authority.
 
 ## Uncertainty
-- All scoring suspended until fresh data is available.
+- Rule-based system; does not infer unstated intent.
 
 ## Reproducibility
-- input_hash: `7399ed10fce96398bf511e97e350fafb4ae1c6c7b0540e6c91c7e630ac1e2d1c`
-- snapshot_bundle_hash: `e91dc4b7cfff3caec4112dcad8a241b64af16cda5d9d19955add79fd00adff53`
+- input_hash: `0b2bcfe2eb32481cca46ae86a29a22eb8e0bcf28e322de4813c33bd9ae926f5c`
+- snapshot_bundle_hash: `2fe9c863d900d9bbbeec7d38f17cc40f827b84509c38b82f9399d484e9c0db00`
 - soul_commit: `f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45`
 - soul_text_hash: `541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16`
-- resource_registry_commit: `0fd74e583b7d111d006ad29e04832a857647d381`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot`
-- snapshot_age_seconds: `33644`
-- uncertainty_band: `LOW`
-- evidence_depth_score: `1`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.303, "YES": 0.303}`
-
-- **DATA STALE**: age exceeded threshold
+- resource_registry_commit: `1b763701345e0cf335d389cef8dcd8dbea7cc5db`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- snapshot_age_seconds: `10008`
+- uncertainty_band: `HIGH`
+- evidence_depth_score: `3`
+- decision_probs: `{"ABSTAIN": 0.0, "NO": 0.0, "YES": 1.0}`
 

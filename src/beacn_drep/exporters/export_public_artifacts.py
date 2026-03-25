@@ -37,10 +37,12 @@ def _load_rationales_latest():
         aid = j.get("action_id")
         if not aid:
             continue
+        mtime_ns = p.stat().st_mtime_ns
         prev = by_action.get(aid)
-        if not prev or d.name > prev["run_id"]:
+        if not prev or mtime_ns > prev["mtime_ns"]:
             by_action[aid] = {
                 "run_id": d.name,
+                "mtime_ns": mtime_ns,
                 "rationale": j,
                 "md_path": f"/data/output/{d.name}/rationale.md",
             }

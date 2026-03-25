@@ -5,18 +5,18 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:7c5b2f1080ab90e817b5e5588fa3bc1e3d1766da098bfd93e104385b8278ff97",
+    "raw_input_hash": "sha256:06875f9dbc092d4b724f8b2a28b31f6b5bf102fee487d796999da1ba038473cf",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
+    "vote": "YES",
     "published_at": "2026-03-25T13:00:02.009603+00:00",
     "signed": false,
     "transaction_hash": null
   },
   "rationale": {
-    "summary": "Cannot produce reliable recommendation with stale data.",
-    "markdown_path": "/data/output/gov_action1f9da8n2yaf4updxzmwc7fnw8ug2gwnpvqays5n3yw6nz0mu3z2qqq6ggge9-7c5b2f1080ab/rationale.md",
+    "summary": "Network DRep distribution used as one signal, not authority.",
+    "markdown_path": "/data/output/gov_action1f9da8n2yaf4updxzmwc7fnw8ug2gwnpvqays5n3yw6nz0mu3z2qqq6ggge9-06875f9dbc09/rationale.md",
     "missing_evidence": []
   },
   "reproducibility": {
@@ -24,7 +24,7 @@
     "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
-    "core_commit": "04118ea505dbbbdc6cc29f15ab24e3708458e37f",
+    "core_commit": "7929e9be3c3c0a6cae0e9e0b10224a940fa74cf8",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -33,7 +33,8 @@
       "gov_actions_active_snapshot",
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
-      "top_drep_votes_snapshot"
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
     ]
   },
   "inputs_used": [
@@ -76,18 +77,23 @@
       "resource_id": "top_drep_votes_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.0
+    "technical_value": 0.39,
+    "governance_alignment": 0.91
   },
   "freshness": {
-    "snapshot_age_seconds": 33645,
+    "snapshot_age_seconds": 10009,
     "max_allowed_seconds": 21600,
-    "is_stale": true,
-    "snapshot_time": "2026-03-25T04:09:55.360275+00:00"
+    "is_stale": false,
+    "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   }
 }

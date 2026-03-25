@@ -5,18 +5,18 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:fd1c92ae308a34a1f6f855280608358ea34cbbeffbdb645fc426607d2a131fee",
+    "raw_input_hash": "sha256:24135902101c366545222d2749433f352a311c20860a3a4bf4482159dd564467",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
+    "vote": "YES",
     "published_at": "2026-03-25T13:00:02.009603+00:00",
     "signed": false,
     "transaction_hash": null
   },
   "rationale": {
-    "summary": "Cannot produce reliable recommendation with stale data.",
-    "markdown_path": "/data/output/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpk0mqrnw-fd1c92ae308a/rationale.md",
+    "summary": "Network DRep distribution used as one signal, not authority.",
+    "markdown_path": "/data/output/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpk0mqrnw-24135902101c/rationale.md",
     "missing_evidence": []
   },
   "reproducibility": {
@@ -24,16 +24,19 @@
     "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
-    "core_commit": "04118ea505dbbbdc6cc29f15ab24e3708458e37f",
+    "core_commit": "7929e9be3c3c0a6cae0e9e0b10224a940fa74cf8",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
       "drep_vote_history_snapshot",
       "gov_actions_all_snapshot",
       "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
-      "top_drep_votes_snapshot"
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
     ]
   },
   "inputs_used": [
@@ -44,6 +47,11 @@
     },
     {
       "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
     },
@@ -63,6 +71,11 @@
       "path": "registries/resource_registry.csv"
     },
     {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
       "resource_id": "gov_action_flags_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
@@ -76,18 +89,23 @@
       "resource_id": "top_drep_votes_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.0
+    "technical_value": 0.2467,
+    "governance_alignment": 0.7667
   },
   "freshness": {
-    "snapshot_age_seconds": 33645,
+    "snapshot_age_seconds": 10009,
     "max_allowed_seconds": 21600,
-    "is_stale": true,
-    "snapshot_time": "2026-03-25T04:09:55.360275+00:00"
+    "is_stale": false,
+    "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   }
 }

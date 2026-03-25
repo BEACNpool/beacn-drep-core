@@ -1,27 +1,26 @@
 # Rationale: gov_action1f9da8n2yaf4updxzmwc7fnw8ug2gwnpvqays5n3yw6nz0mu3z2qqq6ggge9
-Recommendation: **ABSTAIN**
-Score: `0.0` | Confidence: `0.0`
+Recommendation: **YES**
+Score: `0.39` | Confidence: `0.91`
 
 ## Facts
-- Data freshness check failed: data is 33645s old, max allowed is 21600s
+- Pinned anchor document is available for this action.
+- Flag score present (3), reducing confidence.
 
 ## Inferences
-- Cannot produce reliable recommendation with stale data.
+- Network DRep distribution used as one signal, not authority.
 
 ## Uncertainty
-- All scoring suspended until fresh data is available.
+- Rule-based system; does not infer unstated intent.
 
 ## Reproducibility
-- input_hash: `7c5b2f1080ab90e817b5e5588fa3bc1e3d1766da098bfd93e104385b8278ff97`
-- snapshot_bundle_hash: `717afeebc29522707a819e9675ca552269557fc1d8732af274f6de97a96816de`
+- input_hash: `06875f9dbc092d4b724f8b2a28b31f6b5bf102fee487d796999da1ba038473cf`
+- snapshot_bundle_hash: `caf3949ace4a277e3a5daad35a96aa6c1406531d10a858f61cab63dbfaf61881`
 - soul_commit: `f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45`
 - soul_text_hash: `541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16`
-- resource_registry_commit: `0fd74e583b7d111d006ad29e04832a857647d381`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot`
-- snapshot_age_seconds: `33645`
-- uncertainty_band: `LOW`
-- evidence_depth_score: `1`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.303, "YES": 0.303}`
-
-- **DATA STALE**: age exceeded threshold
+- resource_registry_commit: `1b763701345e0cf335d389cef8dcd8dbea7cc5db`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- snapshot_age_seconds: `10009`
+- uncertainty_band: `HIGH`
+- evidence_depth_score: `3`
+- decision_probs: `{"ABSTAIN": 0.0991, "NO": 0.0991, "YES": 0.8018}`
 

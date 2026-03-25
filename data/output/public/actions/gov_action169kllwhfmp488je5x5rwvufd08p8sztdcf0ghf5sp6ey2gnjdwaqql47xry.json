@@ -5,7 +5,7 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:e80306442ec6baf8de6a1fc5376c64d28434523d63883cbe2930750e045d1aa0",
+    "raw_input_hash": "sha256:dceb74cd833641b0a72d636e9c04714259292d6ea5873445adb7440aa3898d75",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
@@ -15,8 +15,8 @@
     "transaction_hash": null
   },
   "rationale": {
-    "summary": "Cannot produce reliable recommendation with stale data.",
-    "markdown_path": "/data/output/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry-e80306442ec6/rationale.md",
+    "summary": "Network DRep distribution used as one signal, not authority.",
+    "markdown_path": "/data/output/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry-dceb74cd8336/rationale.md",
     "missing_evidence": []
   },
   "reproducibility": {
@@ -24,7 +24,7 @@
     "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
-    "core_commit": "04118ea505dbbbdc6cc29f15ab24e3708458e37f",
+    "core_commit": "7929e9be3c3c0a6cae0e9e0b10224a940fa74cf8",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -33,7 +33,8 @@
       "gov_actions_active_snapshot",
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
-      "top_drep_votes_snapshot"
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
     ]
   },
   "inputs_used": [
@@ -76,18 +77,23 @@
       "resource_id": "top_drep_votes_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.0
+    "technical_value": 0.1167,
+    "governance_alignment": 0.6367
   },
   "freshness": {
-    "snapshot_age_seconds": 33644,
+    "snapshot_age_seconds": 10008,
     "max_allowed_seconds": 21600,
-    "is_stale": true,
-    "snapshot_time": "2026-03-25T04:09:55.360275+00:00"
+    "is_stale": false,
+    "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   }
 }

@@ -18,10 +18,10 @@ Vote: NO. For this ParameterChange (active), downside risk and/or weak safeguard
 
 ## Proof of vote
 - input_hash: `db6f7cfa7bbc12550144918f7c1bbbb90758656ebcfa359ca6672617dfc90eac`
-- snapshot_bundle_hash: `3e1770a96c16bb3045e11ddac8c4c630258fba5948faaf962004e7bdff81198c`
-- soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
-- core_commit: `5cc5048cf8cb80c1252ecc839a3389030315259c`
+- snapshot_bundle_hash: `d7cc4eaf75c9b33e6eca6295dc37aedbb119a9a1bbd0a0e1536dfe65bd2ebbca`
+- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
+- resources_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
+- core_commit: `04c7e5604b464b9a10401ac0083f6b83554005ee`
 - score: `-0.17`
 - confidence: `0.72`
 

@@ -1,6 +1,7 @@
 import csv
 import hashlib
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_SECONDS
@@ -82,6 +83,40 @@ def _yn(v: str | None) -> bool | None:
     if s in ("no", "false", "0"):
         return False
     return None
+
+
+def _load_treasury_flow() -> dict:
+    p = RESOURCES_REPO / "data" / "history" / "governance_metrics" / "latest" / "treasury_flow_6m.json"
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _load_treasury_doctrine() -> dict:
+    p = SOUL_REPO / "treasury_spending_doctrine.json"
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _doctrine_penalty(doctrine: dict, bucket: str, rule_id: str, default: float = 0.0) -> float:
+    try:
+        rows = doctrine.get("scoring_adjustments", {}).get(bucket, [])
+        for r in rows:
+            if r.get("id") == rule_id:
+                if "penalty" in r:
+                    return float(r["penalty"])
+                if "bonus" in r:
+                    return float(r["bonus"])
+    except Exception:
+        pass
+    return default
 
 
 def _check_freshness() -> dict:
@@ -220,6 +255,8 @@ def _score_action(
     financial_row: dict | None = None,
     risk_row: dict | None = None,
     deep_row: dict | None = None,
+    treasury_flow: dict | None = None,
+    treasury_doctrine: dict | None = None,
 ) -> dict:
     action_type = (action.get("action_type") or "").lower()
     flag_score = _to_float(action.get("flag_score"))
@@ -303,6 +340,40 @@ def _score_action(
     if "treasury" in action_type:
         score -= 0.10
         facts.append("Treasury withdrawal actions require elevated scrutiny.")
+
+        inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
+        outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
+        if inflow > 0:
+            ratio = outflow / inflow
+            if ratio > 1.0:
+                score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "low_capacity_regime", -0.12)
+                unc.append("Treasury outflow exceeded 6m treasury-fee inflow.")
+            elif ratio > 0.8:
+                score -= 0.06
+                unc.append("Treasury outflow is close to 6m treasury-fee inflow.")
+            else:
+                score += 0.03
+                inf.append("Treasury outflow remains below 6m treasury-fee inflow.")
+
+        # Rolling-window concentration checks if NCL annual is provided.
+        ncl_annual = _to_float(os.environ.get("BEACN_NCL_ANNUAL_LOVELACE"))
+        if ncl_annual > 0:
+            w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
+            available = max(0.0, ncl_annual - w73)
+            req = _to_float(action.get("treasury_amount_lovelace"))
+            if available > 0 and req > 0:
+                share = req / available
+                if share > 0.50:
+                    score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "concentration_severe", -0.45)
+                    unc.append("Proposal requests over 50% of rolling available capacity.")
+                elif share > 0.30:
+                    score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "concentration_high", -0.25)
+                    unc.append("Proposal requests over 30% of rolling available capacity.")
+
+        # Milestone signal from decision-support financial profile.
+        if financial_row and _yn(financial_row.get("milestone_payment_gates")) is False:
+            score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "no_milestones", -0.15)
+            unc.append("No milestone-gated disbursement documented.")
     if "parameter" in action_type:
         score -= 0.05
         facts.append("Protocol parameter changes carry system-wide risk.")
@@ -504,6 +575,8 @@ def run_once(action_id: str | None = None) -> dict:
     financial_map = _load_decision_support_csv("financial_sustainability_profiles.csv")
     risk_map = _load_decision_support_csv("risk_mitigation_registry.csv")
     deep_map = _load_decision_support_csv("deep_research_dossiers.csv")
+    treasury_flow = _load_treasury_flow()
+    treasury_doctrine = _load_treasury_doctrine()
 
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
@@ -517,6 +590,8 @@ def run_once(action_id: str | None = None) -> dict:
         financial_map.get(action["action_id"]),
         risk_map.get(action["action_id"]),
         deep_map.get(action["action_id"]),
+        treasury_flow,
+        treasury_doctrine,
     )
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 

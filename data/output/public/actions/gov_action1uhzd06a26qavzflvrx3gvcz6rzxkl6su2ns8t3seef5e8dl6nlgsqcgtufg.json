@@ -9,24 +9,24 @@
     "detected_at": "2026-03-10T05:00:01.996041+00:00"
   },
   "decision": {
-    "vote": "YES",
+    "vote": "NO",
     "published_at": "2026-03-25T13:00:02.009603+00:00",
     "signed": false,
     "transaction_hash": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.0967,
-    "confidence": 0.5867,
+    "vote": "NO",
+    "score": -0.0533,
+    "confidence": 0.5433,
     "input_hash": "1906881723c355759d5e52c085c934bd3b367e99095c0b2cc398ae4cc3fc1af8",
-    "snapshot_bundle_hash": "e79188b7d18a703fc700cd3b59e137ddd9d12b5afd39d6d900f1aab2ca808d11",
-    "soul_commit": "ffdf6a8b929dfcd03eb707690676432e6d843bca",
-    "resources_commit": "c4477be87cf345890cf3a868ef300b600ab9fca4",
-    "core_commit": "5cc5048cf8cb80c1252ecc839a3389030315259c",
+    "snapshot_bundle_hash": "429c7de7284ac2f800f73affe39905e0827371d4071c82a109d04893c996772d",
+    "soul_commit": "3fc489914fe36df01aad371f6670d0a857af3832",
+    "resources_commit": "e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116",
+    "core_commit": "04c7e5604b464b9a10401ac0083f6b83554005ee",
     "rationale_markdown_path": "/data/output/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-1906881723c3/rationale.md"
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.10; confidence 58.7%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.05; confidence 54.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "markdown_path": "/data/output/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-1906881723c3/rationale.md",
     "missing_evidence": []
@@ -46,10 +46,10 @@
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "ffdf6a8b929dfcd03eb707690676432e6d843bca",
+    "soul_commit": "3fc489914fe36df01aad371f6670d0a857af3832",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "c4477be87cf345890cf3a868ef300b600ab9fca4",
-    "core_commit": "5cc5048cf8cb80c1252ecc839a3389030315259c",
+    "resources_commit": "e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116",
+    "core_commit": "04c7e5604b464b9a10401ac0083f6b83554005ee",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -122,13 +122,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.0533,
     "conflict_risk": 0.0,
-    "technical_value": 0.0967,
-    "governance_alignment": 0.5867
+    "technical_value": 0.0,
+    "governance_alignment": 0.5433
   },
   "freshness": {
-    "snapshot_age_seconds": 7,
+    "snapshot_age_seconds": 6588,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T21:31:49.682301Z",

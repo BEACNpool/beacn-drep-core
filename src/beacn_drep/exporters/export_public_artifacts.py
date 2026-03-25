@@ -348,10 +348,24 @@ def main():
         ],
     }
 
+    flow_path = RESOURCES_REPO / "data" / "history" / "governance_metrics" / "latest" / "treasury_flow_6m.json"
+    flow = {}
+    if flow_path.exists():
+        try:
+            flow = json.loads(flow_path.read_text(encoding="utf-8"))
+        except Exception:
+            flow = {}
+
     treasury_summary = {
         "generated_at": now,
-        "rolling_6m_fees": [],
-        "treasury": {"inflows_6m": 0, "outflows_6m": 0},
+        "rolling_6m_fees": [flow.get("chain_fees_6m_lovelace", 0)] if flow else [],
+        "treasury": {
+            "inflows_6m": flow.get("treasury_fee_inflow_6m_lovelace", 0),
+            "outflows_6m": flow.get("treasury_withdrawals_6m_lovelace", 0),
+            "outflow_inflow_ratio": flow.get("outflow_inflow_ratio"),
+            "window_days": flow.get("window_days", 180),
+            "treasury_tax_assumed": flow.get("treasury_tax_assumed", 0.20),
+        },
     }
 
     drep_summary = {

@@ -1,13 +1,13 @@
 # gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7
 
 ## Vote
-- Decision: **YES**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
 - Published at: `2026-03-25T13:00:02.009603+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Treasury withdrawal actions require elevated scrutiny. Additional context: Flag score present (7), reducing confidence. Confidence context: score 0.12; confidence 60.7%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Treasury withdrawal actions require elevated scrutiny. Additional context: Flag score present (7), reducing confidence. Confidence context: score -0.03; confidence 52.3%.
 
 ## What influenced this vote
 - Treasury withdrawal actions require elevated scrutiny.
@@ -15,13 +15,14 @@ Vote: YES. For this TreasuryWithdrawals (active), available evidence supports pr
 
 ## Remaining uncertainty
 - Anchor document is not yet pinned locally for this action.
+- Treasury outflow exceeded 6m treasury-fee inflow.
 
 ## Proof of vote
 - input_hash: `3acc8cc8c07e6bf047722d889d5bb9228331e0a3e6c5324460589de981730467`
-- snapshot_bundle_hash: `521276588ea8c9410850a483941f3d3848adf14f57e9487b2bc5a32e1e22d058`
-- soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
-- core_commit: `5cc5048cf8cb80c1252ecc839a3389030315259c`
-- score: `0.1167`
-- confidence: `0.6067`
+- snapshot_bundle_hash: `9078bfb701b77d50f5128f7b0a0142e83d6887bcc79b0571f408c7b5afcc7b9f`
+- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
+- resources_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
+- core_commit: `04c7e5604b464b9a10401ac0083f6b83554005ee`
+- score: `-0.0333`
+- confidence: `0.5233`
 

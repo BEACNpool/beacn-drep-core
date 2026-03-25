@@ -1,6 +1,6 @@
 # Rationale: gov_action1fl6r784t2ffw7q96du2znhprw90r3xvrfugvqelgqewgxex42kdqq9tgrd5
 Recommendation: **NO**
-Score: `-0.7333` | Confidence: `1.0` | Readiness: `0.0`
+Score: `-0.8833` | Confidence: `1.0` | Readiness: `0.0`
 
 ## Facts
 - Pinned anchor document is available for this action.
@@ -11,16 +11,16 @@ Score: `-0.7333` | Confidence: `1.0` | Readiness: `0.0`
 - Network DRep distribution used as one signal, not authority.
 
 ## Uncertainty
-- Rule-based system; does not infer unstated intent.
+- Treasury outflow exceeded 6m treasury-fee inflow.
 
 ## Reproducibility
 - input_hash: `256e7c6630d4a7d43c445b0ad9528baff0e27b7c4b3c7381a54475c64d0bd116`
-- snapshot_bundle_hash: `b9163908c0b05eef3e8a10d2d5b07fd220752902afc76fd44ad0696ba4ac9212`
-- soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- soul_text_hash: `6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6`
-- resource_registry_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
+- snapshot_bundle_hash: `54a1222cbe7083fef9f9f078612981960dcbec7f04153db81a86c6a582227b1a`
+- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
+- soul_text_hash: `f31120db89ecd147d30a40b1b65ca3ff36e972631a057294aab39d39b49c5a12`
+- resource_registry_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `8`
+- snapshot_age_seconds: `6589`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.1518, "NO": 0.8093, "YES": 0.0389}`

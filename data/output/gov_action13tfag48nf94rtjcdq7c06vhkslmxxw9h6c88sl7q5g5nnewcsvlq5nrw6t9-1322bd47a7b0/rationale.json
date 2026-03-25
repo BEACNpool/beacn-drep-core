@@ -1,11 +1,11 @@
 {
   "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq5nrw6t9",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "YES",
-  "abstain_reason_code": null,
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
   "needs_more_info_reason_code": null,
-  "score": 0.2667,
-  "confidence": 0.7867,
+  "score": 0.1167,
+  "confidence": 0.6367,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -16,14 +16,14 @@
     "Network DRep distribution used as one signal, not authority."
   ],
   "uncertainty": [
-    "Rule-based system; does not infer unstated intent."
+    "Treasury outflow exceeded 6m treasury-fee inflow."
   ],
   "missing_evidence": [],
   "input_hash": "1322bd47a7b0d3cfcd1a4b71d305b6b9e8ff4e20da4608d0622e5a402c26a3e4",
-  "snapshot_bundle_hash": "ebdec0aec3f4faac89a601874683a310b1c8341dbf6615362cc407ad4be19f6f",
-  "soul_commit": "ffdf6a8b929dfcd03eb707690676432e6d843bca",
-  "soul_text_hash": "6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6",
-  "resource_registry_commit": "c4477be87cf345890cf3a868ef300b600ab9fca4",
+  "snapshot_bundle_hash": "40309dd091a547d96714141b7db3d0d0675a5dfe2d90d226d6601e472604eb12",
+  "soul_commit": "3fc489914fe36df01aad371f6670d0a857af3832",
+  "soul_text_hash": "f31120db89ecd147d30a40b1b65ca3ff36e972631a057294aab39d39b49c5a12",
+  "resource_registry_commit": "e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -38,16 +38,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 9,
+    "snapshot_age_seconds": 6589,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T21:31:49.682301Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.7473,
-    "NO": 0.0465,
-    "ABSTAIN": 0.2062
+    "YES": 0.3771,
+    "NO": 0.1437,
+    "ABSTAIN": 0.4792
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,

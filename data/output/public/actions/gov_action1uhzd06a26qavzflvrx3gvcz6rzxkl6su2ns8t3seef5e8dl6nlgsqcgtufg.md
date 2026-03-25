@@ -1,13 +1,13 @@
 # gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg
 
 ## Vote
-- Decision: **YES**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
 - Published at: `2026-03-25T13:00:02.009603+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.10; confidence 58.7%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.05; confidence 54.3%.
 
 ## What influenced this vote
 - Pinned anchor document is available for this action.
@@ -15,14 +15,14 @@ Vote: YES. For this TreasuryWithdrawals (active), available evidence supports pr
 - Flag score present (7), reducing confidence.
 
 ## Remaining uncertainty
-- Rule-based system; does not infer unstated intent.
+- Treasury outflow exceeded 6m treasury-fee inflow.
 
 ## Proof of vote
 - input_hash: `1906881723c355759d5e52c085c934bd3b367e99095c0b2cc398ae4cc3fc1af8`
-- snapshot_bundle_hash: `e79188b7d18a703fc700cd3b59e137ddd9d12b5afd39d6d900f1aab2ca808d11`
-- soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
-- core_commit: `5cc5048cf8cb80c1252ecc839a3389030315259c`
-- score: `0.0967`
-- confidence: `0.5867`
+- snapshot_bundle_hash: `429c7de7284ac2f800f73affe39905e0827371d4071c82a109d04893c996772d`
+- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
+- resources_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
+- core_commit: `04c7e5604b464b9a10401ac0083f6b83554005ee`
+- score: `-0.0533`
+- confidence: `0.5433`
 

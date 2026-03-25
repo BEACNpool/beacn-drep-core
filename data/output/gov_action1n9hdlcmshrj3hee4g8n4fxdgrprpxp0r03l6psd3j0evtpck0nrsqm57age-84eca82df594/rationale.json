@@ -2,21 +2,22 @@
   "action_id": "gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age",
   "action_type": "InfoAction",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "CONTEXT_THIN_ANCHOR_UNPINNED",
-  "score": 0.06,
-  "confidence": 0.58,
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "score": 0.11,
+  "confidence": 0.63,
   "facts": [
+    "Pinned anchor document is available for this action.",
     "Flag score present (3), reducing confidence."
   ],
   "inferences": [
     "Network DRep distribution used as one signal, not authority."
   ],
   "uncertainty": [
-    "Anchor document is not yet pinned locally for this action."
+    "Rule-based system; does not infer unstated intent."
   ],
   "missing_evidence": [],
   "input_hash": "84eca82df594ed6dadd68015988146db7661cd17095aa925eda429ba4470c057",
-  "snapshot_bundle_hash": "adabf39e396a9d4178f9d055224b91f0ffdddfc59598e1dc549d7ba2b725bdb1",
+  "snapshot_bundle_hash": "ad62189edb551ca835a7358a4492afb78d83ac8ab270aa82c45ee191478f8392",
   "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
   "soul_text_hash": "541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16",
   "resource_registry_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
@@ -32,14 +33,14 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2270,
+    "snapshot_age_seconds": 10008,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   },
   "decision_probs": {
-    "YES": 0.3394,
-    "NO": 0.2667,
+    "YES": 0.3697,
+    "NO": 0.2364,
     "ABSTAIN": 0.3939
   },
   "uncertainty_band": "MEDIUM",

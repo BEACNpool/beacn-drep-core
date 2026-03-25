@@ -2,10 +2,11 @@
   "action_id": "gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x",
   "action_type": "TreasuryWithdrawals",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "CONTEXT_THIN_ANCHOR_UNPINNED",
-  "score": -0.0233,
-  "confidence": 0.5433,
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "score": 0.0267,
+  "confidence": 0.5467,
   "facts": [
+    "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
     "Flag score present (4), reducing confidence."
   ],
@@ -13,11 +14,11 @@
     "Network DRep distribution used as one signal, not authority."
   ],
   "uncertainty": [
-    "Anchor document is not yet pinned locally for this action."
+    "Rule-based system; does not infer unstated intent."
   ],
   "missing_evidence": [],
   "input_hash": "68d5fc53b7f347106ee22fdaf18c07b472fc5fdb6f05324c91300c58a6c362bf",
-  "snapshot_bundle_hash": "c3e1ae93ad9e1c7e6deab26e35af42f7861a20bdb1768756f5e7d07cf788efee",
+  "snapshot_bundle_hash": "aa2f8ef01da12190d5f4df72792cad2d90de31cb27d920ad1523c170fd4090a5",
   "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
   "soul_text_hash": "541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16",
   "resource_registry_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
@@ -35,14 +36,14 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2270,
+    "snapshot_age_seconds": 10008,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   },
   "decision_probs": {
-    "YES": 0.2889,
-    "NO": 0.3172,
+    "YES": 0.3192,
+    "NO": 0.2868,
     "ABSTAIN": 0.3939
   },
   "uncertainty_band": "LOW",

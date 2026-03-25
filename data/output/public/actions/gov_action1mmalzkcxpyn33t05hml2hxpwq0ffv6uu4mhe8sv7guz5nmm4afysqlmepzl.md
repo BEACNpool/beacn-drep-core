@@ -18,10 +18,10 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 
 ## Proof of vote
 - input_hash: `2830704d0cf33f0dc42c5a754be62bf28916b83624eb70cd5fbf8447dc7b4e73`
-- snapshot_bundle_hash: `047e7866cfc3f50bb1f03c706a73b0ca3f4027265994eef3c92b408f5bb61072`
+- snapshot_bundle_hash: `a278b69c4c90b9915f1c57ebd2245c44ed9165fb01d5d271e38453db8caf728d`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `0212661ac2e86a7be6ec598e7a7347b34ddcfa7c`
-- core_commit: `adc0c3231e296dfe2ca7856f13e92f4275a42523`
+- resources_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
+- core_commit: `5cc5048cf8cb80c1252ecc839a3389030315259c`
 - score: `0.32`
 - confidence: `0.84`
 

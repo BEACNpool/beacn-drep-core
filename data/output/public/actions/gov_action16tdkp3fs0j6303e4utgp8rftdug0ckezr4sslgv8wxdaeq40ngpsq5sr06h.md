@@ -19,10 +19,10 @@ Vote: YES. For this TreasuryWithdrawals (expired), available evidence supports p
 
 ## Proof of vote
 - input_hash: `9e7658f38ec1d19d95e8ed38e1a6dc4bcf4786cb3df66190fe9407e9890fbeec`
-- snapshot_bundle_hash: `c35a070b8b71846a55396d9c1bca5c0f7739b96d5848bb6b044307f2e9b96490`
+- snapshot_bundle_hash: `84abb2d11aeb274f6e78e86f05d1380bf5a6fb6fb15c111b25f95d0ece37aa00`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `0212661ac2e86a7be6ec598e7a7347b34ddcfa7c`
-- core_commit: `adc0c3231e296dfe2ca7856f13e92f4275a42523`
+- resources_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
+- core_commit: `5cc5048cf8cb80c1252ecc839a3389030315259c`
 - score: `0.2667`
 - confidence: `0.7867`
 

@@ -19,10 +19,10 @@ Vote: YES. For this TreasuryWithdrawals (ratified), available evidence supports 
 
 ## Proof of vote
 - input_hash: `fb8aa5d54d6c864484ac2e894360d1d40b3951b45fb354f186d6d4f247705e12`
-- snapshot_bundle_hash: `e3892c17f56d26b3dae9b9ef583f9c977dfe4e67e73f3abbe15c2df2881c506d`
+- snapshot_bundle_hash: `635360bc6804fa45708ebf286760bdf5e6fe4744d069401b273877777e4700c7`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `0212661ac2e86a7be6ec598e7a7347b34ddcfa7c`
-- core_commit: `adc0c3231e296dfe2ca7856f13e92f4275a42523`
+- resources_commit: `c4477be87cf345890cf3a868ef300b600ab9fca4`
+- core_commit: `5cc5048cf8cb80c1252ecc839a3389030315259c`
 - score: `0.2667`
 - confidence: `0.7867`
 

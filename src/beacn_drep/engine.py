@@ -62,6 +62,28 @@ def _load_anchor_index() -> dict[str, dict]:
     return out
 
 
+def _load_decision_support_csv(name: str) -> dict[str, dict]:
+    path = RESOURCES_REPO / "data" / "input" / "governance" / "decision_support" / name
+    if not path.exists():
+        return {}
+    out: dict[str, dict] = {}
+    with path.open(newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            aid = r.get("action_id", "")
+            if aid:
+                out[aid] = r
+    return out
+
+
+def _yn(v: str | None) -> bool | None:
+    s = (v or "").strip().lower()
+    if s in ("yes", "true", "1"):
+        return True
+    if s in ("no", "false", "0"):
+        return False
+    return None
+
+
 def _check_freshness() -> dict:
     manifest_path = RESOURCES_REPO / "data" / "input" / "governance" / "governance_export_manifest.json"
     if not manifest_path.exists():
@@ -168,7 +190,16 @@ def _to_float(v: str | None) -> float:
         return 0.0
 
 
-def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evidence: list[str], anchor_ok: bool) -> dict:
+def _score_action(
+    action: dict,
+    flags: list[dict],
+    freshness: dict,
+    missing_evidence: list[str],
+    anchor_ok: bool,
+    readiness_row: dict | None = None,
+    financial_row: dict | None = None,
+    risk_row: dict | None = None,
+) -> dict:
     action_type = (action.get("action_type") or "").lower()
     flag_score = _to_float(action.get("flag_score"))
     drep_yes = _to_float(action.get("drep_yes_pct"))
@@ -250,21 +281,63 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
     else:
         unc.append("No DRep distribution available.")
 
+    # Decision-support readiness enrichment (resources-side structured context)
+    readiness_score = 0.0
+    hard_blocker = False
+    if readiness_row:
+        if _yn(readiness_row.get("hard_blocker")) is True:
+            hard_blocker = True
+        if _yn(readiness_row.get("anchor_pinned")) is True or anchor_ok:
+            readiness_score += 0.15
+        if _yn(readiness_row.get("action_metadata_complete")) is True and not missing_evidence:
+            readiness_score += 0.15
+        if _yn(readiness_row.get("timeline_defined")) is True:
+            readiness_score += 0.10
+        if _yn(readiness_row.get("governance_rules_clear")) is True:
+            readiness_score += 0.10
+        if _yn(readiness_row.get("risk_profile_complete")) is True:
+            readiness_score += 0.15
+        if _yn(readiness_row.get("drep_distribution_available")) is True or (drep_yes + drep_no + drep_abstain > 0):
+            readiness_score += 0.10
+        if financial_row:
+            if _yn(financial_row.get("budget_granularity")) is True:
+                readiness_score += 0.10
+            if _yn(financial_row.get("milestone_payment_gates")) is True:
+                readiness_score += 0.10
+            if _yn(financial_row.get("sustainability_path_clear")) is True:
+                readiness_score += 0.05
+        if risk_row:
+            if _yn(risk_row.get("mitigation_evidence_present")) is True:
+                readiness_score += 0.05
+            if _yn(risk_row.get("independent_assurance_present")) is True:
+                readiness_score += 0.05
+
+    readiness_score = max(0.0, min(1.0, readiness_score))
+
     # Recommendation thresholds
-    if flag_score >= 9:
+    if hard_blocker:
+        rec = "ABSTAIN"
+        unc.append("Hard blocker present in vote-readiness matrix.")
+    elif flag_score >= 9 and not (risk_row and _yn(risk_row.get("mitigation_evidence_present")) is True):
         rec = "ABSTAIN"
         unc.append("High risk flags triggered conservative abstain.")
     elif score >= 0.12:
         rec = "YES"
     elif score <= -0.12:
         rec = "NO"
+    elif readiness_score >= 0.70:
+        # Force directional decision when structured evidence packet is sufficiently complete.
+        rec = "YES" if score >= 0 else "NO"
+        inf.append("Directional vote forced by high readiness_score with no hard blockers.")
     else:
         rec = "ABSTAIN"
 
     confidence = max(0.0, min(1.0, 0.55 + abs(score) - (0.03 * len(flags))))
     reason_code = None
     if rec == "ABSTAIN":
-        if flag_score >= 9:
+        if hard_blocker:
+            reason_code = "HARD_BLOCKER_PRESENT"
+        elif flag_score >= 9 and not (risk_row and _yn(risk_row.get("mitigation_evidence_present")) is True):
             reason_code = "RISK_HIGH"
         elif not anchor_ok:
             reason_code = "CONTEXT_THIN_ANCHOR_UNPINNED"
@@ -275,6 +348,7 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
     return {
         "recommendation": rec,
         "abstain_reason_code": reason_code,
+        "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
         "confidence": round(confidence, 4),
         "facts": facts or ["Deterministic rule set applied."],
@@ -373,9 +447,22 @@ def run_once(action_id: str | None = None) -> dict:
     anchor_index = _load_anchor_index()
     anchor_ok = (anchor_index.get(action["action_id"], {}).get("fetch_status") == "ok")
 
+    readiness_map = _load_decision_support_csv("vote_readiness_matrix.csv")
+    financial_map = _load_decision_support_csv("financial_sustainability_profiles.csv")
+    risk_map = _load_decision_support_csv("risk_mitigation_registry.csv")
+
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
-    score_obj = _score_action(action, flags_by_action.get(action["action_id"], []), freshness, missing_evidence, anchor_ok)
+    score_obj = _score_action(
+        action,
+        flags_by_action.get(action["action_id"], []),
+        freshness,
+        missing_evidence,
+        anchor_ok,
+        readiness_map.get(action["action_id"]),
+        financial_map.get(action["action_id"]),
+        risk_map.get(action["action_id"]),
+    )
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
     rationale = {
@@ -385,6 +472,7 @@ def run_once(action_id: str | None = None) -> dict:
         "abstain_reason_code": score_obj.get("abstain_reason_code"),
         "score": score_obj["score"],
         "confidence": score_obj["confidence"],
+        "readiness_score": score_obj.get("readiness_score"),
         "facts": score_obj["facts"],
         "inferences": score_obj["inferences"],
         "uncertainty": score_obj["uncertainty"],
@@ -435,7 +523,7 @@ def run_once(action_id: str | None = None) -> dict:
         "\n".join([
             f"# Rationale: {action['action_id']}",
             f"Recommendation: **{score_obj['recommendation']}**",
-            f"Score: `{score_obj['score']}` | Confidence: `{score_obj['confidence']}`",
+            f"Score: `{score_obj['score']}` | Confidence: `{score_obj['confidence']}` | Readiness: `{score_obj.get('readiness_score', 0)}`",
             "",
             "## Facts",
             *[f"- {x}" for x in score_obj["facts"]],
@@ -469,6 +557,7 @@ def run_once(action_id: str | None = None) -> dict:
         "recommendation": score_obj["recommendation"],
         "score": score_obj["score"],
         "confidence": score_obj["confidence"],
+        "readiness_score": score_obj.get("readiness_score"),
         "input_hash": input_hash,
         "snapshot_bundle_hash": snapshot_bundle_hash,
         "soul_commit": soul_commit,

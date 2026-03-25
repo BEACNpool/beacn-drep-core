@@ -1,6 +1,6 @@
 # Rationale: gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp
 Recommendation: **YES**
-Score: `0.4` | Confidence: `0.92`
+Score: `0.4` | Confidence: `0.92` | Readiness: `0.0`
 
 ## Facts
 - Pinned anchor document is available for this action.
@@ -14,12 +14,12 @@ Score: `0.4` | Confidence: `0.92`
 
 ## Reproducibility
 - input_hash: `8d735a24e7c392e226ad53c082277664306a35ae03613c89fd34df101e1f1ba7`
-- snapshot_bundle_hash: `c3d73383832c3e450803553bcb0751f5284bf565ab0fe4262c3d9b6b52f09048`
-- soul_commit: `f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45`
-- soul_text_hash: `541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16`
-- resource_registry_commit: `1b763701345e0cf335d389cef8dcd8dbea7cc5db`
+- snapshot_bundle_hash: `7c1438c175904458d2f6cb0341517b6aaf940362cf2b79ff4040a76492ade2e2`
+- soul_commit: `9b9c687c5dd41c44a420f095526229f1732c52ca`
+- soul_text_hash: `de20cf6098a0bae9111e70d9f6b0ba6da58a2c504b99c52715ea5777b40d40a1`
+- resource_registry_commit: `96cd51ab273617dd324fb6f28da7d42049f59cf1`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `10008`
+- snapshot_age_seconds: `12998`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.0909, "NO": 0.0909, "YES": 0.8182}`

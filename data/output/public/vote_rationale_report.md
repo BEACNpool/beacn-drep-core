@@ -1,6 +1,6 @@
 # Vote Rationale Simulation Report
 
-Generated: `2026-03-25T16:18:05Z`
+Generated: `2026-03-25T17:07:50Z`
 Total actions: `95`
 
 ## ga_0001
@@ -115,12 +115,12 @@ Total actions: `95`
 
 ## gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x
 - type: `TreasuryWithdrawals`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RULE_THRESHOLD_UNMET`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.0267` / `0.5467`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.2868, "YES": 0.3192}`
+- decision_probs: `{"ABSTAIN": 0.306, "NO": 0.306, "YES": 0.3879}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -170,12 +170,12 @@ Total actions: `95`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpcdq823y
 - type: `TreasuryWithdrawals`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RULE_THRESHOLD_UNMET`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.0067` / `0.5267`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.299, "YES": 0.3071}`
+- decision_probs: `{"ABSTAIN": 0.3109, "NO": 0.3109, "YES": 0.3782}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -885,12 +885,12 @@ Total actions: `95`
 
 ## gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age
 - type: `InfoAction`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RULE_THRESHOLD_UNMET`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.11` / `0.63`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.2364, "YES": 0.3697}`
+- decision_probs: `{"ABSTAIN": 0.2806, "NO": 0.2806, "YES": 0.4388}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -973,12 +973,12 @@ Total actions: `95`
 
 ## gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg
 - type: `TreasuryWithdrawals`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RULE_THRESHOLD_UNMET`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.0967` / `0.5867`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.2444, "YES": 0.3616}`
+- decision_probs: `{"ABSTAIN": 0.2867, "NO": 0.2867, "YES": 0.4266}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 

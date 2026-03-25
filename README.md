@@ -18,6 +18,7 @@ Decision-boundary rule:
 - Core decision logic may only use doctrine + admitted resources.
 - OpenClaw private memory/context is not an allowed decision input.
 - Public contract: `../beacn-drep-web/docs/PUBLIC_CONTEXT_AND_LIMITS.md`.
+Public operating model: `../beacn-drep-web/docs/OPERATING_MODEL.md`.
 
 ## Quick run
 ```bash

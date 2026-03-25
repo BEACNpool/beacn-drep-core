@@ -49,6 +49,47 @@ def _load_rationales_latest():
     return by_action
 
 
+def _human_summary(r: dict) -> str:
+    decision = (r.get("recommendation") or "ABSTAIN").upper()
+    reason = r.get("abstain_reason_code")
+    score = r.get("score")
+    conf = r.get("confidence")
+    facts = (r.get("facts") or [])
+    missing = (r.get("missing_evidence") or [])
+
+    if decision == "YES":
+        lead = "BEACN voted YES because available evidence supports this action more than the identified risks."
+    elif decision == "NO":
+        lead = "BEACN voted NO because risks or downsides outweighed the expected benefit based on current evidence."
+    elif decision == "NEEDS_MORE_INFO":
+        lead = "BEACN returned NEEDS_MORE_INFO because key evidence required for a responsible vote is missing."
+    else:
+        lead = "BEACN voted ABSTAIN because evidence was not strong enough for a reliable YES or NO."
+
+    if reason == "RISK_HIGH":
+        reason_txt = " Main blocker: risk signals remained high relative to available mitigations."
+    elif reason == "CONTEXT_THIN_ANCHOR_UNPINNED":
+        reason_txt = " Main blocker: anchor/source context is incomplete or unpinned."
+    elif reason == "DREP_DISTRIBUTION_MISSING":
+        reason_txt = " Main blocker: DRep distribution signal for this action is missing."
+    elif reason == "RULE_THRESHOLD_UNMET":
+        reason_txt = " Main blocker: evidence did not clear the directional threshold."
+    elif reason == "HARD_BLOCKER_PRESENT":
+        reason_txt = " Main blocker: a hard readiness blocker is still open."
+    else:
+        reason_txt = ""
+
+    fact_txt = f" Key evidence: {facts[0]}" if facts else ""
+    missing_txt = f" To improve confidence: {missing[0]}" if missing else ""
+    sc_txt = ""
+    try:
+        sc_txt = f" (score {float(score):.2f}, confidence {float(conf)*100:.1f}%)"
+    except Exception:
+        pass
+
+    return (lead + reason_txt + fact_txt + missing_txt + sc_txt).strip()
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "actions").mkdir(parents=True, exist_ok=True)
@@ -88,11 +129,13 @@ def main():
         }
         items.append(item)
 
+        human_summary = _human_summary(r["rationale"])
         rd = {
             "action_id": aid,
             "title": title,
             "decision": decision,
-            "summary": (r["rationale"].get("inferences") or [""])[0],
+            "summary": human_summary,
+            "summary_raw": (r["rationale"].get("inferences") or [""])[0],
             "published_at": a.get("last_updated", ""),
         }
         rationale_items.append(rd)
@@ -114,7 +157,8 @@ def main():
                 "transaction_hash": None,
             },
             "rationale": {
-                "summary": (r["rationale"].get("inferences") or [""])[0],
+                "summary": human_summary,
+                "summary_raw": (r["rationale"].get("inferences") or [""])[0],
                 "markdown_path": r["md_path"],
                 "missing_evidence": r["rationale"].get("missing_evidence", []),
             },

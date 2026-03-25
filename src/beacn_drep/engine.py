@@ -199,6 +199,7 @@ def _score_action(
     readiness_row: dict | None = None,
     financial_row: dict | None = None,
     risk_row: dict | None = None,
+    deep_row: dict | None = None,
 ) -> dict:
     action_type = (action.get("action_type") or "").lower()
     flag_score = _to_float(action.get("flag_score"))
@@ -250,6 +251,25 @@ def _score_action(
             "uncertainty": [f"Missing: {item}" for item in missing_evidence],
             "missing_evidence": missing_evidence,
         }
+
+    # Deep-research gate for treasury proposals.
+    if "treasury" in action_type:
+        deep_ok = _yn((deep_row or {}).get("dossier_complete")) is True
+        if not deep_ok:
+            need = [
+                "Deep research dossier is required for treasury actions before directional voting.",
+                "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+            ]
+            return {
+                "recommendation": "NEEDS_MORE_INFO",
+                "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+                "score": 0.0,
+                "confidence": 0.2,
+                "facts": ["Treasury actions are high-impact and require a completed deep research dossier."],
+                "inferences": ["Directional voting is blocked until dossier quality gates pass."],
+                "uncertainty": ["Dossier completeness not confirmed for this treasury proposal."],
+                "missing_evidence": need,
+            }
 
     score = 0.0
 
@@ -450,6 +470,7 @@ def run_once(action_id: str | None = None) -> dict:
     readiness_map = _load_decision_support_csv("vote_readiness_matrix.csv")
     financial_map = _load_decision_support_csv("financial_sustainability_profiles.csv")
     risk_map = _load_decision_support_csv("risk_mitigation_registry.csv")
+    deep_map = _load_decision_support_csv("deep_research_dossiers.csv")
 
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
@@ -462,6 +483,7 @@ def run_once(action_id: str | None = None) -> dict:
         readiness_map.get(action["action_id"]),
         financial_map.get(action["action_id"]),
         risk_map.get(action["action_id"]),
+        deep_map.get(action["action_id"]),
     )
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
@@ -470,6 +492,7 @@ def run_once(action_id: str | None = None) -> dict:
         "action_type": action_type,
         "recommendation": score_obj["recommendation"],
         "abstain_reason_code": score_obj.get("abstain_reason_code"),
+        "needs_more_info_reason_code": score_obj.get("needs_more_info_reason_code"),
         "score": score_obj["score"],
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),

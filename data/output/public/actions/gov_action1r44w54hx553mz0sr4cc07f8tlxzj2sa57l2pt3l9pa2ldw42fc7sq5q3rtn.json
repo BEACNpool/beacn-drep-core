@@ -9,34 +9,37 @@
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "published_at": "2026-03-25T13:00:02.009603+00:00",
     "signed": false,
     "transaction_hash": null
   },
   "proof_of_vote": {
-    "vote": "NO",
-    "score": -0.7333,
-    "confidence": 1.0,
+    "vote": "NEEDS_MORE_INFO",
+    "score": 0.0,
+    "confidence": 0.2,
     "input_hash": "6be3c39f4882a053e4e73e13f9bf35979486ef6401e9e983087b26cc6497d708",
-    "snapshot_bundle_hash": "08b0bce074605338ae27d53ba3e5e6a78e948e7224ebe0968f03ae927c3b2b66",
+    "snapshot_bundle_hash": "744cbb2d233d10e80cd9a8e2d544b9f7b7bccd03c035f6356f665553ffb8516b",
     "soul_commit": "9b9c687c5dd41c44a420f095526229f1732c52ca",
     "resources_commit": "0556cdc0027f1bfe482b5ab4c97c0ad43982a477",
-    "core_commit": "757110048440f28e590dde6990e43d048d6f68b5",
+    "core_commit": "51210b325fb90dedb214c96522705a5886c0accb",
     "rationale_markdown_path": "/data/output/gov_action1r44w54hx553mz0sr4cc07f8tlxzj2sa57l2pt3l9pa2ldw42fc7sq5q3rtn-6be3c39f4882/rationale.md"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.73; confidence 100.0%.",
-    "summary_raw": "Network DRep distribution used as one signal, not authority.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
+    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "markdown_path": "/data/output/gov_action1r44w54hx553mz0sr4cc07f8tlxzj2sa57l2pt3l9pa2ldw42fc7sq5q3rtn-6be3c39f4882/rationale.md",
-    "missing_evidence": []
+    "missing_evidence": [
+      "Deep research dossier is required for treasury actions before directional voting.",
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
+    ]
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "9b9c687c5dd41c44a420f095526229f1732c52ca",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "0556cdc0027f1bfe482b5ab4c97c0ad43982a477",
-    "core_commit": "757110048440f28e590dde6990e43d048d6f68b5",
+    "core_commit": "51210b325fb90dedb214c96522705a5886c0accb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -109,13 +112,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.7333,
+    "budget_pressure": 0.0,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 1.0
+    "governance_alignment": 0.2
   },
   "freshness": {
-    "snapshot_age_seconds": 13563,
+    "snapshot_age_seconds": 19461,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"

@@ -42,6 +42,7 @@ def main():
             "action_type": r.get("action_type"),
             "vote": r.get("recommendation"),
             "abstain_reason_code": r.get("abstain_reason_code"),
+            "needs_more_info_reason_code": r.get("needs_more_info_reason_code"),
             "score": r.get("score"),
             "confidence": r.get("confidence"),
             "uncertainty_band": r.get("uncertainty_band"),

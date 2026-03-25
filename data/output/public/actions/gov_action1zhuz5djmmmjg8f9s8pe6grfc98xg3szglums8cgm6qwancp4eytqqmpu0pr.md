@@ -18,10 +18,10 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 
 ## Proof of vote
 - input_hash: `fe8e39ad73736de2e1ec13ec7e97c3b93abbf39b60013bdd4578e1478ffc4097`
-- snapshot_bundle_hash: `fab639d009eb47546fba9ec3c6ee7dd15d320def31a4f2af19ea9f379611ebbe`
+- snapshot_bundle_hash: `bf29791f17835387282dafbfcb760da8934c842fdc46a4d339bddefd638dabf1`
 - soul_commit: `9b9c687c5dd41c44a420f095526229f1732c52ca`
 - resources_commit: `0556cdc0027f1bfe482b5ab4c97c0ad43982a477`
-- core_commit: `757110048440f28e590dde6990e43d048d6f68b5`
+- core_commit: `51210b325fb90dedb214c96522705a5886c0accb`
 - score: `-0.75`
 - confidence: `1.0`
 

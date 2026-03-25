@@ -1,28 +1,30 @@
 {
   "action_id": "gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "YES",
+  "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "score": 0.2667,
-  "confidence": 0.7867,
-  "readiness_score": 0.0,
+  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "score": 0.0,
+  "confidence": 0.2,
+  "readiness_score": null,
   "facts": [
-    "Pinned anchor document is available for this action.",
-    "Treasury withdrawal actions require elevated scrutiny.",
-    "Flag score present (4), reducing confidence."
+    "Treasury actions are high-impact and require a completed deep research dossier."
   ],
   "inferences": [
-    "Network DRep distribution used as one signal, not authority."
+    "Directional voting is blocked until dossier quality gates pass."
   ],
   "uncertainty": [
-    "Rule-based system; does not infer unstated intent."
+    "Dossier completeness not confirmed for this treasury proposal."
   ],
-  "missing_evidence": [],
+  "missing_evidence": [
+    "Deep research dossier is required for treasury actions before directional voting.",
+    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
+  ],
   "input_hash": "bfd343427082e3cab7246156d63199503f91ad2d65763b27227fbf7f5bdc25e6",
-  "snapshot_bundle_hash": "d0753fff0725fdad942110973d48128efabf863380c96e4db38baa47656a8f26",
+  "snapshot_bundle_hash": "17b18a5efec2a3880445aba161f7f2bfc2a040f2cdc4b4f13be7c1edbe1ca865",
   "soul_commit": "9b9c687c5dd41c44a420f095526229f1732c52ca",
-  "soul_text_hash": "de20cf6098a0bae9111e70d9f6b0ba6da58a2c504b99c52715ea5777b40d40a1",
-  "resource_registry_commit": "48891fb4d7bed3422933fd79220769c28acb3e61",
+  "soul_text_hash": "6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6",
+  "resource_registry_commit": "0556cdc0027f1bfe482b5ab4c97c0ad43982a477",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -37,17 +39,17 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 13562,
+    "snapshot_age_seconds": 19460,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   },
   "decision_probs": {
-    "YES": 0.6217,
-    "NO": 0.1892,
-    "ABSTAIN": 0.1892
+    "YES": 0.303,
+    "NO": 0.303,
+    "ABSTAIN": 0.3939
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "LOW",
   "evidence_depth_score": 4,
   "intelligence_profile": "deterministic-v1",
   "missing_evidence_count": 0

@@ -1,28 +1,26 @@
 # gov_action16tdkp3fs0j6303e4utgp8rftdug0ckezr4sslgv8wxdaeq40ngpsq5sr06h
 
 ## Vote
-- Decision: **YES**
+- Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
 - Published at: `2026-03-25T13:00:02.009603+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this TreasuryWithdrawals (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.27; confidence 78.7%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
 
 ## What influenced this vote
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (4), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 
 ## Remaining uncertainty
-- Rule-based system; does not infer unstated intent.
+- Dossier completeness not confirmed for this treasury proposal.
 
 ## Proof of vote
 - input_hash: `9e7658f38ec1d19d95e8ed38e1a6dc4bcf4786cb3df66190fe9407e9890fbeec`
-- snapshot_bundle_hash: `9dc7a2c6d55ce042258414b4fa2b15083d9febb7401e8592de2f53d1cc526fcb`
+- snapshot_bundle_hash: `c81df3d2b5142f0a96436e6a78814a5d5dcb7d91241cda50ebc103bb1ae1701f`
 - soul_commit: `9b9c687c5dd41c44a420f095526229f1732c52ca`
 - resources_commit: `0556cdc0027f1bfe482b5ab4c97c0ad43982a477`
-- core_commit: `757110048440f28e590dde6990e43d048d6f68b5`
-- score: `0.2667`
-- confidence: `0.7867`
+- core_commit: `51210b325fb90dedb214c96522705a5886c0accb`
+- score: `0.0`
+- confidence: `0.2`
 

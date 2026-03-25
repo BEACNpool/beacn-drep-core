@@ -1,27 +1,29 @@
 # Rationale: gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqz6d98zp
-Recommendation: **YES**
-Score: `0.2667` | Confidence: `0.7867` | Readiness: `0.0`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` | Confidence: `0.2` | Readiness: `0`
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (4), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 
 ## Inferences
-- Network DRep distribution used as one signal, not authority.
+- Directional voting is blocked until dossier quality gates pass.
 
 ## Uncertainty
-- Rule-based system; does not infer unstated intent.
+- Dossier completeness not confirmed for this treasury proposal.
+
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
 
 ## Reproducibility
 - input_hash: `fb8aa5d54d6c864484ac2e894360d1d40b3951b45fb354f186d6d4f247705e12`
-- snapshot_bundle_hash: `9521c7832f85131e44ca936e8d16510fda9a244f2c7e119a89374f0bbe025eec`
+- snapshot_bundle_hash: `4f59b7df55de66129aa75bb5dc980b4a9bc6a73f66335ab13f0faba4368b3855`
 - soul_commit: `9b9c687c5dd41c44a420f095526229f1732c52ca`
-- soul_text_hash: `de20cf6098a0bae9111e70d9f6b0ba6da58a2c504b99c52715ea5777b40d40a1`
-- resource_registry_commit: `48891fb4d7bed3422933fd79220769c28acb3e61`
+- soul_text_hash: `6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6`
+- resource_registry_commit: `0556cdc0027f1bfe482b5ab4c97c0ad43982a477`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `13563`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `19461`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1892, "NO": 0.1892, "YES": 0.6217}`
+- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.303, "YES": 0.303}`
 

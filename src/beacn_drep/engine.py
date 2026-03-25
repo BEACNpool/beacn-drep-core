@@ -383,17 +383,30 @@ def _enrich_decision_metadata(action: dict, score_obj: dict, resources_used: lis
     score = float(score_obj.get("score", 0.0) or 0.0)
     confidence = float(score_obj.get("confidence", 0.0) or 0.0)
 
-    # bounded probability-like distribution (deterministic, no external model calls)
-    p_yes = max(0.0, min(1.0, 0.5 + score))
-    p_no = max(0.0, min(1.0, 0.5 - score))
-    p_abstain = max(0.0, 1.0 - max(p_yes, p_no))
+    # bounded probability-like distribution (deterministic, calibrated to avoid 0/1 overclaims)
+    eps = 0.05
+    lean = max(-0.45, min(0.45, score))
+    p_yes = 0.34 + lean
+    p_no = 0.34 - lean
+    p_abstain = 0.32
 
+    boost = max(0.0, min(0.25, confidence * 0.25))
     if rec == "YES":
-        p_yes = max(p_yes, 0.60)
+        p_yes += boost
+        p_no -= boost / 2
+        p_abstain -= boost / 2
     elif rec == "NO":
-        p_no = max(p_no, 0.60)
+        p_no += boost
+        p_yes -= boost / 2
+        p_abstain -= boost / 2
     elif rec in ("ABSTAIN", "NEEDS_MORE_INFO"):
-        p_abstain = max(p_abstain, 0.65)
+        p_abstain += boost
+        p_yes -= boost / 2
+        p_no -= boost / 2
+
+    p_yes = max(eps, p_yes)
+    p_no = max(eps, p_no)
+    p_abstain = max(eps, p_abstain)
 
     total = p_yes + p_no + p_abstain
     probs = {

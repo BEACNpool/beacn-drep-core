@@ -85,18 +85,19 @@ def main():
     # Adjust column names if your db-sync version differs.
     proposals_sql = """
         SELECT
-            encode(gap_hash.raw, 'hex') || '#' || gap.index::text AS action_id,
+            gap.id AS gap_id,
+            encode(tx.hash, 'hex') || '#' || gap.index::text AS action_id,
             encode(tx.hash, 'hex') AS tx_hash,
             gap.index AS cert_index,
             gap.type::text AS action_type,
             CASE
-                WHEN gap.ratified_epoch IS NOT NULL THEN 'ratified'
                 WHEN gap.enacted_epoch IS NOT NULL THEN 'enacted'
+                WHEN gap.ratified_epoch IS NOT NULL THEN 'ratified'
                 WHEN gap.dropped_epoch IS NOT NULL THEN 'dropped'
                 WHEN gap.expired_epoch IS NOT NULL THEN 'expired'
                 ELSE 'active'
             END AS status,
-            gap.proposed_in_epoch AS proposed_epoch,
+            COALESCE(b.epoch_no, 0) AS proposed_epoch,
             gap.expiration AS expiration_epoch,
             gap.deposit::bigint AS deposit_lovelace,
             encode(sa.hash_raw, 'hex') AS return_address,
@@ -118,15 +119,13 @@ def main():
             0 AS cc_no,
             0 AS cc_abstain,
             0 AS flag_score,
-            tx.block_time AS first_seen,
-            tx.block_time AS last_updated
+            b.time AS first_seen,
+            b.time AS last_updated
         FROM gov_action_proposal gap
         JOIN tx ON tx.id = gap.tx_id
+        JOIN block b ON b.id = tx.block_id
         LEFT JOIN voting_anchor va ON va.id = gap.voting_anchor_id
         LEFT JOIN stake_address sa ON sa.id = gap.return_address
-        LEFT JOIN off_chain_vote_gov_action_data ocd ON ocd.gov_action_proposal_id = gap.id
-        LEFT JOIN (SELECT DISTINCT ON (raw) id, raw FROM gov_action_proposal_hash ORDER BY raw, id) gap_hash
-            ON gap_hash.id = gap.id
         ORDER BY gap.id DESC
     """
 
@@ -137,7 +136,8 @@ def main():
         print(f"WARNING: Complex query failed ({e}), trying simplified query...", file=sys.stderr)
         raw_proposals = _q(conn, """
             SELECT
-                gap.id::text AS action_id,
+                gap.id AS gap_id,
+                encode(tx.hash, 'hex') || '#' || gap.index::text AS action_id,
                 encode(tx.hash, 'hex') AS tx_hash,
                 gap.index AS cert_index,
                 gap.type::text AS action_type,
@@ -184,6 +184,16 @@ def main():
     proposals = []
     for r in raw_proposals:
         row = {k: _safe(v) for k, v in r.items()}
+        gid = int(r.get("gap_id")) if r.get("gap_id") is not None else None
+        counts = vote_map.get(gid, {}) if gid is not None else {}
+        y = int(counts.get("Yes", 0))
+        n = int(counts.get("No", 0))
+        a = int(counts.get("Abstain", 0))
+        total = y + n + a
+        if total > 0:
+            row["drep_yes_pct"] = f"{(y / total) * 100:.4f}"
+            row["drep_no_pct"] = f"{(n / total) * 100:.4f}"
+            row["drep_abstain_pct"] = f"{(a / total) * 100:.4f}"
         proposals.append(row)
 
     # -- Treasury recipients --
@@ -191,11 +201,12 @@ def main():
     try:
         tw_sql = """
             SELECT
-                gap.id::text AS action_id,
+                encode(tx.hash, 'hex') || '#' || gap.index::text AS action_id,
                 encode(sa.hash_raw, 'hex') AS stake_address,
                 tw.amount::bigint AS amount_lovelace
             FROM treasury_withdrawal tw
             JOIN gov_action_proposal gap ON gap.id = tw.gov_action_proposal_id
+            JOIN tx ON tx.id = gap.tx_id
             JOIN stake_address sa ON sa.id = tw.stake_address_id
         """
         for r in _q(conn, tw_sql):

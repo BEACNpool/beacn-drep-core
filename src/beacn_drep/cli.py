@@ -1,11 +1,40 @@
 import argparse
+import csv
 import json
+from pathlib import Path
 from .engine import run_once, run_all, verify_replay
-from .adapters.github_adapter import publish_stub
+from .adapters.github_adapter import publish_to_github
+from .config import RESOURCES_REPO
+
+
+def _read_action_ids(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    with path.open(newline="", encoding="utf-8") as f:
+        return {r.get("action_id", "") for r in csv.DictReader(f) if r.get("action_id")}
 
 
 def cmd_check_new_actions() -> None:
-    print("check-new-actions:stub")
+    all_path = RESOURCES_REPO / "data" / "input" / "governance" / "governance_actions_all.csv"
+    all_ids = _read_action_ids(all_path)
+
+    runs_dir = Path(__file__).resolve().parents[3] / "data" / "output"
+    seen_ids: set[str] = set()
+    if runs_dir.exists():
+        for d in runs_dir.iterdir():
+            if not d.is_dir() or d.name == "public":
+                continue
+            rid = d.name.split("-")[0]
+            if rid:
+                seen_ids.add(rid)
+
+    new_ids = sorted(all_ids - seen_ids)
+    print(json.dumps({
+        "actions_all": len(all_ids),
+        "actions_seen_in_runs": len(seen_ids),
+        "new_or_unprocessed_action_ids": new_ids,
+        "count": len(new_ids),
+    }, indent=2))
 
 
 def cmd_run_once(action_id: str | None) -> None:
@@ -20,7 +49,7 @@ def cmd_run_all(limit: int | None) -> None:
 
 def cmd_publish(path: str | None) -> None:
     target = path or "data/output"
-    print(publish_stub(target))
+    print(publish_to_github(target))
 
 
 def cmd_verify_replay(run_id: str) -> None:

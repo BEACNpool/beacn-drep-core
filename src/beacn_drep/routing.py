@@ -12,7 +12,8 @@ _TYPE_MAP = {
     "infoaction": "info_action",
     "newconstitution": "new_constitution",
     "newcommittee": "new_committee",
-    "updatecommittee": "update_committee",
+    "updatecommittee": "new_committee",
+    "noconfidence": "new_committee",
 }
 
 

@@ -60,7 +60,11 @@ def _check_freshness() -> dict:
         return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "no timestamp in manifest"}
 
     try:
-        gen_time = datetime.fromisoformat(gen_str)
+        # Support both ISO '+00:00' and trailing 'Z' forms.
+        normalized = gen_str.replace("Z", "+00:00") if gen_str.endswith("Z") else gen_str
+        gen_time = datetime.fromisoformat(normalized)
+        if gen_time.tzinfo is None:
+            gen_time = gen_time.replace(tzinfo=timezone.utc)
         now = datetime.now(timezone.utc)
         age_seconds = int((now - gen_time).total_seconds())
     except Exception:
@@ -88,9 +92,7 @@ def _check_missing_evidence(action: dict) -> list[str]:
         if not amt or amt == "0" or amt == "":
             missing.append("treasury_amount_lovelace is missing for a treasury withdrawal")
 
-    if not action.get("proposer_address"):
-        missing.append("proposer_address is empty — cannot assess proposer identity")
-
+    # proposer_address can be unavailable in current upstream snapshots; treat as non-critical.
     return missing
 
 
@@ -190,33 +192,33 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
 
     # Conservative doctrine-aligned rule set
     if "treasury" in action_type:
-        score -= 0.20
+        score -= 0.10
         facts.append("Treasury withdrawal actions require elevated scrutiny.")
     if "parameter" in action_type:
-        score -= 0.10
+        score -= 0.05
         facts.append("Protocol parameter changes carry system-wide risk.")
     if "hardfork" in action_type:
-        score -= 0.25
+        score -= 0.12
         facts.append("Hard fork actions require strongest evidence quality.")
 
-    score -= min(flag_score / 20.0, 0.5)
+    score -= min(flag_score / 30.0, 0.35)
     if flag_score > 0:
         facts.append(f"Flag score present ({int(flag_score)}), reducing confidence.")
 
     if drep_yes + drep_no + drep_abstain > 0:
         margin = (drep_yes - drep_no) / 100.0
-        score += max(min(margin, 0.25), -0.25)
+        score += max(min(margin, 0.45), -0.45)
         inf.append("Network DRep distribution used as one signal, not authority.")
     else:
         unc.append("No DRep distribution available.")
 
     # Recommendation thresholds
-    if flag_score >= 8:
+    if flag_score >= 9:
         rec = "ABSTAIN"
         unc.append("High risk flags triggered conservative abstain.")
-    elif score >= 0.15:
+    elif score >= 0.12:
         rec = "YES"
-    elif score <= -0.20:
+    elif score <= -0.12:
         rec = "NO"
     else:
         rec = "ABSTAIN"

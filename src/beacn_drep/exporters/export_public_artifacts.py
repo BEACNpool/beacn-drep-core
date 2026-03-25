@@ -199,6 +199,9 @@ def main():
             "hidden_inputs_allowed": False,
             "undeclared_resources_allowed": False,
             "manual_override_enabled": False,
+            "private_assistant_context_allowed": False,
+            "private_memory_allowed": False,
+            "policy_doc": "docs/PUBLIC_CONTEXT_AND_LIMITS.md",
         },
     }
 

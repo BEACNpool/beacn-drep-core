@@ -17,10 +17,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (ratified), critical informa
 
 ## Proof of vote
 - input_hash: `5f0eac16e1acf2239d13af86a9b2389b846e7c57c07c7a07a639239b25cdd16a`
-- snapshot_bundle_hash: `a537fc688b01bb1e55ad644225d76a9d444a199ae5ed35363ca47cf1e3feb19c`
+- snapshot_bundle_hash: `9b573d21e1675512549414564fabcc4a354ce2c34d716681f34d0cd9bfb80d37`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `067b0024380172078be239bab1044334a9f649a8`
-- core_commit: `320b0bdd1840d4a81773e2d4737ce2cd5e2218ed`
+- resources_commit: `402471b0af34f3dc5c0913bd3120faac3b5a9eb4`
+- core_commit: `2894c46a7a92cd8bfa059aca3bc3176beff56bf2`
 - score: `0.0`
 - confidence: `0.2`
 

@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "objective": "Reduce unnecessary abstentions while preserving public auditability and conservative risk controls.",
+  "hard_rules": [
+    "No black-box model may directly finalize governance recommendations",
+    "Model-assisted outputs must be serialized into public artifacts",
+    "Recommendation path must remain deterministic and replayable",
+    "Any threshold change requires public commit + rationale"
+  ],
+  "promotion_gates": {
+    "min_rows_evaluated": 40,
+    "max_replay_failures": 0,
+    "max_integrity_breaches": 0,
+    "required_metrics": [
+      "abstain_rate_delta",
+      "needs_more_info_rate_delta",
+      "calibration_error_proxy",
+      "network_divergence_rate"
+    ]
+  }
+}

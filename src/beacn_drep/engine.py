@@ -233,6 +233,61 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
     }
 
 
+def _enrich_decision_metadata(action: dict, score_obj: dict, resources_used: list[str], freshness: dict, missing_evidence: list[str]) -> dict:
+    rec = (score_obj.get("recommendation") or "ABSTAIN").upper()
+    score = float(score_obj.get("score", 0.0) or 0.0)
+    confidence = float(score_obj.get("confidence", 0.0) or 0.0)
+
+    # bounded probability-like distribution (deterministic, no external model calls)
+    p_yes = max(0.0, min(1.0, 0.5 + score))
+    p_no = max(0.0, min(1.0, 0.5 - score))
+    p_abstain = max(0.0, 1.0 - max(p_yes, p_no))
+
+    if rec == "YES":
+        p_yes = max(p_yes, 0.60)
+    elif rec == "NO":
+        p_no = max(p_no, 0.60)
+    elif rec in ("ABSTAIN", "NEEDS_MORE_INFO"):
+        p_abstain = max(p_abstain, 0.65)
+
+    total = p_yes + p_no + p_abstain
+    probs = {
+        "YES": round(p_yes / total, 4),
+        "NO": round(p_no / total, 4),
+        "ABSTAIN": round(p_abstain / total, 4),
+    }
+
+    if confidence >= 0.80:
+        band = "HIGH"
+    elif confidence >= 0.55:
+        band = "MEDIUM"
+    else:
+        band = "LOW"
+
+    # simple evidence-depth heuristic for action-specific readiness
+    depth = 0
+    if action.get("anchor_url"):
+        depth += 1
+    if action.get("anchor_hash"):
+        depth += 1
+    if action.get("proposer_address"):
+        depth += 1
+    if action.get("treasury_amount_lovelace") not in (None, "", "0"):
+        depth += 1
+    depth += 1 if len(resources_used) >= 3 else 0
+    if freshness.get("is_stale"):
+        depth = max(0, depth - 2)
+    depth = max(0, min(6, depth))
+
+    return {
+        "decision_probs": probs,
+        "uncertainty_band": band,
+        "evidence_depth_score": depth,
+        "intelligence_profile": "deterministic-v1",
+        "missing_evidence_count": len(missing_evidence),
+    }
+
+
 def run_once(action_id: str | None = None) -> dict:
     actions = _load_actions()
     action = next((a for a in actions if a["action_id"] == action_id), actions[0]) if action_id else actions[0]
@@ -267,6 +322,7 @@ def run_once(action_id: str | None = None) -> dict:
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
     score_obj = _score_action(action, flags_by_action.get(action["action_id"], []), freshness, missing_evidence)
+    intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
     rationale = {
         "action_id": action["action_id"],
@@ -285,6 +341,11 @@ def run_once(action_id: str | None = None) -> dict:
         "resource_registry_commit": resources_commit,
         "resources_used": resources_used,
         "freshness": freshness,
+        "decision_probs": intelligence["decision_probs"],
+        "uncertainty_band": intelligence["uncertainty_band"],
+        "evidence_depth_score": intelligence["evidence_depth_score"],
+        "intelligence_profile": intelligence["intelligence_profile"],
+        "missing_evidence_count": intelligence["missing_evidence_count"],
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -338,6 +399,9 @@ def run_once(action_id: str | None = None) -> dict:
             f"- resource_registry_commit: `{resources_commit}`",
             f"- resources_used: `{', '.join(resources_used)}`",
             f"- snapshot_age_seconds: `{freshness.get('snapshot_age_seconds', 'unknown')}`",
+            f"- uncertainty_band: `{intelligence['uncertainty_band']}`",
+            f"- evidence_depth_score: `{intelligence['evidence_depth_score']}`",
+            f"- decision_probs: `{json.dumps(intelligence['decision_probs'], sort_keys=True)}`",
             freshness_note,
         ]) + "\n",
         encoding="utf-8",

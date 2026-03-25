@@ -258,6 +258,23 @@ git push origin main
 
 ## 6) Scheduled Jobs
 
+### Job: Daily action-resource intelligence refresh (recommended)
+
+```
+Name: DRep resource intelligence refresh
+Schedule: 0 1 * * *   # daily 01:00 UTC
+```
+
+```bash
+cd "${BEACN_WORKSPACE}/beacn-drep-core"
+bash ops/run_resource_intelligence_refresh.sh
+```
+
+Behavior:
+- compiles action-type playbooks into `action_resource_index.json`,
+- helps core locate high-priority evidence per governance action quickly,
+- does not alter doctrine or score thresholds by itself.
+
 ### Job: Weekly self-learning/self-correction review (recommended)
 
 ```

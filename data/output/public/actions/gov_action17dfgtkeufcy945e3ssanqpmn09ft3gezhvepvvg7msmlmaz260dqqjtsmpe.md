@@ -1,0 +1,21 @@
+# Rationale: gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe
+Recommendation: **NO**
+Score: `-0.4` | Confidence: `0.92`
+
+## Facts
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (4), reducing confidence.
+
+## Inferences
+- Network DRep distribution used as one signal, not authority.
+
+## Uncertainty
+- Rule-based system; does not infer unstated intent.
+
+## Reproducibility
+- input_hash: `b58c052e59fdcbd1f8bf6f812000488455e0ba583fc0bb1936af4a63cbee7744`
+- snapshot_bundle_hash: `a7ae298e0993286c93df07766c50cedb1dffd9bbf5b3c67188194b79f2ea8f1f`
+- soul_commit: `a91654ea13913abad9f40d096b3766e7a40b098d`
+- soul_text_hash: `381ad1a3901c1d82dba3c8fd7de622d15cfed3e71f587c5e8db0551077d1a0a5`
+- resource_registry_commit: `e0a51631722271611c498277b71008985770ffba`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot`

@@ -1,0 +1,20 @@
+# Rationale: gov_action1a95na44kgedjk3k64ajpfp4p9d9jj3sgzc6tt9nmnkvgj7c9nraqq7g4d2u
+Recommendation: **YES**
+Score: `0.25` | Confidence: `0.8`
+
+## Facts
+- Deterministic rule set applied.
+
+## Inferences
+- Network DRep distribution used as one signal, not authority.
+
+## Uncertainty
+- Rule-based system; does not infer unstated intent.
+
+## Reproducibility
+- input_hash: `cc38e202f592b8c11ad500fd8aacaf8cac4cfe5ac03fe3818525aa588a169f8b`
+- snapshot_bundle_hash: `af10a63d6f8248b67bb542ee7075ad5bf9975c3c032e67db03b8fdf8daba891f`
+- soul_commit: `a91654ea13913abad9f40d096b3766e7a40b098d`
+- soul_text_hash: `381ad1a3901c1d82dba3c8fd7de622d15cfed3e71f587c5e8db0551077d1a0a5`
+- resource_registry_commit: `e0a51631722271611c498277b71008985770ffba`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot`

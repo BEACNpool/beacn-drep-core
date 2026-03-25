@@ -1,0 +1,80 @@
+{
+  "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpuz29v77",
+  "title": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpuz29v77",
+  "type": "TreasuryWithdrawals",
+  "status": "expired",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:f54a4c2061626cacbf059be4d910dbe01ef9f071f51e08379440c66e4fa4ce20",
+    "detected_at": "2026-02-09T18:50:25.950966+00:00"
+  },
+  "decision": {
+    "vote": "NO",
+    "published_at": "2026-03-25T01:00:01.957828+00:00",
+    "signed": false,
+    "transaction_hash": null
+  },
+  "rationale": {
+    "summary": "Network DRep distribution used as one signal, not authority.",
+    "markdown_path": "/data/output/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpuz29v77-f54a4c206162/rationale.md"
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "a91654ea13913abad9f40d096b3766e7a40b098d",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "7a082343e172b537535d1fb8fd912bf688372917",
+    "core_commit": "ec5fd1493121fbaae2b82dfbe0f46af3a0f81b63",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.6,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 1.0
+  }
+}

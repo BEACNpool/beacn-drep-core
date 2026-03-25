@@ -1,0 +1,22 @@
+# Rationale: gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw
+Recommendation: **ABSTAIN**
+Score: `-0.6` | Confidence: `1.0`
+
+## Facts
+- Protocol parameter changes carry system-wide risk.
+- Flag score present (10), reducing confidence.
+
+## Inferences
+- No additional inference.
+
+## Uncertainty
+- No DRep distribution available.
+- High risk flags triggered conservative abstain.
+
+## Reproducibility
+- input_hash: `a0a9038c7deadd0bb4f734260f0c14cd42a09fa4b04c12acef750d4eaf8f7a93`
+- snapshot_bundle_hash: `782f9ff8e01c5c22d0b61442ca8b7ebb9fc27a99c1e76c807d7d0ef9e9d24028`
+- soul_commit: `a91654ea13913abad9f40d096b3766e7a40b098d`
+- soul_text_hash: `381ad1a3901c1d82dba3c8fd7de622d15cfed3e71f587c5e8db0551077d1a0a5`
+- resource_registry_commit: `e0a51631722271611c498277b71008985770ffba`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot`

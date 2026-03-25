@@ -19,10 +19,10 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 
 ## Proof of vote
 - input_hash: `5faa17728c05528658a4d1f37ac943051a22c1ff448f9a835e593bd9e5687194`
-- snapshot_bundle_hash: `8de67f722b3b718be216ccd8b403ca0e626ae7238d469fccfad1c2ec957d3f0a`
+- snapshot_bundle_hash: `864db7ca8fd79e8aa57d96dec9cf274a15c5e1ffad8b07d6c5e04da70244a413`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
-- core_commit: `3a63fda6b63a5f5c357be3b2fe9ed3d53d925d1e`
+- resources_commit: `b0d2a9e8195b0116e83e7174c2b84386e40091b0`
+- core_commit: `6529683c650f058b689e6537724a7372b44c9c6e`
 - score: `-0.1833`
 - confidence: `0.7033`
 

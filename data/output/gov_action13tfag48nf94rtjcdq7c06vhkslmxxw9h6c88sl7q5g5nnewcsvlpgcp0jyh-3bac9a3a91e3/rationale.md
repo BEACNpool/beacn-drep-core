@@ -17,12 +17,12 @@ Score: `0.0` | Confidence: `0.2` | Readiness: `0`
 
 ## Reproducibility
 - input_hash: `3bac9a3a91e31479fbc471d1cef98d21469e86029b039b238fef425a4f3fca77`
-- snapshot_bundle_hash: `4c099cd65ddfa260b995cce80a693a1f4a025856bde51c458cc17414da9b6f2c`
+- snapshot_bundle_hash: `f3fa1b4e0e9ae48c0ef84b34b61d505ffd30bb332c54dd4b5e0c1c3511edc145`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
 - soul_text_hash: `6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6`
-- resource_registry_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
+- resource_registry_commit: `b0d2a9e8195b0116e83e7174c2b84386e40091b0`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `10`
+- snapshot_age_seconds: `11`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

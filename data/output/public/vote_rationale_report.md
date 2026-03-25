@@ -1,6 +1,6 @@
 # Vote Rationale Simulation Report
 
-Generated: `2026-03-25T21:25:22Z`
+Generated: `2026-03-25T21:27:43Z`
 Total actions: `94`
 
 ## gov_action10k0unljvaej0kd89w7pn0zkgdx59c7xkl0x5q78dzvdtd73u0kmqq5xl5y5
@@ -137,14 +137,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp679xfzf
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp730y0dn
 - type: `TreasuryWithdrawals`
@@ -192,14 +192,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpk0mqrnw
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2467` / `0.7667`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.213, "NO": 0.0475, "YES": 0.7395}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpqx4t762
 - type: `TreasuryWithdrawals`
@@ -258,14 +258,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpx66gmxa
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpyflfc4s
 - type: `TreasuryWithdrawals`
@@ -280,14 +280,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpz4s2af8
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq2yeptuu
 - type: `TreasuryWithdrawals`
@@ -324,14 +324,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq77jt4x4
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqczags6z
 - type: `TreasuryWithdrawals`
@@ -379,14 +379,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqqfgyy3v
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqsufvuyl
 - type: `TreasuryWithdrawals`
@@ -423,14 +423,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqwtnrdnx
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqx488pdm
 - type: `TreasuryWithdrawals`
@@ -445,14 +445,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqyxzxz7k
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqz6d98zp
 - type: `TreasuryWithdrawals`
@@ -489,14 +489,14 @@ Total actions: `94`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlzxt5eumh
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlzyc3clg6
 - type: `TreasuryWithdrawals`
@@ -566,14 +566,14 @@ Total actions: `94`
 
 ## gov_action16tdkp3fs0j6303e4utgp8rftdug0ckezr4sslgv8wxdaeq40ngpsq5sr06h
 - type: `TreasuryWithdrawals`
-- vote: `NEEDS_MORE_INFO`
+- vote: `YES`
 - abstain_reason_code: `None`
-- score/confidence: `0.0` / `0.2`
-- uncertainty_band: `LOW`
+- score/confidence: `0.2667` / `0.7867`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
-- rationale_summary: Directional voting is blocked until dossier quality gates pass.
-- missing_evidence_count: `2`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
+- rationale_summary: Network DRep distribution used as one signal, not authority.
+- missing_evidence_count: `0`
 
 ## gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe
 - type: `TreasuryWithdrawals`

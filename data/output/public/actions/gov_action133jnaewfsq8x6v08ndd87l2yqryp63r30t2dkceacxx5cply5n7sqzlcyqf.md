@@ -18,10 +18,10 @@ Vote: YES. For this NewConstitution (ratified), available evidence supports proc
 
 ## Proof of vote
 - input_hash: `8b0957e68aca6605f08738c03ef5be41001c6e99d72a76439620963944136cb6`
-- snapshot_bundle_hash: `b7ff81498b7f4ad3b21a47f45b983f44e545f811d1a205190c42ddea81e01f6d`
+- snapshot_bundle_hash: `030cc39420d7c4c35eb145ae152ac2952a8e29f8ac2852405ba42a2deb2e83fc`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
-- core_commit: `3a63fda6b63a5f5c357be3b2fe9ed3d53d925d1e`
+- resources_commit: `b0d2a9e8195b0116e83e7174c2b84386e40091b0`
+- core_commit: `6529683c650f058b689e6537724a7372b44c9c6e`
 - score: `0.4`
 - confidence: `0.92`
 

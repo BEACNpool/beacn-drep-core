@@ -49,45 +49,62 @@ def _load_rationales_latest():
     return by_action
 
 
-def _human_summary(r: dict) -> str:
+def _human_summary(r: dict, action_row: dict) -> str:
     decision = (r.get("recommendation") or "ABSTAIN").upper()
+    action_type = action_row.get("action_type") or r.get("action_type") or "governance action"
+    status = (action_row.get("status") or "unknown").lower()
     reason = r.get("abstain_reason_code")
     score = r.get("score")
     conf = r.get("confidence")
-    facts = (r.get("facts") or [])
-    missing = (r.get("missing_evidence") or [])
+    facts = [x for x in (r.get("facts") or []) if x]
+    inf = [x for x in (r.get("inferences") or []) if x]
+    unc = [x for x in (r.get("uncertainty") or []) if x]
+    missing = [x for x in (r.get("missing_evidence") or []) if x]
 
     if decision == "YES":
-        lead = "BEACN voted YES because available evidence supports this action more than the identified risks."
+        lead = f"Vote: YES. For this {action_type} ({status}), available evidence supports proceeding, with risk judged manageable under current context."
     elif decision == "NO":
-        lead = "BEACN voted NO because risks or downsides outweighed the expected benefit based on current evidence."
+        lead = f"Vote: NO. For this {action_type} ({status}), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set."
     elif decision == "NEEDS_MORE_INFO":
-        lead = "BEACN returned NEEDS_MORE_INFO because key evidence required for a responsible vote is missing."
+        lead = f"Vote: NEEDS_MORE_INFO. For this {action_type} ({status}), critical information needed for a responsible directional vote is still missing."
     else:
-        lead = "BEACN voted ABSTAIN because evidence was not strong enough for a reliable YES or NO."
+        lead = f"Vote: ABSTAIN. For this {action_type} ({status}), evidence quality was insufficient for a reliable YES or NO decision."
 
-    if reason == "RISK_HIGH":
-        reason_txt = " Main blocker: risk signals remained high relative to available mitigations."
-    elif reason == "CONTEXT_THIN_ANCHOR_UNPINNED":
-        reason_txt = " Main blocker: anchor/source context is incomplete or unpinned."
-    elif reason == "DREP_DISTRIBUTION_MISSING":
-        reason_txt = " Main blocker: DRep distribution signal for this action is missing."
-    elif reason == "RULE_THRESHOLD_UNMET":
-        reason_txt = " Main blocker: evidence did not clear the directional threshold."
-    elif reason == "HARD_BLOCKER_PRESENT":
-        reason_txt = " Main blocker: a hard readiness blocker is still open."
-    else:
-        reason_txt = ""
+    reason_map = {
+        "RISK_HIGH": "Primary blocker: risk indicators remained elevated relative to confirmed mitigations.",
+        "CONTEXT_THIN_ANCHOR_UNPINNED": "Primary blocker: source/anchor context was incomplete or not verifiably pinned.",
+        "DREP_DISTRIBUTION_MISSING": "Primary blocker: DRep distribution signal was unavailable for this action.",
+        "RULE_THRESHOLD_UNMET": "Primary blocker: evidence did not clear the directional decision threshold.",
+        "HARD_BLOCKER_PRESENT": "Primary blocker: a defined readiness hard-blocker remained open.",
+    }
+    blocker = reason_map.get(reason, "")
 
-    fact_txt = f" Key evidence: {facts[0]}" if facts else ""
-    missing_txt = f" To improve confidence: {missing[0]}" if missing else ""
+    support_1 = facts[0] if facts else (inf[0] if inf else "Deterministic policy checks were applied to admitted resources.")
+    support_2 = ""
+    if len(facts) > 1:
+        support_2 = facts[1]
+    elif unc:
+        support_2 = f"Residual uncertainty: {unc[0]}"
+
+    improve = ""
+    if missing:
+        improve = f"What would increase confidence: {missing[0]}"
+
     sc_txt = ""
     try:
-        sc_txt = f" (score {float(score):.2f}, confidence {float(conf)*100:.1f}%)"
+        sc_txt = f"Confidence context: score {float(score):.2f}; confidence {float(conf)*100:.1f}%."
     except Exception:
         pass
 
-    return (lead + reason_txt + fact_txt + missing_txt + sc_txt).strip()
+    parts = [lead, blocker, f"Why: {support_1}"]
+    if support_2:
+        parts.append(f"Additional context: {support_2}")
+    if improve:
+        parts.append(improve)
+    if sc_txt:
+        parts.append(sc_txt)
+
+    return " ".join(p for p in parts if p).strip()
 
 
 def main():
@@ -129,7 +146,7 @@ def main():
         }
         items.append(item)
 
-        human_summary = _human_summary(r["rationale"])
+        human_summary = _human_summary(r["rationale"], a)
         rd = {
             "action_id": aid,
             "title": title,

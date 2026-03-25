@@ -2,6 +2,7 @@
 """Build the public JSON artifact bundle for beacn-drep-web consumption."""
 import csv
 import json
+import shutil
 import subprocess
 from pathlib import Path
 from datetime import datetime, timezone
@@ -11,6 +12,7 @@ from ..config import CORE_REPO, SOUL_REPO, RESOURCES_REPO
 OUT = CORE_REPO / "data" / "output" / "public"
 RUNS = CORE_REPO / "data" / "output"
 ACTIONS_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "governance_actions_all.csv"
+ANCHOR_INDEX_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "anchor_documents_index.csv"
 
 
 def _git_commit(path: Path) -> str:
@@ -23,6 +25,78 @@ def _load_actions_map():
         for r in csv.DictReader(f):
             out[r["action_id"]] = r
     return out
+
+
+def _load_anchor_index_map():
+    out = {}
+    if not ANCHOR_INDEX_CSV.exists():
+        return out
+    with ANCHOR_INDEX_CSV.open(newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            aid = r.get("action_id", "")
+            if aid:
+                out[aid] = r
+    return out
+
+
+def _proposal_ext(content_type: str) -> str:
+    c = (content_type or "").lower()
+    if "json" in c:
+        return ".json"
+    if "pdf" in c:
+        return ".pdf"
+    if "html" in c:
+        return ".html"
+    if "text" in c:
+        return ".txt"
+    return ".bin"
+
+
+def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
+    if not anchor_row:
+        return {"available": False, "reason": "no_anchor_index_row"}
+
+    fetch_status = anchor_row.get("fetch_status", "")
+    rel_path = anchor_row.get("file_path", "")
+    if fetch_status != "ok" or not rel_path:
+        return {
+            "available": False,
+            "fetch_status": fetch_status,
+            "reason": anchor_row.get("error") or "anchor_not_fetched",
+        }
+
+    src = RESOURCES_REPO / rel_path
+    if not src.exists():
+        return {"available": False, "fetch_status": fetch_status, "reason": "pinned_file_missing"}
+
+    proposal_dir = OUT / "proposals"
+    proposal_dir.mkdir(parents=True, exist_ok=True)
+    ext = _proposal_ext(anchor_row.get("content_type", ""))
+    dst_name = f"{aid}{ext}"
+    dst = proposal_dir / dst_name
+    shutil.copyfile(src, dst)
+
+    preview = ""
+    if ext in (".json", ".txt", ".html"):
+        try:
+            txt = src.read_text(encoding="utf-8", errors="replace")
+            preview = txt[:1200]
+        except Exception:
+            preview = ""
+
+    return {
+        "available": True,
+        "fetch_status": fetch_status,
+        "content_type": anchor_row.get("content_type", ""),
+        "http_status": anchor_row.get("http_status", ""),
+        "source_anchor_url": anchor_row.get("anchor_url", ""),
+        "anchor_hash": anchor_row.get("anchor_hash", ""),
+        "file_sha256": anchor_row.get("file_sha256", ""),
+        "content_bytes": anchor_row.get("content_bytes", ""),
+        "fetched_at_utc": anchor_row.get("fetched_at_utc", ""),
+        "download_path": f"/proposals/{dst_name}",
+        "preview": preview,
+    }
 
 
 def _load_rationales_latest():
@@ -113,6 +187,7 @@ def main():
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     actions = _load_actions_map()
+    anchor_map = _load_anchor_index_map()
     rat = _load_rationales_latest()
 
     soul_commit = _git_commit(SOUL_REPO)
@@ -134,6 +209,7 @@ def main():
         if decision == "NEEDS_MORE_INFO":
             needs_info += 1
         title = a.get("metadata_title") or a.get("action_id") or aid
+        proposal_snapshot = _copy_proposal_snapshot(aid, anchor_map.get(aid, {}))
         item = {
             "action_id": aid,
             "title": title,
@@ -143,6 +219,8 @@ def main():
             "detected_at": a.get("first_seen", ""),
             "published_at": a.get("last_updated", ""),
             "detail_path": f"/actions/{aid}",
+            "proposal_available": proposal_snapshot.get("available", False),
+            "proposal_path": proposal_snapshot.get("download_path", ""),
         }
         items.append(item)
 
@@ -190,6 +268,7 @@ def main():
                 "markdown_path": r["md_path"],
                 "missing_evidence": r["rationale"].get("missing_evidence", []),
             },
+            "proposal_evidence": proposal_snapshot,
             "reproducibility": {
                 "soul_repo": "beacn-drep-soul",
                 "soul_commit": soul_commit,

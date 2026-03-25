@@ -15,15 +15,16 @@
     "transaction_hash": null
   },
   "rationale": {
-    "summary": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action1x2zm0lgd59kjrc9clzgscdlh0ct62l8llr638h6t4a5jj4yqzzyqq2dgc7q-09257a56cbe6/rationale.md"
+    "summary": "Cannot produce reliable recommendation with stale data.",
+    "markdown_path": "/data/output/gov_action1x2zm0lgd59kjrc9clzgscdlh0ct62l8llr638h6t4a5jj4yqzzyqq2dgc7q-09257a56cbe6/rationale.md",
+    "missing_evidence": []
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a91654ea13913abad9f40d096b3766e7a40b098d",
+    "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "7a082343e172b537535d1fb8fd912bf688372917",
-    "core_commit": "ec5fd1493121fbaae2b82dfbe0f46af3a0f81b63",
+    "resources_commit": "0fd74e583b7d111d006ad29e04832a857647d381",
+    "core_commit": "be6f7fa3456c194f97e2545cb67dbcfd73261588",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -31,7 +32,8 @@
       "gov_actions_all_snapshot",
       "gov_actions_active_snapshot",
       "gov_action_flags_snapshot",
-      "gov_poll_runs_snapshot"
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot"
     ]
   },
   "inputs_used": [
@@ -69,12 +71,23 @@
       "resource_id": "gov_poll_runs_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.1,
-    "governance_alignment": 0.62
+    "technical_value": 0.0,
+    "governance_alignment": 0.0
+  },
+  "freshness": {
+    "snapshot_age_seconds": 33312,
+    "max_allowed_seconds": 21600,
+    "is_stale": true,
+    "snapshot_time": "2026-03-25T04:09:55.360275+00:00"
   }
 }

@@ -1,20 +1,27 @@
 # Rationale: gov_action1js2s9v92zpxg2rge0y3jt9zy626he2m67x9kx9phw4r942kvsn6sqfym0d7
-Recommendation: **NO**
-Score: `-0.35` | Confidence: `0.9`
+Recommendation: **ABSTAIN**
+Score: `0.0` | Confidence: `0.0`
 
 ## Facts
-- Protocol parameter changes carry system-wide risk.
+- Data freshness check failed: data is 33313s old, max allowed is 21600s
 
 ## Inferences
-- Network DRep distribution used as one signal, not authority.
+- Cannot produce reliable recommendation with stale data.
 
 ## Uncertainty
-- Rule-based system; does not infer unstated intent.
+- All scoring suspended until fresh data is available.
 
 ## Reproducibility
 - input_hash: `3285098ed69901321291becfaf29a66265dc0d709cbe9114c1bdebd6fcc0ef87`
-- snapshot_bundle_hash: `0c7d7b6ff7a9fa7bcf68a9673ed9bc81686737032867399e317452d8a4531899`
-- soul_commit: `a91654ea13913abad9f40d096b3766e7a40b098d`
-- soul_text_hash: `381ad1a3901c1d82dba3c8fd7de622d15cfed3e71f587c5e8db0551077d1a0a5`
-- resource_registry_commit: `e0a51631722271611c498277b71008985770ffba`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot`
+- snapshot_bundle_hash: `f3cabb8fbabc69339c48728a4828ea8158c6fdaedc78ebbee22b964e50d794c7`
+- soul_commit: `f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45`
+- soul_text_hash: `541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16`
+- resource_registry_commit: `0fd74e583b7d111d006ad29e04832a857647d381`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot`
+- snapshot_age_seconds: `33313`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `1`
+- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.303, "YES": 0.303}`
+
+- **DATA STALE**: age exceeded threshold
+

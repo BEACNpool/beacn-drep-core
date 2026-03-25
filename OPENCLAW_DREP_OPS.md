@@ -258,6 +258,25 @@ git push origin main
 
 ## 6) Scheduled Jobs
 
+### Job: Weekly self-learning/self-correction review (recommended)
+
+```
+Name: DRep change-control review
+Schedule: 0 15 * * 0   # weekly Sunday 15:00 UTC
+```
+
+```bash
+cd "${BEACN_WORKSPACE}/beacn-drep-core"
+bash ops/run_weekly_change_review.sh
+```
+
+Behavior:
+- runs policy-driven review against hard-coded thresholds,
+- emits `change-control/reports/weekly-review-*.json`,
+- proposes only (`STAY_COURSE` | `TUNE_NON_FUNDAMENTAL` | `PROPOSE_FUNDAMENTAL_CHANGE`),
+- does **not** auto-apply fundamental changes.
+
+
 ### Job: Governance refresh + evaluate (every 6 hours)
 
 ```

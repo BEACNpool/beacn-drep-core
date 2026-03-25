@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "review_cadence": "weekly",
+  "minimum_sample_size": 20,
+  "non_fundamental_change_triggers": {
+    "stale_data_incidents_7d_gte": 2,
+    "needs_more_info_rate_gte": 0.25,
+    "abstain_rate_gte": 0.70
+  },
+  "fundamental_change_triggers": {
+    "replay_failures_7d_gte": 1,
+    "hidden_inputs_allowed_true": true,
+    "undeclared_resources_allowed_true": true,
+    "manual_override_enabled_true": true,
+    "private_context_allowed_true": true,
+    "private_memory_allowed_true": true,
+    "abstain_rate_gte": 0.85,
+    "needs_more_info_rate_gte": 0.40,
+    "network_divergence_rate_gte": 0.85
+  },
+  "hard_constraints": [
+    "No fundamental change is auto-applied",
+    "Any accepted change must be committed to public repos",
+    "Any accepted change must include public rationale and receipts"
+  ]
+}

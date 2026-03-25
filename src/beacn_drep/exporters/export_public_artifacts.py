@@ -67,6 +67,8 @@ def main():
     needs_info = 0
 
     for aid, r in rat.items():
+        if str(aid).startswith("ga_"):
+            continue
         a = actions.get(aid, {})
         decision = r["rationale"].get("recommendation", "ABSTAIN")
         if decision == "ABSTAIN":

@@ -287,7 +287,7 @@ def _score_action(
     if readiness_row:
         if _yn(readiness_row.get("hard_blocker")) is True:
             hard_blocker = True
-        if _yn(readiness_row.get("anchor_pinned")) is True or anchor_ok:
+        if _yn(readiness_row.get("anchor_pinned")) is True or _yn(readiness_row.get("anchor_fallback_packet")) is True or anchor_ok:
             readiness_score += 0.15
         if _yn(readiness_row.get("action_metadata_complete")) is True and not missing_evidence:
             readiness_score += 0.15

@@ -1,18 +1,7 @@
 # Vote Rationale Simulation Report
 
-Generated: `2026-03-25T17:11:32Z`
-Total actions: `95`
-
-## ga_0001
-- type: `treasury_withdrawal`
-- vote: `ABSTAIN`
-- abstain_reason_code: `None`
-- score/confidence: `None` / `None`
-- uncertainty_band: `None`
-- evidence_depth_score: `None`
-- decision_probs: `{}`
-- rationale_summary: Scoring model pending; conservative default applied.
-- missing_evidence_count: `0`
+Generated: `2026-03-25T17:17:15Z`
+Total actions: `94`
 
 ## gov_action10k0unljvaej0kd89w7pn0zkgdx59c7xkl0x5q78dzvdtd73u0kmqq5xl5y5
 - type: `InfoAction`
@@ -731,12 +720,12 @@ Total actions: `95`
 
 ## gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7
 - type: `TreasuryWithdrawals`
-- vote: `ABSTAIN`
-- abstain_reason_code: `CONTEXT_THIN_ANCHOR_UNPINNED`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.1167` / `0.6067`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.2323, "YES": 0.3738}`
+- decision_probs: `{"ABSTAIN": 0.2771, "NO": 0.2771, "YES": 0.4458}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -797,13 +786,13 @@ Total actions: `95`
 
 ## gov_action1k2jertppnnndejjcglszfqq4yzw8evzrd2nt66rr6rqlz54xp0zsq05ecsn
 - type: `ParameterChange`
-- vote: `ABSTAIN`
-- abstain_reason_code: `DREP_DISTRIBUTION_MISSING`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.0` / `0.55`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.303, "YES": 0.303}`
-- rationale_summary: No additional inference.
+- decision_probs: `{"ABSTAIN": 0.3125, "NO": 0.3125, "YES": 0.375}`
+- rationale_summary: Directional vote forced by high readiness_score with no hard blockers.
 - missing_evidence_count: `0`
 
 ## gov_action1k5vwlfrxtyusd2ec37tckd54gjvqn2kd72xj4t6wkkapdv7zfg0qq468n2r

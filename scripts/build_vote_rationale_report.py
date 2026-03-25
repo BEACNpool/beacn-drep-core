@@ -33,6 +33,8 @@ def main():
 
     items = []
     for aid, obj in sorted(latest.items()):
+        if str(aid).startswith("ga_"):
+            continue
         r = obj["rationale"]
         items.append({
             "action_id": aid,

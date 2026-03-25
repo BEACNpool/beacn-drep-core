@@ -345,15 +345,20 @@ def _score_action(
         outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
         if inflow > 0:
             ratio = outflow / inflow
-            if ratio > 1.0:
-                score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "low_capacity_regime", -0.12)
-                unc.append("Treasury outflow exceeded 6m treasury-fee inflow.")
-            elif ratio > 0.8:
-                score -= 0.06
-                unc.append("Treasury outflow is close to 6m treasury-fee inflow.")
-            else:
+            rt = (treasury_doctrine or {}).get("regime_thresholds", {})
+            sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
+            hard_no_ratio = _to_float(rt.get("unsustainable_hard_no_ratio")) or 2.0
+
+            # Fee-flow is advisory signal only (not hard gate) until treasury inflow model is fully calibrated.
+            if ratio <= sustainable_max:
                 score += 0.03
-                inf.append("Treasury outflow remains below 6m treasury-fee inflow.")
+                inf.append("Treasury fee-flow signal is in sustainable regime.")
+            elif ratio <= hard_no_ratio:
+                score -= 0.06
+                unc.append("Treasury fee-flow signal is in stressed regime.")
+            else:
+                score -= 0.10
+                unc.append("Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).")
 
         # Rolling-window concentration checks if NCL annual is provided.
         ncl_annual = _to_float(os.environ.get("BEACN_NCL_ANNUAL_LOVELACE"))
@@ -432,6 +437,14 @@ def _score_action(
     outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
     if inflow > 0:
         treasury_ratio = outflow / inflow
+    rt = (treasury_doctrine or {}).get("regime_thresholds", {})
+    sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
+    hard_no_ratio = _to_float(rt.get("unsustainable_hard_no_ratio")) or 2.0
+    ncl_annual = _to_float(os.environ.get("BEACN_NCL_ANNUAL_LOVELACE"))
+    available = None
+    if ncl_annual > 0:
+        w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
+        available = ncl_annual - w73
 
     if hard_blocker:
         rec = "ABSTAIN"
@@ -439,9 +452,9 @@ def _score_action(
     elif flag_score >= 9 and not (risk_row and _yn(risk_row.get("mitigation_evidence_present")) is True):
         rec = "ABSTAIN"
         unc.append("High risk flags triggered conservative abstain.")
-    elif treasury_doctrine_ready and treasury_ratio is not None and treasury_ratio > 1.0:
+    elif treasury_doctrine_ready and available is not None and available <= 0:
         rec = "NO"
-        inf.append("Directional NO forced: treasury outflow/inflow sustainability exceeded 1.0 with completed dossier.")
+        inf.append("Directional NO forced: rolling-window available treasury capacity is depleted.")
     elif score >= (0.06 if treasury_doctrine_ready else 0.12):
         rec = "YES"
     elif score <= (-0.06 if treasury_doctrine_ready else -0.12):

@@ -22,7 +22,7 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - snapshot_bundle_hash: `2e633c0f4bdfadb897e67e2de1194a78a7630632ab850f71f3a0226e3039ac56`
 - soul_commit: `76499340e18af2c68ca97c1226fee68c8d6f3830`
 - resources_commit: `53fb52dfa1cd3bdd590f3cdba10aff12404c9499`
-- core_commit: `4406067d884b217b7beb414581a69a34f7cba487`
+- core_commit: `77f9909ecbc39938c0e43664f96d028207d7d29b`
 - score: `0.35`
 - confidence: `0.87`
 

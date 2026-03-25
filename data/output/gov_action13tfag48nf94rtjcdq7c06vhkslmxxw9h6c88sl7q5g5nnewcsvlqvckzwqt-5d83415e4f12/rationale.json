@@ -1,11 +1,11 @@
 {
   "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqvckzwqt",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NO",
+  "recommendation": "YES",
   "abstain_reason_code": null,
   "needs_more_info_reason_code": null,
-  "score": 0.1167,
-  "confidence": 0.6367,
+  "score": 0.1667,
+  "confidence": 0.6867,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -13,11 +13,10 @@
     "Flag score present (4), reducing confidence."
   ],
   "inferences": [
-    "Network DRep distribution used as one signal, not authority.",
-    "Directional NO forced: treasury outflow/inflow sustainability exceeded 1.0 with completed dossier."
+    "Network DRep distribution used as one signal, not authority."
   ],
   "uncertainty": [
-    "Treasury outflow exceeded 6m treasury-fee inflow."
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied)."
   ],
   "missing_evidence": [],
   "input_hash": "5d83415e4f12351c0b4f2e91fc035853740103192dd973505339d3495868fc0a",
@@ -39,16 +38,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 7439,
+    "snapshot_age_seconds": 7980,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T21:31:49.682301Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.3771,
-    "NO": 0.3825,
-    "ABSTAIN": 0.2404
+    "YES": 0.6784,
+    "NO": 0.0875,
+    "ABSTAIN": 0.2342
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,

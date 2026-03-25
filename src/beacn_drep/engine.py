@@ -10,9 +10,9 @@ from .replay import sha256_file, canonical_json_hash, csv_row_by_action, write_m
 
 
 KNOWN_ACTION_TYPES = {
-    "treasurywithdrawals", "parameterchange", "hardforkinitiaton",
-    "hardfork", "infoaction", "newconstitution", "noconfidence",
-    "updatecommittee", "newcommittee",
+    "treasurywithdrawals", "treasury_withdrawal", "parameterchange", "parameter_change",
+    "hardforkinitiaton", "hardforkinitiation", "hardfork", "infoaction", "info_action",
+    "newconstitution", "new_constitution", "noconfidence", "updatecommittee", "newcommittee",
 }
 
 
@@ -47,6 +47,19 @@ def _load_soul() -> tuple[str, str]:
     path = SOUL_REPO / "README.md"
     text = path.read_text(encoding="utf-8")
     return text, _sha256_bytes(text.encode("utf-8"))
+
+
+def _load_anchor_index() -> dict[str, dict]:
+    path = RESOURCES_REPO / "data" / "input" / "governance" / "anchor_documents_index.csv"
+    if not path.exists():
+        return {}
+    out = {}
+    with path.open(newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            aid = r.get("action_id", "")
+            if aid:
+                out[aid] = r
+    return out
 
 
 def _check_freshness() -> dict:
@@ -115,6 +128,23 @@ def _resource_snapshot_entry(resource_row: dict, action_id: str) -> dict | None:
             "exists": False,
         }
 
+    if path.is_dir():
+        # deterministic directory digest for pinned snapshot folders
+        file_entries = []
+        for p in sorted(path.rglob("*")):
+            if p.is_file():
+                file_entries.append({
+                    "rel": str(p.relative_to(path)),
+                    "sha256": sha256_file(p),
+                })
+        return {
+            "resource_id": resource_row["resource_id"],
+            "kind": "directory",
+            "path": source_url,
+            "files_count": len(file_entries),
+            "dir_hash": canonical_json_hash(file_entries),
+        }
+
     entry = {
         "resource_id": resource_row["resource_id"],
         "kind": "file",
@@ -138,7 +168,7 @@ def _to_float(v: str | None) -> float:
         return 0.0
 
 
-def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evidence: list[str]) -> dict:
+def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evidence: list[str], anchor_ok: bool) -> dict:
     action_type = (action.get("action_type") or "").lower()
     flag_score = _to_float(action.get("flag_score"))
     drep_yes = _to_float(action.get("drep_yes_pct"))
@@ -155,6 +185,7 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
         reason = freshness.get("reason", f"data is {age}s old, max allowed is {freshness.get('max_allowed_seconds')}s")
         return {
             "recommendation": "ABSTAIN",
+            "abstain_reason_code": "STALE_DATA",
             "score": 0.0,
             "confidence": 0.0,
             "facts": [f"Data freshness check failed: {reason}"],
@@ -168,6 +199,7 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
     if action_type_normalized and action_type_normalized not in KNOWN_ACTION_TYPES:
         return {
             "recommendation": "ABSTAIN",
+            "abstain_reason_code": "UNKNOWN_ACTION_TYPE",
             "score": 0.0,
             "confidence": 0.1,
             "facts": [f"Action type '{action.get('action_type')}' is not in the known classification set."],
@@ -189,6 +221,12 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
         }
 
     score = 0.0
+
+    if anchor_ok:
+        score += 0.05
+        facts.append("Pinned anchor document is available for this action.")
+    else:
+        unc.append("Anchor document is not yet pinned locally for this action.")
 
     # Conservative doctrine-aligned rule set
     if "treasury" in action_type:
@@ -224,8 +262,19 @@ def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evid
         rec = "ABSTAIN"
 
     confidence = max(0.0, min(1.0, 0.55 + abs(score) - (0.03 * len(flags))))
+    reason_code = None
+    if rec == "ABSTAIN":
+        if flag_score >= 9:
+            reason_code = "RISK_HIGH"
+        elif not anchor_ok:
+            reason_code = "CONTEXT_THIN_ANCHOR_UNPINNED"
+        elif drep_yes + drep_no + drep_abstain == 0:
+            reason_code = "DREP_DISTRIBUTION_MISSING"
+        else:
+            reason_code = "RULE_THRESHOLD_UNMET"
     return {
         "recommendation": rec,
+        "abstain_reason_code": reason_code,
         "score": round(score, 4),
         "confidence": round(confidence, 4),
         "facts": facts or ["Deterministic rule set applied."],
@@ -321,15 +370,19 @@ def run_once(action_id: str | None = None) -> dict:
         "resource_registry_commit": resources_commit,
     })
 
+    anchor_index = _load_anchor_index()
+    anchor_ok = (anchor_index.get(action["action_id"], {}).get("fetch_status") == "ok")
+
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
-    score_obj = _score_action(action, flags_by_action.get(action["action_id"], []), freshness, missing_evidence)
+    score_obj = _score_action(action, flags_by_action.get(action["action_id"], []), freshness, missing_evidence, anchor_ok)
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
     rationale = {
         "action_id": action["action_id"],
         "action_type": action_type,
         "recommendation": score_obj["recommendation"],
+        "abstain_reason_code": score_obj.get("abstain_reason_code"),
         "score": score_obj["score"],
         "confidence": score_obj["confidence"],
         "facts": score_obj["facts"],

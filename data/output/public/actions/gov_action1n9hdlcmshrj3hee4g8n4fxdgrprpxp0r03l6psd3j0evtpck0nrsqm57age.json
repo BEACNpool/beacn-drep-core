@@ -23,8 +23,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "19015beec8cfe8ac067751400a960c9d5af3383f",
-    "core_commit": "128c9d269d33c2156e672c330f28403637e8a4ce",
+    "resources_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
+    "core_commit": "04118ea505dbbbdc6cc29f15ab24e3708458e37f",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -33,7 +33,8 @@
       "gov_actions_active_snapshot",
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
-      "top_drep_votes_snapshot"
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
     ]
   },
   "inputs_used": [
@@ -76,6 +77,11 @@
       "resource_id": "top_drep_votes_snapshot",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
@@ -85,7 +91,7 @@
     "governance_alignment": 0.58
   },
   "freshness": {
-    "snapshot_age_seconds": 82,
+    "snapshot_age_seconds": 2270,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"

@@ -2,6 +2,7 @@
   "action_id": "gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv",
   "action_type": "TreasuryWithdrawals",
   "recommendation": "YES",
+  "abstain_reason_code": null,
   "score": 0.2167,
   "confidence": 0.7367,
   "facts": [
@@ -12,26 +13,29 @@
     "Network DRep distribution used as one signal, not authority."
   ],
   "uncertainty": [
-    "Rule-based system; does not infer unstated intent."
+    "Anchor document is not yet pinned locally for this action."
   ],
   "missing_evidence": [],
   "input_hash": "bfd343427082e3cab7246156d63199503f91ad2d65763b27227fbf7f5bdc25e6",
-  "snapshot_bundle_hash": "8a3180b1c5c8e6040de556ea228b9fbcf36507920c46416f4581d36e90c44a3e",
+  "snapshot_bundle_hash": "56596368ffea0254100af2fea9eb1b46bb8d3cbd5db80be8f3ef3d6c12cf372e",
   "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
   "soul_text_hash": "541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16",
-  "resource_registry_commit": "19015beec8cfe8ac067751400a960c9d5af3383f",
+  "resource_registry_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
     "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
-    "top_drep_votes_snapshot"
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 82,
+    "snapshot_age_seconds": 2270,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"

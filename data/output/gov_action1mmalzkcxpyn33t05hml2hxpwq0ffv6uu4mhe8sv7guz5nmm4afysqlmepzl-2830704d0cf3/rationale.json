@@ -2,9 +2,11 @@
   "action_id": "gov_action1mmalzkcxpyn33t05hml2hxpwq0ffv6uu4mhe8sv7guz5nmm4afysqlmepzl",
   "action_type": "InfoAction",
   "recommendation": "YES",
-  "score": 0.27,
-  "confidence": 0.79,
+  "abstain_reason_code": null,
+  "score": 0.32,
+  "confidence": 0.84,
   "facts": [
+    "Pinned anchor document is available for this action.",
     "Flag score present (3), reducing confidence."
   ],
   "inferences": [
@@ -15,10 +17,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "2830704d0cf33f0dc42c5a754be62bf28916b83624eb70cd5fbf8447dc7b4e73",
-  "snapshot_bundle_hash": "74189e5eaf1de6bc6d2a7070ace3b867298482f9c4533bca89a2235b5f57f592",
+  "snapshot_bundle_hash": "ba72066e5be2f32d7ec8a0063b5930f6bba337b28b2c5964511d23372899672c",
   "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
   "soul_text_hash": "541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16",
-  "resource_registry_commit": "19015beec8cfe8ac067751400a960c9d5af3383f",
+  "resource_registry_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -27,20 +29,21 @@
     "gov_actions_active_snapshot",
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
-    "top_drep_votes_snapshot"
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 82,
+    "snapshot_age_seconds": 2271,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   },
   "decision_probs": {
-    "YES": 0.626,
-    "NO": 0.187,
-    "ABSTAIN": 0.187
+    "YES": 0.6949,
+    "NO": 0.1525,
+    "ABSTAIN": 0.1525
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "HIGH",
   "evidence_depth_score": 3,
   "intelligence_profile": "deterministic-v1",
   "missing_evidence_count": 0

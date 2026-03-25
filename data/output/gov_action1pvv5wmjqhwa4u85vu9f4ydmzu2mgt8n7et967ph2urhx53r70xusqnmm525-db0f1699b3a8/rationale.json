@@ -2,25 +2,27 @@
   "action_id": "gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525",
   "action_type": "HardForkInitiation",
   "recommendation": "ABSTAIN",
-  "score": 0.0,
-  "confidence": 0.1,
+  "abstain_reason_code": "RISK_HIGH",
+  "score": -0.4033,
+  "confidence": 0.9233,
   "facts": [
-    "Action type 'HardForkInitiation' is not in the known classification set."
+    "Pinned anchor document is available for this action.",
+    "Hard fork actions require strongest evidence quality.",
+    "Flag score present (10), reducing confidence."
   ],
   "inferences": [
-    "Cannot score an action type with no established rubric."
+    "No additional inference."
   ],
   "uncertainty": [
-    "This may be a new governance action type requiring doctrine update."
+    "No DRep distribution available.",
+    "High risk flags triggered conservative abstain."
   ],
-  "missing_evidence": [
-    "No scoring rubric exists for action type: HardForkInitiation"
-  ],
+  "missing_evidence": [],
   "input_hash": "db0f1699b3a86db4c0d0a880edcda99fba3634f2d7718041ce39e8b2bc25ffca",
-  "snapshot_bundle_hash": "b28008e837669fa286895cbc65107235737e12b34c2eaa9160a52117ee70d650",
+  "snapshot_bundle_hash": "7abdb2a7dffd9a088ca08f63c8208e07a7777f899b2d7173de73aa5314cc3244",
   "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
   "soul_text_hash": "541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16",
-  "resource_registry_commit": "19015beec8cfe8ac067751400a960c9d5af3383f",
+  "resource_registry_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -29,20 +31,21 @@
     "gov_actions_active_snapshot",
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
-    "top_drep_votes_snapshot"
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 82,
+    "snapshot_age_seconds": 2271,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
   },
   "decision_probs": {
-    "YES": 0.303,
-    "NO": 0.303,
+    "YES": 0.0586,
+    "NO": 0.5475,
     "ABSTAIN": 0.3939
   },
-  "uncertainty_band": "LOW",
+  "uncertainty_band": "HIGH",
   "evidence_depth_score": 3,
   "intelligence_profile": "deterministic-v1",
   "missing_evidence_count": 0

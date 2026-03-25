@@ -31,16 +31,19 @@
   "action_type": "TreasuryWithdrawals",
   "soul_commit": "f9f8fbe5a6ecfe866593cbd98f9ac10c63cd4c45",
   "soul_text_hash": "541cad5062dabf96804991a5bc1d49c208e646d20eda4289878faea09cedba16",
-  "resource_registry_commit": "19015beec8cfe8ac067751400a960c9d5af3383f",
+  "resource_registry_commit": "1b763701345e0cf335d389cef8dcd8dbea7cc5db",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
     "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
-    "top_drep_votes_snapshot"
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
   ],
   "resource_snapshots": [
     {
@@ -54,6 +57,12 @@
       "kind": "file",
       "path": "data/input/governance/governance_actions_sample.csv",
       "file_hash": "a74304bfa101c796e64de74ffb09c61b797e24b5443a1166ddbe2d25a0790c40"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "kind": "file",
+      "path": "data/input/treasury/treasury_withdrawals_sample.csv",
+      "file_hash": "9e0881defb9f22e2893d459594c4f6f8a769e93e36ad79d763dd2d9e0985c55a"
     },
     {
       "resource_id": "drep_vote_history_snapshot",
@@ -130,6 +139,18 @@
       "selected_row_hash": "c918d3c204d790c31ac1149e8c553455f0ce41a67b23497a2effc90bcfe58c66"
     },
     {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_treasury_recipients.csv",
+      "file_hash": "bed03030abfdad92b900b75b892487e2e91d1382175260b6be2aaf29357e8a7b",
+      "selected_row": {
+        "action_id": "gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7",
+        "stake_address": "stake1ux2x5cv4nlwptph8kxvnyw93pp2sp54dk54dpfp2ax7fkgg56dtn4",
+        "amount_lovelace": "500000000000"
+      },
+      "selected_row_hash": "7ae6d69fc7dab70cfa6ae7a6cf651153e9ec4a7064ad65378c38e6cdd0f31b61"
+    },
+    {
       "resource_id": "gov_action_flags_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_action_flags.csv",
@@ -153,7 +174,14 @@
       "kind": "file",
       "path": "data/input/drep/top_drep_votes.csv",
       "file_hash": "2897d2b484a054921e4b738b28f8e47a7190add3c0f18daace9edfcedc7214ab"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "kind": "directory",
+      "path": "data/input/governance/anchors/",
+      "files_count": 17,
+      "dir_hash": "5a64ed363f317bd8354d2831d020df6c99eac554c7cab5b9a5926ec4ef18d8fe"
     }
   ],
-  "snapshot_bundle_hash": "81dabbf625e6b89df8d6ab8c009ff9f7e89a8e51c6258d3fe15e8249209cd308"
+  "snapshot_bundle_hash": "291e77fc9a1f5d32dadecbb689a418649d32e9753178ecf3f8008315521c4aef"
 }

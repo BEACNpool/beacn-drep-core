@@ -1,8 +1,8 @@
 {
   "action_id": "gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "ABSTAIN",
-  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
   "needs_more_info_reason_code": null,
   "score": 0.0167,
   "confidence": 0.5067,
@@ -13,17 +13,18 @@
     "Flag score present (7), reducing confidence."
   ],
   "inferences": [
-    "Network DRep distribution used as one signal, not authority."
+    "Network DRep distribution used as one signal, not authority.",
+    "Directional NO forced: treasury outflow/inflow sustainability exceeded 1.0 with completed dossier."
   ],
   "uncertainty": [
     "Treasury outflow exceeded 6m treasury-fee inflow."
   ],
   "missing_evidence": [],
   "input_hash": "2f148a6d8c23c1c15c98f2b2f743d3d9e5f45304fa4c5ffebb87a4860c624f4e",
-  "snapshot_bundle_hash": "ee2d3978cd1efc71fa5c7e8cbe8cdb9438c8506d76c40b5e4530ec902945e3e9",
-  "soul_commit": "3fc489914fe36df01aad371f6670d0a857af3832",
+  "snapshot_bundle_hash": "b649e077fdee9f74982e2ce17394c6dd415bf5a6bfcfb597a18f7c666b0a43fb",
+  "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
   "soul_text_hash": "f31120db89ecd147d30a40b1b65ca3ff36e972631a057294aab39d39b49c5a12",
-  "resource_registry_commit": "e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116",
+  "resource_registry_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -38,7 +39,7 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 6588,
+    "snapshot_age_seconds": 7438,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-03-25T21:31:49.682301Z",
@@ -46,8 +47,8 @@
   },
   "decision_probs": {
     "YES": 0.2934,
-    "NO": 0.26,
-    "ABSTAIN": 0.4467
+    "NO": 0.45,
+    "ABSTAIN": 0.2567
   },
   "uncertainty_band": "LOW",
   "evidence_depth_score": 4,

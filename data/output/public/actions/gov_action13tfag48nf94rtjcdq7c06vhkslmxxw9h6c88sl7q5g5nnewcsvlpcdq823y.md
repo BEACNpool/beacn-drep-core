@@ -19,10 +19,10 @@ Vote: NO. For this TreasuryWithdrawals (ratified), downside risk and/or weak saf
 
 ## Proof of vote
 - input_hash: `39ab926a77e5fee7b8fc9ce2bbc46579d3dfc49c290b5db32dfe97f57bcc70f9`
-- snapshot_bundle_hash: `271d002a866a405ace3668d5a6bab0b74605ab4ff5f6101cedc0bb41d23d37a4`
-- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
-- resources_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
-- core_commit: `04c7e5604b464b9a10401ac0083f6b83554005ee`
+- snapshot_bundle_hash: `10551f67ef900f8f23d390d4337c7ce7530328680d58ae705c62f730aaaaea2c`
+- soul_commit: `76499340e18af2c68ca97c1226fee68c8d6f3830`
+- resources_commit: `53fb52dfa1cd3bdd590f3cdba10aff12404c9499`
+- core_commit: `4406067d884b217b7beb414581a69a34f7cba487`
 - score: `-0.1433`
 - confidence: `0.6633`
 

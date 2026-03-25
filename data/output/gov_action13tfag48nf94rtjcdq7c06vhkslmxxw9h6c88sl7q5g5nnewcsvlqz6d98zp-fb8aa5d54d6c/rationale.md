@@ -1,5 +1,5 @@
 # Rationale: gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqz6d98zp
-Recommendation: **ABSTAIN**
+Recommendation: **NO**
 Score: `0.1167` | Confidence: `0.6367` | Readiness: `0.0`
 
 ## Facts
@@ -9,19 +9,20 @@ Score: `0.1167` | Confidence: `0.6367` | Readiness: `0.0`
 
 ## Inferences
 - Network DRep distribution used as one signal, not authority.
+- Directional NO forced: treasury outflow/inflow sustainability exceeded 1.0 with completed dossier.
 
 ## Uncertainty
 - Treasury outflow exceeded 6m treasury-fee inflow.
 
 ## Reproducibility
 - input_hash: `fb8aa5d54d6c864484ac2e894360d1d40b3951b45fb354f186d6d4f247705e12`
-- snapshot_bundle_hash: `4c032ea1d67db6f59b6f6f8103b97f88f95dff661cb0cbe1b39b68938ba5d56e`
-- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
+- snapshot_bundle_hash: `bc184c44677f20a23ccc79d881eb746f28460ab338f98f7b811847955cd7bd22`
+- soul_commit: `76499340e18af2c68ca97c1226fee68c8d6f3830`
 - soul_text_hash: `f31120db89ecd147d30a40b1b65ca3ff36e972631a057294aab39d39b49c5a12`
-- resource_registry_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
+- resource_registry_commit: `53fb52dfa1cd3bdd590f3cdba10aff12404c9499`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `6589`
+- snapshot_age_seconds: `7439`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4792, "NO": 0.1437, "YES": 0.3771}`
+- decision_probs: `{"ABSTAIN": 0.2404, "NO": 0.3825, "YES": 0.3771}`
 

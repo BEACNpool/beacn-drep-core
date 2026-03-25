@@ -426,20 +426,30 @@ def _score_action(
     readiness_score = max(0.0, min(1.0, readiness_score))
 
     # Recommendation thresholds
+    treasury_doctrine_ready = ("treasury" in action_type) and (_yn((deep_row or {}).get("dossier_complete")) is True)
+    treasury_ratio = None
+    inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
+    outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
+    if inflow > 0:
+        treasury_ratio = outflow / inflow
+
     if hard_blocker:
         rec = "ABSTAIN"
         unc.append("Hard blocker present in vote-readiness matrix.")
     elif flag_score >= 9 and not (risk_row and _yn(risk_row.get("mitigation_evidence_present")) is True):
         rec = "ABSTAIN"
         unc.append("High risk flags triggered conservative abstain.")
-    elif score >= 0.12:
-        rec = "YES"
-    elif score <= -0.12:
+    elif treasury_doctrine_ready and treasury_ratio is not None and treasury_ratio > 1.0:
         rec = "NO"
-    elif readiness_score >= 0.70:
+        inf.append("Directional NO forced: treasury outflow/inflow sustainability exceeded 1.0 with completed dossier.")
+    elif score >= (0.06 if treasury_doctrine_ready else 0.12):
+        rec = "YES"
+    elif score <= (-0.06 if treasury_doctrine_ready else -0.12):
+        rec = "NO"
+    elif readiness_score >= 0.70 or treasury_doctrine_ready:
         # Force directional decision when structured evidence packet is sufficiently complete.
         rec = "YES" if score >= 0 else "NO"
-        inf.append("Directional vote forced by high readiness_score with no hard blockers.")
+        inf.append("Directional vote forced by completed readiness packet (treasury-aware).")
     else:
         rec = "ABSTAIN"
 

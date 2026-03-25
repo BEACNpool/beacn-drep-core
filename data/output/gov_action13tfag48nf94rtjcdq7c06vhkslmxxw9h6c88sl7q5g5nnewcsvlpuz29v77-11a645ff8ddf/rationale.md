@@ -9,18 +9,19 @@ Score: `-0.5333` | Confidence: `1.0` | Readiness: `0.0`
 
 ## Inferences
 - Network DRep distribution used as one signal, not authority.
+- Directional NO forced: treasury outflow/inflow sustainability exceeded 1.0 with completed dossier.
 
 ## Uncertainty
 - Treasury outflow exceeded 6m treasury-fee inflow.
 
 ## Reproducibility
 - input_hash: `11a645ff8ddf79a03dc213c26ec959686c0c67667bdef27ff072f2162fa042c0`
-- snapshot_bundle_hash: `379ab69687f634fed44b17a39119434987139730ffad249d36d3e0f80d765cf8`
-- soul_commit: `3fc489914fe36df01aad371f6670d0a857af3832`
+- snapshot_bundle_hash: `ba230d744194af12b50f6ae9dbf2f0b47dd36f7509e72e4b860da78e26d308e0`
+- soul_commit: `76499340e18af2c68ca97c1226fee68c8d6f3830`
 - soul_text_hash: `f31120db89ecd147d30a40b1b65ca3ff36e972631a057294aab39d39b49c5a12`
-- resource_registry_commit: `e0cfd5d9e0a33a2e88862b4c83f8bc15d49c2116`
+- resource_registry_commit: `53fb52dfa1cd3bdd590f3cdba10aff12404c9499`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `6590`
+- snapshot_age_seconds: `7440`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.1518, "NO": 0.8093, "YES": 0.0389}`

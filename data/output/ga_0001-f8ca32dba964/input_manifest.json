@@ -1,0 +1,65 @@
+{
+  "run_id": "ga_0001-f8ca32dba964",
+  "action": {
+    "action_id": "ga_0001",
+    "action_type": "treasury_withdrawal",
+    "epoch": "540",
+    "proposer": "stake1example",
+    "anchor_url": "http://example.com/anchor1",
+    "status": "active"
+  },
+  "input_hash": "f8ca32dba9642dd5f0ca2a009f7d2e5589905f1a9a84ee0c6fc3921e36d53039",
+  "action_type": "treasury_withdrawal",
+  "soul_commit": "a91654ea13913abad9f40d096b3766e7a40b098d",
+  "resource_registry_commit": "b489f2bc23236a54238b8ede3a73b5ca57428791",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot"
+  ],
+  "resource_snapshots": [
+    {
+      "resource_id": "gov_actions_api",
+      "kind": "remote",
+      "source_url": "https://api.gov.tools",
+      "note": "remote resources must be pinned to local snapshot for strict replay"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_actions_sample.csv",
+      "file_hash": "a74304bfa101c796e64de74ffb09c61b797e24b5443a1166ddbe2d25a0790c40",
+      "selected_row": {
+        "action_id": "ga_0001",
+        "action_type": "treasury_withdrawal",
+        "epoch": "540",
+        "proposer": "stake1example",
+        "anchor_url": "http://example.com/anchor1",
+        "status": "active"
+      },
+      "selected_row_hash": "451da4f2d2afcfc13af11578588f6a7d2193e8b5abab3601100b334897ab8c4d"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "kind": "file",
+      "path": "data/input/treasury/treasury_withdrawals_sample.csv",
+      "file_hash": "9e0881defb9f22e2893d459594c4f6f8a769e93e36ad79d763dd2d9e0985c55a",
+      "selected_row": {
+        "action_id": "ga_0001",
+        "requested_ada": "2500000",
+        "recipient": "example_entity",
+        "purpose": "tooling_and_ops",
+        "evidence_url": "http://example.com/evidence1"
+      },
+      "selected_row_hash": "8b8f0438ea4bcaff160693034fe770f2c6a7b1a14e435fc79d2f554439ff2610"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "kind": "file",
+      "path": "data/input/drep/drep_vote_history_sample.csv",
+      "file_hash": "185da44412ea79bd7f26a7bb678f4ff3eee134b24da9c824cc32e153953a3cb9"
+    }
+  ],
+  "snapshot_bundle_hash": "148bb39d87f917afaff187a2b801d830cdfb90089b53ea21838f4e0b90cee7b3"
+}

@@ -1,0 +1,20 @@
+# Rationale: gov_action1f9da8n2yaf4updxzmwc7fnw8ug2gwnpvqays5n3yw6nz0mu3z2qqq6ggge9
+Recommendation: **ABSTAIN**
+Score: `0.1` | Confidence: `0.62`
+
+## Facts
+- Flag score present (3), reducing confidence.
+
+## Inferences
+- Network DRep distribution used as one signal, not authority.
+
+## Uncertainty
+- Rule-based system; does not infer unstated intent.
+
+## Reproducibility
+- input_hash: `7c5b2f1080ab90e817b5e5588fa3bc1e3d1766da098bfd93e104385b8278ff97`
+- snapshot_bundle_hash: `bdd2989497a186e9c98db4ea052a4d14f62428dfec7d8dc74ce68d1eb3f31cdf`
+- soul_commit: `a91654ea13913abad9f40d096b3766e7a40b098d`
+- soul_text_hash: `381ad1a3901c1d82dba3c8fd7de622d15cfed3e71f587c5e8db0551077d1a0a5`
+- resource_registry_commit: `e0a51631722271611c498277b71008985770ffba`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot`

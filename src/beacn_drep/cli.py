@@ -1,6 +1,6 @@
 import argparse
 import json
-from .engine import run_once, verify_replay
+from .engine import run_once, run_all, verify_replay
 from .adapters.github_adapter import publish_stub
 
 
@@ -11,6 +11,11 @@ def cmd_check_new_actions() -> None:
 def cmd_run_once(action_id: str | None) -> None:
     result = run_once(action_id=action_id)
     print(result["run_id"])
+
+
+def cmd_run_all(limit: int | None) -> None:
+    result = run_all(limit=limit)
+    print(json.dumps(result, indent=2))
 
 
 def cmd_publish(path: str | None) -> None:
@@ -30,6 +35,9 @@ def main() -> None:
     run = sub.add_parser("run-once")
     run.add_argument("--action-id", default=None)
 
+    run_all_p = sub.add_parser("run-all")
+    run_all_p.add_argument("--limit", type=int, default=None)
+
     pub = sub.add_parser("publish")
     pub.add_argument("--path", default=None)
 
@@ -41,6 +49,8 @@ def main() -> None:
         cmd_check_new_actions()
     elif args.cmd == "run-once":
         cmd_run_once(args.action_id)
+    elif args.cmd == "run-all":
+        cmd_run_all(args.limit)
     elif args.cmd == "publish":
         cmd_publish(args.path)
     elif args.cmd == "verify-replay":

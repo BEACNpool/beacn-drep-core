@@ -1,0 +1,22 @@
+# Rationale: gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525
+Recommendation: **ABSTAIN**
+Score: `-0.75` | Confidence: `1.0`
+
+## Facts
+- Hard fork actions require strongest evidence quality.
+- Flag score present (10), reducing confidence.
+
+## Inferences
+- No additional inference.
+
+## Uncertainty
+- No DRep distribution available.
+- High risk flags triggered conservative abstain.
+
+## Reproducibility
+- input_hash: `6a993c1e5f78af0b5969993e801daad3caa7ad04f1276f84c1d49297f8e23672`
+- snapshot_bundle_hash: `b50566ffb1a1558bacb3d804117df1720341e5caf3053b01f43bc0fd9680b4b8`
+- soul_commit: `a91654ea13913abad9f40d096b3766e7a40b098d`
+- soul_text_hash: `381ad1a3901c1d82dba3c8fd7de622d15cfed3e71f587c5e8db0551077d1a0a5`
+- resource_registry_commit: `e0a51631722271611c498277b71008985770ffba`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot`

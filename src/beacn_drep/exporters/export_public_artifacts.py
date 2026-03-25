@@ -212,9 +212,35 @@ def main():
         }
         (OUT / "actions" / f"{aid}.json").write_text(json.dumps(action_detail, indent=2) + "\n")
 
-        md_source = CORE_REPO / "data" / "output" / r["run_id"] / "rationale.md"
-        if md_source.exists():
-            (OUT / "actions" / f"{aid}.md").write_text(md_source.read_text())
+        human_md = "\n".join([
+            f"# {aid}",
+            "",
+            f"## Vote",
+            f"- Decision: **{decision}**",
+            f"- Action type: `{a.get('action_type', '')}`",
+            f"- Status: `{a.get('status', '')}`",
+            f"- Published at: `{a.get('last_updated', '')}`",
+            "",
+            "## Human-readable rationale",
+            human_summary,
+            "",
+            "## What influenced this vote",
+            *(f"- {x}" for x in (r["rationale"].get("facts") or ["No fact lines available."])),
+            "",
+            "## Remaining uncertainty",
+            *(f"- {x}" for x in (r["rationale"].get("uncertainty") or ["No material uncertainty listed."])),
+            "",
+            "## Proof of vote",
+            f"- input_hash: `{r['rationale'].get('input_hash', '')}`",
+            f"- snapshot_bundle_hash: `{r['rationale'].get('snapshot_bundle_hash', '')}`",
+            f"- soul_commit: `{soul_commit}`",
+            f"- resources_commit: `{res_commit}`",
+            f"- core_commit: `{core_commit}`",
+            f"- score: `{r['rationale'].get('score', '')}`",
+            f"- confidence: `{r['rationale'].get('confidence', '')}`",
+            "",
+        ])
+        (OUT / "actions" / f"{aid}.md").write_text(human_md + "\n", encoding="utf-8")
 
     items.sort(key=lambda x: x["detected_at"], reverse=True)
     rationale_items.sort(key=lambda x: x["published_at"], reverse=True)

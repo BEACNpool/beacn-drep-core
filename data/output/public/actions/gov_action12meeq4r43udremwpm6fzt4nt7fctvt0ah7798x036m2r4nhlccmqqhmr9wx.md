@@ -1,25 +1,26 @@
-# Rationale: gov_action12meeq4r43udremwpm6fzt4nt7fctvt0ah7798x036m2r4nhlccmqqhmr9wx
-Recommendation: **YES**
-Score: `0.5` | Confidence: `1.0` | Readiness: `0.0`
+# gov_action12meeq4r43udremwpm6fzt4nt7fctvt0ah7798x036m2r4nhlccmqqhmr9wx
 
-## Facts
+## Vote
+- Decision: **YES**
+- Action type: `InfoAction`
+- Status: `expired`
+- Published at: `2026-03-25T13:00:02.009603+00:00`
+
+## Human-readable rationale
+Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.50; confidence 100.0%.
+
+## What influenced this vote
 - Pinned anchor document is available for this action.
 
-## Inferences
-- Network DRep distribution used as one signal, not authority.
-
-## Uncertainty
+## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
 
-## Reproducibility
+## Proof of vote
 - input_hash: `cb5ae16aaf3656fd4fa558263526a64b16eeff303c6ece39f51b64b39c1e3ffc`
 - snapshot_bundle_hash: `d2fbe18d4c4f26418d869a5e848bd0d948f30f19af5cb133facd188b7a63bf05`
 - soul_commit: `9b9c687c5dd41c44a420f095526229f1732c52ca`
-- soul_text_hash: `de20cf6098a0bae9111e70d9f6b0ba6da58a2c504b99c52715ea5777b40d40a1`
-- resource_registry_commit: `48891fb4d7bed3422933fd79220769c28acb3e61`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `13564`
-- uncertainty_band: `HIGH`
-- evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.0, "NO": 0.0, "YES": 1.0}`
+- resources_commit: `0556cdc0027f1bfe482b5ab4c97c0ad43982a477`
+- core_commit: `757110048440f28e590dde6990e43d048d6f68b5`
+- score: `0.5`
+- confidence: `1.0`
 

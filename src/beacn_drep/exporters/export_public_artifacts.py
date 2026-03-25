@@ -156,6 +156,17 @@ def main():
                 "signed": False,
                 "transaction_hash": None,
             },
+            "proof_of_vote": {
+                "vote": decision,
+                "score": r["rationale"].get("score"),
+                "confidence": r["rationale"].get("confidence"),
+                "input_hash": r["rationale"].get("input_hash"),
+                "snapshot_bundle_hash": r["rationale"].get("snapshot_bundle_hash"),
+                "soul_commit": soul_commit,
+                "resources_commit": res_commit,
+                "core_commit": core_commit,
+                "rationale_markdown_path": r["md_path"],
+            },
             "rationale": {
                 "summary": human_summary,
                 "summary_raw": (r["rationale"].get("inferences") or [""])[0],

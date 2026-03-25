@@ -1,11 +1,19 @@
 import csv
 import hashlib
 import json
+from datetime import datetime, timezone
 from pathlib import Path
-from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG
+from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_SECONDS
 from .routing import select_resources
 from .adapters.git_adapter import commit_hash
 from .replay import sha256_file, canonical_json_hash, csv_row_by_action, write_manifest, read_manifest
+
+
+KNOWN_ACTION_TYPES = {
+    "treasurywithdrawals", "parameterchange", "hardforkinitiaton",
+    "hardfork", "infoaction", "newconstitution", "noconfidence",
+    "updatecommittee", "newcommittee",
+}
 
 
 def _sha256_bytes(data: bytes) -> str:
@@ -39,6 +47,51 @@ def _load_soul() -> tuple[str, str]:
     path = SOUL_REPO / "README.md"
     text = path.read_text(encoding="utf-8")
     return text, _sha256_bytes(text.encode("utf-8"))
+
+
+def _check_freshness() -> dict:
+    manifest_path = RESOURCES_REPO / "data" / "input" / "governance" / "governance_export_manifest.json"
+    if not manifest_path.exists():
+        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "no manifest found"}
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    gen_str = manifest.get("generated_at_utc", "")
+    if not gen_str:
+        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "no timestamp in manifest"}
+
+    try:
+        gen_time = datetime.fromisoformat(gen_str)
+        now = datetime.now(timezone.utc)
+        age_seconds = int((now - gen_time).total_seconds())
+    except Exception:
+        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "unparseable timestamp"}
+
+    return {
+        "snapshot_age_seconds": age_seconds,
+        "max_allowed_seconds": MAX_STALE_SECONDS,
+        "is_stale": age_seconds > MAX_STALE_SECONDS,
+        "snapshot_time": gen_str,
+    }
+
+
+def _check_missing_evidence(action: dict) -> list[str]:
+    missing = []
+    action_type = (action.get("action_type") or "").lower()
+
+    if not action.get("anchor_url"):
+        missing.append("anchor_url is empty — no proposal metadata link available")
+    if not action.get("anchor_hash"):
+        missing.append("anchor_hash is empty — proposal integrity cannot be verified")
+
+    if "treasury" in action_type:
+        amt = action.get("treasury_amount_lovelace", "")
+        if not amt or amt == "0" or amt == "":
+            missing.append("treasury_amount_lovelace is missing for a treasury withdrawal")
+
+    if not action.get("proposer_address"):
+        missing.append("proposer_address is empty — cannot assess proposer identity")
+
+    return missing
 
 
 def _resource_snapshot_entry(resource_row: dict, action_id: str) -> dict | None:
@@ -83,19 +136,59 @@ def _to_float(v: str | None) -> float:
         return 0.0
 
 
-def _score_action(action: dict, flags: list[dict]) -> dict:
+def _score_action(action: dict, flags: list[dict], freshness: dict, missing_evidence: list[str]) -> dict:
     action_type = (action.get("action_type") or "").lower()
     flag_score = _to_float(action.get("flag_score"))
     drep_yes = _to_float(action.get("drep_yes_pct"))
     drep_no = _to_float(action.get("drep_no_pct"))
     drep_abstain = _to_float(action.get("drep_abstain_pct"))
 
-    score = 0.0
     facts = []
     inf = []
     unc = []
 
-    # conservative doctrine-aligned rule set
+    # Freshness gate: stale data → forced ABSTAIN
+    if freshness.get("is_stale"):
+        age = freshness.get("snapshot_age_seconds", -1)
+        reason = freshness.get("reason", f"data is {age}s old, max allowed is {freshness.get('max_allowed_seconds')}s")
+        return {
+            "recommendation": "ABSTAIN",
+            "score": 0.0,
+            "confidence": 0.0,
+            "facts": [f"Data freshness check failed: {reason}"],
+            "inferences": ["Cannot produce reliable recommendation with stale data."],
+            "uncertainty": ["All scoring suspended until fresh data is available."],
+            "missing_evidence": [],
+        }
+
+    # Unknown action type → ABSTAIN
+    action_type_normalized = action_type.replace("_", "").replace("-", "").replace(" ", "")
+    if action_type_normalized and action_type_normalized not in KNOWN_ACTION_TYPES:
+        return {
+            "recommendation": "ABSTAIN",
+            "score": 0.0,
+            "confidence": 0.1,
+            "facts": [f"Action type '{action.get('action_type')}' is not in the known classification set."],
+            "inferences": ["Cannot score an action type with no established rubric."],
+            "uncertainty": ["This may be a new governance action type requiring doctrine update."],
+            "missing_evidence": [f"No scoring rubric exists for action type: {action.get('action_type')}"],
+        }
+
+    # Missing evidence gate → NEEDS_MORE_INFO
+    if missing_evidence:
+        return {
+            "recommendation": "NEEDS_MORE_INFO",
+            "score": 0.0,
+            "confidence": 0.1,
+            "facts": ["Critical evidence fields are missing for this action."],
+            "inferences": ["Cannot produce a responsible recommendation without baseline evidence."],
+            "uncertainty": [f"Missing: {item}" for item in missing_evidence],
+            "missing_evidence": missing_evidence,
+        }
+
+    score = 0.0
+
+    # Conservative doctrine-aligned rule set
     if "treasury" in action_type:
         score -= 0.20
         facts.append("Treasury withdrawal actions require elevated scrutiny.")
@@ -117,7 +210,7 @@ def _score_action(action: dict, flags: list[dict]) -> dict:
     else:
         unc.append("No DRep distribution available.")
 
-    # recommendation thresholds
+    # Recommendation thresholds
     if flag_score >= 8:
         rec = "ABSTAIN"
         unc.append("High risk flags triggered conservative abstain.")
@@ -136,12 +229,13 @@ def _score_action(action: dict, flags: list[dict]) -> dict:
         "facts": facts or ["Deterministic rule set applied."],
         "inferences": inf or ["No additional inference."],
         "uncertainty": unc or ["Rule-based system; does not infer unstated intent."],
+        "missing_evidence": [],
     }
 
 
 def run_once(action_id: str | None = None) -> dict:
     actions = _load_actions()
-    action = next((a for a in actions if a["action_id"] == action_id), actions[0])
+    action = next((a for a in actions if a["action_id"] == action_id), actions[0]) if action_id else actions[0]
     flags_by_action = _load_flags()
 
     raw_bytes = json.dumps(action, sort_keys=True).encode("utf-8")
@@ -170,7 +264,9 @@ def run_once(action_id: str | None = None) -> dict:
         "resource_registry_commit": resources_commit,
     })
 
-    score_obj = _score_action(action, flags_by_action.get(action["action_id"], []))
+    freshness = _check_freshness()
+    missing_evidence = _check_missing_evidence(action)
+    score_obj = _score_action(action, flags_by_action.get(action["action_id"], []), freshness, missing_evidence)
 
     rationale = {
         "action_id": action["action_id"],
@@ -181,12 +277,14 @@ def run_once(action_id: str | None = None) -> dict:
         "facts": score_obj["facts"],
         "inferences": score_obj["inferences"],
         "uncertainty": score_obj["uncertainty"],
+        "missing_evidence": score_obj.get("missing_evidence", []),
         "input_hash": input_hash,
         "snapshot_bundle_hash": snapshot_bundle_hash,
         "soul_commit": soul_commit,
         "soul_text_hash": soul_text_hash,
         "resource_registry_commit": resources_commit,
         "resources_used": resources_used,
+        "freshness": freshness,
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -208,6 +306,15 @@ def run_once(action_id: str | None = None) -> dict:
     }
 
     (out_dir / "rationale.json").write_text(json.dumps(rationale, indent=2) + "\n", encoding="utf-8")
+
+    missing_section = ""
+    if score_obj.get("missing_evidence"):
+        missing_section = "\n## Missing Evidence\n" + "\n".join(f"- {x}" for x in score_obj["missing_evidence"]) + "\n"
+
+    freshness_note = ""
+    if freshness.get("is_stale"):
+        freshness_note = f"\n- **DATA STALE**: {freshness.get('reason', 'age exceeded threshold')}\n"
+
     (out_dir / "rationale.md").write_text(
         "\n".join([
             f"# Rationale: {action['action_id']}",
@@ -222,7 +329,7 @@ def run_once(action_id: str | None = None) -> dict:
             "",
             "## Uncertainty",
             *[f"- {x}" for x in score_obj["uncertainty"]],
-            "",
+            missing_section,
             "## Reproducibility",
             f"- input_hash: `{input_hash}`",
             f"- snapshot_bundle_hash: `{snapshot_bundle_hash}`",
@@ -230,6 +337,8 @@ def run_once(action_id: str | None = None) -> dict:
             f"- soul_text_hash: `{soul_text_hash}`",
             f"- resource_registry_commit: `{resources_commit}`",
             f"- resources_used: `{', '.join(resources_used)}`",
+            f"- snapshot_age_seconds: `{freshness.get('snapshot_age_seconds', 'unknown')}`",
+            freshness_note,
         ]) + "\n",
         encoding="utf-8",
     )

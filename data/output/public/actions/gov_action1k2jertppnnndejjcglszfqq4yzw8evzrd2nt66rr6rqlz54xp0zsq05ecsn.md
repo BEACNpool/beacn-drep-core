@@ -18,10 +18,10 @@ Vote: YES. For this ParameterChange (ratified), available evidence supports proc
 
 ## Proof of vote
 - input_hash: `e0b6ba40c1b121551d8b217dc16df3e4eb6ccd07fb1a4c1f0680fbe647ac2c33`
-- snapshot_bundle_hash: `01dcbe3399dd6c935ac87500e0a708f6ca214837423f47aedbba0330d3408969`
+- snapshot_bundle_hash: `9099d8c8c15bd21f6756a31e563484b4a945c34249392ac60600179011991288`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `402471b0af34f3dc5c0913bd3120faac3b5a9eb4`
-- core_commit: `2894c46a7a92cd8bfa059aca3bc3176beff56bf2`
+- resources_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
+- core_commit: `3a63fda6b63a5f5c357be3b2fe9ed3d53d925d1e`
 - score: `0.0`
 - confidence: `0.55`
 

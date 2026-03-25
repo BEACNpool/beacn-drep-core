@@ -19,10 +19,10 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 
 ## Proof of vote
 - input_hash: `712dc7662bc811d6b3f7d64197ea4a03f8be473210c124da9827dfa1cf0efb74`
-- snapshot_bundle_hash: `f8e505af768b94061891d34248534b87cb83308ac9322f4fb24715bc4e6ef364`
+- snapshot_bundle_hash: `7137efd1b7c826ae8cece8b589214f5122363d9e8fca02f31ef4f5a570f4c8dc`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `402471b0af34f3dc5c0913bd3120faac3b5a9eb4`
-- core_commit: `2894c46a7a92cd8bfa059aca3bc3176beff56bf2`
+- resources_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
+- core_commit: `3a63fda6b63a5f5c357be3b2fe9ed3d53d925d1e`
 - score: `0.35`
 - confidence: `0.87`
 

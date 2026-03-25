@@ -1,30 +1,29 @@
 {
   "action_id": "gov_action1q0m8z7glm9cprucwf44hdjdfra8khnakpm3hu5ueh929hvljw4aqqzuxfxz",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NEEDS_MORE_INFO",
+  "recommendation": "YES",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
-  "score": 0.0,
-  "confidence": 0.2,
-  "readiness_score": null,
+  "needs_more_info_reason_code": null,
+  "score": 0.1667,
+  "confidence": 0.6567,
+  "readiness_score": 0.0,
   "facts": [
-    "Treasury actions are high-impact and require a completed deep research dossier."
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (7), reducing confidence."
   ],
   "inferences": [
-    "Directional voting is blocked until dossier quality gates pass."
+    "Network DRep distribution used as one signal, not authority."
   ],
   "uncertainty": [
-    "Dossier completeness not confirmed for this treasury proposal."
+    "Rule-based system; does not infer unstated intent."
   ],
-  "missing_evidence": [
-    "Deep research dossier is required for treasury actions before directional voting.",
-    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
-  ],
+  "missing_evidence": [],
   "input_hash": "6d9cf4d030a1d6ec51847afff8258893daa5b9a1e429d874098c19d8ebc9b014",
-  "snapshot_bundle_hash": "e3524b0c902c989abddf2b54b7d8809fa760e315e05c9a5e2371cf0a01a5b056",
+  "snapshot_bundle_hash": "9e7b66209c441933035e7e79ee6f4b82c0d540a75a2b83631402cf7be1f765b6",
   "soul_commit": "ffdf6a8b929dfcd03eb707690676432e6d843bca",
   "soul_text_hash": "6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6",
-  "resource_registry_commit": "402471b0af34f3dc5c0913bd3120faac3b5a9eb4",
+  "resource_registry_commit": "0efd705caf8eaa0c5c7177737c2c58071d4f4563",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -39,17 +38,18 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 28222,
-    "max_allowed_seconds": 31536000,
+    "snapshot_age_seconds": 9,
+    "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T13:31:10.615500+00:00"
+    "snapshot_time": "2026-03-25T21:25:11.050349Z",
+    "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.315,
-    "NO": 0.315,
-    "ABSTAIN": 0.37
+    "YES": 0.6709,
+    "NO": 0.0912,
+    "ABSTAIN": 0.2379
   },
-  "uncertainty_band": "LOW",
+  "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
   "intelligence_profile": "deterministic-v1",
   "missing_evidence_count": 0

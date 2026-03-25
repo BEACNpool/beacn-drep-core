@@ -85,31 +85,51 @@ def _yn(v: str | None) -> bool | None:
 
 
 def _check_freshness() -> dict:
+    """Freshness check using best available snapshot timestamp.
+
+    Preference order: manifest generated_at_utc, then governance CSV mtime, then
+    decision-support dossier mtime. This prevents false staleness when datasets
+    are intentionally updated without re-exporting the manifest.
+    """
+    candidates: list[tuple[str, datetime]] = []
+
     manifest_path = RESOURCES_REPO / "data" / "input" / "governance" / "governance_export_manifest.json"
-    if not manifest_path.exists():
-        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "no manifest found"}
+    if manifest_path.exists():
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            gen_str = manifest.get("generated_at_utc", "")
+            if gen_str:
+                normalized = gen_str.replace("Z", "+00:00") if gen_str.endswith("Z") else gen_str
+                gen_time = datetime.fromisoformat(normalized)
+                if gen_time.tzinfo is None:
+                    gen_time = gen_time.replace(tzinfo=timezone.utc)
+                candidates.append(("manifest", gen_time))
+        except Exception:
+            pass
 
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    gen_str = manifest.get("generated_at_utc", "")
-    if not gen_str:
-        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "no timestamp in manifest"}
+    for name, p in [
+        ("governance_actions_all.csv", RESOURCES_REPO / "data" / "input" / "governance" / "governance_actions_all.csv"),
+        ("deep_research_dossiers.csv", RESOURCES_REPO / "data" / "input" / "governance" / "decision_support" / "deep_research_dossiers.csv"),
+    ]:
+        if p.exists():
+            try:
+                mt = datetime.fromtimestamp(p.stat().st_mtime, tz=timezone.utc)
+                candidates.append((name, mt))
+            except Exception:
+                pass
 
-    try:
-        # Support both ISO '+00:00' and trailing 'Z' forms.
-        normalized = gen_str.replace("Z", "+00:00") if gen_str.endswith("Z") else gen_str
-        gen_time = datetime.fromisoformat(normalized)
-        if gen_time.tzinfo is None:
-            gen_time = gen_time.replace(tzinfo=timezone.utc)
-        now = datetime.now(timezone.utc)
-        age_seconds = int((now - gen_time).total_seconds())
-    except Exception:
-        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "unparseable timestamp"}
+    if not candidates:
+        return {"snapshot_age_seconds": -1, "max_allowed_seconds": MAX_STALE_SECONDS, "is_stale": True, "reason": "no freshness sources found"}
 
+    source, snap_time = max(candidates, key=lambda x: x[1])
+    now = datetime.now(timezone.utc)
+    age_seconds = int((now - snap_time).total_seconds())
     return {
         "snapshot_age_seconds": age_seconds,
         "max_allowed_seconds": MAX_STALE_SECONDS,
         "is_stale": age_seconds > MAX_STALE_SECONDS,
-        "snapshot_time": gen_str,
+        "snapshot_time": snap_time.isoformat().replace("+00:00", "Z"),
+        "freshness_source": source,
     }
 
 

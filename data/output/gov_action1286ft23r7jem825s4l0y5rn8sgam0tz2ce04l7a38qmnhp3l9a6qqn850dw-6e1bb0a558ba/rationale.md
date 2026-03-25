@@ -15,12 +15,12 @@ Score: `-0.3833` | Confidence: `0.9033` | Readiness: `1.0`
 
 ## Reproducibility
 - input_hash: `6e1bb0a558ba183fd2111a4cec492f4021cae258a5c85bd77d62855f4aec39d3`
-- snapshot_bundle_hash: `103d74ebc39505fe70cb23db3d562b0376057320f30d9fcaf1aceb962d1aa9eb`
+- snapshot_bundle_hash: `460eb61146bd8235b0f13adddc945081388891c2aa02902a69b17ea4740beca1`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
 - soul_text_hash: `6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6`
-- resource_registry_commit: `402471b0af34f3dc5c0913bd3120faac3b5a9eb4`
+- resource_registry_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `28223`
+- snapshot_age_seconds: `10`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.1717, "NO": 0.7869, "YES": 0.0415}`

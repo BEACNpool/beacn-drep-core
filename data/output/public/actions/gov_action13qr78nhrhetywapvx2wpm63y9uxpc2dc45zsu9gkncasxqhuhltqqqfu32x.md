@@ -19,10 +19,10 @@ Vote: YES. For this TreasuryWithdrawals (active), available evidence supports pr
 
 ## Proof of vote
 - input_hash: `68d5fc53b7f347106ee22fdaf18c07b472fc5fdb6f05324c91300c58a6c362bf`
-- snapshot_bundle_hash: `b18a3dedbf64919396054590db84165e584100fcba8fa2db0caa1fa9c8ec0e80`
+- snapshot_bundle_hash: `20e6b235fc5b8345108228b6f9ba8afe5aeecc93acc0795a2bf62b35229e79fa`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `402471b0af34f3dc5c0913bd3120faac3b5a9eb4`
-- core_commit: `2894c46a7a92cd8bfa059aca3bc3176beff56bf2`
+- resources_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
+- core_commit: `3a63fda6b63a5f5c357be3b2fe9ed3d53d925d1e`
 - score: `0.0267`
 - confidence: `0.5467`
 

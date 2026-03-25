@@ -19,10 +19,10 @@ Vote: NO. For this HardForkInitiation (ratified), downside risk and/or weak safe
 
 ## Proof of vote
 - input_hash: `db0f1699b3a86db4c0d0a880edcda99fba3634f2d7718041ce39e8b2bc25ffca`
-- snapshot_bundle_hash: `6534e6b822516633e541372c50b38603484283bdc187d2aee1bd8f777acf3d1d`
+- snapshot_bundle_hash: `fa4521fe3fa9c295b9b8ccfb5a71d13ee6a8dd4f0117861c5e4f8e579194d449`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `402471b0af34f3dc5c0913bd3120faac3b5a9eb4`
-- core_commit: `2894c46a7a92cd8bfa059aca3bc3176beff56bf2`
+- resources_commit: `0efd705caf8eaa0c5c7177737c2c58071d4f4563`
+- core_commit: `3a63fda6b63a5f5c357be3b2fe9ed3d53d925d1e`
 - score: `-0.4033`
 - confidence: `0.9233`
 

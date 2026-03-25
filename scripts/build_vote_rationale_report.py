@@ -20,9 +20,10 @@ def load_latest_by_action():
         aid = j.get("action_id")
         if not aid:
             continue
+        mtime = p.stat().st_mtime
         prev = by_action.get(aid)
-        if not prev or d.name > prev["run_id"]:
-            by_action[aid] = {"run_id": d.name, "rationale": j}
+        if not prev or mtime > prev["mtime"]:
+            by_action[aid] = {"run_id": d.name, "rationale": j, "mtime": mtime}
     return by_action
 
 

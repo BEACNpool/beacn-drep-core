@@ -1,6 +1,6 @@
 # Rationale: gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw
-Recommendation: **ABSTAIN**
-Score: `-0.3833` | Confidence: `0.9033` | Readiness: `0.35`
+Recommendation: **NO**
+Score: `-0.3833` | Confidence: `0.9033` | Readiness: `1.0`
 
 ## Facts
 - Protocol parameter changes carry system-wide risk.
@@ -12,17 +12,16 @@ Score: `-0.3833` | Confidence: `0.9033` | Readiness: `0.35`
 ## Uncertainty
 - Anchor document is not yet pinned locally for this action.
 - No DRep distribution available.
-- High risk flags triggered conservative abstain.
 
 ## Reproducibility
 - input_hash: `6e1bb0a558ba183fd2111a4cec492f4021cae258a5c85bd77d62855f4aec39d3`
-- snapshot_bundle_hash: `faabb8a4b9f45fe123d43b04799a08ccb35614272a71c67079bfa6d4079449d0`
+- snapshot_bundle_hash: `409029360bf4e19d3c9354e4921488dfc581535d9ba2adbb64cbeb13518a55e1`
 - soul_commit: `9b9c687c5dd41c44a420f095526229f1732c52ca`
 - soul_text_hash: `de20cf6098a0bae9111e70d9f6b0ba6da58a2c504b99c52715ea5777b40d40a1`
-- resource_registry_commit: `96cd51ab273617dd324fb6f28da7d42049f59cf1`
+- resource_registry_commit: `69d5f23a15176fd44a38da60cd2e64f10fed71ec`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `13000`
+- snapshot_age_seconds: `13222`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.5353, "YES": 0.0707}`
+- decision_probs: `{"ABSTAIN": 0.1045, "NO": 0.791, "YES": 0.1045}`
 

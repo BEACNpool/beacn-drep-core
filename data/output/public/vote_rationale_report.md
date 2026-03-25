@@ -1,6 +1,6 @@
 # Vote Rationale Simulation Report
 
-Generated: `2026-03-25T17:07:50Z`
+Generated: `2026-03-25T17:11:32Z`
 Total actions: `95`
 
 ## ga_0001
@@ -38,23 +38,23 @@ Total actions: `95`
 
 ## gov_action10ueqgzwenxr39le68n0se9peu92r7gm2846xwehh3u0ahc0qd0uqqyljxu5
 - type: `InfoAction`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `NO`
+- abstain_reason_code: `None`
 - score/confidence: `-0.0233` / `0.5433`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.3172, "YES": 0.2889}`
+- decision_probs: `{"ABSTAIN": 0.3069, "NO": 0.3862, "YES": 0.3069}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
 ## gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw
 - type: `ParameterChange`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `NO`
+- abstain_reason_code: `None`
 - score/confidence: `-0.3833` / `0.9033`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.5353, "YES": 0.0707}`
+- decision_probs: `{"ABSTAIN": 0.1045, "NO": 0.791, "YES": 0.1045}`
 - rationale_summary: No additional inference.
 - missing_evidence_count: `0`
 
@@ -555,12 +555,12 @@ Total actions: `95`
 
 ## gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry
 - type: `InfoAction`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.1167` / `0.6367`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.2323, "YES": 0.3738}`
+- decision_probs: `{"ABSTAIN": 0.2771, "NO": 0.2771, "YES": 0.4458}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -654,12 +654,12 @@ Total actions: `95`
 
 ## gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8
 - type: `NewCommittee`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.1667` / `0.6867`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.202, "YES": 0.4041}`
+- decision_probs: `{"ABSTAIN": 0.25, "NO": 0.25, "YES": 0.5}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -720,12 +720,12 @@ Total actions: `95`
 
 ## gov_action1fpqwxp2kxvnntr8hpkh9q9djm78ccdww7qlhg5safugh4stmcwzqql5lauu
 - type: `InfoAction`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `NO`
+- abstain_reason_code: `None`
 - score/confidence: `-0.7333` / `1.0`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.6061, "YES": 0.0}`
+- decision_probs: `{"ABSTAIN": 0.0, "NO": 1.0, "YES": 0.0}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -874,12 +874,12 @@ Total actions: `95`
 
 ## gov_action1n5sn54mgf47a7men2ryq6ppx88kta4wvenz2qkl4f9v6ppje8easqxwm88m
 - type: `InfoAction`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `YES`
+- abstain_reason_code: `None`
 - score/confidence: `0.1167` / `0.6367`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.2323, "YES": 0.3738}`
+- decision_probs: `{"ABSTAIN": 0.2771, "NO": 0.2771, "YES": 0.4458}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 
@@ -907,12 +907,12 @@ Total actions: `95`
 
 ## gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525
 - type: `HardForkInitiation`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `NO`
+- abstain_reason_code: `None`
 - score/confidence: `-0.4033` / `0.9233`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.5475, "YES": 0.0586}`
+- decision_probs: `{"ABSTAIN": 0.0882, "NO": 0.8237, "YES": 0.0882}`
 - rationale_summary: No additional inference.
 - missing_evidence_count: `0`
 
@@ -1039,12 +1039,12 @@ Total actions: `95`
 
 ## gov_action1zhuz5djmmmjg8f9s8pe6grfc98xg3szglums8cgm6qwancp4eytqqmpu0pr
 - type: `InfoAction`
-- vote: `ABSTAIN`
-- abstain_reason_code: `RISK_HIGH`
+- vote: `NO`
+- abstain_reason_code: `None`
 - score/confidence: `-0.75` / `1.0`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.3939, "NO": 0.6061, "YES": 0.0}`
+- decision_probs: `{"ABSTAIN": 0.0, "NO": 1.0, "YES": 0.0}`
 - rationale_summary: Network DRep distribution used as one signal, not authority.
 - missing_evidence_count: `0`
 

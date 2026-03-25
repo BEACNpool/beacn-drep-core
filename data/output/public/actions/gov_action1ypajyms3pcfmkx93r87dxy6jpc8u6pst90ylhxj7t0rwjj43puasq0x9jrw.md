@@ -18,10 +18,10 @@ Vote: YES. For this NewConstitution (expired), available evidence supports proce
 
 ## Proof of vote
 - input_hash: `ca302668b3d0fbd0ec2cf73ee69c362fe7a86c8a879be75f81172fc812db80ee`
-- snapshot_bundle_hash: `5d8f356853d9cf3d1cfb8f7a44feaad35ab227d5d01e153b619268585f1d179c`
+- snapshot_bundle_hash: `214a5312d27b95be726c7d4d6ada0defba4c33fb310ac3a9d25bf917316c227c`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `b0d2a9e8195b0116e83e7174c2b84386e40091b0`
-- core_commit: `6529683c650f058b689e6537724a7372b44c9c6e`
+- resources_commit: `0212661ac2e86a7be6ec598e7a7347b34ddcfa7c`
+- core_commit: `adc0c3231e296dfe2ca7856f13e92f4275a42523`
 - score: `0.4`
 - confidence: `0.92`
 

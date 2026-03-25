@@ -1,29 +1,27 @@
 # Rationale: gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqczags6z
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` | Confidence: `0.2` | Readiness: `0`
+Recommendation: **YES**
+Score: `0.2667` | Confidence: `0.7867` | Readiness: `0.0`
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (4), reducing confidence.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Network DRep distribution used as one signal, not authority.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Rule-based system; does not infer unstated intent.
 
 ## Reproducibility
 - input_hash: `f43cb2ed1639b64d67cd6ff94aeafc5e969a2e88a6146ecae01ebc654d355999`
-- snapshot_bundle_hash: `d23b5eeb84724d255e6cac6700d15333494a13324969e1a00cbfc37957f06e56`
+- snapshot_bundle_hash: `fdd67fc94b7afde9d403e875041025abf24b765281f336dd50711f87ab46d43c`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
 - soul_text_hash: `6570a1362496b1a18e9a68c9bf22e291761a2904be70a21d3d223c36e68b93f6`
-- resource_registry_commit: `b0d2a9e8195b0116e83e7174c2b84386e40091b0`
+- resource_registry_commit: `0212661ac2e86a7be6ec598e7a7347b34ddcfa7c`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `11`
-- uncertainty_band: `LOW`
+- snapshot_age_seconds: `13`
+- uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- decision_probs: `{"ABSTAIN": 0.2062, "NO": 0.0465, "YES": 0.7473}`
 

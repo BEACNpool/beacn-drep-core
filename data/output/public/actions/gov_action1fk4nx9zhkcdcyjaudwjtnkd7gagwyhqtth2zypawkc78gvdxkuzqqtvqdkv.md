@@ -18,10 +18,10 @@ Vote: YES. For this NewCommittee (ratified), available evidence supports proceed
 
 ## Proof of vote
 - input_hash: `21ed813dccbdb5cb503fad4efab2a54e62d240340b1c4c06d133a71ef76b96f2`
-- snapshot_bundle_hash: `5f5b668076b8fb2e33fee99316175e605910f9c97349d2f80e2c2064161209c2`
+- snapshot_bundle_hash: `5de0b64e89dfe3c7b84237fd36955d6f2d8f0c83ba57a73013fec72397e8bab6`
 - soul_commit: `ffdf6a8b929dfcd03eb707690676432e6d843bca`
-- resources_commit: `b0d2a9e8195b0116e83e7174c2b84386e40091b0`
-- core_commit: `6529683c650f058b689e6537724a7372b44c9c6e`
+- resources_commit: `0212661ac2e86a7be6ec598e7a7347b34ddcfa7c`
+- core_commit: `adc0c3231e296dfe2ca7856f13e92f4275a42523`
 - score: `0.4`
 - confidence: `0.92`
 

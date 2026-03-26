@@ -159,6 +159,59 @@ def _load_rationales_latest():
     return by_action
 
 
+def _top_fixes(action_row: dict, r: dict) -> list[str]:
+    fixes: list[str] = []
+    action_type = (action_row.get("action_type") or r.get("action_type") or "").lower()
+
+    # Direct missing-evidence-driven fixes first.
+    for m in (r.get("missing_evidence") or []):
+        if len(fixes) >= 3:
+            break
+        fixes.append(f"Provide: {m}")
+
+    facts = " ".join((r.get("facts") or [])).lower()
+    unc = " ".join((r.get("uncertainty") or [])).lower()
+
+    if "treasury" in action_type:
+        candidates = [
+            "Add line-item budget with milestone-gated disbursement and objective completion checks.",
+            "Document downside risks, mitigations, and what gets cut first if delivery slips.",
+            "Show sustainability path and explain why spend is justified under current treasury pressure.",
+        ]
+    elif "parameter" in action_type:
+        candidates = [
+            "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
+            "Add rollback/containment plan and explicit halt criteria.",
+            "Provide stronger evidence that expected benefits outweigh system-wide risk.",
+        ]
+    elif "hardfork" in action_type:
+        candidates = [
+            "Provide migration readiness evidence across tooling/wallet/exchange dependencies.",
+            "Publish rollback/contingency plan and incident response playbook.",
+            "Define objective go/no-go criteria and post-upgrade validation checks.",
+        ]
+    else:
+        candidates = [
+            "Clarify governance intent and expected measurable outcome.",
+            "Map each major claim to primary receipts and stable source links.",
+            "Address prior NO rationale points directly with concrete revisions.",
+        ]
+
+    # Context-sensitive reinforcement.
+    if "anchor" in unc or "anchor" in facts:
+        candidates.insert(0, "Use stable, reproducible anchor links (commit-pinned when possible).")
+    if "no drep distribution" in unc:
+        candidates.append("Include broader governance context so directional confidence does not rely on missing distribution signals.")
+
+    for c in candidates:
+        if len(fixes) >= 3:
+            break
+        if c not in fixes:
+            fixes.append(c)
+
+    return fixes[:3]
+
+
 def _human_summary(r: dict, action_row: dict) -> str:
     decision = (r.get("recommendation") or "ABSTAIN").upper()
     action_type = action_row.get("action_type") or r.get("action_type") or "governance action"
@@ -262,12 +315,14 @@ def main():
         items.append(item)
 
         human_summary = _human_summary(r["rationale"], a)
+        top_fixes = _top_fixes(a, r["rationale"])
         rd = {
             "action_id": aid,
             "title": title,
             "decision": decision,
             "summary": human_summary,
             "summary_raw": (r["rationale"].get("inferences") or [""])[0],
+            "top_fixes": top_fixes,
             "published_at": a.get("last_updated", ""),
         }
         rationale_items.append(rd)
@@ -302,6 +357,7 @@ def main():
             "rationale": {
                 "summary": human_summary,
                 "summary_raw": (r["rationale"].get("inferences") or [""])[0],
+                "top_fixes": top_fixes,
                 "markdown_path": r["md_path"],
                 "missing_evidence": r["rationale"].get("missing_evidence", []),
             },
@@ -345,6 +401,9 @@ def main():
             "",
             "## Remaining uncertainty",
             *(f"- {x}" for x in (r["rationale"].get("uncertainty") or ["No material uncertainty listed."])),
+            "",
+            "## Top 3 fixes to improve next submission",
+            *[f"- {x}" for x in top_fixes],
             "",
             "## Proof of vote",
             f"- input_hash: `{r['rationale'].get('input_hash', '')}`",

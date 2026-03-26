@@ -25,3 +25,11 @@ Public operating model: `../beacn-drep-web/docs/OPERATING_MODEL.md`.
 PYTHONPATH=src python3 -m beacn_drep.cli run-once
 PYTHONPATH=src python3 -m beacn_drep.cli verify-replay --run-id <run_id>
 ```
+
+## Scoring transparency
+- Canonical weights are loaded from `../beacn-drep-soul/scoring_weights.json`.
+- Core fails closed if that file is missing/invalid.
+- Weight changes are doctrine changes and must be changeloged in soul.
+
+## Conservative evidence gate
+- Missing baseline evidence (including missing anchor URL/hash) now forces `ABSTAIN` with reason code `MISSING_BASELINE_EVIDENCE`.

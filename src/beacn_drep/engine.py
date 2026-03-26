@@ -105,6 +105,25 @@ def _load_treasury_doctrine() -> dict:
         return {}
 
 
+def _load_scoring_weights() -> dict:
+    p = SOUL_REPO / "scoring_weights.json"
+    if not p.exists():
+        raise RuntimeError(f"Missing required scoring weights file: {p}")
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+    except Exception as e:
+        raise RuntimeError(f"Unable to parse scoring weights file {p}: {e}") from e
+
+    if not isinstance(data, dict):
+        raise RuntimeError("scoring_weights.json must be a JSON object")
+
+    version = data.get("version")
+    weights = data.get("weights")
+    if not version or not isinstance(weights, dict):
+        raise RuntimeError("scoring_weights.json must contain 'version' and object 'weights'")
+    return data
+
+
 def _doctrine_penalty(doctrine: dict, bucket: str, rule_id: str, default: float = 0.0) -> float:
     try:
         rows = doctrine.get("scoring_adjustments", {}).get(bucket, [])
@@ -257,6 +276,7 @@ def _score_action(
     deep_row: dict | None = None,
     treasury_flow: dict | None = None,
     treasury_doctrine: dict | None = None,
+    scoring_weights: dict | None = None,
 ) -> dict:
     action_type = (action.get("action_type") or "").lower()
     flag_score = _to_float(action.get("flag_score"))
@@ -267,6 +287,18 @@ def _score_action(
     facts = []
     inf = []
     unc = []
+
+    sw = (scoring_weights or {}).get("weights", {})
+    w_anchor_present = _to_float(sw.get("anchor_present_bonus", 0.05))
+    w_treasury_base = _to_float(sw.get("treasury_base_penalty", -0.10))
+    w_treasury_flow_sustainable = _to_float(sw.get("treasury_flow_sustainable_bonus", 0.03))
+    w_treasury_flow_stressed = _to_float(sw.get("treasury_flow_stressed_penalty", -0.06))
+    w_treasury_flow_unsustainable = _to_float(sw.get("treasury_flow_unsustainable_penalty", -0.10))
+    w_parameter_base = _to_float(sw.get("parameter_change_base_penalty", -0.05))
+    w_hardfork_base = _to_float(sw.get("hardfork_base_penalty", -0.12))
+    w_flag_divisor = _to_float(sw.get("flag_score_divisor", 30.0)) or 30.0
+    w_flag_penalty_cap = _to_float(sw.get("flag_penalty_cap", 0.35))
+    w_drep_margin_cap = _to_float(sw.get("drep_margin_cap", 0.45))
 
     # Freshness gate: stale data → forced ABSTAIN
     if freshness.get("is_stale"):
@@ -297,10 +329,11 @@ def _score_action(
             "missing_evidence": [f"No scoring rubric exists for action type: {action.get('action_type')}"],
         }
 
-    # Missing evidence gate → NEEDS_MORE_INFO
+    # Missing evidence gate → ABSTAIN (conservative default until evidence improves)
     if missing_evidence:
         return {
-            "recommendation": "NEEDS_MORE_INFO",
+            "recommendation": "ABSTAIN",
+            "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
             "score": 0.0,
             "confidence": 0.1,
             "facts": ["Critical evidence fields are missing for this action."],
@@ -331,14 +364,14 @@ def _score_action(
     score = 0.0
 
     if anchor_ok:
-        score += 0.05
+        score += w_anchor_present
         facts.append("Pinned anchor document is available for this action.")
     else:
         unc.append("Anchor document is not yet pinned locally for this action.")
 
     # Conservative doctrine-aligned rule set
     if "treasury" in action_type:
-        score -= 0.10
+        score += w_treasury_base
         facts.append("Treasury withdrawal actions require elevated scrutiny.")
 
         inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
@@ -351,13 +384,13 @@ def _score_action(
 
             # Fee-flow is advisory signal only (not hard gate) until treasury inflow model is fully calibrated.
             if ratio <= sustainable_max:
-                score += 0.03
+                score += w_treasury_flow_sustainable
                 inf.append("Treasury fee-flow signal is in sustainable regime.")
             elif ratio <= hard_no_ratio:
-                score -= 0.06
+                score += w_treasury_flow_stressed
                 unc.append("Treasury fee-flow signal is in stressed regime.")
             else:
-                score -= 0.10
+                score += w_treasury_flow_unsustainable
                 unc.append("Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).")
 
         # Rolling-window concentration checks if NCL annual is provided.
@@ -380,19 +413,19 @@ def _score_action(
             score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "no_milestones", -0.15)
             unc.append("No milestone-gated disbursement documented.")
     if "parameter" in action_type:
-        score -= 0.05
+        score += w_parameter_base
         facts.append("Protocol parameter changes carry system-wide risk.")
     if "hardfork" in action_type:
-        score -= 0.12
+        score += w_hardfork_base
         facts.append("Hard fork actions require strongest evidence quality.")
 
-    score -= min(flag_score / 30.0, 0.35)
+    score -= min(flag_score / w_flag_divisor, w_flag_penalty_cap)
     if flag_score > 0:
         facts.append(f"Flag score present ({int(flag_score)}), reducing confidence.")
 
     if drep_yes + drep_no + drep_abstain > 0:
         margin = (drep_yes - drep_no) / 100.0
-        score += max(min(margin, 0.45), -0.45)
+        score += max(min(margin, w_drep_margin_cap), -w_drep_margin_cap)
         inf.append("Network DRep distribution used as one signal, not authority.")
     else:
         unc.append("No DRep distribution available.")
@@ -421,12 +454,12 @@ def _score_action(
             if _yn(financial_row.get("milestone_payment_gates")) is True:
                 readiness_score += 0.10
             if _yn(financial_row.get("sustainability_path_clear")) is True:
-                readiness_score += 0.05
+                readiness_score += w_anchor_present
         if risk_row:
             if _yn(risk_row.get("mitigation_evidence_present")) is True:
-                readiness_score += 0.05
+                readiness_score += w_anchor_present
             if _yn(risk_row.get("independent_assurance_present")) is True:
-                readiness_score += 0.05
+                readiness_score += w_anchor_present
 
     readiness_score = max(0.0, min(1.0, readiness_score))
 
@@ -600,6 +633,7 @@ def run_once(action_id: str | None = None) -> dict:
     deep_map = _load_decision_support_csv("deep_research_dossiers.csv")
     treasury_flow = _load_treasury_flow()
     treasury_doctrine = _load_treasury_doctrine()
+    scoring_weights = _load_scoring_weights()
 
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
@@ -615,6 +649,7 @@ def run_once(action_id: str | None = None) -> dict:
         deep_map.get(action["action_id"]),
         treasury_flow,
         treasury_doctrine,
+        scoring_weights,
     )
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
@@ -643,6 +678,8 @@ def run_once(action_id: str | None = None) -> dict:
         "evidence_depth_score": intelligence["evidence_depth_score"],
         "intelligence_profile": intelligence["intelligence_profile"],
         "missing_evidence_count": intelligence["missing_evidence_count"],
+        "scoring_weights_version": scoring_weights.get("version"),
+        "scoring_weights_hash": _sha256_bytes(json.dumps(scoring_weights, sort_keys=True).encode("utf-8")),
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

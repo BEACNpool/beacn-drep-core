@@ -52,6 +52,42 @@ def _proposal_ext(content_type: str) -> str:
     return ".bin"
 
 
+def _anchor_fetch_stats(anchor_map: dict[str, dict]) -> dict:
+    rows = list(anchor_map.values())
+    total = len(rows)
+    if total == 0:
+        return {
+            "total": 0,
+            "ok": 0,
+            "ok_cached": 0,
+            "failed": 0,
+            "coverage_pct": 0.0,
+            "failure_buckets": {},
+        }
+
+    ok = sum(1 for r in rows if (r.get("fetch_status") or "") in ("ok", "ok_cached"))
+    ok_cached = sum(1 for r in rows if (r.get("fetch_status") or "") == "ok_cached")
+
+    failures: dict[str, int] = {}
+    for r in rows:
+        st = (r.get("fetch_status") or "").strip() or "unknown"
+        if st in ("ok", "ok_cached"):
+            continue
+        code = (r.get("http_status") or "").strip()
+        key = f"{st}:{code}" if code else st
+        failures[key] = failures.get(key, 0) + 1
+
+    failed = total - ok
+    return {
+        "total": total,
+        "ok": ok,
+        "ok_cached": ok_cached,
+        "failed": failed,
+        "coverage_pct": round((ok / total) * 100.0, 2),
+        "failure_buckets": dict(sorted(failures.items(), key=lambda kv: kv[1], reverse=True)),
+    }
+
+
 def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
     if not anchor_row:
         return {"available": False, "reason": "no_anchor_index_row"}
@@ -188,6 +224,7 @@ def main():
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     actions = _load_actions_map()
     anchor_map = _load_anchor_index_map()
+    anchor_stats = _anchor_fetch_stats(anchor_map)
     rat = _load_rationales_latest()
 
     soul_commit = _git_commit(SOUL_REPO)
@@ -335,6 +372,10 @@ def main():
             "votes_cast": len(items),
             "abstentions": abstentions,
             "needs_more_info": needs_info,
+            "anchor_fetch_total": anchor_stats.get("total", 0),
+            "anchor_fetch_ok": anchor_stats.get("ok", 0),
+            "anchor_fetch_failed": anchor_stats.get("failed", 0),
+            "anchor_fetch_coverage_pct": anchor_stats.get("coverage_pct", 0.0),
         },
         "latest_actions": [
             {
@@ -389,6 +430,14 @@ def main():
             "last_scan_at": now,
             "last_decision_at": now,
             "last_publish_at": now,
+            "anchor_fetch": {
+                "total": anchor_stats.get("total", 0),
+                "ok": anchor_stats.get("ok", 0),
+                "ok_cached": anchor_stats.get("ok_cached", 0),
+                "failed": anchor_stats.get("failed", 0),
+                "coverage_pct": anchor_stats.get("coverage_pct", 0.0),
+                "failure_buckets": anchor_stats.get("failure_buckets", {}),
+            },
         },
         "integrity": {
             "hidden_inputs_allowed": False,

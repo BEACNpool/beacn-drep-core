@@ -27,7 +27,7 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - snapshot_bundle_hash: `e654d4ddcfac0180ff800af6c1276fb60610a56c7de5cb857445cce0e86a9729`
 - soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `3d1bc6e2d2d20f17bc3c5a807eb8182993a65f09`
+- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
 - score: `-0.8333`
 - confidence: `1.0`
 

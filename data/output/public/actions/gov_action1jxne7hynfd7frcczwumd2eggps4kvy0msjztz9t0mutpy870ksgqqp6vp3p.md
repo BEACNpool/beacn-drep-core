@@ -26,7 +26,7 @@ Vote: YES. For this NewConstitution (enacted), available evidence supports proce
 - snapshot_bundle_hash: `0b11da0a4a0e9da7a960201dafba9ac2bd061366cda1d0e2d3f85fa08d71300a`
 - soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `3d1bc6e2d2d20f17bc3c5a807eb8182993a65f09`
+- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
 - score: `0.4`
 - confidence: `0.92`
 

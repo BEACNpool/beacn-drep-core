@@ -58,8 +58,8 @@ def main() -> None:
         markdown_path = run_dir / "rationale.md"
         rationale_path = run_dir / "rationale.json"
         rationale = json.loads(rationale_path.read_text(encoding="utf-8"))
-        anchor_url = f"{PUBLIC_BASE}/rationales/{run_dir.name}.md"
         anchor_hash = blake2b_256(markdown_path)
+        anchor_url = f"{PUBLIC_BASE}/r/{anchor_hash[:24]}.md"
         rationale["rationale_anchor_url"] = anchor_url
         rationale["rationale_anchor_hash"] = anchor_hash
         rationale_path.write_text(json.dumps(rationale, indent=2) + "\n", encoding="utf-8")

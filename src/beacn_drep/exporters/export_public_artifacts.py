@@ -275,6 +275,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "actions").mkdir(parents=True, exist_ok=True)
     (OUT / "rationales").mkdir(parents=True, exist_ok=True)
+    (OUT / "r").mkdir(parents=True, exist_ok=True)
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     actions = _load_actions_map()
@@ -300,6 +301,9 @@ def main():
         run_id = r["run_id"]
         shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "rationales" / f"{run_id}.md")
         shutil.copyfile(r["run_dir"] / "input_manifest.json", OUT / "rationales" / f"{run_id}.manifest.json")
+        anchor_hash = r["rationale"].get("rationale_anchor_hash")
+        if anchor_hash:
+            shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "r" / f"{anchor_hash[:24]}.md")
         receipt_path = r["run_dir"] / "vote_receipt.json"
         vote_receipt = json.loads(receipt_path.read_text(encoding="utf-8")) if receipt_path.exists() else {}
         if vote_receipt.get("submitted"):

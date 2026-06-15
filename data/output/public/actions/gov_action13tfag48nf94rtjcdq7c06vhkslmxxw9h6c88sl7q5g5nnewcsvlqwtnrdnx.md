@@ -27,7 +27,7 @@ Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports p
 - snapshot_bundle_hash: `6141e3a28862d40d80ad265ff6a33820cd5571190c39e25ceafb1e1fa6aa28e4`
 - soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `f1c4e3d688a4244d20c4f0440e1f21da03b75dfb`
+- core_commit: `3d1bc6e2d2d20f17bc3c5a807eb8182993a65f09`
 - score: `0.1667`
 - confidence: `0.6867`
 

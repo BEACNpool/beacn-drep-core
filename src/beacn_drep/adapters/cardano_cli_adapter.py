@@ -124,6 +124,20 @@ def _opsbox(args: list[str]) -> str:
     return p.stdout
 
 
+def _transaction_hash(tx_file: Path) -> str:
+    raw = _opsbox([
+        "conway", "transaction", "txid", "--tx-file", str(tx_file),
+    ]).strip()
+    try:
+        decoded = json.loads(raw)
+        tx_hash = decoded.get("txhash", "") if isinstance(decoded, dict) else str(decoded)
+    except json.JSONDecodeError:
+        tx_hash = raw
+    if len(tx_hash) != 64 or any(char not in "0123456789abcdef" for char in tx_hash.lower()):
+        raise RuntimeError(f"unexpected transaction hash output: {raw}")
+    return tx_hash.lower()
+
+
 def _relay_query(args: list[str]) -> str:
     remote = f"{shlex.quote(RELAY_CLI)} {' '.join(shlex.quote(a) for a in args)} --socket-path {shlex.quote(SOCKET)}"
     p = _run(["ssh", RELAY, remote])
@@ -385,9 +399,7 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
              "--signing-key-file", str(DREP_SKEY),
              "--out-file", str(signed)])
     report["signed_tx"] = str(signed)
-    report["transaction_hash"] = _opsbox([
-        "conway", "transaction", "txid", "--tx-file", str(signed),
-    ]).strip()
+    report["transaction_hash"] = _transaction_hash(signed)
 
     # Submit only with explicit live intent AND environment opt-in.
     env_live = os.environ.get("BEACN_VOTING_LIVE") == "1"

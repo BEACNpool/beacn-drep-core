@@ -1,8 +1,8 @@
 {
   "action_id": "gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe",
-  "title": "gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe",
+  "title": "Dingo: a Production-Grade Block Producer in Go by Blink Labs",
   "type": "TreasuryWithdrawals",
-  "status": "active",
+  "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
     "raw_input_hash": "sha256:5faa17728c05528658a4d1f37ac943051a22c1ff448f9a835e593bd9e5687194",
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "NO",
@@ -20,36 +22,43 @@
     "confidence": 0.8033,
     "input_hash": "5faa17728c05528658a4d1f37ac943051a22c1ff448f9a835e593bd9e5687194",
     "snapshot_bundle_hash": "5f9fcdfd87939ce4303f2a33b5fd6a1b539b25b9cb526618a505ab8586bdcdce",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-5faa17728c05/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-5faa17728c05.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 80.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 80.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-5faa17728c05/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Add line-item budget with milestone-gated disbursement and objective completion checks.",
+      "Document downside risks, mitigations, and what gets cut first if delivery slips."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-5faa17728c05.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
     "available": true,
-    "fetch_status": "ok",
+    "fetch_status": "ok_cached",
     "content_type": "application/json",
     "http_status": "200",
     "source_anchor_url": "https://ipfs.io/ipfs/bafkreibeffgc4ow5rxbttesgqqe36copa5rejtsw6b4jruwow2p3wahxtq",
     "anchor_hash": "4e90b2f7bb9044b6dcbe1209bc8aa4573101651468c60ab2c3b73535afa5741d",
     "file_sha256": "24294c2e3add8dc33992468409bf09cf076244ce56f07898d2ceb69fbb00f79c",
     "content_bytes": "27419",
-    "fetched_at_utc": "2026-03-25T16:14:51Z",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
     "download_path": "/proposals/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": \"CIP108:references\",\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\": \"http://xmlns.com/foaf/0.1/name\",\n        \"witness\": {\n          \"@id\": \"CIP100:witness\",\n          \"@context\": {\n            \"witnessAlgorithm\": \"CIP100:witnessAlgorithm\",\n            \"publicKey\": \"CIP100:publicKey\",\n            \"signature\": \"CIP100:signature\"\n          }\n        }\n      }\n    }\n  },\n  \"hashAlgorithm\": \"blake2b-256\",\n  \"authors\": [\n    {\n      \"name\": \"Chris Gianelloni\",\n      \"witness\": {\n        \"witnessAlgorithm\": \"ed25519\",\n        \"publicKey\": \"674e6d0677c0c5184eb1ce097ea722a73ba4c40bed024f6ad9df7fbeb41263f7\",\n "
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

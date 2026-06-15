@@ -1,0 +1,134 @@
+{
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "title": "Reduce the committeeMinSize parameter from 7 to 5",
+  "type": "ParameterChange",
+  "status": "active",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:46b55f7550d56adb4796953891746cb7d7b198b79ae24eba776ccff07a79b9e5",
+    "detected_at": "2026-06-05T21:00:01.749231+00:00"
+  },
+  "decision": {
+    "vote": "NO",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "NO",
+    "score": -0.4362,
+    "confidence": 0.9862,
+    "input_hash": "46b55f7550d56adb4796953891746cb7d7b198b79ae24eba776ccff07a79b9e5",
+    "snapshot_bundle_hash": "148275cf37be5bb47d9f632c073b30d9d6a99ac9033c66e6cd642d4f13e45a1f",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-46b55f7550d5.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-46b55f7550d5.md",
+    "rationale_anchor_hash": "72fb63d78362cb4e5753807984e5c10b02e8f321d52d65f8423599216cfa5afb"
+  },
+  "rationale": {
+    "summary": "Vote: NO. For this ParameterChange (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score -0.44; confidence 98.6%.",
+    "summary_raw": "Network DRep distribution used as one signal, not authority.",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
+      "Add rollback/containment plan and explicit halt criteria."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-46b55f7550d5.md",
+    "missing_evidence": []
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/bafkreidbxerdwxxntmmr6qvjvquyla3qbwhk3flfqjbm3d5lj2ubxfk3aq",
+    "anchor_hash": "8c7c510c1c959d5c587de268350ce9275af45a05f5774c15fd424b924e18e749",
+    "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
+    "content_bytes": "18525",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "download_path": "/proposals/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.4362,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.9862
+  },
+  "freshness": {
+    "snapshot_age_seconds": 209,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-15T15:27:49.748338Z",
+    "freshness_source": "manifest"
+  }
+}

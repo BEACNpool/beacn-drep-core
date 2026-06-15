@@ -1,8 +1,8 @@
 {
   "action_id": "gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83",
-  "title": "gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83",
+  "title": "Increase Transaction and Block Memory Units (Part 1 of 2)",
   "type": "ParameterChange",
-  "status": "active",
+  "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
     "raw_input_hash": "sha256:712dc7662bc811d6b3f7d64197ea4a03f8be473210c124da9827dfa1cf0efb74",
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "YES",
@@ -20,36 +22,43 @@
     "confidence": 0.87,
     "input_hash": "712dc7662bc811d6b3f7d64197ea4a03f8be473210c124da9827dfa1cf0efb74",
     "snapshot_bundle_hash": "2e633c0f4bdfadb897e67e2de1194a78a7630632ab850f71f3a0226e3039ac56",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-712dc7662bc8/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-712dc7662bc8.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.35; confidence 87.0%.",
+    "summary": "Vote: YES. For this ParameterChange (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.35; confidence 87.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-712dc7662bc8/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
+      "Add rollback/containment plan and explicit halt criteria."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-712dc7662bc8.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
     "available": true,
-    "fetch_status": "ok",
+    "fetch_status": "ok_cached",
     "content_type": "application/json",
     "http_status": "200",
     "source_anchor_url": "https://ipfs.io/ipfs/bafkreifwx5z25x6bh5vcwgvzrajy7qlgisukglywjjduwfsrsnp752pqca",
     "anchor_hash": "f7e237031c174ba58190950350cc8c3ed940d4268bcc75e7f29080370ad34a55",
     "file_sha256": "b6bf73aedfc13f6a2b1ab988138fc16644a8a32f164a474b1651935ffee9f010",
     "content_bytes": "17501",
-    "fetched_at_utc": "2026-03-25T16:14:53Z",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
     "download_path": "/proposals/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

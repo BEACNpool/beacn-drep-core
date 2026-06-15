@@ -1,8 +1,8 @@
 {
   "action_id": "gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f",
-  "title": "gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f",
+  "title": "Name Protocol Version 11 hard fork - van Rossem",
   "type": "InfoAction",
-  "status": "active",
+  "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
     "raw_input_hash": "sha256:6f979f1c29d9eb126e514da4b986c49a989ac2a61cbc039daa17d080c956792f",
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "YES",
@@ -20,36 +22,43 @@
     "confidence": 1.0,
     "input_hash": "6f979f1c29d9eb126e514da4b986c49a989ac2a61cbc039daa17d080c956792f",
     "snapshot_bundle_hash": "ab060ea50f322099fe59a024c69ae8cdadbda72a7e7a7f8d7b72dea775b5d5c7",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f-6f979f1c29d9/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f-6f979f1c29d9.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this InfoAction (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.50; confidence 100.0%.",
+    "summary": "Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.50; confidence 100.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f-6f979f1c29d9/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Clarify governance intent and expected measurable outcome.",
+      "Map each major claim to primary receipts and stable source links."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f-6f979f1c29d9.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
     "available": true,
-    "fetch_status": "ok",
+    "fetch_status": "ok_cached",
     "content_type": "application/json",
     "http_status": "200",
     "source_anchor_url": "https://ipfs.io/ipfs/bafkreiaaevieqcufh6or65xtva2r2txy2tre45p4vlesfz5l3l5kpd6djm",
     "anchor_hash": "25dcffe8d87e955b1637272b3650907e2cd9af7c914c1f6600c88ad97adc2469",
     "file_sha256": "002550480a853f9d1f76f3a8351d4ef8d4e24e75fcaac922e7abdafaa78fc34b",
     "content_bytes": "5856",
-    "fetched_at_utc": "2026-03-25T16:14:53Z",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
     "download_path": "/proposals/gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

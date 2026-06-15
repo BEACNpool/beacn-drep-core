@@ -1,6 +1,6 @@
 {
   "action_id": "gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr",
-  "title": "gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr",
+  "title": "DeltaDeFi: Hydra Trading Infrastructure Budget (\u20b31,500,000)",
   "type": "InfoAction",
   "status": "expired",
   "source": {
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "NO",
@@ -20,28 +22,43 @@
     "confidence": 1.0,
     "input_hash": "5e7c06cbcade7c0593f15f2827b2c1af41cd46dc2bd7d7edbe91cfd3d53d20d0",
     "snapshot_bundle_hash": "48fb2620bdbe81220c612f25565af92d3a39352dfacbbb93a16a27765a27db77",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-5e7c06cbcade/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-5e7c06cbcade.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Flag score present (3), reducing confidence. Additional context: Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.55; confidence 100.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-5e7c06cbcade/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Clarify governance intent and expected measurable outcome.",
+      "Map each major claim to primary receipts and stable source links."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-5e7c06cbcade.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
-    "available": false,
-    "fetch_status": "error",
-    "reason": "The read operation timed out"
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/QmP25wNHBBh62eRUBnRbvpXz2DFJ5aQBgbqMq27zpHXNjs",
+    "anchor_hash": "e3c9095166ee0a62a5b251b605f5316e1e585b993fbb9af5dece15893349c387",
+    "file_sha256": "26d260db607e8904cabab8218bd3ec1463e8d82bb9960f47041f2008513fe5d5",
+    "content_bytes": "26085",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "download_path": "/proposals/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr.json",
+    "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

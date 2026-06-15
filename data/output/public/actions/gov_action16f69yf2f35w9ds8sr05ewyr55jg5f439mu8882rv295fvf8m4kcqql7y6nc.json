@@ -1,6 +1,6 @@
 {
   "action_id": "gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc",
-  "title": "gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc",
+  "title": "Constitutional Committee Compensation Epochs 581-653",
   "type": "InfoAction",
   "status": "expired",
   "source": {
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "NO",
@@ -20,28 +22,43 @@
     "confidence": 1.0,
     "input_hash": "8cbe1a171385cd65664134d46063cce4d4462b3e4958725a9a799d6292a4c23d",
     "snapshot_bundle_hash": "dc01772735f41f05c00a004f84ee9bbedea45a61356312937ccbdcac076525da",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc-8cbe1a171385/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc-8cbe1a171385.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Deterministic rule set applied. Additional context: Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.45; confidence 100.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc-8cbe1a171385/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Clarify governance intent and expected measurable outcome.",
+      "Map each major claim to primary receipts and stable source links."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc-8cbe1a171385.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
-    "available": false,
-    "fetch_status": "error",
-    "reason": "The read operation timed out"
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/QmZdZ387ZfcDwQ4YYSPAvWX42gX1w8nGPdhbwk7gxTtNBE",
+    "anchor_hash": "a1eb9dd13a5ca3f009a261ddc07575190f98a42b94d180815fb5f2c0805b907c",
+    "file_sha256": "57f310e6f361456124a554c4eacfbb60062795c3ac4607f2ec2d3bafd1a0e609",
+    "content_bytes": "11203",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "download_path": "/proposals/gov_action16f69yf2f35w9ds8sr05ewyr55jg5f439mu8882rv295fvf8m4kcqql7y6nc.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    }\n  },\n  \"hashAlgorithm\": \"blake2b-256\",\n  \"body\": {\n    \"title\": \"Constitutional Committee Compensation Epochs"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

@@ -1,8 +1,8 @@
 {
   "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg",
-  "title": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg",
+  "title": "Withdraw \u20b35,885,000 for OSC Budget Proposal - Paid Open Source Model...",
   "type": "TreasuryWithdrawals",
-  "status": "ratified",
+  "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
     "raw_input_hash": "sha256:d52de5ced756992af9f0a08b68abe5c79d83caee282b626c07a5b2b03315671c",
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "YES",
@@ -20,36 +22,43 @@
     "confidence": 0.6867,
     "input_hash": "d52de5ced756992af9f0a08b68abe5c79d83caee282b626c07a5b2b03315671c",
     "snapshot_bundle_hash": "af631d2692feb9d80c584c1a9aa2a37c8c759406ee3981b1d9a1a9d7504e25fd",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg-d52de5ced756/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg-d52de5ced756.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (ratified), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.17; confidence 68.7%.",
+    "summary": "Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.17; confidence 68.7%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg-d52de5ced756/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Add line-item budget with milestone-gated disbursement and objective completion checks.",
+      "Document downside risks, mitigations, and what gets cut first if delivery slips."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg-d52de5ced756.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
     "available": true,
-    "fetch_status": "ok",
+    "fetch_status": "ok_cached",
     "content_type": "application/json",
     "http_status": "200",
     "source_anchor_url": "https://ipfs.io/ipfs/bafkreiedjhlwerulq5qg5tku2qqremf2cf2dguxvktttnjddei3fxct37a",
     "anchor_hash": "0865ae8cbb9944db8fe55226ddb81870ef2c437e04ad5f960bf1df6d4248a848",
     "file_sha256": "8349d762468b87606ecd54d4211230ba11743352f554e736a46322365b8a7bf8",
     "content_bytes": "16023",
-    "fetched_at_utc": "2026-03-25T16:16:07Z",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
     "download_path": "/proposals/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqkqx0ecg.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

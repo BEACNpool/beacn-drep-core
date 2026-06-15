@@ -1,6 +1,6 @@
 {
   "action_id": "gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry",
-  "title": "gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry",
+  "title": "2025 Net Change Limit Extension",
   "type": "InfoAction",
   "status": "expired",
   "source": {
@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "YES",
@@ -20,28 +22,43 @@
     "confidence": 0.6367,
     "input_hash": "dceb74cd833641b0a72d636e9c04714259292d6ea5873445adb7440aa3898d75",
     "snapshot_bundle_hash": "b50e9a58225a0205d1a89529fab3dd05741f1ea170d05555521e7ca7950ce79d",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry-dceb74cd8336/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry-dceb74cd8336.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Flag score present (10), reducing confidence. Additional context: Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score 0.12; confidence 63.7%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
-    "markdown_path": "/data/output/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry-dceb74cd8336/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Clarify governance intent and expected measurable outcome.",
+      "Map each major claim to primary receipts and stable source links."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry-dceb74cd8336.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
-    "available": false,
-    "fetch_status": "error",
-    "reason": "The read operation timed out"
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/Qmeme8EWugVPQeVghpqB53nvG5U4VT9zy3Ta545fEJPnqL",
+    "anchor_hash": "25b56befe5ef4e472e3020b81162b4076f4e274f68fcdacb2ec686ca6197771e",
+    "file_sha256": "d92f18838fdd6b1304331f318cac5b8178dc5b216c8df1bf36de2e191427f64d",
+    "content_bytes": "5957",
+    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "download_path": "/proposals/gov_action169kllwhfmp488je5x5rwvufd08p8sztdcf0ghf5sp6ey2gnjdwaqql47xry.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"nam"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

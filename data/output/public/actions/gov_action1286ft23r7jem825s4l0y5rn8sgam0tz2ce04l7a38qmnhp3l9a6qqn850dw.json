@@ -10,9 +10,11 @@
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-03-25T13:00:02.009603+00:00",
+    "published_at": "2026-06-15T15:21:58.675624+00:00",
     "signed": false,
-    "transaction_hash": null
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
   },
   "proof_of_vote": {
     "vote": "NO",
@@ -20,15 +22,22 @@
     "confidence": 0.9033,
     "input_hash": "6e1bb0a558ba183fd2111a4cec492f4021cae258a5c85bd77d62855f4aec39d3",
     "snapshot_bundle_hash": "d6922b2cf10d32a4be5d59a4eac58fb2256e6f83d92eccd630cf7ec6832190d0",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
-    "rationale_markdown_path": "/data/output/gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw-6e1bb0a558ba/rationale.md"
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw-6e1bb0a558ba.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Protocol parameter changes carry system-wide risk. Additional context: Flag score present (10), reducing confidence. Confidence context: score -0.38; confidence 90.3%.",
     "summary_raw": "No additional inference.",
-    "markdown_path": "/data/output/gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw-6e1bb0a558ba/rationale.md",
+    "top_fixes": [
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
+      "Add rollback/containment plan and explicit halt criteria."
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw-6e1bb0a558ba.md",
     "missing_evidence": []
   },
   "proposal_evidence": {
@@ -38,10 +47,10 @@
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "76499340e18af2c68ca97c1226fee68c8d6f3830",
+    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "53fb52dfa1cd3bdd590f3cdba10aff12404c9499",
-    "core_commit": "77f9909ecbc39938c0e43664f96d028207d7d29b",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "f1c4e3d688a4244d20c4f0440e1f21da03b75dfb",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",

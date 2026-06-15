@@ -625,7 +625,10 @@ def run_once(action_id: str | None = None) -> dict:
     })
 
     anchor_index = _load_anchor_index()
-    anchor_ok = (anchor_index.get(action["action_id"], {}).get("fetch_status") == "ok")
+    anchor_ok = (
+        anchor_index.get(action["action_id"], {}).get("fetch_status")
+        in ("ok", "ok_cached")
+    )
 
     readiness_map = _load_decision_support_csv("vote_readiness_matrix.csv")
     financial_map = _load_decision_support_csv("financial_sustainability_profiles.csv")

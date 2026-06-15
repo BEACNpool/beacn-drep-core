@@ -35,7 +35,7 @@ git push origin main
 # Step 3: Run engine
 log "Step 3: Running decision engine..."
 cd "$CORE"
-python3 -m beacn_drep.cli run-all
+python3 -m beacn_drep.cli run-all --status active
 
 # Step 4: Verify replay (spot-check latest 5)
 log "Step 4: Verifying replay..."

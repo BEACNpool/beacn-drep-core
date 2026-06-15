@@ -24,7 +24,7 @@ def _q(conn, sql):
 def _write_csv(path: Path, rows: list[dict], columns: list[str]):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=columns)
+        w = csv.DictWriter(f, fieldnames=columns, lineterminator="\n")
         w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k) for k in columns})
@@ -57,7 +57,10 @@ def main():
           return_address,
           anchor_url,
           anchor_hash,
+          metadata_title,
+          metadata_hash_valid,
           proposer_address,
+          param_changes,
           treasury_amount_lovelace,
           drep_yes_pct,
           drep_no_pct,
@@ -109,7 +112,9 @@ def main():
     actions_cols = [
         "action_id", "tx_hash", "cert_index", "action_type", "status",
         "proposed_epoch", "expiration_epoch", "deposit_lovelace", "return_address",
-        "anchor_url", "anchor_hash", "proposer_address", "treasury_amount_lovelace",
+        "anchor_url", "anchor_hash",
+        "metadata_title", "metadata_hash_valid",
+        "proposer_address", "param_changes", "treasury_amount_lovelace",
         "drep_yes_pct", "drep_no_pct", "drep_abstain_pct",
         "spo_yes_pct", "spo_no_pct", "spo_abstain_pct",
         "cc_yes", "cc_no", "cc_abstain",

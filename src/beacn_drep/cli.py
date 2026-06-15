@@ -42,8 +42,8 @@ def cmd_run_once(action_id: str | None) -> None:
     print(result["run_id"])
 
 
-def cmd_run_all(limit: int | None) -> None:
-    result = run_all(limit=limit)
+def cmd_run_all(limit: int | None, status: str | None) -> None:
+    result = run_all(limit=limit, status=status)
     print(json.dumps(result, indent=2))
 
 
@@ -66,6 +66,7 @@ def main() -> None:
 
     run_all_p = sub.add_parser("run-all")
     run_all_p.add_argument("--limit", type=int, default=None)
+    run_all_p.add_argument("--status", default=None)
 
     pub = sub.add_parser("publish")
     pub.add_argument("--path", default=None)
@@ -79,7 +80,7 @@ def main() -> None:
     elif args.cmd == "run-once":
         cmd_run_once(args.action_id)
     elif args.cmd == "run-all":
-        cmd_run_all(args.limit)
+        cmd_run_all(args.limit, args.status)
     elif args.cmd == "publish":
         cmd_publish(args.path)
     elif args.cmd == "verify-replay":

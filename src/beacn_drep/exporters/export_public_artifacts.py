@@ -94,7 +94,7 @@ def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
 
     fetch_status = anchor_row.get("fetch_status", "")
     rel_path = anchor_row.get("file_path", "")
-    if fetch_status != "ok" or not rel_path:
+    if fetch_status not in ("ok", "ok_cached") or not rel_path:
         return {
             "available": False,
             "fetch_status": fetch_status,
@@ -152,9 +152,10 @@ def _load_rationales_latest():
         if not prev or mtime_ns > prev["mtime_ns"]:
             by_action[aid] = {
                 "run_id": d.name,
+                "run_dir": d,
                 "mtime_ns": mtime_ns,
                 "rationale": j,
-                "md_path": f"/data/output/{d.name}/rationale.md",
+                "md_path": f"/data/output/public/rationales/{d.name}.md",
             }
     return by_action
 
@@ -273,6 +274,7 @@ def _human_summary(r: dict, action_row: dict) -> str:
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "actions").mkdir(parents=True, exist_ok=True)
+    (OUT / "rationales").mkdir(parents=True, exist_ok=True)
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     actions = _load_actions_map()
@@ -288,12 +290,20 @@ def main():
     rationale_items = []
     abstentions = 0
     needs_info = 0
+    votes_cast = 0
 
     for aid, r in rat.items():
         if str(aid).startswith("ga_"):
             continue
         a = actions.get(aid, {})
         decision = r["rationale"].get("recommendation", "ABSTAIN")
+        run_id = r["run_id"]
+        shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "rationales" / f"{run_id}.md")
+        shutil.copyfile(r["run_dir"] / "input_manifest.json", OUT / "rationales" / f"{run_id}.manifest.json")
+        receipt_path = r["run_dir"] / "vote_receipt.json"
+        vote_receipt = json.loads(receipt_path.read_text(encoding="utf-8")) if receipt_path.exists() else {}
+        if vote_receipt.get("submitted"):
+            votes_cast += 1
         if decision == "ABSTAIN":
             abstentions += 1
         if decision == "NEEDS_MORE_INFO":
@@ -340,8 +350,10 @@ def main():
             "decision": {
                 "vote": decision,
                 "published_at": a.get("last_updated", ""),
-                "signed": False,
-                "transaction_hash": None,
+                "signed": bool(vote_receipt.get("signed_tx")),
+                "submitted": bool(vote_receipt.get("submitted")),
+                "transaction_hash": vote_receipt.get("transaction_hash"),
+                "submitted_at": vote_receipt.get("submitted_at"),
             },
             "proof_of_vote": {
                 "vote": decision,
@@ -353,6 +365,8 @@ def main():
                 "resources_commit": res_commit,
                 "core_commit": core_commit,
                 "rationale_markdown_path": r["md_path"],
+                "rationale_anchor_url": r["rationale"].get("rationale_anchor_url"),
+                "rationale_anchor_hash": r["rationale"].get("rationale_anchor_hash"),
             },
             "rationale": {
                 "summary": human_summary,
@@ -428,7 +442,7 @@ def main():
         "stats": {
             "actions_seen": len(actions),
             "decisions_published": len(items),
-            "votes_cast": len(items),
+            "votes_cast": votes_cast,
             "abstentions": abstentions,
             "needs_more_info": needs_info,
             "anchor_fetch_total": anchor_stats.get("total", 0),

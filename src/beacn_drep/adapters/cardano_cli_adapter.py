@@ -26,6 +26,7 @@ import subprocess
 import tempfile
 import urllib.request
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 
 # --- config (env-overridable; defaults match the wallet helper) --------------
@@ -384,12 +385,18 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
              "--signing-key-file", str(DREP_SKEY),
              "--out-file", str(signed)])
     report["signed_tx"] = str(signed)
+    report["transaction_hash"] = _opsbox([
+        "conway", "transaction", "txid", "--tx-file", str(signed),
+    ]).strip()
 
     # Submit only with explicit live intent AND environment opt-in.
     env_live = os.environ.get("BEACN_VOTING_LIVE") == "1"
     if not (live and env_live):
         report.update(status="shadow_signed",
                       note="SHADOW: signed but not submitted (need live=True and BEACN_VOTING_LIVE=1)")
+        (run_dir / "shadow_report.json").write_text(
+            json.dumps(report, indent=2) + "\n", encoding="utf-8"
+        )
         return report
 
     try:
@@ -403,7 +410,14 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
             return report
     finally:
         _relay_cleanup(rwork)
-    report.update(status="submitted", submitted=True)
+    report.update(
+        status="submitted",
+        submitted=True,
+        submitted_at=datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+    )
+    (run_dir / "vote_receipt.json").write_text(
+        json.dumps(report, indent=2) + "\n", encoding="utf-8"
+    )
     return report
 
 

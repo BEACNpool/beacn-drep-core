@@ -761,12 +761,17 @@ def run_once(action_id: str | None = None) -> dict:
     return {"run_id": run_id, "output_dir": str(out_dir)}
 
 
-def run_all(limit: int | None = None) -> dict:
+def run_all(limit: int | None = None, status: str | None = None) -> dict:
     actions = _load_actions()
+    if status:
+        actions = [
+            action for action in actions
+            if (action.get("status") or "").lower() == status.lower()
+        ]
     run_ids = []
     for a in actions[:limit] if limit else actions:
         run_ids.append(run_once(a["action_id"])["run_id"])
-    return {"runs": len(run_ids), "run_ids": run_ids}
+    return {"runs": len(run_ids), "status_filter": status, "run_ids": run_ids}
 
 
 def verify_replay(run_id: str) -> dict:

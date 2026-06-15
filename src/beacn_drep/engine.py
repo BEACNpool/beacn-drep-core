@@ -264,12 +264,241 @@ def _to_float(v: str | None) -> float:
         return 0.0
 
 
+def _truth_label(v: str | None) -> str:
+    b = _yn(v)
+    if b is True:
+        return "confirmed"
+    if b is False:
+        return "not confirmed"
+    return "unknown"
+
+
+def _short_amount(lovelace: str | None) -> str:
+    value = _to_float(lovelace)
+    if value <= 0:
+        return "not specified"
+    ada = value / 1_000_000
+    if ada >= 1_000_000:
+        return f"{ada / 1_000_000:.2f}M ADA"
+    if ada >= 1_000:
+        return f"{ada / 1_000:.1f}k ADA"
+    return f"{ada:.0f} ADA"
+
+
+def _missing_deep_research(deep_row: dict | None) -> list[str]:
+    required = [
+        ("proposal_summary_complete", "complete proposal summary"),
+        ("budget_analysis_complete", "budget analysis"),
+        ("feasibility_assessment_complete", "feasibility assessment"),
+        ("risk_analysis_complete", "risk analysis"),
+        ("alternatives_analysis_complete", "alternatives analysis"),
+        ("failure_mode_analysis_complete", "failure-mode analysis"),
+        ("community_impact_complete", "community impact analysis"),
+    ]
+    if not deep_row:
+        return [label for _, label in required]
+    return [label for key, label in required if _yn(deep_row.get(key)) is not True]
+
+
+def _assessment_section(title: str, status: str, findings: list[str] | None = None, missing: list[str] | None = None, conclusion: str = "") -> dict:
+    return {
+        "title": title,
+        "status": status,
+        "findings": [x for x in (findings or []) if x],
+        "missing": [x for x in (missing or []) if x],
+        "conclusion": conclusion,
+    }
+
+
+def _build_assessment(
+    action: dict,
+    freshness: dict,
+    missing_evidence: list[str],
+    anchor_ok: bool,
+    readiness_row: dict | None,
+    financial_row: dict | None,
+    risk_row: dict | None,
+    deep_row: dict | None,
+    treasury_flow: dict | None,
+    treasury_doctrine: dict | None,
+    flags: list[dict],
+) -> dict:
+    action_type = action.get("action_type", "")
+    is_treasury = "treasury" in action_type.lower()
+    deep_missing = _missing_deep_research(deep_row) if is_treasury else []
+    deep_complete = _yn((deep_row or {}).get("dossier_complete")) is True
+    hard_blocker = _yn((readiness_row or {}).get("hard_blocker")) is True
+    risk_blocker = _yn((risk_row or {}).get("risk_blocker")) is True
+    financial_blocker = _yn((financial_row or {}).get("financial_blocker")) is True
+
+    sections = []
+
+    sections.append(_assessment_section(
+        "Intake",
+        "complete" if not missing_evidence else "blocked",
+        [
+            f"Action type: {action_type or 'unknown'}",
+            f"Status: {action.get('status') or 'unknown'}",
+            f"Proposed epoch: {action.get('proposed_epoch') or 'unknown'}",
+            f"Expires after epoch: {action.get('expires_after_epoch') or 'unknown'}",
+            f"Treasury request: {_short_amount(action.get('treasury_amount_lovelace'))}",
+            f"Anchor pinned locally: {'yes' if anchor_ok else 'no'}",
+        ],
+        missing_evidence,
+        "Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    ))
+
+    sections.append(_assessment_section(
+        "Claims and evidence",
+        "complete" if anchor_ok and not freshness.get("is_stale") else "thin",
+        [
+            f"Proposal anchor: {'pinned and replayable' if anchor_ok else 'not pinned'}",
+            f"Snapshot freshness source: {freshness.get('freshness_source') or 'unknown'}",
+            f"Snapshot age seconds: {freshness.get('snapshot_age_seconds', 'unknown')}",
+            f"Deep research dossier: {'complete' if deep_complete else ('required' if is_treasury else 'not required')}",
+            f"Analyst notes: {(deep_row or {}).get('analyst_notes') or 'none'}",
+        ],
+        deep_missing if is_treasury and not deep_complete else [],
+        "Claims must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    ))
+
+    if is_treasury:
+        inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
+        outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
+        ratio = outflow / inflow if inflow > 0 else None
+        rt = (treasury_doctrine or {}).get("regime_thresholds", {})
+        sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
+        hard_no_ratio = _to_float(rt.get("unsustainable_hard_no_ratio")) or 2.0
+        if ratio is None:
+            regime = "unknown"
+        elif ratio <= sustainable_max:
+            regime = "sustainable"
+        elif ratio <= hard_no_ratio:
+            regime = "stressed"
+        else:
+            regime = "unsustainable"
+        sections.append(_assessment_section(
+            "Treasury analysis",
+            "complete" if financial_row and deep_complete else "incomplete",
+            [
+                f"Requested ADA: {(financial_row or {}).get('requested_ada') or _short_amount(action.get('treasury_amount_lovelace'))}",
+                f"Budget granularity: {_truth_label((financial_row or {}).get('budget_granularity'))}",
+                f"Milestone payment gates: {_truth_label((financial_row or {}).get('milestone_payment_gates'))}",
+                f"Clawback/refund path: {_truth_label((financial_row or {}).get('clawback_refund_path'))}",
+                f"Cost/benefit clarity: {_truth_label((financial_row or {}).get('cost_benefit_clarity'))}",
+                f"Recurring funding dependency: {_truth_label((financial_row or {}).get('recurring_funding_dependency'))}",
+                f"Six-month treasury flow regime: {regime}",
+                f"Financial confidence: {(financial_row or {}).get('financial_confidence') or 'unknown'}",
+            ],
+            [
+                label for label, value in [
+                    ("line-item budget", (financial_row or {}).get("budget_granularity")),
+                    ("milestone-gated disbursement", (financial_row or {}).get("milestone_payment_gates")),
+                    ("sustainability path", (financial_row or {}).get("sustainability_path_clear")),
+                    ("cost-benefit clarity", (financial_row or {}).get("cost_benefit_clarity")),
+                ] if _yn(value) is not True
+            ],
+            "Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+        ))
+
+    sections.append(_assessment_section(
+        "Risk review",
+        "blocked" if hard_blocker or risk_blocker or financial_blocker else ("complete" if risk_row else "thin"),
+        [
+            f"Execution risk: {(risk_row or {}).get('execution_risk_level') or 'unknown'}",
+            f"Governance risk: {(risk_row or {}).get('governance_risk_level') or 'unknown'}",
+            f"Technical risk: {(risk_row or {}).get('technical_risk_level') or 'unknown'}",
+            f"Treasury exposure risk: {(risk_row or {}).get('treasury_exposure_risk_level') or 'unknown'}",
+            f"Mitigation evidence: {_truth_label((risk_row or {}).get('mitigation_evidence_present'))}",
+            f"Independent assurance: {_truth_label((risk_row or {}).get('independent_assurance_present'))}",
+            f"Rollback/remedy path: {_truth_label((risk_row or {}).get('rollback_or_remedy_path'))}",
+            f"Flag count: {len(flags)}",
+        ],
+        [
+            label for label, value in [
+                ("mitigation evidence", (risk_row or {}).get("mitigation_evidence_present")),
+                ("independent assurance", (risk_row or {}).get("independent_assurance_present")),
+                ("rollback/remedy path", (risk_row or {}).get("rollback_or_remedy_path")),
+                ("dependency map", (risk_row or {}).get("dependency_map_complete")),
+            ] if _yn(value) is not True
+        ],
+        "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    ))
+
+    yes_case = "The strongest YES case is that the proposal clears the evidence gates, has credible controls, and creates public benefit worth the risk."
+    no_case = "The strongest NO case is that costs, weak controls, unclear delivery, or governance precedent outweigh the claimed benefit."
+    abstain_case = "The strongest ABSTAIN case is that evidence is too thin or stale for a directional vote without pretending certainty."
+    if is_treasury and not deep_complete:
+        abstain_case = "The strongest hold case is that a treasury action without a complete dossier cannot be responsibly voted directionally."
+
+    sections.append(_assessment_section(
+        "Counterargument pass",
+        "complete",
+        [yes_case, no_case, abstain_case],
+        [],
+        "A defensible rationale must show the best opposing case before it reaches a vote.",
+    ))
+
+    blockers = []
+    if freshness.get("is_stale"):
+        blockers.append("freshness gate failed")
+    if missing_evidence:
+        blockers.extend(missing_evidence)
+    if is_treasury and not deep_complete:
+        blockers.extend([f"missing {x}" for x in deep_missing])
+    if hard_blocker:
+        blockers.append("readiness hard blocker present")
+    if risk_blocker:
+        blockers.append("risk blocker present")
+    if financial_blocker:
+        blockers.append("financial blocker present")
+
+    sections.append(_assessment_section(
+        "Synthesis",
+        "blocked" if blockers else "ready",
+        [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument.",
+        ],
+        blockers[:12],
+        "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.",
+    ))
+
+    return {
+        "schema_version": "assessment-tree-v1",
+        "action_id": action.get("action_id"),
+        "action_type": action_type,
+        "overall_status": "blocked" if any(s["status"] == "blocked" for s in sections) else ("incomplete" if any(s["status"] in ("thin", "incomplete") for s in sections) else "ready"),
+        "sections": sections,
+        "blocking_questions": blockers[:12],
+    }
+
+
+def _assessment_lines(assessment: dict) -> tuple[list[str], list[str], list[str]]:
+    facts: list[str] = []
+    inf: list[str] = []
+    unc: list[str] = []
+    for section in assessment.get("sections", []):
+        title = section.get("title", "Assessment")
+        status = section.get("status", "unknown")
+        if section.get("findings"):
+            facts.append(f"{title}: {section['findings'][0]}")
+        if section.get("conclusion"):
+            inf.append(f"{title}: {section['conclusion']}")
+        for item in section.get("missing", [])[:2]:
+            unc.append(f"{title} missing: {item}")
+        if status in ("blocked", "thin", "incomplete"):
+            unc.append(f"{title} status is {status}.")
+    return facts[:12], inf[:8], unc[:12]
+
+
 def _score_action(
     action: dict,
     flags: list[dict],
     freshness: dict,
     missing_evidence: list[str],
     anchor_ok: bool,
+    assessment: dict,
     readiness_row: dict | None = None,
     financial_row: dict | None = None,
     risk_row: dict | None = None,
@@ -287,6 +516,7 @@ def _score_action(
     facts = []
     inf = []
     unc = []
+    assessment_facts, assessment_inferences, assessment_uncertainty = _assessment_lines(assessment)
 
     sw = (scoring_weights or {}).get("weights", {})
     w_anchor_present = _to_float(sw.get("anchor_present_bonus", 0.05))
@@ -309,9 +539,9 @@ def _score_action(
             "abstain_reason_code": "STALE_DATA",
             "score": 0.0,
             "confidence": 0.0,
-            "facts": [f"Data freshness check failed: {reason}"],
-            "inferences": ["Cannot produce reliable recommendation with stale data."],
-            "uncertainty": ["All scoring suspended until fresh data is available."],
+            "facts": [f"Data freshness check failed: {reason}", *assessment_facts],
+            "inferences": ["Cannot produce reliable recommendation with stale data.", *assessment_inferences],
+            "uncertainty": ["All scoring suspended until fresh data is available.", *assessment_uncertainty],
             "missing_evidence": [],
         }
 
@@ -323,9 +553,9 @@ def _score_action(
             "abstain_reason_code": "UNKNOWN_ACTION_TYPE",
             "score": 0.0,
             "confidence": 0.1,
-            "facts": [f"Action type '{action.get('action_type')}' is not in the known classification set."],
-            "inferences": ["Cannot score an action type with no established rubric."],
-            "uncertainty": ["This may be a new governance action type requiring doctrine update."],
+            "facts": [f"Action type '{action.get('action_type')}' is not in the known classification set.", *assessment_facts],
+            "inferences": ["Cannot score an action type with no established rubric.", *assessment_inferences],
+            "uncertainty": ["This may be a new governance action type requiring doctrine update.", *assessment_uncertainty],
             "missing_evidence": [f"No scoring rubric exists for action type: {action.get('action_type')}"],
         }
 
@@ -336,9 +566,9 @@ def _score_action(
             "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
             "score": 0.0,
             "confidence": 0.1,
-            "facts": ["Critical evidence fields are missing for this action."],
-            "inferences": ["Cannot produce a responsible recommendation without baseline evidence."],
-            "uncertainty": [f"Missing: {item}" for item in missing_evidence],
+            "facts": ["Critical evidence fields are missing for this action.", *assessment_facts],
+            "inferences": ["Cannot produce a responsible recommendation without baseline evidence.", *assessment_inferences],
+            "uncertainty": [*[f"Missing: {item}" for item in missing_evidence], *assessment_uncertainty],
             "missing_evidence": missing_evidence,
         }
 
@@ -346,18 +576,20 @@ def _score_action(
     if "treasury" in action_type:
         deep_ok = _yn((deep_row or {}).get("dossier_complete")) is True
         if not deep_ok:
+            deep_missing = _missing_deep_research(deep_row)
             need = [
                 "Deep research dossier is required for treasury actions before directional voting.",
                 "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+                *[f"Missing dossier section: {item}" for item in deep_missing],
             ]
             return {
                 "recommendation": "NEEDS_MORE_INFO",
                 "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
                 "score": 0.0,
                 "confidence": 0.2,
-                "facts": ["Treasury actions are high-impact and require a completed deep research dossier."],
-                "inferences": ["Directional voting is blocked until dossier quality gates pass."],
-                "uncertainty": ["Dossier completeness not confirmed for this treasury proposal."],
+                "facts": ["Treasury actions are high-impact and require a completed deep research dossier.", *assessment_facts],
+                "inferences": ["Directional voting is blocked until dossier quality gates pass.", *assessment_inferences],
+                "uncertainty": ["Dossier completeness not confirmed for this treasury proposal.", *assessment_uncertainty],
                 "missing_evidence": need,
             }
 
@@ -518,9 +750,9 @@ def _score_action(
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
         "confidence": round(confidence, 4),
-        "facts": facts or ["Deterministic rule set applied."],
-        "inferences": inf or ["No additional inference."],
-        "uncertainty": unc or ["Rule-based system; does not infer unstated intent."],
+        "facts": [*(facts or ["Deterministic rule set applied."]), *assessment_facts],
+        "inferences": [*(inf or ["No additional inference."]), *assessment_inferences],
+        "uncertainty": [*(unc or ["Rule-based system; does not infer unstated intent."]), *assessment_uncertainty],
         "missing_evidence": [],
     }
 
@@ -640,12 +872,26 @@ def run_once(action_id: str | None = None) -> dict:
 
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
+    assessment = _build_assessment(
+        action,
+        freshness,
+        missing_evidence,
+        anchor_ok,
+        readiness_map.get(action["action_id"]),
+        financial_map.get(action["action_id"]),
+        risk_map.get(action["action_id"]),
+        deep_map.get(action["action_id"]),
+        treasury_flow,
+        treasury_doctrine,
+        flags_by_action.get(action["action_id"], []),
+    )
     score_obj = _score_action(
         action,
         flags_by_action.get(action["action_id"], []),
         freshness,
         missing_evidence,
         anchor_ok,
+        assessment,
         readiness_map.get(action["action_id"]),
         financial_map.get(action["action_id"]),
         risk_map.get(action["action_id"]),
@@ -680,6 +926,9 @@ def run_once(action_id: str | None = None) -> dict:
         "uncertainty_band": intelligence["uncertainty_band"],
         "evidence_depth_score": intelligence["evidence_depth_score"],
         "intelligence_profile": intelligence["intelligence_profile"],
+        "assessment_schema_version": assessment["schema_version"],
+        "assessment_status": assessment["overall_status"],
+        "assessment": assessment,
         "missing_evidence_count": intelligence["missing_evidence_count"],
         "scoring_weights_version": scoring_weights.get("version"),
         "scoring_weights_hash": _sha256_bytes(json.dumps(scoring_weights, sort_keys=True).encode("utf-8")),
@@ -704,6 +953,7 @@ def run_once(action_id: str | None = None) -> dict:
     }
 
     (out_dir / "rationale.json").write_text(json.dumps(rationale, indent=2) + "\n", encoding="utf-8")
+    (out_dir / "assessment.json").write_text(json.dumps(assessment, indent=2) + "\n", encoding="utf-8")
 
     missing_section = ""
     if score_obj.get("missing_evidence"):
@@ -713,12 +963,25 @@ def run_once(action_id: str | None = None) -> dict:
     if freshness.get("is_stale"):
         freshness_note = f"\n- **DATA STALE**: {freshness.get('reason', 'age exceeded threshold')}\n"
 
+    assessment_section = ["## Review Tree", f"- overall_status: `{assessment['overall_status']}`", ""]
+    for section in assessment["sections"]:
+        assessment_section.extend([
+            f"### {section['title']}",
+            f"- status: `{section['status']}`",
+        ])
+        assessment_section.extend(f"- finding: {x}" for x in section.get("findings", []))
+        assessment_section.extend(f"- missing: {x}" for x in section.get("missing", []))
+        if section.get("conclusion"):
+            assessment_section.append(f"- conclusion: {section['conclusion']}")
+        assessment_section.append("")
+
     (out_dir / "rationale.md").write_text(
         "\n".join([
             f"# Rationale: {action['action_id']}",
             f"Recommendation: **{score_obj['recommendation']}**",
             f"Score: `{score_obj['score']}` | Confidence: `{score_obj['confidence']}` | Readiness: `{score_obj.get('readiness_score', 0)}`",
             "",
+            *assessment_section,
             "## Facts",
             *[f"- {x}" for x in score_obj["facts"]],
             "",

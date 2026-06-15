@@ -301,6 +301,12 @@ def main():
         run_id = r["run_id"]
         shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "rationales" / f"{run_id}.md")
         shutil.copyfile(r["run_dir"] / "input_manifest.json", OUT / "rationales" / f"{run_id}.manifest.json")
+        assessment = r["rationale"].get("assessment") or {}
+        assessment_path = r["run_dir"] / "assessment.json"
+        if not assessment and assessment_path.exists():
+            assessment = json.loads(assessment_path.read_text(encoding="utf-8"))
+        if assessment and assessment_path.exists():
+            shutil.copyfile(assessment_path, OUT / "rationales" / f"{run_id}.assessment.json")
         anchor_hash = r["rationale"].get("rationale_anchor_hash")
         if anchor_hash:
             shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "r" / f"{anchor_hash[:24]}.md")
@@ -378,6 +384,10 @@ def main():
                 "top_fixes": top_fixes,
                 "markdown_path": r["md_path"],
                 "missing_evidence": r["rationale"].get("missing_evidence", []),
+                "assessment_status": r["rationale"].get("assessment_status") or assessment.get("overall_status"),
+                "assessment_schema_version": r["rationale"].get("assessment_schema_version") or assessment.get("schema_version"),
+                "assessment": assessment,
+                "assessment_path": f"/data/output/public/rationales/{run_id}.assessment.json" if assessment and assessment_path.exists() else "",
             },
             "proposal_evidence": proposal_snapshot,
             "reproducibility": {
@@ -413,6 +423,13 @@ def main():
             "",
             "## Human-readable rationale",
             human_summary,
+            "",
+            "## Assessment tree",
+            f"- assessment_status: `{r['rationale'].get('assessment_status') or assessment.get('overall_status', '')}`",
+            *[
+                f"- {section.get('title')}: `{section.get('status')}` — {section.get('conclusion')}"
+                for section in (assessment.get("sections") or [])
+            ],
             "",
             "## What influenced this vote",
             *(f"- {x}" for x in (r["rationale"].get("facts") or ["No fact lines available."])),

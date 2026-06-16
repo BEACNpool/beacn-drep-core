@@ -5,40 +5,139 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:3acc8cc8c07e6bf047722d889d5bb9228331e0a3e6c5324460589de981730467",
+    "raw_input_hash": "sha256:b1038ec284086feb9a06e834d457310165c9030fe6bef14fa9bd6b3283d6ae3c",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.0167,
-    "confidence": 0.5067,
-    "input_hash": "3acc8cc8c07e6bf047722d889d5bb9228331e0a3e6c5324460589de981730467",
-    "snapshot_bundle_hash": "97837c0ddd573c6fea4cfda31e54d6ff6e53eca08799406b630ae2489054e12a",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "NO",
+    "score": -0.3333,
+    "confidence": 0.8233,
+    "input_hash": "b1038ec284086feb9a06e834d457310165c9030fe6bef14fa9bd6b3283d6ae3c",
+    "snapshot_bundle_hash": "fbf882941a97e119832b85fa384fd0961a39822c6ee6252c3aab575a4dc30c49",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7-3acc8cc8c07e.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7-b1038ec28408.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Treasury withdrawal actions require elevated scrutiny. Additional context: Flag score present (7), reducing confidence. Confidence context: score 0.02; confidence 50.7%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Treasury withdrawal actions require elevated scrutiny. Additional context: Flag score present (7), reducing confidence. Confidence context: score -0.33; confidence 82.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7-3acc8cc8c07e.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7-b1038ec28408.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: expired",
+            "Proposed epoch: 607",
+            "Expires after epoch: unknown",
+            "Treasury request: 500.0k ADA",
+            "Anchor pinned locally: no"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: not pinned",
+            "Proposal document read by reasoning layer: no",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Proposal claims not extracted (no cached anchor document text to read)."
+          ],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 500.0k ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: confirmed",
+            "Rollback/remedy path: confirmed",
+            "Flag count: 2"
+          ],
+          "missing": [],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the 500.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7-b1038ec28408.assessment.json"
   },
   "proposal_evidence": {
     "available": false,
@@ -47,10 +146,10 @@
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -123,16 +222,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.3333,
     "conflict_risk": 0.0,
-    "technical_value": 0.0167,
-    "governance_alignment": 0.5067
+    "technical_value": 0.0,
+    "governance_alignment": 0.8233
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

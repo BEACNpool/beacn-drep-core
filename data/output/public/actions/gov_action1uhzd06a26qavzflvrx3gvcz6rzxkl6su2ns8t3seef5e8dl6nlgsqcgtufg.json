@@ -5,12 +5,12 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:1906881723c355759d5e52c085c934bd3b367e99095c0b2cc398ae4cc3fc1af8",
+    "raw_input_hash": "sha256:204c411b2146918dae655d5846c7fc1683e54236c5150710e6298063720c688f",
     "detected_at": "2026-03-10T05:00:01.996041+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,27 +18,134 @@
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.0033,
-    "confidence": 0.4933,
-    "input_hash": "1906881723c355759d5e52c085c934bd3b367e99095c0b2cc398ae4cc3fc1af8",
-    "snapshot_bundle_hash": "ac0d80e6f1283e5382d06251197c336d79ba8191e1079242eb8d9899d69e5f0d",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "score": -0.2833,
+    "confidence": 0.7733,
+    "input_hash": "204c411b2146918dae655d5846c7fc1683e54236c5150710e6298063720c688f",
+    "snapshot_bundle_hash": "da9ea726553671f2b602dbb8f47e439ba3a415cf6def4ab0df23c827bd8a68c4",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-1906881723c3.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-204c411b2146.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.00; confidence 49.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 77.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-1906881723c3.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-204c411b2146.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: enacted",
+            "Proposed epoch: 617",
+            "Expires after epoch: unknown",
+            "Treasury request: 800.0k ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Requested: Cardano Defi Liquidity Budget - Withdrawal 1",
+            "Recipient: ",
+            "Stated amount: 800.0k ADA",
+            "Deliverables: Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity., Under the old constitution, we received broad support (more than 67%) for a budget info action to deploy 50,000,000 ADA into the ecosystem., While we acknowledge a budget info action is not required under the current constitution, we feel encouraged to submit this withdrawal action to setup the legal and on chain components needed to carry out the liquidity deployment., For a detailed overview of what we are aiming to accomplish more broadly, we invite people to read the budget info action (gov action1u4jrcvlkppjzuv5j9z5ksacwtvv77h6glu0knpcjut8gvjjfu0cqqt3alsy).",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.",
+            "Claim (economic, independently_verifiable, high materiality): Under the old constitution, we received broad support (more than 67%) for a budget info action to deploy 50,000,000 ADA into the ecosystem.",
+            "Claim (economic, independently_verifiable, high materiality): While we acknowledge a budget info action is not required under the current constitution, we feel encouraged to submit this withdrawal action to setup the legal and on chain components needed to carry out the liquidity deployment.",
+            "Claim (economic, independently_verifiable, high materiality): For a detailed overview of what we are aiming to accomplish more broadly, we invite people to read the budget info action (gov action1u4jrcvlkppjzuv5j9z5ksacwtvv77h6glu0knpcjut8gvjjfu0cqqt3alsy).",
+            "Claim (technical, independently_verifiable, high materiality): Terms of Withdrawal Purpose of Withdrawal This withdrawal is intended solely for establishing the legal and technical infrastructure required to implement the Stablecoin DeFi Liquidity Budget approved by the Cardano Community.",
+            "Claim (economic, independently_verifiable, high materiality): Specifically, funds will be used to: 1."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 800.0k ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: confirmed",
+            "Rollback/remedy path: confirmed",
+            "Flag count: 2"
+          ],
+          "missing": [],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-204c411b2146.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +156,16 @@
     "anchor_hash": "2b6d10884910aba1478c7e9b94207e54bd569eaea7262cff71df9d2053668f63",
     "file_sha256": "eb4545cc737a769869c76fb8e9fd72a8f64e8e9130d3b94e8deec2d727273ed6",
     "content_bytes": "20357",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg.txt",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -131,16 +238,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0033,
+    "budget_pressure": 0.2833,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.4933
+    "governance_alignment": 0.7733
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

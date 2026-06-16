@@ -5,12 +5,12 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:68d5fc53b7f347106ee22fdaf18c07b472fc5fdb6f05324c91300c58a6c362bf",
+    "raw_input_hash": "sha256:f467abeec403a93e456001b580f54ee9e542793abe783a0eadf885ce18768555",
     "detected_at": "2026-03-13T01:00:01.463867+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,27 +18,137 @@
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.0733,
-    "confidence": 0.5933,
-    "input_hash": "68d5fc53b7f347106ee22fdaf18c07b472fc5fdb6f05324c91300c58a6c362bf",
-    "snapshot_bundle_hash": "9d8e426d2df68079a9a837e3cbae7b2c5e23ae8945d95785e96958a5cc5a943b",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "score": -0.1833,
+    "confidence": 0.7033,
+    "input_hash": "f467abeec403a93e456001b580f54ee9e542793abe783a0eadf885ce18768555",
+    "snapshot_bundle_hash": "cfb63c0e0754448be8c52089b294bafbd52a4af775ba6632e6326db68298f5e6",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x-68d5fc53b7f3.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x-f467abeec403.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.07; confidence 59.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.18; confidence 70.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x-68d5fc53b7f3.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x-f467abeec403.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: enacted",
+            "Proposed epoch: 618",
+            "Expires after epoch: unknown",
+            "Treasury request: 50.00M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Requested: Cardano x Draper Dragon: Orion Fund",
+            "Recipient: not stated in document",
+            "Stated amount: 50.00M ADA",
+            "Deliverables: (\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..., Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed., This proposal (\u201cProposal\u201d) asks the Cardano community (\u201cCommunity\u201d) to vote only on the first Treasury withdrawal tranche of ADA 50M, which is approximately $15M USD (\u201cTranche One\u201d), calculated using an assumed ADA price of $0.30, to launch the Orion Fund., Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): (\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap...",
+            "Claim (economic, proposer_asserted, high materiality): Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.",
+            "Claim (economic, supported_in_proposal, high materiality): This proposal (\u201cProposal\u201d) asks the Cardano community (\u201cCommunity\u201d) to vote only on the first Treasury withdrawal tranche of ADA 50M, which is approximately $15M USD (\u201cTranche One\u201d), calculated using an assumed ADA price of $0.30, to launch the Orion Fund.",
+            "Claim (economic, proposer_asserted, high materiality): Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.",
+            "Claim (technical, independently_verifiable, medium materiality): Cardano's technically sophisticated eUTXO architecture, leading staking mechanism, and on-chain governance system provide the foundation for institutional DeFi and Real-World Assets.",
+            "Claim (economic, supported_in_proposal, high materiality): Yet a dedicated, professional ecosystem fund is needed to exponentially accelerate developer talent, onboard enterprises, and establish the network as the global compliance-first standard."
+          ],
+          "missing": [
+            "Independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.",
+            "Independent evidence for: Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 50.00M ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: confirmed",
+            "Rollback/remedy path: confirmed",
+            "Flag count: 1"
+          ],
+          "missing": [],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"(\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap...\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x-f467abeec403.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +159,16 @@
     "anchor_hash": "6dbc26337a16d950ae3704b0f88ed1e39b8aceb6a28d497ce73c357340d45d90",
     "file_sha256": "e419d558779e3134b11eedbc76a548253fa83b758bc95ea754371f668b958c70",
     "content_bytes": "191283",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n      \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abs"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -131,16 +241,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0733,
+    "budget_pressure": 0.1833,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.5933
+    "governance_alignment": 0.7033
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

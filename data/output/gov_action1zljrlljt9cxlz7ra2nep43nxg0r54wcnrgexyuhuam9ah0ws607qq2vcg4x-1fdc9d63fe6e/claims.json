@@ -1,0 +1,46 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "what": "Fund Tweag by Modus Create to deliver 3 interdependent work packages of core infrastructure, centred on mainnet deployment of Peras (faster finality), plus History Expiry and conformance testing",
+    "recipient": "Tweag by Modus Create",
+    "amount_ada": "18,263,496 ADA (stated USD $4,565,874)",
+    "deliverables": [
+      "Peras v1 production cryptography, KillSwitch and mainnet readiness",
+      "History Expiry / partial-history nodes",
+      "Conformance testing and correctness scaffolding"
+    ],
+    "deadline": "2026-2027 delivery window"
+  },
+  "claims": [
+    {
+      "claim": "Peras v1 (faster finality, ~2 min vs ~12 min) remains undeployed on mainnet and requires production cryptography and hard-fork readiness",
+      "category": "technical",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "The 3 work packages are interdependent and should be funded as a single delivery pipeline, not a modular menu",
+      "category": "technical",
+      "support": "proposer_asserted",
+      "materiality": "medium"
+    },
+    {
+      "claim": "The 18,263,496 ADA ask is based on $176/hour senior-engineer rates and a conservative 0.25 ADA/USD conversion",
+      "category": "economic",
+      "support": "proposer_asserted",
+      "materiality": "high"
+    },
+    {
+      "claim": "Peras and Leios are required to unlock higher transaction volume, staking rewards and TVL",
+      "category": "economic",
+      "support": "proposer_asserted",
+      "materiality": "medium"
+    }
+  ],
+  "summary": "An 18.26M ADA request for Tweag to deliver Peras mainnet finality plus History Expiry and conformance testing over 2026-2027, priced off senior-engineer hourly rates.",
+  "output_sha256": "39918ac2dbcb5410f445f4c383f85abf2406ff8542ab7049ece3c3045f767255"
+}

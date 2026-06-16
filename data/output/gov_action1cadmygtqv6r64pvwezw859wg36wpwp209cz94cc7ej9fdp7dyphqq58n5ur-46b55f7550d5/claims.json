@@ -1,0 +1,44 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "what": "Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 to improve operational resilience",
+    "recipient": "Not applicable \u2014 protocol parameter change",
+    "amount_ada": "None (ParameterChange)",
+    "deliverables": [
+      "On-chain change of committeeMinSize from 7 to 5"
+    ],
+    "deadline": "Depends on enactment of a separate Plutus cost-model parameter-change action ahead of the van Rossem hard fork"
+  },
+  "claims": [
+    {
+      "claim": "With a 7-member committee and committeeMinSize of 7, a single resignation or term expiry would halt the Constitutional Committee and stall much of governance",
+      "category": "governance",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "Reducing the minimum to 5 improves resilience while keeping constitutional safeguards",
+      "category": "governance",
+      "support": "proposer_asserted",
+      "materiality": "high"
+    },
+    {
+      "claim": "The change does not alter the current number of committee members or imply a smaller committee is desired",
+      "category": "governance",
+      "support": "supported_in_proposal",
+      "materiality": "medium"
+    },
+    {
+      "claim": "The action was approved by Intersect's Civics Committee (2026-03-13) and Technical Steering Committee (2026-06-03)",
+      "category": "governance",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    }
+  ],
+  "summary": "An Intersect-sponsored parameter change lowering the Constitutional Committee minimum from 7 to 5 to avoid a single resignation halting governance; no funds requested.",
+  "output_sha256": "c416c636b63a007e76bf5610593607b95efc6cd18ba7d8ffe20dd1cd0ffe4626"
+}

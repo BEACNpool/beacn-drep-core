@@ -1,19 +1,132 @@
 # Rationale: gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` | Confidence: `0.0` | Readiness: `0`
+
+## Plain-language explanation (precomputed)
+BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is narrow and sympathetic: 103,000 ADA to reimburse an early governance participant whose 100,000 ADA Info-action deposit was stranded by a documented Cardano node bug shortly after the Chang hard fork, plus 3,000 ADA for lost staking rewards. The core fact — that a node defect prevented recovery of the deposit — is independently checkable on-chain and is the strongest part of the case; the 2%-per-annum staking top-up is a reasonable but proposer-set figure. The amount is small relative to other live treasury actions and there is no ongoing delivery risk. Once BEACN's snapshot is current and the deep-research record confirms the bug and the recipient address, this is the kind of low-risk, well-bounded reimbursement on which it could reach a directional vote.
+
+## Review Tree
+- overall_status: `blocked`
+
+### Intake
+- status: `complete`
+- finding: Action type: TreasuryWithdrawals
+- finding: Status: active
+- finding: Proposed epoch: 636
+- finding: Expires after epoch: unknown
+- finding: Treasury request: 103.0k ADA
+- finding: Anchor pinned locally: yes
+- conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+
+### Claims and evidence
+- status: `thin`
+- finding: Proposal anchor: pinned and replayable
+- finding: Proposal document read by reasoning layer: yes
+- finding: Snapshot freshness source: manifest
+- finding: Deep research dossier: required
+- finding: Requested: Reimburse a 100,000 ADA Info-action deposit that was unrecoverable due to a Cardano node bug, plus 3,000 ADA for lost staking rewards
+- finding: Recipient: The original Ikigai Info governance action submitter
+- finding: Stated amount: 103,000 ADA
+- finding: Deliverables: A one-time reimbursement payment; no ongoing deliverables
+- finding: Deadline/expiry: Not stated
+- finding: Claim (technical, independently_verifiable, high materiality): A node bug let an unregistered stake key be used, leaving the Ikigai submitter unable to recover a 100,000 ADA deposit
+- finding: Claim (economic, proposer_asserted, medium materiality): An extra 3,000 ADA is requested to compensate for lost staking rewards at roughly 2% per annum
+- finding: Claim (governance, supported_in_proposal, low materiality): The action meets the constitution's metadata and treasury-withdrawal formatting requirements
+- missing: Independent evidence for: An extra 3,000 ADA is requested to compensate for lost staking rewards at roughly 2% per annum
+- missing: complete proposal summary
+- missing: budget analysis
+- missing: feasibility assessment
+- missing: risk analysis
+- missing: alternatives analysis
+- missing: failure-mode analysis
+- missing: community impact analysis
+- conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+
+### Treasury analysis
+- status: `incomplete`
+- finding: Requested ADA: 103.0k ADA
+- finding: Budget granularity: unknown
+- finding: Milestone payment gates: unknown
+- finding: Clawback/refund path: unknown
+- finding: Cost/benefit clarity: unknown
+- finding: Recurring funding dependency: unknown
+- finding: Six-month treasury flow regime: unsustainable
+- finding: Financial confidence: unknown
+- missing: line-item budget
+- missing: milestone-gated disbursement
+- missing: sustainability path
+- missing: cost-benefit clarity
+- conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+
+### Risk review
+- status: `thin`
+- finding: Execution risk: unknown
+- finding: Governance risk: unknown
+- finding: Technical risk: unknown
+- finding: Treasury exposure risk: unknown
+- finding: Mitigation evidence: unknown
+- finding: Independent assurance: unknown
+- finding: Rollback/remedy path: unknown
+- finding: Flag count: 2
+- missing: mitigation evidence
+- missing: independent assurance
+- missing: rollback/remedy path
+- missing: dependency map
+- conclusion: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+
+### Counterargument pass
+- status: `complete`
+- finding: Strongest YES: the proposal substantiates "A node bug let an unregistered stake key be used, leaving the Ikigai submitter unable to recover a 100,000 ADA deposit" and clears the evidence gates.
+- finding: Strongest NO: a material claim is unsupported — "An extra 3,000 ADA is requested to compensate for lost staking rewards at roughly 2% per annum" — so cost or precedent may outweigh the benefit.
+- finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
+- conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
+
+### Synthesis
+- status: `blocked`
+- finding: Final vote must be derived from completed sections above, not from a prose summary.
+- finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
+- missing: missing complete proposal summary
+- missing: missing budget analysis
+- missing: missing feasibility assessment
+- missing: missing risk analysis
+- missing: missing alternatives analysis
+- missing: missing failure-mode analysis
+- missing: missing community impact analysis
+- conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 29349s old, max allowed is 21600s
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 103.0k ADA
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "A node bug let an unregistered stake key be used, leaving the Ikigai submitter unable to recover a 100,000 ADA deposit" and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
+- Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- All scoring suspended until fresh data is available.
+- Claims and evidence missing: Independent evidence for: An extra 3,000 ADA is requested to compensate for lost staking rewards at roughly 2% per annum
+- Claims and evidence missing: complete proposal summary
+- Claims and evidence status is thin.
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Risk review status is thin.
+- Synthesis missing: freshness gate failed
+- Synthesis missing: missing complete proposal summary
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `0c4a8bb1ed787fbc3ef1c3b5673595ca6be56a922f3d43d97c9b63afc5789cc6`
@@ -22,8 +135,10 @@ Score: `0.0` | Confidence: `0.2` | Readiness: `0`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
 - resource_registry_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `208`
+- snapshot_age_seconds: `29349`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

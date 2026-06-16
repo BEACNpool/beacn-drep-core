@@ -1,0 +1,244 @@
+{
+  "action_id": "gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "score": 0.0,
+  "confidence": 0.2,
+  "readiness_score": null,
+  "facts": [
+    "Treasury actions are high-impact and require a completed deep research dossier.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 103000",
+    "Risk review: Execution risk: low",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Directional voting is blocked until dossier quality gates pass.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: Independent evidence for: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.",
+    "Claims and evidence missing: Independent evidence for: It was considered that the submitter should not lose one hundred thousand ADA, for being an early pioneer of Cardano governance.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: independent assurance",
+    "Risk review missing: dependency map",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis missing: missing feasibility assessment",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "Deep research dossier is required for treasury actions before directional voting.",
+    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+    "Missing dossier section: budget analysis",
+    "Missing dossier section: feasibility assessment",
+    "Missing dossier section: alternatives analysis",
+    "Missing dossier section: failure-mode analysis",
+    "Missing dossier section: community impact analysis"
+  ],
+  "input_hash": "25ad2279839281d283cacb27bf4fa0653bcd27f46d379be38168669065910186",
+  "snapshot_bundle_hash": "6b13955f59f6449a3f23206f418d457c4b670510cc2e77afe2d08d6cc7d5e793",
+  "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 2853,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-16T00:02:02.222365Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.315,
+    "NO": 0.315,
+    "ABSTAIN": 0.37
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 636",
+          "Expires after epoch: unknown",
+          "Treasury request: 103.0k ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: required",
+          "Requested: Reimburse Ikigai Info Governance Action Deposit.",
+          "Recipient: ",
+          "Stated amount: 103.0k ADA",
+          "Deliverables: In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted., This was only a symbolic governance action, as it simply asked the community whether they agreed with a statement thanking those that helped get Cardano to this point and expressing a sense of hope for the future., Unfortunately, due to a bug in the code of the Cardano node that permitted an unregistered stake key to be used in the governance action, the submitter was unable to recover their deposit of 100K ADA., While the community expressed at the time the importance of reimbursing this deposit via a treasury withdrawal; once the ability to do so became available, following the Plomin hard fork; unfortunately none of the entity based budget submissions included it.",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, independently_verifiable, high materiality): In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.",
+          "Claim (economic, supported_in_proposal, medium materiality): This was only a symbolic governance action, as it simply asked the community whether they agreed with a statement thanking those that helped get Cardano to this point and expressing a sense of hope for the future.",
+          "Claim (technical, supported_in_proposal, medium materiality): Unfortunately, due to a bug in the code of the Cardano node that permitted an unregistered stake key to be used in the governance action, the submitter was unable to recover their deposit of 100K ADA.",
+          "Claim (economic, supported_in_proposal, high materiality): While the community expressed at the time the importance of reimbursing this deposit via a treasury withdrawal; once the ability to do so became available, following the Plomin hard fork; unfortunately none of the entity based budget submissions included it.",
+          "Claim (economic, proposer_asserted, medium materiality): There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.",
+          "Claim (economic, proposer_asserted, medium materiality): It was considered that the submitter should not lose one hundred thousand ADA, for being an early pioneer of Cardano governance."
+        ],
+        "missing": [
+          "Independent evidence for: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.",
+          "Independent evidence for: It was considered that the submitter should not lose one hundred thousand ADA, for being an early pioneer of Cardano governance.",
+          "budget analysis",
+          "feasibility assessment",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 103000",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: not confirmed",
+          "Clawback/refund path: not confirmed",
+          "Cost/benefit clarity: confirmed",
+          "Recurring funding dependency: not confirmed",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: 0.70"
+        ],
+        "missing": [
+          "milestone-gated disbursement"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: low",
+          "Governance risk: low",
+          "Technical risk: low",
+          "Treasury exposure risk: low",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "independent assurance",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Reimburse Ikigai Info Governance Action Deposit.. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Reimburse Ikigai Info Governance Action Deposit.. The recorded treasury amount is 103.0k ADA. The strongest grounded claim is: In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://most-brass-sun.quicknode-ipfs.com/ipfs/QmSy2CiQhPBzzNLKDFVvMQaDb1FQDbmn9bJf6fVntVAQ1t",
+        "file_sha256": "c2705f5116cc7c0c6c3a2a84d83c377ab118d24ae54a25aa4e5d6ba570f38515",
+        "file_path": "data/input/governance/anchors/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-20260615T152518Z.bin",
+        "content_chars": 4631
+      },
+      "claim_count": 8,
+      "prompt_sha256": "ecdfeea51eba1f78df5728971f5a4a9c7217bfc3e1754a502c4a1cfcfa0215c0",
+      "output_sha256": "055e68df17c453cd9adfe429b8e2de4a155807a429cd7b220a8cd51fa7a16e92"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "4ed5ba07643503885c5325a420fe70839837090c9e38de1a6d93293981b6349d",
+      "output_sha256": "92f824a83716efd48821a9db024608c354c3a227df4247b104144a685f6fe53a"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
+}

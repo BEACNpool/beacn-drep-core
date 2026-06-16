@@ -8,6 +8,8 @@ from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_
 from .routing import select_resources
 from .adapters.git_adapter import commit_hash
 from .replay import sha256_file, canonical_json_hash, csv_row_by_action, write_manifest, read_manifest
+from .anchors import load_anchor_text
+from . import llm
 
 
 KNOWN_ACTION_TYPES = {
@@ -310,6 +312,106 @@ def _assessment_section(title: str, status: str, findings: list[str] | None = No
     }
 
 
+def _claims_findings(claims: dict | None) -> tuple[list[str], list[str], str]:
+    """Build the Claims-and-evidence findings from the extracted proposal claims.
+
+    Returns (findings, missing, status_hint). When extraction is unavailable the
+    section degrades to a thin status that names why, exactly as before.
+    """
+    if not claims or not claims.get("available"):
+        reason = (claims or {}).get("reason") or "claim extraction unavailable"
+        return (
+            [f"Proposal claims not extracted ({reason})."],
+            ["No structured claim/evidence extraction from the proposal document."],
+            "thin",
+        )
+    req = claims.get("request") or {}
+    findings = [
+        f"Requested: {req.get('what', 'not stated')}",
+        f"Recipient: {req.get('recipient', 'not stated')}",
+        f"Stated amount: {req.get('amount_ada', 'not stated')}",
+        f"Deliverables: {', '.join(req.get('deliverables') or []) or 'not stated'}",
+        f"Deadline/expiry: {req.get('deadline', 'not stated')}",
+    ]
+    rows = claims.get("claims") or []
+    for c in rows[:6]:
+        findings.append(
+            f"Claim ({c.get('category')}, {c.get('support')}, {c.get('materiality')} materiality): {c.get('claim')}"
+        )
+    weak = [
+        c for c in rows
+        if c.get("support") in ("unsupported", "proposer_asserted") and c.get("materiality") != "low"
+    ]
+    missing = [f"Independent evidence for: {c.get('claim')}" for c in weak[:4]]
+    status = "thin" if (weak or not rows) else "complete"
+    return findings, missing, status
+
+
+def _counterarguments(action: dict, claims: dict | None, blockers: list[str], is_treasury: bool, deep_complete: bool) -> tuple[str, str, str]:
+    """Per-proposal best YES / NO / hold cases, derived from the extracted claims
+    and the actual gate results — not constant boilerplate."""
+    amount = _short_amount(action.get("treasury_amount_lovelace"))
+    atype = action.get("action_type") or "this action"
+    rows = (claims.get("claims") if (claims and claims.get("available")) else None) or []
+    strong = [c for c in rows if c.get("support") in ("supported_in_proposal", "independently_verifiable")]
+    weak = [c for c in rows if c.get("support") in ("unsupported", "proposer_asserted") and c.get("materiality") != "low"]
+
+    if strong:
+        yes = f"Strongest YES: the proposal substantiates \"{strong[0]['claim']}\" and clears the evidence gates."
+    elif is_treasury and amount != "not specified":
+        yes = f"Strongest YES: the {amount} request funds {atype} with public benefit worth the risk if its controls and delivery hold."
+    else:
+        yes = f"Strongest YES: {atype} advances a credible public benefit worth its risk if the evidence holds."
+
+    if weak:
+        no = f"Strongest NO: a material claim is unsupported — \"{weak[0]['claim']}\" — so cost or precedent may outweigh the benefit."
+    elif blockers:
+        no = f"Strongest NO: an unresolved blocker ({blockers[0]}) means costs or weak controls may outweigh the claimed benefit."
+    else:
+        no = f"Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of {atype}."
+
+    if is_treasury and not deep_complete:
+        abstain = "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+    elif blockers:
+        abstain = f"Strongest hold: evidence is too thin for a directional vote while {len(blockers)} blocker(s) remain open."
+    else:
+        abstain = "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+    return yes, no, abstain
+
+
+def _fallback_message(action: dict, title: str, rationale: dict, assessment: dict, claims: dict | None) -> str:
+    """Deterministic plain-language summary, always produced so the pipeline ends
+    in a human-readable message; replaced by the model-written one when available."""
+    rec = rationale.get("recommendation")
+    reason = rationale.get("abstain_reason_code") or rationale.get("needs_more_info_reason_code")
+    amount = _short_amount(action.get("treasury_amount_lovelace"))
+    blockers = assessment.get("blocking_questions") or []
+    parts = [
+        f"BEACN's autonomous DRep recorded {rec} on \"{title or action.get('action_id')}\" "
+        f"({action.get('action_type')})."
+    ]
+    if rec in ("ABSTAIN", "NEEDS_MORE_INFO"):
+        parts.append("This is a conservative, evidence-based hold rather than opposition.")
+    if amount != "not specified":
+        parts.append(f"The action requests {amount} from the treasury.")
+    if claims and claims.get("available"):
+        weak = [
+            c for c in (claims.get("claims") or [])
+            if c.get("support") in ("unsupported", "proposer_asserted") and c.get("materiality") != "low"
+        ]
+        if weak:
+            parts.append(f"A key material claim lacks independent support: \"{weak[0]['claim']}\".")
+    if blockers:
+        parts.append("Open questions before a directional vote: " + "; ".join(blockers[:3]) + ".")
+    if reason:
+        parts.append(f"Reason code: {reason}.")
+    parts.append(
+        "(Plain-language summary generated deterministically; a model-written explanation "
+        "appears here when the reasoning layer is enabled.)"
+    )
+    return " ".join(parts)
+
+
 def _build_assessment(
     action: dict,
     freshness: dict,
@@ -322,6 +424,7 @@ def _build_assessment(
     treasury_flow: dict | None,
     treasury_doctrine: dict | None,
     flags: list[dict],
+    claims: dict | None = None,
 ) -> dict:
     action_type = action.get("action_type", "")
     is_treasury = "treasury" in action_type.lower()
@@ -348,18 +451,22 @@ def _build_assessment(
         "Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     ))
 
+    claim_findings, claim_missing, claim_status = _claims_findings(claims)
+    evidence_context = [
+        f"Proposal anchor: {'pinned and replayable' if anchor_ok else 'not pinned'}",
+        f"Proposal document read by reasoning layer: {'yes' if (claims and claims.get('available')) else 'no'}",
+        f"Snapshot freshness source: {freshness.get('freshness_source') or 'unknown'}",
+        f"Deep research dossier: {'complete' if deep_complete else ('required' if is_treasury else 'not required')}",
+    ]
+    section_status = claim_status
+    if not anchor_ok or freshness.get("is_stale"):
+        section_status = "thin"
     sections.append(_assessment_section(
         "Claims and evidence",
-        "complete" if anchor_ok and not freshness.get("is_stale") else "thin",
-        [
-            f"Proposal anchor: {'pinned and replayable' if anchor_ok else 'not pinned'}",
-            f"Snapshot freshness source: {freshness.get('freshness_source') or 'unknown'}",
-            f"Snapshot age seconds: {freshness.get('snapshot_age_seconds', 'unknown')}",
-            f"Deep research dossier: {'complete' if deep_complete else ('required' if is_treasury else 'not required')}",
-            f"Analyst notes: {(deep_row or {}).get('analyst_notes') or 'none'}",
-        ],
-        deep_missing if is_treasury and not deep_complete else [],
-        "Claims must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+        section_status,
+        evidence_context + claim_findings,
+        claim_missing + (deep_missing if is_treasury and not deep_complete else []),
+        "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     ))
 
     if is_treasury:
@@ -425,20 +532,6 @@ def _build_assessment(
         "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
     ))
 
-    yes_case = "The strongest YES case is that the proposal clears the evidence gates, has credible controls, and creates public benefit worth the risk."
-    no_case = "The strongest NO case is that costs, weak controls, unclear delivery, or governance precedent outweigh the claimed benefit."
-    abstain_case = "The strongest ABSTAIN case is that evidence is too thin or stale for a directional vote without pretending certainty."
-    if is_treasury and not deep_complete:
-        abstain_case = "The strongest hold case is that a treasury action without a complete dossier cannot be responsibly voted directionally."
-
-    sections.append(_assessment_section(
-        "Counterargument pass",
-        "complete",
-        [yes_case, no_case, abstain_case],
-        [],
-        "A defensible rationale must show the best opposing case before it reaches a vote.",
-    ))
-
     blockers = []
     if freshness.get("is_stale"):
         blockers.append("freshness gate failed")
@@ -452,6 +545,15 @@ def _build_assessment(
         blockers.append("risk blocker present")
     if financial_blocker:
         blockers.append("financial blocker present")
+
+    yes_case, no_case, abstain_case = _counterarguments(action, claims, blockers, is_treasury, deep_complete)
+    sections.append(_assessment_section(
+        "Counterargument pass",
+        "complete",
+        [yes_case, no_case, abstain_case],
+        [],
+        "A defensible rationale must show the best opposing case before it reaches a vote.",
+    ))
 
     sections.append(_assessment_section(
         "Synthesis",
@@ -872,6 +974,12 @@ def run_once(action_id: str | None = None) -> dict:
 
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
+
+    # Stage 1: read the proposal's cached anchor document and extract structured
+    # claims (model-assisted, advisory — never feeds a gate).
+    anchor_text, anchor_meta = load_anchor_text(action["action_id"])
+    claims = llm.extract_claims(action, anchor_text)
+
     assessment = _build_assessment(
         action,
         freshness,
@@ -884,6 +992,7 @@ def run_once(action_id: str | None = None) -> dict:
         treasury_flow,
         treasury_doctrine,
         flags_by_action.get(action["action_id"], []),
+        claims,
     )
     score_obj = _score_action(
         action,
@@ -934,6 +1043,44 @@ def run_once(action_id: str | None = None) -> dict:
         "scoring_weights_hash": _sha256_bytes(json.dumps(scoring_weights, sort_keys=True).encode("utf-8")),
     }
 
+    # Stage 6: plain-English explanation of the already-decided verdict.
+    title = action.get("metadata_title") or ""
+    message = llm.write_human_message(action, title, rationale, assessment, claims)
+    if message.get("available"):
+        human_text = message["text"]
+        message_source = message.get("source") or "model"
+    else:
+        human_text = _fallback_message(action, title, rationale, assessment, claims)
+        message_source = "deterministic-template"
+
+    model_layer = {
+        "claim_extraction": {
+            "available": claims.get("available"),
+            "source": claims.get("source"),
+            "reason": claims.get("reason"),
+            "model": claims.get("model"),
+            "anchor": anchor_meta,
+            "claim_count": len(claims.get("claims") or []),
+            "prompt_sha256": claims.get("prompt_sha256"),
+            "output_sha256": claims.get("output_sha256"),
+        },
+        "human_message": {
+            "source": message_source,
+            "available": message.get("available"),
+            "reason": message.get("reason"),
+            "model": message.get("model"),
+            "prompt_sha256": message.get("prompt_sha256"),
+            "output_sha256": message.get("output_sha256"),
+        },
+        "note": (
+            "Claim extraction and the plain-language message are model-assisted, advisory layers. "
+            "The directional vote, score, and gates are deterministic and remain the binding record."
+        ),
+    }
+    rationale["human_message"] = human_text
+    rationale["human_message_source"] = message_source
+    rationale["model_layer"] = model_layer
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     run_id = f"{action['action_id']}-{input_hash[:12]}"
     out_dir = OUTPUT_DIR / run_id
@@ -950,10 +1097,28 @@ def run_once(action_id: str | None = None) -> dict:
         "resources_used": resources_used,
         "resource_snapshots": resource_snapshots,
         "snapshot_bundle_hash": snapshot_bundle_hash,
+        "model_layer": model_layer,
     }
 
     (out_dir / "rationale.json").write_text(json.dumps(rationale, indent=2) + "\n", encoding="utf-8")
     (out_dir / "assessment.json").write_text(json.dumps(assessment, indent=2) + "\n", encoding="utf-8")
+    (out_dir / "claims.json").write_text(json.dumps(claims, indent=2) + "\n", encoding="utf-8")
+    (out_dir / "rationale_message.md").write_text(
+        "\n".join([
+            f"# {title or action['action_id']}",
+            f"**BEACN DRep vote: {score_obj['recommendation']}**  "
+            f"_(plain-language explanation — {message_source})_",
+            "",
+            human_text,
+            "",
+            "---",
+            "_The vote, score, and gates are produced deterministically and are the binding record. "
+            "This explanation is a model-assisted plain-language layer over that record. "
+            "Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; "
+            "the decision is byte-for-byte replayable via `cli verify-replay`._",
+        ]) + "\n",
+        encoding="utf-8",
+    )
 
     missing_section = ""
     if score_obj.get("missing_evidence"):
@@ -980,6 +1145,9 @@ def run_once(action_id: str | None = None) -> dict:
             f"# Rationale: {action['action_id']}",
             f"Recommendation: **{score_obj['recommendation']}**",
             f"Score: `{score_obj['score']}` | Confidence: `{score_obj['confidence']}` | Readiness: `{score_obj.get('readiness_score', 0)}`",
+            "",
+            f"## Plain-language explanation ({message_source})",
+            human_text,
             "",
             *assessment_section,
             "## Facts",

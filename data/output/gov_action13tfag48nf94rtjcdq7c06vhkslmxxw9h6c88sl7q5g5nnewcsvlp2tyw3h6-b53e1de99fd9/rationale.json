@@ -1,0 +1,219 @@
+{
+  "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp2tyw3h6",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "score": -0.1833,
+  "confidence": 0.7033,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 15.75M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds A member-based organization for the Cardano ecosystem: Intersect which will provide the following services: Intersect exists to serve as a neutral, nonprofit coordination layer that bridges decentralized governance and decentr...\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Network DRep distribution used as one signal, not authority.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "b53e1de99fd9e29458f5214dbe37bedef23e987152c16320a9b5eb3dbae3f6f6",
+  "snapshot_bundle_hash": "8f73be93e6451771e41069372cf69c805657e3a9583d9a8966fe08ec0e7488b4",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 8,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0688,
+    "NO": 0.6991,
+    "ABSTAIN": 0.2321
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp2tyw3h6",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: enacted",
+          "Proposed epoch: 570",
+          "Expires after epoch: unknown",
+          "Treasury request: 15.75M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: complete",
+          "Requested: Withdraw \u20b315,750,000 for a MBO for the Cardano ecosystem: Intersect",
+          "Recipient: ",
+          "Stated amount: 15.75M ADA",
+          "Deliverables: This treasury withdrawal funds A member-based organization for the Cardano ecosystem: Intersect which will provide the following services: Intersect exists to serve as a neutral, nonprofit coordination layer that bridges decentralized governance and decentr..., Our mission is not to direct the network, but to enable it., By stewarding core systems, supporting community-led processes, and facilitating safe, transparent delivery., Specifically, this proposal will fund Intersect to: - Steward core infrastructure - Execute the Administrator role - Support participation and coordination - Facilitate roadmap and budget processes - Expand ecosystem capacity Note: Intersect's original prop...",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds A member-based organization for the Cardano ecosystem: Intersect which will provide the following services: Intersect exists to serve as a neutral, nonprofit coordination layer that bridges decentralized governance and decentr...",
+          "Claim (economic, independently_verifiable, low materiality): Our mission is not to direct the network, but to enable it.",
+          "Claim (economic, independently_verifiable, medium materiality): By stewarding core systems, supporting community-led processes, and facilitating safe, transparent delivery.",
+          "Claim (technical, independently_verifiable, high materiality): Specifically, this proposal will fund Intersect to: - Steward core infrastructure - Execute the Administrator role - Support participation and coordination - Facilitate roadmap and budget processes - Expand ecosystem capacity Note: Intersect's original prop...",
+          "Claim (economic, independently_verifiable, medium materiality): This proposal aims to solve the following problem: As Cardano enters the age of Voltaire, governance is transitioning from a small number of founding organizations to a decentralized global community.",
+          "Claim (economic, independently_verifiable, high materiality): While the introduction of a constitution and on-chain voting forms the structural backbone, these mechanisms alone are not enough to sustain a functional decentralized system."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 15.75M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds A member-based organization for the Cardano ecosystem: Intersect which will provide the following services: Intersect exists to serve as a neutral, nonprofit coordination layer that bridges decentralized governance and decentr...\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on Withdraw \u20b315,750,000 for a MBO for the Cardano ecosystem: Intersect. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b315,750,000 for a MBO for the Cardano ecosystem: Intersect. The recorded treasury amount is 15.75M ADA. The strongest grounded claim is: This treasury withdrawal funds A member-based organization for the Cardano ecosystem: Intersect which will provide the following services: Intersect exists to serve as a neutral, nonprofit coordination layer that bridges decentralized governance and decentr...\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp2tyw3h6",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreidy6xsjjpdccodhiurbdcvtcf5tqzkyfgx3ruuhso2ijjuovycuny",
+        "file_sha256": "78f5e494bc62138674522118ab3117b38655829afb8d28793b484a68eae0546e",
+        "file_path": "data/input/governance/anchors/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlp2tyw3h6-20260326T175235Z.bin",
+        "content_chars": 18552
+      },
+      "claim_count": 8,
+      "prompt_sha256": "0e44c0cfc8244298cbcfc898d4d7d2095cffae81a979776c58b0f3af9e26e1f4",
+      "output_sha256": "031661f878578d22be83e9cc42ca3c3fef3e6d4d3e88d0093c12342055797105"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "64ccb60dabca4a43e7ee0b100aeff4d013c2e504c313680ac6d683274479d5d6",
+      "output_sha256": "3db25838195aa996a7e9f42f8349824bb87011287be751728a6ca1ca89f590f9"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
+}

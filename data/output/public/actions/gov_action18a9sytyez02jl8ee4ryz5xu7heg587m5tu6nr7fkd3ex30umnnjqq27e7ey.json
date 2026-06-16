@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:6ebce7c006af52db8fe9c81a755c3b1f37feadaa63f1b49b5f4843ba354c3f9b",
+    "raw_input_hash": "sha256:aa6f05ab3d5bcbca116657f0f91bafc869a5b81b18c204f6708d055ccb1656ab",
     "detected_at": "2026-05-29T21:00:01.953626+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,28 +20,163 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
     "confidence": 0.2,
-    "input_hash": "6ebce7c006af52db8fe9c81a755c3b1f37feadaa63f1b49b5f4843ba354c3f9b",
-    "snapshot_bundle_hash": "80061c7fac9677741e90dee68aa9e7ce6113476b5db782806fbb9fbb6aa6c776",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "input_hash": "aa6f05ab3d5bcbca116657f0f91bafc869a5b81b18c204f6708d055ccb1656ab",
+    "snapshot_bundle_hash": "67abec762c333e0b6011381b5d5885bf71557257c96d69bbd830e07ad6af169d",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-6ebce7c006af.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3f646f9a8953cf98fc46f93c.md",
-    "rationale_anchor_hash": "3f646f9a8953cf98fc46f93cc9d04309fe8ac06474caf754579f4b59c4f703ab"
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-aa6f05ab3d5b.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/93f621b74bbc8c55b4c2b628.md",
+    "rationale_anchor_hash": "93f621b74bbc8c55b4c2b6287bf6bec2f02520cb1113c869fe115c4a59c43c99"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Add line-item budget with milestone-gated disbursement and objective completion checks."
+      "Provide: Missing dossier section: budget analysis"
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-6ebce7c006af.md",
+    "markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-aa6f05ab3d5b.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
-    ]
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: budget analysis",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis",
+      "Missing dossier section: community impact analysis"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: active",
+            "Proposed epoch: 633",
+            "Expires after epoch: unknown",
+            "Treasury request: 2.75M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: required",
+            "Requested: Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship",
+            "Recipient: ",
+            "Stated amount: 2.75M ADA",
+            "Deliverables: The primary mission of this proposal is to strengthen and expand Cardano's global ecosystem presence through Rare Evo 2026 and Rare Dev Gov Day 2026, two established community-led initiatives that have become major coordination, onboarding, networking, gove..., This proposal would position the Cardano ecosystem as the title sponsor of the Rare Evo 2026 main stage and global livestream, while also supporting the second annual Rare Dev Gov Day, a dedicated Cardano-focused technical, governance, and community coordin..., The proposal is designed to create direct ecosystem value through: - Global Cardano brand visibility - Ecosystem onboarding and education - Governance participation - Developer and startup exposure - Enterprise and institutional outreach - Cross-chain indus..., Maintaining strong ecosystem visibility, participation, and coordination infrastructure during difficult market cycles is critical for long-term ecosystem resilience and growth.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, medium materiality): The primary mission of this proposal is to strengthen and expand Cardano's global ecosystem presence through Rare Evo 2026 and Rare Dev Gov Day 2026, two established community-led initiatives that have become major coordination, onboarding, networking, gove...",
+            "Claim (technical, independently_verifiable, medium materiality): This proposal would position the Cardano ecosystem as the title sponsor of the Rare Evo 2026 main stage and global livestream, while also supporting the second annual Rare Dev Gov Day, a dedicated Cardano-focused technical, governance, and community coordin...",
+            "Claim (economic, independently_verifiable, medium materiality): The proposal is designed to create direct ecosystem value through: - Global Cardano brand visibility - Ecosystem onboarding and education - Governance participation - Developer and startup exposure - Enterprise and institutional outreach - Cross-chain indus...",
+            "Claim (technical, independently_verifiable, low materiality): Maintaining strong ecosystem visibility, participation, and coordination infrastructure during difficult market cycles is critical for long-term ecosystem resilience and growth.",
+            "Claim (economic, independently_verifiable, medium materiality): Rare Network has been active in the Cardano ecosystem since 2020, beginning with the launch of the RARE stake pool and evolving into one of the most consistent producers of Cardano-focused community building and ecosystem growth events, activations, and eco...",
+            "Claim (technical, independently_verifiable, medium materiality): Over the past half decade, the organization has built extensive operational infrastructure, industry relationships, and community trust through the successful execution of conferences, governance initiatives, side events, ecosystem showcases, and global blo..."
+          ],
+          "missing": [
+            "budget analysis",
+            "feasibility assessment",
+            "alternatives analysis",
+            "failure-mode analysis",
+            "community impact analysis"
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 2750000",
+            "Budget granularity: unknown",
+            "Milestone payment gates: not confirmed",
+            "Clawback/refund path: not confirmed",
+            "Cost/benefit clarity: not confirmed",
+            "Recurring funding dependency: not confirmed",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: 0.35"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: medium",
+            "Governance risk: low",
+            "Technical risk: low",
+            "Treasury exposure risk: medium",
+            "Mitigation evidence: not confirmed",
+            "Independent assurance: not confirmed",
+            "Rollback/remedy path: not confirmed",
+            "Flag count: 2"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"The primary mission of this proposal is to strengthen and expand Cardano's global ecosystem presence through Rare Evo 2026 and Rare Dev Gov Day 2026, two established community-led initiatives that have become major coordination, onboarding, networking, gove...\" and clears the evidence gates.",
+            "Strongest NO: an unresolved blocker (missing budget analysis) means costs or weak controls may outweigh the claimed benefit.",
+            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "missing budget analysis",
+            "missing feasibility assessment",
+            "missing alternatives analysis",
+            "missing failure-mode analysis",
+            "missing community impact analysis"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-aa6f05ab3d5b.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -52,16 +187,16 @@
     "anchor_hash": "0b26f47137d669af9776bf74076388d1952f8a0451bad655653b4e42dbf50c3e",
     "file_sha256": "a180f870acae46b8258b06e2b31e3b4d454cf8cc09f9d1ca406d4c6a3cee322c",
     "content_bytes": "39615",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -140,10 +275,10 @@
     "governance_alignment": 0.2
   },
   "freshness": {
-    "snapshot_age_seconds": 209,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-15T15:27:49.748338Z",
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
     "freshness_source": "manifest"
   }
 }

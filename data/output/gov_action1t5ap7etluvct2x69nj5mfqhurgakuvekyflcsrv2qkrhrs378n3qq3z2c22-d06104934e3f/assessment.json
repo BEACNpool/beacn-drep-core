@@ -1,0 +1,92 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+  "action_type": "InfoAction",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: InfoAction",
+        "Status: active",
+        "Proposed epoch: 636",
+        "Expires after epoch: unknown",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: not required",
+        "Requested: Open a community discussion on reforming Cardano treasury governance",
+        "Recipient: Not applicable \u2014 informational action, no recipient",
+        "Stated amount: None (InfoAction requests no funds)",
+        "Deliverables: A set of basic propositions for treasury-governance reform, offered for public discussion",
+        "Deadline/expiry: Not stated \u2014 informational",
+        "Claim (governance, proposer_asserted, medium materiality): Cardano treasury governance is in a poor state, with a funding impasse and only indirect support from the existing governance system",
+        "Claim (governance, proposer_asserted, medium materiality): Competition between treasury-withdrawal domains has produced community conflict that endangers the ecosystem",
+        "Claim (governance, supported_in_proposal, low materiality): Treasury governance should provide a clear direction, a coherent strategy and a defined process"
+      ],
+      "missing": [
+        "Independent evidence for: Cardano treasury governance is in a poor state, with a funding impasse and only indirect support from the existing governance system",
+        "Independent evidence for: Competition between treasury-withdrawal domains has produced community conflict that endangers the ecosystem"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Treasury governance should provide a clear direction, a coherent strategy and a defined process\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Cardano treasury governance is in a poor state, with a funding impasse and only indirect support from the existing governance system\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "freshness gate failed"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "freshness gate failed"
+  ]
+}

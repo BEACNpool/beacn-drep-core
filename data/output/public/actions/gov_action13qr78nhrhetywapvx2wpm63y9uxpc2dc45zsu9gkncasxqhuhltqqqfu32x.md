@@ -4,18 +4,39 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-15T15:21:58.675624+00:00`
+- Published at: `2026-06-16T00:57:18.891226+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.07; confidence 59.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.18; confidence 70.3%.
+
+## Assessment tree
+- assessment_status: `incomplete`
+- Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: `thin` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: `incomplete` — Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: `complete` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: `ready` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
 - Pinned anchor document is available for this action.
 - Treasury withdrawal actions require elevated scrutiny.
 - Flag score present (4), reducing confidence.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 50.00M ADA
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "(“Orion Fund”), managed by Draper Dragon Orion GP, LLC (“General Partner” or “GP”), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Claims and evidence missing: Independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.
+- Claims and evidence missing: Independent evidence for: Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.
+- Claims and evidence status is thin.
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
 
 ## Top 3 fixes to improve next submission
 - Use stable, reproducible anchor links (commit-pinned when possible).
@@ -23,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `68d5fc53b7f347106ee22fdaf18c07b472fc5fdb6f05324c91300c58a6c362bf`
-- snapshot_bundle_hash: `9d8e426d2df68079a9a837e3cbae7b2c5e23ae8945d95785e96958a5cc5a943b`
-- soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
+- input_hash: `f467abeec403a93e456001b580f54ee9e542793abe783a0eadf885ce18768555`
+- snapshot_bundle_hash: `cfb63c0e0754448be8c52089b294bafbd52a4af775ba6632e6326db68298f5e6`
+- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
-- score: `-0.0733`
-- confidence: `0.5933`
+- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- score: `-0.1833`
+- confidence: `0.7033`
 

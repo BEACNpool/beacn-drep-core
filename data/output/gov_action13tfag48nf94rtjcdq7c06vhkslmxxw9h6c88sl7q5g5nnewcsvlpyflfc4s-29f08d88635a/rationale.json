@@ -1,0 +1,219 @@
+{
+  "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpyflfc4s",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "score": -0.1833,
+  "confidence": 0.7033,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 266.7k ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Network DRep distribution used as one signal, not authority.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "29f08d88635ab78670c19e2c503befe7b67baea159de2e0b6b1431d5148d0600",
+  "snapshot_bundle_hash": "da681432191484abd77b47f21be76070fa71bad5f046fec74ca48aa03dac9217",
+  "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 2860,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-16T00:02:02.222365Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0688,
+    "NO": 0.6991,
+    "ABSTAIN": 0.2321
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpyflfc4s",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: enacted",
+          "Proposed epoch: 570",
+          "Expires after epoch: unknown",
+          "Treasury request: 266.7k ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer...",
+          "Recipient: ",
+          "Stated amount: 266.7k ADA",
+          "Deliverables: This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem., It offers deep on-chain insights, real-time data access, and powerful tools for developers, stake pool operators, and users., With over 50,000 monthly users and millions of processed data requests, Cexplorer.io has become a trusted resource in the Cardano community., This proposal seeks funding to ensure the long-term sustainability of the platform through infrastructure maintenance and continuous improvement.",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.",
+          "Claim (economic, independently_verifiable, low materiality): It offers deep on-chain insights, real-time data access, and powerful tools for developers, stake pool operators, and users.",
+          "Claim (economic, independently_verifiable, medium materiality): With over 50,000 monthly users and millions of processed data requests, Cexplorer.io has become a trusted resource in the Cardano community.",
+          "Claim (technical, independently_verifiable, high materiality): This proposal seeks funding to ensure the long-term sustainability of the platform through infrastructure maintenance and continuous improvement.",
+          "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: The Cardano ecosystem lacks a powerful, developer-friendly explorer with advanced features, real-time insights, and flexible tools for building on-chain apps.",
+          "Claim (economic, independently_verifiable, low materiality): Cexplorer.io aims to fill this gap by providing deep data access, improved UX, and ongoing enhancements to support the growing needs of users and developers."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 266.7k ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer.... The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer.... The recorded treasury amount is 266.7k ADA. The strongest grounded claim is: This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpyflfc4s",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreicrrim5wicmsnrjpw7gp52jmebn7a2ly6j4eopjkvdsol6adyboqu",
+        "file_sha256": "518a19db204c936297dbe67f7496102df834bc793c239e95547272fc01e02e85",
+        "file_path": "data/input/governance/anchors/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpyflfc4s-20260326T175234Z.bin",
+        "content_chars": 13458
+      },
+      "claim_count": 8,
+      "prompt_sha256": "c217bd6c4a4dea51427bfdde03b6fd767d85256e0b1504c1048799d645e31594",
+      "output_sha256": "5c7ea5a1b8352a8f5830dc2796a234cca90e271e90282fe221bde21ea469ad9c"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "cbcc9a6e58dd61a6387820382afef37a0a73c3ca2a6b9bb14a72f513f9b190db",
+      "output_sha256": "4a84b31f009f1b3b5676a91eba41de186f4829127675f76221b4be6dbf6ca69c"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
+}

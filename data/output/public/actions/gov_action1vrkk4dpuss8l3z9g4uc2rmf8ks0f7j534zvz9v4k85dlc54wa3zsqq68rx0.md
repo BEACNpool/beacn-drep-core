@@ -1,21 +1,42 @@
 # gov_action1vrkk4dpuss8l3z9g4uc2rmf8ks0f7j534zvz9v4k85dlc54wa3zsqq68rx0
 
 ## Vote
-- Decision: **YES**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-15T15:21:58.675624+00:00`
+- Published at: `2026-06-16T00:57:18.891226+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.07; confidence 55.7%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 77.3%.
+
+## Assessment tree
+- assessment_status: `incomplete`
+- Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: `complete` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: `incomplete` — Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: `thin` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: `ready` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
 - Pinned anchor document is available for this action.
 - Treasury withdrawal actions require elevated scrutiny.
 - Flag score present (7), reducing confidence.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 1.50M ADA
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
 - Use stable, reproducible anchor links (commit-pinned when possible).
@@ -23,11 +44,11 @@ Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports p
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `a801993893ecbfd0e859ea31ec8cca7fabbaed0ac1ca5ea49facd070bc1a1b5b`
-- snapshot_bundle_hash: `6527bae8ec616d5c89e0ebd4ce41c0dea21a63c8e641147f194d521646359aff`
-- soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
+- input_hash: `d84606d737fed2e6eea2a38f869c318e0b91c27ec7b2c3a09e9530d07b1bdc7c`
+- snapshot_bundle_hash: `012c96a12c012178d1374eb7830687fb89768399c730e651cbf773df9e502c3d`
+- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
-- score: `0.0667`
-- confidence: `0.5567`
+- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- score: `-0.2833`
+- confidence: `0.7733`
 

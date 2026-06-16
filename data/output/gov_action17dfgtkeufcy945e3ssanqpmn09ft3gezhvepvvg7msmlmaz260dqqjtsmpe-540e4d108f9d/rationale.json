@@ -1,0 +1,219 @@
+{
+  "action_id": "gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "score": -0.1833,
+  "confidence": 0.7033,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 6.90M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Network DRep distribution used as one signal, not authority.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "540e4d108f9d5f9b4c9a75206b45e369162b3a6f27b4210ede271c67859a9ad5",
+  "snapshot_bundle_hash": "6b71bdfafb09440b7a01c550204a16cbc0c4f1b3e90cc821f221d34b204f8ec0",
+  "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 2856,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-16T00:02:02.222365Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0688,
+    "NO": 0.6991,
+    "ABSTAIN": 0.2321
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: enacted",
+          "Proposed epoch: 617",
+          "Expires after epoch: unknown",
+          "Treasury request: 6.90M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Dingo: a Production-Grade Block Producer in Go by Blink Labs",
+          "Recipient: ",
+          "Stated amount: 6.90M ADA",
+          "Deliverables: Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node., Dingo is a work in progress, and that's the whole point of this proposal., But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support., This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, independently_verifiable, high materiality): Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.",
+          "Claim (economic, independently_verifiable, low materiality): Dingo is a work in progress, and that's the whole point of this proposal.",
+          "Claim (technical, independently_verifiable, medium materiality): But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support.",
+          "Claim (economic, independently_verifiable, high materiality): This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...",
+          "Claim (economic, independently_verifiable, low materiality): Who We Are Blink Labs We're a small engineering company focused exclusively on blockchain software integrated with Cardano.",
+          "Claim (technical, independently_verifiable, low materiality): We build in Go because it's the right language for high-performance networked systems, and because Cardano benefits from having core infrastructure that millions of developers can actually read and work on."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 6.90M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on Dingo: a Production-Grade Block Producer in Go by Blink Labs. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Dingo: a Production-Grade Block Producer in Go by Blink Labs. The recorded treasury amount is 6.90M ADA. The strongest grounded claim is: Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreibeffgc4ow5rxbttesgqqe36copa5rejtsw6b4jruwow2p3wahxtq",
+        "file_sha256": "24294c2e3add8dc33992468409bf09cf076244ce56f07898d2ceb69fbb00f79c",
+        "file_path": "data/input/governance/anchors/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-20260326T175206Z.bin",
+        "content_chars": 27418
+      },
+      "claim_count": 8,
+      "prompt_sha256": "7470cfb559d702b0220dd384f9e4dd034c1c6d9818cee517197d970a41227843",
+      "output_sha256": "96ab4b272ec0573c40be6dd05952d4233836518a767f406e414dbb544e2544df"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "ebad707972ce5fb27d24e94b4c1e188e000b299667040539ba5622dfa1a8ee08",
+      "output_sha256": "6609cb7d822b735c3085e0fb571b687773167a868fde64f1e35fa508770d470f"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
+}

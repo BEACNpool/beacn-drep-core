@@ -1,0 +1,136 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 631",
+        "Expires after epoch: unknown",
+        "Treasury request: 1.68M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: required",
+        "Requested: Fund 12 months of operations, maintenance and improvements for the Eternl non-custodial Cardano wallet while it transitions toward a paid Pro plan",
+        "Recipient: Eternl",
+        "Stated amount: 1,680,000 ADA (stated \u2248$420,000/year)",
+        "Deliverables: 12 months of frontend/backend maintenance and development, Backend infrastructure and user support, Launch of a paid Pro plan toward self-sustainability",
+        "Deadline/expiry: 12-month period (2026-2027)",
+        "Claim (adoption, proposer_asserted, high materiality): Eternl serves about 100,000 browser-extension users and ~30,000 across Android and iOS",
+        "Claim (economic, proposer_asserted, high materiality): Roughly 5,500 Pro subscribers (\u22484.2% of the install base) would fully cover the ~$420,000 annual cost",
+        "Claim (economic, supported_in_proposal, medium materiality): Annual operating cost is around $420,000 (~1,680,000 ADA)",
+        "Claim (adoption, proposer_asserted, medium materiality): Eternl is a primary gateway for Cardano payments, staking, governance and DApp interaction"
+      ],
+      "missing": [
+        "Independent evidence for: Eternl serves about 100,000 browser-extension users and ~30,000 across Android and iOS",
+        "Independent evidence for: Roughly 5,500 Pro subscribers (\u22484.2% of the install base) would fully cover the ~$420,000 annual cost",
+        "Independent evidence for: Eternl is a primary gateway for Cardano payments, staking, governance and DApp interaction",
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 1.68M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Annual operating cost is around $420,000 (~1,680,000 ADA)\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Eternl serves about 100,000 browser-extension users and ~30,000 across Android and iOS\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "freshness gate failed",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "freshness gate failed",
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

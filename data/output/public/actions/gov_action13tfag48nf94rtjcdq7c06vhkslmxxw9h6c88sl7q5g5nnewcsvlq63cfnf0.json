@@ -5,40 +5,152 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:00917b3ccbb4cfe5fb365219a85aa75644410956333f66c7c7b417233d0a8a3c",
+    "raw_input_hash": "sha256:fc50589364ecf5d05807efada22322f67685a1cc3762d7d6578817b48585c7b6",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.1667,
-    "confidence": 0.6867,
-    "input_hash": "00917b3ccbb4cfe5fb365219a85aa75644410956333f66c7c7b417233d0a8a3c",
-    "snapshot_bundle_hash": "fe63abf7b1b0b6ff9effc4a51c64fc75c9bc88939e0474cf527d0100a31ab888",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "NO",
+    "score": -0.1833,
+    "confidence": 0.7033,
+    "input_hash": "fc50589364ecf5d05807efada22322f67685a1cc3762d7d6578817b48585c7b6",
+    "snapshot_bundle_hash": "bd68d7d4fd8b517bca9a10c5d6d0db65985024b1fd673d19873c3654affb9d46",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0-00917b3ccbb4.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0-fc50589364ec.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.17; confidence 68.7%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.18; confidence 70.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0-00917b3ccbb4.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0-fc50589364ec.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: enacted",
+            "Proposed epoch: 570",
+            "Expires after epoch: unknown",
+            "Treasury request: 243.5k ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Requested: Withdraw \u20b3243,478 for MLabs Core Tool Maintenance & Enhancement: Plutarch",
+            "Recipient: ",
+            "Stated amount: 243.5k ADA",
+            "Deliverables: This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Plutarch which will provide the following services: This proposal seeks funding for the ongoing annual maintenance and feature enhancement of Plutarch, a production-grade eDSL in Hask..., As a core tool widely adopted within the ecosystem, Plutarch requires consistent upkeep., Funding covers maintenance (bug fixes, compatibility updates for hardforks) and new feature implementation based on community needs (e.g., via GitHub issues)., This ensures Plutarch remains resilient, powerful, and up-to-date, supporting developers and the ecosystem.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Plutarch which will provide the following services: This proposal seeks funding for the ongoing annual maintenance and feature enhancement of Plutarch, a production-grade eDSL in Hask...",
+            "Claim (economic, independently_verifiable, low materiality): As a core tool widely adopted within the ecosystem, Plutarch requires consistent upkeep.",
+            "Claim (economic, independently_verifiable, high materiality): Funding covers maintenance (bug fixes, compatibility updates for hardforks) and new feature implementation based on community needs (e.g., via GitHub issues).",
+            "Claim (economic, independently_verifiable, low materiality): This ensures Plutarch remains resilient, powerful, and up-to-date, supporting developers and the ecosystem.",
+            "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: As a core production-grade tool for Cardano smart contracts, Plutarch requires consistent upkeep and enhancements to align with network growth and upcoming hardforks.",
+            "Claim (economic, independently_verifiable, high materiality): This proposal addresses the need for dedicated funding to maintain Plutarch's resilience, add features, and ensure ongoing compatibility, supporting developers and strengthening the ecosystem."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 243.5k ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Plutarch which will provide the following services: This proposal seeks funding for the ongoing annual maintenance and feature enhancement of Plutarch, a production-grade eDSL in Hask...\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0-fc50589364ec.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +161,16 @@
     "anchor_hash": "2c7c141d70a47bbe09bab2d74a777c9bac5e65072b808e56364df23e490e7158",
     "file_sha256": "8d48bbd04f09b971f4274c99dd41f99aa33b26a0a74d6912acb449792d481b59",
     "content_bytes": "12647",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq63cfnf0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -131,16 +243,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.1833,
     "conflict_risk": 0.0,
-    "technical_value": 0.1667,
-    "governance_alignment": 0.6867
+    "technical_value": 0.0,
+    "governance_alignment": 0.7033
   },
   "freshness": {
-    "snapshot_age_seconds": 7981,
+    "snapshot_age_seconds": 7,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

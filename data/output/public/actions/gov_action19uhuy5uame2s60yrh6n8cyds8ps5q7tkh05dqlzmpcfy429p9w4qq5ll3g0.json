@@ -5,40 +5,155 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:2f148a6d8c23c1c15c98f2b2f743d3d9e5f45304fa4c5ffebb87a4860c624f4e",
+    "raw_input_hash": "sha256:627903f11d3bb992b405856fd60d7781eecd72f3c48da18f6efab9c84a340006",
     "detected_at": "2026-02-23T18:00:01.850400+00:00"
   },
   "decision": {
-    "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.0667,
-    "confidence": 0.5567,
-    "input_hash": "2f148a6d8c23c1c15c98f2b2f743d3d9e5f45304fa4c5ffebb87a4860c624f4e",
-    "snapshot_bundle_hash": "b649e077fdee9f74982e2ce17394c6dd415bf5a6bfcfb597a18f7c666b0a43fb",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "NO",
+    "score": -0.2833,
+    "confidence": 0.7733,
+    "input_hash": "627903f11d3bb992b405856fd60d7781eecd72f3c48da18f6efab9c84a340006",
+    "snapshot_bundle_hash": "0c0816fa8d843b542bc383fa11a9f27ec6c0d0c8f47af275dbbef75564cd8d9c",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0-2f148a6d8c23.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0-627903f11d3b.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.07; confidence 55.7%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 77.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0-2f148a6d8c23.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0-627903f11d3b.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: enacted",
+            "Proposed epoch: 614",
+            "Expires after epoch: unknown",
+            "Treasury request: 10.14M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Requested: Amaru Treasury Withdrawal 2026",
+            "Recipient: not stated in document",
+            "Stated amount: 10.14M ADA",
+            "Deliverables: Amaru is an open-source project building a new, fully interoperable block-producing node that improves the overall accessibility and robustness of the Cardano network without compromising its safety and security., Amaru provides another perspective and solution for stake pool operators and developers alike, prioritizing low hardware requirements and a seamless user experience., The project is implemented primarily in Rust and aims to attract new contributors to the ecosystem's core maintenance., This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, supported_in_proposal, high materiality): Amaru is an open-source project building a new, fully interoperable block-producing node that improves the overall accessibility and robustness of the Cardano network without compromising its safety and security.",
+            "Claim (economic, supported_in_proposal, low materiality): Amaru provides another perspective and solution for stake pool operators and developers alike, prioritizing low hardware requirements and a seamless user experience.",
+            "Claim (economic, proposer_asserted, low materiality): The project is implemented primarily in Rust and aims to attract new contributors to the ecosystem's core maintenance.",
+            "Claim (economic, proposer_asserted, high materiality): This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.",
+            "Claim (economic, supported_in_proposal, low materiality): Before we dive further into the details and cost breakdown, here is a high-level view of the ask, some assumptions we are making, and the general direction of this withdrawal request.",
+            "Claim (economic, proposer_asserted, low materiality): 2025 Retrospective We provide a full retrospective of our 2025 roadmap in annex of this document."
+          ],
+          "missing": [
+            "Independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.",
+            "Independent evidence for: Duration & Milestones This proposal spans over 12 months , from January to December 2026, throughout which there will be several deliveries, demos, and workshops."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 10.14M ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 2"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Amaru is an open-source project building a new, fully interoperable block-producing node that improves the overall accessibility and robustness of the Cardano network without compromising its safety and security.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0-627903f11d3b.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +164,16 @@
     "anchor_hash": "c5604e100bd27b04f620d38b0389ad7687da9e1fd5f602f5372157fd0e78adce",
     "file_sha256": "523b826293cef49086a7d8673177e783c60bb1c0a4beedcd1e65a9de36f9922d",
     "content_bytes": "66605",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\""
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -131,16 +246,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.2833,
     "conflict_risk": 0.0,
-    "technical_value": 0.0667,
-    "governance_alignment": 0.5567
+    "technical_value": 0.0,
+    "governance_alignment": 0.7733
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

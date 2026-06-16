@@ -4,28 +4,53 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-15T15:21:58.675624+00:00`
+- Published at: `2026-06-16T00:57:18.891226+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+
+## Assessment tree
+- assessment_status: `blocked`
+- Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: `complete` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: `incomplete` — Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: `complete` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
 - Treasury actions are high-impact and require a completed deep research dossier.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 23000000
+- Risk review: Execution risk: medium
+- Counterargument pass: Strongest YES: the proposal substantiates "This governance action requests the withdrawal of ₳23,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused ‘Year 2’ contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive..." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: budget analysis
+- Claims and evidence missing: feasibility assessment
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Synthesis missing: missing budget analysis
+- Synthesis missing: missing feasibility assessment
+- Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
 - Provide: Deep research dossier is required for treasury actions before directional voting.
 - Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
+- Provide: Missing dossier section: budget analysis
 
 ## Proof of vote
-- input_hash: `38ad52963cd1ea2cf0ae8f52fadfeb18db317f7e69c94c6aa96c7576d652bae5`
-- snapshot_bundle_hash: `650504f46487637633e3948f3996b1542a6dcf657b7355ae6d0c896317426343`
-- soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
+- input_hash: `c472071f7616defbdaddc43f10496cfe6d4211893efe9c52d307d36b873dfe04`
+- snapshot_bundle_hash: `21a3dc0f81557ad043f5f839892211ff0056981559e1a8edde8efae9eef458b0`
+- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
+- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
 - score: `0.0`
 - confidence: `0.2`
 

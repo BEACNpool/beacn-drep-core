@@ -4,18 +4,36 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-15T15:21:58.675624+00:00`
+- Published at: `2026-06-16T00:57:18.891226+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.09; confidence 61.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.18; confidence 70.3%.
+
+## Assessment tree
+- assessment_status: `incomplete`
+- Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: `complete` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: `incomplete` — Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: `complete` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: `ready` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
 - Pinned anchor document is available for this action.
 - Treasury withdrawal actions require elevated scrutiny.
 - Flag score present (4), reducing confidence.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 3.13M ADA
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "This treasury withdrawal funds Ecosystem Exchange Listing and Market Making service pool which will provide MMAAS (Market Making as a Service): Proposal Overview This proposal aims to address two core issues within the Cardano ecosystem: - Problem 1: No Car..." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
 
 ## Top 3 fixes to improve next submission
 - Use stable, reproducible anchor links (commit-pinned when possible).
@@ -23,11 +41,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `39ab926a77e5fee7b8fc9ce2bbc46579d3dfc49c290b5db32dfe97f57bcc70f9`
-- snapshot_bundle_hash: `10551f67ef900f8f23d390d4337c7ce7530328680d58ae705c62f730aaaaea2c`
-- soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
+- input_hash: `9391b5635bb186b075b452a8eb15218ab8f6f695dce1b4f7f2f94542515e944c`
+- snapshot_bundle_hash: `029030a3c69a892ef3f9f22fc323a2d47233c59fb2260a559120020474080073`
+- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
-- score: `-0.0933`
-- confidence: `0.6133`
+- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- score: `-0.1833`
+- confidence: `0.7033`
 

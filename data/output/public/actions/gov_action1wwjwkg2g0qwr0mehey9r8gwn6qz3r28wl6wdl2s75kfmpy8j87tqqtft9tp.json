@@ -5,40 +5,133 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:8d735a24e7c392e226ad53c082277664306a35ae03613c89fd34df101e1f1ba7",
+    "raw_input_hash": "sha256:359abf1eb27ff2aa075b70d769c9bd803e21047c84f47bdce41509b3bd833b0f",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "ABSTAIN",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.4,
-    "confidence": 0.92,
-    "input_hash": "8d735a24e7c392e226ad53c082277664306a35ae03613c89fd34df101e1f1ba7",
-    "snapshot_bundle_hash": "0257c23d77a66508e5bf0c7b3a5e2e64bf242bab827efb9452ad595153086bcb",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "ABSTAIN",
+    "score": 0.05,
+    "confidence": 0.57,
+    "input_hash": "359abf1eb27ff2aa075b70d769c9bd803e21047c84f47bdce41509b3bd833b0f",
+    "snapshot_bundle_hash": "b880f249b17a571a5e9a37f490f55127e180400ff1d3ff450499afa707de29a7",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp-8d735a24e7c3.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp-359abf1eb27f.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.40; confidence 92.0%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.05; confidence 57.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Clarify governance intent and expected measurable outcome.",
       "Map each major claim to primary receipts and stable source links."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp-8d735a24e7c3.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp-359abf1eb27f.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp",
+      "action_type": "InfoAction",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: InfoAction",
+            "Status: expired",
+            "Proposed epoch: 611",
+            "Expires after epoch: unknown",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: not required",
+            "Requested: Net Change Limit of 300 Million ADA for Epochs 613\u2013713",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: This governance action proposes a Net Change Limit of 300,000,000,000,000 lovelace (300 million ADA) for the period from the start of Epoch 613 (13 February 2026) to the end of Epoch 713 (3 July 2027)., Upon approval in accordance with the Constitution, this NCL shall apply to Epochs 613\u2013713 and supersede any previously agreed NCL for the same period., This governance action is required to establish a Net Change Limit for a defined period in accordance with the Constitution., 1) Why Epochs 613\u2013713 This Net Change Limit (NCL) period is proposed to align the NCL cycle with the mid-year budget season and ensure that a complete prior year of treasury inflow data is available when setting the subsequent NCL.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, supported_in_proposal, medium materiality): This governance action proposes a Net Change Limit of 300,000,000,000,000 lovelace (300 million ADA) for the period from the start of Epoch 613 (13 February 2026) to the end of Epoch 713 (3 July 2027).",
+            "Claim (governance, supported_in_proposal, high materiality): Upon approval in accordance with the Constitution, this NCL shall apply to Epochs 613\u2013713 and supersede any previously agreed NCL for the same period.",
+            "Claim (governance, supported_in_proposal, high materiality): This governance action is required to establish a Net Change Limit for a defined period in accordance with the Constitution.",
+            "Claim (economic, supported_in_proposal, high materiality): 1) Why Epochs 613\u2013713 This Net Change Limit (NCL) period is proposed to align the NCL cycle with the mid-year budget season and ensure that a complete prior year of treasury inflow data is available when setting the subsequent NCL.",
+            "Claim (economic, supported_in_proposal, high materiality): 2) Why 300 Million ADA For the purpose of maintaining fiscal discipline, the proposed NCL is set with reference to the previous year\u2019s total treasury inflows.",
+            "Claim (other, proposer_asserted, high materiality): Total treasury inflows for 2025 are defined as the sum of inflows from Epoch 532 through Epoch 604."
+          ],
+          "missing": [
+            "Independent evidence for: Total treasury inflows for 2025 are defined as the sum of inflows from Epoch 532 through Epoch 604."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This governance action proposes a Net Change Limit of 300,000,000,000,000 lovelace (300 million ADA) for the period from the start of Epoch 613 (13 February 2026) to the end of Epoch 713 (3 July 2027).\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Total treasury inflows for 2025 are defined as the sum of inflows from Epoch 532 through Epoch 604.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp-359abf1eb27f.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +142,16 @@
     "anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
     "file_sha256": "7f9c7b474e3c0bf497f790fac2cebfa458da2a00ef8a7bb64b1e540c990b111d",
     "content_bytes": "2729",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1wwjwkg2g0qwr0mehey9r8gwn6qz3r28wl6wdl2s75kfmpy8j87tqqtft9tp.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -121,14 +214,14 @@
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.4,
-    "governance_alignment": 0.92
+    "technical_value": 0.05,
+    "governance_alignment": 0.57
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

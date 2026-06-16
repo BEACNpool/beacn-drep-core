@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:4c77ce212255b6caa85ecd6936ced94a3d1ee5a669df8cf08631eb1163709d5e",
+    "raw_input_hash": "sha256:9d811dfe1195dcbc52f26dcecd42fa2383262687cc2e6fbc942dd1f862fa8e55",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,27 +18,113 @@
   },
   "proof_of_vote": {
     "vote": "YES",
-    "score": 0.1667,
-    "confidence": 0.6867,
-    "input_hash": "4c77ce212255b6caa85ecd6936ced94a3d1ee5a669df8cf08631eb1163709d5e",
-    "snapshot_bundle_hash": "52fda6a0a5b928875c2cb5a90dd20cb46fb2321820619f8034e90eb316c4eb67",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "score": 0.15,
+    "confidence": 0.7,
+    "input_hash": "9d811dfe1195dcbc52f26dcecd42fa2383262687cc2e6fbc942dd1f862fa8e55",
+    "snapshot_bundle_hash": "3e2e359709234b66f571ee570d84cce0c306ed411175527b5cbef96f023ae23f",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8-4c77ce212255.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8-9d811dfe1195.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this NewCommittee (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Flag score present (10), reducing confidence. Confidence context: score 0.17; confidence 68.7%.",
+    "summary": "Vote: YES. For this NewCommittee (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: NewCommittee Confidence context: score 0.15; confidence 70.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Clarify governance intent and expected measurable outcome.",
       "Map each major claim to primary receipts and stable source links."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8-4c77ce212255.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8-9d811dfe1195.md",
+    "missing_evidence": [],
+    "assessment_status": "ready",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8",
+      "action_type": "NewCommittee",
+      "overall_status": "ready",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: NewCommittee",
+            "Status: expired",
+            "Proposed epoch: 600",
+            "Expires after epoch: unknown",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: not required",
+            "Requested: Add Constitutional Committee Member - Christina",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action., The proposal is submitted independently by community participants, in accordance with Cardano\u2019s permissionless governance framework, and explicitly references the previously submitted Update Committee action whose purpose was to add Cardano Curia to the Con..., Permissionless On-Chain Governance With the activation of full on-chain governance under CIP-1694, Cardano transitioned into a governance system where any Ada holder may submit governance actions, provided they comply with constitutional guardrails and ledg..., This permissionless design ensures that governance is not limited to institutional processes, but remains open to direct community participation.",
+            "Deadline/expiry: not stated in document",
+            "Claim (governance, independently_verifiable, high materiality): This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.",
+            "Claim (governance, independently_verifiable, high materiality): The proposal is submitted independently by community participants, in accordance with Cardano\u2019s permissionless governance framework, and explicitly references the previously submitted Update Committee action whose purpose was to add Cardano Curia to the Con...",
+            "Claim (economic, independently_verifiable, high materiality): Permissionless On-Chain Governance With the activation of full on-chain governance under CIP-1694, Cardano transitioned into a governance system where any Ada holder may submit governance actions, provided they comply with constitutional guardrails and ledg...",
+            "Claim (governance, independently_verifiable, medium materiality): This permissionless design ensures that governance is not limited to institutional processes, but remains open to direct community participation.",
+            "Claim (governance, independently_verifiable, high materiality): Context of the Snap Election Intersect facilitated a snap election to fill a vacant Constitutional Committee seat following the resignation of a committee member.",
+            "Claim (governance, independently_verifiable, high materiality): That process resulted in the selection and on-chain ratification of Cardano Curia through an Update Committee governance action."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: high",
+            "Governance risk: high",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: confirmed",
+            "Rollback/remedy path: confirmed",
+            "Flag count: 0"
+          ],
+          "missing": [],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8-9d811dfe1195.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +135,16 @@
     "anchor_hash": "84e66f959fdecfd86708a5e9cad50b24bcf2da97186182abedd2aa046447a4b2",
     "file_sha256": "159e3d765c96c7148f73dca604d1337755731736bfff9e0aff614e0c35b4846d",
     "content_bytes": "8638",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -121,14 +207,14 @@
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.1667,
-    "governance_alignment": 0.6867
+    "technical_value": 0.15,
+    "governance_alignment": 0.7
   },
   "freshness": {
-    "snapshot_age_seconds": 7980,
+    "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

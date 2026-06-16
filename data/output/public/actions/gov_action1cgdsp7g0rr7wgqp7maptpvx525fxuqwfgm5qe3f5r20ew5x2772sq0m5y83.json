@@ -5,40 +5,131 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:712dc7662bc811d6b3f7d64197ea4a03f8be473210c124da9827dfa1cf0efb74",
+    "raw_input_hash": "sha256:d0aa3ab9becde7fedd9d3f87a9d84103588d00f791d708190be1cbe26940fcff",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "ABSTAIN",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.35,
-    "confidence": 0.87,
-    "input_hash": "712dc7662bc811d6b3f7d64197ea4a03f8be473210c124da9827dfa1cf0efb74",
-    "snapshot_bundle_hash": "2e633c0f4bdfadb897e67e2de1194a78a7630632ab850f71f3a0226e3039ac56",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.52,
+    "input_hash": "d0aa3ab9becde7fedd9d3f87a9d84103588d00f791d708190be1cbe26940fcff",
+    "snapshot_bundle_hash": "cd5e1d8adb329c3e5a4b2c4f1712188b982c7aca5fca652b1affb3191e0e8535",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-712dc7662bc8.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-d0aa3ab9becd.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this ParameterChange (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.35; confidence 87.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.00; confidence 52.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
       "Add rollback/containment plan and explicit halt criteria."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-712dc7662bc8.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-d0aa3ab9becd.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83",
+      "action_type": "ParameterChange",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: ParameterChange",
+            "Status: enacted",
+            "Proposed epoch: 606",
+            "Expires after epoch: unknown",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: not required",
+            "Requested: Increase Transaction and Block Memory Units (Part 1 of 2)",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: Intersect's Parameter Committee proposes the first of two Parameter Update governance actions., The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04., 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers., 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, independently_verifiable, high materiality): Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.",
+            "Claim (technical, independently_verifiable, medium materiality): The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.",
+            "Claim (technical, independently_verifiable, low materiality): 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers.",
+            "Claim (technical, independently_verifiable, low materiality): 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
+            "Claim (technical, independently_verifiable, medium materiality): Community members have expressed a desire to increase the Plutus script memory unit limits to simplify DApp development and enhance scalability - see PCP-003 and public survey results.",
+            "Claim (technical, independently_verifiable, high materiality): Raising maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory] could significantly improve Plutus script throughput with minimal impact on block propagation or node performance, making it a low-risk and high-impact change."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83-d0aa3ab9becd.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +140,16 @@
     "anchor_hash": "f7e237031c174ba58190950350cc8c3ed940d4268bcc75e7f29080370ad34a55",
     "file_sha256": "b6bf73aedfc13f6a2b1ab988138fc16644a8a32f164a474b1651935ffee9f010",
     "content_bytes": "17501",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1cgdsp7g0rr7wgqp7maptpvx525fxuqwfgm5qe3f5r20ew5x2772sq0m5y83.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -121,14 +212,14 @@
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.35,
-    "governance_alignment": 0.87
+    "technical_value": 0.0,
+    "governance_alignment": 0.52
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

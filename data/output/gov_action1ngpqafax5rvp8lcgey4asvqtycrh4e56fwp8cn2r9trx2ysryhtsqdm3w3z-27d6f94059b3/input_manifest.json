@@ -192,5 +192,35 @@
       "dir_hash": "3a3a446a46c271c424dbf4856cc3056b0889e61a05214c44a7c84bc788dbe5f3"
     }
   ],
-  "snapshot_bundle_hash": "e6c423d78c8426efc515f58ade6de5c6fa479fb7652770f10f607ccf27c82408"
+  "snapshot_bundle_hash": "e6c423d78c8426efc515f58ade6de5c6fa479fb7652770f10f607ccf27c82408",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmWmEKFTae7Q12HUeVyMui6ReCuTXRx55W6eahBGn9ECgn",
+        "file_sha256": "6efe97bfc90a59b991c10cd3c94a8ce3774ecf6bc0cf1b12863d8160962379e9",
+        "file_path": "data/input/governance/anchors/gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z-20260615T152520Z.bin",
+        "content_chars": 18282
+      },
+      "claim_count": 4,
+      "prompt_sha256": null,
+      "output_sha256": "f4ba2f51f60d89b6df0481077f7ebf83f3a35c9853a49f9e5105058ea48c44d1"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "aeafdfa05c139e5f71f53916d142926551c0d434990b70e7777f3d13f725e504"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
 }

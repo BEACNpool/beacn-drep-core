@@ -1,0 +1,46 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "what": "Fund a Year-2 contracted cost and a 12-month enhancement and maintenance program for critical integrations delivered under CCI V1 (Circle USDCx, LayerZero, Pyth, Dune), plus a new native Fireblocks integration",
+    "recipient": "The Cardano Critical Integrations team / partners",
+    "amount_ada": "23,000,000 ADA (stated USD $5,750,000 at $0.25)",
+    "deliverables": [
+      "12 months operations and maintenance of CCI V1 integrations",
+      "Contracted Year-2 licensing/platform fees for Circle, LayerZero, Pyth, Dune",
+      "New full native Fireblocks integration"
+    ],
+    "deadline": "12-month program"
+  },
+  "claims": [
+    {
+      "claim": "CCI V1 integrations (Circle, LayerZero, Pyth, Dune) require ongoing annual licensing/service payments to remain operational",
+      "category": "economic",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "Without maintenance funding the previously delivered integrations risk degradation or going offline",
+      "category": "technical",
+      "support": "proposer_asserted",
+      "materiality": "high"
+    },
+    {
+      "claim": "The program creates a recurring annual treasury dependency for third-party infrastructure",
+      "category": "economic",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "A new full native Fireblocks integration is included alongside maintenance of existing ones",
+      "category": "technical",
+      "support": "proposer_asserted",
+      "materiality": "medium"
+    }
+  ],
+  "summary": "A 23M ADA request to pay Year-2 licensing and 12 months of maintenance for the Circle/LayerZero/Pyth/Dune integrations and to add Fireblocks \u2014 a recurring treasury dependency.",
+  "output_sha256": "45ba6d54591145db222a61b21d29606b8938b8dc9ce27f30a4c599dd5d17c435"
+}

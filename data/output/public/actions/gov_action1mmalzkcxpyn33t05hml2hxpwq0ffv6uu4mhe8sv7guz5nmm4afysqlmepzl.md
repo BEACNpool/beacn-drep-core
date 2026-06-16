@@ -1,20 +1,38 @@
 # gov_action1mmalzkcxpyn33t05hml2hxpwq0ffv6uu4mhe8sv7guz5nmm4afysqlmepzl
 
 ## Vote
-- Decision: **YES**
+- Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-15T15:21:58.675624+00:00`
+- Published at: `2026-06-16T00:57:18.891226+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.32; confidence 84.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.05; confidence 57.0%.
+
+## Assessment tree
+- assessment_status: `incomplete`
+- Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: `thin` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Risk review: `thin` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: `ready` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
 - Pinned anchor document is available for this action.
 - Flag score present (3), reducing confidence.
+- Intake: Action type: InfoAction
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: Independent evidence for: A key issue in the initial budget process was the misapplication of the participation threshold.
+- Claims and evidence status is thin.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
 - Use stable, reproducible anchor links (commit-pinned when possible).
@@ -22,11 +40,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `2830704d0cf33f0dc42c5a754be62bf28916b83624eb70cd5fbf8447dc7b4e73`
-- snapshot_bundle_hash: `911406b6da606982ec8beb0f59edc4558c22ab1b41d9180f0077e4a9f08b81d0`
-- soul_commit: `a0d3b8b59ec356b6a4733bb8a0822326604b0766`
+- input_hash: `52e68c15bc4561394cb95be18e106e791cd063a2b20513293869149122939d28`
+- snapshot_bundle_hash: `df2e75509f53860198b90d4b7e19f10179793b7b281a7378e4ae45893ed489aa`
+- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `644fe9a91fc19aa43e727f123ff46114e6b2351a`
-- score: `0.32`
-- confidence: `0.84`
+- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- score: `0.05`
+- confidence: `0.57`
 

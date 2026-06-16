@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:1fdc9d63fe6e3b1ad618dd7968c1e38080ad7b170fb792da20dbd1df8a9451e2",
+    "raw_input_hash": "sha256:55a89667747785bbe6e16cb8fc64b37c15fb1c8c25784799e96a41e4a69e2b28",
     "detected_at": "2026-06-03T17:00:01.693941+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,28 +20,162 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
     "confidence": 0.2,
-    "input_hash": "1fdc9d63fe6e3b1ad618dd7968c1e38080ad7b170fb792da20dbd1df8a9451e2",
-    "snapshot_bundle_hash": "7f18c391fb6dc9c680b838db57682ed8f4948191a9f2b3d7acdd2faf1a0672f0",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "input_hash": "55a89667747785bbe6e16cb8fc64b37c15fb1c8c25784799e96a41e4a69e2b28",
+    "snapshot_bundle_hash": "37dffaf4d1e3d3c57a1db38ab87f56ace123ca0b7106602d8cfdf6f4320d9320",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-1fdc9d63fe6e.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/e492ceea01b40a2073e9baba.md",
-    "rationale_anchor_hash": "e492ceea01b40a2073e9baba108084f7a7eec41b370a4676670b3ac896ca9f7c"
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-55a896677477.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/fa63c8601bd1d6bc1ebc96e6.md",
+    "rationale_anchor_hash": "fa63c8601bd1d6bc1ebc96e683123d12ae435a484e3dca7ea7f3d1b0a9751c56"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Add line-item budget with milestone-gated disbursement and objective completion checks."
+      "Provide: Missing dossier section: budget analysis"
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-1fdc9d63fe6e.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-55a896677477.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
-    ]
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: budget analysis",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis",
+      "Missing dossier section: community impact analysis"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: active",
+            "Proposed epoch: 634",
+            "Expires after epoch: unknown",
+            "Treasury request: 18.26M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: required",
+            "Requested: Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132027",
+            "Recipient: ",
+            "Stated amount: 18.26M ADA",
+            "Deliverables: This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027., The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs., ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability., Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness and further support and maintenance - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Conformance Testing \u2013 CTC framework extended for Peras and...",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.",
+            "Claim (economic, independently_verifiable, high materiality): The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs.",
+            "Claim (economic, independently_verifiable, low materiality): ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability.",
+            "Claim (technical, independently_verifiable, low materiality): Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness and further support and maintenance - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Conformance Testing \u2013 CTC framework extended for Peras and...",
+            "Claim (technical, independently_verifiable, high materiality): Problem Statement Cardano's next growth phase depends on two critical protocol upgrades: Peras (faster finality) and Leios (higher throughput).",
+            "Claim (economic, independently_verifiable, low materiality): Together they unlock significantly higher transaction volume, staking rewards, and TVL."
+          ],
+          "missing": [
+            "budget analysis",
+            "feasibility assessment",
+            "alternatives analysis",
+            "failure-mode analysis",
+            "community impact analysis"
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 18263496",
+            "Budget granularity: confirmed",
+            "Milestone payment gates: not confirmed",
+            "Clawback/refund path: not confirmed",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: not confirmed",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: 0.40"
+          ],
+          "missing": [
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: medium",
+            "Governance risk: low",
+            "Technical risk: high",
+            "Treasury exposure risk: high",
+            "Mitigation evidence: unknown",
+            "Independent assurance: not confirmed",
+            "Rollback/remedy path: not confirmed",
+            "Flag count: 2"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.\" and clears the evidence gates.",
+            "Strongest NO: an unresolved blocker (missing budget analysis) means costs or weak controls may outweigh the claimed benefit.",
+            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "missing budget analysis",
+            "missing feasibility assessment",
+            "missing alternatives analysis",
+            "missing failure-mode analysis",
+            "missing community impact analysis"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-55a896677477.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -52,16 +186,16 @@
     "anchor_hash": "9d641b574e37161ee340bb765801c08a7cf5a4996401f1bd43553312505eec7c",
     "file_sha256": "988340e48ebf8b8acb0fcf68ebb4fa943bbc26e30913ac1575fdbea97e13fce1",
     "content_bytes": "15054",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -140,10 +274,10 @@
     "governance_alignment": 0.2
   },
   "freshness": {
-    "snapshot_age_seconds": 209,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-15T15:27:49.748338Z",
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
     "freshness_source": "manifest"
   }
 }

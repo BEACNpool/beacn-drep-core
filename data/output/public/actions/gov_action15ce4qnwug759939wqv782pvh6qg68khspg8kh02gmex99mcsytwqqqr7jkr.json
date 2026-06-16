@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:5e7c06cbcade7c0593f15f2827b2c1af41cd46dc2bd7d7edbe91cfd3d53d20d0",
+    "raw_input_hash": "sha256:a63b6d155070afb0a5874074653425ef9b8021843b719415f3c586ed597c31f2",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,27 +18,118 @@
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.55,
-    "confidence": 1.0,
-    "input_hash": "5e7c06cbcade7c0593f15f2827b2c1af41cd46dc2bd7d7edbe91cfd3d53d20d0",
-    "snapshot_bundle_hash": "48fb2620bdbe81220c612f25565af92d3a39352dfacbbb93a16a27765a27db77",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "score": -0.15,
+    "confidence": 0.67,
+    "input_hash": "a63b6d155070afb0a5874074653425ef9b8021843b719415f3c586ed597c31f2",
+    "snapshot_bundle_hash": "2f74cf13815647ad01fd3910fd37444e8183e27be8d609ffcd1eca411dc66b37",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-5e7c06cbcade.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-a63b6d155070.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Flag score present (3), reducing confidence. Additional context: Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.55; confidence 100.0%.",
+    "summary": "Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score -0.15; confidence 67.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Clarify governance intent and expected measurable outcome.",
       "Map each major claim to primary receipts and stable source links."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-5e7c06cbcade.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-a63b6d155070.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr",
+      "action_type": "InfoAction",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: InfoAction",
+            "Status: expired",
+            "Proposed epoch: 603",
+            "Expires after epoch: unknown",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: not required",
+            "Requested: DeltaDeFi: Hydra Trading Infrastructure Budget (\u20b31,500,000)",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused..., The requested budget is intended to: Bring the current Hydra spot DEX from beta to a production-ready venue for both API traders and everyday users; Scale the Hydra and data infrastructure so Cardano has at least one CEX-grade venue for ADA and key CNT pair..., Within the \u20b31,500,000 total: 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and 20% is dedicated to the Vision 2030 KPI Measurement Programme : an initial \"State of Cardano DeFi\" baseline report , a public Vis..., Why this matters for Cardano, ADA and CNT holders Cardano currently lacks a low-latency order-book venue that can: Support API-driven trading, arbitrage and market-making at scale; Offer tight spreads and low slippage in key ADA\u2013stable and ADA\u2013CNT markets;...",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, independently_verifiable, high materiality): This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...",
+            "Claim (technical, independently_verifiable, high materiality): The requested budget is intended to: Bring the current Hydra spot DEX from beta to a production-ready venue for both API traders and everyday users; Scale the Hydra and data infrastructure so Cardano has at least one CEX-grade venue for ADA and key CNT pair...",
+            "Claim (technical, independently_verifiable, high materiality): Within the \u20b31,500,000 total: 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and 20% is dedicated to the Vision 2030 KPI Measurement Programme : an initial \"State of Cardano DeFi\" baseline report , a public Vis...",
+            "Claim (economic, independently_verifiable, low materiality): Why this matters for Cardano, ADA and CNT holders Cardano currently lacks a low-latency order-book venue that can: Support API-driven trading, arbitrage and market-making at scale; Offer tight spreads and low slippage in key ADA\u2013stable and ADA\u2013CNT markets;...",
+            "Claim (other, independently_verifiable, low materiality): Today, most Cardano trading happens on AMM-style DEXs.",
+            "Claim (economic, independently_verifiable, low materiality): They are great for simple swaps, but they are not optimised for: Low-fee, low-slippage execution at size in core ADA and CNT pairs; Instant, predictable fills for API and bot-driven strategies; or Professional market-makers and arbitrageurs who expect CEX-l..."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-a63b6d155070.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +140,16 @@
     "anchor_hash": "e3c9095166ee0a62a5b251b605f5316e1e585b993fbb9af5dece15893349c387",
     "file_sha256": "26d260db607e8904cabab8218bd3ec1463e8d82bb9960f47041f2008513fe5d5",
     "content_bytes": "26085",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -119,16 +210,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.55,
+    "budget_pressure": 0.15,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 1.0
+    "governance_alignment": 0.67
   },
   "freshness": {
-    "snapshot_age_seconds": 7980,
+    "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

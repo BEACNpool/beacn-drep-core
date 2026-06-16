@@ -1,0 +1,292 @@
+{
+  "action_id": "gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv",
+  "title": "Cardano dOSPO and OMF Program",
+  "type": "TreasuryWithdrawals",
+  "status": "expired",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:3ce781cc1789cddc4ca2889d19a0bd55534a2327d1b489729b05a4153c1938ea",
+    "detected_at": "2026-05-11T21:00:01.266271+00:00"
+  },
+  "decision": {
+    "vote": "NEEDS_MORE_INFO",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "NEEDS_MORE_INFO",
+    "score": 0.0,
+    "confidence": 0.2,
+    "input_hash": "3ce781cc1789cddc4ca2889d19a0bd55534a2327d1b489729b05a4153c1938ea",
+    "snapshot_bundle_hash": "dd7cdf920d716970db03452b61eaad75bcaf6431275f8105285ab35b516e3ac9",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-3ce781cc1789.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
+  },
+  "rationale": {
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
+    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "top_fixes": [
+      "Provide: Deep research dossier is required for treasury actions before directional voting.",
+      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Provide: Missing dossier section: complete proposal summary"
+    ],
+    "markdown_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-3ce781cc1789.md",
+    "missing_evidence": [
+      "Deep research dossier is required for treasury actions before directional voting.",
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: complete proposal summary",
+      "Missing dossier section: budget analysis",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: risk analysis",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis",
+      "Missing dossier section: community impact analysis"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: expired",
+            "Proposed epoch: 630",
+            "Expires after epoch: unknown",
+            "Treasury request: 12.00M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: required",
+            "Requested: Cardano dOSPO and OMF Program",
+            "Recipient: ",
+            "Stated amount: 12.00M ADA",
+            "Deliverables: Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding., Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors., Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants., This program establishes a community-governed, data-driven open source sustainment architecture.",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, supported_in_proposal, high materiality): Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.",
+            "Claim (economic, supported_in_proposal, low materiality): Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors.",
+            "Claim (technical, supported_in_proposal, high materiality): Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants.",
+            "Claim (economic, supported_in_proposal, medium materiality): This program establishes a community-governed, data-driven open source sustainment architecture.",
+            "Claim (technical, supported_in_proposal, low materiality): Cardano has evolved into a large scale public infrastructure ecosystem, but the operational structures required to sustainably maintain that infrastructure have not evolved at the same pace.",
+            "Claim (technical, supported_in_proposal, medium materiality): Critical tooling, libraries, governance systems, developer infrastructure, and ecosystem services still depend heavily on fragmented coordination, volunteer labor, short term grants, or the stability of individual organizations."
+          ],
+          "missing": [
+            "complete proposal summary",
+            "budget analysis",
+            "feasibility assessment",
+            "risk analysis",
+            "alternatives analysis",
+            "failure-mode analysis",
+            "community impact analysis"
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 12.00M ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 2"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" and clears the evidence gates.",
+            "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
+            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "missing complete proposal summary",
+            "missing budget analysis",
+            "missing feasibility assessment",
+            "missing risk analysis",
+            "missing alternatives analysis",
+            "missing failure-mode analysis",
+            "missing community impact analysis"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-3ce781cc1789.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/QmP76MXJwp19ZAcX8soUPyh5jcvMoK1DoLbxAJT9LLRhDK",
+    "anchor_hash": "a16e91e5306eb4ccbbd6aed238e1bae823acd7b560b67e756234718f6a6a749d",
+    "file_sha256": "8f4b28ce8102083370692ebd4e3cf92ce33e831b4340cb06a803e3c7da702e20",
+    "content_bytes": "39860",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
+    "download_path": "/proposals/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.0,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.2
+  },
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
+  }
+}

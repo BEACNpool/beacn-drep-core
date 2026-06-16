@@ -5,40 +5,131 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:db6f7cfa7bbc12550144918f7c1bbbb90758656ebcfa359ca6672617dfc90eac",
+    "raw_input_hash": "sha256:6afa3ca6e70a9da9dbf0693e834dd3fc0e97d263920f9d4f69621bac319afacc",
     "detected_at": "2026-02-10T06:00:01.815720+00:00"
   },
   "decision": {
-    "vote": "NO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "ABSTAIN",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NO",
-    "score": -0.17,
-    "confidence": 0.72,
-    "input_hash": "db6f7cfa7bbc12550144918f7c1bbbb90758656ebcfa359ca6672617dfc90eac",
-    "snapshot_bundle_hash": "8125a7ba5efb10ce5dc7b9b0d004ba48a60ed46d7681187cce236745792741e5",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "ABSTAIN",
+    "score": -0.1,
+    "confidence": 0.65,
+    "input_hash": "6afa3ca6e70a9da9dbf0693e834dd3fc0e97d263920f9d4f69621bac319afacc",
+    "snapshot_bundle_hash": "5fded91765550e98ea3c1715f3934b63aabd7a937e40cde6ac49efda170fefd2",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq-db6f7cfa7bbc.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq-6afa3ca6e70a.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score -0.17; confidence 72.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score -0.10; confidence 65.0%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
       "Add rollback/containment plan and explicit halt criteria."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq-db6f7cfa7bbc.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq-6afa3ca6e70a.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq",
+      "action_type": "ParameterChange",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: ParameterChange",
+            "Status: expired",
+            "Proposed epoch: 612",
+            "Expires after epoch: unknown",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: not required",
+            "Requested: Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards., The Constitutional Committee is designed to operate with seven members., However, maintaining a minimum size of seven creates operational fragility, as a single resignation or temporary unavailability can prevent the Committee from functioning., Reducing the minimum size to five provides an operational buffer, allowing the Committee to continue operating as intended and reducing the risk of governance inoperability.",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, supported_in_proposal, high materiality): Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.",
+            "Claim (technical, supported_in_proposal, high materiality): The Constitutional Committee is designed to operate with seven members.",
+            "Claim (technical, supported_in_proposal, high materiality): However, maintaining a minimum size of seven creates operational fragility, as a single resignation or temporary unavailability can prevent the Committee from functioning.",
+            "Claim (technical, supported_in_proposal, high materiality): Reducing the minimum size to five provides an operational buffer, allowing the Committee to continue operating as intended and reducing the risk of governance inoperability.",
+            "Claim (technical, supported_in_proposal, high materiality): Based on the analysis conducted by the Intersect Parameter Committee, reducing the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 is considered both useful and safe for the following reasons.",
+            "Claim (technical, supported_in_proposal, high materiality): Operational resilience A minimum size of five provides an appropriate safety margin for a committee designed to have seven members."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 0"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq-6afa3ca6e70a.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +140,16 @@
     "anchor_hash": "8fd434526d3b799ffe1f8ffb4d3373b9445f1e6bf8bcc3a6c4acb9b82f2daacf",
     "file_sha256": "cc1fee092d2a6224102fafa6ae283971d15512712d5ad66845c5e585300ee0fb",
     "content_bytes": "5115",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -119,16 +210,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.17,
+    "budget_pressure": 0.1,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.72
+    "governance_alignment": 0.65
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

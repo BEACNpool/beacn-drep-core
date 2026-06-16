@@ -1,0 +1,92 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "action_type": "ParameterChange",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 635",
+        "Expires after epoch: unknown",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: not required",
+        "Requested: Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 to improve operational resilience",
+        "Recipient: Not applicable \u2014 protocol parameter change",
+        "Stated amount: None (ParameterChange)",
+        "Deliverables: On-chain change of committeeMinSize from 7 to 5",
+        "Deadline/expiry: Depends on enactment of a separate Plutus cost-model parameter-change action ahead of the van Rossem hard fork",
+        "Claim (governance, supported_in_proposal, high materiality): With a 7-member committee and committeeMinSize of 7, a single resignation or term expiry would halt the Constitutional Committee and stall much of governance",
+        "Claim (governance, proposer_asserted, high materiality): Reducing the minimum to 5 improves resilience while keeping constitutional safeguards",
+        "Claim (governance, supported_in_proposal, medium materiality): The change does not alter the current number of committee members or imply a smaller committee is desired",
+        "Claim (governance, independently_verifiable, medium materiality): The action was approved by Intersect's Civics Committee (2026-03-13) and Technical Steering Committee (2026-06-03)"
+      ],
+      "missing": [
+        "Independent evidence for: Reducing the minimum to 5 improves resilience while keeping constitutional safeguards"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"With a 7-member committee and committeeMinSize of 7, a single resignation or term expiry would halt the Constitutional Committee and stall much of governance\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Reducing the minimum to 5 improves resilience while keeping constitutional safeguards\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "freshness gate failed"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "freshness gate failed"
+  ]
+}

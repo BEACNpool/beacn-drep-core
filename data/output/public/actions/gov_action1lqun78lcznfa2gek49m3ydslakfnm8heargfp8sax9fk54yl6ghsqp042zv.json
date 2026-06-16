@@ -5,40 +5,152 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:bfd343427082e3cab7246156d63199503f91ad2d65763b27227fbf7f5bdc25e6",
+    "raw_input_hash": "sha256:bc680fab41b388e36d81dec1f7329377269a932deff5fbe153bb1c9ad0ef8eaf",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "YES",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.1667,
-    "confidence": 0.6867,
-    "input_hash": "bfd343427082e3cab7246156d63199503f91ad2d65763b27227fbf7f5bdc25e6",
-    "snapshot_bundle_hash": "4d074c859538dea63cf4770bb45b4e92587ffbdc42ced5332bde0ef2b1be026d",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "vote": "NO",
+    "score": -0.1833,
+    "confidence": 0.7033,
+    "input_hash": "bc680fab41b388e36d81dec1f7329377269a932deff5fbe153bb1c9ad0ef8eaf",
+    "snapshot_bundle_hash": "a4125c4175e11fe68f8981d55b8a4c9179089691bfe44e627a5f30eedd548f76",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv-bfd343427082.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv-bc680fab41b3.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score 0.17; confidence 68.7%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.18; confidence 70.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv-bfd343427082.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv-bc680fab41b3.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: enacted",
+            "Proposed epoch: 599",
+            "Expires after epoch: unknown",
+            "Treasury request: 70.00M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Requested: Withdraw \u20b370,000,000 for Cardano Critical Integrations Budget",
+            "Recipient: ",
+            "Stated amount: 70.00M ADA",
+            "Deliverables: This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps..., This governance action requests to withdraw \u20b370,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital asset custody and wallet..., These integrations are foundational for tier-one stablecoin deployment, large scale DeFi growth, and acceleration of RWA and DePin activity, strengthening Cardano\u2019s long term fee generation and treasury sustainability., This project is being driven through close collaboration between Input | Output Global, the Cardano Foundation, and EMURGO, together with Midnight Foundation and Intersect, all of whom are actively engaged in negotiations with integration partners.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps...",
+            "Claim (technical, independently_verifiable, high materiality): This governance action requests to withdraw \u20b370,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital asset custody and wallet...",
+            "Claim (economic, independently_verifiable, high materiality): These integrations are foundational for tier-one stablecoin deployment, large scale DeFi growth, and acceleration of RWA and DePin activity, strengthening Cardano\u2019s long term fee generation and treasury sustainability.",
+            "Claim (economic, independently_verifiable, low materiality): This project is being driven through close collaboration between Input | Output Global, the Cardano Foundation, and EMURGO, together with Midnight Foundation and Intersect, all of whom are actively engaged in negotiations with integration partners.",
+            "Claim (technical, independently_verifiable, medium materiality): Strategic Need Cardano has a strong technical and governance foundation, but lacks several critical integrations required for large-scale economic activity and external liquidity.",
+            "Claim (technical, independently_verifiable, low materiality): The absence of key systems, including stablecoin infrastructures, interoperability frameworks, and institutional-grade pricing oracle networks limits the ecosystem\u2019s capacity to attract external capital, facilitate stable on-chain operations, and support ad..."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 70.00M ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps...\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv-bc680fab41b3.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +161,16 @@
     "anchor_hash": "1ff4e21156b94a8609545f96e68f005fcd1bf4c790fb6f613b7f8e49e1e71da6",
     "file_sha256": "82849575300a5473196af2d3967ea4560d33d847a6249fe6123610303101c944",
     "content_bytes": "33761",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action1lqun78lcznfa2gek49m3ydslakfnm8heargfp8sax9fk54yl6ghsqp042zv.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -131,16 +243,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.1833,
     "conflict_risk": 0.0,
-    "technical_value": 0.1667,
-    "governance_alignment": 0.6867
+    "technical_value": 0.0,
+    "governance_alignment": 0.7033
   },
   "freshness": {
-    "snapshot_age_seconds": 7980,
+    "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

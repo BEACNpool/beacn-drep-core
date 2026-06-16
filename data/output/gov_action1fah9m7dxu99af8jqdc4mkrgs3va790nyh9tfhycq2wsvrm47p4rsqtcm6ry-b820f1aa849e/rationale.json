@@ -1,25 +1,46 @@
 {
   "action_id": "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NEEDS_MORE_INFO",
-  "abstain_reason_code": null,
-  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "STALE_DATA",
+  "needs_more_info_reason_code": null,
   "score": 0.0,
-  "confidence": 0.2,
+  "confidence": 0.0,
   "readiness_score": null,
   "facts": [
-    "Treasury actions are high-impact and require a completed deep research dossier."
+    "Data freshness check failed: data is 29349s old, max allowed is 21600s",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 5.10M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Cardano L1 offers ~2h finality, ~$0.17/tx and ~7-10 TPS, excluding high-performance verticals at the selection stage\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Directional voting is blocked until dossier quality gates pass."
+    "Cannot produce reliable recommendation with stale data.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Dossier completeness not confirmed for this treasury proposal."
+    "All scoring suspended until fresh data is available.",
+    "Claims and evidence missing: Independent evidence for: Hydra is the only production-grade Layer 2 on Cardano, already running live workloads for Delta DeFi, Masumi, Intersect and others",
+    "Claims and evidence missing: Independent evidence for: The four interdependent workstreams will produce a competitive, hardened Hydra v2",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: freshness gate failed",
+    "Synthesis missing: missing complete proposal summary",
+    "Synthesis status is blocked."
   ],
-  "missing_evidence": [
-    "Deep research dossier is required for treasury actions before directional voting.",
-    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
-  ],
+  "missing_evidence": [],
   "input_hash": "b820f1aa849e2a0ec9b35cf9696730d4d1af05e4017998273951c531f2931f07",
   "snapshot_bundle_hash": "da871bf0555c1b9a6181876312eeeb9bd80f43ef14ac64854835eb74ae901044",
   "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
@@ -39,23 +60,190 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 208,
+    "snapshot_age_seconds": 29349,
     "max_allowed_seconds": 21600,
-    "is_stale": false,
+    "is_stale": true,
     "snapshot_time": "2026-06-15T15:27:49.748338Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.315,
-    "NO": 0.315,
-    "ABSTAIN": 0.37
+    "YES": 0.34,
+    "NO": 0.34,
+    "ABSTAIN": 0.32
   },
   "uncertainty_band": "LOW",
-  "evidence_depth_score": 4,
+  "evidence_depth_score": 2,
   "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 635",
+          "Expires after epoch: unknown",
+          "Treasury request: 5.10M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Fund four workstreams to harden and optimize Hydra v2 (performance, operational excellence, ecosystem support, developer experience) to deliver a production-grade Layer 2 scaling solution",
+          "Recipient: IO (Input Output)",
+          "Stated amount: 5,100,781 ADA",
+          "Deliverables: Feature-complete, hardened Hydra v2, Performance optimization, Operational tooling, Ecosystem and developer-experience support",
+          "Deadline/expiry: Not explicitly dated in the extracted body",
+          "Claim (adoption, proposer_asserted, high materiality): Hydra is the only production-grade Layer 2 on Cardano, already running live workloads for Delta DeFi, Masumi, Intersect and others",
+          "Claim (technical, supported_in_proposal, medium materiality): Cardano L1 offers ~2h finality, ~$0.17/tx and ~7-10 TPS, excluding high-performance verticals at the selection stage",
+          "Claim (technical, supported_in_proposal, high materiality): Hydra delivers sub-second finality and near-zero fees while settling to Cardano L1 as the security backstop",
+          "Claim (technical, proposer_asserted, high materiality): The four interdependent workstreams will produce a competitive, hardened Hydra v2"
+        ],
+        "missing": [
+          "Independent evidence for: Hydra is the only production-grade Layer 2 on Cardano, already running live workloads for Delta DeFi, Masumi, Intersect and others",
+          "Independent evidence for: The four interdependent workstreams will produce a competitive, hardened Hydra v2",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 5.10M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Cardano L1 offers ~2h finality, ~$0.17/tx and ~7-10 TPS, excluding high-performance verticals at the selection stage\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Hydra is the only production-grade Layer 2 on Cardano, already running live workloads for Delta DeFi, Masumi, Intersect and others\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "freshness gate failed",
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "freshness gate failed",
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.0.0",
   "scoring_weights_hash": "80dcbb007051cc50d737fc1464e56ba2c466491b4bd35f77dae046822c39f9d3",
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/e00a856f768d7c6ff443f054.md",
-  "rationale_anchor_hash": "e00a856f768d7c6ff443f0544c66030b86eb970e85826f0776a667b07196eed5"
+  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The proposal asks for about 5.1 million ADA for IO to harden and optimize Hydra v2, the Layer 2 the proposal describes as Cardano's only production-grade scaling solution, across four workstreams. The technical framing \u2014 L1's finality, fee and throughput limits, and Hydra's sub-second, near-zero-fee settlement back to L1 \u2014 is coherent and well-described in the document. The claims that matter most to the decision, namely real production adoption by named projects and the delivery of a feature-complete v2, are stated by the proposer and would need independent verification of current usage and milestone-gated delivery before a directional vote. As a multi-million-ADA treasury action it also requires a completed deep-research dossier. Until BEACN's data is fresh and that dossier and milestone evidence are in hand, it is holding rather than voting directionally.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmYaPeha2PvacQxAwt5ZRsunGGgVbNwgDzu9pxLWA8zS9d",
+        "file_sha256": "28c46a967de76bf1430d86557393b6a112d0b8631759e6a7d85d054452d74fee",
+        "file_path": "data/input/governance/anchors/gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry-20260615T152518Z.bin",
+        "content_chars": 42574
+      },
+      "claim_count": 4,
+      "prompt_sha256": null,
+      "output_sha256": "d80af610d667e1905a8782fa3bcdf6c2be900da5383e666d5c7ccb5605b81d59"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "3afff2d33bc9c70c70849ce7d695ee10119b192b5dfea4b95cc6581964c1f187"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
 }

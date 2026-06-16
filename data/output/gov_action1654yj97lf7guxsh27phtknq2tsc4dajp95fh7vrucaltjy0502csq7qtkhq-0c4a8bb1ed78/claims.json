@@ -1,0 +1,38 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "what": "Reimburse a 100,000 ADA Info-action deposit that was unrecoverable due to a Cardano node bug, plus 3,000 ADA for lost staking rewards",
+    "recipient": "The original Ikigai Info governance action submitter",
+    "amount_ada": "103,000 ADA",
+    "deliverables": [
+      "A one-time reimbursement payment; no ongoing deliverables"
+    ],
+    "deadline": "Not stated"
+  },
+  "claims": [
+    {
+      "claim": "A node bug let an unregistered stake key be used, leaving the Ikigai submitter unable to recover a 100,000 ADA deposit",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "An extra 3,000 ADA is requested to compensate for lost staking rewards at roughly 2% per annum",
+      "category": "economic",
+      "support": "proposer_asserted",
+      "materiality": "medium"
+    },
+    {
+      "claim": "The action meets the constitution's metadata and treasury-withdrawal formatting requirements",
+      "category": "governance",
+      "support": "supported_in_proposal",
+      "materiality": "low"
+    }
+  ],
+  "summary": "A 103,000 ADA one-time reimbursement to an early governance pioneer whose deposit was stranded by a node bug, plus a small staking-reward top-up.",
+  "output_sha256": "15f5f995ff0c6e8dd2c8756248c28d35dc383f5d8c6e9b169bad2522c1e0642a"
+}

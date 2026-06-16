@@ -5,12 +5,12 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:5faa17728c05528658a4d1f37ac943051a22c1ff448f9a835e593bd9e5687194",
+    "raw_input_hash": "sha256:0f28bf82c8645d487728f88d3af0cb8e02f2bf3168bbb3b8a3243d2056b336e8",
     "detected_at": "2026-03-07T02:00:01.215489+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-06-15T15:21:58.675624+00:00",
+    "published_at": "2026-06-16T00:57:18.891226+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,27 +18,139 @@
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.2833,
-    "confidence": 0.8033,
-    "input_hash": "5faa17728c05528658a4d1f37ac943051a22c1ff448f9a835e593bd9e5687194",
-    "snapshot_bundle_hash": "5f9fcdfd87939ce4303f2a33b5fd6a1b539b25b9cb526618a505ab8586bdcdce",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "score": -0.1833,
+    "confidence": 0.7033,
+    "input_hash": "0f28bf82c8645d487728f88d3af0cb8e02f2bf3168bbb3b8a3243d2056b336e8",
+    "snapshot_bundle_hash": "ce5b90ff05bfc588843c6fc8d22a0d07e7c5c9eddbee04dc38d16597eb5291db",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-5faa17728c05.md",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-0f28bf82c864.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 80.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.18; confidence 70.3%.",
     "summary_raw": "Network DRep distribution used as one signal, not authority.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-5faa17728c05.md",
-    "missing_evidence": []
+    "markdown_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-0f28bf82c864.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: enacted",
+            "Proposed epoch: 617",
+            "Expires after epoch: unknown",
+            "Treasury request: 6.90M ADA",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: manifest",
+            "Deep research dossier: complete",
+            "Requested: Dingo: a Production-Grade Block Producer in Go by Blink Labs",
+            "Recipient: ",
+            "Stated amount: 6.90M ADA",
+            "Deliverables: Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node., Dingo is a work in progress, and that's the whole point of this proposal., But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support., This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, independently_verifiable, high materiality): Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.",
+            "Claim (economic, independently_verifiable, low materiality): Dingo is a work in progress, and that's the whole point of this proposal.",
+            "Claim (technical, independently_verifiable, medium materiality): But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support.",
+            "Claim (economic, independently_verifiable, high materiality): This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...",
+            "Claim (economic, independently_verifiable, low materiality): Who We Are Blink Labs We're a small engineering company focused exclusively on blockchain software integrated with Cardano.",
+            "Claim (technical, independently_verifiable, low materiality): We build in Go because it's the right language for high-performance networked systems, and because Cardano benefits from having core infrastructure that millions of developers can actually read and work on."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 6.90M ADA",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe-0f28bf82c864.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -49,16 +161,16 @@
     "anchor_hash": "4e90b2f7bb9044b6dcbe1209bc8aa4573101651468c60ab2c3b73535afa5741d",
     "file_sha256": "24294c2e3add8dc33992468409bf09cf076244ce56f07898d2ceb69fbb00f79c",
     "content_bytes": "27419",
-    "fetched_at_utc": "2026-06-15T15:28:20Z",
+    "fetched_at_utc": "2026-06-16T00:57:51Z",
     "download_path": "/proposals/gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": \"CIP108:references\",\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\": \"http://xmlns.com/foaf/0.1/name\",\n        \"witness\": {\n          \"@id\": \"CIP100:witness\",\n          \"@context\": {\n            \"witnessAlgorithm\": \"CIP100:witnessAlgorithm\",\n            \"publicKey\": \"CIP100:publicKey\",\n            \"signature\": \"CIP100:signature\"\n          }\n        }\n      }\n    }\n  },\n  \"hashAlgorithm\": \"blake2b-256\",\n  \"authors\": [\n    {\n      \"name\": \"Chris Gianelloni\",\n      \"witness\": {\n        \"witnessAlgorithm\": \"ed25519\",\n        \"publicKey\": \"674e6d0677c0c5184eb1ce097ea722a73ba4c40bed024f6ad9df7fbeb41263f7\",\n "
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
-    "core_commit": "644fe9a91fc19aa43e727f123ff46114e6b2351a",
+    "core_commit": "b5a4472bea87128ce2afd4052fe91a609fecf600",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -131,16 +243,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.2833,
+    "budget_pressure": 0.1833,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.8033
+    "governance_alignment": 0.7033
   },
   "freshness": {
-    "snapshot_age_seconds": 7979,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-03-25T21:31:49.682301Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-06-16T00:57:51.180834Z",
+    "freshness_source": "manifest"
   }
 }

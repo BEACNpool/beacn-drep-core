@@ -1,0 +1,190 @@
+{
+  "action_id": "gov_action1h4ygjv0hjfj3lmafcm76rpdzcm8vsvj9k5wejn3npyxwxm3fesnqqw9kxxz",
+  "action_type": "InfoAction",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "score": 0.05,
+  "confidence": 0.57,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Network DRep distribution used as one signal, not authority.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "1158c4c6f0322b9839e36c42e68f763e839fe68440a25632a4cb2e5cab1255e3",
+  "snapshot_bundle_hash": "d8cf45adacd31b23fb6cc6d0466539031bb2ed720b00c86cdcf523a40a4c4af5",
+  "soul_commit": "a0d3b8b59ec356b6a4733bb8a0822326604b0766",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7da435ff32d6151125006e6138bc2da8eb0bcfc4",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 2861,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-16T00:02:02.222365Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3188,
+    "NO": 0.2188,
+    "ABSTAIN": 0.4625
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1h4ygjv0hjfj3lmafcm76rpdzcm8vsvj9k5wejn3npyxwxm3fesnqqw9kxxz",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: expired",
+          "Proposed epoch: 556",
+          "Expires after epoch: unknown",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Cardano Blockchain Ecosystem Budget: Amaru Node Development 2025",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano., It aims to improve the network's overall accessibility and robustness without compromising its safety and security., Amaru provides another perspective and solution for stake pool operators and developers alike, prioritizing a modular approach, a seamless user experience, and low hardware requirements., Additionally, the project is implemented mainly in Rust, which is well-equipped for high assurance to attract new contributors to the core maintenance of the ecosystem.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, independently_verifiable, low materiality): Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.",
+          "Claim (other, independently_verifiable, high materiality): It aims to improve the network's overall accessibility and robustness without compromising its safety and security.",
+          "Claim (other, independently_verifiable, low materiality): Amaru provides another perspective and solution for stake pool operators and developers alike, prioritizing a modular approach, a seamless user experience, and low hardware requirements.",
+          "Claim (adoption, independently_verifiable, low materiality): Additionally, the project is implemented mainly in Rust, which is well-equipped for high assurance to attract new contributors to the core maintenance of the ecosystem.",
+          "Claim (other, independently_verifiable, low materiality): Who we are Amaru is a multi-entity effort that currently sits under PRAGMA: a member-based, not-for-profit open-source association for blockchain software projects.",
+          "Claim (other, independently_verifiable, low materiality): Five members with equal power currently drive PRAGMA's strategy and operations: Blink Labs, Cardano Foundation, dcSpark, Sundae Labs, and TxPipe."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on Cardano Blockchain Ecosystem Budget: Amaru Node Development 2025. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Cardano Blockchain Ecosystem Budget: Amaru Node Development 2025. The strongest grounded claim is: Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\n\nReason code: RULE_THRESHOLD_UNMET.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action1h4ygjv0hjfj3lmafcm76rpdzcm8vsvj9k5wejn3npyxwxm3fesnqqw9kxxz",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreibqma7t2k4rcywvx5afukahhi3dp2so2ugh7t4ljuawhanvk7sr34",
+        "file_sha256": "30603f3d2b91162d5bf405a28073a3637ea4ed50c7fcf8b4d016381b557e51df",
+        "file_path": "data/input/governance/anchors/gov_action1h4ygjv0hjfj3lmafcm76rpdzcm8vsvj9k5wejn3npyxwxm3fesnqqw9kxxz-20260326T175236Z.bin",
+        "content_chars": 18963
+      },
+      "claim_count": 8,
+      "prompt_sha256": "4b60c588f3500795fbc1974983920cec08451846a64953a64d32542e3c629d9d",
+      "output_sha256": "d26a0102e70da62762b61aebf13a95ce617ab89461ab418339480b3d36ce6c74"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "0c5962578735f6d86cd7691d42238cace223e5e80ca80f798de324045348cf59",
+      "output_sha256": "683cf2f397110bfd0d321b13e9a03ecc69ea047fc420595c137d110aae83cabe"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
+}

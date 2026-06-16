@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-16T00:57:18.891226+00:00`
+- Published at: `2026-06-16T11:30:04.531219+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.05; confidence 57.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `5ae381d79e69d9d37ed39826ca1c85b94e982cfc64d3f10982a6b2f491484409`
-- snapshot_bundle_hash: `dba36fa01ba24c1b731c8c88f7cb2cec1aec86ff88d8eeccde4e741ddf172191`
+- input_hash: `62355edac5792dee45a3aeb90dd25d2534a24cfd2ce5784158caf5b096a8fb33`
+- snapshot_bundle_hash: `9758ba14602b4cbbb9247ddcd2f3aa188f1be2c160116cb1c4cdc234c9541cc0`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- resources_commit: `51dc1e5a721f4f0de333921fc8457f5a54787c79`
+- core_commit: `036c7083f78bbd06ec947bc23bd61eb3915e27da`
 - score: `0.05`
 - confidence: `0.57`
 

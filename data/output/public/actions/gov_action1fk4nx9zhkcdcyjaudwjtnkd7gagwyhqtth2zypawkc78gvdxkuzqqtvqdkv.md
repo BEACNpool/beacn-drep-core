@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `NewCommittee`
 - Status: `enacted`
-- Published at: `2026-06-16T00:57:18.891226+00:00`
+- Published at: `2026-06-16T11:30:04.531219+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.05; confidence 57.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficien
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `87ea53fa287c84bbd5b52304a123066bf94de6fdf97a8c0f97b4c881661d8870`
-- snapshot_bundle_hash: `594ee80e6abcfea03988858761b053ad586a5339c41359c1cb17294842a2206b`
+- input_hash: `6ea8f503b567202563550040cc4e26a0b3cf7c77fe1220fa3ed53ebddedc4c43`
+- snapshot_bundle_hash: `2c0efb131b030477493400511df4b6f8bb4a7f14219beb933d59b61a4210da58`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- resources_commit: `51dc1e5a721f4f0de333921fc8457f5a54787c79`
+- core_commit: `036c7083f78bbd06ec947bc23bd61eb3915e27da`
 - score: `0.05`
 - confidence: `0.57`
 

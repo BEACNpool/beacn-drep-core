@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `active`
-- Published at: `2026-06-16T00:57:18.891226+00:00`
+- Published at: `2026-06-16T11:30:04.531219+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score -0.15; confidence 67.0%.
@@ -39,11 +39,11 @@ Vote: NO. For this InfoAction (active), downside risk and/or weak safeguards out
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `56dcc6880ab3289632d9c46a0b00c25ac1af2f5443beeb45f4bc19d0b08b8a98`
-- snapshot_bundle_hash: `a82ba7099ede6292808d88fb92d3e3ae95196744355a4ed53d3c212ed21b78a2`
+- input_hash: `027ade80fcd973ebf355e78ab15aa340230c7b09d3b80e5b4457d61c2c3148af`
+- snapshot_bundle_hash: `0b5a8faf1ebc64ab638b6024fa14b34760088e812f0a8d38847d41f0b58c2997`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `7da435ff32d6151125006e6138bc2da8eb0bcfc4`
-- core_commit: `b5a4472bea87128ce2afd4052fe91a609fecf600`
+- resources_commit: `51dc1e5a721f4f0de333921fc8457f5a54787c79`
+- core_commit: `036c7083f78bbd06ec947bc23bd61eb3915e27da`
 - score: `-0.15`
 - confidence: `0.67`
 

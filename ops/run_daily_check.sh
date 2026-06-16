@@ -136,9 +136,9 @@ fi
 
 log "syncing public artifacts to web"
 cd "$WEB"
-python3 src/beacn_drep_web/build_backtest.py
 rsync -a --delete "$CORE/data/output/public/" "$WEB/data/output/public/"
-rsync -a --delete "$CORE/data/output/public/" "$WEB/public/data/output/public/"
+python3 src/beacn_drep_web/build_backtest.py
+rsync -a --delete "$WEB/data/output/public/" "$WEB/public/data/output/public/"
 
 stamp="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 commit_if_changed "$RES" "data: governance snapshot ${stamp}"

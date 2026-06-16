@@ -33,6 +33,23 @@ commit_if_changed() {
   fi
 }
 
+publish_web_gh_pages() {
+  local tmp
+  tmp="$(mktemp -d)"
+  log "syncing web main to gh-pages"
+  git -C "$WEB" worktree add "$tmp" gh-pages
+  rsync -a --delete --exclude .git --exclude node_modules "$WEB"/ "$tmp"/
+  git -C "$tmp" add -A
+  if git -C "$tmp" diff --cached --quiet; then
+    log "no changes in beacn-drep-web gh-pages"
+  else
+    git -C "$tmp" commit -m "publish: rationale refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    git -C "$tmp" push origin gh-pages
+  fi
+  git -C "$WEB" worktree remove "$tmp"
+  rmdir "$tmp" 2>/dev/null || true
+}
+
 ensure_clean_or_ours() {
   local repo="$1"
   if [ -n "$(git -C "$repo" status --porcelain)" ]; then
@@ -125,5 +142,6 @@ stamp="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 commit_if_changed "$RES" "data: governance snapshot ${stamp}"
 commit_if_changed "$CORE" "decisions: offline rationale refresh ${stamp}"
 commit_if_changed "$WEB" "publish: rationale refresh ${stamp}"
+publish_web_gh_pages
 
 log "BEACN DRep daily offline check complete"

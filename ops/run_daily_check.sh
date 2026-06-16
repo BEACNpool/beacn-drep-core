@@ -96,6 +96,7 @@ log "preparing rationale anchors and public artifacts"
 PYTHONPATH=src python3 scripts/prepare_rationale_anchors.py
 PYTHONPATH=src python3 -m beacn_drep.exporters.export_public_artifacts
 PYTHONPATH=src python3 scripts/generate_statements.py --force
+PYTHONPATH=src BEACN_WEB_REPO="$WEB" python3 scripts/update_web_status.py
 
 log "running tests and replay spot-check"
 PYTHONPATH=src python3 -m unittest discover -s tests
@@ -136,6 +137,7 @@ fi
 log "syncing public artifacts to web"
 cd "$WEB"
 python3 src/beacn_drep_web/build_backtest.py
+rsync -a --delete "$CORE/data/output/public/" "$WEB/data/output/public/"
 rsync -a --delete "$CORE/data/output/public/" "$WEB/public/data/output/public/"
 
 stamp="$(date -u +%Y-%m-%dT%H:%M:%SZ)"

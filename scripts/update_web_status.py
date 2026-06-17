@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import csv
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,6 +23,35 @@ from beacn_drep.adapters.cardano_cli_adapter import _relay_query, DREP_KEY_HASH 
 
 WEB = Path(os.environ.get("BEACN_WEB_REPO", Path.home() / ".openclaw/workspace/beacn-drep-web"))
 DREP_ID = "drep1yg3fzjm63hjg37k3rtdt7wx0mgmn303lwv2s50xxkjzsv5qfhynxg"
+WORKSPACE = Path(os.environ.get("BEACN_WORKSPACE", ROOT.parent))
+RESOURCES = WORKSPACE / "beacn-drep-resources"
+GOVERNANCE_ALL = RESOURCES / "data/input/governance/governance_actions_all.csv"
+PUBLIC_ACTIONS_INDEX = ROOT / "data/output/public/actions.json"
+
+
+def _load_action_metadata() -> dict[str, dict]:
+    metadata: dict[str, dict] = {}
+    decisions: dict[str, str | None] = {}
+    try:
+        public = json.loads(PUBLIC_ACTIONS_INDEX.read_text(encoding="utf-8"))
+        for item in public.get("items", []):
+            decisions[item.get("action_id", "")] = item.get("decision")
+    except FileNotFoundError:
+        pass
+
+    try:
+        with GOVERNANCE_ALL.open(newline="", encoding="utf-8") as handle:
+            for row in csv.DictReader(handle):
+                key = f"{row.get('tx_hash')}#{row.get('cert_index')}"
+                action_id = row.get("action_id", "")
+                metadata[key] = {
+                    "cip129_action_id": action_id,
+                    "title": row.get("metadata_title", ""),
+                    "recommendation": decisions.get(action_id),
+                }
+    except FileNotFoundError:
+        pass
+    return metadata
 
 
 def main() -> int:
@@ -34,10 +64,13 @@ def main() -> int:
     voted_key = f"keyHash-{DREP_KEY_HASH}"
 
     actions = []
+    metadata = _load_action_metadata()
     open_count = 0
     voted_count = 0
     for p in gov.get("proposals", []):
         aid = p.get("actionId", {})
+        action_key = f'{aid.get("txId")}#{aid.get("govActionIx")}'
+        meta = metadata.get(action_key, {})
         exp = p.get("expiresAfter")
         is_open = exp is None or int(exp) >= epoch
         our_vote = (p.get("dRepVotes") or {}).get(voted_key)  # 'VoteYes'/'VoteNo'/'Abstain' or None
@@ -46,11 +79,14 @@ def main() -> int:
         if our_vote is not None:
             voted_count += 1
         actions.append({
-            "action_id": f'{aid.get("txId")}#{aid.get("govActionIx")}',
+            "action_id": action_key,
+            "cip129_action_id": meta.get("cip129_action_id") if is_open else None,
+            "title": meta.get("title", ""),
             "type": (p.get("proposalProcedure", {}).get("govAction", {}) or {}).get("tag"),
             "proposed_in_epoch": p.get("proposedIn"),
             "expires_after_epoch": exp,
             "status": "open" if is_open else "closed",
+            "recommendation": meta.get("recommendation"),
             "our_vote": our_vote,
             "anchor_url": (p.get("proposalProcedure", {}).get("anchor", {}) or {}).get("url"),
         })

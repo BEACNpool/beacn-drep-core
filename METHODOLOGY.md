@@ -57,6 +57,23 @@ actual proposals (`scripts/build_active_decision_support.py`). Rules we hold:
   As a result treasury actions correctly resolve to **NEEDS_MORE_INFO**, and each names the
   specific outstanding items rather than rubber-stamping a directional vote.
 
+## Action-type policy
+Different governance action types do not mean the same thing when evidence is thin.
+
+- **Treasury withdrawals:** strictest path. Without a completed independent dossier, BEACN returns
+  `NEEDS_MORE_INFO`; missing controls, milestones, budget clarity, or sustainability evidence block
+  directional votes.
+- **Hard-fork initiations:** high-impact protocol changes, but the generic treasury-style risk
+  checklist is not allowed to convert thin fields into automatic opposition. If the action has a
+  pinned anchor, valid baseline metadata, no flags, and no explicit blocker, the engine may recommend
+  `YES` while keeping missing risk detail in the uncertainty record.
+- **Operator review:** high-impact hard-fork `YES` recommendations set
+  `operator_review_required=true`. Shadow signing still works, but live submission requires
+  `BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>` in addition to the normal live-voting switch.
+- **Ratification support:** exported DRep/SPO percentages are treated as ratification-support context,
+  not a clean ledger of explicit YES-vs-NO sentiment. Low YES support early in a vote is never treated
+  as active opposition by itself.
+
 ## Doctrine (versioned, auditable)
 Values and weights live in `beacn-drep-soul/` (README charter, `values_hierarchy.md`,
 `scoring_weights.json`), are versioned, and every decision cites the exact doctrine commit and a

@@ -38,8 +38,8 @@ Vote: NO. For this HardForkInitiation (enacted), downside risk and/or weak safeg
 - input_hash: `725f023abc2d0299f302ae25b075a22329c44db0713e60ecc0f26a9c2801bffb`
 - snapshot_bundle_hash: `bfd6bb7278eefa5faf26a7acd456055c0dd8259d9e1e75da9b8720f313e870dc`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `1a7b2a06eb1757aad5065883cf73f8066d2dc3a6`
-- core_commit: `5e0d54e623339d200bb4b8e40d786802e9984f0c`
+- resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
+- core_commit: `d8dc8d8eca128ca8e9f00ac439b347de0e02c27f`
 - score: `-0.07`
 - confidence: `0.62`
 

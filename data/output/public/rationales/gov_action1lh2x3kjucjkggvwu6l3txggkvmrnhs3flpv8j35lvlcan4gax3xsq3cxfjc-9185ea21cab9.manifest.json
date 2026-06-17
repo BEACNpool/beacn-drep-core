@@ -34,7 +34,7 @@
   "action_type": "HardForkInitiation",
   "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1a7b2a06eb1757aad5065883cf73f8066d2dc3a6",
+  "resource_registry_commit": "9888051c6d5ec763affe3e12d9a462e2556e458a",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -165,13 +165,13 @@
       "dir_hash": "675fea33dc9b20035880906eb766185f1cfdefb5e6cda60817ca6a0e4390d1ae"
     }
   ],
-  "snapshot_bundle_hash": "a818547672e572fed3f09fa5eaf718092e782945a8e627a308f6ba9b02fbdc94",
+  "snapshot_bundle_hash": "53802e73e0ea8c091f31ffe80d871455853e0e2b3d4144531a13ac7facb29dbd",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "codex-offline-review",
-      "reason": null,
-      "model": "codex-offline-local",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
         "anchor_read": true,
@@ -182,17 +182,17 @@
         "file_path": "data/input/governance/anchors/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-20260617T113036Z.bin",
         "content_chars": 23777
       },
-      "claim_count": 8,
-      "prompt_sha256": "aa11da8f63b566762bb435ed4636ff5e4b08c7ec2481d20f017e105574a1cf64",
-      "output_sha256": "61dfd42dea5020d508eeabd2fc2194c7ddec5e7d44966ded4e899503f83f6d53"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "codex-offline-review",
-      "available": true,
-      "reason": null,
-      "model": "codex-offline-local",
-      "prompt_sha256": "2859aa3137b696d070bf4430cc3148f3541914838175230b0e122e9a915c5d31",
-      "output_sha256": "f0fee7b6afc5b8ac775661f7cd5a4dd9bbd1e9935189e52f5f269323f507b7d6"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
   }

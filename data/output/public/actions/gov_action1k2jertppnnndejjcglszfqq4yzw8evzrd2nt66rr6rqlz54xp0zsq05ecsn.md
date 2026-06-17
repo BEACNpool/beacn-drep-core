@@ -38,8 +38,8 @@ Vote: YES. For this ParameterChange (enacted), available evidence supports proce
 - input_hash: `1e4ceb38bb49e4bcde5442d70bf02eab5bd80c718bb7b3216c9a983ac3262dd3`
 - snapshot_bundle_hash: `f36e1b77923705271e0e1a02d610aed113d75633aa0abf57fbd7a592b3eefcc1`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `1a7b2a06eb1757aad5065883cf73f8066d2dc3a6`
-- core_commit: `5e0d54e623339d200bb4b8e40d786802e9984f0c`
+- resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
+- core_commit: `d8dc8d8eca128ca8e9f00ac439b347de0e02c27f`
 - score: `0.0`
 - confidence: `0.55`
 

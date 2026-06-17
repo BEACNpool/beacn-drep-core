@@ -411,6 +411,18 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
         )
         return report
 
+    if decision.get("operator_review_required"):
+        approval = os.environ.get("BEACN_OPERATOR_APPROVED_ACTION_ID", "")
+        if approval not in (action_id, "1"):
+            report.update(
+                status="blocked",
+                reasons=[
+                    "operator_review_required: set BEACN_OPERATOR_APPROVED_ACTION_ID "
+                    "to this action_id after reviewing the rationale"
+                ],
+            )
+            return report
+
     try:
         subprocess.run(["ssh", RELAY, f"mkdir -m 700 {rwork}"], check=True, timeout=60)
         subprocess.run(["scp", "-q", str(signed), f"{RELAY}:{rwork}/tx.signed"],

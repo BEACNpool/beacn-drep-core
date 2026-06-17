@@ -9,7 +9,7 @@
     "detected_at": "2026-06-16T17:00:02.086757+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "YES",
     "published_at": "2026-06-17T11:30:04.402693+00:00",
     "signed": false,
     "submitted": false,
@@ -17,21 +17,21 @@
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NO",
-    "score": -0.17,
-    "confidence": 0.72,
+    "vote": "YES",
+    "score": -0.07,
+    "confidence": 0.62,
     "input_hash": "9185ea21cab9c53c990206433e8e49db806099243b735a85c268fc4373ec9387",
-    "snapshot_bundle_hash": "a818547672e572fed3f09fa5eaf718092e782945a8e627a308f6ba9b02fbdc94",
+    "snapshot_bundle_hash": "53802e73e0ea8c091f31ffe80d871455853e0e2b3d4144531a13ac7facb29dbd",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
-    "resources_commit": "1a7b2a06eb1757aad5065883cf73f8066d2dc3a6",
-    "core_commit": "5e0d54e623339d200bb4b8e40d786802e9984f0c",
+    "resources_commit": "9888051c6d5ec763affe3e12d9a462e2556e458a",
+    "core_commit": "d8dc8d8eca128ca8e9f00ac439b347de0e02c27f",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-9185ea21cab9.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d02c345335eb0204454bff1f.md",
-    "rationale_anchor_hash": "d02c345335eb0204454bff1fa130c6e3a0e206a2590f87e9bae2b1890335bc8d"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/5c3a16a1ab6f46a1971dc1e1.md",
+    "rationale_anchor_hash": "5c3a16a1ab6f46a1971dc1e1d70e345649eb1ff02dd00ce798084794acd6f4ef"
   },
   "rationale": {
-    "summary": "Vote: NO. For this HardForkInitiation (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions require strongest evidence quality. Confidence context: score -0.17; confidence 72.0%.",
-    "summary_raw": "Network DRep distribution used as one signal, not authority.",
+    "summary": "Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions are high-impact protocol upgrades and require operator-aware review. Confidence context: score -0.07; confidence 62.0%.",
+    "summary_raw": "Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Provide migration readiness evidence across tooling/wallet/exchange dependencies.",
@@ -54,7 +54,7 @@
             "Action type: HardForkInitiation",
             "Status: active",
             "Proposed epoch: 637",
-            "Expires after epoch: unknown",
+            "Expires after epoch: 644",
             "Treasury request: not specified",
             "Anchor pinned locally: yes"
           ],
@@ -63,25 +63,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: manifest",
             "Deep research dossier: not required",
-            "Requested: Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: We propose to upgrade Cardano Mainnet to Protocol Version 11., This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\")., The Cardano mainnet protocol will be upgraded to Major Version 11 and Minor Version 0; 2., The ledger remains in the Conway era, there is no era transition; 3.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, low materiality): We propose to upgrade Cardano Mainnet to Protocol Version 11.",
-            "Claim (technical, independently_verifiable, high materiality): This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\").",
-            "Claim (technical, independently_verifiable, low materiality): The Cardano mainnet protocol will be upgraded to Major Version 11 and Minor Version 0; 2.",
-            "Claim (technical, independently_verifiable, low materiality): The ledger remains in the Conway era, there is no era transition; 3.",
-            "Claim (technical, independently_verifiable, high materiality): Protocol Version 11 bundles a focused set of improvements to Plutus performance , ledger consistency , and node-level security into a single intra-era upgrade.",
-            "Claim (technical, independently_verifiable, high materiality): Because it is an intra-era hard fork, transaction shape does not change and ecosystem upgrade effort is minimised."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -109,7 +101,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"We propose to upgrade Cardano Mainnet to Protocol Version 11.\" and clears the evidence gates.",
+            "Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -148,8 +140,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "1a7b2a06eb1757aad5065883cf73f8066d2dc3a6",
-    "core_commit": "5e0d54e623339d200bb4b8e40d786802e9984f0c",
+    "resources_commit": "9888051c6d5ec763affe3e12d9a462e2556e458a",
+    "core_commit": "d8dc8d8eca128ca8e9f00ac439b347de0e02c27f",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -210,13 +202,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.17,
+    "budget_pressure": 0.07,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.72
+    "governance_alignment": 0.62
   },
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 8722,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-06-17T11:30:36.230019Z",

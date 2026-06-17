@@ -1,23 +1,25 @@
 {
   "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
   "action_type": "HardForkInitiation",
-  "recommendation": "NO",
+  "recommendation": "YES",
   "abstain_reason_code": null,
   "needs_more_info_reason_code": null,
-  "score": -0.17,
-  "confidence": 0.72,
+  "operator_review_required": true,
+  "operator_review_reason_code": "HIGH_IMPACT_HARD_FORK",
+  "score": -0.07,
+  "confidence": 0.62,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
-    "Hard fork actions require strongest evidence quality.",
+    "Hard fork actions are high-impact protocol upgrades and require operator-aware review.",
     "Intake: Action type: HardForkInitiation",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"We propose to upgrade Cardano Mainnet to Protocol Version 11.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Network DRep distribution used as one signal, not authority.",
+    "Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -25,17 +27,19 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Rule-based system; does not infer unstated intent.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
+    "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
     "Risk review status is thin."
   ],
   "missing_evidence": [],
   "input_hash": "9185ea21cab9c53c990206433e8e49db806099243b735a85c268fc4373ec9387",
-  "snapshot_bundle_hash": "a818547672e572fed3f09fa5eaf718092e782945a8e627a308f6ba9b02fbdc94",
+  "snapshot_bundle_hash": "53802e73e0ea8c091f31ffe80d871455853e0e2b3d4144531a13ac7facb29dbd",
   "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1a7b2a06eb1757aad5065883cf73f8066d2dc3a6",
+  "resource_registry_commit": "9888051c6d5ec763affe3e12d9a462e2556e458a",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -48,16 +52,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 8722,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-06-17T11:30:36.230019Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.08,
-    "NO": 0.69,
-    "ABSTAIN": 0.23
+    "YES": 0.425,
+    "NO": 0.3325,
+    "ABSTAIN": 0.2425
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 3,
@@ -77,7 +81,7 @@
           "Action type: HardForkInitiation",
           "Status: active",
           "Proposed epoch: 637",
-          "Expires after epoch: unknown",
+          "Expires after epoch: 644",
           "Treasury request: not specified",
           "Anchor pinned locally: yes"
         ],
@@ -86,25 +90,17 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: manifest",
           "Deep research dossier: not required",
-          "Requested: Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: We propose to upgrade Cardano Mainnet to Protocol Version 11., This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\")., The Cardano mainnet protocol will be upgraded to Major Version 11 and Minor Version 0; 2., The ledger remains in the Conway era, there is no era transition; 3.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, independently_verifiable, low materiality): We propose to upgrade Cardano Mainnet to Protocol Version 11.",
-          "Claim (technical, independently_verifiable, high materiality): This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\").",
-          "Claim (technical, independently_verifiable, low materiality): The Cardano mainnet protocol will be upgraded to Major Version 11 and Minor Version 0; 2.",
-          "Claim (technical, independently_verifiable, low materiality): The ledger remains in the Conway era, there is no era transition; 3.",
-          "Claim (technical, independently_verifiable, high materiality): Protocol Version 11 bundles a focused set of improvements to Plutus performance , ledger consistency , and node-level security into a single intra-era upgrade.",
-          "Claim (technical, independently_verifiable, high materiality): Because it is an intra-era hard fork, transaction shape does not change and ecosystem upgrade effort is minimised."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
-        "missing": [],
+        "missing": [
+          "No structured claim/evidence extraction from the proposal document."
+        ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
       {
@@ -132,7 +128,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"We propose to upgrade Cardano Mainnet to Protocol Version 11.\" and clears the evidence gates.",
+          "Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
           "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
@@ -155,14 +151,14 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records NO on Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork). The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a HardForkInitiation. The cached anchor describes the request as: Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork). The strongest grounded claim is: We propose to upgrade Cardano Mainnet to Protocol Version 11.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
-  "human_message_source": "codex-offline-review",
+  "human_message": "BEACN's autonomous DRep recorded YES on \"Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)\" (HardForkInitiation). (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "codex-offline-review",
-      "reason": null,
-      "model": "codex-offline-local",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
         "anchor_read": true,
@@ -173,20 +169,20 @@
         "file_path": "data/input/governance/anchors/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-20260617T113036Z.bin",
         "content_chars": 23777
       },
-      "claim_count": 8,
-      "prompt_sha256": "aa11da8f63b566762bb435ed4636ff5e4b08c7ec2481d20f017e105574a1cf64",
-      "output_sha256": "61dfd42dea5020d508eeabd2fc2194c7ddec5e7d44966ded4e899503f83f6d53"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "codex-offline-review",
-      "available": true,
-      "reason": null,
-      "model": "codex-offline-local",
-      "prompt_sha256": "2859aa3137b696d070bf4430cc3148f3541914838175230b0e122e9a915c5d31",
-      "output_sha256": "f0fee7b6afc5b8ac775661f7cd5a4dd9bbd1e9935189e52f5f269323f507b7d6"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d02c345335eb0204454bff1f.md",
-  "rationale_anchor_hash": "d02c345335eb0204454bff1fa130c6e3a0e206a2590f87e9bae2b1890335bc8d"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/5c3a16a1ab6f46a1971dc1e1.md",
+  "rationale_anchor_hash": "5c3a16a1ab6f46a1971dc1e1d70e345649eb1ff02dd00ce798084794acd6f4ef"
 }

@@ -19,6 +19,23 @@ KNOWN_ACTION_TYPES = {
 }
 
 
+def _action_family(action_type: str | None) -> str:
+    normalized = (action_type or "").lower().replace("_", "").replace("-", "").replace(" ", "")
+    if "treasury" in normalized:
+        return "treasury"
+    if "hardfork" in normalized:
+        return "hardfork"
+    if "parameter" in normalized:
+        return "parameter"
+    if "info" in normalized:
+        return "info"
+    if "committee" in normalized:
+        return "committee"
+    if "constitution" in normalized:
+        return "constitution"
+    return "other"
+
+
 def _sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -443,7 +460,7 @@ def _build_assessment(
             f"Action type: {action_type or 'unknown'}",
             f"Status: {action.get('status') or 'unknown'}",
             f"Proposed epoch: {action.get('proposed_epoch') or 'unknown'}",
-            f"Expires after epoch: {action.get('expires_after_epoch') or 'unknown'}",
+            f"Expires after epoch: {action.get('expires_after_epoch') or action.get('expiration_epoch') or 'unknown'}",
             f"Treasury request: {_short_amount(action.get('treasury_amount_lovelace'))}",
             f"Anchor pinned locally: {'yes' if anchor_ok else 'no'}",
         ],
@@ -610,6 +627,7 @@ def _score_action(
     scoring_weights: dict | None = None,
 ) -> dict:
     action_type = (action.get("action_type") or "").lower()
+    action_family = _action_family(action_type)
     flag_score = _to_float(action.get("flag_score"))
     drep_yes = _to_float(action.get("drep_yes_pct"))
     drep_no = _to_float(action.get("drep_no_pct"))
@@ -675,7 +693,7 @@ def _score_action(
         }
 
     # Deep-research gate for treasury proposals.
-    if "treasury" in action_type:
+    if action_family == "treasury":
         deep_ok = _yn((deep_row or {}).get("dossier_complete")) is True
         if not deep_ok:
             deep_missing = _missing_deep_research(deep_row)
@@ -704,7 +722,7 @@ def _score_action(
         unc.append("Anchor document is not yet pinned locally for this action.")
 
     # Conservative doctrine-aligned rule set
-    if "treasury" in action_type:
+    if action_family == "treasury":
         score += w_treasury_base
         facts.append("Treasury withdrawal actions require elevated scrutiny.")
 
@@ -746,21 +764,32 @@ def _score_action(
         if financial_row and _yn(financial_row.get("milestone_payment_gates")) is False:
             score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "no_milestones", -0.15)
             unc.append("No milestone-gated disbursement documented.")
-    if "parameter" in action_type:
+    if action_family == "parameter":
         score += w_parameter_base
         facts.append("Protocol parameter changes carry system-wide risk.")
-    if "hardfork" in action_type:
+    if action_family == "hardfork":
         score += w_hardfork_base
-        facts.append("Hard fork actions require strongest evidence quality.")
+        facts.append("Hard fork actions are high-impact protocol upgrades and require operator-aware review.")
 
     score -= min(flag_score / w_flag_divisor, w_flag_penalty_cap)
     if flag_score > 0:
         facts.append(f"Flag score present ({int(flag_score)}), reducing confidence.")
 
     if drep_yes + drep_no + drep_abstain > 0:
-        margin = (drep_yes - drep_no) / 100.0
-        score += max(min(margin, w_drep_margin_cap), -w_drep_margin_cap)
-        inf.append("Network DRep distribution used as one signal, not authority.")
+        # The governance export percentages are ratification support, not a clean
+        # explicit-vote sentiment ledger. In particular, the "no" side can include
+        # stake that simply has not voted YES yet. Treat it as turnout/support
+        # context, never as active opposition by itself.
+        if drep_yes >= 60.0:
+            score += min(0.06, w_drep_margin_cap)
+            inf.append("DRep ratification support is above the hard-fork threshold; treated as a positive context signal.")
+        elif drep_yes >= 25.0:
+            score += min(0.03, w_drep_margin_cap)
+            inf.append("DRep ratification support is material but below threshold; treated as a modest context signal.")
+        elif drep_yes > 0:
+            unc.append("DRep ratification support is below threshold; this is not treated as active opposition.")
+        else:
+            unc.append("No DRep YES support recorded in the ratification snapshot.")
     else:
         unc.append("No DRep distribution available.")
 
@@ -798,7 +827,7 @@ def _score_action(
     readiness_score = max(0.0, min(1.0, readiness_score))
 
     # Recommendation thresholds
-    treasury_doctrine_ready = ("treasury" in action_type) and (_yn((deep_row or {}).get("dossier_complete")) is True)
+    treasury_doctrine_ready = (action_family == "treasury") and (_yn((deep_row or {}).get("dossier_complete")) is True)
     treasury_ratio = None
     inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
     outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
@@ -813,6 +842,15 @@ def _score_action(
         w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
         available = ncl_annual - w73
 
+    clean_hardfork = (
+        action_family == "hardfork"
+        and anchor_ok
+        and not missing_evidence
+        and flag_score == 0
+        and not hard_blocker
+        and not (risk_row and _yn(risk_row.get("risk_blocker")) is True)
+    )
+
     if hard_blocker:
         rec = "ABSTAIN"
         unc.append("Hard blocker present in vote-readiness matrix.")
@@ -826,6 +864,9 @@ def _score_action(
         rec = "YES"
     elif score <= (-0.06 if treasury_doctrine_ready else -0.12):
         rec = "NO"
+    elif clean_hardfork and score > -0.10:
+        rec = "YES"
+        inf.append("Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.")
     elif readiness_score >= 0.70 or treasury_doctrine_ready:
         # Force directional decision when structured evidence packet is sufficiently complete.
         rec = "YES" if score >= 0 else "NO"
@@ -846,9 +887,13 @@ def _score_action(
             reason_code = "DREP_DISTRIBUTION_MISSING"
         else:
             reason_code = "RULE_THRESHOLD_UNMET"
+    operator_review_required = clean_hardfork and rec == "YES"
+
     return {
         "recommendation": rec,
         "abstain_reason_code": reason_code,
+        "operator_review_required": operator_review_required,
+        "operator_review_reason_code": "HIGH_IMPACT_HARD_FORK" if operator_review_required else None,
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
         "confidence": round(confidence, 4),
@@ -1017,6 +1062,8 @@ def run_once(action_id: str | None = None) -> dict:
         "recommendation": score_obj["recommendation"],
         "abstain_reason_code": score_obj.get("abstain_reason_code"),
         "needs_more_info_reason_code": score_obj.get("needs_more_info_reason_code"),
+        "operator_review_required": score_obj.get("operator_review_required", False),
+        "operator_review_reason_code": score_obj.get("operator_review_reason_code"),
         "score": score_obj["score"],
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),

@@ -32,9 +32,10 @@ The signing adapter turns a decision run into a guarded, signed Conway vote.
 It is SHADOW by default — it builds + signs but submits nothing unless
 `--live` is passed AND `BEACN_VOTING_LIVE=1` is set. It enforces the full
 8-point automation gate from `../infra/drep-cli-wallet.md` and fails closed.
-High-impact decisions that set `operator_review_required=true` also require
-`BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>` before live submission. This includes
-clean hard-fork initiations and the narrow committeeMinSize governance-liveness parameter lane.
+The workflow is fully agentic: live submission is controlled by `--live` and
+`BEACN_VOTING_LIVE=1`, not by a mandatory operator approval variable. High-impact
+actions still record audit metadata such as `agentic_high_impact_reason_code`, but
+they are not blocked for manual review once the deterministic gates pass.
 Keys live on opsbox (`~/.secrets/cardano/beacn-drep-cli/`, see
 `../ops/beacn-drep-wallet`); queries + build + submit go through `relay`; the
 block producer is never in the voting path.

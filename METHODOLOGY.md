@@ -71,10 +71,10 @@ Different governance action types do not mean the same thing when evidence is th
   when the anchor is pinned, metadata is valid, and there are no flags or blockers. This exception is
   limited to avoiding Constitutional Committee liveness failure; generic parameter changes still use
   the conservative default.
-- **Operator review:** high-impact hard-fork and governance-liveness parameter `YES`
-  recommendations set `operator_review_required=true`. Shadow signing still works, but live
-  submission requires `BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>` in addition to the normal
-  live-voting switch.
+- **Agentic high-impact audit metadata:** high-impact hard-fork and governance-liveness parameter
+  `YES` recommendations record `agentic_high_impact_reason_code`. This is an audit signal, not a
+  mandatory operator-review gate. Live submission remains fully agentic once replay, public rationale,
+  action-live, fee-cap, and vote-only transaction gates pass.
 - **Ratification support:** exported DRep/SPO percentages are treated as ratification-support context,
   not a clean ledger of explicit YES-vs-NO sentiment. Low YES support early in a vote is never treated
   as active opposition by itself.

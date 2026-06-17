@@ -103,9 +103,6 @@ def lane_for(
     if rec == "NEEDS_MORE_INFO":
         return "NEEDS_RESEARCH", rationale.get("needs_more_info_reason_code") or "Research dossier incomplete."
 
-    if rationale.get("operator_review_required"):
-        return "OPERATOR_REVIEW", rationale.get("operator_review_reason_code") or "High-impact decision requires operator review."
-
     if rec == "ABSTAIN":
         return "POLICY_REVIEW", rationale.get("abstain_reason_code") or "Rule threshold unmet or policy hold."
 
@@ -152,7 +149,6 @@ def main() -> int:
         "VOTE_REVISION": 0,
         "DATA_FAILURE": 0,
         "EXPIRY_PRESSURE": 1,
-        "OPERATOR_REVIEW": 2,
         "PUBLISH_RATIONALE": 3,
         "POLICY_REVIEW": 4,
         "NEEDS_RESEARCH": 5,

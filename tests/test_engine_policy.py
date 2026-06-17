@@ -84,15 +84,16 @@ def score_for(
 
 
 class EnginePolicyTests(unittest.TestCase):
-    def test_clean_hardfork_low_ratification_support_is_yes_with_operator_review(self) -> None:
+    def test_clean_hardfork_low_ratification_support_is_agentic_yes(self) -> None:
         result = score_for(base_action("HardForkInitiation"))
 
         self.assertEqual(result["recommendation"], "YES")
-        self.assertTrue(result["operator_review_required"])
-        self.assertEqual(result["operator_review_reason_code"], "HIGH_IMPACT_HARD_FORK")
+        self.assertFalse(result["operator_review_required"])
+        self.assertIsNone(result["operator_review_reason_code"])
+        self.assertEqual(result["agentic_high_impact_reason_code"], "HIGH_IMPACT_HARD_FORK")
         self.assertIn("not treated as active opposition", " ".join(result["uncertainty"]))
 
-    def test_committee_liveness_parameter_is_yes_with_operator_review(self) -> None:
+    def test_committee_liveness_parameter_is_agentic_yes(self) -> None:
         action = base_action("ParameterChange")
         action["metadata_title"] = "Reduce the committeeMinSize parameter from 7 to 5"
         action["param_changes"] = '{"committee_min_size": 5}'
@@ -100,8 +101,9 @@ class EnginePolicyTests(unittest.TestCase):
         result = score_for(action)
 
         self.assertEqual(result["recommendation"], "YES")
-        self.assertTrue(result["operator_review_required"])
-        self.assertEqual(result["operator_review_reason_code"], "GOVERNANCE_LIVENESS_PARAMETER")
+        self.assertFalse(result["operator_review_required"])
+        self.assertIsNone(result["operator_review_reason_code"])
+        self.assertEqual(result["agentic_high_impact_reason_code"], "GOVERNANCE_LIVENESS_PARAMETER")
         self.assertIn("committeeMinSize liveness", " ".join(result["inferences"]))
 
     def test_generic_parameter_change_does_not_use_liveness_exception(self) -> None:

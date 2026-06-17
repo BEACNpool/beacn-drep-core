@@ -922,18 +922,18 @@ def _score_action(
             reason_code = "DREP_DISTRIBUTION_MISSING"
         else:
             reason_code = "RULE_THRESHOLD_UNMET"
-    operator_review_reason_code = None
+    high_impact_reason_code = None
     if clean_hardfork and rec == "YES":
-        operator_review_reason_code = "HIGH_IMPACT_HARD_FORK"
+        high_impact_reason_code = "HIGH_IMPACT_HARD_FORK"
     elif clean_committee_liveness_parameter and rec == "YES":
-        operator_review_reason_code = "GOVERNANCE_LIVENESS_PARAMETER"
-    operator_review_required = operator_review_reason_code is not None
+        high_impact_reason_code = "GOVERNANCE_LIVENESS_PARAMETER"
 
     return {
         "recommendation": rec,
         "abstain_reason_code": reason_code,
-        "operator_review_required": operator_review_required,
-        "operator_review_reason_code": operator_review_reason_code,
+        "operator_review_required": False,
+        "operator_review_reason_code": None,
+        "agentic_high_impact_reason_code": high_impact_reason_code,
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
         "confidence": round(confidence, 4),
@@ -1104,6 +1104,7 @@ def run_once(action_id: str | None = None) -> dict:
         "needs_more_info_reason_code": score_obj.get("needs_more_info_reason_code"),
         "operator_review_required": score_obj.get("operator_review_required", False),
         "operator_review_reason_code": score_obj.get("operator_review_reason_code"),
+        "agentic_high_impact_reason_code": score_obj.get("agentic_high_impact_reason_code"),
         "score": score_obj["score"],
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),

@@ -1,7 +1,7 @@
-# Operator Intervention Plan
+# Agentic Intervention Plan
 
 BEACN's DRep system should fail closed, but it must not fail silent. When the
-deterministic engine cannot responsibly decide, the operator needs a defined
+deterministic engine cannot responsibly decide, the workflow needs a defined
 lane with a concrete next action.
 
 ## Intervention Lanes
@@ -26,25 +26,27 @@ meaning.
   passes replay.
 - Example blocker: treating low hard-fork turnout as active opposition.
 
-### 3. High-Impact Operator Review
+### 3. Agentic High-Impact Directional Vote
 
 Use when the engine produces a directional vote on an action with protocol,
 constitutional, committee, or large-treasury impact.
 
-- Default vote state: directional rationale allowed; live submission blocked
-  until operator approval.
-- Required intervention: read the rationale, inspect the strongest countercase,
-  confirm no private/off-chain evidence was used, then approve explicitly.
-- Live voting: requires `BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>`.
-- Example: clean hard-fork initiation or committeeMinSize governance-liveness parameter with
-  `operator_review_required=true`.
+- Default vote state: directional rationale allowed; live submission proceeds
+  once deterministic gates pass.
+- Required workflow: record the high-impact reason in public rationale metadata,
+  inspect the strongest countercase during automated scoring, and confirm no
+  private/off-chain evidence was used.
+- Live voting: no mandatory operator approval variable; still requires replay,
+  public rationale hash, action-live, fee-cap, and vote-only transaction gates.
+- Example: clean hard-fork initiation or committeeMinSize governance-liveness
+  parameter with `agentic_high_impact_reason_code`.
 
 ### 4. Research-Debt Hold
 
 Use when the action may deserve support but the evidence packet is incomplete.
 
-- Default vote state: `NEEDS_MORE_INFO`; near expiry, operator may choose
-  `ABSTAIN` if the missing evidence cannot be gathered in time.
+- Default vote state: `NEEDS_MORE_INFO`; near expiry, the agentic workflow may
+  choose `ABSTAIN` if the missing evidence cannot be gathered in time.
 - Required intervention: collect the named missing evidence into resources,
   update decision-support CSVs, rerun the engine.
 - Live voting: blocked.
@@ -66,7 +68,7 @@ recorded.
 Use when an action expires soon and the normal research path will not finish in
 time.
 
-- Default vote state: operator chooses one of: fast-track evidence, submit
+- Default vote state: agent chooses one of: fast-track evidence, submit
   `ABSTAIN`, or intentionally no-vote.
 - Required intervention: document why speed changed the normal bar.
 - Live voting: requires the same gates as any other vote.
@@ -80,7 +82,7 @@ time.
   budget clarity, milestone gates, or failure-mode analysis remain blockers.
 - Network vote percentages are ratification-support context, not a substitute
   for BEACN's own judgment.
-- Any operator override must be expressed as public rationale content or a
+- Any policy override must be expressed as public rationale content or a
   committed policy/profile change. No private memory or chat context may become
   hidden decision evidence.
 
@@ -89,8 +91,8 @@ time.
 1. Build the operator queue:
    `PYTHONPATH=src python3 scripts/build_operator_intervention_queue.py`
 2. For `POLICY_REVIEW`: fix typed policy or mark an intentional hold.
-3. For `OPERATOR_REVIEW`: read `rationale.md`, confirm public rationale quality,
-   then approve with the action id if live voting is intended.
+3. For high-impact directional votes: confirm the public rationale metadata
+   records `agentic_high_impact_reason_code`.
 4. For `NEEDS_RESEARCH`: add admitted public evidence in `beacn-drep-resources`
    and rerun the decision.
 5. For `PUBLISH_RATIONALE`: publish/anchor the rationale before live submission.
@@ -98,4 +100,4 @@ time.
    `PYTHONPATH=src python3 -m beacn_drep.cli verify-replay --run-id <run_id>`
 7. Shadow:
    `PYTHONPATH=src python3 scripts/sign_votes_shadow.py --run-dir data/output/<run_id>`
-8. Live only after explicit operator intent.
+8. Live when the agentic voting policy says to proceed.

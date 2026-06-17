@@ -249,7 +249,7 @@ def _existing_vote_to_recommendation(vote: str | None) -> str | None:
 
 
 def _gate_action_live(tx_id: str, index: int, decision: dict, rec: str) -> tuple[bool, str]:
-    """Gate 7: action active; revotes only when operator-reviewed correction is needed."""
+    """Gate 7: action active; revotes when the latest agentic recommendation changed."""
     try:
         gs = json.loads(_relay_query(["conway", "query", "gov-state", "--mainnet"]))
     except Exception as e:  # noqa: BLE001
@@ -262,9 +262,7 @@ def _gate_action_live(tx_id: str, index: int, decision: dict, rec: str) -> tuple
             if existing_rec == rec:
                 return False, f"this DRep has already voted {existing_rec} on the action"
             if existing_rec is not None:
-                if not decision.get("operator_review_required"):
-                    return False, f"vote revision from {existing_rec} to {rec} requires operator review"
-                return True, f"active with vote revision from {existing_rec} to {rec}"
+                return True, f"active with agentic vote revision from {existing_rec} to {rec}"
             return True, "active and unvoted"
     return False, "action not present in active gov-state (expired/ratified)"
 
@@ -426,18 +424,6 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
             json.dumps(report, indent=2) + "\n", encoding="utf-8"
         )
         return report
-
-    if decision.get("operator_review_required"):
-        approval = os.environ.get("BEACN_OPERATOR_APPROVED_ACTION_ID", "")
-        if approval not in (action_id, "1"):
-            report.update(
-                status="blocked",
-                reasons=[
-                    "operator_review_required: set BEACN_OPERATOR_APPROVED_ACTION_ID "
-                    "to this action_id after reviewing the rationale"
-                ],
-            )
-            return report
 
     try:
         subprocess.run(["ssh", RELAY, f"mkdir -m 700 {rwork}"], check=True, timeout=60)

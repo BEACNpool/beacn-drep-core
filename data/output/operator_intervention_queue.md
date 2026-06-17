@@ -1,25 +1,14 @@
 # Operator Intervention Queue
 
-- generated_at: `2026-06-17T14:29:18+00:00`
+- generated_at: `2026-06-17T14:36:52+00:00`
 - current_epoch: `637`
 
 ## Counts
 
-- DONE: 2
+- DONE: 3
 - NEEDS_RESEARCH: 8
-- VOTE_REVISION: 1
 
 ## Items
-
-### VOTE_REVISION — Reduce the committeeMinSize parameter from 7 to 5
-- action_id: `gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur`
-- type: `ParameterChange`
-- expires_epoch: `642`
-- recommendation: `YES`
-- run_id: `gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-7119306d252c`
-- submitted_recommendation: `NO`
-- submitted_tx: `e321137837e4780573ecf95f82e2e90c36c7dacb929f06fff76104ad484d67dc`
-- reason: Existing submitted vote is NO; latest recommendation is YES.
 
 ### NEEDS_RESEARCH — Eternl: Path to Sustainability (2026-2027)
 - action_id: `gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z`

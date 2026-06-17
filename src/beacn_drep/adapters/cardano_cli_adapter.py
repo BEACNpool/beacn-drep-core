@@ -239,8 +239,17 @@ def _run_gates(decision: dict, run_dir: Path) -> GateResult:
     return g
 
 
-def _gate_action_live(tx_id: str, index: int) -> tuple[bool, str]:
-    """Gate 7: action still active and this DRep has not already voted on it."""
+def _existing_vote_to_recommendation(vote: str | None) -> str | None:
+    mapping = {
+        "VoteYes": "YES",
+        "VoteNo": "NO",
+        "Abstain": "ABSTAIN",
+    }
+    return mapping.get(vote or "")
+
+
+def _gate_action_live(tx_id: str, index: int, decision: dict, rec: str) -> tuple[bool, str]:
+    """Gate 7: action active; revotes only when operator-reviewed correction is needed."""
     try:
         gs = json.loads(_relay_query(["conway", "query", "gov-state", "--mainnet"]))
     except Exception as e:  # noqa: BLE001
@@ -248,8 +257,14 @@ def _gate_action_live(tx_id: str, index: int) -> tuple[bool, str]:
     for p in gs.get("proposals", []):
         aid = p.get("actionId", {})
         if aid.get("txId") == tx_id and int(aid.get("govActionIx", -1)) == index:
-            if (p.get("dRepVotes") or {}).get(f"keyHash-{DREP_KEY_HASH}") is not None:
-                return False, "this DRep has already voted on the action"
+            existing_vote = (p.get("dRepVotes") or {}).get(f"keyHash-{DREP_KEY_HASH}")
+            existing_rec = _existing_vote_to_recommendation(existing_vote)
+            if existing_rec == rec:
+                return False, f"this DRep has already voted {existing_rec} on the action"
+            if existing_rec is not None:
+                if not decision.get("operator_review_required"):
+                    return False, f"vote revision from {existing_rec} to {rec} requires operator review"
+                return True, f"active with vote revision from {existing_rec} to {rec}"
             return True, "active and unvoted"
     return False, "action not present in active gov-state (expired/ratified)"
 
@@ -315,8 +330,9 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
         return report
     report.update(tx_id=tx_id, index=index)
 
-    live_ok, why = _gate_action_live(tx_id, index)
+    live_ok, why = _gate_action_live(tx_id, index, decision, rec)
     report["gates"]["action_live"] = live_ok
+    report["action_live_reason"] = why
     if not live_ok:
         report.update(status="blocked", reasons=[f"action_live: {why}"])
         return report

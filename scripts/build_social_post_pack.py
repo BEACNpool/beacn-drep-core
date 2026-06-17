@@ -136,6 +136,14 @@ def quality(detail: dict, status_row: dict) -> list[dict]:
     decision = detail.get("decision") or {}
     evidence_status = str(evidence.get("fetch_status") or "")
     evidence_ok = bool(evidence.get("available")) and evidence_status.startswith("ok")
+    on_chain_vote = decision.get("submitted") or bool(status_row.get("our_vote"))
+    on_chain_detail = (
+        decision.get("transaction_hash")
+        or status_row.get("transaction_hash")
+        or status_row.get("our_vote")
+        or status_row.get("action_id")
+        or ""
+    )
 
     return [
         {
@@ -155,8 +163,8 @@ def quality(detail: dict, status_row: dict) -> list[dict]:
         },
         {
             "label": "On-chain",
-            "value": "Submitted" if decision.get("submitted") else "Pending",
-            "detail": (decision.get("transaction_hash") or status_row.get("action_id") or "")[:12],
+            "value": "Submitted" if on_chain_vote else "Pending",
+            "detail": str(on_chain_detail)[:12],
         },
     ]
 

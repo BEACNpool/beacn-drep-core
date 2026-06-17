@@ -36,6 +36,29 @@ def _action_family(action_type: str | None) -> str:
     return "other"
 
 
+def _param_changes(action: dict) -> dict:
+    raw = action.get("param_changes")
+    if isinstance(raw, dict):
+        return raw
+    if not raw:
+        return {}
+    try:
+        parsed = json.loads(str(raw))
+    except (TypeError, json.JSONDecodeError):
+        return {}
+    return parsed if isinstance(parsed, dict) else {}
+
+
+def _is_committee_liveness_parameter(action: dict) -> bool:
+    changes = _param_changes(action)
+    try:
+        min_size = int(changes.get("committee_min_size"))
+    except (TypeError, ValueError):
+        return False
+    title = (action.get("metadata_title") or "").lower()
+    return min_size == 5 and ("committeeminsize" in title or "committee min" in title)
+
+
 def _sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -850,6 +873,15 @@ def _score_action(
         and not hard_blocker
         and not (risk_row and _yn(risk_row.get("risk_blocker")) is True)
     )
+    clean_committee_liveness_parameter = (
+        action_family == "parameter"
+        and _is_committee_liveness_parameter(action)
+        and anchor_ok
+        and not missing_evidence
+        and flag_score == 0
+        and not hard_blocker
+        and not (risk_row and _yn(risk_row.get("risk_blocker")) is True)
+    )
 
     if hard_blocker:
         rec = "ABSTAIN"
@@ -867,6 +899,9 @@ def _score_action(
     elif clean_hardfork and score > -0.10:
         rec = "YES"
         inf.append("Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.")
+    elif clean_committee_liveness_parameter and score > -0.12:
+        rec = "YES"
+        inf.append("Action-type policy: a clean committeeMinSize liveness parameter may proceed despite thin generic risk fields; governance-risk detail remains explicit uncertainty.")
     elif readiness_score >= 0.70 or treasury_doctrine_ready:
         # Force directional decision when structured evidence packet is sufficiently complete.
         rec = "YES" if score >= 0 else "NO"
@@ -887,13 +922,18 @@ def _score_action(
             reason_code = "DREP_DISTRIBUTION_MISSING"
         else:
             reason_code = "RULE_THRESHOLD_UNMET"
-    operator_review_required = clean_hardfork and rec == "YES"
+    operator_review_reason_code = None
+    if clean_hardfork and rec == "YES":
+        operator_review_reason_code = "HIGH_IMPACT_HARD_FORK"
+    elif clean_committee_liveness_parameter and rec == "YES":
+        operator_review_reason_code = "GOVERNANCE_LIVENESS_PARAMETER"
+    operator_review_required = operator_review_reason_code is not None
 
     return {
         "recommendation": rec,
         "abstain_reason_code": reason_code,
         "operator_review_required": operator_review_required,
-        "operator_review_reason_code": "HIGH_IMPACT_HARD_FORK" if operator_review_required else None,
+        "operator_review_reason_code": operator_review_reason_code,
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
         "confidence": round(confidence, 4),

@@ -67,9 +67,14 @@ Different governance action types do not mean the same thing when evidence is th
   checklist is not allowed to convert thin fields into automatic opposition. If the action has a
   pinned anchor, valid baseline metadata, no flags, and no explicit blocker, the engine may recommend
   `YES` while keeping missing risk detail in the uncertainty record.
-- **Operator review:** high-impact hard-fork `YES` recommendations set
-  `operator_review_required=true`. Shadow signing still works, but live submission requires
-  `BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>` in addition to the normal live-voting switch.
+- **Governance-liveness parameters:** a narrow `committeeMinSize -> 5` change may recommend `YES`
+  when the anchor is pinned, metadata is valid, and there are no flags or blockers. This exception is
+  limited to avoiding Constitutional Committee liveness failure; generic parameter changes still use
+  the conservative default.
+- **Operator review:** high-impact hard-fork and governance-liveness parameter `YES`
+  recommendations set `operator_review_required=true`. Shadow signing still works, but live
+  submission requires `BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>` in addition to the normal
+  live-voting switch.
 - **Ratification support:** exported DRep/SPO percentages are treated as ratification-support context,
   not a clean ledger of explicit YES-vs-NO sentiment. Low YES support early in a vote is never treated
   as active opposition by itself.

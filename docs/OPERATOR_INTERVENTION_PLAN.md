@@ -36,7 +36,8 @@ constitutional, committee, or large-treasury impact.
 - Required intervention: read the rationale, inspect the strongest countercase,
   confirm no private/off-chain evidence was used, then approve explicitly.
 - Live voting: requires `BEACN_OPERATOR_APPROVED_ACTION_ID=<action_id>`.
-- Example: clean hard-fork initiation with `operator_review_required=true`.
+- Example: clean hard-fork initiation or committeeMinSize governance-liveness parameter with
+  `operator_review_required=true`.
 
 ### 4. Research-Debt Hold
 

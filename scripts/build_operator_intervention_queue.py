@@ -43,6 +43,26 @@ def latest_run(action_id: str) -> tuple[Path | None, dict | None]:
     return path, json.loads((path / "rationale.json").read_text(encoding="utf-8"))
 
 
+def latest_submitted_receipt(action_id: str) -> dict | None:
+    candidates = sorted(
+        (
+            p for p in OUT.glob(f"{action_id}-*/vote_receipt.json")
+            if p.is_file()
+        ),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    )
+    for path in candidates:
+        try:
+            receipt = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        if receipt.get("submitted") and (receipt.get("status") or "").lower() == "submitted":
+            receipt["run_id"] = path.parent.name
+            return receipt
+    return None
+
+
 def current_epoch(actions: list[dict]) -> int | None:
     env = os.environ.get("CARDANO_CURRENT_EPOCH")
     if env:
@@ -59,15 +79,27 @@ def current_epoch(actions: list[dict]) -> int | None:
     return max(epochs) if epochs else None
 
 
-def lane_for(action: dict, run_dir: Path | None, rationale: dict | None, epoch: int | None) -> tuple[str, str]:
+def lane_for(
+    action: dict,
+    run_dir: Path | None,
+    rationale: dict | None,
+    receipt: dict | None,
+    epoch: int | None,
+) -> tuple[str, str]:
     if rationale is None:
         return "NEEDS_DECISION_RUN", "No local rationale run found for this active action."
+
+    rec = (rationale.get("recommendation") or "").upper()
+    receipt_rec = ((receipt or {}).get("recommendation") or "").upper()
+    if receipt_rec and receipt_rec == rec:
+        return "DONE", "Latest submitted vote matches the latest local recommendation."
+    if receipt_rec and receipt_rec != rec:
+        return "VOTE_REVISION", f"Existing submitted vote is {receipt_rec}; latest recommendation is {rec}."
 
     freshness = rationale.get("freshness") or {}
     if freshness.get("is_stale"):
         return "DATA_FAILURE", "Governance snapshot is stale; refresh data before voting."
 
-    rec = (rationale.get("recommendation") or "").upper()
     if rec == "NEEDS_MORE_INFO":
         return "NEEDS_RESEARCH", rationale.get("needs_more_info_reason_code") or "Research dossier incomplete."
 
@@ -99,7 +131,8 @@ def main() -> int:
     rows = []
     for action in actions:
         run_dir, rationale = latest_run(action["action_id"])
-        lane, reason = lane_for(action, run_dir, rationale, epoch)
+        receipt = latest_submitted_receipt(action["action_id"])
+        lane, reason = lane_for(action, run_dir, rationale, receipt, epoch)
         rows.append({
             "lane": lane,
             "reason": reason,
@@ -110,9 +143,13 @@ def main() -> int:
             "recommendation": (rationale or {}).get("recommendation"),
             "operator_review_required": bool((rationale or {}).get("operator_review_required")),
             "run_id": run_dir.name if run_dir else None,
+            "submitted_recommendation": (receipt or {}).get("recommendation"),
+            "submitted_tx": (receipt or {}).get("transaction_hash"),
+            "submitted_at": (receipt or {}).get("submitted_at"),
         })
 
     order = {
+        "VOTE_REVISION": 0,
         "DATA_FAILURE": 0,
         "EXPIRY_PRESSURE": 1,
         "OPERATOR_REVIEW": 2,
@@ -121,14 +158,17 @@ def main() -> int:
         "NEEDS_RESEARCH": 5,
         "NEEDS_DECISION_RUN": 6,
         "READY_FOR_SHADOW": 7,
+        "DONE": 99,
     }
-    rows.sort(key=lambda r: (order.get(r["lane"], 99), int(r["expires_epoch"] or 9999), r["title"]))
+    rows.sort(key=lambda r: (order.get(r["lane"], 98), int(r["expires_epoch"] or 9999), r["title"]))
+    active_rows = [r for r in rows if r["lane"] != "DONE"]
 
     output = {
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "current_epoch": epoch,
         "counts": {lane: sum(1 for r in rows if r["lane"] == lane) for lane in sorted({r["lane"] for r in rows})},
-        "items": rows,
+        "items": active_rows,
+        "done": [r for r in rows if r["lane"] == "DONE"],
     }
     OUT.mkdir(parents=True, exist_ok=True)
     QUEUE_JSON.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
@@ -146,6 +186,8 @@ def main() -> int:
         lines.append(f"- {lane}: {count}")
     lines.extend(["", "## Items", ""])
     for row in rows:
+        if row["lane"] == "DONE":
+            continue
         lines.extend([
             f"### {row['lane']} — {row['title'] or row['action_id']}",
             f"- action_id: `{row['action_id']}`",
@@ -153,6 +195,8 @@ def main() -> int:
             f"- expires_epoch: `{row['expires_epoch']}`",
             f"- recommendation: `{row['recommendation']}`",
             f"- run_id: `{row['run_id']}`",
+            f"- submitted_recommendation: `{row['submitted_recommendation'] or ''}`",
+            f"- submitted_tx: `{row['submitted_tx'] or ''}`",
             f"- reason: {row['reason']}",
             "",
         ])

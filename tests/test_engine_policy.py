@@ -92,6 +92,28 @@ class EnginePolicyTests(unittest.TestCase):
         self.assertEqual(result["operator_review_reason_code"], "HIGH_IMPACT_HARD_FORK")
         self.assertIn("not treated as active opposition", " ".join(result["uncertainty"]))
 
+    def test_committee_liveness_parameter_is_yes_with_operator_review(self) -> None:
+        action = base_action("ParameterChange")
+        action["metadata_title"] = "Reduce the committeeMinSize parameter from 7 to 5"
+        action["param_changes"] = '{"committee_min_size": 5}'
+
+        result = score_for(action)
+
+        self.assertEqual(result["recommendation"], "YES")
+        self.assertTrue(result["operator_review_required"])
+        self.assertEqual(result["operator_review_reason_code"], "GOVERNANCE_LIVENESS_PARAMETER")
+        self.assertIn("committeeMinSize liveness", " ".join(result["inferences"]))
+
+    def test_generic_parameter_change_does_not_use_liveness_exception(self) -> None:
+        action = base_action("ParameterChange")
+        action["metadata_title"] = "Increase max block body size"
+        action["param_changes"] = '{"max_block_body_size": 98304}'
+
+        result = score_for(action)
+
+        self.assertEqual(result["recommendation"], "ABSTAIN")
+        self.assertFalse(result["operator_review_required"])
+
     def test_hardfork_with_high_unmitigated_flags_still_abstains(self) -> None:
         action = base_action("HardForkInitiation")
         action["flag_score"] = "9"

@@ -1,13 +1,13 @@
 # gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr
 
 ## Vote
-- Decision: **NO**
+- Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score -0.15; confidence 67.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score -0.02; confidence 54.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `00193413ece6c8e0c8daad4b56e3e69f872b57a065530aff3604fa1c46323c58`
-- snapshot_bundle_hash: `473641d1ab14aa4abb41ceb0c3a401c0aa5b40656823148615cf756c57570463`
+- input_hash: `69b98c4609b34e1f9079941d1870097b02591e606a74abc5ed1fe49db9c2089e`
+- snapshot_bundle_hash: `eec70f02c0db65e5f71b0aa8cb9709451a7856b027ec05563a3ac8a49df3aace`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
-- score: `-0.15`
-- confidence: `0.67`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- score: `-0.02`
+- confidence: `0.54`
 

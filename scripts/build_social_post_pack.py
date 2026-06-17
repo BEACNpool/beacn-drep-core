@@ -322,13 +322,21 @@ def render_image(pack: dict, out: Path) -> None:
     image.save(out, "PNG")
 
 
+def image_name(pack: dict) -> str:
+    return f"{pack['action_id']}-beacn-drep-post.png"
+
+
 def write_pack(pack: dict, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
+    image_path = out_dir / image_name(pack)
     (out_dir / "manifest.json").write_text(json.dumps(pack, indent=2) + "\n", encoding="utf-8")
     (out_dir / "post.txt").write_text(pack["post_text"] + "\n", encoding="utf-8")
     (out_dir / "alt_text.txt").write_text(pack["alt_text"] + "\n", encoding="utf-8")
     (out_dir / "image_prompt.json").write_text(json.dumps(pack["image_prompt"], indent=2) + "\n", encoding="utf-8")
-    render_image(pack, out_dir / "beacn-drep-post.png")
+    legacy = out_dir / "beacn-drep-post.png"
+    if legacy.exists() and legacy != image_path:
+        legacy.unlink()
+    render_image(pack, image_path)
 
 
 def default_pack_dir(pack: dict, out_root: Path) -> Path:
@@ -369,7 +377,7 @@ def main() -> int:
             "action_id": pack["action_id"],
             "title": pack["title"],
             "verdict": pack["verdict_label"],
-            "image": str(out_dir / "beacn-drep-post.png"),
+            "image": str(out_dir / image_name(pack)),
             "post_text": str(out_dir / "post.txt"),
             "manifest": str(out_dir / "manifest.json"),
         }

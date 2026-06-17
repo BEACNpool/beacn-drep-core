@@ -4,7 +4,7 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
 Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
@@ -47,11 +47,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Provide: Missing dossier section: complete proposal summary
 
 ## Proof of vote
-- input_hash: `e2e075bba7ce2e5098fcb6d2a459c294d95f3e542190b5d9c13b7b66ea7bf821`
-- snapshot_bundle_hash: `9873ae593e406adc4bc36e25ddeb5b1c6b02d7c051339e3d7bcdd367479ca5e7`
+- input_hash: `103ccb6bfc5d6f2343cdd718539d55922f2c67e21720f666539e0f25115f1d19`
+- snapshot_bundle_hash: `9372f1061ca8c3131243d4210f284b6e2720a4280bce95ebd84d8f7a00fad2c0`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
 - score: `0.0`
 - confidence: `0.2`
 

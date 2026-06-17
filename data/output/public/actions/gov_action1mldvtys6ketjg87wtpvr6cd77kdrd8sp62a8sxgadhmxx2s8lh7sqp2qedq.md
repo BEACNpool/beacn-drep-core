@@ -1,13 +1,13 @@
 # gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq
 
 ## Vote
-- Decision: **ABSTAIN**
+- Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score -0.10; confidence 65.0%.
+Vote: YES. For this ParameterChange (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.03; confidence 58.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insuffic
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `b6521ad5f7c144427999d56ba7b070a71fe23b2a2935e5f5cedcffbb5baba783`
-- snapshot_bundle_hash: `78b57e069eec8b9ac3bce7f3074d172684859bc65746ecfa0c081d590f7cbd97`
+- input_hash: `eec05c3b1590e48b7c56176664980c5281dbc05439ebf876ff3dc4a9c9a7506e`
+- snapshot_bundle_hash: `dff2f4703b18bfbe521062043eab236da6744a6341bcd895ca356ed83e605dd3`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
-- score: `-0.1`
-- confidence: `0.65`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- score: `0.03`
+- confidence: `0.58`
 

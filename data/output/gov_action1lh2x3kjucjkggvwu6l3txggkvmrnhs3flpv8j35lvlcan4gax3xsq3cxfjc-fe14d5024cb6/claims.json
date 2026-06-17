@@ -1,0 +1,72 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "codex-offline-review",
+  "reason": null,
+  "model": "codex-offline-local",
+  "request": {
+    "what": "Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)",
+    "recipient": "",
+    "amount_ada": "not stated in document",
+    "deliverables": [
+      "We propose to upgrade Cardano Mainnet to Protocol Version 11.",
+      "This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\").",
+      "The Cardano mainnet protocol will be upgraded to Major Version 11 and Minor Version 0; 2.",
+      "The ledger remains in the Conway era, there is no era transition; 3."
+    ],
+    "deadline": "not stated in document"
+  },
+  "claims": [
+    {
+      "claim": "We propose to upgrade Cardano Mainnet to Protocol Version 11.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\").",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "The Cardano mainnet protocol will be upgraded to Major Version 11 and Minor Version 0; 2.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "The ledger remains in the Conway era, there is no era transition; 3.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "Protocol Version 11 bundles a focused set of improvements to Plutus performance , ledger consistency , and node-level security into a single intra-era upgrade.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "Because it is an intra-era hard fork, transaction shape does not change and ecosystem upgrade effort is minimised.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "Plutus Performance and Capability Plutus is improved in three complementary ways.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "First, a number of new Plutus primitives, defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138 and CIP-0153; provide an on-chain modular exponentiation primitive, an efficient dropList operation, multi-scalar multiplication over BLS12-381, a constant-time Arra...",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    }
+  ],
+  "summary": "We propose to upgrade Cardano Mainnet to Protocol Version 11. This upgrade will be achieved via an intra-era Hard Fork (called \"van Rossem\").",
+  "prompt_sha256": "aa11da8f63b566762bb435ed4636ff5e4b08c7ec2481d20f017e105574a1cf64",
+  "output_sha256": "61dfd42dea5020d508eeabd2fc2194c7ddec5e7d44966ded4e899503f83f6d53"
+}

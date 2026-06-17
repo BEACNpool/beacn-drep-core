@@ -1,0 +1,185 @@
+{
+  "action_id": "gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8",
+  "action_type": "NewCommittee",
+  "recommendation": "YES",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.11,
+  "confidence": 0.66,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Intake: Action type: NewCommittee",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: high",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Directional vote forced by completed readiness packet (treasury-aware).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent."
+  ],
+  "missing_evidence": [],
+  "input_hash": "a01c1396e89184e951e7bddb8836f69aae691fa61fc1c042aeaf1f577d081655",
+  "snapshot_bundle_hash": "da9031e0d5921bee3a0246635e75a63363f2ac7edc8305d5f9e8e5daf0fc861e",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "9888051c6d5ec763affe3e12d9a462e2556e458a",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 4,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-17T23:45:55.807313Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.615,
+    "NO": 0.1475,
+    "ABSTAIN": 0.2375
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "ready",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8",
+    "action_type": "NewCommittee",
+    "overall_status": "ready",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: NewCommittee",
+          "Status: expired",
+          "Proposed epoch: 600",
+          "Expires after epoch: 607",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Requested: Add Constitutional Committee Member - Christina",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action., The proposal is submitted independently by community participants, in accordance with Cardano\u2019s permissionless governance framework, and explicitly references the previously submitted Update Committee action whose purpose was to add Cardano Curia to the Con..., Permissionless On-Chain Governance With the activation of full on-chain governance under CIP-1694, Cardano transitioned into a governance system where any Ada holder may submit governance actions, provided they comply with constitutional guardrails and ledg..., This permissionless design ensures that governance is not limited to institutional processes, but remains open to direct community participation.",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, independently_verifiable, high materiality): This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal is submitted independently by community participants, in accordance with Cardano\u2019s permissionless governance framework, and explicitly references the previously submitted Update Committee action whose purpose was to add Cardano Curia to the Con...",
+          "Claim (economic, independently_verifiable, high materiality): Permissionless On-Chain Governance With the activation of full on-chain governance under CIP-1694, Cardano transitioned into a governance system where any Ada holder may submit governance actions, provided they comply with constitutional guardrails and ledg...",
+          "Claim (governance, independently_verifiable, medium materiality): This permissionless design ensures that governance is not limited to institutional processes, but remains open to direct community participation.",
+          "Claim (governance, independently_verifiable, high materiality): Context of the Snap Election Intersect facilitated a snap election to fill a vacant Constitutional Committee seat following the resignation of a committee member.",
+          "Claim (governance, independently_verifiable, high materiality): That process resulted in the selection and on-chain ratification of Cardano Curia through an Update Committee governance action."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: high",
+          "Governance risk: high",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 0"
+        ],
+        "missing": [],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records YES on Add Constitutional Committee Member - Christina. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a NewCommittee. The cached anchor describes the request as: Add Constitutional Committee Member - Christina. The strongest grounded claim is: This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/Qme6n18tBndukAbRyvHc6MMj8WrjsBnppYvTAmsm3SHa4y",
+        "file_sha256": "159e3d765c96c7148f73dca604d1337755731736bfff9e0aff614e0c35b4846d",
+        "file_path": "data/input/governance/anchors/gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8-20260326T175208Z.bin",
+        "content_chars": 8629
+      },
+      "claim_count": 8,
+      "prompt_sha256": "8d702f1535d736db4a0fe852006a837e0b35684cf8ffa2a921b3a96ddfd555a0",
+      "output_sha256": "94fdf33a564a45019a78e6ccc7fd1489370dfd3ec13413aeec67576596f485c0"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "ed0bbf9949d7745cd99e88b29fb72e261351a7fd9eaaeda834305516d576ae45",
+      "output_sha256": "03be05062cebeb43eaf99301d688fea93e3efe843df60ec4a9de654bf4535485"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  }
+}

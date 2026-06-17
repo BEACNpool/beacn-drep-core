@@ -4,7 +4,7 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
 Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
@@ -46,11 +46,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Provide: Missing dossier section: budget analysis
 
 ## Proof of vote
-- input_hash: `6d65a907df20dc5604c25ae39744043e7f3abc72f6f7f3e2ffbf2115a39f5244`
-- snapshot_bundle_hash: `9cb172c8b3d59f0026e90d58734237a06377c60b59d67864519d331f3e84430a`
+- input_hash: `0206444a409d05ffd26512ec632f54d218781ee84ceb4faddd1b98fbb920fe9d`
+- snapshot_bundle_hash: `892fb9c0570858076d60e36f164e3ae2570a72aeec762eee125e50f492eedbd5`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
 - score: `0.0`
 - confidence: `0.2`
 

@@ -1,13 +1,13 @@
 # gov_action1llcd7ezdx299xeep9azm4dvsvz7783qfrhykcu3sv2ykl4sewv2qq4myfpk
 
 ## Vote
-- Decision: **YES**
+- Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: InfoAction Confidence context: score 0.15; confidence 70.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: InfoAction Confidence context: score 0.11; confidence 66.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `9479244548bce4f5f8321eab8fad5a4c7dc4dc95361d703ed1f23f79c9bf20b5`
-- snapshot_bundle_hash: `376720e9ff339ed32b8ddcaf42104a087b85cd53a3298b68069c214f4bec11b4`
+- input_hash: `df32e30d7c33c1155d40de4e440c96669b4ca66081acc1ba6ad3aeade5935055`
+- snapshot_bundle_hash: `d4526623309e8dfab61291b5d6a62c5bebe217edf309e0c7c820e1f06b137288`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
-- score: `0.15`
-- confidence: `0.7`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- score: `0.11`
+- confidence: `0.66`
 

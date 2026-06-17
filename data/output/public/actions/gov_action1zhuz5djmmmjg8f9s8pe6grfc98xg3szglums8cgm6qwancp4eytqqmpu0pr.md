@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (17), reducing confidence. Confidence context: score -0.40; confidence 86.0%.
+Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (17), reducing confidence. Confidence context: score -0.30; confidence 76.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -27,7 +27,7 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Rule-based system; does not infer unstated intent.
+- DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork
 - Claims and evidence missing: Independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity.
 - Claims and evidence status is thin.
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `83fd1fc329339c7109a158308d0b12f176c355e159964317e072a042fd48bc79`
-- snapshot_bundle_hash: `08584761196ce28b3b5bd179c713983cc544252cb5bddc8beca5a8f1c87c7c6a`
+- input_hash: `c9c22cbf176b3f9ab7d84d447b496623bf260eebde0c76ad0d300726a844ddcc`
+- snapshot_bundle_hash: `d40f7e0f1a23913ab96a08351f26fe2e50ce88f94cea0fd5b5c30982f951f48a`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
-- score: `-0.4`
-- confidence: `0.86`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- score: `-0.3`
+- confidence: `0.76`
 

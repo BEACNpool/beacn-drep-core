@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Protocol parameter changes carry system-wide risk. Additional context: Flag score present (10), reducing confidence. Confidence context: score -0.38; confidence 90.3%.
@@ -38,11 +38,11 @@ Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguar
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `1a714c243849fb35c4cb31bc6f0cfb8584f9fde3097e817aba670284d736d58b`
-- snapshot_bundle_hash: `205ec67f6554831c5c7d6a35b2bc9615e6ef40957d1f22a2a124761a1e424bb3`
+- input_hash: `64b3b448fa072e475b8f79168ef0223d7e8feca7d4ae947b552fa3b07fa92bd5`
+- snapshot_bundle_hash: `a755cff0b2225b3dfe6ea560381b38beb82e3888799b828cc233286147fca824`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
 - score: `-0.3833`
 - confidence: `0.9033`
 

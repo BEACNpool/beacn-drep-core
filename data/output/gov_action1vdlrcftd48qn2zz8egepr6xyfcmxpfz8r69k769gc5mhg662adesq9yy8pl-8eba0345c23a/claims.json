@@ -1,0 +1,72 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "codex-offline-review",
+  "reason": null,
+  "model": "codex-offline-local",
+  "request": {
+    "what": "Set a 300 million ADA Net Change Limit for Epochs 563\u2013635",
+    "recipient": "",
+    "amount_ada": "not stated in document",
+    "deliverables": [
+      "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).",
+      "This means passing a NCL in a formal on-chain governance info action.",
+      "The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period.",
+      "We believe that the NCL covering the period from the start of epoch 563 to the end of epoch 635 should be 300M ADA."
+    ],
+    "deadline": "not stated in document"
+  },
+  "claims": [
+    {
+      "claim": "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).",
+      "category": "economic",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "This means passing a NCL in a formal on-chain governance info action.",
+      "category": "governance",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    },
+    {
+      "claim": "The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period.",
+      "category": "economic",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "We believe that the NCL covering the period from the start of epoch 563 to the end of epoch 635 should be 300M ADA.",
+      "category": "economic",
+      "support": "proposer_asserted",
+      "materiality": "low"
+    },
+    {
+      "claim": "Existing and pending NCLs only cover periods through the end of 2025.",
+      "category": "other",
+      "support": "supported_in_proposal",
+      "materiality": "low"
+    },
+    {
+      "claim": "However, many current and upcoming budget proposals are structured around 12-month timelines, extending into 2026.",
+      "category": "economic",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    },
+    {
+      "claim": "To support such proposals, a new NCL is needed that covers part of the 2026.",
+      "category": "other",
+      "support": "supported_in_proposal",
+      "materiality": "low"
+    },
+    {
+      "claim": "Due to delays in the budget process, some proposals may be approved after June 2025.",
+      "category": "economic",
+      "support": "supported_in_proposal",
+      "materiality": "high"
+    }
+  ],
+  "summary": "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL). This means passing a NCL in a formal on-chain governance info action.",
+  "prompt_sha256": "8d7a7477ac2b634589f2d8a432ef7787f6f38cd99e3171c9ba2aac180bb05394",
+  "output_sha256": "10977e03019e0f05559b11df1db0a355a88f451aed4361cad5c5923a50682482"
+}

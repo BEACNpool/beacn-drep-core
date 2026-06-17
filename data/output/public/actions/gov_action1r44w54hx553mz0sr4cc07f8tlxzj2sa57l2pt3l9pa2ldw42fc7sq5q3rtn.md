@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-06-17T11:30:04.402693+00:00`
+- Published at: `2026-06-17T23:45:24.325845+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.48; confidence 97.3%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.38; confidence 87.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -31,6 +31,7 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 
 ## Remaining uncertainty
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- DRep ratification support is below threshold; this is not treated as active opposition.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -44,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `f830a5d716ac8ca699d3bf6b1b9514af3a757d0f019c490c42a6562e0978e33f`
-- snapshot_bundle_hash: `f4991ce4600b92e25794e9a58352e8a618135282f1d912b0d253a4baf680df38`
+- input_hash: `425942a57fd8304613bf956fc843e0f85ddffed066f04938cfcf3ead7b02241c`
+- snapshot_bundle_hash: `aabfc722a1e2b26dbd8a34e72a15f039dd2f78a80edc9b3780792d0918f35c77`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `de5a754e9d4d39d2848b9f963b793d5031f93646`
-- score: `-0.4833`
-- confidence: `0.9733`
+- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- score: `-0.3833`
+- confidence: `0.8733`
 

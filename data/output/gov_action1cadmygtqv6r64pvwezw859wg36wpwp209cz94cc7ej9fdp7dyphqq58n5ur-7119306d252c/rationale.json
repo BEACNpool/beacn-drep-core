@@ -1,0 +1,190 @@
+{
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "action_type": "ParameterChange",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "score": -0.1,
+  "confidence": 0.65,
+  "readiness_score": 0.6,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Protocol parameter changes carry system-wide risk.",
+    "Intake: Action type: ParameterChange",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: low",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Network DRep distribution used as one signal, not authority.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance"
+  ],
+  "missing_evidence": [],
+  "input_hash": "7119306d252c92badbeb3eef958db43d77a7337031e917924433e6d771a07aeb",
+  "snapshot_bundle_hash": "1329272797bfef3b263973af6ae87d4db0594991522e8b114c111493ad4d7bea",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "1a7b2a06eb1757aad5065883cf73f8066d2dc3a6",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-17T11:30:36.230019Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.1588,
+    "NO": 0.3588,
+    "ABSTAIN": 0.4825
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "ready",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+    "action_type": "ParameterChange",
+    "overall_status": "ready",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: ParameterChange",
+          "Status: active",
+          "Proposed epoch: 635",
+          "Expires after epoch: unknown",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Requested: Reduce the committeeMinSize parameter from 7 to 5",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards., The ratification of this Governance Action depends on the enactment of another live Parameter Change Governance Action (gov action1eqhnsdyf3exhp5mqt7sdjtl7xy69wqg8tvg854psns2jt72cra3qqrcnr8r), which will change a number of Plutus cost model settings in prep..., The committeeMinSize parameter defines the minimum number of Constitutional Committee members (as registered on-chain) that are needed to function effectively., The current Constitutional Committee comprises 7 members, equalling the current committeeMinSize setting of 7.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, independently_verifiable, high materiality): Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.",
+          "Claim (technical, independently_verifiable, high materiality): The ratification of this Governance Action depends on the enactment of another live Parameter Change Governance Action (gov action1eqhnsdyf3exhp5mqt7sdjtl7xy69wqg8tvg854psns2jt72cra3qqrcnr8r), which will change a number of Plutus cost model settings in prep...",
+          "Claim (technical, independently_verifiable, high materiality): The committeeMinSize parameter defines the minimum number of Constitutional Committee members (as registered on-chain) that are needed to function effectively.",
+          "Claim (technical, independently_verifiable, high materiality): The current Constitutional Committee comprises 7 members, equalling the current committeeMinSize setting of 7.",
+          "Claim (technical, independently_verifiable, high materiality): This creates a level of operational fragility, since a single resignation or term expiration will prevent the Constitutional Committee from functioning - effectively bringing the majority of the Cardano governance system to a halt: if the number of constitu...",
+          "Claim (technical, independently_verifiable, high materiality): Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks will be unable to progress."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: low",
+          "Governance risk: medium",
+          "Technical risk: medium",
+          "Treasury exposure risk: none",
+          "Mitigation evidence: unknown",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: not confirmed",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on Reduce the committeeMinSize parameter from 7 to 5. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a ParameterChange. The cached anchor describes the request as: Reduce the committeeMinSize parameter from 7 to 5. The strongest grounded claim is: Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\n\nReason code: RULE_THRESHOLD_UNMET.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreidbxerdwxxntmmr6qvjvquyla3qbwhk3flfqjbm3d5lj2ubxfk3aq",
+        "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
+        "file_path": "data/input/governance/anchors/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-20260615T152519Z.bin",
+        "content_chars": 18518
+      },
+      "claim_count": 8,
+      "prompt_sha256": "930e67583d2acf9201caa57ed8d0ceb138584cc3ba18188ee0ceef973e51d030",
+      "output_sha256": "3f04663d3c318ccffca038091ea3778ab4cdc565b020ec0dcd98c734ed53af16"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "cc6b93a8793bb9f6b2e6ea30289ecea35b94ac84f64f6b27afeafa654547e643",
+      "output_sha256": "220e3dd0fafecb7f3121106c208a2fda8f7d43cdc325836e0f8a9762e04b3058"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/85d1f71fbf1a6d92bc131521.md",
+  "rationale_anchor_hash": "85d1f71fbf1a6d92bc131521fe08576936cfd374ae1fca87d3db6526c0450a80"
+}

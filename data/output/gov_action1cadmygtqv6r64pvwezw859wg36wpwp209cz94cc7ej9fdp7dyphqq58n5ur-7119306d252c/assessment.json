@@ -1,0 +1,87 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "action_type": "ParameterChange",
+  "overall_status": "ready",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 635",
+        "Expires after epoch: unknown",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: not required",
+        "Requested: Reduce the committeeMinSize parameter from 7 to 5",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards., The ratification of this Governance Action depends on the enactment of another live Parameter Change Governance Action (gov action1eqhnsdyf3exhp5mqt7sdjtl7xy69wqg8tvg854psns2jt72cra3qqrcnr8r), which will change a number of Plutus cost model settings in prep..., The committeeMinSize parameter defines the minimum number of Constitutional Committee members (as registered on-chain) that are needed to function effectively., The current Constitutional Committee comprises 7 members, equalling the current committeeMinSize setting of 7.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, independently_verifiable, high materiality): Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.",
+        "Claim (technical, independently_verifiable, high materiality): The ratification of this Governance Action depends on the enactment of another live Parameter Change Governance Action (gov action1eqhnsdyf3exhp5mqt7sdjtl7xy69wqg8tvg854psns2jt72cra3qqrcnr8r), which will change a number of Plutus cost model settings in prep...",
+        "Claim (technical, independently_verifiable, high materiality): The committeeMinSize parameter defines the minimum number of Constitutional Committee members (as registered on-chain) that are needed to function effectively.",
+        "Claim (technical, independently_verifiable, high materiality): The current Constitutional Committee comprises 7 members, equalling the current committeeMinSize setting of 7.",
+        "Claim (technical, independently_verifiable, high materiality): This creates a level of operational fragility, since a single resignation or term expiration will prevent the Constitutional Committee from functioning - effectively bringing the majority of the Cardano governance system to a halt: if the number of constitu...",
+        "Claim (technical, independently_verifiable, high materiality): Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks will be unable to progress."
+      ],
+      "missing": [],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: low",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: none",
+        "Mitigation evidence: unknown",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Intersect\u2019s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

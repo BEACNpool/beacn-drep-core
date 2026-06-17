@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-16T11:30:04.531219+00:00`
+- Published at: `2026-06-17T11:30:04.402693+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (17), reducing confidence. Confidence context: score -0.40; confidence 86.0%.
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `dcde4bc94787bc5083e800b28d7cee69e1c0ddf9676a55fe25c6585142b4ee12`
-- snapshot_bundle_hash: `9c428f56ad18d9f8bb7b5f976e74e114f59fcb50f43a271b682ae541d94973ea`
+- input_hash: `83fd1fc329339c7109a158308d0b12f176c355e159964317e072a042fd48bc79`
+- snapshot_bundle_hash: `08584761196ce28b3b5bd179c713983cc544252cb5bddc8beca5a8f1c87c7c6a`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `51dc1e5a721f4f0de333921fc8457f5a54787c79`
-- core_commit: `036c7083f78bbd06ec947bc23bd61eb3915e27da`
+- resources_commit: `1a7b2a06eb1757aad5065883cf73f8066d2dc3a6`
+- core_commit: `5e0d54e623339d200bb4b8e40d786802e9984f0c`
 - score: `-0.4`
 - confidence: `0.86`
 

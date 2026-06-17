@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `HardForkInitiation`
 - Status: `enacted`
-- Published at: `2026-06-16T11:30:04.531219+00:00`
+- Published at: `2026-06-17T11:30:04.402693+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this HardForkInitiation (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions require strongest evidence quality. Confidence context: score -0.07; confidence 62.0%.
@@ -35,11 +35,11 @@ Vote: NO. For this HardForkInitiation (enacted), downside risk and/or weak safeg
 - Publish rollback/contingency plan and incident response playbook.
 
 ## Proof of vote
-- input_hash: `a2839aed60a609860e94f99ee6a0e85abbae43d693a722940b8d424ae4000500`
-- snapshot_bundle_hash: `9f6b9d286714a39dfb0b3596f8311815ae25bad8093d915ecf21a4cd7d7f2034`
+- input_hash: `725f023abc2d0299f302ae25b075a22329c44db0713e60ecc0f26a9c2801bffb`
+- snapshot_bundle_hash: `bfd6bb7278eefa5faf26a7acd456055c0dd8259d9e1e75da9b8720f313e870dc`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `51dc1e5a721f4f0de333921fc8457f5a54787c79`
-- core_commit: `036c7083f78bbd06ec947bc23bd61eb3915e27da`
+- resources_commit: `1a7b2a06eb1757aad5065883cf73f8066d2dc3a6`
+- core_commit: `5e0d54e623339d200bb4b8e40d786802e9984f0c`
 - score: `-0.07`
 - confidence: `0.62`
 

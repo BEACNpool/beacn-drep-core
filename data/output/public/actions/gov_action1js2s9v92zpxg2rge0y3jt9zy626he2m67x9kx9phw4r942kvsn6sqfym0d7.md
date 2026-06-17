@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-06-16T11:30:04.531219+00:00`
+- Published at: `2026-06-17T11:30:04.402693+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score -0.10; confidence 65.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insuffic
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `608aa01fd147f077a870f920c2217a09b6e740385672e29de58aa62232e010fa`
-- snapshot_bundle_hash: `c049b9379057305c548d3790a4f0828fb31251e0e9e374d0fe955a9086098e74`
+- input_hash: `72b3bc9a4cc3150273076f8d308277f6d7c5172789b786a6ad8fdee04182a93d`
+- snapshot_bundle_hash: `079ecbd0399ce6b18923f78e99fc2c05cf07123b6034378c2544704cf9094208`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `51dc1e5a721f4f0de333921fc8457f5a54787c79`
-- core_commit: `036c7083f78bbd06ec947bc23bd61eb3915e27da`
+- resources_commit: `1a7b2a06eb1757aad5065883cf73f8066d2dc3a6`
+- core_commit: `5e0d54e623339d200bb4b8e40d786802e9984f0c`
 - score: `-0.1`
 - confidence: `0.65`
 

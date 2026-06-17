@@ -1,0 +1,248 @@
+{
+  "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "score": 0.0,
+  "confidence": 0.2,
+  "readiness_score": null,
+  "facts": [
+    "Treasury actions are high-impact and require a completed deep research dossier.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 18263496",
+    "Risk review: Execution risk: medium",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Directional voting is blocked until dossier quality gates pass.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: budget analysis",
+    "Claims and evidence missing: feasibility assessment",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis missing: missing feasibility assessment",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "Deep research dossier is required for treasury actions before directional voting.",
+    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+    "Missing dossier section: budget analysis",
+    "Missing dossier section: feasibility assessment",
+    "Missing dossier section: alternatives analysis",
+    "Missing dossier section: failure-mode analysis",
+    "Missing dossier section: community impact analysis"
+  ],
+  "input_hash": "8b4fa9ed884ee5739ae3191aeec8925150235b2c3a1507f557b0b5c4fd0103fe",
+  "snapshot_bundle_hash": "11b08118e54322f6090611fcaa9b0b69962b7489cea9c259a1158a88295f0fa3",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "1a7b2a06eb1757aad5065883cf73f8066d2dc3a6",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-17T11:30:36.230019Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.315,
+    "NO": 0.315,
+    "ABSTAIN": 0.37
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 634",
+          "Expires after epoch: unknown",
+          "Treasury request: 18.26M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132027",
+          "Recipient: ",
+          "Stated amount: 18.26M ADA",
+          "Deliverables: This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027., The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs., ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability., Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness and further support and maintenance - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Conformance Testing \u2013 CTC framework extended for Peras and...",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.",
+          "Claim (economic, independently_verifiable, high materiality): The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs.",
+          "Claim (economic, independently_verifiable, low materiality): ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability.",
+          "Claim (technical, independently_verifiable, low materiality): Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness and further support and maintenance - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Conformance Testing \u2013 CTC framework extended for Peras and...",
+          "Claim (technical, independently_verifiable, high materiality): Problem Statement Cardano's next growth phase depends on two critical protocol upgrades: Peras (faster finality) and Leios (higher throughput).",
+          "Claim (economic, independently_verifiable, low materiality): Together they unlock significantly higher transaction volume, staking rewards, and TVL."
+        ],
+        "missing": [
+          "budget analysis",
+          "feasibility assessment",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 18263496",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: not confirmed",
+          "Clawback/refund path: not confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: not confirmed",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: 0.40"
+        ],
+        "missing": [
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: medium",
+          "Governance risk: low",
+          "Technical risk: high",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: unknown",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: not confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.\" and clears the evidence gates.",
+          "Strongest NO: an unresolved blocker (missing budget analysis) means costs or weak controls may outweigh the claimed benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132027. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132027. The recorded treasury amount is 18.26M ADA. The strongest grounded claim is: This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.\n\nThe blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreieyqnaojdv7rofmwd6pndv3j6uuho6cnyyjcowbk5p5x2ux4e744e",
+        "file_sha256": "988340e48ebf8b8acb0fcf68ebb4fa943bbc26e30913ac1575fdbea97e13fce1",
+        "file_path": "data/input/governance/anchors/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-20260615T152519Z.bin",
+        "content_chars": 15011
+      },
+      "claim_count": 8,
+      "prompt_sha256": "276bbaf8f9f199f7a3b82b0538f47b7adbd3fb459fe0b8af6fd4e8da80e2f255",
+      "output_sha256": "d13fd30ebc245a578c78bd5634e58bf604227881895ea7d553d6b2c8baa3be16"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "e3d123a1c63a8dac2dbe48b45627fcd1a020ffce343af6888637c814c4009f1e",
+      "output_sha256": "7b937824f40da5a6b8be0e8f4f14a78779121c16433c4bb3464e8adf285b3043"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The directional vote, score, and gates are deterministic and remain the binding record."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d995fb12a6b5bbca5dfc0236.md",
+  "rationale_anchor_hash": "d995fb12a6b5bbca5dfc0236aced65d7ad4a444e0fb0b1da251a6892cf4e5537"
+}

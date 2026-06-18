@@ -32,7 +32,7 @@ cd "$CORE" || exit 1
 # so gate 4 (fetch + hash the public rationale) can pass for freshly published ones.
 sleep "${BEACN_AUTOVOTE_PAGES_WAIT:-90}"
 
-log "running gated auto-vote (ABSTAIN-only; directional + revisions held)"
+log "running gated fully-agentic auto-vote (YES/NO/ABSTAIN + revisions; adapter gates enforced)"
 report="$(BEACN_VOTING_LIVE=1 PYTHONPATH=src python3 scripts/run_live_votes.py --live 2>&1)"
 echo "$report" > "data/output/last_vote_run.json"
 submitted="$(printf '%s' "$report" | python3 -c "import json,sys
@@ -50,6 +50,7 @@ PYTHONPATH=src BEACN_WEB_REPO="$WEB" python3 scripts/update_web_status.py >/dev/
 cd "$WEB"
 ids="$(python3 -c "import json;print(' '.join(a['cip129_action_id'] for a in json.load(open('status.json'))['actions'] if str(a.get('status','')).lower()=='open' and a.get('cip129_action_id')))" 2>/dev/null)"
 for id in $ids; do python3 scripts/build_share_card.py --id "$id" >/dev/null 2>&1 || true; done
+rsync -a data/output/public/share/ public/data/output/public/share/
 
 git add -A
 if git diff --cached --quiet; then

@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `active`
-- Published at: `2026-06-18T11:30:05.648104+00:00`
+- Published at: `2026-06-18T18:04:38.565551+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.03; confidence 58.0%.
@@ -37,11 +37,11 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `b97f7fdab121330c89b835c6cd5fd9b0f76454147ba20106019a0481621165a0`
-- snapshot_bundle_hash: `d509c4768e5bf4bca62af1d3f5a5f11ae9e2a586338841540146d31b7c5ada46`
+- input_hash: `c5d2ad08d283f257944c3229f0a3ce85d5565a433acce31c6105f4dafdd8c66a`
+- snapshot_bundle_hash: `fd0417acb163788778e9ed6e10877f5e09ede23d966b6e5dcdb9309c4715ce1e`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
 - resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `81f2bcb3859ebb5933cc1c92164fe26dcbcf3ade`
+- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
 - score: `0.03`
 - confidence: `0.58`
 

@@ -1,0 +1,129 @@
+# Rationale: gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpuz29v77
+Recommendation: **NO**
+Score: `-0.2233` | Confidence: `0.7433` | Readiness: `0.0`
+
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on Withdraw ₳3,000,000 for High-yield RWA Asset for Cardano: Tokenized Real Estate. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw ₳3,000,000 for High-yield RWA Asset for Cardano: Tokenized Real Estate. The recorded treasury amount is 3.00M ADA. The strongest grounded claim is: This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...
+
+Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+
+## Review Tree
+- overall_status: `incomplete`
+
+### Intake
+- status: `complete`
+- finding: Action type: TreasuryWithdrawals
+- finding: Status: expired
+- finding: Proposed epoch: 570
+- finding: Expires after epoch: 577
+- finding: Treasury request: 3.00M ADA
+- finding: Anchor pinned locally: yes
+- conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+
+### Claims and evidence
+- status: `complete`
+- finding: Proposal anchor: pinned and replayable
+- finding: Proposal document read by reasoning layer: yes
+- finding: Snapshot freshness source: manifest
+- finding: Deep research dossier: complete
+- finding: Requested: Withdraw ₳3,000,000 for High-yield RWA Asset for Cardano: Tokenized Real Estate
+- finding: Recipient: 
+- finding: Stated amount: 3.00M ADA
+- finding: Deliverables: This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si..., By leveraging blockchain technology, our platform enables homeowners to sell fractional ownership of their home equity, instantly accessing liquidity while allowing investors to gain exposure to real estate appreciation., We have already prototyped and deployed this model on a private Ethereum blockchain, securing $20 million in Total Value Locked (TVL)., With this proposal, we aim to transition HausCoin and the liquidity protocol to Cardano, leveraging its secure, scalable, and cost-effective infrastructure to power a decentralized marketplace for home equity trading.
+- finding: Deadline/expiry: not stated in document
+- finding: Claim (technical, independently_verifiable, high materiality): This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...
+- finding: Claim (economic, independently_verifiable, low materiality): By leveraging blockchain technology, our platform enables homeowners to sell fractional ownership of their home equity, instantly accessing liquidity while allowing investors to gain exposure to real estate appreciation.
+- finding: Claim (economic, independently_verifiable, low materiality): We have already prototyped and deployed this model on a private Ethereum blockchain, securing $20 million in Total Value Locked (TVL).
+- finding: Claim (technical, independently_verifiable, low materiality): With this proposal, we aim to transition HausCoin and the liquidity protocol to Cardano, leveraging its secure, scalable, and cost-effective infrastructure to power a decentralized marketplace for home equity trading.
+- finding: Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Many homeowners are asset-rich but cash-poor, lacking access to liquidity tied up in their homes.
+- finding: Claim (economic, independently_verifiable, low materiality): At the same time, investors struggle to find stable, appreciating, asset-backed alternatives to traditional stablecoins or volatile crypto assets.
+- conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+
+### Treasury analysis
+- status: `incomplete`
+- finding: Requested ADA: 3.00M ADA
+- finding: Budget granularity: unknown
+- finding: Milestone payment gates: unknown
+- finding: Clawback/refund path: unknown
+- finding: Cost/benefit clarity: unknown
+- finding: Recurring funding dependency: unknown
+- finding: Six-month treasury flow regime: unsustainable
+- finding: Financial confidence: unknown
+- missing: line-item budget
+- missing: milestone-gated disbursement
+- missing: sustainability path
+- missing: cost-benefit clarity
+- conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+
+### Risk review
+- status: `thin`
+- finding: Execution risk: unknown
+- finding: Governance risk: unknown
+- finding: Technical risk: unknown
+- finding: Treasury exposure risk: unknown
+- finding: Mitigation evidence: unknown
+- finding: Independent assurance: unknown
+- finding: Rollback/remedy path: unknown
+- finding: Flag count: 1
+- missing: mitigation evidence
+- missing: independent assurance
+- missing: rollback/remedy path
+- missing: dependency map
+- conclusion: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+
+### Counterargument pass
+- status: `complete`
+- finding: Strongest YES: the proposal substantiates "This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si..." and clears the evidence gates.
+- finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.
+- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
+
+### Synthesis
+- status: `ready`
+- finding: Final vote must be derived from completed sections above, not from a prose summary.
+- finding: The public rationale should name the decisive section and the strongest counterargument.
+- conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Facts
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (4), reducing confidence.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 3.00M ADA
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si..." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
+
+## Inferences
+- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
+- Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Uncertainty
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Risk review status is thin.
+
+## Reproducibility
+- input_hash: `2e52497d8a2a884f981c2d0eb3e6044e04020895672acd36d035ba349daf9edd`
+- snapshot_bundle_hash: `da6786e04a5f04ac7e2875b2707a384e8a6c02e93e058a0b28133a94ab5460e5`
+- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
+- soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
+- resource_registry_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
+- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- snapshot_age_seconds: `7`
+- uncertainty_band: `MEDIUM`
+- evidence_depth_score: `4`
+- decision_probs: `{"ABSTAIN": 0.2213, "NO": 0.73, "YES": 0.0487}`
+

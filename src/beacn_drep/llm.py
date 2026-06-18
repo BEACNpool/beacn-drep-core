@@ -1,22 +1,34 @@
-"""Claude reasoning layer for the BEACN DRep pipeline — the two stages that need
-real language understanding. Both are NON-AUTHORITATIVE over the vote.
+"""Claude reasoning layer for the BEACN DRep pipeline — the stages that need real
+language understanding.
 
   Stage 1 — extract_claims(): read the proposal's cached anchor document and
     extract structured intake facts + claim rows (economic / technical /
     governance / adoption), each tagged by how well the document supports it.
-    This feeds the assessment's evidence table and the human message. It never
-    feeds a gate and cannot change the recommendation.
+    Feeds the assessment's evidence table and the human message.
+
+  Stage 1.5 — assess_lean(): read the claims, the deterministic assessment, and
+    the matching soul DOCTRINE, and return a BOUNDED score adjustment + direction
+    with a written rationale. This is the one place the reasoning layer is allowed
+    to influence the vote, and only within strict limits (see contract below).
 
   Stage 6 — write_human_message(): turn the *already-decided* deterministic
-    assessment + score + recommendation into a plain-English explanation of the
-    facts behind the decision. It explains the vote; it cannot alter it.
+    assessment + score + recommendation into a plain-English explanation. It
+    explains the vote; it cannot alter it.
 
-Determinism contract: the directional vote (engine gates + score) is pure
-deterministic Python and is the binding record. This module only adds advisory
-claim context and explanatory prose, and records prompt/output hashes so a run
-is auditable. With no ANTHROPIC_API_KEY, no `anthropic` SDK, or
-BEACN_DREP_DISABLE_LLM set, both functions return an `available: False` sentinel
-and the pipeline proceeds exactly as the deterministic engine always did.
+Determinism / safety contract:
+  * The HARD GATES (stale data, unknown action type, missing baseline evidence,
+    treasury-needs-dossier, hard blocker, high unmitigated flags) are pure
+    deterministic Python and run BEFORE any LLM influence. The reasoning layer
+    can NEVER rescue or override a gated action.
+  * For a non-gated action, assess_lean may nudge the score by at most
+    ±LLM_SCORE_ADJUST_CAP (config; default 0.05). The engine clamps the value
+    regardless of what the model returns, records the raw score, the clamped
+    adjustment, the rationale, and prompt/output hashes, so every run is
+    auditable and the influence is fully transparent on the public record.
+  * With no ANTHROPIC_API_KEY / anthropic SDK / BEACN_DREP_DISABLE_LLM, the live
+    path is unavailable; the pipeline still runs. Under BEACN_DREP_OFFLINE_REVIEW
+    a deterministic, doctrine-aware lean is produced instead (reproducible, so
+    replay stays clean). With nothing available the adjustment is 0 (no change).
 
 Model defaults to claude-opus-4-8 (override with BEACN_DREP_MODEL).
 """
@@ -462,12 +474,22 @@ def _truncate(s: str, n: int) -> str:
     return s if len(s) <= n else s[:n] + " …"
 
 
-def _build_claims_user(action: dict, anchor_text: str) -> str:
+def _build_claims_user(action: dict, anchor_text: str, doctrine_text: str | None = None) -> str:
+    doctrine_block = ""
+    if doctrine_text:
+        doctrine_block = (
+            "\nDREP DOCTRINE (BEACN's published standard for this action type — use it to "
+            "judge which claims are material, do NOT decide the vote):\n"
+            "-----8<-----\n"
+            f"{_truncate(doctrine_text, 6000)}\n"
+            "-----8<-----\n"
+        )
     return (
         f"Action id: {action.get('action_id')}\n"
         f"Action type: {action.get('action_type')}\n"
         f"Title (from chain metadata): {action.get('metadata_title') or '(none)'}\n"
-        f"Treasury amount (lovelace, if any): {action.get('treasury_amount_lovelace') or '(none)'}\n\n"
+        f"Treasury amount (lovelace, if any): {action.get('treasury_amount_lovelace') or '(none)'}\n"
+        f"{doctrine_block}\n"
         "ANCHOR DOCUMENT TEXT (verbatim, possibly JSON-LD):\n"
         "-----8<-----\n"
         f"{anchor_text}\n"
@@ -476,7 +498,7 @@ def _build_claims_user(action: dict, anchor_text: str) -> str:
     )
 
 
-def extract_claims(action: dict, anchor_text: str | None) -> dict:
+def extract_claims(action: dict, anchor_text: str | None, doctrine_text: str | None = None) -> dict:
     """Stage 1. Returns a dict that always has an `available` flag and, when
     available, `request`/`claims`/`summary` plus prompt/output hashes."""
     base = {
@@ -512,7 +534,7 @@ def extract_claims(action: dict, anchor_text: str | None) -> dict:
         base["reason"] = "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)"
         return base
 
-    user = _build_claims_user(action, anchor_text)
+    user = _build_claims_user(action, anchor_text, doctrine_text)
     try:
         resp = client.messages.create(
             model=MODEL,
@@ -543,6 +565,215 @@ def extract_claims(action: dict, anchor_text: str | None) -> dict:
         summary=data.get("summary", "") or "",
         prompt_sha256=_sha(CLAIM_SYSTEM + "\n" + user),
         output_sha256=_sha(text),
+    )
+    return base
+
+
+# --------------------------------------------------------------------------- #
+# Stage 1.5: bounded doctrine-aware lean (the one place the LLM touches the vote)
+# --------------------------------------------------------------------------- #
+
+def _cap() -> float:
+    try:
+        return abs(float(os.environ.get("BEACN_LLM_SCORE_ADJUST_CAP", "0.05")))
+    except Exception:
+        return 0.05
+
+
+def _clamp_adj(value) -> float:
+    cap = _cap()
+    try:
+        v = float(value or 0.0)
+    except Exception:
+        v = 0.0
+    return max(-cap, min(cap, v))
+
+
+def _direction_for(adj: float) -> str:
+    if adj > 0.005:
+        return "YES"
+    if adj < -0.005:
+        return "NO"
+    return "NEUTRAL"
+
+
+LEAN_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        "direction": {"type": "string", "enum": ["YES", "NO", "ABSTAIN", "NEUTRAL"]},
+        "score_adjustment": {"type": "number"},
+        "confidence": {"type": "number"},
+        "rationale": {"type": "string"},
+        "doctrine_basis": {"type": "string"},
+    },
+    "required": ["direction", "score_adjustment", "confidence", "rationale", "doctrine_basis"],
+}
+
+
+def _lean_system() -> str:
+    cap = _cap()
+    return (
+        "You are the bounded reasoning step of an autonomous Cardano DRep that votes real "
+        "treasury money. A deterministic engine has ALREADY enforced every hard safety gate "
+        "(stale data, missing evidence, treasury-needs-dossier, hard blockers, high risk flags) "
+        "and computed a numeric score. Those gates are binding and you cannot override them.\n"
+        "Your ONLY job: judge whether the evidence quality and the proposal's alignment with "
+        "BEACN's published DOCTRINE justify a SMALL nudge to that score, in either direction, "
+        "that the mechanical rules did not already capture.\n"
+        "Rules:\n"
+        f"1. score_adjustment must be a number within [-{cap}, {cap}]. Positive = lean YES, "
+        "negative = lean NO. Use 0 when the rules already captured everything.\n"
+        "2. Be conservative. The values hierarchy is: protocol safety > treasury stewardship > "
+        "evidence quality/reproducibility > public-benefit growth > speed. When in doubt, nudge "
+        "toward caution (0 or negative), never toward spending.\n"
+        "3. Ground the rationale ONLY in the supplied claims, assessment, and doctrine. Invent "
+        "no facts. Name the doctrine principle you relied on in doctrine_basis.\n"
+        "4. You are advisory and clamped; the engine records and limits your adjustment."
+    )
+
+
+def _assessment_digest(assessment: dict | None) -> str:
+    a = assessment or {}
+    lines = [f"overall_status: {a.get('overall_status', 'unknown')}"]
+    for s in a.get("sections", []) or []:
+        lines.append(f"- {s.get('title')}: {s.get('status')}")
+    blockers = a.get("blocking_questions") or []
+    if blockers:
+        lines.append("blocking_questions: " + "; ".join(blockers[:6]))
+    return "\n".join(lines)
+
+
+def _offline_assess_lean(action: dict, claims: dict | None, assessment: dict | None,
+                         doctrine_text: str | None, family: str) -> dict:
+    """Deterministic, doctrine-aware lean for offline runs. Pure function of its
+    inputs, so replay stays clean. Mirrors the live model's conservative posture."""
+    rows = (claims.get("claims") if (claims and claims.get("available")) else None) or []
+    strong = [c for c in rows if c.get("support") in ("supported_in_proposal", "independently_verifiable")]
+    weak = [c for c in rows if c.get("support") in ("unsupported", "proposer_asserted") and c.get("materiality") == "high"]
+    blockers = (assessment or {}).get("blocking_questions") or []
+    status = (assessment or {}).get("overall_status", "unknown")
+
+    adj = 0.0
+    notes = []
+    if strong:
+        adj += 0.02 * min(len(strong), 2)
+        notes.append(f"{len(strong)} well-supported claim(s)")
+    if weak:
+        adj -= 0.025 * min(len(weak), 2)
+        notes.append(f"{len(weak)} unsupported high-materiality claim(s)")
+    if status == "ready":
+        adj += 0.01
+    elif status == "blocked":
+        adj -= 0.03
+        notes.append("assessment blocked")
+    elif status in ("incomplete", "thin"):
+        adj -= 0.01
+    if blockers:
+        adj -= 0.01
+        notes.append(f"{len(blockers)} open blocker(s)")
+    # Doctrine caution: high-scrutiny action families bias toward restraint.
+    if family in ("hardfork", "constitution", "parameter", "committee", "treasury"):
+        adj -= 0.01
+        notes.append(f"{family} doctrine demands elevated scrutiny")
+
+    adj = _clamp_adj(adj)
+    direction = _direction_for(adj)
+    confidence = max(0.3, min(0.85, 0.5 + 0.08 * len(strong) - 0.05 * len(weak)))
+    basis = "values hierarchy: protocol safety & treasury stewardship over speed"
+    if doctrine_text:
+        first = next((ln.strip("# ").strip() for ln in doctrine_text.splitlines() if ln.strip()), "")
+        if first:
+            basis = f"{first}; " + basis
+    rationale = (
+        f"Doctrine-aware offline lean for a {family or 'governance'} action: "
+        + (", ".join(notes) if notes else "no decisive evidence or doctrine signal")
+        + f". Net bounded adjustment {adj:+.3f} (clamped to ±{_cap()})."
+    )
+    payload = {"direction": direction, "score_adjustment": adj, "confidence": round(confidence, 3),
+               "rationale": rationale, "doctrine_basis": basis}
+    return {
+        "stage": "assess_lean",
+        "available": True,
+        "source": "codex-offline-review",
+        "model": "codex-offline-local",
+        "reason": None,
+        **payload,
+        "score_adjustment": adj,
+        "prompt_sha256": _sha("codex-offline-lean\n" + json.dumps({
+            "action_id": action.get("action_id"), "family": family,
+            "claims": rows, "status": status, "blockers": blockers,
+        }, sort_keys=True)),
+        "output_sha256": _sha(json.dumps(payload, sort_keys=True)),
+    }
+
+
+def assess_lean(action: dict, claims: dict | None, assessment: dict | None,
+                doctrine_text: str | None, family: str) -> dict:
+    """Stage 1.5. Returns {available, direction, score_adjustment (clamped), confidence,
+    rationale, doctrine_basis, hashes}. The engine clamps score_adjustment again and is
+    the binding authority; this only proposes a bounded nudge."""
+    base = {
+        "stage": "assess_lean", "available": False, "source": None, "reason": None,
+        "model": MODEL, "direction": "NEUTRAL", "score_adjustment": 0.0,
+        "confidence": 0.0, "rationale": "", "doctrine_basis": "",
+    }
+    cached = _cache().get(action.get("action_id")) or {}
+    if isinstance(cached.get("lean"), dict):
+        c = cached["lean"]
+        adj = _clamp_adj(c.get("score_adjustment"))
+        base.update(available=True, source="precomputed", score_adjustment=adj,
+                    direction=c.get("direction") or _direction_for(adj),
+                    confidence=float(c.get("confidence") or 0.0),
+                    rationale=c.get("rationale") or "", doctrine_basis=c.get("doctrine_basis") or "",
+                    output_sha256=_sha(json.dumps(c, sort_keys=True)))
+        return base
+    if _offline_review_enabled():
+        return _offline_assess_lean(action, claims, assessment, doctrine_text, family)
+    client = _client()
+    if client is None:
+        base["reason"] = "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)"
+        return base
+
+    user = (
+        f"Action id: {action.get('action_id')}\n"
+        f"Action type: {action.get('action_type')}  (family: {family})\n"
+        f"Title: {action.get('metadata_title') or '(none)'}\n"
+        f"Treasury amount (lovelace, if any): {action.get('treasury_amount_lovelace') or '(none)'}\n\n"
+        f"DOCTRINE for this action type:\n-----8<-----\n{_truncate(doctrine_text or '(none on file)', 6000)}\n-----8<-----\n\n"
+        f"Extracted proposal claims:\n{_claims_block(claims)}\n\n"
+        f"Deterministic assessment tree:\n{_assessment_digest(assessment)}\n\n"
+        f"Give your bounded score_adjustment within [-{_cap()}, {_cap()}] and the doctrine-grounded rationale."
+    )
+    try:
+        resp = client.messages.create(
+            model=MODEL,
+            max_tokens=1500,
+            system=_lean_system(),
+            thinking={"type": "adaptive"},
+            messages=[{"role": "user", "content": user}],
+            output_config={"format": {"type": "json_schema", "schema": LEAN_SCHEMA}},
+        )
+    except Exception as e:  # noqa: BLE001 - degrade, never crash the pipeline
+        base["reason"] = f"lean call failed: {e}"
+        return base
+    if getattr(resp, "stop_reason", None) == "refusal":
+        base["reason"] = "model refused the lean"
+        return base
+    text = _text_of(resp)
+    try:
+        data = json.loads(text)
+    except Exception as e:  # noqa: BLE001
+        base["reason"] = f"unparseable lean output: {e}"
+        return base
+
+    adj = _clamp_adj(data.get("score_adjustment"))
+    base.update(
+        available=True, source="model", score_adjustment=adj,
+        direction=data.get("direction") or _direction_for(adj),
+        confidence=float(data.get("confidence") or 0.0),
+        rationale=data.get("rationale") or "", doctrine_basis=data.get("doctrine_basis") or "",
+        prompt_sha256=_sha(_lean_system() + "\n" + user), output_sha256=_sha(text),
     )
     return base
 

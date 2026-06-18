@@ -14,6 +14,12 @@ AUDIT_LOG = CORE_REPO / "logs" / "audit_log.jsonl"
 # Freshness: max seconds since last export before engine forces ABSTAIN
 MAX_STALE_SECONDS = int(os.environ.get("BEACN_MAX_STALE_SECONDS", "21600"))  # 6 hours
 
+# Bounded LLM influence: the maximum absolute score adjustment the reasoning layer
+# (Stage 1.5 `assess_lean`) is allowed to apply to a NON-GATED action. Hard gates
+# (stale data, missing evidence, treasury-needs-dossier, hard blocker, high flags)
+# run first and are never overridden. Clamped here regardless of model output.
+LLM_SCORE_ADJUST_CAP = float(os.environ.get("BEACN_LLM_SCORE_ADJUST_CAP", "0.05"))
+
 # PostgreSQL db-sync connection
 DBSYNC_HOST = os.environ.get("BEACN_DBSYNC_HOST", "")
 DBSYNC_PORT = os.environ.get("BEACN_DBSYNC_PORT", "5432")

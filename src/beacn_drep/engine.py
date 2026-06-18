@@ -4,7 +4,7 @@ import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
-from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_SECONDS
+from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_SECONDS, LLM_SCORE_ADJUST_CAP
 from .routing import select_resources
 from .adapters.git_adapter import commit_hash
 from .replay import sha256_file, canonical_json_hash, csv_row_by_action, write_manifest, read_manifest
@@ -145,6 +145,44 @@ def _load_treasury_doctrine() -> dict:
         return json.loads(p.read_text(encoding="utf-8"))
     except Exception:
         return {}
+
+
+_DOCTRINE_FILES = {
+    "treasury": "treasury_spending_doctrine.md",
+    "hardfork": "hardfork_doctrine.md",
+    "parameter": "parameter_change_doctrine.md",
+    "info": "info_action_doctrine.md",
+    "committee": "committee_update_doctrine.md",
+    "constitution": "constitutional_amendment_doctrine.md",
+}
+
+
+def _load_doctrine_for(action_type: str | None) -> dict:
+    """Load the soul doctrine that applies to this action family — the per-type
+    doctrine plus the always-on values hierarchy — so the reasoning layer votes
+    against BEACN's published standard rather than generic priors."""
+    family = _action_family(action_type)
+    names = ["values_hierarchy.md"]
+    specific = _DOCTRINE_FILES.get(family)
+    if specific:
+        names.append(specific)
+    parts: list[str] = []
+    files_used: list[str] = []
+    for name in names:
+        p = SOUL_REPO / name
+        if p.exists():
+            try:
+                parts.append(f"# {name}\n" + p.read_text(encoding="utf-8").strip())
+                files_used.append(name)
+            except Exception:
+                continue
+    text = "\n\n".join(parts)
+    return {
+        "family": family,
+        "text": text,
+        "files": files_used,
+        "sha256": _sha256_bytes(text.encode("utf-8")) if text else "",
+    }
 
 
 def _load_scoring_weights() -> dict:
@@ -648,6 +686,7 @@ def _score_action(
     treasury_flow: dict | None = None,
     treasury_doctrine: dict | None = None,
     scoring_weights: dict | None = None,
+    llm_lean: dict | None = None,
 ) -> dict:
     action_type = (action.get("action_type") or "").lower()
     action_family = _action_family(action_type)
@@ -849,6 +888,33 @@ def _score_action(
 
     readiness_score = max(0.0, min(1.0, readiness_score))
 
+    # Bounded LLM influence (Stage 1.5). Every HARD gate (stale data, unknown type,
+    # missing evidence, treasury-needs-dossier) has already returned above, so the
+    # reasoning layer can only nudge a NON-GATED action's score, clamped to
+    # ±LLM_SCORE_ADJUST_CAP. The raw score is preserved for the public record.
+    raw_score = score
+    llm_adjustment = 0.0
+    llm_info = None
+    if llm_lean and llm_lean.get("available"):
+        llm_adjustment = max(-LLM_SCORE_ADJUST_CAP, min(
+            LLM_SCORE_ADJUST_CAP, float(llm_lean.get("score_adjustment") or 0.0)))
+        score += llm_adjustment
+        llm_info = {
+            "source": llm_lean.get("source"),
+            "model": llm_lean.get("model"),
+            "direction": llm_lean.get("direction"),
+            "score_adjustment": round(llm_adjustment, 4),
+            "confidence": llm_lean.get("confidence"),
+            "rationale": llm_lean.get("rationale"),
+            "doctrine_basis": llm_lean.get("doctrine_basis"),
+            "cap": LLM_SCORE_ADJUST_CAP,
+        }
+        if abs(llm_adjustment) > 0:
+            inf.append(
+                f"Doctrine-aware reasoning layer nudged the score by {llm_adjustment:+.3f} "
+                f"(clamped to ±{LLM_SCORE_ADJUST_CAP}): {llm_lean.get('rationale')}"
+            )
+
     # Recommendation thresholds
     treasury_doctrine_ready = (action_family == "treasury") and (_yn((deep_row or {}).get("dossier_complete")) is True)
     treasury_ratio = None
@@ -914,6 +980,23 @@ def _score_action(
     else:
         rec = "ABSTAIN"
 
+    # Did the bounded LLM nudge actually move the action across a directional
+    # boundary? Recorded so the public can see exactly when the reasoning layer
+    # changed an outcome the mechanical rules would not have reached.
+    llm_assisted = False
+    llm_assisted_reason_code = None
+    if llm_info and abs(llm_adjustment) > 0:
+        def _band(s: float) -> str:
+            if s >= directional_threshold:
+                return "YES"
+            if s <= -directional_threshold:
+                return "NO"
+            return "MID"
+        if _band(raw_score) != _band(score):
+            llm_assisted = True
+            if rec in ("YES", "NO"):
+                llm_assisted_reason_code = "LLM_ASSISTED_DIRECTIONAL"
+
     confidence = max(0.0, min(1.0, 0.55 + abs(score) - (0.03 * len(flags))))
     reason_code = None
     if rec == "ABSTAIN":
@@ -941,6 +1024,11 @@ def _score_action(
         "agentic_high_impact_reason_code": high_impact_reason_code,
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
+        "raw_score": round(raw_score, 4),
+        "llm_score_adjustment": round(llm_adjustment, 4),
+        "llm_lean": llm_info,
+        "llm_assisted": llm_assisted,
+        "llm_assisted_reason_code": llm_assisted_reason_code,
         "directional_threshold": round(directional_threshold, 4),
         "confidence": round(confidence, 4),
         "facts": [*(facts or ["Deterministic rule set applied."]), *assessment_facts],
@@ -1066,10 +1154,14 @@ def run_once(action_id: str | None = None) -> dict:
     freshness = _check_freshness()
     missing_evidence = _check_missing_evidence(action)
 
+    # Load the soul doctrine for this action family so the reasoning layer votes
+    # against BEACN's published standard, not generic priors.
+    doctrine = _load_doctrine_for(action_type)
+
     # Stage 1: read the proposal's cached anchor document and extract structured
-    # claims (model-assisted, advisory — never feeds a gate).
+    # claims (model-assisted; feeds the evidence table, never a hard gate).
     anchor_text, anchor_meta = load_anchor_text(action["action_id"])
-    claims = llm.extract_claims(action, anchor_text)
+    claims = llm.extract_claims(action, anchor_text, doctrine.get("text"))
 
     assessment = _build_assessment(
         action,
@@ -1085,6 +1177,10 @@ def run_once(action_id: str | None = None) -> dict:
         flags_by_action.get(action["action_id"], []),
         claims,
     )
+
+    # Stage 1.5: bounded, doctrine-aware lean. Clamped + recorded in _score_action.
+    lean = llm.assess_lean(action, claims, assessment, doctrine.get("text"), doctrine.get("family"))
+
     score_obj = _score_action(
         action,
         flags_by_action.get(action["action_id"], []),
@@ -1099,6 +1195,7 @@ def run_once(action_id: str | None = None) -> dict:
         treasury_flow,
         treasury_doctrine,
         scoring_weights,
+        lean,
     )
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
@@ -1112,6 +1209,13 @@ def run_once(action_id: str | None = None) -> dict:
         "operator_review_reason_code": score_obj.get("operator_review_reason_code"),
         "agentic_high_impact_reason_code": score_obj.get("agentic_high_impact_reason_code"),
         "score": score_obj["score"],
+        "raw_score": score_obj.get("raw_score", score_obj["score"]),
+        "llm_score_adjustment": score_obj.get("llm_score_adjustment", 0.0),
+        "llm_lean": score_obj.get("llm_lean"),
+        "llm_assisted": score_obj.get("llm_assisted", False),
+        "llm_assisted_reason_code": score_obj.get("llm_assisted_reason_code"),
+        "doctrine_files": doctrine.get("files"),
+        "doctrine_hash": doctrine.get("sha256"),
         "directional_threshold": score_obj.get("directional_threshold", 0.12),
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),
@@ -1159,6 +1263,23 @@ def run_once(action_id: str | None = None) -> dict:
             "prompt_sha256": claims.get("prompt_sha256"),
             "output_sha256": claims.get("output_sha256"),
         },
+        "doctrine": {
+            "family": doctrine.get("family"),
+            "files": doctrine.get("files"),
+            "sha256": doctrine.get("sha256"),
+        },
+        "lean": {
+            "available": lean.get("available"),
+            "source": lean.get("source"),
+            "reason": lean.get("reason"),
+            "model": lean.get("model"),
+            "direction": lean.get("direction"),
+            "score_adjustment": score_obj.get("llm_score_adjustment", 0.0),
+            "cap": LLM_SCORE_ADJUST_CAP,
+            "assisted_directional": score_obj.get("llm_assisted", False),
+            "prompt_sha256": lean.get("prompt_sha256"),
+            "output_sha256": lean.get("output_sha256"),
+        },
         "human_message": {
             "source": message_source,
             "available": message.get("available"),
@@ -1169,7 +1290,10 @@ def run_once(action_id: str | None = None) -> dict:
         },
         "note": (
             "Claim extraction and the plain-language message are model-assisted, advisory layers. "
-            "The directional vote, score, and gates are deterministic and remain the binding record."
+            "The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, "
+            "high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply "
+            f"a bounded score nudge of at most ±{LLM_SCORE_ADJUST_CAP}, clamped and recorded here "
+            "(raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
         ),
     }
     rationale["human_message"] = human_text
@@ -1239,7 +1363,13 @@ def run_once(action_id: str | None = None) -> dict:
         "\n".join([
             f"# Rationale: {action['action_id']}",
             f"Recommendation: **{score_obj['recommendation']}**",
-            f"Score: `{score_obj['score']}` | Confidence: `{score_obj['confidence']}` | Readiness: `{score_obj.get('readiness_score', 0)}`",
+            f"Score: `{score_obj['score']}` (raw `{score_obj.get('raw_score', score_obj['score'])}` "
+            f"+ doctrine-LLM nudge `{score_obj.get('llm_score_adjustment', 0.0):+}`) "
+            f"| Confidence: `{score_obj['confidence']}` | Readiness: `{score_obj.get('readiness_score', 0)}`",
+            (f"> Reasoning layer ({(score_obj.get('llm_lean') or {}).get('source', 'n/a')}): "
+             f"{(score_obj.get('llm_lean') or {}).get('rationale', 'no nudge applied')}"
+             + (" — **this nudge changed the directional outcome.**" if score_obj.get("llm_assisted") else "")
+             ) if score_obj.get("llm_lean") else "",
             "",
             f"## Plain-language explanation ({message_source})",
             human_text,

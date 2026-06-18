@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `enacted`
-- Published at: `2026-06-18T18:04:38.565551+00:00`
+- Published at: `2026-06-18T20:14:57.948249+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this ParameterChange (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.00; confidence 55.0%.
+Vote: YES. For this ParameterChange (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.04; confidence 59.0%.
 
 ## Assessment tree
 - assessment_status: `ready`
@@ -35,11 +35,11 @@ Vote: YES. For this ParameterChange (enacted), available evidence supports proce
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `292433cdf0e7f3ae82a97ba23cda6190940fd87e08bb6118a76340fff5cabffd`
-- snapshot_bundle_hash: `da8cb4f6cd8c3216c8a5f93e074ab7c792e6618e0d0bed7e27b15d320380651a`
+- input_hash: `4b4ac5fdb6a318a3d12ce9e7b5a614f896e6c06136aaa2601f033ba2662cedec`
+- snapshot_bundle_hash: `b3dd46879c0f8df32fbb64d158164dc0b6880c0871b9ab1bd4691bd452c03549`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
-- score: `0.0`
-- confidence: `0.55`
+- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
+- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- score: `0.04`
+- confidence: `0.59`
 

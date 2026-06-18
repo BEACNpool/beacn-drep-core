@@ -4,7 +4,7 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-18T18:04:38.565551+00:00`
+- Published at: `2026-06-18T20:14:57.948249+00:00`
 
 ## Human-readable rationale
 Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
@@ -24,13 +24,13 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 5100781
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.inbrowser.link/?cid=Qmbk3jHKKLQ1VrniKaD7sGMscJxCKvoXqt1sQoEnRLTku4 Hydra is the only production-grade Layer 2 on Cardano, already running live workloads for Delta DeFi, Masumi, Intersect, Vtechcom and others." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Hydra is claimed to provide sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement guarantees." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Hydra delivers sub-second finality, near-zero fees, and high parallel throughput with L1-grade settlement.
-- Claims and evidence missing: budget analysis
+- Claims and evidence missing: Independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.
+- Claims and evidence missing: Independent evidence for: The proposal says Hydra has powered or is being used by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,11 +47,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Provide: Missing dossier section: budget analysis
 
 ## Proof of vote
-- input_hash: `1805a387637829b2f483f6b4be763795f5b3367cd19b376d6e112f20de4d75cf`
-- snapshot_bundle_hash: `058571aa3960009ac6a83f453d79031d58b8d075c954359167d4fe18c88cf2f8`
+- input_hash: `c0c81c925ef9369b7207617156dc31c4cf27e68cbc3a82b909cd2c6ce300b98d`
+- snapshot_bundle_hash: `9ad561ca9a35133fc080310314bf02c3349eb2bf17671f2bf59f17cc4cc87d74`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
+- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
+- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
 - score: `0.0`
 - confidence: `0.2`
 

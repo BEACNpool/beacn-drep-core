@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `NewCommittee`
 - Status: `expired`
-- Published at: `2026-06-18T18:04:38.565551+00:00`
+- Published at: `2026-06-18T20:14:57.948249+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this NewCommittee (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: NewCommittee Confidence context: score 0.11; confidence 66.0%.
+Vote: YES. For this NewCommittee (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: NewCommittee Confidence context: score 0.15; confidence 70.0%.
 
 ## Assessment tree
 - assessment_status: `ready`
@@ -34,11 +34,11 @@ Vote: YES. For this NewCommittee (expired), available evidence supports proceedi
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `499903bd8bc8d59adbbe876a270bf5f3588955a9e6906f18f14cb1c39dc2e720`
-- snapshot_bundle_hash: `67a3dda9c0748e3758cdc7ba1b6a81c3e1e2d645a2f32b5d91436dcf2479bb65`
+- input_hash: `2a5021acd47f7f848b8c48ab012669d8c86acc2f42c94c8e6706e5402205fc5c`
+- snapshot_bundle_hash: `a5dbe3440d67290681f37bc139e8fd1fc2fa90571b623f6aaa49c72bac0f135a`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
-- score: `0.11`
-- confidence: `0.66`
+- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
+- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- score: `0.15`
+- confidence: `0.7`
 

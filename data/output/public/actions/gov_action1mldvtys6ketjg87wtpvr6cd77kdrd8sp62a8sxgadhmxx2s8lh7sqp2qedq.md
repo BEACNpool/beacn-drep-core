@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-06-18T18:04:38.565551+00:00`
+- Published at: `2026-06-18T20:14:57.948249+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this ParameterChange (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.03; confidence 58.0%.
+Vote: YES. For this ParameterChange (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.05; confidence 60.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: YES. For this ParameterChange (expired), available evidence supports proce
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `edd7b8606b987f5fe0c16a6668e9862b3063890054d27a9c99f5fa3f987722f5`
-- snapshot_bundle_hash: `fe40963304e6a0f6373ae5e82bd6b667ce4340da9284a6659a633b1d8937d353`
+- input_hash: `9bd5fad7c710f08a2406f25833987f3367eba1d95cf92e75a52116129f5dacc8`
+- snapshot_bundle_hash: `3d77933b1f3be64c44dfc61eec61d5b32110000ee5e048be2da918d9e2195784`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
-- score: `0.03`
-- confidence: `0.58`
+- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
+- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- score: `0.05`
+- confidence: `0.6`
 

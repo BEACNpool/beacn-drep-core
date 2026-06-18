@@ -4,7 +4,7 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-18T18:04:38.565551+00:00`
+- Published at: `2026-06-18T20:14:57.948249+00:00`
 
 ## Human-readable rationale
 Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
@@ -12,7 +12,7 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Assessment tree
 - assessment_status: `blocked`
 - Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
-- Claims and evidence: `complete` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Claims and evidence: `thin` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: `incomplete` — Treasury votes require a higher bar because they consume shared ADA and create precedent.
 - Risk review: `complete` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
 - Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
@@ -24,13 +24,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 23000000
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "This governance action requests the withdrawal of ₳23,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused ‘Year 2’ contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive..." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳23,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: budget analysis
-- Claims and evidence missing: feasibility assessment
+- Claims and evidence missing: Independent evidence for: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.
+- Claims and evidence missing: Independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -46,11 +47,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Provide: Missing dossier section: budget analysis
 
 ## Proof of vote
-- input_hash: `46c778349b8da48fca0d6dd6f9942b5d4458f37eae6640b53bfdf85bc23af2e5`
-- snapshot_bundle_hash: `df598175319e0659ca1b871356a9545bb5f4f77c86b2894d9d6e6348276e09f9`
+- input_hash: `f26bd48ccd4443817fb0ac5fbeed5fac03df5adab26c82abff17e2bb06d1f787`
+- snapshot_bundle_hash: `ea1647c1c25ae927e8d043eaa3d97ef4cd1703365289c3de6dfdbaf9dd0e5c98`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
+- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
+- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
 - score: `0.0`
 - confidence: `0.2`
 

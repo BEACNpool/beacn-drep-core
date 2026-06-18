@@ -1,0 +1,72 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "codex-offline-review",
+  "reason": null,
+  "model": "codex-offline-local",
+  "request": {
+    "what": "Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork)",
+    "recipient": "",
+    "amount_ada": "not stated in document",
+    "deliverables": [
+      "We propose to upgrade Cardano mainnet to Protocol Version 10.",
+      "This upgrade will be achieved via a Hard Fork (called \"Plomin\").",
+      "The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2.",
+      "All 7 governance actions that are described in CIP-1694 will be enabled; 3."
+    ],
+    "deadline": "not stated in document"
+  },
+  "claims": [
+    {
+      "claim": "We propose to upgrade Cardano mainnet to Protocol Version 10.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "This upgrade will be achieved via a Hard Fork (called \"Plomin\").",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    },
+    {
+      "claim": "Protocol Version 10 enables the remainder of the CIP-1694 functionality, ensuring that DReps can participate in voting on all governance actions.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    },
+    {
+      "claim": "It enables treasury withdrawals, the ability to record a new constitution, updates to the constitutional committee, and votes of no confidence.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "These are in addition to the 3 existing governance actions that were enabled for Protocol Version 9 by the Chang hard fork (hard forks, parameter updates, and info actions).",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "Following the hard fork, the protocol will support a number of new Plutus primitives that have been defined in CIP-0122, CIP-0123 and CIP-0127.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    }
+  ],
+  "summary": "We propose to upgrade Cardano mainnet to Protocol Version 10. This upgrade will be achieved via a Hard Fork (called \"Plomin\").",
+  "prompt_sha256": "7d021488ec0ce314dfc9b1ed5bff7980fe711d3da2b8812d0d6d73e15534b959",
+  "output_sha256": "ce9e57e3cfa127a3487f23b9a14afc4f23cc9eb696ae47db526185a9f94ba55b"
+}

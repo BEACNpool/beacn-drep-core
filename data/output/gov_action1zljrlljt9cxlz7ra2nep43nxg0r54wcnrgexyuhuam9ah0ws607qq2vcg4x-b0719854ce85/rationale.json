@@ -1,0 +1,287 @@
+{
+  "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "99a196cc9cc7bb22649985061290d64a0204b32c507d3cbafa48bc6bcf8ca348",
+  "directional_threshold": 0.12,
+  "confidence": 0.2,
+  "readiness_score": null,
+  "facts": [
+    "Treasury actions are high-impact and require a completed deep research dossier.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 18263496",
+    "Risk review: Execution risk: medium",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three interdependent Cardano infrastructure work packages delivered by Tweag by Modus Create over 2026-2027.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Directional voting is blocked until dossier quality gates pass.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: Independent evidence for: Peras v1 is presented as enabling faster finality of about 2 minutes compared with about 12 minutes today, but remains undeployed on mainnet and needs production cryptography, operational tooling, and hard-fork readiness work.",
+    "Claims and evidence missing: Independent evidence for: The proposer states that Leios-driven throughput could cause SPO disk usage to surge to about 1 GB per hour at 100-1000 TPS, making full-history requirements economically prohibitive without History Expiry.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis missing: missing feasibility assessment",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "Deep research dossier is required for treasury actions before directional voting.",
+    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+    "Missing dossier section: budget analysis",
+    "Missing dossier section: feasibility assessment",
+    "Missing dossier section: alternatives analysis",
+    "Missing dossier section: failure-mode analysis",
+    "Missing dossier section: community impact analysis"
+  ],
+  "input_hash": "b0719854ce859e6ee7d008287131e555d0a5eb74d27737ada5d8ff7417935c6c",
+  "snapshot_bundle_hash": "3b389dccf15b625d7629f0f750d44d3dfe9c3e6604674eec20d5977ddd309132",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 340,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-18T20:15:30.092155Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.315,
+    "NO": 0.315,
+    "ABSTAIN": 0.37
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 634",
+          "Expires after epoch: 641",
+          "Treasury request: 18.26M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027: Peras v1, History Expiry, and Conformance Testing for Peras and Leios.",
+          "Recipient: stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr via Intersect treasury reserve contract administration",
+          "Stated amount: 18263496.00",
+          "Deliverables: Peras v1 production cryptography, KillSwitch, mainnet readiness, support and maintenance, History Expiry partial-history nodes to reduce SPO storage costs, Conformance Testing framework extended for Peras and Leios, Ready-for-activation governance-dependent outputs including merged code, reproducible releases, runbooks, benchmarks, and governance-action packages, Public demos at least every two months, status updates, and community coordination channels",
+          "Deadline/expiry: 2026-2027 delivery period; exact milestone dates not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three interdependent Cardano infrastructure work packages delivered by Tweag by Modus Create over 2026-2027.",
+          "Claim (technical, proposer_asserted, high materiality): Peras v1 is presented as enabling faster finality of about 2 minutes compared with about 12 minutes today, but remains undeployed on mainnet and needs production cryptography, operational tooling, and hard-fork readiness work.",
+          "Claim (technical, proposer_asserted, high materiality): The proposer states that Leios-driven throughput could cause SPO disk usage to surge to about 1 GB per hour at 100-1000 TPS, making full-history requirements economically prohibitive without History Expiry.",
+          "Claim (technical, proposer_asserted, medium materiality): The three work packages are described as a single delivery pipeline whose components are interdependent, with conformance testing supporting Peras validation and History Expiry reducing SPO costs.",
+          "Claim (economic, proposer_asserted, high materiality): The budget is justified using an average market rate of $176 per hour for senior Cardano infrastructure engineers and an ADA/USD conversion rate of 0.25 based on a claimed five-year average.",
+          "Claim (governance, supported_in_proposal, high materiality): Intersect is requested to administer the contract and audit process, with milestone-based fixed price contracts where scope is well-defined and a legal contract between Tweag and Cardano Development Holdings."
+        ],
+        "missing": [
+          "Independent evidence for: Peras v1 is presented as enabling faster finality of about 2 minutes compared with about 12 minutes today, but remains undeployed on mainnet and needs production cryptography, operational tooling, and hard-fork readiness work.",
+          "Independent evidence for: The proposer states that Leios-driven throughput could cause SPO disk usage to surge to about 1 GB per hour at 100-1000 TPS, making full-history requirements economically prohibitive without History Expiry.",
+          "Independent evidence for: The three work packages are described as a single delivery pipeline whose components are interdependent, with conformance testing supporting Peras validation and History Expiry reducing SPO costs.",
+          "Independent evidence for: The budget is justified using an average market rate of $176 per hour for senior Cardano infrastructure engineers and an ADA/USD conversion rate of 0.25 based on a claimed five-year average.",
+          "budget analysis",
+          "feasibility assessment",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 18263496",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: not confirmed",
+          "Clawback/refund path: not confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: not confirmed",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: 0.40"
+        ],
+        "missing": [
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: medium",
+          "Governance risk: low",
+          "Technical risk: high",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: unknown",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: not confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three interdependent Cardano infrastructure work packages delivered by Tweag by Modus Create over 2026-2027.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Peras v1 is presented as enabling faster finality of about 2 minutes compared with about 12 minutes today, but remains undeployed on mainnet and needs production cryptography, operational tooling, and hard-fork readiness work.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. At about 18.26 million ADA this is one of the largest live treasury actions, funding Tweag by Modus Create to deliver core protocol infrastructure \u2014 chiefly the mainnet deployment of Peras for faster finality, plus History Expiry and conformance testing. The technical need is well-documented: Peras v1 is genuinely not yet on mainnet and the work it describes is real. The budget is transparently derived from a stated hourly rate and ADA/USD assumption, which is good practice, but the rate, the hours and the single-pipeline framing are proposer-set figures that warrant independent cost scrutiny at this scale. A request of this size demands a completed deep-research dossier, milestone-gated disbursement and a clear view of treasury runway \u2014 exactly the checks BEACN cannot complete on an eight-hour-old snapshot. It is therefore holding until the data is fresh and that evidence is in hand.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreieyqnaojdv7rofmwd6pndv3j6uuho6cnyyjcowbk5p5x2ux4e744e",
+        "file_sha256": "988340e48ebf8b8acb0fcf68ebb4fa943bbc26e30913ac1575fdbea97e13fce1",
+        "file_path": "data/input/governance/anchors/gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x-20260615T152519Z.bin",
+        "content_chars": 15011
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "ea859032bbaaf458df4db7e18fa9c45c6d59dadac83a2bd05104bf12883110cb"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "99a196cc9cc7bb22649985061290d64a0204b32c507d3cbafa48bc6bcf8ca348"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "5700aa4b61aac2965cf27432a0abc1697f0ea37ef247b7c916c233833ace7152"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "9b153ae6f78a8a6e2c4a5e48327aecd5111e353e95066fbc3e41ac2d206ef4e7"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/7efb5b59a17be9567946081b.md",
+  "rationale_anchor_hash": "7efb5b59a17be9567946081b71a674f960d9d7246b6d549e4442d5871a84deff"
+}

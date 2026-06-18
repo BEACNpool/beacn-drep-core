@@ -4,15 +4,15 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `active`
-- Published at: `2026-06-18T18:04:38.565551+00:00`
+- Published at: `2026-06-18T20:14:57.948249+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.03; confidence 58.0%.
+Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.05; confidence 60.0%.
 
 ## Assessment tree
-- assessment_status: `ready`
+- assessment_status: `incomplete`
 - Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
-- Claims and evidence: `complete` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Claims and evidence: `thin` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: `complete` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
 - Counterargument pass: `complete` — A defensible rationale must show the best opposing case before it reaches a vote.
 - Synthesis: `ready` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
@@ -23,11 +23,13 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - Intake: Action type: ParameterChange
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect’s Civics Committee and Technical Steering Committee propose to change the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal changes committeeMinSize from 7 to 5 to improve operational resilience while maintaining constitutional safeguards." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
@@ -37,11 +39,11 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `c5d2ad08d283f257944c3229f0a3ce85d5565a433acce31c6105f4dafdd8c66a`
-- snapshot_bundle_hash: `fd0417acb163788778e9ed6e10877f5e09ede23d966b6e5dcdb9309c4715ce1e`
+- input_hash: `2bc4b2860947dad285523854bdbcf739dd1ccadb5d964cb07dd7a5bd05f672aa`
+- snapshot_bundle_hash: `b7a69c1388faf9543a2438485a8914ff60fa0163a217b555873331fc3cc8ca0c`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
-- core_commit: `c75ebce785d513bc178ad6dd59d258dde71c2fa2`
-- score: `0.03`
-- confidence: `0.58`
+- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
+- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- score: `0.05`
+- confidence: `0.6`
 

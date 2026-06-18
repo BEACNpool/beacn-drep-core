@@ -1,373 +1,971 @@
 {
-  "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22": {
-    "claims": {
-      "request": {
-        "what": "Open a community discussion on reforming Cardano treasury governance",
-        "recipient": "Not applicable — informational action, no recipient",
-        "amount_ada": "None (InfoAction requests no funds)",
-        "deliverables": [
-          "A set of basic propositions for treasury-governance reform, offered for public discussion"
-        ],
-        "deadline": "Not stated — informational"
-      },
-      "claims": [
-        {
-          "claim": "Cardano treasury governance is in a poor state, with a funding impasse and only indirect support from the existing governance system",
-          "category": "governance",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        },
-        {
-          "claim": "Competition between treasury-withdrawal domains has produced community conflict that endangers the ecosystem",
-          "category": "governance",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        },
-        {
-          "claim": "Treasury governance should provide a clear direction, a coherent strategy and a defined process",
-          "category": "governance",
-          "support": "supported_in_proposal",
-          "materiality": "low"
-        }
-      ],
-      "summary": "A non-binding InfoAction that requests no treasury funds and asks the community to discuss ideas for reforming treasury governance."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. On the substance, this is an InfoAction: it requests no treasury funds and is purely a call to discuss reforms to how Cardano governs treasury spending. Nothing is disbursed and nothing changes on-chain as a result of the vote, so the only thing at stake is whether BEACN lends its voice to opening that discussion. The proposer's claims that treasury governance is dysfunctional and conflict-prone are reasonable framing but are asserted rather than evidenced, which is acceptable for a discussion prompt. Once BEACN's data snapshot is refreshed inside the freshness window, it can move to a directional position on whether to signal support for the conversation, which carries no spending risk."
-  },
-  "gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq": {
-    "claims": {
-      "request": {
-        "what": "Reimburse a 100,000 ADA Info-action deposit that was unrecoverable due to a Cardano node bug, plus 3,000 ADA for lost staking rewards",
-        "recipient": "The original Ikigai Info governance action submitter",
-        "amount_ada": "103,000 ADA",
-        "deliverables": [
-          "A one-time reimbursement payment; no ongoing deliverables"
-        ],
-        "deadline": "Not stated"
-      },
-      "claims": [
-        {
-          "claim": "A node bug let an unregistered stake key be used, leaving the Ikigai submitter unable to recover a 100,000 ADA deposit",
-          "category": "technical",
-          "support": "independently_verifiable",
-          "materiality": "high"
-        },
-        {
-          "claim": "An extra 3,000 ADA is requested to compensate for lost staking rewards at roughly 2% per annum",
-          "category": "economic",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        },
-        {
-          "claim": "The action meets the constitution's metadata and treasury-withdrawal formatting requirements",
-          "category": "governance",
-          "support": "supported_in_proposal",
-          "materiality": "low"
-        }
-      ],
-      "summary": "A 103,000 ADA one-time reimbursement to an early governance pioneer whose deposit was stranded by a node bug, plus a small staking-reward top-up."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is narrow and sympathetic: 103,000 ADA to reimburse an early governance participant whose 100,000 ADA Info-action deposit was stranded by a documented Cardano node bug shortly after the Chang hard fork, plus 3,000 ADA for lost staking rewards. The core fact — that a node defect prevented recovery of the deposit — is independently checkable on-chain and is the strongest part of the case; the 2%-per-annum staking top-up is a reasonable but proposer-set figure. The amount is small relative to other live treasury actions and there is no ongoing delivery risk. Once BEACN's snapshot is current and the deep-research record confirms the bug and the recipient address, this is the kind of low-risk, well-bounded reimbursement on which it could reach a directional vote."
-  },
-  "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry": {
-    "claims": {
-      "request": {
-        "what": "Fund four workstreams to harden and optimize Hydra v2 (performance, operational excellence, ecosystem support, developer experience) to deliver a production-grade Layer 2 scaling solution",
-        "recipient": "IO (Input Output)",
-        "amount_ada": "5,100,781 ADA",
-        "deliverables": [
-          "Feature-complete, hardened Hydra v2",
-          "Performance optimization",
-          "Operational tooling",
-          "Ecosystem and developer-experience support"
-        ],
-        "deadline": "Not explicitly dated in the extracted body"
-      },
-      "claims": [
-        {
-          "claim": "Hydra is the only production-grade Layer 2 on Cardano, already running live workloads for Delta DeFi, Masumi, Intersect and others",
-          "category": "adoption",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        },
-        {
-          "claim": "Cardano L1 offers ~2h finality, ~$0.17/tx and ~7-10 TPS, excluding high-performance verticals at the selection stage",
-          "category": "technical",
-          "support": "supported_in_proposal",
-          "materiality": "medium"
-        },
-        {
-          "claim": "Hydra delivers sub-second finality and near-zero fees while settling to Cardano L1 as the security backstop",
-          "category": "technical",
-          "support": "supported_in_proposal",
-          "materiality": "high"
-        },
-        {
-          "claim": "The four interdependent workstreams will produce a competitive, hardened Hydra v2",
-          "category": "technical",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        }
-      ],
-      "summary": "A 5.1M ADA IO request to harden Hydra v2, Cardano's main Layer 2, across four workstreams to make it a competitive, production-grade scaling solution."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The proposal asks for about 5.1 million ADA for IO to harden and optimize Hydra v2, the Layer 2 the proposal describes as Cardano's only production-grade scaling solution, across four workstreams. The technical framing — L1's finality, fee and throughput limits, and Hydra's sub-second, near-zero-fee settlement back to L1 — is coherent and well-described in the document. The claims that matter most to the decision, namely real production adoption by named projects and the delivery of a feature-complete v2, are stated by the proposer and would need independent verification of current usage and milestone-gated delivery before a directional vote. As a multi-million-ADA treasury action it also requires a completed deep-research dossier. Until BEACN's data is fresh and that dossier and milestone evidence are in hand, it is holding rather than voting directionally."
-  },
-  "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur": {
-    "claims": {
-      "request": {
-        "what": "Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 to improve operational resilience",
-        "recipient": "Not applicable — protocol parameter change",
-        "amount_ada": "None (ParameterChange)",
-        "deliverables": [
-          "On-chain change of committeeMinSize from 7 to 5"
-        ],
-        "deadline": "Depends on enactment of a separate Plutus cost-model parameter-change action ahead of the van Rossem hard fork"
-      },
-      "claims": [
-        {
-          "claim": "With a 7-member committee and committeeMinSize of 7, a single resignation or term expiry would halt the Constitutional Committee and stall much of governance",
-          "category": "governance",
-          "support": "supported_in_proposal",
-          "materiality": "high"
-        },
-        {
-          "claim": "Reducing the minimum to 5 improves resilience while keeping constitutional safeguards",
-          "category": "governance",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        },
-        {
-          "claim": "The change does not alter the current number of committee members or imply a smaller committee is desired",
-          "category": "governance",
-          "support": "supported_in_proposal",
-          "materiality": "medium"
-        },
-        {
-          "claim": "The action was approved by Intersect's Civics Committee (2026-03-13) and Technical Steering Committee (2026-06-03)",
-          "category": "governance",
-          "support": "independently_verifiable",
-          "materiality": "medium"
-        }
-      ],
-      "summary": "An Intersect-sponsored parameter change lowering the Constitutional Committee minimum from 7 to 5 to avoid a single resignation halting governance; no funds requested."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This is a parameter change rather than a spend: it lowers the Constitutional Committee's minimum size from 7 to 5. The motivating risk is concrete and well-explained — with both the committee and its minimum at 7, a single resignation or term expiry would drop the committee below quorum and stall a large part of Cardano governance. The proposal is careful to note it does not change the current membership, and its sponsorship by Intersect's Civics and Technical Steering Committees is a matter of record that can be checked. Because it carries system-wide governance consequences and is tied to the enactment of a separate cost-model change ahead of the van Rossem hard fork, BEACN's policy requires fresh data and a clear read of the dependency before a directional vote. The hold here is procedural staleness, not opposition to the resilience rationale."
-  },
-  "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x": {
-    "claims": {
-      "request": {
-        "what": "Fund Tweag by Modus Create to deliver 3 interdependent work packages of core infrastructure, centred on mainnet deployment of Peras (faster finality), plus History Expiry and conformance testing",
-        "recipient": "Tweag by Modus Create",
-        "amount_ada": "18,263,496 ADA (stated USD $4,565,874)",
-        "deliverables": [
-          "Peras v1 production cryptography, KillSwitch and mainnet readiness",
-          "History Expiry / partial-history nodes",
-          "Conformance testing and correctness scaffolding"
-        ],
-        "deadline": "2026-2027 delivery window"
-      },
-      "claims": [
-        {
-          "claim": "Peras v1 (faster finality, ~2 min vs ~12 min) remains undeployed on mainnet and requires production cryptography and hard-fork readiness",
-          "category": "technical",
-          "support": "supported_in_proposal",
-          "materiality": "high"
-        },
-        {
-          "claim": "The 3 work packages are interdependent and should be funded as a single delivery pipeline, not a modular menu",
-          "category": "technical",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        },
-        {
-          "claim": "The 18,263,496 ADA ask is based on $176/hour senior-engineer rates and a conservative 0.25 ADA/USD conversion",
-          "category": "economic",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        },
-        {
-          "claim": "Peras and Leios are required to unlock higher transaction volume, staking rewards and TVL",
-          "category": "economic",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        }
-      ],
-      "summary": "An 18.26M ADA request for Tweag to deliver Peras mainnet finality plus History Expiry and conformance testing over 2026-2027, priced off senior-engineer hourly rates."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. At about 18.26 million ADA this is one of the largest live treasury actions, funding Tweag by Modus Create to deliver core protocol infrastructure — chiefly the mainnet deployment of Peras for faster finality, plus History Expiry and conformance testing. The technical need is well-documented: Peras v1 is genuinely not yet on mainnet and the work it describes is real. The budget is transparently derived from a stated hourly rate and ADA/USD assumption, which is good practice, but the rate, the hours and the single-pipeline framing are proposer-set figures that warrant independent cost scrutiny at this scale. A request of this size demands a completed deep-research dossier, milestone-gated disbursement and a clear view of treasury runway — exactly the checks BEACN cannot complete on an eight-hour-old snapshot. It is therefore holding until the data is fresh and that evidence is in hand."
-  },
-  "gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey": {
-    "claims": {
-      "request": {
-        "what": "Fund Cardano as title sponsor of Rare Evo 2026 and the second Rare Dev Gov Day (July 28-31, 2026, Las Vegas)",
-        "recipient": "Rare Network",
-        "amount_ada": "2,750,000 ADA (stated USD $660,000 at $0.24)",
-        "deliverables": [
-          "Title sponsorship of the Rare Evo 2026 main stage and global livestream",
-          "Support for Rare Dev Gov Day 2026",
-          "Return of 20% of VIP ticket sales to the Cardano treasury"
-        ],
-        "deadline": "Event dates July 28-31, 2026"
-      },
-      "claims": [
-        {
-          "claim": "Rare Network has operated in Cardano since 2020 and runs one of the largest independently operated blockchain conferences",
-          "category": "adoption",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        },
-        {
-          "claim": "Title sponsorship will strengthen Cardano's global visibility, governance participation and developer engagement",
-          "category": "adoption",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        },
-        {
-          "claim": "Rare Network will return 20% of all VIP ticket sales (≈$900 retail) to the Cardano treasury",
-          "category": "economic",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        },
-        {
-          "claim": "The ask is 2,750,000 ADA, valued at $660,000 at a $0.24 ADA price",
-          "category": "economic",
-          "support": "supported_in_proposal",
-          "materiality": "medium"
-        }
-      ],
-      "summary": "A 2.75M ADA event-sponsorship request positioning Cardano as title sponsor of Rare Evo 2026 and Dev Gov Day, with a pledge to return 20% of VIP ticket sales to the treasury."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is 2.75 million ADA to make Cardano the title sponsor of Rare Evo 2026 and the associated Dev Gov Day in Las Vegas, with a pledge to return 20% of VIP ticket sales to the treasury. Event sponsorship is inherently harder to evaluate than infrastructure: the central claims about reach, governance participation and developer engagement are marketing projections that are asserted rather than measured, and the value Cardano receives depends on outcomes that are difficult to verify after the fact. The 20% VIP rebate is a sensible alignment mechanism but its dollar value is uncertain. For a spend of this size BEACN would want concrete, independently verifiable success metrics and a milestone or rebate structure before committing treasury funds, alongside its standard deep-research dossier. With the data snapshot stale, the correct action today is to hold rather than vote directionally."
-  },
-  "gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz": {
-    "claims": {
-      "request": {
-        "what": "Fund a Year-2 contracted cost and a 12-month enhancement and maintenance program for critical integrations delivered under CCI V1 (Circle USDCx, LayerZero, Pyth, Dune), plus a new native Fireblocks integration",
-        "recipient": "The Cardano Critical Integrations team / partners",
-        "amount_ada": "23,000,000 ADA (stated USD $5,750,000 at $0.25)",
-        "deliverables": [
-          "12 months operations and maintenance of CCI V1 integrations",
-          "Contracted Year-2 licensing/platform fees for Circle, LayerZero, Pyth, Dune",
-          "New full native Fireblocks integration"
-        ],
-        "deadline": "12-month program"
-      },
-      "claims": [
-        {
-          "claim": "CCI V1 integrations (Circle, LayerZero, Pyth, Dune) require ongoing annual licensing/service payments to remain operational",
-          "category": "economic",
-          "support": "supported_in_proposal",
-          "materiality": "high"
-        },
-        {
-          "claim": "Without maintenance funding the previously delivered integrations risk degradation or going offline",
-          "category": "technical",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        },
-        {
-          "claim": "The program creates a recurring annual treasury dependency for third-party infrastructure",
-          "category": "economic",
-          "support": "supported_in_proposal",
-          "materiality": "high"
-        },
-        {
-          "claim": "A new full native Fireblocks integration is included alongside maintenance of existing ones",
-          "category": "technical",
-          "support": "proposer_asserted",
-          "materiality": "medium"
-        }
-      ],
-      "summary": "A 23M ADA request to pay Year-2 licensing and 12 months of maintenance for the Circle/LayerZero/Pyth/Dune integrations and to add Fireblocks — a recurring treasury dependency."
-    },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This action requests 23 million ADA to cover Year-2 licensing and twelve months of maintenance for integrations delivered under the first Critical Integrations budget — Circle USDCx, LayerZero, Pyth and Dune — and to add a native Fireblocks integration. The proposal is candid that these are recurring costs: the named integrations need ongoing annual payments to stay live. That candour is useful, but it also surfaces the central risk BEACN weighs heavily — a standing, recurring treasury dependency on third-party infrastructure, where declining to fund later could strand work already paid for. The maintenance-need claims are partly evidenced by the contracts described, while the consequences of under-funding are asserted. A large, recurring commitment like this needs a completed dossier, line-item licensing costs and a sustainability plan that reduces dependence over time. With stale data, BEACN holds rather than voting directionally."
-  },
   "gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux": {
     "claims": {
-      "request": {
-        "what": "Build an open, Cardano-anchored trust layer for global agricultural supply chains using Veridian self-sovereign identity and a Cardano on-chain satellite oracle",
-        "recipient": "5am.earth Foundation",
-        "amount_ada": "10,000,000 ADA (hard cap)",
-        "deliverables": [
-          "M1 Stand-Up (Month 6)",
-          "M2 Closed Loop (Month 12)",
-          "M3 Self-Sustaining (Month 18)",
-          "500,000 registered farmers across India, Cambodia and Kenya"
-        ],
-        "deadline": "18-month programme"
-      },
       "claims": [
         {
-          "claim": "The programme will reach 500,000 registered farmers across India, Cambodia and Kenya during the funded period",
           "category": "adoption",
-          "support": "proposer_asserted",
-          "materiality": "high"
+          "claim": "Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026.",
+          "materiality": "high",
+          "support": "independently_verifiable"
         },
         {
-          "claim": "Around 500 million smallholder farmers lack formal trust infrastructure that lenders, insurers and certifiers rely on",
+          "category": "adoption",
+          "claim": "The proposal says the funded programme will reach 500,000 registered farmers across India, Cambodia, and Kenya by Month 18.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The trust layer will combine farmer and AE identity, verified land and crop data, satellite observations, credentials, application events, and Cardano anchoring into reusable infrastructure for agricultural applications.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The Cardano components are described as already implemented and operational on Project Swaminathan, making the work integration and scaling rather than greenfield development.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The three funded-period application paths are Andamio AE certification, Zengate Global traceability and compliance, and Seedstars SIGMA finance and credit.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
           "category": "economic",
-          "support": "independently_verifiable",
-          "materiality": "medium"
+          "claim": "The 10,000,000 ADA request is structured as 5,000,000 ADA on approval, 2,000,000 ADA on M1 acceptance, and 3,000,000 ADA on M2 acceptance.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
         },
         {
-          "claim": "The 18-month programme is structured around three named milestones (M1 Stand-Up, M2 Closed Loop, M3 Self-Sustaining)",
-          "category": "technical",
-          "support": "supported_in_proposal",
-          "materiality": "high"
+          "category": "economic",
+          "claim": "The proposal states the ask is approximately 2.86% of the ratified 350,000,000 ADA Net Change Limit.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
         },
         {
-          "claim": "The trust layer combines Veridian self-sovereign identity with a Cardano on-chain satellite oracle and will become self-sustaining",
-          "category": "technical",
-          "support": "proposer_asserted",
-          "materiality": "high"
+          "category": "economic",
+          "claim": "If ADA price appreciation creates surplus above $3.5 million, the surplus returns to the Treasury, while no top-up is requested if ADA price falls.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "By 2030, the programme projects 3 million farmers, 112.5 million annual on-chain transactions, $900 million TVL, and 16\u201320 million ADA in annual protocol revenue.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "Intersect would administer funds through the Treasury Reserve Smart Contract and Project-Specific Smart Contract framework, with an Oversight Committee of five named external entities verifying key administrative actions.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
         }
       ],
-      "summary": "A 10M ADA (hard-capped) 18-month programme to build a Cardano-anchored agricultural trust layer reaching 500,000 farmers across three countries, with three defined milestones."
+      "request": {
+        "amount_ada": "10000000",
+        "deadline": "18 months from programme start, with gates at Month 6, Month 12, and Month 18",
+        "deliverables": [
+          "18-month programme across India, Cambodia, and Kenya",
+          "M1 Stand-Up at Month 6 with Foundation operational, 200,000 cumulative farmers registered on Mainnet, AE credentialing live, trust-layer architecture locked, auditor procurement concluded, and legal contract transfer prepared",
+          "M2 Closed Loop at Month 12 with 350,000 farmers, three application paths operating against verified trust-layer records, first stablecoin-rail loans disbursed and tracked, and first independent audit",
+          "M3 Self-Sustaining at Month 18 with 500,000 cumulative verified farmers, three application paths operating, finance activity on Cardano, AE network credentialed, active Foundation revenue model, and final independent audit",
+          "Public on-chain KPI dashboard, quarterly narrative reports, and monthly Cardano Forum updates"
+        ],
+        "recipient": "5am.earth Foundation, with pre-Foundation co-promoters Elk GMBH and HashPoint Consulting until registration and Intersect administering treasury contracts on standard terms.",
+        "what": "5am.earth Foundation requests treasury funding to build an open, Cardano-anchored trust layer for global agricultural supply chains combining Veridian self-sovereign identity, a Cardano on-chain satellite oracle, and three application paths across AE certification, traceability/compliance, and finance/credit."
+      },
+      "summary": "The document requests 10,000,000 ADA for an 18-month, milestone-gated agricultural trust-layer scale-up administered by Intersect, with claimed existing Mainnet operations, named partners, three application paths, and ambitious adoption and 2030 economic projections."
+    },
+    "lean": {
+      "confidence": 0.78,
+      "direction": "ABSTAIN",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; if ecosystem growth conflicts with treasury stewardship and evidence is weak, prefer ABSTAIN.",
+      "rationale": "The claims include some concrete milestone structure, named partners, and independently checkable on-chain or contract references, but the deterministic assessment is blocked by missing budget, feasibility, alternatives, failure-mode, and community-impact analyses. Given the large treasury request and several high-materiality forward projections that are mostly proposer asserted, the doctrine supports a small cautionary nudge rather than a positive adjustment.",
+      "score_adjustment": -0.03
     },
     "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The 5am.earth Foundation requests up to 10 million ADA, hard-capped, to build a Cardano-anchored trust layer for agricultural supply chains, combining self-sovereign identity for farmers with an on-chain satellite oracle. The proposal is notably well-structured for a venture of this kind: it is milestone-based (Stand-Up at month six, Closed Loop at month twelve, Self-Sustaining at month eighteen) and hard-capped, both of which are positive treasury-control signals. The headline reach figure of 500,000 farmers across India, Cambodia and Kenya, and the claim that the system becomes self-sustaining, are ambitious and currently asserted; the broader problem it targets is real and checkable. The decisive questions for a vote are execution risk in three developing-market geographies and whether disbursement is genuinely gated on the named milestones. BEACN needs fresh data and a completed dossier to weigh those, so it is holding today."
   },
-  "gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z": {
+  "gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq": {
     "claims": {
-      "request": {
-        "what": "Fund 12 months of operations, maintenance and improvements for the Eternl non-custodial Cardano wallet while it transitions toward a paid Pro plan",
-        "recipient": "Eternl",
-        "amount_ada": "1,680,000 ADA (stated ≈$420,000/year)",
-        "deliverables": [
-          "12 months of frontend/backend maintenance and development",
-          "Backend infrastructure and user support",
-          "Launch of a paid Pro plan toward self-sustainability"
-        ],
-        "deadline": "12-month period (2026-2027)"
-      },
       "claims": [
         {
-          "claim": "Eternl serves about 100,000 browser-extension users and ~30,000 across Android and iOS",
-          "category": "adoption",
-          "support": "proposer_asserted",
-          "materiality": "high"
-        },
-        {
-          "claim": "Roughly 5,500 Pro subscribers (≈4.2% of the install base) would fully cover the ~$420,000 annual cost",
           "category": "economic",
-          "support": "proposer_asserted",
-          "materiality": "high"
+          "claim": "The proposal requests 103,000 ADA from the treasury to reimburse a 100,000 ADA lost governance action deposit plus 3,000 ADA for estimated lost staking rewards.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
         },
         {
-          "claim": "Annual operating cost is around $420,000 (~1,680,000 ADA)",
-          "category": "economic",
-          "support": "supported_in_proposal",
-          "materiality": "medium"
+          "category": "governance",
+          "claim": "The proposer says the original Ikigai Info governance action was a symbolic action thanking contributors and expressing hope for Cardano's future.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
         },
         {
-          "claim": "Eternl is a primary gateway for Cardano payments, staking, governance and DApp interaction",
+          "category": "technical",
+          "claim": "The proposer says a Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The document includes an external reference to an AdaStat governance action page for the Ikigai action.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
           "category": "adoption",
-          "support": "proposer_asserted",
-          "materiality": "medium"
+          "claim": "The proposer says there was significant community sentiment that the Ikigai deposit should be reimbursed because the submitter was an early pioneer of Cardano governance.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposer says no entity-based budget submission included this reimbursement after treasury withdrawals became available following the Plomin hard fork.",
+          "materiality": "low",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposer says the Cardano in Oceania initiative included the reimbursement in its budget Info governance action, but that governance action was not approved.",
+          "materiality": "low",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposer asserts the recipient has not previously received treasury funds.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposer asserts the requested amount does not exceed the current Net Change Limit.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposer states there are no circumstances under which the withdrawal might be refunded to the Cardano Treasury.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
         }
       ],
-      "summary": "A 1.68M ADA request to fund one year of Eternl wallet operations while it launches a paid Pro plan intended to make it self-sustaining."
+      "request": {
+        "amount_ada": "103000",
+        "deadline": "Period of delivery is stated as instant upon enactment on-chain",
+        "deliverables": [
+          "Instant on-chain distribution as part of governance action enactment"
+        ],
+        "recipient": "Ikigai Info governance action submitter; specific recipient address not stated in document",
+        "what": "Reimburse the lost deposit for the Ikigai Info governance action, plus additional ADA intended to compensate for lost staking rewards."
+      },
+      "summary": "The document requests a 103,000 ADA treasury withdrawal to reimburse a lost Ikigai Info governance action deposit and estimated staking rewards, but most key justifications are asserted with limited supporting analysis."
     },
-    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. Eternl requests about 1.68 million ADA — roughly $420,000 — to fund a year of operations and maintenance for its widely used non-custodial wallet while it stands up a paid Pro plan intended to make it self-sustaining. The proposal's strength is that it names a concrete path off treasury funding: it estimates that around 5,500 Pro subscribers, about 4.2% of its install base, would cover annual costs. That conversion assumption is the load-bearing claim and is currently the proposer's projection rather than demonstrated revenue, and the install-base figures are self-reported. The amount is modest relative to other live actions and the public good of a maintained, widely used wallet is real. The directional question is the credibility of the sustainability plan and whether funding is staged against it. BEACN is holding only because its data snapshot is stale; once fresh, this is a tractable case."
+    "lean": {
+      "confidence": 0.74,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+      "rationale": "The claim set contains a plausible public-interest reimbursement theory, but the evidence is thin for the key technical cause, community support, recipient history, Net Change Limit adherence, and the 3,000 ADA staking-reward calculation. Given the deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community-impact analysis, doctrine supports only a small cautionary nudge rather than a positive adjustment.",
+      "score_adjustment": -0.03
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is narrow and sympathetic: 103,000 ADA to reimburse an early governance participant whose 100,000 ADA Info-action deposit was stranded by a documented Cardano node bug shortly after the Chang hard fork, plus 3,000 ADA for lost staking rewards. The core fact \u2014 that a node defect prevented recovery of the deposit \u2014 is independently checkable on-chain and is the strongest part of the case; the 2%-per-annum staking top-up is a reasonable but proposer-set figure. The amount is small relative to other live treasury actions and there is no ongoing delivery risk. Once BEACN's snapshot is current and the deep-research record confirms the bug and the recipient address, this is the kind of low-risk, well-bounded reimbursement on which it could reach a directional vote."
+  },
+  "gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey": {
+    "claims": {
+      "claims": [
+        {
+          "category": "economic",
+          "claim": "Rare Network states that the requested \u20b32,750,000 is based on a $0.24 ADA valuation for a $660,000 budget covering two Cardano sponsorship packages.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal says Rare Network will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP retail value stated as $900 per ticket.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal provides a cost breakdown allocating \u20b31,166,666.67 to Cardano Dev Gov Day 2026, \u20b3833,333.33 to Rare Evo 2026 title sponsorship, and \u20b3750,000 to Intersect, audit, fees, tax withholdings, and a Dev Gov Day 2027 deposit.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "Rare Network states that Rare Evo 2026 will occur regardless of treasury funding, but treasury funding would expand Cardano presence, accessibility, participation, and industry outreach.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal asserts Rare Evo 2025 had 2,500 attendees, 80 exhibitor booths, 85 speakers, 100+ ecosystem partners, 20K+ livestream views, 4M social media impressions, 40+ Cardano projects represented, and 50+ enterprise participants.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal states the first Cardano Dev Gov Day in 2025 was free and publicly accessible, welcomed approximately 500 attendees, and included a Charles Hoskinson keynote, governance discussions, technical education, workshops, and community-building activities.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "other",
+          "claim": "The document links to videos, a Dev Gov Day report, a livestream post, and other supporting material for prior Rare Evo and Dev Gov Day activity.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal states selected Cardano projects and individuals will use open application forms for speaking opportunities, booth space, volunteer participation, and travel or lodging assistance, with selections prioritizing ecosystem contribution and in-person value creation.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal says sponsorship allocation may change if another sponsor purchases the mainstage or livestream package before the vote passes, in which case Cardano would receive a sponsorship of equal impact or dollar value.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal claims alignment with governance, community and ecosystem growth, and ecosystem sustainability pillars by increasing governance participation, onboarding, education, industry engagement, and use of existing event infrastructure.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        }
+      ],
+      "request": {
+        "amount_ada": "2750000",
+        "deadline": "Events stated as July 28-31, 2026 in Las Vegas, with Dev Gov Day on July 28, 2026 at ARIA Las Vegas.",
+        "deliverables": [
+          "Cardano title sponsorship of Rare Evo 2026 main stage and livestream",
+          "Cardano Dev Gov Day 2026 sponsorship",
+          "free General Admission access for the Cardano community",
+          "complimentary booth space for selected Cardano ecosystem startup projects",
+          "five Cardano-focused main stage panelist positions",
+          "breakout room and workshop space",
+          "livestream Cardano ads and distribution",
+          "tier-1 media coverage for Cardano announcements",
+          "travel and lodging support for 20 Cardano ecosystem contributors or volunteers",
+          "10 ARIA hotel room giveaways",
+          "50 VIP conference pass giveaways",
+          "20% of all VIP ticket sales returned to the Cardano Treasury",
+          "Dev Gov Day 2027 venue deposit and legal, admin, audit, fee, slippage, processing, and tax withholding allocations"
+        ],
+        "recipient": "Rare Network",
+        "what": "Rare Network requests Cardano treasury funding for Cardano title sponsorship of Rare Evo 2026 main stage and global livestream and Cardano Dev Gov Day 2026."
+      },
+      "summary": "The document requests \u20b32.75 million for Cardano sponsorship of Rare Evo 2026 and Dev Gov Day 2026, presenting prior event metrics, sponsorship deliverables, a budget table, access benefits, application-based allocation of some benefits, and an asserted treasury return from VIP ticket sales."
+    },
+    "lean": {
+      "confidence": 0.78,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; if ecosystem growth conflicts with treasury stewardship and evidence is weak, prefer caution.",
+      "rationale": "The extracted claims show plausible public-benefit ecosystem growth, but the deterministic assessment is blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analysis; under BEACN doctrine, weak evidence around treasury stewardship for a large withdrawal justifies a small cautious negative nudge rather than rewarding asserted ecosystem upside.",
+      "score_adjustment": -0.03
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is 2.75 million ADA to make Cardano the title sponsor of Rare Evo 2026 and the associated Dev Gov Day in Las Vegas, with a pledge to return 20% of VIP ticket sales to the treasury. Event sponsorship is inherently harder to evaluate than infrastructure: the central claims about reach, governance participation and developer engagement are marketing projections that are asserted rather than measured, and the value Cardano receives depends on outcomes that are difficult to verify after the fact. The 20% VIP rebate is a sensible alignment mechanism but its dollar value is uncertain. For a spend of this size BEACN would want concrete, independently verifiable success metrics and a milestone or rebate structure before committing treasury funds, alongside its standard deep-research dossier. With the data snapshot stale, the correct action today is to hold rather than vote directionally."
+  },
+  "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur": {
+    "claims": {
+      "claims": [
+        {
+          "category": "governance",
+          "claim": "The proposal changes committeeMinSize from 7 to 5 to improve operational resilience while maintaining constitutional safeguards.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "If Constitutional Committee membership drops below committeeMinSize, governance actions requiring committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Reducing committeeMinSize to 5 would allow governance to continue if one or two members retire or their terms expire, assuming a current 7-member committee.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposal depends temporally on enactment of another live Parameter Change governance action for Plutus cost model settings, but states there is no technical interaction between the changed parameters.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal states that the change does not directly affect the current number of Constitutional Committee members or the maximum number of committee members.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "With a 2/3 Constitutional Committee voting threshold, the document says 5 members would require 4 constitutional votes to meet threshold and 2 unconstitutional votes to prevent threshold.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The document acknowledges that with 5 committee members, inactivity by one member could allow another member to fully veto governance actions.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal states the change underwent Parameter Committee review through PCP-005 and links to a Cardano Forum discussion.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "The document states the change is reversible if at least 7 Constitutional Committee members exist, but reverting to 7 with fewer than 7 members would immediately halt governance until enough members were elected.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        }
+      ],
+      "request": {
+        "amount_ada": "0 (no treasury withdrawal stated)",
+        "deadline": "not stated in document",
+        "deliverables": [
+          "Set protocol_param_update.committee_min_size to 5"
+        ],
+        "recipient": "not stated in document",
+        "what": "Reduce the Cardano protocol parameter committeeMinSize from 7 to 5."
+      },
+      "summary": "The proposal is a non-treasury parameter change to lower committeeMinSize from 7 to 5, justified as an operational-resilience buffer for Constitutional Committee continuity, with acknowledged governance-threshold and veto tradeoffs, external process references, and a conditional reversion plan."
+    },
+    "lean": {
+      "confidence": 0.72,
+      "direction": "YES",
+      "doctrine_basis": "Parameter Change Doctrine: support changes with strong evidence and operational feasibility; Values Hierarchy: constitutional integrity and protocol safety before speed.",
+      "rationale": "The document gives a clear protocol-safety rationale, explicit threshold analysis, guardrail discussion, external review references, and a reversion plan, while also acknowledging the main governance tradeoff around easier veto at smaller committee size. The positive nudge is small because parameter changes are system-wide and the current committee-size premise is mostly proposer asserted within the document.",
+      "score_adjustment": 0.02
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This is a parameter change rather than a spend: it lowers the Constitutional Committee's minimum size from 7 to 5. The motivating risk is concrete and well-explained \u2014 with both the committee and its minimum at 7, a single resignation or term expiry would drop the committee below quorum and stall a large part of Cardano governance. The proposal is careful to note it does not change the current membership, and its sponsorship by Intersect's Civics and Technical Steering Committees is a matter of record that can be checked. Because it carries system-wide governance consequences and is tied to the enactment of a separate cost-model change ahead of the van Rossem hard fork, BEACN's policy requires fresh data and a clear read of the dependency before a directional vote. The hold here is procedural staleness, not opposition to the resilience rationale."
+  },
+  "gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz": {
+    "claims": {
+      "claims": [
+        {
+          "category": "economic",
+          "claim": "The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Funds will be administered by Intersect under the Treasury Reserve Smart Contract Framework, with drawdowns after signed agreements and Statements of Work are submitted and verified.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposer discloses that the prospective recipient structure previously received \u20b370,000,000 from the Cardano Treasury under the Cardano Critical Integrations Budget in the prior 24 months.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "technical",
+          "claim": "CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "CCI V2 funds a full native Cardano integration into Fireblocks, including ADA and CNT custody and transfer and technical foundations for staking and governance delegation workflows.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The high-level budget allocates \u20b320,700,000 to integration and maintenance costs, \u20b31,150,000 to enhancement and tooling reserve, and \u20b31,150,000 to legal, audit, and contract administration.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "Vendor-level costs are not publicly disclosed because of confidentiality obligations with several integration partners.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "Unused funds at the end of the 12-month period or under listed refund circumstances will be returned to the Cardano Treasury.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal excludes new tier-1 integrations, application-layer dApp funding, liquidity programs, marketing, events, and broader application-layer tooling outside the V1 integration perimeter.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        }
+      ],
+      "request": {
+        "amount_ada": "23000000",
+        "deadline": "12 month delivery window",
+        "deliverables": [
+          "12 months of operations and maintenance for Circle USDCx, LayerZero, Pyth Price Feeds, and Dune Analytics integrations",
+          "Fireblocks native Cardano integration including ADA and Cardano Native Token support and foundations for staking and governance delegation workflows",
+          "Ring-fenced enhancement and tooling reserve for monitoring, reconciliation, observability, operational tooling, SDKs, and reference implementations",
+          "Legal, audit, contract administration, oversight, reporting, and contingency activities"
+        ],
+        "recipient": "Intersect, acting as Administrator under the Treasury Reserve Smart Contract Framework",
+        "what": "Withdrawal from the Cardano Treasury for Cardano Critical Integrations V2, covering Year 2 contracted costs, a 12-month enhancement and maintenance program for CCI V1 integrations, and a new native Fireblocks integration."
+      },
+      "summary": "The document requests \u20b323,000,000 for a 12-month continuation and expansion of critical integrations administered by Intersect, with most funds allocated to integration and maintenance costs, but vendor-level cost detail is withheld and the deterministic assessment reports missing budget, feasibility, alternatives, failure-mode, and community impact analyses."
+    },
+    "lean": {
+      "confidence": 0.78,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+      "rationale": "A small negative nudge is justified because the request is large, vendor-level costs are confidential, the recipient structure recently received a much larger related treasury withdrawal, and the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community impact analyses; these gaps weaken evidence quality and treasury downside protection despite stated oversight and refund mechanisms.",
+      "score_adjustment": -0.04
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This action requests 23 million ADA to cover Year-2 licensing and twelve months of maintenance for integrations delivered under the first Critical Integrations budget \u2014 Circle USDCx, LayerZero, Pyth and Dune \u2014 and to add a native Fireblocks integration. The proposal is candid that these are recurring costs: the named integrations need ongoing annual payments to stay live. That candour is useful, but it also surfaces the central risk BEACN weighs heavily \u2014 a standing, recurring treasury dependency on third-party infrastructure, where declining to fund later could strand work already paid for. The maintenance-need claims are partly evidenced by the contracts described, while the consequences of under-funding are asserted. A large, recurring commitment like this needs a completed dossier, line-item licensing costs and a sustainability plan that reduces dependence over time. With stale data, BEACN holds rather than voting directionally."
+  },
+  "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry": {
+    "claims": {
+      "claims": [
+        {
+          "category": "technical",
+          "claim": "Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "Hydra is claimed to provide sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement guarantees.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal requests \u20b35,100,781 and states the funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal says Hydra has powered or is being used by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposal claims Cardano L1 has over two hours of finality, approximately $0.17 per transaction, and roughly 7 to 10 TPS, making some high-performance use cases uncompetitive on L1.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposal claims the funded work will improve snapshot signing and memory profile by 2x to 10x and reduce L1 fees through on-chain contract optimization.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal asserts Hydra can increase Cardano TVL, active users, transactions, throughput capacity, reliability, uptime, and annual protocol revenue.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal claims Hydra activity can increase L1 fee accrual through head opening, fund addition and removal, closure, and optional routing of internal head fees to L1 treasury settlement.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal states provisional users under evaluation include Bodega Market, Atlas Defi, Wingriders, Houselink, European Public Network, and others.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal claims delays could cause current or prospective Hydra users to migrate to competing chains and make new builder attraction harder.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        }
+      ],
+      "request": {
+        "amount_ada": "5100781",
+        "deadline": "not stated in document",
+        "deliverables": [
+          "Performance optimization with claimed 2x to 10x improvements in snapshot signing and memory profile and reduced L1 fees through contract optimization",
+          "Operational excellence including operator runbooks, simpler node configuration, observability and logging, and an improved TUI",
+          "Ecosystem support including production-user requested features, Hydra Alliance facilitation, hackathons, and developer relations",
+          "Maintenance and developer experience including CI, tooling, and technical debt reduction"
+        ],
+        "recipient": "Input Output Global / IO: Hydra",
+        "what": "Funding for IO: Hydra to deliver a feature-complete and hardened Hydra v2 through performance optimization, operational excellence, ecosystem support, and developer experience workstreams."
+      },
+      "summary": "The anchor document requests \u20b35,100,781 for Hydra v2 hardening and adoption work, but most material economic and adoption claims are asserted in the proposal rather than backed by budgets, feasibility evidence, alternatives analysis, or failure-mode analysis in the supplied text."
+    },
+    "lean": {
+      "confidence": 0.72,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; conflict default preferring caution when ecosystem growth conflicts with weak evidence.",
+      "rationale": "The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analysis; the extracted claims show a large treasury request supported mainly by proposer assertions on adoption, ROI, and ecosystem impact. Under BEACN doctrine, plausible ecosystem growth does not justify extra support when treasury stewardship and evidence quality are weak, so a small cautionary negative nudge is warranted.",
+      "score_adjustment": -0.03
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The proposal asks for about 5.1 million ADA for IO to harden and optimize Hydra v2, the Layer 2 the proposal describes as Cardano's only production-grade scaling solution, across four workstreams. The technical framing \u2014 L1's finality, fee and throughput limits, and Hydra's sub-second, near-zero-fee settlement back to L1 \u2014 is coherent and well-described in the document. The claims that matter most to the decision, namely real production adoption by named projects and the delivery of a feature-complete v2, are stated by the proposer and would need independent verification of current usage and milestone-gated delivery before a directional vote. As a multi-million-ADA treasury action it also requires a completed deep-research dossier. Until BEACN's data is fresh and that dossier and milestone evidence are in hand, it is holding rather than voting directionally."
+  },
+  "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc": {
+    "claims": {
+      "claims": [
+        {
+          "category": "technical",
+          "claim": "The proposal would upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 without an era transition.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The hard fork would add new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "technical",
+          "claim": "The hard fork would make all Plutus built-in functions available consistently across Plutus V1, V2, and V3.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The hard fork would add UPLC case expressions for Bool, Integer, and Data and the proposer says this provides significant performance improvements and cleaner script logic.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposer states that testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposal cites Cardano Node 11.0.1 performance results as showing no regressions for standard value, Plutus, and voting benchmarks and acceptable baseline performance for new Plutus primitives and case expressions.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposer states that security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal says at least 85% of stake pools by active stake should have upgraded to a node capable of supporting protocol version 11 before ratification, and that this readiness will need to be determined before ratification.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposer states this governance action is consistent with all eight listed hard fork guardrails, while noting none can be checked by the automated guardrails script and HARDFORK-04 depends on stake pool upgrade status.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The reversion plan states the hard fork is a permanent ledger-rule change and reversion is only possible in extreme circumstances through the CIP-0135 disaster recovery process, while Plutus primitive usage could be disabled through companion cost model settings if issues are discovered.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        }
+      ],
+      "request": {
+        "amount_ada": "none",
+        "deadline": "not stated in document",
+        "deliverables": [
+          "Upgrade Cardano mainnet protocol to major version 11 and minor version 0",
+          "Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153 available",
+          "Make all Plutus built-in functions consistently available across Plutus V1, V2, and V3",
+          "Support case expressions for Bool, Integer, and Data in Untyped Plutus Core",
+          "Promote or tighten ledger predicates including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restriction, withdrawals validation, and PPView mismatch reporting"
+        ],
+        "recipient": "not stated in document",
+        "what": "Hard fork initiation to upgrade Cardano Mainnet to Protocol Version 11.0 via the intra-era 'van Rossem' hard fork while remaining in the Conway era."
+      },
+      "summary": "The document proposes a no-treasury hard fork to Cardano protocol version 11.0 with Plutus, ledger, and node diagnostic changes, cites CIPs and a performance report, asserts testing and audit readiness, and identifies stake pool upgrade readiness and limited reversibility as key governance considerations."
+    },
+    "lean": {
+      "confidence": 0.74,
+      "direction": "NO",
+      "doctrine_basis": "Hard Fork Doctrine: required evidence includes implementation readiness, compatibility and migration readiness, and a risk register with concrete mitigations; Values Hierarchy: protocol safety and evidence quality take priority over execution speed and momentum.",
+      "rationale": "The proposal has substantial technical detail and external references, but for a highest-scrutiny hard fork the risk review is thin: testing and audit outcomes are mostly asserted rather than reproduced in the anchor text, stake pool readiness remains to be determined before ratification, and reversion is described as only possible in extreme circumstances. Because hard forks have asymmetric downside, this supports a small cautionary nudge rather than a positive evidence-quality nudge.",
+      "score_adjustment": -0.03
+    }
+  },
+  "gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse": {
+    "claims": {
+      "claims": [
+        {
+          "category": "economic",
+          "claim": "Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 of annual operating costs for 12 months.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The budget is allocated as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs, and about 5,500 Pro users would fully cover the annual $420,000 cost.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "After withdrawal, the proposer says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Independent audits by an unaffiliated party are planned for February 2027 and August 2027 to review custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "Every December and June, the proposer will use surplus treasury stablecoins plus paid plan income above $420,000 to repay the treasury until $420,000 in Ada has been repaid, then donate 50% of Pro income above $420,000 until an additional $210,000 worth of Ada has been donated.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "Eternl states that 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The main Eternl UI will not be open-source, though some libraries used in Eternl will be published through the Eternl npm organization.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "other",
+          "claim": "If treasury funds are not received and paid licenses are insufficient beyond August, the proposer says it may let developers go, scale down to essential maintenance, focus outside Cardano, or remove the free option.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        }
+      ],
+      "request": {
+        "amount_ada": "2350000",
+        "deadline": "Delivery period August 2026 to July 2027",
+        "deliverables": [
+          "Frontend maintenance and cross-platform development",
+          "Backend infrastructure and operations",
+          "User support",
+          "Day-to-day administration and operations",
+          "Periodic independent audits of treasury fund use and oversight metrics",
+          "Development of Eternl Core, Eternl Hub, hardware wallet support, wallet data export, and governance tooling"
+        ],
+        "recipient": "Tastenkunst GmbH, Eternl",
+        "what": "Treasury withdrawal to fund 12 months of Eternl operations, maintenance, improvements, infrastructure, support, administration, and audit/oversight activities."
+      },
+      "summary": "The document asks for \u20b32,350,000 to fund Eternl for August 2026 through July 2027, presents a category budget and sustainability plan through paid Pro subscriptions, promises public wallet handling and repayment/donation mechanics, and describes audits, operations, roadmap items, prior funding, and ecosystem impact claims."
+    },
+    "lean": {
+      "confidence": 0.78,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+      "rationale": "The deterministic assessment is already blocked for missing budget, feasibility, risk, alternatives, and failure-mode analysis. Within the claims, the request is a large treasury withdrawal with some stated controls and repayment mechanics, but several high-materiality assumptions remain proposer-asserted, including install base, conversion to paid users, FTE reasonableness, and transaction-share impact. Under BEACN doctrine, that evidence profile supports only a small cautionary nudge rather than a positive adjustment.",
+      "score_adjustment": -0.03
+    }
+  },
+  "gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z": {
+    "claims": {
+      "claims": [
+        {
+          "category": "adoption",
+          "claim": "Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal requests \u20b31,680,000, valued at about $0.25 per Ada, to cover an estimated $420,000 annual operating cost.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The requested budget is allocated as \u20b3924,000 frontend, \u20b3420,000 backend, \u20b384,000 support, \u20b3235,200 admin, and \u20b316,800 audits.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal funds 6.0 FTE at $70,000 per FTE, while 10 people contribute to Eternl.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "Eternl plans to introduce paid Pro plans priced at $96 per year for personal use and $384 per year for company use, though prices are not finalized.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposer says that about 5,500 Pro users, or 4.2% of its stated install base, would fully cover the annual $420,000 cost.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposer states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposer states that 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "Eternl states it will assess repayment every December and June, use surplus above $420,000 to repay up to $420,000 worth of Ada, and potentially donate up to an additional $210,000 worth of Ada from Pro-plan surplus.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        }
+      ],
+      "request": {
+        "amount_ada": "1680000",
+        "deadline": "July 2027",
+        "deliverables": [
+          "Frontend maintenance and cross-platform development",
+          "Backend infrastructure and operations",
+          "User support",
+          "Day-to-day administration and operations",
+          "Audits",
+          "Governance tooling enhancements",
+          "Eternl Core rewrite work",
+          "Eternl Hub work",
+          "Enhanced hardware wallet support",
+          "Enhanced wallet data export"
+        ],
+        "recipient": "Tastenkunst GmbH, Eternl",
+        "what": "Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, infrastructure, and improvements for August 2026 to July 2027."
+      },
+      "summary": "The document asks for \u20b31,680,000 for 12 months of Eternl operations from August 2026 through July 2027, describes a budget split and proposed Pro-plan sustainability path, and asserts adoption and repayment commitments, but many key usage, feasibility, and impact claims are not externally evidenced inside the anchor text."
+    },
+    "lean": {
+      "confidence": 0.78,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+      "rationale": "The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community-impact analysis, and the extracted claims show a large treasury request with several high-materiality assertions relying on proposer statements rather than reproducible evidence. Under the doctrine, weak evidence on a substantial treasury withdrawal justifies a small cautionary nudge rather than a positive adjustment.",
+      "score_adjustment": -0.03
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. Eternl requests about 1.68 million ADA \u2014 roughly $420,000 \u2014 to fund a year of operations and maintenance for its widely used non-custodial wallet while it stands up a paid Pro plan intended to make it self-sustaining. The proposal's strength is that it names a concrete path off treasury funding: it estimates that around 5,500 Pro subscribers, about 4.2% of its install base, would cover annual costs. That conversion assumption is the load-bearing claim and is currently the proposer's projection rather than demonstrated revenue, and the install-base figures are self-reported. The amount is modest relative to other live actions and the public good of a maintained, widely used wallet is real. The directional question is the credibility of the sustainability plan and whether funding is staged against it. BEACN is holding only because its data snapshot is stale; once fresh, this is a tractable case."
+  },
+  "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22": {
+    "claims": {
+      "claims": [
+        {
+          "category": "governance",
+          "claim": "Treasury governance within the Cardano ecosystem is currently in a poor state with a funding impasse.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "Current treasury withdrawal voting has created perceived competition for scarce resources across important domains, leading to hostility, toxicity, ill will, and ecosystem harm.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "Treasury governance is only indirectly addressed and barely supported by the existing governance system despite being pivotal for Cardano's stability and growth.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The governance system and constitution should explicitly address and support treasury governance, including clear direction, coherent strategy, and a specific roadmap.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The Net Change Limit should not be treated as a potential overall budget because it is only a vague initial approximation and cannot alone support effective treasury governance.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "Treasury governance should include a dedicated investment budget with strategic direction and a roadmap.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "DReps should vote on dedicated and balanced budgets rather than individual project funding because direct comparison of individual proposals is cognitively inefficient and requires domain expertise most DReps lack.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "A strategic entity should prepare, propose, and implement budgets, and an expert commission should evaluate and select projects that meet budget requirements, with both appointed by vote for fixed terms.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposed budget structure consists of eight domains: core protocol and infrastructure, developer tooling, research and innovation, commercial ecosystem growth, administration and operational support, community education and marketing, other strategic or public-good initiatives, and functional reserve.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Implementing the proposed reform would require further refinements and amendments to the current process and the constitution.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        }
+      ],
+      "request": {
+        "amount_ada": "not stated in document",
+        "deadline": "not stated in document",
+        "deliverables": [
+          "Public discussion of treasury governance reform ideas",
+          "Outline of guardrails for strategic direction",
+          "Proposed treasury governance sequence: vote on NCL, vote on budget, vote on overall treasury withdrawal",
+          "Proposed thematic budget structure with eight domains"
+        ],
+        "recipient": "not stated in document",
+        "what": "Info action to introduce basic ideas for reforming Cardano treasury governance into public discussion and outline guardrails for strategic direction."
+      },
+      "summary": "The document is an InfoAction proposing discussion-oriented treasury governance reform, centered on strategic budgeting, thematic budget domains, sequential voting stages, and appointed entities for budget preparation and project evaluation, but most diagnoses of current dysfunction are asserted without supporting evidence."
+    },
+    "lean": {
+      "confidence": 0.72,
+      "direction": "ABSTAIN",
+      "doctrine_basis": "Info Action Doctrine: support governance clarity but abstain when framing is ambiguous and signal quality is low; Values Hierarchy: evidence quality and treasury stewardship over social consensus momentum.",
+      "rationale": "The proposal has a clear governance intent and could improve shared understanding, but the evidence base is thin: high-materiality claims about dysfunction, scarcity conflict, DRep incapacity, and constitutional need are mostly asserted rather than evidenced. Under the assessment tree's incomplete status and thin claims, a small cautionary nudge is warranted without treating the signaling proposal as a hard blocker.",
+      "score_adjustment": -0.02
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. On the substance, this is an InfoAction: it requests no treasury funds and is purely a call to discuss reforms to how Cardano governs treasury spending. Nothing is disbursed and nothing changes on-chain as a result of the vote, so the only thing at stake is whether BEACN lends its voice to opening that discussion. The proposer's claims that treasury governance is dysfunctional and conflict-prone are reasonable framing but are asserted rather than evidenced, which is acceptable for a discussion prompt. Once BEACN's data snapshot is refreshed inside the freshness window, it can move to a directional position on whether to signal support for the conversation, which carries no spending risk."
+  },
+  "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x": {
+    "claims": {
+      "claims": [
+        {
+          "category": "economic",
+          "claim": "The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three interdependent Cardano infrastructure work packages delivered by Tweag by Modus Create over 2026-2027.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "Peras v1 is presented as enabling faster finality of about 2 minutes compared with about 12 minutes today, but remains undeployed on mainnet and needs production cryptography, operational tooling, and hard-fork readiness work.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposer states that Leios-driven throughput could cause SPO disk usage to surge to about 1 GB per hour at 100-1000 TPS, making full-history requirements economically prohibitive without History Expiry.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The three work packages are described as a single delivery pipeline whose components are interdependent, with conformance testing supporting Peras validation and History Expiry reducing SPO costs.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The budget is justified using an average market rate of $176 per hour for senior Cardano infrastructure engineers and an ADA/USD conversion rate of 0.25 based on a claimed five-year average.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "Intersect is requested to administer the contract and audit process, with milestone-based fixed price contracts where scope is well-defined and a legal contract between Tweag and Cardano Development Holdings.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "Technical deliverables are said to require IOG code review and independent validation by No Witness Labs as a third-party assessor across relevant work packages.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Funds are to be managed through Intersect's treasury reserve smart contract framework developed by Sundae Labs, with stated multisignature-style admin, leadership, and oversight committee controls.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposer claims the withdrawal does not, at submission time, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "economic",
+          "claim": "All funds not disbursed by the end of the delivery period, and unspent funds from partial delivery or reduced scope, are promised to be returned to the Cardano Treasury with final reconciliation reporting.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        }
+      ],
+      "request": {
+        "amount_ada": "18263496.00",
+        "deadline": "2026-2027 delivery period; exact milestone dates not stated in document",
+        "deliverables": [
+          "Peras v1 production cryptography, KillSwitch, mainnet readiness, support and maintenance",
+          "History Expiry partial-history nodes to reduce SPO storage costs",
+          "Conformance Testing framework extended for Peras and Leios",
+          "Ready-for-activation governance-dependent outputs including merged code, reproducible releases, runbooks, benchmarks, and governance-action packages",
+          "Public demos at least every two months, status updates, and community coordination channels"
+        ],
+        "recipient": "stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr via Intersect treasury reserve contract administration",
+        "what": "Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027: Peras v1, History Expiry, and Conformance Testing for Peras and Leios."
+      },
+      "summary": "The document requests \u20b318,263,496.00 for Tweag-led Cardano infrastructure work across Peras v1, History Expiry, and Conformance Testing, administered by Intersect with milestone controls, oversight, public tracking, and refund commitments; several core technical and economic necessity claims are asserted without detailed evidence in the anchor text."
+    },
+    "lean": {
+      "confidence": 0.78,
+      "direction": "NO",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+      "rationale": "The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community-impact analyses; given a large treasury request with several high-materiality technical and economic claims asserted rather than evidenced in the supplied claims, BEACN's hierarchy supports a small cautionary nudge against spending.",
+      "score_adjustment": -0.03
+    },
+    "message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. At about 18.26 million ADA this is one of the largest live treasury actions, funding Tweag by Modus Create to deliver core protocol infrastructure \u2014 chiefly the mainnet deployment of Peras for faster finality, plus History Expiry and conformance testing. The technical need is well-documented: Peras v1 is genuinely not yet on mainnet and the work it describes is real. The budget is transparently derived from a stated hourly rate and ADA/USD assumption, which is good practice, but the rate, the hours and the single-pipeline framing are proposer-set figures that warrant independent cost scrutiny at this scale. A request of this size demands a completed deep-research dossier, milestone-gated disbursement and a clear view of treasury runway \u2014 exactly the checks BEACN cannot complete on an eight-hour-old snapshot. It is therefore holding until the data is fresh and that evidence is in hand."
   }
 }

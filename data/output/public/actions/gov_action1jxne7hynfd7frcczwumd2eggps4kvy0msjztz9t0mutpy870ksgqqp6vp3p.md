@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `NewConstitution`
 - Status: `enacted`
-- Published at: `2026-06-17T23:45:24.325845+00:00`
+- Published at: `2026-06-18T11:30:05.648104+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.01; confidence 53.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insuffic
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `291a3079d2ac9f6159c85144fb930a69f872ad61a16c4505bc1b946ea2a78d6d`
-- snapshot_bundle_hash: `7b2235e5ffc98efddbdd19fdcac5d13e26776c62c1cf67c9f537b8b2316d0eec`
+- input_hash: `eaf9543e9b94dd1c50e50340b16e11e58a1e860b4501aa802ac553ee14d51335`
+- snapshot_bundle_hash: `5a0e72f9384e917920a17dc481ddf5320fd8cfaf084e27f7df508e92ce00cf9e`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- resources_commit: `c2d37d96622e9918a7eb9e4cc72da2044797ae72`
+- core_commit: `f9d5ecd7460ae53af3c6ca934038342ce5ca7df8`
 - score: `0.01`
 - confidence: `0.53`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-06-17T23:45:24.325845+00:00`
+- Published at: `2026-06-18T11:30:05.648104+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.38; confidence 87.3%.
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `425942a57fd8304613bf956fc843e0f85ddffed066f04938cfcf3ead7b02241c`
-- snapshot_bundle_hash: `aabfc722a1e2b26dbd8a34e72a15f039dd2f78a80edc9b3780792d0918f35c77`
+- input_hash: `e69d4b2a7ce1de7e55d65f83bfc61e2035fb178dd1e78663b49567bfb25fc019`
+- snapshot_bundle_hash: `f7927729854fa27239e3fbb7fc0081f34a845a1378387d4a1ebd262ab64038c5`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `9888051c6d5ec763affe3e12d9a462e2556e458a`
-- core_commit: `324fd5515339426fcc2cfb81eb0d7219679a8b88`
+- resources_commit: `c2d37d96622e9918a7eb9e4cc72da2044797ae72`
+- core_commit: `f9d5ecd7460ae53af3c6ca934038342ce5ca7df8`
 - score: `-0.3833`
 - confidence: `0.8733`
 

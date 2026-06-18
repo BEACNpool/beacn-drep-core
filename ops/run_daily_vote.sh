@@ -3,11 +3,11 @@
 # already generated rationales, recorded + published rationale anchors, refreshed
 # status.json, and pushed the web bundle.
 #
-# Policy (conservative, fail-closed):
-#   * Only ABSTAIN recommendations are auto-submitted, and only on actions this
-#     DRep has NOT yet voted (brand-new votes).
-#   * Directional (YES/NO) decisions AND any revision of an existing on-chain vote
-#     are HELD for operator review — never auto-broadcast.
+# Policy (fully agentic, fail-closed):
+#   * Auto-submits any votable recommendation (YES/NO/ABSTAIN) that passes all 8
+#     adapter gates, and revises an existing on-chain vote when the recommendation
+#     changes (latest agentic recommendation wins). No operator-review gate.
+#   * Narrow with BEACN_AUTO_DIRECTIONS (default "YES,NO,ABSTAIN").
 #   * The signing adapter independently enforces all 8 gates and fails closed.
 #
 # Disable by removing the call from run_drep_daily_with_signal.sh or setting

@@ -883,6 +883,11 @@ def _score_action(
         and not (risk_row and _yn(risk_row.get("risk_blocker")) is True)
     )
 
+    # Directional threshold magnitude used for the YES/NO decision. Emitted so the
+    # downstream vote-revision policy can measure how far a score sits from the
+    # boundary (hysteresis) when deciding whether to change an existing on-chain vote.
+    directional_threshold = 0.06 if treasury_doctrine_ready else 0.12
+
     if hard_blocker:
         rec = "ABSTAIN"
         unc.append("Hard blocker present in vote-readiness matrix.")
@@ -892,9 +897,9 @@ def _score_action(
     elif treasury_doctrine_ready and available is not None and available <= 0:
         rec = "NO"
         inf.append("Directional NO forced: rolling-window available treasury capacity is depleted.")
-    elif score >= (0.06 if treasury_doctrine_ready else 0.12):
+    elif score >= directional_threshold:
         rec = "YES"
-    elif score <= (-0.06 if treasury_doctrine_ready else -0.12):
+    elif score <= -directional_threshold:
         rec = "NO"
     elif clean_hardfork and score > -0.10:
         rec = "YES"
@@ -936,6 +941,7 @@ def _score_action(
         "agentic_high_impact_reason_code": high_impact_reason_code,
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
+        "directional_threshold": round(directional_threshold, 4),
         "confidence": round(confidence, 4),
         "facts": [*(facts or ["Deterministic rule set applied."]), *assessment_facts],
         "inferences": [*(inf or ["No additional inference."]), *assessment_inferences],
@@ -1106,6 +1112,7 @@ def run_once(action_id: str | None = None) -> dict:
         "operator_review_reason_code": score_obj.get("operator_review_reason_code"),
         "agentic_high_impact_reason_code": score_obj.get("agentic_high_impact_reason_code"),
         "score": score_obj["score"],
+        "directional_threshold": score_obj.get("directional_threshold", 0.12),
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),
         "facts": score_obj["facts"],
@@ -1269,6 +1276,7 @@ def run_once(action_id: str | None = None) -> dict:
         "action_id": action["action_id"],
         "recommendation": score_obj["recommendation"],
         "score": score_obj["score"],
+        "directional_threshold": score_obj.get("directional_threshold", 0.12),
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),
         "input_hash": input_hash,

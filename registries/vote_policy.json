@@ -1,0 +1,8 @@
+{
+  "_doc": "Deterministic vote-revision policy (anti-churn). Consumed by src/beacn_drep/vote_policy.py. min_persistence_* are counts of consecutive daily runs the engine recommendation must hold; hysteresis_margin is a score dead-band around the directional threshold; min_confidence_directional allows a confident fresh directional without full persistence.",
+  "min_persistence_revision": 2,
+  "min_persistence_directional_cast": 2,
+  "hysteresis_margin": 0.04,
+  "min_confidence_directional": 0.60,
+  "history_cap": 60
+}

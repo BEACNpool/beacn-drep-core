@@ -47,8 +47,8 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - input_hash: `98556079a89d29ddaa8d5fa7596654c83fa5011d20d7483dce22711fb0518121`
 - snapshot_bundle_hash: `e4795923daf511cdb5b1f7c52313f35d34ae63260055ec64919e5927bf49a598`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `c2d37d96622e9918a7eb9e4cc72da2044797ae72`
-- core_commit: `f9d5ecd7460ae53af3c6ca934038342ce5ca7df8`
+- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
+- core_commit: `81f2bcb3859ebb5933cc1c92164fe26dcbcf3ade`
 - score: `-0.2233`
 - confidence: `0.7433`
 

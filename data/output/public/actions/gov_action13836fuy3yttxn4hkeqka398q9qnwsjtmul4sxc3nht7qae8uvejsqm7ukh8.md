@@ -40,8 +40,8 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - input_hash: `47bbf7a9e0c41c439a062ca2887d6d70bd776b510d37a8c2821cc822093da3e0`
 - snapshot_bundle_hash: `51ea21687f6fb5769b6957afeb8233e98a3c60f858ce3dfa32e8ed60d79f045a`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `c2d37d96622e9918a7eb9e4cc72da2044797ae72`
-- core_commit: `f9d5ecd7460ae53af3c6ca934038342ce5ca7df8`
+- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
+- core_commit: `81f2bcb3859ebb5933cc1c92164fe26dcbcf3ade`
 - score: `0.08`
 - confidence: `0.63`
 

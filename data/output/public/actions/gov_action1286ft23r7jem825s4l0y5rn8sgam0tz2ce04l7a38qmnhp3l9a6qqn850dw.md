@@ -41,8 +41,8 @@ Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguar
 - input_hash: `fddd59b8a51a177aeab224555a36e36dbb723f6ee81f8e927b8431149f02409a`
 - snapshot_bundle_hash: `30299a21bb403efa4094b7243e2421c606313d529ffd03ac9fa7550efce88292`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `c2d37d96622e9918a7eb9e4cc72da2044797ae72`
-- core_commit: `f9d5ecd7460ae53af3c6ca934038342ce5ca7df8`
+- resources_commit: `0b45c7d22450772731be74fcd9eb8bbecfc931c1`
+- core_commit: `81f2bcb3859ebb5933cc1c92164fe26dcbcf3ade`
 - score: `-0.3833`
 - confidence: `0.9033`
 

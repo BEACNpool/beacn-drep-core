@@ -167,5 +167,32 @@ class EnginePolicyTests(unittest.TestCase):
         self.assertTrue(result["treasury_dossier_incomplete"])
 
 
+    def test_stale_treasury_flow_does_not_penalize(self) -> None:
+        # An out-of-date fee-flow snapshot must not apply the regime penalty.
+        from beacn_drep.engine import _treasury_flow_stale, _mainnet_epoch_now
+        stale, epoch, lag = _treasury_flow_stale({"current_epoch": 621})
+        self.assertTrue(stale)
+        self.assertGreater(lag, 6)
+        fresh, _, lag2 = _treasury_flow_stale({"current_epoch": _mainnet_epoch_now()})
+        self.assertFalse(fresh)
+        self.assertLessEqual(lag2, 6)
+
+        action = base_action("TreasuryWithdrawals")
+        action["treasury_amount_lovelace"] = "1000000000"
+        soft = {"dossier_gate": {"mode": "soft", "incomplete_penalty": -0.10}}
+        stale_flow = {"current_epoch": 621, "treasury_fee_inflow_6m_lovelace": "1",
+                      "treasury_withdrawals_6m_lovelace": "999999999999"}
+        result = _score_action(
+            action, [],
+            {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"},
+            [], True, {"sections": [], "overall_status": "ready", "blocking_questions": []},
+            None, None, None, {"dossier_complete": "no"}, stale_flow, soft,
+            {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
+                         "treasury_flow_unsustainable_penalty": -0.10, "flag_score_divisor": 30.0,
+                         "drep_margin_cap": 0.10}},
+        )
+        self.assertTrue(any("stale" in u.lower() for u in result["uncertainty"]))
+
+
 if __name__ == "__main__":
     unittest.main()

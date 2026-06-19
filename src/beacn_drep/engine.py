@@ -554,7 +554,10 @@ def _build_assessment(
         rt = (treasury_doctrine or {}).get("regime_thresholds", {})
         sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
         hard_no_ratio = _to_float(rt.get("unsustainable_hard_no_ratio")) or 2.0
-        if ratio is None:
+        tf_stale, _tf_epoch, _tf_lag = _treasury_flow_stale(treasury_flow)
+        if tf_stale:
+            regime = "unknown (stale snapshot)"
+        elif ratio is None:
             regime = "unknown"
         elif ratio <= sustainable_max:
             regime = "sustainable"
@@ -670,6 +673,34 @@ def _assessment_lines(assessment: dict) -> tuple[list[str], list[str], list[str]
         if status in ("blocked", "thin", "incomplete"):
             unc.append(f"{title} status is {status}.")
     return facts[:12], inf[:8], unc[:12]
+
+
+def _mainnet_epoch_now() -> int:
+    """Deterministic current mainnet epoch from wall-clock. Shelley epoch 208 began
+    2020-07-29T21:44:51Z; epochs are 432000s (5 days)."""
+    import time
+    return 208 + int((time.time() - 1596059091) // 432000)
+
+
+def _treasury_flow_stale(treasury_flow: dict | None) -> tuple[bool, int, int]:
+    """Is the treasury fee-flow snapshot too old to inform a live vote?
+
+    Returns (is_stale, snapshot_epoch, lag_epochs). Stale treasury data must NOT
+    silently penalize a treasury vote — that would be voting real money on an
+    out-of-date picture of the treasury. Threshold via BEACN_TREASURY_FLOW_MAX_LAG_EPOCHS
+    (default 6 epochs ~ 30 days)."""
+    try:
+        snap_epoch = int((treasury_flow or {}).get("current_epoch") or 0)
+    except Exception:
+        snap_epoch = 0
+    try:
+        max_lag = int(os.environ.get("BEACN_TREASURY_FLOW_MAX_LAG_EPOCHS", "6"))
+    except Exception:
+        max_lag = 6
+    if snap_epoch <= 0:
+        return True, snap_epoch, -1
+    lag = _mainnet_epoch_now() - snap_epoch
+    return (lag > max_lag), snap_epoch, lag
 
 
 def _treasury_gate_config(treasury_doctrine: dict | None) -> tuple[str, float]:
@@ -826,7 +857,14 @@ def _score_action(
 
         inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
         outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
-        if inflow > 0:
+        tf_stale, tf_epoch, tf_lag = _treasury_flow_stale(treasury_flow)
+        if tf_stale:
+            # Do not let an out-of-date treasury snapshot penalize or reward a live vote.
+            unc.append(
+                f"Treasury fee-flow snapshot is stale (epoch {tf_epoch}, ~{tf_lag} epochs behind); "
+                "regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics."
+            )
+        elif inflow > 0:
             ratio = outflow / inflow
             rt = (treasury_doctrine or {}).get("regime_thresholds", {})
             sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0

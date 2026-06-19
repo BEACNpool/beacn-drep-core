@@ -5,48 +5,40 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:4941b37990141bb9a16c3c35b7ae3240c29a66822b85aadbd12dce0562de9356",
+    "raw_input_hash": "sha256:a085d26808cebefca3cbe73cb5b6217794c69f290303cd411db94a1ae9180b28",
     "detected_at": "2026-05-29T21:00:01.953626+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
-    "published_at": "2026-06-18T20:14:57.948249+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-19T15:54:29.407158+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": 0.0,
-    "confidence": 0.2,
-    "input_hash": "4941b37990141bb9a16c3c35b7ae3240c29a66822b85aadbd12dce0562de9356",
-    "snapshot_bundle_hash": "8bf6ec60d6f169bea69bba9866bd163ed8801d2fdad81676e5b4733f66efdebd",
+    "vote": "NO",
+    "score": -0.6633,
+    "confidence": 1.0,
+    "input_hash": "a085d26808cebefca3cbe73cb5b6217794c69f290303cd411db94a1ae9180b28",
+    "snapshot_bundle_hash": "49a91d0758d565c5311802cfa744842d769df0537dd8c5ee6c73c3c5d0316997",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
-    "resources_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
-    "core_commit": "feb750f2eaf3c23326add704d66c9f8c0145001b",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-4941b3799014.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/9e4e1a64769c63684febeb44.md",
-    "rationale_anchor_hash": "9e4e1a64769c63684febeb44a417313e975404dabe2c97f6d2098a15d079ca45"
+    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-a085d26808ce.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/5d3ad58945e97cae53345b71.md",
+    "rationale_anchor_hash": "5d3ad58945e97cae53345b719830c288f47eb7645e4aa6be16bdf0058e022cd1"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
-    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.66; confidence 100.0%.",
+    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The deterministic assessment is blocked by missing budget, feasibility, alternatives, failure-mode, and community-impact analysis, and the extracted claims include a large treasury request, mutable sponsorship allocation, and a VIP revenue return that is asserted without enough quantified downside protection. Under the doctrine, public-benefit ecosystem growth does not outweigh treasury stewardship and evidence quality when spending justification is incomplete.",
     "top_fixes": [
-      "Provide: Deep research dossier is required for treasury actions before directional voting.",
-      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide: Missing dossier section: budget analysis"
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Add line-item budget with milestone-gated disbursement and objective completion checks.",
+      "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-4941b3799014.md",
-    "missing_evidence": [
-      "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Missing dossier section: budget analysis",
-      "Missing dossier section: feasibility assessment",
-      "Missing dossier section: alternatives analysis",
-      "Missing dossier section: failure-mode analysis",
-      "Missing dossier section: community impact analysis"
-    ],
+    "markdown_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-a085d26808ce.md",
+    "missing_evidence": [],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -77,23 +69,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: manifest",
             "Deep research dossier: required",
-            "Requested: Rare Network requests Cardano treasury funding for Cardano title sponsorship of Rare Evo 2026 main stage and global livestream and Cardano Dev Gov Day 2026.",
+            "Requested: Cardano title sponsorship for Rare Evo 2026 main stage and global livestream plus title sponsorship/support for Rare Dev Gov Day 2026.",
             "Recipient: Rare Network",
             "Stated amount: 2750000",
-            "Deliverables: Cardano title sponsorship of Rare Evo 2026 main stage and livestream, Cardano Dev Gov Day 2026 sponsorship, free General Admission access for the Cardano community, complimentary booth space for selected Cardano ecosystem startup projects, five Cardano-focused main stage panelist positions, breakout room and workshop space, livestream Cardano ads and distribution, tier-1 media coverage for Cardano announcements, travel and lodging support for 20 Cardano ecosystem contributors or volunteers, 10 ARIA hotel room giveaways, 50 VIP conference pass giveaways, 20% of all VIP ticket sales returned to the Cardano Treasury, Dev Gov Day 2027 venue deposit and legal, admin, audit, fee, slippage, processing, and tax withholding allocations",
-            "Deadline/expiry: Events stated as July 28-31, 2026 in Las Vegas, with Dev Gov Day on July 28, 2026 at ARIA Las Vegas.",
-            "Claim (economic, supported_in_proposal, high materiality): Rare Network states that the requested \u20b32,750,000 is based on a $0.24 ADA valuation for a $660,000 budget covering two Cardano sponsorship packages.",
-            "Claim (economic, proposer_asserted, high materiality): The proposal says Rare Network will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP retail value stated as $900 per ticket.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal provides a cost breakdown allocating \u20b31,166,666.67 to Cardano Dev Gov Day 2026, \u20b3833,333.33 to Rare Evo 2026 title sponsorship, and \u20b3750,000 to Intersect, audit, fees, tax withholdings, and a Dev Gov Day 2027 deposit.",
-            "Claim (adoption, proposer_asserted, high materiality): Rare Network states that Rare Evo 2026 will occur regardless of treasury funding, but treasury funding would expand Cardano presence, accessibility, participation, and industry outreach.",
-            "Claim (adoption, supported_in_proposal, high materiality): The proposal asserts Rare Evo 2025 had 2,500 attendees, 80 exhibitor booths, 85 speakers, 100+ ecosystem partners, 20K+ livestream views, 4M social media impressions, 40+ Cardano projects represented, and 50+ enterprise participants.",
-            "Claim (adoption, supported_in_proposal, medium materiality): The proposal states the first Cardano Dev Gov Day in 2025 was free and publicly accessible, welcomed approximately 500 attendees, and included a Charles Hoskinson keynote, governance discussions, technical education, workshops, and community-building activities."
+            "Deliverables: Cardano title sponsorship of Rare Evo 2026 main stage and livestream, Support for Cardano Dev Gov Day 2026 on July 28, 2026 at ARIA Las Vegas, Free General Admission access for the Cardano community, Complimentary booth space for selected Cardano ecosystem startup projects, Five Cardano main stage panelist positions, Breakout room and workshop space, Travel and lodging support for 20 Cardano community members, Livestream Cardano ads and media coverage, Return of 20% of all VIP ticket sales to the Cardano Treasury",
+            "Deadline/expiry: Rare Dev Gov Day on July 28, 2026 and Rare Evo 2026 on July 28-31, 2026",
+            "Claim (economic, supported_in_proposal, high materiality): Rare Network requests \u20b32,750,000, described as $660,000 at a $0.24 ADA valuation, to fund two Cardano sponsorship packages.",
+            "Claim (economic, supported_in_proposal, high materiality): The requested budget is broken into \u20b31,166,666.67 for Cardano Dev Gov Day 2026, \u20b3833,333.33 for Rare Evo 2026 Cardano title sponsorship, and \u20b3750,000 for Intersect, audit, fees, tax withholdings, and a Dev Gov Day 2027 deposit.",
+            "Claim (economic, proposer_asserted, high materiality): Rare Network says it will return 20% of all VIP ticket sales to the Cardano Treasury, with the current retail value of a VIP ticket stated as $900.",
+            "Claim (adoption, proposer_asserted, high materiality): Rare Evo 2026 will occur regardless of treasury funding, but the proposal says treasury funding would expand Cardano presence, accessibility, participation, and strategic industry outreach.",
+            "Claim (adoption, proposer_asserted, medium materiality): Rare Network claims it has been active in the Cardano ecosystem since 2020 and has operated Rare Evo annually for five consecutive years.",
+            "Claim (adoption, supported_in_proposal, high materiality): The proposal reports Rare Evo 2025 metrics including 2,500 attendees, 80 exhibitor booths, 85 speakers, 100+ ecosystem partners, 20K+ livestream views, 4M social media impressions, and 40+ Cardano projects represented."
           ],
           "missing": [
-            "Independent evidence for: The proposal says Rare Network will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP retail value stated as $900 per ticket.",
-            "Independent evidence for: Rare Network states that Rare Evo 2026 will occur regardless of treasury funding, but treasury funding would expand Cardano presence, accessibility, participation, and industry outreach.",
-            "Independent evidence for: The proposal says sponsorship allocation may change if another sponsor purchases the mainstage or livestream package before the vote passes, in which case Cardano would receive a sponsorship of equal impact or dollar value.",
-            "Independent evidence for: The proposal claims alignment with governance, community and ecosystem growth, and ecosystem sustainability pillars by increasing governance participation, onboarding, education, industry engagement, and use of existing event infrastructure.",
+            "Independent evidence for: Rare Network says it will return 20% of all VIP ticket sales to the Cardano Treasury, with the current retail value of a VIP ticket stated as $900.",
+            "Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says treasury funding would expand Cardano presence, accessibility, participation, and strategic industry outreach.",
+            "Independent evidence for: Rare Network claims it has been active in the Cardano ecosystem since 2020 and has operated Rare Evo annually for five consecutive years.",
+            "Independent evidence for: The proposal states sponsorship allocations may change if another sponsor purchases the mainstage or livestream package before approval, with Cardano receiving sponsorship of equal impact or dollar value instead.",
             "budget analysis",
             "feasibility assessment",
             "alternatives analysis",
@@ -148,8 +140,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Rare Network states that the requested \u20b32,750,000 is based on a $0.24 ADA valuation for a $660,000 budget covering two Cardano sponsorship packages.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Rare Network will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP retail value stated as $900 per ticket.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"Rare Network requests \u20b32,750,000, described as $660,000 at a $0.24 ADA valuation, to fund two Cardano sponsorship packages.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Rare Network says it will return 20% of all VIP ticket sales to the Cardano Treasury, with the current retail value of a VIP ticket stated as $900.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -180,7 +172,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-4941b3799014.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey-a085d26808ce.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -191,7 +183,7 @@
     "anchor_hash": "0b26f47137d669af9776bf74076388d1952f8a0451bad655653b4e42dbf50c3e",
     "file_sha256": "a180f870acae46b8258b06e2b31e3b4d454cf8cc09f9d1ca406d4c6a3cee322c",
     "content_bytes": "39615",
-    "fetched_at_utc": "2026-06-18T20:15:30Z",
+    "fetched_at_utc": "2026-06-19T15:55:01Z",
     "download_path": "/proposals/gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation"
   },
@@ -199,8 +191,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
-    "core_commit": "feb750f2eaf3c23326add704d66c9f8c0145001b",
+    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -273,16 +265,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.6633,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.2
+    "governance_alignment": 1.0
   },
   "freshness": {
-    "snapshot_age_seconds": 340,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-18T20:15:30.092155Z",
+    "snapshot_time": "2026-06-19T15:55:00.981326Z",
     "freshness_source": "manifest"
   }
 }

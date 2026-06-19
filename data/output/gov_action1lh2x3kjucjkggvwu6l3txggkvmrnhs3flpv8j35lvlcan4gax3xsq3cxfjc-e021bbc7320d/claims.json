@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "none",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Upgrade Cardano mainnet protocol to major version 11 and minor version 0 while remaining in the Conway era.",
+      "Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153 available.",
+      "Make all Plutus built-in functions available consistently across Plutus V1, V2, and V3.",
+      "Add UPLC case expressions for Bool, Integer, and Data.",
+      "Promote or tighten ledger predicates including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restriction, withdrawals validation, and PPView mismatch reporting."
+    ],
+    "recipient": "not stated in document",
+    "what": "Initiate an intra-era hard fork of Cardano Mainnet to Protocol Version 11.0, called the van Rossem hard fork."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to 11.0 without an era transition.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "At least 85% of stake pools by active stake should have upgraded to a node version capable of supporting protocol version 11 before ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The upgrade introduces new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "All Plutus built-in functions, including newly introduced ones, will become available across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Performance results for Cardano Node 11.0.1 show no regressions on standard value, Plutus, and voting benchmarks and acceptable baseline performance for new Plutus primitives and case expressions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it is consistent with all eight listed hard fork guardrails, while noting that HARDFORK-04 stake pool readiness must still be determined before ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Reversion is only possible in extreme circumstances through the CIP-0135 disaster recovery process, though companion cost model settings could be changed to disable problematic Plutus primitives.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes a no-treasury intra-era hard fork to protocol version 11.0 focused on Plutus capability and performance, ledger rule consistency, node diagnostics, and security-related validation changes, with external references to CIPs and a performance report but limited in-document detail on audits, testing reports, risk register, and current SPO readiness.",
+  "output_sha256": "e3d856feac105e40370fa7c954e35729ca2028a8cc65a3d039177651a041e864"
+}

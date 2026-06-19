@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.25; confidence 77.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `227bc7446a88890e75814f0ea4e7cdb2908258fd511ca8599b0c26a9711b9c31`
-- snapshot_bundle_hash: `0ae29c8735cb8790c054f1cdc29569697e5cf4881dc3a022bb720ef04e8c97ff`
+- input_hash: `caa8a73d20e55523ea06b4bfbd465af4c29183624912f7a11872899f16c6614e`
+- snapshot_bundle_hash: `fa449a3c87ea918246f7ec1434fef45a5410f870a0e2a6ad5bd6767f630e520a`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
 - score: `-0.2533`
 - confidence: `0.7733`
 

@@ -1,0 +1,286 @@
+{
+  "action_id": "gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "99a196cc9cc7bb22649985061290d64a0204b32c507d3cbafa48bc6bcf8ca348",
+  "directional_threshold": 0.12,
+  "confidence": 0.2,
+  "readiness_score": null,
+  "facts": [
+    "Treasury actions are high-impact and require a completed deep research dossier.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 10000000",
+    "Risk review: Execution risk: high",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Directional voting is blocked until dossier quality gates pass.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: Independent evidence for: The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate and deployed a same-day critical patch with zero downtime.",
+    "Claims and evidence missing: Independent evidence for: The Cardano components are described as already implemented and operational, including smart contract architecture and on-chain integration by AIQuant and Anastasia Labs, DigiFarm satellite imagery, Veridian DID stack, Andamio credentials, and NMKR tokenisation.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis missing: missing feasibility assessment",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "Deep research dossier is required for treasury actions before directional voting.",
+    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+    "Missing dossier section: budget analysis",
+    "Missing dossier section: feasibility assessment",
+    "Missing dossier section: alternatives analysis",
+    "Missing dossier section: failure-mode analysis",
+    "Missing dossier section: community impact analysis"
+  ],
+  "input_hash": "29ba26a38da7f86e898012eaf2f18e1db02fac3d17e4a5940f4f48f271ff1c6b",
+  "snapshot_bundle_hash": "8658236741ff9ed10b9d41a5c603c08b01dbeda4ccbecf6531e1a0139e764ef5",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 268,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-19T11:30:33.896349Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.315,
+    "NO": 0.315,
+    "ABSTAIN": 0.37
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 632",
+          "Expires after epoch: 639",
+          "Treasury request: 10.00M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: 5am.earth Foundation requests treasury funding to build an open, Cardano-anchored trust layer for global agricultural supply chains using Veridian self-sovereign identity and a Cardano on-chain satellite oracle.",
+          "Recipient: 5am.earth Foundation, administered by Intersect through the Treasury Reserve Smart Contract / Project-Specific Smart Contract framework",
+          "Stated amount: 10000000",
+          "Deliverables: 18-month programme across India, Cambodia, and Kenya, M1 Month 6: Foundation operational, 200,000 cumulative farmers registered on Mainnet, AE credentialing live, trust-layer architecture locked, auditor procurement concluded, legal contract transfer prepared, M2 Month 12: 350,000 farmers across India, Cambodia, and Kenya, three application paths operating against verified trust-layer records, first independent audit, M3 Month 18: 500,000 cumulative verified farmers, three application paths operating, finance activity on Cardano, AE network credentialed, Foundation revenue model active, final independent audit, Three funded application paths: AE certification with Andamio, traceability and compliance with Zengate Global, and finance and credit with Seedstars SIGMA",
+          "Deadline/expiry: 18 months from approval, with milestones at Month 6, Month 12, and Month 18",
+          "Claim (adoption, independently_verifiable, high materiality): Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026.",
+          "Claim (technical, proposer_asserted, medium materiality): The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate and deployed a same-day critical patch with zero downtime.",
+          "Claim (technical, supported_in_proposal, high materiality): The trust layer will combine farmer and AE identity, verified land and crop records, satellite observations, credentials, application events, APIs, selective disclosure, and Cardano anchoring into a reusable agricultural record layer.",
+          "Claim (technical, proposer_asserted, high materiality): The Cardano components are described as already implemented and operational, including smart contract architecture and on-chain integration by AIQuant and Anastasia Labs, DigiFarm satellite imagery, Veridian DID stack, Andamio credentials, and NMKR tokenisation.",
+          "Claim (adoption, supported_in_proposal, high materiality): The proposal commits to 500,000 registered farmers, 2 million on-chain transactions, and $2 million in lending disbursed via Cardano stablecoin rails by M3.",
+          "Claim (economic, proposer_asserted, high materiality): The proposer projects that by 2030 the programme will reach 3 million farmers, 112.5 million annual on-chain transactions, $900 million TVL, and 16-20 million ADA in annual protocol revenue."
+        ],
+        "missing": [
+          "Independent evidence for: The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate and deployed a same-day critical patch with zero downtime.",
+          "Independent evidence for: The Cardano components are described as already implemented and operational, including smart contract architecture and on-chain integration by AIQuant and Anastasia Labs, DigiFarm satellite imagery, Veridian DID stack, Andamio credentials, and NMKR tokenisation.",
+          "Independent evidence for: The proposer projects that by 2030 the programme will reach 3 million farmers, 112.5 million annual on-chain transactions, $900 million TVL, and 16-20 million ADA in annual protocol revenue.",
+          "Independent evidence for: The Foundation is projected to be self-sustaining by 2028 through commercial revenue and institutional backing without returning to the Treasury for operating costs.",
+          "budget analysis",
+          "feasibility assessment",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 10000000",
+          "Budget granularity: unknown",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: not confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: not confirmed",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: 0.40"
+        ],
+        "missing": [
+          "line-item budget",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: high",
+          "Governance risk: low",
+          "Technical risk: medium",
+          "Treasury exposure risk: medium",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: not confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate and deployed a same-day critical patch with zero downtime.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The 5am.earth Foundation requests up to 10 million ADA, hard-capped, to build a Cardano-anchored trust layer for agricultural supply chains, combining self-sovereign identity for farmers with an on-chain satellite oracle. The proposal is notably well-structured for a venture of this kind: it is milestone-based (Stand-Up at month six, Closed Loop at month twelve, Self-Sustaining at month eighteen) and hard-capped, both of which are positive treasury-control signals. The headline reach figure of 500,000 farmers across India, Cambodia and Kenya, and the claim that the system becomes self-sustaining, are ambitious and currently asserted; the broader problem it targets is real and checkable. The decisive questions for a vote are execution risk in three developing-market geographies and whether disbursement is genuinely gated on the named milestones. BEACN needs fresh data and a completed dossier to weigh those, so it is holding today.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmbLLQDmduuWJNESHtWXqFCKXTL6g8PvchzmMx7QavkeYS",
+        "file_sha256": "bc056f40c2eb8885ccb6128d05bf3f5e2c67901ae4aebb9d9ecb0ce26336c204",
+        "file_path": "data/input/governance/anchors/gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux-20260615T152520Z.bin",
+        "content_chars": 30891
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "42c41eba767bc10a15d72f8ad54af24c7aa524919fccc333bdb94dc92d247b49"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "99a196cc9cc7bb22649985061290d64a0204b32c507d3cbafa48bc6bcf8ca348"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "11ca09f93aee6db6e4ae3c240496615c6aee47abadca2457aee7a6a2ba9399cc"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "22157f59b777caf9709e0224013e0f52e2cb03b365a553cfa94fffc6b34e77e6"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ed0da80ab583d945d1695007.md",
+  "rationale_anchor_hash": "ed0da80ab583d945d16950072ad0f168b368edf7a7ac6efc3400f5fba00fdc27"
+}

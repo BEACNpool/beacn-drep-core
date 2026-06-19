@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `HardForkInitiation`
 - Status: `enacted`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this HardForkInitiation (enacted), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions are high-impact protocol upgrades and require operator-aware review. Confidence context: score -0.03; confidence 58.0%.
@@ -35,11 +35,11 @@ Vote: YES. For this HardForkInitiation (enacted), available evidence supports pr
 - Publish rollback/contingency plan and incident response playbook.
 
 ## Proof of vote
-- input_hash: `fdaf9443957d55b596ab01c5bb190fbdbdb781001d7c6b7de6f4afc8bfc86903`
-- snapshot_bundle_hash: `d9243b29610c8d2839e95fd39d8f46ff4be2193032bfb21f93ce5a4f7539bc06`
+- input_hash: `9272d135f3c1839113a94a90c9247600c8808098998f4eec961ff72b324cd5ff`
+- snapshot_bundle_hash: `cc336c94e831d27c4d617f67bfc0b21fe0d7af6ee0d3dbc224e19c20f842db07`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
 - score: `-0.03`
 - confidence: `0.58`
 

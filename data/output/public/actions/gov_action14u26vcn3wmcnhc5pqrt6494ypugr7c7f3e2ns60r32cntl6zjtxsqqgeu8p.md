@@ -1,13 +1,13 @@
 # gov_action14u26vcn3wmcnhc5pqrt6494ypugr7c7f3e2ns60r32cntl6zjtxsqqgeu8p
 
 ## Vote
-- Decision: **NEEDS_MORE_INFO**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.46; confidence 95.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,7 +19,9 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (7), reducing confidence.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 39.79M ADA
@@ -28,7 +30,8 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence missing: budget analysis
 - Treasury analysis missing: line-item budget
@@ -42,16 +45,16 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide: Deep research dossier is required for treasury actions before directional voting.
-- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
-- Provide: Missing dossier section: complete proposal summary
+- Use stable, reproducible anchor links (commit-pinned when possible).
+- Add line-item budget with milestone-gated disbursement and objective completion checks.
+- Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `bb2aac6ee9804665a9746da7d627c1ea315297336692cd53f1c6377c07ef3372`
-- snapshot_bundle_hash: `f008e15e573c4876ed51692af0f6a069458fe29b9e98f739a3843abc82941d08`
+- input_hash: `2bfa9c97f5764c792d31b7905f8920741f31f57e49f3dfe5fa484a4b1f3a8348`
+- snapshot_bundle_hash: `2fc99c8572aed304f051f5cd3e735198ba2b47846db603addc30f0ee53ecbb8f`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
-- score: `0.0`
-- confidence: `0.2`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
+- score: `-0.4633`
+- confidence: `0.9533`
 

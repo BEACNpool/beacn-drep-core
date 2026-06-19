@@ -139,12 +139,32 @@ class EnginePolicyTests(unittest.TestCase):
         self.assertEqual(result["abstain_reason_code"], "RISK_HIGH")
 
     def test_treasury_without_deep_dossier_needs_more_info(self) -> None:
+        # Default (empty doctrine) -> code default is the strict HARD gate.
         action = base_action("TreasuryWithdrawals")
         action["treasury_amount_lovelace"] = "1000000000"
         result = score_for(action, deep_row={"dossier_complete": "no"})
 
         self.assertEqual(result["recommendation"], "NEEDS_MORE_INFO")
         self.assertEqual(result["needs_more_info_reason_code"], "DEEP_RESEARCH_REQUIRED")
+
+    def test_treasury_soft_gate_votes_directionally_not_nmi(self) -> None:
+        # Soul doctrine sets dossier_gate.mode=soft -> judge directionally with a
+        # caution penalty instead of holding at NEEDS_MORE_INFO.
+        action = base_action("TreasuryWithdrawals")
+        action["treasury_amount_lovelace"] = "1000000000"
+        soft = {"dossier_gate": {"mode": "soft", "incomplete_penalty": -0.10}}
+        result = _score_action(
+            action, [],
+            {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"},
+            [], True, {"sections": [], "overall_status": "ready", "blocking_questions": []},
+            None, None, None, {"dossier_complete": "no"}, {}, soft,
+            {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
+                         "flag_score_divisor": 30.0, "drep_margin_cap": 0.10}},
+        )
+        self.assertNotEqual(result["recommendation"], "NEEDS_MORE_INFO")
+        self.assertIn(result["recommendation"], ("NO", "ABSTAIN", "YES"))
+        self.assertEqual(result["treasury_gate_mode"], "soft")
+        self.assertTrue(result["treasury_dossier_incomplete"])
 
 
 if __name__ == "__main__":

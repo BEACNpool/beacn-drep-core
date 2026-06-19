@@ -1,13 +1,13 @@
 # gov_action1ttgs45ulfxs0jwkfrecystc3flduhszmyzk8wnd7yw5za77tsg9qq4afmus
 
 ## Vote
-- Decision: **NEEDS_MORE_INFO**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.43; confidence 92.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,7 +19,9 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical informat
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (7), reducing confidence.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 32.92M ADA
@@ -28,7 +30,8 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical informat
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
 - Claims and evidence missing: Independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.
 - Claims and evidence status is thin.
@@ -43,16 +46,16 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical informat
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide: Deep research dossier is required for treasury actions before directional voting.
-- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
-- Provide: Missing dossier section: complete proposal summary
+- Use stable, reproducible anchor links (commit-pinned when possible).
+- Add line-item budget with milestone-gated disbursement and objective completion checks.
+- Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `20460d9e2892699c06fffc1b9da01a97aab87190901717b026e18fe52a639f87`
-- snapshot_bundle_hash: `454cd2fe5cfd934c1dbf714f7aed693bb364e49719aebe6859f5d1b01e9ba86c`
+- input_hash: `ec1128c8a09c8c2f5772b898d5338dd8c8f5401680815f79a1bd0c3cc704d120`
+- snapshot_bundle_hash: `286783b76096dae8a04ef82ba6f54875de0513efd09b443f853e03c111fc09e3`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
-- score: `0.0`
-- confidence: `0.2`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
+- score: `-0.4333`
+- confidence: `0.9233`
 

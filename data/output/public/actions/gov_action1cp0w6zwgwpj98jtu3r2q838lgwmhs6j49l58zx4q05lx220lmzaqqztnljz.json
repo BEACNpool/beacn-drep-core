@@ -2,51 +2,43 @@
   "action_id": "gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz",
   "title": "Cardano Critical Integrations V2",
   "type": "TreasuryWithdrawals",
-  "status": "active",
+  "status": "ratified",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:f26bd48ccd4443817fb0ac5fbeed5fac03df5adab26c82abff17e2bb06d1f787",
+    "raw_input_hash": "sha256:3daa51cf2960465ab32a641b8fc000b17a7614a3859d8c0e6368bb83daaab242",
     "detected_at": "2026-05-20T21:00:01.412104+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
-    "published_at": "2026-06-18T20:14:57.948249+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-19T15:54:29.407158+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": 0.0,
-    "confidence": 0.2,
-    "input_hash": "f26bd48ccd4443817fb0ac5fbeed5fac03df5adab26c82abff17e2bb06d1f787",
-    "snapshot_bundle_hash": "ea1647c1c25ae927e8d043eaa3d97ef4cd1703365289c3de6dfdbaf9dd0e5c98",
+    "vote": "NO",
+    "score": -0.3633,
+    "confidence": 0.8833,
+    "input_hash": "3daa51cf2960465ab32a641b8fc000b17a7614a3859d8c0e6368bb83daaab242",
+    "snapshot_bundle_hash": "1bca6fe913cbb28d8b975a83ecb763dec886ca80374903df48400ba0244218f8",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
-    "resources_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
-    "core_commit": "feb750f2eaf3c23326add704d66c9f8c0145001b",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-f26bd48ccd44.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1bf3e3068cc7ba7c410368e2.md",
-    "rationale_anchor_hash": "1bf3e3068cc7ba7c410368e21a59acd71403da739ec22082b3a92599b8e29079"
+    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-3daa51cf2960.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
-    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (ratified), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.36; confidence 88.3%.",
+    "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide: Deep research dossier is required for treasury actions before directional voting.",
-      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide: Missing dossier section: budget analysis"
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Add line-item budget with milestone-gated disbursement and objective completion checks.",
+      "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-f26bd48ccd44.md",
-    "missing_evidence": [
-      "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Missing dossier section: budget analysis",
-      "Missing dossier section: feasibility assessment",
-      "Missing dossier section: alternatives analysis",
-      "Missing dossier section: failure-mode analysis",
-      "Missing dossier section: community impact analysis"
-    ],
+    "markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-3daa51cf2960.md",
+    "missing_evidence": [],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -60,7 +52,7 @@
           "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
-            "Status: active",
+            "Status: ratified",
             "Proposed epoch: 632",
             "Expires after epoch: 639",
             "Treasury request: 23.00M ADA",
@@ -179,7 +171,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-f26bd48ccd44.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-3daa51cf2960.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -190,7 +182,7 @@
     "anchor_hash": "83eef9359829e69e233a165f98d263ee7bb0ce7b7ff3fb6132698d46da4c0bf0",
     "file_sha256": "1b5580be7421f22a9be60e3dbd8ad94445d0c0ada510a51407236e36c287c5c7",
     "content_bytes": "28398",
-    "fetched_at_utc": "2026-06-18T20:15:30Z",
+    "fetched_at_utc": "2026-06-19T15:55:01Z",
     "download_path": "/proposals/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -198,8 +190,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
-    "core_commit": "feb750f2eaf3c23326add704d66c9f8c0145001b",
+    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -272,16 +264,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.3633,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.2
+    "governance_alignment": 0.8833
   },
   "freshness": {
-    "snapshot_age_seconds": 340,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-18T20:15:30.092155Z",
+    "snapshot_time": "2026-06-19T15:55:00.981326Z",
     "freshness_source": "manifest"
   }
 }

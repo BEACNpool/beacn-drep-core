@@ -1,13 +1,13 @@
 # gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry
 
 ## Vote
-- Decision: **NEEDS_MORE_INFO**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.48; confidence 97.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,18 +19,21 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (7), reducing confidence.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 5100781
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "Hydra is claimed to provide sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement guarantees." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳5,100,781 and says the work will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.
-- Claims and evidence missing: Independent evidence for: The proposal says Hydra has powered or is being used by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.
+- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Claims and evidence missing: Independent evidence for: Hydra is the only production-grade or production-ready Layer 2 scaling solution on Cardano.
+- Claims and evidence missing: Independent evidence for: Hydra is already running or has powered workloads for Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -42,16 +45,16 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide: Deep research dossier is required for treasury actions before directional voting.
-- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
-- Provide: Missing dossier section: budget analysis
+- Use stable, reproducible anchor links (commit-pinned when possible).
+- Add line-item budget with milestone-gated disbursement and objective completion checks.
+- Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `c0c81c925ef9369b7207617156dc31c4cf27e68cbc3a82b909cd2c6ce300b98d`
-- snapshot_bundle_hash: `9ad561ca9a35133fc080310314bf02c3349eb2bf17671f2bf59f17cc4cc87d74`
+- input_hash: `b775d90ca558ad1e7bcd4fb8f1a1f6021869fc42481b726c28e4171cec9ba1e6`
+- snapshot_bundle_hash: `753302443307a48aed9665104c9dbd1568fb4bc5dbd913205123fd925a2025d1`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
-- score: `0.0`
-- confidence: `0.2`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
+- score: `-0.4833`
+- confidence: `0.9733`
 

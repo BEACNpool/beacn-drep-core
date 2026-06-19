@@ -5,50 +5,40 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:4b9144258792b67831dd10811a5d34394998a767f498f3f0097959d243f72931",
+    "raw_input_hash": "sha256:6d42619e90ab1a39bf098bd6d770f6daa2be9bfe73bef417cbe5a627fb51c743",
     "detected_at": "2026-06-16T11:30:04.531219+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
-    "published_at": "2026-06-18T20:14:57.948249+00:00",
+    "vote": "NO",
+    "published_at": "2026-06-19T15:54:29.407158+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": 0.0,
-    "confidence": 0.2,
-    "input_hash": "4b9144258792b67831dd10811a5d34394998a767f498f3f0097959d243f72931",
-    "snapshot_bundle_hash": "ee40841448b2b8d94e2f46a2e4bdc89ded2115dfb21144ca10b66b5f244780c0",
+    "vote": "NO",
+    "score": -0.5133,
+    "confidence": 1.0,
+    "input_hash": "6d42619e90ab1a39bf098bd6d770f6daa2be9bfe73bef417cbe5a627fb51c743",
+    "snapshot_bundle_hash": "e496780f5d171d3d9368de131cf3a0056bc2e52f17ed333fe8bd5cb9319a775f",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
-    "resources_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
-    "core_commit": "feb750f2eaf3c23326add704d66c9f8c0145001b",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-4b9144258792.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/071472d494882d5adc3fc9ac.md",
-    "rationale_anchor_hash": "071472d494882d5adc3fc9ac28f915479f0d092a50cdf786dee4233a26e3b1fb"
+    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-6d42619e90ab.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/311b4171f2781e2d7ef96cde.md",
+    "rationale_anchor_hash": "311b4171f2781e2d7ef96cde472fed0078f3e4683fcacbe7ae8ed8b735bdbf7d"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.",
-    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.51; confidence 100.0%.",
+    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The deterministic assessment is already blocked for missing budget, feasibility, risk, alternatives, and failure-mode analysis. A small negative nudge is justified because the proposal asks for a large treasury withdrawal while key cost, adoption, repayment, and execution assumptions are mostly proposer-asserted, and the proposal is not milestone-based.",
     "top_fixes": [
-      "Provide: Deep research dossier is required for treasury actions before directional voting.",
-      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide: Missing dossier section: complete proposal summary"
+      "Use stable, reproducible anchor links (commit-pinned when possible).",
+      "Add line-item budget with milestone-gated disbursement and objective completion checks.",
+      "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-4b9144258792.md",
-    "missing_evidence": [
-      "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Missing dossier section: complete proposal summary",
-      "Missing dossier section: budget analysis",
-      "Missing dossier section: feasibility assessment",
-      "Missing dossier section: risk analysis",
-      "Missing dossier section: alternatives analysis",
-      "Missing dossier section: failure-mode analysis",
-      "Missing dossier section: community impact analysis"
-    ],
+    "markdown_path": "/data/output/public/rationales/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-6d42619e90ab.md",
+    "missing_evidence": [],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -79,23 +69,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: manifest",
             "Deep research dossier: required",
-            "Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, improvements, infrastructure, support, administration, and audit/oversight activities.",
-            "Recipient: Tastenkunst GmbH, Eternl",
+            "Requested: Treasury withdrawal for 12 months of Eternl operations, maintenance, and improvements from August 2026 to July 2027.",
+            "Recipient: Tastenkunst GmbH / Eternl",
             "Stated amount: 2350000",
-            "Deliverables: Frontend maintenance and cross-platform development, Backend infrastructure and operations, User support, Day-to-day administration and operations, Periodic independent audits of treasury fund use and oversight metrics, Development of Eternl Core, Eternl Hub, hardware wallet support, wallet data export, and governance tooling",
-            "Deadline/expiry: Delivery period August 2026 to July 2027",
-            "Claim (economic, supported_in_proposal, high materiality): Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 of annual operating costs for 12 months.",
-            "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
-            "Claim (economic, proposer_asserted, high materiality): The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
-            "Claim (adoption, proposer_asserted, high materiality): Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs, and about 5,500 Pro users would fully cover the annual $420,000 cost.",
-            "Claim (economic, supported_in_proposal, high materiality): After withdrawal, the proposer says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
-            "Claim (governance, supported_in_proposal, medium materiality): Independent audits by an unaffiliated party are planned for February 2027 and August 2027 to review custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments."
+            "Deliverables: Frontend maintenance and cross-platform development, Backend infrastructure and operations, User support, Day-to-day administration and operations, Periodic independent audits of treasury fund use and oversight metrics, Governance tooling enhancements, Eternl Core rewrite, Eternl Hub, enhanced hardware wallet support, and enhanced wallet data export",
+            "Deadline/expiry: July 2027",
+            "Claim (economic, supported_in_proposal, high materiality): Eternl requests \u20b32,350,000, valued at about $420,000 using an exchange rate of $0.1787 per Ada, to fund a 12-month operating period.",
+            "Claim (economic, supported_in_proposal, high materiality): The budget allocates 55% to frontend, 25% to backend, 5% to support, 13% to admin, and 2% to audits.",
+            "Claim (economic, proposer_asserted, high materiality): Eternl says its annual cost is about $420,000 and that the proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+            "Claim (economic, proposer_asserted, high materiality): Eternl plans to convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
+            "Claim (governance, proposer_asserted, high materiality): Eternl says independent audits of treasury fund use will be performed by an unaffiliated party in February 2027 and August 2027, covering custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments.",
+            "Claim (economic, proposer_asserted, high materiality): Eternl says it will assess repayment every December and June and use surplus remaining treasury stablecoins plus paid plan income above $420,000 to repay the treasury until $420,000 in Ada-equivalent value has been repaid."
           ],
           "missing": [
-            "Independent evidence for: The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
-            "Independent evidence for: Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs, and about 5,500 Pro users would fully cover the annual $420,000 cost.",
-            "Independent evidence for: Eternl states that 10-18% of Cardano mainnet transactions are conducted via Eternl.",
-            "Independent evidence for: If treasury funds are not received and paid licenses are insufficient beyond August, the proposer says it may let developers go, scale down to essential maintenance, focus outside Cardano, or remove the free option.",
+            "Independent evidence for: Eternl says its annual cost is about $420,000 and that the proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+            "Independent evidence for: Eternl plans to convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
+            "Independent evidence for: Eternl says independent audits of treasury fund use will be performed by an unaffiliated party in February 2027 and August 2027, covering custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments.",
+            "Independent evidence for: Eternl says it will assess repayment every December and June and use surplus remaining treasury stablecoins plus paid plan income above $420,000 to repay the treasury until $420,000 in Ada-equivalent value has been repaid.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -152,8 +142,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 of annual operating costs for 12 months.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $420,000 using an exchange rate of $0.1787 per Ada, to fund a 12-month operating period.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Eternl says its annual cost is about $420,000 and that the proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -188,7 +178,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-4b9144258792.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-6d42619e90ab.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -199,7 +189,7 @@
     "anchor_hash": "8021a950826f251399495e5d370c4998723dd7dca2457b06c15ef218ba93df6a",
     "file_sha256": "2f053756779e2cf3bf4665d04d7294c6862393d40dbcf288bce84a41084b2090",
     "content_bytes": "20050",
-    "fetched_at_utc": "2026-06-18T20:15:30Z",
+    "fetched_at_utc": "2026-06-19T15:55:01Z",
     "download_path": "/proposals/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
@@ -207,8 +197,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "693efb97d136543a3565ea51fab80f1cada41b23",
-    "core_commit": "feb750f2eaf3c23326add704d66c9f8c0145001b",
+    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -281,16 +271,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
+    "budget_pressure": 0.5133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.2
+    "governance_alignment": 1.0
   },
   "freshness": {
-    "snapshot_age_seconds": 339,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-18T20:15:30.092155Z",
+    "snapshot_time": "2026-06-19T15:55:00.981326Z",
     "freshness_source": "manifest"
   }
 }

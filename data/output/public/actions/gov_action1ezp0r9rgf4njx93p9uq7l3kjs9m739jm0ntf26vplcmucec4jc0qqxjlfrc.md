@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `NewConstitution`
 - Status: `expired`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.03; confidence 55.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insuffic
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `a3f23f318a03bfc3cce95e94083bacfa48dd733f212bd8018145f1140b8ca043`
-- snapshot_bundle_hash: `63db57c482f37d475d523bf6070d13c6cc4b1f76a4cb3ce8ac1e5cf01196f916`
+- input_hash: `59b2bcb9fe593cfb5b58a9135f0c546abcc3783a35ac88a60677ea6575375bda`
+- snapshot_bundle_hash: `98c8a092ad47dd072c96de1d5005477f57bc6f147766855bb28d6b4ab7ab4280`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
 - score: `0.03`
 - confidence: `0.55`
 

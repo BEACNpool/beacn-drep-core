@@ -1,13 +1,13 @@
 # gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z
 
 ## Vote
-- Decision: **NEEDS_MORE_INFO**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
-- Status: `active`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Status: `expired`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.63; confidence 100.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,7 +19,9 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (7), reducing confidence.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1680000
@@ -28,7 +30,9 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- No milestone-gated disbursement documented.
 - Claims and evidence missing: Independent evidence for: Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring.
 - Claims and evidence missing: Independent evidence for: The proposer states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS.
 - Claims and evidence status is thin.
@@ -41,16 +45,16 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide: Deep research dossier is required for treasury actions before directional voting.
-- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
-- Provide: Missing dossier section: budget analysis
+- Use stable, reproducible anchor links (commit-pinned when possible).
+- Add line-item budget with milestone-gated disbursement and objective completion checks.
+- Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `8aed33451682edd6347f396233f1551bee8aba0081d9c9b14425c455b7667536`
-- snapshot_bundle_hash: `4bdfa7f0158d49d71678e99bff0b437f79f581d4081d8c0e18bbba482964e4c6`
+- input_hash: `c3258863f9425d9cb2220037d0a8b7aa427b5236f8a9d71d4869bdaee9be79dd`
+- snapshot_bundle_hash: `0311387f930621ab218a6777d1b025af3b47346a887a7259656e15389059e47a`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
-- score: `0.0`
-- confidence: `0.2`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
+- score: `-0.6333`
+- confidence: `1.0`
 

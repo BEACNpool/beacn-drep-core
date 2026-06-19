@@ -1,13 +1,13 @@
 # gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x
 
 ## Vote
-- Decision: **NEEDS_MORE_INFO**
+- Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Why: Treasury actions are high-impact and require a completed deep research dossier. Additional context: Intake: Action type: TreasuryWithdrawals What would increase confidence: Deep research dossier is required for treasury actions before directional voting. Confidence context: score 0.00; confidence 20.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.63; confidence 100.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,18 +19,22 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (7), reducing confidence.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 18263496
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳18,263,496.00, stated as USD $4,565,874.00, for three interdependent Cardano infrastructure work packages delivered by Tweag by Modus Create over 2026-2027." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳18,263,496.00, described as USD $4,565,874.00, for three core infrastructure work packages delivered over 2026-2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Peras v1 is presented as enabling faster finality of about 2 minutes compared with about 12 minutes today, but remains undeployed on mainnet and needs production cryptography, operational tooling, and hard-fork readiness work.
-- Claims and evidence missing: Independent evidence for: The proposer states that Leios-driven throughput could cause SPO disk usage to surge to about 1 GB per hour at 100-1000 TPS, making full-history requirements economically prohibitive without History Expiry.
+- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- No milestone-gated disbursement documented.
+- Claims and evidence missing: Independent evidence for: The work packages are Peras v1, History Expiry, and Conformance Testing for Peras and Leios, and the proposer says they are interdependent parts of a single delivery pipeline.
+- Claims and evidence missing: Independent evidence for: The proposer states Peras would improve finality to about 2 minutes compared with about 12 minutes today.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis missing: sustainability path
@@ -42,16 +46,16 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide: Deep research dossier is required for treasury actions before directional voting.
-- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
-- Provide: Missing dossier section: budget analysis
+- Use stable, reproducible anchor links (commit-pinned when possible).
+- Add line-item budget with milestone-gated disbursement and objective completion checks.
+- Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `b0719854ce859e6ee7d008287131e555d0a5eb74d27737ada5d8ff7417935c6c`
-- snapshot_bundle_hash: `3b389dccf15b625d7629f0f750d44d3dfe9c3e6604674eec20d5977ddd309132`
+- input_hash: `7aa0c9d3ce0b5817f1723158b6cb6fc0fa9de68ecef433649520f5f4f8cc92de`
+- snapshot_bundle_hash: `07fefb9fbe64e838ecc176209a8c017590b53beaad31f9e8e5ce8d9e87bcd352`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
-- score: `0.0`
-- confidence: `0.2`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
+- score: `-0.6333`
+- confidence: `1.0`
 

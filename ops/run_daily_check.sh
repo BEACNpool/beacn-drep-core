@@ -88,14 +88,18 @@ cd "$RES"
 python3 scripts/fetch_anchor_documents.py
 python3 scripts/compile_action_resource_index.py
 
-log "refreshing model reasoning cache (backend: ${BEACN_DREP_LLM_BACKEND:-codex}; keyless — uses Claude Code / codex OAuth, no API key)"
 cd "$CORE"
 export BEACN_DREP_LLM_CACHE="$CORE/data/output/llm_cache_active.json"
-if PYTHONPATH=src python3 scripts/build_drep_llm_cache.py \
-     --backend "${BEACN_DREP_LLM_BACKEND:-codex}" --status active; then
-  log "reasoning cache refreshed (active proposals)"
+if [ "${BEACN_DREP_LLM_BACKEND:-codex}" = "none" ]; then
+  log "reasoning cache refresh SKIPPED (backend=none); reusing existing cache"
 else
-  log "reasoning cache refresh failed; using prior cache + deterministic offline fallback"
+  log "refreshing model reasoning cache (backend: ${BEACN_DREP_LLM_BACKEND:-codex}; keyless — uses Claude Code / codex OAuth, no API key)"
+  if PYTHONPATH=src python3 scripts/build_drep_llm_cache.py \
+       --backend "${BEACN_DREP_LLM_BACKEND:-codex}" --status active; then
+    log "reasoning cache refreshed (active proposals)"
+  else
+    log "reasoning cache refresh failed; using prior cache + deterministic offline fallback"
+  fi
 fi
 
 log "running rationales for all proposals (cache where present, offline fallback elsewhere)"

@@ -1,0 +1,244 @@
+{
+  "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
+  "action_type": "HardForkInitiation",
+  "recommendation": "YES",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": "HIGH_IMPACT_HARD_FORK",
+  "score": -0.07,
+  "raw_score": -0.04,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.72,
+    "rationale": "Under the hard fork doctrine, this action deserves highest scrutiny; the claims include meaningful technical benefits and some checkable references, but the supplied claims also show unresolved stake pool readiness, thin in-document audit/testing detail, and only a limited reversion path for a permanent ledger-rule change.",
+    "doctrine_basis": "Hard Fork Doctrine: directional YES only when evidence quality is high and execution risk is bounded; Values Hierarchy: protocol safety and evidence quality take priority over speed and ecosystem growth.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "hardfork_doctrine.md"
+  ],
+  "doctrine_hash": "a1b89ce2302244e18061be916af151229a0b6bea2ba6c6147adb121c7b56aff5",
+  "directional_threshold": 0.12,
+  "confidence": 0.62,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Hard fork actions are high-impact protocol upgrades and require operator-aware review.",
+    "Intake: Action type: HardForkInitiation",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to 11.0 without an era transition.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): Under the hard fork doctrine, this action deserves highest scrutiny; the claims include meaningful technical benefits and some checkable references, but the supplied claims also show unresolved stake pool readiness, thin in-document audit/testing detail, and only a limited reversion path for a permanent ledger-rule change.",
+    "Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Claims and evidence missing: Independent evidence for: Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.",
+    "Claims and evidence missing: Independent evidence for: Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "e021bbc7320d59e89a783c736b7bc9f1b3cdb3e0cbaa18898f69182040a9fb6d",
+  "snapshot_bundle_hash": "50cc12d887336d51fad4d4ca77731624204d23d71a8d7470f8b12ede5d835fc7",
+  "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-19T15:55:00.981326Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.425,
+    "NO": 0.3325,
+    "ABSTAIN": 0.2425
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
+    "action_type": "HardForkInitiation",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: HardForkInitiation",
+          "Status: active",
+          "Proposed epoch: 637",
+          "Expires after epoch: 644",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Requested: Initiate an intra-era hard fork of Cardano Mainnet to Protocol Version 11.0, called the van Rossem hard fork.",
+          "Recipient: not stated in document",
+          "Stated amount: none",
+          "Deliverables: Upgrade Cardano mainnet protocol to major version 11 and minor version 0 while remaining in the Conway era., Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153 available., Make all Plutus built-in functions available consistently across Plutus V1, V2, and V3., Add UPLC case expressions for Bool, Integer, and Data., Promote or tighten ledger predicates including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restriction, withdrawals validation, and PPView mismatch reporting.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, supported_in_proposal, high materiality): The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to 11.0 without an era transition.",
+          "Claim (technical, supported_in_proposal, high materiality): At least 85% of stake pools by active stake should have upgraded to a node version capable of supporting protocol version 11 before ratification.",
+          "Claim (technical, independently_verifiable, high materiality): The upgrade introduces new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+          "Claim (technical, supported_in_proposal, high materiality): All Plutus built-in functions, including newly introduced ones, will become available across Plutus V1, V2, and V3.",
+          "Claim (technical, proposer_asserted, medium materiality): Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.",
+          "Claim (technical, proposer_asserted, high materiality): Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3."
+        ],
+        "missing": [
+          "Independent evidence for: Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.",
+          "Independent evidence for: Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+          "Independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to 11.0 without an era transition.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records YES on Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork). The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a HardForkInitiation. The cached anchor describes the request as: Initiate an intra-era hard fork of Cardano Mainnet to Protocol Version 11.0, called the van Rossem hard fork.. The recorded treasury amount is none. The strongest grounded claim is: The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to 11.0 without an era transition.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreib3ds3bj7izvspcmodz543m5y66slpcmoifzmvpl6xvq6mozaak64",
+        "file_sha256": "3b1cb614fd19ac9e263879ef36cee3de92de263905cb2af5faf58798ec800af7",
+        "file_path": "data/input/governance/anchors/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-20260617T113036Z.bin",
+        "content_chars": 23777
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "e3d856feac105e40370fa7c954e35729ca2028a8cc65a3d039177651a041e864"
+    },
+    "doctrine": {
+      "family": "hardfork",
+      "files": [
+        "values_hierarchy.md",
+        "hardfork_doctrine.md"
+      ],
+      "sha256": "a1b89ce2302244e18061be916af151229a0b6bea2ba6c6147adb121c7b56aff5"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "6943a65b10b4a967114ef2f05d7afe26c259677f7d858e63cc8de58155f7f7f8"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "2d596e47550b78137519cae9b64a7dab29030935c6ba01c66152d56f777f8697",
+      "output_sha256": "9bd5ff17b40f5aa6c4469a9116ac108973db52fd4dfb3f755d48cb2183d877c2"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/84ec44ede9803607393ac1d6.md",
+  "rationale_anchor_hash": "84ec44ede9803607393ac1d6e70460b573fa219ff188ca86d8bd175685ab035f"
+}

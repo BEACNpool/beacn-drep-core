@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: InfoAction Confidence context: score 0.14; confidence 69.0%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `f44fba3d566bbcbfaa568f7f95b1ff627f9d18bb0b3dbb482745c9ec85c27f08`
-- snapshot_bundle_hash: `be245bf6893f440a371a577860fb6e2a267186d656df6eeec7e301be026479e1`
+- input_hash: `125bc1fc080af6b7328a63e8cca18a15e92d8a95921e12f208753052a3804955`
+- snapshot_bundle_hash: `12cdf45eb5ef6a989a801f0ec4d82697c28ef4712a788eaa5f7f786ed7c81190`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
 - score: `0.14`
 - confidence: `0.69`
 

@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `active`
-- Published at: `2026-06-18T20:14:57.948249+00:00`
+- Published at: `2026-06-19T15:54:29.407158+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score -0.07; confidence 59.0%.
@@ -23,13 +23,13 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The governance system and constitution should explicitly address and support treasury governance, including clear direction, coherent strategy, and a specific roadmap." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal proposes a dedicated investment budget that includes strategic direction, a roadmap, thematic domains, and allocation percentages." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Treasury governance within the Cardano ecosystem is currently in a poor state with a funding impasse.
-- Claims and evidence missing: Independent evidence for: Current treasury withdrawal voting has created perceived competition for scarce resources across important domains, leading to hostility, toxicity, ill will, and ecosystem harm.
+- Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is in a poor state due to a funding impasse and weak direct support in the current governance system.
+- Claims and evidence missing: Independent evidence for: The proposal says current treasury-withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and gridlock among governance coalitions.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
@@ -40,11 +40,11 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `21a7006a452ad7adb28e86aea690d03f493b63a872f02087415d1e55ffd3979c`
-- snapshot_bundle_hash: `5b788d92d9791ddc59c1860eb87e45953ccd1814c34399be02f53ea382c3129e`
+- input_hash: `090f4e1a8a7d8342602e9733cf92eed7182898e1036fe59ccb20740059bc92b5`
+- snapshot_bundle_hash: `e7c16c20cead8cfbd026f68336d0bb3fc2635a7a63116bea2f05f7c80b227d6b`
 - soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `693efb97d136543a3565ea51fab80f1cada41b23`
-- core_commit: `feb750f2eaf3c23326add704d66c9f8c0145001b`
+- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
+- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
 - score: `-0.07`
 - confidence: `0.59`
 

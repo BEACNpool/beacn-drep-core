@@ -672,6 +672,30 @@ def _assessment_lines(assessment: dict) -> tuple[list[str], list[str], list[str]
     return facts[:12], inf[:8], unc[:12]
 
 
+def _treasury_gate_config(treasury_doctrine: dict | None) -> tuple[str, float]:
+    """Treasury dossier-gate posture.
+
+    Fail-safe by design: the CODE default is the strict 'hard' gate (no dossier ->
+    NEEDS_MORE_INFO), so a missing or malformed config can never silently open the
+    money gate. Only the soul doctrine (treasury_spending_doctrine.json
+    'dossier_gate') can loosen it to 'soft', which is an explicit, auditable,
+    version-controlled choice. BEACN_TREASURY_GATE_MODE overrides for emergencies.
+
+    In 'soft' mode a treasury action without a complete dossier is NOT blocked; it
+    is judged on the available repo context (anchor + doctrine + reasoning lean)
+    with a caution penalty, so the agent can defend the treasury directionally
+    instead of always abstaining.
+    """
+    cfg = (treasury_doctrine or {}).get("dossier_gate", {}) if isinstance(treasury_doctrine, dict) else {}
+    mode = os.environ.get("BEACN_TREASURY_GATE_MODE", str(cfg.get("mode", "hard"))).strip().lower()
+    if mode not in ("hard", "soft"):
+        mode = "hard"
+    penalty = _to_float(cfg.get("incomplete_penalty")) or -0.10
+    if penalty > 0:
+        penalty = -penalty
+    return mode, penalty
+
+
 def _score_action(
     action: dict,
     flags: list[dict],
@@ -755,25 +779,30 @@ def _score_action(
         }
 
     # Deep-research gate for treasury proposals.
+    treasury_gate_mode, treasury_no_dossier_penalty = _treasury_gate_config(treasury_doctrine)
+    treasury_dossier_incomplete = False
     if action_family == "treasury":
         deep_ok = _yn((deep_row or {}).get("dossier_complete")) is True
         if not deep_ok:
             deep_missing = _missing_deep_research(deep_row)
-            need = [
-                "Deep research dossier is required for treasury actions before directional voting.",
-                "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-                *[f"Missing dossier section: {item}" for item in deep_missing],
-            ]
-            return {
-                "recommendation": "NEEDS_MORE_INFO",
-                "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
-                "score": 0.0,
-                "confidence": 0.2,
-                "facts": ["Treasury actions are high-impact and require a completed deep research dossier.", *assessment_facts],
-                "inferences": ["Directional voting is blocked until dossier quality gates pass.", *assessment_inferences],
-                "uncertainty": ["Dossier completeness not confirmed for this treasury proposal.", *assessment_uncertainty],
-                "missing_evidence": need,
-            }
+            if treasury_gate_mode == "hard":
+                need = [
+                    "Deep research dossier is required for treasury actions before directional voting.",
+                    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+                    *[f"Missing dossier section: {item}" for item in deep_missing],
+                ]
+                return {
+                    "recommendation": "NEEDS_MORE_INFO",
+                    "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+                    "score": 0.0,
+                    "confidence": 0.2,
+                    "facts": ["Treasury actions are high-impact and require a completed deep research dossier.", *assessment_facts],
+                    "inferences": ["Directional voting is blocked until dossier quality gates pass.", *assessment_inferences],
+                    "uncertainty": ["Dossier completeness not confirmed for this treasury proposal.", *assessment_uncertainty],
+                    "missing_evidence": need,
+                }
+            # soft mode: judge directionally on available repo context, with a caution penalty.
+            treasury_dossier_incomplete = True
 
     score = 0.0
 
@@ -787,6 +816,13 @@ def _score_action(
     if action_family == "treasury":
         score += w_treasury_base
         facts.append("Treasury withdrawal actions require elevated scrutiny.")
+        if treasury_dossier_incomplete:
+            score += treasury_no_dossier_penalty
+            unc.append(
+                f"Treasury diligence dossier incomplete; soft gate applied a {treasury_no_dossier_penalty} "
+                "caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) "
+                "rather than abstaining."
+            )
 
         inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
         outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
@@ -1025,6 +1061,8 @@ def _score_action(
         "readiness_score": round(readiness_score, 4),
         "score": round(score, 4),
         "raw_score": round(raw_score, 4),
+        "treasury_gate_mode": treasury_gate_mode,
+        "treasury_dossier_incomplete": treasury_dossier_incomplete,
         "llm_score_adjustment": round(llm_adjustment, 4),
         "llm_lean": llm_info,
         "llm_assisted": llm_assisted,

@@ -267,13 +267,22 @@ def _gate_action_live(tx_id: str, index: int, decision: dict, rec: str) -> tuple
     return False, "action not present in active gov-state (expired/ratified)"
 
 
+_REC_TO_DECISION = {"YES": "VoteYes", "NO": "VoteNo", "ABSTAIN": "Abstain"}
+
+
 def _tx_is_vote_only(
     view: dict,
     *,
     fee_addr: str,
     expected_inputs: set[str],
+    expected_action: str | None = None,
+    expected_decision: str | None = None,
 ) -> tuple[bool, str]:
-    """Gates 5 & 6: only fee inputs, fee-wallet change, and vote procedures."""
+    """Gates 5 & 6: only fee inputs, fee-wallet change, and vote procedures.
+
+    When `expected_action` ("<tx_id>#<index>") / `expected_decision`
+    ("VoteYes"/"VoteNo"/"Abstain") are given, the single vote in the built tx
+    must target exactly that action with exactly that direction."""
     forbidden = ["certificate", "minting", "mint", "script", "withdrawal",
                  "treasury donation", "redeemer"]
     for k, v in view.items():
@@ -301,6 +310,14 @@ def _tx_is_vote_only(
     votes = voters[expected_voter]
     if not isinstance(votes, dict) or len(votes) != 1:
         return False, "transaction must contain exactly one governance vote"
+
+    ((vote_action, vote_body),) = votes.items()
+    if expected_action is not None and str(vote_action) != expected_action:
+        return False, (f"vote targets {vote_action}, expected {expected_action}")
+    if expected_decision is not None:
+        decision = (vote_body or {}).get("decision") if isinstance(vote_body, dict) else None
+        if decision != expected_decision:
+            return False, f"vote decision {decision!r} does not match recommendation {expected_decision!r}"
 
     return True, "vote-only"
 
@@ -399,6 +416,8 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
         view,
         fee_addr=fee_addr,
         expected_inputs=set(utxo),
+        expected_action=f"{tx_id}#{index}",
+        expected_decision=_REC_TO_DECISION[rec],
     )
     report["gates"]["vote_only_tx"] = vote_only
     if not vote_only:

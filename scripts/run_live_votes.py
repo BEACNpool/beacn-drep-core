@@ -119,6 +119,9 @@ def main() -> int:
         }
 
         if decision.action in ("CAST", "REVISE") and rec in AUTO:
+            # Gate 8 (per-run vote cap) reads this env var; without it the
+            # MAX_VOTES_PER_RUN limit is never enforced on the live path.
+            os.environ["BEACN_VOTES_THIS_RUN"] = str(voted)
             shadow = prepare_vote(d, live=False)
             gates_ok = bool(shadow.get("gates")) and all(shadow["gates"].values())
             entry["gates_ok"] = gates_ok

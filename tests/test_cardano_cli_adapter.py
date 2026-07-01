@@ -38,12 +38,17 @@ def valid_view() -> dict:
     }
 
 
+EXPECTED_ACTION = f'{"cd" * 32}#0'
+
+
 class VoteOnlyTransactionTests(unittest.TestCase):
     def assert_valid(self, view: dict) -> None:
         ok, reason = _tx_is_vote_only(
             view,
             fee_addr=FEE_ADDR,
             expected_inputs={TX_IN},
+            expected_action=EXPECTED_ACTION,
+            expected_decision="Abstain",
         )
         self.assertTrue(ok, reason)
 
@@ -74,6 +79,28 @@ class VoteOnlyTransactionTests(unittest.TestCase):
         votes[f'{"ef" * 32}#0'] = {"anchor": None, "decision": "VoteNo"}
         ok, _ = _tx_is_vote_only(view, fee_addr=FEE_ADDR, expected_inputs={TX_IN})
         self.assertFalse(ok)
+
+    def test_rejects_wrong_vote_direction(self) -> None:
+        ok, reason = _tx_is_vote_only(
+            valid_view(),
+            fee_addr=FEE_ADDR,
+            expected_inputs={TX_IN},
+            expected_action=EXPECTED_ACTION,
+            expected_decision="VoteNo",
+        )
+        self.assertFalse(ok)
+        self.assertIn("decision", reason)
+
+    def test_rejects_wrong_vote_target(self) -> None:
+        ok, reason = _tx_is_vote_only(
+            valid_view(),
+            fee_addr=FEE_ADDR,
+            expected_inputs={TX_IN},
+            expected_action=f'{"ef" * 32}#1',
+            expected_decision="Abstain",
+        )
+        self.assertFalse(ok)
+        self.assertIn("targets", reason)
 
 
 class GovernanceActionIdTests(unittest.TestCase):

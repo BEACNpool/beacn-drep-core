@@ -33,8 +33,13 @@ cd "$CORE" || exit 1
 sleep "${BEACN_AUTOVOTE_PAGES_WAIT:-90}"
 
 log "running gated fully-agentic auto-vote (YES/NO/ABSTAIN + revisions; adapter gates enforced)"
-report="$(BEACN_VOTING_LIVE=1 PYTHONPATH=src python3 scripts/run_live_votes.py --live 2>&1)"
-echo "$report" > "data/output/last_vote_run.json"
+# stderr goes to its own log so stray warnings can never corrupt the JSON audit file.
+report="$(BEACN_VOTING_LIVE=1 PYTHONPATH=src python3 scripts/run_live_votes.py --live 2>>"$LOG_DIR/drep_vote_stderr.log")"
+if printf '%s' "$report" | python3 -m json.tool >/dev/null 2>&1; then
+  printf '%s\n' "$report" > "data/output/last_vote_run.json"
+else
+  log "vote runner produced non-JSON output; see $LOG_DIR/drep_vote_stderr.log (audit file left untouched)"
+fi
 submitted="$(printf '%s' "$report" | python3 -c "import json,sys
 try: print(json.load(sys.stdin).get('submitted',0))
 except Exception: print('?')" 2>/dev/null)"

@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.31; confidence 83.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply in the motivation section, while the rationale section says it conservatively counted at least 15 teams." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,162,746 ADA, consisting of 1,128,880 ADA for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ADA Intersect budget administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.31; confidence 83.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide complete proposal summary.
+- Provide budget analysis.
+- Provide feasibility assessment.
 
 ## Proof of vote
 - input_hash: `ccf871a53a1b5f40b75525e56d8b04ed9297c073be1f7cee02772cb181fa0e09`
 - snapshot_bundle_hash: `058cd2ecc8aca80073226443f5c8c1e6bc83ec12d540fa2379de735ae59217eb`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.3133`
 - confidence: `0.8333`
 

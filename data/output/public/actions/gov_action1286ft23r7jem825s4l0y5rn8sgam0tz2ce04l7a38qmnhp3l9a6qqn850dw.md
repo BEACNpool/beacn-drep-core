@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Protocol parameter changes carry system-wide risk. Additional context: Flag score present (10), reducing confidence. Confidence context: score -0.40; confidence 92.3%.
+Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Use stable, reproducible anchor links (commit-pinned when possible). Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.40; confidence 92.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -33,16 +33,16 @@ Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguar
 - Claims and evidence status is thin.
 
 ## Top 3 fixes to improve next submission
+- Provide No structured claim/evidence extraction from the proposal document.
 - Use stable, reproducible anchor links (commit-pinned when possible).
 - Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.
-- Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
 - input_hash: `d55b685af1936c9d06beba77e6cf9bbebf9afd121c7597fc372db8aef17f4141`
 - snapshot_bundle_hash: `26b5cdbcab6054cc369e9f44a1be8686f13fc3d8b1806ee8a269e8a2d96ac1fa`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.4033`
 - confidence: `0.9233`
 

@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.15; confidence 67.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "(“Orion Fund”), managed by Draper Dragon Orion GP, LLC (“General Partner” or “GP”), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed; Provide line-item budget. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.15; confidence 67.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -39,16 +39,16 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Treasury analysis status is incomplete.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.
+- Provide line-item budget.
+- Provide milestone-gated disbursement.
 
 ## Proof of vote
 - input_hash: `fb33f4fb106113565b8dabdf07f69180d81cd6e57a879878fc8a72258522b358`
 - snapshot_bundle_hash: `ed78dab05d7efbe58747f64af7457f9d4c70a5a62bbb1045338dcd584cb93b51`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.1533`
 - confidence: `0.6733`
 

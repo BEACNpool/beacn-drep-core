@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: InfoAction Confidence context: score 0.14; confidence 69.0%.
+Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the “Plomin Hard Fork” in memory of Cardano community contributor Matthew Plomin." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 69.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -32,16 +32,16 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Clarify governance intent and expected measurable outcome.
-- Map each major claim to primary receipts and stable source links.
+- Provide mitigation evidence.
+- Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
 - input_hash: `47258be08ae413fb7bbf2d7c389097bf15ac04ac3518d8d72328d377c9c0a847`
 - snapshot_bundle_hash: `a61c9875540f66bb12043e6e8db87121306d37e9ece45c4fb34fbd3df9a30aab`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.14`
 - confidence: `0.69`
 

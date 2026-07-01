@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: InfoAction Confidence context: score 0.14; confidence 69.0%.
+Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy ." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 69.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -32,16 +32,16 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Clarify governance intent and expected measurable outcome.
-- Map each major claim to primary receipts and stable source links.
+- Provide mitigation evidence.
+- Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
 - input_hash: `0d760b307bbede71c4dbb64198485b0c7690ca71ab78e591db23e548112fa8bf`
 - snapshot_bundle_hash: `14be53406c5d7b58f69e8e960cc9e3a6df9e5e83a71274c468b55d8511e510d4`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.14`
 - confidence: `0.69`
 

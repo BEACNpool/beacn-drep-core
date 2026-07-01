@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.10; confidence 62.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.10; confidence 62.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -39,16 +39,16 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide line-item budget.
+- Provide milestone-gated disbursement.
+- Provide sustainability path.
 
 ## Proof of vote
 - input_hash: `633b20e9408c3f8b61a338d72ae57781947f6043f278db49a4c2940085c3c6ad`
 - snapshot_bundle_hash: `13031d8bf637f52c7e9d197089e2b064cff94abd30d2094f76783aa2e4a6310c`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.1033`
 - confidence: `0.6233`
 

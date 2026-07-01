@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions are high-impact protocol upgrades and require operator-aware review. Confidence context: score -0.04; confidence 59.0%.
+Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal initiates a hard fork to Cardano mainnet Protocol Version 11.0 while remaining in the Conway era with no era transition." and clears the evidence gates. Weighed against it: a material claim is unsupported — "UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.04; confidence 59.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -36,16 +36,16 @@ Vote: YES. For this HardForkInitiation (active), available evidence supports pro
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Provide migration readiness evidence across tooling/wallet/exchange dependencies.
-- Publish rollback/contingency plan and incident response playbook.
+- Provide independent evidence for: UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic.
+- Provide independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.
+- Provide mitigation evidence.
 
 ## Proof of vote
 - input_hash: `772a1327292a48350a5629dea20f67442575597895a5920e9fa1d00ec2537f26`
 - snapshot_bundle_hash: `7127049e367a161aa2f2229bf7b178063e66e989d128a0056c0ce9952f810c5f`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.04`
 - confidence: `0.59`
 

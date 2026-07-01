@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.41; confidence 90.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Strike Finance claims cumulative traction of over 1.13 billion USD in volume, around 968,000 to 1,001,000 trades, more than 3,000 unique traders, over 1.16 million USD protocol revenue, and over 3.25 million USD liquidity provider profit." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding, with treasury ownership retained throughout deployment." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The document claims Strike represented over 50% of Cardano trading activity over the past six months; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 90.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide independent evidence for: The document claims Strike represented over 50% of Cardano trading activity over the past six months.
+- Provide complete proposal summary.
+- Provide budget analysis.
 
 ## Proof of vote
 - input_hash: `92031977f6bcf06f82914b0c2408213a07a573249c88311ab5bb5a4d28e0e605`
 - snapshot_bundle_hash: `a515d4afa4d25a7e5212df0364823981a7496e0e4f0b339b073a253019b164ce`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.4133`
 - confidence: `0.9033`
 

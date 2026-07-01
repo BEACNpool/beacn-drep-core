@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.31; confidence 83.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Tx3 is intended to provide a single standardized interface so developers or AI agents can discover, integrate, and compose Cardano protocols through one consistent surface." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.31; confidence 83.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide complete proposal summary.
+- Provide budget analysis.
+- Provide feasibility assessment.
 
 ## Proof of vote
 - input_hash: `17ba3129d7451bd908bf7fdcd301b9ceecc3a8a77afd5d57b50f90936071a786`
 - snapshot_bundle_hash: `5cb3efa344be967410c4012b79d43e9bec5c2dd4ea3e801cbd55638dcb30ad34`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.3133`
 - confidence: `0.8333`
 

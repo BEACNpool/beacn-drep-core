@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.04; confidence 56.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "この瞬間、私たちは心からの感謝と敬意を、Charles Hoskinson率いるInput Output、EMURGO、そしてCardano財団に捧げます。彼らはCardanoを世界にもたらし、その献身、ビジョン、そして揺るぎない努力によって、私たちが今立っている土台を築き上げてくれました。彼らは「生きがい(Ikigai)」の本質を体現し、自身の仕事に喜びと意味を見出しながら、より大きな善のために貢献する力を示したのです。 次のステージに向かう私たちは、少数の努力から多くの力へと移行します。共通の目的意識を持..." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 56.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -33,16 +33,16 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Clarify governance intent and expected measurable outcome.
-- Map each major claim to primary receipts and stable source links.
+- Provide mitigation evidence.
+- Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
 - input_hash: `bf71587b2478205380146180ab288532c3e1efb939dfd3f57551b8aaea66dd21`
 - snapshot_bundle_hash: `0a9af58eb376638db3c65eaf1e16063d27dfa0f22ca58a7fc3ebae9b155dfb6c`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.04`
 - confidence: `0.56`
 

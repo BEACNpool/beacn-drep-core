@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Flag score present (17), reducing confidence. Confidence context: score -0.34; confidence 80.0%.
+Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The Chang+1 hard fork should be called the HOSKY Hard Fork" — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "I propose to name the next Cardano hard fork 'HOSKY' after Cardano's mutt and the most widely recognized and held asset in the ecosystem." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork; Provide independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.34; confidence 80.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -33,16 +33,16 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Claims and evidence status is thin.
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork.
+- Provide independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity.
 - Use stable, reproducible anchor links (commit-pinned when possible).
-- Clarify governance intent and expected measurable outcome.
-- Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
 - input_hash: `72ace31f261527726ad0eec76ee4af079638566cd5935805c6f72c3cd7e5e59a`
 - snapshot_bundle_hash: `f708192caa7021a15b24770c7e65324bfe1c19bdcae322a9c32d0950004074f2`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.34`
 - confidence: `0.8`
 

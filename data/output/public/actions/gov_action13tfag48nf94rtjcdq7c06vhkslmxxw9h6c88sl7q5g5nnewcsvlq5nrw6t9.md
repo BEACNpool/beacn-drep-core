@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.10; confidence 62.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Complete Web3 developer stack to make Cardano the smart contract layer for Bitcoin which will provide the following services: Maestro proposes a comprehensive infrastructure solution that positions Cardano as Bitcoin's primary..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.10; confidence 62.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -39,16 +39,16 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide line-item budget.
+- Provide milestone-gated disbursement.
+- Provide sustainability path.
 
 ## Proof of vote
 - input_hash: `09268d347e0365bde49f4e0dc454c41c2d0b6c4782e7d18b6b174a665fc69ee7`
 - snapshot_bundle_hash: `53054299c1a0647cb97d598d0bc3357a8bbeed7233ffee265138bb861236d900`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.1033`
 - confidence: `0.6233`
 

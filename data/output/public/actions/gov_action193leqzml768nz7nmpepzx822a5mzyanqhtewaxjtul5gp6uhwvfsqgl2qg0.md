@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.10; confidence 62.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds BloxBean Java Tools Maintenance and Enhancement which will provide the following services: BloxBean provides several essential Java libraries and tools for building applications on Cardano." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.10; confidence 62.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -39,16 +39,16 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide line-item budget.
+- Provide milestone-gated disbursement.
+- Provide sustainability path.
 
 ## Proof of vote
 - input_hash: `cc6074d2d92c1fe33c6cc59f916a371324f9f0f52f4161f4731e2b3ae80e21e3`
 - snapshot_bundle_hash: `0d11a372741a9d9130c7adb106537b4a2eb35f4c1426da7dc75754ea7cb8d4a4`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.1033`
 - confidence: `0.6233`
 

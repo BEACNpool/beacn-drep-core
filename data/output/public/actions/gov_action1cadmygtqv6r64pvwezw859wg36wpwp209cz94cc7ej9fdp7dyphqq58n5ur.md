@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.01; confidence 56.0%.
+Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal changes only the committeeMinSize parameter to 5." and clears the evidence gates. Weighed against it: a material claim is unsupported — "The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 56.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -35,16 +35,16 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - Risk review missing: independent assurance
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.
-- Add rollback/containment plan and explicit halt criteria.
+- Provide independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.
+- Provide mitigation evidence.
+- Provide independent assurance.
 
 ## Proof of vote
 - input_hash: `e14e28ab26b7a49b83b8c498b8e4176655475b75348ffcc3662f5edf0a803a6c`
 - snapshot_bundle_hash: `54e75c0d41411a197683e33ab38b59da2af98e5337ccc75eba5ccf5dee4b2220`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.01`
 - confidence: `0.56`
 

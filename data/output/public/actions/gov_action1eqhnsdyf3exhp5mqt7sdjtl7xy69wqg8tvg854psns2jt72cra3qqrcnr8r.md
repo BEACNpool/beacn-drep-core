@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.03; confidence 58.0%.
+Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 58.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -36,16 +36,16 @@ Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insuffic
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.
-- Add rollback/containment plan and explicit halt criteria.
+- Provide independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action.
+- Provide mitigation evidence.
+- Provide independent assurance.
 
 ## Proof of vote
 - input_hash: `2f4da21d89a3826971034e955029954adf14a6b52c3c06bf51f0d1aa14b20e59`
 - snapshot_bundle_hash: `7158734fef851eaba43947c24a0d386c77cfb9c581bd8f6f94da9211ab79ffe1`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.03`
 - confidence: `0.58`
 

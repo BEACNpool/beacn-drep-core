@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.36; confidence 84.8%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.36; confidence 84.8%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide independent evidence for: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS.
+- Provide complete proposal summary.
+- Provide budget analysis.
 
 ## Proof of vote
 - input_hash: `5c8d62e7cdbd7fd15c86363d933bbf7002909d84384b70e8fd367f42faa96d41`
 - snapshot_bundle_hash: `9a30439c34a9177306f3c48b6518e23b41c21134b8533b03c6c0885a1603fe2f`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.3583`
 - confidence: `0.8483`
 

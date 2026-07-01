@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Flag score present (3), reducing confidence. Confidence context: score 0.01; confidence 53.5%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: A key issue in the initial budget process was the misapplication of the participation threshold; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 53.5%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -35,16 +35,16 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Clarify governance intent and expected measurable outcome.
-- Map each major claim to primary receipts and stable source links.
+- Provide independent evidence for: A key issue in the initial budget process was the misapplication of the participation threshold.
+- Provide mitigation evidence.
+- Provide independent assurance.
 
 ## Proof of vote
 - input_hash: `38b752a5b27e37fa62e8b3f9e11ef3f1ac6b08e67f90fd3e3d6998da2f92b83d`
 - snapshot_bundle_hash: `fb00bba564bc6bf7d76066fac0ebf80fe6da7b67834602627004c1c4d83b5dc4`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.015`
 - confidence: `0.535`
 

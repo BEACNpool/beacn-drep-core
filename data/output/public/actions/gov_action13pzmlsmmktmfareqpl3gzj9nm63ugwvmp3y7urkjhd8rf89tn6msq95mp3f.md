@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Why: Pinned anchor document is available for this action. Additional context: Intake: Action type: InfoAction Confidence context: score 0.12; confidence 66.5%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Intersect’s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the “van Rossem Hard Fork” in memory of Cardano community contributor Max van Rossem." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.12; confidence 66.5%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -34,16 +34,16 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Clarify governance intent and expected measurable outcome.
-- Map each major claim to primary receipts and stable source links.
+- Provide mitigation evidence.
+- Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
 - input_hash: `35f741b8665b591ac510b10567b8ff712e0a9445275f23e1277462d42cde82d5`
 - snapshot_bundle_hash: `d087177b9a5db687a046b6de86ca009b0c20e13beb4a9553ecb09e4b7f8207ff`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `0.115`
 - confidence: `0.665`
 

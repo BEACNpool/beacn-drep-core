@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.41; confidence 90.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Blockfrost is described as a reliable hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal states that Cardano Foundation developer ecosystem surveys report Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 90.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.
+- Provide complete proposal summary.
+- Provide budget analysis.
 
 ## Proof of vote
 - input_hash: `7f7722561a377cd9da16ce430fbfe1403efb2b4a98a5efd63eb1233e88406955`
 - snapshot_bundle_hash: `5f94a46515802e5478596103e453b23d32ddcae9de5a3e5618e5fc9807fb819e`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.4133`
 - confidence: `0.9033`
 

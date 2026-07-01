@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.28; confidence 80.3%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.28; confidence 80.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -45,16 +45,16 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide complete proposal summary.
+- Provide budget analysis.
+- Provide feasibility assessment.
 
 ## Proof of vote
 - input_hash: `ab7f9cd59bddd95954aa29712b8bea96630c814a117bb3310c85ebdf518826d9`
 - snapshot_bundle_hash: `3c305be65532388b47393d1b5ec54956421f9289d0e8ebb1cc8dba7c3f2ee3a0`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.2833`
 - confidence: `0.8033`
 

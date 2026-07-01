@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.53; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages." and clears the evidence gates. What would change this vote to YES: Provide budget analysis; Provide feasibility assessment. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.53; confidence 100.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Use stable, reproducible anchor links (commit-pinned when possible).
-- Add line-item budget with milestone-gated disbursement and objective completion checks.
-- Document downside risks, mitigations, and what gets cut first if delivery slips.
+- Provide budget analysis.
+- Provide feasibility assessment.
+- Provide alternatives analysis.
 
 ## Proof of vote
 - input_hash: `a23b17ab281cc290588f3f2913c842f51389ed0850f4eb5bb32574871fd5a949`
 - snapshot_bundle_hash: `f941b20dcedd54130c7887350e02d0f4efa7f07615aa58754a1ebe4fcd3b59ef`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
-- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
+- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
 - score: `-0.5333`
 - confidence: `1.0`
 

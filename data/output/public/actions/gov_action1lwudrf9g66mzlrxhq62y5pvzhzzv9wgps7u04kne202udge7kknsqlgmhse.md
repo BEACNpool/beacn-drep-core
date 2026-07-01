@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.51; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.38; confidence 87.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2.35M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $420,000 using an exchange rate of $0.1787 per Ada, to fund a 12-month operating period." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000 at about $0.1787 per Ada to fund a 12-month operating period from August 2026 to July 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Eternl says its annual cost is about $420,000 and that the proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.
-- Claims and evidence missing: Independent evidence for: Eternl plans to convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
+- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Claims and evidence missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
+- Claims and evidence missing: Independent evidence for: Eternl says independent fund-use audits will be performed in February 2027 and August 2027 by a party unaffiliated with Tastenkunst GmbH or the Eternl team.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -52,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `6d42619e90ab1a39bf098bd6d770f6daa2be9bfe73bef417cbe5a627fb51c743`
-- snapshot_bundle_hash: `e496780f5d171d3d9368de131cf3a0056bc2e52f17ed333fe8bd5cb9319a775f`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `-0.5133`
-- confidence: `1.0`
+- input_hash: `92026a67255fb20eec5928dec5650e070b57441e885a6605739739254b477d89`
+- snapshot_bundle_hash: `12b7265b0c8f1716443613c017e19ac5506f277cb627ed33911a79d41ca7be46`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `-0.3833`
+- confidence: `0.8733`
 

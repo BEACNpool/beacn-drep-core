@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540750",
+    "deadline": "12 months",
+    "deliverables": [
+      "Part-time maintainer for Oura over 12 months",
+      "Essential codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Community support including issue triage, review of external contributions, feedback-driven enhancements, and public communication",
+      "AI-friendly documentation and integration resources"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Treasury withdrawal to fund Oura by TxPipe maintenance over 12 months, submitted by Intersect on behalf of the vendor."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement plus a 15,750 ADA Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The stated maintenance funding covers a part-time Oura maintainer for 12 months at an annual rate of $105,000 USD, with 420,000 ADA plus a 105,000 ADA contingency reserve referenced in the motivation section.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura is described as a Rust-native Cardano event pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and sinks including Kafka, Elasticsearch, AWS Lambda/S3/SQS, RabbitMQ, Redis, SQL databases, and webhooks.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and provides the Oura GitHub repository as a checkable source.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that Oura was previously funded through Project Catalyst Funds 9 and 13 for feature development.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development on schedule.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that the withdrawal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and references voting and audited-results materials.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that the requested amount does not breach the applicable 350M ADA Net Change Limit for Epoch 613 to Epoch 713 at submission time.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that Intersect will administer funds through Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, multisig-style authorization thresholds, oversight entities, milestone-based disbursement controls, and a public dashboard.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The anchor asks for 540,750 ADA to fund 12 months of Oura maintenance and administration through Intersect-managed treasury smart contracts, with claims about Oura's technical utility, open-source adoption, prior TxPipe delivery, Intersect budget approval, NCL compliance, and oversight controls.",
+  "output_sha256": "648c45477d64a521ba7533279cb4d84d6f1a285bc8be5e8c706b5d7e7a52cd20"
+}

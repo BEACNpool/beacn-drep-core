@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.43; confidence 92.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.33; confidence 82.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -31,7 +31,7 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
 - Claims and evidence missing: Independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
 - Claims and evidence missing: Independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.
 - Claims and evidence status is thin.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `ec1128c8a09c8c2f5772b898d5338dd8c8f5401680815f79a1bd0c3cc704d120`
-- snapshot_bundle_hash: `286783b76096dae8a04ef82ba6f54875de0513efd09b443f853e03c111fc09e3`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `-0.4333`
-- confidence: `0.9233`
+- input_hash: `5f9987b6d4a5310dc779c5c296d16d1cbc3e044f7a448c521209bf5218803a64`
+- snapshot_bundle_hash: `0b6a7f8e6b4fecd85667969f37644ef466492acad505357173e83dd8abf3758b`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `-0.3333`
+- confidence: `0.8233`
 

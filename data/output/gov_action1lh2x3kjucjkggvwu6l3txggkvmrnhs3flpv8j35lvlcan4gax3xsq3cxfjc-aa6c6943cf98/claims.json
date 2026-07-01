@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Upgrade Cardano mainnet protocol from version 10.0 to 11.0 while remaining in the Conway era.",
+      "Make new Plutus primitives available as defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "Make all Plutus built-in functions available consistently across Plutus V1, V2, and V3.",
+      "Add UPLC case expressions over Bool, Integer, and Data.",
+      "Promote or tighten ledger validation checks including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restrictions, withdrawal validation, and PPView mismatch reporting."
+    ],
+    "recipient": "not stated in document",
+    "what": "Initiate an intra-era Cardano mainnet hard fork to Protocol Version 11.0, named the van Rossem hard fork."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The proposal upgrades Cardano mainnet from protocol version 10.0 to 11.0 without an era transition.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The upgrade introduces new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The upgrade makes all Plutus built-in functions available across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The upgrade adds UPLC case expressions for Bool, Integer, and Data, which the proposer says provide significant performance improvements and cleaner script logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Testing reports demonstrate no behavioral regressions, complete specification and implementation conformance for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The Cardano Node 11.0.1 performance report shows no regressions for standard value, Plutus, and voting benchmarks, and acceptable baseline performance for new primitives and case expressions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "At least 85% of stake pools by active stake should have upgraded to a node version capable of protocol version 11 before ratification.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states the governance action is consistent with all eight listed hard fork guardrails, provided HARDFORK-04 readiness is checked before ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Reversion is only possible in extreme circumstances through the CIP-0135 disaster recovery process, while Plutus primitive usability could be disabled by changing companion cost model settings if issues are found.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests a non-treasury hard fork initiation to protocol version 11.0, centered on Plutus capability and performance additions, ledger predicate tightening, node diagnostics, and readiness conditions tied to stake pool upgrade status.",
+  "output_sha256": "8752ff16dd1849c24336041742b0bca6733b04c79e9b5d5a63bfc5b3a6cd3de0"
+}

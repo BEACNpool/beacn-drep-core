@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.33; confidence 81.8%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.23; confidence 71.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -30,7 +30,7 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
 - Claims and evidence missing: Independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.
 - Claims and evidence missing: Independent evidence for: Duration & Milestones This proposal spans over 12 months , from January to December 2026, throughout which there will be several deliveries, demos, and workshops.
 - Claims and evidence status is thin.
@@ -47,11 +47,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `1683f5ac7059950be30f4806791592ff58649a19699cb4ffa9849e62c36aa65d`
-- snapshot_bundle_hash: `b5ad57fa0ce2ee132917f97266aceaed85868e5d6ac620d0c65ad6bdcdd601ff`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `-0.3283`
-- confidence: `0.8183`
+- input_hash: `de66321d6cee6518f3181d37ddc3b67bc875684eda5f0d778684488ca10e591f`
+- snapshot_bundle_hash: `176f508c9ab1628457d0c54a4e797e28bafdeb86b7b674ff6f25dac3258be136`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `-0.2283`
+- confidence: `0.7183`
 

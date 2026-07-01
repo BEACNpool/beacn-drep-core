@@ -1,0 +1,130 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 632",
+        "Expires after epoch: 639",
+        "Treasury request: 23.00M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: required",
+        "Requested: Withdrawal from the Cardano Treasury for Cardano Critical Integrations V2, covering Year 2 contracted costs, a 12-month enhancement and maintenance program for CCI V1 integrations, and a new native Fireblocks integration.",
+        "Recipient: Intersect, acting as Administrator under the Treasury Reserve Smart Contract Framework",
+        "Stated amount: 23000000",
+        "Deliverables: 12 months of operations and maintenance for Circle USDCx, LayerZero, Pyth Price Feeds, and Dune Analytics integrations, Fireblocks native Cardano integration including ADA and Cardano Native Token support and foundations for staking and governance delegation workflows, Ring-fenced enhancement and tooling reserve for monitoring, reconciliation, observability, operational tooling, SDKs, and reference implementations, Legal, audit, contract administration, oversight, reporting, and contingency activities",
+        "Deadline/expiry: 12 month delivery window",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.",
+        "Claim (governance, supported_in_proposal, high materiality): Funds will be administered by Intersect under the Treasury Reserve Smart Contract Framework, with drawdowns after signed agreements and Statements of Work are submitted and verified.",
+        "Claim (economic, independently_verifiable, high materiality): The proposer discloses that the prospective recipient structure previously received \u20b370,000,000 from the Cardano Treasury under the Cardano Critical Integrations Budget in the prior 24 months.",
+        "Claim (technical, proposer_asserted, high materiality): CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.",
+        "Claim (economic, proposer_asserted, high materiality): The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.",
+        "Claim (adoption, supported_in_proposal, high materiality): CCI V2 funds a full native Cardano integration into Fireblocks, including ADA and CNT custody and transfer and technical foundations for staking and governance delegation workflows."
+      ],
+      "missing": [
+        "Independent evidence for: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.",
+        "Independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.",
+        "Independent evidence for: Vendor-level costs are not publicly disclosed because of confidentiality obligations with several integration partners.",
+        "budget analysis",
+        "feasibility assessment",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 23000000",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: not confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: unknown (stale snapshot)",
+        "Financial confidence: 0.40"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: low",
+        "Technical risk: medium",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: unknown",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

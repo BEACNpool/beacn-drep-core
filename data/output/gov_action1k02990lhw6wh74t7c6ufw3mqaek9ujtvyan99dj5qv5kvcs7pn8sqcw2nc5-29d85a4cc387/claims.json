@@ -1,0 +1,81 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3961538",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "WP1 - Enabling Onchain Payments & Card Infrastructure",
+      "Intersect Budget Administration fee"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Wirex proposes to deliver full-stack, open-source payments infrastructure enabling onchain settlement through smart contracts and connections to banking rails, stablecoin systems, and wallet interfaces.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that a core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal asserts that Cardano currently lacks seamless rails for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal asserts that the requested amount does not, at the time of submission, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "Wirex is stated to have received no ada from the Cardano Treasury within the last 24 months.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect will manage withdrawn funds through a Treasury Reserve Smart Contract and one Project-Specific Smart Contract, with specified admin, leadership, and external oversight authorization thresholds.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document says community auditability will be available through a Sundae treasury dashboard and on-chain verification of the TRSC and PSSC.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 3,961,538 ada for a Wirex payments infrastructure project, gives a high-level budget and governance custody structure, and makes major adoption and capability claims while omitting detailed milestone, feasibility, risk, alternatives, and failure-mode analysis.",
+  "output_sha256": "8882d276275d9794cb532f21f2d5fd56df754aa3c9efdb5e9496f24b7f8d998c"
+}

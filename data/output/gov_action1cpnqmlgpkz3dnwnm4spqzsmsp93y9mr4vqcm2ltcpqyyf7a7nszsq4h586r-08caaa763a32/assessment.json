@@ -1,0 +1,134 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: 3.33M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: required",
+        "Requested: Treasury withdrawal to fund Dano Finance's DeFi Kernel registry/platform work, Spot Leverage Order Book, American Options Market-Making Pools, and a Composable DeFi Transaction Builder SDK.",
+        "Recipient: Dano Finance, with Minswap Labs serving as budget administrator",
+        "Stated amount: 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee",
+        "Deliverables: WP1 DeFi Kernel Registry Website and Submission Process with compatibility requirements, registry data structure, submission template, review checklist, metadata requirements, website updates, onboarding support, monthly reports, and final impact report, WP2 Spot Leverage Order Book with protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, security review or audit report, issue resolution report, mainnet deployment, published script hashes and schemas, usage reports, integration guides, and final reporting, WP3 American Options Market-Making Protocol with protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, security review or audit report, issue resolution report, mainnet deployment, published script hashes and schemas, usage reports, integration guides, and final reporting, WP4 Composable DeFi Transaction Builder SDK with architecture, public API specification, registry schema reader, metadata parser, discovery helpers, transaction-construction helpers, adapters, alpha release, SDK v1, examples, tests, integration documentation, ecosystem support, and final SDK report",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,333,000 ADA, split into 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee to Minswap Labs.",
+        "Claim (economic, supported_in_proposal, high materiality): The budget allocates 300,000 ADA to the DeFi Kernel Registry Website and Submission Process and 1,000,000 ADA each to the Spot Leverage Order Book, American Options Protocol, and Composable DeFi Transaction Builder SDK.",
+        "Claim (adoption, proposer_asserted, medium materiality): Dano Finance states that it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.",
+        "Claim (technical, supported_in_proposal, medium materiality): The DeFi Kernel is presented as an open, fee-free, royalty-free compatibility standard where compatible protocols publish integration metadata without requiring payment, licensing fees, certification fees, listing fees, revenue share, or smart-contract open-sourcing.",
+        "Claim (technical, supported_in_proposal, high materiality): The Spot Leverage Order Book work package will deliver a Cardano-native leveraged spot trading protocol with collateral, borrowing, debt accounting, swap execution, risk parameters, and settlement.",
+        "Claim (technical, supported_in_proposal, high materiality): The American Options work package will deliver a Cardano-native American options market-making protocol using an extended concentrated-pool model for option pricing, exercise, settlement, and LP risk accounting."
+      ],
+      "missing": [
+        "Independent evidence for: Dano Finance states that it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.",
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 3.33M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unknown (stale snapshot)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 3,333,000 ADA, split into 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee to Minswap Labs.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Dano Finance states that it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Treasury withdrawal actions require elevated scrutiny. Additional context: Flag score present (7), reducing confidence. Confidence context: score -0.39; confidence 88.3%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Treasury withdrawal actions require elevated scrutiny. Additional context: Flag score present (7), reducing confidence. Confidence context: score -0.29; confidence 78.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -30,7 +30,7 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 
 ## Remaining uncertainty
 - Anchor document is not yet pinned locally for this action.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
 - Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -43,11 +43,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `a4e10962de1316b98071df5c152be4388285610d77e8b8db4b3e25c3b3f38b1d`
-- snapshot_bundle_hash: `93294d4550c1549b48a4c6cc9fc1af1b74583fabc485d67cfd94472104e79178`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `-0.3933`
-- confidence: `0.8833`
+- input_hash: `917e15bc02f60dec62f51235e7f8177888c0425f46f411fbe5eaca5b53ec6148`
+- snapshot_bundle_hash: `0f28189f296255f2fa66e29731932f9808275f875b08015856e393c78053eea4`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `-0.2933`
+- confidence: `0.7833`
 

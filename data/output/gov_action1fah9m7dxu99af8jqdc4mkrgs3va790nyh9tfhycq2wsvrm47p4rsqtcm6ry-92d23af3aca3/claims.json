@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "5100781",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Performance optimization with 2x to 10x improvements in snapshot signing and memory profile and reduced L1 fees through on-chain contract optimization",
+      "Operational excellence including operator runbooks, simpler node configuration, observability and logging, and an improved TUI",
+      "Ecosystem support including features requested by production users and pipeline integrators, Hydra Alliance facilitation, hackathons, and developer relations",
+      "Maintenance and developer experience work including CI, tooling, and technical debt reduction",
+      "Milestone-gated delivery with independent third-party assurance and Intersect administrative treasury governance"
+    ],
+    "recipient": "Input Output Global / Intersect administrative treasury governance; exact withdrawal reward account not stated in document",
+    "what": "Fund the IO: Hydra treasury withdrawal proposal for four Hydra workstreams: performance optimization, operational excellence, ecosystem support, and developer experience, delivering a feature-complete and hardened Hydra v2."
+  },
+  "claims": [
+    {
+      "category": "adoption",
+      "claim": "Hydra is presented as the only production-grade Layer 2 on Cardano and as already running live workloads for Delta DeFi, Masumi, Intersect, VTech Labs, Blockfrost, Midgard, and others.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b35,100,781 to fund Hydra v2 work across performance optimization, operational excellence, ecosystem support, and developer experience.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims Hydra provides sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement by processing transactions off-chain and settling final state on Cardano L1.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims Cardano L1 currently has over two hours of finality, approximately $0.17 per payment transaction, $1 to $3 per DeFi transaction, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims a single Hydra Head processes up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly as independent Heads run in parallel.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims Hydra safety relies on unanimous participant signatures, allowing a single honest participant to reclaim funds even if all others collude.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer claims Hydra activity can increase L1 fee revenue through head opening, fund addition or removal, and head closure transactions, and that applications may route part of internal head fees to the L1 treasury on settlement.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims upcoming L1 upgrades such as Leios and Peras will improve the base layer but cannot reach the zero-fee, sub-second, high-throughput envelope required by high-performance applications.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer claims delayed funding risks existing Hydra users migrating to competing chains and makes it harder to attract new builders to Cardano.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states the work will be milestone-gated with independent third-party assurance and Intersect providing administrative treasury governance.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests \u20b35,100,781 for Hydra v2 hardening and adoption work, presenting Hydra as a production Cardano L2 with major performance, adoption, and treasury-revenue benefits, but many high-materiality claims are asserted without detailed budget, feasibility, alternatives, failure-mode, or community-impact analysis in the supplied text.",
+  "output_sha256": "d9321f576e07ca8764897eaebf1df02a0239ef9992f08bedbfd435e81c3c7d3e"
+}

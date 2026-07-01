@@ -3,11 +3,11 @@
 ## Vote
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
-- Status: `active`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Status: `expired`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.66; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.53; confidence 100.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,16 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2750000
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "Rare Network requests ₳2,750,000, described as $660,000 at a $0.24 ADA valuation, to fund two Cardano sponsorship packages." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
 - No milestone-gated disbursement documented.
-- DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Rare Network says it will return 20% of all VIP ticket sales to the Cardano Treasury, with the current retail value of a VIP ticket stated as $900.
-- Claims and evidence missing: Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says treasury funding would expand Cardano presence, accessibility, participation, and strategic industry outreach.
+- Claims and evidence missing: Independent evidence for: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900.
+- Claims and evidence missing: Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says funding would substantially expand Cardano presence, accessibility, participation, and industry outreach.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -52,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Document downside risks, mitigations, and what gets cut first if delivery slips.
 
 ## Proof of vote
-- input_hash: `a085d26808cebefca3cbe73cb5b6217794c69f290303cd411db94a1ae9180b28`
-- snapshot_bundle_hash: `49a91d0758d565c5311802cfa744842d769df0537dd8c5ee6c73c3c5d0316997`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `-0.6633`
+- input_hash: `a23b17ab281cc290588f3f2913c842f51389ed0850f4eb5bb32574871fd5a949`
+- snapshot_bundle_hash: `f941b20dcedd54130c7887350e02d0f4efa7f07615aa58754a1ebe4fcd3b59ef`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `-0.5333`
 - confidence: `1.0`
 

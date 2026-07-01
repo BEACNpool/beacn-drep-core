@@ -1,0 +1,80 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "103,000",
+    "deadline": "Period of delivery is instant as part of on-chain enactment",
+    "deliverables": [
+      "Instant on-chain distribution of reimbursement upon governance action enactment"
+    ],
+    "recipient": "Ikigai Info governance action submitter / intended recipient; exact address not stated in document",
+    "what": "Treasury withdrawal to reimburse the Ikigai Info governance action deposit and claimed lost staking rewards."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 103,000 ADA from the treasury to reimburse a lost 100,000 ADA governance action deposit plus 3,000 ADA for claimed lost staking rewards.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The original Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork and was symbolic in nature.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "A Cardano node bug permitted an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer says there was significant community sentiment at the time that the deposit should be reimbursed because the submitter was an early pioneer of Cardano governance.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The Cardano in Oceania initiative included this reimbursement in its budget Info governance action, but that action was not approved.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states there are no costs or expenses associated with the withdrawal beyond the reimbursement amount.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states there are no circumstances under which the withdrawal might be refunded to the Cardano Treasury.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states the recipient has not previously received treasury funds.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states the requested amount does not exceed the current Net Change Limit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal includes an external Adastat governance reference that can be checked for the referenced governance action.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document asks for 103,000 ADA to reimburse a claimed unrecoverable 100,000 ADA Info action deposit plus 3,000 ADA in staking rewards, with most key justification claims asserted rather than evidenced in the anchor text.",
+  "output_sha256": "3e970c31bf8e84f57c8296f9cbf550a41e6581c3c6eafe00a8ef622a900fdec1"
+}

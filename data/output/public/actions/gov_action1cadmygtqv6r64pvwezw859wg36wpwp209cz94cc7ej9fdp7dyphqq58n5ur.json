@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:86a3b3d2f20649b394cf1515d9cd257fd8a7f0aaaedee6f63aac06f63f6d5770",
+    "raw_input_hash": "sha256:e14e28ab26b7a49b83b8c498b8e4176655475b75348ffcc3662f5edf0a803a6c",
     "detected_at": "2026-06-05T21:00:01.749231+00:00"
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-06-19T15:54:29.407158+00:00",
+    "published_at": "2026-07-01T23:06:08.058006+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,26 +18,26 @@
   },
   "proof_of_vote": {
     "vote": "YES",
-    "score": 0.02,
-    "confidence": 0.57,
-    "input_hash": "86a3b3d2f20649b394cf1515d9cd257fd8a7f0aaaedee6f63aac06f63f6d5770",
-    "snapshot_bundle_hash": "2989b3339a1407a31c928351e40453b4779966ef451057e2be139c10cb8de016",
-    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
-    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
-    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-86a3b3d2f206.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ead4aeed392f55d8eb14ac78.md",
-    "rationale_anchor_hash": "ead4aeed392f55d8eb14ac78744793ac5ec44ebef05c1689cf655d93214707c9"
+    "score": 0.01,
+    "confidence": 0.56,
+    "input_hash": "e14e28ab26b7a49b83b8c498b8e4176655475b75348ffcc3662f5edf0a803a6c",
+    "snapshot_bundle_hash": "54e75c0d41411a197683e33ab38b59da2af98e5337ccc75eba5ccf5dee4b2220",
+    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+    "resources_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+    "core_commit": "ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-e14e28ab26b7.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/b0a8bdd830243e38f925c3a1.md",
+    "rationale_anchor_hash": "b0a8bdd830243e38f925c3a1cbaa45515906d0db832dbb9658877c1ec604bf4a"
   },
   "rationale": {
-    "summary": "Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.02; confidence 57.0%.",
+    "summary": "Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.01; confidence 56.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.",
       "Add rollback/containment plan and explicit halt criteria."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-86a3b3d2f206.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-e14e28ab26b7.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -74,17 +74,16 @@
             "Stated amount: not stated in document",
             "Deliverables: Set protocol_param_update.committee_min_size to 5.",
             "Deadline/expiry: not stated in document",
-            "Claim (governance, supported_in_proposal, high materiality): The proposal changes the minimum Constitutional Committee size parameter from 7 to 5.",
-            "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7.",
-            "Claim (governance, proposer_asserted, high materiality): If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
-            "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer that allows governance to continue if one or two members retire or their terms expire, assuming a current 7-member committee.",
-            "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on enactment of another live Parameter Change action for Plutus cost model updates, but asserts there is no technical interaction between the two parameter changes.",
-            "Claim (governance, supported_in_proposal, high materiality): The action does not directly change the current number of Constitutional Committee members or the maximum number of Constitutional Committee members."
+            "Claim (technical, supported_in_proposal, high materiality): The proposal changes only the committeeMinSize parameter to 5.",
+            "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.",
+            "Claim (governance, supported_in_proposal, high materiality): If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
+            "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would provide an operational buffer if one or two members resign or their terms expire, assuming a current 7 member body.",
+            "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on another live Parameter Change governance action for Plutus cost model updates, and the document states there is no technical interaction between the two parameter changes.",
+            "Claim (governance, supported_in_proposal, high materiality): The proposal does not directly affect the current number of Constitutional Committee members and does not change the maximum number of Constitutional Committee members."
           ],
           "missing": [
-            "Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7.",
-            "Independent evidence for: If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
-            "Independent evidence for: The current Constitutional Committee election process facilitated by Intersect is intended to maintain a 7-seat committee and not lower the existing number of seats."
+            "Independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.",
+            "Independent evidence for: The proposal states the current elections process facilitated by Intersect is intended to maintain a 7 seat Constitutional Committee and not lower the existing number of seats."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -112,8 +111,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter from 7 to 5.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal changes only the committeeMinSize parameter to 5.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -132,7 +131,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-86a3b3d2f206.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-e14e28ab26b7.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -143,16 +142,16 @@
     "anchor_hash": "8c7c510c1c959d5c587de268350ce9275af45a05f5774c15fd424b924e18e749",
     "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
     "content_bytes": "18525",
-    "fetched_at_utc": "2026-06-19T15:55:01Z",
+    "fetched_at_utc": "2026-07-01T23:06:54Z",
     "download_path": "/proposals/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
-    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
+    "resources_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+    "core_commit": "ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -215,14 +214,14 @@
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.02,
-    "governance_alignment": 0.57
+    "technical_value": 0.01,
+    "governance_alignment": 0.56
   },
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 652,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-19T15:55:00.981326Z",
+    "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   }
 }

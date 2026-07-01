@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "20000000",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Allocate capital to builders expected to improve Cardano ecosystem KPIs",
+      "Require funded projects to track monthly active users, monthly on-chain transactions, and TVL",
+      "Use public reporting and increasingly on-chain KPI verification",
+      "Disburse funds after milestone completion is validated by the administrator",
+      "Return unused or unallocated DAO treasury funds to the Cardano Treasury"
+    ],
+    "recipient": "Cardano Builder DAO, with funds received and administered initially by an independent dRep DAO council/multisig",
+    "what": "Cardano Builder DAO treasury withdrawal to continue and expand a smart contract-governed, KPI-driven funding mechanism for Cardano builders"
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 20,000,000 ADA for the Cardano Builder DAO funding mechanism.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The Cardano Builder DAO is described as a smart contract-governed funding mechanism intended to allocate capital to builders that advance monthly active users, monthly on-chain transactions, and TVL.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Round 1 allegedly included 38 voting members, 27 requesting members, 20 funded companies, an 83% governance participation rate, and 5,541,335 ADA distributed through a smart contract-governed process.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Round 2 allegedly added 18 new members, funded 14 companies, and reached an 88% member participation rate after review, debate, temperature checks, and final voting.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 2 moving toward KPI tracking tied to live on-chain Cardano data.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Funded projects are required to track monthly active users, TVL, and on-chain transactions.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "An independent council composed of dRep DAO members will receive the treasury withdrawal, hold funds prior to deployment, and oversee milestone-based disbursement.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "ADA held by the administrator before disbursement will be kept in separate auditable accounts, not delegated to any stake pool operator, and delegated to the predefined abstain voting option.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The CB DAO returned 354,790 ADA of unused funds to the treasury after the first two governance rounds, with a transaction link provided.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document presents a 20,000,000 ADA request to scale an existing builder-led DAO funding mechanism, emphasizing KPI-linked treasury allocation, prior funding rounds, independent administration, milestone disbursement, and repayment of unused funds, but the deterministic assessment notes missing budget, feasibility, risk, alternatives, and failure-mode analysis.",
+  "output_sha256": "3ab207036bc6dec1b94451f4155d1c171793d7fc901d0e40b1751c4cc46dcaba"
+}

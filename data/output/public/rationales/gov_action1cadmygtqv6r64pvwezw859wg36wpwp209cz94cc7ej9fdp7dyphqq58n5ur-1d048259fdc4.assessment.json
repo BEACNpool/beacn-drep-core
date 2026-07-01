@@ -1,0 +1,89 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "action_type": "ParameterChange",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 635",
+        "Expires after epoch: 642",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: not required",
+        "Requested: Reduce the committeeMinSize protocol parameter from 7 to 5.",
+        "Recipient: not stated in document",
+        "Stated amount: none",
+        "Deliverables: Set committee_min_size to 5 via a parameter_change_action.",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal changes the minimum Constitutional Committee size parameter from 7 to 5.",
+        "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7.",
+        "Claim (governance, supported_in_proposal, high materiality): A single resignation or term expiration under the current setting could prevent the Constitutional Committee from functioning for governance actions requiring its approval.",
+        "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer allowing governance to continue if one or two members retire or their terms expire, assuming a 7-member body.",
+        "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on enactment of another live Parameter Change governance action for Plutus cost model settings, but asserts there is no technical interaction between the two parameter changes.",
+        "Claim (governance, supported_in_proposal, medium materiality): The proposal does not directly change the current number of Constitutional Committee members or the maximum number of members."
+      ],
+      "missing": [
+        "Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: low",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: none",
+        "Mitigation evidence: unknown",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter from 7 to 5.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

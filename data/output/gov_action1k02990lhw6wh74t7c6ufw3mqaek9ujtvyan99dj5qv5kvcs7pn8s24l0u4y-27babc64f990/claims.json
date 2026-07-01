@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,810,423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Intersect Budget Administration fee",
+      "audit and oversight through Intersect and technically capable third-party",
+      "milestone-based disbursement controls"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor",
+    "what": "Treasury withdrawal to fund Mithril Protocol"
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for an Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says Mithril addresses slow full node synchronization and centralized trust assumptions for light clients.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states the requested withdrawal did not, at submission, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states audit and oversight costs are included in the proposal overhead and that independent oversight will be provided through Intersect and technically capable third parties with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states Teragone has not previously received direct funding from Cardano treasury or community governance programs but has worked on Mithril through IOG-funded collaboration.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Intersect says treasury funds will be administered through Sundae Labs treasury management smart contracts using one Treasury Reserve Smart Contract and one Project-Specific Smart Contract, with specified addresses and multi-party authorization roles.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal references a dashboard, smart contract guide, GitHub repository, and audit reports for community auditing and on-chain verification of the withdrawn ada.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 3,810,423 ada for Mithril Protocol via Intersect-administered treasury smart contracts, provides a high-level budget split and governance-process references, and asserts technical, adoption, oversight, and continuity benefits, but does not include a complete budget analysis, feasibility assessment, risk analysis, alternatives analysis, or failure-mode analysis.",
+  "output_sha256": "37cd73d09740e1385eb06c2918d24e101fa6431573850063be083c8f7588b0bb"
+}

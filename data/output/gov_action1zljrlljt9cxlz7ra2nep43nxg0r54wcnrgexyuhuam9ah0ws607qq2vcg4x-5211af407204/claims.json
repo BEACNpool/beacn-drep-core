@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "18263496.00",
+    "deadline": "2026-2027 delivery period; specific milestone dates not stated in document",
+    "deliverables": [
+      "Peras v1: production cryptography, KillSwitch, mainnet readiness, support, and maintenance",
+      "History Expiry: partial-history nodes intended to reduce SPO storage costs",
+      "Conformance Testing: CTC framework extended for Peras and Leios"
+    ],
+    "recipient": "stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr via Intersect treasury reserve administration, with Tweag by Modus Create as delivery party",
+    "what": "Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, to fund three work packages across Cardano core infrastructure over 2026-2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The primary technical focus is mainnet deployment of Peras, described as reducing finality time to about 2 minutes versus about 12 minutes today.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "History Expiry is proposed to enable partial-history nodes and reduce SPO storage costs, with the document asserting Leios throughput could drive disk usage to about 1 GB per hour at 100-1000 TPS without it.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Conformance testing work would extend the CTC framework for Peras and Leios and provide correctness scaffolding such as conformance testing, mutation testing, adversarial fork simulation, and audit infrastructure.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget is based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and an ADA/USD conversion rate of 0.25 based on a stated five-year average, with CBU/ARK Peras cryptography subcontracts included as fixed-price line items.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Tweag states it has worked on Cardano core infrastructure since January 2018, led consensus and ledger teams, implemented Ouroboros Genesis, and contributed to Peras design.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect is requested to serve as proposal, contract, audit, and treasury administration party using milestone-based fixed-price contracts where scope is well-defined.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states all milestones, acceptance criteria, payment amounts, and expected delivery dates will be agreed later between Tweag and Intersect and made public through budget management transaction metadata.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states independent validation will be provided by No Witness Labs, mandatory code review will be performed by IOG as primary maintainers, and milestone acceptance will be supported by a third-party assurer.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states unused funds at the end of the delivery period, or funds associated with canceled or reduced deliverables, will be returned proportionally to the Cardano Treasury with final reconciliation published.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The anchor describes a large treasury withdrawal for Tweag-delivered Peras, History Expiry, and conformance testing work, administered through Intersect with milestone controls, but many concrete budget, feasibility, alternatives, failure-mode, and community-impact details are deferred or not included in the anchor text.",
+  "output_sha256": "1ff70808f4cd534fc9edd90d9cf1e82db205aeb54d00405fd5d7c88fc5b87742"
+}

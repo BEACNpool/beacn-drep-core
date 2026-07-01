@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "18263496.00",
+    "deadline": "2026-2027 delivery period; exact milestone dates not stated in document",
+    "deliverables": [
+      "Peras v1 production cryptography, KillSwitch, mainnet readiness, support, and maintenance",
+      "History Expiry partial-history nodes to reduce SPO storage costs",
+      "Conformance Testing framework extended for Peras and Leios",
+      "Merged code, reproducible releases, runbooks, benchmarks, and governance-action packages where governance activation is required",
+      "Public demos at least every 2 months, recorded and published",
+      "Regular status updates, Discord engagement, and Slack coordination"
+    ],
+    "recipient": "stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr, with Intersect requested as proposal and contract administrator and Tweag by Modus Create as delivery party.",
+    "what": "Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027: Peras v1, History Expiry, and Conformance Testing for Peras and Leios."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, to fund three Cardano core infrastructure work packages over 2026-2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The work packages are Peras v1, History Expiry, and Conformance Testing for Peras and Leios, and the proposer says they are interdependent parts of a single delivery pipeline.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Peras is described as enabling faster finality of about 2 minutes compared with about 12 minutes today, but Peras v1 remains undeployed on mainnet.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "History Expiry is claimed to reduce SPO storage costs and address projected disk growth of about 1 GB per hour at 100-1000 TPS under increased throughput.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget is said to be based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and a conservative ADA/USD conversion rate of 0.25 based on a 5-year average.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Tweag states it has been engaged on Cardano core infrastructure since January 2018, including consensus and ledger work, Ouroboros Genesis implementation, and Peras design contributions.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says all deliverables are open-source and publicly tracked, with supporting full proposal and work-package references on IPFS, Google Drive, and the Tweag project website.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that a legal contract with Cardano Development Holdings will be administered by Intersect, with milestone-based disbursement, third-party assurance, IOG code review, and No Witness Labs validation.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states funds will be administered through Intersect treasury reserve and project-specific smart contracts using the Sundae Labs framework, with oversight committee sign-off rules and a cited validation transaction.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer says unspent funds, funds tied to canceled or reduced deliverables, and funds not disbursed by the end of the delivery period will be returned to the Cardano Treasury.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document describes a large treasury request for open-source Cardano core infrastructure work with named work packages, administrative controls, and refund commitments, but many key economic and feasibility assertions are stated rather than substantiated in the anchor text.",
+  "output_sha256": "bd74d431c36b962f612500b5063c4d99b4e8d74f8707ac36332b10bed3e2b96c"
+}

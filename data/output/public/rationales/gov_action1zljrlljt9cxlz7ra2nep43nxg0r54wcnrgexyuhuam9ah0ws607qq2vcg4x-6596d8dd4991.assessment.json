@@ -1,0 +1,130 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 634",
+        "Expires after epoch: 641",
+        "Treasury request: 18.26M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: required",
+        "Requested: Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027: Peras v1, History Expiry, and Conformance Testing for Peras and Leios.",
+        "Recipient: stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr, with Intersect requested as proposal and contract administrator and Tweag by Modus Create as delivery party.",
+        "Stated amount: 18263496.00",
+        "Deliverables: Peras v1 production cryptography, KillSwitch, mainnet readiness, support, and maintenance, History Expiry partial-history nodes to reduce SPO storage costs, Conformance Testing framework extended for Peras and Leios, Merged code, reproducible releases, runbooks, benchmarks, and governance-action packages where governance activation is required, Public demos at least every 2 months, recorded and published, Regular status updates, Discord engagement, and Slack coordination",
+        "Deadline/expiry: 2026-2027 delivery period; exact milestone dates not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, to fund three Cardano core infrastructure work packages over 2026-2027.",
+        "Claim (technical, proposer_asserted, high materiality): The work packages are Peras v1, History Expiry, and Conformance Testing for Peras and Leios, and the proposer says they are interdependent parts of a single delivery pipeline.",
+        "Claim (technical, proposer_asserted, high materiality): Peras is described as enabling faster finality of about 2 minutes compared with about 12 minutes today, but Peras v1 remains undeployed on mainnet.",
+        "Claim (technical, proposer_asserted, high materiality): History Expiry is claimed to reduce SPO storage costs and address projected disk growth of about 1 GB per hour at 100-1000 TPS under increased throughput.",
+        "Claim (economic, proposer_asserted, high materiality): The budget is said to be based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and a conservative ADA/USD conversion rate of 0.25 based on a 5-year average.",
+        "Claim (adoption, proposer_asserted, medium materiality): Tweag states it has been engaged on Cardano core infrastructure since January 2018, including consensus and ledger work, Ouroboros Genesis implementation, and Peras design contributions."
+      ],
+      "missing": [
+        "Independent evidence for: The work packages are Peras v1, History Expiry, and Conformance Testing for Peras and Leios, and the proposer says they are interdependent parts of a single delivery pipeline.",
+        "Independent evidence for: Peras is described as enabling faster finality of about 2 minutes compared with about 12 minutes today, but Peras v1 remains undeployed on mainnet.",
+        "Independent evidence for: History Expiry is claimed to reduce SPO storage costs and address projected disk growth of about 1 GB per hour at 100-1000 TPS under increased throughput.",
+        "Independent evidence for: The budget is said to be based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and a conservative ADA/USD conversion rate of 0.25 based on a 5-year average.",
+        "budget analysis",
+        "feasibility assessment",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 18263496",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: not confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: unknown (stale snapshot)",
+        "Financial confidence: 0.40"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: low",
+        "Technical risk: high",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: unknown",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, to fund three Cardano core infrastructure work packages over 2026-2027.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The work packages are Peras v1, History Expiry, and Conformance Testing for Peras and Leios, and the proposer says they are interdependent parts of a single delivery pipeline.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

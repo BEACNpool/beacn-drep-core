@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `HardForkInitiation`
 - Status: `active`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions are high-impact protocol upgrades and require operator-aware review. Confidence context: score -0.07; confidence 62.0%.
+Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Hard fork actions are high-impact protocol upgrades and require operator-aware review. Confidence context: score -0.04; confidence 59.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,13 +23,13 @@ Vote: YES. For this HardForkInitiation (active), available evidence supports pro
 - Intake: Action type: HardForkInitiation
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to 11.0 without an era transition." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal initiates a hard fork to Cardano mainnet Protocol Version 11.0 while remaining in the Conway era with no era transition." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
-- Claims and evidence missing: Independent evidence for: Native UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.
-- Claims and evidence missing: Independent evidence for: Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.
+- Claims and evidence missing: Independent evidence for: UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic.
+- Claims and evidence missing: Independent evidence for: The proposal states that testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
@@ -41,11 +41,11 @@ Vote: YES. For this HardForkInitiation (active), available evidence supports pro
 - Publish rollback/contingency plan and incident response playbook.
 
 ## Proof of vote
-- input_hash: `e021bbc7320d59e89a783c736b7bc9f1b3cdb3e0cbaa18898f69182040a9fb6d`
-- snapshot_bundle_hash: `50cc12d887336d51fad4d4ca77731624204d23d71a8d7470f8b12ede5d835fc7`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `-0.07`
-- confidence: `0.62`
+- input_hash: `772a1327292a48350a5629dea20f67442575597895a5920e9fa1d00ec2537f26`
+- snapshot_bundle_hash: `7127049e367a161aa2f2229bf7b178063e66e989d128a0056c0ce9952f810c5f`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `-0.04`
+- confidence: `0.59`
 

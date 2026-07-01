@@ -1,0 +1,80 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Set protocol_param_update.committee_min_size to 5."
+    ],
+    "recipient": "not stated in document",
+    "what": "Reduce the committeeMinSize protocol parameter from 7 to 5."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The proposal changes the minimum Constitutional Committee size parameter from 7 to 5.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The current Constitutional Committee has 7 members, which equals the current committeeMinSize setting of 7.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "A single resignation or term expiration under the current setting could prevent the Constitutional Committee from functioning and make governance actions requiring committee approval ineligible for ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Reducing committeeMinSize to 5 would create an operational buffer so governance can continue if one or two current members retire or their terms expire.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal depends temporally on enactment of another live Parameter Change governance action for Plutus cost model updates, but the document states there is no technical interaction between the two parameter changes.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal does not directly change the current number of Constitutional Committee members or the maximum number of committee members.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "With a Constitutional Committee size of 5 and a 2/3 threshold, 4 constitutional votes are needed and 2 unconstitutional votes can prevent threshold satisfaction.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect states that current committee elections are intended to maintain a 7-seat Constitutional Committee and are not intended to lower the existing number of seats.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states it underwent technical review through the Parameter Committee Parameter Change Process and references the Cardano Forum PCP-005 discussion.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that reverting committeeMinSize to 7 is possible if there are at least 7 Constitutional Committee members, but would halt governance if fewer than 7 members were present at reversion.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document proposes a non-treasury parameter change lowering committeeMinSize from 7 to 5 to reduce governance inoperability risk, while acknowledging changed veto dynamics at smaller committee sizes and providing references to committee approvals, PCP review, and a temporal dependency on another governance action.",
+  "output_sha256": "b186e19d35fb4340c5957aff9cb377cae11a1bab746b85938589f2ac88956d1a"
+}

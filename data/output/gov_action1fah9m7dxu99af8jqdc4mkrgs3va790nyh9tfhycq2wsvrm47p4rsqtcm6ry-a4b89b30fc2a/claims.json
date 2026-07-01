@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "5100781",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Performance optimization targeting 2x to 10x improvements in snapshot signing and memory profile and reduced L1 fees through on-chain contract optimization",
+      "Operational excellence including operator runbooks, simpler node configuration, observability and logging, and an improved TUI",
+      "Ecosystem support including production-user and integrator-requested features, Hydra Alliance facilitation, hackathons, and developer relations",
+      "Maintenance and developer experience work including CI, tooling, and technical debt reduction",
+      "Milestone-gated delivery with independent third-party assurance"
+    ],
+    "recipient": "Input Output Global / IO: Hydra, with Intersect providing administrative treasury governance",
+    "what": "Fund four Hydra v2 workstreams: performance optimization, operational excellence, ecosystem support, and developer experience/maintenance for a feature-complete and hardened Hydra v2."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that Hydra is already used by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Hydra provides sub-second finality, near-zero or zero internal transaction fees, high throughput, and L1-anchored settlement guarantees.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Cardano L1 has over two hours of finality, approximately $0.17 payment transaction fees, and roughly 7 to 10 TPS, making high-performance use cases uncompetitive on L1 alone.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal claims competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS, causing builders to exclude Cardano at the selection stage.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims a single Hydra Head processes up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly with additional independent Heads.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal claims every Hydra Head opening, funding change, and closure creates L1 transactions and fees, and that applications may route some internal fees to the L1 treasury on settlement.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims upcoming L1 upgrades such as Leios and Peras will improve Cardano but cannot provide the zero-fee, sub-second, high-throughput envelope required by high-performance applications.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal requests \u20b35,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states provisional users under evaluation include Bodega Market, Atlas Defi, Wingriders, Houselink, European Public Network, and more.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests \u20b35,100,781 for Hydra v2 hardening and adoption workstreams, presents Hydra as a mature Cardano L2 with live and prospective users, and argues it improves Cardano performance, adoption, and treasury-linked activity, but many high-materiality adoption, benchmark, market, and comparative claims are asserted without evidence in the anchor text.",
+  "output_sha256": "1df919f9de59d63db7a50a0fbc895fe37cae6847b9ba37de074ef79169815623"
+}

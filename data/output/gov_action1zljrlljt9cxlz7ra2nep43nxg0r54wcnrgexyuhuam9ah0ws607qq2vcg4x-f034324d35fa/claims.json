@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "18263496.00",
+    "deadline": "2026-2027 delivery period; exact milestone dates not stated in document",
+    "deliverables": [
+      "Peras v1 production cryptography, KillSwitch, mainnet readiness, support, and maintenance",
+      "History Expiry partial-history nodes to reduce SPO storage costs",
+      "Conformance Testing framework extended for Peras and Leios",
+      "Ready-for-activation outputs where governance is required, including merged code, reproducible releases, runbooks, benchmarks, and governance-action packages",
+      "Public demos at least every two months, regular status updates, and community coordination channels"
+    ],
+    "recipient": "stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr via Intersect's treasury reserve smart contract administration for Tweag delivery",
+    "what": "Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027: Peras v1, History Expiry, and Conformance Testing for Peras and Leios."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, to fund three core infrastructure work packages over 2026-2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The primary focus is mainnet deployment of Peras, which the document says would provide faster finality of approximately 2 minutes compared with approximately 12 minutes today.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Peras and Leios are critical protocol upgrades that can unlock significantly higher transaction volume, staking rewards, and TVL.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The document claims Leios throughput could cause SPO disk usage to surge to approximately 1 GB per hour at 100-1000 TPS without History Expiry, making full-history requirements economically prohibitive and threatening decentralization.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Tweag says it has been engaged on Cardano core infrastructure since January 2018, including leading consensus and ledger teams, implementing Ouroboros Genesis, and contributing to Peras design.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget is said to be based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and a conservative ADA/USD conversion rate of 0.25 based on a five-year average, with CBU/ARK Peras cryptography subcontracts included as fixed-price line items.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that Intersect will act as contract and audit administrator using milestone-based fixed-price contracts where scope is well-defined.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document says technical deliverables will undergo mandatory IOG code review and independent validation by No Witness Labs as a third-party assessor across relevant work packages.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that funds will be administered through Intersect's treasury management smart contract framework developed by Sundae Labs, with audits from TxPipe and MLabs and a cited validation transaction.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal claims the requested amount does not, at submission, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests a large treasury withdrawal for Tweag-led Cardano infrastructure work, provides high-level scope and governance controls, and points to some external references, but many key economic, feasibility, alternatives, failure-mode, and impact details are not contained in the supplied text.",
+  "output_sha256": "39ab597180fc545273ae9353e910493d5126c2144d347f6064b7e999b0e8d399"
+}

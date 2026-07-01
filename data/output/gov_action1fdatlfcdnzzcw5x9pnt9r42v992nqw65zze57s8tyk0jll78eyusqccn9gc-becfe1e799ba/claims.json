@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "20000000",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Allocate capital to builders expected to advance Cardano Vision 2030 KPIs.",
+      "Require funded projects to track monthly active users, TVL, and on-chain transactions.",
+      "Coordinate proposal evaluation, feedback, transparent fund distribution, and results tracking.",
+      "Operate milestone-based disbursement from an independent multisig after administrator validation.",
+      "Return unused or unallocated DAO treasury funds to the Cardano Treasury."
+    ],
+    "recipient": "Cardano Builder DAO, with treasury withdrawal received and administered by an independent council composed of dRep DAO members before milestone-based disbursement.",
+    "what": "Treasury withdrawal to fund the Cardano Builder DAO as a smart contract-governed, KPI-driven funding mechanism for Cardano builders."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The DAO intends to allocate capital to builders who can improve monthly active users, monthly on-chain transactions, and TVL.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that funded projects are required to track monthly active users, TVL, and on-chain transactions.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The DAO says it built Version 1 and Version 2 of a KPI dashboard, moving from self-reported KPI tracking toward live on-chain Cardano data.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The CB DAO claims it has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Round 1 is described as involving 38 voting members, 27 requesting members, 20 funded companies, 83% governance participation, and 5,541,335 ADA distributed through a smart contract-governed process.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Round 2 is described as adding 18 new members, funding 14 companies, and reaching 88% member participation after review, debate, temperature checks, and final voting.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that official Cardano developer documentation describes CB DAO as a smart contract-governed mechanism with more than 50 established Cardano projects participating in funding decisions.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The administrator council is expected to hold funds in auditable separate accounts, avoid stake-pool delegation, delegate voting to predefined abstain, and disburse milestones through an independent multisig.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The CB DAO states it returned 354,790 ADA of unused funds to the treasury after its first two governance rounds, citing an Adastat transaction link.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 20,000,000 ADA for Cardano Builder DAO, presenting prior funding rounds, KPI-oriented governance, administrator controls, milestone disbursement, and repayment commitments, but the deterministic assessment reports missing budget, feasibility, risk, alternatives, and failure-mode analysis.",
+  "output_sha256": "ce688299eb2d741fdccd3dc32c596ee7dcb51d8a553b080836694cd8d1d7d5f2"
+}

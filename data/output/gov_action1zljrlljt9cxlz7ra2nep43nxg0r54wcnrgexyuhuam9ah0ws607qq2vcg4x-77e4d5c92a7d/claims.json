@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "18263496.00",
+    "deadline": "2026-2027 delivery period; exact milestone dates not stated in document",
+    "deliverables": [
+      "Peras v1 production cryptography, KillSwitch, mainnet readiness, support and maintenance",
+      "History Expiry partial-history nodes to reduce SPO storage costs",
+      "Conformance Testing framework extended for Peras and Leios"
+    ],
+    "recipient": "stake17xzc8pt7fgf0lc0x7eq6z7z6puhsxmzktna7dluahrj6g6ghh5qjr via Intersect-administered treasury reserve contract, with Tweag as delivery organization",
+    "what": "Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Peras v1 is intended to improve finality to about two minutes compared with about twelve minutes today.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "History Expiry is intended to enable partial-history nodes and reduce SPO storage costs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document states Leios-driven increased throughput could cause SPO disk usage to surge to about 1 GB per hour at 100-1000 TPS without History Expiry.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Tweag says it has worked on Cardano core infrastructure since January 2018, including leading consensus and ledger teams, implementing Ouroboros Genesis, and contributing to Peras design.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget is based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and an ADA/USD conversion rate of 0.25 based on a five-year average.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal commits to ready-for-activation deliverables where governance action is required, including merged code, reproducible releases, runbooks, benchmarks, and governance-action packages.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states milestone acceptance, payment amounts, expected delivery dates, and dispute resolution will be defined later in an off-chain legal contract between Tweag and Cardano Development Holdings administered by Intersect.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states all funds not disbursed by the end of the delivery period, and unspent funds for canceled or reduced scope, will be returned to the Cardano Treasury.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount is claimed not to breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests a large treasury withdrawal for Peras, History Expiry, and conformance testing, with Intersect administration, milestone-based controls, stated refund conditions, and several material assertions about technical necessity, budget basis, and NCL compliance.",
+  "output_sha256": "bb41272016b2c7d885dfe77f437cb4d10955e7322040f6c2ab2e720688151ea0"
+}

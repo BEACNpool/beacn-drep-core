@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540750",
+    "deadline": "12 months",
+    "deliverables": [
+      "Essential Oura codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation.",
+      "Community support including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public developer communication.",
+      "AI-friendly documentation and integration resources for AI-driven development workflows.",
+      "Use of Intersect treasury management smart contracts, reporting obligations, and milestone-based disbursement controls."
+    ],
+    "recipient": "TxPipe via Intersect treasury withdrawal process",
+    "what": "Funding for Oura by TxPipe maintenance over 12 months, including part-time maintainer work, Intersect administration, and contingency reserve."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The on-chain treasury withdrawal amount is 540,750 ADA, consisting of 525,000 ADA for Oura maintenance and enhancement plus a 15,750 ADA Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura is a Rust-native pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura supports multiple data sources and many output sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and is the most starred project in the TxPipe portfolio.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "Oura has previously been funded twice through Project Catalyst, in Fund 9 and Fund 13, for feature development.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 successfully delivered and 4 currently under development and on schedule.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount does not, at submission, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect will provide administration, third-party oversight, reporting obligations, milestone-based disbursement controls, and smart-contract-based treasury management for the withdrawn funds.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The anchor requests 540,750 ADA for 12 months of Oura maintenance by TxPipe through Intersect, with stated maintenance, support, AI-documentation, oversight, and smart-contract fund-management arrangements, but the deterministic assessment records missing budget, feasibility, risk, alternatives, and failure-mode analysis.",
+  "output_sha256": "dfeca3d7c3cf0d9abb4f747d0e81fd00e57ad3ce5659e2db496e263f11c19504"
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
+  "action_type": "HardForkInitiation",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: HardForkInitiation",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: not required",
+        "Requested: Initiate an intra-era hard fork on Cardano mainnet to Protocol Version 11.0, called the van Rossem hard fork.",
+        "Recipient: not stated in document",
+        "Stated amount: 0",
+        "Deliverables: Upgrade Cardano mainnet protocol to major version 11 and minor version 0 while remaining in the Conway era., Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138 and CIP-0153 available., Make all Plutus built-in functions available consistently across Plutus V1, V2 and V3., Add UPLC case expressions for built-in Bool, Integer and Data types., Promote or revise ledger and node checks including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restrictions, withdrawals validation, and PPView mismatch reporting.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, supported_in_proposal, high materiality): The proposed hard fork changes Cardano mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with no transaction-shape change.",
+        "Claim (technical, independently_verifiable, high materiality): Protocol Version 11 introduces Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138 and CIP-0153, including modular exponentiation, dropList, BLS12-381 multi-scalar multiplication, Array, and Value built-ins.",
+        "Claim (technical, proposer_asserted, high materiality): The hard fork will make all Plutus built-in functions available across Plutus V1, V2 and V3, expanding capabilities for existing V1 and V2 scripts.",
+        "Claim (technical, proposer_asserted, medium materiality): UPLC case expressions over Bool, Integer and Data will provide significant performance improvements and cleaner script logic.",
+        "Claim (technical, proposer_asserted, high materiality): Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2 and V3.",
+        "Claim (technical, independently_verifiable, high materiality): A linked Cardano Node 11.0.1 performance report shows no regressions for standard value, Plutus, and voting benchmarks and acceptable baseline performance for new primitives and case expressions."
+      ],
+      "missing": [
+        "Independent evidence for: The hard fork will make all Plutus built-in functions available across Plutus V1, V2 and V3, expanding capabilities for existing V1 and V2 scripts.",
+        "Independent evidence for: UPLC case expressions over Bool, Integer and Data will provide significant performance improvements and cleaner script logic.",
+        "Independent evidence for: Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2 and V3.",
+        "Independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposed hard fork changes Cardano mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with no transaction-shape change.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The hard fork will make all Plutus built-in functions available across Plutus V1, V2 and V3, expanding capabilities for existing V1 and V2 scripts.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

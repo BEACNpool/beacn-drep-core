@@ -1,0 +1,92 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
+  "action_type": "HardForkInitiation",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: HardForkInitiation",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: not required",
+        "Requested: Initiate a hard fork upgrading Cardano Mainnet to protocol version 11.0, called the 'van Rossem' hard fork.",
+        "Recipient: not stated in document",
+        "Stated amount: not stated in document",
+        "Deliverables: Upgrade Cardano mainnet protocol to major version 11 and minor version 0 while remaining in the Conway era., Make new Plutus primitives available as defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138 and CIP-0153., Make all Plutus built-in functions available consistently across Plutus V1, V2 and V3., Add UPLC case expressions for Bool, Integer and Data., Enforce or tighten several ledger and node validation, diagnostic, and security rules.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, supported_in_proposal, high materiality): The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era and not changing transaction shape.",
+        "Claim (technical, independently_verifiable, high materiality): The upgrade introduces new Plutus primitives for modular exponentiation, dropList, BLS12-381 multi-scalar multiplication, Array operations, and native Value handling, with the referenced CIPs identifying the primitives.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal states that all Plutus built-ins, including newly introduced ones, will become available across Plutus V1, V2 and V3.",
+        "Claim (technical, proposer_asserted, medium materiality): The proposal claims native UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal claims the upgrade tightens ledger and node behavior by enforcing VRF key hash uniqueness, revising Plutus V1/V2 reference input rules, promoting Constitutional Committee voting restrictions to ledger predicates, rewriting withdrawal validation, and improving PPView mismatch diagnostics.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal states that testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus features across V1, V2 and V3."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal claims native UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.",
+        "Independent evidence for: The proposal states that testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus features across V1, V2 and V3.",
+        "Independent evidence for: The proposal states that security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The hard fork will upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era and not changing transaction shape.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal claims native UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

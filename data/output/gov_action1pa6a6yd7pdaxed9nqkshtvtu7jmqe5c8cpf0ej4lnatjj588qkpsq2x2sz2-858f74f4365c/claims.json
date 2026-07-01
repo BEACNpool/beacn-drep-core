@@ -1,0 +1,87 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "10000000",
+    "deadline": "three-month liquidity deployment after enactment with monthly reporting; exact full delivery deadline not stated in document",
+    "deliverables": [
+      "Shared BTC reserve architecture with reserve-ratio mechanics and safety zones",
+      "Composable FIRE and ICE Cardano-native assets",
+      "Open-source SDKs and adapters for wallets, DEXs, and DeFi protocols",
+      "Always-on public dashboards for reserve ratio, asset supply, liquidity health, fee flows, and deployment status",
+      "Monthly governance reports and reporting standards",
+      "Independent security review, audit, and economic modeling",
+      "Staged treasury-supported launch liquidity",
+      "Legal, compliance, disclosures, treasury reporting, risk documentation, and launch-readiness review"
+    ],
+    "recipient": "Sundial Protocol and Charms, with Intersect proposed as interim fund administrator subject to confirmation and final agreement",
+    "what": "Withdraw treasury funds to build and launch Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer with reserve architecture, FIRE/ICE assets, dashboards, adapters, reporting, audits, administration, and launch liquidity."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference rate for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Pool 1 is intended for protocol infrastructure and staged launch liquidity, deployed over three months in approximate tranches of USD 250,000, USD 250,000, and USD 500,000 after specified reviews and performance checks.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Pool 2 is intended for delivery, audits, integrations, dashboards, governance reporting, legal/compliance work, administration, and go-to-market execution with itemized planning allocations totaling approximately USD 1.0 million.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Alchemy will use a shared BTC reserve backing FIRE and ICE, with reserve-ratio formulas, an initial 5.0x target reserve ratio, and safety zones above 4.0x, between 2.0x and 4.0x, and below 2.0x.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "FIRE is described as a volatility-absorbing residual BTC-upside asset and ICE as a lower-volatility USD-denominated BTC-backed asset, both intended as composable Cardano-native primitives.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer claims Cardano currently lacks a production BTCfi infrastructure layer and risks Bitcoin-backed structured exposure consolidating on other ecosystems.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document cites public-market and on-chain Bitcoin-backed products, including Strategy, Strive, Apyx, Saturn, and Pendle, as evidence that demand for structured Bitcoin exposure is real and growing.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer commits that profits, yield, and returns from treasury-supported launch liquidity will be returned to the Cardano Treasury quarterly, while principal may be returned after Alchemy reaches a 30-day time-weighted average TVL of at least USD 60 million and governance approves a return action.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal includes treasury protections such as fund separation, milestone gating, pause rules, refund conditions, ADA price protection above USD 0.35, administrator oversight, auto-abstain delegation for administrator-held ada, and a rollover clause if external investment funds development.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer acknowledges risks from BTC volatility, oracle and bridge issues, Charms protocol-layer vulnerabilities, novel asset regulatory or user-understanding issues, delivery risk, and adoption risk, and lists mitigations including audits, modeling, staged launch, dashboards, disclosures, and pause rules.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document asks for 10,000,000 ada to fund a Cardano BTCfi infrastructure protocol, split between launch liquidity/infrastructure and delivery/audit/integration work, with several asserted treasury protections but externally checkable market-demand claims and incomplete independent validation in the supplied text.",
+  "output_sha256": "83e3db65b4d48f95450bc282c63e70d4e3443b707c538d7a63e78f5deba49ae0"
+}

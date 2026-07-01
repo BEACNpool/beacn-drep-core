@@ -1,0 +1,234 @@
+{
+  "action_id": "gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr",
+  "action_type": "InfoAction",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.01,
+  "raw_score": -0.02,
+  "llm_score_adjustment": 0.03,
+  "llm_lean": {
+    "source": "codex-offline-review",
+    "model": "codex-offline-local",
+    "direction": "YES",
+    "score_adjustment": 0.03,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "821238e0f076293f59bd5528fb95958d99bd286b4e4a110ad596be9b9bb7406d",
+  "directional_threshold": 0.12,
+  "confidence": 0.53,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.030 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "ab6a4960c28d63cd04905710bf0f2cfcdac315bb9b5c2f28d00b7f985580ec5a",
+  "snapshot_bundle_hash": "1d91124af71eb2592cb9f2a7638afd139b9ccfb6d877d9a94ee314d5fc0904cf",
+  "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 564,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-06-24T11:30:56.901339Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.2838,
+    "NO": 0.2638,
+    "ABSTAIN": 0.4525
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: expired",
+          "Proposed epoch: 603",
+          "Expires after epoch: 610",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Requested: DeltaDeFi: Hydra Trading Infrastructure Budget (\u20b31,500,000)",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused..., The requested budget is intended to: Bring the current Hydra spot DEX from beta to a production-ready venue for both API traders and everyday users; Scale the Hydra and data infrastructure so Cardano has at least one CEX-grade venue for ADA and key CNT pair..., Within the \u20b31,500,000 total: 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and 20% is dedicated to the Vision 2030 KPI Measurement Programme : an initial \"State of Cardano DeFi\" baseline report , a public Vis..., Why this matters for Cardano, ADA and CNT holders Cardano currently lacks a low-latency order-book venue that can: Support API-driven trading, arbitrage and market-making at scale; Offer tight spreads and low slippage in key ADA\u2013stable and ADA\u2013CNT markets;...",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, independently_verifiable, high materiality): This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...",
+          "Claim (technical, independently_verifiable, high materiality): The requested budget is intended to: Bring the current Hydra spot DEX from beta to a production-ready venue for both API traders and everyday users; Scale the Hydra and data infrastructure so Cardano has at least one CEX-grade venue for ADA and key CNT pair...",
+          "Claim (technical, independently_verifiable, high materiality): Within the \u20b31,500,000 total: 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and 20% is dedicated to the Vision 2030 KPI Measurement Programme : an initial \"State of Cardano DeFi\" baseline report , a public Vis...",
+          "Claim (economic, independently_verifiable, low materiality): Why this matters for Cardano, ADA and CNT holders Cardano currently lacks a low-latency order-book venue that can: Support API-driven trading, arbitrage and market-making at scale; Offer tight spreads and low slippage in key ADA\u2013stable and ADA\u2013CNT markets;...",
+          "Claim (other, independently_verifiable, low materiality): Today, most Cardano trading happens on AMM-style DEXs.",
+          "Claim (economic, independently_verifiable, low materiality): They are great for simple swaps, but they are not optimised for: Low-fee, low-slippage execution at size in core ADA and CNT pairs; Instant, predictable fills for API and bot-driven strategies; or Professional market-makers and arbitrageurs who expect CEX-l..."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on DeltaDeFi: Hydra Trading Infrastructure Budget (\u20b31,500,000). This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: DeltaDeFi: Hydra Trading Infrastructure Budget (\u20b31,500,000). The strongest grounded claim is: This Budget Info Action asks DReps and the Cardano community to signal support for a \u20b31,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...\n\nReason code: RULE_THRESHOLD_UNMET.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmP25wNHBBh62eRUBnRbvpXz2DFJ5aQBgbqMq27zpHXNjs",
+        "file_sha256": "26d260db607e8904cabab8218bd3ec1463e8d82bb9960f47041f2008513fe5d5",
+        "file_path": "data/input/governance/anchors/gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr-20260326T175207Z.bin",
+        "content_chars": 25977
+      },
+      "claim_count": 8,
+      "prompt_sha256": "0affac37fc276d978770f5d21119c20091c7c330e3c1805fa10b5085185713b1",
+      "output_sha256": "8cf40efed989677c83bf42531e2441168a10c1286340d5f7b1cfcc59efdc2baf"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "821238e0f076293f59bd5528fb95958d99bd286b4e4a110ad596be9b9bb7406d"
+    },
+    "lean": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "direction": "YES",
+      "score_adjustment": 0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "09808c83ab3afcb78c8d30a036e0acba7e4efbb942e8cc20636ffe2bc98d8ec7",
+      "output_sha256": "346af6537ffd94efdb8c5243592242887c91c678d36f44e77a1cb4f9328ddc1e"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "ba19173babb216392dd936546736ce7aed8b40c822fe865705db774ca77b154b",
+      "output_sha256": "2e89e33335ce38722e90b7f22aad5f2b80681337b8e7c4b5a57e68db40d2227c"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

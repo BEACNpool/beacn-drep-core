@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:470df61b346ca13fb41e108b565df34605054fe30cf67259b28b23fdebda5942",
+    "raw_input_hash": "sha256:7d6fdcfab9d4761da6037c15f0f3d51936aeb35fef855ccff30f69b35c3015c9",
     "detected_at": "2026-06-09T17:00:01.167198+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-06-19T15:54:29.407158+00:00",
+    "published_at": "2026-07-01T23:06:08.058006+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -18,26 +18,26 @@
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.6333,
+    "score": -0.5333,
     "confidence": 1.0,
-    "input_hash": "470df61b346ca13fb41e108b565df34605054fe30cf67259b28b23fdebda5942",
-    "snapshot_bundle_hash": "1b0f3b3b59ee96f9d8fd4ca14934546cde3740e802270aafc0bbfc192e981fc3",
-    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
-    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
-    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-470df61b346c.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/2381771257d26389c0fc5aad.md",
-    "rationale_anchor_hash": "2381771257d26389c0fc5aad11dc3b441665557e7bc23bf15d7f223a00201b90"
+    "input_hash": "7d6fdcfab9d4761da6037c15f0f3d51936aeb35fef855ccff30f69b35c3015c9",
+    "snapshot_bundle_hash": "9cfa546b0e1dca2808c743b008c1008065adcb6f0b6f09c0937ec9ef4879a78b",
+    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+    "resources_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+    "core_commit": "ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-7d6fdcfab9d4.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/05aff2b88e0b58556d24c222.md",
+    "rationale_anchor_hash": "05aff2b88e0b58556d24c2229495a6114f623ab38b254e66682789cee6853633"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.63; confidence 100.0%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Why: Pinned anchor document is available for this action. Additional context: Treasury withdrawal actions require elevated scrutiny. Confidence context: score -0.53; confidence 100.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Use stable, reproducible anchor links (commit-pinned when possible).",
       "Add line-item budget with milestone-gated disbursement and objective completion checks.",
       "Document downside risks, mitigations, and what gets cut first if delivery slips."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-470df61b346c.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-7d6fdcfab9d4.md",
     "missing_evidence": [],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
@@ -69,23 +69,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: manifest",
             "Deep research dossier: required",
-            "Requested: Treasury withdrawal to reimburse the unrecovered deposit from the Ikigai Info governance action and compensate claimed lost staking rewards.",
-            "Recipient: Ikigai Info governance action submitter; specific recipient address not stated in document",
+            "Requested: Reimburse the submitter of the Ikigai Info governance action for an unrecovered governance action deposit plus estimated lost staking rewards.",
+            "Recipient: not stated in document",
             "Stated amount: 103000",
-            "Deliverables: Instant on-chain distribution of the withdrawal amount to the intended recipient as part of governance action enactment",
+            "Deliverables: Instant on-chain distribution of funds to the intended recipient as part of governance action enactment",
             "Deadline/expiry: not stated in document",
-            "Claim (governance, proposer_asserted, medium materiality): The proposal says an Info governance action titled \"Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -\" was submitted in September 2024 shortly after the Chang hard fork.",
-            "Claim (governance, proposer_asserted, low materiality): The proposal says the Ikigai action was symbolic and asked the community to agree with a statement thanking contributors and expressing hope for Cardano's future.",
-            "Claim (technical, independently_verifiable, high materiality): The proposal says a Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering a 100000 ADA deposit.",
-            "Claim (governance, proposer_asserted, medium materiality): The proposal says community sentiment at the time favored reimbursing the deposit because the submitter should not lose 100000 ADA for being an early governance pioneer.",
-            "Claim (governance, proposer_asserted, medium materiality): The proposal says no entity-based budget submissions included this reimbursement after treasury withdrawals became available following the Plomin hard fork.",
-            "Claim (governance, proposer_asserted, medium materiality): The proposal says the Cardano in Oceania initiative included the reimbursement in its budget Info governance action, but that action was not approved."
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 103,000 ADA from the treasury to reimburse a lost 100,000 ADA Info governance action deposit plus 3,000 ADA for estimated lost staking rewards.",
+            "Claim (governance, proposer_asserted, medium materiality): The proposer states that the original Ikigai Info governance action was symbolic and asked the community whether it agreed with a statement of thanks and hope for Cardano's future.",
+            "Claim (technical, proposer_asserted, high materiality): The proposer states that a Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
+            "Claim (governance, independently_verifiable, medium materiality): The proposal references an external Adastat governance page for the Ikigai action.",
+            "Claim (adoption, proposer_asserted, medium materiality): The proposer states there was significant community sentiment at the time that the Ikigai deposit should be reimbursed.",
+            "Claim (governance, proposer_asserted, medium materiality): The proposer states that the Cardano in Oceania initiative included this reimbursement in its budget Info governance action, but that governance action was not approved."
           ],
           "missing": [
-            "Independent evidence for: The proposal says an Info governance action titled \"Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -\" was submitted in September 2024 shortly after the Chang hard fork.",
-            "Independent evidence for: The proposal says community sentiment at the time favored reimbursing the deposit because the submitter should not lose 100000 ADA for being an early governance pioneer.",
-            "Independent evidence for: The proposal says no entity-based budget submissions included this reimbursement after treasury withdrawals became available following the Plomin hard fork.",
-            "Independent evidence for: The proposal says the Cardano in Oceania initiative included the reimbursement in its budget Info governance action, but that action was not approved.",
+            "Independent evidence for: The proposer states that the original Ikigai Info governance action was symbolic and asked the community whether it agreed with a statement of thanks and hope for Cardano's future.",
+            "Independent evidence for: The proposer states that a Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
+            "Independent evidence for: The proposer states there was significant community sentiment at the time that the Ikigai deposit should be reimbursed.",
+            "Independent evidence for: The proposer states that the Cardano in Oceania initiative included this reimbursement in its budget Info governance action, but that governance action was not approved.",
             "budget analysis",
             "feasibility assessment",
             "alternatives analysis",
@@ -104,7 +104,7 @@
             "Clawback/refund path: not confirmed",
             "Cost/benefit clarity: confirmed",
             "Recurring funding dependency: not confirmed",
-            "Six-month treasury flow regime: unsustainable",
+            "Six-month treasury flow regime: unknown (stale snapshot)",
             "Financial confidence: 0.70"
           ],
           "missing": [
@@ -135,8 +135,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal says a Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering a 100000 ADA deposit.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal says an Info governance action titled \"Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -\" was submitted in September 2024 shortly after the Chang hard fork.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 103,000 ADA from the treasury to reimburse a lost 100,000 ADA Info governance action deposit plus 3,000 ADA for estimated lost staking rewards.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that the original Ikigai Info governance action was symbolic and asked the community whether it agreed with a statement of thanks and hope for Cardano's future.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -167,7 +167,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-470df61b346c.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq-7d6fdcfab9d4.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -178,16 +178,16 @@
     "anchor_hash": "abaf67cde8defc914712009094cd3805bcf8911d3fa79c6edfd6c975dcf9d471",
     "file_sha256": "c2705f5116cc7c0c6c3a2a84d83c377ab118d24ae54a25aa4e5d6ba570f38515",
     "content_bytes": "4649",
-    "fetched_at_utc": "2026-06-19T15:55:01Z",
+    "fetched_at_utc": "2026-07-01T23:06:54Z",
     "download_path": "/proposals/gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d"
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6bf4a7d7baa636417ad929e543cfb8be8fae1f03",
+    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "20e0915ebc437140b55ee25e28adbae01e97032d",
-    "core_commit": "38d67f8f4d843521d9f55e9d79ae40c1e5446c23",
+    "resources_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+    "core_commit": "ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -260,16 +260,16 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.6333,
+    "budget_pressure": 0.5333,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
     "governance_alignment": 1.0
   },
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 652,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-06-19T15:55:00.981326Z",
+    "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   }
 }

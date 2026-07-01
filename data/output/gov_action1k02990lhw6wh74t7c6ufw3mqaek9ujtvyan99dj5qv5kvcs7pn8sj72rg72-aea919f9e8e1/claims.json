@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,684,050",
+    "deadline": "12 months",
+    "deliverables": [
+      "12 additional protocol onboardings over 12 months, described as 3 per quarter, with developer and agent coverage",
+      "Development of an MCP server for agents to discover and call published protocols",
+      "Development of a protocol skills framework and agent-facing documentation",
+      "Open API Layer for Cardano Protocols budgeted at 1,635,000 ADA",
+      "Intersect Budget Administration fee budgeted at 49,050 ADA"
+    ],
+    "recipient": "TxPipe via Intersect treasury withdrawal administration",
+    "what": "Fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols, including standardized protocol interfaces, documentation, multi-language SDKs, live JSON-RPC endpoints, agent-first documentation, protocol skills, and an MCP server."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, while the on-chain withdrawal and budget summary total 1,684,050 ADA including a 49,050 ADA administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and rebuild understanding independently.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Tx3 is described as a framework where each protocol is described once with a verified interface definition that produces documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims Catalyst Fund 14 has already put the Tx3 developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal funds 12 additional protocol onboardings, 3 per quarter, plus MCP server and skill framework development as shared infrastructure for all protocols on the registry.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer claims the proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer claims the requested amount does not breach the applicable 350M ADA Net Change Limit for Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit and oversight costs are said to be included in the overhead, with Intersect and technically capable third parties providing reporting obligations and milestone-based disbursement controls.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe is stated to have received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect open-source maintenance funding delivered on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect will administer funds through Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, role-based authorization thresholds, an oversight committee, and a public dashboard for auditability.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document describes a 1,684,050 ADA treasury withdrawal for TxPipe's Tx3 open API layer, with claimed ecosystem integration benefits, 12-month deliverables, Intersect process approval, NCL compliance, and smart-contract-based fund administration, but the deterministic assessment reports missing complete summary, budget, feasibility, risk, alternatives, and failure-mode analysis.",
+  "output_sha256": "46d545867efee4f3af5f5e80264d1f77332d5f052875c4da49f8cc7b0534a1af"
+}

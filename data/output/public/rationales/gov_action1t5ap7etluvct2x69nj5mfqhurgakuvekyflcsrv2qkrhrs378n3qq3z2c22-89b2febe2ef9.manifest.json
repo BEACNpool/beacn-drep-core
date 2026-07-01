@@ -1,0 +1,226 @@
+{
+  "run_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22-89b2febe2ef9",
+  "action": {
+    "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+    "tx_hash": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2",
+    "cert_index": "0",
+    "action_type": "InfoAction",
+    "status": "active",
+    "proposed_epoch": "636",
+    "expiration_epoch": "643",
+    "deposit_lovelace": "100000000000",
+    "return_address": "stake1u92wn278g870tde4e0yqteeua0zvsmqspp8fkrgcrvamp9qshxudj",
+    "anchor_url": "https://raw.githubusercontent.com/AGT-T/RTG/refs/heads/main/data.jsonld",
+    "anchor_hash": "7a6249ed06feef4edda1e6ff190dd40f9165004fb08febe8477c0f1d14d7243b",
+    "metadata_title": "Reforming Treasury Governance",
+    "metadata_hash_valid": "1",
+    "proposer_address": "",
+    "param_changes": "",
+    "treasury_amount_lovelace": "",
+    "drep_yes_pct": "2.65",
+    "drep_no_pct": "97.35",
+    "drep_abstain_pct": "",
+    "spo_yes_pct": "0.53",
+    "spo_no_pct": "99.47",
+    "spo_abstain_pct": "",
+    "cc_yes": "1",
+    "cc_no": "1",
+    "cc_abstain": "0",
+    "flag_score": "3",
+    "first_seen": "2026-06-09T17:00:01.167198+00:00",
+    "last_updated": "2026-06-30T11:30:07.591683+00:00"
+  },
+  "input_hash": "89b2febe2ef951282b2b5cd6e9ecdd1d887fe9ab06e222ae6163918eb5244061",
+  "action_type": "InfoAction",
+  "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "resource_snapshots": [
+    {
+      "resource_id": "gov_actions_api",
+      "kind": "remote",
+      "source_url": "https://api.gov.tools",
+      "note": "remote resources must be pinned to local snapshot for strict replay"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_actions_sample.csv",
+      "file_hash": "a74304bfa101c796e64de74ffb09c61b797e24b5443a1166ddbe2d25a0790c40"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "kind": "file",
+      "path": "data/input/drep/drep_vote_history_sample.csv",
+      "file_hash": "185da44412ea79bd7f26a7bb678f4ff3eee134b24da9c824cc32e153953a3cb9"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_actions_all.csv",
+      "file_hash": "681a7d463459823b72cd28ee291af7d8dbae74147634cdadaeea7a6b4dbd53be",
+      "selected_row": {
+        "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+        "tx_hash": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2",
+        "cert_index": "0",
+        "action_type": "InfoAction",
+        "status": "active",
+        "proposed_epoch": "636",
+        "expiration_epoch": "643",
+        "deposit_lovelace": "100000000000",
+        "return_address": "stake1u92wn278g870tde4e0yqteeua0zvsmqspp8fkrgcrvamp9qshxudj",
+        "anchor_url": "https://raw.githubusercontent.com/AGT-T/RTG/refs/heads/main/data.jsonld",
+        "anchor_hash": "7a6249ed06feef4edda1e6ff190dd40f9165004fb08febe8477c0f1d14d7243b",
+        "metadata_title": "Reforming Treasury Governance",
+        "metadata_hash_valid": "1",
+        "proposer_address": "",
+        "param_changes": "",
+        "treasury_amount_lovelace": "",
+        "drep_yes_pct": "2.65",
+        "drep_no_pct": "97.35",
+        "drep_abstain_pct": "",
+        "spo_yes_pct": "0.53",
+        "spo_no_pct": "99.47",
+        "spo_abstain_pct": "",
+        "cc_yes": "1",
+        "cc_no": "1",
+        "cc_abstain": "0",
+        "flag_score": "3",
+        "first_seen": "2026-06-09T17:00:01.167198+00:00",
+        "last_updated": "2026-06-30T11:30:07.591683+00:00"
+      },
+      "selected_row_hash": "2de0ab0060f6ee374d8fab8b019c79a711c48c65926cda57fb57815894aca666"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_actions_active.csv",
+      "file_hash": "5c80788042a92efe863d43e040fba24ae0d28bc86570069ccedb898b3a184068",
+      "selected_row": {
+        "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+        "tx_hash": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2",
+        "cert_index": "0",
+        "action_type": "InfoAction",
+        "status": "active",
+        "proposed_epoch": "636",
+        "expiration_epoch": "643",
+        "deposit_lovelace": "100000000000",
+        "return_address": "stake1u92wn278g870tde4e0yqteeua0zvsmqspp8fkrgcrvamp9qshxudj",
+        "anchor_url": "https://raw.githubusercontent.com/AGT-T/RTG/refs/heads/main/data.jsonld",
+        "anchor_hash": "7a6249ed06feef4edda1e6ff190dd40f9165004fb08febe8477c0f1d14d7243b",
+        "metadata_title": "Reforming Treasury Governance",
+        "metadata_hash_valid": "1",
+        "proposer_address": "",
+        "param_changes": "",
+        "treasury_amount_lovelace": "",
+        "drep_yes_pct": "2.65",
+        "drep_no_pct": "97.35",
+        "drep_abstain_pct": "",
+        "spo_yes_pct": "0.53",
+        "spo_no_pct": "99.47",
+        "spo_abstain_pct": "",
+        "cc_yes": "1",
+        "cc_no": "1",
+        "cc_abstain": "0",
+        "flag_score": "3",
+        "first_seen": "2026-06-09T17:00:01.167198+00:00",
+        "last_updated": "2026-06-30T11:30:07.591683+00:00"
+      },
+      "selected_row_hash": "2de0ab0060f6ee374d8fab8b019c79a711c48c65926cda57fb57815894aca666"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_action_flags.csv",
+      "file_hash": "a032b418fadb58da8b705680351eb87c9ce8efc96f82109a83273312e08053db",
+      "selected_row": {
+        "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+        "flag": "\ud83d\udfe1 NO_DISCUSSION",
+        "severity": "yellow",
+        "detail": "No links to forum discussion or community feedback"
+      },
+      "selected_row_hash": "d8d85d0336910b6a6289a80e0286143892bb06a90baf8da1062468dc9a688787"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "kind": "file",
+      "path": "data/input/governance/governance_poll_runs.csv",
+      "file_hash": "33754705a271bdac91207e8f740bb3bd9791f9aa84a42cf91b8d33b3d3d4d43e"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "kind": "file",
+      "path": "data/input/drep/top_drep_votes.csv",
+      "file_hash": "2897d2b484a054921e4b738b28f8e47a7190add3c0f18daace9edfcedc7214ab"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "kind": "directory",
+      "path": "data/input/governance/anchors/",
+      "files_count": 339,
+      "dir_hash": "94c110d218fae46660dd48ad6fb1de014112da62dc1d2560a91de865db64d853"
+    }
+  ],
+  "snapshot_bundle_hash": "ab9c24f468a8a4c4de7d855f3d4afb7374a7a92abc9c9080824238ee7f0d3b18",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://raw.githubusercontent.com/AGT-T/RTG/refs/heads/main/data.jsonld",
+        "file_sha256": "f0ad812499a8a1bf2385c52b796d020ab006972ba15d4c91c417b12885eeb306",
+        "file_path": "data/input/governance/anchors/gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22-20260615T152518Z.bin",
+        "content_chars": 8400
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "55fc6e9ae7f5030102c00db935462a52d08c5404bf7591d93a9fcc0568351795"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "821238e0f076293f59bd5528fb95958d99bd286b4e4a110ad596be9b9bb7406d"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.01,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "d8cc05c9e92fadfdeae7d969a03da7296428a316701ffa0380792c15336f566c"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "85be3cc65487a97efac6708f76f329620be31cc62da73ff6f10e1a82636f9916"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

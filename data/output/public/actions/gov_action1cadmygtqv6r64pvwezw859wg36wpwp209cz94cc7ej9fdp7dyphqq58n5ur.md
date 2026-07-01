@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `active`
-- Published at: `2026-06-19T15:54:29.407158+00:00`
+- Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.02; confidence 57.0%.
+Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Why: Pinned anchor document is available for this action. Additional context: Protocol parameter changes carry system-wide risk. Confidence context: score 0.01; confidence 56.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,13 +23,13 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - Intake: Action type: ParameterChange
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal changes the minimum Constitutional Committee size parameter from 7 to 5." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal changes only the committeeMinSize parameter to 5." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
-- Claims and evidence missing: Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize value of 7.
-- Claims and evidence missing: Independent evidence for: If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.
+- Claims and evidence missing: Independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.
+- Claims and evidence missing: Independent evidence for: The proposal states the current elections process facilitated by Intersect is intended to maintain a 7 seat Constitutional Committee and not lower the existing number of seats.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
@@ -40,11 +40,11 @@ Vote: YES. For this ParameterChange (active), available evidence supports procee
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `86a3b3d2f20649b394cf1515d9cd257fd8a7f0aaaedee6f63aac06f63f6d5770`
-- snapshot_bundle_hash: `2989b3339a1407a31c928351e40453b4779966ef451057e2be139c10cb8de016`
-- soul_commit: `6bf4a7d7baa636417ad929e543cfb8be8fae1f03`
-- resources_commit: `20e0915ebc437140b55ee25e28adbae01e97032d`
-- core_commit: `38d67f8f4d843521d9f55e9d79ae40c1e5446c23`
-- score: `0.02`
-- confidence: `0.57`
+- input_hash: `e14e28ab26b7a49b83b8c498b8e4176655475b75348ffcc3662f5edf0a803a6c`
+- snapshot_bundle_hash: `54e75c0d41411a197683e33ab38b59da2af98e5337ccc75eba5ccf5dee4b2220`
+- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
+- resources_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- core_commit: `ee0a7dfcc7f40a66de8f4ed0e9b4f82f551dae64`
+- score: `0.01`
+- confidence: `0.56`
 

@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,684,050",
+    "deadline": "12 months",
+    "deliverables": [
+      "Open, standardized interface across Cardano on-chain protocols",
+      "Documentation, auto-generated multi-language SDKs, and live JSON-RPC endpoints",
+      "Agent-first documentation",
+      "Protocol skills packaging operations",
+      "MCP server for agents to discover and call published protocols",
+      "12 additional protocol onboardings over 12 months, 3 per quarter"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Withdraw treasury funds for Tx3 by TxPipe, described as an open API layer for Cardano dApp protocols with developer and agent-facing infrastructure."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Tx3 is intended to provide a standard open-source interface to Cardano protocols through documentation, multi-language SDKs, and live RPC endpoints.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and raising integration costs.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "TxPipe has already put the developer layer into production with 5 protocols live on the Tx3 Protocol Registry through Catalyst Fund 14.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal funds 12 additional protocol onboardings, at 3 per quarter, with full developer and agent coverage.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal asserts that adding an MCP server, per-protocol tools, skills, and LLM-structured documentation will make Cardano protocols accessible to AI agents and strengthen Cardano's position for autonomous on-chain interaction.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount is stated not to breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit, oversight, reporting obligations, and milestone-based disbursement controls are stated to be provided through Intersect and technically capable third parties.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "other",
+      "claim": "TxPipe is stated to have received funding through 30 Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect open-source maintenance funding being delivered on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document describes a 1,684,050 ADA treasury withdrawal administered by Intersect for TxPipe's Tx3 project, focused on standardized protocol interfaces, SDK/RPC generation, agent-facing documentation, an MCP server, and 12 protocol onboardings over 12 months.",
+  "output_sha256": "268fbefe54e87be440be4aff35fecfc8eaf7c80e31e406e4a4e6578a1552b4ad"
+}

@@ -88,6 +88,13 @@ cd "$RES"
 python3 scripts/fetch_anchor_documents.py
 python3 scripts/compile_action_resource_index.py
 
+# Treasury fee-flow / risk metrics from relay db-sync (read-only). Non-fatal:
+# the engine treats a stale snapshot as UNKNOWN and says so in the rationale,
+# but letting it drift for weeks (epoch 621 incident) starves treasury context.
+log "refreshing governance risk metrics (relay db-sync, read-only)"
+python3 scripts/export_governance_risk_metrics.py \
+  || log "WARNING: governance risk metrics refresh failed; engine will mark treasury flow UNKNOWN"
+
 cd "$CORE"
 export BEACN_DREP_LLM_CACHE="$CORE/data/output/llm_cache_active.json"
 if [ "${BEACN_DREP_LLM_BACKEND:-codex}" = "none" ]; then

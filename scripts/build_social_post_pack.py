@@ -113,6 +113,9 @@ def short_id(action_id: str) -> str:
 
 def first_reason(summary: str) -> str:
     text = summary.strip()
+    if "Decisive reason:" in text:
+        text = text.split("Decisive reason:", 1)[1].strip()
+        text = text.split("Weighed against it:", 1)[0].strip()
     if text.startswith("Vote:") and "." in text:
         text = text.split(".", 1)[1].strip()
     text = text.split("Why:", 1)[0].strip() or text.split("Why:", 1)[-1].strip()

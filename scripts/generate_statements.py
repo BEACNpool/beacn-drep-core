@@ -120,7 +120,8 @@ def main() -> int:
     todo.sort()
     if args.limit:
         todo = todo[: args.limit]
-    print(f"{len(rats)} actions on record · {len(store)} already have statements · {len(todo)} to generate · model {MODEL}")
+    mode = "offline (engine human_message + review tree)" if OFFLINE_REVIEW else MODEL
+    print(f"{len(rats)} actions on record · {len(store)} already have statements · {len(todo)} to generate · model {mode}")
 
     if args.dry_run:
         if todo:
@@ -129,6 +130,8 @@ def main() -> int:
         return 0
 
     if OFFLINE_REVIEW:
+        from beacn_drep.exporters.export_public_artifacts import _assessment_extract, _top_fixes
+
         for i, aid in enumerate(todo, 1):
             j = rats[aid]
             text = (j.get("human_message") or "").strip()
@@ -136,6 +139,22 @@ def main() -> int:
                 text = " ".join([x for x in (j.get("inferences") or []) if x]).strip()
             if not text:
                 text = f"BEACN records {j.get('recommendation')} on this action based on the deterministic review record."
+            # Always close with the acknowledged counter-case and the concrete
+            # path to a different vote — the two things delegators and
+            # proposers most need from a rationale.
+            rec = (j.get("recommendation") or "").upper()
+            ax = _assessment_extract(j)
+            extra = []
+            counter = ax["strongest_yes"] if rec in ("NO", "ABSTAIN", "NEEDS_MORE_INFO") else ax["strongest_no"]
+            if counter and counter.lower()[:40] not in text.lower():
+                label = "The strongest case for the other side" if rec in ("YES", "NO") else "The strongest case for voting anyway"
+                extra.append(f"{label}: {counter}")
+            fixes = [f.rstrip('.') for f in _top_fixes({}, j)[:3]]
+            if fixes and rec != "YES":
+                target = "YES" if rec == "NO" else "a directional vote"
+                extra.append(f"What would move BEACN to {target}: " + "; ".join(fixes) + ".")
+            if extra:
+                text = text + "\n\n" + " ".join(extra)
             store[aid] = {
                 "statement": text,
                 "decision": j.get("recommendation"),

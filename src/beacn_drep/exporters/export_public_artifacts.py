@@ -160,6 +160,44 @@ def _load_rationales_latest():
     return by_action
 
 
+def _assessment_extract(r: dict) -> dict:
+    """Pull the decisive material out of the review tree: the counterargument
+    pass, blocking questions, and the specific per-section missing items. This
+    is what makes the public summary say WHY, not just quote a generic fact."""
+    a = r.get("assessment") or {}
+    out = {
+        "strongest_yes": "", "strongest_no": "", "strongest_hold": "",
+        "blocking": [str(b) for b in (a.get("blocking_questions") or [])],
+        "specific_missing": [],
+    }
+    for s in a.get("sections") or []:
+        title = s.get("title") or ""
+        if title == "Counterargument pass":
+            for f in s.get("findings") or []:
+                for key, label in (("strongest_yes", "Strongest YES:"),
+                                   ("strongest_no", "Strongest NO:"),
+                                   ("strongest_hold", "Strongest hold:")):
+                    if str(f).startswith(label):
+                        out[key] = str(f)[len(label):].strip()
+        elif title != "Synthesis":  # Synthesis repeats the blocking questions
+            for m in s.get("missing") or []:
+                m = str(m)
+                if m not in out["specific_missing"]:
+                    out["specific_missing"].append(m)
+    return out
+
+
+def _fix_phrase(m: str) -> str:
+    """Turn a raw missing-item into an actionable ask for the proposer."""
+    m = m.strip().rstrip(".")
+    low = m.lower()
+    if low.startswith("independent evidence for"):
+        return f"Provide {m[0].lower()}{m[1:]}."
+    if low.startswith(("missing ", "provide ", "add ", "include ", "document ", "show ", "publish ")):
+        return (m[8].upper() + m[9:] + "." if low.startswith("missing ") else m + ".")
+    return f"Provide {m}."
+
+
 def _top_fixes(action_row: dict, r: dict) -> list[str]:
     fixes: list[str] = []
     action_type = (action_row.get("action_type") or r.get("action_type") or "").lower()
@@ -169,6 +207,15 @@ def _top_fixes(action_row: dict, r: dict) -> list[str]:
         if len(fixes) >= 3:
             break
         fixes.append(f"Provide: {m}")
+
+    # Then the proposal-specific gaps found by the review tree — these are the
+    # real "what would change this vote" items, ahead of any generic template.
+    for m in _assessment_extract(r)["specific_missing"]:
+        if len(fixes) >= 3:
+            break
+        phrased = _fix_phrase(m)
+        if phrased not in fixes and len(phrased) <= 170:
+            fixes.append(phrased)
 
     facts = " ".join((r.get("facts") or [])).lower()
     unc = " ".join((r.get("uncertainty") or [])).lower()
@@ -243,16 +290,35 @@ def _human_summary(r: dict, action_row: dict) -> str:
     }
     blocker = reason_map.get(reason, "")
 
-    support_1 = facts[0] if facts else (inf[0] if inf else "Deterministic policy checks were applied to admitted resources.")
-    support_2 = ""
-    if len(facts) > 1:
-        support_2 = facts[1]
-    elif unc:
-        support_2 = f"Residual uncertainty: {unc[0]}"
+    # The decisive reason and the acknowledged counter-case come from the review
+    # tree's counterargument pass — never from a generic fact bullet.
+    ax = _assessment_extract(r)
+    if decision == "NO":
+        decisive = ax["strongest_no"]
+        counter = ax["strongest_yes"]
+    elif decision == "YES":
+        decisive = ax["strongest_yes"]
+        counter = ax["strongest_no"]
+    else:
+        decisive = ax["strongest_hold"]
+        counter = ax["strongest_yes"]
+    if not decisive:
+        decisive = (ax["blocking"][0] + "." if ax["blocking"]
+                    else (facts[0] if facts else (inf[0] if inf else
+                          "Deterministic policy checks were applied to admitted resources.")))
 
-    improve = ""
-    if missing:
-        improve = f"What would increase confidence: {missing[0]}"
+    fixes = _top_fixes({}, r)
+    change_items = [f.rstrip(".") for f in fixes[:2]] or [m for m in missing[:2]]
+    if decision == "YES":
+        change_label = "What could still change this vote to NO"
+        change = ("Material counter-evidence on the decisive points above, or failure "
+                  "of the stated safeguards, would trigger a revision.")
+    else:
+        change_label = "What would change this vote to YES" if decision == "NO" else \
+                       "What would enable a directional vote"
+        change = "; ".join(change_items) + "." if change_items else ""
+
+    unc_txt = f"Residual uncertainty: {unc[0]}" if unc else ""
 
     sc_txt = ""
     try:
@@ -260,11 +326,13 @@ def _human_summary(r: dict, action_row: dict) -> str:
     except Exception:
         pass
 
-    parts = [lead, blocker, f"Why: {support_1}"]
-    if support_2:
-        parts.append(f"Additional context: {support_2}")
-    if improve:
-        parts.append(improve)
+    parts = [lead, blocker, f"Decisive reason: {decisive}"]
+    if counter:
+        parts.append(f"Weighed against it: {counter}")
+    if change:
+        parts.append(f"{change_label}: {change}")
+    if unc_txt:
+        parts.append(unc_txt)
     if sc_txt:
         parts.append(sc_txt)
 

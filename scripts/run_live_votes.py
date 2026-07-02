@@ -133,6 +133,8 @@ def main() -> int:
                 entry["status"] = res.get("status")
                 entry["submitted"] = res.get("submitted")
                 entry["transaction_hash"] = res.get("transaction_hash")
+                if res.get("reasons"):
+                    entry["reasons"] = res.get("reasons")
                 if res.get("submitted"):
                     voted += 1
             else:

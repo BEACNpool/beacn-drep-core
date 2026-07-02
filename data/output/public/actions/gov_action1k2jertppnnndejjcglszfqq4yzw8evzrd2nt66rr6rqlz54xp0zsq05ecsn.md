@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this ParameterChange (enacted), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: No DRep distribution available. Confidence context: score 0.04; confidence 59.0%.
@@ -35,11 +35,11 @@ Vote: YES. For this ParameterChange (enacted), available evidence supports proce
 - Add rollback/containment plan and explicit halt criteria.
 
 ## Proof of vote
-- input_hash: `1c9d56ed2268c5a5a1a767f597269efa6f762bc3f90eac8c1f508fccc9d7f14c`
-- snapshot_bundle_hash: `6718beeb0552906acb80fca6a4504d0ff88f1aa0fa257396d409785f47dec6ea`
+- input_hash: `e57edf31d6ba0fd8d906fb7035ca64a80d6b9b9f5c9fa086a6d7d0c374c54ffc`
+- snapshot_bundle_hash: `7553ba1eecd21c3be14ffb361429c48c3fff177df31ff13117df4c62c66f11bc`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `0.04`
 - confidence: `0.59`
 

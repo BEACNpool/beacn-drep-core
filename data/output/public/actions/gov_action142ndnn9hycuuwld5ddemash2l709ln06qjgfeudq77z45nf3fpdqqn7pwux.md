@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The requested 10,000,000 ADA is structured as 5,000,000 ADA on approval, 2,000,000 ADA on M1 acceptance, and 3,000,000 ADA on M2 acceptance." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026; Provide independent evidence for: The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.45; confidence 94.3%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `6480ebc4cac31591c278da6ce0a1038c47ba735edb5c78421cf18f6657525eb3`
-- snapshot_bundle_hash: `37e10c6ef94405f5a8d8192b277352f4bb8f101a094a8b239524caf3c2d8c26b`
+- input_hash: `84bb1f756946d3a8474f60a7a45d60d31741ba4978d9d6ce69a9a7abaf049c87`
+- snapshot_bundle_hash: `8fae18a8e258331e10e04797cb571c1d4b5e83f4c94f129932a578c4a2be031f`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4533`
 - confidence: `0.9433`
 

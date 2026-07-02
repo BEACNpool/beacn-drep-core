@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `ratified`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (ratified), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests ₳18,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.60; confidence 100.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (ratified), downside risk and/or weak saf
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `174b838cbc027cd1a2cf8c97b60a4c544a1c79e0e0f8c5ef4cb4092ed555b913`
-- snapshot_bundle_hash: `2dd354bdc525d65aaa2f61801321cb4794e7267bb3fa577d926cb8673a2305bc`
+- input_hash: `3827f81f967b1e8ad8dd7f5e44c1c9fd62ece79ed570d51d8d2eba1e141b2c25`
+- snapshot_bundle_hash: `330db8e57d8c4b35e757e8e46418e5bd69b13837f08c33bd43b354b9a6e947d3`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.6033`
 - confidence: `1.0`
 

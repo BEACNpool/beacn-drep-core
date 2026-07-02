@@ -1,0 +1,87 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "9832979",
+    "deadline": "18 months; milestones listed from Q3 2026 through 2027",
+    "deliverables": [
+      "Legally establish a not-for-profit entity or sign a host-organization agreement under a preliminary board.",
+      "Publish technical transition architecture and migration plan for community review.",
+      "Launch a public usage dashboard.",
+      "Hold a board election via on-chain voting under publicly published rules.",
+      "Serve all public API traffic for mainnet, preview, and preprod from the new stack.",
+      "Transfer Blockfrost source code, trademarks, domain names, and associated assets to the governing entity.",
+      "Open public consultation on long-term sustainability and publish a proposal for community feedback.",
+      "Operate the public API at a minimum 99% monthly uptime SLA and publish quarterly technical and budget reports."
+    ],
+    "recipient": "not stated in document",
+    "what": "Transition Blockfrost into a free, community-governed not-for-profit public API and fund 18 months of transition and operations."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Blockfrost is described as a hosted REST interface that lets developers interact with Cardano without running their own infrastructure or node.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "other",
+      "claim": "The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal cites Cardano Foundation developer ecosystem survey links showing Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that last month Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that more than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal says 90% of Cardano traffic served through the Blockfrost API comes from the free tier and that the commercial model has struggled to finance this public-good operation.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal commits to transferring all Blockfrost intellectual property, including source code, trademarks, domain names, and associated assets, to the governing not-for-profit entity.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested budget is 9,832,979 ADA, equivalent to $1,868,266 at $0.19 per ADA, allocated across staffing, operations and infrastructure, and legal/accounting costs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that long-term sustainability may come from paid tiers or a vendor-backed not-for-profit model, with future profits or membership fees supporting the public API and potentially returning proceeds to the Cardano Treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests 9,832,979 ADA to transition Blockfrost into a community-governed not-for-profit public API over 18 months, citing high developer adoption and transaction-submission reliance but leaving several key operational, budget, feasibility, risk, alternatives, and failure-mode details incomplete.",
+  "output_sha256": "8b7abd76ce3074030c790b257c432fd2028c65823e47f6b01212ecaba34278dc"
+}

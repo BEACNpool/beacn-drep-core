@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem." and clears the evidence gates. What would change this vote to YES: Use stable, reproducible anchor links (commit-pinned when possible); Clarify governance intent and expected measurable outcome. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.32; confidence 84.3%.
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `ef39218c66aa4f6513c26e9fccab837fedd3813587f86a2b33d4f824e04abd06`
-- snapshot_bundle_hash: `eab75db448b1755c876be01087ddfff14c93f4157757e68af5974612496fbcfe`
+- input_hash: `2f57e71fa7e897bb6a597bdfb03382199a686d1ebda8f9ecfc34c147869823e6`
+- snapshot_bundle_hash: `5ec82525a95883fd682f972bdb0fc0b3655a1cb371cb12342fe68249ee67e845`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.3233`
 - confidence: `0.8433`
 

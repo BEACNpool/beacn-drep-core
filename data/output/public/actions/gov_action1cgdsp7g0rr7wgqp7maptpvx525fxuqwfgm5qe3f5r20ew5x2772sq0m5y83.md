@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `ParameterChange`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Intersect's Parameter Committee proposes the first of two Parameter Update governance actions." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.02; confidence 54.0%.
@@ -39,11 +39,11 @@ Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insuffic
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `57eddb601a11c02d00ee21ace58416de9a72804439d58f1e9c0e52c774fb6399`
-- snapshot_bundle_hash: `4a97876aea9fc022b720d949fffc6d182f12d35f68a98901d37aad62aed5194a`
+- input_hash: `3f880f1f49b08ca291f7f46f7d208a3f8d977017f486c039132f1d71aec9de9c`
+- snapshot_bundle_hash: `7ffb0270f47678cd46a1991541b664cbdd5a2566bfa3850f28b5884e4f6b9007`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.02`
 - confidence: `0.54`
 

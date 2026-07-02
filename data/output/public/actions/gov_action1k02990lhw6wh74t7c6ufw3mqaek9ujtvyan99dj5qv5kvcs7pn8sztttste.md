@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The document claims Dolos aligns with Intersect Strategic Pillar 2, focus area A.3 Developer Experience, by maintaining open-source Cardano infrastructure." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect budget administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540.8k ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect budget administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The document claims Dolos aligns with Intersect Strategic Pillar 2, focus area A.3 Developer Experience, by maintaining open-source Cardano infrastructure.
-- Claims and evidence missing: Independent evidence for: The proposal states TxPipe has received 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect maintenance funding for Pallas, Dolos, and UTxO RPC that is being delivered on schedule.
+- Claims and evidence missing: Independent evidence for: Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives.
+- Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives.
 - Provide complete proposal summary.
 - Provide budget analysis.
-- Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `fa4ce80921e5ccb5cf8177f81e9e238bda292650ae6a6541593bcd6423d3bd2e`
-- snapshot_bundle_hash: `cbcc1415f7074a1ab45f99054753beb3ab5a759bc71bba8b77f20b6b9ab6fa1c`
+- input_hash: `61e3071968295b0a9dccbe47c0bf2f3593498b78301b793cb24a7e1a0e1d8fb9`
+- snapshot_bundle_hash: `51c5bf24abe5097a16ece4e625d0ec80d546d190b002c7205769ba07779e8208`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4133`
 - confidence: `0.9333`
 

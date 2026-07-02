@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `8522cb770d1213961549dac6c36b4d0375224bbfad186390787f5af236fee98d`
-- snapshot_bundle_hash: `7f44c64378cf616d20c24cf1f935da13b8036a324c79d0ea50d44af0943fb699`
+- input_hash: `5592c9f13d8a561c5d321e6f0255969ef7318dcec6f3e97d5455db46316dbbb3`
+- snapshot_bundle_hash: `4203080c3f4ad9c240e5aacaa003553cd282f21a5beaf08dc18112ff28772a40`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2033`
 - confidence: `0.7233`
 

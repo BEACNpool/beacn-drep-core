@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `49858c9d9d5776e3884851251202fa444070752487cd9a066bb333c4a03bbae7`
-- snapshot_bundle_hash: `1049db2c70b173bcd43cbf90dc4959140e962b2ca03f3203bfde6b574734c30b`
+- input_hash: `9fe6384165afa5d8c270046fa0afd241c0598a69f6b331a905215343ad6ae4ac`
+- snapshot_bundle_hash: `8c0fa6dd105f83fd01986f3c2bff9b6cda4027c5617a763ce3e650c8fd9f4133`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2033`
 - confidence: `0.7233`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposer states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
@@ -34,7 +34,7 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: The proposer states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface.
-- Claims and evidence missing: Independent evidence for: The proposal states that UTxO RPC aligns with Intersect Strategic Pillar 2 focus area A.3 for developer experience and open-source maintenance incentives.
+- Claims and evidence missing: Independent evidence for: The project is said to maintain more than 10 repositories covering the core specification, SDKs, documentation, and provider integrations, and to be open-source under Apache 2.0.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -52,11 +52,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `0f7f9281720280d745a36fae938d91e5d016320eb8b86333ac04fb6079c61b3b`
-- snapshot_bundle_hash: `ce078771a0b0f1b4b79e7dea0a3caadd4181850279154b75a4249585b455a0d2`
+- input_hash: `07543c9142eae7f7cd51de5872ac4ab485d7f451e2e52a615df80e730604a966`
+- snapshot_bundle_hash: `670ec712eb3912d25cb704e2a1912a8e9b300e1638b94aed3cab622488ad6e0f`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4133`
 - confidence: `0.9333`
 

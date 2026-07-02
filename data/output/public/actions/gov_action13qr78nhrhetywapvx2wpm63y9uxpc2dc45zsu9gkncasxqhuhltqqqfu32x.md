@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "(“Orion Fund”), managed by Draper Dragon Orion GP, LLC (“General Partner” or “GP”), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed; Provide line-item budget. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.25; confidence 77.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `fb33f4fb106113565b8dabdf07f69180d81cd6e57a879878fc8a72258522b358`
-- snapshot_bundle_hash: `b67ca7ed21236376b1d881e22dcb4a387998e01e680e2d3b4e8e63804bbd9075`
+- input_hash: `d3f2c2375cbae4573e4a2ab29136ae3c45bfabf511375ab0c15b5de5f9c32fbf`
+- snapshot_bundle_hash: `b34312460839f238c338e45d36aa7d8df524b41d53ef2eda500ea15c88b46762`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2533`
 - confidence: `0.7733`
 

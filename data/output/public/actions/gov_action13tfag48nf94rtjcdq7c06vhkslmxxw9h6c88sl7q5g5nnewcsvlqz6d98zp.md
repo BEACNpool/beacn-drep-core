@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds 2025 Input Output Engineering Core Development Proposal which will provide the following services: - Automatic Formal Verification (Plutus High Assurance) - Property Based Testing Tool (Plutus High Assurance) - Static Analyzer..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `9ef3b37433b3b5b222197a4349f9961e17b91554733324f201b489e00a47d78b`
-- snapshot_bundle_hash: `6ad64e7aec16648eb36d6054af1dfe00ca81049004633dbeed1f8bf12a005815`
+- input_hash: `745f757f18fb26e3a2d65bb2921c2b06dd2d618398ff52d46835a9a637a1a7e7`
+- snapshot_bundle_hash: `bf8fc171dd821fe5607edcb84c921f740db1401793dbabbd07680aaa15b0f32a`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2033`
 - confidence: `0.7233`
 

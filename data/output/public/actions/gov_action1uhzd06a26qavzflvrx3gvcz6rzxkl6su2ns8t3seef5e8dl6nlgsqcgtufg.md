@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.30; confidence 79.3%.
@@ -41,11 +41,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `3ac08c6608562d5fbdd169f1abf6ff7460006eb64643a0aea87669047978f865`
-- snapshot_bundle_hash: `1a5390af759c38efd8a9fffc054645fcdf67b08dd431d25bfb3968ecaa116f19`
+- input_hash: `f07c5caa6483cc8e21dd6bd76fc23a50da871c834854f694d4c320a82193410f`
+- snapshot_bundle_hash: `bb05ef185239d30be7d31f2cae5cc0c59720a0829c9b6a3ecec6bc1e61a48697`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.3033`
 - confidence: `0.7933`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Complement Catalyst: Extended Quadratic Funding---Zero Operational Costs which will provide the following services: An innovative funding mechanism to complement Project Catalyst by addressing five critical challenges in block..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `bf3e4e09353003a6c84bf39d129f8a8a3fa4c341fd9a90771126823397b1d687`
-- snapshot_bundle_hash: `e2b8760ff5b63fd561186848d75d4206f8c72dd9e02f50f772fb68b8420ff447`
+- input_hash: `65240d2ecf0198d0efa47c3f2177be954b2bb1b714474ec0dea6cc96cec6ae13`
+- snapshot_bundle_hash: `6e7d45556fc5d79d1a049c903ba965aba28f5af6b4ebc21f5028efda9d1e764d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2033`
 - confidence: `0.7233`
 

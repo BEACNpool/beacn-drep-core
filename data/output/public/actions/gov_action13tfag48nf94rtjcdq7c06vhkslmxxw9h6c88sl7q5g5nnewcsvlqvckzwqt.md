@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Lucid Evolution Maintenance which will provide the following services: Lucid Evolution is an open-source library designed to simplify and enhance the development of off-chain smart contract interactions on Cardano." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `74c222b730f9f3ff248d3ebab2a840a5c0cccb4c9e47223168d52e335b011a03`
-- snapshot_bundle_hash: `2fc0c71de06d974b564ccd2f05c8ac55044de4e8dbac9525678b94d3397fc61d`
+- input_hash: `704ad8420b1052aceb6bd31e9d34fc99f815dfbe27f18be5ca30f912241c0d97`
+- snapshot_bundle_hash: `bd1512f427ca3f66bbd9017dd9bcda5509bbf3579d3346a2db8448d89ca3b946`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2033`
 - confidence: `0.7233`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds UTxO RPC: Sustaining Cardano Blockchain Integration which will provide the following services: This request for support focuses on UTxO RPC https://utxorpc.org an interface specification designed to simplify interactions with..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `c96819fcb1feff50a67d00c910987aa67c17e3ef3dcc384e585a8ac462851baa`
-- snapshot_bundle_hash: `32ace28e0bebfbe56653d496fb10e24e0466d1a28f5e1137acbd6df1c2e72c63`
+- input_hash: `eef066bce188db06f6804c05d1a239a52ccd15a17ffda1ccc0b9b5d78c8db2e1`
+- snapshot_bundle_hash: `650d1f4b7270d3710d67de3a96399a07392d2891974445378b19b3080864d226`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.2033`
 - confidence: `0.7233`
 

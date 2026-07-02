@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano in Oceania 2025–2026 strategy and budget is a comprehensive plan designed to ignite Cardano’s growth in a strategically important region." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 66.0%.
@@ -37,11 +37,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `a5fde475e4e0a697fb72a30104681e408c0fc57a99192dd514c74cfb17c15880`
-- snapshot_bundle_hash: `80c5196bf55c137404e1e2448b9a30ca443e27dc0b2f51534e3bfea52c207357`
+- input_hash: `9729bb321d7c4e95aa416793fb1923c1adc05a0b961ebe965e635fd861c489d2`
+- snapshot_bundle_hash: `33914aec85e24a3c87bbc80a840b9749cb499a95b09e8e26419d907f09cd6697`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `0.11`
 - confidence: `0.66`
 

@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services); Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.01; confidence 53.0%.
@@ -41,11 +41,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `ada02fe01de26872d927ff6662c16394f4ef39fcde161aabdc3c94a7f165502b`
-- snapshot_bundle_hash: `4477680cb7d521478deec236e4ab9cfb418c04b9ae74bfc7d83d75fc79f0ae20`
+- input_hash: `f1e5468fc9bfd2b6e96bd8eff287a612429b7ffa2d06c61ec4c4dc5f4ea364ba`
+- snapshot_bundle_hash: `583af98e0dfd21df2f6e4437c381ecdb3ee441caa279f01e43b0feb4965031a2`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.01`
 - confidence: `0.53`
 

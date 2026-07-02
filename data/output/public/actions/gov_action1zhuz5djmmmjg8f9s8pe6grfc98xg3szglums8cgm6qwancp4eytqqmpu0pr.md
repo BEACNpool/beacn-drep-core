@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The Chang+1 hard fork should be called the HOSKY Hard Fork" — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "I propose to name the next Cardano hard fork 'HOSKY' after Cardano's mutt and the most widely recognized and held asset in the ecosystem." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork; Provide independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.34; confidence 80.0%.
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Use stable, reproducible anchor links (commit-pinned when possible).
 
 ## Proof of vote
-- input_hash: `72ace31f261527726ad0eec76ee4af079638566cd5935805c6f72c3cd7e5e59a`
-- snapshot_bundle_hash: `99d777ff5c6628d36c18e7b19f5abc3b0e56ea70ccb9b9d40142e58899dc3735`
+- input_hash: `10024da57af99f5229aad6210b6d1c9de97b2e1b357df073216d7f3591c98e0a`
+- snapshot_bundle_hash: `c54da35fdd57413eacc0ff42ba8cf80f862bf894bfdc50a708277d318c0c11aa`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.34`
 - confidence: `0.8`
 

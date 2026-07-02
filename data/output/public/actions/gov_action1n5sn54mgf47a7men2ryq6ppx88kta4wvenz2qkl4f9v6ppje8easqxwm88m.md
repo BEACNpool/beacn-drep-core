@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.16; confidence 71.0%.
@@ -34,11 +34,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `a038cfa7879ef4ed5b9374d003f6048e28e5e95952eb0d13b7d23114df457d9e`
-- snapshot_bundle_hash: `e16a7d2917a87d1245c4ab8da038a41503fd06de93123d5d88c83e68fc908741`
+- input_hash: `9980232031c424d507f15fb0346e62416debada26e21f9c4818c2cc3bb967650`
+- snapshot_bundle_hash: `968ef4a1a9811de9bc5aaea359a84d4c155c108b6e64f1f86ec4a2133f20144b`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `0.16`
 - confidence: `0.71`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 94.8%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `5c8d62e7cdbd7fd15c86363d933bbf7002909d84384b70e8fd367f42faa96d41`
-- snapshot_bundle_hash: `927c82af10adaa565eba614f4288d59f0036eb3b97aff57d08bc10e8b7632ae0`
+- input_hash: `52fba7e195fef3766888431b5b9cc4a4a825b34ec0e6eb55ee2b728bab1e15ac`
+- snapshot_bundle_hash: `5e937790c4b02e22aa52944ebd22eda33b656cc5e6f0ebdd479e7b009de5018d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4583`
 - confidence: `0.9483`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in Đắk Lắk, Vietnam — before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT)." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.49; confidence 98.3%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `f0fd994493e0256c0cef76b78c388a659e83c20e11e30a4cff76888bc48889ce`
-- snapshot_bundle_hash: `1fae5a5b6635b9ff03c10065165e8ed2093ee5e163ff91a26f72b7e698b96682`
+- input_hash: `249cac968496d3f78723b7783617754ff83e7f65a24d715508c68e04e9313c0a`
+- snapshot_bundle_hash: `365921369f885bab522668055148859de4306b20bc558902c1742ac3b19e1bfa`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4933`
 - confidence: `0.9833`
 

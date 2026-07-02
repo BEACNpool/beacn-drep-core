@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This proposal focuses on Leios, which delivers the throughput capacity Cardano needs to meet its 2030 ambitions." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmPdBp8QjKaPdYdvwLxzDiCxX85hGx8H6rxbSvTTuLkcx2 Cardano needs a step change in throughput to meet its 2030 ambitions, and Leios is how it gets there." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: This proposal focuses on Leios, which delivers the throughput capacity Cardano needs to meet its 2030 ambitions; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 94.8%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `23819f655b97609e36e5792d201fdc41e8de88e6ca614e66399ccb8987708e71`
-- snapshot_bundle_hash: `f2e350e0a6c4cb54b1843e6ce8bcc6073a0652e8a18b4237b8047d309dbcdf3f`
+- input_hash: `0efa5bbb6b0bd290b56f337c5db1dfdcc9c3c990aa24ac579e28531e84e21f78`
+- snapshot_bundle_hash: `401525985706de993ad787bcfeaa4f4a06f76290134d601f4920ab220e2891af`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4583`
 - confidence: `0.9483`
 

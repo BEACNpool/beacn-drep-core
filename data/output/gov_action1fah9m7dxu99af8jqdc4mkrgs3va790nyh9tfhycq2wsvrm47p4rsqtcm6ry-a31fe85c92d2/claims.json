@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "5100781",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Performance optimization with 2x to 10x improvements in snapshot signing and memory profile and reduced L1 fees through on-chain contract optimization.",
+      "Operational excellence including operator runbooks, simpler node configuration, observability and logging, and an improved TUI.",
+      "Ecosystem support including production-user and pipeline-integrator features, Hydra Alliance facilitation, hackathons, and developer relations.",
+      "Maintenance and developer experience including CI, tooling, and technical debt reduction."
+    ],
+    "recipient": "not stated in document",
+    "what": "Fund four Hydra workstreams: performance optimization, operational excellence, ecosystem support, and maintenance/developer experience to deliver a feature-complete and hardened Hydra v2."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Hydra is described as the only production-grade Layer 2 on Cardano and the only production-ready scaling solution that gives Cardano sub-second finality with L1-grade settlement guarantees.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Hydra already runs or has powered workloads for Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal asserts Cardano L1 has over two hours of finality, about $0.17 per transaction, and roughly 7 to 10 TPS, while competing platforms offer faster finality, lower fees, and higher TPS.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Hydra provides sub-second finality, near-zero or zero fees inside a Head, high throughput, and L1-anchored settlement.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims a single Hydra Head processes up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly with the number of Heads.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states every state advance in a Hydra Head requires every participant's signature, allowing a single honest participant to reclaim funds even if others collude.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal claims Hydra can attract and retain high-performance builders by making DeFi, AI agent micropayments, gaming, consumer payments, and other use cases viable on Cardano.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal claims Hydra activity can increase L1 settlement usage and treasury sustainability through head lifecycle transactions and optionally routed internal head fees.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says the \u20b35,100,781 ask will be milestone-gated, with independent third-party assurance and Intersect providing administrative treasury governance.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it aligns with treasury KPIs for TVL, monthly active users, monthly transactions, throughput capacity, reliability and uptime, and annual protocol revenue, and with Pillars 1, 2, 4, and 5.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests \u20b35,100,781 for Hydra v2 hardening across performance, operations, ecosystem support, and developer experience, but most high-materiality technical, adoption, and economic claims are asserted without budget detail, feasibility analysis, alternatives analysis, failure-mode analysis, or quantified community impact in the supplied text.",
+  "output_sha256": "99d54f644641f93c35b580a749a5870597186d8166f0495b4417683dc36c4533"
+}

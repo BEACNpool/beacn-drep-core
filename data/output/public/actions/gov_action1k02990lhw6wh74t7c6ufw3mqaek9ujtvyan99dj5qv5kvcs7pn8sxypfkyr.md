@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Execution of the work packages is contingent on approval of the IntersectMBO budget proposal." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests $298,250, equivalent to 1,193,000 ADA, to support Technical Steering Committee activities for 12 months." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Execution of the work packages is contingent on approval of the IntersectMBO budget proposal; Provide independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that technical workshops, the Security Council, and the Bug Bounty Programme are funded separately through the main Intersect budget and are excluded from this request." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests $298,250, stated as 1,193,000 ADA, to support TSC activities for 12 months." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal commits that all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.19M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests $298,250, equivalent to 1,193,000 ADA, to support Technical Steering Committee activities for 12 months." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests $298,250, stated as 1,193,000 ADA, to support TSC activities for 12 months." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.
-- Claims and evidence missing: Independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
+- Claims and evidence missing: Independent evidence for: The proposal states that technical workshops, the Security Council, and the Bug Bounty Programme are funded separately through the main Intersect budget and are excluded from this request.
+- Claims and evidence missing: Independent evidence for: The proposal commits that all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.
-- Provide independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
+- Provide independent evidence for: The proposal commits that all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
 - Provide complete proposal summary.
+- Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `32fda167590040ec8c684f89b57100acff986a47e3ec2821354998cb46301d03`
-- snapshot_bundle_hash: `cb6f5f3bac5010e1411ed3f9b4be6b07567f80cabd7ee69265a15f9a4c6f11a8`
+- input_hash: `e8d55f5972d31082d1b54f1192f773788a04aeacc8536dcb01d95fc5a230f19f`
+- snapshot_bundle_hash: `8eb09d624bc36b7b0ae86e519c1966b99ce9fa0b7701bed951eee2c2e38146d9`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.4133`
 - confidence: `0.9333`
 

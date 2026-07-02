@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-01T23:06:08.058006+00:00`
+- Published at: `2026-07-02T09:00:01.770046+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Amaru is an open-source project building a new, fully interoperable block-producing node that improves the overall accessibility and robustness of the Cardano network without compromising its safety and security." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025; Provide line-item budget. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.33; confidence 81.8%.
@@ -47,11 +47,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `de66321d6cee6518f3181d37ddc3b67bc875684eda5f0d778684488ca10e591f`
-- snapshot_bundle_hash: `2795aac1b9303718f1a27c322c832513b77745d7958b18f380984974224bee6c`
+- input_hash: `1057d2d1cea3d2656d6f20fb781ccdc29abc0a7e8d51cb41378abf2f655457f6`
+- snapshot_bundle_hash: `20eb57316e7f01510db49c7ceb791812dda1798bab6eb2c2a5a5031e76b2122d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
 - score: `-0.3283`
 - confidence: `0.8183`
 

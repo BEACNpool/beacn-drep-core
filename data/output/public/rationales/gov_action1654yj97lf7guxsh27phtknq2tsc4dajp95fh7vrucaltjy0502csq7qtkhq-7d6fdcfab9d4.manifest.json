@@ -34,7 +34,7 @@
   "action_type": "TreasuryWithdrawals",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -192,7 +192,7 @@
       "dir_hash": "94c110d218fae46660dd48ad6fb1de014112da62dc1d2560a91de865db64d853"
     }
   ],
-  "snapshot_bundle_hash": "9cfa546b0e1dca2808c743b008c1008065adcb6f0b6f09c0937ec9ef4879a78b",
+  "snapshot_bundle_hash": "0f4894f0b9e220d2e3ba1b65a93c8541976ffb9ec5360b3e60e4e36cb40bf737",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -234,12 +234,12 @@
       "output_sha256": "cb4c6e55aec009c1c7912731bc0735762673fdc2981355e8ed5b196377f66292"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "codex-offline-review",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "e192ca1dae33c3a073d5c847d894c6368cb10a2b9ab009ecf8f39687cfd052de"
+      "model": "codex-offline-local",
+      "prompt_sha256": "b2b9101a0d30710e6e67caa26558048a6218fea6a65eba2cb9b5b68b06093aaf",
+      "output_sha256": "51774b5194cd947790851700189bf02753127936b32a0ff13df9f774fcdf762c"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

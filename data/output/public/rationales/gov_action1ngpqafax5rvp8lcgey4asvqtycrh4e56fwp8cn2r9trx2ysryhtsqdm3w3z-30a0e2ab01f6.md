@@ -1,10 +1,14 @@
 # Rationale: gov_action1ngpqafax5rvp8lcgey4asvqtycrh4e56fwp8cn2r9trx2ysryhtsqdm3w3z
 Recommendation: **NO**
-Score: `-0.5333` (raw `-0.5033` + doctrine-LLM nudge `-0.03`) | Confidence: `1.0` | Readiness: `0.8`
+Score: `-0.6333` (raw `-0.6033` + doctrine-LLM nudge `-0.03`) | Confidence: `1.0` | Readiness: `0.8`
 > Reasoning layer (precomputed): The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community-impact analysis, and the extracted claims show a large treasury request with several high-materiality assertions relying on proposer statements rather than reproducible evidence. Under the doctrine, weak evidence on a substantial treasury withdrawal justifies a small cautionary nudge rather than a positive adjustment.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. Eternl requests about 1.68 million ADA — roughly $420,000 — to fund a year of operations and maintenance for its widely used non-custodial wallet while it stands up a paid Pro plan intended to make it self-sustaining. The proposal's strength is that it names a concrete path off treasury funding: it estimates that around 5,500 Pro subscribers, about 4.2% of its install base, would cover annual costs. That conversion assumption is the load-bearing claim and is currently the proposer's projection rather than demonstrated revenue, and the install-base figures are self-reported. The amount is modest relative to other live actions and the public good of a maintained, widely used wallet is real. The directional question is the credibility of the sustainability plan and whether funding is staged against it. BEACN is holding only because its data snapshot is stale; once fresh, this is a tractable case.
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on Eternl: Path to Sustainability (2026-2027). The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, infrastructure, and improvements for August 2026 to July 2027.. The recorded treasury amount is 1680000. The strongest grounded claim is: Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -54,7 +58,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: confirmed
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: 0.55
 - missing: milestone-gated disbursement
 - conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -114,7 +118,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - No milestone-gated disbursement documented.
 - Claims and evidence missing: Independent evidence for: Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring.
 - Claims and evidence missing: Independent evidence for: The proposer states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS.
@@ -129,12 +133,12 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `30a0e2ab01f6ddb871389931c02f34f2603fdb762851ce8d99761b5c3a82d4c0`
-- snapshot_bundle_hash: `c9c20d0a10a95ef13ea9e9f7f7d06c59a722c1f51b58c9cdc4da315e0c0a6ab0`
+- snapshot_bundle_hash: `494cfb6fe62e1e32ebd6e60c156f2af067ab127db0a2c57d76cb9cb1b25fd8a4`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
+- snapshot_age_seconds: `5891`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.1518, "NO": 0.8093, "YES": 0.0389}`

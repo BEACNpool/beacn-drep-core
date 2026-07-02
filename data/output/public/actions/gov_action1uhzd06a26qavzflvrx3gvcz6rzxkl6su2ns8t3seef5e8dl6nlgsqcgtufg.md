@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.20; confidence 69.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.30; confidence 79.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -30,7 +30,7 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -42,10 +42,10 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 
 ## Proof of vote
 - input_hash: `3ac08c6608562d5fbdd169f1abf6ff7460006eb64643a0aea87669047978f865`
-- snapshot_bundle_hash: `0b3c1702121528d78df1665c5e3959ba989a728cf3597e059628e09114fee350`
+- snapshot_bundle_hash: `1a5390af759c38efd8a9fffc054645fcdf67b08dd431d25bfb3968ecaa116f19`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
-- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
-- score: `-0.2033`
-- confidence: `0.6933`
+- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
+- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- score: `-0.3033`
+- confidence: `0.7933`
 

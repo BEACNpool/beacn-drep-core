@@ -3,8 +3,12 @@ Recommendation: **YES**
 Score: `0.01` (raw `0.03` + doctrine-LLM nudge `-0.02`) | Confidence: `0.56` | Readiness: `0.6`
 > Reasoning layer (precomputed): The proposal is aligned with operational resilience and includes a clear rationale, guardrail discussion, threshold table, dependency disclosure, and a reversion plan, but it also lowers a governance resilience parameter and acknowledges that a 5-member committee increases veto leverage under inactivity. Under a conservative parameter-change posture, that residual governance-risk tradeoff justifies a small cautionary nudge rather than a positive one.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This is a parameter change rather than a spend: it lowers the Constitutional Committee's minimum size from 7 to 5. The motivating risk is concrete and well-explained — with both the committee and its minimum at 7, a single resignation or term expiry would drop the committee below quorum and stall a large part of Cardano governance. The proposal is careful to note it does not change the current membership, and its sponsorship by Intersect's Civics and Technical Steering Committees is a matter of record that can be checked. Because it carries system-wide governance consequences and is tied to the enactment of a separate cost-model change ahead of the van Rossem hard fork, BEACN's policy requires fresh data and a clear read of the dependency before a directional vote. The hold here is procedural staleness, not opposition to the resilience rationale.
+## Plain-language explanation (codex-offline-review)
+BEACN records YES on Reduce the committeeMinSize parameter from 7 to 5. The deterministic gates found enough evidence and no decisive blocker.
+
+The action is a ParameterChange. The cached anchor describes the request as: Reduce the committeeMinSize protocol parameter from 7 to 5.. The strongest grounded claim is: The proposal changes only the committeeMinSize parameter to 5.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -97,12 +101,12 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `e14e28ab26b7a49b83b8c498b8e4176655475b75348ffcc3662f5edf0a803a6c`
-- snapshot_bundle_hash: `54e75c0d41411a197683e33ab38b59da2af98e5337ccc75eba5ccf5dee4b2220`
+- snapshot_bundle_hash: `be5c6e601f29a7bc5cf6b2aa375294408439d8f8e8ebcb786de21d142564dc7e`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
+- snapshot_age_seconds: `5891`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.25, "NO": 0.26, "YES": 0.49}`

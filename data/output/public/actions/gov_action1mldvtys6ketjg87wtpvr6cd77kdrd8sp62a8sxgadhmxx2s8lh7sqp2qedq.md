@@ -39,10 +39,10 @@ Vote: YES. For this ParameterChange (expired), available evidence supports proce
 
 ## Proof of vote
 - input_hash: `506a94cde977e91407967e874a9d67ce3a57cffcc21ab7bc6d509f96052ee58b`
-- snapshot_bundle_hash: `1dc62caf094cd09fce1e95a5cf88d4605795392b74a8058ba126ba6653597178`
+- snapshot_bundle_hash: `a2baf96149d37bef92bf0c838bd65f7804e74b2e09627e85cc0e45b02587f44f`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
-- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
+- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
+- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
 - score: `0.05`
 - confidence: `0.6`
 

@@ -1,10 +1,14 @@
 # Rationale: gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux
 Recommendation: **NO**
-Score: `-0.3533` (raw `-0.3233` + doctrine-LLM nudge `-0.03`) | Confidence: `0.8433` | Readiness: `0.75`
+Score: `-0.4533` (raw `-0.4233` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9433` | Readiness: `0.75`
 > Reasoning layer (precomputed): The claims include meaningful milestone structure, named application paths, and administrative controls, but the ask is large and the deterministic assessment remains blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analyses. Under a treasury-spending posture, those evidence gaps justify a small cautionary nudge rather than any positive adjustment.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The 5am.earth Foundation requests up to 10 million ADA, hard-capped, to build a Cardano-anchored trust layer for agricultural supply chains, combining self-sovereign identity for farmers with an on-chain satellite oracle. The proposal is notably well-structured for a venture of this kind: it is milestone-based (Stand-Up at month six, Closed Loop at month twelve, Self-Sustaining at month eighteen) and hard-capped, both of which are positive treasury-control signals. The headline reach figure of 500,000 farmers across India, Cambodia and Kenya, and the claim that the system becomes self-sustaining, are ambitious and currently asserted; the broader problem it targets is real and checkable. The decisive questions for a vote are execution risk in three developing-market geographies and whether disbursement is genuinely gated on the named milestones. BEACN needs fresh data and a completed dossier to weigh those, so it is holding today.
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on 5am.earth Trust Layer Targeting Vision 2030 KPIs. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Build an open, Cardano-anchored trust layer for global agricultural supply chains combining Veridian self-sovereign identity and a Cardano on-chain satellite oracle.. The recorded treasury amount is 10000000. The strongest grounded claim is: The requested 10,000,000 ADA is structured as 5,000,000 ADA on approval, 2,000,000 ADA on M1 acceptance, and 3,000,000 ADA on M2 acceptance.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -55,7 +59,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: 0.40
 - missing: line-item budget
 - missing: sustainability path
@@ -118,7 +122,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026.
 - Claims and evidence missing: Independent evidence for: The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate.
 - Claims and evidence status is thin.
@@ -133,13 +137,13 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `6480ebc4cac31591c278da6ce0a1038c47ba735edb5c78421cf18f6657525eb3`
-- snapshot_bundle_hash: `575bed65902e47d459e125242a3eeb17a9b5afb75d176edb288277bd0ee468c4`
+- snapshot_bundle_hash: `37e10c6ef94405f5a8d8192b277352f4bb8f101a094a8b239524caf3c2d8c26b`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
+- snapshot_age_seconds: `5891`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1836, "NO": 0.7736, "YES": 0.0428}`
+- decision_probs: `{"ABSTAIN": 0.1581, "NO": 0.8027, "YES": 0.0391}`
 

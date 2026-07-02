@@ -1,6 +1,6 @@
 # Rationale: gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq
 Recommendation: **NO**
-Score: `-0.4133` (raw `-0.3833` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9033` | Readiness: `0.0`
+Score: `-0.5133` (raw `-0.4833` + doctrine-LLM nudge `-0.03`) | Confidence: `1.0` | Readiness: `0.0`
 > Reasoning layer (precomputed): The proposal describes a potentially important public-good infrastructure transition, but the deterministic assessment identifies thin evidence and incomplete treasury, feasibility, risk, alternatives, and failure-mode analysis for a large treasury withdrawal. Under the doctrine, treasury stewardship and evidence quality should dominate plausible ecosystem growth when the ask is large and key diligence is missing.
 
 ## Plain-language explanation (codex-offline-review)
@@ -61,7 +61,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -127,7 +127,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Blockfrost is described as a reliable hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node.
 - Claims and evidence missing: Independent evidence for: The proposal states that last month Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.
@@ -144,13 +144,13 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `7f7722561a377cd9da16ce430fbfe1403efb2b4a98a5efd63eb1233e88406955`
-- snapshot_bundle_hash: `5f94a46515802e5478596103e453b23d32ddcae9de5a3e5618e5fc9807fb819e`
+- snapshot_bundle_hash: `aac459f6ba000365f3573f1cf29a215878e08e50517b798c036cb4ff7a5cb6d5`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `651`
+- snapshot_age_seconds: `5889`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1675, "NO": 0.792, "YES": 0.0404}`
+- decision_probs: `{"ABSTAIN": 0.1518, "NO": 0.8093, "YES": 0.0389}`
 

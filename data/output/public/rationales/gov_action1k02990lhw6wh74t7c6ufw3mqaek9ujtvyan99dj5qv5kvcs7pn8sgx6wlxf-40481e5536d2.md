@@ -1,6 +1,6 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf
 Recommendation: **NO**
-Score: `-0.3133` (raw `-0.2833` + doctrine-LLM nudge `-0.03`) | Confidence: `0.8333` | Readiness: `0.0`
+Score: `-0.4133` (raw `-0.3833` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9333` | Readiness: `0.0`
 > Reasoning layer (precomputed): The extracted claims show some checkable governance, NCL, prior funding, custody, and audit references, but the deterministic assessment remains blocked because core treasury diligence is incomplete, including budget analysis, feasibility, risk, alternatives, and failure-mode analysis. Under a large 25,400,000 ADA withdrawal, BEACN's hierarchy favors treasury stewardship and evidence quality over ecosystem momentum, so the bounded lean is a small cautionary negative nudge rather than a spending-positive adjustment.
 
 ## Plain-language explanation (codex-offline-review)
@@ -60,7 +60,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -126,7 +126,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Intersect says its overall ask decreased from $7.875M last year to $6.35M while preserving functions it considers critical to Cardano continuity and maturity.
 - Claims and evidence missing: Independent evidence for: Intersect claims it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.
@@ -143,13 +143,13 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `40481e5536d264e9d4a08cb19eaebd34e688d9b3a9ddf0a27df15c4e11a3dfa0`
-- snapshot_bundle_hash: `6a99c0215702272952c077cfea1a2891cca5732a66a817c4ede6606b77d06026`
+- snapshot_bundle_hash: `99f7ff89723ecbf7524ee5bceafa041f6492a0df31f913788ddb4287f7019af7`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `651`
+- snapshot_age_seconds: `5890`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1914, "NO": 0.7642, "YES": 0.0443}`
+- decision_probs: `{"ABSTAIN": 0.164, "NO": 0.7957, "YES": 0.0403}`
 

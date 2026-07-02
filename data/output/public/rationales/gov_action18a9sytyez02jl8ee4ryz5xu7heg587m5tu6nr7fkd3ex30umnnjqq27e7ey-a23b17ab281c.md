@@ -1,10 +1,14 @@
 # Rationale: gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey
 Recommendation: **NO**
-Score: `-0.5333` (raw `-0.5033` + doctrine-LLM nudge `-0.03`) | Confidence: `1.0` | Readiness: `0.6`
+Score: `-0.6333` (raw `-0.6033` + doctrine-LLM nudge `-0.03`) | Confidence: `1.0` | Readiness: `0.6`
 > Reasoning layer (precomputed): The extracted claims show plausible public-benefit ecosystem growth, but the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community-impact analyses for a large treasury withdrawal. The treasury-return and equal-value substitution claims are material but mostly proposer-asserted, so a small cautionary negative nudge is justified without overriding the blocked status.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is 2.75 million ADA to make Cardano the title sponsor of Rare Evo 2026 and the associated Dev Gov Day in Las Vegas, with a pledge to return 20% of VIP ticket sales to the treasury. Event sponsorship is inherently harder to evaluate than infrastructure: the central claims about reach, governance participation and developer engagement are marketing projections that are asserted rather than measured, and the value Cardano receives depends on outcomes that are difficult to verify after the fact. The 20% VIP rebate is a sensible alignment mechanism but its dollar value is uncertain. For a spend of this size BEACN would want concrete, independently verifiable success metrics and a milestone or rebate structure before committing treasury funds, alongside its standard deep-research dossier. With the data snapshot stale, the correct action today is to hold rather than vote directionally.
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano title sponsorship for Rare Evo 2026 main stage/global livestream and Cardano Dev Gov Day 2026 sponsorship.. The recorded treasury amount is 2750000. The strongest grounded claim is: Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -55,7 +59,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: not confirmed
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: 0.35
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -120,7 +124,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - No milestone-gated disbursement documented.
 - Claims and evidence missing: Independent evidence for: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900.
 - Claims and evidence missing: Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says funding would substantially expand Cardano presence, accessibility, participation, and industry outreach.
@@ -136,12 +140,12 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `a23b17ab281cc290588f3f2913c842f51389ed0850f4eb5bb32574871fd5a949`
-- snapshot_bundle_hash: `f941b20dcedd54130c7887350e02d0f4efa7f07615aa58754a1ebe4fcd3b59ef`
+- snapshot_bundle_hash: `4ffc14a02d76a734c2d67260cb34d76ce1a3a7bd58f34d7dad4e89ed69e21c23`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
+- snapshot_age_seconds: `5891`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.1518, "NO": 0.8093, "YES": 0.0389}`

@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3333,
-  "raw_score": -0.3233,
+  "score": -0.4333,
+  "raw_score": -0.4233,
   "llm_score_adjustment": -0.01,
   "llm_lean": {
     "source": "codex-offline-review",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.8233,
+  "confidence": 0.9233,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -53,7 +53,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "Claims and evidence missing: complete proposal summary",
     "Claims and evidence missing: budget analysis",
     "Treasury analysis missing: line-item budget",
@@ -68,10 +68,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "9514f98d142d9e510737f97e941ad42abeeab58bf0f425d449d97080303a4b69",
-  "snapshot_bundle_hash": "256f5d23126c70c54bb6a805c9861c6249d668ccb44bfe25eb11b2b2cf6eb184",
+  "snapshot_bundle_hash": "0282afe11ff0ba75e60fca5a564103fef834bd054c3dfdbfbb0398fca3691f80",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -86,16 +86,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 654,
+    "snapshot_age_seconds": 5893,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0436,
-    "NO": 0.767,
-    "ABSTAIN": 0.1894
+    "YES": 0.0397,
+    "NO": 0.7977,
+    "ABSTAIN": 0.1625
   },
   "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
@@ -163,7 +163,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: unknown"
         ],
         "missing": [

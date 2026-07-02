@@ -1,6 +1,6 @@
 # Rationale: gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse
 Recommendation: **NO**
-Score: `-0.3833` (raw `-0.3533` + doctrine-LLM nudge `-0.03`) | Confidence: `0.8733` | Readiness: `0.0`
+Score: `-0.4833` (raw `-0.4533` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9733` | Readiness: `0.0`
 > Reasoning layer (precomputed): The extracted claims show a concrete budget and some stated oversight mechanisms, but the deterministic assessment identifies thin evidence and missing budget, feasibility, risk, alternatives, and failure-mode analysis. Under BEACN doctrine, treasury stewardship and evidence quality outweigh plausible ecosystem value, so the bounded adjustment should lean cautiously negative rather than reward asserted repayment and adoption claims.
 
 ## Plain-language explanation (codex-offline-review)
@@ -61,7 +61,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -128,7 +128,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
 - Claims and evidence missing: Independent evidence for: Eternl says independent fund-use audits will be performed in February 2027 and August 2027 by a party unaffiliated with Tastenkunst GmbH or the Eternl team.
 - Claims and evidence status is thin.
@@ -144,13 +144,13 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `92026a67255fb20eec5928dec5650e070b57441e885a6605739739254b477d89`
-- snapshot_bundle_hash: `12b7265b0c8f1716443613c017e19ac5506f277cb627ed33911a79d41ca7be46`
+- snapshot_bundle_hash: `d16382f89c31b32cf8d31fdcf724186b577bed4f85b545cabd0431fbe5afc7fb`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `651`
+- snapshot_age_seconds: `5890`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1753, "NO": 0.7831, "YES": 0.0416}`
+- decision_probs: `{"ABSTAIN": 0.1548, "NO": 0.8062, "YES": 0.039}`
 

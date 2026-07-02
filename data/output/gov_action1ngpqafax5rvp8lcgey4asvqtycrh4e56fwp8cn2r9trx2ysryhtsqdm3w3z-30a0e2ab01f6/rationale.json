@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.5333,
-  "raw_score": -0.5033,
+  "score": -0.6333,
+  "raw_score": -0.6033,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -53,7 +53,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "No milestone-gated disbursement documented.",
     "Claims and evidence missing: Independent evidence for: Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring.",
     "Claims and evidence missing: Independent evidence for: The proposer states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS.",
@@ -68,10 +68,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "30a0e2ab01f6ddb871389931c02f34f2603fdb762851ce8d99761b5c3a82d4c0",
-  "snapshot_bundle_hash": "c9c20d0a10a95ef13ea9e9f7f7d06c59a722c1f51b58c9cdc4da315e0c0a6ab0",
+  "snapshot_bundle_hash": "494cfb6fe62e1e32ebd6e60c156f2af067ab127db0a2c57d76cb9cb1b25fd8a4",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -86,7 +86,7 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 652,
+    "snapshot_age_seconds": 5891,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
@@ -164,7 +164,7 @@
           "Clawback/refund path: not confirmed",
           "Cost/benefit clarity: confirmed",
           "Recurring funding dependency: confirmed",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: 0.55"
         ],
         "missing": [
@@ -230,8 +230,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. Eternl requests about 1.68 million ADA \u2014 roughly $420,000 \u2014 to fund a year of operations and maintenance for its widely used non-custodial wallet while it stands up a paid Pro plan intended to make it self-sustaining. The proposal's strength is that it names a concrete path off treasury funding: it estimates that around 5,500 Pro subscribers, about 4.2% of its install base, would cover annual costs. That conversion assumption is the load-bearing claim and is currently the proposer's projection rather than demonstrated revenue, and the install-base figures are self-reported. The amount is modest relative to other live actions and the public good of a maintained, widely used wallet is real. The directional question is the credibility of the sustainability plan and whether funding is staged against it. BEACN is holding only because its data snapshot is stale; once fresh, this is a tractable case.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NO on Eternl: Path to Sustainability (2026-2027). The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, infrastructure, and improvements for August 2026 to July 2027.. The recorded treasury amount is 1680000. The strongest grounded claim is: Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.",
+  "human_message_source": "codex-offline-review",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -273,12 +273,12 @@
       "output_sha256": "6ad285328b1366a8599f10d4bc1fbc03fa6337ca1082e786f84065ac295ebba5"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "codex-offline-review",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "aeafdfa05c139e5f71f53916d142926551c0d434990b70e7777f3d13f725e504"
+      "model": "codex-offline-local",
+      "prompt_sha256": "7e4c9867b8975f67ef14918a804e1be1226d73d2fa096e4ed5576a8c3ae9185d",
+      "output_sha256": "5e2b16fe499e37ac0b366734ed2d5991487c8ea88ad121313553d24e3b5edfad"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

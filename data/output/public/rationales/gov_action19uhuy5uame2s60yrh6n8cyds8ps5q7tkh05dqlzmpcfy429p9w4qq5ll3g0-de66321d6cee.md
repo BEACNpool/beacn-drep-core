@@ -1,6 +1,6 @@
 # Rationale: gov_action19uhuy5uame2s60yrh6n8cyds8ps5q7tkh05dqlzmpcfy429p9w4qq5ll3g0
 Recommendation: **NO**
-Score: `-0.2283` (raw `-0.2233` + doctrine-LLM nudge `-0.005`) | Confidence: `0.7183` | Readiness: `0.0`
+Score: `-0.3283` (raw `-0.3233` + doctrine-LLM nudge `-0.005`) | Confidence: `0.8183` | Readiness: `0.0`
 > Reasoning layer (codex-offline-review): Doctrine-aware offline lean for a treasury action: 3 well-supported claim(s), 1 unsupported high-materiality claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.005 (clamped to ±0.05).
 
 ## Plain-language explanation (codex-offline-review)
@@ -52,7 +52,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -111,7 +111,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.
 - Claims and evidence missing: Independent evidence for: Duration & Milestones This proposal spans over 12 months , from January to December 2026, throughout which there will be several deliveries, demos, and workshops.
 - Claims and evidence status is thin.
@@ -124,13 +124,13 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `de66321d6cee6518f3181d37ddc3b67bc875684eda5f0d778684488ca10e591f`
-- snapshot_bundle_hash: `176f508c9ab1628457d0c54a4e797e28bafdeb86b7b674ff6f25dac3258be136`
+- snapshot_bundle_hash: `2795aac1b9303718f1a27c322c832513b77745d7958b18f380984974224bee6c`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `654`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `5893`
+- uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2239, "NO": 0.7274, "YES": 0.0486}`
+- decision_probs: `{"ABSTAIN": 0.1909, "NO": 0.7653, "YES": 0.0438}`
 

@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2633,
-  "raw_score": -0.2233,
+  "score": -0.3633,
+  "raw_score": -0.3233,
   "llm_score_adjustment": -0.04,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.7833,
+  "confidence": 0.8833,
   "readiness_score": 0.6,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -53,7 +53,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "Claims and evidence missing: Independent evidence for: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.",
     "Claims and evidence missing: Independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.",
     "Claims and evidence status is thin.",
@@ -68,10 +68,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "c1f9a6b1232ee25f24a0d23188ea2c90540b691cf4adb943efd64e66200a2ca3",
-  "snapshot_bundle_hash": "6da7c2475433bf26ebe1cfdc7d8c8a62694d74b6add62dcfaed03e70980f8467",
+  "snapshot_bundle_hash": "67dcfce25987393bc756e152c7012278045ff6665a7031a2cd0af2be6e324358",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -86,18 +86,18 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 652,
+    "snapshot_age_seconds": 5891,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0467,
-    "NO": 0.746,
-    "ABSTAIN": 0.2073
+    "YES": 0.0422,
+    "NO": 0.7807,
+    "ABSTAIN": 0.1771
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
@@ -164,7 +164,7 @@
           "Clawback/refund path: not confirmed",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: confirmed",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: 0.40"
         ],
         "missing": [
@@ -235,8 +235,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This action requests 23 million ADA to cover Year-2 licensing and twelve months of maintenance for integrations delivered under the first Critical Integrations budget \u2014 Circle USDCx, LayerZero, Pyth and Dune \u2014 and to add a native Fireblocks integration. The proposal is candid that these are recurring costs: the named integrations need ongoing annual payments to stay live. That candour is useful, but it also surfaces the central risk BEACN weighs heavily \u2014 a standing, recurring treasury dependency on third-party infrastructure, where declining to fund later could strand work already paid for. The maintenance-need claims are partly evidenced by the contracts described, while the consequences of under-funding are asserted. A large, recurring commitment like this needs a completed dossier, line-item licensing costs and a sustainability plan that reduces dependence over time. With stale data, BEACN holds rather than voting directionally.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NO on Cardano Critical Integrations V2. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdrawal from the Cardano Treasury for Cardano Critical Integrations V2, covering Year 2 contracted costs, a 12-month enhancement and maintenance program for CCI V1 integrations, and a new native Fireblocks integration.. The recorded treasury amount is 23000000. The strongest grounded claim is: The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.",
+  "human_message_source": "codex-offline-review",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -278,12 +278,12 @@
       "output_sha256": "c31f89de5a69d823b1da1283097c6e51da61d27805f8e8e943f72cb69d84f02a"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "codex-offline-review",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "e38cc014db761cb748ec0a153a966349a76430a9a69528f02e8ded2b85ba3eb8"
+      "model": "codex-offline-local",
+      "prompt_sha256": "d4498c3962d97ecdcfa79114fad9c6a2b1391e8aa13921d250cfd8ab946e3f3a",
+      "output_sha256": "a28697e38d5d6f0b8ff0391bfb98e7cf3b287aeeaca1419ff0819e7f36af0821"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

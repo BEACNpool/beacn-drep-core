@@ -1,10 +1,14 @@
 # Rationale: gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x
 Recommendation: **NO**
-Score: `-0.5033` (raw `-0.4733` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9933` | Readiness: `0.7`
+Score: `-0.6033` (raw `-0.5733` + doctrine-LLM nudge `-0.03`) | Confidence: `1.0` | Readiness: `0.7`
 > Reasoning layer (precomputed): The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analysis. Within the claims extracted here, the proposal has some governance and delivery-control detail, but several high-materiality technical and economic claims rely on proposer assertion, and the large treasury ask should be treated cautiously when budget justification and feasibility evidence are incomplete.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. At about 18.26 million ADA this is one of the largest live treasury actions, funding Tweag by Modus Create to deliver core protocol infrastructure — chiefly the mainnet deployment of Peras for faster finality, plus History Expiry and conformance testing. The technical need is well-documented: Peras v1 is genuinely not yet on mainnet and the work it describes is real. The budget is transparently derived from a stated hourly rate and ADA/USD assumption, which is good practice, but the rate, the hours and the single-pipeline framing are proposer-set figures that warrant independent cost scrutiny at this scale. A request of this size demands a completed deep-research dossier, milestone-gated disbursement and a clear view of treasury runway — exactly the checks BEACN cannot complete on an eight-hour-old snapshot. It is therefore holding until the data is fresh and that evidence is in hand.
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026–2027. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027.. The recorded treasury amount is 18263496.00. The strongest grounded claim is: The proposal requests ₳18,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -54,7 +58,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: 0.40
 - missing: milestone-gated disbursement
 - missing: sustainability path
@@ -118,7 +122,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - No milestone-gated disbursement documented.
 - Claims and evidence missing: Independent evidence for: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today.
 - Claims and evidence missing: Independent evidence for: The proposal asserts that Leios throughput could cause SPO disk usage to surge to approximately 1 GB per hour at 100-1000 TPS without History Expiry.
@@ -134,13 +138,13 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `174b838cbc027cd1a2cf8c97b60a4c544a1c79e0e0f8c5ef4cb4092ed555b913`
-- snapshot_bundle_hash: `896bc36e63545f182921d8c4ea48e3c3c36dee2c68983b2425fa2e39cd10a4cd`
+- snapshot_bundle_hash: `2dd354bdc525d65aaa2f61801321cb4794e7267bb3fa577d926cb8673a2305bc`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
+- snapshot_age_seconds: `5891`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1525, "NO": 0.8086, "YES": 0.0389}`
+- decision_probs: `{"ABSTAIN": 0.1518, "NO": 0.8093, "YES": 0.0389}`
 

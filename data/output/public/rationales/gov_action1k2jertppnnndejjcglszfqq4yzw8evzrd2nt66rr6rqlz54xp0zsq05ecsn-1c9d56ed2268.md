@@ -90,12 +90,12 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Reproducibility
 - input_hash: `1c9d56ed2268c5a5a1a767f597269efa6f762bc3f90eac8c1f508fccc9d7f14c`
-- snapshot_bundle_hash: `88c766b832d954939e536519429d177e3dad69587f9a9ce0ebafb290f23cd249`
+- snapshot_bundle_hash: `6718beeb0552906acb80fca6a4504d0ff88f1aa0fa257396d409785f47dec6ea`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `661`
+- snapshot_age_seconds: `5900`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2463, "NO": 0.2263, "YES": 0.5275}`

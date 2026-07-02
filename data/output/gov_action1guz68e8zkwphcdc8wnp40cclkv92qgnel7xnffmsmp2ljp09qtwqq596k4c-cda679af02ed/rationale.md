@@ -1,6 +1,6 @@
 # Rationale: gov_action1guz68e8zkwphcdc8wnp40cclkv92qgnel7xnffmsmp2ljp09qtwqq596k4c
 Recommendation: **NO**
-Score: `-0.2333` (raw `-0.2233` + doctrine-LLM nudge `-0.01`) | Confidence: `0.7533` | Readiness: `0.0`
+Score: `-0.3333` (raw `-0.3233` + doctrine-LLM nudge `-0.01`) | Confidence: `0.8533` | Readiness: `0.0`
 > Reasoning layer (codex-offline-review): Doctrine-aware offline lean for a treasury action: 8 well-supported claim(s), assessment blocked, 7 open blocker(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.010 (clamped to ±0.05).
 
 ## Plain-language explanation (codex-offline-review)
@@ -57,7 +57,7 @@ The blocking questions are: missing complete proposal summary; missing budget an
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -124,7 +124,7 @@ The blocking questions are: missing complete proposal summary; missing budget an
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence missing: budget analysis
 - Treasury analysis missing: line-item budget
@@ -139,13 +139,13 @@ The blocking questions are: missing complete proposal summary; missing budget an
 
 ## Reproducibility
 - input_hash: `cda679af02ed9db34f0e81c1f95369ba0eb5c71d7e16349913bb2e6ade71f66e`
-- snapshot_bundle_hash: `1c43b2970ef8bda90488398ca0a8b27bf08be8d8795e153bb59a018479fdfebb`
+- snapshot_bundle_hash: `084ac69a9ff53d62e41c4b42ed025c224cb9d614bb3ffae3e6efde0cd47a109c`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `653`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `5891`
+- uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2177, "NO": 0.7341, "YES": 0.0482}`
+- decision_probs: `{"ABSTAIN": 0.1855, "NO": 0.771, "YES": 0.0435}`
 

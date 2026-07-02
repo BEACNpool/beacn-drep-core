@@ -11,26 +11,26 @@
   "decision": {
     "vote": "NO",
     "published_at": "2026-07-01T23:06:08.058006+00:00",
-    "signed": false,
-    "submitted": false,
-    "transaction_hash": null,
-    "submitted_at": null
+    "signed": true,
+    "submitted": true,
+    "transaction_hash": "12be2b7e14b0a8d14fefe1d04043b492ab20c6052e19dd912b61a943cab1438b",
+    "submitted_at": "2026-07-02T00:15:33+00:00"
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.4133,
-    "confidence": 0.9033,
+    "score": -0.5133,
+    "confidence": 1.0,
     "input_hash": "7f7722561a377cd9da16ce430fbfe1403efb2b4a98a5efd63eb1233e88406955",
-    "snapshot_bundle_hash": "5f94a46515802e5478596103e453b23d32ddcae9de5a3e5618e5fc9807fb819e",
+    "snapshot_bundle_hash": "aac459f6ba000365f3573f1cf29a215878e08e50517b798c036cb4ff7a5cb6d5",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq-7f7722561a37.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3d3acdb5e83f59a7a5877773.md",
-    "rationale_anchor_hash": "3d3acdb5e83f59a7a5877773df0686ecab70c88c2a5437361cc68fd5b81ea4dd"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/9ff5d9c43d8323d82a9bf103.md",
+    "rationale_anchor_hash": "9ff5d9c43d8323d82a9bf1031b2bc6669ddbb85677daa5db455b3e428be170bc"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Blockfrost is described as a reliable hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal states that Cardano Foundation developer ecosystem surveys report Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 90.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Blockfrost is described as a reliable hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal states that Cardano Foundation developer ecosystem surveys report Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal describes a potentially important public-good infrastructure transition, but the deterministic assessment identifies thin evidence and incomplete treasury, feasibility, risk, alternatives, and failure-mode analysis for a large treasury withdrawal. Under the doctrine, treasury stewardship and evidence quality should dominate plausible ecosystem growth when the ask is large and key diligence is missing.",
     "top_fixes": [
       "Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
@@ -106,7 +106,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unknown (stale snapshot)",
+            "Six-month treasury flow regime: unsustainable",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -197,8 +197,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -271,13 +271,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.4133,
+    "budget_pressure": 0.5133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.9033
+    "governance_alignment": 1.0
   },
   "freshness": {
-    "snapshot_age_seconds": 651,
+    "snapshot_age_seconds": 5889,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",

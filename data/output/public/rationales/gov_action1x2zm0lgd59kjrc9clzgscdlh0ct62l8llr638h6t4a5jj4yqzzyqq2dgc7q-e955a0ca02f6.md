@@ -103,12 +103,12 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `e955a0ca02f65dff610ccb9e0b4c9647be8f8c05835252fc7fa12d8596f6b985`
-- snapshot_bundle_hash: `ca76a2ab5970b5ebc8869fe3e76443029764431e75c3246e678ebb57c44c27e9`
+- snapshot_bundle_hash: `193420d4cb8854fa9755aa5298751c59291333fa1ce9afa49b47f167ae50d032`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `655`
+- snapshot_age_seconds: `5894`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4537, "NO": 0.2581, "YES": 0.2881}`

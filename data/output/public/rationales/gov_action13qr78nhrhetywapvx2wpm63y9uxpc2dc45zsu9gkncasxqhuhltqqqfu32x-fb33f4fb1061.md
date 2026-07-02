@@ -1,6 +1,6 @@
 # Rationale: gov_action13qr78nhrhetywapvx2wpm63y9uxpc2dc45zsu9gkncasxqhuhltqqqfu32x
 Recommendation: **NO**
-Score: `-0.1533` (raw `-0.1233` + doctrine-LLM nudge `-0.03`) | Confidence: `0.6733` | Readiness: `0.85`
+Score: `-0.2533` (raw `-0.2233` + doctrine-LLM nudge `-0.03`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (codex-offline-review): Doctrine-aware offline lean for a treasury action: 6 well-supported claim(s), 2 unsupported high-materiality claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to ±0.05).
 
 ## Plain-language explanation (codex-offline-review)
@@ -52,7 +52,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -107,7 +107,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.
 - Claims and evidence missing: Independent evidence for: Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.
 - Claims and evidence status is thin.
@@ -117,13 +117,13 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `fb33f4fb106113565b8dabdf07f69180d81cd6e57a879878fc8a72258522b358`
-- snapshot_bundle_hash: `ed78dab05d7efbe58747f64af7457f9d4c70a5a62bbb1045338dcd584cb93b51`
+- snapshot_bundle_hash: `b67ca7ed21236376b1d881e22dcb4a387998e01e680e2d3b4e8e63804bbd9075`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `654`
+- snapshot_age_seconds: `5893`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2358, "NO": 0.6616, "YES": 0.1025}`
+- decision_probs: `{"ABSTAIN": 0.2107, "NO": 0.7421, "YES": 0.0472}`
 

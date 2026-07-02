@@ -850,6 +850,24 @@ def _build_message_user(action: dict, title: str, rationale: dict, assessment: d
     )
 
 
+def message_matches_recommendation(text: str, recommendation: str) -> bool:
+    """Does a cached plain-language message describe the CURRENT verdict?
+
+    Cached messages are written once and can outlive a recommendation flip
+    (e.g. an ABSTAIN-era explanation glued onto a later NO vote — seen live on
+    the Tweag withdrawal 2026-07-01). We look at the verdict the opening of the
+    message names; if it names a different one, the cache entry is stale."""
+    rec = (recommendation or "").upper().replace(" ", "_")
+    head = (text or "")[:240].upper()
+    m = re.search(r"\b(ABSTAIN(?:ING|S)?|NEEDS[ _]MORE[ _]INFO|YES|NO)\b", head)
+    if not m:
+        return True  # can't tell — leave legacy behaviour alone
+    named = m.group(1).replace(" ", "_")
+    if named.startswith("ABSTAIN"):
+        named = "ABSTAIN"
+    return named == rec
+
+
 def write_human_message(action: dict, title: str, rationale: dict, assessment: dict, claims: dict | None) -> dict:
     """Stage 6. Returns {available, text, reason, model, hashes}. Non-authoritative:
     it explains `rationale['recommendation']`, which is already fixed."""
@@ -857,8 +875,12 @@ def write_human_message(action: dict, title: str, rationale: dict, assessment: d
     cached = _cache().get(action.get("action_id")) or {}
     if cached.get("message"):
         text = cached["message"]
-        base.update(available=True, source="precomputed", text=text, output_sha256=_sha(text))
-        return base
+        if message_matches_recommendation(text, rationale.get("recommendation")):
+            base.update(available=True, source="precomputed", text=text, output_sha256=_sha(text))
+            return base
+        # Stale cache: the message explains a different verdict than the one
+        # being published. Fall through and regenerate instead of contradicting
+        # the on-chain vote on the public site.
     if _offline_review_enabled():
         return _offline_human_message(action, title, rationale, assessment, claims)
     client = _client()

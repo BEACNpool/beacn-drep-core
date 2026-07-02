@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.5333,
-  "raw_score": -0.5033,
+  "score": -0.6333,
+  "raw_score": -0.6033,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -53,7 +53,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "No milestone-gated disbursement documented.",
     "Claims and evidence missing: Independent evidence for: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900.",
     "Claims and evidence missing: Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says funding would substantially expand Cardano presence, accessibility, participation, and industry outreach.",
@@ -69,10 +69,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "a23b17ab281cc290588f3f2913c842f51389ed0850f4eb5bb32574871fd5a949",
-  "snapshot_bundle_hash": "f941b20dcedd54130c7887350e02d0f4efa7f07615aa58754a1ebe4fcd3b59ef",
+  "snapshot_bundle_hash": "4ffc14a02d76a734c2d67260cb34d76ce1a3a7bd58f34d7dad4e89ed69e21c23",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -87,7 +87,7 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 652,
+    "snapshot_age_seconds": 5891,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
@@ -166,7 +166,7 @@
           "Clawback/refund path: not confirmed",
           "Cost/benefit clarity: not confirmed",
           "Recurring funding dependency: not confirmed",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: 0.35"
         ],
         "missing": [
@@ -237,8 +237,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The request is 2.75 million ADA to make Cardano the title sponsor of Rare Evo 2026 and the associated Dev Gov Day in Las Vegas, with a pledge to return 20% of VIP ticket sales to the treasury. Event sponsorship is inherently harder to evaluate than infrastructure: the central claims about reach, governance participation and developer engagement are marketing projections that are asserted rather than measured, and the value Cardano receives depends on outcomes that are difficult to verify after the fact. The 20% VIP rebate is a sensible alignment mechanism but its dollar value is uncertain. For a spend of this size BEACN would want concrete, independently verifiable success metrics and a milestone or rebate structure before committing treasury funds, alongside its standard deep-research dossier. With the data snapshot stale, the correct action today is to hold rather than vote directionally.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NO on Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano title sponsorship for Rare Evo 2026 main stage/global livestream and Cardano Dev Gov Day 2026 sponsorship.. The recorded treasury amount is 2750000. The strongest grounded claim is: Rare Network requests \u20b32,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.",
+  "human_message_source": "codex-offline-review",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -280,12 +280,12 @@
       "output_sha256": "458a55adf36ca97adb4cecfd74e96d620753cd796cd376b0cc8c7e0a4f1eb09d"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "codex-offline-review",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "dfd527fb13fd8147277b0b6443275057f5fcc2e2a6a49f7f32ba578814ae37ff"
+      "model": "codex-offline-local",
+      "prompt_sha256": "85f2a27e9995db0ea5a209c4be6e1bb747b29f1dc8932a5710ebafe992078f27",
+      "output_sha256": "061a454261154e24ef4f7d3fb461f1afa3f8c12245a309a5a253d3369fb58391"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

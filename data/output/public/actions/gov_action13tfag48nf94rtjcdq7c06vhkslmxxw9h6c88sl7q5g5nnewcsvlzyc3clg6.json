@@ -18,19 +18,19 @@
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.1033,
-    "confidence": 0.6233,
+    "score": -0.2033,
+    "confidence": 0.7233,
     "input_hash": "6035f73eb82816c4b174db5afba5205ca695f128f4d725917f6cf9d8cc82ee36",
-    "snapshot_bundle_hash": "ce9d9503f09f26a8004a78c1f1ed72a5ccbf9cfefe517d95e592fbdaf9037616",
+    "snapshot_bundle_hash": "32b5baa76fe77863b6ad4b49ab3d162bc0de2c0ed7501d8768ba87e588cc3f2d",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlzyc3clg6-6035f73eb828.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates \"This treasury withdrawal funds PyCardano which will provide the following services: \u200b PyCardano is a lightweight Python library that enables developers to interact seamlessly with the Cardano blockchain.\" and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.10; confidence 62.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates \"This treasury withdrawal funds PyCardano which will provide the following services: \u200b PyCardano is a lightweight Python library that enables developers to interact seamlessly with the Cardano blockchain.\" and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide line-item budget.",
@@ -94,7 +94,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unknown (stale snapshot)",
+            "Six-month treasury flow regime: unsustainable",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -169,8 +169,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -243,13 +243,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.1033,
+    "budget_pressure": 0.2033,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.6233
+    "governance_alignment": 0.7233
   },
   "freshness": {
-    "snapshot_age_seconds": 657,
+    "snapshot_age_seconds": 5896,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",

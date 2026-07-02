@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3133,
-  "raw_score": -0.2833,
+  "score": -0.4133,
+  "raw_score": -0.3833,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.8333,
+  "confidence": 0.9333,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -52,7 +52,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: Dano Finance says Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which slows integrations and limits advanced financial applications.",
     "Claims and evidence missing: Independent evidence for: Dano Finance commits to return 5% of protocol fees from the Treasury-funded Spot Leverage Order Book and American Options contracts for 12 months after mainnet launch, after specified direct costs, with public reporting.",
@@ -69,10 +69,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "2454e5a6045195a53bb365c13d2da2642f8ce6fb4b09c4d1c1e6c36819e029e1",
-  "snapshot_bundle_hash": "45afdc450b540cb5aca41b4c80cbb12de61a64e7fe876204806a087cb44eefcc",
+  "snapshot_bundle_hash": "4d8bf6739cd16f8a025ae956af745ec752f26c70cf33d421b81e4f6ee6206b72",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -87,16 +87,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 650,
+    "snapshot_age_seconds": 5889,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0443,
-    "NO": 0.7642,
-    "ABSTAIN": 0.1914
+    "YES": 0.0403,
+    "NO": 0.7957,
+    "ABSTAIN": 0.164
   },
   "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
@@ -166,7 +166,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: unknown"
         ],
         "missing": [
@@ -293,6 +293,6 @@
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/17ff9752f29c6592bffcb3e4.md",
-  "rationale_anchor_hash": "17ff9752f29c6592bffcb3e49bcbdbc59556dec14c9256644263564112b63f77"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/75730daff4fffc6d2a97d97d.md",
+  "rationale_anchor_hash": "75730daff4fffc6d2a97d97d18ac1fcf176714b21f8d0d0f1c53fdc72e859009"
 }

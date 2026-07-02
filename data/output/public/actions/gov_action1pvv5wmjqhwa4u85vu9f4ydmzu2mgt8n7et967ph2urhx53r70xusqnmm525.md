@@ -36,10 +36,10 @@ Vote: YES. For this HardForkInitiation (enacted), available evidence supports pr
 
 ## Proof of vote
 - input_hash: `3f5b384048b2f70b67a5c8f4ad9242a7e56c2c8a70aeaa3a3f113f6ff6604736`
-- snapshot_bundle_hash: `ec9cdbe13cb52358ee13ca7bb4b86d179e5c86db69e80137f96c766a4a21c5a7`
+- snapshot_bundle_hash: `c102971fe45a0e46f359949836e15c50159d505b7df774566fc723ae7c168833`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
-- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
+- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
+- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
 - score: `-0.03`
 - confidence: `0.58`
 

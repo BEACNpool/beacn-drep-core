@@ -11,26 +11,26 @@
   "decision": {
     "vote": "NO",
     "published_at": "2026-07-01T23:06:08.058006+00:00",
-    "signed": false,
-    "submitted": false,
-    "transaction_hash": null,
-    "submitted_at": null
+    "signed": true,
+    "submitted": true,
+    "transaction_hash": "94002ca7bcfd8ded7aee3f5f107c28ff3f3c8c3f6d6ade9373b4865280c9300a",
+    "submitted_at": "2026-07-02T00:30:58+00:00"
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.3133,
-    "confidence": 0.8333,
+    "score": -0.4133,
+    "confidence": 0.9333,
     "input_hash": "40481e5536d264e9d4a08cb19eaebd34e688d9b3a9ddf0a27df15c4e11a3dfa0",
-    "snapshot_bundle_hash": "6a99c0215702272952c077cfea1a2891cca5732a66a817c4ede6606b77d06026",
+    "snapshot_bundle_hash": "99f7ff89723ecbf7524ee5bceafa041f6492a0df31f913788ddb4287f7019af7",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf-40481e5536d2.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c0213f376d1fc824fd4f14da.md",
-    "rationale_anchor_hash": "c0213f376d1fc824fd4f14dac18f0497800551fd4d1561ca9065ff479e11edbe"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/7abd25b2ea21ae2bc0fa984f.md",
+    "rationale_anchor_hash": "7abd25b2ea21ae2bc0fa984f871411770937ce3dcee9e33d72d6c77dfdabaacf"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Intersect says its overall ask decreased from $7.875M last year to $6.35M while preserving functions it considers critical to Cardano continuity and maturity.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"Intersect states the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, critical unowned processes, technical stewardship, incident response, and release coordination.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.31; confidence 83.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Intersect says its overall ask decreased from $7.875M last year to $6.35M while preserving functions it considers critical to Cardano continuity and maturity.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"Intersect states the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, critical unowned processes, technical stewardship, incident response, and release coordination.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The extracted claims show some checkable governance, NCL, prior funding, custody, and audit references, but the deterministic assessment remains blocked because core treasury diligence is incomplete, including budget analysis, feasibility, risk, alternatives, and failure-mode analysis. Under a large 25,400,000 ADA withdrawal, BEACN's hierarchy favors treasury stewardship and evidence quality over ecosystem momentum, so the bounded lean is a small cautionary negative nudge rather than a spending-positive adjustment.",
     "top_fixes": [
       "Provide complete proposal summary.",
@@ -105,7 +105,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unknown (stale snapshot)",
+            "Six-month treasury flow regime: unsustainable",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -196,8 +196,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -270,13 +270,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.3133,
+    "budget_pressure": 0.4133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.8333
+    "governance_alignment": 0.9333
   },
   "freshness": {
-    "snapshot_age_seconds": 651,
+    "snapshot_age_seconds": 5890,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",

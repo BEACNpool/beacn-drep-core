@@ -1,10 +1,14 @@
 # Rationale: gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz
 Recommendation: **NO**
-Score: `-0.2633` (raw `-0.2233` + doctrine-LLM nudge `-0.04`) | Confidence: `0.7833` | Readiness: `0.6`
+Score: `-0.3633` (raw `-0.3233` + doctrine-LLM nudge `-0.04`) | Confidence: `0.8833` | Readiness: `0.6`
 > Reasoning layer (precomputed): A small negative nudge is justified because the request is large, vendor-level costs are confidential, the recipient structure recently received a much larger related treasury withdrawal, and the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community impact analyses; these gaps weaken evidence quality and treasury downside protection despite stated oversight and refund mechanisms.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This action requests 23 million ADA to cover Year-2 licensing and twelve months of maintenance for integrations delivered under the first Critical Integrations budget — Circle USDCx, LayerZero, Pyth and Dune — and to add a native Fireblocks integration. The proposal is candid that these are recurring costs: the named integrations need ongoing annual payments to stay live. That candour is useful, but it also surfaces the central risk BEACN weighs heavily — a standing, recurring treasury dependency on third-party infrastructure, where declining to fund later could strand work already paid for. The maintenance-need claims are partly evidenced by the contracts described, while the consequences of under-funding are asserted. A large, recurring commitment like this needs a completed dossier, line-item licensing costs and a sustainability plan that reduces dependence over time. With stale data, BEACN holds rather than voting directionally.
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on Cardano Critical Integrations V2. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdrawal from the Cardano Treasury for Cardano Critical Integrations V2, covering Year 2 contracted costs, a 12-month enhancement and maintenance program for CCI V1 integrations, and a new native Fireblocks integration.. The recorded treasury amount is 23000000. The strongest grounded claim is: The proposal requests ₳23,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -54,7 +58,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: 0.40
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -119,7 +123,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.
 - Claims and evidence missing: Independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.
 - Claims and evidence status is thin.
@@ -134,13 +138,13 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `c1f9a6b1232ee25f24a0d23188ea2c90540b691cf4adb943efd64e66200a2ca3`
-- snapshot_bundle_hash: `6da7c2475433bf26ebe1cfdc7d8c8a62694d74b6add62dcfaed03e70980f8467`
+- snapshot_bundle_hash: `67dcfce25987393bc756e152c7012278045ff6665a7031a2cd0af2be6e324358`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `5891`
+- uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2073, "NO": 0.746, "YES": 0.0467}`
+- decision_probs: `{"ABSTAIN": 0.1771, "NO": 0.7807, "YES": 0.0422}`
 

@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.5033,
-  "raw_score": -0.4733,
+  "score": -0.6033,
+  "raw_score": -0.5733,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.9933,
+  "confidence": 1.0,
   "readiness_score": 0.7,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -53,7 +53,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "No milestone-gated disbursement documented.",
     "Claims and evidence missing: Independent evidence for: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today.",
     "Claims and evidence missing: Independent evidence for: The proposal asserts that Leios throughput could cause SPO disk usage to surge to approximately 1 GB per hour at 100-1000 TPS without History Expiry.",
@@ -69,10 +69,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "174b838cbc027cd1a2cf8c97b60a4c544a1c79e0e0f8c5ef4cb4092ed555b913",
-  "snapshot_bundle_hash": "896bc36e63545f182921d8c4ea48e3c3c36dee2c68983b2425fa2e39cd10a4cd",
+  "snapshot_bundle_hash": "2dd354bdc525d65aaa2f61801321cb4794e7267bb3fa577d926cb8673a2305bc",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -87,7 +87,7 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 652,
+    "snapshot_age_seconds": 5891,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
@@ -95,8 +95,8 @@
   },
   "decision_probs": {
     "YES": 0.0389,
-    "NO": 0.8086,
-    "ABSTAIN": 0.1525
+    "NO": 0.8093,
+    "ABSTAIN": 0.1518
   },
   "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
@@ -165,7 +165,7 @@
           "Clawback/refund path: not confirmed",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: not confirmed",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: 0.40"
         ],
         "missing": [
@@ -235,8 +235,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. At about 18.26 million ADA this is one of the largest live treasury actions, funding Tweag by Modus Create to deliver core protocol infrastructure \u2014 chiefly the mainnet deployment of Peras for faster finality, plus History Expiry and conformance testing. The technical need is well-documented: Peras v1 is genuinely not yet on mainnet and the work it describes is real. The budget is transparently derived from a stated hourly rate and ADA/USD assumption, which is good practice, but the rate, the hours and the single-pipeline framing are proposer-set figures that warrant independent cost scrutiny at this scale. A request of this size demands a completed deep-research dossier, milestone-gated disbursement and a clear view of treasury runway \u2014 exactly the checks BEACN cannot complete on an eight-hour-old snapshot. It is therefore holding until the data is fresh and that evidence is in hand.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NO on Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132027. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027.. The recorded treasury amount is 18263496.00. The strongest grounded claim is: The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.",
+  "human_message_source": "codex-offline-review",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -278,12 +278,12 @@
       "output_sha256": "810143e5e91d24450486c190bd9840ba5e48d05ec9b8b9eff84be9ddf5fabe3c"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "codex-offline-review",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "9b153ae6f78a8a6e2c4a5e48327aecd5111e353e95066fbc3e41ac2d206ef4e7"
+      "model": "codex-offline-local",
+      "prompt_sha256": "ca6381c56af2cb50d87308caf50c3d324c767db974979428500c1676c0e0a460",
+      "output_sha256": "2c9cc7700ddf5efba0eea45be1e6eb6c72745beeaa8f661f7a4db9e4e9fc8afe"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

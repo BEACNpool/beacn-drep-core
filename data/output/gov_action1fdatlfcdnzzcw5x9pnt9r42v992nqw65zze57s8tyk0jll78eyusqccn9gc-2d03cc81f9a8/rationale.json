@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.4133,
-  "raw_score": -0.3833,
+  "score": -0.5133,
+  "raw_score": -0.4833,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.9033,
+  "confidence": 1.0,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -52,7 +52,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: The proposal states that funded projects will be required to track monthly active users, TVL, and on-chain transactions.",
     "Claims and evidence missing: Independent evidence for: The DAO has built Version 1 and Version 2 of a KPI dashboard, with Version 1 using public self-reported KPI tracking and Version 2 moving toward live on-chain Cardano data.",
@@ -69,10 +69,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "2d03cc81f9a8428e19e622e52dd0bceca23fde39917f4143450368064baa8561",
-  "snapshot_bundle_hash": "935b15a6780d3bbdc18fcfe184ff252c988efb62289ea8049912b281bbda18e4",
+  "snapshot_bundle_hash": "b307e35c8de91edea8550e05a56f0421963c6c6d1293cee461de7446ce694915",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -87,16 +87,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 650,
+    "snapshot_age_seconds": 5889,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0404,
-    "NO": 0.792,
-    "ABSTAIN": 0.1675
+    "YES": 0.0389,
+    "NO": 0.8093,
+    "ABSTAIN": 0.1518
   },
   "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
@@ -168,7 +168,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: unknown"
         ],
         "missing": [
@@ -295,6 +295,6 @@
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/fb1c02fbb373afac5662ff1b.md",
-  "rationale_anchor_hash": "fb1c02fbb373afac5662ff1bfabaec93c6f9cab18a970baee39d78a046b15e9b"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/2609c9d94fd8d243ec400164.md",
+  "rationale_anchor_hash": "2609c9d94fd8d243ec40016400d68f65de62fa9ffcbc32be57cd48ed2207ac9a"
 }

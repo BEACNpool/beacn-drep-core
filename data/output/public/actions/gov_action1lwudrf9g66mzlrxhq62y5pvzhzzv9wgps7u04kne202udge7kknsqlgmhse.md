@@ -7,7 +7,7 @@
 - Published at: `2026-07-01T23:06:08.058006+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Eternl says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl requests ₳2,350,000 at about $0.1787 per Ada to fund a 12-month operating period from August 2026 to July 2027." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Eternl claims it has about 100,000 browser extension installs and about 30,000 Android and iOS installs combined; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 87.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Eternl says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl requests ₳2,350,000 at about $0.1787 per Ada to fund a 12-month operating period from August 2026 to July 2027." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Eternl claims it has about 100,000 browser extension installs and about 30,000 Android and iOS installs combined; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.48; confidence 97.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -31,7 +31,7 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
 - Claims and evidence missing: Independent evidence for: Eternl says independent fund-use audits will be performed in February 2027 and August 2027 by a party unaffiliated with Tastenkunst GmbH or the Eternl team.
 - Claims and evidence status is thin.
@@ -52,10 +52,10 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 
 ## Proof of vote
 - input_hash: `92026a67255fb20eec5928dec5650e070b57441e885a6605739739254b477d89`
-- snapshot_bundle_hash: `12b7265b0c8f1716443613c017e19ac5506f277cb627ed33911a79d41ca7be46`
+- snapshot_bundle_hash: `d16382f89c31b32cf8d31fdcf724186b577bed4f85b545cabd0431fbe5afc7fb`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
-- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
-- score: `-0.3833`
-- confidence: `0.8733`
+- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
+- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
+- score: `-0.4833`
+- confidence: `0.9733`
 

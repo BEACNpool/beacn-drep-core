@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2283,
-  "raw_score": -0.2233,
+  "score": -0.3283,
+  "raw_score": -0.3233,
   "llm_score_adjustment": -0.005,
   "llm_lean": {
     "source": "codex-offline-review",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.06,
-  "confidence": 0.7183,
+  "confidence": 0.8183,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -52,7 +52,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "Claims and evidence missing: Independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025.",
     "Claims and evidence missing: Independent evidence for: Duration & Milestones This proposal spans over 12 months , from January to December 2026, throughout which there will be several deliveries, demos, and workshops.",
     "Claims and evidence status is thin.",
@@ -65,10 +65,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "de66321d6cee6518f3181d37ddc3b67bc875684eda5f0d778684488ca10e591f",
-  "snapshot_bundle_hash": "176f508c9ab1628457d0c54a4e797e28bafdeb86b7b674ff6f25dac3258be136",
+  "snapshot_bundle_hash": "2795aac1b9303718f1a27c322c832513b77745d7958b18f380984974224bee6c",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -83,18 +83,18 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 654,
+    "snapshot_age_seconds": 5893,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0486,
-    "NO": 0.7274,
-    "ABSTAIN": 0.2239
+    "YES": 0.0438,
+    "NO": 0.7653,
+    "ABSTAIN": 0.1909
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
@@ -155,7 +155,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: unknown"
         ],
         "missing": [

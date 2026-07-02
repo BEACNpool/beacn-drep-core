@@ -97,12 +97,12 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Reproducibility
 - input_hash: `33859aeba4e2330bc3105cb6c42fcdfe835438a5b2eda01dcd50c80eef1a86c6`
-- snapshot_bundle_hash: `cb8e3ee08b0ba8ed356d8deff556352b35ec3ce6f17eae945c66a787229a13c6`
+- snapshot_bundle_hash: `0e09adb2d4047b1c61b033199dd3e80d7992db71d98d8af6312f9e57c7432250`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `656`
+- snapshot_age_seconds: `5895`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4575, "NO": 0.2413, "YES": 0.3013}`

@@ -103,3 +103,18 @@ class LeanTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MessageVerdictGuardTests(unittest.TestCase):
+    def test_stale_abstain_message_rejected_for_no_vote(self) -> None:
+        from beacn_drep.llm import message_matches_recommendation
+        text = "BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural."
+        self.assertFalse(message_matches_recommendation(text, "NO"))
+        self.assertTrue(message_matches_recommendation(text, "ABSTAIN"))
+
+    def test_matching_and_unnamed_messages_accepted(self) -> None:
+        from beacn_drep.llm import message_matches_recommendation
+        self.assertTrue(message_matches_recommendation("BEACN records NO on Example.", "NO"))
+        self.assertTrue(message_matches_recommendation("BEACN votes YES on Example.", "YES"))
+        self.assertTrue(message_matches_recommendation("This proposal funds tooling.", "NO"))
+        self.assertFalse(message_matches_recommendation("BEACN records NO on Example.", "YES"))

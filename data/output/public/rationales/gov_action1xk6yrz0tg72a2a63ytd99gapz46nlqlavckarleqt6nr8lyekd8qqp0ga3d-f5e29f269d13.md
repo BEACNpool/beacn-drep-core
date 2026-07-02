@@ -1,6 +1,6 @@
 # Rationale: gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d
 Recommendation: **NO**
-Score: `-0.3133` (raw `-0.2833` + doctrine-LLM nudge `-0.03`) | Confidence: `0.8333` | Readiness: `0.0`
+Score: `-0.4133` (raw `-0.3833` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9333` | Readiness: `0.0`
 > Reasoning layer (precomputed): A small negative nudge is justified because the proposal asks for a large treasury withdrawal while key treasury-protection and adoption assumptions remain weakly evidenced in the extracted claims, including proposer-asserted usage projections, a deferred repayment definition, and limited independent verification of existing traction. The deterministic tree already blocks synthesis for missing budget, feasibility, risk, alternatives, and failure-mode analysis, so the adjustment stays modest rather than duplicating the hard gates.
 
 ## Plain-language explanation (codex-offline-review)
@@ -61,7 +61,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -127,7 +127,7 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Phase 1 is described as already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.
 - Claims and evidence missing: Independent evidence for: The proposal projects 12-month launch outcomes of 200+ events on-chain, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets.
@@ -144,13 +144,13 @@ A material weak point is that this claim remains proposer-asserted or thinly sup
 
 ## Reproducibility
 - input_hash: `f5e29f269d134f6e56c439ce6eed00e0946577be99ec1f502241e9bf27cea39b`
-- snapshot_bundle_hash: `d8e06737789d8a120a742da9efa40c40c93f57de3f4c3150c1124d2e80ef2c55`
+- snapshot_bundle_hash: `f8327aaa3297552b55476a84e0f32fb9caf7d338a958f7906b529b4fa65961f1`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `650`
+- snapshot_age_seconds: `5889`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1914, "NO": 0.7642, "YES": 0.0443}`
+- decision_probs: `{"ABSTAIN": 0.164, "NO": 0.7957, "YES": 0.0403}`
 

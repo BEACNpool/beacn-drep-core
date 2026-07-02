@@ -11,26 +11,26 @@
   "decision": {
     "vote": "NO",
     "published_at": "2026-07-01T23:06:08.058006+00:00",
-    "signed": false,
-    "submitted": false,
-    "transaction_hash": null,
-    "submitted_at": null
+    "signed": true,
+    "submitted": true,
+    "transaction_hash": "e8cc985ab8a82f82a75d7c1814a90494c7f1f6d6711b43909e7e9a35d3d189d4",
+    "submitted_at": "2026-07-02T00:29:01+00:00"
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.3133,
-    "confidence": 0.8333,
+    "score": -0.4133,
+    "confidence": 0.9333,
     "input_hash": "6bb9dba489ddcc2cbfea4970c53431274430549b9c923233a36a60a5c5af356c",
-    "snapshot_bundle_hash": "33f05c8e06244dd1446d24c36504d2aa034969467d1977d5de05ea941f785cf9",
+    "snapshot_bundle_hash": "5c89d4a626d62d061071f10549956b31a6f6477b1394a7e3771f1f03b7495271",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j-6bb9dba489dd.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/284319a49694ab0b13717cd1.md",
-    "rationale_anchor_hash": "284319a49694ab0b13717cd16382912914b832a34303b9d14f12ef8efaa0c9bd"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/aba4afa71415adc7b646ba3f.md",
+    "rationale_anchor_hash": "aba4afa71415adc7b646ba3fc2c4b218d6b210cf5d5c0a88dfb1b9e26b95711c"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal states that Daedalus private keys are generated and stored on the user's device, never transmitted externally, and that open-source Apache 2.0 licensing allows anyone to audit this behavior.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.31; confidence 83.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal states that Daedalus private keys are generated and stored on the user's device, never transmitted externally, and that open-source Apache 2.0 licensing allows anyone to audit this behavior.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The claims show plausible public-good maintenance value and some independently verifiable success metrics, but the deterministic assessment reports missing budget, feasibility, risk, alternatives, and failure-mode analysis for a large treasury withdrawal. Under BEACN's hierarchy, treasury stewardship and evidence quality justify a small cautious negative nudge rather than rewarding the proposal's public-benefit framing.",
     "top_fixes": [
       "Provide complete proposal summary.",
@@ -105,7 +105,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unknown (stale snapshot)",
+            "Six-month treasury flow regime: unsustainable",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -196,8 +196,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -270,13 +270,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.3133,
+    "budget_pressure": 0.4133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.8333
+    "governance_alignment": 0.9333
   },
   "freshness": {
-    "snapshot_age_seconds": 650,
+    "snapshot_age_seconds": 5889,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",

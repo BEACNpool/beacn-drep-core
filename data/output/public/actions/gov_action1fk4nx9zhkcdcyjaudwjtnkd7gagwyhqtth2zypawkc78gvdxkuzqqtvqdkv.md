@@ -39,10 +39,10 @@ Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficien
 
 ## Proof of vote
 - input_hash: `a505f2d32f4ba788808d11aa312e2636ced0efcc44d6ef2be042b5e5549353fc`
-- snapshot_bundle_hash: `d9e897ad5478e88a67ca20017ef84ffb41281fb75c3354ffc0a27c69b6747646`
+- snapshot_bundle_hash: `505bd11beca91530e985e57314162ef2644c4ed35143241e2cb03e368d70138d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `11a72aaebb6c5b735581bcd5a9cf67839312295e`
-- core_commit: `e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e`
+- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
+- core_commit: `831beefa4a4e26d1df6f8f43e202a08b1aa11153`
 - score: `0.03`
 - confidence: `0.55`
 

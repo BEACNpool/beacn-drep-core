@@ -11,26 +11,26 @@
   "decision": {
     "vote": "NO",
     "published_at": "2026-07-01T23:06:08.058006+00:00",
-    "signed": false,
-    "submitted": false,
-    "transaction_hash": null,
-    "submitted_at": null
+    "signed": true,
+    "submitted": true,
+    "transaction_hash": "457e478bc080b222e7498b536504ebb54480516939b2767fd103ce1c93a2cebf",
+    "submitted_at": "2026-07-02T00:31:51+00:00"
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.3133,
-    "confidence": 0.8333,
+    "score": -0.4133,
+    "confidence": 0.9333,
     "input_hash": "2454e5a6045195a53bb365c13d2da2642f8ce6fb4b09c4d1c1e6c36819e029e1",
-    "snapshot_bundle_hash": "45afdc450b540cb5aca41b4c80cbb12de61a64e7fe876204806a087cb44eefcc",
+    "snapshot_bundle_hash": "4d8bf6739cd16f8a025ae956af745ec752f26c70cf33d421b81e4f6ee6206b72",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r-2454e5a60451.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/17ff9752f29c6592bffcb3e4.md",
-    "rationale_anchor_hash": "17ff9752f29c6592bffcb3e49bcbdbc59556dec14c9256644263564112b63f77"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/75730daff4fffc6d2a97d97d.md",
+    "rationale_anchor_hash": "75730daff4fffc6d2a97d97d18ac1fcf176714b21f8d0d0f1c53fdc72e859009"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Dano Finance says Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which slows integrations and limits advanced financial applications.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.31; confidence 83.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Dano Finance says Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which slows integrations and limits advanced financial applications.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal contains concrete deliverables and milestones, but the assessment remains blocked for missing budget analysis, feasibility assessment, risk analysis, alternatives analysis, and failure-mode analysis on a large treasury withdrawal; under the doctrine, weak evidence and incomplete downside analysis should nudge cautiously against spending despite plausible ecosystem-growth claims.",
     "top_fixes": [
       "Provide complete proposal summary.",
@@ -104,7 +104,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unknown (stale snapshot)",
+            "Six-month treasury flow regime: unsustainable",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -195,8 +195,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -269,13 +269,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.3133,
+    "budget_pressure": 0.4133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.8333
+    "governance_alignment": 0.9333
   },
   "freshness": {
-    "snapshot_age_seconds": 650,
+    "snapshot_age_seconds": 5889,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",

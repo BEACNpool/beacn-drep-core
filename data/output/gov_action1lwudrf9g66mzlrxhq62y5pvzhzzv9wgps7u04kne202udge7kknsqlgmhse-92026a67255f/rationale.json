@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3833,
-  "raw_score": -0.3533,
+  "score": -0.4833,
+  "raw_score": -0.4533,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.8733,
+  "confidence": 0.9733,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -53,7 +53,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "Claims and evidence missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
     "Claims and evidence missing: Independent evidence for: Eternl says independent fund-use audits will be performed in February 2027 and August 2027 by a party unaffiliated with Tastenkunst GmbH or the Eternl team.",
     "Claims and evidence status is thin.",
@@ -69,10 +69,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "92026a67255fb20eec5928dec5650e070b57441e885a6605739739254b477d89",
-  "snapshot_bundle_hash": "12b7265b0c8f1716443613c017e19ac5506f277cb627ed33911a79d41ca7be46",
+  "snapshot_bundle_hash": "d16382f89c31b32cf8d31fdcf724186b577bed4f85b545cabd0431fbe5afc7fb",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -87,16 +87,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 651,
+    "snapshot_age_seconds": 5890,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0416,
-    "NO": 0.7831,
-    "ABSTAIN": 0.1753
+    "YES": 0.039,
+    "NO": 0.8062,
+    "ABSTAIN": 0.1548
   },
   "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
@@ -168,7 +168,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: unknown"
         ],
         "missing": [
@@ -295,6 +295,6 @@
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/f3dfbaddcc144557dc40465f.md",
-  "rationale_anchor_hash": "f3dfbaddcc144557dc40465f394c45101847dca6d7f9ef0b186d3951dc8dc68e"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/b2785d07cf2726d293ccc261.md",
+  "rationale_anchor_hash": "b2785d07cf2726d293ccc261ab79c592dd7c3be410dbae52ab79b84dbdbeb147"
 }

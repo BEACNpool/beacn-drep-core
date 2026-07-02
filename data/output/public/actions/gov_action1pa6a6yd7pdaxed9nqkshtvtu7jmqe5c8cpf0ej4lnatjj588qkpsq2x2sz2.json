@@ -11,26 +11,26 @@
   "decision": {
     "vote": "NO",
     "published_at": "2026-07-01T23:06:08.058006+00:00",
-    "signed": false,
-    "submitted": false,
-    "transaction_hash": null,
-    "submitted_at": null
+    "signed": true,
+    "submitted": true,
+    "transaction_hash": "5c7cb373016dcc4e93e16b4456754ce848c8230b6a9a031bc8878751fab3b447",
+    "submitted_at": "2026-07-02T00:19:06+00:00"
   },
   "proof_of_vote": {
     "vote": "NO",
-    "score": -0.4133,
-    "confidence": 0.9033,
+    "score": -0.5133,
+    "confidence": 1.0,
     "input_hash": "b8654cc3b837a3b7d7994b8529e4c6c8035502d5103993dc6df83b81507cc1ef",
-    "snapshot_bundle_hash": "edae4afc847297703bcaa6640e65b6e57613e99be1574e573a8bbb858e28edfd",
+    "snapshot_bundle_hash": "0c692aac9d7bbd30965248026704627848a2c91d2b36186b615ceaa3380a560d",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2-b8654cc3b837.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/4ff14cc6815834186c82c8a8.md",
-    "rationale_anchor_hash": "4ff14cc6815834186c82c8a8478acb1d4b0cd753e332daf5fa9a94e2cff3814c"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/47232d4987dbba24fc18cc97.md",
+    "rationale_anchor_hash": "47232d4987dbba24fc18cc97d52700548c3f86da7a58169dff7a40f33ee8375b"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal asserts that Cardano currently lacks serious BTCfi infrastructure and risks Bitcoin-backed structured exposure consolidating on Ethereum, BNB, Solana, and off-chain markets if Alchemy is not funded.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference rate for an approximate USD 2.0 million planning budget split into two USD 1.0 million pools.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 90.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal asserts that Cardano currently lacks serious BTCfi infrastructure and risks Bitcoin-backed structured exposure consolidating on Ethereum, BNB, Solana, and off-chain markets if Alchemy is not funded.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference rate for an approximate USD 2.0 million planning budget split into two USD 1.0 million pools.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal contains more internal structure than a thin grant request, including tranche logic, reporting, risk acknowledgements, and return mechanisms, but the deterministic assessment is blocked for missing budget, feasibility, risk, alternatives, failure-mode, and summary analysis. Given a 10,000,000 ada treasury withdrawal, the unresolved feasibility and downside questions matter more than the asserted ecosystem-growth upside, so a small cautionary negative nudge is justified.",
     "top_fixes": [
       "Provide complete proposal summary.",
@@ -103,7 +103,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unknown (stale snapshot)",
+            "Six-month treasury flow regime: unsustainable",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -194,8 +194,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "11a72aaebb6c5b735581bcd5a9cf67839312295e",
-    "core_commit": "e78959f4ad243fc08cf5fb50e0df1855e3a2fa3e",
+    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
+    "core_commit": "831beefa4a4e26d1df6f8f43e202a08b1aa11153",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -268,13 +268,13 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.4133,
+    "budget_pressure": 0.5133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.9033
+    "governance_alignment": 1.0
   },
   "freshness": {
-    "snapshot_age_seconds": 650,
+    "snapshot_age_seconds": 5889,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",

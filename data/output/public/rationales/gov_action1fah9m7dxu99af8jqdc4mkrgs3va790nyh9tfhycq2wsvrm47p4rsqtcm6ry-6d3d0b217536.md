@@ -1,10 +1,14 @@
 # Rationale: gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry
 Recommendation: **NO**
-Score: `-0.3833` (raw `-0.3533` + doctrine-LLM nudge `-0.03`) | Confidence: `0.8733` | Readiness: `0.6`
+Score: `-0.4833` (raw `-0.4533` + doctrine-LLM nudge `-0.03`) | Confidence: `0.9733` | Readiness: `0.6`
 > Reasoning layer (precomputed): The extracted claims indicate plausible public-benefit infrastructure value, but most high-materiality claims are proposer-asserted and the deterministic assessment already identifies thin evidence plus missing budget, feasibility, alternatives, failure-mode, and community-impact analysis for a large treasury withdrawal. Under BEACN doctrine, treasury stewardship and evidence quality justify a small additional cautionary nudge rather than a positive lean.
 
-## Plain-language explanation (precomputed)
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. The proposal asks for about 5.1 million ADA for IO to harden and optimize Hydra v2, the Layer 2 the proposal describes as Cardano's only production-grade scaling solution, across four workstreams. The technical framing — L1's finality, fee and throughput limits, and Hydra's sub-second, near-zero-fee settlement back to L1 — is coherent and well-described in the document. The claims that matter most to the decision, namely real production adoption by named projects and the delivery of a feature-complete v2, are stated by the proposer and would need independent verification of current usage and milestone-gated delivery before a directional vote. As a multi-million-ADA treasury action it also requires a completed deep-research dossier. Until BEACN's data is fresh and that dossier and milestone evidence are in hand, it is holding rather than voting directionally.
+## Plain-language explanation (codex-offline-review)
+BEACN records NO on IO: Hydra. The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Hydra v2 production hardening and performance improvements across four workstreams: performance optimization, operational excellence, ecosystem support, and developer experience/maintenance.. The recorded treasury amount is 5100781. The strongest grounded claim is: Hydra is claimed to provide sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement guarantees.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano. The blocking questions are: missing budget analysis; missing feasibility assessment; missing alternatives analysis.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -55,7 +59,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unknown (stale snapshot)
+- finding: Six-month treasury flow regime: unsustainable
 - finding: Financial confidence: 0.40
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -120,7 +124,7 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
+- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - Claims and evidence missing: Independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.
 - Claims and evidence missing: Independent evidence for: The proposal states Hydra has powered or is used by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.
 - Claims and evidence status is thin.
@@ -135,13 +139,13 @@ BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is p
 
 ## Reproducibility
 - input_hash: `6d3d0b21753667d2b5332ecdfae8ab60bcbba85204e5d4ab62bb6b5f34cdbfe4`
-- snapshot_bundle_hash: `59b66d47e873e05cdf48c02f8a7adfeb75326d100d2c471de4a431a9d2339dc6`
+- snapshot_bundle_hash: `4272b81a0d35d608aa01c4c064b4a96a7fb6f5ad249ee87ebee91d3272af85f2`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `7d671706a9a739988611151bb93ebc1eebba6851`
+- resource_registry_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
 - resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `652`
+- snapshot_age_seconds: `5891`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1753, "NO": 0.7831, "YES": 0.0416}`
+- decision_probs: `{"ABSTAIN": 0.1548, "NO": 0.8062, "YES": 0.039}`
 

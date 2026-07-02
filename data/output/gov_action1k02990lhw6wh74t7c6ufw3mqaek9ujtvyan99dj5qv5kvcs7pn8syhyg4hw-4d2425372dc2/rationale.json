@@ -7,8 +7,8 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3133,
-  "raw_score": -0.2833,
+  "score": -0.4133,
+  "raw_score": -0.3833,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
   "directional_threshold": 0.12,
-  "confidence": 0.8333,
+  "confidence": 0.9333,
   "readiness_score": 0.0,
   "facts": [
     "Pinned anchor document is available for this action.",
@@ -52,7 +52,7 @@
   ],
   "uncertainty": [
     "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
-    "Treasury fee-flow snapshot is stale (epoch 621, ~19 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: The proposer states that Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes.",
     "Claims and evidence missing: Independent evidence for: The proposer states this is a continuity proposal for an already-proven Cardano access layer and not a request to build a new wallet product.",
@@ -69,10 +69,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "4d2425372dc2d314b91e19d1d9347556d30efb6a8b0cc312a2064f6e96011acd",
-  "snapshot_bundle_hash": "170dd9a8569924b0610dbaab9f2748d56a38b8aa32df0c088ee14a10d5da312d",
+  "snapshot_bundle_hash": "2029a03447270c60f5b9fade0812608f8a799fdf5a209447e14756527c96d9f6",
   "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "7d671706a9a739988611151bb93ebc1eebba6851",
+  "resource_registry_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
   "resources_used": [
     "gov_actions_api",
     "gov_actions_snapshot",
@@ -87,16 +87,16 @@
     "gov_anchor_documents"
   ],
   "freshness": {
-    "snapshot_age_seconds": 651,
+    "snapshot_age_seconds": 5890,
     "max_allowed_seconds": 21600,
     "is_stale": false,
     "snapshot_time": "2026-07-01T23:06:53.985322Z",
     "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0443,
-    "NO": 0.7642,
-    "ABSTAIN": 0.1914
+    "YES": 0.0403,
+    "NO": 0.7957,
+    "ABSTAIN": 0.164
   },
   "uncertainty_band": "HIGH",
   "evidence_depth_score": 4,
@@ -167,7 +167,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unknown (stale snapshot)",
+          "Six-month treasury flow regime: unsustainable",
           "Financial confidence: unknown"
         ],
         "missing": [
@@ -294,6 +294,6 @@
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/149300d166236e6b823158f7.md",
-  "rationale_anchor_hash": "149300d166236e6b823158f70b53c821c1acd30c66c45a0feb184f377f8679e1"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a2285cf136d28435db56a159.md",
+  "rationale_anchor_hash": "a2285cf136d28435db56a15948fabc1018c4ee2addc4dea7e32734844706fb28"
 }

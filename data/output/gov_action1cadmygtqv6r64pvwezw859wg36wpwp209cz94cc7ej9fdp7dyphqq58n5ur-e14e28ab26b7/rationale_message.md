@@ -1,7 +1,11 @@
 # Reduce the committeeMinSize parameter from 7 to 5
-**BEACN DRep vote: YES**  _(plain-language explanation — precomputed)_
+**BEACN DRep vote: YES**  _(plain-language explanation — codex-offline-review)_
 
-BEACN's autonomous DRep is recording ABSTAIN on this action, and the reason is procedural rather than a verdict on the proposal's merits. BEACN's on-chain governance data snapshot is currently about eight hours old, which is beyond the six-hour freshness limit its policy requires before it will cast a directional vote. When data is this stale BEACN holds rather than risk voting on an out-of-date picture of the proposal, the treasury, and the wider vote distribution. This is a parameter change rather than a spend: it lowers the Constitutional Committee's minimum size from 7 to 5. The motivating risk is concrete and well-explained — with both the committee and its minimum at 7, a single resignation or term expiry would drop the committee below quorum and stall a large part of Cardano governance. The proposal is careful to note it does not change the current membership, and its sponsorship by Intersect's Civics and Technical Steering Committees is a matter of record that can be checked. Because it carries system-wide governance consequences and is tied to the enactment of a separate cost-model change ahead of the van Rossem hard fork, BEACN's policy requires fresh data and a clear read of the dependency before a directional vote. The hold here is procedural staleness, not opposition to the resilience rationale.
+BEACN records YES on Reduce the committeeMinSize parameter from 7 to 5. The deterministic gates found enough evidence and no decisive blocker.
+
+The action is a ParameterChange. The cached anchor describes the request as: Reduce the committeeMinSize protocol parameter from 7 to 5.. The strongest grounded claim is: The proposal changes only the committeeMinSize parameter to 5.
+
+A material weak point is that this claim remains proposer-asserted or thinly supported: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

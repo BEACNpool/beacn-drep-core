@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Blockfrost is described as a hosted REST interface that lets developers interact with Cardano without running their own infrastructure or node." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it; Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Blockfrost is described as a reliable hosted REST interface that lets developers interact with Cardano without running their own infrastructure or node." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal states that Blockfrost adoption in the Cardano Foundation developer ecosystem survey increased from 39.3% in 2022 to 71.5% in 2025." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost; Provide independent evidence for: The proposal states that more than 100 Icebreakers have joined the decentralized Blockfrost operator effort. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 9.83M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Blockfrost is described as a hosted REST interface that lets developers interact with Cardano without running their own infrastructure or node." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal states that Blockfrost adoption in the Cardano Foundation developer ecosystem survey increased from 39.3% in 2022 to 71.5% in 2025." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.
-- Claims and evidence missing: Independent evidence for: The proposal states that last month Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.
+- Claims and evidence missing: Independent evidence for: Blockfrost is described as a reliable hosted REST interface that lets developers interact with Cardano without running their own infrastructure or node.
+- Claims and evidence missing: Independent evidence for: The proposal states that Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.
 - Provide independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.
 - Provide independent evidence for: The proposal states that more than 100 Icebreakers have joined the decentralized Blockfrost operator effort.
+- Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `046cdfcae7a10d081c34b1d5924a72a748704d34749630cca64a2d7d30592a89`
-- snapshot_bundle_hash: `3f0737100c30f0ce8f59c4f47060f34a8b57f4cafa12bdc071e59e5b9026e3c3`
+- input_hash: `315c836865a0b5c2cd550b567385117427edddf2a7c6fe186cbd025a08ea7e4e`
+- snapshot_bundle_hash: `619d2c09eb38f22efb24ced9575cdaa8b7fa9e69780f27edd6c35f5ed859b0b0`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.5133`
 - confidence: `1.0`
 

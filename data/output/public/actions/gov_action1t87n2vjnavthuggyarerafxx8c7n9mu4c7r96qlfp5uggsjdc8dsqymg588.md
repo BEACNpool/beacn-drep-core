@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "この瞬間、私たちは心からの感謝と敬意を、Charles Hoskinson率いるInput Output、EMURGO、そしてCardano財団に捧げます。彼らはCardanoを世界にもたらし、その献身、ビジョン、そして揺るぎない努力によって、私たちが今立っている土台を築き上げてくれました。彼らは「生きがい(Ikigai)」の本質を体現し、自身の仕事に喜びと意味を見出しながら、より大きな善のために貢献する力を示したのです。 次のステージに向かう私たちは、少数の努力から多くの力へと移行します。共通の目的意識を持..." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 56.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `e3b420bff6b91c25e3ef729aee4abd91cbe5c7168a893d84cb65aaa75248a93f`
-- snapshot_bundle_hash: `9a4b28ceb62d1223d867d3f276083ac57c421af042825924b2357e8ab408aec7`
+- input_hash: `b16fda36fe820474813160bf5cb78f494b3b75068932ea81995e9c22d0a6596d`
+- snapshot_bundle_hash: `89f79362e8074bc90d723a5742b48309a290d1ea327a707cf4fd611e42078474`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `0.04`
 - confidence: `0.56`
 

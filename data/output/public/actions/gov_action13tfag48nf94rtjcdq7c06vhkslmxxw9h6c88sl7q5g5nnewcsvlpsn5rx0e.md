@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Cardano Summit 2025 and regional tech events which will provide the following services: The Cardano Summit 2025 is a strategic initiative, spearheaded by the Cardano Foundation and fortified by regional ecosystem partners (EMU..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `8694afa7e0b96a58ee84478e74e11a9d3597f3133f3e867a09c80b454546750b`
-- snapshot_bundle_hash: `8209da7c38635f8cd7f1f522c7026d4de07569e914060d5b280ff019fbfadbd1`
+- input_hash: `0629c00903e485ff9e722e9e517cd0748fdf2410b47573e42d8b11bf053a54e4`
+- snapshot_bundle_hash: `e750adcb07f42f9c51b71febef3fb78d30f1e58469c12a6ee489438fc883932c`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2033`
 - confidence: `0.7233`
 

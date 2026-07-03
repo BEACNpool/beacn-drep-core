@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g; Provide independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 92.3%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `71fcd64d6348770910ccc10539912368215a95ffcef7c8ef6942ba5f1614080c`
-- snapshot_bundle_hash: `3f7432136745d282125b7fc863cd01414d25500cb1f4f9cf97e0a58d57371d10`
+- input_hash: `145d93355bda0b735db0b27072814ef79c1bb5ab3b3a614af1b48769142598ad`
+- snapshot_bundle_hash: `5165cb4fa567e2bb9d3f463ab43a4a3df7e41638ac597f64bb5fefc7ac9b52ee`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4333`
 - confidence: `0.9233`
 

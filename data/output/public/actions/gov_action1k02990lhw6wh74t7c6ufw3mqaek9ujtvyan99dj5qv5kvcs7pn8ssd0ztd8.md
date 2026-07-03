@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer states that Pallas is used by ecosystem projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Pallas maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposer states that Pallas is used by ecosystem projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Pallas is used as shared infrastructure by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Pallas is used as shared infrastructure by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 90.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540.8k ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Pallas maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposer states that Pallas is used by ecosystem projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.
-- Claims and evidence missing: Independent evidence for: The proposer states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development on schedule, plus 2025 Intersect maintenance funding for Pallas, Dolos, and UTxO RPC delivered on schedule.
+- Claims and evidence missing: Independent evidence for: Pallas is used as shared infrastructure by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.
+- Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposer states that Pallas is used by ecosystem projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.
+- Provide independent evidence for: Pallas is used as shared infrastructure by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.
 - Provide complete proposal summary.
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `d809158240d93179ab30f6d2790da50d3304aabc7078694f68b253888af97741`
-- snapshot_bundle_hash: `5d6d13e5047495c8f0a4d83a442182470314525700171400aa59a554991a2bc5`
+- input_hash: `ed08dd048cdd68c53dcfd3a54c3c575ed0bf97a6b03e6dfd63ba991b0886285c`
+- snapshot_bundle_hash: `c7afd6d264b920eeb1b52d88b2d8dc5b8b598f8de333a188e7750540661e8a81`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
-- score: `-0.4133`
-- confidence: `0.9333`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- score: `-0.3833`
+- confidence: `0.9033`
 

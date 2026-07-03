@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests ₳23,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational; Provide independent evidence for: Vendor-level costs are not publicly disclosed because of confidentiality obligations with several integration partners. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.36; confidence 88.3%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `3913e5bb5fcad1b7f6bae2dcc35bdb93fa2916d0f939819d6d434f1ebea3f884`
-- snapshot_bundle_hash: `94e0fc964cd4a6e360cf156a7047f8a71d7fcb6387bbf2560878bcc5d579bd96`
+- input_hash: `ab88295c4c5ae06c69554f5690ca37948a12b4b5dedc661eeae33c5324b51db3`
+- snapshot_bundle_hash: `db0edc274d828f77d4e5cacd51d5c5d7ac1a77321218288a4b9fb4493f513202`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.3633`
 - confidence: `0.8833`
 

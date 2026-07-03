@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Cardano Community adopted the 2025 Net Change Limit (NCL) on 24 April 2025, which defined the maximum amount of lovelace that could be withdrawn from the Cardano Treasury from the start of Epoch 532 until the conclusion of Epoch 604." and clears the evidence gates. Weighed against it: a material claim is unsupported — "We seek to have this Governance Action adopted so that the management of the Cardano Treasury will not be disrupted by the expiration of the current NCL." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 53.5%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `10f25b516ade436e1174180abc14a8ad44fdf8ab87662fbb859f01715a9f5346`
-- snapshot_bundle_hash: `538ba329b3267feafe72d5149b6f9ed01b16e1e576bf011783436d69fcf342e4`
+- input_hash: `ada82eb273abc26a4f4d2edfecf124ee74a9ab23d4441d9b5e510bed11fc2291`
+- snapshot_bundle_hash: `2b0f385537148eb489f926e626111ee13487ebb60bacb1fd571cc1627b6bd06d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `0.015`
 - confidence: `0.535`
 

@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `HardForkInitiation`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this HardForkInitiation (enacted), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "We propose to upgrade Cardano mainnet to Protocol Version 10." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: No DRep distribution available. Confidence context: score -0.03; confidence 58.0%.
@@ -35,11 +35,11 @@ Vote: YES. For this HardForkInitiation (enacted), available evidence supports pr
 - Publish rollback/contingency plan and incident response playbook.
 
 ## Proof of vote
-- input_hash: `b44039bee9aa98cc27d97545e5274c8e0e8b13ffec4a12617b17e6580b1c071c`
-- snapshot_bundle_hash: `38fd0f57f087703c7b68993f0d36105659d85fb781e06bcbe9c92ce726d296c3`
+- input_hash: `5f20484badea56529ff83270a99d93ef641e8d6a407cb76c8c783ef967c346a1`
+- snapshot_bundle_hash: `c07dfd5f91d7e892f82736f338bc42ef4e07cbfd0259d25fbf777857ed6cf1e3`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.03`
 - confidence: `0.58`
 

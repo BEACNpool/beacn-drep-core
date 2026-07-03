@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world’s premier crypto event and the ultimate nexus for industry amplification." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.33; confidence 85.3%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `6c38398deb97109b17160b16eaec00058d2931c1a3d02eeeb9993c613ce2fa80`
-- snapshot_bundle_hash: `769802da8d83d00b2c7fae37dc5fe0a7c3f498a0359b9d10a2eb3fccf7d49c6d`
+- input_hash: `1cefc13cc4b76fe63c9abdc377705ed720b0878530a728a88797bae5738dcbb5`
+- snapshot_bundle_hash: `629e4237d02cc2351e0bea7189c45ff2daf0aa67c2f4c9384305186accb59e11`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.3333`
 - confidence: `0.8533`
 

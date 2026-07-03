@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano’s core low-barrier platform for participation in on-chain governance." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `eb9c4ed278cf33bceee252fcdcb72bd4cd40074b263dd49ea22e1b60bfef6f20`
-- snapshot_bundle_hash: `822139c7f03be40705c80c4f69ee0e27ea851a0dff74ff5bfd44d8fc367e0f38`
+- input_hash: `ccdaa6ecec8fd36f5dbd7bd300421335acc587cdbca46cbbb46cd7f57f9e699e`
+- snapshot_bundle_hash: `a6fa55c8ed038091d2d2603de566d8354808d2340d1a7ed957e648ee96ade87d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2033`
 - confidence: `0.7233`
 

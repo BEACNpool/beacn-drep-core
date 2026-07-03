@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Eternl is a non-custodial Cardano light wallet available for web, browser extension, Android, and iOS." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests ₳2,350,000 at about $0.1787 per Ada to fund 12 months of work costing around $420,000 per year." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Eternl is a non-custodial Cardano light wallet available for web, browser extension, Android, and iOS; Provide independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 Android and iOS installs. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.48; confidence 97.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE; Provide independent evidence for: The proposal states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.48; confidence 97.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2.35M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳2,350,000 at about $0.1787 per Ada to fund 12 months of work costing around $420,000 per year." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- Claims and evidence missing: Independent evidence for: Eternl is a non-custodial Cardano light wallet available for web, browser extension, Android, and iOS.
-- Claims and evidence missing: Independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 Android and iOS installs.
+- Claims and evidence missing: Independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.
+- Claims and evidence missing: Independent evidence for: Eternl plans to convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Eternl is a non-custodial Cardano light wallet available for web, browser extension, Android, and iOS.
-- Provide independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 Android and iOS installs.
-- Provide independent evidence for: Eternl says 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- Provide independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.
+- Provide independent evidence for: The proposal states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS.
+- Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `fc9b525acd61c748d0997655651b9aa617a3797716bb8ed83e3c3a7fce4dbdbb`
-- snapshot_bundle_hash: `577ba659bcf83848d999579b436716df1666990aa8a2725906843534624afcbf`
+- input_hash: `c5181022edfc16aff69c8f3540917197da11ef106b91cc1083f4023eaaeacffa`
+- snapshot_bundle_hash: `88244b44b72590c9a04054de188e6bbbb93c064ba9810a4771a95f2c5b4ff5f5`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4833`
 - confidence: `0.9733`
 

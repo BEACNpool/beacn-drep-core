@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Input Output Research (IOR): Cardano Vision - Work Program 2025 which will provide the following services: The IOR proposal for Work Program 2025 consists of 20 research streams and 6 technology validation streams from Cardano..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `533a095d0413620c13a22e52849152ec77f52ae3b614e8ed59a658093e2ee32c`
-- snapshot_bundle_hash: `69d470a3149acfe2cba88c93a1c46885f9e477fc876714bbe11bada476895525`
+- input_hash: `4b9a01cc29be51338d6c75ac8c2c4a100d4de8e9d7ef9aae4e72ddab67a47d5a`
+- snapshot_bundle_hash: `a6ec1caf532639fb5d73a2cc314fea7beef81ef264ba17a3a53d7dc8d09584e9`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2033`
 - confidence: `0.7233`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Cardano.nix which will provide the following services: This proposal seeks annual funding for the maintenance and enhancement of Cardano.nix, a foundational toolset for building and d..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `0a25b132ebdca946daf2cb0f5ffc05992b70e1f615b05146294758314a9bd8b7`
-- snapshot_bundle_hash: `0c999df5e8d5aa3fa5fe5e17aa9395d97ff5a524e5fc7c0ffea451e5d9c4022b`
+- input_hash: `20558ec13e87f9194c41363eb5a10e78b5cfd5d22a0d7afe98f56d646c87f106`
+- snapshot_bundle_hash: `3f5c51e4976a4739a55d50c7dbd7bc982d6db76b24919aae419c32d45b49eb3c`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2033`
 - confidence: `0.7233`
 

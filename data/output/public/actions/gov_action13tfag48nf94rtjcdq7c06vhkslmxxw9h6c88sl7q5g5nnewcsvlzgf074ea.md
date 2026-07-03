@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `f3161e511943a9611f07ee5c251566855288ce631953b7125ece3d3b834ff969`
-- snapshot_bundle_hash: `b90eda90a8b1922533a7bc8c6af3869616300ac7ffbfcd82b6afefa2b0aefc51`
+- input_hash: `f82ca05dd0b1a64052abe7dde0674939aef3eef2ba852b647da00d68af9a2b69`
+- snapshot_bundle_hash: `508f1014c018b6a0b496367d0fb3bbaa5bf9530f36912636103ba96c54fbdfc3`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2033`
 - confidence: `0.7233`
 

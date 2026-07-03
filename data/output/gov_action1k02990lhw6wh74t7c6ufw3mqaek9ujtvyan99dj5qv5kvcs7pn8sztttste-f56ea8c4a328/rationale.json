@@ -1,0 +1,299 @@
+{
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.3833,
+  "raw_score": -0.3533,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.7,
+    "rationale": "The proposal has plausible public-benefit alignment for open-source infrastructure and includes some governance and smart-contract oversight details, but the deterministic assessment identifies missing budget, feasibility, risk, alternatives, and failure-mode analysis. Under a real treasury spend, those gaps justify a small cautionary nudge rather than a positive adjustment.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a",
+  "directional_threshold": 0.12,
+  "confidence": 0.9033,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 540.8k ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total on-chain withdrawal of 540,750 ADA including a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal has plausible public-benefit alignment for open-source infrastructure and includes some governance and smart-contract oversight details, but the deterministic assessment identifies missing budget, feasibility, risk, alternatives, and failure-mode analysis. Under a real treasury spend, those gaps justify a small cautionary nudge rather than a positive adjustment.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
+    "Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).",
+    "Claims and evidence missing: Independent evidence for: Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+    "Claims and evidence missing: Independent evidence for: Audit, administrative oversight, reporting obligations, and milestone-based disbursement controls are included through Intersect administration and technically capable third parties.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: missing complete proposal summary",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [],
+  "input_hash": "f56ea8c4a328652e4510c10caa045bbcbeaa1bc8a08864d0bec2437b562519dc",
+  "snapshot_bundle_hash": "b9877ac1beecc61da86917101fcc53c9184ecfeeeed60939323a513816432483",
+  "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 799,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-03T11:31:07.373917Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0415,
+    "NO": 0.7869,
+    "ABSTAIN": 0.1717
+  },
+  "uncertainty_band": "HIGH",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 540.8k ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Treasury withdrawal to fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2.",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe.",
+          "Stated amount: 540,750",
+          "Deliverables: Part-time maintainer for Dolos over 12 months, Essential codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows",
+          "Deadline/expiry: 12 months; new grant period begins after closure of the existing contract",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total on-chain withdrawal of 540,750 ADA including a 15,750 ADA Intersect Budget Administration fee.",
+          "Claim (technical, proposer_asserted, high materiality): Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+          "Claim (technical, supported_in_proposal, medium materiality): Dolos exposes five query interfaces including Mini-Blockfrost HTTP, UTxO-RPC gRPC, Mini-Kupo, and an Ouroboros Node-to-Client Unix socket compatible with Cardano-cli, Ogmios, and other tooling.",
+          "Claim (adoption, independently_verifiable, medium materiality): The Dolos repository has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors.",
+          "Claim (technical, supported_in_proposal, high materiality): The maintainer scope covers dependency updates, protocol compatibility, performance improvements, bug fixing, documentation, issue triage, contribution review, feedback-driven enhancements, and public developer communication.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission."
+        ],
+        "missing": [
+          "Independent evidence for: Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+          "Independent evidence for: Audit, administrative oversight, reporting obligations, and milestone-based disbursement controls are included through Intersect administration and technically capable third parties.",
+          "Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 540.8k ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total on-chain withdrawal of 540,750 ADA including a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D.... The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2.. The recorded treasury amount is 540,750. The strongest grounded claim is: The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total on-chain withdrawal of 540,750 ADA including a 15,750 ADA Intersect Budget Administration fee.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes. The blocking questions are: missing complete proposal summary; missing budget analysis; missing feasibility assessment.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreie3kt3363c47zgywymkz6sb5ae7b7i5ljepn3pmhjdjlpwuwptngi",
+        "file_sha256": "9b54f7bf6c5cfe4d8b618acfa41e809f0fd1d5a48f6edec3a4695bed4b3e6d32",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste-20260624T113057Z.bin",
+        "content_chars": 13953
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "3becc1fd46876c2d9869292d030f4b9f71881ab60b0569e4c6ea68a27b746ccf"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "84a217bbeb564ff4b526b41f2565b6b04ebfd5828b23785d58c47d4172bbaf1a"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "095ac3b47b2b8b70a75bfc945e4519ad73eb64c721807b3ba82b65f84fa99364"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "f3cb63db1d64f8608f02a2c0e796ad78e96ac6391bf91e579b61ad3dbe6021e7",
+      "output_sha256": "b5ac23de4edd7cc4fb0b47971f1c4db47a3c60342d90148f6d3dee73d9cf2287"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/b7248d65de1c71ba1f1c0643.md",
+  "rationale_anchor_hash": "b7248d65de1c71ba1f1c0643c08ed0de810671429154cf642dd1ccaac92918f8"
+}

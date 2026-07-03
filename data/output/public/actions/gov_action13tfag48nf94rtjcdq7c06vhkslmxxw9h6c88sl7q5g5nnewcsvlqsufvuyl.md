@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Dolos: Sustaining a Lightweight Cardano Data Node which will provide the following services: This request for support focuses on Dolos https://dolos.txpipe.io/ a lightweight Cardano data node, designed as a backend for dApps." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.20; confidence 72.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `96d44d7c41848a2aabc2428a6e550a21c8bdefc3ba34f8a6e2eb6c2510dd2d93`
-- snapshot_bundle_hash: `9c8b407725a333c8e7bd4b759a49ff9c16862b4a943acb5a5f3076f8e084484e`
+- input_hash: `2b090b0eef3160cee9404c7e0bf97c148ae25242ee21ded477c479e75122efa1`
+- snapshot_bundle_hash: `d23c44747ba22bc0761c4d041eeecef6e9806163c6ad1464b1d864c1b59dc730`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2033`
 - confidence: `0.7233`
 

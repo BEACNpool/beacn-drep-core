@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused..." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 53.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `8853231c459083ac0cf5d375aef4b72b91892c476b9fe73076174136a6c6e86a`
-- snapshot_bundle_hash: `6af5858e7c5fd7d9aec4a985d025a6eb4017506a82a9583e813d238a87bc0bbc`
+- input_hash: `da2326fc7df74c1dd6d624f35bbad442b9940f724c2011f82277717ef42c4205`
+- snapshot_bundle_hash: `0117d7230a0c2e944dfa831322011a5609582a707743cb98719c4be02dae8558`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `0.01`
 - confidence: `0.53`
 

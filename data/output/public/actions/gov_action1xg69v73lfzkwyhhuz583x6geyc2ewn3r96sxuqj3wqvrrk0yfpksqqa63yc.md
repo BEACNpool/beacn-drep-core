@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The project has 4,642 commits across 32 releases, 12 contributors, and Scalus.js has more than 20,000 downloads per month." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery; Provide independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Scalus is used directly by projects including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Scalus is used directly by projects including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm; Provide independent evidence for: Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2.46M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The project has 4,642 commits across 32 releases, 12 contributors, and Scalus.js has more than 20,000 downloads per month." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
-- Claims and evidence missing: Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.
+- Claims and evidence missing: Independent evidence for: Scalus is used directly by projects including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.
+- Claims and evidence missing: Independent evidence for: Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
-- Provide independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.
-- Provide independent evidence for: Scalus components are embedded in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.
+- Provide independent evidence for: Scalus is used directly by projects including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.
+- Provide independent evidence for: Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.
+- Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `c50987fda2c2db1c944ab0030dbbe7cd93c5c1dafe06014a329bc7464ea631ce`
-- snapshot_bundle_hash: `a2f2069e0e70afd1513b62f43adc335b2e1bb951df4c3339d47f271da8847ac6`
+- input_hash: `445d926c29c97637c2fb5c76adca6b61265fb90bc7aefc2bb192c9aff8680a94`
+- snapshot_bundle_hash: `280804c508daab9182f6c472295518ae23b9bd8c7b76123b9beae540d94cbe6d`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4133`
 - confidence: `0.9333`
 

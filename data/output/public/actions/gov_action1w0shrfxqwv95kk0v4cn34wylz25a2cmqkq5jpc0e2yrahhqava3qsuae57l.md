@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 94.8%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `02d8e1a2fd1c91b9e8f261029cdd459a2a8f746a2756d49151c4dfd87eedad2a`
-- snapshot_bundle_hash: `fcac3a397baeade94d4ae3bc3cdf8f36f86f62fab679cc05ee81594258809fd3`
+- input_hash: `3a1a5bfda6889e9a58574d316231a45a516be42b37a4ef82482e05ef7a03df96`
+- snapshot_bundle_hash: `321170b705c1a65a108b1e30a80e2658f663d8b3ad8c1e95b56be2fdbb50dc55`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4583`
 - confidence: `0.9483`
 

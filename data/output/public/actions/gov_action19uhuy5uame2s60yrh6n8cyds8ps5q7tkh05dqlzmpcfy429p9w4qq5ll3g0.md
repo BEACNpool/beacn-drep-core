@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Amaru is an open-source project building a new, fully interoperable block-producing node that improves the overall accessibility and robustness of the Cardano network without compromising its safety and security." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025; Provide line-item budget. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.33; confidence 81.8%.
@@ -47,11 +47,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `1057d2d1cea3d2656d6f20fb781ccdc29abc0a7e8d51cb41378abf2f655457f6`
-- snapshot_bundle_hash: `20eb57316e7f01510db49c7ceb791812dda1798bab6eb2c2a5a5031e76b2122d`
+- input_hash: `ec9e4fd248bd43d802b98bfa8ca3845635538324c3674954f668e60b1741a94d`
+- snapshot_bundle_hash: `d36afb8a8ee58a4bef66ae079f3c1276441d7a4d31e4925f82cf12619ba3f059`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.3283`
 - confidence: `0.8183`
 

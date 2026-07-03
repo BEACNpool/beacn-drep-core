@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total on-chain withdrawal of 540,750 ADA including a 15,750 ADA Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 90.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540.8k ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total on-chain withdrawal of 540,750 ADA including a 15,750 ADA Intersect Budget Administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives.
-- Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
+- Claims and evidence missing: Independent evidence for: Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes.
+- Claims and evidence missing: Independent evidence for: Audit, administrative oversight, reporting obligations, and milestone-based disbursement controls are included through Intersect administration and technically capable third parties.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Dolos aligns with Intersect Strategic Pillar 2 focus area A.3 for Developer Experience and open-source incentives.
 - Provide complete proposal summary.
 - Provide budget analysis.
+- Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `61e3071968295b0a9dccbe47c0bf2f3593498b78301b793cb24a7e1a0e1d8fb9`
-- snapshot_bundle_hash: `51c5bf24abe5097a16ece4e625d0ec80d546d190b002c7205769ba07779e8208`
+- input_hash: `f56ea8c4a328652e4510c10caa045bbcbeaa1bc8a08864d0bec2437b562519dc`
+- snapshot_bundle_hash: `b9877ac1beecc61da86917101fcc53c9184ecfeeeed60939323a513816432483`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
-- score: `-0.4133`
-- confidence: `0.9333`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- score: `-0.3833`
+- confidence: `0.9033`
 

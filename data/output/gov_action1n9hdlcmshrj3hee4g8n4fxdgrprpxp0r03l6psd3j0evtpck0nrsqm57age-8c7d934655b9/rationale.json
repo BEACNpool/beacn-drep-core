@@ -1,0 +1,231 @@
+{
+  "action_id": "gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age",
+  "action_type": "InfoAction",
+  "recommendation": "YES",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.01,
+  "raw_score": -0.02,
+  "llm_score_adjustment": 0.03,
+  "llm_lean": {
+    "source": "codex-offline-review",
+    "model": "codex-offline-local",
+    "direction": "YES",
+    "score_adjustment": 0.03,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "821238e0f076293f59bd5528fb95958d99bd286b4e4a110ad596be9b9bb7406d",
+  "directional_threshold": 0.12,
+  "confidence": 0.53,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.030 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
+    "Directional vote forced by completed readiness packet (treasury-aware).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Claims and evidence missing: Independent evidence for: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.",
+    "Claims and evidence status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "8c7d934655b9e0ccd926946bd0d1267d4b9c2241a8f5208f09c3c5fa6c778e85",
+  "snapshot_bundle_hash": "68ccecd214d105f76561017990015c37cd970214a4ed7f0d0504d8a62b87a27c",
+  "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 804,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-03T11:31:07.373917Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.4825,
+    "NO": 0.2638,
+    "ABSTAIN": 0.2538
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: expired",
+          "Proposed epoch: 583",
+          "Expires after epoch: 590",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Requested: Defining the Cardano 2030 Vision & Strategy",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy., Please note that although the Product Committee created this content, this governance action was submitted independently by a community member, not the Committee or its members., As a community member, I would like to assist the Product Committee to help gather feedback on-chain, as the Committee has so far relied on off-chain feedback collection., https://ipfs.io/ipfs/bafkreieaeiokqecnfrkysltkfvuatg5wkhfyhheur6r5k7flojtr2nsebi",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, supported_in_proposal, low materiality): This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.",
+          "Claim (governance, supported_in_proposal, high materiality): Please note that although the Product Committee created this content, this governance action was submitted independently by a community member, not the Committee or its members.",
+          "Claim (governance, independently_verifiable, high materiality): As a community member, I would like to assist the Product Committee to help gather feedback on-chain, as the Committee has so far relied on off-chain feedback collection.",
+          "Claim (other, supported_in_proposal, low materiality): https://ipfs.io/ipfs/bafkreieaeiokqecnfrkysltkfvuatg5wkhfyhheur6r5k7flojtr2nsebi",
+          "Claim (adoption, supported_in_proposal, medium materiality): The long-term success and adoption of the Cardano blockchain depend on a clear and community-backed vision & strategy.",
+          "Claim (governance, supported_in_proposal, low materiality): DReps play a vital role in shaping Cardano's future."
+        ],
+        "missing": [
+          "Independent evidence for: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 1"
+        ],
+        "missing": [],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records YES on Defining the Cardano 2030 Vision & Strategy. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a InfoAction. The cached anchor describes the request as: Defining the Cardano 2030 Vision & Strategy. The strongest grounded claim is: This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.\n\nA material weak point is that this claim remains proposer-asserted or thinly supported: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.",
+  "human_message_source": "codex-offline-review",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "anchor": {
+        "action_id": "gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreigc2vumhgcgfuouuk5ndom4dg3yxncuhdcsyirbkybggd5bv47sve",
+        "file_sha256": "c2d568c398462d1d4a2bad1b99c19b78bb45438c52c22215602630fa1af3f2a9",
+        "file_path": "data/input/governance/anchors/gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age-20260326T175230Z.bin",
+        "content_chars": 3694
+      },
+      "claim_count": 8,
+      "prompt_sha256": "e22a1b0c90d7dc2ab814786b860de9567b2bec5ff2a94ec9773cc07a328a213b",
+      "output_sha256": "d6dd4089bb0e9d9ec75b2dede53a045f3cd6d0aec267b63a2becc00e844a0593"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "821238e0f076293f59bd5528fb95958d99bd286b4e4a110ad596be9b9bb7406d"
+    },
+    "lean": {
+      "available": true,
+      "source": "codex-offline-review",
+      "reason": null,
+      "model": "codex-offline-local",
+      "direction": "YES",
+      "score_adjustment": 0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "0271b369fc80109d4626c9cd61b56b81e49ef2b0d1e293a69728f8a4607917f3",
+      "output_sha256": "35da02a99eafe08b3b4258a2217427af69a6ba92c40923a00aefc5e95136cc82"
+    },
+    "human_message": {
+      "source": "codex-offline-review",
+      "available": true,
+      "reason": null,
+      "model": "codex-offline-local",
+      "prompt_sha256": "cda6487ce620c5407affd77f83b55a74866e57d6174fcb7348a4f81fecbdda77",
+      "output_sha256": "e51fc010b1b08382654594d3db820c410207035510498dec178ea87112305199"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

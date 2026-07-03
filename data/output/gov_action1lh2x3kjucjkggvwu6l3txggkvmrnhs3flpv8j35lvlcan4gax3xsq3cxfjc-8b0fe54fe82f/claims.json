@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "0",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Upgrade mainnet protocol from version 10.0 to 11.0 while remaining in the Conway era",
+      "Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153 available",
+      "Unify Plutus built-in function availability across Plutus V1, V2, and V3",
+      "Add UPLC case expressions for Bool, Integer, and Data",
+      "Promote and tighten specified ledger validation rules including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restrictions, withdrawal validation, and PPView mismatch reporting"
+    ],
+    "recipient": "not stated in document",
+    "what": "Hard fork initiation to upgrade Cardano Mainnet to Protocol Version 11, minor version 0, via the intra-era 'van Rossem' hard fork."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The proposal would upgrade Cardano Mainnet to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The upgrade introduces new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "All Plutus built-in functions, including newly introduced ones, will become available consistently across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "UPLC will support case expressions over Bool, Integer, and Data, which the proposal says will improve performance and simplify script logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The hard fork promotes VRF key hash uniqueness, Constitutional Committee voting restrictions, and other validation changes into ledger predicates or tighter ledger rules.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect's Hard Fork Working Group recommended submitting the governance action on 2026-06-15 and Intersect's Technical Steering Committee endorsed it on 2026-06-16.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of the new Plutus features across V1, V2, and V3.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The linked Cardano Node 11.0.1 performance report is cited as showing no regressions for standard value, Plutus, and voting benchmarks and acceptable baseline performance for new Plutus features.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "At least 85% of stake pools by active stake should have upgraded to a node version capable of protocol version 11 before ratification, and the document says this must be determined before ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document proposes a no-treasury hard fork to Cardano protocol version 11.0, centered on Plutus capability and performance improvements, ledger-rule tightening, node diagnostics, and readiness conditions, with several key readiness and audit claims asserted or externally referenced but not fully evidenced inside the anchor text.",
+  "output_sha256": "502d7c2c886d8d7e1cebe7fcd7c3592f5b157c3818b35363f43052ac69de06e9"
+}

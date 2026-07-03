@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha..." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 95.3%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `5efebf0f81fe547d760dc972b86831f5f84c81c8b942dcfcaf30c3ed83c52778`
-- snapshot_bundle_hash: `272987105c8428691e59c4a5bbe65b0138d0403e5858bb2dc50113b5635e4b34`
+- input_hash: `d45d9aa4fd1869d3476acc38e06676e8562d1dda75f97e85d991b3e23725cc84`
+- snapshot_bundle_hash: `db13e63a01b4ed0f879c1f0ca268756adfb6f11094d5220f58b2fe6cc8fe74c2`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4633`
 - confidence: `0.9533`
 

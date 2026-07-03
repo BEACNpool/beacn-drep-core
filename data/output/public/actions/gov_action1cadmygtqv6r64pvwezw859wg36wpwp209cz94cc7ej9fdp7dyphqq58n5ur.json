@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:d4d0ef11be67c82f8ad4e90b75ecc01b433523747c0c529f8ba63742886b7ec2",
+    "raw_input_hash": "sha256:d9812769f502d173056a8e1db8f3d5ba956461c6d52ac5720f0624273a59db50",
     "detected_at": "2026-06-05T21:00:01.749231+00:00"
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-07-02T09:00:01.770046+00:00",
+    "published_at": "2026-07-03T11:30:04.861084+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "YES",
     "score": 0.03,
     "confidence": 0.58,
-    "input_hash": "d4d0ef11be67c82f8ad4e90b75ecc01b433523747c0c529f8ba63742886b7ec2",
-    "snapshot_bundle_hash": "05665746c09e708194ced085c109c4d25e6b7a454f26645fa9dc22ce6ba59af1",
+    "input_hash": "d9812769f502d173056a8e1db8f3d5ba956461c6d52ac5720f0624273a59db50",
+    "snapshot_bundle_hash": "6dcb32492527b034c7aa47e4cf6c938126866a56f7f48631745eb4ceeb357ef7",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
-    "core_commit": "f269edb12b438aaf4bef0ae2d0d521aeaa211239",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-d4d0ef11be67.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/377b85199dd4af96c5cd91cf.md",
-    "rationale_anchor_hash": "377b85199dd4af96c5cd91cf03cf97f40f4598c31281b7ee530f1028cf3f3416"
+    "resources_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
+    "core_commit": "399f54a173a12b278e21e821d6e85cba44144383",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-d9812769f502.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/bf4f104dd225adca4ab6a8bb.md",
+    "rationale_anchor_hash": "bf4f104dd225adca4ab6a8bb42c07c24f8d9a38b79a429b27c488ab650686280"
   },
   "rationale": {
-    "summary": "Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize setting of 7.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 58.0%.",
+    "summary": "Vote: YES. For this ParameterChange (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"If Constitutional Committee membership drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize setting of 7.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 58.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize setting of 7.",
       "Provide mitigation evidence.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-d4d0ef11be67.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-d9812769f502.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -74,12 +74,12 @@
             "Stated amount: not stated in document",
             "Deliverables: Set protocol_param_update.committee_min_size to 5",
             "Deadline/expiry: not stated in document",
-            "Claim (governance, supported_in_proposal, high materiality): The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.",
             "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee has 7 members, equal to the current committeeMinSize setting of 7.",
-            "Claim (governance, supported_in_proposal, high materiality): If committee membership drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
-            "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer so governance can continue if one or two members resign or their terms expire, assuming a current 7-member committee.",
-            "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on another live Parameter Change governance action for Plutus cost model settings, but the document says there is no technical interaction between the two parameter changes.",
-            "Claim (governance, supported_in_proposal, medium materiality): The change does not directly affect the current number of Constitutional Committee members and does not change the maximum number of members."
+            "Claim (governance, supported_in_proposal, high materiality): If Constitutional Committee membership drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
+            "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer so governance can continue if one or two members resign or their terms expire, assuming a current 7-member body.",
+            "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on enactment of another live Parameter Change action for Plutus cost model updates, but states there is no technical interaction between the two parameter changes.",
+            "Claim (governance, supported_in_proposal, high materiality): The proposed change does not directly affect the current number of Constitutional Committee members and does not affect the maximum number of members.",
+            "Claim (governance, supported_in_proposal, high materiality): With a Constitutional Committee size of 5 and a 2/3 threshold, 4 constitutional votes are needed to meet the threshold and 2 unconstitutional votes can prevent the threshold."
           ],
           "missing": [
             "Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize setting of 7."
@@ -110,7 +110,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates.",
+            "Strongest YES: the proposal substantiates \"If Constitutional Committee membership drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.\" and clears the evidence gates.",
             "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize setting of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -130,7 +130,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-d4d0ef11be67.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-d9812769f502.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -141,7 +141,7 @@
     "anchor_hash": "8c7c510c1c959d5c587de268350ce9275af45a05f5774c15fd424b924e18e749",
     "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
     "content_bytes": "18525",
-    "fetched_at_utc": "2026-07-02T11:30:15Z",
+    "fetched_at_utc": "2026-07-03T11:31:07Z",
     "download_path": "/proposals/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -149,8 +149,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "4fbc4829bb6142608e4d32087d1ed0565eaf5b12",
-    "core_commit": "f269edb12b438aaf4bef0ae2d0d521aeaa211239",
+    "resources_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
+    "core_commit": "399f54a173a12b278e21e821d6e85cba44144383",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -217,10 +217,10 @@
     "governance_alignment": 0.58
   },
   "freshness": {
-    "snapshot_age_seconds": 801,
+    "snapshot_age_seconds": 800,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-02T11:30:15.335885Z",
+    "snapshot_time": "2026-07-03T11:31:07.373917Z",
     "freshness_source": "manifest"
   }
 }

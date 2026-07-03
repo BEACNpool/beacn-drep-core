@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Tx3 is presented as a framework that lets each protocol be described once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal says Tx3 will provide an open, standardized interface across Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose protocols through a single consistent surface." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 90.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.68M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect Budget Administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Tx3 is presented as a framework that lets each protocol be described once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints.
-- Claims and evidence missing: Independent evidence for: The proposer states that there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and making cross-protocol composability impractical.
+- Claims and evidence missing: Independent evidence for: The proposal says Tx3 will provide an open, standardized interface across Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose protocols through a single consistent surface.
+- Claims and evidence missing: Independent evidence for: The proposal asserts there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and increasing integration cost.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -52,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `adf15ec604a9435aa054ecc26a82c74a6cc0869bacdc2c2d1db0be088e3cf89a`
-- snapshot_bundle_hash: `97acbfc765a24c72e877177fd2a8bee0ef6099f8d7d4532f84997e4717866676`
+- input_hash: `ca10ac2cdd0a27bbadbf49ee9c06189283c3b244851d0c1e65f569bf3502873d`
+- snapshot_bundle_hash: `6868c1266501224c35d71422a5cb4bf1c85b38b7a54f15b1766922d536f53610`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
-- score: `-0.4133`
-- confidence: `0.9333`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- score: `-0.3833`
+- confidence: `0.9033`
 

@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% administration fee." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability; Provide independent evidence for: Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Dano Finance says the DeFi Kernel will provide an open, fee-free, royalty-free compatibility standard and registry for Cardano DeFi contracts." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA as a 1% budget administration fee for Minswap Labs." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Dano Finance claims it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3.33M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA as a 1% budget administration fee for Minswap Labs." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.
-- Claims and evidence missing: Independent evidence for: Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.
+- Claims and evidence missing: Independent evidence for: Dano Finance says the DeFi Kernel will provide an open, fee-free, royalty-free compatibility standard and registry for Cardano DeFi contracts.
+- Claims and evidence missing: Independent evidence for: The proposal claims Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which slows integrations and limits advanced financial applications.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.
-- Provide independent evidence for: Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.
+- Provide independent evidence for: Dano Finance claims it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.
 - Provide complete proposal summary.
+- Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `108f14e7ef5aa21dd8716eb8e33b7c59bac51dd194f266497ec99c054c14561d`
-- snapshot_bundle_hash: `b1b01a08ce581085849b86b01910c89ca924d5f17c11e960ef6f30fc264c4421`
+- input_hash: `017e34222233a94872193a1713bbc1f6a1a281817c051aae9424fafc2d30186e`
+- snapshot_bundle_hash: `ad0e8eaa9b2babcf5baf003b564ce6613968f3463dfef7d5d6f035a0777f4fcb`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4133`
 - confidence: `0.9333`
 

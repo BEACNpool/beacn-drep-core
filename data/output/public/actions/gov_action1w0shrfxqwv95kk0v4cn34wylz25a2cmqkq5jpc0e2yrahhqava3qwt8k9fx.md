@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind..." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 92.3%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `88ef7c56b1e1c9df1fae687df0330d4df45c723b1d7ec8f37884b0b966fe3c3f`
-- snapshot_bundle_hash: `2c60869812ba2d06faa6dc847af6a5f8af51292906043f5aa1f4aec7d36da919`
+- input_hash: `38dc628f2b59412d708572593731940e669cef64e6638172ad12e5b20e65b80b`
+- snapshot_bundle_hash: `f54c790db2ca8b466bdca99807630496da455221622e3d71099e08384050d1ea`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.4333`
 - confidence: `0.9233`
 

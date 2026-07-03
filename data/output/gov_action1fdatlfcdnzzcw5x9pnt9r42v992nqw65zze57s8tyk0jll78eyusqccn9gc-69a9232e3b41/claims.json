@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "20000000",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Allocate capital to builders advancing monthly active users, monthly on-chain transactions, and TVL.",
+      "Require funded projects to track core KPIs: monthly active users, TVL, and on-chain transactions.",
+      "Coordinate proposal evaluation, feedback, fund distribution, and result tracking through the DAO.",
+      "Disburse funds after milestone completion is validated and confirmed by the administrator."
+    ],
+    "recipient": "Cardano Builder DAO, with funds initially received and disbursed by an independent council/multisig composed of dRep DAO members.",
+    "what": "Treasury withdrawal to fund the Cardano Builder DAO as a smart contract-governed funding mechanism for Cardano builders aligned to Vision 2030 KPIs."
+  },
+  "claims": [
+    {
+      "category": "adoption",
+      "claim": "The Cardano Builder DAO is intended to allocate capital to builders who can drive growth in monthly active users, monthly on-chain transactions, and TVL.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Round 1 funded 20 companies, involved 38 voting members and 27 requesting members, distributed 5,541,335 ADA, and achieved 83% governance participation.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Round 2 funded 14 companies after review, debate, temperature checks, and final voting, with 88% member participation and 18 new members joining the DAO.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The DAO created Version 1 and Version 2 of a KPI dashboard, moving from self-reported tracking toward live on-chain Cardano data.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Funded projects are required to track monthly active users, TVL, and on-chain transactions.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The administrator will hold any ADA in separate community-auditable accounts, will not delegate it to a stake pool, and will delegate voting power to the predefined abstain option.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The Cardano Builder DAO only receives funds after milestone completion is validated and confirmed by the administrator.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Unused or unallocated funds would be returned to the Cardano Treasury, and the proposal cites a transaction showing 354,790 ADA previously returned after the first two governance rounds.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "A milestone and budget document is referenced externally, but the anchor text itself does not state the budget breakdown, milestone schedule, feasibility assessment, risk analysis, alternatives analysis, or failure-mode analysis.",
+      "materiality": "high",
+      "support": "unsupported"
+    }
+  ],
+  "summary": "The proposal requests 20,000,000 ADA for the Cardano Builder DAO to continue and scale a builder-led, KPI-oriented funding mechanism, citing prior DAO rounds, governance participation, KPI tracking efforts, administrator controls, milestone validation, and a prior unused-funds repayment, while leaving key treasury diligence details outside the anchor text or not stated.",
+  "output_sha256": "66ec591553ff583cd330b99b7bb292a7bfeb86939ade857855badb50c5e6e96f"
+}

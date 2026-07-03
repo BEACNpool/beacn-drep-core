@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-02T09:00:01.770046+00:00`
+- Published at: `2026-07-03T11:30:04.861084+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "(“Orion Fund”), managed by Draper Dragon Orion GP, LLC (“General Partner” or “GP”), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed; Provide line-item budget. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.25; confidence 77.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `d3f2c2375cbae4573e4a2ab29136ae3c45bfabf511375ab0c15b5de5f9c32fbf`
-- snapshot_bundle_hash: `b34312460839f238c338e45d36aa7d8df524b41d53ef2eda500ea15c88b46762`
+- input_hash: `8744b6c691b3e936614b25a1491f5d84c1a1465f868a88ecdb88314c82f93da1`
+- snapshot_bundle_hash: `b7bc55e106f55a0d72b8c19089d67809b36e6e2005daeca1c2b3ba06aa6365b5`
 - soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `4fbc4829bb6142608e4d32087d1ed0565eaf5b12`
-- core_commit: `f269edb12b438aaf4bef0ae2d0d521aeaa211239`
+- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
+- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
 - score: `-0.2533`
 - confidence: `0.7733`
 

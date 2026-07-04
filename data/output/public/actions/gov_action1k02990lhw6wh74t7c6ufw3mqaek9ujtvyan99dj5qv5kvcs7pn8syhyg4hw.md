@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The work is framed as continuity for an already-proven Cardano access layer rather than a new wallet product, with scope limited to compatibility, security, libraries, tooling, release support, and vendor-required audit work." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 90.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The requested budget totals 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance and Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.31M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The requested budget totals 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance and Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- Claims and evidence missing: Independent evidence for: The work is framed as continuity for an already-proven Cardano access layer rather than a new wallet product, with scope limited to compatibility, security, libraries, tooling, release support, and vendor-required audit work.
-- Claims and evidence missing: Independent evidence for: The proposer states that continuous maintenance is needed because Cardano protocol evolution, Ledger and Trezor release cycles, and wallet and dApp integration demand create compatibility risk for hardware-wallet users and integrators.
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Claims and evidence missing: Independent evidence for: Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes.
+- Claims and evidence missing: Independent evidence for: The proposal scope is limited to compatibility, security, supporting libraries and tooling, release support, and vendor-required audit work, and does not duplicate broader core-node, ledger, or general infrastructure maintenance budgets.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `5eae4dc7edbeae161fb8d9d655e88821e9c973b73525782b1fc2026b4f4e7611`
-- snapshot_bundle_hash: `d1b3171960d6476d8cb901497a3da07bdb9ff10ce7e8cb30d0b4ab1e5cc901ee`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `61befb8da183eca7fb308a836809c3013b419e13ffedb6b8e5f24d9b0cdce98e`
+- snapshot_bundle_hash: `1294b13862112d48e22b54f6c3d6ef9fd98d3d670b1331303f004d16b7de68a2`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.3833`
-- confidence: `0.9033`
+- confidence: `0.5158`
 

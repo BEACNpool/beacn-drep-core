@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The K parameter was created to limit the total number of ADA staked to one pool." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 56.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The K parameter was created to limit the total number of ADA staked to one pool." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `6ac785afd19fcb8243508d295291b1a0ed630e75402dbf51bccbb2d27c63c272`
-- snapshot_bundle_hash: `bc52aa1590242830cb8d5a0b386128df44e6739479111a00e5f86b09958d20ba`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `607c4add842596f63343198856c58a1fe6220f04f57eea601ec145991fb081a3`
+- snapshot_bundle_hash: `91c5a14a8a777ed6a6cc1309a51b3f705986ed1cb5ef4cfd2e60bd07af632169`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `0.04`
-- confidence: `0.56`
+- confidence: `0.58`
 

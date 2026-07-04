@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Constitution requires the establishment of a Net Change Limit (NCL), which defines the maximum amount of lovelace that can be withdrawn from the treasury during an outlined period of time." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 56.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Constitution requires the establishment of a Net Change Limit (NCL), which defines the maximum amount of lovelace that can be withdrawn from the treasury during an outlined period of time." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `6e1efa27709483f2b836c52156c5d29d9b6d963268537479f24dcddf827a6f6f`
-- snapshot_bundle_hash: `405af97b23260b69b79eae63da2452856d5a8ea0db33b3f877d91dc74942c0e0`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `a5d3e39aac0f3c4536d33aee9edf330367dc0ef6a04c0d80bd0671472d58633b`
+- snapshot_bundle_hash: `8b62325ba4e596c8c34d246facb3eb0181030e1ce0d51f1f9ba575551829f79f`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `0.04`
-- confidence: `0.56`
+- confidence: `0.58`
 

@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This Cardano Critical Integrations Budget Governance Action requests ₳70,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital..." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 56.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This Cardano Critical Integrations Budget Governance Action requests ₳70,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital..." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `c3edd9ea57f1fa2b1186bd75d225d6b74524665e609760b0ce3d4b8742a96c66`
-- snapshot_bundle_hash: `76658c3ded643c314f7b3cb1a1a131a922a3e00b6acf6f5b72c48f638cdc7616`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `42a9ee56d8e41975e296cf200c5f5427c86229fbf247323b1606314dcccac970`
+- snapshot_bundle_hash: `f2a787a7e414fd20b207d89c66959d4c7a14ca8d315799916742ac63b7a50de2`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `0.04`
-- confidence: `0.56`
+- confidence: `0.58`
 

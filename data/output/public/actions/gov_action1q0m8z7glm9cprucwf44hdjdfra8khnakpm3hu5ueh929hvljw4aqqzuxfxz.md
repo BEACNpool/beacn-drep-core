@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow signal is in unsustainable regime (advisory penalty applied). Confidence context: score -0.30; confidence 79.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.30; confidence 76.6%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -30,7 +30,7 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `3df6f36f191492fa631f6eff17e682e5c1195c28bf35fc494e4f1c90b890671e`
-- snapshot_bundle_hash: `e08f2d968901a81414f14dbff6e646e624190e920a33914702495afde8cac502`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `9b85b7f04a757d3abe4cae87eae6a5351ffc1c058cb943255145b6cfc4b1f18f`
+- snapshot_bundle_hash: `75b189117663e540376a35b92ebde69fdc41a8f9282027ec84e0a39684ce09bb`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.3033`
-- confidence: `0.7933`
+- confidence: `0.7658`
 

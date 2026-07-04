@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 94.8%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,12 +26,12 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 12.29M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - Claims and evidence missing: Independent evidence for: Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `3a1a5bfda6889e9a58574d316231a45a516be42b37a4ef82482e05ef7a03df96`
-- snapshot_bundle_hash: `321170b705c1a65a108b1e30a80e2658f663d8b3ad8c1e95b56be2fdbb50dc55`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `2f4b409494e2b0e2c33e72f706ee986f4f74509260faaf6eba641e28d50d6928`
+- snapshot_bundle_hash: `83dd89433d01586e32ce3bdda4e405d74698fb24f5b44571499899defd0cca9c`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.4583`
-- confidence: `0.9483`
+- confidence: `0.49`
 

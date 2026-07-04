@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 69.0%.
+Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 63.5%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `48859401e4c357b98801db0fd7293e220bd529eb4c4a7a814a23713bd6c54328`
-- snapshot_bundle_hash: `2d3c3874889e2facab93e1a6c93416c69b38191054dc1f71321cd34407716e96`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `c234a9776fc3795943cdb00a7185fb454943032b94f0a7ba592002e1641a052a`
+- snapshot_bundle_hash: `caaece61a579337f4487822d24764c7b9e42c47fa941e7f8ead4432d6bbb4c38`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `0.14`
-- confidence: `0.69`
+- confidence: `0.635`
 

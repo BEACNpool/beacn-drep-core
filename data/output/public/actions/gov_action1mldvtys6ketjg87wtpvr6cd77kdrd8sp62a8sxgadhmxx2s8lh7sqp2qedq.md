@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this ParameterChange (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.05; confidence 60.0%.
+Vote: YES. For this ParameterChange (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.05; confidence 61.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: YES. For this ParameterChange (expired), available evidence supports proce
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `7691744a4cc16f774655afff4682990857642e8123113d85ca61360309768973`
-- snapshot_bundle_hash: `287eb11cf1ff39431fba58cc2573b2e63f2b75c00357fa594dd22818f685162a`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `df4342b24ce5439e9b2e9966fa8f9a6d48f4e76d61bee84e4f503ccf123def91`
+- snapshot_bundle_hash: `7a0c7d46b82bc8f579f20256b4ef719efa6ecb79244cd207e975a65faff7c931`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `0.05`
-- confidence: `0.6`
+- confidence: `0.6125`
 

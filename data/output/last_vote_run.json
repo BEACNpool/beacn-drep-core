@@ -6,7 +6,7 @@
     "YES"
   ],
   "submitted": 0,
-  "active_evaluated": 27,
+  "active_evaluated": 28,
   "skipped_inactive": 119,
   "policy_config": {
     "min_persistence_revision": 2,
@@ -58,6 +58,14 @@
     },
     {
       "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
@@ -121,6 +129,14 @@
       "status": "NOOP"
     },
     {
+      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
       "action_id": "gov_action1suskjc6c4nw58c6wtmv77xe79gwj47wp4gvh9cqhhxujwxmam3cqqkz5nwj",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
@@ -161,14 +177,6 @@
       "status": "NOOP"
     },
     {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8",
-      "recommendation": "NO",
-      "onchain_vote": "VoteNo",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already NO",
-      "status": "NOOP"
-    },
-    {
       "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s24l0u4y",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
@@ -193,7 +201,7 @@
       "status": "NOOP"
     },
     {
-      "action_id": "gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc",
+      "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
@@ -201,7 +209,7 @@
       "status": "NOOP"
     },
     {
-      "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+      "action_id": "gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
@@ -225,12 +233,16 @@
       "status": "NOOP"
     },
     {
-      "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
-      "recommendation": "NO",
-      "onchain_vote": "VoteNo",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already NO",
-      "status": "NOOP"
+      "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",
+      "recommendation": "ABSTAIN",
+      "onchain_vote": null,
+      "policy": "CAST",
+      "policy_reason": "fresh abstain (conservative default)",
+      "gates_ok": false,
+      "status": "blocked_by_gate",
+      "reasons": [
+        "tx contents: fee-wallet change contains unexpected assets or no lovelace"
+      ]
     }
   ]
 }

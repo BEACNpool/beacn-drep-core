@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:c8c439da71ad6475be3f460fbcc8a2deda6669e109888a80b235eec8c5c9b66e",
+    "raw_input_hash": "sha256:3b95698d258e8574f1e4ec161bc3a61963bb7e0d7ae24ffa0b899296c07a4c84",
     "detected_at": "2026-05-11T21:00:01.266271+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-07-03T11:30:04.861084+00:00",
+    "published_at": "2026-07-04T04:07:22.030574+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -19,25 +19,25 @@
   "proof_of_vote": {
     "vote": "NO",
     "score": -0.4933,
-    "confidence": 0.9833,
-    "input_hash": "c8c439da71ad6475be3f460fbcc8a2deda6669e109888a80b235eec8c5c9b66e",
-    "snapshot_bundle_hash": "d4ff4f36edb4390f4a7b829936c75101aa2d2c8cca67425f43c8abaa48ce2fd2",
-    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
-    "core_commit": "399f54a173a12b278e21e821d6e85cba44144383",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-c8c439da71ad.md",
+    "confidence": 0.64,
+    "input_hash": "3b95698d258e8574f1e4ec161bc3a61963bb7e0d7ae24ffa0b899296c07a4c84",
+    "snapshot_bundle_hash": "e6489de051d4ecc32dbbda02e3bca2795d1dea4dd0e0df9a75aa7a615d198e05",
+    "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+    "resources_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
+    "core_commit": "d40b6b39bc43cc4be974bbb82020c41c23844c78",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-3b95698d258e.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.49; confidence 98.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.49; confidence 64.0%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.010 (clamped to \u00b10.05): Doctrine-aware offline lean for a treasury action: 8 well-supported claim(s), assessment blocked, 7 open blocker(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.010 (clamped to \u00b10.05).",
     "top_fixes": [
       "Provide complete proposal summary.",
       "Provide budget analysis.",
       "Provide feasibility assessment."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-c8c439da71ad.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-3b95698d258e.md",
     "missing_evidence": [],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
@@ -102,7 +102,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unsustainable",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -138,7 +138,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" and clears the evidence gates.",
+            "Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 7 review blocker(s) remain open.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -174,7 +174,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-c8c439da71ad.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-3b95698d258e.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -185,16 +185,16 @@
     "anchor_hash": "a16e91e5306eb4ccbbd6aed238e1bae823acd7b560b67e756234718f6a6a749d",
     "file_sha256": "8f4b28ce8102083370692ebd4e3cf92ce33e831b4340cb06a803e3c7da702e20",
     "content_bytes": "39860",
-    "fetched_at_utc": "2026-07-03T11:31:07Z",
+    "fetched_at_utc": "2026-07-04T04:08:10Z",
     "download_path": "/proposals/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+    "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
-    "core_commit": "399f54a173a12b278e21e821d6e85cba44144383",
+    "resources_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
+    "core_commit": "d40b6b39bc43cc4be974bbb82020c41c23844c78",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -270,13 +270,13 @@
     "budget_pressure": 0.4933,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.9833
+    "governance_alignment": 0.64
   },
   "freshness": {
-    "snapshot_age_seconds": 801,
+    "snapshot_age_seconds": 1219,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-03T11:31:07.373917Z",
+    "snapshot_time": "2026-07-04T04:08:10.415208Z",
     "freshness_source": "manifest"
   }
 }

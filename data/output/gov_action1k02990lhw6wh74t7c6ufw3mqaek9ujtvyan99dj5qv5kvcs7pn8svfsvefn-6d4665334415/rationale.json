@@ -1,0 +1,299 @@
+{
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.3833,
+  "raw_score": -0.3533,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.82,
+    "rationale": "The proposal identifies ecosystem utility and includes some checkable governance and oversight references, but the deterministic assessment remains blocked because core treasury diligence is incomplete, including budget analysis, feasibility, risk, alternatives, and failure-mode analysis. Under the doctrine hierarchy, this evidence gap warrants a small cautionary negative nudge rather than rewarding plausible public-benefit tooling claims.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.5158,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 1.16M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect Budget Administration fee.\" though 7 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal identifies ecosystem utility and includes some checkable governance and oversight references, but the deterministic assessment remains blocked because core treasury diligence is incomplete, including budget analysis, feasibility, risk, alternatives, and failure-mode analysis. Under the doctrine hierarchy, this evidence gap warrants a small cautionary negative nudge rather than rewarding plausible public-benefit tooling claims.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: Independent evidence for: Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.",
+    "Claims and evidence missing: Independent evidence for: Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types to protect the on-chain/off-chain boundary.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: missing complete proposal summary",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [],
+  "input_hash": "6d46653344152cd0af013b5bba21b897e64c1ea4da36315bcb862c65f5b5a094",
+  "snapshot_bundle_hash": "824e52d62390bccc9bf5d72710c8c34f517a23642e3fdca1fbd85e60a31e65a3",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1218,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T04:08:10.415208Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0432,
+    "NO": 0.7361,
+    "ABSTAIN": 0.2207
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 1.16M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Annual maintenance and enhancement funding for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply.",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor.",
+          "Stated amount: 1,162,746",
+          "Deliverables: WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities, Protocol-era and hard-fork compatibility, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect Budget Administration fee.",
+          "Claim (technical, proposer_asserted, medium materiality): Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.",
+          "Claim (technical, proposer_asserted, medium materiality): Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types to protect the on-chain/off-chain boundary.",
+          "Claim (adoption, proposer_asserted, high materiality): MLabs states that a recent internal audit found at least 26 teams building with Plutarch and Ply, while the rationale separately states a conservative count of at least 15 teams.",
+          "Claim (technical, independently_verifiable, medium materiality): MLabs claims Plutarch scripts rank among the smallest in its public cross-language benchmark suite while requiring comparatively low on-chain compute and memory, and provides a benchmark URL.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposed work prioritizes critical breakages and serious vulnerabilities first, then protocol-era and hard-fork compatibility, then bug fixes and optimizations, then documentation and developer-experience improvements."
+        ],
+        "missing": [
+          "Independent evidence for: Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.",
+          "Independent evidence for: Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types to protect the on-chain/off-chain boundary.",
+          "Independent evidence for: MLabs states that a recent internal audit found at least 26 teams building with Plutarch and Ply, while the rationale separately states a conservative count of at least 15 teams.",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 1.16M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect Budget Administration fee.\" though 7 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this treasury withdrawal did not clear the evidence bar for spending 1,162,746 ada. The proposal had a pinned, replayable anchor and described useful maintenance work, but the review found core treasury diligence incomplete: budget analysis, feasibility, risk analysis, alternatives, failure modes, and community impact were all still missing.\n\nThe action requested annual funding for MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply, with 1,128,880 ada for maintenance, compatibility, and developer experience work, plus a 33,866 ada Intersect administration fee. The proposer claimed Plutarch and Ply are important Cardano developer tools, cited teams using them, described benchmark performance, and stated that Intersect oversight, reporting obligations, and milestone-based disbursement controls would apply. The requested amount and administration fee were clearly supported in the proposal, as was the work priority order: critical breakages and vulnerabilities first, then hard-fork compatibility, bug fixes and optimizations, and documentation or developer-experience improvements.\n\nHowever, several important claims remained thin or unsupported by independent evidence in the review. The descriptions of Plutarch and Ply were treated as proposer assertions, not independently confirmed evidence. Execution risk was unknown, mitigation evidence and independent assurance were missing, and the treasury review lacked a line-item budget. Even the strongest YES case only established that the amount requested was substantiated; it did not resolve the seven open blockers.\n\nBecause this was a treasury withdrawal, BEACN applied elevated scrutiny. The proposal had some positive signals, including Intersect budget-process support and stated oversight controls, but those did not outweigh the incomplete diligence record, the thin risk review, and the unsustainable treasury-flow signal noted in the assessment. On the available evidence, BEACN voted NO rather than approving a large shared-ADA withdrawal without enough auditable support.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreidixjkquc6xtimbbdwet2klabcdzbt6kduktlca2ywl3slpqlgx2q",
+        "file_sha256": "68ba550a0bd79a18108ec49e94b00443c867e50e8a9ac40d62cbdc96f82cd7d4",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn-20260624T113057Z.bin",
+        "content_chars": 15677
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "ab495ca4e65c6e55f2222ba4800331f6a390b9f3f97de6121e028f48b27fb66b"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "e6c740b952ac954579c16423ebeedcbeee68454199164aca35a46ccabb1dc5b4"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "1ea183cae791f268b792fc24130b4559ea1bf4399aae0c17032bd47317b6640c"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ac300bb03f02479abd7e170a.md",
+  "rationale_anchor_hash": "ac300bb03f02479abd7e170aff81e3fc85b7d32477479aad12d7cdb452226e15"
+}

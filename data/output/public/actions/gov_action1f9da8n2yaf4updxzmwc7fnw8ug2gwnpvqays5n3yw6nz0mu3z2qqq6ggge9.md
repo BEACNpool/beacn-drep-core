@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services); Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.01; confidence 53.0%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services); Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.01; confidence 42.2%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -41,11 +41,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `5f01b9bed42387c9ed9e9d3af4de15cd7bd3a44c30157b70fc47d251207fa882`
-- snapshot_bundle_hash: `c19a8d09f76aaf7b7b4782dbaa9dea0edf16c83e4898fc81cf6a32a4fb136049`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `5a73f1b394467b7ec7f5d8c9645dc054ac68323b5d90f755690f5a6ff44fff62`
+- snapshot_bundle_hash: `d5e6191f054748fca3139702c993f5bb537ef74226597be356b0f43738d0ac81`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.01`
-- confidence: `0.53`
+- confidence: `0.4225`
 

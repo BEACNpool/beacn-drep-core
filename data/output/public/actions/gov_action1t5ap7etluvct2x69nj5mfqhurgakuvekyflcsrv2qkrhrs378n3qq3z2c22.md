@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "A strategic entity should prepare, propose, and implement a budget and be appointed by vote for a fixed term." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: Treasury governance should be explicitly addressed and supported by the governance system and the constitution; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.04; confidence 56.0%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal claims treasury governance should be explicitly addressed and supported by both the governance system and the constitution." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.06; confidence 53.5%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,28 +23,28 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "A strategic entity should prepare, propose, and implement a budget and be appointed by vote for a fixed term." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal claims treasury governance should be explicitly addressed and supported by both the governance system and the constitution." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the existing governance system.
-- Claims and evidence missing: Independent evidence for: Current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife in the community.
+- Claims and evidence missing: Independent evidence for: The proposal claims Cardano treasury governance is currently in a poor state with a funding impasse and limited direct support from the governance system.
+- Claims and evidence missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife within the community.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Treasury governance should be explicitly addressed and supported by the governance system and the constitution.
 - Provide mitigation evidence.
 - Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `5828d2294b08171be70c2864d9806842ccca7bb1300192075f5d5af317e0eaa5`
-- snapshot_bundle_hash: `53b2db38e63df6aef3480bcdda927bbe696146005a2fcf31688e2f1a497f3147`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
-- score: `-0.04`
-- confidence: `0.56`
+- input_hash: `6a39a5b769830005f98aa0498065f3a19c00879597ea60c1b3678422cb27bd29`
+- snapshot_bundle_hash: `2a54627220e35118a02060c0300177daf233ec687422ac62bc69e3ffc478c986`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- score: `-0.06`
+- confidence: `0.535`
 

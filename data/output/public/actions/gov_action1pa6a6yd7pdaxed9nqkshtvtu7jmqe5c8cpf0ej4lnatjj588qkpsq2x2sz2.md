@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal says Charms provides Bitcoin-native logic and compatibility infrastructure for issuing FIRE and ICE so they can circulate into Cardano wallets, DEXs, and DeFi tooling." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of approximately USD 2.0 million split into two approximately USD 1.0 million pools." and clears the evidence gates. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer states that profits, yield, and returns from treasury-supported launch liquidity will be returned to the Cardano Treasury quarterly, converted into ada through Cardano-native DEXs with methodology disclosed in monthly reports." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two USD 1.0 million pools." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 10.00M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of approximately USD 2.0 million split into two approximately USD 1.0 million pools." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two USD 1.0 million pools." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal says Charms provides Bitcoin-native logic and compatibility infrastructure for issuing FIRE and ICE so they can circulate into Cardano wallets, DEXs, and DeFi tooling.
-- Claims and evidence missing: Independent evidence for: The proposal states that Cardano currently lacks a serious production BTCfi infrastructure layer and risks BTCfi activity consolidating on Ethereum, BNB, Solana, and off-chain capital markets.
+- Claims and evidence missing: Independent evidence for: The proposer states that profits, yield, and returns from treasury-supported launch liquidity will be returned to the Cardano Treasury quarterly, converted into ada through Cardano-native DEXs with methodology disclosed in monthly reports.
+- Claims and evidence missing: Independent evidence for: The proposer states that launch liquidity principal may be returned after Alchemy reaches a 30-day time-weighted average TVL of at least USD 60 million, subject to a later formal governance proposal.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -52,11 +52,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `42190f2e3759e432dc2bbea572f3659ab11fdf8f7fa2e38500b1b87a8adc6116`
-- snapshot_bundle_hash: `ebbfa7cb6b49fa2a62a65c86df2ca0f0b63bb974871ab6c3eddb34873251eb7d`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `6e96a82e9435b44c8392a42055960a8249b080e94ce8126125305929ab743283`
+- snapshot_bundle_hash: `511ad49e22e777cc9031564befd33c48e8aec7ea198b33d5348fdd569a10547a`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.5133`
-- confidence: `1.0`
+- confidence: `0.49`
 

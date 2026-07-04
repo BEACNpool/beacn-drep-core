@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,162,746",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience",
+      "Critical breakages and serious vulnerabilities",
+      "Protocol-era and hard-fork compatibility",
+      "Bug fixes, correctness improvements, and optimizations",
+      "Documentation, examples, technical blog posts, and developer-experience improvements"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor.",
+    "what": "Annual maintenance and enhancement funding for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types to protect the on-chain/off-chain boundary.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "MLabs states that a recent internal audit found at least 26 teams building with Plutarch and Ply, while the rationale separately states a conservative count of at least 15 teams.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "MLabs claims Plutarch scripts rank among the smallest in its public cross-language benchmark suite while requiring comparatively low on-chain compute and memory, and provides a benchmark URL.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposed work prioritizes critical breakages and serious vulnerabilities first, then protocol-era and hard-fork compatibility, then bug fixes and optimizations, then documentation and developer-experience improvements.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states the proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states the requested amount does not, at submission time alone or in aggregate, breach the 350M ada Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says independent oversight will be provided through Intersect and technically capable third parties, with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The document discloses prior MLabs funding for Plutarch/Ply through Project Catalyst Fund9 and Fund13, plus a prior 70,000 ada Intersect payment to update Plutarch for Conway-era features.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The anchor describes a 1,162,746 ada treasury withdrawal submitted by Intersect for MLabs to maintain and enhance Plutarch and Ply, with some governance, prior-funding, oversight, and external reference claims, but limited budget detail and no complete feasibility, risk, alternatives, or failure-mode analysis.",
+  "output_sha256": "ab495ca4e65c6e55f2222ba4800331f6a390b9f3f97de6121e028f48b27fb66b"
+}

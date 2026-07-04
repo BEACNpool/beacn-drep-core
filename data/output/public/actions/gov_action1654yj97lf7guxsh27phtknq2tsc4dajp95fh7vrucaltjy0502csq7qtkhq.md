@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "A Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering a 100000 ADA deposit." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "An Info governance action titled "Cardanoの生きがい - Ikigai -" was submitted in September 2024 shortly after the Chang hard fork." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposer says there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed; Provide independent evidence for: The proposal states there are no relevant costs or expenses associated with the treasury withdrawal. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.63; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The Ikigai Info governance action submitter was unable to recover a 100,000 ADA deposit because a Cardano node bug permitted an unregistered stake key to be used in the governance action." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 103,000 ADA from the treasury, consisting of a 100,000 ADA lost governance action deposit plus 3,000 ADA for staking rewards at 2% per annum." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: The proposal says there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed; Provide independent evidence for: The proposal states the recipient has not previously received funds from the treasury. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.48; confidence 64.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -21,20 +21,20 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 ## What influenced this vote
 - Pinned anchor document is available for this action.
 - Treasury withdrawal actions require elevated scrutiny.
+- Treasury profile: one-time reimbursement — milestone-gating expectations do not apply.
 - Flag score present (7), reducing confidence.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 103000
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "An Info governance action titled "Cardanoの生きがい - Ikigai -" was submitted in September 2024 shortly after the Chang hard fork." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 103,000 ADA from the treasury, consisting of a 100,000 ADA lost governance action deposit plus 3,000 ADA for staking rewards at 2% per annum." though 5 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- No milestone-gated disbursement documented.
-- Claims and evidence missing: Independent evidence for: A Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering a 100000 ADA deposit.
-- Claims and evidence missing: Independent evidence for: The proposer says there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed.
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Claims and evidence missing: Independent evidence for: The Ikigai Info governance action submitter was unable to recover a 100,000 ADA deposit because a Cardano node bug permitted an unregistered stake key to be used in the governance action.
+- Claims and evidence missing: Independent evidence for: The proposal says there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -45,16 +45,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposer says there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed.
-- Provide independent evidence for: The proposal states there are no relevant costs or expenses associated with the treasury withdrawal.
-- Provide independent evidence for: The proposal states the recipient has not previously received treasury funds.
+- Provide independent evidence for: The proposal says there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed.
+- Provide independent evidence for: The proposal states the recipient has not previously received funds from the treasury.
+- Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `9a67a70974eff3419635677c45f75845a3e4971b42a3e061193cce8447cb0920`
-- snapshot_bundle_hash: `9e7bf13fa6a510df394679d9f2456457e78429908c6148e322f9ca1dceaf04a7`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
-- score: `-0.6333`
-- confidence: `1.0`
+- input_hash: `7e84a0f1bcfd3c3f141df8f5b0fe838ca0506d4cba6560c6bcd3d510c8d235cf`
+- snapshot_bundle_hash: `a87916cbe2b98e61aa434a6818fdb7346f58e830fe423425e79082044ecf7f0e`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- score: `-0.4833`
+- confidence: `0.64`
 

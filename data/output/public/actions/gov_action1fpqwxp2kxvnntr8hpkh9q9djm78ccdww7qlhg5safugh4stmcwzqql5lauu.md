@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem." and clears the evidence gates. What would change this vote to YES: Use stable, reproducible anchor links (commit-pinned when possible); Clarify governance intent and expected measurable outcome. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.32; confidence 84.3%.
+Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem." and clears the evidence gates. What would change this vote to YES: Use stable, reproducible anchor links (commit-pinned when possible); Clarify governance intent and expected measurable outcome. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.32; confidence 60.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `755aa65e5953a64551af4125c253fc4c8b3b44612dff0ced4cd34f574365c0eb`
-- snapshot_bundle_hash: `0558064886b021c4af964139c135fffcd86b56317b3b770e45c0f17021bca949`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `dcdf2b4f827c08e51e93c02d5432684c6c978290004d4b70f5b0a59877caa7c3`
+- snapshot_bundle_hash: `f27bb06133cd5f5b0c840c090a008143fc77748be93f96a605cc92d8d3f53868`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.3233`
-- confidence: `0.8433`
+- confidence: `0.6008`
 

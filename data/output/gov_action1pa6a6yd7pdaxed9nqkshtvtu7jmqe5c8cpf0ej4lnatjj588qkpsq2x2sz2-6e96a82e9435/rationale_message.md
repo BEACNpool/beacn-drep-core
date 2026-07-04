@@ -1,0 +1,13 @@
+# Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large 10,000,000 ada treasury request and the review found too many unresolved evidence gaps, especially around budget analysis, feasibility, risk, alternatives, and failure modes.
+
+The proposal asked the Cardano Treasury to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms. It described two roughly USD 1 million pools using an approximate USD 0.20 per ada planning value: one for protocol infrastructure and staged launch liquidity, and one for delivery, audits, integrations, dashboards, governance reporting, legal and compliance work, documentation, education, partner activation, and launch coordination. The proposal also described FIRE and ICE assets, a shared BTC reserve architecture, reserve-ratio formulas, an initial 5.0x target reserve ratio, safety zones, public dashboards, monthly reports, and risk mitigations.
+
+Several parts were supported in the proposal itself, including the requested amount, the two-pool planning structure, the staged launch-liquidity schedule, the FIRE and ICE design, and the stated reserve and safety mechanisms. However, important treasury protections were only proposer assertions, not independently evidenced in the review. That included the claim that profits, yield, and returns from treasury-supported launch liquidity would be returned quarterly to the Cardano Treasury, and the claim that launch-liquidity principal may be returned after Alchemy reaches a 30-day time-weighted average TVL of at least USD 60 million, subject to a later governance proposal.
+
+The review gates did not clear the bar for a treasury withdrawal. The anchor document was available and replayable, and the strongest YES case was that the proposal substantiated the 10,000,000 ada request and its broad two-pool budget framing. But the treasury analysis was incomplete, the risk review was thin, synthesis was blocked, and seven decisive blockers remained open: missing complete proposal summary, budget analysis, feasibility assessment, risk analysis, alternatives analysis, failure-mode analysis, and community impact analysis. For a large treasury action, BEACN treated those gaps as decisive and voted NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

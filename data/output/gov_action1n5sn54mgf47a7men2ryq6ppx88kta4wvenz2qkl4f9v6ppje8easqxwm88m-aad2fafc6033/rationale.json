@@ -1,0 +1,225 @@
+{
+  "action_id": "gov_action1n5sn54mgf47a7men2ryq6ppx88kta4wvenz2qkl4f9v6ppje8easqxwm88m",
+  "action_type": "InfoAction",
+  "recommendation": "YES",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.16,
+  "raw_score": 0.11,
+  "llm_score_adjustment": 0.05,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "YES",
+    "score_adjustment": 0.05,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.050 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": true,
+  "llm_assisted_reason_code": "LLM_ASSISTED_DIRECTIONAL",
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
+  "directional_threshold": 0.12,
+  "confidence": 0.74,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: high",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i...\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.050 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.050 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent."
+  ],
+  "missing_evidence": [],
+  "input_hash": "aad2fafc60337b89522e8ff2d83fada0023040870cae7681717082fa57f688e2",
+  "snapshot_bundle_hash": "5adc881f15c56bb824304a03bf20792bc397b17e921d3a564cddbe90264c071f",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1226,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T04:08:10.415208Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.685,
+    "NO": 0.0875,
+    "ABSTAIN": 0.2275
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "ready",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1n5sn54mgf47a7men2ryq6ppx88kta4wvenz2qkl4f9v6ppje8easqxwm88m",
+    "action_type": "InfoAction",
+    "overall_status": "ready",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: expired",
+          "Proposed epoch: 567",
+          "Expires after epoch: 574",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Requested: Cardano GovTool Budget - 12 months full active maintenance and development",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..., As current funding concludes in June 2025, the new proposal outlines a leaner, more inclusive funding structure built to reflect community priorities., Over the past four weeks, substantial feedback was collected, through open forums, working groups, and direct contributions, by the community members participating in the Consortium., This feedback was carefully analyzed and embedded into a tiered proposal that balances operational stability, cost efficiency, and ecosystem-wide participation.",
+          "Deadline/expiry: not stated in document",
+          "Claim (adoption, independently_verifiable, medium materiality): Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i...",
+          "Claim (economic, independently_verifiable, high materiality): As current funding concludes in June 2025, the new proposal outlines a leaner, more inclusive funding structure built to reflect community priorities.",
+          "Claim (adoption, independently_verifiable, medium materiality): Over the past four weeks, substantial feedback was collected, through open forums, working groups, and direct contributions, by the community members participating in the Consortium.",
+          "Claim (economic, independently_verifiable, low materiality): This feedback was carefully analyzed and embedded into a tiered proposal that balances operational stability, cost efficiency, and ecosystem-wide participation.",
+          "Claim (governance, independently_verifiable, medium materiality): With CIP-1694 and the Voltaire era, Cardano governance is now in the hands of the community, but power without access is meaningless.",
+          "Claim (other, independently_verifiable, low materiality): Participation must be simple, inclusive, and equitable."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: high",
+          "Governance risk: high",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 0"
+        ],
+        "missing": [],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i...\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records YES on Cardano GovTool Budget - 12 months full active maintenance and development. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a InfoAction. The cached anchor describes the request as: Cardano GovTool Budget - 12 months full active maintenance and development. The strongest grounded claim is: Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "gov_action1n5sn54mgf47a7men2ryq6ppx88kta4wvenz2qkl4f9v6ppje8easqxwm88m",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmP9iDuML2VmoFigTJifBj87LxZ3DNnREyU27DE1MrpZDg",
+        "file_sha256": "76b67242f9cf20ddb42d49b53c0121df1cd9e44cd6d4442e575be02823adfb50",
+        "file_path": "data/input/governance/anchors/gov_action1n5sn54mgf47a7men2ryq6ppx88kta4wvenz2qkl4f9v6ppje8easqxwm88m-20260326T175235Z.bin",
+        "content_chars": 19872
+      },
+      "claim_count": 8,
+      "prompt_sha256": "f54f0635d3a8ccdd39a6f143d8ec6145e40047652dc61ab3a06b2d2408c967fb",
+      "output_sha256": "e43ef2a45db78009462b2a60e9df62961a29053fc19a07968d28f15291974eb1"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "YES",
+      "score_adjustment": 0.05,
+      "cap": 0.05,
+      "assisted_directional": true,
+      "prompt_sha256": "b210cd7e592d0ca95df9d6b74731eb338b849b00431355266e4908ae6da7d4e6",
+      "output_sha256": "5039bccf8c6e1da10a1ca9130071feea44845142fa4f3d069a12bb7a06e8c369"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "138f951e949653dbdb223cad8ef7c12638638ad91a700c4a92a172472786d245",
+      "output_sha256": "7741824e46ae65c9d467d95c0e770cef53a979bc71ac7ff93a74a23fc50a2b4b"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

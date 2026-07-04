@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with source code auditability under Apache License 2.0." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the true count is asserted to be meaningfully higher; Provide independent evidence for: The proposer says any unspent labor, hardware, or audit budget will be returned to the treasury. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 93.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Daedalus is described as Cardano's only full-node desktop wallet that runs an embedded Cardano node and derives wallet and governance data directly from the chain without third-party APIs or trusted backends." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal states Daedalus private keys are generated and stored on the user's device and never transmitted to an external service, with source code auditability under Apache License 2.0." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 52.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.79M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with source code auditability under Apache License 2.0." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal states Daedalus private keys are generated and stored on the user's device and never transmitted to an external service, with source code auditability under Apache License 2.0." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.
-- Claims and evidence missing: Independent evidence for: Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the true count is asserted to be meaningfully higher.
+- Claims and evidence missing: Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet that runs an embedded Cardano node and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.
+- Claims and evidence missing: Independent evidence for: The proposer states opt-in telemetry shows approximately 4,000 monthly active Daedalus users and that the true count is meaningfully higher because privacy-conscious full-node users are less likely to opt in.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the true count is asserted to be meaningfully higher.
-- Provide independent evidence for: The proposer says any unspent labor, hardware, or audit budget will be returned to the treasury.
-- Provide independent evidence for: The funded work will maintain all official Daedalus releases as cryptographically signed through an IOG binary signing arrangement.
+- Provide complete proposal summary.
+- Provide budget analysis.
+- Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `7fadae070e12b8f48b8583d12a80ae3cade12d054ab96910252b0f515c5efd65`
-- snapshot_bundle_hash: `ecd95d2d38aa70facfb87dbccb13d1b819e44f94bd02186dc789abbcb1c2c062`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `96f93a96d463aea371ecb884be1cd4be17b41176bd2c8c4696cbbca93dab1467`
+- snapshot_bundle_hash: `3ecc9b4e326b0d9f0c4d73bb74400434fe597ed0ea5e31fefb0c7267b569e43b`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.4133`
-- confidence: `0.9333`
+- confidence: `0.52`
 

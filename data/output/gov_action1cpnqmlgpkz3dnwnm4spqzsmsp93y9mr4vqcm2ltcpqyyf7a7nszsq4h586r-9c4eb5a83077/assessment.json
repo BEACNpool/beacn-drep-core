@@ -1,0 +1,136 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: 3.33M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: required",
+        "Requested: Dano Finance requests treasury funding to accelerate the DeFi Kernel as an open standard for shared liquidity, on-chain financial intents, and global order-book coordination on Cardano, alongside two DeFi primitives and an SDK.",
+        "Recipient: Dano Finance, with Minswap Labs serving as budget administrator",
+        "Stated amount: 3333000",
+        "Deliverables: DeFi Kernel registry website and submission process, Spot Leverage Order Book, American Options Market-Making protocol, Composable DeFi Transaction Builder SDK, Public documentation, registry metadata, reports, security review or audit before mainnet releases, and KPI reporting",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee.",
+        "Claim (economic, supported_in_proposal, high materiality): The delivery budget is allocated as 300,000 ADA for the DeFi Kernel registry and 1,000,000 ADA each for the Spot Leverage Order Book, American Options Protocol, and Composable DeFi Transaction Builder SDK.",
+        "Claim (governance, proposer_asserted, high materiality): Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.",
+        "Claim (adoption, proposer_asserted, medium materiality): Dano Finance says it currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+        "Claim (governance, supported_in_proposal, medium materiality): The DeFi Kernel registry is intended to be open, fee-free, royalty-free, and available without listing fees, certification fees, revenue share, or mandatory smart-contract open-sourcing.",
+        "Claim (technical, supported_in_proposal, high materiality): The Spot Leverage Order Book will support leveraged spot trading orders involving collateral, borrowing, debt accounting, position management, risk parameters, and settlement."
+      ],
+      "missing": [
+        "Independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.",
+        "Independent evidence for: Dano Finance says it currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+        "Independent evidence for: Dano Finance says it will return 5% of protocol fees from the treasury-funded Spot Leverage Order Book and American Options contracts for 12 months after mainnet launch, after specified direct costs, and report this publicly.",
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 3.33M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee.\" though 7 review blocker(s) remain open.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

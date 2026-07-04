@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 94.8%.
+Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,12 +26,12 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 7.80M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - Claims and evidence missing: Independent evidence for: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `d0988cb5384d5b083c3b1e76d7793f2e2092dd1972d520e94d52de40fc2748dd`
-- snapshot_bundle_hash: `19c2b1710a0bd1cc62bcdd5d8af892c8ae1934d12c4a3d0334859cd730b2e4bd`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `3d0c6f737fefd65c15d71d49f705b6420c5077dbf5817089ff4f583e0a01cf86`
+- snapshot_bundle_hash: `838e7d18a33fce636aea98e4b5e107b566f933744d66c3e1e3bc5918b066d374`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.4583`
-- confidence: `0.9483`
+- confidence: `0.49`
 

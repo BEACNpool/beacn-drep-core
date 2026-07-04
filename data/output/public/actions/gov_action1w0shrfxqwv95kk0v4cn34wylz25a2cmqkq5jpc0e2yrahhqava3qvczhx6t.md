@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 92.3%.
+Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,12 +26,12 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 11.88M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - Claims and evidence missing: Independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `bd7d9da5038cca544b6599a6ce633ddf2aacb36dfc3c9d88c39f15cfc1546409`
-- snapshot_bundle_hash: `39d276621d5b51d58151993334e8899b035ad92d30cbf8d03cb17bf279db6b87`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `8c268fc35da633298e52379e09b71daec56589d661c7778191fff1749a59f26e`
+- snapshot_bundle_hash: `f20cd3a2e10f4ae0b7c3fc92d0f52a38442a039a898c6ea2f734a47a6a02d79d`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.4333`
-- confidence: `0.9233`
+- confidence: `0.49`
 

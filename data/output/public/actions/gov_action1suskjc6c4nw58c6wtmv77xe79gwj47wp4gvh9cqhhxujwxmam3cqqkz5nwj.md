@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Strike claims more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, over 3,000 unique traders, over 1.16 million USD protocol revenue, and over 3.25 million USD liquidity provider profit." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Strike claims it represented over 50% of Cardano trading activity over the past six months; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer models a 10% USD-denominated annual return, equal to about 135,000 USD or 900,000 ADA-equivalent in annual yield, but states returns are not guaranteed." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: The proposer states Strike accounted for more than 50% of Cardano trading activity over the past six months; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.52; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 9.00M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Strike claims more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, over 3,000 unique traders, over 1.16 million USD protocol revenue, and over 3.25 million USD liquidity provider profit.
-- Claims and evidence missing: Independent evidence for: Strike claims it represented over 50% of Cardano trading activity over the past six months.
+- Claims and evidence missing: Independent evidence for: The proposer models a 10% USD-denominated annual return, equal to about 135,000 USD or 900,000 ADA-equivalent in annual yield, but states returns are not guaranteed.
+- Claims and evidence missing: Independent evidence for: Strike reports more than 1.13 billion USD in cumulative volume, roughly 968,000 to 1,001,000 trades, over 3,000 unique traders, more than 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Strike claims it represented over 50% of Cardano trading activity over the past six months.
+- Provide independent evidence for: The proposer states Strike accounted for more than 50% of Cardano trading activity over the past six months.
 - Provide complete proposal summary.
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `e65652bbdd84613acaa0286c33b4062f38a6535b18b3fb617b371e3475d0ea8f`
-- snapshot_bundle_hash: `b041eb4ab875b28b944b0b8f64327e32bf1fefcd612cd35272c19b21a3f52025`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
-- score: `-0.5133`
-- confidence: `1.0`
+- input_hash: `7e125de27e860c7bf378c8bb0e4af613e2f3902c0d5500c2151bbf70e21be5f0`
+- snapshot_bundle_hash: `61cda46b3a0de992abe10257d2b9fcee635f1bba82e93e61bc108972df5f5680`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- score: `-0.5233`
+- confidence: `0.49`
 

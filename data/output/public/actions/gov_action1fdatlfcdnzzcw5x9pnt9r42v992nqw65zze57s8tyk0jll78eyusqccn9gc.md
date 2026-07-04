@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The Cardano Builder DAO is intended to allocate capital to builders who can drive growth in monthly active users, monthly on-chain transactions, and TVL." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds; Provide independent evidence for: The DAO created Version 1 and Version 2 of a KPI dashboard, moving from self-reported tracking toward live on-chain Cardano data. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 100.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 through measurable KPIs." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds; Provide independent evidence for: Round 2 allegedly added 18 new members, funded 14 companies, and achieved an 88% participation rate among members. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.51; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 20.00M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano Builder DAO is intended to allocate capital to builders who can drive growth in monthly active users, monthly on-chain transactions, and TVL." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 through measurable KPIs." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.
-- Claims and evidence missing: Independent evidence for: Round 1 funded 20 companies, involved 38 voting members and 27 requesting members, distributed 5,541,335 ADA, and achieved 83% governance participation.
+- Claims and evidence missing: Independent evidence for: Round 1 allegedly included 38 voting members, 27 requesting members, 20 funded companies, an 83% governance participation rate, and 5,541,335 ADA distributed through a transparent smart contract-governed process.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -48,15 +48,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 
 ## Top 3 fixes to improve next submission
 - Provide independent evidence for: The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.
-- Provide independent evidence for: The DAO created Version 1 and Version 2 of a KPI dashboard, moving from self-reported tracking toward live on-chain Cardano data.
+- Provide independent evidence for: Round 2 allegedly added 18 new members, funded 14 companies, and achieved an 88% participation rate among members.
 - Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `69a9232e3b411e2c8b8432a463c5733ec39f027d92de859917e514da7270dbf1`
-- snapshot_bundle_hash: `33797102673b4ff7f59f45dafb5284b1ad3f51c6e54bab78fbfaa3ac199bf082`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `e130b8c951195d1771a00c33949ed8f314c6b47b826388dd13983fce14b9e196`
+- snapshot_bundle_hash: `7af8a8945df225808429a9be5c35316900d647c0efdc700ed95d7bfabca5c691`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.5133`
-- confidence: `1.0`
+- confidence: `0.49`
 

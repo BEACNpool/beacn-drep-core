@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-03T11:30:04.861084+00:00`
+- Published at: `2026-07-04T04:07:22.030574+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "WP3 will establish a pilot independent technical review programme launching in 2027 with conflict-of-interest provisions, published recusals, and open reviewer selection against documented criteria." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests 1,193,000 ADA, described as $298,250, to fund Technical Steering Committee support activities for 12 months." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 90.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Execution of the described work packages is contingent on approval of the IntersectMBO budget proposal." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests $298,250, equivalent to 1,193,000 ADA, for 12 months of Technical Steering Committee support activities." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Execution of the described work packages is contingent on approval of the IntersectMBO budget proposal; Provide independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.19M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests 1,193,000 ADA, described as $298,250, to fund Technical Steering Committee support activities for 12 months." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests $298,250, equivalent to 1,193,000 ADA, for 12 months of Technical Steering Committee support activities." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).
-- Claims and evidence missing: Independent evidence for: WP3 will establish a pilot independent technical review programme launching in 2027 with conflict-of-interest provisions, published recusals, and open reviewer selection against documented criteria.
-- Claims and evidence missing: Independent evidence for: The proposal states that all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Claims and evidence missing: Independent evidence for: Execution of the described work packages is contingent on approval of the IntersectMBO budget proposal.
+- Claims and evidence missing: Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal states that all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
+- Provide independent evidence for: Execution of the described work packages is contingent on approval of the IntersectMBO budget proposal.
+- Provide independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.
 - Provide complete proposal summary.
-- Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `79abe213f69f241692fc8cda7c782ccb62dadd5cce2581b735a4d94ff7c47994`
-- snapshot_bundle_hash: `91b052f31a828591dd28ce97bad096f3deeaa1418c6191a99a4ce964a4dc43c2`
-- soul_commit: `8e5afeb10af64d4e1c9708d4029f95043c3f5354`
-- resources_commit: `b97265e867768077aac16ceb31ccfe1be639d187`
-- core_commit: `399f54a173a12b278e21e821d6e85cba44144383`
+- input_hash: `4a211680b0414f81c21e2420015138d090355e02873b6f88f9d51814d1186cf0`
+- snapshot_bundle_hash: `4fc832c86729bd518f29128ffd3baaf301a92269f4279e0507ec116314f6b845`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
+- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
 - score: `-0.3833`
-- confidence: `0.9033`
+- confidence: `0.5158`
 

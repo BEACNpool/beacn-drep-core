@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "12332031",
+    "deadline": "9-month delivery period from July 2026 to March 2027",
+    "deliverables": [
+      "Audited bridge running on Cardano mainnet in both custody modes under controlled access",
+      "Hardening, security audits, and formal verification",
+      "Stewardship structure and hardened economic model",
+      "SPO/dApp partner pipeline required for public launch",
+      "Public rollout and 24 months of operations deferred to Phase 2 in Q1 2027"
+    ],
+    "recipient": "FluidTokens and Lantr Engineering",
+    "what": "Phase 1 of 2 funding to take Bifrost from working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations for launch."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b312,332,031, approximately $1,973,125 at 0.16 USD/ADA, including a 10% refundable contingency, for a 9-month Phase 1 delivery period.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Bifrost is already live on testnet under Catalyst Fund 14 with working peg-ins and peg-outs and participating SPOs.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states Catalyst Fund 14 funded Bifrost with \u20b3739,000 for architecture, testnet MVP, and documentation, with 585 votes and approved milestones for at least M1 and M2.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost custody is described as distributed across 400+ Cardano SPOs weighted by delegation, with fund movement requiring a cryptographic threshold representing the majority of delegated stake.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "If SPO coordination fails, Bifrost uses a federated mode as an operational fallback.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says Bifrost has no bridge token, no founder allocation, Apache 2 open-source components, public reporting, and an independent stewardship structure to be determined in Phase 1.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The document targets 1,200 BTC, about 600,000 annual transactions, 3,000 fBTC-holding wallets by Q2 2029, and fee surplus returning to the Cardano Treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Public launch and 24 months of operations are intentionally outside this request and planned for a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The anchor describes a large Phase 1 treasury request for Bifrost, a Bitcoin-Cardano bridge moving from testnet toward controlled mainnet launch readiness, but many core feasibility, budget, risk, and alternatives details are not present in the supplied text.",
+  "output_sha256": "bf602fb11bd6b3671e4bebe8ba8d55ebe72e375005536635821e6e85a4c39835"
+}

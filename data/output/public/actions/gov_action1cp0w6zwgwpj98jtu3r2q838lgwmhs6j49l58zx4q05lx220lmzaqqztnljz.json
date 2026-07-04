@@ -5,12 +5,12 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:ab88295c4c5ae06c69554f5690ca37948a12b4b5dedc661eeae33c5324b51db3",
+    "raw_input_hash": "sha256:b1d66ef0c612346c68e1cb2d02ee25615955c5e4f4796786014d7d4c626e7a1b",
     "detected_at": "2026-05-20T21:00:01.412104+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-07-03T11:30:04.861084+00:00",
+    "published_at": "2026-07-04T04:07:22.030574+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -19,25 +19,25 @@
   "proof_of_vote": {
     "vote": "NO",
     "score": -0.3633,
-    "confidence": 0.8833,
-    "input_hash": "ab88295c4c5ae06c69554f5690ca37948a12b4b5dedc661eeae33c5324b51db3",
-    "snapshot_bundle_hash": "db0edc274d828f77d4e5cacd51d5c5d7ac1a77321218288a4b9fb4493f513202",
-    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
-    "resources_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
-    "core_commit": "399f54a173a12b278e21e821d6e85cba44144383",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-ab88295c4c5a.md",
+    "confidence": 0.6608,
+    "input_hash": "b1d66ef0c612346c68e1cb2d02ee25615955c5e4f4796786014d7d4c626e7a1b",
+    "snapshot_bundle_hash": "38cb069c24dc3ca4119e72551321d1a4fabc8fa8926b1e736371d62095a9758e",
+    "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+    "resources_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
+    "core_commit": "d40b6b39bc43cc4be974bbb82020c41c23844c78",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-b1d66ef0c612.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational; Provide independent evidence for: Vendor-level costs are not publicly disclosed because of confidentiality obligations with several integration partners. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.36; confidence 88.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.\" though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational; Provide independent evidence for: Vendor-level costs are not publicly disclosed because of confidentiality obligations with several integration partners. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.36; confidence 66.1%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.",
       "Provide independent evidence for: Vendor-level costs are not publicly disclosed because of confidentiality obligations with several integration partners.",
       "Provide budget analysis."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-ab88295c4c5a.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-b1d66ef0c612.md",
     "missing_evidence": [],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
@@ -103,7 +103,7 @@
             "Clawback/refund path: not confirmed",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: confirmed",
-            "Six-month treasury flow regime: unsustainable",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: 0.40"
           ],
           "missing": [
@@ -139,7 +139,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.\" and clears the evidence gates.",
+            "Strongest YES: the proposal substantiates \"The proposal requests \u20b323,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.\" though 5 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -171,7 +171,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-ab88295c4c5a.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz-b1d66ef0c612.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -182,16 +182,16 @@
     "anchor_hash": "83eef9359829e69e233a165f98d263ee7bb0ce7b7ff3fb6132698d46da4c0bf0",
     "file_sha256": "1b5580be7421f22a9be60e3dbd8ad94445d0c0ada510a51407236e36c287c5c7",
     "content_bytes": "28398",
-    "fetched_at_utc": "2026-07-03T11:31:07Z",
+    "fetched_at_utc": "2026-07-04T04:08:10Z",
     "download_path": "/proposals/gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "8e5afeb10af64d4e1c9708d4029f95043c3f5354",
+    "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "b97265e867768077aac16ceb31ccfe1be639d187",
-    "core_commit": "399f54a173a12b278e21e821d6e85cba44144383",
+    "resources_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
+    "core_commit": "d40b6b39bc43cc4be974bbb82020c41c23844c78",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -267,13 +267,13 @@
     "budget_pressure": 0.3633,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.8833
+    "governance_alignment": 0.6608
   },
   "freshness": {
-    "snapshot_age_seconds": 801,
+    "snapshot_age_seconds": 1219,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-03T11:31:07.373917Z",
+    "snapshot_time": "2026-07-04T04:08:10.415208Z",
     "freshness_source": "manifest"
   }
 }

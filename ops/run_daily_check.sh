@@ -110,11 +110,18 @@ else
 fi
 
 # Deep-research dossiers for any NEW treasury action (missing-only, so this is a
-# no-op on quiet days). Drafts land pending review; only --approve lowers the bar.
+# no-op on quiet days), then the independent verification pass that can grant
+# agentic approval (doctrine v1.3.0). Verification failure keeps the strict
+# posture; kill switch BEACN_DOSSIER_AUTOAPPROVE_DISABLED=1.
 log "drafting deep-research dossiers for new treasury actions (missing-only)"
 PYTHONPATH=src python3 scripts/build_deep_research_dossiers.py \
     --backend "${BEACN_DREP_LLM_BACKEND:-codex}" --missing-only \
   || log "WARNING: dossier drafting failed; engine continues with existing rows"
+
+log "verifying pending dossiers (independent fact-check; agentic approval on pass)"
+PYTHONPATH=src python3 scripts/verify_dossiers.py \
+    --backend "${BEACN_DREP_LLM_BACKEND:-codex}" \
+  || log "WARNING: dossier verification errored; unverified dossiers stay pending (strict posture)"
 
 log "running rationales for all proposals (cache where present, offline fallback elsewhere)"
 PYTHONPATH=src python3 -m beacn_drep.cli run-all

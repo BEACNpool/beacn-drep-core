@@ -1,0 +1,109 @@
+# Rationale: gov_action10k0unljvaej0kd89w7pn0zkgdx59c7xkl0x5q78dzvdtd73u0kmqq5xl5y5
+Recommendation: **ABSTAIN**
+Score: `0.04` (raw `0.01` + doctrine-LLM nudge `+0.03`) | Confidence: `0.58` | Readiness: `0.0`
+> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+
+## Plain-language explanation (deterministic-heuristic)
+BEACN records ABSTAIN on 2025 Cardano NCL. This is a conservative abstention because the evidence does not justify stronger certainty.
+
+The action is a InfoAction. The cached anchor describes the request as: 2025 Cardano NCL. The strongest grounded claim is: The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).
+
+Reason code: RULE_THRESHOLD_UNMET.
+
+## Review Tree
+- overall_status: `incomplete`
+
+### Intake
+- status: `complete`
+- finding: Action type: InfoAction
+- finding: Status: expired
+- finding: Proposed epoch: 554
+- finding: Expires after epoch: 561
+- finding: Treasury request: not specified
+- finding: Anchor pinned locally: yes
+- conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+
+### Claims and evidence
+- status: `complete`
+- finding: Proposal anchor: pinned and replayable
+- finding: Proposal document read by reasoning layer: yes
+- finding: Snapshot freshness source: manifest
+- finding: Deep research dossier: not required
+- finding: Requested: 2025 Cardano NCL
+- finding: Recipient: 
+- finding: Stated amount: not stated in document
+- finding: Deliverables: The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL)., This means passing a NCL in a formal on-chain governance info action., The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period., It is a guardrail which, by definition in the Cardano Blockchain Ecosystem Constitution Definitions referenced below, protects the sustainability of the Cardano Treasury by preventing excessive withdrawals.
+- finding: Deadline/expiry: not stated in document
+- finding: Claim (economic, independently_verifiable, high materiality): The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).
+- finding: Claim (governance, independently_verifiable, medium materiality): This means passing a NCL in a formal on-chain governance info action.
+- finding: Claim (economic, independently_verifiable, high materiality): The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period.
+- finding: Claim (governance, independently_verifiable, high materiality): It is a guardrail which, by definition in the Cardano Blockchain Ecosystem Constitution Definitions referenced below, protects the sustainability of the Cardano Treasury by preventing excessive withdrawals.
+- finding: Claim (economic, independently_verifiable, high materiality): No funds may be withdrawn from the Cardano Treasury without establishing a NCL.
+- finding: Claim (adoption, independently_verifiable, high materiality): If the community wishes to use the Treasury to continue to maintain and grow the Cardano ecosystem it’s necessary to establish a NCL.
+- conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+
+### Risk review
+- status: `thin`
+- finding: Execution risk: unknown
+- finding: Governance risk: unknown
+- finding: Technical risk: unknown
+- finding: Treasury exposure risk: unknown
+- finding: Mitigation evidence: unknown
+- finding: Independent assurance: unknown
+- finding: Rollback/remedy path: unknown
+- finding: Flag count: 1
+- missing: mitigation evidence
+- missing: independent assurance
+- missing: rollback/remedy path
+- missing: dependency map
+- conclusion: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+
+### Counterargument pass
+- status: `complete`
+- finding: Strongest YES: the proposal substantiates "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL)." and clears the evidence gates.
+- finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.
+- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
+
+### Synthesis
+- status: `ready`
+- finding: Final vote must be derived from completed sections above, not from a prose summary.
+- finding: The public rationale should name the decisive section and the strongest counterargument.
+- conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Facts
+- Pinned anchor document is available for this action.
+- Flag score present (3), reducing confidence.
+- Intake: Action type: InfoAction
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL)." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
+
+## Inferences
+- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
+- Doctrine-aware reasoning layer nudged the score by +0.030 (clamped to ±0.05): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+- Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Uncertainty
+- Rule-based system; does not infer unstated intent.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Risk review status is thin.
+
+## Reproducibility
+- input_hash: `6bd8a28c6820e774a22b79324eceedb7ae10a9bb3500b185b6b134927096d3c4`
+- snapshot_bundle_hash: `7e1352468aafc6367c7377699d37caa56bf1cd3c3e5e83ea470eef35b0be787e`
+- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
+- soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
+- resource_registry_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- snapshot_age_seconds: `969`
+- uncertainty_band: `MEDIUM`
+- evidence_depth_score: `3`
+- decision_probs: `{"ABSTAIN": 0.465, "NO": 0.2275, "YES": 0.3075}`
+

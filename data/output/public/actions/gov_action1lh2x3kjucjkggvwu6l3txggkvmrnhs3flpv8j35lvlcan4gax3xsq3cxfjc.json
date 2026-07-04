@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:9a3351f7529a93ac8e68a4c4bed30ca7fc842d7b1c8a8e0104a4d52563ec09b5",
+    "raw_input_hash": "sha256:7aa52c6bc5a4833e83e82dc00eb584f3eefbcaec38224c03369c8219df228aa9",
     "detected_at": "2026-06-16T17:00:02.086757+00:00"
   },
   "decision": {
     "vote": "YES",
-    "published_at": "2026-07-04T04:07:22.030574+00:00",
+    "published_at": "2026-07-04T11:30:04.054598+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "YES",
     "score": -0.03,
     "confidence": 0.4575,
-    "input_hash": "9a3351f7529a93ac8e68a4c4bed30ca7fc842d7b1c8a8e0104a4d52563ec09b5",
-    "snapshot_bundle_hash": "470c752fe2bf6fe15d305f50afdecc111924d770e278d5c3bf5e4328f7944778",
+    "input_hash": "7aa52c6bc5a4833e83e82dc00eb584f3eefbcaec38224c03369c8219df228aa9",
+    "snapshot_bundle_hash": "5a26cc5542253da0e04828ad1b932934eb61a2504422c8224502c2a04023a080",
     "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
-    "resources_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
-    "core_commit": "d40b6b39bc43cc4be974bbb82020c41c23844c78",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-9a3351f7529a.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1e5cd26d68c706fc966749b3.md",
-    "rationale_anchor_hash": "1e5cd26d68c706fc966749b358a41056b55213cfd670009b4a8844d8133fb63f"
+    "resources_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+    "core_commit": "ee299e18baea1a5bd33d2c73de9f5418988dbe80",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-7aa52c6bc5a4.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6084c39a5cbbce0716b4b886.md",
+    "rationale_anchor_hash": "6084c39a5cbbce0716b4b886a97a9874da77a2531f672353bee8a543567f2ac7"
   },
   "rationale": {
-    "summary": "Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal upgrades Cardano Mainnet to protocol version 11.0 through an intra-era hard fork while keeping the ledger in the Conway era and preserving transaction shape.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The proposal states that UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.03; confidence 45.8%.",
+    "summary": "Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal upgrades Cardano mainnet to protocol version 11.0 through an intra-era hard fork that remains in the Conway era and does not change transaction shape.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The proposer claims the Plutus changes will improve script performance, reduce execution cost, address throughput bottlenecks, and extend what builders can accomplish in Plutus.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.03; confidence 45.8%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide independent evidence for: The proposal states that UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.",
-      "Provide independent evidence for: The proposal states that security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
-      "Provide mitigation evidence."
+      "Provide independent evidence for: The proposer states security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+      "Provide mitigation evidence.",
+      "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-9a3351f7529a.md",
+    "markdown_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-7aa52c6bc5a4.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -69,22 +69,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: manifest",
             "Deep research dossier: not required",
-            "Requested: Initiate an intra-era hard fork upgrading Cardano Mainnet to protocol version 11.0, called the van Rossem hard fork.",
+            "Requested: Initiate an intra-era Cardano mainnet hard fork to Protocol Version 11 minor version 0, called the van Rossem hard fork.",
             "Recipient: not stated in document",
-            "Stated amount: none",
-            "Deliverables: Upgrade Cardano mainnet protocol from version 10.0 to 11.0 while remaining in the Conway era., Enable new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138 and CIP-0153., Make all Plutus built-in functions available consistently across Plutus V1, V2 and V3., Add UPLC case expressions over Bool, Integer and Data., Promote or tighten several ledger and node validation, diagnostics, and security rules.",
+            "Stated amount: not stated in document",
+            "Deliverables: Upgrade Cardano mainnet protocol from version 10.0 to 11.0 while remaining in the Conway era., Make new Plutus primitives available as defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153., Make all Plutus built-in functions consistently available across Plutus V1, V2, and V3., Add UPLC case expressions for Bool, Integer, and Data., Promote or tighten ledger predicates including VRF key hash uniqueness, reference input rules, Constitutional Committee voting restriction, and non-matching withdrawals validation., Improve Cardano node PPView mismatch diagnostics.",
             "Deadline/expiry: not stated in document",
-            "Claim (technical, supported_in_proposal, high materiality): The proposal upgrades Cardano Mainnet to protocol version 11.0 through an intra-era hard fork while keeping the ledger in the Conway era and preserving transaction shape.",
-            "Claim (technical, independently_verifiable, high materiality): The upgrade introduces Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138 and CIP-0153, including modular exponentiation, dropList, BLS12-381 multi-scalar multiplication, Array operations and native Value operations.",
-            "Claim (technical, supported_in_proposal, high materiality): The proposal states that all Plutus built-in functions, including newly introduced ones, will become available across Plutus V1, V2 and V3.",
-            "Claim (technical, proposer_asserted, medium materiality): The proposal states that UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.",
-            "Claim (technical, proposer_asserted, high materiality): The proposal claims testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2 and V3.",
-            "Claim (technical, independently_verifiable, high materiality): The proposal links a Cardano Node 11.0.1 performance report and states it shows no regressions for standard value, Plutus and voting benchmarks plus acceptable baseline performance for new primitives and case expressions."
+            "Claim (technical, supported_in_proposal, high materiality): The proposal upgrades Cardano mainnet to protocol version 11.0 through an intra-era hard fork that remains in the Conway era and does not change transaction shape.",
+            "Claim (technical, independently_verifiable, high materiality): The hard fork introduces new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153, including modular exponentiation, dropList, BLS12-381 MSM, Array, and MaryEraValue support.",
+            "Claim (technical, proposer_asserted, high materiality): The proposer claims the Plutus changes will improve script performance, reduce execution cost, address throughput bottlenecks, and extend what builders can accomplish in Plutus.",
+            "Claim (technical, supported_in_proposal, high materiality): The upgrade unifies built-in function availability across Plutus V1, V2, and V3 so older Plutus language versions can access newer built-ins without recompiling to the latest Plutus version.",
+            "Claim (technical, proposer_asserted, high materiality): The proposal claims testing reports demonstrate no behavioral regressions, complete specification and implementation conformance for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+            "Claim (technical, independently_verifiable, high materiality): A linked Cardano Node 11.0.1 performance report is cited as showing no regressions on standard value, Plutus, and voting benchmarks, plus acceptable baseline performance for the new primitives and case expressions."
           ],
           "missing": [
-            "Independent evidence for: The proposal states that UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.",
-            "Independent evidence for: The proposal claims testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2 and V3.",
-            "Independent evidence for: The proposal states that security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives."
+            "Independent evidence for: The proposer claims the Plutus changes will improve script performance, reduce execution cost, address throughput bottlenecks, and extend what builders can accomplish in Plutus.",
+            "Independent evidence for: The proposal claims testing reports demonstrate no behavioral regressions, complete specification and implementation conformance for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+            "Independent evidence for: The proposer states security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+            "Independent evidence for: The proposer states the action is consistent with all eight listed hard fork guardrails, while noting none can be checked by the automated guardrails script and HARDFORK-04 requires attention."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -113,8 +114,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal upgrades Cardano Mainnet to protocol version 11.0 through an intra-era hard fork while keeping the ledger in the Conway era and preserving transaction shape.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that UPLC case expressions over Bool, Integer and Data will improve performance and produce cleaner script logic.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal upgrades Cardano mainnet to protocol version 11.0 through an intra-era hard fork that remains in the Conway era and does not change transaction shape.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer claims the Plutus changes will improve script performance, reduce execution cost, address throughput bottlenecks, and extend what builders can accomplish in Plutus.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -133,7 +134,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-9a3351f7529a.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-7aa52c6bc5a4.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -144,7 +145,7 @@
     "anchor_hash": "7f683eaf65629963cdc726e0cb7d3be295eb586fc5ba93985878f98e29cee897",
     "file_sha256": "3b1cb614fd19ac9e263879ef36cee3de92de263905cb2af5faf58798ec800af7",
     "content_bytes": "23788",
-    "fetched_at_utc": "2026-07-04T04:08:10Z",
+    "fetched_at_utc": "2026-07-04T11:31:09Z",
     "download_path": "/proposals/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -152,8 +153,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ab8e09e5364b5442ce388bbe8feecaf73d9bf04a",
-    "core_commit": "d40b6b39bc43cc4be974bbb82020c41c23844c78",
+    "resources_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+    "core_commit": "ee299e18baea1a5bd33d2c73de9f5418988dbe80",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -220,10 +221,10 @@
     "governance_alignment": 0.4575
   },
   "freshness": {
-    "snapshot_age_seconds": 1218,
+    "snapshot_age_seconds": 961,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-04T04:08:10.415208Z",
+    "snapshot_time": "2026-07-04T11:31:09.323994Z",
     "freshness_source": "manifest"
   }
 }

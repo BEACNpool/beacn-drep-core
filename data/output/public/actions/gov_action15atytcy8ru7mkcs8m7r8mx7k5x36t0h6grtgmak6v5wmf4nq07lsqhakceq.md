@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 43.8%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposed Net Change Limit supersedes any prior Net Change Limit for the same Epochs 613-713 period; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 43.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,29 +23,29 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Epochs 613-713." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposer says the existing 350,000,000 ada Net Change Limit has been a useful fiscal guardrail but that practical room under it is becoming constrained.
-- Claims and evidence missing: Independent evidence for: The proposer says increasing the limit to 500,000,000 ada preserves DReps' ability to consider credible Treasury Withdrawals on their merits while keeping a fixed guardrail and simple accounting.
+- Claims and evidence missing: Independent evidence for: The proposed Net Change Limit supersedes any prior Net Change Limit for the same Epochs 613-713 period.
+- Claims and evidence missing: Independent evidence for: The existing 350,000,000 ada Net Change Limit for Epochs 613-713 has served as a useful fiscal guardrail but practical room under it is becoming constrained.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: The proposed Net Change Limit supersedes any prior Net Change Limit for the same Epochs 613-713 period.
 - Provide mitigation evidence.
 - Provide independent assurance.
-- Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `aedc564753ef33d6f14425969532d5c1b3bc714efd8fb17d64c6e009b5c7bad4`
-- snapshot_bundle_hash: `0653cc0481f8fdbabe9c3fd753d0799c530bbe064b156727ba5460ececd6acc7`
+- input_hash: `c281086b6de1e098e567fd56e8e01d7d5e2af9e11f23a472e1f5fd6d2daacf19`
+- snapshot_bundle_hash: `cf8e16ef3fb3de86645049ae132861c8d6ebd1f5e4510062439923ca6f984fb6`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.07`
 - confidence: `0.4375`
 

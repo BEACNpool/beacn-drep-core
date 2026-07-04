@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The motivation text describes the core request as 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540.8k ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: The motivation text describes the core request as 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.
-- Claims and evidence missing: Independent evidence for: The proposal states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as an ecosystem standard.
+- Claims and evidence missing: Independent evidence for: The proposal states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.
+- Claims and evidence missing: Independent evidence for: TxPipe is reported to have received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect maintenance funding for Pallas, Dolos, and UTxO RPC being delivered on schedule.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `69f3a0e901db3ab4b391f3febcfea7f2a17a9cc2e4806f81c85899eefb755404`
-- snapshot_bundle_hash: `efe0f9a3f3a1d74840d74d8eb150d35f2ba72e7920ef2fefc1dc7bfcf4ae9d33`
+- input_hash: `fc810db8c87911dee8ce37aa2dd4d029269be0119df1d10a8de562338767def2`
+- snapshot_bundle_hash: `117fb7a9ed71ef9a7ac0da5a0e0bb9bc83c66e7a06609bd5a97e2e9e2f0fdeb6`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.3833`
 - confidence: `0.5158`
 

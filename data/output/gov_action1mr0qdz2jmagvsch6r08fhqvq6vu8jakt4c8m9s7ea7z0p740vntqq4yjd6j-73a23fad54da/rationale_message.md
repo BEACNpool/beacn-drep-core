@@ -1,0 +1,13 @@
+# Se7en Labs: Daedalus Wallet Maintenance and Improvements 2026-2027
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this is a large treasury withdrawal and the review dossier was incomplete on several core diligence questions. The proposal includes a meaningful public-good case for maintaining Daedalus, but BEACN’s process requires stronger evidence before supporting a 1.785 million ADA withdrawal from the shared treasury.
+
+The action requested 1,785,333 ADA for Se7en Labs, Inc., administered through Intersect with milestone-based controls, to maintain and improve Daedalus through 2026-2027. The proposed work includes protocol maintenance, hard fork readiness, backend and platform support, signed releases, hardware wallet support, CIP-30 and other user-facing CIP work, Japanese localisation, user support, and an architecture assessment by Q3 2027. The proposal stated that Intersect would verify milestones, hold funds in an auditable account, and disburse monthly against verified work.
+
+Some claims were supported inside the proposal, especially the commitment to ship a compatible Daedalus release at least two weeks before every mainnet hard fork, the stated budget breakdown, and the plan to return unspent labor, hardware, or audit funds. Some items were independently verifiable in principle, such as release timing and version currency through public GitHub repositories and the Cardano mainnet chain. But important claims remained unsupported by independent evidence in the review, including the claim that Daedalus is Cardano’s only full-node desktop wallet and the claim of approximately 4,000 monthly active users from opt-in telemetry.
+
+The decisive issue was not that the proposal lacked value; it was that too many review gates were still open for a treasury action. The review found missing or incomplete budget analysis, feasibility assessment, risk analysis, alternatives analysis, failure-mode analysis, community impact analysis, and a complete proposal summary. Treasury scrutiny was elevated because the action spends shared ADA, risk review was thin, execution risk was unknown, and the treasury flow signal was in an unsustainable regime. On the available evidence, BEACN took the conservative position and voted NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

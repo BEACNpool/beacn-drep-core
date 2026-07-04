@@ -1,0 +1,300 @@
+{
+  "action_id": "gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.4133,
+  "raw_score": -0.3833,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.66,
+    "rationale": "The claims include a detailed budget, milestones, repayment structure, and some independently checkable addresses and future metric commitments, but the highest-materiality benefits depend on proposer assertions about live deployment, user base, contracted anchor demand, projected transaction volume, and NCL compliance. Given the deterministic assessment is blocked for missing complete treasury, feasibility, risk, alternatives, and failure-mode analysis, the evidence quality does not justify a positive nudge for a large treasury withdrawal.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.52,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 4.97M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, over 8 months with milestone-gated disbursement.\" though 7 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The claims include a detailed budget, milestones, repayment structure, and some independently checkable addresses and future metric commitments, but the highest-materiality benefits depend on proposer assertions about live deployment, user base, contracted anchor demand, projected transaction volume, and NCL compliance. Given the deterministic assessment is blocked for missing complete treasury, feasibility, risk, alternatives, and failure-mode analysis, the evidence quality does not justify a positive nudge for a large treasury withdrawal.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: Phase 1 of the Sellout ticketing platform is already live on Cardano mainnet and was funded entirely by Sellout with over $130,000 invested.",
+    "Claims and evidence missing: Independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: missing complete proposal summary",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [],
+  "input_hash": "afcbe07cfa1a5c8ed29a47e5ab388b9baa9e8aa258b95d41efc0265a3a1c584e",
+  "snapshot_bundle_hash": "42ba43302bb34cca872b0dda33c103a72237377e8b3123bb8d33973dc96bb059",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 959,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T11:31:09.323994Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0421,
+    "NO": 0.7433,
+    "ABSTAIN": 0.2146
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 4.97M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, security audit, and launch campaign.",
+          "Recipient: not stated in document",
+          "Stated amount: 4,969,231",
+          "Deliverables: Secondary marketplace for listing, pricing, and reselling tickets with on-chain settlement, Smart-contract royalty enforcement for artists and venues, Configurable per-event anti-scalping controls, Custodial wallet onboarding inside Sellout's existing flow, Organizer dashboard and ticket lifecycle tools, Independent third-party smart-contract security audit with published report and remediation, Public launch campaign and three trade-show activations, Public metrics dashboard and governance reporting",
+          "Deadline/expiry: 8 months",
+          "Claim (adoption, proposer_asserted, high materiality): Phase 1 of the Sellout ticketing platform is already live on Cardano mainnet and was funded entirely by Sellout with over $130,000 invested.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, over 8 months with milestone-gated disbursement.",
+          "Claim (technical, supported_in_proposal, high materiality): Phase 2 will deliver a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent audit, and launch amplification.",
+          "Claim (adoption, proposer_asserted, high materiality): Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
+          "Claim (adoption, proposer_asserted, high materiality): The Yellowstone Club 2026 concert series is a contracted anchor deployment projected to move over $6 million through Cardano in year one.",
+          "Claim (economic, supported_in_proposal, high materiality): The team commits to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism using 25% of all fees until full reimbursement and 5% thereafter."
+        ],
+        "missing": [
+          "Independent evidence for: Phase 1 of the Sellout ticketing platform is already live on Cardano mainnet and was funded entirely by Sellout with over $130,000 invested.",
+          "Independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
+          "Independent evidence for: The Yellowstone Club 2026 concert series is a contracted anchor deployment projected to move over $6 million through Cardano in year one.",
+          "Independent evidence for: The requested amount does not breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713 at the moment of submission.",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 4.97M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, over 8 months with milestone-gated disbursement.\" though 7 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the Sellout ticketing platform is already live on Cardano mainnet and was funded entirely by Sellout with over $130,000 invested.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a large Treasury withdrawal request, and the review found too many material gaps for shared ADA to be released with confidence.\n\nThe proposal asked for 4,969,231 ada to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency. It said the work would include a secondary ticket marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent smart-contract audit, launch activity, public metrics, and governance reporting over 8 months. The proposal did substantiate the requested amount, the approximate dollar value, the 8-month schedule, and the stated repayment mechanism of 25% of fees until reimbursement and 5% afterward.\n\nHowever, several of the most important adoption claims were still only proposer assertions in the supplied review. That includes the claim that Phase 1 is already live on Cardano mainnet and self-funded with over $130,000, the claim that Sellout has 200,000+ registered users and has issued 250,000+ tickets, and the claim of a contracted Yellowstone Club deployment projected to move over $6 million through Cardano in year one. For a Treasury action, BEACN requires stronger replayable evidence for claims that carry the main public benefit case.\n\nThe review also found decisive blockers: missing complete proposal summary, budget analysis, feasibility assessment, risk analysis, alternatives analysis, failure-mode analysis, and community impact analysis. Treasury analysis was incomplete, risk review was thin, and the dossier lacked mitigation evidence and independent assurance. Even though the strongest YES case recognized a real funding request with milestones and a repayment structure, the open blockers outweighed that support, so BEACN voted NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmYVmiR5xqF5kTW55EazGVsC5rsBxPno94m1sDu4SFndMc",
+        "file_sha256": "43934d3d5d83db7e22ba1f5467213f7664b817607355a2ddd27246b1190b0fe5",
+        "file_path": "data/input/governance/anchors/gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d-20260625T113100Z.bin",
+        "content_chars": 27770
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "dcb93968ceb930a1020f4c78fc66ceab43386a096abcd3ad116c0e9abc3fe52c"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "cab9c96ab31c83325fc363fb04da03f33eca8eefee5b709fb707c0569a0f6585"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "d76fb81dcf5347dc717de071de7071436d9cc643ac8932bce177ddac468b7b51"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/76d72c458520d6e27eeec56c.md",
+  "rationale_anchor_hash": "76d72c458520d6e27eeec56c0c54232bb3a734ec6fb60482d405677d3f8d6f3f"
+}

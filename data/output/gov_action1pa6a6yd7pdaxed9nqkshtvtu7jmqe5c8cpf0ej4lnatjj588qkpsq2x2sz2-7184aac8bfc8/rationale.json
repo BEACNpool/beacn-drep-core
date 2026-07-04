@@ -1,0 +1,297 @@
+{
+  "action_id": "gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.5133,
+  "raw_score": -0.4833,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.75,
+    "rationale": "The proposal contains substantial internal detail, but the deterministic assessment remains blocked for missing complete proposal summary, budget analysis, feasibility assessment, risk analysis, alternatives analysis, and failure-mode analysis. Under BEACN doctrine, a large treasury withdrawal with incomplete diligence and thin risk review warrants a conservative negative nudge even where the proposal describes treasury protections and public-benefit intent.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.49,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (7), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 10.00M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools.\" though 7 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal contains substantial internal detail, but the deterministic assessment remains blocked for missing complete proposal summary, budget analysis, feasibility assessment, risk analysis, alternatives analysis, and failure-mode analysis. Under BEACN doctrine, a large treasury withdrawal with incomplete diligence and thin risk review warrants a conservative negative nudge even where the proposal describes treasury protections and public-benefit intent.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: The document claims Cardano lacks a serious production BTCfi infrastructure layer and that Alchemy would provide reusable Cardano BTCfi primitives, reporting, integrations, and liquidity to attract Bitcoin-aligned capital.",
+    "Claims and evidence missing: complete proposal summary",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: missing complete proposal summary",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [],
+  "input_hash": "7184aac8bfc8717e765154ca5a35084916d61cf2c8213884f8b20b988a0846a8",
+  "snapshot_bundle_hash": "89146dce221800bacd620ee3f6d5cf7cee91164f40ade99476f5d58645785aea",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 960,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T11:31:09.323994Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0409,
+    "NO": 0.7472,
+    "ABSTAIN": 0.2119
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 10.00M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Treasury withdrawal to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms.",
+          "Recipient: Sundial Protocol and Charms, with Intersect proposed as interim fund administrator subject to confirmation and final agreement.",
+          "Stated amount: 10000000",
+          "Deliverables: Shared BTC reserve architecture with transparent safety mechanisms and reserve-ratio rules, Composable Cardano-native FIRE and ICE assets, Open-source SDKs and adapters for wallets, DEXs, and DeFi protocols, Always-on public dashboards for reserve ratio, asset supply, liquidity health, fee flows, and deployment status, Monthly governance reports and reporting standards, Independent security review, audit, and economic modeling, Staged launch liquidity deployed over three months, Legal/compliance work, disclosures, DRep communications, partner activation, fund administration, and accounting",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools.",
+          "Claim (economic, supported_in_proposal, high materiality): Pool 1 is intended for protocol infrastructure and staged launch liquidity, kept separate from operating expenses, deployed in three tranches over three months, and structured so profits, yield, and returns from launch liquidity are returned to the Cardano Treasury quarterly.",
+          "Claim (economic, supported_in_proposal, high materiality): Pool 2 is intended for delivery, audit, integrations, dashboards, governance reporting, legal/compliance work, fund administration, and go-to-market execution with itemized planning allocations totaling approximately USD 1.0 million.",
+          "Claim (technical, supported_in_proposal, high materiality): Alchemy will create a shared BTC reserve architecture backing FIRE and ICE with a reserve-ratio formula, an initial 5.0x target reserve ratio, and safety zones that constrain minting and redemption as reserve conditions weaken.",
+          "Claim (technical, supported_in_proposal, high materiality): FIRE is described as a volatility-absorbing residual BTC-backed claim with upside and first-loss downside, while ICE is described as lower-volatility USD-denominated BTC-backed exposure with growth potential.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal states that launch liquidity will be treasury-supported and treasury-owned, with an initial target of approximately USD 800,000 FIRE-side liquidity and USD 200,000 ICE-side liquidity subject to optimization."
+        ],
+        "missing": [
+          "Independent evidence for: The document claims Cardano lacks a serious production BTCfi infrastructure layer and that Alchemy would provide reusable Cardano BTCfi primitives, reporting, integrations, and liquidity to attract Bitcoin-aligned capital.",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 10.00M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools.\" though 7 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The document claims Cardano lacks a serious production BTCfi infrastructure layer and that Alchemy would provide reusable Cardano BTCfi primitives, reporting, integrations, and liquidity to attract Bitcoin-aligned capital.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a large 10,000,000 ada treasury withdrawal, and the review record was incomplete on core diligence: budget analysis, feasibility, risk, alternatives, failure modes, and community impact.\n\nThe proposal asked the Cardano Treasury to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms. It described two roughly USD 1 million planning pools, with one for protocol infrastructure and staged launch liquidity, and one for delivery, audits, integrations, dashboards, reporting, legal/compliance, administration, and go-to-market work. The proposal also described FIRE and ICE assets backed by a shared BTC reserve, reserve-ratio rules, public dashboards, monthly governance reports, independent review, and treasury-owned launch liquidity.\n\nSeveral internal claims were well-supported in the proposal itself, including the requested amount, the two-pool budget structure, the planned reserve-ratio design, the FIRE and ICE asset descriptions, and the intended return of liquidity profits to the Treasury. But an important adoption claim was not independently supported: that Cardano lacks serious production BTCfi infrastructure and that Alchemy would provide the reusable primitives and liquidity needed to attract Bitcoin-aligned capital.\n\nThe treasury review gates did not clear. The anchor document was available, and the strongest YES case was acknowledged: the proposal did substantiate its 10,000,000 ada request and broad planning budget. But treasury withdrawals require elevated scrutiny because they spend shared ADA and create precedent. With thin claims-and-evidence status, incomplete treasury analysis, thin risk review, no stated deadline, and seven decisive blockers still open, BEACN\u2019s evidence-based conclusion was NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://raw.githubusercontent.com/sundial-protocol/alchemy-proposal/d5460de0ed4af81602c44b65567dd8a54cf1c61c/data.jsonld",
+        "file_sha256": "95b1c7b82fc16070198efa280db9312dc7aa0a42fc8eb5b91a64daedf8cbec57",
+        "file_path": "data/input/governance/anchors/gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2-20260624T113056Z.bin",
+        "content_chars": 23136
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "eacead5242980f8e0000fed00973fdbe12ca83a83825f84b307f8020be113d7e"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "f5fc1b35650859d4367d441c22c8e8bc87c06734474fe15ed20c61c42f75fbfd"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "71d8eccd4746f96019277624b9c009ac5a840b2ba6440b20aa1498293673ef78"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/420ce774bdcafb332000604e.md",
+  "rationale_anchor_hash": "420ce774bdcafb332000604ecb6137b52f1dd38e86b7af4372cf55b449f8756e"
+}

@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 62.7%.
@@ -37,11 +37,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `b52cf72bf680ea35a16996a1e46638a187bf4d1edff02d01e072e64bd9a7a0d8`
-- snapshot_bundle_hash: `1ccde48fb7016d3b33db27a4f09e43278e70861828e5b3fb8db23cb1ede9898e`
+- input_hash: `959e5b04d9c67122fbed18031d687a220860f98d1653a26ee3be7078d6dbd553`
+- snapshot_bundle_hash: `fa1c602dd510d4ad40c2bc5ed1637ffe6287679fe102212d101aca09e64aac4d`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `0.11`
 - confidence: `0.6275`
 

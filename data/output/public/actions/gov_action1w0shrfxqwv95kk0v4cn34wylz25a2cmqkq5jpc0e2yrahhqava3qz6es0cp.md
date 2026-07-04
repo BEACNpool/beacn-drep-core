@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Proposal as pdf:https://ipnso-com.ipns.dweb.link/?cid=QmXD6eoaFWrRoubFfvB2vSmLGbhVa66DbM9xw2dH1htRYK This proposal delivers three coordinated initiatives that together expand Cardano's economic models, strengthen long-term Treasury resilience, and remove on..." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 64.0%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `d95b375d92130a4bf695fa1df08fda3bff60b33444dfa80734629711448d8085`
-- snapshot_bundle_hash: `59fda1104c6c9f77cdccd0a47cf90b33c93241775be70b71dc94a8a293ebe661`
+- input_hash: `c942a80e29a39c2096f0fb95ca68ac0868f03fdb893407b28a9ca5dabd929093`
+- snapshot_bundle_hash: `bcd55b7f26049c197bb3cbd596a09bd5732ee7edf13a8a0082172c356a654bc6`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.4333`
 - confidence: `0.64`
 

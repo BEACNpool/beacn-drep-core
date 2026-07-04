@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This Cardano Critical Integrations Budget Governance Action requests ₳70,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital..." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `42a9ee56d8e41975e296cf200c5f5427c86229fbf247323b1606314dcccac970`
-- snapshot_bundle_hash: `f2a787a7e414fd20b207d89c66959d4c7a14ca8d315799916742ac63b7a50de2`
+- input_hash: `686ef353874af865820646c8c112c8bc67625ced4ef54ce516250e6f4892e2bc`
+- snapshot_bundle_hash: `7d4eb88f832526cf998f46974b5102f49aa3ea261fcbd53f61b26e152d060b1a`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `0.04`
 - confidence: `0.58`
 

@@ -1,0 +1,131 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 635",
+        "Expires after epoch: 642",
+        "Treasury request: 5.10M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: required",
+        "Requested: Fund Hydra v2 production hardening and performance improvements through four workstreams: performance optimization, operational excellence, ecosystem support, and developer experience/maintenance.",
+        "Recipient: not stated in document",
+        "Stated amount: 5100781",
+        "Deliverables: 2x to 10x improvements in snapshot signing and memory profile, reduced L1 fees through on-chain contract optimization, operator runbooks, simpler node configuration, observability and logging, and improved TUI, features requested by production users and pipeline integrators, Hydra Alliance facilitation, hackathons, and developer relations, CI, tooling, and technical debt reduction, feature-complete and hardened Hydra v2",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b35,100,781 for Hydra work that is described as milestone-gated with independent third-party assurance and Intersect administrative treasury governance.",
+        "Claim (technical, proposer_asserted, high materiality): Hydra is described as the only production-grade Layer 2 on Cardano and the only production-ready scaling solution that gives Cardano sub-second finality with L1-grade settlement guarantees.",
+        "Claim (adoption, proposer_asserted, high materiality): The document says Hydra is already used or has powered Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal claims Cardano L1 has over two hours of finality, approximately $0.17 per payment transaction, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1.",
+        "Claim (technical, proposer_asserted, high materiality): The document claims a single Hydra Head can process up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly across independent Heads.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal states that Hydra enables sub-second finality, near-zero or zero transaction costs inside a Head, high throughput, and settlement back to Cardano L1."
+      ],
+      "missing": [
+        "Independent evidence for: Hydra is described as the only production-grade Layer 2 on Cardano and the only production-ready scaling solution that gives Cardano sub-second finality with L1-grade settlement guarantees.",
+        "Independent evidence for: The document says Hydra is already used or has powered Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+        "Independent evidence for: The proposal claims Cardano L1 has over two hours of finality, approximately $0.17 per payment transaction, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1.",
+        "Independent evidence for: The document claims a single Hydra Head can process up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly across independent Heads.",
+        "budget analysis",
+        "feasibility assessment",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 5100781",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: not confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.40"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: low",
+        "Technical risk: high",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: unknown",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests \u20b35,100,781 for Hydra work that is described as milestone-gated with independent third-party assurance and Intersect administrative treasury governance.\" though 5 review blocker(s) remain open.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Hydra is described as the only production-grade Layer 2 on Cardano and the only production-ready scaling solution that gives Cardano sub-second finality with L1-grade settlement guarantees.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

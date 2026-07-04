@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Intersect’s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the “van Rossem Hard Fork” in memory of Cardano community contributor Max van Rossem." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.12; confidence 47.9%.
@@ -39,11 +39,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `214e5e50a2737a89bdf66e3efb300dab01afcd3477dbc50c0a45cd93c7d7d8d5`
-- snapshot_bundle_hash: `f63c83d57dbdc2ee04ffc9d4880b20a571d292e7f1b35b39ccb74c22ab12bfdc`
+- input_hash: `5eb0e126a97c39f97316704a25c3e6802ecb8a43db4254632318be1633114575`
+- snapshot_bundle_hash: `319996bc820009c687015f39f2ada76eaae33efafb94a4ef58afde06aa770a50`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `0.115`
 - confidence: `0.4787`
 

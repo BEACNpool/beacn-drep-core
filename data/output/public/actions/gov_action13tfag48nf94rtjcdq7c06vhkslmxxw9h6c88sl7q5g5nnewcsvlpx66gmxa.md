@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds A free Native Asset CDN for Cardano Developers which will provide the following services: Building reliable infrastructure to display Cardano native assets (NFTs &FTs) efficiently, at scale, can cost upwards of $100,000 and ta..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `2a27d92f7cf9cf4ce679c666b0920185d9985fe5732b37801fc7833899e41682`
-- snapshot_bundle_hash: `345b50d5bc56720846ff3b87060c532d5c6566c918ef61f2e6bac1066ed70400`
+- input_hash: `aadb4e86570c7487cf9237604c282b8db26c7c1613a0ecf03064f347e699fe5c`
+- snapshot_bundle_hash: `f53279b7960aa6e0a8d2b543de43449a6bb32ada4f2dc9379689db5586c6d1d2`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.2033`
 - confidence: `0.7708`
 

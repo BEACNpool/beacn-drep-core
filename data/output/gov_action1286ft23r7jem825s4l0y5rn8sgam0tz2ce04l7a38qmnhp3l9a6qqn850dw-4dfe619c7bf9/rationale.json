@@ -1,0 +1,218 @@
+{
+  "action_id": "gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw",
+  "action_type": "ParameterChange",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.4033,
+  "raw_score": -0.3833,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "NO",
+    "score_adjustment": -0.02,
+    "confidence": 0.5,
+    "rationale": "Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "parameter_change_doctrine.md"
+  ],
+  "doctrine_hash": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a",
+  "directional_threshold": 0.12,
+  "confidence": 0.57,
+  "readiness_score": 1.0,
+  "facts": [
+    "Protocol parameter changes carry system-wide risk.",
+    "Flag score present (10), reducing confidence.",
+    "Intake: Action type: ParameterChange",
+    "Claims and evidence: Proposal anchor: not pinned",
+    "Risk review: Execution risk: high",
+    "Counterargument pass: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Anchor document is not yet pinned locally for this action.",
+    "No DRep distribution available.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
+    "Claims and evidence status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "4dfe619c7bf96ad50ccd02116c0df44f1aacf6ce832069a76e314bbbc7c3b831",
+  "snapshot_bundle_hash": "1be92d2e444213b9b50b0c3f93dbbd6e32177c0b8d1ec4762ad60215a2163c92",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 969,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T11:31:09.323994Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0422,
+    "NO": 0.7478,
+    "ABSTAIN": 0.21
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw",
+    "action_type": "ParameterChange",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: ParameterChange",
+          "Status: expired",
+          "Proposed epoch: 518",
+          "Expires after epoch: 525",
+          "Treasury request: not specified",
+          "Anchor pinned locally: no"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: not pinned",
+          "Proposal document read by reasoning layer: no",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: not required",
+          "Proposal claims not extracted (no cached anchor document text to read)."
+        ],
+        "missing": [
+          "No structured claim/evidence extraction from the proposal document."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: high",
+          "Governance risk: high",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 1"
+        ],
+        "missing": [],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.\n\nThe action is a ParameterChange. The cached anchor describes the request as: not stated.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": false,
+      "source": "deterministic-heuristic",
+      "reason": "no cached anchor document text to read",
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw",
+        "anchor_read": false,
+        "reason": "anchor fetch_status is 'http_error'",
+        "fetch_status": "http_error",
+        "anchor_url": "https://raw.githubusercontent.com/IntersectMBO/governance-actions/refs/heads/main/mainnet/2024-10-21-ppu/metadata.jsonld",
+        "file_sha256": ""
+      },
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
+    },
+    "doctrine": {
+      "family": "parameter",
+      "files": [
+        "values_hierarchy.md",
+        "parameter_change_doctrine.md"
+      ],
+      "sha256": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "887bdca00f7b2399c2c23b04804cff6571db9d2e910036a9050fe4c9455b63b6",
+      "output_sha256": "bcd09adbbbfbe26fb70ae5ab48379ba3ea4a74f26090aa68f98c08e38c03b3e5"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "d97e3db51123552e3d36252e6093376cf2de7c671f1f87daff9a02b1e51945fa",
+      "output_sha256": "ad9194565dc7762c22eb72b797780c827f05a9679fbe069b6cd27a1a17cce730"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

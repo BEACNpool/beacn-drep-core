@@ -1,0 +1,300 @@
+{
+  "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.4133,
+  "raw_score": -0.3833,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.74,
+    "rationale": "The extracted claims show a public-good maintenance case with some concrete milestones and oversight mechanics, but the deterministic assessment is blocked for missing budget, feasibility, risk, alternatives, failure-mode, and complete summary analysis. Under BEACN's hierarchy, a large treasury withdrawal with incomplete diligence should receive a cautious negative nudge rather than a spending-positive lean.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.52,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 1.79M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal commits to a compatible Daedalus release at least two weeks before every mainnet hard fork during the contract period.\" though 7 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The extracted claims show a public-good maintenance case with some concrete milestones and oversight mechanics, but the deterministic assessment is blocked for missing budget, feasibility, risk, alternatives, failure-mode, and complete summary analysis. Under BEACN's hierarchy, a large treasury withdrawal with incomplete diligence should receive a cautious negative nudge rather than a spending-positive lean.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.",
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+    "Claims and evidence missing: Independent evidence for: The proposal states Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, with the true count claimed to be meaningfully higher.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: missing complete proposal summary",
+    "Synthesis missing: missing budget analysis",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [],
+  "input_hash": "73a23fad54da758bc2aaefab4372cfd012bb9594c11646fd31958fc7054df951",
+  "snapshot_bundle_hash": "4c13f55706fd3c27a1602cbeee9b0d58e0aafcf353e9e4be4ed3e3f5eb2c028c",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 960,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T11:31:09.323994Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0421,
+    "NO": 0.7433,
+    "ABSTAIN": 0.2146
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 1.79M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: required",
+          "Requested: Daedalus Wallet Maintenance and Improvements 2026-2027 delivered by Se7en Labs, Inc.",
+          "Recipient: Se7en Labs, Inc. via Intersect administration and milestone-based disbursement controls",
+          "Stated amount: 1,785,333",
+          "Deliverables: Protocol maintenance including node upgrades, wallet backend updates, hard fork readiness, platform support, release engineering, security and dependency maintenance, and signed releases, Ecosystem expansion including Keystone and Flex hardware wallet support, CIP-30 dApp connector, user-facing CIP implementations, and Japanese localisation, User support across GitHub, community forums, direct channels, and Japanese-language support, Architecture assessment covering current state, options, resource estimates, and recommendation",
+          "Deadline/expiry: contract year through 2026-2027; architecture assessment by Q3 2027",
+          "Claim (technical, proposer_asserted, high materiality): Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+          "Claim (adoption, proposer_asserted, medium materiality): The proposal states Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, with the true count claimed to be meaningfully higher.",
+          "Claim (technical, proposer_asserted, high materiality): Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend work, Apple Silicon builds, a release CLI, and Nix build modernization.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal commits to a compatible Daedalus release at least two weeks before every mainnet hard fork during the contract period.",
+          "Claim (economic, supported_in_proposal, high materiality): The requested budget totals 1,785,333 ADA, including 1,666,667 ADA for labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
+          "Claim (economic, supported_in_proposal, medium materiality): The proposal states any unspent labor, hardware, or audit budget will be returned to the treasury."
+        ],
+        "missing": [
+          "Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+          "Independent evidence for: The proposal states Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, with the true count claimed to be meaningfully higher.",
+          "Independent evidence for: Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend work, Apple Silicon builds, a release CLI, and Nix build modernization.",
+          "Independent evidence for: The proposal states Se7en Labs has not received ada from the Cardano Treasury within the last 24 months.",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 1.79M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal commits to a compatible Daedalus release at least two weeks before every mainnet hard fork during the contract period.\" though 7 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this is a large treasury withdrawal and the review dossier was incomplete on several core diligence questions. The proposal includes a meaningful public-good case for maintaining Daedalus, but BEACN\u2019s process requires stronger evidence before supporting a 1.785 million ADA withdrawal from the shared treasury.\n\nThe action requested 1,785,333 ADA for Se7en Labs, Inc., administered through Intersect with milestone-based controls, to maintain and improve Daedalus through 2026-2027. The proposed work includes protocol maintenance, hard fork readiness, backend and platform support, signed releases, hardware wallet support, CIP-30 and other user-facing CIP work, Japanese localisation, user support, and an architecture assessment by Q3 2027. The proposal stated that Intersect would verify milestones, hold funds in an auditable account, and disburse monthly against verified work.\n\nSome claims were supported inside the proposal, especially the commitment to ship a compatible Daedalus release at least two weeks before every mainnet hard fork, the stated budget breakdown, and the plan to return unspent labor, hardware, or audit funds. Some items were independently verifiable in principle, such as release timing and version currency through public GitHub repositories and the Cardano mainnet chain. But important claims remained unsupported by independent evidence in the review, including the claim that Daedalus is Cardano\u2019s only full-node desktop wallet and the claim of approximately 4,000 monthly active users from opt-in telemetry.\n\nThe decisive issue was not that the proposal lacked value; it was that too many review gates were still open for a treasury action. The review found missing or incomplete budget analysis, feasibility assessment, risk analysis, alternatives analysis, failure-mode analysis, community impact analysis, and a complete proposal summary. Treasury scrutiny was elevated because the action spends shared ADA, risk review was thin, execution risk was unknown, and the treasury flow signal was in an unsustainable regime. On the available evidence, BEACN took the conservative position and voted NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmdWtCCvK6CJUzP4SFiuL5W8hg3eNr5LyngJHnwjoNxJey",
+        "file_sha256": "5638dce7b2360cdea8ba04ae975fecebfdff0051b809581fbd27037b92dee950",
+        "file_path": "data/input/governance/anchors/gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j-20260625T113100Z.bin",
+        "content_chars": 32544
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "1553a088409c0ff8e7ce03a67560207d9d427cce3a326e12b45aca5cd8bba8f2"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "3dc8705c3b7d80f02757d14754a3063031750ff6edac793803e93c65423904ca"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "63d585126be3c087b8a8b130eebdc5c25710717ff97b5ab2e0ad0decdd7e1c93"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/bb3c0c4b8c2da0d26217ecec.md",
+  "rationale_anchor_hash": "bb3c0c4b8c2da0d26217ecec912d4a8d922652787b071840b3f8a358a2583d94"
+}

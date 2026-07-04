@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpqx4t762",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: 583.0k ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: complete",
+        "Requested: Withdraw \u20b3583,000 for Eternl Maintenance administered by Intersect",
+        "Recipient: ",
+        "Stated amount: 583.0k ADA",
+        "Deliverables: This treasury withdrawal funds Eternl Maintenance which will provide the following services: Eternl has been a reliable and community-driven Cardano wallet since its launch in 2021., It offers a secure, feature-rich experience across web, browser extension, iOS, and Android platforms, serving both everyday users and developers., Maintaining Eternl requires \u20ac30,000 per month., We seek funding from the Cardano budget to sustain these operational costs, ensuring Eternl continues to provide reliable access to the Cardano blockchain for the community.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Eternl Maintenance which will provide the following services: Eternl has been a reliable and community-driven Cardano wallet since its launch in 2021.",
+        "Claim (economic, independently_verifiable, low materiality): It offers a secure, feature-rich experience across web, browser extension, iOS, and Android platforms, serving both everyday users and developers.",
+        "Claim (economic, independently_verifiable, low materiality): Maintaining Eternl requires \u20ac30,000 per month.",
+        "Claim (economic, independently_verifiable, high materiality): We seek funding from the Cardano budget to sustain these operational costs, ensuring Eternl continues to provide reliable access to the Cardano blockchain for the community.",
+        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Reliable access to the Cardano blockchain requires trustworthy wallet solutions.",
+        "Claim (economic, independently_verifiable, low materiality): Project Solution Eternl addresses this need with a secure, feature-rich wallet available across multiple platforms."
+      ],
+      "missing": [],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 583.0k ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Eternl Maintenance which will provide the following services: Eternl has been a reliable and community-driven Cardano wallet since its launch in 2021.\" and clears the evidence gates.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

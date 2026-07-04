@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests ₳18,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.60; confidence 64.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `0746be51a20f027e43b5aa859b0db8de9b6590e0dfd4d541a408c402015b3fff`
-- snapshot_bundle_hash: `8bf822e10f614319e66678370ce6066dbfc47616180ea04154eb54944c645335`
+- input_hash: `833f5781c3b4b8a80059d5b2acfb4d66a88d1858487ce0b7baa5096cbe687194`
+- snapshot_bundle_hash: `06fda21a90196f7bd39d2b5594eb5d6f47868b5f57edd712ec4eebc9eb484df1`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.6033`
 - confidence: `0.64`
 

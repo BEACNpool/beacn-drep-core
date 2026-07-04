@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Mithril is described as using stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for an Intersect Budget Administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Audit and oversight costs are included within the overhead applied to this proposal, and Intersect's administration fee covers administrative oversight." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Teragone has not previously received direct funding from Cardano treasury or community governance programs; Provide independent evidence for: Teragone has worked on Mithril for several years through collaboration with IOG, which has funded the project to date. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.39; confidence 51.8%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3.81M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for an Intersect Budget Administration fee." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Mithril is described as using stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.
-- Claims and evidence missing: Independent evidence for: The proposal states that full node synchronization is slow and light clients rely on centralized trust, making secure access to blockchain state a pressing infrastructure challenge for Cardano.
+- Claims and evidence missing: Independent evidence for: Audit and oversight costs are included within the overhead applied to this proposal, and Intersect's administration fee covers administrative oversight.
+- Claims and evidence missing: Independent evidence for: Teragone has not previously received direct funding from Cardano treasury or community governance programs.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: Teragone has not previously received direct funding from Cardano treasury or community governance programs.
+- Provide independent evidence for: Teragone has worked on Mithril for several years through collaboration with IOG, which has funded the project to date.
 - Provide complete proposal summary.
-- Provide budget analysis.
-- Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `c024ee05154028885784c6792bcbfb4f789a2df51951b7ff88ff3f63233e97b5`
-- snapshot_bundle_hash: `43632f26aff520efa505cf36b5bf33cf495a8f317ac27d8a3935f17245205bb5`
+- input_hash: `7b4aeb4507545b9975d266f0422305cc03c57b3bd287abb2987912c97e728dc7`
+- snapshot_bundle_hash: `06616c82bf18047b6df04bdd85f95e9c47b40d12384cacba5b1ba82af4a4e12e`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
-- score: `-0.3833`
-- confidence: `0.5158`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- score: `-0.3933`
+- confidence: `0.5183`
 

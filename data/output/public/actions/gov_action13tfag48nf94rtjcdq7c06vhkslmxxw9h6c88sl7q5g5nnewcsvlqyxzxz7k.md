@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Blockfrost Platform community budget proposal which will provide the following services Blockfrost is a powerful API platform that gives anyone access to the Cardano Blockchain and functionality without the need to run your ow..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `fbbe941c519b4cff0bfc9a226b23cf1347b3be35d3bac5c9cefebcedf63b681f`
-- snapshot_bundle_hash: `a769471e29cc06f23dd76b3a5ce51f1033ff2bf73b7cbaaed4dc2b82634657ba`
+- input_hash: `5fb1355d8d0640950d4bff5d5485e8b272ab6992c2293d3538db95d6bdc2074d`
+- snapshot_bundle_hash: `7b14c39d46a2157441beab10ca7d80e6f0938897acb82fe2d65fb6e63ba581a0`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.2033`
 - confidence: `0.7708`
 

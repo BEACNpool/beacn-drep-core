@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.49; confidence 64.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `3b95698d258e8574f1e4ec161bc3a61963bb7e0d7ae24ffa0b899296c07a4c84`
-- snapshot_bundle_hash: `e6489de051d4ecc32dbbda02e3bca2795d1dea4dd0e0df9a75aa7a615d198e05`
+- input_hash: `ab96840ba869ed36872020c4c505cb1d0630ff8786720d6769dfc3163ecd3bd8`
+- snapshot_bundle_hash: `ba265ee88c413ada4c28bbbc129eac70f5f4bafa7dd34ebb891e35ddd75ee32c`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.4933`
 - confidence: `0.64`
 

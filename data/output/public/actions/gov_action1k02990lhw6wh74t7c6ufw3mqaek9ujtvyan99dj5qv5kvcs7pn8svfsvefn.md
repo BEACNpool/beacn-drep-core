@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect Budget Administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "MLabs says Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.16M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect Budget Administration fee." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.
-- Claims and evidence missing: Independent evidence for: Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types to protect the on-chain/off-chain boundary.
+- Claims and evidence missing: Independent evidence for: MLabs says Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section.
+- Claims and evidence missing: Independent evidence for: The proposer claims the work aligns with Cardano 2030 and Pillar 2 Adoption & Utility by supporting developer experience, open-source tooling, and application-layer utility.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC.
 - Provide complete proposal summary.
 - Provide budget analysis.
+- Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `6d46653344152cd0af013b5bba21b897e64c1ea4da36315bcb862c65f5b5a094`
-- snapshot_bundle_hash: `824e52d62390bccc9bf5d72710c8c34f517a23642e3fdca1fbd85e60a31e65a3`
+- input_hash: `f563d33f6fa5f49fab026e76961c94f01ffd42d585349826a37fb4efa65639f6`
+- snapshot_bundle_hash: `4cc83eab6e0a40b1667bb265bbf41aabd59ed8b5e8faacb47844c3499d885fe0`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.3833`
 - confidence: `0.5158`
 

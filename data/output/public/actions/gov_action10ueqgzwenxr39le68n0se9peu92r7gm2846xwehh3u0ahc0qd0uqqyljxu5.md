@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "As part of the budget approval process, it is necessary to establish a Net Change Limit." and clears the evidence gates. What would change this vote to YES: Use stable, reproducible anchor links (commit-pinned when possible); Clarify governance intent and expected measurable outcome. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.22; confidence 62.5%.
@@ -37,11 +37,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `1085687c888b0aaaef49979c111cdf26581e1f8555c0f870ea0edb33b8a645e6`
-- snapshot_bundle_hash: `92f2b2c2ecce7fbbd3b11e1a6837f36d269989aeca593e9b9c5d13157ce3a78d`
+- input_hash: `b4ee02c388a845b798704fc855c14c87cc5a29309e40b4d3a800b76b9e75a56d`
+- snapshot_bundle_hash: `28f66596d398cfdcdd7fe459056582fe948c2def6d3adef07e665da6fde8a391`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.2183`
 - confidence: `0.6246`
 

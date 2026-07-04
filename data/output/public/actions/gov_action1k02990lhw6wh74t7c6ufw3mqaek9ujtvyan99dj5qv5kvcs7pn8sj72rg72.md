@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Tx3 is intended to provide an open, standardized interface so developers and AI agents can discover, integrate, and compose Cardano protocols through a single consistent surface." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal says there is currently no common interface mechanism across the Cardano ecosystem, causing each integrator to relearn each protocol and making cross-protocol composability impractical." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 51.6%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -32,8 +32,8 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Tx3 is intended to provide an open, standardized interface so developers and AI agents can discover, integrate, and compose Cardano protocols through a single consistent surface.
-- Claims and evidence missing: Independent evidence for: The document claims Cardano currently lacks a common interface mechanism across the ecosystem, forcing integrators to relearn each protocol and increasing integration cost.
+- Claims and evidence missing: Independent evidence for: The proposal says there is currently no common interface mechanism across the Cardano ecosystem, causing each integrator to relearn each protocol and making cross-protocol composability impractical.
+- Claims and evidence missing: Independent evidence for: The proposal claims it aligns with Intersect strategic Pillar 2 by improving developer experience and with Pillar 4 by supporting ecosystem growth and market adoption.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `567bfebbfe1096a2d912b7181a6059dbf29eda0ed8915767450398bc19e1047d`
-- snapshot_bundle_hash: `23751e380f1364475af96433501c66ffa6f6f7a4e3485932d4d501d55cdcebf6`
+- input_hash: `744f01b9394f6a6044230e795e44d048d141647b61111afe05120e7c783b3673`
+- snapshot_bundle_hash: `dbf89476d00250195934db88d0d693e0a6fc24790dc834d0d7086676b8db01a7`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.3833`
 - confidence: `0.5158`
 

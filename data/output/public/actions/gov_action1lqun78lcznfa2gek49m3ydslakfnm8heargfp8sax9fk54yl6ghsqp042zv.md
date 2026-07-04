@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal is submitted pursuant to the Budget Info Action “Cardano Critical Integrations Budget” (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `887b486969499a7ed3d6b2a077f291bdb582136d64f56bd2a99c4c7cc1e039ee`
-- snapshot_bundle_hash: `97a2b54c1eee85eca9aac66444a91eb1d27e70e53b6f7542bb8fe012ad6fd7ea`
+- input_hash: `9828f07961f6a52178e1e05d7ee5faa20f48d46b1ba90ab566215b68ed908f21`
+- snapshot_bundle_hash: `c826d2f1c3d03b035940ac7f1d9c6491669b05c77cecada0e89e8c4b089c11e1`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.2033`
 - confidence: `0.7708`
 

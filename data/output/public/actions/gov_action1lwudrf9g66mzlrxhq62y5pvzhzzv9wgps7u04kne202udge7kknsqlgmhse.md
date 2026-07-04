@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month period costing around $420,000 per year." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE; Provide independent evidence for: Eternl states it has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.48; confidence 49.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Eternl plans to introduce Pro plans priced at $96 per year for personal users and $360 per year for companies, and says roughly 5,500 users would fully cover the annual $420,000 cost." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 of annual costs for a 12-month period." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Eternl states it has about 100,000 browser extension installs and about 30,000 Android and iOS installs combined; Provide independent evidence for: Eternl claims that 10-18% of Cardano mainnet transactions are conducted via Eternl. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.48; confidence 49.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2.35M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month period costing around $420,000 per year." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 of annual costs for a 12-month period." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.
-- Claims and evidence missing: Independent evidence for: Eternl states it has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.
+- Claims and evidence missing: Independent evidence for: Eternl plans to introduce Pro plans priced at $96 per year for personal users and $360 per year for companies, and says roughly 5,500 users would fully cover the annual $420,000 cost.
+- Claims and evidence missing: Independent evidence for: Eternl states it has about 100,000 browser extension installs and about 30,000 Android and iOS installs combined.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -46,16 +46,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.
-- Provide independent evidence for: Eternl states it has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.
-- Provide independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- Provide independent evidence for: Eternl states it has about 100,000 browser extension installs and about 30,000 Android and iOS installs combined.
+- Provide independent evidence for: Eternl claims that 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `dfbe38f04b9a5dca95317f89f1c2fac6654fe50b2355ff8877225b09d18c3833`
-- snapshot_bundle_hash: `1038f3f85d3e55538ab749ca8dd945f174d49bcf5e975bbbcd77c50df71fb62f`
+- input_hash: `77dcc4e6ff4d7631c895cc061941a236545c0629a4ac1a3906f90409c470ae36`
+- snapshot_bundle_hash: `412d2a4c7ad2d58862fbfd99b9387127312f5e2ac76e19ac22c9b86c599c0e7f`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.4833`
 - confidence: `0.49`
 

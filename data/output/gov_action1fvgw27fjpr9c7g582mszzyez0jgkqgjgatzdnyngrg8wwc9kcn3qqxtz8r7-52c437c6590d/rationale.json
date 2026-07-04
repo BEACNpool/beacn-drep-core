@@ -1,0 +1,247 @@
+{
+  "action_id": "gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.3933,
+  "raw_score": -0.3733,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "NO",
+    "score_adjustment": -0.02,
+    "confidence": 0.5,
+    "rationale": "Doctrine-aware offline lean for a treasury action: treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.6383,
+  "readiness_score": 0.85,
+  "facts": [
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (7), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: not pinned",
+    "Treasury analysis: Requested ADA: 500.0k ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the 500.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a treasury action: treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Anchor document is not yet pinned locally for this action.",
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete."
+  ],
+  "missing_evidence": [],
+  "input_hash": "52c437c6590d71e139e0b599ff546031673bc8f9323e436c544ae6a3c4d40d99",
+  "snapshot_bundle_hash": "fdb542eca6d98a8fe89ad7e855b2bd0d1e39fc3462660ad247346cfd7b12101d",
+  "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 964,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T11:31:09.323994Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.0423,
+    "NO": 0.7547,
+    "ABSTAIN": 0.203
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: expired",
+          "Proposed epoch: 607",
+          "Expires after epoch: 614",
+          "Treasury request: 500.0k ADA",
+          "Anchor pinned locally: no"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: not pinned",
+          "Proposal document read by reasoning layer: no",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: complete",
+          "Proposal claims not extracted (no cached anchor document text to read)."
+        ],
+        "missing": [
+          "No structured claim/evidence extraction from the proposal document."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 500.0k ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the 500.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on Cardano DeFi Liquidity Budget - Withdrawal 1. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano DeFi Liquidity Budget - Withdrawal 1. It asks the treasury for 500.0k ADA.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": false,
+      "source": "deterministic-heuristic",
+      "reason": "no cached anchor document text to read",
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "gov_action1fvgw27fjpr9c7g582mszzyez0jgkqgjgatzdnyngrg8wwc9kcn3qqxtz8r7",
+        "anchor_read": false,
+        "reason": "anchor fetch_status is 'http_error'",
+        "fetch_status": "http_error",
+        "anchor_url": "https://raw.githubusercontent.com/theeldermillenial/2025-liquidity-budget/refs/heads/master/withdrawal-1/data.jsonld",
+        "file_sha256": ""
+      },
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "55a58ec240731e80ea9101310f7bbdc01e89d9f8b7eb040bdd5278a9349f48b0",
+      "output_sha256": "dd2eac5091b3bced1009055c109f503addd4d61e44fa951fd1075f33dcbc8b2e"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "0ab35f1ffc4545469e0efd10e831b2e800b12c4ae951a5222e469bb6ba506fb6",
+      "output_sha256": "a61a86cfe872fc7c91dd452b67d557d69c440b8e92753ee8542f450532f4eae2"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

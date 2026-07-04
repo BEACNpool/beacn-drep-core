@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540750",
+    "deadline": "12 months",
+    "deliverables": [
+      "Part-time maintainer for Oura over 12 months",
+      "Codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Community support including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public communication",
+      "AI-friendly documentation and integration resources for AI-driven development workflows"
+    ],
+    "recipient": "Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor.",
+    "what": "Treasury withdrawal to fund Oura by TxPipe maintenance over 12 months."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The total treasury withdrawal is 540,750 ADA, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect budget administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs for processing.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and supports sinks including Kafka, Elasticsearch, AWS Lambda/S3/SQS, RabbitMQ, Redis, SQL databases, and webhooks.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and is the most starred project in the TxPipe portfolio.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "Oura has previously been funded twice through Project Catalyst, in Fund 9 and Fund 13, for feature development.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount did not, at submission, breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 successfully delivered and 4 currently under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Independent oversight for treasury administration will be provided by Intersect and technically capable third parties, with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests 540,750 ADA for 12 months of Oura maintenance through Intersect-managed smart contracts, provides high-level scope, budget line items, governance-process references, smart-contract addresses, and oversight structure, but the deterministic assessment records missing treasury, feasibility, risk, alternatives, and failure-mode analysis.",
+  "output_sha256": "91e2e25a0e0f6fe080585544517e27b825864083b3def4cef68ffc0e77c0dfea"
+}

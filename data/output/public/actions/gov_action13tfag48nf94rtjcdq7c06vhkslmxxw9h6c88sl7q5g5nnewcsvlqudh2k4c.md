@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds TWEAG's Proposals for multiple core budget projects for Cardano 2025 which will provide the following services: A suite of core infrastructure projects aimed at advancing the technical foundations of the Cardano blockchain." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `a9a38531b7f295855c7daa50aaaf768a49162c7234f27bc41e9a6ea9c6f003c3`
-- snapshot_bundle_hash: `928890a63193625485f51d9ff0ec34b9fadf7c4a20ff5bf4dba41e1961ad0d90`
+- input_hash: `ca77535b818797c4c17f0d9997bf5137885d8c7873319c534a2aa220e3b47a13`
+- snapshot_bundle_hash: `d58a8e86c551ec9213ba9b7284773cfee14891191950b1e7e8bc4356aad0caf4`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.2033`
 - confidence: `0.7708`
 

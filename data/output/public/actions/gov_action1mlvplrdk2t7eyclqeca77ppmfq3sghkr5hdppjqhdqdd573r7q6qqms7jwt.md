@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Bifrost is already live on testnet under Catalyst Fund 14 with working peg-ins and peg-outs and participating SPOs; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 52.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO threshold custody modes under controlled access." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano’s existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Bitcoin is described as roughly $1.6 trillion in value, while only around 1% of BTC supply is currently used in DeFi; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.41; confidence 52.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,15 +26,15 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 12.33M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano’s existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.
-- Claims and evidence missing: Independent evidence for: Bifrost is already live on testnet under Catalyst Fund 14 with working peg-ins and peg-outs and participating SPOs.
+- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO threshold custody modes under controlled access.
+- Claims and evidence missing: Independent evidence for: Public rollout and 24 months of operations are intentionally separated into a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,16 +47,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Bifrost is already live on testnet under Catalyst Fund 14 with working peg-ins and peg-outs and participating SPOs.
+- Provide independent evidence for: Bitcoin is described as roughly $1.6 trillion in value, while only around 1% of BTC supply is currently used in DeFi.
 - Provide complete proposal summary.
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `6fd6bfc7ad56036a0d3d4c315d19bd5eb4ef4cbd69f976738ff34449544508f1`
-- snapshot_bundle_hash: `2bc46e26c4c400a5338dff721698f379a9471b5f55ad31c62df1e70a2e2ae7a7`
+- input_hash: `56cd74b9b456b25b2aa21d769695e47aab7ab0f199f540ef22ba5f637b2be45b`
+- snapshot_bundle_hash: `b1ba1238308cd9124370798594ce8e84f93688278eb4e161fd3a0cd0d41660d0`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.4133`
 - confidence: `0.52`
 

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert..." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `8dae133681456023a26ded5c003099b5b36d6611fb0fc96858ab34afb807e117`
-- snapshot_bundle_hash: `7d6fef24e54c9e6ea21c8a4811ed1405c9e47191b41f47cc88138212def8632a`
+- input_hash: `2fd7f9c91e5d5d7aafc81b249fa279a9f3029eb1cde15073b1fff3b4ab4bb817`
+- snapshot_bundle_hash: `8a6578ca78edb2d9c6370a17a32e5677490c81ba36a4e961580f0235d4f40a40`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.4583`
 - confidence: `0.49`
 

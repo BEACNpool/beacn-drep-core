@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Amaru is an open-source project building a new, fully interoperable block-producing node that improves the overall accessibility and robustness of the Cardano network without compromising its safety and security." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: This is our second treasury withdrawal proposal, following a successful budget and treasury withdrawal in mid-2025; Provide line-item budget. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.33; confidence 62.2%.
@@ -47,11 +47,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `c03372d94a3f7804e59a9a3831726ac499731345b06b81561185ca68e74495d3`
-- snapshot_bundle_hash: `bafaa8a9464e525d888ac3457886a2546ff95e3103b4c6279113aeb6e418aee5`
+- input_hash: `1e1b488a8f3d2e169611439d27933e44d604db40d5514f18ee25ca9c99e4b380`
+- snapshot_bundle_hash: `5e0240e8a4589ddb8e859083edffb97603bd0daa6ffdc6ffa93a6155c5ff4f6b`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `-0.3283`
 - confidence: `0.6221`
 

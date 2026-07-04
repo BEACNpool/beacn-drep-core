@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `ParameterChange`
 - Status: `enacted`
-- Published at: `2026-07-04T04:07:22.030574+00:00`
+- Published at: `2026-07-04T11:30:04.054598+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 45.8%.
@@ -41,11 +41,11 @@ Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insuffic
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `d1b555d9b62495d025c16013b61f91d750fb9709ff3372504f47ca7b35260ad5`
-- snapshot_bundle_hash: `4d45ccf6c8fc7e26969590207c3178c6fe08bd35426d1bc7c68bd561a0b10b38`
+- input_hash: `3961916ce449045026fdeadc746baa70eb71a67d5eb34657ef94fef1fd168e43`
+- snapshot_bundle_hash: `c399294e4919ca1cc8e9debb8c718e2fc7995bc30be0d89a1df076b3b2f3bdfb`
 - soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `ab8e09e5364b5442ce388bbe8feecaf73d9bf04a`
-- core_commit: `d40b6b39bc43cc4be974bbb82020c41c23844c78`
+- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
+- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
 - score: `0.03`
 - confidence: `0.4575`
 

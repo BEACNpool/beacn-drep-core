@@ -273,9 +273,9 @@ def _offline_extract_claims(action: dict, anchor_text: str | None) -> dict:
     base = {
         "stage": "claim_extraction",
         "available": False,
-        "source": "codex-offline-review",
+        "source": "deterministic-heuristic",
         "reason": None,
-        "model": "codex-offline-local",
+        "model": "local-deterministic",
         "request": {},
         "claims": [],
         "summary": "",
@@ -344,6 +344,22 @@ def _offline_extract_claims(action: dict, anchor_text: str | None) -> dict:
     return base
 
 
+def _sentence(text: str) -> str:
+    """One clean sentence: collapse whitespace, strip trailing periods, add one."""
+    text = re.sub(r"\s+", " ", (text or "").strip()).rstrip(".")
+    return f"{text}." if text else ""
+
+
+def _ada_amount_label(value: str | None) -> str:
+    """Normalize a claims-cache amount ('3,961,538', '0', '5.10M ADA') for prose."""
+    s = (value or "").strip()
+    if not s or s in ("0", "0 ADA") or s.lower().startswith("not stated"):
+        return ""
+    if "ada" not in s.lower():
+        s += " ADA"
+    return s
+
+
 def _offline_human_message(action: dict, title: str, rationale: dict, assessment: dict, claims: dict | None) -> dict:
     rec = rationale.get("recommendation") or "ABSTAIN"
     reason = rationale.get("abstain_reason_code") or rationale.get("needs_more_info_reason_code")
@@ -353,31 +369,48 @@ def _offline_human_message(action: dict, title: str, rationale: dict, assessment
     supported = [c for c in claim_rows if c.get("support") in ("supported_in_proposal", "independently_verifiable")]
     weak = [c for c in claim_rows if c.get("support") in ("unsupported", "proposer_asserted") and c.get("materiality") != "low"]
     blockers = assessment.get("blocking_questions") or []
+    # Dossier-section blockers are BEACN's own unfinished diligence, not the
+    # proposal's failings; the public message must attribute them honestly.
+    own_diligence = [b for b in blockers if b.startswith("missing ")]
+    other_blockers = [b for b in blockers if not b.startswith("missing ")]
 
-    opener = f"BEACN records {rec} on {title or action.get('action_id')}."
+    opener = _sentence(f"BEACN records {rec} on {title or action.get('action_id')}")
     if rec == "YES":
         opener += " The deterministic gates found enough evidence and no decisive blocker."
     elif rec == "NO":
-        opener += " The decisive concern is that the proposal's risks, precedent, or evidence gaps outweigh the case presented."
+        opener += (" On the evidence available to BEACN's published review, the request does not "
+                   "clear the bar for spending shared treasury funds.")
     elif rec == "NEEDS_MORE_INFO":
         opener += " This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record."
     else:
         opener += " This is a conservative abstention because the evidence does not justify stronger certainty."
 
-    amount = req.get("amount_ada") or _action_amount(action)
-    second = f"The action is a {atype}. The cached anchor describes the request as: {req.get('what') or title or 'not stated'}."
-    if amount and amount != "not stated in document":
-        second += f" The recorded treasury amount is {amount}."
+    amount = _ada_amount_label(req.get("amount_ada")) or _ada_amount_label(_action_amount(action))
+    second = f"The action is a {atype}. " + _sentence(
+        f"The cached anchor describes the request as: {req.get('what') or title or 'not stated'}")
+    if amount:
+        second += f" It asks the treasury for {amount}."
     if supported:
-        second += f" The strongest grounded claim is: {supported[0].get('claim')}"
+        second += " " + _sentence(f"The strongest grounded claim is: {supported[0].get('claim')}")
     elif claim_rows:
-        second += f" The anchor's clearest claim is: {claim_rows[0].get('claim')}"
+        second += " " + _sentence(f"The anchor's clearest claim is: {claim_rows[0].get('claim')}")
 
     third_parts = []
     if weak:
-        third_parts.append(f"A material weak point is that this claim remains proposer-asserted or thinly supported: {weak[0].get('claim')}")
-    if blockers:
-        third_parts.append("The blocking questions are: " + "; ".join(blockers[:3]) + ".")
+        if rec == "YES":
+            third_parts.append(_sentence(
+                "A residual watch item: this claim remains proposer-asserted rather than "
+                f"independently shown: {weak[0].get('claim')}"))
+        else:
+            third_parts.append(_sentence(
+                f"A material claim remains proposer-asserted or thinly supported: {weak[0].get('claim')}"))
+    if other_blockers:
+        third_parts.append(_sentence("Open blockers: " + "; ".join(other_blockers[:3])))
+    if own_diligence:
+        third_parts.append(_sentence(
+            "BEACN's own independent diligence is also incomplete — before this vote could move to "
+            "YES, BEACN's published review still needs " +
+            "; ".join(x.replace("missing ", "") for x in own_diligence[:3])))
     if reason:
         third_parts.append(f"Reason code: {reason}.")
     if not third_parts:
@@ -388,9 +421,9 @@ def _offline_human_message(action: dict, title: str, rationale: dict, assessment
     return {
         "stage": "human_message",
         "available": True,
-        "source": "codex-offline-review",
+        "source": "deterministic-heuristic",
         "reason": None,
-        "model": "codex-offline-local",
+        "model": "local-deterministic",
         "text": text,
         "prompt_sha256": _sha("codex-offline-message\n" + json.dumps({
             "action_id": action.get("action_id"),
@@ -695,8 +728,8 @@ def _offline_assess_lean(action: dict, claims: dict | None, assessment: dict | N
     return {
         "stage": "assess_lean",
         "available": True,
-        "source": "codex-offline-review",
-        "model": "codex-offline-local",
+        "source": "deterministic-heuristic",
+        "model": "local-deterministic",
         "reason": None,
         **payload,
         "score_adjustment": adj,

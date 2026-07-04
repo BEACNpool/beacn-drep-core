@@ -193,6 +193,69 @@ class EnginePolicyTests(unittest.TestCase):
         )
         self.assertTrue(any("stale" in u.lower() for u in result["uncertainty"]))
 
+    def test_confidence_is_capped_and_evidence_based(self) -> None:
+        # A big penalty stack must NOT inflate confidence (old bug: 0.55+|score| -> 1.0).
+        action = base_action("TreasuryWithdrawals")
+        action["treasury_amount_lovelace"] = "103000000000"
+        action["flag_score"] = "7"
+        soft = {"dossier_gate": {"mode": "soft", "incomplete_penalty": -0.10}}
+        result = _score_action(
+            action, [{"flag": "a"}, {"flag": "b"}],
+            {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"},
+            [], True, {"sections": [], "overall_status": "blocked", "blocking_questions": ["x"]},
+            None, None, None, {"dossier_complete": "no"},
+            {"current_epoch": 9999, "treasury_inflow_total_6m_lovelace": "100",
+             "treasury_withdrawals_6m_lovelace": "999999"},
+            soft,
+            {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
+                         "treasury_flow_unsustainable_penalty": -0.10, "flag_score_divisor": 30.0,
+                         "drep_margin_cap": 0.10}},
+        )
+        self.assertLessEqual(result["confidence"], 0.90)
+        self.assertLess(result["confidence"], 0.75)  # thin evidence can't read as near-certain
+
+    def test_true_inflow_preferred_over_fee_inflow(self) -> None:
+        from beacn_drep.engine import _treasury_flow_amounts
+        inflow, outflow, basis = _treasury_flow_amounts({
+            "treasury_inflow_total_6m_lovelace": "158838297854652",
+            "treasury_fee_inflow_6m_lovelace": "302047240294",
+            "treasury_withdrawals_6m_lovelace": "361435336000000",
+        })
+        self.assertEqual(inflow, 158838297854652.0)
+        self.assertIn("total inflow", basis)
+        legacy_inflow, _, legacy_basis = _treasury_flow_amounts({
+            "treasury_fee_inflow_6m_lovelace": "302047240294",
+            "treasury_withdrawals_6m_lovelace": "361435336000000",
+        })
+        self.assertEqual(legacy_inflow, 302047240294.0)
+        self.assertIn("legacy", legacy_basis)
+
+    def test_reimbursement_profile_skips_milestone_penalty(self) -> None:
+        from beacn_drep.engine import _treasury_profile
+        reimb = base_action("TreasuryWithdrawals")
+        reimb["metadata_title"] = "Reimburse Ikigai Info Governance Action Deposit"
+        self.assertEqual(_treasury_profile(reimb), "reimbursement")
+        general = base_action("TreasuryWithdrawals")
+        general["metadata_title"] = "Fund a new DeFi integration"
+        self.assertEqual(_treasury_profile(general), "general")
+
+        reimb["treasury_amount_lovelace"] = "103000000000"
+        soft = {"dossier_gate": {"mode": "soft", "incomplete_penalty": -0.10}}
+        weights = {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
+                               "flag_score_divisor": 30.0, "drep_margin_cap": 0.10}}
+        financial = {"milestone_payment_gates": "no"}
+        fresh = {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"}
+        empty_assessment = {"sections": [], "overall_status": "ready", "blocking_questions": []}
+        r_reimb = _score_action(reimb, [], fresh, [], True, empty_assessment,
+                                None, financial, None, {"dossier_complete": "no"}, {}, soft, weights)
+        general["treasury_amount_lovelace"] = "103000000000"
+        r_general = _score_action(general, [], fresh, [], True, empty_assessment,
+                                  None, financial, None, {"dossier_complete": "no"}, {}, soft, weights)
+        # Same inputs except the title: the reimbursement must not carry the -0.15
+        # no-milestones penalty that the general spend does.
+        self.assertAlmostEqual(r_reimb["raw_score"] - r_general["raw_score"], 0.15, places=4)
+        self.assertTrue(any("reimbursement" in f.lower() for f in r_reimb["facts"]))
+
 
 if __name__ == "__main__":
     unittest.main()

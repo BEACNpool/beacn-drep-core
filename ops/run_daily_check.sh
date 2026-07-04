@@ -112,6 +112,12 @@ fi
 log "running rationales for all proposals (cache where present, offline fallback elsewhere)"
 PYTHONPATH=src python3 -m beacn_drep.cli run-all
 
+log "linting rationales before publish (verdict consistency + template artifacts)"
+if ! PYTHONPATH=src python3 scripts/lint_rationales.py; then
+  log "RATIONALE LINT CRITICAL FAILURE — aborting publish; see data/output/lint_report.json"
+  exit 1
+fi
+
 log "preparing rationale anchors and public artifacts"
 PYTHONPATH=src python3 scripts/prepare_rationale_anchors.py
 PYTHONPATH=src python3 -m beacn_drep.exporters.export_public_artifacts

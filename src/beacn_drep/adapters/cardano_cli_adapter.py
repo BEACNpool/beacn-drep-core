@@ -270,6 +270,18 @@ def _gate_action_live(tx_id: str, index: int, decision: dict, rec: str) -> tuple
 _REC_TO_DECISION = {"YES": "VoteYes", "NO": "VoteNo", "ABSTAIN": "Abstain"}
 
 
+def _spendable_utxos(utxo: dict) -> dict:
+    """Pure-lovelace UTxOs only. An asset-bearing UTxO (e.g. a token parked at the
+    fee address) would force the change output to carry those assets and trip the
+    vote-only gate, blocking every vote. Such UTxOs are left untouched."""
+    out = {}
+    for ref, entry in (utxo or {}).items():
+        value = (entry or {}).get("value") or {}
+        if set(value) == {"lovelace"} and int(value.get("lovelace") or 0) > 0:
+            out[ref] = entry
+    return out
+
+
 def _tx_is_vote_only(
     view: dict,
     *,
@@ -377,8 +389,13 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
     if not utxo:
         report.update(status="blocked", reasons=["fee wallet has no UTxO"])
         return report
+    spendable = _spendable_utxos(utxo)
+    if not spendable:
+        report.update(status="blocked",
+                      reasons=["fee wallet has no pure-lovelace UTxO to fund the vote"])
+        return report
     tx_ins: list[str] = []
-    for u in utxo:
+    for u in spendable:
         tx_ins += ["--tx-in", u]
 
     rcli = shlex.quote(RELAY_CLI)
@@ -415,7 +432,7 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
     vote_only, why = _tx_is_vote_only(
         view,
         fee_addr=fee_addr,
-        expected_inputs=set(utxo),
+        expected_inputs=set(spendable),
         expected_action=f"{tx_id}#{index}",
         expected_decision=_REC_TO_DECISION[rec],
     )

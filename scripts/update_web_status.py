@@ -29,6 +29,37 @@ GOVERNANCE_ALL = RESOURCES / "data/input/governance/governance_actions_all.csv"
 PUBLIC_ACTIONS_INDEX = ROOT / "data/output/public/actions.json"
 
 
+def _load_latest_scores() -> dict[str, dict]:
+    """cip129 action_id -> the deciding numbers from the latest engine run, so the
+    public status feed shows the weighted score behind each recommendation."""
+    runs_dir = ROOT / "data" / "output"
+    latest: dict[str, tuple[int, dict]] = {}
+    for run_dir in runs_dir.iterdir():
+        rationale_path = run_dir / "rationale.json"
+        if not run_dir.is_dir() or not rationale_path.exists():
+            continue
+        try:
+            rationale = json.loads(rationale_path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        action_id = rationale.get("action_id")
+        if not action_id:
+            continue
+        mtime = rationale_path.stat().st_mtime_ns
+        if action_id not in latest or mtime > latest[action_id][0]:
+            latest[action_id] = (mtime, rationale)
+    return {
+        aid: {
+            "score": r.get("score"),
+            "raw_score": r.get("raw_score"),
+            "llm_score_adjustment": r.get("llm_score_adjustment"),
+            "directional_threshold": r.get("directional_threshold"),
+            "confidence": r.get("confidence"),
+        }
+        for aid, (_, r) in latest.items()
+    }
+
+
 def _load_action_metadata() -> dict[str, dict]:
     metadata: dict[str, dict] = {}
     decisions: dict[str, str | None] = {}
@@ -56,7 +87,6 @@ def _load_action_metadata() -> dict[str, dict]:
 
 def main() -> int:
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    mode = "live" if os.environ.get("BEACN_VOTING_LIVE") == "1" else "shadow"
 
     tip = json.loads(_relay_query(["conway", "query", "tip", "--mainnet"]))
     gov = json.loads(_relay_query(["conway", "query", "gov-state", "--mainnet"]))
@@ -65,6 +95,7 @@ def main() -> int:
 
     actions = []
     metadata = _load_action_metadata()
+    scores = _load_latest_scores()
     open_count = 0
     voted_count = 0
     for p in gov.get("proposals", []):
@@ -78,6 +109,7 @@ def main() -> int:
             open_count += 1
         if our_vote is not None:
             voted_count += 1
+        score_info = scores.get(meta.get("cip129_action_id") or "", {})
         actions.append({
             "action_id": action_key,
             "cip129_action_id": meta.get("cip129_action_id") if is_open else None,
@@ -88,9 +120,19 @@ def main() -> int:
             "status": "open" if is_open else "closed",
             "recommendation": meta.get("recommendation"),
             "our_vote": our_vote,
+            "score": score_info.get("score"),
+            "raw_score": score_info.get("raw_score"),
+            "llm_score_adjustment": score_info.get("llm_score_adjustment"),
+            "directional_threshold": score_info.get("directional_threshold"),
+            "confidence": score_info.get("confidence"),
             "anchor_url": (p.get("proposalProcedure", {}).get("anchor", {}) or {}).get("url"),
         })
     actions.sort(key=lambda a: (a["status"] != "open", -(a["expires_after_epoch"] or 0)))
+
+    # Mode from ground truth: if this DRep has votes on-chain it is live, whatever
+    # the local environment says. BEACN_VOTING_LIVE only *adds* live intent (e.g.
+    # freshly enabled before the first vote lands); it can never mask cast votes.
+    mode = "live" if (voted_count > 0 or os.environ.get("BEACN_VOTING_LIVE") == "1") else "shadow"
 
     status = {
         "generated_at": now,

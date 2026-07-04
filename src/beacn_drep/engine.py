@@ -435,7 +435,9 @@ def _counterarguments(action: dict, claims: dict | None, blockers: list[str], is
     weak = [c for c in rows if c.get("support") in ("unsupported", "proposer_asserted") and c.get("materiality") != "low"]
 
     if strong:
-        yes = f"Strongest YES: the proposal substantiates \"{strong[0]['claim']}\" and clears the evidence gates."
+        gate_note = "and clears the evidence gates" if not blockers else \
+            f"though {len(blockers)} review blocker(s) remain open"
+        yes = f"Strongest YES: the proposal substantiates \"{strong[0]['claim']}\" {gate_note}."
     elif is_treasury and amount != "not specified":
         yes = f"Strongest YES: the {amount} request funds {atype} with public benefit worth the risk if its controls and delivery hold."
     else:
@@ -548,8 +550,7 @@ def _build_assessment(
     ))
 
     if is_treasury:
-        inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
-        outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
+        inflow, outflow, flow_basis = _treasury_flow_amounts(treasury_flow)
         ratio = outflow / inflow if inflow > 0 else None
         rt = (treasury_doctrine or {}).get("regime_thresholds", {})
         sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
@@ -575,7 +576,7 @@ def _build_assessment(
                 f"Clawback/refund path: {_truth_label((financial_row or {}).get('clawback_refund_path'))}",
                 f"Cost/benefit clarity: {_truth_label((financial_row or {}).get('cost_benefit_clarity'))}",
                 f"Recurring funding dependency: {_truth_label((financial_row or {}).get('recurring_funding_dependency'))}",
-                f"Six-month treasury flow regime: {regime}",
+                f"Six-month treasury flow regime: {regime} (basis: {flow_basis})",
                 f"Financial confidence: {(financial_row or {}).get('financial_confidence') or 'unknown'}",
             ],
             [
@@ -701,6 +702,67 @@ def _treasury_flow_stale(treasury_flow: dict | None) -> tuple[bool, int, int]:
         return True, snap_epoch, -1
     lag = _mainnet_epoch_now() - snap_epoch
     return (lag > max_lag), snap_epoch, lag
+
+
+_TREASURY_PROFILES = (
+    ("reimbursement", ("reimburse", "reimbursement", "refund")),
+    ("maintenance", ("maintenance", "maintain", "upkeep")),
+    ("event", ("summit", "conference", " day ", "hackathon", "event")),
+)
+
+
+def _treasury_profile(action: dict) -> str:
+    """Deterministic treasury sub-profile from the on-chain metadata title.
+
+    Different spend shapes carry different diligence expectations: demanding
+    milestone-gated disbursement from a one-time reimbursement is a category
+    error (doctrine v1.2.0 profile_rules)."""
+    title = f" {(action.get('metadata_title') or '').lower()} "
+    for profile, needles in _TREASURY_PROFILES:
+        if any(n in title for n in needles):
+            return profile
+    return "general"
+
+
+def _calibrated_confidence(*, anchor_ok: bool, assessment: dict, flags: list[dict],
+                           readiness_row: dict | None, financial_row: dict | None,
+                           risk_row: dict | None, deep_complete: bool, score: float) -> float:
+    """Confidence from evidence coverage, not from penalty size.
+
+    The old formula (0.55 + |score|) announced MORE certainty the more penalties
+    stacked, publishing 'confidence 1.0' on thin-evidence NO votes. Confidence
+    now reflects how much verified material the decision rests on, capped at
+    0.90 — an autonomous fiduciary never claims certainty."""
+    conf = 0.35
+    if anchor_ok:
+        conf += 0.10
+    claims_status = next((s.get("status") for s in assessment.get("sections", [])
+                          if s.get("title") == "Claims and evidence"), "thin")
+    if claims_status == "complete":
+        conf += 0.15
+    elif claims_status not in ("thin", "blocked"):
+        conf += 0.05
+    conf += 0.05 * sum(1 for row in (readiness_row, financial_row, risk_row) if row)
+    if deep_complete:
+        conf += 0.15
+    conf += min(0.10, abs(score) * 0.25)   # signal strength, deliberately weak
+    conf -= 0.03 * len(flags)
+    return round(max(0.05, min(0.90, conf)), 4)
+
+
+def _treasury_flow_amounts(treasury_flow: dict | None) -> tuple[float, float, str]:
+    """(inflow, outflow, basis) for the sustainability regime.
+
+    Prefers the pot-based inflow (ada_pots treasury delta + enacted withdrawals =
+    tau share + donations) over the legacy fee-only figure, which ignored the
+    treasury's actual funding source and pinned the ratio at ~1776x
+    'unsustainable' regardless of proposal or fiscal reality."""
+    tf = treasury_flow or {}
+    outflow = _to_float(tf.get("treasury_withdrawals_6m_lovelace"))
+    total = _to_float(tf.get("treasury_inflow_total_6m_lovelace"))
+    if total > 0:
+        return total, outflow, "total inflow (tau + donations) vs enacted withdrawals"
+    return _to_float(tf.get("treasury_fee_inflow_6m_lovelace")), outflow, "fee-only inflow (legacy fallback)"
 
 
 def _treasury_gate_config(treasury_doctrine: dict | None) -> tuple[str, float]:
@@ -855,8 +917,7 @@ def _score_action(
                 "rather than abstaining."
             )
 
-        inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
-        outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
+        inflow, outflow, flow_basis = _treasury_flow_amounts(treasury_flow)
         tf_stale, tf_epoch, tf_lag = _treasury_flow_stale(treasury_flow)
         if tf_stale:
             # Do not let an out-of-date treasury snapshot penalize or reward a live vote.
@@ -870,16 +931,19 @@ def _score_action(
             sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
             hard_no_ratio = _to_float(rt.get("unsustainable_hard_no_ratio")) or 2.0
 
-            # Fee-flow is advisory signal only (not hard gate) until treasury inflow model is fully calibrated.
+            # Flow regime is an advisory signal only (not a hard gate).
             if ratio <= sustainable_max:
                 score += w_treasury_flow_sustainable
-                inf.append("Treasury fee-flow signal is in sustainable regime.")
+                inf.append(f"Treasury flow signal is in sustainable regime ({flow_basis}).")
             elif ratio <= hard_no_ratio:
                 score += w_treasury_flow_stressed
-                unc.append("Treasury fee-flow signal is in stressed regime.")
+                unc.append(f"Treasury flow signal is in stressed regime ({flow_basis}).")
             else:
                 score += w_treasury_flow_unsustainable
-                unc.append("Treasury fee-flow signal is in unsustainable regime (advisory penalty applied).")
+                unc.append(
+                    f"Treasury flow signal is in unsustainable regime, ratio {ratio:.2f} "
+                    f"({flow_basis}); advisory penalty applied."
+                )
 
         # Rolling-window concentration checks if NCL annual is provided.
         ncl_annual = _to_float(os.environ.get("BEACN_NCL_ANNUAL_LOVELACE"))
@@ -896,8 +960,13 @@ def _score_action(
                     score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "concentration_high", -0.25)
                     unc.append("Proposal requests over 30% of rolling available capacity.")
 
-        # Milestone signal from decision-support financial profile.
-        if financial_row and _yn(financial_row.get("milestone_payment_gates")) is False:
+        # Milestone signal from decision-support financial profile. Not applied to
+        # one-time reimbursements/refunds — there is nothing to milestone-gate
+        # (doctrine v1.2.0 profile_rules).
+        profile = _treasury_profile(action)
+        if profile == "reimbursement":
+            facts.append("Treasury profile: one-time reimbursement — milestone-gating expectations do not apply.")
+        elif financial_row and _yn(financial_row.get("milestone_payment_gates")) is False:
             score += _doctrine_penalty(treasury_doctrine or {}, "treasury_withdrawals", "no_milestones", -0.15)
             unc.append("No milestone-gated disbursement documented.")
     if action_family == "parameter":
@@ -992,8 +1061,7 @@ def _score_action(
     # Recommendation thresholds
     treasury_doctrine_ready = (action_family == "treasury") and (_yn((deep_row or {}).get("dossier_complete")) is True)
     treasury_ratio = None
-    inflow = _to_float((treasury_flow or {}).get("treasury_fee_inflow_6m_lovelace"))
-    outflow = _to_float((treasury_flow or {}).get("treasury_withdrawals_6m_lovelace"))
+    inflow, outflow, _flow_basis = _treasury_flow_amounts(treasury_flow)
     if inflow > 0:
         treasury_ratio = outflow / inflow
     rt = (treasury_doctrine or {}).get("regime_thresholds", {})
@@ -1071,7 +1139,16 @@ def _score_action(
             if rec in ("YES", "NO"):
                 llm_assisted_reason_code = "LLM_ASSISTED_DIRECTIONAL"
 
-    confidence = max(0.0, min(1.0, 0.55 + abs(score) - (0.03 * len(flags))))
+    confidence = _calibrated_confidence(
+        anchor_ok=anchor_ok,
+        assessment=assessment,
+        flags=flags,
+        readiness_row=readiness_row,
+        financial_row=financial_row,
+        risk_row=risk_row,
+        deep_complete=treasury_doctrine_ready,
+        score=score,
+    )
     reason_code = None
     if rec == "ABSTAIN":
         if hard_blocker:

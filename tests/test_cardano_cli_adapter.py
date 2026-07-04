@@ -3,6 +3,7 @@ import unittest
 from beacn_drep.adapters.cardano_cli_adapter import (
     DREP_KEY_HASH,
     decode_gov_action_id,
+    _spendable_utxos,
     _tx_is_vote_only,
 )
 
@@ -101,6 +102,36 @@ class VoteOnlyTransactionTests(unittest.TestCase):
         )
         self.assertFalse(ok)
         self.assertIn("targets", reason)
+
+
+class SpendableUtxoTests(unittest.TestCase):
+    LOVELACE_REF = "aa" * 32 + "#1"
+    TOKEN_REF = "bb" * 32 + "#0"
+
+    def test_excludes_asset_bearing_utxos(self) -> None:
+        utxo = {
+            self.LOVELACE_REF: {"value": {"lovelace": 44_518_736}},
+            self.TOKEN_REF: {
+                "value": {
+                    "lovelace": 1_500_000,
+                    "8d6d38b3" * 8: {"4c45444745525f5343524f4c4c53": 1},
+                }
+            },
+        }
+        self.assertEqual(set(_spendable_utxos(utxo)), {self.LOVELACE_REF})
+
+    def test_excludes_zero_lovelace_and_malformed(self) -> None:
+        utxo = {
+            "cc" * 32 + "#0": {"value": {"lovelace": 0}},
+            "dd" * 32 + "#0": {"value": {}},
+            "ee" * 32 + "#0": {},
+            self.LOVELACE_REF: {"value": {"lovelace": 17_127_524}},
+        }
+        self.assertEqual(set(_spendable_utxos(utxo)), {self.LOVELACE_REF})
+
+    def test_empty_when_only_asset_utxos(self) -> None:
+        utxo = {self.TOKEN_REF: {"value": {"lovelace": 1_500_000, "aa" * 28: {"01": 1}}}}
+        self.assertEqual(_spendable_utxos(utxo), {})
 
 
 class GovernanceActionIdTests(unittest.TestCase):

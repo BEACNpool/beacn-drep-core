@@ -125,6 +125,47 @@ def call_claude(prompt: str) -> dict:
     return _extract_json(env.get("result", p.stdout))
 
 
+def call_codex_text(prompt: str) -> str:
+    with tempfile.TemporaryDirectory() as td:
+        out_f = Path(td) / "out.txt"
+        cmd = [
+            CODEX_BIN, "exec", "--skip-git-repo-check", "-s", "read-only",
+            "-c", "approval_policy=\"never\"",
+            "-m", os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5"),
+            "--color", "never",
+            "-o", str(out_f), "-",
+        ]
+        p = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=300)
+        if out_f.exists() and out_f.read_text(encoding="utf-8").strip():
+            return out_f.read_text(encoding="utf-8").strip()
+        if p.returncode != 0:
+            raise RuntimeError(f"codex exec failed rc={p.returncode}: {p.stderr.strip()[:400]}")
+        return p.stdout.strip()
+
+
+def call_claude_text(prompt: str) -> str:
+    cmd = ["claude", "-p", "--output-format", "json", prompt]
+    p = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+    if p.returncode != 0:
+        raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:400]}")
+    env = json.loads(p.stdout)
+    return str(env.get("result", "")).strip()
+
+
+TEXT_BACKENDS = {"codex": call_codex_text, "claude": call_claude_text}
+
+
+def _predicted_verdict(action, flags, freshness, missing, anchor_ok, assessment,
+                       readiness_row, financial_row, risk_row, deep_row, tflow, tdoc,
+                       weights, lean_entry) -> dict:
+    """Run the engine's own deterministic scorer with the cached lean, so the
+    message is written for exactly the verdict the next engine run will produce."""
+    lean = {"available": True, "source": "precomputed", **(lean_entry or {})}
+    return E._score_action(action, flags, freshness, missing, anchor_ok, assessment,
+                           readiness_row, financial_row, risk_row, deep_row,
+                           tflow, tdoc, weights, lean)
+
+
 def call_offline(action, anchor_text, doctrine, assessment) -> dict:
     claims = llm._offline_extract_claims(action, anchor_text)
     lean = llm._offline_assess_lean(action, claims, assessment, doctrine.get("text"), doctrine.get("family"))
@@ -196,6 +237,60 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001 - keep prior good entry, continue
             fail += 1
             print(f"  [{args.backend}] FAIL {aid[:24]}..  {type(e).__name__}: {str(e)[:160]}")
+
+    # Stage 2: plain-language message for EVERY active action (the public face).
+    # The deterministic verdict is recomputed here with the cached lean, so the
+    # message is written for the exact recommendation the engine will publish;
+    # the engine's verdict-match guard still protects against any drift.
+    if args.backend in TEXT_BACKENDS:
+        weights = E._load_scoring_weights()
+        msg_ok = msg_fail = 0
+        for a in actions:
+            aid = a["action_id"]
+            entry = cache.get(aid) or {}
+            if not entry.get("claims"):
+                continue
+            anchor_ok = anchor_index.get(aid, {}).get("fetch_status") in ("ok", "ok_cached")
+            missing = E._check_missing_evidence(a)
+            claims = {"stage": "claim_extraction", "available": True, "source": "precomputed",
+                      **entry["claims"]}
+            assessment = E._build_assessment(
+                a, freshness, missing, anchor_ok, readiness.get(aid),
+                financial.get(aid), risk.get(aid), deep.get(aid), tflow, tdoc,
+                flags.get(aid, []), claims)
+            try:
+                score_obj = _predicted_verdict(
+                    a, flags.get(aid, []), freshness, missing, anchor_ok, assessment,
+                    readiness.get(aid), financial.get(aid), risk.get(aid), deep.get(aid),
+                    tflow, tdoc, weights, entry.get("lean"))
+                rationale_lite = {
+                    "action_type": a.get("action_type"),
+                    "recommendation": score_obj["recommendation"],
+                    "abstain_reason_code": score_obj.get("abstain_reason_code"),
+                    "needs_more_info_reason_code": score_obj.get("needs_more_info_reason_code"),
+                    "score": score_obj["score"],
+                    "confidence": score_obj["confidence"],
+                    "readiness_score": score_obj.get("readiness_score"),
+                    "facts": score_obj["facts"],
+                    "inferences": score_obj["inferences"],
+                    "uncertainty": score_obj["uncertainty"],
+                }
+                title = a.get("metadata_title") or ""
+                prompt = (llm.MESSAGE_SYSTEM + "\n\n========================================\n"
+                          + llm._build_message_user(a, title, rationale_lite, assessment, claims))
+                text = TEXT_BACKENDS[args.backend](prompt)
+                if not text or len(text) > 6000:
+                    raise RuntimeError(f"message empty or oversized ({len(text)} chars)")
+                if not llm.message_matches_recommendation(text, score_obj["recommendation"]):
+                    raise RuntimeError(
+                        f"message names a different verdict than {score_obj['recommendation']}")
+                cache[aid]["message"] = text
+                msg_ok += 1
+                print(f"  [msg/{args.backend}] ok  {aid[:24]}..  verdict={score_obj['recommendation']}")
+            except Exception as e:  # noqa: BLE001 - keep prior good entry, continue
+                msg_fail += 1
+                print(f"  [msg/{args.backend}] FAIL {aid[:24]}..  {type(e).__name__}: {str(e)[:160]}")
+        print(f"messages: ok={msg_ok} fail={msg_fail}")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(cache, indent=2, sort_keys=True) + "\n", encoding="utf-8")

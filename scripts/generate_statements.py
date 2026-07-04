@@ -158,7 +158,7 @@ def main() -> int:
             store[aid] = {
                 "statement": text,
                 "decision": j.get("recommendation"),
-                "model": "codex-offline-review",
+                "model": "deterministic-heuristic",
                 "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source_input_hash": j.get("input_hash"),
             }

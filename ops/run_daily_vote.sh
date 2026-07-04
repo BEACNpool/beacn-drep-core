@@ -28,6 +28,17 @@ fi
 
 cd "$CORE" || exit 1
 
+# Fail-closed test preflight: never sign or submit with a broken engine/policy/adapter.
+if [ -d "$HOME/gov-bot-env" ]; then
+  # shellcheck disable=SC1091
+  source "$HOME/gov-bot-env/bin/activate"
+fi
+if ! PYTHONPATH=src python3 -m pytest tests/ -q >"$LOG_DIR/drep_vote_pytest.log" 2>&1; then
+  log "TEST PREFLIGHT FAILED — refusing to vote; see $LOG_DIR/drep_vote_pytest.log"
+  exit 1
+fi
+log "test preflight passed: $(tail -1 "$LOG_DIR/drep_vote_pytest.log")"
+
 # Anchors were published by run_daily_check moments ago; give Pages time to deploy
 # so gate 4 (fetch + hash the public rationale) can pass for freshly published ones.
 sleep "${BEACN_AUTOVOTE_PAGES_WAIT:-90}"

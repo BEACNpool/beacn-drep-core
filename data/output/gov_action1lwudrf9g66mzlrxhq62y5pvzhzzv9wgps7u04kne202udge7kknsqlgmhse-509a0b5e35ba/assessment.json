@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: 2.35M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, improvements, infrastructure, support, administration, and audits/oversight.",
+        "Recipient: Tastenkunst GmbH / Eternl",
+        "Stated amount: 2350000",
+        "Deliverables: Frontend maintenance and cross-platform development, Backend infrastructure and operations, User support, Administrative operations, Periodic independent audits of treasury fund use and oversight metrics, Governance tooling enhancements, Planned Eternl Core, Eternl Hub, hardware wallet support, and wallet data export improvements",
+        "Deadline/expiry: August 2026 to July 2027",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl asks for \u20b32,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027.",
+        "Claim (economic, proposer_asserted, high materiality): The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl plans to introduce Pro plans priced at $96 per year for personal users and $360 per year for companies, and says about 5,500 paying users would fully cover the annual $420,000 cost.",
+        "Claim (adoption, proposer_asserted, medium materiality): The proposer states Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposer commits to convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal says independent audits by a party unaffiliated with Tastenkunst GmbH or the Eternl team will occur in February 2027 and August 2027 and review custody, conversion, spending, balances, Pro plan income relevant to repayment, and treasury refunds or repayments."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+        "Independent evidence for: The proposer states Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.",
+        "Independent evidence for: The proposer claims 10-18% of Cardano mainnet transactions are conducted via Eternl."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 2350000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.74"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Eternl asks for \u20b32,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

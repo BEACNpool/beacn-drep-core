@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: A key issue in the initial budget process was the misapplication of the participation threshold; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.4%.
@@ -40,11 +40,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `ba15f44ebe5ef5a2adfbb3218a661c441f442b37397333ee909d3825657eb41e`
-- snapshot_bundle_hash: `9b40444e1638d2fd406c75b87bafc166c3bf523035dab9e132804e67792555fa`
+- input_hash: `dc2927c02a0a748a3df595c59f452900438476922753ec7135b1685c20b94afc`
+- snapshot_bundle_hash: `321514afd25bdc76bc53f00c30608087c7e54d66f51df42ff237f5e8ec45d2ae`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.015`
 - confidence: `0.4237`
 

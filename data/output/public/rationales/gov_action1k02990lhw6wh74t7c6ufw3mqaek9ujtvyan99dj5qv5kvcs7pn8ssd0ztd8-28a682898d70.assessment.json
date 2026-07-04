@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 540.8k ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Fund Pallas by TxPipe: Maintaining Cardano's Core Rust Libraries, Year 2, including part-time maintenance over 12 months and AI-friendly documentation and integration resources.",
+        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
+        "Stated amount: 540750",
+        "Deliverables: Essential Pallas codebase maintenance, including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support, including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows, Milestone-based disbursement controls through Intersect treasury management smart contracts",
+        "Deadline/expiry: 12 months after closure of the existing contract",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.",
+        "Claim (technical, supported_in_proposal, high materiality): Pallas is described as a collection of Rust crates implementing core Ouroboros and Cardano primitives including CBOR encoding, cryptographic operations, mini-protocol networking, multi-era ledger traversal, transaction building, and address handling.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal states that Pallas is used by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.",
+        "Claim (adoption, independently_verifiable, medium materiality): The proposal reports Pallas has over 649 pull requests, 199 stars, 91 forks, 60 contributors, and 214,446 crates.io downloads, with links to the GitHub repository and crates.io package.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposed work package covers maintenance, community support, and AI-friendly documentation and integration resources to keep Pallas usable, reliable, and current for downstream projects.",
+        "Claim (governance, proposer_asserted, medium materiality): The proposal claims alignment with Intersect Pillar 2 focus area A.3 for developer experience and open-source incentives for maintaining core Cardano SDKs, frameworks, and infrastructure."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal states that Pallas is used by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.",
+        "Independent evidence for: The proposal claims alignment with Intersect Pillar 2 focus area A.3 for developer experience and open-source incentives for maintaining core Cardano SDKs, frameworks, and infrastructure.",
+        "Independent evidence for: The proposal states TxPipe has received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development on schedule, and that prior Intersect maintenance funding for Pallas, Dolos, and UTxO RPC is being delivered on schedule."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 540750",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.66"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: medium",
+        "Technical risk: unknown",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that Pallas is used by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

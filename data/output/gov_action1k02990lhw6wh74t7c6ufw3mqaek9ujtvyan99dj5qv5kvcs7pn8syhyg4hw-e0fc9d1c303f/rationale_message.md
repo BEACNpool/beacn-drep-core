@@ -1,0 +1,13 @@
+# Withdraw 1,310,960 ada for Hardware Wallet Maintenance 2026
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because a key justification for spending 1,310,960 ada was not independently supported: the proposal asserted that ongoing hardware-wallet maintenance is needed to prevent users and integrators from losing secure access when Cardano, Ledger, or Trezor introduce breaking changes, but the review did not find independent evidence for that material claim.
+
+The proposal requested 12 months of production maintenance for Cardano hardware-wallet support, including Ledger and Trezor compatibility updates, interoperability libraries, cardano-hw-cli maintenance, developer support, shared hardware-wallet flow support, and vendor-required product or security audits. It also described capped time-and-materials reporting, milestones, evidence, reporting obligations, and milestone-based disbursement controls. The requested amount was supported in the proposal: 1,272,777 ada for hardware-wallet maintenance and compatibility assurance, plus a 38,183 ada Intersect budget administration fee.
+
+Several parts of the proposal were well-supported or independently verifiable. The anchor document was available and replayable, the proposal stated that it passed the 2026 Intersect Budget Process Hydra Voting phase, it stated that the withdrawal did not breach the applicable Net Change Limit, and it described administration through Sundae Labs treasury management smart contracts with oversight by named organizations. But other important claims remained thin or unsupported, including the need-risk claim about users losing secure access, the claim that this work does not duplicate other maintenance budgets, the sustainability path, cost-benefit clarity, independent assurance, and rollback or remedy path.
+
+Because this is a treasury withdrawal, BEACN applied elevated scrutiny. The review recognized the strongest YES case: hardware-wallet maintenance supports secure user access and the requested amount and scope were clearly stated. But the final score was negative, with an advisory penalty from an unsustainable treasury-flow signal and unresolved evidence gaps around material claims. On balance, BEACN judged that the cost and precedent risk outweighed the supported benefits, so it voted NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

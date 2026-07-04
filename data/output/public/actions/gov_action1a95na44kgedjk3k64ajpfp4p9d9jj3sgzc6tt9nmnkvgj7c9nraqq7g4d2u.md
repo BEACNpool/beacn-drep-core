@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "This Governance Information Action provides the formal description of the Intersect Budget Process Framework for the 2026 and future cycles, until modified, administered by Intersect." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 63.5%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `22c0261d096d74e814bd82f21078864c73932b09e3ba0d1b0e574593044064f7`
-- snapshot_bundle_hash: `5c2c667af6dede7fd04a724793830f7ddd5d2484339c01c0cb82d8a33387a892`
+- input_hash: `96f1c3d54f8fe7389756c98e0948127bd9fa3c7f2a22e1fce71023628f395af6`
+- snapshot_bundle_hash: `1a87813e1a0394ebcca2a0bbc6b42969ef6960f41fe528a6e957bc19f95224f1`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.14`
 - confidence: `0.635`
 

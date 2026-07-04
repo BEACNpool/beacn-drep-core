@@ -5,7 +5,7 @@
     "NO",
     "YES"
   ],
-  "submitted": 0,
+  "submitted": 1,
   "active_evaluated": 27,
   "skipped_inactive": 121,
   "policy_config": {
@@ -22,6 +22,14 @@
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
       "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+      "recommendation": "YES",
+      "onchain_vote": "VoteYes",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already YES",
       "status": "NOOP"
     },
     {
@@ -70,14 +78,6 @@
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
       "policy_reason": "on-chain vote already NO",
-      "status": "NOOP"
-    },
-    {
-      "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
-      "recommendation": "YES",
-      "onchain_vote": "VoteYes",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already YES",
       "status": "NOOP"
     },
     {
@@ -169,6 +169,17 @@
       "status": "NOOP"
     },
     {
+      "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
+      "recommendation": "NO",
+      "onchain_vote": null,
+      "policy": "CAST",
+      "policy_reason": "fresh NO: persist=3, confidence=0.67",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "c64c7ff584539355c251e2eb8678c55334dfe4c912945dd19c84a03820c3c551"
+    },
+    {
       "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
@@ -215,18 +226,6 @@
       "policy": "NOOP",
       "policy_reason": "on-chain vote already NO",
       "status": "NOOP"
-    },
-    {
-      "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
-      "recommendation": "NO",
-      "onchain_vote": null,
-      "policy": "CAST",
-      "policy_reason": "fresh NO: persist=2, confidence=0.52",
-      "gates_ok": false,
-      "status": "blocked_by_gate",
-      "reasons": [
-        "rationale_anchor: published rationale unreachable or hash mismatch"
-      ]
     },
     {
       "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",

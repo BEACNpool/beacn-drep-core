@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.4%.
@@ -40,11 +40,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `a8e7078185be7a23ae6e9ade3bce1699b0deba058f032e3fc12f198d04586b52`
-- snapshot_bundle_hash: `a4a2b984c37fc223607c4458832458a3fae24890eeaf5053a983d27ec2493487`
+- input_hash: `cb58fd4f1d82f86d3a249e1dbb783e2dfb312dd76088e579cdc30ce309d21969`
+- snapshot_bundle_hash: `2435cd65925cdbd1ef5d8f49c41d5a26d25cf1006a5c0b91b10e28fe1704317a`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.015`
 - confidence: `0.4237`
 

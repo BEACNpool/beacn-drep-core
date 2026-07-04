@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `bfbb73bb76b656095caa20a085d6910d1b5fd55f2190963017e867e3e4ad81e1`
-- snapshot_bundle_hash: `a0990052a694682ad517c04c092a9509ca0a2a4993d29f98aaa246d4920ec891`
+- input_hash: `f5ec75dfd32342b1229f7ba9262a166bd696d73f52cb7513d15b4dea89dd5218`
+- snapshot_bundle_hash: `6cd1c6ca5cf620174bac0e78c56098c5a6ac91ea801dfaeb5b1d30f2dc95e375`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `-0.2033`
 - confidence: `0.7708`
 

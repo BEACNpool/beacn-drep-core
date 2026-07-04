@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `HardForkInitiation`
 - Status: `active`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal would upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with unchanged transaction shape." and clears the evidence gates. Weighed against it: a material claim is unsupported — "The proposal states that UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.04; confidence 51.0%.
+Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 without an era transition." and clears the evidence gates. Weighed against it: a material claim is unsupported — "The upgrade would make all Plutus built-in functions available across Plutus V1, V2, and V3, expanding capabilities of existing V1 and V2 scripts." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.04; confidence 51.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,29 +23,29 @@ Vote: YES. For this HardForkInitiation (active), available evidence supports pro
 - Intake: Action type: HardForkInitiation
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with unchanged transaction shape." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 without an era transition." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
-- Claims and evidence missing: Independent evidence for: The proposal states that UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.
-- Claims and evidence missing: Independent evidence for: Intersect's Hard Fork Working Group recommended submission of the governance action on 2026-06-15 and Intersect's Technical Steering Committee endorsed it on 2026-06-16.
+- Claims and evidence missing: Independent evidence for: The upgrade would make all Plutus built-in functions available across Plutus V1, V2, and V3, expanding capabilities of existing V1 and V2 scripts.
+- Claims and evidence missing: Independent evidence for: UPLC case expressions over Bool, Integer, and Data would provide significant performance improvements and cleaner script logic.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: UPLC case expressions over Bool, Integer, and Data would provide significant performance improvements and cleaner script logic.
 - Provide mitigation evidence.
 - Provide independent assurance.
-- Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `74ea331fd086b9ec77018bfae05b58b0c45f19f5bfcf3c082c448d9a61771b61`
-- snapshot_bundle_hash: `5e02e911bde9630fbbba9f8619fbb049e2198bfb9cd2a337ec7e10b75f1dc0eb`
+- input_hash: `e247fea5b9c3ac9fb1313e1633377b7a90b2e15065f5b8732efb49c4771659d7`
+- snapshot_bundle_hash: `e7145b9d13402e5745f38a8eb5cd3cf7c39d780fe5c8f5e41317d5bb4857453a`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `-0.04`
 - confidence: `0.51`
 

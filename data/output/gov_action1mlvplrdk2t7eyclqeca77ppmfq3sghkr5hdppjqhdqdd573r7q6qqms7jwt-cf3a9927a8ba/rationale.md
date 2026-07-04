@@ -1,0 +1,133 @@
+# Rationale: gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt
+Recommendation: **NO**
+Score: `-0.3133` (raw `-0.2833` + doctrine-LLM nudge `-0.03`) | Confidence: `0.7983` | Readiness: `0.8`
+> Reasoning layer (precomputed): The proposal aligns with public-benefit ecosystem growth and could improve Cardano Bitcoin DeFi infrastructure, but the supplied claims show a large treasury ask with many high-materiality assertions about bridge security, testnet readiness, adoption targets, and treasury returns that are not backed by detailed evidence in the document. Given the deterministic assessment already marks claims and evidence as thin, only a small cautionary negative adjustment is justified rather than a stronger override.
+
+## Plain-language explanation (precomputed)
+BEACN voted NO because this was a large Treasury request with high execution risk, and several material claims were not backed by independent, replayable evidence.
+
+The proposal requested ₳12,332,031 for Phase 1 of Bifrost, a Bitcoin-Cardano bridge effort, over a 9-month period from July 2026 to March 2027. The requested work included launch readiness, hardening, audits, formal verification, economic modeling, stewardship, partner readiness, and a controlled-access Cardano mainnet bridge. The proposal did clearly support some basic facts: Bifrost is intended as a permissionless Bitcoin-Cardano bridge, the funding amount and 10% refundable contingency were stated, the Phase 1 scope was defined, and public rollout plus 24 months of operations were excluded for a later Phase 2 request.
+
+The review found the evidence thinner on higher-risk claims. The testnet status, working peg-ins and peg-outs, participating SPOs, planned audited mainnet operation, custody model, adoption targets, and future fee-funded Treasury returns were treated as proposer assertions unless otherwise marked. The open-source Apache 2.0 release was independently verifiable, but that did not resolve the larger assurance questions around bridge readiness, security, operations, and Treasury risk.
+
+Because this is a Treasury withdrawal, BEACN applied an elevated evidence bar. The proposal passed reviewability because the anchor document was pinned and replayable, and the best YES case was acknowledged: the project could provide public-benefit Bitcoin DeFi infrastructure for Cardano. But the Treasury review lacked milestone-gated disbursement, the risk review lacked independent assurance and a rollback or remedy path, execution risk was high, and the broader Treasury flow signal was in an unsustainable regime. On balance, BEACN voted NO because the potential benefit did not outweigh the unsupported material claims and Treasury risk.
+
+## Review Tree
+- overall_status: `incomplete`
+
+### Intake
+- status: `complete`
+- finding: Action type: TreasuryWithdrawals
+- finding: Status: active
+- finding: Proposed epoch: 640
+- finding: Expires after epoch: 647
+- finding: Treasury request: 12.33M ADA
+- finding: Anchor pinned locally: yes
+- conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+
+### Claims and evidence
+- status: `thin`
+- finding: Proposal anchor: pinned and replayable
+- finding: Proposal document read by reasoning layer: yes
+- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Deep research dossier: complete
+- finding: Requested: Phase 1 of 2 funding to take Bifrost from working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations for launch.
+- finding: Recipient: FluidTokens and Lantr Engineering
+- finding: Stated amount: 12332031
+- finding: Deliverables: Audited Bitcoin-Cardano bridge running on Cardano mainnet under controlled access, Support for both federated and SPO-threshold custody modes, Security audits and formal verification, Hardened economic model, Stewardship structure for launch, SPO and dApp partner pipeline required for public launch
+- finding: Deadline/expiry: 9-month delivery period from July 2026 to March 2027
+- finding: Claim (technical, supported_in_proposal, high materiality): Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.
+- finding: Claim (technical, proposer_asserted, high materiality): The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal requests ₳12,332,031, approximately $1,973,125 at 0.16 USD/ADA, including a 10% refundable contingency, for a 9-month Phase 1 delivery period.
+- finding: Claim (technical, proposer_asserted, high materiality): By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold modes under controlled access.
+- finding: Claim (economic, supported_in_proposal, high materiality): Public rollout and 24 months of operations are excluded from this request and are intended for a Phase 2 proposal in Q1 2027.
+- finding: Claim (technical, proposer_asserted, high materiality): Bifrost custody of locked BTC is proposed to be distributed across 400+ Cardano SPOs weighted by delegation, with movement of funds requiring a cryptographic threshold representing the majority of delegated stake.
+- missing: Independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.
+- missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold modes under controlled access.
+- missing: Independent evidence for: Bifrost custody of locked BTC is proposed to be distributed across 400+ Cardano SPOs weighted by delegation, with movement of funds requiring a cryptographic threshold representing the majority of delegated stake.
+- missing: Independent evidence for: The proposal says Bifrost has no bridge token, no founder allocation, and no built-in revenue claim for the founding teams beyond delivery compensation from this proposal.
+- conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+
+### Treasury analysis
+- status: `complete`
+- finding: Requested ADA: 12332031
+- finding: Budget granularity: confirmed
+- finding: Milestone payment gates: unknown
+- finding: Clawback/refund path: unknown
+- finding: Cost/benefit clarity: confirmed
+- finding: Recurring funding dependency: confirmed
+- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Financial confidence: 0.78
+- missing: milestone-gated disbursement
+- conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+
+### Risk review
+- status: `complete`
+- finding: Execution risk: high
+- finding: Governance risk: medium
+- finding: Technical risk: high
+- finding: Treasury exposure risk: high
+- finding: Mitigation evidence: confirmed
+- finding: Independent assurance: not confirmed
+- finding: Rollback/remedy path: unknown
+- finding: Flag count: 1
+- missing: independent assurance
+- missing: rollback/remedy path
+- missing: dependency map
+- conclusion: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+
+### Counterargument pass
+- status: `complete`
+- finding: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." and clears the evidence gates.
+- finding: Strongest NO: a material claim is unsupported — "The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs." — so cost or precedent may outweigh the benefit.
+- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
+
+### Synthesis
+- status: `ready`
+- finding: Final vote must be derived from completed sections above, not from a prose summary.
+- finding: The public rationale should name the decisive section and the strongest counterargument.
+- conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Facts
+- Pinned anchor document is available for this action.
+- Treasury withdrawal actions require elevated scrutiny.
+- Flag score present (4), reducing confidence.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 12332031
+- Risk review: Execution risk: high
+- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." and clears the evidence gates.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
+
+## Inferences
+- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The proposal aligns with public-benefit ecosystem growth and could improve Cardano Bitcoin DeFi infrastructure, but the supplied claims show a large treasury ask with many high-materiality assertions about bridge security, testnet readiness, adoption targets, and treasury returns that are not backed by detailed evidence in the document. Given the deterministic assessment already marks claims and evidence as thin, only a small cautionary negative adjustment is justified rather than a stronger override.
+- Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Uncertainty
+- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- DRep ratification support is below threshold; this is not treated as active opposition.
+- Claims and evidence missing: Independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.
+- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold modes under controlled access.
+- Claims and evidence status is thin.
+- Treasury analysis missing: milestone-gated disbursement
+- Risk review missing: independent assurance
+- Risk review missing: rollback/remedy path
+
+## Reproducibility
+- input_hash: `cf3a9927a8bae60c27c837401537a3a1f46c9796193d850b8107f2ef60601fbd`
+- snapshot_bundle_hash: `47bfcb848a2bc17f48b67dade4d3da971fa8d3c970166060f243d5e1d47dcadf`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
+- resource_registry_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
+- snapshot_age_seconds: `0`
+- uncertainty_band: `MEDIUM`
+- evidence_depth_score: `4`
+- decision_probs: `{"ABSTAIN": 0.1961, "NO": 0.7594, "YES": 0.0445}`
+

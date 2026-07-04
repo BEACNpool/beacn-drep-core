@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540,750",
+    "deadline": "12 months; specific milestone dates not stated in document",
+    "deliverables": [
+      "12 months of part-time maintainer coverage for Dolos after the existing contract closes",
+      "Essential maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public developer communication",
+      "AI-friendly documentation and integration resources for AI-driven development workflows",
+      "Milestone-based disbursement controls through Intersect-administered smart contracts"
+    ],
+    "recipient": "Intersect 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for administration on behalf of TxPipe/vendor.",
+    "what": "Treasury withdrawal to fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Dolos is described as a lightweight Cardano data node in Rust that provides efficient access to chain data without the overhead of traditional full nodes.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Dolos exposes five query interfaces, including Mini-Blockfrost HTTP, UTxO-RPC gRPC, Mini-Kupo, and an Ouroboros N2C unix socket compatible with existing tooling.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors, and provides a GitHub project link where those metrics can be checked.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The maintainer scope includes codebase maintenance, community support, and AI-friendly documentation and integration resources.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to the voting process and audited results.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested withdrawal is asserted not to breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit, oversight, reporting obligations, and milestone-based disbursement controls are said to be provided through Intersect, third parties, and Sundae Labs treasury management smart contracts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe is stated to have received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The document provides TRSC and PSSC addresses and a treasury dashboard intended to let the community audit and track the withdrawn ADA on-chain.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The anchor describes a 540,750 ADA treasury withdrawal administered by Intersect to continue Dolos maintenance for one year, with open-source infrastructure benefits, voting-process references, NCL compliance claims, and smart-contract oversight details, but limited concrete milestone dates or measurable acceptance criteria in the anchor itself.",
+  "output_sha256": "cab47265cdc1efa53b93fbb4e5f40597d036c7cacc9ad5bd6ed3241d157cdac6"
+}

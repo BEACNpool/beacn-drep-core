@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action proposes a Net Change Limit of 300,000,000,000,000 lovelace (300 million ADA) for the period from the start of Epoch 613 (13 February 2026) to the end of Epoch 713 (3 July 2027)." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: Total treasury inflows for 2025 are defined as the sum of inflows from Epoch 532 through Epoch 604; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.4%.
@@ -40,11 +40,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `5a14868ff6f2956aa913433a39b12fe966091c757d44d5389ee5b09075980504`
-- snapshot_bundle_hash: `89ee00c09b5d3c16f93065288a07422d46fb28ff36b462c0c809f074f020dd41`
+- input_hash: `8c18a7756504893158ed545282e46829faf5af04985e8675295d1f309dd500d8`
+- snapshot_bundle_hash: `23d212ebc21fee37ba9247e9df49b64367b6fef013f4c69469247bacba60dca7`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.015`
 - confidence: `0.4237`
 

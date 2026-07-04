@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "WP1 DeFi Kernel Registry Website and Submission Process with compatibility requirements, registry data structure, submission template, review checklist, metadata requirements, public website updates, compatibility documentation, onboarding support, monthly reports, and final impact report",
+      "WP2 Spot Leverage Order Book with protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, integration documentation, security review or audit report, issue resolution report, mainnet deployment, published script hashes and schemas, usage reports, and final reporting",
+      "WP3 American Options Market-Making Protocol with protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, integration documentation, security review or audit report, issue resolution report, mainnet deployment, published script hashes and schemas, usage reports, and final reporting",
+      "WP4 Composable DeFi Transaction Builder SDK with architecture, public API specification, registry schema reader, metadata parser, discovery helpers, transaction-construction helper design, protocol adapters, alpha and v1 releases, tests, examples, documentation, integration support, and final SDK report"
+    ],
+    "recipient": "Dano Finance, with Minswap Labs serving as budget administrator",
+    "what": "Treasury withdrawal to fund Dano Finance's DeFi Kernel acceleration work, including a public registry, Spot Leverage Order Book, American Options Market-Making Pools, and a Composable DeFi Transaction Builder SDK."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,333,000 ADA, split into 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The DeFi Kernel is intended to provide a common, permissionless, composable, discoverable standard for Cardano DeFi contracts using published metadata such as script hashes, datum/redeemer schemas, integration instructions, audit status, TVL references, and discovery mechanisms.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "WP1 will maintain and improve a public DeFi Kernel registry and submission process that is intended to be open, fee-free, royalty-free, and not require payment, licensing, certification fees, listing fees, revenue share, or smart-contract open-sourcing.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "WP2 will deliver a Cardano-native DeFi Kernel-compatible Spot Leverage Order Book covering collateral, borrowing, debt accounting, swap execution, risk parameters, position lifecycle, and settlement.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "WP3 will deliver a Cardano-native American Options market-making protocol using an extended concentrated-pool model with option-specific logic for strike, expiry, premium, collateral or exposure, exercise conditions, settlement, and LP risk accounting.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "WP4 will deliver an SDK that helps wallets, bots, indexers, market makers, and dApps discover on-chain financial intent, read registry metadata, construct transactions, and compose with DeFi Kernel-compatible contracts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal sets KPIs including mainnet deployments after security review, USD 1,000,000 rolling 30-day trading volume for the Spot Leverage Order Book within 90 days of launch, USD 1,000,000 rolling 30-day option notional volume for American Options within 90 days of launch, and at least one external SDK integration started or completed.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Dano Finance will return 5% of protocol fees generated by the Treasury-funded Spot Leverage Order Book and American Options contracts for 12 months after mainnet launch, after direct transaction costs, refunds, or protocol-level settlement costs, and report this publicly.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document describes a 3,333,000 ADA treasury request for Dano Finance to build DeFi Kernel registry infrastructure, two DeFi protocols, and an SDK, with milestone structure, KPIs, security-review requirements, Minswap Labs as administrator, and a 12-month 5% protocol-fee return commitment.",
+  "output_sha256": "9e8fcbcb39dd7c7074e63383b10e4296f441204644987e3947c2486b4d93008a"
+}

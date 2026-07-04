@@ -1,0 +1,13 @@
+# Strike Finance Liquidity Deployment
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large treasury withdrawal request and key benefit claims were not independently supported by the supplied evidence. The proposal had a clearer custody, reporting, and risk framework than many treasury asks, but the case for deploying 9,000,000 ADA still depended too much on proposer-asserted traction, modeled yield, future audit completion, stablecoin conversion, and market assumptions.
+
+The action asked for a 12-month treasury-owned liquidity deployment into Strike Finance V2. The ADA would be sold for USDM, modeled at ADA = 0.15 USD, creating about 1,350,000 USDM of stablecoin liquidity, with actual size depending on the deployment price. The proposal said this was not grant funding, that treasury ownership would be retained, that first-six-month yield would be returned at month 6, and that all remaining treasury-owned assets and yield, minus any realized losses, would be returned at month 12 or after wind-down.
+
+Several parts were well supported in the proposal: the requested amount and structure, the independent multisig council, the claim that Strike would not have unilateral custody, monthly reporting, third-party assurance commitments, and identification of major risks such as ADA appreciation, USDM depeg or redemption risk, custody risk, liquidity risk, smart contract risk, yield underperformance, and multisig operational risk. However, the review found thin evidence for important adoption and growth claims, including Strike’s reported cumulative volume, trade count, user count, protocol revenue, liquidity provider profit, and V2 performance figures from March 20 to June 15, 2026.
+
+The treasury review required elevated scrutiny because this action would consume shared ADA and set precedent. The proposal lacked documented milestone-gated disbursement, independent assurance was still missing in the risk review, execution risk was unknown, and a dependency map was not provided. BEACN’s strongest YES case was that the structure was a treasury-owned deployment rather than a grant, but the strongest NO case carried more weight: a material claim about Strike’s traction was unsupported, so the expected public benefit was not strong enough to justify the treasury risk.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

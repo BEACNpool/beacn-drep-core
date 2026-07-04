@@ -1,0 +1,269 @@
+{
+  "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.2933,
+  "raw_score": -0.2833,
+  "llm_score_adjustment": -0.01,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.01,
+    "confidence": 0.68,
+    "rationale": "The proposal is comparatively detailed and aligned with public-benefit infrastructure maintenance, but the large time-and-materials labor request and cost-efficiency assertions are not strongly evidenced in the supplied claims, so treasury stewardship and evidence quality justify only a small cautionary nudge.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7933,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 1785333",
+    "Risk review: Execution risk: medium",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Daedalus is open-source under the Apache License 2.0, and the proposer says all funded outputs will be public assets that remain forkable by anyone.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.010 (clamped to \u00b10.05): The proposal is comparatively detailed and aligned with public-benefit infrastructure maintenance, but the large time-and-materials labor request and cost-efficiency assertions are not strongly evidenced in the supplied claims, so treasury stewardship and evidence quality justify only a small cautionary nudge.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+    "Claims and evidence missing: Independent evidence for: The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while asserting the true count is meaningfully higher because privacy-conscious users are less likely to opt in.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "66bcf353a113aa373f26ddf3dd95bbf5d2cd14714e9ceb401fd19c025cbc3a0e",
+  "snapshot_bundle_hash": "41ec2d22bbd13ac28c9f52704589563d230afc464be731862140c96284d36c2a",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T17:34:48.004522Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0454,
+    "NO": 0.7543,
+    "ABSTAIN": 0.2003
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 1.79M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal to fund Daedalus Wallet Maintenance and Improvements 2026-2027 as a time and materials engagement.",
+          "Recipient: Se7en Labs, Inc., with administration and milestone verification by Intersect as described in the document",
+          "Stated amount: 1,785,333",
+          "Deliverables: Protocol maintenance including node upgrades, hard fork readiness, platform support, release engineering, and security/dependency maintenance, Compatible Daedalus release at least 2 weeks before every mainnet hard fork, Keystone and Flex hardware wallet support, plus newer hardware wallet models as they emerge during the contract period, CIP-30 dApp connector implementation in Daedalus with user documentation and dApp interoperability, Japanese localisation and Japanese-language user support throughout the contract period, Responsive user support via GitHub, community forums, and direct channels, Public architecture assessment by Q3 2027, Financial audit and test hardware acquisition, with unspent labor, hardware, and audit budget returned to the treasury",
+          "Deadline/expiry: Contract year 2026-2027; ongoing maintenance and user support for 52 weeks; architecture assessment by Q3 2027",
+          "Claim (technical, proposer_asserted, high materiality): Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+          "Claim (adoption, independently_verifiable, high materiality): Daedalus is open-source under the Apache License 2.0, and the proposer says all funded outputs will be public assets that remain forkable by anyone.",
+          "Claim (adoption, proposer_asserted, medium materiality): The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while asserting the true count is meaningfully higher because privacy-conscious users are less likely to opt in.",
+          "Claim (technical, proposer_asserted, high materiality): Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization.",
+          "Claim (technical, independently_verifiable, high materiality): The team claims it shipped Daedalus 8.0 and 11.0 during the IOG contract period and that Daedalus 11.0 was the first wallet capable of crossing the node 11.0 hard fork.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal commits to maintaining Daedalus compatibility with upcoming hard forks, with testnet verification and a stable compatible release at least 2 weeks before each mainnet activation."
+        ],
+        "missing": [
+          "Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+          "Independent evidence for: The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while asserting the true count is meaningfully higher because privacy-conscious users are less likely to opt in.",
+          "Independent evidence for: Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization.",
+          "Independent evidence for: The document claims Se7en Labs has not received ADA from the Cardano Treasury within the last 24 months and has instead operated under a direct IOG contract for Daedalus maintenance since January 2026, closing August 31, 2026."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 1785333",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.62"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: medium",
+          "Governance risk: medium",
+          "Technical risk: medium",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Daedalus is open-source under the Apache License 2.0, and the proposer says all funded outputs will be public assets that remain forkable by anyone.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this treasury request asks for a large time-and-materials withdrawal, but the supplied evidence did not strongly establish cost-benefit clarity or independently support some material claims behind the case for funding.\n\nThe proposal requested 1,785,333 ADA for Se7en Labs, Inc. to maintain and improve Daedalus during 2026-2027, with Intersect administering funds and verifying milestones. The proposed work includes hard fork readiness, node upgrades, platform support, release engineering, hardware wallet support, CIP-30 dApp connector work, Japanese localisation and support, public support channels, an architecture assessment by Q3 2027, audit costs, and test hardware. The proposer also committed to returning unspent labor, hardware, and audit budget to the treasury.\n\nSeveral parts of the proposal were well-supported in the review. The anchor document was available and replayable. The request amount and budget lines were stated clearly. The proposal supported commitments around Daedalus compatibility before hard forks, Intersect administration, milestone-based monthly disbursement, and public/forkable outputs. The review also recognized the strongest YES case: Daedalus is open-source under Apache License 2.0, and the funded outputs were presented as public assets.\n\nThe NO came from treasury stewardship and evidence quality. Treasury withdrawals require a higher bar because they spend shared ADA and set precedent. The review found thin claims-and-evidence support, missing independent evidence for the \u201conly full-node desktop wallet\u201d claim and the user-count claim, no clear sustainability path, weak cost-benefit clarity, missing independent assurance, and no rollback or remedy path. Execution risk was medium, and the treasury flow signal was in an unsustainable regime, so BEACN treated the proposal as insufficiently evidenced for a directional YES.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmdWtCCvK6CJUzP4SFiuL5W8hg3eNr5LyngJHnwjoNxJey",
+        "file_sha256": "5638dce7b2360cdea8ba04ae975fecebfdff0051b809581fbd27037b92dee950",
+        "file_path": "data/input/governance/anchors/gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j-20260625T113100Z.bin",
+        "content_chars": 32544
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "303ab37a5ef627733c362b071137fda9daa7c653f17fcc5874838e101814c487"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.01,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "0bfdc2fca3930382f0a442946119acc2744da27d74fe0b0ae3e44ba5fbf861b2"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "48d45989b822598bcde7676730f29c90bd2540abfdcf2043d98fcc9e51711ea3"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/483f3104491dec0197c5dba1.md",
+  "rationale_anchor_hash": "483f3104491dec0197c5dba1e76170243001f39b969145c7e1573cec242dd04e"
+}

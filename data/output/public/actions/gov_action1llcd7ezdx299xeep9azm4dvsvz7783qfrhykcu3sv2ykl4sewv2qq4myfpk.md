@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the “Plomin Hard Fork” in memory of Cardano community contributor Matthew Plomin." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 63.5%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `8cb7cc97e6686444e94654abb7125f43b070594a435db4b1e14fd3c7ffabb29c`
-- snapshot_bundle_hash: `d1e50d2a9aac1261d39dd318cfd33146bd79a4cf1acbbfefc92b6253f064b281`
+- input_hash: `c15af4c3345a3c27f241abfae492d80c306b4a9115a8eab98a2342f073c30242`
+- snapshot_bundle_hash: `9cc8f6e46cdc8c9d0bf9edfa228a38e7b07d8d922c37461e994a5531ab8caef5`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.14`
 - confidence: `0.635`
 

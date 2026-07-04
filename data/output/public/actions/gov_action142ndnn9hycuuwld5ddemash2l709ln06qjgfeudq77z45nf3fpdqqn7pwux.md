@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The requested 10,000,000 ADA is structured as 5,000,000 ADA on approval, 2,000,000 ADA on M1 acceptance, and 3,000,000 ADA on M2 acceptance." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026; Provide independent evidence for: The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.45; confidence 64.0%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `1ac55ad22b7e01f42c3c68763a3977627ffe77c1b22367782525e95194e70128`
-- snapshot_bundle_hash: `98408051932fb58ec23ce81620c2ac0ac93a0a1bd50f263ac3dcdfbd72053f34`
+- input_hash: `36375c051a99e39016d3d45c0a329db5f539295ec27a8ad4f6953ce15562d434`
+- snapshot_bundle_hash: `515445bb2fc01bd2a71a2d37cee11e97a77c91d061df00236d1e7b95f1b7ea91`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `-0.4533`
 - confidence: `0.64`
 

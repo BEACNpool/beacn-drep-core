@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "2464844",
+    "deadline": "March 2027",
+    "deliverables": [
+      "Ongoing Scalus maintenance including bug fixes, dependency upkeep, security patches, and releases",
+      "Dijkstra hard-fork readiness including Plutus V4 support, ledger rules, transaction-builder updates, nested transactions, accounts, guard scripts, cost models, and conformance testing",
+      "Improved JS/TS interfaces and documentation for Scalus components embedded in MeshJS, Evolution SDK, and Lucid Evolution",
+      "Java/Kotlin interoperability including Spring Boot and Ktor examples and cleaner integration with Cardano Client Lib and Yaci",
+      "Foundational application runtime components including reactive workers, chain follower, and task scheduler"
+    ],
+    "recipient": "Lantr Engineering",
+    "what": "Treasury withdrawal to fund Scalus 2026 maintenance, Dijkstra readiness, interoperability, and a scoped application runtime over 9 months."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Scalus is an open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Scalus components are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b32,464,844 for 9 months at a $0.16/ADA reference rate with no contingency.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal is a reduced resubmission from a prior \u20b38,503,000, 12-month proposal, removing the standalone L1 node, full L2 integration, broad formal verification, and advanced devnet expansion from scope.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The funded work is organized into quarterly milestones from July 2026 through March 2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Delivery will be milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Scalus.js reaches more than 20,000 downloads per month.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Scalus has had 4,642 commits across 32 releases and 12 contributors over three years of development.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The application runtime is intended to follow chain data, react to on-chain events, schedule time-based actions, coordinate backend workflows, and recover from failure.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document presents a reduced 9-month treasury ask for Lantr Engineering to maintain and extend Scalus as shared Cardano developer infrastructure, with claims of existing adoption, milestone governance, Dijkstra readiness, interoperability work, and a scoped runtime.",
+  "output_sha256": "257d2f0fa732ecda50034370588fa8827c6ff937e71cbe042c6f997f47092eae"
+}

@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 63.5%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `5c895630a49b6e401525fe87009ab1654150e5b0ea7d6dbd3a01822137c258c6`
-- snapshot_bundle_hash: `feb621e4a2c1ee651159128bf2d876609fc9582b7c7762122729350e2f3da9c8`
+- input_hash: `f9ee621247d9ca013c0f0319d662efc409f99733e3d99b266a93ac1633fd855e`
+- snapshot_bundle_hash: `e06a872edfef8624e6070c09d63af8bf2eaac2d9a30518f30d5ca7cde573c4e8`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.14`
 - confidence: `0.635`
 

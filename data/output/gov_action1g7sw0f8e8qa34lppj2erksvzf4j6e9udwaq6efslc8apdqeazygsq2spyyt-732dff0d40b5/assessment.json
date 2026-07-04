@@ -1,0 +1,88 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1g7sw0f8e8qa34lppj2erksvzf4j6e9udwaq6efslc8apdqeazygsq2spyyt",
+  "action_type": "NewCommittee",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: NewCommittee",
+        "Status: enacted",
+        "Proposed epoch: 573",
+        "Expires after epoch: 580",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Replace Interim Constitutional Committee",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025., The term for the current Interim Constitutional Committee is set to expire on September 6th (end of epoch 580)., Therefore, this governance action is critical to formalize the results of the recent election and ensure a new Constitutional Committee (CC) is enacted in time., This adheres to the Cardano Constitution's mandate for staggered elections and guarantees continuity of the committee's function (Article VII, Section 2).",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, independently_verifiable, high materiality): This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.",
+        "Claim (governance, independently_verifiable, high materiality): The term for the current Interim Constitutional Committee is set to expire on September 6th (end of epoch 580).",
+        "Claim (governance, independently_verifiable, high materiality): Therefore, this governance action is critical to formalize the results of the recent election and ensure a new Constitutional Committee (CC) is enacted in time.",
+        "Claim (governance, independently_verifiable, high materiality): This adheres to the Cardano Constitution's mandate for staggered elections and guarantees continuity of the committee's function (Article VII, Section 2).",
+        "Claim (governance, independently_verifiable, medium materiality): Electing a new CC before the current term expires is essential to ensure the seamless continuation of Cardano governance and the ability to pass actions requiring CC approval.",
+        "Claim (governance, independently_verifiable, high materiality): In accordance with the constitutional mandate for this election, seven committee seats were filled with staggered terms to ensure continuity."
+      ],
+      "missing": [],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.\" and clears the evidence gates.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

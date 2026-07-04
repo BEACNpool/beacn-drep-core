@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `d4d362e40ebadb5fc2fe286f96ea029f4d4c474eb889d2f210773505e196e3c2`
-- snapshot_bundle_hash: `16d574dcd2130e3227c07c3924aaed3fc2c16098013a14dfa9b0de434ca18cd6`
+- input_hash: `bd41bef08324ac63489cbcdbcca2824bf80ff372636b410a6117df8e4006f70b`
+- snapshot_bundle_hash: `a3041f1a7fecf9b0c83826d9ae88d44a55b2ba9f9c1b8c6522014cf9b6f55848`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.04`
 - confidence: `0.58`
 

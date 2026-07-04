@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `NewCommittee`
 - Status: `expired`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this NewCommittee (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.15; confidence 73.8%.
@@ -34,11 +34,11 @@ Vote: YES. For this NewCommittee (expired), available evidence supports proceedi
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `8fffff1e97e6051fd7070e422ca0d0315fbb03bbd6d5d321a5fd7c63a00bff5a`
-- snapshot_bundle_hash: `582d4b8898779128e1b1d6882d8445286798356e8f10ba06dadbee71e54b559d`
+- input_hash: `c206c155b56262cb965265ff4ea0dfe5cb5b79d4214a4b6b646cba6fd05b0736`
+- snapshot_bundle_hash: `3c29d6c5409260f16d6b35ee6bfa88f4b3eb16efdc4e5e257b7eabc2c4680300`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `0.15`
 - confidence: `0.7375`
 

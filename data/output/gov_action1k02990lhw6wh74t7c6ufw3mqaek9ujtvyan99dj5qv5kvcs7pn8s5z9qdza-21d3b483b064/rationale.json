@@ -1,0 +1,266 @@
+{
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.2533,
+  "raw_score": -0.2533,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NEUTRAL",
+    "score_adjustment": 0.0,
+    "confidence": 0.72,
+    "rationale": "The proposal gives a clear work scope, budget table, governance process references, smart-contract custody details, and oversight structure, but several important adoption and delivery-history claims remain largely proposer-asserted in the anchor text while the AI-related documentation work is not costed separately despite BEACN's post-AI cost doctrine. The deterministic treasury and evidence gates appear to capture the main caution points, so no additional directional nudge is warranted.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; AI Has Collapsed Marginal Costs",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7833,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 540750",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: Independent evidence for: UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a standard across the ecosystem.",
+    "Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 currently under development and on schedule.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "21d3b483b064023b177314cf95aac3e18ccbc43c12e189ed9fda9be00512bbfc",
+  "snapshot_bundle_hash": "b91ac036f1553d9e33885ce435e5e3f23e3a5b52ae9ce474b47ece44677dd344",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T17:34:48.004522Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0471,
+    "NO": 0.7436,
+    "ABSTAIN": 0.2093
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 540.8k ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Fund UTxO RPC by TxPipe: Maintaining Cardano's Integration Standard, Year 2, including 12 months of part-time maintenance plus Intersect administration.",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe/vendor",
+          "Stated amount: 540,750",
+          "Deliverables: Maintenance of the protobuf specification, including protocol compatibility, versioning, and documentation., Maintenance of official SDKs, including dependency updates, performance improvements, and bug fixing., Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public developer communication., Upgrade UTxO RPC compatibility with AI-driven development workflows through AI-friendly documentation and integration resources., Administration, oversight, reporting obligations, and milestone-based disbursement controls through Intersect and smart contract tooling.",
+          "Deadline/expiry: 12 months, beginning after closure of the existing contract",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.",
+          "Claim (economic, supported_in_proposal, high materiality): The total requested withdrawal is 540,750 ADA, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and 15,750 ADA for an Intersect Budget Administration fee.",
+          "Claim (technical, supported_in_proposal, high materiality): UTxO RPC is an open interface specification that standardizes interactions with UTxO-based blockchains using Protocol Buffers and SDKs in Rust, Go, Node.js, .NET, Haskell, and Python.",
+          "Claim (adoption, proposer_asserted, high materiality): UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a standard across the ecosystem.",
+          "Claim (technical, independently_verifiable, medium materiality): The project maintains more than 10 repositories covering the core specification, language-specific SDKs, documentation, and provider integrations under the Apache 2.0 open-source license.",
+          "Claim (technical, supported_in_proposal, high materiality): The maintainer scope includes specification maintenance, SDK maintenance, community support, and AI-friendly documentation and integration resources."
+        ],
+        "missing": [
+          "Independent evidence for: UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a standard across the ecosystem.",
+          "Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 currently under development and on schedule."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 540750",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.66"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a standard across the ecosystem.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this treasury request did not meet the higher evidence bar for spending shared ADA, especially where a material adoption claim was not independently supported.\n\nThe action requested 540,750 ada for Year 2 maintenance of UTxO RPC by TxPipe, submitted by Intersect on behalf of the vendor. The proposal covered 12 months of part-time maintenance, SDK upkeep, community support, AI-friendly documentation and integration resources, and Intersect administration with milestone-based disbursement controls. The proposal clearly supported the requested budget structure, the maintainer scope, the open-source technical scope, the Intersect budget-process support, and the planned treasury administration controls.\n\nThe strongest case for voting YES was that the proposal provided a pinned, replayable anchor and substantiated the basic funding request: 420,000 ada plus a 105,000 ada contingency reserve for a part-time maintainer, with a total withdrawal of 540,750 ada including Intersect administration. However, BEACN found the claims-and-evidence record thin. In particular, the claim that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface was treated as unsupported by independent evidence, and the Catalyst delivery-history claim also lacked independent evidence in the supplied review.\n\nBecause this was a Treasury Withdrawal, BEACN applied elevated scrutiny. The review also noted an unsustainable treasury-flow signal, missing sustainability path, missing cost-benefit clarity, unknown execution risk, no independent assurance, and no rollback or remedy path. Even though there were no decisive blockers listed, the combination of shared-treasury cost, thin independent evidence, and unresolved risk was enough for BEACN to vote NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreie4xwthsxjris2oc6sbmhspo757t6zdnyiyd6o4d7zyxs6vh5bzmy",
+        "file_sha256": "9cbda6795d3144b4e17a4161e4f77fbf9fb236e1181f9dc1ff38bcbd53f43966",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza-20260624T113057Z.bin",
+        "content_chars": 14154
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "d385b8738669e06264d3e2ab4e8cdb9bdb51b2ebce9b69556d86216b3a584431"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "b5dbc475a8ef8ecd514c7b53d71a145822d3f3844cc7b24344c9280a4aa0c0aa"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "3c517d5f0ff7858b3784404a5faef0cf8e5e12739370daece18db37caa815de2"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a7c0e345d0d3864093bccd23.md",
+  "rationale_anchor_hash": "a7c0e345d0d3864093bccd23c7b87bb9f23a3cf2e12a1cc95ed375addb1f90fb"
+}

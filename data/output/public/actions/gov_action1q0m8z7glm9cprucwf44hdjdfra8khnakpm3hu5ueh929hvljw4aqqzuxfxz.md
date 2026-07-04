@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T16:25:25.448943+00:00`
+- Published at: `2026-07-04T17:12:10.753320+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.30; confidence 76.6%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `195515407a7ad61533f56cbd6cbf138d10185fc4d000ad0008effe538c001ffc`
-- snapshot_bundle_hash: `47ba99fd69feefbc363d9ebc3abc2cf5db20f2802798d116d9fc2e9a7821b18b`
+- input_hash: `4beb5a6100b99cfd7c8419aad8f2badaef10c553450967bdc7e45bd1a4423c42`
+- snapshot_bundle_hash: `ebf44bb842b34af1771324e8e629a765741f700af95424ccf985809fbb6ceaec`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
-- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
+- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
 - score: `-0.3033`
 - confidence: `0.7658`
 

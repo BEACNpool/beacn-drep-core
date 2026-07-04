@@ -639,3 +639,22 @@ Things to watch:
 8. Skip replay verification.
 9. Ignore freshness checks.
 10. Fabricate or hallucinate any data point.
+
+## Deep-research dossier pipeline (added 2026-07-04)
+
+`scripts/build_deep_research_dossiers.py` drafts the 7-section treasury diligence dossier
+for every active treasury action from admitted public inputs only (pinned anchor, exported
+governance CSVs, db-sync metrics), with a full attestation receipt per dossier.
+
+- Drafts: `beacn-drep-resources/data/input/governance/decision_support/dossiers/<action_id>.md`
+  (+ `.receipt.json`). Registered in the resource registry as `deep_research_dossiers`.
+- CSV effects: upserts `deep_research_dossiers.csv` (section flags from what the draft actually
+  grounded; **`dossier_complete` stays `no`**, status `drafted_pending_review`), plus
+  machine-extracted rows in `financial_sustainability_profiles.csv` and
+  `risk_mitigation_registry.csv` (owner `drep-agent-extract`; hand-curated rows are never
+  touched; `independent_assurance_present` can never be set `yes` by the machine).
+- Review workflow (this is the human gate that lowers the engine's treasury bar to ±0.06):
+  - queue: `python3 scripts/build_deep_research_dossiers.py --list`
+  - read the dossier md, verify FACTS against the anchor, then
+  - `python3 scripts/build_deep_research_dossiers.py --approve <action_id> --approver David`
+- Cron: `run_daily_check.sh` drafts missing-only dossiers each morning before the engine runs.

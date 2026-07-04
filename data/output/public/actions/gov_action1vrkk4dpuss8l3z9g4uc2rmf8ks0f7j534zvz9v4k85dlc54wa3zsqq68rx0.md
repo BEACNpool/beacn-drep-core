@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.30; confidence 76.6%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `36798d777544362735b09275b3ab69186d0820fd5fd3b4a513a2d50ac806c582`
-- snapshot_bundle_hash: `3641d18213a553cf3549c9d47ba8d95fc1fd354b774ec7d1af594c2813157e27`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `2ecee7684c8f6e48df960066c16fc9f497290dd4be1c24063362ea2b7661e358`
+- snapshot_bundle_hash: `02bcb4d93f817711d7efb73ee921413a8fad17643dd572b31be1b1d45b931831`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `-0.3033`
 - confidence: `0.7658`
 

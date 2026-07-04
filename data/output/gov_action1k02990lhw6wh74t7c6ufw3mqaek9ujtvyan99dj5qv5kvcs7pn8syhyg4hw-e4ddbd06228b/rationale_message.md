@@ -1,0 +1,13 @@
+# Withdraw 1,310,960 ada for Hardware Wallet Maintenance 2026
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large treasury withdrawal and the evidence did not fully meet the higher stewardship bar for spending 1,310,960 ada. The strongest concern was that the need for continuous maintenance was asserted, but not independently supported enough to show that the requested cost and precedent were justified.
+
+The action requested funding for 12 months of Cardano hardware-wallet maintenance in 2026, including Ledger and Trezor compatibility updates, supporting libraries and `cardano-hw-cli`, developer support, integration support, vendor-required audits, and capped time-and-materials reporting. The proposal clearly stated the amount, the recipient treasury reserve smart-contract stake address, the split between 1,272,777 ada for maintenance and 38,183 ada for Intersect administration, and that the work was maintenance and compatibility support rather than a new wallet product.
+
+Several parts were well supported: the anchor document was pinned and replayable, the budget amount was clear, the proposal included on-chain administration details through Intersect and Sundae Labs treasury contracts, and it described oversight, milestone controls, reporting obligations, and prior related funding references. However, key claims remained thin or unsupported, especially the claim that Cardano, Ledger, or Trezor changes could otherwise break secure hardware-wallet access, and the claim that the work aligned with Cardano strategy goals. The treasury review was also incomplete, with missing cost-benefit clarity and no sustainability path, while the risk review lacked independent assurance and a rollback or remedy path.
+
+BEACN recognized the strongest YES case: hardware-wallet maintenance is plausibly useful, the requested amount was clearly disclosed, and the proposal included process evidence and oversight structures. But treasury withdrawals require elevated scrutiny because they spend shared ada, and the review found an incomplete diligence dossier, an unsustainable treasury-flow signal, unknown execution risk, and a confidence-reducing flag score. On the evidence available, BEACN’s conservative conclusion was NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

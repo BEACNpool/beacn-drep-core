@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: 2.46M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Funding for a 9-month continuation of Scalus covering maintenance, Dijkstra hard-fork readiness, interoperability across JVM and JS/TS ecosystems, and a first scoped application runtime.",
+        "Recipient: Lantr Engineering",
+        "Stated amount: 2464844",
+        "Deliverables: Ongoing maintenance: bug fixes, dependency upkeep, security patches, and releases, Initial Plutus V4 support in the compiler and standard library, Improved interfaces and documentation for JS/TS components embedded in MeshJS, Evolution SDK, and Lucid Evolution, Foundational runtime components and reactive workers, Dijkstra ledger rules and transaction-builder updates for new builtins, cost models, nested transactions, accounts, and guard scripts, Conformance testing for Dijkstra changes, Java/Kotlin integration including Spring Boot and Ktor examples, Cleaner integration paths with Cardano Client Lib and Yaci, Runtime chain follower and task scheduler",
+        "Deadline/expiry: March 2027",
+        "Claim (technical, supported_in_proposal, high materiality): Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal says Scalus is used by or underpins Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal says Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+        "Claim (adoption, independently_verifiable, medium materiality): The proposal states Scalus has 4,642 commits across 32 releases, 12 contributors, and Scalus.js has more than 20,000 monthly downloads.",
+        "Claim (economic, supported_in_proposal, high materiality): The requested funding is \u20b32,464,844 for 9 months, stated as approximately $394,375 at a $0.16/ADA reference rate with no contingency.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal says this resubmission reduces the prior request from \u20b38,503,000 over 12 months to about \u20b32,464,844 over 9 months and reduces FTE from 8.25 to 2.25."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal says Scalus is used by or underpins Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.",
+        "Independent evidence for: The proposal says Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+        "Independent evidence for: The proposal says Dijkstra readiness is needed because Plutus V4, nested transactions, guard script types, and accounts affect smart contract development, Plutus evaluation, transaction building, ledger rules, testing, and developer workflows.",
+        "Independent evidence for: Delivery is described as milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 2464844",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.86"
+      ],
+      "missing": [
+        "sustainability path"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: low",
+        "Technical risk: medium",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Scalus is used by or underpins Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

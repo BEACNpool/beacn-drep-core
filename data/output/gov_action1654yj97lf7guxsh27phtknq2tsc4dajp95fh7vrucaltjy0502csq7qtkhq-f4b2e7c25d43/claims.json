@@ -1,0 +1,80 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "103000",
+    "deadline": "instantly performed as part of the governance action's enactment on-chain",
+    "deliverables": [
+      "Immediate on-chain distribution of funds to the intended recipient upon enactment"
+    ],
+    "recipient": "Ikigai Info governance action submitter",
+    "what": "Treasury withdrawal to reimburse the lost deposit for the Ikigai Info governance action and compensate estimated lost staking rewards."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 103,000 ADA from the treasury, consisting of the original 100,000 ADA deposit plus 3,000 ADA for estimated lost staking rewards.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The submitter of the September 2024 'Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -' Info governance action was unable to recover a 100,000 ADA deposit because of a Cardano node bug involving an unregistered stake key.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The referenced Ikigai governance action was symbolic and asked the community whether they agreed with a statement of thanks and hope for Cardano's future.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states there was significant community sentiment that the Ikigai Info governance action deposit should be reimbursed because the submitter was an early pioneer of Cardano governance.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The Cardano in Oceania initiative included this reimbursement in a budget Info governance action, but that governance action was not approved.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that the recipient has not previously received funds from the treasury.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that the requested amount does not exceed the current Net Change Limit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states there are no costs or expenses associated with this treasury withdrawal and no circumstances under which the withdrawal would be refunded to the treasury.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer states that community auditability is available on-chain because funds will be made directly available to the intended recipient.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The document references an AdaStat governance page for the prior Ikigai governance action.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests a 103,000 ADA treasury reimbursement for a prior unrecovered governance action deposit, asserting a node-bug cause, community support, NCL compliance, and direct on-chain delivery, but it provides limited supporting analysis beyond a reference to the prior governance action.",
+  "output_sha256": "2904b0e5077c8fcbb2fe1b2aeabae00646b55fa5e6f74e965a82a2734692634a"
+}

@@ -1,0 +1,264 @@
+{
+  "action_id": "gov_action16tdkp3fs0j6303e4utgp8rftdug0ckezr4sslgv8wxdaeq40ngpsq5sr06h",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.2033,
+  "raw_score": -0.2233,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a treasury action: 8 well-supported claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7708,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 1.15M ADA",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a treasury action: 8 well-supported claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "3f94a6f249c75ee67061ae74a5659053bf2babc206711c948a7f191450e768cb",
+  "snapshot_bundle_hash": "ee7d6aa5f87afe46790ba63d736898f67d8ddca8eff91a4b0989dcde9f797364",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "3a194b6032448cec2eb7ae69ff68fc7e02a22fe7",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 37,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T16:44:23.801471Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0495,
+    "NO": 0.729,
+    "ABSTAIN": 0.2215
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action16tdkp3fs0j6303e4utgp8rftdug0ckezr4sslgv8wxdaeq40ngpsq5sr06h",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: expired",
+          "Proposed epoch: 584",
+          "Expires after epoch: 591",
+          "Treasury request: 1.15M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Withdraw \u20b31,150,000 for GovTool 12 months active maintenance and development",
+          "Recipient: ",
+          "Stated amount: 1.15M ADA",
+          "Deliverables: This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance., GovTool enables ada holders to register, delegate, propose, vote, and transparently view outcomes., It is actively maintained and expanded by the Cardano GovTool Consortium which consists of ByronNetwork, WeDeliver, LidoNation and Dquadrant with additional open source contributors, guided by the Governance Tools Working Group., Funding will ensure operational stability, incentivisation for community contributions, support for other open source governance tools using GovTool open-source code and APIs, and deliver accelerated functional updates across all governance pillars.",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, independently_verifiable, high materiality): This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance.",
+          "Claim (economic, independently_verifiable, low materiality): GovTool enables ada holders to register, delegate, propose, vote, and transparently view outcomes.",
+          "Claim (economic, independently_verifiable, medium materiality): It is actively maintained and expanded by the Cardano GovTool Consortium which consists of ByronNetwork, WeDeliver, LidoNation and Dquadrant with additional open source contributors, guided by the Governance Tools Working Group.",
+          "Claim (economic, independently_verifiable, high materiality): Funding will ensure operational stability, incentivisation for community contributions, support for other open source governance tools using GovTool open-source code and APIs, and deliver accelerated functional updates across all governance pillars.",
+          "Claim (economic, independently_verifiable, high materiality): This proposal addresses the risk of governance participation becoming fragmented or dependent on closed-sourced, privately-owned, commercialised tools.",
+          "Claim (economic, independently_verifiable, low materiality): In Cardano\u2019s Voltaire era, without an open, neutral, and accessible platform like GovTool, Cardano\u2019s decentralisation and legitimacy would be weakened."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 1.15M ADA",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records NO on Withdraw \u20b31,150,000 for GovTool 12 months active maintenance and development. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b31,150,000 for GovTool 12 months active maintenance and development. It asks the treasury for 1.15M ADA. The strongest grounded claim is: This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "gov_action16tdkp3fs0j6303e4utgp8rftdug0ckezr4sslgv8wxdaeq40ngpsq5sr06h",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreihju7a6zywpv3adaeeg4nnyrkewurng5csavsspmqsgikzg2suhry",
+        "file_sha256": "e9a7c1ece2cfaec0301086e35b88a896a45a6e8a40aca4f6424642b26d4a878e",
+        "file_path": "data/input/governance/anchors/gov_action16tdkp3fs0j6303e4utgp8rftdug0ckezr4sslgv8wxdaeq40ngpsq5sr06h-20260326T175230Z.bin",
+        "content_chars": 20871
+      },
+      "claim_count": 8,
+      "prompt_sha256": "688b7e7a105d992666b95902547f89d324bc9dbf86ab49ae69be2939707554ed",
+      "output_sha256": "934a000685e3d1d4e7be45736a44f7581df90517e67b9e9db5da2791bf272ef2"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "4e480f06910ff5509a824c05b1459fdd83cf2fb53c17a6464a84455785da695f",
+      "output_sha256": "0e6ea476304b9275a9c20c15339576cdc3f763985c159c149d2b61f8330d5cdc"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "9d1797f5bd345137ce27b3c847ac825d3afbef4ec97f910d9861121bd99a7cb4",
+      "output_sha256": "65b0cc8e52e7f925209d70f640948ed85e31c5de2120085701a931a8d5039575"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

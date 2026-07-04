@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "On behalf of Intersect and the Cardano Budget Committee, this Budget Info Action proposes a Cardano Blockchain Ecosystem Budget of 275,269,340 ada." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 63.5%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `0fa54aa5fff6444ad2cca3c115ac9a06c0d3b878f75d8c3740ef4afce604ee2c`
-- snapshot_bundle_hash: `95c51d7e2604b6bd24a6310fb2877bab7e9249a1ccd28f3e342ff7f482d7cf2f`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `d813e7b7be7c80ad3b378f015e0652137882ae699e8f4644f075a58e47244950`
+- snapshot_bundle_hash: `8fd3cdf929691e4e2a104d3e2487afcd1175241c3469f72e59cce9b87ffc6f19`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `0.14`
 - confidence: `0.635`
 

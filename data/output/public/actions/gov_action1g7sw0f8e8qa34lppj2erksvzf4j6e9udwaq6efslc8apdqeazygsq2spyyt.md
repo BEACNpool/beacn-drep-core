@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `NewCommittee`
 - Status: `enacted`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 57.8%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficien
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `f3a342986898a232b5701edfa215924795853bcb3121fe6702a63d1c76e26d0d`
-- snapshot_bundle_hash: `1dae16d1007a8a671e61ff49debdb03a31c71b36e69bef672242c2aac335bfca`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `ad7edd6ad9e99324c961f5118afff036c6f18e00a65af070d629d2195b2edfd9`
+- snapshot_bundle_hash: `9fb3aee3ae1e4be0c625ee5b0070533d011113271c53d3f29c82f9e139cfcc98`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `0.03`
 - confidence: `0.5775`
 

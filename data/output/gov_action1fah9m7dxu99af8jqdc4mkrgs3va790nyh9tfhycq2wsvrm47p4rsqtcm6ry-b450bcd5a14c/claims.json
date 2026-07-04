@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "5100781",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Performance optimization targeting 2x to 10x improvements in snapshot signing and memory profile and reduced L1 fees through on-chain contract optimization.",
+      "Operational excellence including operator runbooks, simpler node configuration, observability and logging, and an improved TUI.",
+      "Ecosystem support including features requested by production users and pipeline integrators, Hydra Alliance facilitation, hackathons, and developer relations.",
+      "Maintenance and developer experience work including CI, tooling, and technical debt reduction.",
+      "A feature-complete and hardened Hydra v2 with milestone-gating, independent third-party assurance, and Intersect administrative treasury governance."
+    ],
+    "recipient": "not stated in document",
+    "what": "Funding for Hydra v2 production hardening and performance improvements across performance optimization, operational excellence, ecosystem support, and developer experience/maintenance."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Hydra is presented as the only production-grade Layer 2 on Cardano and the only production-ready scaling solution that gives Cardano sub-second finality with L1-grade settlement guarantees.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Hydra is already running or has powered workloads for Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Cardano L1 has over two hours of finality, about $0.17 per payment transaction, about $1 to $3 per DeFi transaction, and roughly 7 to 10 TPS, making some high-performance applications uncompetitive on L1.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims a single Hydra Head processes up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly across independent Heads.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says Hydra provides sub-second or near-instant finality, near-zero or zero internal transaction fees, and L1-anchored settlement while allowing final state to be reclaimed on L1 if problems occur.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Hydra uses the same scripts, Plutus, and EUTXO model as Cardano so applications that run on Cardano can run in Hydra unchanged.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal argues Hydra can increase treasury sustainability because head lifecycle transactions and optionally routed head fees create L1 fee accrual that scales with adoption.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says upcoming L1 upgrades such as Leios and Peras are not yet available and cannot reach the zero-fee, sub-second, high-throughput envelope required by high-performance applications.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal claims the work aligns with treasury KPIs for TVL, monthly active users, monthly transactions, throughput capacity, reliability and uptime, and annual protocol revenue, plus Pillars 1, 2, 4, and 5.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states the \u20b35,100,781 ask will be milestone-gated, independently assured by a third party, and administered through Intersect treasury governance.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests \u20b35,100,781 for Hydra v2 hardening and adoption work, but the provided anchor text makes many high-materiality technical, adoption, and economic claims mostly as proposer assertions rather than with detailed budgets, feasibility analysis, alternatives, quantified milestones, or failure-mode analysis.",
+  "output_sha256": "8a47000e7f6233b537abcafc67a79661a368488918d1017a6ff0c0ae41c45fbf"
+}

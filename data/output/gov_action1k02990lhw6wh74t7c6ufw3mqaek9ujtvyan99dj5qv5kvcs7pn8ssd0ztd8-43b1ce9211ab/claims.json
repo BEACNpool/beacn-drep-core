@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540,750",
+    "deadline": "12 months; grant period begins after closure of the existing contract",
+    "deliverables": [
+      "Part-time maintainer for Pallas over 12 months",
+      "Essential codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Community support including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public developer communication",
+      "AI-friendly documentation and integration resources for AI-driven development workflows"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
+    "what": "Fund Pallas by TxPipe for 12 months of Year 2 maintenance of Cardano core Rust libraries."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for Pallas maintenance, with an additional 15,750 ADA Intersect Budget Administration fee for a total withdrawal of 540,750 ADA.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Pallas is a collection of Rust crates implementing core Ouroboros and Cardano primitives including CBOR encoding, cryptographic operations, mini-protocol networking, ledger traversal, transaction building, and address handling.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Pallas is used by ecosystem projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document reports Pallas has over 649 pull requests, 199 stars, 91 forks, 60 contributors, and 214,446 crates.io downloads, with GitHub and crates.io links provided for verification.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The planned work covers maintenance, community support, external contribution review, ecosystem-feedback-driven enhancements, and AI-friendly documentation and integration resources.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal asserts that the requested withdrawal does not, alone or in aggregate at submission time, breach the applicable 350M ADA Net Change Limit for Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect states that audit, administrative oversight, reporting obligations, and milestone-based disbursement controls are included through its administration fee and third-party oversight.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe is disclosed as having received funding through 30 Project Catalyst proposals in Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Treasury funds would be administered through Sundae Labs smart contract tooling with specified TRSC and PSSC addresses, multisignature-like role thresholds, external oversight entities, and a public dashboard for auditability.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 540,750 ADA for a 12-month continuation of Pallas maintenance by TxPipe, describes Pallas as shared Cardano Rust infrastructure, provides some externally checkable adoption and governance references, and outlines Intersect-managed smart-contract custody and oversight controls.",
+  "output_sha256": "7c587c65540284886baee67d417041ea0700bb006f935fc3daee89e54bec89b6"
+}

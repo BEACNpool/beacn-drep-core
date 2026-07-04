@@ -1,0 +1,81 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,810,423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Intersect budget administration, audit, oversight, reporting obligations, and milestone-based disbursement controls"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor Teragone",
+    "what": "Withdraw treasury funds for Mithril Protocol continuous development and Intersect administration."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Full node synchronisation is currently slow and light clients rely on centralized trust, creating a pressing Cardano infrastructure challenge.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Funding Mithril's continued development through Intersect MBO is presented as necessary for Cardano to scale while preserving decentralization guarantees and avoiding dependency on centralized indexers and hosted APIs.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested withdrawal does not, at submission time, on its own or in aggregate, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Independent oversight will be provided through Intersect and technically capable third parties, with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Teragone has not previously received direct funding from Cardano treasury or community governance programs, while prior Mithril work was funded by IOG.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Intersect will administer the funds using a Sundae Labs treasury management smart contract framework with listed TRSC and PSSC addresses and specified multisignature authorization rules.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "A public dashboard and on-chain records are available for the community to audit the TRSC or PSSC and track metrics related to the withdrawn ada.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document asks for 3,810,423 ada for Mithril Protocol development via Intersect, citing infrastructure benefits, Intersect budget-process approval, NCL compliance, smart-contract custody, oversight controls, and audit/dashboard references.",
+  "output_sha256": "9d21962fdf51918f14ea0c4780e634ae44b4c993ae55c6a8fbddfa8d284049bf"
+}

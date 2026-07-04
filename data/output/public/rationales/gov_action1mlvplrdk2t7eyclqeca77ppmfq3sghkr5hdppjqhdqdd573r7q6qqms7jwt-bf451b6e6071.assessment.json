@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: 12.33M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Fund Phase 1 of 2 for Bifrost, a Bitcoin-Cardano bridge, to move from working testnet to launch readiness.",
+        "Recipient: FluidTokens and Lantr Engineering",
+        "Stated amount: 12332031",
+        "Deliverables: Hardening of Bifrost from working testnet toward launch readiness, Security audits, Formal verification, Ecosystem and partner readiness, Stewardship structure and economic foundations for launch, Audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access",
+        "Deadline/expiry: March 2027",
+        "Claim (technical, supported_in_proposal, high materiality): Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
+        "Claim (technical, proposer_asserted, high materiality): The bridge is on testnet today under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.",
+        "Claim (economic, supported_in_proposal, high materiality): FluidTokens and Lantr Engineering request \u20b312,332,031 for a 9-month delivery period from July 2026 to March 2027, including a 10% refundable contingency.",
+        "Claim (technical, proposer_asserted, high materiality): By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
+        "Claim (governance, supported_in_proposal, high materiality): Public rollout and 24 months of operations are intentionally deferred to a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.",
+        "Claim (technical, proposer_asserted, high materiality): Bifrost claims custody of locked BTC will be distributed across 400+ Cardano SPOs weighted by delegation rather than held by a company, foundation, or fixed signing committee."
+      ],
+      "missing": [
+        "Independent evidence for: The bridge is on testnet today under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.",
+        "Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
+        "Independent evidence for: Bifrost claims custody of locked BTC will be distributed across 400+ Cardano SPOs weighted by delegation rather than held by a company, foundation, or fixed signing committee.",
+        "Independent evidence for: The proposal targets 1,200 BTC TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029 as Cardano 2030 KPI contributions."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 12332031",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.78"
+      ],
+      "missing": [
+        "milestone-gated disbursement"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: high",
+        "Governance risk: medium",
+        "Technical risk: high",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The bridge is on testnet today under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

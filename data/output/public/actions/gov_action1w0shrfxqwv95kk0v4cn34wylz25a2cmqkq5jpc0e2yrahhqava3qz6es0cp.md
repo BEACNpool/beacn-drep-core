@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Proposal as pdf:https://ipnso-com.ipns.dweb.link/?cid=QmXD6eoaFWrRoubFfvB2vSmLGbhVa66DbM9xw2dH1htRYK This proposal delivers three coordinated initiatives that together expand Cardano's economic models, strengthen long-term Treasury resilience, and remove on..." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 64.0%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `c942a80e29a39c2096f0fb95ca68ac0868f03fdb893407b28a9ca5dabd929093`
-- snapshot_bundle_hash: `bcd55b7f26049c197bb3cbd596a09bd5732ee7edf13a8a0082172c356a654bc6`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `e0adf80f9522c67d6d4dd61be365c90c4a8773d527df0bc1a79527d32121ac19`
+- snapshot_bundle_hash: `2d701f57d61ece4343587740ef7145ead2f68ef8b3d1749279398da345ff11d6`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `-0.4333`
 - confidence: `0.64`
 

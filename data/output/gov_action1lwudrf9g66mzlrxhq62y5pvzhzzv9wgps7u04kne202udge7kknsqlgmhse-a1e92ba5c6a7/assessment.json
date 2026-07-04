@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: 2.35M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: 12 months of operations, maintenance, and improvements for Eternl, including frontend and backend maintenance and development, backend infrastructure, user support, day-to-day operations, audits of fund use, and sustainability transition via paid Pro plans.",
+        "Recipient: Tastenkunst GmbH / Eternl",
+        "Stated amount: 2350000",
+        "Deliverables: Frontend maintenance and cross-platform development for Chrome extension, web/PWA, iOS, Android, beta channel, security-critical upgrades, CIP support, hardfork feature support, multisig, dApp interoperability, app store compliance, and hardware wallet support., Backend infrastructure and operations including multi-region servers, Cardano nodes, DBSync/indexers, application servers, metadata aggregation, Hub backend services, and 24/7 monitoring/incident response., Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and proposal creation tooling., User support through Discord ticketing, Telegram, public channels, project support channels, wiki updates, and short educational videos., Day-to-day operations including release management, coordination with vendors/developers/CIP authors, internal code review, and security practices., Periodic independent audits of treasury fund use in February 2027 and August 2027, plus oversight metrics including balances, conversion rates, transaction hashes, and repayment hashes., Launch and grow Eternl Pro plans intended to replace treasury support over time.",
+        "Deadline/expiry: 12-month delivery period, August 2026 to July 2027",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl requests \u20b32,350,000, valued at about $420,000 using an exchange rate of about $0.1787 per Ada, to fund 12 months of operations from August 2026 through July 2027.",
+        "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
+        "Claim (economic, proposer_asserted, high materiality): The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE, which the proposer characterizes as a reasonable lower-bound rate compared with other proposals exceeding $200,000 per FTE.",
+        "Claim (governance, supported_in_proposal, high materiality): Eternl says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, return any Ada above that amount to the treasury, avoid SPO delegation before conversion or return, and delegate voting power to the predefined abstain option.",
+        "Claim (governance, supported_in_proposal, high materiality): An independent party unaffiliated with Tastenkunst GmbH or the Eternl team is planned to audit treasury fund receipt, custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments in February 2027 and August 2027.",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl proposes a repayment mechanism where semiannual surplus treasury stablecoins plus paid-plan income above $420,000 would be used to repay up to $420,000 in Ada, followed by a potential additional donation of up to $210,000 worth of Ada from 50% of Pro-plan income above $420,000 after full repayment."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE, which the proposer characterizes as a reasonable lower-bound rate compared with other proposals exceeding $200,000 per FTE.",
+        "Independent evidence for: The proposer states Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs, and that about 5,500 Pro-plan users, roughly 4.2% of the install base, would fully cover the annual $420,000 cost.",
+        "Independent evidence for: The proposer states that 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+        "Independent evidence for: The proposer states Eternl has provided cross-platform Cardano access with basically zero downtime for over 5 years and is relied on for payments, staking, governance, and DApp interaction."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 2350000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.74"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $420,000 using an exchange rate of about $0.1787 per Ada, to fund 12 months of operations from August 2026 through July 2027.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE, which the proposer characterizes as a reasonable lower-bound rate compared with other proposals exceeding $200,000 per FTE.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

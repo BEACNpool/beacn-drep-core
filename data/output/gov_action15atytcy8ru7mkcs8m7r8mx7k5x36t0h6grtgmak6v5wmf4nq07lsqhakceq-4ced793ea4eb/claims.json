@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "No direct treasury withdrawal; proposed Net Change Limit is 500,000,000 ada.",
+    "deadline": "Period ends at the close of Epoch 713, on or about July 3, 2027.",
+    "deliverables": [
+      "Set a fixed cap of 500,000,000 ada on total Treasury Withdrawals debited during Epochs 613-713.",
+      "Apply the limit from the start of Epoch 613 on February 13, 2026 through the close of Epoch 713 on or about July 3, 2027.",
+      "Count all Treasury Withdrawals already debited during the period toward the limit.",
+      "Exclude Treasury inflows from increasing or counting against the limit.",
+      "Record DRep agreement if Yes votes exceed 50% of active voting stake."
+    ],
+    "recipient": "not stated in document",
+    "what": "Info action to record DRep agreement to a new Net Change Limit for the Cardano Treasury for Epochs 613-713."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The period begins at the start of Epoch 613 on February 13, 2026 and ends at the close of Epoch 713, on or about July 3, 2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The Net Change Limit caps only lovelace removed from the Treasury through enacted Treasury Withdrawals recorded on the Cardano ledger.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Treasury inflows, including reserve and protocol allocations, transaction-fee allocations, refunds, and returned Treasury-funded amounts, are not counted and do not increase the limit.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Treasury Withdrawals already debited during the period count toward the 500,000,000 ada cumulative limit.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The action has no direct on-chain effect and does not authorize any Treasury Withdrawal.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer asserts that the existing 350,000,000 ada Net Change Limit has been useful but is becoming constrained before mid-2027.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer asserts that raising the limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that agreement occurs when Yes votes exceed 50% of active voting stake under TREASURY-01a.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal claims it complies with the enacted Cardano Constitution v2.4 and Appendix I Guardrails and provides an IPFS reference for that constitution.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes an Info action establishing a 500,000,000 ada Treasury Net Change Limit for Epochs 613-713, with ledger-debited withdrawals counted cumulatively and no direct withdrawal authorization.",
+  "output_sha256": "8c95d12f21019414972e53feae84b83b6af2f3392ccfbe7c4e8f7bb6f6b62ed3"
+}

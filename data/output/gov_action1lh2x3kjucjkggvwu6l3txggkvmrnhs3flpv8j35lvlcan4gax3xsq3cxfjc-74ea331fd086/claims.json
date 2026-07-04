@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Upgrade Cardano mainnet protocol to major version 11 and minor version 0 while remaining in the Conway era.",
+      "Make new Plutus primitives available as defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "Make all Plutus built-in functions consistently available across Plutus V1, V2, and V3.",
+      "Add UPLC case expressions for Bool, Integer, and Data.",
+      "Promote or tighten ledger validation rules including VRF key hash uniqueness, reference input rules for Plutus V1/V2, Constitutional Committee voting restrictions, withdrawal validation, and PPView mismatch diagnostics."
+    ],
+    "recipient": "not stated in document",
+    "what": "Hard fork initiation to upgrade Cardano Mainnet to Protocol Version 11.0 via the intra-era \"van Rossem\" hard fork."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The proposal would upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with unchanged transaction shape.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The hard fork would add new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153, including modular exponentiation, dropList, BLS12-381 multi-scalar multiplication, Array operations, and native Value operations.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that all Plutus built-in functions will become available across Plutus V1, V2, and V3, expanding capabilities for existing V1 and V2 scripts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that ledger changes will enforce VRF key hash uniqueness, revise Plutus V1/V2 reference input rules, promote Constitutional Committee voting restrictions to ledger predicates, improve withdrawal validation, and improve PPView mismatch reporting.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect's Hard Fork Working Group recommended submission of the governance action on 2026-06-15 and Intersect's Technical Steering Committee endorsed it on 2026-06-16.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal links a Cardano Node 11.0.1 performance report and states that it shows no regressions for standard value, Plutus, and voting benchmarks, with acceptable baseline performance for new primitives and case expressions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that at least 85% of stake pools by active stake should have upgraded to a node version supporting protocol version 11 before ratification, and that this must be determined before ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that reversion is only possible in extreme circumstances through the CIP-0135 disaster recovery process, while companion cost model settings could be changed to prevent use of new Plutus primitives if issues are discovered.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes a non-treasury hard fork to Cardano protocol version 11.0, focused on Plutus capability and performance, ledger consistency, and node diagnostics/security, with linked CIPs and a performance report but limited embedded evidence for testing, audit results, readiness, and risk mitigation.",
+  "output_sha256": "3a60d1b0d93991d702124129438bee699b25b2fa16376f398355cc30c3716e56"
+}

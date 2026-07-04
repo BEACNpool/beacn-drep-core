@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem." and clears the evidence gates. What would change this vote to YES: Use stable, reproducible anchor links (commit-pinned when possible); Clarify governance intent and expected measurable outcome. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.32; confidence 60.1%.
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `7cff43a62c2e1ea2337eed88a56cd1ecddc713863edce9910f94d8f63b59b814`
-- snapshot_bundle_hash: `b566116b068988e2f80a26a6aa621dbed32775cc9932e5e350d8260de40c87d7`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `93dfefe3e1f9cb341bdbcfe5a69570491d11ffb5662ef23ad76c6658b8733230`
+- snapshot_bundle_hash: `03b69d9ca96a0c2c082bd436f11de54942e7bf65bd808305a20b6f92310207a3`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `-0.3233`
 - confidence: `0.6008`
 

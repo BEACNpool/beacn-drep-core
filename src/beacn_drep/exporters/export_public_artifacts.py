@@ -13,6 +13,11 @@ OUT = CORE_REPO / "data" / "output" / "public"
 RUNS = CORE_REPO / "data" / "output"
 ACTIONS_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "governance_actions_all.csv"
 ANCHOR_INDEX_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "anchor_documents_index.csv"
+DEEP_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "decision_support" / "deep_research_dossiers.csv"
+DOSSIER_DIR = RESOURCES_REPO / "data" / "input" / "governance" / "decision_support" / "dossiers"
+_DOSSIER_SECTIONS = ("proposal_summary", "budget_analysis", "feasibility_assessment",
+                     "risk_analysis", "alternatives_analysis", "failure_mode_analysis",
+                     "community_impact")
 
 
 def _git_commit(path: Path) -> str:
@@ -25,6 +30,57 @@ def _load_actions_map():
         for r in csv.DictReader(f):
             out[r["action_id"]] = r
     return out
+
+
+def _load_deep_research_map():
+    out = {}
+    if not DEEP_CSV.exists():
+        return out
+    with DEEP_CSV.open(newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            out[r.get("action_id", "")] = r
+    return out
+
+
+def _deep_research_block(aid: str, deep_row: dict | None) -> dict | None:
+    """Publish the diligence dossier + its verification attestation so the human
+    role in the fully-agentic workflow — random spot-checks — is possible from
+    the website alone."""
+    if not deep_row:
+        return None
+    dossier_md = DOSSIER_DIR / f"{aid}.md"
+    receipt_path = DOSSIER_DIR / f"{aid}.receipt.json"
+    block = {
+        "status": deep_row.get("status", ""),
+        "dossier_complete": deep_row.get("dossier_complete", ""),
+        "sections_grounded": sum(
+            1 for s in _DOSSIER_SECTIONS if deep_row.get(f"{s}_complete") == "yes"),
+        "sections_total": len(_DOSSIER_SECTIONS),
+        "owner": deep_row.get("owner", ""),
+    }
+    if dossier_md.exists():
+        out_dir = OUT / "dossiers"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(dossier_md, out_dir / dossier_md.name)
+        block["dossier_path"] = f"/data/output/public/dossiers/{dossier_md.name}"
+    if receipt_path.exists():
+        receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+        out_dir = OUT / "dossiers"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(receipt_path, out_dir / receipt_path.name)
+        block["receipt_path"] = f"/data/output/public/dossiers/{receipt_path.name}"
+        verification = receipt.get("verification") or {}
+        if verification:
+            block["verification"] = {
+                "passed": verification.get("passed"),
+                "verified_at_utc": verification.get("verified_at_utc"),
+                "model": verification.get("model"),
+                "fact_count": verification.get("fact_count"),
+                "supported": verification.get("supported"),
+                "support_ratio": verification.get("support_ratio"),
+                "material_discrepancies": len(verification.get("material_discrepancies") or []),
+            }
+    return block
 
 
 def _load_anchor_index_map():
@@ -350,6 +406,7 @@ def main():
     anchor_map = _load_anchor_index_map()
     anchor_stats = _anchor_fetch_stats(anchor_map)
     rat = _load_rationales_latest()
+    deep_map = _load_deep_research_map()
 
     soul_commit = _git_commit(SOUL_REPO)
     res_commit = _git_commit(RESOURCES_REPO)
@@ -458,6 +515,7 @@ def main():
                 "assessment_path": f"/data/output/public/rationales/{run_id}.assessment.json" if assessment and assessment_path.exists() else "",
             },
             "proposal_evidence": proposal_snapshot,
+            "deep_research": _deep_research_block(aid, deep_map.get(aid)),
             "reproducibility": {
                 "soul_repo": "beacn-drep-soul",
                 "soul_commit": soul_commit,

@@ -1,0 +1,242 @@
+{
+  "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",
+  "action_type": "InfoAction",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.07,
+  "raw_score": -0.05,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.02,
+    "confidence": 0.65,
+    "rationale": "The proposal has clear intent and accounting mechanics, and it preserves discretion over later Treasury Withdrawals, but several important justifications for increasing the cap from 350,000,000 ada to 500,000,000 ada are asserted rather than evidenced in the extracted claims. Given the doctrine's preference for treasury stewardship and evidence quality, a small cautionary negative nudge is warranted without treating the Info action as a direct spend authorization.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; Info Action Doctrine support for governance clarity but caution against weak signal quality.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
+  "directional_threshold": 0.12,
+  "confidence": 0.4875,
+  "readiness_score": 0.6,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has clear intent and accounting mechanics, and it preserves discretion over later Treasury Withdrawals, but several important justifications for increasing the cap from 350,000,000 ada to 500,000,000 ada are asserted rather than evidenced in the extracted claims. Given the doctrine's preference for treasury stewardship and evidence quality, a small cautionary negative nudge is warranted without treating the Info action as a direct spend authorization.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: The proposer asserts that the existing 350,000,000 ada Net Change Limit has been useful but is becoming constrained before mid-2027.",
+    "Claims and evidence missing: Independent evidence for: The proposer asserts that raising the limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "4ced793ea4eb16d22e17ace750c3fca2ef2bedae851520abe94777ece259170b",
+  "snapshot_bundle_hash": "f0f7695baca661681aefb2f87b93dd51941ca6c88da71ebe4af7a844e996068b",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "3a194b6032448cec2eb7ae69ff68fc7e02a22fe7",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 30,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T16:44:23.801471Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2091,
+    "NO": 0.3491,
+    "ABSTAIN": 0.4419
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: active",
+          "Proposed epoch: 640",
+          "Expires after epoch: 647",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Info action to record DRep agreement to a new Net Change Limit for the Cardano Treasury for Epochs 613-713.",
+          "Recipient: not stated in document",
+          "Stated amount: No direct treasury withdrawal; proposed Net Change Limit is 500,000,000 ada.",
+          "Deliverables: Set a fixed cap of 500,000,000 ada on total Treasury Withdrawals debited during Epochs 613-713., Apply the limit from the start of Epoch 613 on February 13, 2026 through the close of Epoch 713 on or about July 3, 2027., Count all Treasury Withdrawals already debited during the period toward the limit., Exclude Treasury inflows from increasing or counting against the limit., Record DRep agreement if Yes votes exceed 50% of active voting stake.",
+          "Deadline/expiry: Period ends at the close of Epoch 713, on or about July 3, 2027.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.",
+          "Claim (governance, supported_in_proposal, high materiality): The period begins at the start of Epoch 613 on February 13, 2026 and ends at the close of Epoch 713, on or about July 3, 2027.",
+          "Claim (technical, supported_in_proposal, high materiality): The Net Change Limit caps only lovelace removed from the Treasury through enacted Treasury Withdrawals recorded on the Cardano ledger.",
+          "Claim (economic, supported_in_proposal, high materiality): Treasury inflows, including reserve and protocol allocations, transaction-fee allocations, refunds, and returned Treasury-funded amounts, are not counted and do not increase the limit.",
+          "Claim (economic, supported_in_proposal, high materiality): Treasury Withdrawals already debited during the period count toward the 500,000,000 ada cumulative limit.",
+          "Claim (governance, supported_in_proposal, high materiality): The action has no direct on-chain effect and does not authorize any Treasury Withdrawal."
+        ],
+        "missing": [
+          "Independent evidence for: The proposer asserts that the existing 350,000,000 ada Net Change Limit has been useful but is becoming constrained before mid-2027.",
+          "Independent evidence for: The proposer asserts that raising the limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+          "Independent evidence for: The proposal states that agreement occurs when Yes votes exceed 50% of active voting stake under TREASURY-01a."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposer asserts that the existing 350,000,000 ada Net Change Limit has been useful but is becoming constrained before mid-2027.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted ABSTAIN because the proposal\u2019s core mechanics were clear, but the evidence did not meet the threshold for a directional Yes or No. This is a conservative, evidence-based hold, not active opposition.\n\nThe action asked DReps to record agreement to a new Cardano Treasury Net Change Limit of 500,000,000 ada for Epochs 613 through 713, from February 13, 2026 to about July 3, 2027. It would not directly authorize any treasury withdrawal. The proposal clearly supported several accounting details: the cap applies only to withdrawals debited on ledger, withdrawals already made during the period count toward the cap, and treasury inflows do not increase or count against the limit.\n\nThe weaker part was the justification for raising the limit from the existing 350,000,000 ada to 500,000,000 ada. The proposer asserted that the current limit has been useful but is becoming constrained before mid-2027, and that raising it would preserve DRep discretion while keeping a fiscal guardrail. Those claims were not backed by independent evidence in the review. The risk review was also thin, with execution risk unknown and missing mitigation evidence or independent assurance.\n\nA directional vote would be unblocked by replayable public evidence showing why the 350,000,000 ada limit is becoming constrained, why 500,000,000 ada is the appropriate new cap, and what mitigations or assurances address the governance and execution risks. Until then, ABSTAIN best reflects BEACN\u2019s evidence standard.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmXFz2SrMXustcHZzmg6kz3vXRThebgyZ4pChF9grxqqMD",
+        "file_sha256": "06700051aa8f5f7421e5cb7c3d4f3e87f41f80279ee6a0671668326f9783ed55",
+        "file_path": "data/input/governance/anchors/gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq-20260703T113107Z.bin",
+        "content_chars": 5543
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "8c95d12f21019414972e53feae84b83b6af2f3392ccfbe7c4e8f7bb6f6b62ed3"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "1fd1d16a74157debc678b6148a929389337bf76572c6538707ef12e2fd896db6"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "27c0f2175773052c568a7db599e9880866582b06087c201ffa6f1ebbec004a95"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/367078a05703fbd0147b10f4.md",
+  "rationale_anchor_hash": "367078a05703fbd0147b10f4a765710ce61f2a201989d1376ed2dacf4cb15741"
+}

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the 500.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Provide line-item budget. Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.39; confidence 63.8%.
@@ -43,11 +43,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `52c437c6590d71e139e0b599ff546031673bc8f9323e436c544ae6a3c4d40d99`
-- snapshot_bundle_hash: `fdb542eca6d98a8fe89ad7e855b2bd0d1e39fc3462660ad247346cfd7b12101d`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `fbdf1a75a56c1892659cb233d1827e7d5dbaa55f76ec30bb750fd1bbb7a04e09`
+- snapshot_bundle_hash: `59d359b0d4294a3f3258a874bef7e00d9a48c8f91c5c3cad0dc130b1a23a283e`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `-0.3933`
 - confidence: `0.6383`
 

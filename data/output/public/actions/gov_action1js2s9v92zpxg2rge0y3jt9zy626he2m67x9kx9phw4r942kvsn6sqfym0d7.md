@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance proposal seeks to reduce the treasury cut from 20% to 10% to enhance staking incentives, improve decentralization, and align economic sustainability with the Cardano ecosystem's long term growth." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 62.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insuffic
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `fadba176c2a0be00a531b9909c321afa095113ed26a565ab2cf9a9ba8875b3d3`
-- snapshot_bundle_hash: `8e69d84bc048c23a483a2d28a720e1585570fce34261702aa92f5da6af8650db`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `77b976b4e3a439e9f1976b4f2912351c9a900f28bb1f4bc44b75d038f0e86f91`
+- snapshot_bundle_hash: `8dfc6fd2f4dc9fb0634ffe7de1d874bcf31399542af2a72583bb88884cf9a425`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `0.08`
 - confidence: `0.62`
 

@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `HardForkInitiation`
 - Status: `active`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal upgrades Cardano mainnet to protocol version 11.0 through an intra-era hard fork that remains in the Conway era and does not change transaction shape." and clears the evidence gates. Weighed against it: a material claim is unsupported — "The proposer claims the Plutus changes will improve script performance, reduce execution cost, address throughput bottlenecks, and extend what builders can accomplish in Plutus." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.03; confidence 45.8%.
+Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal would upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with unchanged transaction shape." and clears the evidence gates. Weighed against it: a material claim is unsupported — "The proposal states that UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.04; confidence 51.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,29 +23,29 @@ Vote: YES. For this HardForkInitiation (active), available evidence supports pro
 - Intake: Action type: HardForkInitiation
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal upgrades Cardano mainnet to protocol version 11.0 through an intra-era hard fork that remains in the Conway era and does not change transaction shape." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano Mainnet from protocol version 10.0 to protocol version 11.0 while remaining in the Conway era with unchanged transaction shape." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
-- Claims and evidence missing: Independent evidence for: The proposer claims the Plutus changes will improve script performance, reduce execution cost, address throughput bottlenecks, and extend what builders can accomplish in Plutus.
-- Claims and evidence missing: Independent evidence for: The proposal claims testing reports demonstrate no behavioral regressions, complete specification and implementation conformance for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.
+- Claims and evidence missing: Independent evidence for: The proposal states that UPLC case expressions for Bool, Integer, and Data will improve script performance and produce cleaner script logic.
+- Claims and evidence missing: Independent evidence for: Intersect's Hard Fork Working Group recommended submission of the governance action on 2026-06-15 and Intersect's Technical Steering Committee endorsed it on 2026-06-16.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposer states security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.
 - Provide mitigation evidence.
 - Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `7aa52c6bc5a4833e83e82dc00eb584f3eefbcaec38224c03369c8219df228aa9`
-- snapshot_bundle_hash: `5a26cc5542253da0e04828ad1b932934eb61a2504422c8224502c2a04023a080`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
-- score: `-0.03`
-- confidence: `0.4575`
+- input_hash: `74ea331fd086b9ec77018bfae05b58b0c45f19f5bfcf3c082c448d9a61771b61`
+- snapshot_bundle_hash: `5e02e911bde9630fbbba9f8619fbb049e2198bfb9cd2a337ec7e10b75f1dc0eb`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
+- score: `-0.04`
+- confidence: `0.51`
 

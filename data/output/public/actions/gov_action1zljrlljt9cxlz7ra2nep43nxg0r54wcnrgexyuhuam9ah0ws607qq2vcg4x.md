@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests ₳18,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.60; confidence 64.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `833f5781c3b4b8a80059d5b2acfb4d66a88d1858487ce0b7baa5096cbe687194`
-- snapshot_bundle_hash: `06fda21a90196f7bd39d2b5594eb5d6f47868b5f57edd712ec4eebc9eb484df1`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `e4b282c412c2f7ba1a499de4f627a29c263e7cce74e5ae935dbf2fdb766487d6`
+- snapshot_bundle_hash: `b508da6386d96588d8c0828df443bc106591f4f4d43e516c3aed6f05de0e0c66`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `-0.6033`
 - confidence: `0.64`
 

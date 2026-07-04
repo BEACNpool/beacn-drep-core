@@ -1,0 +1,88 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "2464844",
+    "deadline": "March 2027",
+    "deliverables": [
+      "Ongoing maintenance: bug fixes, dependency upkeep, security patches, and releases",
+      "Initial Plutus V4 support in the compiler and standard library",
+      "Improved interfaces and documentation for JS/TS components embedded in MeshJS, Evolution SDK, and Lucid Evolution",
+      "Foundational runtime components and reactive workers",
+      "Dijkstra ledger rules and transaction-builder updates for new builtins, cost models, nested transactions, accounts, and guard scripts",
+      "Conformance testing for Dijkstra changes",
+      "Java/Kotlin integration including Spring Boot and Ktor examples",
+      "Cleaner integration paths with Cardano Client Lib and Yaci",
+      "Runtime chain follower and task scheduler"
+    ],
+    "recipient": "Lantr Engineering",
+    "what": "Funding for a 9-month continuation of Scalus covering maintenance, Dijkstra hard-fork readiness, interoperability across JVM and JS/TS ecosystems, and a first scoped application runtime."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Scalus is used by or underpins Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Scalus has 4,642 commits across 32 releases, 12 contributors, and Scalus.js has more than 20,000 monthly downloads.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested funding is \u20b32,464,844 for 9 months, stated as approximately $394,375 at a $0.16/ADA reference rate with no contingency.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal says this resubmission reduces the prior request from \u20b38,503,000 over 12 months to about \u20b32,464,844 over 9 months and reduces FTE from 8.25 to 2.25.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The funded scope excludes a standalone L1 node, full Gummiworm L2 integration, broad formal verification, and advanced devnet expansion.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says Dijkstra readiness is needed because Plutus V4, nested transactions, guard script types, and accounts affect smart contract development, Plutus evaluation, transaction building, ledger rules, testing, and developer workflows.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Delivery is described as milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Lantr Engineering commits to public reporting, open community sessions showcasing shipped work, and on-time milestone delivery for treasury-funded work.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests \u20b32,464,844 for Lantr Engineering to continue Scalus from July 2026 through March 2027, focusing on maintenance, Dijkstra readiness, interoperability, and a scoped runtime, while presenting the ask as a narrower and cheaper resubmission with milestone governance and third-party assurance.",
+  "output_sha256": "87fa664e38330448acc77fb5247ee4d52357ee9f71e229fa3904427a10c39df2"
+}

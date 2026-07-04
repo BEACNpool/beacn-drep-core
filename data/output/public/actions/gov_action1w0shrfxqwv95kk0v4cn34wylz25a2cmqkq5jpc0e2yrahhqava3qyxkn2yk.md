@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This proposal focuses on Leios, which delivers the throughput capacity Cardano needs to meet its 2030 ambitions." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmPdBp8QjKaPdYdvwLxzDiCxX85hGx8H6rxbSvTTuLkcx2 Cardano needs a step change in throughput to meet its 2030 ambitions, and Leios is how it gets there." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: This proposal focuses on Leios, which delivers the throughput capacity Cardano needs to meet its 2030 ambitions; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `b5debfc3a4b34fcd09f64f76951f37b6698e79d429779fb49a12f8b9c0748a25`
-- snapshot_bundle_hash: `5c948a26866f7eb367a33777c19f4e4e828655ecf62a54800b18fb8ed5627da4`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `896360389a888154337ca87399e280060d3d67d32898adc3b21e9c36f9e9da90`
+- snapshot_bundle_hash: `51608bf79b5a21e61a06d5f394c2016a5047e92414462debd4650dda3f6f7a07`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `-0.4583`
 - confidence: `0.49`
 

@@ -1,0 +1,13 @@
+# Bifrost: Unlocking Bitcoin DeFi on Cardano — Road to Mainnet (Phase 1 of 2)
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this is a large treasury withdrawal with high execution risk, and key claims needed for confidence were not independently supported by the review evidence.
+
+The proposal requested ₳12,332,031 for Phase 1 of Bifrost, a Bitcoin-Cardano bridge by FluidTokens and Lantr Engineering, running from July 2026 to March 2027. It aims to move from a working testnet toward launch readiness, including audits, formal verification, ecosystem readiness, stewardship design, economic foundations, and an audited Cardano mainnet bridge under controlled access. The proposer also stated that public rollout and 24 months of operations would come later in a Phase 2 proposal.
+
+Several important claims were supported in the proposal itself: Bifrost is described as a permissionless Bitcoin-Cardano bridge secured by Cardano’s SPO ecosystem, the requested amount and timeline were clear, Catalyst Fund 14 support was identified, and the proposal stated there would be no bridge token, no founder allocation, open-source components, public reporting, and an independent stewardship structure to be determined. But other high-importance claims remained proposer-asserted rather than independently evidenced, including that the bridge is already on testnet with working peg-ins and peg-outs and participating SPOs, and that Phase 1 will end with an audited mainnet bridge in both federated and SPO-threshold custody modes.
+
+The review gates did not clear strongly enough for a YES. The anchor document was available and replayable, and the counterargument pass found a real strongest case for approval: the project could be high-public-benefit infrastructure if delivered. But treasury actions require elevated scrutiny because they spend shared ADA and set precedent. Here, the treasury diligence dossier was incomplete, treasury flow was flagged as unsustainable, milestone-gated disbursement was missing, claims-and-evidence status was thin, and the risk review lacked independent assurance plus a rollback or remedy path. On the available evidence, BEACN judged that the cost and risk outweighed the supported case for funding.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

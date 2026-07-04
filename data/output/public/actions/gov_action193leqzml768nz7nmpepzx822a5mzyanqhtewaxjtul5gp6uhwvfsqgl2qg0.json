@@ -5,12 +5,12 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:a5c2e8ab660b646205ed8646ac05144b48dc031deb65ba01c3e0d54119bd5399",
+    "raw_input_hash": "sha256:77a7b8ad1bae827cce341bd50b87b61a9db9543b13599e062a57e78cf933f2af",
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
     "vote": "NO",
-    "published_at": "2026-07-04T11:30:04.054598+00:00",
+    "published_at": "2026-07-04T16:25:25.448943+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,12 +20,12 @@
     "vote": "NO",
     "score": -0.2033,
     "confidence": 0.7708,
-    "input_hash": "a5c2e8ab660b646205ed8646ac05144b48dc031deb65ba01c3e0d54119bd5399",
-    "snapshot_bundle_hash": "2ddad2bdf5f444b5aa7d47805029d40be38726ab0abcb7ccace0128ad11348b9",
-    "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
-    "resources_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
-    "core_commit": "ee299e18baea1a5bd33d2c73de9f5418988dbe80",
-    "rationale_markdown_path": "/data/output/public/rationales/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0-a5c2e8ab660b.md",
+    "input_hash": "77a7b8ad1bae827cce341bd50b87b61a9db9543b13599e062a57e78cf933f2af",
+    "snapshot_bundle_hash": "8aa03743c590bc98b02869d10820cfbfa5b9bb96abd67e35cc1cb798209e7835",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "3a194b6032448cec2eb7ae69ff68fc7e02a22fe7",
+    "core_commit": "b6a651366e3169115b7c73d71b4e936a8201edc0",
+    "rationale_markdown_path": "/data/output/public/rationales/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0-77a7b8ad1bae.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
@@ -37,7 +37,7 @@
       "Provide milestone-gated disbursement.",
       "Provide sustainability path."
     ],
-    "markdown_path": "/data/output/public/rationales/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0-a5c2e8ab660b.md",
+    "markdown_path": "/data/output/public/rationales/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0-77a7b8ad1bae.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -67,7 +67,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
             "Requested: Withdraw \u20b399,600 for BloxBean Java Tools Maintenance and Enhancement",
             "Recipient: ",
@@ -150,7 +150,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0-a5c2e8ab660b.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0-77a7b8ad1bae.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -161,16 +161,23 @@
     "anchor_hash": "f0c794a2c0168a534828149ba95e21ef81bfbc659e1461a28c38cb7fb423fec1",
     "file_sha256": "245bdfa865227911923825efe6c3af90f2814a4f131d49b643394df2fd2609bb",
     "content_bytes": "15112",
-    "fetched_at_utc": "2026-07-04T11:31:09Z",
+    "fetched_at_utc": "2026-07-04T16:26:25Z",
     "download_path": "/proposals/gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
+  "deep_research": {
+    "status": "completed_expedited_top50",
+    "dossier_complete": "yes",
+    "sections_grounded": 7,
+    "sections_total": 7,
+    "owner": "drep-ops"
+  },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "c2e8563ea5ae8b932f62009a99ae2fa581788f9b",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab",
-    "core_commit": "ee299e18baea1a5bd33d2c73de9f5418988dbe80",
+    "resources_commit": "3a194b6032448cec2eb7ae69ff68fc7e02a22fe7",
+    "core_commit": "b6a651366e3169115b7c73d71b4e936a8201edc0",
     "resource_ids_used": [
       "gov_actions_api",
       "gov_actions_snapshot",
@@ -182,7 +189,8 @@
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
-      "gov_anchor_documents"
+      "gov_anchor_documents",
+      "deep_research_dossiers"
     ]
   },
   "inputs_used": [
@@ -240,6 +248,11 @@
       "resource_id": "gov_anchor_documents",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "deep_research_dossiers",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
@@ -249,10 +262,10 @@
     "governance_alignment": 0.7708
   },
   "freshness": {
-    "snapshot_age_seconds": 965,
+    "snapshot_age_seconds": 37,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-04T11:31:09.323994Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-04T16:44:23.801471Z",
+    "freshness_source": "deep_research_dossiers.csv"
   }
 }

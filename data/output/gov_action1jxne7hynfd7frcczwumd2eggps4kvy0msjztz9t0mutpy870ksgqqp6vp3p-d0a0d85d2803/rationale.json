@@ -1,0 +1,234 @@
+{
+  "action_id": "gov_action1jxne7hynfd7frcczwumd2eggps4kvy0msjztz9t0mutpy870ksgqqp6vp3p",
+  "action_type": "NewConstitution",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.03,
+  "raw_score": 0.01,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a constitution action: 8 well-supported claim(s), constitution doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "constitutional_amendment_doctrine.md"
+  ],
+  "doctrine_hash": "416501ebea52202a6e881f4eae3d16015191e6b2bf1e3ed746afc09f4627e567",
+  "directional_threshold": 0.12,
+  "confidence": 0.5775,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: NewConstitution",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Cardano Constitution v2.4 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a constitution action: 8 well-supported claim(s), constitution doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "d0a0d85d28035638e0d4b249f9d818d2beafd23ccc0ac3f3242e76e898c01097",
+  "snapshot_bundle_hash": "f6e5d88a15e8588dac329969ba6a2daf217de54c88973620e27524b4576bd715",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "3a194b6032448cec2eb7ae69ff68fc7e02a22fe7",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 36,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-04T16:44:23.801471Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2978,
+    "NO": 0.2378,
+    "ABSTAIN": 0.4644
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1jxne7hynfd7frcczwumd2eggps4kvy0msjztz9t0mutpy870ksgqqp6vp3p",
+    "action_type": "NewConstitution",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: NewConstitution",
+          "Status: enacted",
+          "Proposed epoch: 601",
+          "Expires after epoch: 608",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.4",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Cardano Constitution v2.4 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance., It adds clear definitions, enforces immutability of proposal documents, and applies treasury audit/accountability safeguards to all withdrawals., This version also incorporates feedback from EMURGO., CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.4 https://ipfs.io/ipfs/bafkreih62pydt57supou6dn5lqbf5klr7xu4xi2rrs7tl3thaufiqmvo24 2.",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, independently_verifiable, high materiality): Cardano Constitution v2.4 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.",
+          "Claim (other, independently_verifiable, high materiality): It adds clear definitions, enforces immutability of proposal documents, and applies treasury audit/accountability safeguards to all withdrawals.",
+          "Claim (other, independently_verifiable, low materiality): This version also incorporates feedback from EMURGO.",
+          "Claim (governance, independently_verifiable, high materiality): CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.4 https://ipfs.io/ipfs/bafkreih62pydt57supou6dn5lqbf5klr7xu4xi2rrs7tl3thaufiqmvo24 2.",
+          "Claim (economic, independently_verifiable, high materiality): Simplify governance by removing non-binding expectations and redundant mechanisms like Budget Info Action.",
+          "Claim (other, independently_verifiable, low materiality): Improve clarity and consistency through unified terminology, added definitions, and streamlined provisions."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Cardano Constitution v2.4 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewConstitution.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.4. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a NewConstitution. The cached anchor describes the request as: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.4. The strongest grounded claim is: Cardano Constitution v2.4 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.\n\nReason code: RULE_THRESHOLD_UNMET.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "gov_action1jxne7hynfd7frcczwumd2eggps4kvy0msjztz9t0mutpy870ksgqqp6vp3p",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreigxpweqv2rnh7ajt5hzdq6gikogmaq3nbyof5uvdntc4hkg52ghqy",
+        "file_sha256": "d77d890aea2d3fc099f4f91c3c6429c66021b6870e2f6951b662e1d46ee8c786",
+        "file_path": "data/input/governance/anchors/gov_action1jxne7hynfd7frcczwumd2eggps4kvy0msjztz9t0mutpy870ksgqqp6vp3p-20260326T175207Z.bin",
+        "content_chars": 6378
+      },
+      "claim_count": 8,
+      "prompt_sha256": "0a6de114147064201edee50b35d105842e79c4bb9e56fe38b5c4593e5e582698",
+      "output_sha256": "24dc9913667bb36a42be20ccf34bc096df9cfddb3b3a63d2cf9c7b7f750aed44"
+    },
+    "doctrine": {
+      "family": "constitution",
+      "files": [
+        "values_hierarchy.md",
+        "constitutional_amendment_doctrine.md"
+      ],
+      "sha256": "416501ebea52202a6e881f4eae3d16015191e6b2bf1e3ed746afc09f4627e567"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "4f844802cce9edb0aa938acbc4e37329aef972e0038d4dce44312dc29951db2b",
+      "output_sha256": "939dde9804692402975faea07238a43c37c77b0807cc25c619fe4313ba84dba7"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "91d59e63d2a865f0b6dff00ab90c197d74df928d9e78b4ea298fcfd2b3d7dedb",
+      "output_sha256": "9439c218a29d9c56f5eadde2d0dc7b1fc3d837fa43b86f4e2e6f53f2bff60096"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardanoの生きがい - Ikigai - was submitted." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed; Provide independent evidence for: It was considered that the submitter should not lose one hundred thousand ada, for being an early pioneer of Cardano governance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.4%.
@@ -41,11 +41,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide independent evidence for: This is a budget Info governance action requesting an amount of 103,000 ada.
 
 ## Proof of vote
-- input_hash: `b708a8f30c1c8447599d7de0465438dd5425002f18944b914e66d0ac8829aa9a`
-- snapshot_bundle_hash: `d90495ae4a7865976c67f37d340d2f8447b4e050b6f29befe0c32d5d695a28b1`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `7a6cc32642546414266fdebd8e3eeef05deab2193bf95ab227a1a3e04b9062d2`
+- snapshot_bundle_hash: `8a76a42fcfcde194dc78a09a519441f13aadd11a816f7a3de6a9166630e0920b`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `0.015`
 - confidence: `0.4237`
 

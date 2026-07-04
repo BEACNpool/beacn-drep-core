@@ -220,9 +220,13 @@
       "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
       "recommendation": "NO",
       "onchain_vote": null,
-      "policy": "HOLD",
-      "policy_reason": "fresh NO not yet stable: persist=1/2, confidence=0.52<0.6",
-      "status": "HOLD"
+      "policy": "CAST",
+      "policy_reason": "fresh NO: persist=2, confidence=0.52",
+      "gates_ok": false,
+      "status": "blocked_by_gate",
+      "reasons": [
+        "rationale_anchor: published rationale unreachable or hash mismatch"
+      ]
     },
     {
       "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",

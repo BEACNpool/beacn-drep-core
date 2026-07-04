@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T11:30:04.054598+00:00`
+- Published at: `2026-07-04T16:25:25.448943+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy ." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.14; confidence 63.5%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `0f08a0ef3268ca5c2f7e93c27082bc11a4a2b14075c3eab359c09525f52a9ac5`
-- snapshot_bundle_hash: `a207d8afd07024e037737683022ad20dfa9992d02fe130918e1e1d52da2801cc`
-- soul_commit: `c2e8563ea5ae8b932f62009a99ae2fa581788f9b`
-- resources_commit: `55b0ab6e1fe7b1169fc4a1f8c7c9e290b59af2ab`
-- core_commit: `ee299e18baea1a5bd33d2c73de9f5418988dbe80`
+- input_hash: `2e4ccad80e44a388ad1b6d09e29bf130a5a06fbfcf2ba37b4ec75bef5c322f90`
+- snapshot_bundle_hash: `9b405e451584a62b8c33183a633ad4e414ca2ab507739a93bc07709636d28f9e`
+- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- resources_commit: `3a194b6032448cec2eb7ae69ff68fc7e02a22fe7`
+- core_commit: `b6a651366e3169115b7c73d71b4e936a8201edc0`
 - score: `0.14`
 - confidence: `0.635`
 

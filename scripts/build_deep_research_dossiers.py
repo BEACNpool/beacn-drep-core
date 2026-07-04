@@ -378,6 +378,16 @@ def build(args) -> int:
             "model": os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5") if args.backend == "codex" else "claude-cli",
             "anchor": anchor_meta,
             "anchor_sha256": _sha(anchor_text),
+            # Frozen inputs so the independent verifier re-checks against exactly
+            # what the drafter saw (live ballot counts / flow figures move).
+            "onchain_context": onchain,
+            "action_metadata": {
+                "action_type": a.get("action_type"),
+                "metadata_title": a.get("metadata_title"),
+                "treasury_amount_lovelace": a.get("treasury_amount_lovelace"),
+                "proposed_epoch": a.get("proposed_epoch"),
+                "expires_after_epoch": a.get("expires_after_epoch") or a.get("expiration_epoch"),
+            },
             "doctrine_files": doctrine.get("files"),
             "doctrine_sha256": doctrine.get("sha256"),
             "treasury_doctrine_version": tdoc_version,

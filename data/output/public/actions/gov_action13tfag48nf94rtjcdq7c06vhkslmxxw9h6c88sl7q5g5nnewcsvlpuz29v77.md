@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `4030d09e187a8c54185d2a730a5069465499ad919b1531d03757f17cffc88148`
-- snapshot_bundle_hash: `8ebfbce3017dac1277f30c64098cd20e1129a82110b93f3283e0fc7f82b71833`
+- input_hash: `0bd74e665da55dc31fca085d66ee9c595050af81d95b9d71245ab3d4aa6cef60`
+- snapshot_bundle_hash: `97293a899eb94d3c3befb0c8f0a6bce7182acd3e15204638d97854781b6c33dc`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.2033`
 - confidence: `0.7708`
 

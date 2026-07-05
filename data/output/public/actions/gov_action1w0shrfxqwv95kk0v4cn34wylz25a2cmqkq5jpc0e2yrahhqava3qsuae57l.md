@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `32a0a3d5f110ef1d1054d29afc71fac5675909251e3220ad2480382abd21af12`
-- snapshot_bundle_hash: `03c2127bd659e01139fe96e35663e43c427fa5b1faad6a4e1f73381d29a07dc4`
+- input_hash: `1ad4a182b6b7b77c27c780730dcddc680c72aed06f65a0e47e1618afb5a0533a`
+- snapshot_bundle_hash: `d476e2fc83ee4af464d3b3457cf9f55e02ca5d720d2b58669e39eb5184832c48`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.4583`
 - confidence: `0.49`
 

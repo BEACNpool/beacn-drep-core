@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlq2yeptuu",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: 220.9k ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Withdraw \u20b3220,914 for UTxO RPC: Sustaining Cardano Blockchain Integration",
+        "Recipient: ",
+        "Stated amount: 220.9k ADA",
+        "Deliverables: This treasury withdrawal funds UTxO RPC: Sustaining Cardano Blockchain Integration which will provide the following services: This request for support focuses on UTxO RPC https://utxorpc.org an interface specification designed to simplify interactions with..., U5C defines standardized methods, data structures, and communication patterns., By providing a range of SDKs, and offering thorough documentation, U5C enhances reusability, interoperability, and performance in blockchain integrations., Currently in its early stages, UTxO RPC is already being adopted by key projects in the Cardano ecosystem, including Lace, Mesh, Amaru, and many others.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds UTxO RPC: Sustaining Cardano Blockchain Integration which will provide the following services: This request for support focuses on UTxO RPC https://utxorpc.org an interface specification designed to simplify interactions with...",
+        "Claim (economic, independently_verifiable, low materiality): U5C defines standardized methods, data structures, and communication patterns.",
+        "Claim (economic, independently_verifiable, low materiality): By providing a range of SDKs, and offering thorough documentation, U5C enhances reusability, interoperability, and performance in blockchain integrations.",
+        "Claim (economic, independently_verifiable, low materiality): Currently in its early stages, UTxO RPC is already being adopted by key projects in the Cardano ecosystem, including Lace, Mesh, Amaru, and many others.",
+        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: UTxO RPC simplifies interactions with UTxO-based blockchains by providing a standardized interface for blockchain integrations.",
+        "Claim (economic, independently_verifiable, low materiality): It enhances interoperability, reusability, and performance for developers, and has already seen adoption by major Cardano projects like Lace, Mesh, and Amaru."
+      ],
+      "missing": [],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 220.9k ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds UTxO RPC: Sustaining Cardano Blockchain Integration which will provide the following services: This request for support focuses on UTxO RPC https://utxorpc.org an interface specification designed to simplify interactions with...\" and clears the evidence gates.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

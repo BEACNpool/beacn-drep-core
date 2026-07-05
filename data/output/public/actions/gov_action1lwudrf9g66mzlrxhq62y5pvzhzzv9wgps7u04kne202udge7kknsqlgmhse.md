@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE; Provide independent evidence for: The proposer states Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.53; confidence 79.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Eternl claims an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users, and says about 5,500 Pro users would fully cover the $420,000 annual cost." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.53; confidence 79.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2350000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $0.1787 per Ada, to cover a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - No milestone-gated disbursement documented.
-- Claims and evidence missing: Independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.
-- Claims and evidence missing: Independent evidence for: The proposer states Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.
+- Claims and evidence missing: Independent evidence for: Eternl claims an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users, and says about 5,500 Pro users would fully cover the $420,000 annual cost.
+- Claims and evidence missing: Independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis missing: cost-benefit clarity
@@ -41,16 +41,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Risk review missing: dependency map
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal states Eternl costs around $420,000 per year and funds 6.0 FTE across 10 contributors at $70,000 per FTE.
-- Provide independent evidence for: The proposer states Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.
-- Provide independent evidence for: The proposer claims 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- Provide independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- Provide milestone-gated disbursement.
+- Provide cost-benefit clarity.
 
 ## Proof of vote
-- input_hash: `509a0b5e35ba327a75adfc11f62afd8edc8dd70653fe8e230b87aeaf6f48d00b`
-- snapshot_bundle_hash: `7d08940cb62deeb21ee83c9854f98f71b2337593dedcad57b7109b7694d94caa`
+- input_hash: `3f108479cfc9aff35253f3cab0cfd6c9dbc5cfb86bd27e313812ffe3d7da7546`
+- snapshot_bundle_hash: `847eb1a3c18cea4004159263971a83e40422ecca260ef62dc0adb04f863fa1c4`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.5333`
 - confidence: `0.79`
 

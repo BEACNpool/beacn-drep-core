@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYKV7vbX9pwNxst2qWpmtM2k6LRJB4NKKNFJSQyh7zojz Every feature, upgrade, and innovation proposed for Cardano depends on a stable, secure, and well-maintained platform underneath." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `231137735918d8cf0fe336dbd404f93ea925679b25b40794c1c40cd2ecd7a61c`
-- snapshot_bundle_hash: `6af69cd9ec80f8ad39ed7c27889d32a56d873b790837e93050d0c48535c5cf8e`
+- input_hash: `0526118a83e890b1b609991770b33462604f2684aa2a74ed96a0bfb99b7ddda2`
+- snapshot_bundle_hash: `ac98afe36f866e6d4e9d810a1e4c0810befceec392355db31273b86cd8412724`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.4583`
 - confidence: `0.49`
 

@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "A Cardano node bug permitted an unregistered stake key to be used in the governance action, preventing the submitter from recovering a 100,000 ADA deposit." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "An Info governance action titled Cardanoの生きがい - Ikigai - was submitted in September 2024 after the Chang hard fork." though 5 review blocker(s) remain open. What would change this vote to YES: Provide budget analysis; Provide feasibility assessment. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.49; confidence 64.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork introduced on-chain governance." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for lost staking rewards calculated at 2% per annum." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: The Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork introduced on-chain governance; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.49; confidence 64.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -27,14 +27,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 103000
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "An Info governance action titled Cardanoの生きがい - Ikigai - was submitted in September 2024 after the Chang hard fork." though 5 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for lost staking rewards calculated at 2% per annum." though 5 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Claims and evidence missing: Independent evidence for: The Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork introduced on-chain governance.
 - Claims and evidence missing: Independent evidence for: A Cardano node bug permitted an unregistered stake key to be used in the governance action, preventing the submitter from recovering a 100,000 ADA deposit.
-- Claims and evidence missing: Independent evidence for: The community expressed sentiment at the time that the Ikigai Info governance action deposit should be reimbursed via a treasury withdrawal.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -45,16 +45,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: The Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork introduced on-chain governance.
 - Provide budget analysis.
 - Provide feasibility assessment.
-- Provide alternatives analysis.
 
 ## Proof of vote
-- input_hash: `4c0cb23eb7a4018a1b50833208e9bd1bf8050cbb913d796bdaf31224e786e3bf`
-- snapshot_bundle_hash: `3912d94e3a40582ee833f9fc4a62acae000a23c1d907b52e62df50c841c34125`
+- input_hash: `fd14db9c1120c688221dda5097618a890e488f36743e943568ec6e05dd49c54c`
+- snapshot_bundle_hash: `f022b53854de47040cbcb2de6b49ddc0414f8c4fef323d87f49b891972275754`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.4933`
 - confidence: `0.64`
 

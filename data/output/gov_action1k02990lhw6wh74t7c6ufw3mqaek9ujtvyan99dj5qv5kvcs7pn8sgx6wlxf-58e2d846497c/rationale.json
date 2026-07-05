@@ -1,0 +1,268 @@
+{
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.2333,
+  "raw_score": -0.2533,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.72,
+    "rationale": "A small positive nudge is justified because the proposal provides a detailed budget breakdown, prior treasury funding disclosure, externally checkable voting and NCL references, smart-contract fund-management details, and audit or assurance mechanisms, while the large withdrawal size and some proposer-asserted operational-impact claims still warrant caution.",
+    "doctrine_basis": "Evidence quality and reproducibility; treasury stewardship and downside protection; constitutional integrity and protocol safety",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7783,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 25400000",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to \u00b10.05): A small positive nudge is justified because the proposal provides a detailed budget breakdown, prior treasury funding disclosure, externally checkable voting and NCL references, smart-contract fund-management details, and audit or assurance mechanisms, while the large withdrawal size and some proposer-asserted operational-impact claims still warrant caution.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: Independent evidence for: Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity.",
+    "Claims and evidence missing: Independent evidence for: Intersect says it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "58e2d846497c086c620c960c9154f6e47100aeb33f7cf78a46bb6dc87f41db2a",
+  "snapshot_bundle_hash": "ffa1735cffbf84a919ef52cee74dc99c75e3b588c2b262a2695a5f9d2b046fc1",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "4be9e861f70b915ea4b160478106ee4b3b431e71",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-05T11:47:22.975506Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.048,
+    "NO": 0.7379,
+    "ABSTAIN": 0.214
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 25.40M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal to fund Intersect's governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, operations, ecosystem coordination, and management of critical processes for Cardano.",
+          "Recipient: Intersect via the 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+          "Stated amount: 25,400,000",
+          "Deliverables: WP 1 - Intersect operations and ecosystem coordination: 6,000,000 ADA, WP 2 - Technical Stewardship, Incident Response & Coordination including core Cardano repos: 18,800,000 ADA, WP 3 - Management of critical processes: 600,000 ADA, Milestone-based drawdowns, evidence-backed reporting, transparent disclosures, and external assurance process",
+          "Deadline/expiry: June 2026 to June 2027",
+          "Claim (economic, supported_in_proposal, high materiality): Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027.",
+          "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as 6,000,000 ADA for operations and ecosystem coordination, 18,800,000 ADA for technical stewardship and incident response, and 600,000 ADA for management of critical processes.",
+          "Claim (economic, proposer_asserted, medium materiality): Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity.",
+          "Claim (technical, proposer_asserted, high materiality): Intersect says it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting documentation, audited results, and an audit report.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal states the requested withdrawal does not breach the applicable 350M Net Change Limit for Epoch 613 to Epoch 713 at the time of submission."
+        ],
+        "missing": [
+          "Independent evidence for: Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity.",
+          "Independent evidence for: Intersect says it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.",
+          "Independent evidence for: Intersect states its Member-Based Organization supports thousands of participants across members, committees, and working groups as a neutral coordination layer for Cardano collaboration and problem-solving."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 25400000",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: confirmed",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.64"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a large treasury withdrawal request, and the review found that the cost-benefit and sustainability case was not strong enough for that level of shared-ADA spending.\n\nThe action requested 25,400,000 ada for Intersect\u2019s June 2026 to June 2027 operating model, covering governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, operations, ecosystem coordination, and critical process management. The proposal broke this into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for management of critical processes, with milestone-based drawdowns, reporting, disclosures, and an external assurance process.\n\nSeveral parts of the proposal were well-supported: the requested amount and budget breakdown were clear, the proposal anchor was available and replayable, prior treasury funding was disclosed, the proposal referenced Intersect budget-process voting and Net Change Limit materials, and it described smart-contract-based treasury management with oversight and dashboard tracking. The strongest YES case was that the proposal clearly substantiated the core funding request and cleared important evidence gates.\n\nThe NO came from the remaining risk around a large treasury ask. The review found missing or thin evidence for material claims, including the claim that the ask was reduced from last year while preserving the most critical functions, and claims about past network-upgrade and incident-coordination performance. It also flagged missing treasury sustainability path, cost-benefit clarity, independent assurance in the risk review, and rollback or remedy path. Because treasury withdrawals require elevated scrutiny and the treasury flow signal was in an unsustainable regime, BEACN judged that the cost and precedent risk outweighed the supported benefits.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreibk6uedirxck6snc6lozidgc77gu322rvdn572xjfpt6iyql4qe6i",
+        "file_sha256": "2af5083446e257a4d1796eca06617fe6a6f5a8d46deff57495f3f23105f204f2",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf-20260624T113057Z.bin",
+        "content_chars": 17675
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "85f0d96a43913d2f05c44148a0883b348125bffde8ff84c0672f50ebbeb47e5c"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "3e3e5d01419ee4f32ab35a130691647b5f7417a7d73517d8deb40314b36d18db"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "e8a23fe2eb943ba8e8d4ceebc425e632ee3204f0cfd37fa2c53f23ca447bbeae"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/9ff67174ba9f5c98e2b14bda.md",
+  "rationale_anchor_hash": "9ff67174ba9f5c98e2b14bda886e1e67722616d2b6a8ea376b973b126666a8bf"
+}

@@ -1,0 +1,268 @@
+{
+  "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.3133,
+  "raw_score": -0.2833,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.62,
+    "rationale": "The proposal describes potentially high public-benefit infrastructure, but the extracted evidence relies heavily on proposer assertions for security readiness, live testnet status, open-source status, adoption targets, and treasury return mechanics while asking for a large treasury withdrawal. Because the deterministic assessment already marks evidence as thin, only a small additional caution nudge is justified rather than a larger penalty.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7983,
+  "readiness_score": 0.8,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 12332031",
+    "Risk review: Execution risk: high",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Bifrost requests \u20b312,332,031, approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month Phase 1 delivery period.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal describes potentially high public-benefit infrastructure, but the extracted evidence relies heavily on proposer assertions for security readiness, live testnet status, open-source status, adoption targets, and treasury return mechanics while asking for a large treasury withdrawal. Because the deterministic assessment already marks evidence as thin, only a small additional caution nudge is justified rather than a larger penalty.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access.",
+    "Claims and evidence missing: Independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "d9974872991d491a043baeb43d26110eb56c3d9e22c7e84e6ea036a494673b8d",
+  "snapshot_bundle_hash": "f20730716b77e2151e2fffb13acd65c4cdd0ac6c5df50b6b0c093d5a66063ec4",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "4be9e861f70b915ea4b160478106ee4b3b431e71",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-05T11:47:22.975506Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0445,
+    "NO": 0.7594,
+    "ABSTAIN": 0.1961
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 640",
+          "Expires after epoch: 647",
+          "Treasury request: 12.33M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Phase 1 of 2 for Bifrost, a permissionless Bitcoin-Cardano bridge, covering hardening, security audits, formal verification, ecosystem and partner readiness, and stewardship/economic foundations required for launch readiness.",
+          "Recipient: FluidTokens and Lantr Engineering",
+          "Stated amount: 12332031",
+          "Deliverables: Audited bridge running on Cardano mainnet under controlled access, Both custody modes: federated and SPO threshold, Stewardship structure for launch, Hardened economic model, SPO and dApp partner pipeline required for public launch",
+          "Deadline/expiry: 9-month delivery period from July 2026 to March 2027",
+          "Claim (economic, supported_in_proposal, high materiality): Bifrost requests \u20b312,332,031, approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month Phase 1 delivery period.",
+          "Claim (technical, supported_in_proposal, high materiality): Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as fBTC, a native Cardano asset usable in trading, lending, collateral, and other DeFi use cases.",
+          "Claim (technical, proposer_asserted, high materiality): By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal states Bifrost custody is distributed across 400+ Cardano SPOs weighted by delegation, requiring a cryptographic threshold of SPOs representing the majority of delegated stake to move funds.",
+          "Claim (technical, proposer_asserted, high materiality): The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.",
+          "Claim (governance, independently_verifiable, medium materiality): Catalyst Fund 14 funded Bifrost for \u20b3739,000 with 585 votes approved, and listed deliverables of architecture, testnet MVP, and documentation on a Dec 2025 to Aug 2026 timeline stated as on track."
+        ],
+        "missing": [
+          "Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access.",
+          "Independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.",
+          "Independent evidence for: Bifrost\u2019s smart contracts, off-chain tooling, and SDK are released under Apache 2.0 for audit, forking, running, or permissionless building.",
+          "Independent evidence for: The proposer states there is no separate Bifrost token, no founder allocation, and no built-in protocol revenue claim for the founding teams."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 12332031",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: confirmed",
+          "Recurring funding dependency: confirmed",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.78"
+        ],
+        "missing": [
+          "milestone-gated disbursement"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: high",
+          "Governance risk: medium",
+          "Technical risk: high",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Bifrost requests \u20b312,332,031, approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month Phase 1 delivery period.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a large Treasury withdrawal and the strongest delivery and security-readiness claims were not backed by enough independent, replayable evidence.\n\nThe proposal requested \u20b312,332,031 for Phase 1 of Bifrost, a permissionless Bitcoin-to-Cardano bridge, over a 9-month period from July 2026 to March 2027. The requested work included hardening, audits, formal verification, partner readiness, stewardship, an economic model, and a controlled-access mainnet bridge with both federated and SPO-threshold custody modes. The proposer also claimed Bifrost would support Bitcoin DeFi on Cardano through fBTC, that custody would be distributed across 400+ SPOs weighted by delegation, and that fee surplus would eventually return value to the Cardano Treasury and SPOs.\n\nSeveral basic facts were supported well enough to review: the proposal anchor was pinned and replayable, the amount and timeline were clearly stated, and prior Catalyst Fund 14 funding for Bifrost was independently verifiable. But key high-impact claims remained mostly proposer assertions, including that the bridge is already live on testnet with working peg-ins and peg-outs, that Phase 1 will deliver an audited controlled-access mainnet bridge in both custody modes, that the code and tooling are open for audit and permissionless use, and that the proposed treasury return mechanics will work as described.\n\nBecause this action spends shared Treasury ADA, BEACN applied elevated scrutiny. The review found high execution risk, thin claims-and-evidence status, no milestone-gated disbursement, no independent assurance, and no clear rollback or remedy path. The best case for YES was that the proposal describes potentially valuable public infrastructure and clearly states its budget and delivery period. BEACN still voted NO because the unsupported security and execution claims, combined with the size of the withdrawal and treasury conditions, made the cost and precedent too risky on the evidence provided.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmZwHmFoyhd18WMRhv9356CXfbUqjkPsKKGZtCpVLaWgcU",
+        "file_sha256": "891884338278d5777ccde4c798a010f4b62b732b21d9cf9dd39503588d75ee36",
+        "file_path": "data/input/governance/anchors/gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt-20260704T040810Z.bin",
+        "content_chars": 72711,
+        "truncated_to_chars": 60000
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "de12d5f4dc6af6141c380cdc26245d3129337ed61fe574262aa34bae1783b3bc"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "52611139ce3df41e05bd3b10de9dd826e01e59461703f49b53e4f5347721c743"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "866279cc36960698f26dc0a1b5790c78d26dc43e4e334399b27b9b754a1c1432"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/53b01d4223bf33a7f45282bb.md",
+  "rationale_anchor_hash": "53b01d4223bf33a7f45282bb7447183dfdf20e1c83de9d2c1a173db6fd63eb3e"
+}

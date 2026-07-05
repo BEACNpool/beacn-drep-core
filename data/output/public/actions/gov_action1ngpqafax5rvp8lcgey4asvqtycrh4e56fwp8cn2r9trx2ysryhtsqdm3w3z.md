@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Eternl plans to convert the full withdrawal into stablecoins and deposit it into a public company wallet for monitoring; Provide independent evidence for: The proposer states Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.63; confidence 64.0%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide independent evidence for: The proposer states that 10-18% of Cardano mainnet transactions are conducted via Eternl.
 
 ## Proof of vote
-- input_hash: `28a956f03de83520811b87533df5ede523529e04c6bd73efdc7aa8c1aa2032e3`
-- snapshot_bundle_hash: `0601c7dea9856f721babe94c682b465822b6cb4f2f5f732ea5df9f0d72aab1d9`
+- input_hash: `1aa3f0eef8537210eb9d8045acc61fe84876d7b5b2e341ffbada43783b2be0dd`
+- snapshot_bundle_hash: `061ace6718c813601a58a96cfb28aaa4a59b9741b0f6a00ccac3f23ebb0c5572`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.6333`
 - confidence: `0.64`
 

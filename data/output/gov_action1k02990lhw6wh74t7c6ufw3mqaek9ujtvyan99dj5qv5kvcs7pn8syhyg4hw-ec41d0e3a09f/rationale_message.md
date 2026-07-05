@@ -1,0 +1,13 @@
+# Withdraw 1,310,960 ada for Hardware Wallet Maintenance 2026
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this treasury withdrawal did not meet the higher evidence bar expected for spending 1,310,960 ada from shared funds. The proposal showed a real maintenance purpose and some governance controls, but the central justification for urgency and public benefit was not independently supported enough for a withdrawal of this size.
+
+The action requested 1,310,960 ada for 12 months of Cardano hardware-wallet maintenance in 2026, including Ledger and Trezor compatibility updates, supporting libraries, cardano-hw-cli, developer support, integration support, vendor-required audits, capped time-and-materials reporting, and milestone-based disbursement controls. The proposer said the amount was made up of 1,272,777 ada for maintenance and compatibility assurance plus a 38,183 ada Intersect administration fee. That budget breakdown, the limited scope of the work, the pinned proposal anchor, the Intersect budget-process support threshold, the Net Change Limit claim, and the smart-contract treasury controls were supported or independently verifiable.
+
+The weaker part was evidence quality around the main need for the work. The proposer asserted that ongoing maintenance is necessary because Cardano, Ledger, or Trezor changes could otherwise break secure user and integrator access, but the review found that this material claim lacked independent evidence. The proposer also asserted alignment with Cardano strategic pillars such as security, interoperability, developer experience, adoption, and secure UX, but that was not independently supported either. The review also found thin claims-and-evidence coverage, unknown execution risk, no clear sustainability path, limited cost-benefit clarity, no independent assurance, and no rollback or remedy path.
+
+Because this was a treasury withdrawal, BEACN applied elevated scrutiny. The review recognized the strongest YES case: the proposal clearly documented the requested amount and passed several evidence gates. But treasury stewardship requires more than a valid spending request; it requires enough independently checkable evidence that the benefit, cost, risk, and precedent are justified. On that basis, BEACN voted NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

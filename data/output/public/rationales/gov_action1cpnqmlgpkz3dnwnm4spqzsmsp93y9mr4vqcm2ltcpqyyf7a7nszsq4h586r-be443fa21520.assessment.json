@@ -1,0 +1,107 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: 3.33M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Fund Dano Finance to accelerate the DeFi Kernel as an open standard for shared liquidity, on-chain financial intents, and global order-book coordination on Cardano.",
+        "Recipient: Dano Finance, with Minswap Labs serving as budget administrator",
+        "Stated amount: 3333000",
+        "Deliverables: DeFi Kernel registry website and submission process, Spot Leverage Order Book, American Options Market-Making Pools, Composable DeFi Transaction Builder SDK, Public progress, KPI, deployment, registry, and final impact reporting",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,333,000 ADA, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee to Minswap Labs.",
+        "Claim (adoption, proposer_asserted, high materiality): Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which the proposer says slows integrations and limits advanced financial applications.",
+        "Claim (technical, supported_in_proposal, high materiality): The DeFi Kernel registry is intended to publish contract metadata including script hashes, datum and redeemer schemas, integration instructions, audit or security status, TVL or usage references, and discovery mechanisms.",
+        "Claim (adoption, proposer_asserted, medium materiality): Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+        "Claim (technical, supported_in_proposal, high materiality): The Spot Leverage Order Book work package will deliver a Cardano-native DeFi Kernel-compatible leveraged spot trading protocol covering collateral, borrowing, debt accounting, position state, repayment, liquidation conditions, and settlement.",
+        "Claim (technical, supported_in_proposal, high materiality): The American Options Protocol work package will deliver a Cardano-native market-making protocol using an extended concentrated-pool model for American options with strike, expiry, premium, collateral or exposure, exercise, settlement, and LP risk accounting logic."
+      ],
+      "missing": [
+        "Independent evidence for: Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which the proposer says slows integrations and limits advanced financial applications.",
+        "Independent evidence for: Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 3333000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.68"
+      ],
+      "missing": [
+        "milestone-gated disbursement"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 3,333,000 ADA, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee to Minswap Labs.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which the proposer says slows integrations and limits advanced financial applications.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

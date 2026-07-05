@@ -1,0 +1,13 @@
+# Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large 10,000,000 ada Treasury request, and a key treasury-stewardship claim was not independently supported: that treasury-supported launch liquidity would remain treasury-owned and that profits, yield, and returns would be returned to the Cardano Treasury quarterly.
+
+The action requested Treasury funding for Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms. The proposal described a shared BTC reserve architecture, FIRE and ICE assets, SDKs and integrations, public dashboards, monthly reports, audits and economic modeling, legal/compliance work, launch coordination, and staged launch liquidity. It also gave a planning budget of about USD 2.0 million using an approximate USD 0.20 per ada reference rate, split between protocol infrastructure and launch liquidity on one side, and delivery, audits, integrations, dashboards, reporting, legal/compliance, and go-to-market work on the other.
+
+Several technical and budget claims were well-supported in the proposal itself, including the 10,000,000 ada request, the two-pool budget structure, the FIRE/ICE reserve design, the 5.0x target initial reserve ratio, and identified risks such as BTC volatility, oracle risk, bridge risk, protocol-layer risk, delivery risk, and adoption risk. But other important claims remained weaker because they depended on proposer commitments or future governance actions rather than independent, replayable evidence. That included the treasury-owned liquidity return mechanism and the statement that there would be no DRep funds or personal compensation to Sundial or Charms principals.
+
+The review gates found that the anchor document was available and the proposal was detailed enough to review, but Treasury withdrawals require elevated scrutiny because they spend shared ADA and set precedent. The review also noted thin claims-and-evidence status, missing sustainability path, missing cost-benefit clarity, missing independent assurance, and no dependency map. The strongest YES case was that the requested amount and budget framing were substantiated, but BEACN’s final judgment was that the unsupported treasury-return mechanics and execution-dependent risks outweighed that case.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

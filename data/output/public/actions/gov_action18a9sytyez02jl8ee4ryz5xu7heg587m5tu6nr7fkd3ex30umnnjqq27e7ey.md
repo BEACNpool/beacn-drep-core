@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages." though 5 review blocker(s) remain open. What would change this vote to YES: Provide budget analysis; Provide feasibility assessment. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.63; confidence 64.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide alternatives analysis.
 
 ## Proof of vote
-- input_hash: `45bf56c7e8110b35d273ab5a224db1436ddc31148d3959f310718ec42f3603a8`
-- snapshot_bundle_hash: `d3de25670e56750e91c8402d8ce9c3c3661268092c846db392d79f70456f13e3`
+- input_hash: `19714cf2c9122b015b2488cff626afe47c1f5972629ed66adc4cffdc993f3d60`
+- snapshot_bundle_hash: `8f4c5f861917ae9c0eda541e17d0fe541e4536659c6524f61befe78b13254e93`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.6333`
 - confidence: `0.64`
 

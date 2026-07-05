@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,810,423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Intersect Budget Administration fee",
+      "Milestone-based disbursement controls through TRSC and PSSC"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor Teragone",
+    "what": "Withdraw treasury funds for Mithril Protocol continuous development, with administration through Intersect budget management smart contracts."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling faster state verification without relying on the entire chain.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that full node synchronisation is slow and light clients rely on centralized trust, making secure and efficient access to blockchain state a pressing infrastructure challenge.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Mithril supports infrastructure and research excellence, adoption and utility, and community ecosystem growth by improving interoperability, sync times, and tooling opportunities.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested 3,810,423 ada is split into 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that the requested amount does not, at submission, breach the applicable 350M Net Change Limit for Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit and oversight costs are included in the proposal overhead and Intersect administration fee, with independent oversight and milestone-based disbursement controls planned.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Teragone has not previously received direct funding from the Cardano treasury or community governance programs, while prior Mithril work was funded by IOG.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Intersect will use a 2026 Treasury Reserve Smart Contract and one Project-Specific Smart Contract with specified on-chain addresses, role thresholds, an Oversight Committee, and a public dashboard for auditability.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The Oversight Committee is stated to consist of Sundae Labs, Cardano Foundation, Dquadrant, NMKR, Sundial, and Eternl, whose role is to verify key administrative actions using on-chain logic without discretion over governance decisions.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests 3,810,423 ada for Mithril Protocol continuous development and Intersect administration, arguing that Mithril improves decentralized state verification and that funds will be managed through audited smart-contract-based treasury controls with external oversight.",
+  "output_sha256": "d806b49584a5de82c231b8682e638419d266c0f6af2b0f7c5619e1ce35e2bb16"
+}

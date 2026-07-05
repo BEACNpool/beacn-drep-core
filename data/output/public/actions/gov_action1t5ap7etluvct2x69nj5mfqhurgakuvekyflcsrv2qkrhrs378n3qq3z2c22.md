@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `active`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal argues treasury governance should be explicitly addressed and supported by the governance system and the constitution." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 53.8%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal argues treasury governance must provide clear direction, a coherent strategy, and a specific roadmap for Cardano growth and stability." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposal recommends appointing a strategic entity by vote for a fixed term to prepare, propose, and implement budgets; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 53.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,28 +23,28 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal argues treasury governance should be explicitly addressed and supported by the governance system and the constitution." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal argues treasury governance must provide clear direction, a coherent strategy, and a specific roadmap for Cardano growth and stability." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and insufficient support from the existing governance system.
-- Claims and evidence missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife in the Cardano community.
+- Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is in a poor state due to a funding impasse and insufficient direct support from the existing governance system.
+- Claims and evidence missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and gridlock among governance coalitions.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: The proposal recommends appointing a strategic entity by vote for a fixed term to prepare, propose, and implement budgets.
 - Provide mitigation evidence.
 - Provide independent assurance.
-- Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `3e8d6e759e29a3c27f36ac2f13bfeada75ef473b5bc314e6f5763e2840d6ae2b`
-- snapshot_bundle_hash: `0f258aaa07509359d92655428cf9e5fcfb807abe83e1c3bbda1427e5c1344e4c`
+- input_hash: `46f811eee76f560084765cc32e6ffb29da6bc080a9f73584d29e090791a13b56`
+- snapshot_bundle_hash: `48ddf2da0ea3a37e676ced68889fdb57ac09b3b007b5a6da8417bfec6b403d30`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.07`
 - confidence: `0.5375`
 

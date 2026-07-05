@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Ecosystem Exchange Listing and Market Making service pool which will provide MMAAS (Market Making as a Service): Proposal Overview This proposal aims to address two core issues within the Cardano ecosystem: - Problem 1: No Car..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 87.1%.
@@ -41,11 +41,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `e85d431d28c8e49bcec7882e5b0eb062dbcf549e6328d51e39cb27cf283335ab`
-- snapshot_bundle_hash: `c06c2ea8ee84d5c0c6b96a29dcd17d58a2627516394243d5ba4e44c3b5087914`
+- input_hash: `1fcb02291255e31db3933d5a73b86460331f81acc109b6affe94339abbe1f330`
+- snapshot_bundle_hash: `05e81fd91618e3ac7efdcd1994bb5c88d5a0f5c868341e1278c352e412f46637`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.2033`
 - confidence: `0.8708`
 

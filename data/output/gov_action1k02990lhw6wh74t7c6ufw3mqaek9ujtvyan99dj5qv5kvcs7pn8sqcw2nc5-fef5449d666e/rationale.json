@@ -1,0 +1,269 @@
+{
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.2833,
+  "raw_score": -0.2533,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.72,
+    "rationale": "The proposal describes potentially useful public-benefit payment infrastructure and provides governance-process and smart-contract oversight details, but several high-materiality adoption and execution claims are mostly proposer assertions and the ask is large relative to the evidence contained in the anchor text. A small cautionary negative nudge is justified because treasury stewardship and reproducible evidence quality should dominate plausible ecosystem growth claims when the anchor lacks detailed milestones, deadlines, or independently evidenced vendor performance for this specific delivery.",
+    "doctrine_basis": "Treasury stewardship and downside protection; Evidence quality and reproducibility; Public-benefit ecosystem growth",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7908,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 3961538",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal describes potentially useful public-benefit payment infrastructure and provides governance-process and smart-contract oversight details, but several high-materiality adoption and execution claims are mostly proposer assertions and the ask is large relative to the evidence contained in the anchor text. A small cautionary negative nudge is justified because treasury stewardship and reproducible evidence quality should dominate plausible ecosystem growth claims when the anchor lacks detailed milestones, deadlines, or independently evidenced vendor performance for this specific delivery.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: Independent evidence for: Wirex proposes to deliver open-source payments infrastructure including smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem layers.",
+    "Claims and evidence missing: Independent evidence for: The proposed solution would enable Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "fef5449d666ebba5fe3cb4bb43de510f5932394142dcfcaad45754a08121ec7f",
+  "snapshot_bundle_hash": "6d1ad13f990d21577a0cde6f0330b77f58538549eda7e64b78368eda8dbee8f5",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "4be9e861f70b915ea4b160478106ee4b3b431e71",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-05T11:47:22.975506Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0458,
+    "NO": 0.7517,
+    "ABSTAIN": 0.2025
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 3.96M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex.",
+          "Recipient: Intersect-administered 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor Wirex.",
+          "Stated amount: 3,961,538",
+          "Deliverables: Full-stack open-source payments infrastructure for Cardano, Onchain settlement through smart contracts, Connection to banking rails, stablecoin systems, and wallet interfaces, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, WP1 - Enabling Onchain Payments & Card Infrastructure",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.",
+          "Claim (technical, proposer_asserted, high materiality): Wirex proposes to deliver open-source payments infrastructure including smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem layers.",
+          "Claim (adoption, proposer_asserted, high materiality): The proposed solution would enable Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+          "Claim (adoption, proposer_asserted, high materiality): Wirex claims proven execution capability through 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+          "Claim (governance, independently_verifiable, high materiality): The requested withdrawal does not, at submission time, alone or in aggregate, breach the 350M Net Change Limit covering Epoch 613 to Epoch 713."
+        ],
+        "missing": [
+          "Independent evidence for: Wirex proposes to deliver open-source payments infrastructure including smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem layers.",
+          "Independent evidence for: The proposed solution would enable Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+          "Independent evidence for: Wirex claims proven execution capability through 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
+          "Independent evidence for: The proposal says Wirex has not received ada from the Cardano Treasury within the last 24 months."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 3961538",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.52"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Wirex proposes to deliver open-source payments infrastructure including smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem layers.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because the request is a large Treasury withdrawal and several material delivery and adoption claims were not backed by independent, replayable evidence strong enough for that level of spending.\n\nThe proposal asked to withdraw 3,961,538 ada for Wirex\u2019s \u201cBringing Real-World Payments to Cardano\u201d work, submitted by Intersect on Wirex\u2019s behalf. It described open-source Cardano payments infrastructure, on-chain settlement through smart contracts, banking-rail and stablecoin connections, wallet interfaces, and Visa card issuance linked to on-chain balances. The budget amount itself was well-supported: 3,846,153 ada for WP1 and 115,385 ada for Intersect administration. The proposal also had a pinned anchor document, passed the 2026 Intersect Budget Process Hydra Voting threshold, and included Treasury Reserve Smart Contract routing, oversight, reporting, audits, and milestone-based disbursement controls.\n\nThe weaker part was the evidence behind the highest-impact claims. The review found that claims about delivering the full technical stack, enabling Visa card spending from on-chain balances, and Wirex\u2019s execution capability were mostly proposer assertions rather than independently evidenced for this specific delivery. The proposal also did not state a deadline, and the review identified missing cost-benefit clarity, no sustainability path, no independent assurance, and no rollback or remedy path. Execution risk remained unknown.\n\nBecause Treasury votes consume shared ada and set precedent, BEACN applied elevated scrutiny. The strongest case for YES was that the request amount and governance-process controls were substantiated. But the strongest case for NO carried more weight: a large public withdrawal should not rely on unsupported material claims about delivery and adoption. That is why the final deterministic vote was NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreie2tzzdv7w4b2rplt3ng47abfyutra2agiyqdlxvgexpljdvkaezm",
+        "file_sha256": "9a9e723afedc0ea2f5cf6d373e0097149c41a0191880d77a98977ad23aa804cb",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5-20260624T113057Z.bin",
+        "content_chars": 13870
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "aff20539957f02813db02191343d4e53e2801a8280b565deaa4f3bf2e4ba9153"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "5cdb8173286de38e115b12a6d4853b063b135fa4364dfd936c2216bd1623f980"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "19f477cd6afa00025759138dc148e51140119af2dbc2d8c5aa008cba77e51ee8"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/00fe3a9255b9b7a71a53889e.md",
+  "rationale_anchor_hash": "00fe3a9255b9b7a71a53889e321a208c187e43b3a707b75757e8bef3accb319e"
+}

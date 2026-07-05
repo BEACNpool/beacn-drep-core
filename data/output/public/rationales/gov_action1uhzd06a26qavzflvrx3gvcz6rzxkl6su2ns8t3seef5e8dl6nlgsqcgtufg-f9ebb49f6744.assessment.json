@@ -1,0 +1,104 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 617",
+        "Expires after epoch: 624",
+        "Treasury request: 800.0k ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Cardano Defi Liquidity Budget - Withdrawal 1",
+        "Recipient: ",
+        "Stated amount: 800.0k ADA",
+        "Deliverables: Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity., Under the old constitution, we received broad support (more than 67%) for a budget info action to deploy 50,000,000 ADA into the ecosystem., While we acknowledge a budget info action is not required under the current constitution, we feel encouraged to submit this withdrawal action to setup the legal and on chain components needed to carry out the liquidity deployment., For a detailed overview of what we are aiming to accomplish more broadly, we invite people to read the budget info action (gov action1u4jrcvlkppjzuv5j9z5ksacwtvv77h6glu0knpcjut8gvjjfu0cqqt3alsy).",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.",
+        "Claim (economic, independently_verifiable, high materiality): Under the old constitution, we received broad support (more than 67%) for a budget info action to deploy 50,000,000 ADA into the ecosystem.",
+        "Claim (economic, independently_verifiable, high materiality): While we acknowledge a budget info action is not required under the current constitution, we feel encouraged to submit this withdrawal action to setup the legal and on chain components needed to carry out the liquidity deployment.",
+        "Claim (economic, independently_verifiable, high materiality): For a detailed overview of what we are aiming to accomplish more broadly, we invite people to read the budget info action (gov action1u4jrcvlkppjzuv5j9z5ksacwtvv77h6glu0knpcjut8gvjjfu0cqqt3alsy).",
+        "Claim (technical, independently_verifiable, high materiality): Terms of Withdrawal Purpose of Withdrawal This withdrawal is intended solely for establishing the legal and technical infrastructure required to implement the Stablecoin DeFi Liquidity Budget approved by the Cardano Community.",
+        "Claim (economic, independently_verifiable, high materiality): Specifically, funds will be used to: 1."
+      ],
+      "missing": [],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 800.0k ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.\" and clears the evidence gates.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

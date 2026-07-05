@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Tx3 is described as a framework where each protocol is specified once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,684,050 ada total, consisting of 1,635,000 ada for the Open API Layer work package and a 49,050 ada Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Tx3 is presented as a framework where each protocol is described once with a verified interface definition that produces documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve and a 49,050 ADA Intersect administration fee, totaling 1,684,050 ADA." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.27; confidence 78.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1684050
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,684,050 ada total, consisting of 1,635,000 ada for the Open API Layer work package and a 49,050 ada Intersect Budget Administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve and a 49,050 ADA Intersect administration fee, totaling 1,684,050 ADA." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Tx3 is described as a framework where each protocol is specified once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints.
-- Claims and evidence missing: Independent evidence for: The proposal asserts there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and increasing integration costs.
+- Claims and evidence missing: Independent evidence for: Tx3 is presented as a framework where each protocol is described once with a verified interface definition that produces documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints.
+- Claims and evidence missing: Independent evidence for: The proposal claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and making cross-protocol composability impractical.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `5a9f0f5668c9f4f0ba81713f8566a416fad12b68f862279058547cb308763677`
-- snapshot_bundle_hash: `430930f60f530a7b834b97ed3b5cac54d436b265b4ad0ab6e4330a53c9fe5e55`
+- input_hash: `33e7a56dae1bde27e65c7cb51c01abfaedbacfb48ed5ec85eaa1b70a67472598`
+- snapshot_bundle_hash: `03ce7b8b7340508c26e5c5cf8f0db31a669c0eb2e4003e9932461555f5266bd4`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
-- score: `-0.2533`
-- confidence: `0.7833`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
+- score: `-0.2733`
+- confidence: `0.7883`
 

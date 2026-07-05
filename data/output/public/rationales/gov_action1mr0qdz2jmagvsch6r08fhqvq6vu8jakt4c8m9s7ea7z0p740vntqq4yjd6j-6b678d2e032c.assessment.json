@@ -1,0 +1,111 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 639",
+        "Expires after epoch: 646",
+        "Treasury request: 1.79M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Daedalus Wallet Maintenance and Improvements 2026-2027 delivered by Se7en Labs, Inc.",
+        "Recipient: Se7en Labs, Inc. via Intersect-administered treasury withdrawal and monthly disbursement controls",
+        "Stated amount: 1785333",
+        "Deliverables: Protocol maintenance including node upgrades, wallet backend updates, hard fork readiness, and compatible releases at least 2 weeks before each mainnet hard fork, Ecosystem expansion including Keystone and Flex hardware wallet support, CIP-30 dApp connector, and Japanese localisation, User support across GitHub, community forums, direct channels, and Japanese-language support, Security and dependency maintenance for Electron, Node.js, wallet-adjacent dependencies, reproducible Nix builds, and signed releases, Architecture assessment covering current state, options, resource estimates, and recommendation",
+        "Deadline/expiry: contract year 2026-2027; ongoing maintenance and user support for 52 weeks; architecture assessment by Q3 2027",
+        "Claim (technical, proposer_asserted, high materiality): Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+        "Claim (adoption, proposer_asserted, medium materiality): The proposal states Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while asserting the true count is meaningfully higher because privacy-conscious users are less likely to opt in.",
+        "Claim (technical, supported_in_proposal, high materiality): Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and has shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization since then.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal claims the team shipped Daedalus 8.0 and 11.0 during the IOG contract period and that Daedalus 11.0 was the first wallet capable of crossing the node 11.0 hard fork.",
+        "Claim (economic, supported_in_proposal, high materiality): The requested 1,785,333 ADA budget is allocated as 1,666,667 ADA for labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and 52,000 ADA for the Intersect administration fee.",
+        "Claim (economic, proposer_asserted, medium materiality): The proposer states any unspent labor, hardware, or audit budget at contract close will be returned to the treasury."
+      ],
+      "missing": [
+        "Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+        "Independent evidence for: The proposal states Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while asserting the true count is meaningfully higher because privacy-conscious users are less likely to opt in.",
+        "Independent evidence for: The proposal claims the team shipped Daedalus 8.0 and 11.0 during the IOG contract period and that Daedalus 11.0 was the first wallet capable of crossing the node 11.0 hard fork.",
+        "Independent evidence for: The proposer states any unspent labor, hardware, or audit budget at contract close will be returned to the treasury."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 1785333",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.62"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and has shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization since then.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

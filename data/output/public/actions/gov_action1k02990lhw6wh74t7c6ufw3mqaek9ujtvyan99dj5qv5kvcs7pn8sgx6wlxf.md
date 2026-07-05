@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Intersect states that its current ask is reduced from last year's $7.875M to $6.35M while preserving critical Cardano continuity functions." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests 25,400,000 ADA for its core operating model from June 2026 to June 2027." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.23; confidence 77.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 25400000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests 25,400,000 ADA for its core operating model from June 2026 to June 2027." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Intersect states that its current ask is reduced from last year's $7.875M to $6.35M while preserving critical Cardano continuity functions.
-- Claims and evidence missing: Independent evidence for: Intersect claims it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.
+- Claims and evidence missing: Independent evidence for: Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity.
+- Claims and evidence missing: Independent evidence for: Intersect says it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `f3eedefea2f0ec187941a2ccba4290c692d91df3c71371c2d1b8115e2971f6e8`
-- snapshot_bundle_hash: `db771b83682daf52c7f459cd9f99a9798b14d4cd957db3a92f32195e54399a03`
+- input_hash: `58e2d846497c086c620c960c9154f6e47100aeb33f7cf78a46bb6dc87f41db2a`
+- snapshot_bundle_hash: `ffa1735cffbf84a919ef52cee74dc99c75e3b588c2b262a2695a5f9d2b046fc1`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
-- score: `-0.2533`
-- confidence: `0.7833`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
+- score: `-0.2333`
+- confidence: `0.7783`
 

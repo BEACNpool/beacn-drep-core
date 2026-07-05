@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.31; confidence 79.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Bifrost requests ₳12,332,031, approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month Phase 1 delivery period." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.31; confidence 79.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 12332031
 - Risk review: Execution risk: high
-- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost requests ₳12,332,031, approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month Phase 1 delivery period." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
+- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access.
 - Claims and evidence missing: Independent evidence for: The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.
-- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO-threshold modes under controlled access.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Risk review missing: independent assurance
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `cf3a9927a8bae60c27c837401537a3a1f46c9796193d850b8107f2ef60601fbd`
-- snapshot_bundle_hash: `47bfcb848a2bc17f48b67dade4d3da971fa8d3c970166060f243d5e1d47dcadf`
+- input_hash: `d9974872991d491a043baeb43d26110eb56c3d9e22c7e84e6ea036a494673b8d`
+- snapshot_bundle_hash: `f20730716b77e2151e2fffb13acd65c4cdd0ac6c5df50b6b0c093d5a66063ec4`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.3133`
 - confidence: `0.7983`
 

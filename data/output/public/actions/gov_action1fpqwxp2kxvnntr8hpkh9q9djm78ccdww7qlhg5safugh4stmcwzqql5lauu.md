@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem." and clears the evidence gates. What would change this vote to YES: Use stable, reproducible anchor links (commit-pinned when possible); Clarify governance intent and expected measurable outcome. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.32; confidence 60.1%.
@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `99e219bb9610af14227388978d0c2f41c8840cedb02bf7dd07d1e84a4d45b9fa`
-- snapshot_bundle_hash: `7079bf989c2513bb340a11c207ab82aa5234b531ba6d8d359ab1451fd4fe8282`
+- input_hash: `80a60edc2c97c475990600ffeb5355b53bb369a1fd32521fbe7b862e6041a486`
+- snapshot_bundle_hash: `1deea48d31a480e340fbd2fbe43a5d232482e396d852d816826dc557fec5eca1`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.3233`
 - confidence: `0.6008`
 

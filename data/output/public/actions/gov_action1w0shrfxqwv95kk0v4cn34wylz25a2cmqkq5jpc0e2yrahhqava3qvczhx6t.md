@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-04T17:12:10.753320+00:00`
+- Published at: `2026-07-05T11:30:04.293384+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `c638befe5758bd95d45e4891c9f10612a3daa6a15edffb22baeceabd9a504a1c`
-- snapshot_bundle_hash: `58591441cb2f8a5e78eadd7ad8e858e4c03d7ebe57f957f8cde8354f18a4c24c`
+- input_hash: `172598f75b41a9f8299c579a9f22f011e3e48a86d74e95e63dd0ca901eace7c9`
+- snapshot_bundle_hash: `9bb51c648d7b9d7b568eff190bf9a31b7fbf9a78222a2ca720f8ccf76e6bffc5`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `3f0094e6cf1d57b2aad31917fe6d7e8bf8f66c7c`
-- core_commit: `0fbc78af53edbc5c3ced4b4eb6a6a9fa16bcc889`
+- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
+- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
 - score: `-0.4333`
 - confidence: `0.49`
 

@@ -1,0 +1,13 @@
+# Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P...
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large treasury withdrawal and the evidence did not clear the higher bar needed for spending shared ADA. The proposal showed a real plan and several reviewable governance controls, but important benefit claims remained mostly asserted rather than independently supported.
+
+The action requested 1,684,050 ada to fund Tx3 by TxPipe over 12 months, including 1,308,000 ada for the project, a 327,000 ada contingency reserve, and a 49,050 ada Intersect administration fee. The proposal described Tx3 as an open API layer where protocols are defined once and used to generate documentation, multi-language SDKs, live JSON-RPC endpoints, agent-focused documentation, protocol skills packaging, an MCP server, and 12 additional protocol onboardings over the year. It also claimed TxPipe already has 5 protocols live from Catalyst Fund 14, passed the 2026 Intersect Budget Process Hydra Voting threshold, stayed within the applicable Net Change Limit, and would use milestone-based treasury controls with oversight and an auditable dashboard.
+
+The strongest supported parts were the budget structure, the technical description of Tx3, the planned quarterly protocol onboardings, and the governance process references. The weaker parts were central to the case for spending: the claim that Cardano lacks a common interface mechanism across protocols, and the claim that AI agents will increase on-chain activity and need deterministic interfaces to avoid dangerous transaction errors, were not backed by independent evidence in the review. The review also found the treasury evidence thin on sustainability path and cost-benefit clarity, with missing independent assurance and no clear rollback or remedy path.
+
+Because treasury withdrawals require elevated scrutiny, those gaps outweighed the plausible ecosystem upside. BEACN recognized the best YES case: the proposal substantiated the requested amount and had a pinned, replayable anchor with governance and oversight references. But for a treasury request of this size, BEACN needed stronger independent evidence for the core need, expected impact, spending value, and execution safeguards.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

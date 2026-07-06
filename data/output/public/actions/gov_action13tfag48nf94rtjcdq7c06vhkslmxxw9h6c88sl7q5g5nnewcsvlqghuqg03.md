@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-05T11:30:04.293384+00:00`
+- Published at: `2026-07-06T09:00:01.454411+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Pallas: Sustaining Critical Rust Tooling for Cardano which will provide the following services: This request for support focuses on Pallas (github.com/txpipe/pallas), a collection of Rust-native building blocks for the Cardano..." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `f7a39b792841ccc937659fdbb29073d72fd4e5c5bfaf0040d44b90b2770d0993`
-- snapshot_bundle_hash: `cfdd9e3cdb9e61464cf22b0991cb40ea9ed43918098fb408350db7d40c07be2e`
+- input_hash: `f6cec2c964e1ad5d15333ab4114d419fdcad834cf194aa88a9799044eed291bc`
+- snapshot_bundle_hash: `88f34f32ed94488e9b3a578ccc4585c4d5efc74be8c8b1b46873f3363ea6bfe7`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
-- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
+- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
+- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
 - score: `-0.2033`
 - confidence: `0.7708`
 

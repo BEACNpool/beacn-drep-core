@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,810,423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Intersect Budget Administration fee",
+      "Audit and oversight through Intersect and technically capable third parties",
+      "Milestone-based disbursement controls through TRSC and PSSC smart contracts"
+    ],
+    "recipient": "Intersect treasury reserve smart contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor Teragone.",
+    "what": "Treasury withdrawal to fund Mithril Protocol continuous development and Intersect budget administration."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer states that full node synchronization is slow and light clients rely on centralized trust, creating a pressing infrastructure challenge for Cardano.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer states that funding Mithril's continued development through Intersect ensures Cardano can scale while preserving decentralization guarantees.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and links to voting documentation, final audited results, and an audit report.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that the requested amount does not, at submission, alone or in aggregate, breach the applicable 350M ada Net Change Limit for Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit and oversight costs are included in the proposal overhead, with independent oversight to be provided through Intersect and technically capable third parties, including reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Teragone has not previously received direct funding from Cardano treasury or community governance programs, while prior Mithril work was funded by IOG.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect will administer withdrawn funds using a Sundae Labs smart contract framework with a Treasury Reserve Smart Contract, one Project-Specific Smart Contract, defined addresses, role thresholds, and an external Oversight Committee.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "A dashboard at treasury.sundae.fi is available for the community to audit and track metrics related to the withdrawn ada, with activity immutably verifiable on chain.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 3,810,423 ada for continued Mithril Protocol development under Intersect administration, citing strategic infrastructure benefits, Intersect budget-process approval, NCL compliance, smart-contract treasury controls, oversight mechanisms, and public tracking references.",
+  "output_sha256": "59f9ed37fc2c3ef1ffdc0cb227ffa260ce8da7a9ceddae8e7b2152ce231d94b7"
+}

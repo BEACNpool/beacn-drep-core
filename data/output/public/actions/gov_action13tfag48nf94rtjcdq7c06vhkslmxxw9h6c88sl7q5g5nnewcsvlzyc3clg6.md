@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-05T11:30:04.293384+00:00`
+- Published at: `2026-07-06T09:00:01.454411+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds PyCardano which will provide the following services: ​ PyCardano is a lightweight Python library that enables developers to interact seamlessly with the Cardano blockchain." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `40c2b1dc9dd046446bda871e018d29d72dfc4f29b53d03a8f14019f4062196a0`
-- snapshot_bundle_hash: `ff906effa0c49921f0014566c8210c1f29643badd79c8d85a91b3a498bac946f`
+- input_hash: `549ada72ab726d83372deff65971eacec0d94d6b3ba103913e651e60af1f993d`
+- snapshot_bundle_hash: `9b662c53eff243b56c743d764680e5fa76f8a177146446eb641014b9e3e25662`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
-- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
+- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
+- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
 - score: `-0.2033`
 - confidence: `0.7708`
 

@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-07-05T11:30:04.293384+00:00`
+- Published at: `2026-07-06T09:00:01.454411+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this ParameterChange (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.05; confidence 61.3%.
@@ -38,11 +38,11 @@ Vote: YES. For this ParameterChange (expired), available evidence supports proce
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `2f91209a710d89855e6b261eebfa82795e2e0194f8ebe06cb40158b737a5ca97`
-- snapshot_bundle_hash: `e293f3dcfa1adfd8d78dda7686b618c84730626be15def6a39a7433b6d38be32`
+- input_hash: `ec7eabd5d9f10199f2088850894570e2188da86880e9ddc00f12b66a4bf4a100`
+- snapshot_bundle_hash: `b1204844e81c685dcf97afa83e95230f80c9e620814642143b501450a752c0ee`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
-- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
+- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
+- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
 - score: `0.05`
 - confidence: `0.6125`
 

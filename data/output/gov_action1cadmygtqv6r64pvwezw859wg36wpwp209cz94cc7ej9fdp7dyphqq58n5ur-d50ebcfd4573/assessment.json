@@ -1,0 +1,89 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "action_type": "ParameterChange",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 635",
+        "Expires after epoch: 642",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Reduce the committeeMinSize protocol parameter from 7 to 5.",
+        "Recipient: not stated in document",
+        "Stated amount: none",
+        "Deliverables: Parameter change setting committee_min_size to 5",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7.",
+        "Claim (governance, supported_in_proposal, high materiality): If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
+        "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer allowing governance to continue if one or two members retire or their terms expire, assuming a 7 member body.",
+        "Claim (governance, supported_in_proposal, medium materiality): The proposal states that the change does not directly affect the current number of Constitutional Committee members and does not change the maximum number of members.",
+        "Claim (governance, supported_in_proposal, high materiality): At a committee size of 5 and a 2/3 Constitutional Committee voting threshold, 4 constitutional votes are needed to meet threshold and 2 unconstitutional votes can prevent threshold.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal acknowledges that with 5 Constitutional Committee members, inactivity by one member would allow another member to fully veto governance actions."
+      ],
+      "missing": [
+        "Independent evidence for: The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: low",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: none",
+        "Mitigation evidence: unknown",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

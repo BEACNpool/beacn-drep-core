@@ -1,0 +1,13 @@
+# Withdraw 3,810,423 ada for Mithril Protocol
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because a central technical claim behind the funding request was not independently supported by replayable public evidence, and treasury withdrawals require a higher evidence bar because they spend shared ada and set precedent.
+
+The action requested 3,810,423 ada from the treasury for Mithril Protocol continuous development and Intersect budget administration. The proposal broke this into 3,699,440 ada for Mithril development and 110,983 ada for administration, with funds administered through Intersect using Treasury Reserve and Project-Specific smart contracts, oversight, reporting obligations, and milestone-based disbursement controls. The pinned anchor document was available, the requested amount was clear, and the proposal included evidence that it passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase.
+
+Several governance and budget-administration claims were well supported, including the Intersect process, smart contract administration structure, oversight model, dashboard visibility, and the claim that the request did not breach the applicable 350M ada Net Change Limit at submission. However, the review found the evidence base thin for key technical and adoption claims. In particular, the claim that Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling rapid verification without relying on the full chain, was treated as unsupported by independent evidence in the review. The related claim that slow full-node sync and centralized light-client trust create a pressing infrastructure challenge was also not independently supported.
+
+The main gates passed were basic intake, anchor availability, and several governance and treasury-administration checks. The main failures were missing independent evidence for material technical claims, missing sustainability path and cost-benefit clarity in the treasury analysis, and missing independent assurance plus a rollback or remedy path in the risk review. Given the elevated scrutiny for treasury withdrawals, those gaps outweighed the strongest YES case that the amount and administrative controls were clearly documented.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

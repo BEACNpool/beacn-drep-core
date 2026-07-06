@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-05T11:30:04.293384+00:00`
+- Published at: `2026-07-06T09:00:01.454411+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.27; confidence 78.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -31,7 +31,8 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: The proposal states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.
+- Claims and evidence missing: Independent evidence for: Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development.
+- Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis missing: sustainability path
@@ -39,16 +40,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Risk review missing: rollback/remedy path
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.
+- Provide independent evidence for: Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development.
 - Provide milestone-gated disbursement.
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `5906792ffc26481afd37cfe9409853ea60f7875cef2a0fece8abee45c0181454`
-- snapshot_bundle_hash: `a63501f564830e6737537d0abd6c20a927cb7f6b86ba9b486bde644f5b5cc3c3`
+- input_hash: `8d55cf6691c16e32b69b49a3f46ba63148237c4151ecac6e510f2b250210c9b6`
+- snapshot_bundle_hash: `43c3f61f47cd56c9d4796b3ed8b1be498ddc42b61631d6bc6493540e94b0fda2`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
-- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
-- score: `-0.2733`
-- confidence: `0.7883`
+- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
+- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- score: `-0.2533`
+- confidence: `0.7833`
 

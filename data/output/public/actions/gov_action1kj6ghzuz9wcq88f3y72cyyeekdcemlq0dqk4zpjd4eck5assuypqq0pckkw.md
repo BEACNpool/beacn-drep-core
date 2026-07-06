@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-05T11:30:04.293384+00:00`
+- Published at: `2026-07-06T09:00:01.454411+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Modular top-up unlocks the ‘ Title’ Sponsorship tier, the highest level of visibility at TOKEN2049." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.36; confidence 66.1%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `0a3b8e3474ad418f75bfc7990be48879c1c979884e6b27b86b3e2a4aedb0c2a5`
-- snapshot_bundle_hash: `d1e32b57cb75b876ee02c24f89cfb1ccd9444d35363d4885ad8dd634129d7f65`
+- input_hash: `479bc23c2ad24b259b941648de4af3226b00279815b46a6200b891ac5dfbdb8e`
+- snapshot_bundle_hash: `5ccc2fd2d2ea5902ab8ba53dfc16ad648dcf727ddd1d24b96075a8d870709cce`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `4be9e861f70b915ea4b160478106ee4b3b431e71`
-- core_commit: `96a6a5adb7b6e0a327abb0fd3921c440738daebd`
+- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
+- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
 - score: `-0.3633`
 - confidence: `0.6608`
 

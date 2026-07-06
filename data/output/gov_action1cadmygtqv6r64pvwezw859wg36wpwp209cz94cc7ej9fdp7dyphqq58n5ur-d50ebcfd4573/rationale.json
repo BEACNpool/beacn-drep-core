@@ -1,0 +1,239 @@
+{
+  "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+  "action_type": "ParameterChange",
+  "recommendation": "YES",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": "GOVERNANCE_LIVENESS_PARAMETER",
+  "score": 0.05,
+  "raw_score": 0.06,
+  "llm_score_adjustment": -0.01,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.01,
+    "confidence": 0.77,
+    "rationale": "The document gives a clear operational-resilience rationale, acknowledges the main governance tradeoff, includes a reversion plan, and points to process-review references, but the case still relies partly on asserted risk judgments and accepts a lower committee minimum for a governance-critical parameter. A small cautionary nudge is warranted because parameter-change doctrine is conservative and prioritizes resilience, decentralization, and complete impact evidence.",
+    "doctrine_basis": "Parameter Change Doctrine: conservative default posture, required clear rationale, impact analysis, and rollback/fallback plan; Values Hierarchy: constitutional integrity and protocol safety before speed or momentum.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "parameter_change_doctrine.md"
+  ],
+  "doctrine_hash": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a",
+  "directional_threshold": 0.12,
+  "confidence": 0.5625,
+  "readiness_score": 0.6,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Protocol parameter changes carry system-wide risk.",
+    "Intake: Action type: ParameterChange",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: low",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.010 (clamped to \u00b10.05): The document gives a clear operational-resilience rationale, acknowledges the main governance tradeoff, includes a reversion plan, and points to process-review references, but the case still relies partly on asserted risk judgments and accepts a lower committee minimum for a governance-critical parameter. A small cautionary nudge is warranted because parameter-change doctrine is conservative and prioritizes resilience, decentralization, and complete impact evidence.",
+    "Action-type policy: a clean committeeMinSize liveness parameter may proceed despite thin generic risk fields; governance-risk detail remains explicit uncertainty.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Claims and evidence missing: Independent evidence for: The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance"
+  ],
+  "missing_evidence": [],
+  "input_hash": "d50ebcfd457303939f9a16dd58e15088edd3e4ce4e2feb2632755ae7d9ed5e28",
+  "snapshot_bundle_hash": "45225ba20805e6d5be889f93eea7c3266669c1d99b7b01979bed0d9e00af82b8",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "0ea81023446b54880e1eea7818c2845a8b5e6f8e",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 2,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-06T11:51:58.664397Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.5306,
+    "NO": 0.2197,
+    "ABSTAIN": 0.2497
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+    "action_type": "ParameterChange",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: ParameterChange",
+          "Status: active",
+          "Proposed epoch: 635",
+          "Expires after epoch: 642",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Reduce the committeeMinSize protocol parameter from 7 to 5.",
+          "Recipient: not stated in document",
+          "Stated amount: none",
+          "Deliverables: Parameter change setting committee_min_size to 5",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7.",
+          "Claim (governance, supported_in_proposal, high materiality): If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
+          "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer allowing governance to continue if one or two members retire or their terms expire, assuming a 7 member body.",
+          "Claim (governance, supported_in_proposal, medium materiality): The proposal states that the change does not directly affect the current number of Constitutional Committee members and does not change the maximum number of members.",
+          "Claim (governance, supported_in_proposal, high materiality): At a committee size of 5 and a 2/3 Constitutional Committee voting threshold, 4 constitutional votes are needed to meet threshold and 2 unconstitutional votes can prevent threshold.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal acknowledges that with 5 Constitutional Committee members, inactivity by one member would allow another member to fully veto governance actions."
+        ],
+        "missing": [
+          "Independent evidence for: The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: low",
+          "Governance risk: medium",
+          "Technical risk: medium",
+          "Treasury exposure risk: none",
+          "Mitigation evidence: unknown",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: not confirmed",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"If the number of Constitutional Committee members drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee comprises 7 members, which equals the current committeeMinSize setting of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted YES because the proposal gives a clear liveness reason: lowering `committeeMinSize` from 7 to 5 creates an operational buffer so governance actions do not become ineligible for ratification if one or two Constitutional Committee members leave or their terms expire.\n\nThe action requested a protocol parameter change setting `committee_min_size` to 5. The proposal argued that the current Constitutional Committee has 7 members and that the current minimum is also 7, but that specific current-state claim was not independently evidenced in the review. The better-supported claims were that falling below `committeeMinSize` can block ratification of actions needing Constitutional Committee approval, that the change does not directly alter the current or maximum committee size, and that a value of 5 satisfies the stated guardrails.\n\nThe review also found that the proposal acknowledged the main tradeoff: with 5 members and a 2/3 threshold, 4 constitutional votes would be needed, and inactivity by one member could allow another member to block threshold. Execution risk was assessed as low, the anchor document was available and replayable, and the strongest YES case cleared the evidence gates. The remaining uncertainty was that evidence was thin in places, with missing independent assurance and mitigation evidence, but there were no decisive blockers or open questions.\n\nBecause this is a system-wide protocol parameter change, BEACN applied conservative caution. Even so, the completed review found enough support for a directional YES: the operational-resilience benefit was explicit, the key governance risk was acknowledged, and action-type policy allowed a clean `committeeMinSize` liveness change to proceed despite thinner generic risk fields.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreidbxerdwxxntmmr6qvjvquyla3qbwhk3flfqjbm3d5lj2ubxfk3aq",
+        "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
+        "file_path": "data/input/governance/anchors/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-20260615T152519Z.bin",
+        "content_chars": 18518
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "cceeccff256397fc0122d23f6394c0c817c697eabf669ff40e19f3e2a1e6860a"
+    },
+    "doctrine": {
+      "family": "parameter",
+      "files": [
+        "values_hierarchy.md",
+        "parameter_change_doctrine.md"
+      ],
+      "sha256": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.01,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "c2cadf43e5ce9f1ac27442d557e2bb2dac0741874098b406a57c90eea0abbc4e"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "ddaeea69449531cb7ab7d64c7394a422f56b137d38990cbe1ee490cedd9a7018"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/2be0c3f12192b45a234eef62.md",
+  "rationale_anchor_hash": "2be0c3f12192b45a234eef6291ec3efa0f2c6476db9665195062a17d467da023"
+}

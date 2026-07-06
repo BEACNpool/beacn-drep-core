@@ -1,0 +1,13 @@
+# Withdraw 1,162,746 ada for MLabs Core Tool Maintenance & Enhancement: Plutarc...
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large Treasury withdrawal and the public-benefit case did not clear the higher evidence bar required for spending shared ada. The proposal did provide a replayable anchor and substantiated the requested amount, but important adoption and impact claims were still thin or unsupported.
+
+The action requested 1,162,746 ada for annual maintenance and enhancement of MLabs’ Plutarch and Ply tooling, submitted by Intersect on behalf of the vendor. The proposal said 1,128,880 ada would fund Plutarch and Ply maintenance, compatibility, and developer experience, with a 33,866 ada Intersect administration fee. It described Plutarch and Ply, prioritized critical breakages, vulnerabilities, hard-fork compatibility, bug fixes, optimizations, documentation, and developer-experience work, and included governance and custody details through Intersect oversight, smart contracts, milestone-based disbursements, and reporting.
+
+Several claims were well-supported in the proposal, including the amount requested, the nature of the tooling, the work priorities, the Intersect Budget Process support, the Net Change Limit statement, prior funding disclosures, and the proposed fund-management structure. However, the proposal’s adoption case depended partly on proposer assertions: it cited an internal audit of at least 26 teams in one section and a conservative count of at least 15 teams later, without independent evidence in the review record. The broader claim that maintaining these tools would strengthen Cardano application-layer utility was also treated as unsupported beyond the proposer’s assertion.
+
+The review gates showed enough information to assess the action, and the strongest YES case was acknowledged: the budget request itself was substantiated and the proposal cleared several evidence gates. But Treasury actions require elevated scrutiny, the treasury-flow signal was in an unsustainable regime, cost-benefit clarity and a sustainability path were missing, execution risk was unknown, and the review lacked independent assurance plus a clear rollback or remedy path. On balance, BEACN’s evidence-based assessment found that the cost and precedent risk outweighed the supported case for funding, so the vote was NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

@@ -1,0 +1,106 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: 3.33M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund Dano Finance's DeFi Kernel registry work, Spot Leverage Order Book, American Options Market-Making Pools, and a Composable DeFi Transaction Builder SDK.",
+        "Recipient: Dano Finance, with Minswap Labs serving as budget administrator",
+        "Stated amount: 3,333,000 ADA total, including 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee",
+        "Deliverables: WP1 DeFi Kernel Registry Website and Submission Process, WP2 Spot Leverage Order Book, WP3 American Options Protocol, WP4 Composable DeFi Transaction Builder SDK, Public reporting, KPI tracking, and final impact/work package reports",
+        "Deadline/expiry: Milestone timing and final delivery date not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,333,000 ADA, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee.",
+        "Claim (technical, supported_in_proposal, high materiality): Dano Finance will deliver a public DeFi Kernel registry, a Spot Leverage Order Book, an American Options Market-Making protocol, and a Composable DeFi Transaction Builder SDK.",
+        "Claim (technical, supported_in_proposal, high materiality): The DeFi Kernel is intended to provide an open, fee-free, royalty-free compatibility standard for permissionless, composable, and discoverable Cardano DeFi contracts.",
+        "Claim (adoption, proposer_asserted, high materiality): Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+        "Claim (technical, supported_in_proposal, high materiality): The Spot Leverage Order Book will support leveraged spot trading intent involving collateral, borrowing, debt accounting, swap execution, risk parameters, and settlement.",
+        "Claim (technical, supported_in_proposal, high materiality): The American Options protocol will use an extended concentrated-pool model to support pool-priced American options with strike, expiry, premium, collateral or exposure, exercise conditions, settlement, and LP risk accounting."
+      ],
+      "missing": [
+        "Independent evidence for: Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 3333000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.68"
+      ],
+      "missing": [
+        "milestone-gated disbursement"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 3,333,000 ADA, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

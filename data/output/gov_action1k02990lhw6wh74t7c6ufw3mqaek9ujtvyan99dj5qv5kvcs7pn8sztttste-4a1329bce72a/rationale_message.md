@@ -1,0 +1,13 @@
+# Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D...
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this treasury withdrawal did not meet the higher evidence bar expected for spending shared ADA. The proposal had a pinned, replayable anchor and some well-supported budget details, but a core technical claim about Dolos being a lightweight Cardano data node built in Rust with lower overhead than traditional full nodes lacked independent evidence in the review.
+
+The action requested 540,750 ada for Year 2 maintenance of Dolos by TxPipe, paid to the listed 2026 Treasury Reserve Smart Contract stake address. The work was described as 12 months of part-time maintenance and enhancement, including dependency updates, Cardano protocol compatibility, performance improvements, bug fixes, documentation, community support, AI-friendly integration resources, and Intersect budget administration. The proposer stated that the amount included 525,000 ada for Dolos work and a 15,750 ada Intersect administration fee, with the underlying budget framed as 420,000 ada plus a 105,000 ada contingency reserve.
+
+The review found several claims well-supported or independently checkable, including the requested amount, the Intersect administration fee, the described oversight and milestone controls, Dolos repository activity figures, Hydra Voting support, and the claim that the request did not breach the applicable Net Change Limit. However, the evidence picture was still thin for a treasury vote. Independent evidence was missing for the core technical value claim about Dolos, for TxPipe’s stated Catalyst delivery history, and for important treasury and risk questions including sustainability path, cost-benefit clarity, independent assurance, and a rollback or remedy path.
+
+Because treasury withdrawals consume shared resources and set precedent, BEACN applies elevated scrutiny. The strongest YES case was that the maintenance budget itself was clearly described and passed evidence gates. The strongest NO case was that an important benefit claim remained unsupported, while treasury-flow sustainability was already in an unsustainable advisory regime. On balance, that made the cost and precedent risk outweigh the supported case, so BEACN voted NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

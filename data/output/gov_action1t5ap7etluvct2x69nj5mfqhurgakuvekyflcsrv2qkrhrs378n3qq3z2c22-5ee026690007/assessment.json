@@ -1,0 +1,93 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+  "action_type": "InfoAction",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: InfoAction",
+        "Status: active",
+        "Proposed epoch: 636",
+        "Expires after epoch: 643",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Info action proposing discussion of reforms to Cardano treasury governance, including strategic budgeting, dedicated entities, expert commissions, and budget structure guardrails.",
+        "Recipient: not stated in document",
+        "Stated amount: not stated in document",
+        "Deliverables: Introduce basic ideas for reforming treasury governance into public discussion, Outline guardrails for strategic direction, Encourage ecosystem collaboration on refining treasury governance processes, Propose a sequence of votes on NCL, budget, and overall treasury withdrawal, Propose thematic budget categories including protocol infrastructure, tooling, research, commercial growth, administration, community, other public-good initiatives, and functional reserve",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, proposer_asserted, high materiality): The proposal states that Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the governance system.",
+        "Claim (governance, proposer_asserted, high materiality): The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and ecosystem-harming conflict.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal argues treasury governance should provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.",
+        "Claim (governance, proposer_asserted, medium materiality): The proposal claims the NCL should not be treated as an overall budget and is only a vague initial approximation for budgeting.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal recommends a dedicated investment budget that includes strategic direction and a roadmap.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal recommends that DReps vote on balanced budgets rather than isolated individual project withdrawals competing against one another."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal states that Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the governance system.",
+        "Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and ecosystem-harming conflict.",
+        "Independent evidence for: The proposal claims the NCL should not be treated as an overall budget and is only a vague initial approximation for budgeting.",
+        "Independent evidence for: The proposal claims direct comparison of individual proposals is cognitively inefficient because few DReps are experts in one domain and hardly any are competent across multiple domains."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: low",
+        "Governance risk: medium",
+        "Technical risk: low",
+        "Treasury exposure risk: none",
+        "Mitigation evidence: not confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal argues treasury governance should provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the governance system.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

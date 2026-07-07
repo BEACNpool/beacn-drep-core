@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The Cardano Community adopted the 2025 Net Change Limit (NCL) on 24 April 2025, which defined the maximum amount of lovelace that could be withdrawn from the Cardano Treasury from the start of Epoch 532 until the conclusion of Epoch 604." and clears the evidence gates. Weighed against it: a material claim is unsupported — "We seek to have this Governance Action adopted so that the management of the Cardano Treasury will not be disrupted by the expiration of the current NCL." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 52.4%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `13adbbe91c6939be302a67dbfb79d7425d9f93c16959abef6ace72c86d84070a`
-- snapshot_bundle_hash: `fbd53f0efd3eb51128278415006f8cab3699057b7b8b4d0ffff4f8721d167958`
+- input_hash: `7425732c0c7bbfd51e38fdf9ca37f57427a3675727e3fa24840ab2a7004bd652`
+- snapshot_bundle_hash: `d95da55f4803b3634cee135a91ec182b21b36fa4fe9d2f541bed0e9167ed670a`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `0.015`
 - confidence: `0.5237`
 

@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Strike reports more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month productive liquidity deployment into Strike Finance V2 rather than grant funding." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states that Strike accounted for more than 50% of Cardano trading activity over the past six months; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.56; confidence 79.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Strike reports more than 1.13 billion USD in cumulative volume, more than 968,000 trades, more than 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity infrastructure, not grant funding." and clears the evidence gates. What would change this vote to YES: Provide milestone-gated disbursement; Provide independent assurance. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.56; confidence 79.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,31 +26,31 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 9000000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month productive liquidity deployment into Strike Finance V2 rather than grant funding." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity infrastructure, not grant funding." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - No milestone-gated disbursement documented.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Strike reports more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.
-- Claims and evidence missing: Independent evidence for: The proposal states that Strike accounted for more than 50% of Cardano trading activity over the past six months.
+- Claims and evidence missing: Independent evidence for: Strike reports more than 1.13 billion USD in cumulative volume, more than 968,000 trades, more than 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.
+- Claims and evidence missing: Independent evidence for: Strike V2 public data from 2026-03-20 through 2026-06-15 shows 87,288,044 USD in total V2 volume, 410,800 total V2 trades, 2,681 total V2 users, and 30,105 USD in total V2 revenue.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal states that Strike accounted for more than 50% of Cardano trading activity over the past six months.
 - Provide milestone-gated disbursement.
 - Provide independent assurance.
+- Provide dependency map.
 
 ## Proof of vote
-- input_hash: `6aa65dd1bc4b1bb16f8c766fc9408fd6127ed423568eaf4af98832690de7b07c`
-- snapshot_bundle_hash: `81c4aad77a7711076e3fcdff7c415c37437dbdfdf5c639d4576a059d672579d0`
+- input_hash: `a8b251f0120527a299d26bd718f6a5201b712f4ab08195512cc4918b7d7456a1`
+- snapshot_bundle_hash: `c55fa276fc536331f190f97cda7662979c321042b2343e55dcdaa028d7c02a2c`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `-0.5633`
 - confidence: `0.79`
 

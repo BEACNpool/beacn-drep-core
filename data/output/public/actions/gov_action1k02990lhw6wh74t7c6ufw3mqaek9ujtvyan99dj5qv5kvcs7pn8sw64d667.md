@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.3%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing; Provide independent evidence for: The proposal states Oura previously received Project Catalyst funding in Fund 9 and Fund 13 for feature development. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540750
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development.
-- Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
+- Claims and evidence missing: Independent evidence for: The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.
+- Claims and evidence missing: Independent evidence for: The proposal states Oura previously received Project Catalyst funding in Fund 9 and Fund 13 for feature development.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis missing: sustainability path
@@ -40,16 +40,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Risk review missing: rollback/remedy path
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Oura has been funded twice through Project Catalyst in Funds 9 and 13 for feature development.
+- Provide independent evidence for: The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.
+- Provide independent evidence for: The proposal states Oura previously received Project Catalyst funding in Fund 9 and Fund 13 for feature development.
 - Provide milestone-gated disbursement.
-- Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `8d55cf6691c16e32b69b49a3f46ba63148237c4151ecac6e510f2b250210c9b6`
-- snapshot_bundle_hash: `43c3f61f47cd56c9d4796b3ed8b1be498ddc42b61631d6bc6493540e94b0fda2`
+- input_hash: `b30b1b606ff464888435973ca25565c46786e37fbdf733cbdc55b2266d7ecb3c`
+- snapshot_bundle_hash: `ea81158593fbd09e4df780988c373e1e1f2ceee53809b3547d4af6fb0063fa24`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `-0.2533`
 - confidence: `0.7833`
 

@@ -1,0 +1,13 @@
+# Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li...
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this treasury withdrawal did not meet the higher evidence bar for spending shared ADA. The proposal had a clear public-benefit target, but key adoption and delivery-history claims were not independently supported, and the budget case lacked enough cost-benefit clarity for a 540,750 ada withdrawal.
+
+The action requested 540,750 ada for Year 2 maintenance of Pallas by TxPipe through Intersect: 525,000 ada for maintenance and enhancement, plus a 15,750 ada administration fee. The proposer described Pallas as core Rust infrastructure for Cardano, covering areas such as CBOR encoding, cryptography, networking, ledger traversal, transaction building, and address handling. The proposed work included dependency updates, protocol compatibility, performance improvements, bug fixes, documentation, issue triage, review of outside contributions, ecosystem feedback, AI-friendly integration resources, and Intersect administration.
+
+Several claims were well-supported in the proposal, including the requested amount, the budget split, the nature of Pallas, the maintenance work to be performed, the Intersect budget-process support threshold, the statement that the withdrawal did not breach the applicable Net Change Limit at submission, and the use of treasury management smart contracts with oversight and auditability features. The proposal also supplied links for reported GitHub and crates.io activity, including pull requests, stars, forks, contributors, and downloads.
+
+The NO vote came from the remaining evidence gaps and treasury risk. The review found missing independent evidence for the claim that Pallas is shared infrastructure used by named projects such as Aiken, Dolos, Lucid, Oura, Mithril, Amaru, and UTxO-RPC. It also found missing independent evidence for the proposer’s delivery-history claims across Project Catalyst and prior Intersect funding. The treasury review lacked a sustainability path and clear cost-benefit case, while the risk review lacked independent assurance and a rollback or remedy path. Because treasury withdrawals require elevated scrutiny, BEACN treated those gaps as enough to outweigh the strongest YES case.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

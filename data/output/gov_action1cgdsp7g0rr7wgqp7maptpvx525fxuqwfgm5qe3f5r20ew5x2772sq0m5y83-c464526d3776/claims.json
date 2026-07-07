@@ -1,0 +1,72 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "deterministic-heuristic",
+  "reason": null,
+  "model": "local-deterministic",
+  "request": {
+    "what": "Increase Transaction and Block Memory Units (Part 1 of 2)",
+    "recipient": "",
+    "amount_ada": "not stated in document",
+    "deliverables": [
+      "Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.",
+      "The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.",
+      "1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers.",
+      "2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits."
+    ],
+    "deadline": "not stated in document"
+  },
+  "claims": [
+    {
+      "claim": "Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    },
+    {
+      "claim": "1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "Community members have expressed a desire to increase the Plutus script memory unit limits to simplify DApp development and enhance scalability - see PCP-003 and public survey results.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    },
+    {
+      "claim": "Raising maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory] could significantly improve Plutus script throughput with minimal impact on block propagation or node performance, making it a low-risk and high-impact change.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "Intersect's Parameter Committee proposes to update the Plutus memory unit limits (maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory]) to enable more work to be done by a Plutus script.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "Technical Evaluation The changes described in this governance action have been recommended by Intersect's Parameter Committee on 2025-05-08, and subsequently ratified by Intersect's Technical Steering Committee on 2025-10-01 (see via Recording or Minutes).",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    }
+  ],
+  "summary": "Intersect's Parameter Committee proposes the first of two Parameter Update governance actions. The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.",
+  "prompt_sha256": "a1407cfbe86d0e66977e30f4bc64e662972b0c7e4b15c25b2a9896ee284aa18a",
+  "output_sha256": "9d13412812ab7ac96ab30845645e824fc774f8777d5b20a6b59ad00c9247b905"
+}

@@ -1,0 +1,13 @@
+# Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P...
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large treasury withdrawal and the evidence did not clear the higher bar for shared ADA spending. The proposal had meaningful public-benefit alignment and some strong governance and oversight evidence, but key benefit claims remained unsupported or thin relative to the size and precedent of the request.
+
+The action requested 1,684,050 ada to fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols over 12 months. The package included 12 additional protocol onboardings, 3 per quarter, developer and agent coverage, an MCP server, a shared skill framework, and agent-first documentation. The proposal clearly documented the budget structure: 1,308,000 ada for work, a 327,000 ada contingency reserve, and a 49,050 ada Intersect administration fee. It also had a pinned, replayable anchor document, passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase, stated that it did not breach the applicable Net Change Limit, and included Intersect-managed smart contract administration with milestone controls and public oversight.
+
+Several claims were well supported: what the money would fund, the intended open-source interface, the quarterly onboarding plan, the prior production registry with 5 protocols live, and the treasury administration setup. But important claims were not independently evidenced enough for BEACN’s treasury standard, especially the claim that Cardano lacks a common interface mechanism in a way that materially raises integration costs, and the claim that agent-facing infrastructure will make protocols accessible to AI agents. The review also found thin overall claims-and-evidence status, no sustainability path, unclear cost-benefit support, unknown execution risk, no independent assurance, and no rollback or remedy path.
+
+The strongest case for YES was that the proposal’s budget, governance process, and oversight structure were concrete and reviewable. The strongest case for NO was that a large treasury ask relied partly on asserted ecosystem-impact and AI-agent adoption claims, while current treasury-flow conditions were already in an unsustainable regime. Under BEACN’s evidence-first treasury doctrine, that made the prudent vote NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

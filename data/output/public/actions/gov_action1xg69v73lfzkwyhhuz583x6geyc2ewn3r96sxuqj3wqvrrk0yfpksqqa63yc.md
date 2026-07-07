@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Scalus is described as an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests ₳2,464,844 for a 9-month Scalus continuation from July 2026 to March 2027 with no contingency, using a $0.16/ADA reference rate." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide independent assurance. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.30; confidence 79.6%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm systems." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm systems; Provide independent evidence for: Scalus components are embedded in Cardano Client Lib, YaciDevKit, MeshJS SDK, Evolution SDK, and Lucid Evolution. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.30; confidence 79.6%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,30 +26,30 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2464844
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳2,464,844 for a 9-month Scalus continuation from July 2026 to March 2027 with no contingency, using a $0.16/ADA reference rate." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Scalus is described as an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
-- Claims and evidence missing: Independent evidence for: The proposer claims Dijkstra changes such as Plutus V4 support, nested transactions, guard script types, and accounts affect smart contract development, Plutus evaluation, transaction building, ledger rules, testing, and developer workflows.
+- Claims and evidence missing: Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm systems.
+- Claims and evidence missing: Independent evidence for: Scalus components are embedded in Cardano Client Lib, YaciDevKit, MeshJS SDK, Evolution SDK, and Lucid Evolution.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm systems.
+- Provide independent evidence for: Scalus components are embedded in Cardano Client Lib, YaciDevKit, MeshJS SDK, Evolution SDK, and Lucid Evolution.
 - Provide sustainability path.
-- Provide independent assurance.
-- Provide dependency map.
 
 ## Proof of vote
-- input_hash: `a8199f9038b89f9272854888571a85377b395332fa283a35e902454390ff8767`
-- snapshot_bundle_hash: `f45cfe4ace695173bf74ce59ed5637b57a95a8c2e5c9f8e33950825dd2caeb8b`
+- input_hash: `f35b25e1d29c7195fa785462822a7e4a0ec4e065736ca9d0d7cba7f342e7bc91`
+- snapshot_bundle_hash: `da9ec186b6f5dfaf27f8651d9b531871a620287579ed3fed3e37319f17bf73e1`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `-0.3033`
 - confidence: `0.7958`
 

@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "18263496.00",
+    "deadline": "2026-2027 delivery period; specific milestone dates not stated in document",
+    "deliverables": [
+      "Peras v1 production cryptography, KillSwitch, mainnet readiness, support, and maintenance",
+      "History Expiry partial-history nodes to reduce SPO storage costs",
+      "Conformance Testing CTC framework extended for Peras and Leios"
+    ],
+    "recipient": "Tweag by Modus Create, administered through Intersect and Cardano Development Holdings contract structures",
+    "what": "Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b318,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "History Expiry is intended to enable partial-history nodes and reduce SPO storage costs as throughput increases.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal asserts that Leios throughput could cause SPO disk usage to surge to approximately 1 GB per hour at 100-1000 TPS without History Expiry.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Tweag states it has been engaged on Cardano core infrastructure since January 2018, including consensus and ledger leadership, Ouroboros Genesis implementation, and Peras design contributions.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget is based on an average market rate of $176 per hour for senior Cardano infrastructure engineers and an ADA/USD conversion rate of 0.25 based on a five-year average.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says deliverables will be open-source, publicly tracked, and supported by public demos at least every two months plus regular website updates and community channels.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect is requested to serve as proposal, contract, audit, and treasury administration entity using milestone-based fixed-price contracts where scope is well-defined.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Funds are proposed to flow through Intersect's Treasury Reserve Smart Contract and project-specific smart contracts with external oversight committee authorization rules and on-chain auditability.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states the requested amount does not, at submission, breach the applicable 350M Net Change Limit for Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests a large treasury withdrawal for Peras, History Expiry, and conformance testing work, with governance administration through Intersect, milestone controls, oversight structures, and public tracking commitments, but several key technical and economic benefit claims are asserted rather than fully evidenced in the anchor text.",
+  "output_sha256": "097af8953367af12776f418606550f55d2208b6849a978ad165857637014e485"
+}

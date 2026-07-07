@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,333,000 ADA total, consisting of 3,300,000 ADA delivery budget and 33,000 ADA 1% budget administration fee",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "WP1 DeFi Kernel Registry Website and Submission Process",
+      "WP2 Spot Leverage Order Book",
+      "WP3 American Options Protocol",
+      "WP4 Composable DeFi Transaction Builder SDK",
+      "Security review or audit reports before affected mainnet releases",
+      "Public progress, KPI, deployment, registry, risk, and final impact reports"
+    ],
+    "recipient": "Dano Finance, with Minswap Labs as budget administrator",
+    "what": "Treasury withdrawal to fund Dano Finance's DeFi Kernel registry, Spot Leverage Order Book, American Options Market-Making protocol, and Composable DeFi Transaction Builder SDK."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,333,000 ADA, split into 3,300,000 ADA for delivery and 33,000 ADA for a 1% administration fee to Minswap Labs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The delivery budget is allocated as 300,000 ADA for the DeFi Kernel registry website and submission process, 1,000,000 ADA for Spot Leverage Order Book, 1,000,000 ADA for American Options Protocol, and 1,000,000 ADA for the SDK.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Dano Finance will deliver a public DeFi Kernel registry that documents compatibility requirements, metadata, script hashes, schemas, integration steps, audit or security status, and related registry information for compatible contracts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Dano Finance will deliver two DeFi Kernel-compatible primitives: a Spot Leverage Order Book and American Options Market-Making Pools.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Dano Finance will deliver a Composable DeFi Transaction Builder SDK to help wallets, bots, indexers, market makers, and dApps discover metadata, parse schemas, construct transactions, and integrate with compatible contracts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer states that Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal claims Cardano DeFi is fragmented across liquidity, metadata, and execution paths, and that the DeFi Kernel would improve discoverability, composability, liquidity, integrations, and recurring on-chain activity.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Mainnet releases for the Spot Leverage Order Book and American Options Protocol are conditioned on security review or audit, issue resolution, published script hashes and schemas, and DeFi Kernel compatibility documentation.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal sets KPIs including USD 1,000,000 rolling 30-day trading volume for the Spot Leverage Order Book and USD 1,000,000 rolling 30-day option notional volume within 90 days of each mainnet launch, measured using public on-chain data.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "Dano Finance says it will return 5% of protocol fees from the Treasury-funded Spot Leverage Order Book and American Options contracts for 12 months after mainnet launch, after specified direct costs, and report this publicly.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The proposal is a 3,333,000 ADA treasury request for DeFi Kernel registry infrastructure, two DeFi protocols, and an SDK, with milestone structure, security review conditions, public reporting, KPI targets, Minswap Labs administration, and a 12-month 5% protocol-fee return commitment.",
+  "output_sha256": "3627026b9ea3850016b1b15e00d05de2b082c47703426d9fc05fa7e5b3aba519"
+}

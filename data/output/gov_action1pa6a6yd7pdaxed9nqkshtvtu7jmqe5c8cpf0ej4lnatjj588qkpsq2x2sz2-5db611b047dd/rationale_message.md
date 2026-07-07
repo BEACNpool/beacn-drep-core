@@ -1,0 +1,13 @@
+# Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large Treasury request, and a key value claim was not independently supported: that Cardano lacks a production BTCfi infrastructure layer and that Alchemy would provide broadly reusable infrastructure for wallets, DEXs, DeFi protocols, and future BTCfi projects.
+
+The proposal requested 10,000,000 ada for Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms. It described a shared BTC reserve model with FIRE and ICE assets, staged treasury-supported launch liquidity, open-source SDKs and adapters, public dashboards, monthly governance reports, independent security review, audit and economic modeling, legal and compliance work, and ecosystem launch coordination. The proposal also said the ada request used an approximate USD 0.20 reference value, for a planning budget of about USD 2 million split into two roughly USD 1 million pools.
+
+Several claims were well-supported inside the proposal: the budget structure, the treasury-owned launch liquidity design, quarterly return of profits or yield to the Treasury, the 5.0x target initial reserve ratio, safety zones, dashboards, monthly reporting, milestone gating, pause rules, refund conditions, ADA price protection, and administrator oversight. The review also found a pinned, replayable anchor document and recognized a strong YES case that the funding amount and budget framing were substantiated.
+
+The NO came from the higher evidence bar for Treasury withdrawals. This action would spend shared ada and create precedent, so proposer assertions were not enough for core adoption and ecosystem-value claims. The review found thin claims-and-evidence status, missing cost-benefit clarity, no sustainability path in the Treasury analysis, missing independent assurance, and no dependency map. Intersect’s role as interim administrator was also still subject to confirmation and final agreement, and the return of launch liquidity depended on a later governance proposal. Taken together, BEACN judged that the proposal had meaningful detail and controls, but not enough independent evidence to justify a 10,000,000 ada Treasury withdrawal.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

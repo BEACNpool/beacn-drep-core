@@ -4,10 +4,10 @@
 - Decision: **YES**
 - Action type: `HardForkInitiation`
 - Status: `active`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The proposal would upgrade Cardano mainnet to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era." and clears the evidence gates. Weighed against it: a material claim is unsupported — "The proposal says UPLC case expressions over Bool, Integer, and Data will improve script performance and produce cleaner script logic." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.03; confidence 50.7%.
+Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "The action upgrades Cardano mainnet from protocol version 10.0 to 11.0 without an era transition and without changing transaction shape." and clears the evidence gates. Weighed against it: a material claim is unsupported — "Native UPLC case expressions over Bool, Integer, and Data are expected to improve performance and produce cleaner script logic." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.03; confidence 50.7%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,29 +23,29 @@ Vote: YES. For this HardForkInitiation (active), available evidence supports pro
 - Intake: Action type: HardForkInitiation
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano mainnet to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The action upgrades Cardano mainnet from protocol version 10.0 to 11.0 without an era transition and without changing transaction shape." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Rule-based system; does not infer unstated intent.
-- Claims and evidence missing: Independent evidence for: The proposal says UPLC case expressions over Bool, Integer, and Data will improve script performance and produce cleaner script logic.
-- Claims and evidence missing: Independent evidence for: The proposal says testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus features across V1, V2, and V3.
+- Claims and evidence missing: Independent evidence for: Native UPLC case expressions over Bool, Integer, and Data are expected to improve performance and produce cleaner script logic.
+- Claims and evidence missing: Independent evidence for: Testing reports are said to show no behavioral regressions, complete specification-implementation conformance for new ledger rules, and correct operation of the new Plutus primitives and case expressions across Plutus V1, V2, and V3.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal says UPLC case expressions over Bool, Integer, and Data will improve script performance and produce cleaner script logic.
-- Provide independent evidence for: The proposal says security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.
+- Provide independent evidence for: Native UPLC case expressions over Bool, Integer, and Data are expected to improve performance and produce cleaner script logic.
+- Provide independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.
 - Provide mitigation evidence.
 
 ## Proof of vote
-- input_hash: `b722a208df8a3434e590b472c74908865c6fa81a9636d049abff78877a5e20e0`
-- snapshot_bundle_hash: `29fdd66a808f44a8b6e1e26598714e0f5de962b0c804e5e7a3162fb62bec0b85`
+- input_hash: `3cc36b9711248d54ba40b3265ee61d9a12a9d9682c171e588ef08b55c683c6f1`
+- snapshot_bundle_hash: `bc493125eb751816e3f6996fc042095f689616a045d671f26ccf96557fb291c0`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `-0.03`
 - confidence: `0.5075`
 

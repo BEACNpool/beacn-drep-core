@@ -1,0 +1,268 @@
+{
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.2733,
+  "raw_score": -0.2533,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.02,
+    "confidence": 0.7,
+    "rationale": "The proposal has meaningful public-benefit alignment and some independently checkable governance and oversight evidence, but the large treasury ask relies partly on asserted ecosystem-impact and AI-agent adoption claims, while BEACN doctrine gives priority to treasury stewardship and evidence quality over plausible growth narratives.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; public-benefit ecosystem growth",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.7883,
+  "readiness_score": 0.85,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (4), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 1684050",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has meaningful public-benefit alignment and some independently checkable governance and oversight evidence, but the large treasury ask relies partly on asserted ecosystem-impact and AI-agent adoption claims, while BEACN doctrine gives priority to treasury stewardship and evidence quality over plausible growth narratives.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: Independent evidence for: The proposal says there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and raising integration costs.",
+    "Claims and evidence missing: Independent evidence for: The proposal claims agent-facing infrastructure such as an MCP server, per-protocol tools, skills, and LLM-structured documentation will help make Cardano protocols accessible to AI agents.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "372e98169be61630288c6d59943432dc35b288a7bc740c47993b0ca3b2171655",
+  "snapshot_bundle_hash": "112d7fef4eab568395572e1e7898bbcbecce28668815140558168f143bfb469b",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "15c9ee361cdd647ac25590d31885b9aa1b0cebf2",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-07T11:53:12.529301Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0462,
+    "NO": 0.7491,
+    "ABSTAIN": 0.2047
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 1.68M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal to fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols.",
+          "Recipient: Intersect 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe.",
+          "Stated amount: 1,684,050",
+          "Deliverables: Open API Layer for Cardano Protocols work package, 12 additional protocol onboardings over 12 months, 3 per quarter, Full developer and agent coverage for onboarded protocols, MCP server, Skill framework as shared infrastructure for protocols on the registry, Agent-first documentation and protocol skills packaging operations",
+          "Deadline/expiry: 12 months",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
+          "Claim (technical, supported_in_proposal, high materiality): Tx3 is intended to provide a standardized open-source interface to Cardano protocols through documentation, multi-language SDKs, and live RPC endpoints.",
+          "Claim (technical, proposer_asserted, high materiality): The proposal says there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and raising integration costs.",
+          "Claim (adoption, independently_verifiable, medium materiality): TxPipe has already put the developer layer into production with 5 protocols live on the Tx3 Protocol Registry through Catalyst Fund 14.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal funds 12 additional protocol onboardings, at a pace of 3 per quarter, with full developer and agent coverage.",
+          "Claim (technical, proposer_asserted, medium materiality): The proposal claims agent-facing infrastructure such as an MCP server, per-protocol tools, skills, and LLM-structured documentation will help make Cardano protocols accessible to AI agents."
+        ],
+        "missing": [
+          "Independent evidence for: The proposal says there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and raising integration costs.",
+          "Independent evidence for: The proposal claims agent-facing infrastructure such as an MCP server, per-protocol tools, skills, and LLM-structured documentation will help make Cardano protocols accessible to AI agents.",
+          "Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 successfully delivered and 4 currently under development and on schedule."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 1684050",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.67"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: medium",
+          "Technical risk: unknown",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposal says there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and raising integration costs.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a large treasury withdrawal and the evidence did not clear the higher bar for shared ADA spending. The proposal had meaningful public-benefit alignment and some strong governance and oversight evidence, but key benefit claims remained unsupported or thin relative to the size and precedent of the request.\n\nThe action requested 1,684,050 ada to fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols over 12 months. The package included 12 additional protocol onboardings, 3 per quarter, developer and agent coverage, an MCP server, a shared skill framework, and agent-first documentation. The proposal clearly documented the budget structure: 1,308,000 ada for work, a 327,000 ada contingency reserve, and a 49,050 ada Intersect administration fee. It also had a pinned, replayable anchor document, passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase, stated that it did not breach the applicable Net Change Limit, and included Intersect-managed smart contract administration with milestone controls and public oversight.\n\nSeveral claims were well supported: what the money would fund, the intended open-source interface, the quarterly onboarding plan, the prior production registry with 5 protocols live, and the treasury administration setup. But important claims were not independently evidenced enough for BEACN\u2019s treasury standard, especially the claim that Cardano lacks a common interface mechanism in a way that materially raises integration costs, and the claim that agent-facing infrastructure will make protocols accessible to AI agents. The review also found thin overall claims-and-evidence status, no sustainability path, unclear cost-benefit support, unknown execution risk, no independent assurance, and no rollback or remedy path.\n\nThe strongest case for YES was that the proposal\u2019s budget, governance process, and oversight structure were concrete and reviewable. The strongest case for NO was that a large treasury ask relied partly on asserted ecosystem-impact and AI-agent adoption claims, while current treasury-flow conditions were already in an unsustainable regime. Under BEACN\u2019s evidence-first treasury doctrine, that made the prudent vote NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreidzymldukq7tuixvvwpwdqizfuz3pgtuon4b46pwjdciuxsordbue",
+        "file_sha256": "79c3163a2a1f9d117ad6cfb0e08c9699dbcd3a39bc0f3cfb2462452f274461a1",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72-20260624T113057Z.bin",
+        "content_chars": 15248
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "f0d3d24d93a64c36b069bea8fe14a0c08c0b54799803610417cdd857bda63937"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "858e12f8f019c403f6c5aea242706a305b87dd337ad468e7ceaf8bfd4feb766d"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "74e6db6c55c5bc63c1c5d634d934b02b43e15637a12d1eebf20809d13dd46047"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/71a3253dc4d418abd821429b.md",
+  "rationale_anchor_hash": "71a3253dc4d418abd821429bd870ac984e8682ec0cda28c6667726336bf456d0"
+}

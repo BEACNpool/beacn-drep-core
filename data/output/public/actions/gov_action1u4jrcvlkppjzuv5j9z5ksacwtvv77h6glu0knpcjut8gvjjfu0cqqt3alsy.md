@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The primary goal of this budget proposal is to increase liquidity on Cardano, specifically by supporting stablecoin liquidity." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `92be5e260514855fa31520dc07ee8fe5f19b0570be3077ed43ac56fe6f5b49f1`
-- snapshot_bundle_hash: `c4b609601c6101178a1c277ce5f003c2e94d485c203fac0e9fc1f225253cd3c7`
+- input_hash: `89ce64e270225ca52e4dfcc2be98ecc7be4abeb2d7b93ba9a0bf54313635f79c`
+- snapshot_bundle_hash: `e436a43679e70008d2b91c8bc00c3d313e6959d99096e2f648d24f347e5cc82c`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `0.04`
 - confidence: `0.58`
 

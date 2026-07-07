@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore; Provide complete proposal summary. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide budget analysis.
 
 ## Proof of vote
-- input_hash: `e1b05d60cb22adf70a42cfca42754b77706fc3697466eaaa8d1c6c18a6eb1917`
-- snapshot_bundle_hash: `17992169d186895f08546238eed210775d60fb74e015c96d2a74fe4afd53618c`
+- input_hash: `8b641bb8d97920e15ee572788b185a86a8116b9d48940789494533a49de78735`
+- snapshot_bundle_hash: `aa7c87e2d8353ea6964fc1cc218c877605d66465371001d58262ca5c849aa851`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `-0.4583`
 - confidence: `0.49`
 

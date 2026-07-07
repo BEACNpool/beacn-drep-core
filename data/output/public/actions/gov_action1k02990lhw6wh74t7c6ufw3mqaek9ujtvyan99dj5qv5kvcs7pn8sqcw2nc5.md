@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-06T09:00:01.454411+00:00`
+- Published at: `2026-07-07T11:30:04.567018+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Wirex is claimed to have 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 3,961,538 ADA, consisting of 3,846,153 ADA for WP1 and 115,385 ADA for the Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.28; confidence 79.1%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Wirex will deliver full-stack, open-source payments infrastructure for Cardano covering smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem layers." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 - Enabling Onchain Payments & Card Infrastructure and 115,385 ada for an Intersect Budget Administration fee." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The document states that Wirex has not received ada from the Cardano Treasury within the last 24 months; Provide sustainability path. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.28; confidence 79.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3961538
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,961,538 ADA, consisting of 3,846,153 ADA for WP1 and 115,385 ADA for the Intersect Budget Administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 - Enabling Onchain Payments & Card Infrastructure and 115,385 ada for an Intersect Budget Administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Wirex is claimed to have 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.
-- Claims and evidence missing: Independent evidence for: The proposed system is described as full-stack, open-source payments infrastructure enabling on-chain settlement through smart contracts while connecting Cardano to banking rails, stablecoin systems, and wallet interfaces.
+- Claims and evidence missing: Independent evidence for: Wirex will deliver full-stack, open-source payments infrastructure for Cardano covering smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem layers.
+- Claims and evidence missing: Independent evidence for: The proposed system is intended to enable Visa card issuance linked directly to on-chain balances so users can spend digital assets globally at millions of merchants.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -40,16 +40,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Risk review missing: rollback/remedy path
 
 ## Top 3 fixes to improve next submission
+- Provide independent evidence for: The document states that Wirex has not received ada from the Cardano Treasury within the last 24 months.
 - Provide sustainability path.
 - Provide cost-benefit clarity.
-- Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `db067f1c72f53b5b9c0d284a558bfd25998512c657eb2f63f94ef2d3788cc7e5`
-- snapshot_bundle_hash: `bd945ac17cf4c25226e250dde725062e4c4373dc08df2343e6d73593b1bb6d18`
+- input_hash: `5370923a0ad113a543d237640f620d6e476dbad46c5ae8cf173c0623fdfc1a30`
+- snapshot_bundle_hash: `3842361dbffcd5e14e3fed1a6bec2c6c19fd08b8cf736bcc7b542a6233c3bf2e`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `0ea81023446b54880e1eea7818c2845a8b5e6f8e`
-- core_commit: `4a66d6794c5f1b3aef9f4dd06e03e45c1cf13969`
+- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
+- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
 - score: `-0.2833`
 - confidence: `0.7908`
 

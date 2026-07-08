@@ -1,0 +1,280 @@
+{
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
+  "title": "Withdraw 540,750 ada for Oura by TxPipe: Maintaining Cardano\u2019s Event Pipeline",
+  "type": "TreasuryWithdrawals",
+  "status": "active",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:fc6a7c63a6776a3de09fe8f5350c034bf6bf7d74889851b78bb94d1ab850be4e",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "fc6a7c63a6776a3de09fe8f5350c034bf6bf7d74889851b78bb94d1ab850be4e",
+    "snapshot_bundle_hash": "dcea43ebfe5c32fb8d5d977953e17a1edb7eb3cdb535541d7af6b659dbae91ec",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7-fc6a7c63a677.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d7f0738903aa107ce736c8ed.md",
+    "rationale_anchor_hash": "d7f0738903aa107ce736c8ed6a0ddcee08c2d725766b8f66aaa2a755cc8f84f4"
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
+    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "top_fixes": [
+      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
+      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
+      "Provide sustainability path."
+    ],
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7-fc6a7c63a677.md",
+    "missing_evidence": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "blocked",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: active",
+            "Proposed epoch: 638",
+            "Expires after epoch: 645",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: required",
+            "Requested: Treasury withdrawal to fund Oura by TxPipe maintenance and enhancement through the Intersect budget process.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor TxPipe",
+            "Stated amount: 540,750",
+            "Deliverables: Part-time maintainer for Oura over 12 months, Dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows, Milestone-based disbursement controls and reporting obligations through Intersect oversight",
+            "Deadline/expiry: 12 months",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.",
+            "Claim (economic, supported_in_proposal, high materiality): The budget summary totals 540,750 ADA, consisting of 525,000 ADA for Oura maintenance and enhancement and 15,750 ADA for an Intersect budget administration fee.",
+            "Claim (technical, supported_in_proposal, high materiality): Oura is a Rust-native pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
+            "Claim (technical, supported_in_proposal, medium materiality): Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and multiple sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
+            "Claim (adoption, independently_verifiable, medium materiality): Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and the document presents it as the most starred project in the TxPipe portfolio.",
+            "Claim (technical, supported_in_proposal, high materiality): The maintainer scope includes codebase maintenance, community support, and AI-friendly documentation and integration resources."
+          ],
+          "missing": [
+            "Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: 0",
+            "Budget granularity: confirmed",
+            "Milestone payment gates: confirmed",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Financial confidence: 0.63"
+          ],
+          "missing": [
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: not confirmed",
+            "Rollback/remedy path: unknown",
+            "Flag count: 0"
+          ],
+          "missing": [
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.\" though 1 review blocker(s) remain open.",
+            "Strongest NO: a material claim is unsupported \u2014 \"TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7-fc6a7c63a677.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/bafkreicf3r76m64xzy4jqhfbbhmzwpjz2qcw7q27hzjm3r7eo24lbxr7li",
+    "anchor_hash": "61d9b3fc86cca0f4a4e388ada992d8d90caf7168ee7c9fe661fae414f547e844",
+    "file_sha256": "45dc7fe67b97ce38981ca109d99b3d39d4056fc35f3e52cdc7e476b8b0de3f5a",
+    "content_bytes": "14107",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
+  },
+  "deep_research": {
+    "status": "drafted_pending_review",
+    "dossier_complete": "no",
+    "sections_grounded": 7,
+    "sections_total": 7,
+    "owner": "drep-agent-extract",
+    "dossier_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7.md",
+    "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7.receipt.json"
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents",
+      "deep_research_dossiers"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "deep_research_dossiers",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.0,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.1
+  },
+  "freshness": {
+    "snapshot_age_seconds": 2,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

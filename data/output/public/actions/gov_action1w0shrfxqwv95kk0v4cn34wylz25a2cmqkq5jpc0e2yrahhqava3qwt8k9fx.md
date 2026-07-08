@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind..." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 64.0%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `90b15d4d1207c4e5b3772812850938b4b48314d571be8a12cc90f4e6ab9764b5`
-- snapshot_bundle_hash: `4de8b3576781daf7041a5d16eedf852498fa4b068dbbcbc33de99f1e704a1c7e`
+- input_hash: `d8398b25f6e20375ac80fa6081bbb54767266d9fb18fe179f635acace47d21af`
+- snapshot_bundle_hash: `3d024903510496f86843dd546fd600d479d1ebf7e830c90dce201bec4ead4149`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.4333`
 - confidence: `0.64`
 

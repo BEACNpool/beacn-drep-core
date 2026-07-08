@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL)." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `7aaf2a9f5244d77f211d1ba6273778baa3dab2a533618b8d271a426ae6fc454f`
-- snapshot_bundle_hash: `403337d2b72f14cce0232ad94a53a35a47936dac62dcbf2406a2916e16b46673`
+- input_hash: `ab5ea8c6c6aca99ceaade352977f19443bcfe6fa51c7866afce0e1d679627244`
+- snapshot_bundle_hash: `843121327fe6825f515125ba2c55635755149092eec09936ac6059a91ddb64df`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `0.04`
 - confidence: `0.58`
 

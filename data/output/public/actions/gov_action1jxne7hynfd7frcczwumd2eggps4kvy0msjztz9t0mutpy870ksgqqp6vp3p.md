@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `NewConstitution`
 - Status: `enacted`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Cardano Constitution v2.4 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 57.8%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insuffic
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `b83d086f73132625a4ac5a90a646b8c696a9e73f1b119a598e95945faeff39a0`
-- snapshot_bundle_hash: `2f6cd02bdab33c42bf2e9740613cade778e73f0e36b4f8a4d23d75c621c52ff5`
+- input_hash: `7cea8ff755cd5693199de760cded14d12b55f8476a2a66c55b2f0a9171f2fdef`
+- snapshot_bundle_hash: `ff58b5f9f65219499e51f924dc4201b078accc6328a7d86bbce1b883cf3ab12b`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `0.03`
 - confidence: `0.5775`
 

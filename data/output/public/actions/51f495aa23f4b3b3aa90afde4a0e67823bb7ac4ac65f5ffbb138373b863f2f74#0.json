@@ -1,0 +1,210 @@
+{
+  "action_id": "51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0",
+  "title": "51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0",
+  "type": "ParameterChange",
+  "status": "expired",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:1a3e5300adbf8e2ecb28b352bb580f42fafbbd7cfac14ebe12bf518b6e48ad31",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": -0.4033,
+    "confidence": 0.42,
+    "input_hash": "1a3e5300adbf8e2ecb28b352bb580f42fafbbd7cfac14ebe12bf518b6e48ad31",
+    "snapshot_bundle_hash": "bf83e0b4cb73fe37743f415c0b7e89b80fdc95d502263cae859bfc25a1705b1f",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-1a3e5300adbf.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: risk indicators remained elevated relative to confirmed mitigations. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.40; confidence 42.0%.",
+    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide mitigation evidence.",
+      "Provide independent assurance."
+    ],
+    "markdown_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-1a3e5300adbf.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0",
+      "action_type": "ParameterChange",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: ParameterChange",
+            "Status: expired",
+            "Proposed epoch: 518",
+            "Expires after epoch: 525",
+            "Treasury request: not specified",
+            "Anchor pinned locally: no"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: not pinned",
+            "Proposal document read by reasoning layer: no",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: not required",
+            "Proposal claims not extracted (no cached anchor document text to read)."
+          ],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-1a3e5300adbf.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": false,
+    "fetch_status": "http_error",
+    "reason": "HTTP Error 404: Not Found"
+  },
+  "deep_research": null,
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.4033,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.42
+  },
+  "freshness": {
+    "snapshot_age_seconds": 24,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

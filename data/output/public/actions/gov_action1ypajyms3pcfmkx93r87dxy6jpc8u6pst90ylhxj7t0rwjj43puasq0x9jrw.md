@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `NewConstitution`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see "List of changes from v1.0 to v2.0"." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.03; confidence 57.8%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insuffic
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `7a28443940fb2d505cdc10e32433fd4cec47a49d1d15fa940dfd16b2d2729415`
-- snapshot_bundle_hash: `5c1d98f99c096788a0a7fec25ba16edea46d6e58a294734f21005ec2b9d85825`
+- input_hash: `c9e088707e7822698ecfd5caee30c80ef032e256fca881f2fdab8da286eca9ca`
+- snapshot_bundle_hash: `f3a9b9f345f43fe6aa64cbc4d8ed4c4ba105c8c313c7f4b67304fb3d4822f7f7`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `0.03`
 - confidence: `0.5775`
 

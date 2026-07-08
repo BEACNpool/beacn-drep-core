@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds Beyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire which will provide the following services: This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `5db78d36b8fac11003acb90ce20c094dc3bca70ec147ef977b8af8100445aa4f`
-- snapshot_bundle_hash: `843656d16653b006b32da34d599054d1f938853fd25ce0d2c8f4bde221f6e89e`
+- input_hash: `7fbd523c0579d8f2fa3feb88636212443fda779675957854201adeeb63223247`
+- snapshot_bundle_hash: `0b239745ac9cccdfb89105dc91d99c6473f0d11e28f203168a85f8fdbf2b2783`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.2033`
 - confidence: `0.7708`
 

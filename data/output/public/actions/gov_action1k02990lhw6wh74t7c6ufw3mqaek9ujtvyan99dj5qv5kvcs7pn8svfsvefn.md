@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "MLabs states that a recent internal audit counted at least 26 teams building with Plutarch and Ply in the motivation section, while the rationale section says it conservatively counted at least 15 teams." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect budget administration fee." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.27; confidence 78.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1162746
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect budget administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: MLabs states that a recent internal audit counted at least 26 teams building with Plutarch and Ply in the motivation section, while the rationale section says it conservatively counted at least 15 teams.
-- Claims and evidence missing: Independent evidence for: The proposal states independent oversight will be provided through Intersect and technically capable third parties, with reporting obligations and milestone-based disbursement controls.
+- Claims and evidence missing: Independent evidence for: MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.
+- Claims and evidence missing: Independent evidence for: The proposal asserts that maintaining Plutarch and Ply supports Cardano 2030, developer experience, open-source tooling, and application-layer utility including DeFi, RWAs, payments, and games.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `c91962df9dcffbb3d68072005769aba2bf5291b2dde939cbbb8b3f7d4f24befe`
-- snapshot_bundle_hash: `ce04f04610a7ee97ec79b86c0854f511f18c2544a44f97919c85937a97519ea0`
+- input_hash: `3a67b2267c6bf40f23d5d6468f2a51a0d0f35ce3de9fe9486458687f9f1c4333`
+- snapshot_bundle_hash: `acab713d1325b092393bbd51a9ccbfcddb644a5aa883052edb70fa464b0cea0a`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
-- score: `-0.2733`
-- confidence: `0.7883`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
+- score: `-0.2533`
+- confidence: `0.7833`
 

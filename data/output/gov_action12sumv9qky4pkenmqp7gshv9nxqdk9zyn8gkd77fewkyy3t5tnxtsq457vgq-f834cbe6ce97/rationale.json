@@ -1,0 +1,270 @@
+{
+  "action_id": "gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.4133,
+  "raw_score": -0.3833,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.68,
+    "rationale": "The claims show plausible public-benefit infrastructure value and some checkable adoption evidence, but the assessment labels evidence as thin and several high-materiality claims remain proposer-asserted, including current traffic, transaction-share dependence, Icebreaker scale, and future treasury-returning sustainability. Given the very large treasury request and unresolved legal/governance formation details, a small cautionary nudge is justified beyond the mechanical score.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.79,
+  "readiness_score": 0.75,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (7), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 9832979",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The claims show plausible public-benefit infrastructure value and some checkable adoption evidence, but the assessment labels evidence as thin and several high-materiality claims remain proposer-asserted, including current traffic, transaction-share dependence, Icebreaker scale, and future treasury-returning sustainability. Given the very large treasury request and unresolved legal/governance formation details, a small cautionary nudge is justified beyond the mechanical score.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: The proposal states that Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.",
+    "Claims and evidence missing: Independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis missing: sustainability path",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "f834cbe6ce97b268c9f453eec13ab619c9b5ecb97075763fda9b0e46b17be46e",
+  "snapshot_bundle_hash": "a319b9b85389730106932b9687cc9ded9831505b09fd9ba7d5a2fb61292f9540",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0409,
+    "NO": 0.778,
+    "ABSTAIN": 0.181
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 9.83M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Fund an 18-month transition of Blockfrost into a free, community-governed not-for-profit public API for Cardano, including operations during the transition.",
+          "Recipient: Input Output / Blockfrost transition under legal contract with Cardano Development Holdings administered by Intersect",
+          "Stated amount: 9,832,979 ADA",
+          "Deliverables: Not-for-profit entity legally established or host-organization agreement signed under a preliminary board in Q3 2026, Technical transition architecture and migration plan published for community review in Q3 2026, Public usage dashboard live in Q3 2026, Board election held via on-chain voting under public rules in Q4 2026, Newly elected board formally assumes its mandate from the preliminary board in Q4 2026, All public API traffic for mainnet, preview, and preprod served by the new stack in Q1 2027, Blockfrost source code, trademarks, domain names, and associated assets legally transferred to the governing entity in Q1 2027, Public sustainability consultation and proposal published in Q2-Q3 2027, Public API operated at minimum 99% monthly uptime with quarterly technical and budget reports during 2027",
+          "Deadline/expiry: 18 months of operations including transition; milestones run from Q3 2026 through 2027",
+          "Claim (adoption, supported_in_proposal, high materiality): Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node.",
+          "Claim (adoption, independently_verifiable, high materiality): The proposal states that Blockfrost developer-survey usage grew from 39.3% in 2022 to 71.5% in 2025, citing Cardano Foundation survey links for each year.",
+          "Claim (adoption, proposer_asserted, high materiality): The proposal states that Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.",
+          "Claim (technical, proposer_asserted, high materiality): The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+          "Claim (technical, proposer_asserted, medium materiality): The proposal states that more than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal commits to transferring all Blockfrost intellectual property, including source code, trademarks, domain names, and associated assets, to the governing not-for-profit entity."
+        ],
+        "missing": [
+          "Independent evidence for: The proposal states that Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.",
+          "Independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+          "Independent evidence for: The proposal states that more than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+          "Independent evidence for: The proposal states that long-term sustainability may come from paid not-for-profit commercial tiers or vendor membership fees, with future profits returned to the Cardano Treasury."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 9832979",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.67"
+        ],
+        "missing": [
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a very large treasury request and several material claims needed to justify it were not independently evidenced. The proposal showed plausible public-benefit value for Cardano infrastructure, but treasury withdrawals require a higher bar because they spend shared ADA and set precedent.\n\nThe action requested 9,832,979 ADA to fund an 18-month transition of Blockfrost into a free, community-governed not-for-profit public API, including operations through the transition. The proposer committed to legal formation or a host-organization agreement, published technical transition plans, a usage dashboard, on-chain board elections, transfer of source code, trademarks, domains, and related assets, operation of the new stack, sustainability consultation, and quarterly technical and budget reporting.\n\nSome claims were well-supported. The proposal clearly described Blockfrost as a hosted REST interface for Cardano developers, cited Cardano Foundation survey links for adoption growth from 39.3% in 2022 to 71.5% in 2025, described the proposed IP transfer, governance structure, budget split, and accountability mechanisms. But several high-materiality claims remained proposer-asserted rather than independently evidenced, including last month\u2019s traffic figures, the claim that more than 50% of transactions in most epochs are submitted through Blockfrost, the scale of the Icebreakers operator effort, and the long-term sustainability path.\n\nThe review gates allowed the action to be assessed because the anchor document was pinned and replayable, and the best YES case was acknowledged: Blockfrost appears to be useful public infrastructure with some checkable adoption evidence. The vote still landed NO because the evidence status was thin for claims central to the size and precedent of the withdrawal, the treasury-flow signal was in an unsustainable regime, and the review was missing milestone-gated disbursement, a proven sustainability path, independent assurance, and a rollback or remedy path.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmYiT1K8KUr5wvAEkuLmiFJm79oy9pZ8CB3PbToAUePDYp",
+        "file_sha256": "a4019acaf7058cc1722cd830f8e86e00f8a974efa599ff2c3c5819713d186c36",
+        "file_path": "data/input/governance/anchors/gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq-20260627T113103Z.bin",
+        "content_chars": 28748
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "5561fad4b25319d653b29efe7bcf02c660962c4209f2fe29c97b73a4d662589e"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "295758329bf25f0993d29320188df082e2b29cd7b4b2b940de479a8df742d8c8"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "d0899b0e503463b55f2714715a50c4dad1a2150e0b989e7c1120e9afd6e1d307"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/27dd4510548d9b96c9f047cd.md",
+  "rationale_anchor_hash": "27dd4510548d9b96c9f047cd989a0451108bd4d68f02df20cfbc7095ab103658"
+}

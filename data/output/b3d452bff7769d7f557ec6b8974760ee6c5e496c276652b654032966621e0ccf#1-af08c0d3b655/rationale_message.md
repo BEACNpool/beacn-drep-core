@@ -1,0 +1,13 @@
+# Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D...
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — precomputed)_
+
+BEACN voted ABSTAIN because the review was missing baseline evidence needed to responsibly support or oppose a treasury withdrawal. This is a conservative, evidence-based hold, not a judgment that the Dolos work is bad or unnecessary.
+
+The action requested 540,750 ada to fund Year 2 of Dolos by TxPipe over 12 months, covering maintenance, enhancements, community support, and AI-friendly documentation and integration resources. The proposal said the budget included 525,000 ada for Dolos maintenance and enhancement plus a 15,750 ada Intersect administration fee, and it also described a 420,000 ada maintainer cost plus a 105,000 ada contingency reserve. It claimed Dolos is a lightweight Rust-based Cardano data node with several query interfaces, and it cited adoption and governance facts such as repository activity, prior Intersect Budget Process support, and use of treasury management smart contracts.
+
+Some claims were supported in the proposal or marked independently verifiable, including the budget summary, repository metrics, Intersect voting threshold claim, Net Change Limit claim, oversight structure, and treasury smart contract setup. But important evidence was still missing or thin: independent evidence for key technical and delivery-history claims, a complete proposal summary, line-item budget analysis, milestone-gated disbursement evidence, feasibility assessment, risk analysis, alternatives analysis, failure-mode analysis, and community impact analysis. The intake was also blocked because `treasury_amount_lovelace` was missing for a treasury withdrawal, even though the plain ADA amount appeared in the proposal data.
+
+The review gates therefore did not support a directional vote. Intake was blocked, claims and evidence were thin, treasury analysis was incomplete, and risk review was thin. To unblock a YES or NO vote, BEACN would need the missing treasury amount field, complete proposal and budget analysis, clear milestone-disbursement evidence, independent evidence for key claims, and enough feasibility, risk, alternatives, failure-mode, and community impact analysis for delegators to audit the decision.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds AdaStat.net Cardano blockchain explorer which will provide the following services: We propose to continue development and support of the AdaStat.net Cardano blockchain explorer for the next 24 months." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.20; confidence 77.1%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `8ae1d5d81b472a06bea7f8ef97d97a4e5758419d07c0d0e85e2973b96c710d94`
-- snapshot_bundle_hash: `16d04ac7074acdee602d505eeb00fce0727aef0105ef0cc1971283260b661a98`
+- input_hash: `6e1371c67506caf60fbc70f127c653a9c9544d8af3c5f7c68ae2752261dd7dfc`
+- snapshot_bundle_hash: `6197e108f586a547f43f91d3acb1f4bb62b0dfc7dc6116c290dd82d518f6b702`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.2033`
 - confidence: `0.7708`
 

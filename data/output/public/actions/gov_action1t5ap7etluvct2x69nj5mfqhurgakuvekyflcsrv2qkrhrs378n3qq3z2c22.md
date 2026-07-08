@@ -4,10 +4,10 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `active`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal claims treasury governance should be explicitly addressed and supported by Cardano's governance system and constitution." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposal states the NCL should not be treated as a potential overall budget and is only a vague initial approximation for budgeting; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 53.8%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 53.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,28 +23,28 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal claims treasury governance should be explicitly addressed and supported by Cardano's governance system and constitution." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the existing governance system.
-- Claims and evidence missing: Independent evidence for: The proposal asserts that current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and ecosystem-harming strife.
+- Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.
+- Claims and evidence missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal states the NCL should not be treated as a potential overall budget and is only a vague initial approximation for budgeting.
 - Provide mitigation evidence.
 - Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `1d31e4a59c9f9ed33cf90d6f03d91860806956820ea4fa8dc5308195ff289bee`
-- snapshot_bundle_hash: `dda2e9f9902ef26c910ae8ba0c0f4d6ff94cb4dc1ae7ef0e970a4ae42028329b`
+- input_hash: `442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162`
+- snapshot_bundle_hash: `e63c328b38e8745d4372d0a4723410d79b92cef17d401d01222f2d95e55d925d`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.07`
 - confidence: `0.5375`
 

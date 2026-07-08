@@ -1,0 +1,288 @@
+{
+  "action_id": "e5c4d7ebaad03ac127ec19a286605a188d6fea1c54e075c619ca6993b7fa9fd1#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: not specified",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.\" though 8 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: complete proposal summary",
+    "Claims and evidence missing: budget analysis",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Synthesis missing: missing complete proposal summary"
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "2bd1113a4bf0c36dfb2881c29b5f61939e1d166246fe5680295f30a332656dcb",
+  "snapshot_bundle_hash": "52f4a5d0c50cfc2ba1ee73310040a4474045a055eac57b0e02cf526a4f9f3617",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 10,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "e5c4d7ebaad03ac127ec19a286605a188d6fea1c54e075c619ca6993b7fa9fd1#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: enacted",
+          "Proposed epoch: 617",
+          "Expires after epoch: 624",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: required",
+          "Requested: Cardano Defi Liquidity Budget - Withdrawal 1",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity., Under the old constitution, we received broad support (more than 67%) for a budget info action to deploy 50,000,000 ADA into the ecosystem., While we acknowledge a budget info action is not required under the current constitution, we feel encouraged to submit this withdrawal action to setup the legal and on chain components needed to carry out the liquidity deployment., For a detailed overview of what we are aiming to accomplish more broadly, we invite people to read the budget info action (gov action1u4jrcvlkppjzuv5j9z5ksacwtvv77h6glu0knpcjut8gvjjfu0cqqt3alsy).",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, independently_verifiable, high materiality): Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.",
+          "Claim (economic, independently_verifiable, high materiality): Under the old constitution, we received broad support (more than 67%) for a budget info action to deploy 50,000,000 ADA into the ecosystem.",
+          "Claim (economic, independently_verifiable, high materiality): While we acknowledge a budget info action is not required under the current constitution, we feel encouraged to submit this withdrawal action to setup the legal and on chain components needed to carry out the liquidity deployment.",
+          "Claim (economic, independently_verifiable, high materiality): For a detailed overview of what we are aiming to accomplish more broadly, we invite people to read the budget info action (gov action1u4jrcvlkppjzuv5j9z5ksacwtvv77h6glu0knpcjut8gvjjfu0cqqt3alsy).",
+          "Claim (technical, independently_verifiable, high materiality): Terms of Withdrawal Purpose of Withdrawal This withdrawal is intended solely for establishing the legal and technical infrastructure required to implement the Stablecoin DeFi Liquidity Budget approved by the Cardano Community.",
+          "Claim (economic, independently_verifiable, high materiality): Specifically, funds will be used to: 1."
+        ],
+        "missing": [
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: not specified",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.\" though 8 review blocker(s) remain open.",
+          "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal",
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal",
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on Cardano Defi Liquidity Budget - Withdrawal 1. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano Defi Liquidity Budget - Withdrawal 1. The strongest grounded claim is: Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.\n\nOpen blockers: treasury_amount_lovelace is missing for a treasury withdrawal. BEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: MISSING_BASELINE_EVIDENCE.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "e5c4d7ebaad03ac127ec19a286605a188d6fea1c54e075c619ca6993b7fa9fd1#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://raw.githubusercontent.com/theeldermillenial/2025-liquidity-budget/f824da7f0c2dbab15e324d1736a967de87d34f7d/w1.jsonld",
+        "file_sha256": "eb4545cc737a769869c76fb8e9fd72a8f64e8e9130d3b94e8deec2d727273ed6",
+        "file_path": "data/input/governance/anchors/gov_action1uhzd06a26qavzflvrx3gvcz6rzxkl6su2ns8t3seef5e8dl6nlgsqcgtufg-20260326T175206Z.bin",
+        "content_chars": 20313
+      },
+      "claim_count": 8,
+      "prompt_sha256": "f3ceda7a5be5cba4e20addaeaf79e5dc132810f8fc382b5c91f585521311100b",
+      "output_sha256": "5841941e8d14a1168d6d3175e4df2e36fb5f13160d7642fa58d0a45dbade986b"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "6f94a9af4de16e376c3927808b8b27cf8cdaa3695d19d9a5c8117be9cb844510",
+      "output_sha256": "03ef5e776cb4c7b328f2519e04a82b66383d62f38c6f92810f132091802e8d2c"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "7fc1da36769eadf31a5cfec1a6978ca9c57d45dbf4b71dbb28e8209c817a8450",
+      "output_sha256": "93c0c8ae8de3f5ba29ac91d1d5edf2192c68e43c889dede461bc5896e9cdab03"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

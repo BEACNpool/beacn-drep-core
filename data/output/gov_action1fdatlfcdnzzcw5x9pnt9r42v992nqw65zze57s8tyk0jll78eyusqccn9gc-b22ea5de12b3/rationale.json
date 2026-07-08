@@ -1,0 +1,268 @@
+{
+  "action_id": "gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.4033,
+  "raw_score": -0.3833,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.02,
+    "confidence": 0.66,
+    "rationale": "The claims show meaningful alignment with public-benefit ecosystem growth and some checkable track record references, but the request is large and several central assertions about KPI effectiveness, live on-chain measurement, and official ecosystem adoption remain proposer-asserted within the supplied material. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than rewarding plausible but incompletely verified ecosystem growth claims.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility before public-benefit ecosystem growth.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.06,
+  "confidence": 0.79,
+  "readiness_score": 0.75,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (7), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 20000000",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal says funded projects are required to track monthly active users, TVL, and on-chain transactions.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The claims show meaningful alignment with public-benefit ecosystem growth and some checkable track record references, but the request is large and several central assertions about KPI effectiveness, live on-chain measurement, and official ecosystem adoption remain proposer-asserted within the supplied material. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than rewarding plausible but incompletely verified ecosystem growth claims.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: The Cardano Builder DAO is presented as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs.",
+    "Claims and evidence missing: Independent evidence for: The DAO says it built Version 1 and Version 2 of a KPI dashboard, moving from self-reported KPI tracking toward tracking tied directly to live on-chain Cardano data.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: sustainability path",
+    "Risk review missing: independent assurance",
+    "Risk review missing: dependency map"
+  ],
+  "missing_evidence": [],
+  "input_hash": "b22ea5de12b32ab50dc3a4850dfa63d02d6a0d278497e4d9507b3ab5bee09a5c",
+  "snapshot_bundle_hash": "593b0099755ec1380bb3d4dc706efc48ed347db6bfb883eee0c72eb2bfeb6c5d",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0413,
+    "NO": 0.7762,
+    "ABSTAIN": 0.1825
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 20.00M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal to continue and expand the Cardano Builder DAO as a smart contract-governed, KPI-driven funding mechanism for Cardano builders.",
+          "Recipient: Cardano Builder DAO, with funds first received and overseen by an independent council composed of dRep DAO members before milestone-based disbursement.",
+          "Stated amount: 20000000",
+          "Deliverables: Allocate capital to builders expected to improve Cardano 2030 KPIs such as monthly active users, monthly on-chain transactions, and TVL., Require funded projects to track monthly active users, TVL, and on-chain transactions., Continue development of KPI tracking from self-reported dashboards toward live on-chain Cardano data., Run DAO governance processes including review, debate, temperature checks, final voting, and transparent fund distribution., Use an independent multisig and administrator validation before Cardano Builder DAO receives funds after milestone completion.",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, proposer_asserted, high materiality): The Cardano Builder DAO is presented as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal says funded projects are required to track monthly active users, TVL, and on-chain transactions.",
+          "Claim (technical, proposer_asserted, high materiality): The DAO says it built Version 1 and Version 2 of a KPI dashboard, moving from self-reported KPI tracking toward tracking tied directly to live on-chain Cardano data.",
+          "Claim (adoption, independently_verifiable, high materiality): The Cardano Builder DAO says it has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+          "Claim (governance, independently_verifiable, high materiality): Round 1 is described as having 38 voting members, 27 requesting members, 20 funded companies, an 83% governance participation rate, and 5,541,335 ADA distributed through a transparent smart contract-governed process.",
+          "Claim (governance, independently_verifiable, high materiality): Round 2 is described as adding 18 new members, funding 14 companies, and achieving an 88% member participation rate after review, debate, temperature checks, and final voting."
+        ],
+        "missing": [
+          "Independent evidence for: The Cardano Builder DAO is presented as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs.",
+          "Independent evidence for: The DAO says it built Version 1 and Version 2 of a KPI dashboard, moving from self-reported KPI tracking toward tracking tied directly to live on-chain Cardano data.",
+          "Independent evidence for: The proposal says official Cardano developer documentation describes the CB DAO as a smart contract-governed mechanism with more than 50 established Cardano projects participating in funding decisions and KPI tracking tied to on-chain activity, users, and TVL."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 20000000",
+          "Budget granularity: unknown",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.48"
+        ],
+        "missing": [
+          "line-item budget",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: medium",
+          "Technical risk: unknown",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "independent assurance",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal says funded projects are required to track monthly active users, TVL, and on-chain transactions.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The Cardano Builder DAO is presented as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted NO because this was a large 20,000,000 ADA treasury withdrawal and the evidence did not clear the higher bar required for spending shared treasury funds.\n\nThe proposal asked to continue and expand the Cardano Builder DAO as a smart contract-governed, KPI-driven funding mechanism for Cardano builders. It said funds would first be received and overseen by an independent council before milestone-based disbursement, and that funded projects would track monthly active users, TVL, and on-chain transactions. The review found support for several governance and reporting claims, including prior funding rounds, participation figures, use of review and voting processes, the proposed independent council, separate auditable accounts, and the return of unused ADA.\n\nThe strongest case for YES was that the proposal did substantiate its requirement for funded projects to track key metrics, and it showed a meaningful prior track record: 11.1 million ADA distributed across 34 proposals, with participation data for two rounds. However, important claims remained too thin or proposer-asserted, especially the broader claim that the DAO is an ecosystem-wide, purpose-built mechanism for advancing Cardano 2030 KPIs, and the claim that KPI tracking had moved from self-reported dashboards toward live on-chain Cardano data.\n\nThe main gates that failed or remained incomplete were treasury and risk evidence. The review noted no line-item budget, no sustainability path, unknown execution risk, no independent assurance, and no dependency map. Because treasury actions require elevated scrutiny, those gaps outweighed the proposal\u2019s supported track record and governance design, so BEACN voted NO.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmT8VE8KBqPUYRpev2jybiMENhPrDh9gwjoNW9Pmgw4ffj",
+        "file_sha256": "b54ba382d2bf11de5812af92f8a1936fcd412509e7769011d26307ac1a951d4b",
+        "file_path": "data/input/governance/anchors/gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc-20260625T113100Z.bin",
+        "content_chars": 13065
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "0dae11a6af84fd930bd76c7623ace59d45a87ff530c5df3de3c602773d6ba5c8"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "ee1cc22e2c63f64387a378555e156480cfdf282288f4ae8ee6495bee756f59bd"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "629a80348f0ca6902d24bf097be24443375bf4865e8f535f854ccaf9b69aeb61"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/82273758eb4f7df7c97d6422.md",
+  "rationale_anchor_hash": "82273758eb4f7df7c97d6422ea5ea963da751d0296d4dee61959cf5c4e3c2af8"
+}

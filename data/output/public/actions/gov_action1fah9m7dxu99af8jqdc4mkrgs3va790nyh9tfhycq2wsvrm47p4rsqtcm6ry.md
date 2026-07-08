@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal says Hydra provides sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement by settling final state back to Cardano L1." though 5 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.45; confidence 64.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer states that Hydra is the only production-grade Layer 2 on Cardano and is already running live workloads for Delta DeFi, Masumi, Intersect, Vtechcom, and others." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal asks for ₳5,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance." though 5 review blocker(s) remain open. What would change this vote to YES: Provide budget analysis; Provide feasibility assessment. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.45; confidence 64.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -26,14 +26,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 5100781
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal says Hydra provides sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement by settling final state back to Cardano L1." though 5 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal asks for ₳5,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance." though 5 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.
-- Claims and evidence missing: Independent evidence for: The proposal states that Hydra is already running or has powered workloads for Delta DeFi, Masumi, Intersect voting infrastructure, VTech Labs, Blockfrost, Midgard, Hydra Doom, and Glacier Drop.
+- Claims and evidence missing: Independent evidence for: The proposer states that Hydra is the only production-grade Layer 2 on Cardano and is already running live workloads for Delta DeFi, Masumi, Intersect, Vtechcom, and others.
+- Claims and evidence missing: Independent evidence for: The proposer states Cardano L1 has over two hours of finality, about $0.17 transaction fees, and roughly 7 to 10 TPS, while competing platforms offer faster finality, lower fees, and higher throughput.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -45,16 +45,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.
 - Provide budget analysis.
 - Provide feasibility assessment.
+- Provide alternatives analysis.
 
 ## Proof of vote
-- input_hash: `25511a40888889df16723b277831bb22781832b1810038b7372391ecf6a4be24`
-- snapshot_bundle_hash: `a0e7ce4b4979a0c20d9c912449484733cfd7aaa5349b71ea02295c4f2f13f0b8`
+- input_hash: `39ce6f4e2dbf5dc94fcef3bd21af3069960b539dd1c862ff8170e07c39c5b5ef`
+- snapshot_bundle_hash: `90844f47fe7715698b4af19d53b1019e17f55d49b928afe41320a0e5f9cf4080`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.4533`
 - confidence: `0.64`
 

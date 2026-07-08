@@ -1,0 +1,137 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#36",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Withdraw \u20b3104,347 for MLabs Research towards Tooling for Elliptical Curves...",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement..., The goal is to allow smart contracts on Cardano to verify cryptographic proofs over customizable curves and fields., This will include: - Plutarch support for Galois field arithmetic - Plutarch support for elliptic curve arithmetic - A generic ZK verifier in Plutarch - A validation test suite over BLS12-381 - A composable YTxP-compatible Plutarch wrapper This tool empower..., Deliver a parameterized elliptic curve and finite field cryptography framework in Plutarch, enabling developers to build smart contracts that verify zero-knowledge proofs over arbitrary curves.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement...",
+        "Claim (economic, independently_verifiable, low materiality): The goal is to allow smart contracts on Cardano to verify cryptographic proofs over customizable curves and fields.",
+        "Claim (economic, independently_verifiable, low materiality): This will include: - Plutarch support for Galois field arithmetic - Plutarch support for elliptic curve arithmetic - A generic ZK verifier in Plutarch - A validation test suite over BLS12-381 - A composable YTxP-compatible Plutarch wrapper This tool empower...",
+        "Claim (economic, independently_verifiable, high materiality): Deliver a parameterized elliptic curve and finite field cryptography framework in Plutarch, enabling developers to build smart contracts that verify zero-knowledge proofs over arbitrary curves.",
+        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Cardano currently lacks reusable and composable on-chain cryptographic tooling for elliptic curves and finite fields.",
+        "Claim (economic, independently_verifiable, high materiality): Developers building ZK or privacy-preserving applications must either hardcode specific cryptographic primitives (limiting generality) or implement complex curve logic themselves (introducing security risks and inefficiencies)."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: not specified",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement...\" though 8 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal",
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

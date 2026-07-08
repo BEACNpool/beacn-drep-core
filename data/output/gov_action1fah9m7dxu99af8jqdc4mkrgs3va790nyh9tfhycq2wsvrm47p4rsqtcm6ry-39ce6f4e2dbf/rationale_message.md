@@ -1,0 +1,13 @@
+# IO: Hydra
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large treasury withdrawal request, and the review found too many unresolved evidence gaps around budget, feasibility, alternatives, failure modes, and community impact to justify spending ₳5,100,781.
+
+The proposal requested funding to harden and improve Hydra v2 across performance, operations, ecosystem support, and developer experience. It claimed the work would deliver 2x to 10x improvements in snapshot signing and memory profile, reduce L1 fees through contract optimization, improve runbooks, configuration, observability, logging, and TUI tooling, support production users and integrators, and fund maintenance, CI, tooling, and technical debt reduction. The proposal also said funding would be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.
+
+Some claims were supported in the proposal itself, including the requested amount, the general milestone-gated assurance structure, Hydra’s stated technical benefits, possible L1 fee benefits from Hydra usage, and identified use cases such as institutional DEXes, agent-to-agent commerce, gaming, point of sale, micropayments, and verifiable information processing. But several important claims were only proposer assertions or lacked independent evidence in the review record, including claims about Hydra being the only production-grade Layer 2 on Cardano, named live workloads, Cardano L1 finality, fees, TPS comparisons, and migration risk if the proposal slipped.
+
+The review passed the basic intake and anchor checks: the action had a pinned, replayable proposal anchor. But treasury actions require elevated scrutiny because they spend shared ADA and set precedent. The treasury analysis was incomplete, with missing line-item budget and milestone-disbursement evidence; the risk review found medium execution risk and missing mitigation evidence and independent assurance; and synthesis was blocked by missing budget and feasibility assessment. BEACN therefore voted NO on the available record: the project may describe plausible public-benefit infrastructure, but the evidence package did not meet the standard required for this size of treasury withdrawal.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

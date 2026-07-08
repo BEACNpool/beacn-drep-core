@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The K parameter was created to limit the total number of ADA staked to one pool." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.
@@ -38,11 +38,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `5c583bb2248af956e74226cd98dcbbab4633362b2ddbbef78e8359aae01b5509`
-- snapshot_bundle_hash: `167838659ae8419d707f7a6bae96912bd537880a4bb8d34cd6b96dc91d109979`
+- input_hash: `02613447e9f429b3862e8cc13448ef63373368a2277d1d01312c506bc359beaf`
+- snapshot_bundle_hash: `2c56efa55406d26f7bc5ebad69c20f175f3af8d64a619da2c9985080f3c1e685`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `0.04`
 - confidence: `0.58`
 

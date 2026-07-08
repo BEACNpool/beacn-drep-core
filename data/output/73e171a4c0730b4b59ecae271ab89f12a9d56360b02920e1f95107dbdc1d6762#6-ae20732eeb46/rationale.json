@@ -1,0 +1,289 @@
+{
+  "action_id": "73e171a4c0730b4b59ecae271ab89f12a9d56360b02920e1f95107dbdc1d6762#6",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: not specified",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano\u2019s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a...\" though 8 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: Independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.",
+    "Claims and evidence missing: complete proposal summary",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "ae20732eeb46e2db75435f99f7cfcc9a0ed43966cb6785448f530663d0bf813c",
+  "snapshot_bundle_hash": "ae006a40e16e10898a9b0ea3bc99c1a0a04bf03986ae66848f4a206b1ca62231",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 8,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "73e171a4c0730b4b59ecae271ab89f12a9d56360b02920e1f95107dbdc1d6762#6",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: enacted",
+          "Proposed epoch: 626",
+          "Expires after epoch: 633",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: required",
+          "Requested: IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano\u2019s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..., It funds targeted expansion to the Plutus language with new syntactic forms and new primitives to reduce script costs, improve expressiveness, and unlock more efficient contract patterns; formal specification, conformance testing, and structured security re..., Together, these workstreams make Plutus cheaper to use, more trustworthy to build on, and easier for developers to adopt, helping Cardano support a broader range of applications while also providing stronger foundations for alternative node implementations..., This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano\u2019s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a...",
+          "Claim (technical, supported_in_proposal, high materiality): It funds targeted expansion to the Plutus language with new syntactic forms and new primitives to reduce script costs, improve expressiveness, and unlock more efficient contract patterns; formal specification, conformance testing, and structured security re...",
+          "Claim (technical, supported_in_proposal, low materiality): Together, these workstreams make Plutus cheaper to use, more trustworthy to build on, and easier for developers to adopt, helping Cardano support a broader range of applications while also providing stronger foundations for alternative node implementations...",
+          "Claim (technical, proposer_asserted, medium materiality): This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.",
+          "Claim (technical, supported_in_proposal, low materiality): As a smart contract developer building on Cardano, whether authoring decentralized finance (DeFi) protocols, zero-knowledge (ZK) applications, or high-assurance infrastructure, I want a Plutus platform that compiles cleanly, runs efficiently, and carries fo...",
+          "Claim (technical, supported_in_proposal, low materiality): Opportunity: Plutus, a compact lambda-calculus-based language executed by Cardano nodes, serves as the foundation of all Cardano smart contracts."
+        ],
+        "missing": [
+          "Independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.",
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: not specified",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano\u2019s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a...\" though 8 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal",
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal",
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano\u2019s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a.\n\nA material claim remains proposer-asserted or thinly supported: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams. Open blockers: treasury_amount_lovelace is missing for a treasury withdrawal. BEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: MISSING_BASELINE_EVIDENCE.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "73e171a4c0730b4b59ecae271ab89f12a9d56360b02920e1f95107dbdc1d6762#6",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmPkZ6Azo1tJfWVRjwn8G1Qk7k1SC3Vk3L21WFPSracCzg",
+        "file_sha256": "8ae0a06849d8084e082618ad8eff1145fa302a7d950897ae4377e467b6a93378",
+        "file_path": "data/input/governance/anchors/gov_action1w0shrfxqwv95kk0v4cn34wylz25a2cmqkq5jpc0e2yrahhqava3qvczhx6t-20260615T152523Z.bin",
+        "content_chars": 39001
+      },
+      "claim_count": 8,
+      "prompt_sha256": "e83d7b270ceaf459c2e8d490f92f1647b0a0a02b74f67c36ac9342eac97bdc32",
+      "output_sha256": "22bdf4de227f587ba2ad36ba60e27494b21fd5bc668783495f0a0309c4f936ad"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "fdae9f4de5ac6555684b44434462eb76c58c5d103cf27cdfdfd831f8c0ed24c1",
+      "output_sha256": "7cf6b827811e29c9013093007d85b91b2d72909443bb1267b3d1a694910b09bd"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "0460dd8ab7359fc32fb2696589107c8738fa7318e211b34d0a4e1906d5f8910e",
+      "output_sha256": "962002ec37891df4c5de69cb5af88a539b46b78d1ad12332d6944490b7a604db"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

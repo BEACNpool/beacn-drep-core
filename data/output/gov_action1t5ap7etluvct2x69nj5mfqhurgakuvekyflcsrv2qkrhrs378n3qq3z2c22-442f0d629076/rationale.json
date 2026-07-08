@@ -1,0 +1,241 @@
+{
+  "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+  "action_type": "InfoAction",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.07,
+  "raw_score": -0.05,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.02,
+    "confidence": 0.72,
+    "rationale": "The proposal has a clear governance intent and offers concrete discussion structure, which aligns with support for info actions that improve governance clarity. However, several high-materiality premises about ecosystem harm, gridlock, and existential danger are asserted without evidence, so evidence quality and framing integrity justify a small cautionary nudge rather than positive support.",
+    "doctrine_basis": "Info Action Doctrine: support governance clarity, but abstain when framing is ambiguous and signal quality is low; Values Hierarchy: evidence quality and treasury stewardship outweigh speed or social momentum.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
+  "directional_threshold": 0.12,
+  "confidence": 0.5375,
+  "readiness_score": 0.5,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: low",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has a clear governance intent and offers concrete discussion structure, which aligns with support for info actions that improve governance clarity. However, several high-materiality premises about ecosystem harm, gridlock, and existential danger are asserted without evidence, so evidence quality and framing integrity justify a small cautionary nudge rather than positive support.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.",
+    "Claims and evidence missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance"
+  ],
+  "missing_evidence": [],
+  "input_hash": "442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162",
+  "snapshot_bundle_hash": "e63c328b38e8745d4372d0a4723410d79b92cef17d401d01222f2d95e55d925d",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 4,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2028,
+    "NO": 0.3428,
+    "ABSTAIN": 0.4544
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: active",
+          "Proposed epoch: 636",
+          "Expires after epoch: 643",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Info action to introduce basic ideas for reforming Cardano treasury governance into public discussion and encourage collaboration on future implementation.",
+          "Recipient: not stated in document",
+          "Stated amount: not stated in document",
+          "Deliverables: Provide an impetus for improving the treasury governance process., Outline guardrails for strategic direction., Present discussion ideas including a strategic entity, expert commission, budget voting process, budget structure, and functional reserve.",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, proposer_asserted, high materiality): The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.",
+          "Claim (governance, proposer_asserted, high materiality): The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal states treasury governance should be explicitly addressed and supported by the governance system and the constitution.",
+          "Claim (governance, proposer_asserted, medium materiality): The proposal argues the Net Change Limit should not be treated as the overall potential budget and is only a vague initial approximation of a budget.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal recommends dedicated and balanced thematic budgets instead of isolated treasury withdrawal votes for individual projects competing against each other."
+        ],
+        "missing": [
+          "Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.",
+          "Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.",
+          "Independent evidence for: The proposal argues the Net Change Limit should not be treated as the overall potential budget and is only a vague initial approximation of a budget."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: low",
+          "Governance risk: medium",
+          "Technical risk: low",
+          "Treasury exposure risk: none",
+          "Mitigation evidence: not confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: not confirmed",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The action has a clear governance purpose and a replayable anchor document, but several material claims about the current state of Cardano treasury governance were asserted without independent evidence.\n\nThe action requested an InfoAction to introduce ideas for reforming treasury governance, encourage public discussion, and outline possible guardrails such as a strategic entity, an expert commission, budget voting, budget structure, and a functional reserve. The proposal was strongest where it argued for clearer treasury direction, coherent strategy, dedicated thematic budgets, and a staged process for voting on the Net Change Limit, budget allocation, and an overall treasury withdrawal.\n\nThe review found those structural discussion points reasonably supported in the proposal itself. However, higher-materiality claims that treasury governance is currently in a poor state due to a funding impasse, lack of governance-system support, and harmful competition or toxicity around scarce resources lacked independent supporting evidence. The risk review judged execution risk as low, but mitigation evidence and independent assurance were missing, and the claims-and-evidence status remained thin.\n\nThis abstention is a conservative, evidence-based hold, not active opposition. A directional vote would be unblocked by replayable independent evidence for the proposal\u2019s claims about the current treasury impasse, ecosystem harm from the existing withdrawal process, and the need for the specific governance reforms proposed.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://raw.githubusercontent.com/AGT-T/RTG/refs/heads/main/data.jsonld",
+        "file_sha256": "f0ad812499a8a1bf2385c52b796d020ab006972ba15d4c91c417b12885eeb306",
+        "file_path": "data/input/governance/anchors/gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22-20260615T152518Z.bin",
+        "content_chars": 8400
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "1b9a6d8da69b23da0fdfd35cbde05d846d89dd32d2b0578225169c1a53141b7c"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "c9cf51442350a1349d6c9f6b0c22a3682963699df82d676995c3ecbedea5cb6e"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "f13251c483667112984d945e740e2d7a84fd2a5042ae3b685d106983241dba11"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/cb32323f4e1a22d139b242fe.md",
+  "rationale_anchor_hash": "cb32323f4e1a22d139b242fe48422c23185ade066270d2da4b96544a4acaef6a"
+}

@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that Cardano currently lacks a production BTCfi infrastructure layer and that Alchemy would provide reusable infrastructure for wallets, DEXs, DeFi protocols, and future BTCfi projects." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.40; confidence 79.0%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.41; confidence 79.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 10000000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal states that Cardano currently lacks a production BTCfi infrastructure layer and that Alchemy would provide reusable infrastructure for wallets, DEXs, DeFi protocols, and future BTCfi projects.
+- Claims and evidence missing: Independent evidence for: The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `5db611b047dd859e56f51a017114228dd6dcf8d7cb53b829e6f3369f58c0cff0`
-- snapshot_bundle_hash: `03fb434d39a286afb09ed38a5734ce77fd7e415ab65e253acf14d41374abfd99`
+- input_hash: `64e861e262eb5205d59a72d9c98ab8b86b965377bdec54eebf6a8e1c27e60a91`
+- snapshot_bundle_hash: `2e4e621745edfd13ae8bae51cef0d806ba594c21dc443562ef5e8d740e295ce7`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
-- score: `-0.4033`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
+- score: `-0.4133`
 - confidence: `0.79`
 

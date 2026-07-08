@@ -4,7 +4,7 @@
 - Decision: **YES**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy." and clears the evidence gates. Weighed against it: a material claim is unsupported — "This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy." — so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 52.2%.
@@ -37,11 +37,11 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `91937150042cd577fb9b7747371a6f5342c964dcecc6225e1e32afb3ef7168cb`
-- snapshot_bundle_hash: `a3af8ada916b8dc53fc68096e1abeb8fd0cbed5ef00c4f876ffe8e5995c3fc03`
+- input_hash: `d5f2627e2c78e230731725c1541e8818a74ee8ff66d9d1632074b3a9173092f3`
+- snapshot_bundle_hash: `c8f00735338e30079789d53b681e4eaa5d6356183c99954e3b70b43bc61647ab`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `0.01`
 - confidence: `0.5225`
 

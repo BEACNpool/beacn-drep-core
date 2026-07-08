@@ -1,0 +1,291 @@
+{
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
+  "title": "Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support",
+  "type": "TreasuryWithdrawals",
+  "status": "active",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:7ca62dd2943c8e89a4f62789f3090d41080ff8fdb5129db1207d26be17ddafa8",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "7ca62dd2943c8e89a4f62789f3090d41080ff8fdb5129db1207d26be17ddafa8",
+    "snapshot_bundle_hash": "411d448b2ec08ca98da0e450d32eb1e68e3a875ad855e00be8f49fe1d67f9abe",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3-7ca62dd2943c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a370bee738b357d58951191c.md",
+    "rationale_anchor_hash": "a370bee738b357d58951191cbe7d988eefb5e79af6eda28836b3a53d3cffaecf"
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"Intersect requests $298,250, equivalent to 1,193,000 ADA, to support TSC activities for 12 months.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
+    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "top_fixes": [
+      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
+      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
+      "Provide independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury."
+    ],
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3-7ca62dd2943c.md",
+    "missing_evidence": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "blocked",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: active",
+            "Proposed epoch: 638",
+            "Expires after epoch: 645",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: complete",
+            "Requested: Treasury withdrawal to fund Intersect Technical Steering Committee support activities for 12 months, including community engagement, protocol governance, and independent technical review.",
+            "Recipient: Intersect 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+            "Stated amount: 1,193,000",
+            "Deliverables: WP 1: Community-Facing Technical Coordination for 256,000 ADA, WP 2: Protocol Governance and Evolution for 832,000 ADA, WP 3: Technical Review for 105,000 ADA",
+            "Deadline/expiry: 12 months; pilot independent technical review programme launching in 2027",
+            "Claim (economic, supported_in_proposal, high materiality): Intersect requests $298,250, equivalent to 1,193,000 ADA, to support TSC activities for 12 months.",
+            "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as 256,000 ADA for WP1, 832,000 ADA for WP2, and 105,000 ADA for WP3.",
+            "Claim (technical, supported_in_proposal, high materiality): WP2 funds the Parameter Committee, CIP editors, and Hard Fork Working Group.",
+            "Claim (governance, proposer_asserted, high materiality): WP3 funds a pilot independent technical review programme launching in 2027 with conflict-of-interest provisions, published recusals, and open reviewer selection against documented criteria.",
+            "Claim (economic, proposer_asserted, high materiality): All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+            "Claim (governance, supported_in_proposal, high materiality): Execution of the work packages is contingent on approval of the IntersectMBO budget proposal."
+          ],
+          "missing": [
+            "Independent evidence for: WP3 funds a pilot independent technical review programme launching in 2027 with conflict-of-interest provisions, published recusals, and open reviewer selection against documented criteria.",
+            "Independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+            "Independent evidence for: Independent audits and assurance for the proposal will be provided by Appold, with possible reviews including deliverable verification, control testing, spend validation, and milestone evidence assessment."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "complete",
+          "findings": [
+            "Requested ADA: 0",
+            "Budget granularity: confirmed",
+            "Milestone payment gates: confirmed",
+            "Clawback/refund path: confirmed",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: confirmed",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Financial confidence: 0.72"
+          ],
+          "missing": [
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: medium",
+            "Governance risk: medium",
+            "Technical risk: medium",
+            "Treasury exposure risk: high",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: not confirmed",
+            "Rollback/remedy path: unknown",
+            "Flag count: 0"
+          ],
+          "missing": [
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Intersect requests $298,250, equivalent to 1,193,000 ADA, to support TSC activities for 12 months.\" though 1 review blocker(s) remain open.",
+            "Strongest NO: a material claim is unsupported \u2014 \"WP3 funds a pilot independent technical review programme launching in 2027 with conflict-of-interest provisions, published recusals, and open reviewer selection against documented criteria.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3-7ca62dd2943c.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/bafkreifcdcyszxluac2norfjt7shba7uycplnwrkzr2ebkbpdxvpwo6unq",
+    "anchor_hash": "396950b2c79b7ba5e312dbd432fa8e8a3e65f52856c512aab5ade4c638092f22",
+    "file_sha256": "a218b12cdd7400b4d744a99fe47083f4c09eb6da2acc7440a82f1deafb3bd46c",
+    "content_bytes": "19836",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
+  },
+  "deep_research": {
+    "status": "approved_agentic",
+    "dossier_complete": "yes",
+    "sections_grounded": 7,
+    "sections_total": 7,
+    "owner": "drep-agent-extract",
+    "dossier_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3.md",
+    "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3.receipt.json",
+    "verification": {
+      "passed": true,
+      "verified_at_utc": "2026-07-08T12:57:10+00:00",
+      "model": "gpt-5.5",
+      "fact_count": 29,
+      "supported": 29,
+      "support_ratio": 1.0,
+      "material_discrepancies": 0
+    }
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents",
+      "deep_research_dossiers"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "deep_research_dossiers",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.0,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.1
+  },
+  "freshness": {
+    "snapshot_age_seconds": 3,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

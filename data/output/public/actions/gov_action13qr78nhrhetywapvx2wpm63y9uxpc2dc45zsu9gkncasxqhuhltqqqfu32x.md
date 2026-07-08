@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "(“Orion Fund”), managed by Draper Dragon Orion GP, LLC (“General Partner” or “GP”), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed; Provide line-item budget. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 73.3%.
@@ -44,11 +44,11 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Provide milestone-gated disbursement.
 
 ## Proof of vote
-- input_hash: `1413b42190b0ec231110852eb8861d284152d2fde909f64b6e9a1566cc97f47b`
-- snapshot_bundle_hash: `5c3910156d0eabbad53240b2eae0583e991499223ae4007377621e3a502529f2`
+- input_hash: `e6267070f027023bb21b502991ef3a7431f3d20939d013bed6e3c1156b610d8a`
+- snapshot_bundle_hash: `59fd3c3c9011e00099c1c88ea6903ff7373052f5740e472956e6dd9d96b6f53b`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.2533`
 - confidence: `0.7333`
 

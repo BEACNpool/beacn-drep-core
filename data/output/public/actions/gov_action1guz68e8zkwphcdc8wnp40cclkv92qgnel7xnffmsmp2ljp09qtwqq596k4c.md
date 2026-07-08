@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.33; confidence 65.3%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `25639b2880d564f63e64d8719cf174d8e6b56297c35663813caae224a5ed3b69`
-- snapshot_bundle_hash: `e265fb44cbe0563ee8eff1eac2e7c4634f2fe2eaad063df101b8e8ba3fd35d78`
+- input_hash: `2f68c796b591c64af72f8a662c717beb66979bbd779876e97de039df6b8cfeca`
+- snapshot_bundle_hash: `223c66d806b3e50e732528d2b6e179fc9b399f431b10905d13a7e3efb79ca1ad`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.3333`
 - confidence: `0.6533`
 

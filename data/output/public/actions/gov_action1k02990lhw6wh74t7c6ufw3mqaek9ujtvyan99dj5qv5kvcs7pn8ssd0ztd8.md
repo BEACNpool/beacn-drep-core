@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal says Pallas is shared infrastructure used by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Pallas maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.27; confidence 78.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and others rely on Pallas for low-level protocol functionality." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests 540,750 ADA total, composed of 525,000 ADA for Pallas maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.23; confidence 77.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540750
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Pallas maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, composed of 525,000 ADA for Pallas maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: The proposal says Pallas is shared infrastructure used by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and others.
-- Claims and evidence missing: Independent evidence for: The document states TxPipe previously received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect open-source maintenance funding for Pallas, Dolos, and UTxO RPC that is being delivered on schedule.
+- Claims and evidence missing: Independent evidence for: The proposal states that projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and others rely on Pallas for low-level protocol functionality.
+- Claims and evidence missing: Independent evidence for: The proposal discloses TxPipe has received 30 Project Catalyst grants across Funds 9 through 14, with 26 successfully delivered and 4 currently under development and on schedule.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `fb1c9033524eb6b1502022e28dfe73f62768b7bcd923f4c009ac46c84baf4e76`
-- snapshot_bundle_hash: `7915fb34f5faa7acded2711a8b5b1326a2d62c2266b77bd323e2646eb3eead71`
+- input_hash: `496354452e55aa3e3bcb929c93c2a443e324fa864b4b734ab281dce129b92c49`
+- snapshot_bundle_hash: `08431d670b2d61193b560d6284add230a7c849d01187ca34d8775bd119f8405c`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
-- score: `-0.2733`
-- confidence: `0.7883`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
+- score: `-0.2333`
+- confidence: `0.7783`
 

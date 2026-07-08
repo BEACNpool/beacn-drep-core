@@ -1,0 +1,107 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 639",
+        "Expires after epoch: 646",
+        "Treasury request: 4.97M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, security audit, and launch campaign.",
+        "Recipient: not stated in document",
+        "Stated amount: 4,969,231",
+        "Deliverables: Secondary marketplace with on-chain settlement, Smart-contract royalty enforcement, Per-event anti-scalping controls, Custodial wallet onboarding in Sellout flow, Organizer dashboard and tools, Independent third-party smart-contract audit with published remediation, Public launch campaign and trade-show activations, Public metrics dashboard and quarterly reporting, Revenue-share repayment mechanism to reimburse the Treasury",
+        "Deadline/expiry: 8 months over five milestones",
+        "Claim (technical, proposer_asserted, high materiality): Phase 1 of the Sellout ticketing system is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+        "Claim (economic, proposer_asserted, medium materiality): Sellout has invested over $130,000 of its own capital into Phase 1.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,969,231 ada, equivalent to about $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee.",
+        "Claim (technical, supported_in_proposal, high materiality): Phase 2 is planned to deliver a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent audit, and a launch campaign.",
+        "Claim (economic, supported_in_proposal, high materiality): The team commits to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism, with 25% of fees paid until reimbursement and 5% thereafter.",
+        "Claim (governance, supported_in_proposal, high materiality): The exact revenue-base definition and payment cadence for the repayment mechanism will be finalized during M1 contracting with the oversight committee."
+      ],
+      "missing": [
+        "Independent evidence for: Phase 1 of the Sellout ticketing system is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+        "Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
+        "Independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
+        "Independent evidence for: The Yellowstone Club 2026 deployment is projected to move more than $6 million through Cardano in year one, based on $5.88 million in 2025 historical volume."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 4969231",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.74"
+      ],
+      "missing": [],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, equivalent to about $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the Sellout ticketing system is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

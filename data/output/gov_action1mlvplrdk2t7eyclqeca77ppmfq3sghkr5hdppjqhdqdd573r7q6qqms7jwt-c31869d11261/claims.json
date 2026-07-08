@@ -1,0 +1,86 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "12332031",
+    "deadline": "9-month delivery period from July 2026 to March 2027",
+    "deliverables": [
+      "Audited bridge running on Cardano mainnet in both custody modes under controlled access",
+      "Security audits",
+      "Formal verification",
+      "Ecosystem and partner readiness",
+      "Stewardship structure",
+      "Hardened economic model",
+      "SPO/dApp partner pipeline required for public launch"
+    ],
+    "recipient": "FluidTokens and Lantr Engineering",
+    "what": "Phase 1 of 2 funding to take Bifrost from a working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, and stewardship and economic foundations for launch."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b312,332,031, approximately $1,973,125 at 0.16 USD/ADA, including a 10% refundable contingency, for a 9-month delivery period.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Public rollout and 24 months of operations are intentionally deferred to a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The bridge is already live on testnet under Catalyst Fund 14 with working peg-ins and peg-outs and participating SPOs.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "Catalyst Fund 14 funded Bifrost with \u20b3739,000 for architecture, testnet MVP, and documentation, and the proposal states the timeline from December 2025 to August 2026 is on track.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost custody of locked BTC is described as distributed across 400+ Cardano SPOs weighted by delegation, with fund movement requiring a cryptographic threshold representing the majority of delegated stake.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Bifrost will have no bridge token or founder allocation, and its smart contracts, off-chain tooling, and SDK are released under Apache 2.0.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal targets 1,200 BTC TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029 as part of its Cardano 2030 alignment.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "Bridge fees in fBTC are expected to fund operations, with surplus split to SPOs and the Cardano Treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests a large treasury withdrawal for Phase 1 launch-readiness work on a Bitcoin-Cardano bridge, with a mix of specific technical design claims, some internally described deliverables, and several high-materiality adoption and revenue claims that are mostly asserted rather than evidenced in the supplied text.",
+  "output_sha256": "70a4ce78c1f6930dd189f1fd451298d745fbbf8f7b71cfece507e18fabcd8242"
+}

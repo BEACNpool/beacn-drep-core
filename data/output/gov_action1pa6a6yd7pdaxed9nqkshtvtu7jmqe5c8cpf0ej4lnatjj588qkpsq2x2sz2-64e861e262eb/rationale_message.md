@@ -1,0 +1,13 @@
+# Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because this was a large 10,000,000 ada treasury request and the evidence did not clear the higher bar required for spending shared treasury funds. The proposal was detailed, but a key part of the case for why Cardano needs this now was not independently supported: the claim that Cardano lacks serious production BTCfi infrastructure and that Bitcoin-backed structured exposure will otherwise consolidate elsewhere.
+
+The action requested funding for Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer from Sundial Protocol and Charms, with Intersect proposed as interim fund administrator if confirmed. The plan included a shared BTC reserve, FIRE and ICE assets, SDKs and adapters, public dashboards, monthly reports, audits, economic modeling, legal and compliance work, go-to-market execution, and staged launch liquidity. The proposer described two roughly USD 1 million pools based on an approximate USD 0.20 ada reference price: one for protocol infrastructure and staged liquidity, and one for delivery, audits, integrations, reporting, administration, and related work.
+
+Several claims were well-supported in the proposal itself. The budget structure, staged liquidity plan, reserve-ratio design, FIRE and ICE asset descriptions, risk categories, mitigation plans, reporting commitments, and Treasury return conditions were all documented. The proposal also cited external examples to support broader demand for Bitcoin-backed structured exposure. But the review found the evidence base thin overall for a treasury withdrawal of this size, especially around independent support for the core Cardano market-need claim, cost-benefit clarity, a sustainability path, independent assurance, and a dependency map.
+
+The review gates confirmed that the pinned anchor document was available and replayable, and the strongest YES case was acknowledged: the proposal does substantiate the 10,000,000 ada request and its two-pool planning budget. Even so, treasury actions require elevated scrutiny. With material reserve, oracle, bridge, protocol-layer, execution, and adoption risks still present, plus an advisory treasury sustainability penalty, BEACN concluded that the cost and precedent risk outweighed the supported benefits on the evidence provided.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates "This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.36; confidence 78.1%.
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide sustainability path.
 
 ## Proof of vote
-- input_hash: `62ba0c6f4e40e749a165febde71495dbd4d0cb6301cd9bf76698c9eb73466e10`
-- snapshot_bundle_hash: `57ce88fb4222b1d4d06539fe959864320ecbeb9ab7a66b5574a100d7249d8aba`
+- input_hash: `5ca69dbccd8b297c61f782f8d2d9dfb6d717d499b5411f01cf9a7e936c32afe0`
+- snapshot_bundle_hash: `e38e6be6ef169a3654b34d5ec124c676ee40cc902f514ccf8c099f5c7d932c1f`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.3633`
 - confidence: `0.7808`
 

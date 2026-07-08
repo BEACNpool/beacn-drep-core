@@ -1,0 +1,226 @@
+{
+  "action_id": "4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0",
+  "title": "Add Constitutional Committee Member",
+  "type": "NewCommittee",
+  "status": "enacted",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:43e27007bcf6631f56f80ced7e0d86f8e36ffaded3630ef02dbb6445e8d3c539",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": -0.03,
+    "confidence": 0.5775,
+    "input_hash": "43e27007bcf6631f56f80ced7e0d86f8e36ffaded3630ef02dbb6445e8d3c539",
+    "snapshot_bundle_hash": "4657fe25a130082dd865b3a3f941e3431cef0d81f986525bb56fa25eed53e59d",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0-43e27007bcf6.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score -0.03; confidence 57.8%.",
+    "summary_raw": "Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "top_fixes": [
+      "Provide mitigation evidence.",
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
+    ],
+    "markdown_path": "/data/output/public/rationales/4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0-43e27007bcf6.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0",
+      "action_type": "NewCommittee",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: NewCommittee",
+            "Status: enacted",
+            "Proposed epoch: 599",
+            "Expires after epoch: 606",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: not required",
+            "Requested: Add Constitutional Committee Member",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December., Adding one more member brings the Constitutional Committee member count to meet the committeeMinSize parameter, enabling on-chain governance to resume in full., Emergence of Governance The Chang Hard Fork was initiated by the Genesis Key Holders and approved by stake pool operators becoming effective on September 1st, 2024., Deploying initial on-chain governance features to Cardano and ushering in an interim (or technical bootstrap phase) for Cardano governance.",
+            "Deadline/expiry: not stated in document",
+            "Claim (governance, independently_verifiable, high materiality): This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.",
+            "Claim (governance, independently_verifiable, high materiality): Adding one more member brings the Constitutional Committee member count to meet the committeeMinSize parameter, enabling on-chain governance to resume in full.",
+            "Claim (governance, independently_verifiable, high materiality): Emergence of Governance The Chang Hard Fork was initiated by the Genesis Key Holders and approved by stake pool operators becoming effective on September 1st, 2024.",
+            "Claim (technical, independently_verifiable, medium materiality): Deploying initial on-chain governance features to Cardano and ushering in an interim (or technical bootstrap phase) for Cardano governance.",
+            "Claim (governance, independently_verifiable, high materiality): This instated an interim Constitutional Committee, including the founding entities, three community consortiums and Intersect for an 74 epoch term (~1 year).",
+            "Claim (technical, independently_verifiable, medium materiality): The second upgrade, known as Plomin, moved governance out of the interim and technical bootstrap phase into full minimum viable on-chain governance as described in CIP-1694 | A First Step Towards On-Chain Decentralized Governance."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0-43e27007bcf6.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/bafkreibqxuceexlhali4nhqo7tvsdzrcndzr775pv7wfsdq2lbxtyk4emu",
+    "anchor_hash": "7580221cf917c3ec6c1fe0ddf7a518f7e9fd357bbe1528b6a24e91b1bba90797",
+    "file_sha256": "30bd04425d6702d1c69e0efceb21e62268f31fffafafec590e1a586f3c2b8465",
+    "content_bytes": "10099",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0.json",
+    "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
+  },
+  "deep_research": null,
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.03,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.5775
+  },
+  "freshness": {
+    "snapshot_age_seconds": 12,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

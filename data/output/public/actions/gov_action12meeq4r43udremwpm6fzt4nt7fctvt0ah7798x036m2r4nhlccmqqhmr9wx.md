@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `InfoAction`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed future roadmap for Cardano." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.12; confidence 47.9%.
@@ -40,11 +40,11 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 - Provide rollback/remedy path.
 
 ## Proof of vote
-- input_hash: `b95ff98f2a9bbb77323a742e1dab946d30b3c4a9841c53f49322d1c532d71764`
-- snapshot_bundle_hash: `7b830b4f1cb26a794e935abeccf0bba91377205e04e25c0dfffa55acf1ba997e`
+- input_hash: `1e63e11e5c56833d0c753737934c3a4d7f1d91ccddf7a4e0193a4f39b936bd4c`
+- snapshot_bundle_hash: `97aaeed5dd1944bbf78ac843ee9d80594ae40e1e4947222bb03d651cea742015`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `0.115`
 - confidence: `0.4787`
 

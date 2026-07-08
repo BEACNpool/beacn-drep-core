@@ -1,0 +1,13 @@
+# Withdraw 1,162,746 ada for MLabs Core Tool Maintenance & Enhancement: Plutarc...
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because the proposal asked for a large treasury withdrawal while key benefit claims were not independently supported enough to justify the cost and precedent.
+
+The action requested 1,162,746 ada for annual maintenance and enhancement of MLabs Core Tooling, mainly Plutarch and Ply, with 1,128,880 ada for maintenance, compatibility, developer experience, fixes, optimizations, documentation, and related work, plus a 33,866 ada Intersect administration fee. The proposal described Plutarch and Ply clearly, provided a pinned and replayable anchor document, named the Intersect treasury administration address, disclosed prior MLabs-related funding, and described milestone-based treasury controls through Intersect-administered smart contracts.
+
+Several claims were well supported in the proposal, including the requested amount, the scope of work, the technical description of the tools, prior funding disclosure, and the proposed administration structure. Some claims were independently verifiable, including benchmark claims, Intersect budget-process support, and the statement that the withdrawal did not breach the applicable Net Change Limit at submission. But important adoption and ecosystem-impact claims remained thin: the reported use by at least 26 teams in one section and at least 15 teams in another was not independently evidenced, and the broader claim that this maintenance would support Cardano 2030, developer experience, open-source tooling, and application-layer utility was proposer-asserted rather than independently demonstrated.
+
+Because this was a treasury withdrawal, BEACN applied elevated scrutiny. The review found no decisive procedural blocker, and the strongest YES case was that the amount and basic funding structure were clear and passed evidence gates. However, the risk review still had unknown execution risk, no independent assurance, no rollback or remedy path, and missing cost-benefit clarity and sustainability path. With the treasury flow signal in an unsustainable regime and key claims unsupported, BEACN concluded that the evidence did not clear the higher bar for spending shared ada, so the vote was NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

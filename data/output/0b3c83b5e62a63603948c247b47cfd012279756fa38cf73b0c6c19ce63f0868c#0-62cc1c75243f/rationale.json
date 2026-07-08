@@ -1,0 +1,288 @@
+{
+  "action_id": "0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: not specified",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 8 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: complete proposal summary",
+    "Claims and evidence missing: budget analysis",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Synthesis missing: missing complete proposal summary"
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "62cc1c75243fc6aed63f5b0f87c8c12ab65b9524a8b4f73ee3c130b6d7f15f4b",
+  "snapshot_bundle_hash": "3fae23df71b9836c90e5b77f167473ce45c2f9874d3a89ff0e8ceae150fa25d7",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 6,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: expired",
+          "Proposed epoch: 630",
+          "Expires after epoch: 637",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: required",
+          "Requested: Cardano dOSPO and OMF Program",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding., Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors., Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants., This program establishes a community-governed, data-driven open source sustainment architecture.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, supported_in_proposal, high materiality): Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.",
+          "Claim (economic, supported_in_proposal, low materiality): Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors.",
+          "Claim (technical, supported_in_proposal, high materiality): Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants.",
+          "Claim (economic, supported_in_proposal, medium materiality): This program establishes a community-governed, data-driven open source sustainment architecture.",
+          "Claim (technical, supported_in_proposal, low materiality): Cardano has evolved into a large scale public infrastructure ecosystem, but the operational structures required to sustainably maintain that infrastructure have not evolved at the same pace.",
+          "Claim (technical, supported_in_proposal, medium materiality): Critical tooling, libraries, governance systems, developer infrastructure, and ecosystem services still depend heavily on fragmented coordination, volunteer labor, short term grants, or the stability of individual organizations."
+        ],
+        "missing": [
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: not specified",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 8 review blocker(s) remain open.",
+          "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal",
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal",
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on Cardano dOSPO and OMF Program. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano dOSPO and OMF Program. The strongest grounded claim is: Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\n\nOpen blockers: treasury_amount_lovelace is missing for a treasury withdrawal. BEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: MISSING_BASELINE_EVIDENCE.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmP76MXJwp19ZAcX8soUPyh5jcvMoK1DoLbxAJT9LLRhDK",
+        "file_sha256": "8f4b28ce8102083370692ebd4e3cf92ce33e831b4340cb06a803e3c7da702e20",
+        "file_path": "data/input/governance/anchors/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-20260615T152521Z.bin",
+        "content_chars": 39606
+      },
+      "claim_count": 8,
+      "prompt_sha256": "610b55a82661eb0971cfd8b8a0ed20812027ee85613cd103079234fa3b38c4a0",
+      "output_sha256": "f843921bd249d1ebcc8914636ee1b03e79d5c4c54d659d9c62cf7e08ce378c23"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "05f16632d70ae48e95bbb13be72923133beafab0bc48257ec848d35c3ba18ac7",
+      "output_sha256": "03ef5e776cb4c7b328f2519e04a82b66383d62f38c6f92810f132091802e8d2c"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "88d1ca418860ccdcf455cd4610140b274fd4cb3e0dbc07454832293e7497ba41",
+      "output_sha256": "018fdbdb1545b7f53bdc978e000567385ebd1d87876e36cf47be27317cfdd2f3"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "action_id": "d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0",
+  "title": "Se7en Labs: Daedalus Wallet Maintenance and Improvements 2026-2027",
+  "type": "TreasuryWithdrawals",
+  "status": "active",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:08ea8404a65641fc69044e1d909d085185f23f3df2cf65a6b01dde6ea7ea8c1a",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "08ea8404a65641fc69044e1d909d085185f23f3df2cf65a6b01dde6ea7ea8c1a",
+    "snapshot_bundle_hash": "9a8ef076fa8f6461e1fc72ca9afac61a8b75fae5393db9b396941086b462fae8",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-08ea8404a656.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/cb9b15fff17cefa5b1b5504f.md",
+    "rationale_anchor_hash": "cb9b15fff17cefa5b1b5504fc5ea795cfc7916d9abfd67780624ca49cd619f9a"
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"The proposal requests 1,785,333 ADA, consisting of 1,666,667 ADA for maintenance and improvements, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
+    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "top_fixes": [
+      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
+      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
+      "Provide sustainability path."
+    ],
+    "markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-08ea8404a656.md",
+    "missing_evidence": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "blocked",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: active",
+            "Proposed epoch: 639",
+            "Expires after epoch: 646",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: complete",
+            "Requested: Fund Daedalus Wallet Maintenance and Improvements 2026-2027 as a time-and-materials engagement delivered by Se7en Labs, Inc.",
+            "Recipient: Se7en Labs, Inc. with administration and milestone verification by Intersect",
+            "Stated amount: 1,785,333",
+            "Deliverables: Protocol maintenance including node and wallet backend updates, hard fork readiness, and compatible releases at least 2 weeks before each mainnet hard fork, Ecosystem expansion including Keystone and Flex hardware wallet support and a CIP-30 dApp connector, User support across GitHub, community forums, direct channels, and Japanese-language support with full Japanese translation maintained, Security and dependency maintenance including Electron, Node.js, reproducible Nix builds, platform compatibility, and signed releases, Architecture assessment covering current state, options, resource estimates, and recommendation",
+            "Deadline/expiry: Contract year through 2026-2027; architecture assessment by Q3 2027",
+            "Claim (technical, proposer_asserted, high materiality): Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,785,333 ADA, consisting of 1,666,667 ADA for maintenance and improvements, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
+            "Claim (adoption, proposer_asserted, high materiality): Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026, shipped Daedalus 8.0 and 11.0, and has not received Cardano Treasury ada in the last 24 months.",
+            "Claim (technical, independently_verifiable, high materiality): The team commits to a compatible stable Daedalus release at least 2 weeks before each mainnet hard fork and says release timing and version-currency metrics are independently verifiable from public GitHub repositories and the Cardano mainnet chain.",
+            "Claim (technical, supported_in_proposal, medium materiality): The work includes maintaining all four platform targets: Windows, macOS x86_64, macOS aarch64, and Linux.",
+            "Claim (adoption, proposer_asserted, medium materiality): The proposal states that Daedalus has approximately 4,000 monthly active users according to opt-in telemetry and that the true count is meaningfully higher because privacy-conscious users are less likely to opt in."
+          ],
+          "missing": [
+            "Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+            "Independent evidence for: Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026, shipped Daedalus 8.0 and 11.0, and has not received Cardano Treasury ada in the last 24 months.",
+            "Independent evidence for: The proposal states that Daedalus has approximately 4,000 monthly active users according to opt-in telemetry and that the true count is meaningfully higher because privacy-conscious users are less likely to opt in."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "complete",
+          "findings": [
+            "Requested ADA: 0",
+            "Budget granularity: confirmed",
+            "Milestone payment gates: confirmed",
+            "Clawback/refund path: confirmed",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Financial confidence: 0.70"
+          ],
+          "missing": [
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "complete",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: confirmed",
+            "Independent assurance: not confirmed",
+            "Rollback/remedy path: unknown",
+            "Flag count: 0"
+          ],
+          "missing": [
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"The proposal requests 1,785,333 ADA, consisting of 1,666,667 ADA for maintenance and improvements, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" though 1 review blocker(s) remain open.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-08ea8404a656.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/QmdWtCCvK6CJUzP4SFiuL5W8hg3eNr5LyngJHnwjoNxJey",
+    "anchor_hash": "d53fb4d05888001d60d03f5bca438f9cff434c441a9743d5ba898c3a17464c45",
+    "file_sha256": "5638dce7b2360cdea8ba04ae975fecebfdff0051b809581fbd27037b92dee950",
+    "content_bytes": "32633",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0.json",
+    "preview": "{\n  \"@context\": {\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"rationale\": \"CIP108:rationale\",\n        \"motivation\": \"CIP108:motivation\",\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@context\": {\n            \"uri\": \"CIP100:reference-uri\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            },\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\"\n          },\n          \"@container\": \"@set\"\n        },\n        \"onChain\": {\n          \"@id\": \"CIP169:onChain\",\n          \"@context\": {\n            \"deposit\": {\n              \"@id\": \"CIP116:deposit\",\n              \"@type\": \"CIP116:UInt64\"\n            },\n            \"reward_account\": {\n              \"@id\": \"CIP116:reward_account\",\n              \"@type\": \"CIP116:RewardAddress\"\n            },\n            \"gov_action\": {\n         "
+  },
+  "deep_research": {
+    "status": "approved_agentic",
+    "dossier_complete": "yes",
+    "sections_grounded": 7,
+    "sections_total": 7,
+    "owner": "drep-agent-extract",
+    "dossier_path": "/data/output/public/dossiers/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0.md",
+    "receipt_path": "/data/output/public/dossiers/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0.receipt.json",
+    "verification": {
+      "passed": true,
+      "verified_at_utc": "2026-07-08T12:51:21+00:00",
+      "model": "gpt-5.5",
+      "fact_count": 46,
+      "supported": 46,
+      "support_ratio": 1.0,
+      "material_discrepancies": 0
+    }
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents",
+      "deep_research_dossiers"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "deep_research_dossiers",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.0,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.1
+  },
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

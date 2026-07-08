@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit. Weighed against it: the proposal substantiates "Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.38; confidence 66.6%.
@@ -50,11 +50,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `2ebeaf90b5107475faa8abdbb86a6b0e5a78e28a60e836b940c8bf0abe1e83c7`
-- snapshot_bundle_hash: `3e1ea5880291c4e526f6dad288f11e787f7b58ab3d969bbd906bf17dbabc394d`
+- input_hash: `21295a14bd05830cdb5cbf68b68a7230085d688ffa735a797a1a53c81f57df47`
+- snapshot_bundle_hash: `4346fe3d2e6d435235ac21cc86d45a8c9200c4e4c0f19a10d53221034fa446a5`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.3833`
 - confidence: `0.6658`
 

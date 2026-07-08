@@ -1,0 +1,137 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#1",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Withdraw \u20b396,817,080 for 2025 Input Output Engineering Core Development Proposal",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: This treasury withdrawal funds 2025 Input Output Engineering Core Development Proposal which will provide the following services: - Automatic Formal Verification (Plutus High Assurance) - Property Based Testing Tool (Plutus High Assurance) - Static Analyzer..., The following sections; Abstract, Motivation, Rationale and Vendor Profile have been sourced from the approved proposal submitted by the Vendor as part of the Intersect budget process., This treasury withdrawal funds one of 39 proposals to give effect to the approved budget info action for \u20b3275,269,340, administered by Intersect via gov action1u9x73kwufaxa70lfy59g4ynwyrcsaxdcd0gxzzmh67s9fxq4j8hqqk2phgh., The information provided herein is intended to fulfill the spirit of the constitutional requirement for a treasury withdrawal info action by also providing the details of the proposed solution, alignment to the budget, and amount to be withdrawn from the Ca...",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal funds 2025 Input Output Engineering Core Development Proposal which will provide the following services: - Automatic Formal Verification (Plutus High Assurance) - Property Based Testing Tool (Plutus High Assurance) - Static Analyzer...",
+        "Claim (economic, independently_verifiable, high materiality): The following sections; Abstract, Motivation, Rationale and Vendor Profile have been sourced from the approved proposal submitted by the Vendor as part of the Intersect budget process.",
+        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds one of 39 proposals to give effect to the approved budget info action for \u20b3275,269,340, administered by Intersect via gov action1u9x73kwufaxa70lfy59g4ynwyrcsaxdcd0gxzzmh67s9fxq4j8hqqk2phgh.",
+        "Claim (economic, independently_verifiable, high materiality): The information provided herein is intended to fulfill the spirit of the constitutional requirement for a treasury withdrawal info action by also providing the details of the proposed solution, alignment to the budget, and amount to be withdrawn from the Ca...",
+        "Claim (technical, independently_verifiable, low materiality): This proposal aims to solve the following problem: Automatic Formal Verification (Plutus High Assurance): Develop automated formal verification tool for Plinth/Cardano DApps Property Based Testing Tool (Plutus High Assurance): Develop Plinth PBT Tool to aut...",
+        "Claim (economic, independently_verifiable, high materiality): Speeds up sync, enables light clients KES Agent: Implement security enhancement for SPO KES key storage and management Ledger-HD: Move ledger state tables from memory to disk (LSM tech) to reduce RAM Log-Structured Merge (LSM) including UTXO-HD: Integrate b..."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: not specified",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds 2025 Input Output Engineering Core Development Proposal which will provide the following services: - Automatic Formal Verification (Plutus High Assurance) - Property Based Testing Tool (Plutus High Assurance) - Static Analyzer...\" though 8 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal",
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." though 7 review blocker(s) remain open. What would change this vote to YES: Provide complete proposal summary; Provide budget analysis. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.46; confidence 49.0%.
@@ -51,11 +51,11 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Provide feasibility assessment.
 
 ## Proof of vote
-- input_hash: `2592fe94b8652934b982b1305ed56c5d52e29fe61779c5fe1ed047ca2643e9f6`
-- snapshot_bundle_hash: `24ee10909e9f409ff664e8b15a0545e8237574b4a9f5bfd6e4ced2a4a71e8fbd`
+- input_hash: `6e62625c727dda7a5f04045c973ace22b22920ad7a38dfc1c428a18387d1df11`
+- snapshot_bundle_hash: `6d3e0e9a167d6fc016f6cbf066e5757d172cc60633a935e58009b5d0828549e4`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.4583`
 - confidence: `0.49`
 

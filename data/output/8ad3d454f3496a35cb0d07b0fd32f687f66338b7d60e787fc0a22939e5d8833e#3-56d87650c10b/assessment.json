@@ -1,0 +1,137 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#3",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes., Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc., Update cardano-hw-cli to reflect firmware changes and to reflect user needs - Support Keystone developers while doing the changes above - Provide general cardano hw wallets maintenance, development support and bugfixing., Order and manage external code audits for Ledger firmware code (Ledger requirement, has to be done by one of 2 certified auditors) This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.",
+        "Claim (economic, independently_verifiable, low materiality): Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc.",
+        "Claim (economic, independently_verifiable, low materiality): Update cardano-hw-cli to reflect firmware changes and to reflect user needs - Support Keystone developers while doing the changes above - Provide general cardano hw wallets maintenance, development support and bugfixing.",
+        "Claim (economic, independently_verifiable, high materiality): Order and manage external code audits for Ledger firmware code (Ledger requirement, has to be done by one of 2 certified auditors) This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
+        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Hardware wallets Ledger and Trezor and additional supporting tooling (cardano-hw-cli) need to be regularly updated in order to be able to support Cardano blockchain development.",
+        "Claim (economic, independently_verifiable, low materiality): There are 2 aspects of this: - regular maintenance, bugfixing and developer support - implementation of new Cardano features and breaking changes HW wallets in scope: Ledger, Trezor, Keystone (from support perspective as Keystone firmware and tooling is dev..."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: not specified",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.\" though 8 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal",
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

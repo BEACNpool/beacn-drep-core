@@ -1,0 +1,227 @@
+{
+  "action_id": "15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0",
+  "title": "Name the next hard fork HOSKY Hard Fork",
+  "type": "InfoAction",
+  "status": "expired",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:5d9931bd7c28eee1d6a31a8e7c810014d1168015e4c939416d4f40cf0495599e",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": -0.34,
+    "confidence": 0.445,
+    "input_hash": "5d9931bd7c28eee1d6a31a8e7c810014d1168015e4c939416d4f40cf0495599e",
+    "snapshot_bundle_hash": "2e95b7588a71db1ad9c22c2db1c39ce7a5860d2e8a2f245d59bbe101d9510f5b",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0-5d9931bd7c28.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: risk indicators remained elevated relative to confirmed mitigations. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"I propose to name the next Cardano hard fork 'HOSKY' after Cardano's mutt and the most widely recognized and held asset in the ecosystem.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork; Provide independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity. Residual uncertainty: No DRep distribution available. Confidence context: score -0.34; confidence 44.5%.",
+    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.040 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 1 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.040 (clamped to \u00b10.05).",
+    "top_fixes": [
+      "Provide independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork.",
+      "Provide independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity.",
+      "Provide mitigation evidence."
+    ],
+    "markdown_path": "/data/output/public/rationales/15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0-5d9931bd7c28.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0",
+      "action_type": "InfoAction",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: InfoAction",
+            "Status: expired",
+            "Proposed epoch: 507",
+            "Expires after epoch: 514",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: not required",
+            "Requested: Name the next hard fork HOSKY Hard Fork",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The Chang+1 hard fork should be called the HOSKY Hard Fork, I propose to name the next Cardano hard fork 'HOSKY' after Cardano's mutt and the most widely recognized and held asset in the ecosystem., Saying Chang-1, Chang-2, Chang+1 is confusing for users and media., Call the next hard fork HOSKY Hard Fork for the sake of clarity.",
+            "Deadline/expiry: not stated in document",
+            "Claim (other, proposer_asserted, high materiality): The Chang+1 hard fork should be called the HOSKY Hard Fork",
+            "Claim (adoption, supported_in_proposal, high materiality): I propose to name the next Cardano hard fork 'HOSKY' after Cardano's mutt and the most widely recognized and held asset in the ecosystem.",
+            "Claim (adoption, proposer_asserted, low materiality): Saying Chang-1, Chang-2, Chang+1 is confusing for users and media.",
+            "Claim (other, proposer_asserted, high materiality): Call the next hard fork HOSKY Hard Fork for the sake of clarity."
+          ],
+          "missing": [
+            "Independent evidence for: The Chang+1 hard fork should be called the HOSKY Hard Fork",
+            "Independent evidence for: Call the next hard fork HOSKY Hard Fork for the sake of clarity."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 3"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"I propose to name the next Cardano hard fork 'HOSKY' after Cardano's mutt and the most widely recognized and held asset in the ecosystem.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The Chang+1 hard fork should be called the HOSKY Hard Fork\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0-5d9931bd7c28.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/QmWjcHsrq9kKHZZ7aPPFjqN6wLuxH9d8bcqssmrE7H4cvb",
+    "anchor_hash": "2f98f57c4149fdfed2b73cbd821226fe417ef5ed49d8f836a37b31edf14dea47",
+    "file_sha256": "848ed97ad351648cd9a6b74bf357efd67fd88ae30d1895aab755ee9580341d99",
+    "content_bytes": "2018",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0.json",
+    "preview": "{\n  \"@context\": {\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\": \"http://xmlns.com/f"
+  },
+  "deep_research": null,
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.34,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.445
+  },
+  "freshness": {
+    "snapshot_age_seconds": 24,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

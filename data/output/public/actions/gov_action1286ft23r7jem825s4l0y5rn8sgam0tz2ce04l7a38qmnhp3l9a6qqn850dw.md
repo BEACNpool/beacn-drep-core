@@ -4,7 +4,7 @@
 - Decision: **NO**
 - Action type: `ParameterChange`
 - Status: `expired`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
 Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Use stable, reproducible anchor links (commit-pinned when possible). Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.40; confidence 57.0%.
@@ -38,11 +38,11 @@ Vote: NO. For this ParameterChange (expired), downside risk and/or weak safeguar
 - Include SPO/operator impact envelope (CPU/RAM/network/storage) with measurable assumptions.
 
 ## Proof of vote
-- input_hash: `e4dc4f72de71652a5f7d79a84e83cc96882cebf59b534820e018b13db02d1a16`
-- snapshot_bundle_hash: `ae152925b600206feb026fd0bcc78dcc6fab3f159558263d724f2a900113a3a8`
+- input_hash: `1969ca6977ee1d2f538cc66cf56a2c189c18adf125c6fbdb61f09e2113afed43`
+- snapshot_bundle_hash: `3786d31a0d696fc48778debb778a04ade1be62099ba3ecd36eccfc1c05810600`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.4033`
 - confidence: `0.57`
 

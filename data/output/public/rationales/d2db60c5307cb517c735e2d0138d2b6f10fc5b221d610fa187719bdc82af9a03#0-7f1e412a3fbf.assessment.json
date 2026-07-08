@@ -1,0 +1,137 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "d2db60c5307cb517c735e2d0138d2b6f10fc5b221d610fa187719bdc82af9a03#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: expired",
+        "Proposed epoch: 584",
+        "Expires after epoch: 591",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Withdraw \u20b31,150,000 for GovTool 12 months active maintenance and development",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance., GovTool enables ada holders to register, delegate, propose, vote, and transparently view outcomes., It is actively maintained and expanded by the Cardano GovTool Consortium which consists of ByronNetwork, WeDeliver, LidoNation and Dquadrant with additional open source contributors, guided by the Governance Tools Working Group., Funding will ensure operational stability, incentivisation for community contributions, support for other open source governance tools using GovTool open-source code and APIs, and deliver accelerated functional updates across all governance pillars.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance.",
+        "Claim (economic, independently_verifiable, low materiality): GovTool enables ada holders to register, delegate, propose, vote, and transparently view outcomes.",
+        "Claim (economic, independently_verifiable, medium materiality): It is actively maintained and expanded by the Cardano GovTool Consortium which consists of ByronNetwork, WeDeliver, LidoNation and Dquadrant with additional open source contributors, guided by the Governance Tools Working Group.",
+        "Claim (economic, independently_verifiable, high materiality): Funding will ensure operational stability, incentivisation for community contributions, support for other open source governance tools using GovTool open-source code and APIs, and deliver accelerated functional updates across all governance pillars.",
+        "Claim (economic, independently_verifiable, high materiality): This proposal addresses the risk of governance participation becoming fragmented or dependent on closed-sourced, privately-owned, commercialised tools.",
+        "Claim (economic, independently_verifiable, low materiality): In Cardano\u2019s Voltaire era, without an open, neutral, and accessible platform like GovTool, Cardano\u2019s decentralisation and legitimacy would be weakened."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: not specified",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This Treasury Withdrawal funds 12 months of full active maintenance and development for GovTool, the open-source, community-owned set of governance tools that form Cardano\u2019s core low-barrier platform for participation in on-chain governance.\" though 8 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal",
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

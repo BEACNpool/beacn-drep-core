@@ -1,0 +1,295 @@
+{
+  "action_id": "0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0",
+  "title": "Cardano dOSPO and OMF Program",
+  "type": "TreasuryWithdrawals",
+  "status": "expired",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:62cc1c75243fc6aed63f5b0f87c8c12ab65b9524a8b4f73ee3c130b6d7f15f4b",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "62cc1c75243fc6aed63f5b0f87c8c12ab65b9524a8b4f73ee3c130b6d7f15f4b",
+    "snapshot_bundle_hash": "3fae23df71b9836c90e5b77f167473ce45c2f9874d3a89ff0e8ceae150fa25d7",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0-62cc1c75243f.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
+    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "top_fixes": [
+      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
+      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
+      "Provide complete proposal summary."
+    ],
+    "markdown_path": "/data/output/public/rationales/0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0-62cc1c75243f.md",
+    "missing_evidence": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ],
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "blocked",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: expired",
+            "Proposed epoch: 630",
+            "Expires after epoch: 637",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal"
+          ],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: required",
+            "Requested: Cardano dOSPO and OMF Program",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding., Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors., Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants., This program establishes a community-governed, data-driven open source sustainment architecture.",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, supported_in_proposal, high materiality): Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.",
+            "Claim (economic, supported_in_proposal, low materiality): Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors.",
+            "Claim (technical, supported_in_proposal, high materiality): Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants.",
+            "Claim (economic, supported_in_proposal, medium materiality): This program establishes a community-governed, data-driven open source sustainment architecture.",
+            "Claim (technical, supported_in_proposal, low materiality): Cardano has evolved into a large scale public infrastructure ecosystem, but the operational structures required to sustainably maintain that infrastructure have not evolved at the same pace.",
+            "Claim (technical, supported_in_proposal, medium materiality): Critical tooling, libraries, governance systems, developer infrastructure, and ecosystem services still depend heavily on fragmented coordination, volunteer labor, short term grants, or the stability of individual organizations."
+          ],
+          "missing": [
+            "complete proposal summary",
+            "budget analysis",
+            "feasibility assessment",
+            "risk analysis",
+            "alternatives analysis",
+            "failure-mode analysis",
+            "community impact analysis"
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: not specified",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 8 review blocker(s) remain open.",
+            "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing for a treasury withdrawal",
+            "missing complete proposal summary",
+            "missing budget analysis",
+            "missing feasibility assessment",
+            "missing risk analysis",
+            "missing alternatives analysis",
+            "missing failure-mode analysis",
+            "missing community impact analysis"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0-62cc1c75243f.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://ipfs.io/ipfs/QmP76MXJwp19ZAcX8soUPyh5jcvMoK1DoLbxAJT9LLRhDK",
+    "anchor_hash": "a16e91e5306eb4ccbbd6aed238e1bae823acd7b560b67e756234718f6a6a749d",
+    "file_sha256": "8f4b28ce8102083370692ebd4e3cf92ce33e831b4340cb06a803e3c7da702e20",
+    "content_bytes": "39860",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
+  },
+  "deep_research": null,
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents",
+      "deep_research_dossiers"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "deep_research_dossiers",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.0,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.1
+  },
+  "freshness": {
+    "snapshot_age_seconds": 6,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

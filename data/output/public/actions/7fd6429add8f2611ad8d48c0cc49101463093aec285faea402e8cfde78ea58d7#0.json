@@ -1,0 +1,226 @@
+{
+  "action_id": "7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7#0",
+  "title": "Should K increased?",
+  "type": "InfoAction",
+  "status": "expired",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:590682a72134a873d42823779ed5b567f3dc387f46ea7b2c84dfce51ffc7111e",
+    "detected_at": "2026-07-07T21:00:01.830677+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": -0.02,
+    "confidence": 0.575,
+    "input_hash": "590682a72134a873d42823779ed5b567f3dc387f46ea7b2c84dfce51ffc7111e",
+    "snapshot_bundle_hash": "c3cc17ba99aa4bfa0f108c6e45196c4101e894790e0d4fe320aae38afbc6f375",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "rationale_markdown_path": "/data/output/public/rationales/7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7#0-590682a72134.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The K parameter was created to limit the total number of ADA staked to one pool.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score -0.02; confidence 57.5%.",
+    "summary_raw": "Doctrine-aware reasoning layer nudged the score by +0.030 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
+    "top_fixes": [
+      "Provide mitigation evidence.",
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
+    ],
+    "markdown_path": "/data/output/public/rationales/7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7#0-590682a72134.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7#0",
+      "action_type": "InfoAction",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: InfoAction",
+            "Status: expired",
+            "Proposed epoch: 514",
+            "Expires after epoch: 521",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "complete",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: not required",
+            "Requested: Should K increased?",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The K parameter was created to limit the total number of ADA staked to one pool., The K parameter determines the saturation of stakepools., To calculate the saturation of stakepools you can take the total number of ADA and divide it by K., K is currently 500, and pool saturation is currently 74,551,771.86 ADA.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): The K parameter was created to limit the total number of ADA staked to one pool.",
+            "Claim (other, independently_verifiable, high materiality): The K parameter determines the saturation of stakepools.",
+            "Claim (economic, independently_verifiable, low materiality): To calculate the saturation of stakepools you can take the total number of ADA and divide it by K.",
+            "Claim (economic, independently_verifiable, low materiality): K is currently 500, and pool saturation is currently 74,551,771.86 ADA.",
+            "Claim (technical, independently_verifiable, high materiality): This governance action is by no means a suggestion of what Cardano protocol parameters should be modified to or if they should be modified at this time.",
+            "Claim (governance, independently_verifiable, medium materiality): The goal of this governance action is to increase governance participation before the next hardfork."
+          ],
+          "missing": [],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"The K parameter was created to limit the total number of ADA staked to one pool.\" and clears the evidence gates.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7#0-590682a72134.assessment.json"
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "text/plain; charset=utf-8",
+    "http_status": "200",
+    "source_anchor_url": "https://raw.githubusercontent.com/bigpey/CardanoGovernance/refs/heads/main/infoAction3.jsonld",
+    "anchor_hash": "e68cba056c70187e475f05317ce54eeade3376d5b744b32f2c60492b4984b4bf",
+    "file_sha256": "75638b44a055d69cda7217007ab7e22b30794c1fd77052fbff03ae789151b051",
+    "content_bytes": "3803",
+    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "download_path": "/proposals/7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7#0.txt",
+    "preview": "{\n  \"@context\": {\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\": \"http://xmlns.com/f"
+  },
+  "deep_research": null,
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resource_ids_used": [
+      "gov_actions_api",
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_api",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "budget_pressure": 0.02,
+    "conflict_risk": 0.0,
+    "technical_value": 0.0,
+    "governance_alignment": 0.575
+  },
+  "freshness": {
+    "snapshot_age_seconds": 24,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

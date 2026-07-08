@@ -1,0 +1,13 @@
+# Withdraw 1,310,960 ada for Hardware Wallet Maintenance 2026
+**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NO because the proposal asks for a large treasury withdrawal, but the core value-for-money case is not supported strongly enough by independent evidence. The review found useful process and administration evidence, but the main justification for spending 1,310,960 ada still depends too much on proposer assertions about scope, compatibility risk, workload, and delivery details.
+
+The action requested 1,310,960 ada for Hardware Wallet Maintenance 2026, with 1,272,777 ada for maintenance and compatibility assurance and 38,183 ada for Intersect budget administration. The proposal says the work would cover Ledger and Trezor compatibility updates, supporting libraries and cardano-hw-cli, developer support, integration support, vendor-required audits, capped time-and-materials reporting, and milestone-based disbursements over 12 months. It also states that this would not create a new wallet product or duplicate other infrastructure budgets.
+
+Several governance and administration claims were well supported: the anchor document was available and replayable, the budget split was clear, oversight and administration controls were described, six external Oversight Committee entities were named, and smart-contract addresses, thresholds, a dashboard URL, repository references, and audit references were provided for treasury administration checks. The proposal also cited Intersect budget process support, a Net Change Limit assertion, and prior funding references.
+
+The review gates were stricter because this is a treasury withdrawal. The proposal passed enough intake and administration checks to be reviewable, and the strongest YES case was that the amount and budget split were substantiated. But BEACN’s evidence review remained thin on the substance of the spend: independent support was missing for the limited scope claim and for the claimed ongoing compatibility risk, and the treasury review lacked a sustainability path and cost-benefit clarity. Risk review also lacked independent assurance and a rollback or remedy path. Given those gaps, BEACN concluded that the cost and precedent risk outweighed the supported benefit, so the evidence-based vote was NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

@@ -1,0 +1,108 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sxypfkyr",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 1.19M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund Intersect Technical Steering Committee support activities for 12 months across community-facing technical coordination, protocol governance and evolution, and technical review.",
+        "Recipient: Intersect on behalf of the vendor, with funds directed to the 2026 Treasury Reserve Smart Contract stake address stated in the proposal.",
+        "Stated amount: 1,193,000",
+        "Deliverables: WP 1: Community-Facing Technical Coordination, including expert attendance at major ecosystem events and commissioning technical reports, budgeted at 256,000 ADA., WP 2: Protocol Governance and Evolution, funding the Parameter Committee, CIP editors, and Hard Fork Working Group, budgeted at 832,000 ADA., WP 3: Technical Review, establishing a pilot independent technical review programme launching in 2027, budgeted at 105,000 ADA., Milestone-based drawdowns, evidence-backed reporting, transparent disclosures, external assurance, and return of any unspent funds to the Cardano treasury.",
+        "Deadline/expiry: 12 months; WP3 pilot independent technical review programme launching in 2027.",
+        "Claim (economic, supported_in_proposal, high materiality): The TSC requests $298,250, equivalent to 1,193,000 ADA, to support activities for 12 months.",
+        "Claim (economic, supported_in_proposal, high materiality): The requested budget is divided into 256,000 ADA for WP1, 832,000 ADA for WP2, and 105,000 ADA for WP3.",
+        "Claim (governance, supported_in_proposal, high materiality): Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.",
+        "Claim (economic, proposer_asserted, high materiality): The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+        "Claim (governance, independently_verifiable, medium materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+        "Claim (economic, independently_verifiable, high materiality): The proposer states the withdrawal does not breach the applicable 350M Net Change Limit at the moment of submission."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+        "Independent evidence for: The proposer asserts the TSC work supports Cardano technical governance, DRep decision-making, protocol evolution, ecosystem resilience, and 2030 strategy pillars."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 1193000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.76"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The TSC requests $298,250, equivalent to 1,193,000 ADA, to support activities for 12 months.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

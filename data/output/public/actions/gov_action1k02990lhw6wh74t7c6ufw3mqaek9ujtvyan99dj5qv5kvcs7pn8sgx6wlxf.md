@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-07-07T11:30:04.567018+00:00`
+- Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Intersect states the ask is reduced from last year's $7.875M to $6.35M while preserving the functions it considers most critical to Cardano continuity and maturity." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect says the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, reserved capacity for critical unowned processes, technical stewardship, incident response, and release coordination." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.23; confidence 77.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Intersect states that the current ask is reduced from last year's $7.875M to $6.35M while preserving functions critical to Cardano continuity and maturity." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027." and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.23; confidence 77.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,12 +26,12 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 25400000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect says the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, reserved capacity for critical unowned processes, technical stewardship, incident response, and release coordination." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- Claims and evidence missing: Independent evidence for: Intersect states the ask is reduced from last year's $7.875M to $6.35M while preserving the functions it considers most critical to Cardano continuity and maturity.
+- Claims and evidence missing: Independent evidence for: Intersect states that the current ask is reduced from last year's $7.875M to $6.35M while preserving functions critical to Cardano continuity and maturity.
 - Claims and evidence missing: Independent evidence for: Intersect says it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
@@ -45,11 +45,11 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Provide independent assurance.
 
 ## Proof of vote
-- input_hash: `61cf95af364068cad85e0325f71f5284e43aeb1b7fcd1d4bb146aac48f6f148a`
-- snapshot_bundle_hash: `be381c7ddb22514de43f0f793c53c5afab0442effd0b18134adf3202f5b67ebd`
+- input_hash: `9e4a8741137d9f68ac94bfca2535f44c5f39eb762956956e62c86f683c6e5f12`
+- snapshot_bundle_hash: `b8b27a751415c4318a6c53fd550b30834d95c118b84b907cc8085175898450ec`
 - soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `15c9ee361cdd647ac25590d31885b9aa1b0cebf2`
-- core_commit: `b15b30adee47a132d4febabfb93d31a347903f59`
+- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
+- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
 - score: `-0.2333`
 - confidence: `0.7783`
 

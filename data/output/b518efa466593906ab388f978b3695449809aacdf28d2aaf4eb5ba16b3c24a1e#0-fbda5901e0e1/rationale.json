@@ -1,0 +1,237 @@
+{
+  "action_id": "b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0",
+  "action_type": "InfoAction",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "DREP_DISTRIBUTION_MISSING",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.045,
+  "raw_score": -0.05,
+  "llm_score_adjustment": 0.005,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "NEUTRAL",
+    "score_adjustment": 0.005,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a info action: 6 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
+  "directional_threshold": 0.12,
+  "confidence": 0.4312,
+  "readiness_score": 0.0,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Doctrine-aware reasoning layer nudged the score by +0.005 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 6 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "No DRep distribution available.",
+    "Claims and evidence missing: Independent evidence for: This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "fbda5901e0e16558ab0a94fd98d8ad58bd7c5c9751ab19007bfbe54b91183dd0",
+  "snapshot_bundle_hash": "3b655efa6f0ad5c30a5285f95f4f998ad71bdd0f28f54eab957e7afc0b1530d8",
+  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resources_used": [
+    "gov_actions_api",
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 9,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2411,
+    "NO": 0.3311,
+    "ABSTAIN": 0.4278
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: expired",
+          "Proposed epoch: 619",
+          "Expires after epoch: 626",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Approve Cardano Foundation as New Managing Entity of Project Catalyst",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst., This will allow for full and effective transition of Catalyst operations and responsibilities from IOG to CF in accordance with the statutes of the Catalyst Foundation Company (CFC)., This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14., This approval request and Info Action is unrelated to Intersect\u2019s role as the constitutionally mandated budget administrator for funds 14 to 16.",
+          "Deadline/expiry: not stated in document",
+          "Claim (adoption, supported_in_proposal, medium materiality): The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.",
+          "Claim (other, proposer_asserted, low materiality): This will allow for full and effective transition of Catalyst operations and responsibilities from IOG to CF in accordance with the statutes of the Catalyst Foundation Company (CFC).",
+          "Claim (economic, proposer_asserted, high materiality): This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.",
+          "Claim (economic, supported_in_proposal, high materiality): This approval request and Info Action is unrelated to Intersect\u2019s role as the constitutionally mandated budget administrator for funds 14 to 16.",
+          "Claim (other, supported_in_proposal, low materiality): In February CF agreed to assume stewardship of Catalyst from IOG, with the primary goal of ensuring continuity for existing grant recipients.",
+          "Claim (adoption, supported_in_proposal, medium materiality): CF is submitting this Info Action to request the Community\u2019s approval for the transition of the Catalyst management role from IOG to CF, in accordance with CFC\u2019s statutes."
+        ],
+        "missing": [
+          "Independent evidence for: This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on Approve Cardano Foundation as New Managing Entity of Project Catalyst. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Approve Cardano Foundation as New Managing Entity of Project Catalyst. The strongest grounded claim is: The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.\n\nA material claim remains proposer-asserted or thinly supported: This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14. Reason code: DREP_DISTRIBUTION_MISSING.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmV9raiDbx8cs5wspNT8EiX5ReusETusVerwQBSrmhrX8N",
+        "file_sha256": "b45ac922debf28a70bc714396c3162b687e1ba4ca47df32f64de3d798d68cb4a",
+        "file_path": "data/input/governance/anchors/gov_action1k5vwlfrxtyusd2ec37tckd54gjvqn2kd72xj4t6wkkapdv7zfg0qq468n2r-20260326T175205Z.bin",
+        "content_chars": 6418
+      },
+      "claim_count": 8,
+      "prompt_sha256": "a6210b33337f05a80926d745b7f73b61de8c01d7cbd0ac51739c8f483a731218",
+      "output_sha256": "ab3c1093fa1e82bc84e64c833ccd4e2716366f7a4319b539c05a70b254f97427"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.005,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "ad44d6fe9bd9833a9b76cfd416aa0e10fc08a7abd568b51a499d388f6a714c5f",
+      "output_sha256": "b45921f65040473327c97acb9436c8d00413756c2e7f8ba22d72b4da32173c2d"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "b161c942137199c92b536c0b1f3c82bcdcba818fd86f471a518796ec47883935",
+      "output_sha256": "a0311cad2ec74b295227eead1fcc11148d04cff489c5c46a062e383356bbfb01"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

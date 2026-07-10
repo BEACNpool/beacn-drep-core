@@ -25,8 +25,11 @@ FIELDS = {
     "critical_infrastructure", "open_source_public_good", "measurable_existing_adoption",
     "ecosystem_leverage", "strategic_necessity", "credible_prior_delivery",
     "cost_compared_to_market", "output_priced", "material_duplication", "private_capture_risk",
+    "established_service", "builder_workflow_dependency", "low_functional_substitutability",
+    "non_funding_disruption_risk",
 }
-MULTI_SOURCE = {"measurable_existing_adoption", "cost_compared_to_market", "material_duplication"}
+MULTI_SOURCE = {"measurable_existing_adoption", "cost_compared_to_market", "material_duplication",
+                "low_functional_substitutability", "non_funding_disruption_risk"}
 
 
 def sha256(path: Path) -> str:

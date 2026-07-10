@@ -1,6 +1,7 @@
 import unittest
 
-from beacn_drep.engine import _build_assessment, _score_action
+from beacn_drep.engine import (_build_assessment, _score_action, _treasury_dimensions,
+                               _treasury_merit_recommendation)
 
 
 def base_action(action_type: str) -> dict:
@@ -313,6 +314,26 @@ class EnginePolicyTests(unittest.TestCase):
         )
         self.assertEqual(result["recommendation"], "NO")
         self.assertTrue(result["treasury_dimensions"]["affirmative_waste_evidence"])
+
+    def test_established_infrastructure_prices_non_funding_risk_without_special_case(self) -> None:
+        dimensions = _treasury_dimensions(
+            base_action("TreasuryWithdrawals"),
+            {"evidence_status": "independently_verified", "critical_infrastructure": "yes",
+             "measurable_existing_adoption": "yes", "ecosystem_leverage": "yes",
+             "credible_prior_delivery": "yes", "established_service": "yes",
+             "builder_workflow_dependency": "yes", "low_functional_substitutability": "yes",
+             "non_funding_disruption_risk": "yes"},
+            {"timeline_defined": "yes", "risk_profile_complete": "no"},
+            {"budget_granularity": "yes", "clawback_refund_path": "yes",
+             "sustainability_path_clear": "yes", "cost_benefit_clarity": "unknown"},
+            {"execution_risk_level": "unknown", "governance_risk_level": "medium",
+             "technical_risk_level": "unknown", "treasury_exposure_risk_level": "medium",
+             "mitigation_evidence_present": "yes", "independent_assurance_present": "no"},
+            False,
+        )
+        self.assertGreaterEqual(dimensions["benefit"], 0.55)
+        self.assertGreaterEqual(dimensions["delivery_confidence"], 0.55)
+        self.assertEqual(_treasury_merit_recommendation(dimensions)[0], "YES")
 
 
 if __name__ == "__main__":

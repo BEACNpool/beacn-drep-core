@@ -367,6 +367,8 @@ def build(args) -> int:
     actions = [a for a in E._load_actions()
                if (a.get("status") or "").lower() == "active"
                and E._action_family(a.get("action_type")) == "treasury"]
+    if args.action:
+        actions = [a for a in actions if a.get("action_id") == args.action]
     if args.limit:
         actions = actions[:args.limit]
     _, deep_rows = _read_csv(DEEP_CSV)
@@ -488,6 +490,10 @@ def build(args) -> int:
             "output_priced": _tri(vp.get("output_priced")),
             "material_duplication": _tri(vp.get("material_duplication")),
             "private_capture_risk": _tri(vp.get("private_capture_risk")),
+            "established_service": _tri(vp.get("established_service")),
+            "builder_workflow_dependency": _tri(vp.get("builder_workflow_dependency")),
+            "low_functional_substitutability": _tri(vp.get("low_functional_substitutability")),
+            "non_funding_disruption_risk": _tri(vp.get("non_funding_disruption_risk")),
             "evidence_status": "proposal_only",
             "evidence_refs": json.dumps(vp.get("evidence_refs") or [], separators=(",", ":")),
             "confidence": f"{max(0.0, min(1.0, float(vp.get('confidence') or 0.0))):.2f}",
@@ -586,6 +592,7 @@ def main() -> int:
     ap.add_argument("--overwrite", action="store_true",
                     help="allow replacing rows this pipeline previously wrote (never hand-curated ones)")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--action", help="draft or refresh exactly one action id")
     ap.add_argument("--approve", metavar="ACTION_ID", help="mark a reviewed dossier complete")
     ap.add_argument("--approver", default=os.environ.get("USER", "operator"))
     ap.add_argument("--list", action="store_true", help="show the review queue")

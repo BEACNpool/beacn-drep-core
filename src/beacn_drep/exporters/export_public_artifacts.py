@@ -515,6 +515,8 @@ def main():
                 "assessment_path": f"/data/output/public/rationales/{run_id}.assessment.json" if assessment and assessment_path.exists() else "",
                 "treasury_dimensions": r["rationale"].get("treasury_dimensions"),
                 "decision_contract": r["rationale"].get("decision_contract", {}),
+                "merit_recommendation": r["rationale"].get("treasury_merit_recommendation"),
+                "merit_reason": r["rationale"].get("treasury_merit_reason"),
             },
             "decision_contract": r["rationale"].get("decision_contract", {}),
             "proposal_evidence": proposal_snapshot,

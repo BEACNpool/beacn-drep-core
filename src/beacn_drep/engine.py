@@ -72,7 +72,28 @@ def _load_registry() -> list[dict]:
 def _load_actions() -> list[dict]:
     path = RESOURCES_REPO / "data" / "input" / "governance" / "governance_actions_all.csv"
     with path.open(newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        actions = list(csv.DictReader(f))
+    # Upstream can emit both CIP-129 and txHash#index aliases for one action,
+    # with complementary fields. Reconcile only missing values; never overwrite
+    # conflicting populated chain data.
+    groups: dict[tuple[str, str], list[dict]] = {}
+    for row in actions:
+        key = (row.get("tx_hash", ""), row.get("cert_index", ""))
+        if key[0]:
+            groups.setdefault(key, []).append(row)
+    for siblings in groups.values():
+        for row in siblings:
+            filled = []
+            for field in row:
+                if row.get(field) not in (None, ""):
+                    continue
+                values = {s.get(field) for s in siblings if s.get(field) not in (None, "")}
+                if len(values) == 1:
+                    row[field] = values.pop()
+                    filled.append(field)
+            if filled:
+                row["_alias_backfilled_fields"] = ",".join(sorted(filled))
+    return actions
 
 
 def _load_flags() -> dict[str, list[dict]]:
@@ -827,12 +848,16 @@ def _treasury_dimensions(
     independent = (value.get("evidence_status") or "").lower() == "independently_verified"
 
     benefit_fields = {
-        "critical_infrastructure": 0.25,
-        "open_source_public_good": 0.20,
+        "critical_infrastructure": 0.18,
+        "open_source_public_good": 0.08,
         "measurable_existing_adoption": 0.15,
-        "ecosystem_leverage": 0.15,
-        "strategic_necessity": 0.15,
+        "ecosystem_leverage": 0.12,
+        "strategic_necessity": 0.10,
         "credible_prior_delivery": 0.10,
+        "established_service": 0.10,
+        "builder_workflow_dependency": 0.08,
+        "low_functional_substitutability": 0.05,
+        "non_funding_disruption_risk": 0.04,
     }
     benefit = sum(weight for field, weight in benefit_fields.items()
                   if independent and _yn(value.get(field)) is True)
@@ -840,6 +865,11 @@ def _treasury_dimensions(
     delivery = 0.0
     if deep_complete:
         delivery += 0.15
+    if independent and _yn(value.get("credible_prior_delivery")) is True:
+        delivery += 0.10
+    if independent and _yn(value.get("established_service")) is True:
+        # Sustained operation is delivery evidence, distinct from future promises.
+        delivery += 0.05
     for field, weight in (
         ("timeline_defined", 0.10),
         ("risk_profile_complete", 0.10),
@@ -919,6 +949,20 @@ def _treasury_dimensions(
     }
 
 
+def _treasury_merit_recommendation(dimensions: dict | None) -> tuple[str, str]:
+    """Judge intrinsic value separately from NCL/portfolio executability."""
+    d = dimensions or {}
+    if d.get("affirmative_waste_evidence") and d.get("benefit", 0) < 0.55:
+        return "NO", "Affirmative independent waste/harm evidence outweighs demonstrated benefit."
+    if (d.get("evidence_status") == "independently_verified"
+            and d.get("benefit", 0) >= 0.55
+            and d.get("delivery_confidence", 0) >= 0.55
+            and d.get("cost_efficiency", 0) >= 0.45
+            and d.get("downside_risk", 1) <= 0.55):
+        return "YES", "Intrinsic benefit, delivery, cost, and downside-risk floors all pass."
+    return "NEEDS_MORE_INFO", "Intrinsic quality floors or independent evidence are not complete."
+
+
 def _score_action(
     action: dict,
     flags: list[dict],
@@ -950,6 +994,15 @@ def _score_action(
     inf = []
     unc = []
     assessment_facts, assessment_inferences, assessment_uncertainty = _assessment_lines(assessment)
+    treasury_doctrine_ready = (action_family == "treasury") and (_yn((deep_row or {}).get("dossier_complete")) is True)
+    treasury_dimensions = None
+    treasury_merit_recommendation = None
+    treasury_merit_reason = None
+    if action_family == "treasury":
+        treasury_dimensions = _treasury_dimensions(
+            action, value_row, readiness_row, financial_row, risk_row, treasury_doctrine_ready
+        )
+        treasury_merit_recommendation, treasury_merit_reason = _treasury_merit_recommendation(treasury_dimensions)
 
     sw = (scoring_weights or {}).get("weights", {})
     w_anchor_present = _to_float(sw.get("anchor_present_bonus", 0.05))
@@ -1003,6 +1056,9 @@ def _score_action(
             "inferences": ["Cannot produce a responsible recommendation without baseline evidence.", *assessment_inferences],
             "uncertainty": [*[f"Missing: {item}" for item in missing_evidence], *assessment_uncertainty],
             "missing_evidence": missing_evidence,
+            "treasury_dimensions": treasury_dimensions,
+            "treasury_merit_recommendation": treasury_merit_recommendation,
+            "treasury_merit_reason": treasury_merit_reason,
         }
 
     # Deep-research gate for treasury proposals. Missing information is not
@@ -1029,6 +1085,9 @@ def _score_action(
                     "inferences": ["Directional voting is blocked until dossier quality gates pass.", *assessment_inferences],
                     "uncertainty": ["Dossier completeness not confirmed for this treasury proposal.", *assessment_uncertainty],
                     "missing_evidence": need,
+                    "treasury_dimensions": treasury_dimensions,
+                    "treasury_merit_recommendation": treasury_merit_recommendation,
+                    "treasury_merit_reason": treasury_merit_reason,
                 }
             treasury_dossier_incomplete = True  # unreachable; retained for legacy artifact schema
 
@@ -1196,7 +1255,6 @@ def _score_action(
             )
 
     # Recommendation thresholds
-    treasury_doctrine_ready = (action_family == "treasury") and (_yn((deep_row or {}).get("dossier_complete")) is True)
     treasury_ratio = None
     inflow, outflow, _flow_basis = _treasury_flow_amounts(treasury_flow)
     if inflow > 0:
@@ -1232,12 +1290,6 @@ def _score_action(
     # downstream vote-revision policy can measure how far a score sits from the
     # boundary (hysteresis) when deciding whether to change an existing on-chain vote.
     directional_threshold = 0.06 if treasury_doctrine_ready else 0.12
-
-    treasury_dimensions = None
-    if action_family == "treasury":
-        treasury_dimensions = _treasury_dimensions(
-            action, value_row, readiness_row, financial_row, risk_row, treasury_doctrine_ready
-        )
 
     needs_more_info_reason_code = None
     ncl_verified = (
@@ -1387,6 +1439,8 @@ def _score_action(
         "treasury_gate_mode": treasury_gate_mode,
         "treasury_dossier_incomplete": treasury_dossier_incomplete,
         "treasury_dimensions": treasury_dimensions,
+        "treasury_merit_recommendation": treasury_merit_recommendation,
+        "treasury_merit_reason": treasury_merit_reason,
         "treasury_policy_state": treasury_policy_state,
         "treasury_portfolio_rank": portfolio_row.get("rank"),
         "treasury_portfolio_eligible": portfolio_row.get("funding_eligible"),
@@ -1593,6 +1647,8 @@ def run_once(action_id: str | None = None) -> dict:
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),
         "treasury_dimensions": score_obj.get("treasury_dimensions"),
+        "treasury_merit_recommendation": score_obj.get("treasury_merit_recommendation"),
+        "treasury_merit_reason": score_obj.get("treasury_merit_reason"),
         "facts": score_obj["facts"],
         "inferences": score_obj["inferences"],
         "uncertainty": score_obj["uncertainty"],
@@ -1620,11 +1676,15 @@ def run_once(action_id: str | None = None) -> dict:
             "weights_version": scoring_weights.get("version"),
             "weights_hash": _sha256_bytes(json.dumps(scoring_weights, sort_keys=True).encode("utf-8")),
             "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+            "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
             "yes_floors": {"benefit": 0.55, "delivery_confidence": 0.55, "cost_efficiency": 0.45, "downside_risk": 0.55},
             "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
             "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
             "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
             "dimensions": score_obj.get("treasury_dimensions") or {},
+            "merit_recommendation": score_obj.get("treasury_merit_recommendation"),
+            "merit_reason": score_obj.get("treasury_merit_reason"),
+            "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity.",
         },
     }
 

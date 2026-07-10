@@ -237,14 +237,17 @@ def verify_one(action: dict, row: dict, backend: str, autoapprove: bool) -> tupl
         + llm._truncate(anchor_text, 48000) + "\n-----8<-----\n\n"
         + "DOSSIER FACTS TO VERIFY:\n"
         + "\n".join(f"{i+1}. {f}" for i, f in enumerate(facts))
-        + "\n\nReturn the verification JSON."
+        + f"\n\nReturn the verification JSON. fact_verdicts MUST contain exactly {len(facts)} "
+        + "objects, one for every numbered fact in the same order. Do not replace the array "
+        + "with aggregate counts. summary MUST be a JSON string, not an object."
     )
     data = BACKENDS[backend](prompt)
 
     verdicts = data.get("fact_verdicts") or []
     supported = sum(1 for v in verdicts if v.get("verdict") == "supported")
     contradicted = [v for v in verdicts if v.get("verdict") == "contradicted"]
-    material = list(data.get("material_discrepancies") or [])
+    material = [m if isinstance(m, str) else json.dumps(m, sort_keys=True)
+                for m in (data.get("material_discrepancies") or [])]
     for v in contradicted:  # a contradiction is always material, whatever the model listed
         if v.get("fact") not in material:
             material.append(f"contradicted: {v.get('fact')}")
@@ -347,7 +350,7 @@ def main() -> int:
         else:
             row["status"] = "verification_failed" if outcome != "gate_failed" else "drafted_pending_review"
             failed += 1
-            why = "; ".join((record.get("material_discrepancies") or [])[:2]) or \
+            why = "; ".join(str(x) for x in (record.get("material_discrepancies") or [])[:2]) or \
                 json.dumps(record.get("gates", {}))
             print(f"  [verify] HELD {aid[:24]}..  {outcome}: "
                   f"ratio={record.get('support_ratio', 'n/a')} {why[:140]}")

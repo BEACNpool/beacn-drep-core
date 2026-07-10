@@ -33,6 +33,7 @@ import hashlib
 import json
 import os
 import subprocess
+import shutil
 import sys
 import tempfile
 from datetime import datetime, timezone
@@ -56,8 +57,7 @@ OWNER = "drep-agent-extract"
 
 CODEX_BIN = os.environ.get(
     "BEACN_CODEX_BIN",
-    str(Path.home() / ".openclaw/npm/node_modules/@openai/codex-linux-x64"
-        "/vendor/x86_64-unknown-linux-musl/codex/codex"),
+    shutil.which("codex") or str(Path.home() / ".local/bin/codex"),
 )
 
 SECTIONS = [

@@ -513,7 +513,10 @@ def main():
                 "assessment_schema_version": r["rationale"].get("assessment_schema_version") or assessment.get("schema_version"),
                 "assessment": assessment,
                 "assessment_path": f"/data/output/public/rationales/{run_id}.assessment.json" if assessment and assessment_path.exists() else "",
+                "treasury_dimensions": r["rationale"].get("treasury_dimensions"),
+                "decision_contract": r["rationale"].get("decision_contract", {}),
             },
+            "decision_contract": r["rationale"].get("decision_contract", {}),
             "proposal_evidence": proposal_snapshot,
             "deep_research": _deep_research_block(aid, deep_map.get(aid)),
             "reproducibility": {
@@ -529,10 +532,11 @@ def main():
                 for x in r["rationale"].get("resources_used", [])
             ],
             "scoring": {
-                "budget_pressure": float(max(0.0, -float(r["rationale"].get("score", 0)))),
-                "conflict_risk": 0.0,
-                "technical_value": float(max(0.0, float(r["rationale"].get("score", 0)))),
-                "governance_alignment": float(r["rationale"].get("confidence", 0)),
+                "binding_score": r["rationale"].get("score"),
+                "raw_score": r["rationale"].get("raw_score"),
+                "directional_threshold": r["rationale"].get("directional_threshold"),
+                "confidence": r["rationale"].get("confidence"),
+                "model_vote_influence": 0,
             },
             "freshness": r["rationale"].get("freshness", {}),
         }

@@ -26,6 +26,7 @@ import argparse
 import json
 import os
 import subprocess
+import shutil
 import sys
 import tempfile
 from pathlib import Path
@@ -38,8 +39,7 @@ from beacn_drep.anchors import load_anchor_text  # noqa: E402
 CACHE_PATH = E.OUTPUT_DIR / "llm_cache_active.json"
 CODEX_BIN = os.environ.get(
     "BEACN_CODEX_BIN",
-    str(Path.home() / ".openclaw/npm/node_modules/@openai/codex-linux-x64"
-        "/vendor/x86_64-unknown-linux-musl/codex/codex"),
+    shutil.which("codex") or str(Path.home() / ".local/bin/codex"),
 )
 
 # Combined structured-output schema for one action: {claims, lean}.

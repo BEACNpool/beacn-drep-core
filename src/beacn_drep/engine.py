@@ -1190,8 +1190,9 @@ def _score_action(
         }
         if abs(llm_adjustment) > 0:
             inf.append(
-                f"Doctrine-aware reasoning layer nudged the score by {llm_adjustment:+.3f} "
-                f"(clamped to ±{LLM_SCORE_ADJUST_CAP}): {llm_lean.get('rationale')}"
+                f"Advisory model lean was {llm_adjustment:+.3f} "
+                f"(display cap ±{LLM_SCORE_ADJUST_CAP}) and had zero influence on the binding score: "
+                f"{llm_lean.get('rationale')}"
             )
 
     # Recommendation thresholds
@@ -1613,6 +1614,18 @@ def run_once(action_id: str | None = None) -> dict:
         "missing_evidence_count": intelligence["missing_evidence_count"],
         "scoring_weights_version": scoring_weights.get("version"),
         "scoring_weights_hash": _sha256_bytes(json.dumps(scoring_weights, sort_keys=True).encode("utf-8")),
+        "decision_contract": {
+            "policy": "balanced-return-risk-v1",
+            "model_vote_influence": 0,
+            "weights_version": scoring_weights.get("version"),
+            "weights_hash": _sha256_bytes(json.dumps(scoring_weights, sort_keys=True).encode("utf-8")),
+            "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+            "yes_floors": {"benefit": 0.55, "delivery_confidence": 0.55, "cost_efficiency": 0.45, "downside_risk": 0.55},
+            "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+            "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+            "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+            "dimensions": score_obj.get("treasury_dimensions") or {},
+        },
     }
 
     # Stage 6: plain-English explanation of the already-decided verdict.
@@ -1664,9 +1677,9 @@ def run_once(action_id: str | None = None) -> dict:
         "note": (
             "Claim extraction and the plain-language message are model-assisted, advisory layers. "
             "The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, "
-            "high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply "
-            f"a bounded score nudge of at most ±{LLM_SCORE_ADJUST_CAP}, clamped and recorded here "
-            "(raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+            "high flags) are deterministic and binding. The doctrine-aware reasoning layer records "
+            f"a bounded advisory lean of at most ±{LLM_SCORE_ADJUST_CAP}, but it is not added to "
+            "the binding score and cannot change the vote."
         ),
     }
     rationale["human_message"] = human_text

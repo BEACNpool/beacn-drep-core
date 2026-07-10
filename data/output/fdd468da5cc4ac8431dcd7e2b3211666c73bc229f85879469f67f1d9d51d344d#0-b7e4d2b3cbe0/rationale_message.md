@@ -1,0 +1,13 @@
+# Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — precomputed)_
+
+BEACN voted ABSTAIN because the review did not have the DRep distribution information needed for a directional vote on this hard fork. This is a conservative, evidence-based hold on a high-impact protocol upgrade, not a rejection of the proposal’s technical direction.
+
+The action requested an intra-era Cardano mainnet hard fork from protocol version 10.0 to 11.0, the van Rossem hard fork, while staying in the Conway era. The proposal claimed this would add new Plutus primitives from several CIPs, make Plutus built-ins consistently available across Plutus V1, V2, and V3, add UPLC case expressions, and tighten several ledger and node validation, diagnostic, and security checks. The pinned anchor document was available, and some core claims were supported or independently checkable, including the version upgrade, the cited CIPs, the broader Plutus built-in availability, and a referenced node performance report showing no benchmark regressions.
+
+The review still found important gaps. The risk review was thin, with execution risk marked unknown and missing mitigation evidence and independent assurance. The proposal stated that at least 85% of stake pools by active stake should be upgraded before ratification, but that readiness was a condition rather than demonstrated evidence in the document. The review also lacked a complete independently pinned readiness packet, including version guardrails, testnet results, SPO readiness, exchange readiness, dApp readiness, security review, constitutional alignment, and rollback or containment planning. Independent evidence was also missing for the claimed benefits of UPLC case expressions and for the stated working group and steering committee endorsements.
+
+The gates for having a pinned, replayable proposal anchor and a serious strongest-YES counterargument passed, but the risk and readiness evidence did not reach the standard BEACN applies to hard forks. A directional vote would be unblocked by the missing DRep distribution data plus an independently pinned readiness packet covering operator, exchange, dApp, security, constitutional, and rollback or containment readiness, along with stronger independent evidence for the unsupported claims.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

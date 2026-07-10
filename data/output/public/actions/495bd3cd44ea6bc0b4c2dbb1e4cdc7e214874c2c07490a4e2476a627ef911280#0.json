@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:2a4c26ae4d4521f89b0cda2581cd61006cdefec32e093a27e7dbb9c51339c5ca",
+    "raw_input_hash": "sha256:15533b551eced12b4c7d0009c3fd55961ab7b9225f9e1240afdbe4a516a27066",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-10T11:30:04.499477+00:00",
+    "published_at": "2026-07-10T12:44:41.901950+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "ABSTAIN",
     "score": -0.05,
     "confidence": 0.4325,
-    "input_hash": "2a4c26ae4d4521f89b0cda2581cd61006cdefec32e093a27e7dbb9c51339c5ca",
-    "snapshot_bundle_hash": "f6a3ea34c2de964107caebc73a246200da7d7da00795c0cd9f97f77899103f5a",
+    "input_hash": "15533b551eced12b4c7d0009c3fd55961ab7b9225f9e1240afdbe4a516a27066",
+    "snapshot_bundle_hash": "c286915b9c417b7485c85bd0f417717d25167fba01e212529e1f62171c6a0fc2",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
-    "rationale_markdown_path": "/data/output/public/rationales/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0-2a4c26ae4d45.md",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
+    "rationale_markdown_path": "/data/output/public/rationales/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0-15533b551ece.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services); Provide mitigation evidence. Residual uncertainty: No DRep distribution available. Confidence context: score -0.05; confidence 43.2%.",
-    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 3 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "summary_raw": "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 3 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.020 (clamped to \u00b10.05).",
     "top_fixes": [
       "Provide independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services).",
       "Provide mitigation evidence.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0-2a4c26ae4d45.md",
+    "markdown_path": "/data/output/public/rationales/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0-15533b551ece.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -132,7 +132,42 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0-2a4c26ae4d45.assessment.json"
+    "assessment_path": "/data/output/public/rationales/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0-15533b551ece.assessment.json",
+    "treasury_dimensions": null,
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {}
+    }
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
   },
   "proposal_evidence": {
     "available": true,
@@ -143,7 +178,7 @@
     "anchor_hash": "215ed153e091e5146cb2e151a78403fa4c0b91034db6a1d3f0291f454d272009",
     "file_sha256": "0437168b2e532cf33dabc4bb0615770e571c78b4972f75d6a148f40d6c5bda31",
     "content_bytes": "2448",
-    "fetched_at_utc": "2026-07-10T11:30:14Z",
+    "fetched_at_utc": "2026-07-10T12:45:13Z",
     "download_path": "/proposals/495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"Tempo.Vote was developed out of passion to support Cardano decentralized mission. We aim to make Cardano governance easily accessible"
   },
@@ -152,8 +187,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -220,16 +255,17 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.05,
-    "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.4325
+    "binding_score": -0.05,
+    "raw_score": -0.05,
+    "directional_threshold": 0.12,
+    "confidence": 0.4325,
+    "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 22,
+    "snapshot_age_seconds": 24,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

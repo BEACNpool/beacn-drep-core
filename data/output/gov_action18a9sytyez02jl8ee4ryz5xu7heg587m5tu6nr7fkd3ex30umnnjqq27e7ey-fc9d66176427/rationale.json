@@ -64,10 +64,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "fc9d66176427a7e3d36a11675fa5493d889de26068a3c5db9b91b27d00805e4a",
-  "snapshot_bundle_hash": "db7f6e48b8c40413e891acdddb8bccaecc2f6bca06dc4fffb2287e251db5f89b",
+  "snapshot_bundle_hash": "5d8c9f87cf258e3ca8fc08440d4d08d10d8580f89cdaaa1f04549a86407b4baf",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -90,7 +90,7 @@
     "snapshot_age_seconds": 5,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -237,6 +237,23 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
+  },
   "human_message": "BEACN records NEEDS_MORE_INFO on Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano title sponsorship for Rare Evo 2026 main stage/global livestream and Cardano Dev Gov Day 2026 sponsorship. It asks the treasury for 2750000 ADA. The strongest grounded claim is: Rare Network requests \u20b32,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages.\n\nA material claim remains proposer-asserted or thinly supported: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900. BEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
@@ -287,6 +304,6 @@
       "prompt_sha256": "4c1ed69b4b2f06c644b67c816f151cc250cd23a17bd145a9b54844ba017daa21",
       "output_sha256": "7178fbe62bc09623eff3adb153bdef72462e28ecc3f0081bab373409a21c6e02"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }
 }

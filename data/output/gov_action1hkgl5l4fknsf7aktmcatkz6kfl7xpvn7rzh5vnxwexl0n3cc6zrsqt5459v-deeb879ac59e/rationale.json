@@ -67,10 +67,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "deeb879ac59e01764e3a53164515bc14d09784ce566d97549e396a59684f0912",
-  "snapshot_bundle_hash": "1b09c01342d6e6fe848855164d2cb6834d6e2e86b4c2fc74818187c1717f4f15",
+  "snapshot_bundle_hash": "934c9659bc27ae1b121cb66835d60276cf0fb2fdf7ac53fc20c284316e5d70a9",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -90,10 +90,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 9,
+    "snapshot_age_seconds": 10,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -243,6 +243,23 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
+  },
   "human_message": "BEACN records NEEDS_MORE_INFO on Cardano Summit 2026 and TOKEN2049 Singapore. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano Summit 2026 and TOKEN2049 Singapore. It asks the treasury for 14.08M ADA. The strongest grounded claim is: Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in.\n\nA material claim remains proposer-asserted or thinly supported: By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha. BEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
@@ -294,6 +311,6 @@
       "prompt_sha256": "14848dff5743253af247f5958d88fa266687e59d630628ca36b57ee121b8e32b",
       "output_sha256": "e87eabbd9ab6a0260c577002af7897ea2bcf678e1aac22c1670803e9b5bc7497"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }
 }

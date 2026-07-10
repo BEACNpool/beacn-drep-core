@@ -8,20 +8,19 @@
     "amount_ada": "12332031",
     "deadline": "9-month delivery period from July 2026 to March 2027",
     "deliverables": [
-      "Audited bridge running on Cardano mainnet in both federated and SPO threshold custody modes under controlled access",
+      "Audited bridge running on Cardano mainnet in both federated and SPO threshold custody modes under controlled access by the end of Phase 1",
       "Hardening, security audits, and formal verification",
       "Ecosystem and partner readiness",
-      "Stewardship structure determined for launch",
-      "Hardened economic model and SPO/dApp partner pipeline",
-      "Public rollout and 24 months of operations deferred to Phase 2 in Q1 2027"
+      "Stewardship structure and hardened economic model required for public launch",
+      "SPO/dApp partner pipeline required for public launch"
     ],
     "recipient": "FluidTokens and Lantr Engineering",
-    "what": "Phase 1 of 2 funding to take Bifrost from working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations for launch."
+    "what": "Phase 1 of 2 for Bifrost, a Bitcoin-Cardano bridge, covering launch readiness work including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations."
   },
   "claims": [
     {
       "category": "technical",
-      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as native fBTC.",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
@@ -33,53 +32,53 @@
     },
     {
       "category": "technical",
-      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.",
-      "materiality": "high",
-      "support": "proposer_asserted"
-    },
-    {
-      "category": "technical",
-      "claim": "Bifrost custody of locked BTC is proposed to be distributed across 400+ Cardano SPOs weighted by delegation, with movement of funds requiring a threshold representing the majority of delegated stake.",
+      "claim": "Phase 1 is intended to produce an audited bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access before a separate Phase 2 public rollout and operations proposal in Q1 2027.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
-      "category": "technical",
-      "claim": "If SPO coordination fails, Bifrost will use a federated mode as an operational fallback.",
-      "materiality": "high",
-      "support": "proposer_asserted"
-    },
-    {
-      "category": "technical",
-      "claim": "Bifrost smart contracts, off-chain tooling, and SDK are released under Apache 2.0 and can be audited, forked, run, or built on without permission.",
+      "category": "adoption",
+      "claim": "The document claims Bitcoin represents roughly $1.6 trillion in value and that only around 1% of BTC supply is currently used in DeFi.",
       "materiality": "medium",
       "support": "proposer_asserted"
     },
     {
-      "category": "adoption",
-      "claim": "Bifrost has Catalyst Fund 14 funding of \u20b3739,000 for architecture, testnet MVP, and documentation, with milestone M1 and M2 marked done and approved in the document.",
+      "category": "technical",
+      "claim": "The document claims DeFiLlama historical loss data shows cumulative DeFi losses in the billions, with bridge-related failures accounting for a significant share.",
       "materiality": "medium",
       "support": "independently_verifiable"
     },
     {
-      "category": "adoption",
-      "claim": "The proposer targets 1,200 BTC TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029 as Bifrost contributions to Cardano 2030 KPIs.",
-      "materiality": "medium",
-      "support": "proposer_asserted"
+      "category": "technical",
+      "claim": "Bifrost custody is described as distributed across 400+ Cardano SPOs weighted by delegation, with fund movement requiring a cryptographic threshold representing the majority of delegated stake.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
     },
     {
-      "category": "economic",
-      "claim": "The proposal states that bridge fee surplus will return to the Cardano Treasury in fBTC and split with SPOs under its sustainability model.",
+      "category": "technical",
+      "claim": "The document states fBTC is issued and burned 1:1 with BTC locked in the Bifrost Bitcoin custody script and is usable as a native Cardano token across Cardano dApps.",
       "materiality": "high",
-      "support": "proposer_asserted"
+      "support": "supported_in_proposal"
     },
     {
       "category": "governance",
-      "claim": "The document states that public launch and 24 months of operations are intentionally separated into a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.",
+      "claim": "The proposal asserts Bifrost is public infrastructure with no bridge token, no founder allocation, Apache 2.0 open source components, public reporting, and an independent stewardship structure to be determined in Phase 1.",
       "materiality": "high",
       "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Bifrost is already live on testnet under a Catalyst Fund 14 grant of \u20b3739,000, with working peg-ins/outs and participating SPOs, and that listed milestones M1 and M2 are done and approved.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal targets by Q2 2029 a base contribution of 1,200 BTC in TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
     }
   ],
-  "summary": "The document presents a large Phase 1 treasury request for a Bitcoin-Cardano bridge moving from testnet toward controlled mainnet readiness, with substantial technical ambition and public-infrastructure framing but many key delivery, security, adoption, and revenue claims remaining proposer assertions within the supplied text.",
-  "output_sha256": "20a10f084f43aa728108dd5af989f42423d1a187fb4ee32eeaf7e654c9d6c5e2"
+  "summary": "The document requests \u20b312,332,031 for FluidTokens and Lantr Engineering to take Bifrost from testnet toward launch readiness over July 2026 to March 2027, with claimed technical, security, stewardship, and ecosystem-readiness deliverables for a later public launch.",
+  "output_sha256": "7fd89467c0d1eda7a7488056b2556684bc699113ddf07c2db9f1f84dd1661543"
 }

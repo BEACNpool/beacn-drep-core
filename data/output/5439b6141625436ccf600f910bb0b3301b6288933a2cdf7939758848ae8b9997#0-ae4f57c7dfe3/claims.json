@@ -1,0 +1,89 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "9,832,979 ADA",
+    "deadline": "18-month transition and operations period, with milestones from Q3 2026 through 2027",
+    "deliverables": [
+      "Not-for-profit entity established or host-organization agreement signed under preliminary board in Q3 2026",
+      "Technical transition architecture and migration plan published for community review in Q3 2026",
+      "Public usage dashboard live in Q3 2026",
+      "Board election held via on-chain voting under published rules in Q4 2026",
+      "Newly elected board formally assumes mandate by Q4 2026 / no later than end of Q1 2027",
+      "All public API traffic for mainnet, preview, and preprod served by the new stack in Q1 2027",
+      "Blockfrost source code, trademarks, domain names, and associated assets legally transferred to the governing entity in Q1 2027",
+      "Sustainability consultation and proposal published in Q2-Q3 2027",
+      "Public API operated at minimum 99% monthly uptime SLA during 2027 operational milestones",
+      "Quarterly reports published covering technical metrics and budget summary"
+    ],
+    "recipient": "Input Output / Blockfrost transition under Intersect/CDH administration; exact treasury withdrawal recipient is not stated in document.",
+    "what": "Transition Blockfrost into a free, community-governed public good under an independent not-for-profit, including 18 months of transition and operations funding."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Blockfrost usage in the Cardano Foundation developer ecosystem survey grew from 39.3% in 2022 to 71.5% in 2025, with links to the cited survey pages.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 rps, and over 7 TB of API data last month.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says more than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that 90% of Cardano traffic served through the Blockfrost API comes from the free tier and that the commercial model has struggled to finance this public-good operation.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal commits to transferring Blockfrost source code, trademarks, domain names, and associated assets into community stewardship under a governing not-for-profit entity.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests 9,832,979 ADA, calculated from 1,868,266 USD at 0.19 USD per ADA, for 18 months of operations and transition.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget allocates 7,780,347 ADA to staffing for six people, 1,894,737 ADA to operations and infrastructure, and 157,895 ADA to legal and accounting.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that unspent post-transition infrastructure budget will be returned to the treasury and that quarterly reports will include technical data and a budget summary.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document proposes a 9,832,979 ADA treasury-funded transition of Blockfrost from a commercial service into a community-governed not-for-profit public API, with staged governance, IP transfer, service migration, dashboard reporting, and 18 months of operations.",
+  "output_sha256": "107fe9c88bdfe8191f1f3ab84e98fa8eaead45590c5a987383cae969e01b3e05"
+}

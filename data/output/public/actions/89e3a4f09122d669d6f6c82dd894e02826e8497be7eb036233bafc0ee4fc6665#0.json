@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:a5665f5c7342d021d9201deff484e05e2af7ee537da492843ba7705a950ad8c9",
+    "raw_input_hash": "sha256:d1d630b4f0dc4bdf9ab7bd9b2c192347a463398b87f0b15cdcbd550b280e88d8",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-10T11:30:04.499477+00:00",
+    "published_at": "2026-07-10T12:44:41.901950+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "ABSTAIN",
     "score": 0.05,
     "confidence": 0.6125,
-    "input_hash": "a5665f5c7342d021d9201deff484e05e2af7ee537da492843ba7705a950ad8c9",
-    "snapshot_bundle_hash": "ecfa4c067eda965eea47d44f461f7ede29df0a75bdb1474313f313beb17fb7d8",
+    "input_hash": "d1d630b4f0dc4bdf9ab7bd9b2c192347a463398b87f0b15cdcbd550b280e88d8",
+    "snapshot_bundle_hash": "57528a2a32a2d94919cd4de000be17bb8282b9a5d25fa717a398942b13ba446f",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
-    "rationale_markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-a5665f5c7342.md",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
+    "rationale_markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-d1d630b4f0dc.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically important region.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score 0.05; confidence 61.3%.",
-    "summary_raw": "Doctrine-aware reasoning layer nudged the score by +0.030 (clamped to \u00b10.05): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
+    "summary_raw": "Advisory model lean was +0.030 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to \u00b10.05).",
     "top_fixes": [
       "Provide mitigation evidence.",
       "Provide independent assurance.",
       "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-a5665f5c7342.md",
+    "markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-d1d630b4f0dc.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -129,7 +129,42 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-a5665f5c7342.assessment.json"
+    "assessment_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-d1d630b4f0dc.assessment.json",
+    "treasury_dimensions": null,
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {}
+    }
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
   },
   "proposal_evidence": {
     "available": true,
@@ -140,7 +175,7 @@
     "anchor_hash": "103ff312c9aa10e80ac8c2b572e1c0a33975f22441b0a14d09bcbbb2310b11eb",
     "file_sha256": "c8c7c680a6d4dbadfc2b68c8b1e9ef8a7a39cd1b694a21f62a236d1f5179a175",
     "content_bytes": "13099",
-    "fetched_at_utc": "2026-07-10T11:30:14Z",
+    "fetched_at_utc": "2026-07-10T12:45:13Z",
     "download_path": "/proposals/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically i"
   },
@@ -149,8 +184,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -217,16 +252,17 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
-    "conflict_risk": 0.0,
-    "technical_value": 0.05,
-    "governance_alignment": 0.6125
+    "binding_score": 0.05,
+    "raw_score": 0.05,
+    "directional_threshold": 0.12,
+    "confidence": 0.6125,
+    "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 15,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

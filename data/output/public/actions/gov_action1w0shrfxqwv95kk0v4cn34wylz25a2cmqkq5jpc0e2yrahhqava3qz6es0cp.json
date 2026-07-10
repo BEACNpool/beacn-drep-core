@@ -21,10 +21,10 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "c5056c5940ee08ddccc5240ea393cca703c2a995efbd0dc002feb2a5b5e2dffb",
-    "snapshot_bundle_hash": "49f8fad9fadb66276f6289ddb43a190f70a0a8460ad7b360825c0e6a54f5f549",
+    "snapshot_bundle_hash": "2880e427b92b18c5fc9685ec003231a6e178f9dc1326ba16c2c9984654eca93d",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1w0shrfxqwv95kk0v4cn34wylz25a2cmqkq5jpc0e2yrahhqava3qz6es0cp-c5056c5940ee.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
@@ -184,7 +184,42 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/gov_action1w0shrfxqwv95kk0v4cn34wylz25a2cmqkq5jpc0e2yrahhqava3qz6es0cp-c5056c5940ee.assessment.json"
+    "assessment_path": "/data/output/public/rationales/gov_action1w0shrfxqwv95kk0v4cn34wylz25a2cmqkq5jpc0e2yrahhqava3qz6es0cp-c5056c5940ee.assessment.json",
+    "treasury_dimensions": null,
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {}
+    }
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
   },
   "proposal_evidence": {
     "available": true,
@@ -195,7 +230,7 @@
     "anchor_hash": "2289200a99552eb3cc4fba5791a0d8c700adf48f3f84ad3d039b781d6c1cd871",
     "file_sha256": "4b62b6b8bb7276dddb5b3d0f5c39a900879e31eaa2b10959eada3854dc231187",
     "content_bytes": "34282",
-    "fetched_at_utc": "2026-07-10T11:30:13Z",
+    "fetched_at_utc": "2026-07-10T12:45:13Z",
     "download_path": "/proposals/gov_action1w0shrfxqwv95kk0v4cn34wylz25a2cmqkq5jpc0e2yrahhqava3qz6es0cp.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n      \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abs"
   },
@@ -204,8 +239,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -308,16 +343,17 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.0,
-    "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.2
+    "binding_score": 0.0,
+    "raw_score": 0.0,
+    "directional_threshold": 0.12,
+    "confidence": 0.2,
+    "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 8,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -1,0 +1,93 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2#0",
+  "action_type": "InfoAction",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: InfoAction",
+        "Status: active",
+        "Proposed epoch: 636",
+        "Expires after epoch: 643",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Info action to introduce basic ideas for reforming Cardano treasury governance into public discussion, including strategic direction, budget structure, and process guardrails.",
+        "Recipient: not stated in document",
+        "Stated amount: not stated in document",
+        "Deliverables: Public discussion of treasury governance reform ideas, Outline of guardrails for strategic direction, Proposed treasury governance process involving NCL vote, budget vote, and overall treasury withdrawal vote, Proposed thematic budget structure",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, proposer_asserted, high materiality): The proposal states that Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the governance system.",
+        "Claim (governance, proposer_asserted, high materiality): The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and gridlock among governance coalitions.",
+        "Claim (governance, proposer_asserted, high materiality): The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano growth and stability.",
+        "Claim (governance, proposer_asserted, high materiality): The proposal states treasury governance should be explicitly addressed and supported by the governance system and the constitution.",
+        "Claim (governance, proposer_asserted, medium materiality): The proposal claims the NCL should not be treated as the overall budget and is only a vague initial approximation of a budget.",
+        "Claim (economic, proposer_asserted, high materiality): The proposal recommends a dedicated investment budget containing strategic direction and a roadmap."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal states that Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the governance system.",
+        "Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and gridlock among governance coalitions.",
+        "Independent evidence for: The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano growth and stability.",
+        "Independent evidence for: The proposal states treasury governance should be explicitly addressed and supported by the governance system and the constitution."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal proposes an eight-part budget structure covering core infrastructure, developer tooling, research, commercial growth, administration, community and marketing, other strategic initiatives, and a functional reserve.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the governance system.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

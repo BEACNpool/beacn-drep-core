@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:7def2c7b8dda52281ae7e9151f28aa04cc8f4035d010533224b24dbee57bb4a3",
+    "raw_input_hash": "sha256:434cd891a1c91f47fdddbda29ff18cf42a8c9c9d0ec991ce6123f3565c9a15c7",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-10T11:30:04.499477+00:00",
+    "published_at": "2026-07-10T12:44:41.901950+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "ABSTAIN",
     "score": -0.3833,
     "confidence": 0.4158,
-    "input_hash": "7def2c7b8dda52281ae7e9151f28aa04cc8f4035d010533224b24dbee57bb4a3",
-    "snapshot_bundle_hash": "cfd7df5ecdeb31f4c5eb5f5e8331ef206d049dde7b6c3624ce338d6689d4ff05",
+    "input_hash": "434cd891a1c91f47fdddbda29ff18cf42a8c9c9d0ec991ce6123f3565c9a15c7",
+    "snapshot_bundle_hash": "23745119adab1dc221a95b32652133062b8394cef24e1dc1240bc25c4e8a6ed5",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
-    "rationale_markdown_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-7def2c7b8dda.md",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
+    "rationale_markdown_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-434cd891a1c9.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: risk indicators remained elevated relative to confirmed mitigations. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Anchor document is not yet pinned locally for this action. Confidence context: score -0.38; confidence 41.6%.",
-    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
+    "summary_raw": "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to \u00b10.05).",
     "top_fixes": [
       "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-7def2c7b8dda.md",
+    "markdown_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-434cd891a1c9.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -121,7 +121,42 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-7def2c7b8dda.assessment.json"
+    "assessment_path": "/data/output/public/rationales/51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0-434cd891a1c9.assessment.json",
+    "treasury_dimensions": null,
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {}
+    }
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
   },
   "proposal_evidence": {
     "available": false,
@@ -133,8 +168,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -201,16 +236,17 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.3833,
-    "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.4158
+    "binding_score": -0.3833,
+    "raw_score": -0.3833,
+    "directional_threshold": 0.12,
+    "confidence": 0.4158,
+    "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 25,
+    "snapshot_age_seconds": 26,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

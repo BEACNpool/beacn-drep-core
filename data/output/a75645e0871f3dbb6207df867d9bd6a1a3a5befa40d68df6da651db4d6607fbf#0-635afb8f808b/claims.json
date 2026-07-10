@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "none requested; proposes a 500,000,000 ada net change limit",
+    "deadline": "Period begins at the start of Epoch 613 on February 13, 2026 and ends at the close of Epoch 713 on or about July 3, 2027",
+    "deliverables": [
+      "Record DReps' agreement to a 500,000,000 ada fixed cap on total Treasury Withdrawals debited during Epochs 613-713",
+      "Supersede any prior Net Change Limit for the same period",
+      "Clarify that prior withdrawals already debited during the period count toward the limit"
+    ],
+    "recipient": "not stated in document",
+    "what": "Info action to agree a new Net Change Limit for Cardano Treasury withdrawals for Epochs 613-713"
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposed limit applies from the start of Epoch 613 on February 13, 2026 through the close of Epoch 713 on or about July 3, 2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The Net Change Limit caps only amounts removed from the Treasury by enacted Treasury Withdrawals recorded on the Cardano ledger, and does not count Treasury inflows.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Treasury Withdrawals already debited during the period count toward the proposed 500,000,000 ada limit and are not reset, reversed, reopened, or reauthorized by this action.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document says this action has no direct on-chain effect and does not authorize any Treasury Withdrawal.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states that the existing 350,000,000 ada Net Change Limit for Epochs 613-713 has become practically constrained as its window runs into mid-2027.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer claims that increasing the limit to 500,000,000 ada preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states that Yes votes exceeding 50% of active voting stake are the TREASURY-01a threshold for agreeing a Net Change Limit.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states that the action is drafted to comply with the enacted Cardano Constitution version 2.4 and Appendix I Guardrails, and provides an IPFS reference to the Constitution.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states that nothing in the Constitution limits DReps to a single Net Change Limit or prevents a newly agreed Net Change Limit from applying to the period.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes an informational governance signal establishing a 500,000,000 ada Treasury Net Change Limit for Epochs 613-713, replacing a prior 350,000,000 ada limit for the same period, with ledger-debited withdrawals counting cumulatively and no direct authorization of spending.",
+  "output_sha256": "5ccccbb2b31ff1fe8d7477b1ab244b3b121fafddd4966a87a2f8aa383249760f"
+}

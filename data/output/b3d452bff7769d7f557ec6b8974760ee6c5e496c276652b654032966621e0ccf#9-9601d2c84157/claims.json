@@ -1,0 +1,77 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,684,050",
+    "deadline": "12 months",
+    "deliverables": [
+      "Open standardized interface across Cardano on-chain protocols",
+      "Documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from verified interface definitions",
+      "Agent-first documentation, protocol skills packaging operations, and an MCP server for agents",
+      "12 additional protocol onboardings over 12 months, three per quarter"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Treasury withdrawal to fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Tx3 is presented as a framework that describes each protocol once with a verified interface definition and generates documentation, multi-language SDKs, and live JSON-RPC endpoints.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Through Catalyst Fund 14, TxPipe has put the developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal funds 12 additional protocol onboardings, three per quarter, with developer and agent coverage plus development of an MCP server and skill framework.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer claims there is currently no common interface mechanism across the Cardano ecosystem, increasing integration costs and limiting composability.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount is claimed not to breach the 350M Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect states that funds will be administered through Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, multisig-style authorization rules, oversight entities, and a public dashboard.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 1,684,050 ADA for TxPipe's Tx3 open API and agent interface work, citing 12 protocol onboardings, MCP and skill infrastructure, Intersect budget-process approval, NCL compliance, and smart-contract-based treasury administration.",
+  "output_sha256": "4015df9c910cf4bdc2ff100019e6a93ffa1c1e17810fbaa7db515e07b17e20c4"
+}

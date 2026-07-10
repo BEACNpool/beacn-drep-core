@@ -84,7 +84,7 @@ A material claim remains proposer-asserted or thinly supported: In order to ensu
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): Doctrine-aware offline lean for a info action: 3 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.020 (clamped to ±0.05).
+- Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 3 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.020 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -102,12 +102,12 @@ A material claim remains proposer-asserted or thinly supported: In order to ensu
 
 ## Reproducibility
 - input_hash: `47f6d5e1b3c71ba5d201a144490a10842106252f2b7845ebd3ef85a2f2266070`
-- snapshot_bundle_hash: `e1114c024f47b36db9de74bcec79f009171270838f62c3933d72112180979305`
+- snapshot_bundle_hash: `f6b13da2f1982441323534c6f2c90e15da3a3abebc28b11001d87ef9ca1336ad`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `22`
+- snapshot_age_seconds: `23`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

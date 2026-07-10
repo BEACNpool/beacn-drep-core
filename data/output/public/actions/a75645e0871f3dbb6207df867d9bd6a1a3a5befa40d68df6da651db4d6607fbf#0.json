@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:f83933cec24c217817bf82471f225496064af49e4e855b8bf9adf7e8c9ba45c3",
+    "raw_input_hash": "sha256:635afb8f808b3f90044ebbea661b2ca817a0a0d80ea8b4aa837f40d6d07672c9",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-10T11:30:04.499477+00:00",
+    "published_at": "2026-07-10T12:44:41.901950+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "ABSTAIN",
     "score": -0.05,
     "confidence": 0.4825,
-    "input_hash": "f83933cec24c217817bf82471f225496064af49e4e855b8bf9adf7e8c9ba45c3",
-    "snapshot_bundle_hash": "83afdf74ecfda431d2403ed5cb7f7d34b3165365c8ebcc215677444d433574ff",
+    "input_hash": "635afb8f808b3f90044ebbea661b2ca817a0a0d80ea8b4aa837f40d6d07672c9",
+    "snapshot_bundle_hash": "936f109633afda585d9dbbb68c6da07df2113872ad5c710c258862809283b319",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
-    "rationale_markdown_path": "/data/output/public/rationales/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0-f83933cec24c.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/39cfb3ef5a8736ad50ae6a94.md",
-    "rationale_anchor_hash": "39cfb3ef5a8736ad50ae6a945355a8f750aea31a4bcfb1c4191cf897369665f1"
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
+    "rationale_markdown_path": "/data/output/public/rationales/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0-635afb8f808b.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a923152222b7166847f603f1.md",
+    "rationale_anchor_hash": "a923152222b7166847f603f19ebe667e71b5f8958deb381a044cc74d4218a033"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal sets the Net Change Limit for the Cardano Treasury during Epochs 613-713 at 500,000,000 ada, equal to 500,000,000,000,000 lovelace.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score -0.05; confidence 48.2%.",
-    "summary_raw": "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The claims provide clear intent and accounting mechanics, and the action does not directly authorize spending, but several high-materiality governance and constitutional assertions depend on external verification while the deterministic assessment marks risk review as thin and overall status incomplete. A small cautionary nudge is warranted because raising a treasury guardrail affects downside protection even though the proposal preserves per-withdrawal discretion.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The document states that Yes votes exceeding 50% of active voting stake are the TREASURY-01a threshold for agreeing a Net Change Limit; Provide mitigation evidence. Residual uncertainty: No DRep distribution available. Confidence context: score -0.05; confidence 48.2%.",
+    "summary_raw": "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal is clear about the intended accounting rule and emphasizes that it does not directly authorize withdrawals, which supports governance clarity; however, the core need for raising the limit from 350,000,000 ada to 500,000,000 ada is asserted rather than evidenced in the supplied claims, so a small cautionary nudge is warranted for treasury stewardship.",
     "top_fixes": [
+      "Provide independent evidence for: The document states that Yes votes exceeding 50% of active voting stake are the TREASURY-01a threshold for agreeing a Net Change Limit.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0-f83933cec24c.md",
+    "markdown_path": "/data/output/public/rationales/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0-635afb8f808b.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -69,21 +69,22 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Info action to agree a new Net Change Limit for the Cardano Treasury for Epochs 613-713.",
+            "Requested: Info action to agree a new Net Change Limit for Cardano Treasury withdrawals for Epochs 613-713",
             "Recipient: not stated in document",
-            "Stated amount: 500,000,000 ada net change limit; no direct treasury withdrawal requested",
-            "Deliverables: Record DReps' agreement to a 500,000,000 ada fixed cap on total ada removed from the Treasury through Treasury Withdrawals during Epochs 613-713, Supersede any prior Net Change Limit for the same period, Clarify that all Treasury Withdrawals already debited during the period count toward the limit",
-            "Deadline/expiry: Period begins at the start of Epoch 613, February 13, 2026, and ends at the close of Epoch 713, on or about July 3, 2027",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal sets the Net Change Limit for the Cardano Treasury during Epochs 613-713 at 500,000,000 ada, equal to 500,000,000,000,000 lovelace.",
-            "Claim (technical, supported_in_proposal, high materiality): The Net Change Limit caps only the cumulative amount debited from the Cardano Treasury by enacted Treasury Withdrawals recorded on the Cardano ledger during the period.",
-            "Claim (economic, supported_in_proposal, high materiality): Treasury inflows, including reserve and protocol allocations, transaction-fee allocations, refunds, and returns of Treasury-funded amounts, do not count toward or increase the Net Change Limit.",
-            "Claim (governance, supported_in_proposal, high materiality): Treasury Withdrawals already debited during the Epochs 613-713 period count toward the 500,000,000 ada limit and are not reset, reversed, reopened, or reauthorized by this action.",
-            "Claim (governance, supported_in_proposal, high materiality): The proposal states that this Info action has no direct on-chain effect and does not authorize any Treasury Withdrawal.",
-            "Claim (economic, proposer_asserted, medium materiality): The proposer asserts that the existing 350,000,000 ada Net Change Limit has been a useful fiscal guardrail but is becoming practically constrained before mid-2027."
+            "Stated amount: none requested; proposes a 500,000,000 ada net change limit",
+            "Deliverables: Record DReps' agreement to a 500,000,000 ada fixed cap on total Treasury Withdrawals debited during Epochs 613-713, Supersede any prior Net Change Limit for the same period, Clarify that prior withdrawals already debited during the period count toward the limit",
+            "Deadline/expiry: Period begins at the start of Epoch 613 on February 13, 2026 and ends at the close of Epoch 713 on or about July 3, 2027",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.",
+            "Claim (governance, supported_in_proposal, high materiality): The proposed limit applies from the start of Epoch 613 on February 13, 2026 through the close of Epoch 713 on or about July 3, 2027.",
+            "Claim (technical, supported_in_proposal, high materiality): The Net Change Limit caps only amounts removed from the Treasury by enacted Treasury Withdrawals recorded on the Cardano ledger, and does not count Treasury inflows.",
+            "Claim (governance, supported_in_proposal, high materiality): Treasury Withdrawals already debited during the period count toward the proposed 500,000,000 ada limit and are not reset, reversed, reopened, or reauthorized by this action.",
+            "Claim (governance, supported_in_proposal, high materiality): The document says this action has no direct on-chain effect and does not authorize any Treasury Withdrawal.",
+            "Claim (economic, proposer_asserted, medium materiality): The proposer states that the existing 350,000,000 ada Net Change Limit for Epochs 613-713 has become practically constrained as its window runs into mid-2027."
           ],
           "missing": [
-            "Independent evidence for: The proposer asserts that the existing 350,000,000 ada Net Change Limit has been a useful fiscal guardrail but is becoming practically constrained before mid-2027.",
-            "Independent evidence for: The proposer asserts that the Constitution does not limit DReps to a single Net Change Limit or prevent a newly agreed Net Change Limit from applying to the period."
+            "Independent evidence for: The proposer states that the existing 350,000,000 ada Net Change Limit for Epochs 613-713 has become practically constrained as its window runs into mid-2027.",
+            "Independent evidence for: The proposer claims that increasing the limit to 500,000,000 ada preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+            "Independent evidence for: The document states that Yes votes exceeding 50% of active voting stake are the TREASURY-01a threshold for agreeing a Net Change Limit."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -112,8 +113,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal sets the Net Change Limit for the Cardano Treasury during Epochs 613-713 at 500,000,000 ada, equal to 500,000,000,000,000 lovelace.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposer asserts that the existing 350,000,000 ada Net Change Limit has been a useful fiscal guardrail but is becoming practically constrained before mid-2027.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that the existing 350,000,000 ada Net Change Limit for Epochs 613-713 has become practically constrained as its window runs into mid-2027.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -132,7 +133,42 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0-f83933cec24c.assessment.json"
+    "assessment_path": "/data/output/public/rationales/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0-635afb8f808b.assessment.json",
+    "treasury_dimensions": null,
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {}
+    }
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
   },
   "proposal_evidence": {
     "available": true,
@@ -143,7 +179,7 @@
     "anchor_hash": "d420037401626f4db20a255ca52d9d39764f68edfdc02686007cf9c731564f88",
     "file_sha256": "06700051aa8f5f7421e5cb7c3d4f3e87f41f80279ee6a0671668326f9783ed55",
     "content_bytes": "5544",
-    "fetched_at_utc": "2026-07-10T11:30:13Z",
+    "fetched_at_utc": "2026-07-10T12:45:13Z",
     "download_path": "/proposals/a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\"\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\": \"http://xmlns.com/foaf/0.1/name\",\n        \"witness\": {\n          \"@id\": \"CIP100:witness\",\n          \"@context\": {\n            \"witnessAlgorithm\": \"CIP100:witnessAlgorithm\",\n            \"publicKey\": \"CIP100:publicKey\",\n            \"sign"
   },
@@ -152,8 +188,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
-    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "resources_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+    "core_commit": "6a69215e397aead82a0107f47e3ca65a265f18a4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -220,16 +256,17 @@
     }
   ],
   "scoring": {
-    "budget_pressure": 0.05,
-    "conflict_risk": 0.0,
-    "technical_value": 0.0,
-    "governance_alignment": 0.4825
+    "binding_score": -0.05,
+    "raw_score": -0.05,
+    "directional_threshold": 0.12,
+    "confidence": 0.4825,
+    "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

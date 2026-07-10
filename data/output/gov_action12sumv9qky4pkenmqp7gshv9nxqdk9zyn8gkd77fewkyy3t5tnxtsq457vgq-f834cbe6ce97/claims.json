@@ -6,82 +6,79 @@
   "model": "claude-opus-4-8",
   "request": {
     "amount_ada": "9832979",
-    "deadline": "18 months, with milestones from Q3 2026 through 2027",
+    "deadline": "18-month funding period with milestones from Q3 2026 through 2027",
     "deliverables": [
-      "Legally establish a not-for-profit entity or sign a host-organization agreement under a preliminary board in Q3 2026.",
-      "Publish a technical transition architecture and migration plan for community review in Q3 2026.",
-      "Launch a public usage dashboard in Q3 2026.",
-      "Hold a board election via on-chain voting under published rules in Q4 2026.",
-      "Serve all public API traffic for mainnet, preview, and preprod from the new stack in Q1 2027.",
-      "Legally transfer Blockfrost source code, trademarks, domain names, and associated assets to the governing entity in Q1 2027.",
-      "Open a public consultation and publish a proposal on long-term sustainability in Q2-Q3 2027.",
-      "Operate the public API at a minimum 99% monthly uptime SLA and publish quarterly technical and budget reports during 2027."
+      "Establish a not-for-profit entity or host-organization agreement under a preliminary board in Q3 2026, publish a technical transition architecture and migration plan, and launch a public usage dashboard.",
+      "Hold a board election via on-chain voting under public rules in Q4 2026 and have the elected board assume its mandate.",
+      "Serve all public API traffic for mainnet, preview, and preprod from the new stack in Q1 2027, transfer Blockfrost intellectual property to the governing entity, and maintain current service performance during cutover.",
+      "Open a public sustainability consultation in Q2-Q3 2027 and publish a proposal and documented outcome for the long-term model.",
+      "Operate the public API at a minimum 99% monthly uptime SLA during 2027 and publish quarterly reports covering technical metrics and budget summary."
     ],
-    "recipient": "Input Output will contract with Cardano Development Holdings and Intersect will administer delivery assurance; the final withdrawal recipient is not stated in document.",
+    "recipient": "not stated in document",
     "what": "Fund an 18-month transition of Blockfrost into a free, community-governed not-for-profit public API for Cardano, including operations during the transition period."
   },
   "claims": [
     {
-      "category": "economic",
-      "claim": "The proposal requests 9,832,979 ADA, stated as 1,868,266 USD at 0.19 USD per ADA, for 18 months of transition and operations.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
       "category": "technical",
-      "claim": "Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node infrastructure.",
+      "claim": "Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "adoption",
-      "claim": "The proposal states that Blockfrost usage in the Cardano Foundation developer ecosystem survey grew from 39.3% in 2022 to 71.5% in 2025, with links to the cited survey pages.",
+      "claim": "The proposal states that Blockfrost was the number-one hosted platform in the Cardano Foundation developer ecosystem survey and cites usage percentages rising from 39.3% in 2022 to 71.5% in 2025.",
       "materiality": "high",
       "support": "independently_verifiable"
     },
     {
       "category": "adoption",
-      "claim": "The proposal states that Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.",
+      "claim": "The proposal states that Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, nearly 700 requests per second, and over 7 TB of API data in the prior month.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "adoption",
-      "claim": "The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+      "claim": "The proposal states that more than 50% of transactions in most Cardano epochs are submitted through Blockfrost.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that 90% of Cardano traffic served through the Blockfrost API comes from the free tier and that the commercial model has been difficult to use to finance the public-good operation.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "governance",
-      "claim": "The proposed governance model uses a five-seat board, with four seats for open-source infrastructure development entities and one community seat, preceded by a named preliminary board.",
+      "claim": "The proposal says all Blockfrost source code, trademarks, domain names, and associated assets will be transferred to a community-governed not-for-profit entity.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "governance",
-      "claim": "The proposal says all Blockfrost intellectual property, including source code, trademarks, domains, and associated assets, will be transferred to the governing not-for-profit entity.",
+      "claim": "The proposed governance model uses a five-seat board, with four seats for open-source Cardano infrastructure entities and one community seat, preceded by a named preliminary board and a non-voting IOG advisory seat during the first year.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "economic",
-      "claim": "The proposal allocates 79.1% of the budget to staffing, 19.3% to operations and infrastructure, and 1.6% to legal and accounting.",
+      "claim": "The proposal requests 9,832,979 ADA, equivalent to $1,868,266 at $0.19 per ADA, with 79.1% allocated to staffing, 19.3% to operations and infrastructure, and 1.6% to legal and accounting.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "governance",
-      "claim": "The proposal says infrastructure costs will be shared publicly and approved by the board, with public dashboard reporting of usage and quarterly reports covering technical metrics and budget summaries.",
+      "claim": "The proposal states that infrastructure costs will be published publicly, a usage dashboard will show current Blockfrost usage, and quarterly reports will include technical data and budget summaries.",
       "materiality": "medium",
       "support": "supported_in_proposal"
     },
     {
       "category": "economic",
-      "claim": "The proposal presents possible post-funding sustainability models, including paid tiers or vendor-backed membership fees, but leaves the final long-term model to the future board.",
+      "claim": "The proposal says long-term sustainability after the 18-month period will be decided by the community-led board, with possible commercial paid tiers or a vendor-backed not-for-profit model returning profits or fees to the ecosystem.",
       "materiality": "high",
       "support": "proposer_asserted"
     }
   ],
-  "summary": "The document proposes a large treasury withdrawal to convert Blockfrost into a community-governed not-for-profit public API, with detailed milestones and budget allocations but several key adoption, transaction-share, and sustainability claims remaining proposer-asserted.",
-  "output_sha256": "1529fff8f4e466e3f653358de3db8e1cf68c3e71bdf39cda273bd2340ad0ee1b"
+  "summary": "The document requests 9,832,979 ADA for an 18-month transition and operation of Blockfrost as a community-governed not-for-profit public API, citing high developer adoption and transaction-submission reliance, while leaving several key usage, cost, and sustainability claims as proposer assertions rather than fully evidenced facts.",
+  "output_sha256": "a5a1f7820f2e959616b628265f574cb2a4af39a8eb69afde6bc072d334d4246b"
 }

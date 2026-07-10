@@ -79,7 +79,7 @@ A material claim remains proposer-asserted or thinly supported: This vote empowe
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Doctrine-aware reasoning layer nudged the score by +0.030 (clamped to ±0.05): Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+- Advisory model lean was +0.030 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 - Directional vote forced by completed readiness packet (treasury-aware).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -94,12 +94,12 @@ A material claim remains proposer-asserted or thinly supported: This vote empowe
 
 ## Reproducibility
 - input_hash: `d5f2627e2c78e230731725c1541e8818a74ee8ff66d9d1632074b3a9173092f3`
-- snapshot_bundle_hash: `cea0de247ea31d989e84c3a3415b33382d9667a3b51b34c4021dfacd0cd385ff`
+- snapshot_bundle_hash: `480e9b4f1e947f8157fb9ca9c7d7674457f20963ebb801bf65fa7524dd3e0d0f`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `14`
+- snapshot_age_seconds: `15`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2544, "NO": 0.4913, "YES": 0.2544}`

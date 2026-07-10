@@ -26,17 +26,17 @@
         "Proposal document read by reasoning layer: yes",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Reduce the Cardano protocol parameter committeeMinSize from 7 to 5.",
+        "Requested: Reduce the Cardano committeeMinSize protocol parameter from 7 to 5.",
         "Recipient: not stated in document",
         "Stated amount: not stated in document",
-        "Deliverables: Set protocol_param_update.committee_min_size to 5",
+        "Deliverables: Set protocol_param_update.committee_min_size to 5.",
         "Deadline/expiry: not stated in document",
-        "Claim (governance, supported_in_proposal, high materiality): Intersect proposes reducing committeeMinSize from 7 to 5 to improve operational resilience while maintaining constitutional safeguards.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal changes only the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.",
         "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.",
-        "Claim (governance, supported_in_proposal, high materiality): If Constitutional Committee membership falls below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including parameter changes, constitution updates, treasury withdrawals, and hard forks.",
-        "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would allow governance to continue if one or two members retire or their terms expire, assuming a current 7-member body.",
-        "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on enactment of another live parameter-change action for Plutus cost models, but the document states there is no technical interaction between the changed parameters.",
-        "Claim (governance, independently_verifiable, medium materiality): The Civics Committee approved submission of this governance action on 2026-03-13 and the Technical Steering Committee approved it on 2026-06-03."
+        "Claim (governance, supported_in_proposal, high materiality): A single resignation or term expiration under the current setting could make governance actions requiring Constitutional Committee approval ineligible for ratification.",
+        "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 would create an operational buffer allowing governance to continue if one or two members retire or terms expire, assuming a current 7-member body.",
+        "Claim (technical, independently_verifiable, medium materiality): The proposal says the action depends temporally on another live Plutus cost model parameter-change action and has no technical interaction with it.",
+        "Claim (governance, independently_verifiable, medium materiality): Intersect states the submission was approved by the Civics Committee on 2026-03-13 and by the Technical Steering Committee on 2026-06-03."
       ],
       "missing": [
         "Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7."
@@ -67,7 +67,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Intersect proposes reducing committeeMinSize from 7 to 5 to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal changes only the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates.",
         "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

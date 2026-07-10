@@ -1,0 +1,13 @@
+# Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — precomputed)_
+
+BEACN voted ABSTAIN because the review was blocked by missing baseline evidence, especially the missing `treasury_amount_lovelace` field required for a treasury withdrawal. This is a conservative, evidence-based hold: BEACN could not make a responsible YES or NO recommendation while a core treasury-review field was incomplete.
+
+The action asked to withdraw 3,961,538 ada for Wirex-related Cardano payment infrastructure, including open-source on-chain payments, smart contracts, wallet and API components, banking rails, stablecoin systems, Visa card integration, and milestone-based disbursement controls. The proposer claimed the amount consisted of 3,846,153 ada for WP1 plus a 115,385 ada Intersect administration fee, and the on-chain metadata listed a 3,961,538,000,000 lovelace withdrawal to the 2026 Treasury Reserve Smart Contract stake address. The proposal also claimed Wirex would deliver full-stack infrastructure and Visa card issuance linked to on-chain balances, and cited Wirex adoption figures and Visa Principal Member experience.
+
+Some governance and treasury-process claims were supported or independently verifiable: the proposal passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase, did not breach the stated 350M ada Net Change Limit at submission, and provided public audit and tracking records. But several material claims were still not independently evidenced, including the full-stack delivery claim and the Visa-card-linked-to-on-chain-balances outcome. The treasury review was also incomplete because the line-item budget and sustainability path were missing, and the risk review lacked independent assurance and a rollback or remedy path.
+
+To unblock a directional vote, BEACN would need the missing treasury withdrawal baseline field, especially `treasury_amount_lovelace`, plus independent evidence for the major delivery and adoption claims, a complete line-item budget, a sustainability path, independent assurance, and a clear rollback or remedy plan. Until then, ABSTAIN reflects that the proposal may contain promising elements, but the evidence package was not complete enough for BEACN to vote YES or NO.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

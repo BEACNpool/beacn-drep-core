@@ -9,15 +9,15 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.2133,
   "raw_score": -0.2133,
-  "llm_score_adjustment": -0.02,
+  "llm_score_adjustment": 0.0,
   "llm_lean": {
     "source": "precomputed",
     "model": "claude-opus-4-8",
-    "direction": "NO",
-    "score_adjustment": -0.02,
-    "confidence": 0.64,
-    "rationale": "The proposal has useful public-benefit alignment and some independently verifiable governance and oversight references, but the core adoption, delivery-history, and cost-justification claims are only partly evidenced in the document, and the ask funds a part-time maintainer at a sizeable rate plus contingency and administration fee. Under BEACN doctrine, treasury stewardship and evidence quality justify a small cautionary nudge against spending beyond the deterministic score.",
-    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; AI Has Collapsed Marginal Costs",
+    "direction": "NEUTRAL",
+    "score_adjustment": 0.0,
+    "confidence": 0.72,
+    "rationale": "The extracted claims show a public-benefit open-source infrastructure ask with detailed governance mechanics, referenced budget-process materials, and checkable smart-contract addresses, but several key value claims about adoption, delivery history, and schedule remain proposer assertions within the document. The deterministic treasury and evidence rules appear to capture the relevant caution, so no additional advisory nudge is justified.",
+    "doctrine_basis": "Treasury stewardship and evidence quality/reproducibility",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -52,12 +52,11 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 540750",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect budget administration fee.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has useful public-benefit alignment and some independently verifiable governance and oversight references, but the core adoption, delivery-history, and cost-justification claims are only partly evidenced in the document, and the ask funds a part-time maintainer at a sizeable rate plus contingency and administration fee. Under BEACN doctrine, treasury stewardship and evidence quality justify a small cautionary nudge against spending beyond the deterministic score.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -68,8 +67,8 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
-    "Claims and evidence missing: Independent evidence for: The proposal states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.",
-    "Claims and evidence missing: Independent evidence for: TxPipe is stated to have received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule.",
+    "Claims and evidence missing: Independent evidence for: The proposer claims UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a Cardano ecosystem standard.",
+    "Claims and evidence missing: Independent evidence for: The project is said to maintain more than 10 repositories covering the core specification, language SDKs, documentation, and provider integrations under the Apache 2.0 open-source license.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Treasury analysis missing: cost-benefit clarity",
@@ -82,10 +81,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "30d696c9cd013ed948f7b871b12eea9aefe7e7bf5b5e5498f120f7b3b36aae93",
-  "snapshot_bundle_hash": "9a2b32807ec8f5628078d245be57ca369325669eef5d13094e77e62f80bf67f1",
+  "snapshot_bundle_hash": "2c4f543ddeed2c71bd89b93beee19c245e5ae7bafe043546dee4e80637aa2de8",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +104,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -149,21 +148,22 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Fund UTxO RPC by TxPipe for Year 2 maintenance and enhancement, including part-time maintainer coverage, SDK/spec maintenance, community support, and AI-friendly documentation resources.",
-          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor TxPipe",
-          "Stated amount: 540,750",
-          "Deliverables: 12 months of UTxO RPC maintainer coverage after the existing contract closes, Maintain protobuf specification including protocol compatibility, versioning, and documentation, Maintain official SDKs including dependency updates, performance improvements, and bug fixing, Provide community support including issue triage, review of external contributions, feedback-driven enhancements, and public communication, Upgrade UTxO RPC compatibility with AI-driven development workflows through AI-friendly documentation and integration resources",
-          "Deadline/expiry: 12 months; exact dates not stated in document",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect budget administration fee.",
-          "Claim (economic, supported_in_proposal, high materiality): The maintainer funding is described as 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time maintainer over 12 months at an annual rate of $105,000 USD.",
-          "Claim (technical, supported_in_proposal, high materiality): UTxO RPC provides an open interface specification for UTxO-based blockchains using Protocol Buffers and SDKs in Rust, Go, Node.js, .NET, Haskell, and Python.",
-          "Claim (adoption, proposer_asserted, high materiality): The proposal states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.",
-          "Claim (technical, independently_verifiable, medium materiality): The project maintains more than 10 repositories covering the core specification, language-specific SDKs, documentation, and provider integrations under the Apache 2.0 open-source license.",
-          "Claim (technical, supported_in_proposal, high materiality): The work scope includes maintaining protocol compatibility, SDK dependencies, performance, bug fixes, documentation, issue triage, contribution review, feedback-driven enhancements, and public developer communication."
+          "Requested: Treasury withdrawal to fund UTxO RPC by TxPipe maintenance and enhancement for Year 2, submitted by Intersect on behalf of the vendor.",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+          "Stated amount: 540750",
+          "Deliverables: Part-time maintainer for UTxO RPC over 12 months, Maintenance of the protobuf specification including protocol compatibility, versioning, and documentation, Maintenance of official SDKs including dependency updates, performance improvements, and bug fixing, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows",
+          "Deadline/expiry: 12 months; new grant period begins after closure of existing contract",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee.",
+          "Claim (economic, supported_in_proposal, high materiality): The maintenance budget is described as funding a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD, with 420,000 ADA plus a 105,000 ADA contingency reserve stated in the motivation section.",
+          "Claim (technical, supported_in_proposal, high materiality): UTxO RPC is presented as an open interface specification for UTxO-based blockchains using Protocol Buffers and SDKs in Rust, Go, Node.js, .NET, Haskell, and Python.",
+          "Claim (adoption, proposer_asserted, high materiality): The proposer claims UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a Cardano ecosystem standard.",
+          "Claim (technical, proposer_asserted, medium materiality): The project is said to maintain more than 10 repositories covering the core specification, language SDKs, documentation, and provider integrations under the Apache 2.0 open-source license.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase and includes references to voting records, documentation, final audited results, and an audit report."
         ],
         "missing": [
-          "Independent evidence for: The proposal states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.",
-          "Independent evidence for: TxPipe is stated to have received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule."
+          "Independent evidence for: The proposer claims UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a Cardano ecosystem standard.",
+          "Independent evidence for: The project is said to maintain more than 10 repositories covering the core specification, language SDKs, documentation, and provider integrations under the Apache 2.0 open-source license.",
+          "Independent evidence for: TxPipe is reported to have received 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect maintenance funding for Pallas, Dolos, and UTxO RPC delivered on schedule."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -210,8 +210,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect budget administration fee.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposer claims UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, validating it as a Cardano ecosystem standard.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -233,7 +233,37 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action requested 540,750 ada for Year 2 maintenance and enhancement of UTxO RPC by TxPipe, including part-time maintainer coverage, SDK and specification maintenance, community support, and AI-friendly documentation resources. The proposal states that 525,000 ada would fund the work and 15,750 ada would cover Intersect budget administration. It also describes the maintainer portion as 420,000 ada plus a 105,000 ada contingency reserve over 12 months.\n\nSeveral parts of the proposal were well-supported enough to review: the anchor document was pinned and replayable, the requested amount was clear, the work scope was stated, and governance and oversight references were independently verifiable. But important claims were still thin or unsupported, including independent evidence that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, and independent evidence for TxPipe\u2019s stated Catalyst delivery history. The review also found missing clarity on sustainability, cost-benefit, independent assurance, and rollback or remedy paths.\n\nThis is a conservative, evidence-based hold, not a rejection of the project. BEACN would need the Net Change Limit pinned and independently verified from public chain evidence before making a directional treasury vote, with stronger public evidence for the major adoption and delivery-history claims improving confidence.",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.6,
+      "cost_efficiency": 0.25,
+      "downside_risk": 0.35,
+      "composite": -0.2025,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence"
+      ]
+    }
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal asks for 540,750 ada to fund Year 2 maintenance and enhancement of UTxO RPC by TxPipe, submitted by Intersect on behalf of the vendor. The request is described as 525,000 ada for the work plus a 15,750 ada Intersect administration fee. The stated work includes a part-time maintainer for 12 months, maintenance of the protobuf specification and official SDKs, dependency updates, performance improvements, bug fixes, community support, and AI-friendly documentation and integration resources.\n\nSeveral core facts were supported in the proposal: the amount requested, the budget breakdown, the 12-month maintainer plan, the description of UTxO RPC as an open Protocol Buffers-based interface with multiple SDKs, and the Intersect oversight, reporting, audit, and milestone-based disbursement structure. The proposal anchor was pinned and replayable, and the review found that the strongest YES case clears the evidence gates around the requested amount. However, some material claims remained unsupported by independent evidence, including the claim that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface, and the claim that the project maintains more than 10 repositories across the specification, SDKs, documentation, and integrations.\n\nThis is a conservative, evidence-based hold, not a rejection of the work. The review gates that drove the hold were treasury scrutiny, thin claims-and-evidence status, unknown execution risk, missing sustainability path, missing cost-benefit clarity, missing independent assurance, and missing rollback or remedy path. A directional vote would be unblocked by pinned, independently verifiable public chain evidence for the applicable Net Change Limit, plus stronger independent evidence for the adoption and repository claims and clearer treasury-risk evidence around sustainability, benefits, assurance, and remedies.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -253,7 +283,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "e698e2fae897586eef78f714b997b26268fa3daa3e6da7f941b836cfaac82f43"
+      "output_sha256": "9a1aa815b7bc8cdfbb3522737f13be821da3c2459435d044e81f098d06ceaf7f"
     },
     "doctrine": {
       "family": "treasury",
@@ -268,12 +298,12 @@
       "source": "precomputed",
       "reason": null,
       "model": "claude-opus-4-8",
-      "direction": "NO",
-      "score_adjustment": -0.02,
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "8c4de9db69d6bc12309f61f3c7c15ea82d29148c7440f40655e83a3bf3c965a5"
+      "output_sha256": "8531873f8f961d18d262e6277bc5f54f9b11e2a863505a487b7f68703657bd01"
     },
     "human_message": {
       "source": "precomputed",
@@ -281,10 +311,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "2f0bc1544f6e2c69a8a9835c92f31e1b30d4aeadb5b870a0a84aaee8667b8c3a"
+      "output_sha256": "a0f1721c33dfa536180f33fca923517d394758d164e4bd19d5c8bb7f73bf132b"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ed5e6141455a8fd249157b1a.md",
-  "rationale_anchor_hash": "ed5e6141455a8fd249157b1a776099da45a20a5d0485537f86c46a0b4c80b7f6"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3ef2fff5b78fe0ca992b250c.md",
+  "rationale_anchor_hash": "3ef2fff5b78fe0ca992b250c64bdd3296b914adb69fd9e78f1948b2234ed1e23"
 }

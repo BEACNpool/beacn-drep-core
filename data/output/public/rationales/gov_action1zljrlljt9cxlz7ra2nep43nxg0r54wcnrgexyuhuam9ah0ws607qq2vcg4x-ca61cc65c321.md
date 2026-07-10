@@ -142,10 +142,10 @@ A material claim remains proposer-asserted or thinly supported: Peras v1 is desc
 
 ## Reproducibility
 - input_hash: `ca61cc65c321448febaa581848968f6f837c086b0d44380f22d8129abd91ac8d`
-- snapshot_bundle_hash: `8bf592edede1ae3d6cb1b41cb3b9d7d6836397e20c4ffe52c6c1b02778f630de`
+- snapshot_bundle_hash: `8d87ff5a21119225561948d9428ccd9aecbceef61559b6f51382bb042fe72b7c`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `5`
 - uncertainty_band: `LOW`

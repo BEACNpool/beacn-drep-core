@@ -28,21 +28,20 @@
         "Deep research dossier: not required",
         "Requested: Initiate an intra-era Cardano mainnet hard fork to Protocol Version 11.0, named the van Rossem hard fork.",
         "Recipient: not stated in document",
-        "Stated amount: none",
-        "Deliverables: Upgrade Cardano mainnet protocol from version 10.0 to 11.0 while remaining in the Conway era., Enable new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153., Make all Plutus built-in functions available consistently across Plutus V1, V2, and V3., Add UPLC case expressions for Bool, Integer, and Data., Promote or tighten ledger and node validation behavior including VRF key hash uniqueness, revised reference input rules, Constitutional Committee voting restriction enforcement, non-matching withdrawals validation, and PPView mismatch reporting.",
+        "Stated amount: not stated in document",
+        "Deliverables: Upgrade Cardano mainnet protocol from version 10.0 to 11.0 while remaining in the Conway era., Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153 available., Make all Plutus built-in functions consistently available across Plutus V1, V2, and V3., Add UPLC case expressions for Bool, Integer, and Data., Promote or tighten several ledger and node validation rules, including VRF key hash uniqueness and Constitutional Committee voting restrictions.",
         "Deadline/expiry: not stated in document",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal upgrades Cardano mainnet from protocol version 10.0 to 11.0 with no era transition and unchanged transaction shape.",
-        "Claim (technical, independently_verifiable, high materiality): Protocol Version 11 introduces Plutus primitives for modular exponentiation, dropList, BLS12-381 multi-scalar multiplication, Array operations, and native Value handling, as defined in five referenced CIPs.",
-        "Claim (technical, supported_in_proposal, high materiality): The upgrade makes all Plutus built-ins, including newly introduced ones, available across Plutus V1, V2, and V3.",
-        "Claim (technical, proposer_asserted, medium materiality): Native UPLC case expressions over Bool, Integer, and Data are expected to improve script performance and produce cleaner script logic.",
-        "Claim (technical, proposer_asserted, high materiality): The proposal states that testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
-        "Claim (technical, independently_verifiable, high materiality): The proposal references Cardano Node 11.0.1 performance results showing no regressions for standard value, Plutus, and voting benchmarks and acceptable baseline performance for new Plutus primitives and case expressions."
+        "Claim (technical, supported_in_proposal, high materiality): The proposal would upgrade Cardano mainnet from protocol version 10.0 to 11.0 without an era transition.",
+        "Claim (technical, independently_verifiable, high materiality): The upgrade would introduce new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+        "Claim (technical, supported_in_proposal, high materiality): The upgrade would make all Plutus built-in functions available across Plutus V1, V2, and V3, expanding capabilities for existing V1 and V2 scripts.",
+        "Claim (technical, proposer_asserted, medium materiality): Native UPLC case expressions for Bool, Integer, and Data would improve performance and produce cleaner script logic.",
+        "Claim (technical, supported_in_proposal, high materiality): The upgrade would promote VRF key hash uniqueness to a ledger-level rule so that no two stake pools can register or operate with the same VRF key.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal states that testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus features across V1, V2, and V3."
       ],
       "missing": [
-        "Independent evidence for: Native UPLC case expressions over Bool, Integer, and Data are expected to improve script performance and produce cleaner script logic.",
-        "Independent evidence for: The proposal states that testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
-        "Independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
-        "Independent evidence for: The proposal states the governance action is consistent with all eight listed hard fork guardrails, while noting none can be checked by the automated guardrails script."
+        "Independent evidence for: Native UPLC case expressions for Bool, Integer, and Data would improve performance and produce cleaner script logic.",
+        "Independent evidence for: The proposal states that testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus features across V1, V2, and V3.",
+        "Independent evidence for: The proposal states that security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -71,8 +70,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal upgrades Cardano mainnet from protocol version 10.0 to 11.0 with no era transition and unchanged transaction shape.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"Native UPLC case expressions over Bool, Integer, and Data are expected to improve script performance and produce cleaner script logic.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to 11.0 without an era transition.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Native UPLC case expressions for Bool, Integer, and Data would improve performance and produce cleaner script logic.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

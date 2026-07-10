@@ -15,9 +15,9 @@
     "model": "claude-opus-4-8",
     "direction": "ABSTAIN",
     "score_adjustment": -0.02,
-    "confidence": 0.74,
-    "rationale": "The proposal has credible public-benefit alignment and several independently checkable governance and oversight references, but the core adoption evidence is internally inconsistent between 26 and 15 teams and the large treasury ask lacks a detailed milestone schedule or cost breakdown beyond one broad work package and administration fee. Under BEACN's conservative treasury doctrine, that evidence gap justifies a small cautionary nudge rather than a positive adjustment.",
-    "doctrine_basis": "Treasury stewardship and evidence quality/reproducibility",
+    "confidence": 0.72,
+    "rationale": "The proposal has meaningful public-benefit alignment and some independently checkable governance and benchmark references, but the core adoption evidence is internally inconsistent and largely proposer-asserted, while the large treasury request has limited measurable milestone detail in the anchor text. A small cautionary nudge is justified because treasury stewardship and evidence quality are not fully resolved by the supplied claims.",
+    "doctrine_basis": "Treasury stewardship and downside protection; Evidence quality and reproducibility",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -52,12 +52,12 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 1162746",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has credible public-benefit alignment and several independently checkable governance and oversight references, but the core adoption evidence is internally inconsistent between 26 and 15 teams and the large treasury ask lacks a detailed milestone schedule or cost breakdown beyond one broad work package and administration fee. Under BEACN's conservative treasury doctrine, that evidence gap justifies a small cautionary nudge rather than a positive adjustment.",
+    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal has meaningful public-benefit alignment and some independently checkable governance and benchmark references, but the core adoption evidence is internally inconsistent and largely proposer-asserted, while the large treasury request has limited measurable milestone detail in the anchor text. A small cautionary nudge is justified because treasury stewardship and evidence quality are not fully resolved by the supplied claims.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -68,8 +68,8 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
-    "Claims and evidence missing: Independent evidence for: MLabs says Plutarch and Ply are extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
-    "Claims and evidence missing: Independent evidence for: The proposed funding period is intended to cover Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land during the funding period.",
+    "Claims and evidence missing: Independent evidence for: MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section.",
+    "Claims and evidence missing: Independent evidence for: The proposer claims continued maintenance is crucial because if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face friction, migration risk, workarounds, rewrites, or expensive stack migrations.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Treasury analysis missing: cost-benefit clarity",
@@ -82,10 +82,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "3a67b2267c6bf40f23d5d6468f2a51a0d0f35ce3de9fe9486458687f9f1c4333",
-  "snapshot_bundle_hash": "10be2c2536b4eb3ff2a4a2ddbfa86b56a2d357f38cbb9af2160fac2e44a4630a",
+  "snapshot_bundle_hash": "ed51fdc3a528d254c3afd63a3af38c57a8f24b28e9d6d590e46044914a852f09",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -108,7 +108,7 @@
     "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -150,21 +150,20 @@
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
           "Requested: Annual funding for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, and developer-experience improvements.",
-          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor MLabs",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs",
           "Stated amount: 1,162,746",
-          "Deliverables: WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities, Protocol-era and hard-fork compatibility, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
+          "Deliverables: WP1: Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities, Protocol-era and hard-fork compatibility, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements, Intersect budget administration and oversight",
           "Deadline/expiry: not stated in document",
-          "Claim (technical, supported_in_proposal, high materiality): Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
-          "Claim (adoption, proposer_asserted, high materiality): MLabs says Plutarch and Ply are extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
-          "Claim (technical, independently_verifiable, medium materiality): MLabs claims public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while using comparatively low on-chain compute and memory.",
-          "Claim (technical, proposer_asserted, high materiality): The proposed funding period is intended to cover Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land during the funding period.",
-          "Claim (technical, supported_in_proposal, high materiality): The proposal prioritizes resources first to critical breakages and serious vulnerabilities, then protocol-era and hard-fork compatibility, then bug fixes and optimizations, then documentation and developer-experience improvements.",
-          "Claim (adoption, proposer_asserted, medium materiality): The proposal claims it directly supports Cardano 2030 Pillar 2 Adoption & Utility by maintaining core open-source developer tooling for smart contract builders."
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee.",
+          "Claim (technical, supported_in_proposal, high materiality): Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply is described as tooling for serializing Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+          "Claim (adoption, proposer_asserted, high materiality): MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section.",
+          "Claim (technical, independently_verifiable, medium materiality): MLabs claims its public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal says funded work will prioritize critical breakages and vulnerabilities, protocol-era and hard-fork compatibility, bug fixes and optimizations, and documentation and developer-experience improvements in that order.",
+          "Claim (technical, proposer_asserted, high materiality): The proposer claims continued maintenance is crucial because if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face friction, migration risk, workarounds, rewrites, or expensive stack migrations."
         ],
         "missing": [
-          "Independent evidence for: MLabs says Plutarch and Ply are extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
-          "Independent evidence for: The proposed funding period is intended to cover Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land during the funding period.",
-          "Independent evidence for: The proposal claims it directly supports Cardano 2030 Pillar 2 Adoption & Utility by maintaining core open-source developer tooling for smart contract builders."
+          "Independent evidence for: MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section.",
+          "Independent evidence for: The proposer claims continued maintenance is crucial because if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face friction, migration risk, workarounds, rewrites, or expensive stack migrations."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -211,8 +210,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"MLabs says Plutarch and Ply are extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -234,7 +233,37 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action asks to withdraw 1,162,746 ada for annual maintenance and enhancement of MLabs\u2019 Plutarch and Ply tooling, administered through the 2026 Treasury Reserve Smart Contract for MLabs. The proposal says the work would cover maintenance, compatibility, bug fixes, optimizations, documentation, and developer-experience improvements. It also says the funds include 1,128,880 ada for the work itself and 33,866 ada for Intersect budget administration. No deadline was stated in the document.\n\nSeveral parts of the proposal were well supported. The review found the anchor document was pinned and replayable, the basic technical description of Plutarch and Ply was substantiated, and the proposal described priority handling for critical breakages, hard-fork compatibility, fixes, optimizations, and documentation. It also included governance and oversight claims that are independently checkable, including Intersect budget-process support and the use of treasury management smart contracts with oversight and milestone-based controls.\n\nThe hold is conservative and evidence-based. The review still found thin evidence for key claims, including independent support for ecosystem adoption, the inconsistent 26-team and 15-team usage counts, the intended funding period for future ledger and tooling changes, sustainability path, cost-benefit clarity, independent assurance, and rollback or remedy path. Most importantly, because this spends shared treasury ada, BEACN needs the Net Change Limit pinned and independently verified from public chain evidence before casting a YES or NO vote.",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.6,
+      "cost_efficiency": 0.25,
+      "downside_risk": 0.35,
+      "composite": -0.2025,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence"
+      ]
+    }
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. For a request of 1,162,746 ada, BEACN applies a higher evidence bar before supporting or opposing the use of shared treasury funds.\n\nThe proposal requested annual funding for MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply. It asked for 1,128,880 ada for maintenance, compatibility, bug fixes, optimizations, documentation, and developer-experience work, plus a 33,866 ada Intersect administration fee. The proposer claimed Plutarch and Ply are important Cardano developer tools, that they are widely used across the ecosystem, and that continued maintenance is needed to keep them aligned with ledger and Plutus/UPLC changes.\n\nSeveral parts of the proposal were well-supported in the review. The anchor document was available, pinned, and replayable. The requested amount and fee split were clear. The descriptions of Plutarch and Ply, the work priorities, the Intersect budget-process support threshold, the proposed treasury management structure, and the stated use of Sundae Labs treasury management smart contracts were supported or independently checkable. However, key claims were not strong enough for a directional treasury vote: adoption evidence was internally inconsistent, citing at least 26 teams in one section and at least 15 in another, and the claimed maintenance urgency was largely proposer-asserted. The review also found thin cost-benefit clarity, no stated deadline, unknown execution risk, missing sustainability path, missing independent assurance, and no clear rollback or remedy path.\n\nThis is a conservative, evidence-based hold, not a rejection of the tools or the requested work. A directional vote would be unblocked by independently pinned public-chain evidence for the applicable Net Change Limit, stronger independent evidence for ecosystem adoption and maintenance risk, clearer cost-benefit and sustainability details, and better execution assurance including remedy or rollback paths.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -254,7 +283,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "9a57b9e78b75d612d821ca60fb868c8b4b583df74b8cc08cae990df537bc57e4"
+      "output_sha256": "4807fe7d914a89769eecd6e8ea2d71aa3a9dd65b649b643cd87a5b83d706886e"
     },
     "doctrine": {
       "family": "treasury",
@@ -274,7 +303,7 @@
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "40d94e0530d3277e85058277bd6840bcf996fe095516909fd755426562800230"
+      "output_sha256": "5994c886bd1c1554fc42a5328d611733a69a4e117c145f589ff2df3ab2d1c825"
     },
     "human_message": {
       "source": "precomputed",
@@ -282,10 +311,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "ed716863db42d7948b4c26c39148501fda3e6792a8a8dadf961a95216411720c"
+      "output_sha256": "1a1cc5114d88ef063128e5c1d877e5684de920ded048aaa711f6e06d4227dac3"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/9a8c91281538d78df3aac24a.md",
-  "rationale_anchor_hash": "9a8c91281538d78df3aac24a31d8b2539a8cb9ec1a687a1459a0b0a667f7619e"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/24510e03de411d98e31da23d.md",
+  "rationale_anchor_hash": "24510e03de411d98e31da23db05f47baf7955383a74aa80016eebed5a089a5d5"
 }

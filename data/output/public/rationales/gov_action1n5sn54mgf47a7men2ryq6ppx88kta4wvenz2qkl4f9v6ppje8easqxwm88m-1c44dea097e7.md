@@ -77,7 +77,7 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by +0.050 (clamped to ±0.05): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.050 (clamped to ±0.05).
+- Advisory model lean was +0.050 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.050 (clamped to ±0.05).
 - Directional vote forced by completed readiness packet (treasury-aware).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -90,12 +90,12 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Reproducibility
 - input_hash: `1c44dea097e7f5f8b76d661a0304faef54d353bd5522730991fe76c0af219516`
-- snapshot_bundle_hash: `66e413294bcd225972072730d4cdd318035672cd4e3b9c909d9e328e740b6b96`
+- snapshot_bundle_hash: `28b18e44cef0d211333c548b831ab24d3f7b2689980fb4ce098429f836d8611a`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `22`
+- snapshot_age_seconds: `24`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2291, "NO": 0.1391, "YES": 0.6319}`

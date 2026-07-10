@@ -8,77 +8,78 @@
     "amount_ada": "1,162,746",
     "deadline": "not stated in document",
     "deliverables": [
-      "WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience",
+      "WP1: Plutarch and Ply Maintenance, Compatibility & Developer Experience",
       "Critical breakages and serious vulnerabilities",
       "Protocol-era and hard-fork compatibility",
       "Bug fixes, correctness improvements, and optimizations",
-      "Documentation, examples, technical blog posts, and developer-experience improvements"
+      "Documentation, examples, technical blog posts, and developer-experience improvements",
+      "Intersect budget administration and oversight"
     ],
-    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor MLabs",
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs",
     "what": "Annual funding for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, and developer-experience improvements."
   },
   "claims": [
     {
+      "category": "economic",
+      "claim": "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
       "category": "technical",
-      "claim": "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+      "claim": "Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply is described as tooling for serializing Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "adoption",
-      "claim": "MLabs says Plutarch and Ply are extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
+      "claim": "MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in one section and at least 15 teams in another section.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "technical",
-      "claim": "MLabs claims public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while using comparatively low on-chain compute and memory.",
+      "claim": "MLabs claims its public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory.",
       "materiality": "medium",
       "support": "independently_verifiable"
     },
     {
       "category": "technical",
-      "claim": "The proposed funding period is intended to cover Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land during the funding period.",
-      "materiality": "high",
-      "support": "proposer_asserted"
-    },
-    {
-      "category": "technical",
-      "claim": "The proposal prioritizes resources first to critical breakages and serious vulnerabilities, then protocol-era and hard-fork compatibility, then bug fixes and optimizations, then documentation and developer-experience improvements.",
+      "claim": "The proposal says funded work will prioritize critical breakages and vulnerabilities, protocol-era and hard-fork compatibility, bug fixes and optimizations, and documentation and developer-experience improvements in that order.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
-      "category": "adoption",
-      "claim": "The proposal claims it directly supports Cardano 2030 Pillar 2 Adoption & Utility by maintaining core open-source developer tooling for smart contract builders.",
-      "materiality": "medium",
+      "category": "technical",
+      "claim": "The proposer claims continued maintenance is crucial because if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face friction, migration risk, workarounds, rewrites, or expensive stack migrations.",
+      "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "governance",
-      "claim": "The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain treasury withdrawal submission under the approved process.",
+      "claim": "The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission under the approved Budget Process Framework.",
       "materiality": "high",
       "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states the requested amount did not, at submission, breach the applicable 350M ada Net Change Limit for Epoch 613 to Epoch 713, either alone or in aggregate.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states Intersect will manage funds through Sundae Labs treasury management smart contracts with a TRSC, a PSSC, defined multisignature-style permissions, an Oversight Committee, reporting obligations, milestone-based disbursement controls, and a public dashboard.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
     },
     {
       "category": "economic",
-      "claim": "The requested 1,162,746 ada consists of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect budget administration fee.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "governance",
-      "claim": "The proposer states the withdrawal does not exceed the applicable 350M ada Net Change Limit at the moment of submission, either on its own or in aggregate.",
-      "materiality": "high",
-      "support": "independently_verifiable"
-    },
-    {
-      "category": "governance",
-      "claim": "Intersect will use Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, external oversight entities, multisignature-style authorization thresholds, milestone-based disbursement controls, and a public dashboard for auditability.",
-      "materiality": "high",
+      "claim": "The proposal discloses prior MLabs funding through prior governance actions, Project Catalyst Fund9 and Fund13 awards, and a previous 70,000 ada Intersect payment to update Plutarch for Conway-era features.",
+      "materiality": "medium",
       "support": "independently_verifiable"
     }
   ],
-  "summary": "The document requests 1,162,746 ada for annual maintenance and enhancement of MLabs' Plutarch and Ply tooling, routed through Intersect-managed treasury smart contracts with stated oversight, prior funding disclosures, and references to voting, audit, benchmark, and treasury-management sources.",
-  "output_sha256": "9a57b9e78b75d612d821ca60fb868c8b4b583df74b8cc08cae990df537bc57e4"
+  "summary": "The document requests 1,162,746 ada for MLabs Plutarch and Ply maintenance through Intersect-managed treasury contracts, citing ecosystem usage, technical performance, protocol compatibility needs, Intersect budget-process approval, NCL compliance, oversight arrangements, and prior funding disclosures.",
+  "output_sha256": "4807fe7d914a89769eecd6e8ea2d71aa3a9dd65b649b643cd87a5b83d706886e"
 }

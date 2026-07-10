@@ -5,80 +5,80 @@
   "reason": null,
   "model": "claude-opus-4-8",
   "request": {
-    "amount_ada": "3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee.",
-    "deadline": "No overall completion deadline is stated; some KPIs are measured within 90 days and 180 days of mainnet launch.",
+    "amount_ada": "3333000",
+    "deadline": "not stated in document",
     "deliverables": [
-      "WP1 DeFi Kernel Registry Website and Submission Process, including registry data structure, submission template, review checklist, metadata requirements, website updates, onboarding, monthly reports, and final impact report.",
-      "WP2 Spot Leverage Order Book, including protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, security review or audit, mainnet deployment, published script hashes and schemas, integration documentation, usage reports, and final reporting.",
-      "WP3 American Options Market-Making protocol, including specification, smart contract design, datum/redeemer schema draft, testnet deployment, security review or audit, mainnet deployment, published script hashes and schemas, integration documentation, usage reports, and final reporting.",
-      "WP4 Composable DeFi Transaction Builder SDK, including architecture, public API specification, registry schema reader, metadata parser, discovery helpers, transaction construction helpers, adapters, alpha release, SDK v1, examples, tests, integration support, and final SDK report.",
-      "Public reporting on progress, deployment status, registry status, KPI status, remaining risks, and post-incentive retention where applicable."
+      "DeFi Kernel Registry Website and Submission Process",
+      "Spot Leverage Order Book",
+      "American Options Market-Making protocol",
+      "Composable DeFi Transaction Builder SDK",
+      "Public documentation, reports, KPIs, security review or audit reports, mainnet deployments, and integration support"
     ],
-    "recipient": "Dano Finance; Minswap Labs is named as budget administrator.",
-    "what": "Treasury withdrawal to fund Dano Finance's DeFi Kernel registry/platform work, Spot Leverage Order Book, American Options Market-Making Pools, and a Composable DeFi Transaction Builder SDK."
+    "recipient": "Dano Finance, with Minswap Labs serving as budget administrator",
+    "what": "Dano Finance requests treasury funding to accelerate DeFi Kernel as an open standard for shared liquidity, on-chain financial intents, and global order-book coordination on Cardano, including registry work, two DeFi primitives, and an SDK."
   },
   "claims": [
     {
       "category": "economic",
-      "claim": "The proposal requests 3,333,000 ADA, with 3,300,000 ADA for delivery and 33,000 ADA for Minswap Labs' 1% administration fee.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "technical",
-      "claim": "Dano Finance will deliver four outputs: a public DeFi Kernel registry, a Spot Leverage Order Book, an American Options Market-Making protocol, and a Composable DeFi Transaction Builder SDK.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "technical",
-      "claim": "The DeFi Kernel is intended to be an open, fee-free, royalty-free compatibility standard where compatible protocols publish integration metadata rather than paying fees or open-sourcing smart contracts.",
-      "materiality": "medium",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "adoption",
-      "claim": "Dano Finance claims it currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
-      "materiality": "high",
-      "support": "proposer_asserted"
-    },
-    {
-      "category": "adoption",
-      "claim": "The proposal asserts that Cardano DeFi is fragmented because protocols expose contract structures, datum formats, redeemer logic, discovery mechanisms, and integration paths inconsistently.",
-      "materiality": "high",
-      "support": "proposer_asserted"
-    },
-    {
-      "category": "technical",
-      "claim": "The Spot Leverage Order Book is described as a Cardano-native leveraged spot trading protocol that coordinates collateral, borrowing, debt accounting, swap execution, risk parameters, settlement, repayment, and liquidation conditions.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "technical",
-      "claim": "The American Options work package will deliver a Cardano-native American options market-making protocol using an extended concentrated-pool model with strike, expiry, premium, collateral or exposure, exercise, settlement, and LP risk accounting logic.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "technical",
-      "claim": "The SDK is intended to help wallets, bots, indexers, market makers, and dApps discover DeFi Kernel-compatible intent, read registry metadata, construct transactions, and compose with order book and options contracts.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "adoption",
-      "claim": "The proposal sets KPIs including mainnet deployments after security review, USD 1,000,000 rolling 30-day trading volume and option notional volume within 90 days of launch, SDK v1 release, and at least one external integration started or completed.",
+      "claim": "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% budget administration fee.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "economic",
-      "claim": "Dano Finance says unused or unearned funds will remain unspent or be returned according to the administrator's process, and that 5% of protocol fees from the funded contracts will be returned for 12 months after mainnet launch.",
+      "claim": "The delivery budget is allocated as 300,000 ADA for the DeFi Kernel registry website and submission process, 1,000,000 ADA for a Spot Leverage Order Book, 1,000,000 ADA for an American Options Protocol, and 1,000,000 ADA for a Composable DeFi Transaction Builder SDK.",
       "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Dano Finance states that Cardano DeFi is fragmented across liquidity, metadata, and execution paths, limiting market depth, integrations, and advanced financial applications.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The DeFi Kernel registry is intended to publish script hashes, datum and redeemer schemas, integration steps, supported libraries, audit or security status, TVL references, and discovery mechanisms for compatible Cardano smart contracts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The DeFi Kernel is intended to be open, fee-free, royalty-free, and not require payment, licensing fees, certification fees, listing fees, revenue share, or smart-contract open-sourcing for registration.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Dano Finance says it currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The Spot Leverage Order Book work package will deliver protocol design, testnet deployment, security review or audit, mainnet release, published script hashes and schemas, usage reports, and integration documentation.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The American Options Protocol work package will deliver a Cardano-native American options market-making protocol with protocol design, testnet deployment, security review or audit, mainnet release, published script hashes and schemas, usage reports, and integration documentation.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The SDK work package will provide discovery, metadata parsing, transaction construction, adapters, examples, tests, documentation, package distribution, and integration support for DeFi Kernel-compatible contracts.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Dano Finance commits to return 5% of protocol fees generated by the Treasury-funded Spot Leverage Order Book and American Options market-making pool contracts for 12 months after mainnet launch, calculated after specified direct costs and reported publicly.",
+      "materiality": "medium",
       "support": "supported_in_proposal"
     }
   ],
-  "summary": "The document requests 3,333,000 ADA for Dano Finance to build DeFi Kernel registry infrastructure, two DeFi protocols, and an SDK, with milestones, KPIs, security-review commitments, Minswap Labs administration, unused-fund provisions, and a 12-month 5% protocol-fee return commitment.",
-  "output_sha256": "b23309c15b8b8be73ecaa7ef88c0a8c025cc56bf06ffb6a61c1fb3d2160e5fa4"
+  "summary": "The document describes a 3,333,000 ADA treasury request for Dano Finance to build a DeFi Kernel registry, leveraged spot order book, American options market-making protocol, and composable DeFi SDK, with Minswap Labs as budget administrator, milestone-based delivery, public reporting, security review or audit requirements, KPI targets, and a limited 12-month fee-return commitment.",
+  "output_sha256": "4f1816666ab1e267f332687f12989921add4cd13e8e692ac4e10f5688d89bd32"
 }

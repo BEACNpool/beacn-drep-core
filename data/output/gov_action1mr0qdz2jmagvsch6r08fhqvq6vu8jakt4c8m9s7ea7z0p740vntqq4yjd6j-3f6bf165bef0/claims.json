@@ -5,82 +5,83 @@
   "reason": null,
   "model": "claude-opus-4-8",
   "request": {
-    "amount_ada": "1,785,333 ADA",
-    "deadline": "Contract year covering 2026-2027; IOG contract stated as closing August 31, 2026; architecture assessment by Q3 2027",
+    "amount_ada": "1,785,333",
+    "deadline": "Contract year through 2026-2027; architecture assessment by Q3 2027; IOG contract noted as closing August 31, 2026.",
     "deliverables": [
-      "Protocol maintenance including cardano-node and cardano-wallet upgrades, hard fork readiness, platform support, release engineering, and security/dependency maintenance",
-      "Compatible Daedalus release at least 2 weeks before each mainnet hard fork",
-      "Keystone and Flex hardware wallet support in a stable release",
-      "CIP-30 dApp connector in Daedalus with documentation and verified interoperability",
-      "Ongoing user support including Japanese-language support and full Japanese translation for new features",
-      "Architecture assessment published publicly by Q3 2027",
-      "Independent financial audit and milestone-based oversight through Intersect"
+      "Integrate cardano-node and cardano-wallet releases and maintain Nix build infrastructure, dependency updates, security patches, and platform compatibility.",
+      "Provide Daedalus-compatible stable releases at least 2 weeks before each mainnet hard fork and maintain Leios, Peras, and Nested Transactions readiness.",
+      "Maintain binary signing continuity through the IOG signing arrangement for official releases.",
+      "Maintain Windows, macOS x86_64, macOS aarch64, and Linux platform builds with full Japanese translation across new features.",
+      "Add Keystone and Flex hardware wallet support and support newer hardware wallet models as they emerge.",
+      "Implement a CIP-30 dApp connector in Daedalus with documentation and no external API dependency.",
+      "Provide ongoing user support through GitHub, community forums, and direct channels, including Japanese-language support.",
+      "Publish a Daedalus architecture assessment by Q3 2027."
     ],
-    "recipient": "Se7en Labs, Inc. with Intersect serving as administrator and milestone verifier",
-    "what": "Treasury withdrawal to fund Daedalus Wallet Maintenance and Improvements 2026-2027 as a time-and-materials engagement delivered by Se7en Labs, Inc."
+    "recipient": "Se7en Labs, Inc. administered through Intersect",
+    "what": "Daedalus Wallet Maintenance and Improvements 2026-2027 as a time-and-materials engagement covering protocol maintenance, ecosystem expansion, user support, and related oversight."
   },
   "claims": [
     {
       "category": "technical",
-      "claim": "Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+      "claim": "Daedalus is presented as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.",
       "materiality": "high",
       "support": "proposer_asserted"
-    },
-    {
-      "category": "technical",
-      "claim": "Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with open-source Apache 2.0 code allowing auditability.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
     },
     {
       "category": "adoption",
-      "claim": "Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the proposer asserts the true count is meaningfully higher.",
+      "claim": "The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, with true usage asserted to be higher because privacy-conscious users are less likely to opt in.",
       "materiality": "medium",
       "support": "proposer_asserted"
     },
     {
       "category": "technical",
-      "claim": "Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and shipped Mithril bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, Nix modernization, and Daedalus 8.0 and 11.0.",
+      "claim": "Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026 and shipped Mithril snapshot bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization.",
       "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "technical",
-      "claim": "The proposal commits to stable Daedalus releases at least 2 weeks before each mainnet hard fork and to keeping cardano-node no more than 2 major versions behind the mainnet recommendation.",
-      "materiality": "high",
-      "support": "independently_verifiable"
-    },
-    {
-      "category": "technical",
-      "claim": "The work includes Keystone and Flex hardware wallet support, a CIP-30 dApp connector, Japanese localisation, user support, and a public architecture assessment.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
+      "support": "proposer_asserted"
     },
     {
       "category": "economic",
-      "claim": "The requested budget is 1,785,333 ADA, consisting of 1,666,667 ADA for labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "economic",
-      "claim": "Any unspent labor, test hardware, or audit budget at contract close is to be returned to the treasury.",
+      "claim": "The proposal says Se7en Labs has not received ADA from the Cardano Treasury within the last 24 months.",
       "materiality": "medium",
       "support": "proposer_asserted"
     },
     {
-      "category": "governance",
-      "claim": "Intersect will administer funds, verify milestones, authorize monthly time-and-materials disbursements, hold funds in a dedicated auditable account, and use Sundae Labs treasury management smart contracts with external oversight entities.",
+      "category": "economic",
+      "claim": "The requested 1,785,333 ADA budget is allocated to 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that any unspent labor, hardware, or audit budget at contract close will be returned to the treasury.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Success metrics include releases at least 2 weeks before each mainnet hard fork, cardano-node no more than 2 major versions behind the mainnet recommendation, 100% signed official releases, all four platform builds passing CI, Keystone and Flex support, CIP-30 support, Japanese support, and a public architecture assessment.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "governance",
-      "claim": "The proposer states the withdrawal does not breach the 350M ADA Net Change Limit covering Epoch 613 to Epoch 713 at the moment of submission and links to the relevant governance action.",
+      "claim": "The proposal says release-timing and version-currency metrics are independently verifiable from public GitHub repositories and the Cardano mainnet chain without relying on applicant self-reporting.",
       "materiality": "high",
       "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal asserts that the withdrawal does not breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713 at the moment of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that Intersect will administer funds, verify milestones, disburse monthly against verified work, hold funds in a dedicated auditable account, and use Sundae Labs treasury management smart contracts with external oversight committee participation.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
     }
   ],
-  "summary": "The document requests 1,785,333 ADA for a public-good maintenance and improvement program for Daedalus, emphasizing protocol compatibility, wallet security, open-source auditability, hardware wallet and CIP-30 support, Japanese localisation, and Intersect-administered milestone oversight.",
-  "output_sha256": "1dd3c2bc464d4d26bf911e9917cfd0dead060e51b1541875edbb49d100be61ae"
+  "summary": "The document requests 1,785,333 ADA for Se7en Labs to maintain and improve Daedalus over 2026-2027, with major claimed public-good benefits around full-node wallet continuity, hard fork readiness, hardware wallet support, CIP-30 dApp access, Japanese localisation, support, and Intersect-administered milestone oversight.",
+  "output_sha256": "ffaf32c1c62506b2392c7a8547d6c30905ef56f976c712b2826e442366ccc3ec"
 }

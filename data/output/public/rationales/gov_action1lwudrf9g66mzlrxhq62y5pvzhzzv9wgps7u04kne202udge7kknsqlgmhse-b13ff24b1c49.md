@@ -1,16 +1,16 @@
 # Rationale: gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse
 Recommendation: **NEEDS_MORE_INFO**
 Score: `-0.4633` (raw `-0.4633` + doctrine-LLM nudge `-0.03`) | Confidence: `0.79` | Readiness: `0.8`
-> Reasoning layer (precomputed): The proposal has a plausible public-benefit case for maintaining a widely used Cardano wallet and includes repayment, refund, and audit commitments, but the evidence quality remains thin for the size of the treasury ask: install base, transaction share, FTE need, conversion controls, auditor identity, and Pro-plan uptake are mostly asserted in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh ecosystem growth when a large spend depends on non-verified adoption and revenue assumptions, so a small cautionary negative nudge is justified beyond the mechanical assessment.
+> Reasoning layer (precomputed): The proposal gives a concrete budget, delivery period, repayment formula, and audit schedule, but several decision-critical adoption and usage claims are proposer-asserted and the ask is not milestone-based. Under a treasury withdrawal standard where thin or unverifiable asks receive caution, the evidence quality supports only a small negative nudge despite plausible public-benefit wallet maintenance.
 
 ## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Eternl or its public-benefit case.
+BEACN voted NEEDS_MORE_INFO because this treasury withdrawal cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Eternl’s value or of wallet maintenance funding.
 
-The action requests ₳2,350,000 for 12 months of Eternl operations from August 2026 through July 2027, including frontend and backend maintenance, infrastructure, support, governance tooling, audits, reporting, and continued development while Eternl introduces paid Pro plans. The proposal says this equals about $420,000 in annual operating cost, allocates the funds across frontend, backend, support, admin, and audits, and includes commitments around public wallets, stablecoin conversion, refunds, repayments, Pro-plan income reporting, and audits in February 2027 and August 2027.
+The action asks for ₳2,350,000 for 12 months of Eternl operations from August 2026 through July 2027. The proposal says this equals about $420,000, covering 6.0 FTE across 10 contributors, backend infrastructure, operations, monitoring, support, governance tooling improvements, independent treasury-use audits, and public reporting around Pro plan earnings, repayment, and donation transaction hashes. It also describes paid Pro plans and a repayment formula tied to surplus funds and paid plan income.
 
-Several core claims were supported by the proposal itself, including the requested amount, the budget allocation, the repayment structure, and the planned Pro pricing. But other important claims were still mostly proposer assertions rather than independently verified evidence, including the 6.0 FTE staffing need, install base, transaction-share claims, conversion controls, auditor identity, and expected Pro-plan uptake. The review also noted thin claims-and-evidence status, no documented milestone-gated disbursement, missing cost-benefit clarity, missing independent assurance, and an unknown execution-risk profile.
+Several core budget details were well-supported in the proposal: the amount requested, the 12-month delivery period, the stated operating cost, the audit schedule, Pro plan pricing, and the repayment structure. But some decision-critical claims remained proposer-asserted or thinly evidenced, including adoption and usage claims, and the plan for converting Ada into stablecoins, using a public company wallet, returning excess Ada, and keeping pre-conversion Ada undelegated to an SPO and delegated to abstain voting. The review also noted no documented milestone-gated disbursement, missing cost-benefit clarity, missing independent assurance, an unknown execution risk, and a stressed treasury-flow signal.
 
-The review gates established that the proposal anchor was pinned and replayable, and the strongest YES case was acknowledged: Eternl presented a plausible request to fund a widely used Cardano wallet with repayment, refund, audit, and reporting commitments. But because this is a large treasury withdrawal, BEACN applies elevated scrutiny. A directional YES or NO would require the verified Net Change Limit from public chain evidence, plus stronger independent support for the major cost, adoption, conversion, assurance, and delivery claims.
+The evidence that would unblock a directional vote is specific: the relevant Net Change Limit must be pinned and independently verified from public chain evidence. Stronger replayable evidence for the unsupported treasury handling and adoption claims, plus milestone-gated disbursement and independent assurance, would also reduce uncertainty under BEACN’s higher scrutiny standard for treasury withdrawals.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -31,21 +31,21 @@ The review gates established that the proposal anchor was pinned and replayable,
 - finding: Proposal document read by reasoning layer: yes
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: complete
-- finding: Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, audits, and continued development while Eternl introduces paid Pro plans.
-- finding: Recipient: Tastenkunst GmbH / Eternl
+- finding: Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, and improvements while Eternl introduces paid Pro plans.
+- finding: Recipient: Tastenkunst GmbH, Eternl
 - finding: Stated amount: 2350000
-- finding: Deliverables: 12 months of frontend and backend maintenance and development, Backend infrastructure and operations including multi-region servers, Cardano node operation, indexers, app servers, metadata aggregation, monitoring, and incident response, User support through Discord, Telegram, public channels, ecosystem project support, wiki updates, and educational videos, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and governance proposal creation, Eternl Core rewrite, Eternl Hub features, enhanced hardware wallet support, mobile Bluetooth hardware wallet support, and enhanced wallet data export, Periodic independent audits of treasury fund use in February 2027 and August 2027, Public reporting of balances, conversion rates, transaction hashes, Pro plan earnings, repayment hashes, refunds, and repayments
-- finding: Deadline/expiry: 12-month delivery period, August 2026 to July 2027
-- finding: Claim (economic, supported_in_proposal, high materiality): Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover an estimated $420,000 annual operating cost for 12 months.
-- finding: Claim (economic, supported_in_proposal, high materiality): The proposal allocates the ask as ₳1,292,500 frontend, ₳587,500 backend, ₳117,500 support, ₳305,500 admin, and ₳47,000 audits.
-- finding: Claim (economic, proposer_asserted, high materiality): The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.
-- finding: Claim (economic, proposer_asserted, high materiality): Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.
-- finding: Claim (economic, supported_in_proposal, high materiality): Every December and June, Eternl will use surplus remaining treasury stablecoins plus paid plan income above $420,000 to repay the treasury until $420,000 in Ada has been repaid, and later donate 50% of paid-plan income above $420,000 until an additional $210,000 in Ada has been donated.
-- finding: Claim (economic, supported_in_proposal, high materiality): Eternl plans Personal and Company Pro plans at $96/year and $360/year, and asserts that about 5,500 paying users, about 4.2% of its stated install base, would cover the $420,000 annual cost.
-- missing: Independent evidence for: The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.
-- missing: Independent evidence for: Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.
-- missing: Independent evidence for: Eternl states it has about 100,000 browser-extension installs and about 30,000 Android and iOS installs.
-- missing: Independent evidence for: Eternl states that 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- finding: Deliverables: 12 months of frontend and backend maintenance and development, Backend infrastructure, operations, monitoring, and incident response, User support and day-to-day operations, Governance tooling enhancements, Periodic independent audits of treasury fund use and oversight metrics, Public reporting of Pro plan earnings, repayment, and donation transaction hashes
+- finding: Deadline/expiry: Delivery period August 2026 to July 2027
+- finding: Claim (economic, supported_in_proposal, high materiality): Eternl requests ₳2,350,000, valued at about $420,000 using an Ada conversion rate of $0.1787, for a 12-month delivery period from August 2026 to July 2027.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal states that Eternl's annual operating cost is about $420,000, funding 6.0 FTE distributed across 10 contributors at $70,000 per FTE.
+- finding: Claim (governance, proposer_asserted, high materiality): Eternl says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, return any Ada above that amount to the treasury, and keep pre-conversion Ada undelegated to an SPO and delegated to abstain voting.
+- finding: Claim (governance, supported_in_proposal, high materiality): The proposal says the Audits allocation is for periodic independent audits of treasury fund use and oversight metrics, not technical security audits, with audits planned for February 2027 and August 2027 by an unaffiliated party.
+- finding: Claim (economic, supported_in_proposal, high materiality): Eternl proposes semiannual repayment checks in December and June, using surplus treasury stablecoins plus paid plan income above $420,000 to repay up to the received $420,000 value in Ada, then donating 50% of paid plan income above $420,000 until an additional $210,000 worth of Ada is donated.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal states that Eternl will introduce Pro plans priced at $96 per year for Personal and $360 per year for Company, and that about 5,500 users, or 4.2% of its install base, would fully cover the $420,000 annual cost.
+- missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, return any Ada above that amount to the treasury, and keep pre-conversion Ada undelegated to an SPO and delegated to abstain voting.
+- missing: Independent evidence for: Eternl claims an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
+- missing: Independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl.
+- missing: Independent evidence for: The proposal states that Eternl is a non-custodial Cardano light wallet for web, browser extension, Android, and iOS that users rely on for payments, staking, governance, and DApp interaction.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Treasury analysis
@@ -78,8 +78,8 @@ The review gates established that the proposal anchor was pinned and replayable,
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover an estimated $420,000 annual operating cost for 12 months." and clears the evidence gates.
-- finding: Strongest NO: a material claim is unsupported — "The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $420,000 using an Ada conversion rate of $0.1787, for a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates.
+- finding: Strongest NO: a material claim is unsupported — "Eternl says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, return any Ada above that amount to the treasury, and keep pre-conversion Ada undelegated to an SPO and delegated to abstain voting." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -97,12 +97,12 @@ The review gates established that the proposal anchor was pinned and replayable,
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2350000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover an estimated $420,000 annual operating cost for 12 months." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $420,000 using an Ada conversion rate of $0.1787, for a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The proposal has a plausible public-benefit case for maintaining a widely used Cardano wallet and includes repayment, refund, and audit commitments, but the evidence quality remains thin for the size of the treasury ask: install base, transaction share, FTE need, conversion controls, auditor identity, and Pro-plan uptake are mostly asserted in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh ecosystem growth when a large spend depends on non-verified adoption and revenue assumptions, so a small cautionary negative nudge is justified beyond the mechanical assessment.
+- Advisory model lean was -0.030 (display cap ±0.05) and had zero influence on the binding score: The proposal gives a concrete budget, delivery period, repayment formula, and audit schedule, but several decision-critical adoption and usage claims are proposer-asserted and the ask is not milestone-based. Under a treasury withdrawal standard where thin or unverifiable asks receive caution, the evidence quality supports only a small negative nudge despite plausible public-benefit wallet maintenance.
 - Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -114,8 +114,8 @@ The review gates established that the proposal anchor was pinned and replayable,
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - No milestone-gated disbursement documented.
-- Claims and evidence missing: Independent evidence for: The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.
-- Claims and evidence missing: Independent evidence for: Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.
+- Claims and evidence missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, return any Ada above that amount to the treasury, and keep pre-conversion Ada undelegated to an SPO and delegated to abstain voting.
+- Claims and evidence missing: Independent evidence for: Eternl claims an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis missing: cost-benefit clarity
@@ -128,10 +128,10 @@ The review gates established that the proposal anchor was pinned and replayable,
 
 ## Reproducibility
 - input_hash: `b13ff24b1c499108ca110632cf2fc7da59cd8ff406880a54cacc7c8527a10b43`
-- snapshot_bundle_hash: `2b6ba7c6c37c81167d4469c8eadaac5a517f7b4f18ca5bdd608a53f9233e9efb`
+- snapshot_bundle_hash: `73da02893d6bdc04b7ca98a11489489d5cc49fa92cf57918c36724860375d564`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `4`
 - uncertainty_band: `MEDIUM`

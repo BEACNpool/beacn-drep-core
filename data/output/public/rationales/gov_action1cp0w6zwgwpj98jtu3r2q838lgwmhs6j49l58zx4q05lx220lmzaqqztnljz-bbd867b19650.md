@@ -143,12 +143,12 @@ A material claim remains proposer-asserted or thinly supported: CCI V1 integrati
 
 ## Reproducibility
 - input_hash: `bbd867b196508a5a2d8fa3fb70aa36fe33e140fc7f11e6de8d92fee9e116b149`
-- snapshot_bundle_hash: `f74e0bbe281e94a2c853e0d5fb0b297f1841ae4fb2e0f0847d1b88c71a7f9838`
+- snapshot_bundle_hash: `1c590fe04116bb4f19516e85b128d6a4f51a0a5012578f5d9ba4ac508b006bbf`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `6`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

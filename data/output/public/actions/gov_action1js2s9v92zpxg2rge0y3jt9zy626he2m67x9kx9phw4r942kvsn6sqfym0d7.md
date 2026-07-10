@@ -39,10 +39,10 @@ Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insuffic
 
 ## Proof of vote
 - input_hash: `f7c7ac2b9ba95f869049d18492c17ecd8219016ac07f28ab020ced58fb66a121`
-- snapshot_bundle_hash: `81c25bc82db5764487f391c15f185a4ef9bb66b77053927afcace148c726deae`
+- snapshot_bundle_hash: `ac9a013266cc9f6cec068547e49c3206b6097615f37a0736fd962de36a0c5be3`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
-- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
+- resources_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- core_commit: `6a69215e397aead82a0107f47e3ca65a265f18a4`
 - score: `0.0`
 - confidence: `0.6`
 

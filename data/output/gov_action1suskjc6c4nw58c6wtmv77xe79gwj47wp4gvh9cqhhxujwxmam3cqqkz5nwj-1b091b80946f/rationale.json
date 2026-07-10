@@ -15,8 +15,8 @@
     "model": "claude-opus-4-8",
     "direction": "NO",
     "score_adjustment": -0.03,
-    "confidence": 0.72,
-    "rationale": "The proposal contains substantial operational detail and acknowledges major risks, but the ask is large, yield is modeled rather than guaranteed, the audit report is not included, references are empty, and the treasury would take stablecoin, custody, smart contract, drawdown, and ADA opportunity-cost exposure. The mechanical assessment can score the structured terms, but BEACN's doctrine supports a small cautionary nudge where treasury stewardship and independently reproducible evidence remain weaker than the claimed upside.",
+    "confidence": 0.74,
+    "rationale": "A small cautionary nudge is warranted because the ask is large, the expected treasury benefit depends on modeled yield and stablecoin conversion, and several high-materiality traction and vault-performance claims are asserted in the document without attached references. The proposal does include risk disclosure, reporting, return mechanics, and multisig oversight, so the adjustment should remain modest rather than a broad rejection by reasoning alone.",
     "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
     "cap": 0.05
   },
@@ -51,11 +51,11 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 9000000",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month liquidity deployment into Strike Finance V2 rather than grant funding.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal contains substantial operational detail and acknowledges major risks, but the ask is large, yield is modeled rather than guaranteed, the audit report is not included, references are empty, and the treasury would take stablecoin, custody, smart contract, drawdown, and ADA opportunity-cost exposure. The mechanical assessment can score the structured terms, but BEACN's doctrine supports a small cautionary nudge where treasury stewardship and independently reproducible evidence remain weaker than the claimed upside.",
+    "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: A small cautionary nudge is warranted because the ask is large, the expected treasury benefit depends on modeled yield and stablecoin conversion, and several high-materiality traction and vault-performance claims are asserted in the document without attached references. The proposal does include risk disclosure, reporting, return mechanics, and multisig oversight, so the adjustment should remain modest rather than a broad rejection by reasoning alone.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -68,8 +68,8 @@
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "No milestone-gated disbursement documented.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
-    "Claims and evidence missing: Independent evidence for: The proposal claims liquidity is the primary bottleneck to Strike's further growth and that increased stablecoin liquidity has coincided with higher volume, fee generation, and vault performance.",
-    "Claims and evidence missing: Independent evidence for: The proposal states Strike V2 has had unofficial reviews and that an official audit by Christian Schmitz is expected to be finalized by July 1, 2026, but the report is not included in the document.",
+    "Claims and evidence missing: Independent evidence for: Strike claims it has processed over 1.13 billion USD in cumulative volume, facilitated about 968,000 to 1,001,000 trades, served over 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity provider profit.",
+    "Claims and evidence missing: Independent evidence for: The proposal states Strike V2 produced 87,288,044 USD in total volume from 2026-03-20 through 2026-06-15, including 75,322,500 USD in 30-day volume and 29,220,000 USD in 7-day volume.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: milestone-gated disbursement",
     "Risk review missing: independent assurance",
@@ -80,10 +80,10 @@
     "verified ecosystem benefit or strategic necessity"
   ],
   "input_hash": "1b091b80946f67485feefea5fb75a44b5fb54c34efc039817dd93cb3cf83751b",
-  "snapshot_bundle_hash": "46752526f555fd6f19af8278045ee151aba686e23446e2d388f464482d90b69d",
+  "snapshot_bundle_hash": "6f7703f899cc4cb4b17b6fd89fce1cfc4d0e1be52cf15fe9e56c198e9556189b",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -106,7 +106,7 @@
     "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -147,21 +147,23 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: 12-month productive deployment of treasury capital into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM stablecoin liquidity and returned with realized yield.",
-          "Recipient: Independent multisig council composed of Rami from Snek, Phil from Surf, and James from Monetra/Moneta; exact withdrawal address not stated in document.",
+          "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity",
+          "Recipient: independent multisig council administering Strike Finance liquidity deployment",
           "Stated amount: 9000000",
-          "Deliverables: Sell 9,000,000 ADA for USDM in an orderly manner to provide stablecoin-denominated liquidity for Strike Finance V2., Return realized yield from the first six months to the Cardano Treasury at month 6., Return 100% of treasury-owned deployed assets, including remaining principal and realized yield minus any realized losses, at month 12., Provide monthly public transparency reports covering deployment status, utilization, volume, open interest, profit and loss, yield, drawdown, stablecoin exposure, market quality, distributions, and material risks., Provide third-party assurance reports at deployment confirmation, month-6 yield distribution, and month-12 return of funds.",
-          "Deadline/expiry: 12 months, with month-6 yield distribution and month-12 final return",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 9,000,000 ADA for a 12-month liquidity deployment into Strike Finance V2 rather than grant funding.",
-          "Claim (economic, supported_in_proposal, high materiality): The deployed ADA will be sold for USDM, with modeled deployment of approximately 1,350,000 USDM at ADA = 0.15 USD.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal models a 10% USD-denominated annual percentage rate producing about 135,000 USD or 900,000 ADA-equivalent annual yield, but states returns are not guaranteed.",
-          "Claim (adoption, supported_in_proposal, high materiality): Strike claims more than 1.13 billion USD cumulative volume, roughly one million trades, over 3,000 unique traders, more than 1.16 million USD protocol revenue, and over 3.25 million USD liquidity-provider profit.",
-          "Claim (adoption, supported_in_proposal, high materiality): Strike V2 data from 2026-03-20 through 2026-06-15 is presented as 87,288,044 USD total volume, 410,800 trades, 2,681 users, 30,105 USD revenue, and 1,246,007 USD peak open interest.",
-          "Claim (economic, proposer_asserted, high materiality): The proposal claims liquidity is the primary bottleneck to Strike's further growth and that increased stablecoin liquidity has coincided with higher volume, fee generation, and vault performance."
+          "Deliverables: Deploy treasury-owned capital as USDM liquidity for Strike Finance V2, Return realized yield from the first six months to the Cardano Treasury at month 6, Return 100% of treasury-owned deployed assets, including remaining principal and realized yield, at month 12 subject to realized losses, Provide monthly public transparency reports covering deployment status, liquidity utilization, volume, open interest, profit and loss, yield, drawdown, stablecoin exposure, market quality metrics, distributions, and material risks, Publish independent third-party assurance reports for deployment confirmation, month-6 yield distribution, and month-12 return of funds",
+          "Deadline/expiry: 12 months after deployment",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding.",
+          "Claim (economic, supported_in_proposal, high materiality): The deployed ADA will be sold for USDM, modeled at ADA = 0.15 USD to create approximately 1,350,000 USDM of stablecoin liquidity.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal models a 10% USD-denominated APR producing approximately 135,000 USD, or 900,000 ADA-equivalent, in annual yield, while stating returns are not guaranteed.",
+          "Claim (adoption, proposer_asserted, high materiality): Strike claims it has processed over 1.13 billion USD in cumulative volume, facilitated about 968,000 to 1,001,000 trades, served over 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity provider profit.",
+          "Claim (adoption, proposer_asserted, medium materiality): The proposal states Strike V2 produced 87,288,044 USD in total volume from 2026-03-20 through 2026-06-15, including 75,322,500 USD in 30-day volume and 29,220,000 USD in 7-day volume.",
+          "Claim (economic, proposer_asserted, high materiality): The proposal asserts the Strike Liquidity Provider vault has 985,271.59 USD TVL, 43.52% APR, +8.85% all-time return, 1.15% maximum drawdown, and a 4.97 Sharpe ratio over two months of history."
         ],
         "missing": [
-          "Independent evidence for: The proposal claims liquidity is the primary bottleneck to Strike's further growth and that increased stablecoin liquidity has coincided with higher volume, fee generation, and vault performance.",
-          "Independent evidence for: The proposal states Strike V2 has had unofficial reviews and that an official audit by Christian Schmitz is expected to be finalized by July 1, 2026, but the report is not included in the document."
+          "Independent evidence for: Strike claims it has processed over 1.13 billion USD in cumulative volume, facilitated about 968,000 to 1,001,000 trades, served over 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity provider profit.",
+          "Independent evidence for: The proposal states Strike V2 produced 87,288,044 USD in total volume from 2026-03-20 through 2026-06-15, including 75,322,500 USD in 30-day volume and 29,220,000 USD in 7-day volume.",
+          "Independent evidence for: The proposal asserts the Strike Liquidity Provider vault has 985,271.59 USD TVL, 43.52% APR, +8.85% all-time return, 1.15% maximum drawdown, and a 4.97 Sharpe ratio over two months of history.",
+          "Independent evidence for: The proposal says Christian Schmitz is conducting an official audit expected by July 1, 2026, and that the report will be published upon completion."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -206,8 +208,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month liquidity deployment into Strike Finance V2 rather than grant funding.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"The proposal claims liquidity is the primary bottleneck to Strike's further growth and that increased stablecoin liquidity has coincided with higher volume, fee generation, and vault performance.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Strike claims it has processed over 1.13 billion USD in cumulative volume, facilitated about 968,000 to 1,001,000 trades, served over 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity provider profit.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -229,7 +231,36 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal and the applicable Net Change Limit has not been pinned and independently verified from public chain evidence. That blocks a directional vote under BEACN\u2019s treasury rules, even though the proposal contains meaningful operational detail.\n\nThe action asks for 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity, not a grant. The proposal says the ADA would be sold into USDM, used as stablecoin liquidity, with realized yield returned at month 6 and principal plus remaining realized yield returned at month 12, minus any realized losses. It also promises monthly transparency reports and third-party assurance reports. The proposal models a 10% USD-denominated annual return, but clearly states returns are not guaranteed.\n\nSeveral basic claims were supported in the proposal itself: the amount, the 12-month structure, the USDM deployment model, Strike\u2019s reported historical usage figures, the independent multisig custody structure, and the stated risks. But important claims were not independently supported by replayable public evidence, especially the claim that liquidity is Strike\u2019s main growth bottleneck and that added stablecoin liquidity has driven higher volume, fees, and vault performance. The proposal also says an official audit was expected by July 1, 2026, but the audit report was not included.\n\nThis is a conservative, evidence-based hold. A directional vote would require the Net Change Limit to be pinned and independently verified from public chain evidence, stronger independent evidence for the key growth and liquidity claims, the missing audit or assurance evidence, a documented milestone-gated disbursement plan, and clearer risk materials such as independent assurance and a dependency map.",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.7,
+      "downside_risk": 0.25,
+      "composite": -0.11,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity"
+      ]
+    }
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this treasury withdrawal cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal asks for 9,000,000 ADA for a 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, rather than a grant. The plan is to sell the ADA for USDM, provide stablecoin-denominated liquidity, return realized yield after six months, and return the remaining treasury-owned assets and realized yield after 12 months, subject to realized losses. The proposal also includes monthly transparency reports, third-party assurance reports, risk disclosures, and independent multisig custody.\n\nSeveral core terms are supported in the proposal itself: the amount requested, the 12-month deployment structure, the ADA-to-USDM model, the modeled 10% USD-denominated APR, the proposed multisig setup, and the identified risks. However, several high-materiality performance and adoption claims remain unsupported by independent replayable evidence, including Strike\u2019s claimed cumulative volume, trade count, user count, protocol revenue, liquidity provider profit, recent V2 volume, and vault-performance metrics.\n\nThis is a conservative, evidence-based hold, not a rejection of the idea. A directional vote would be unblocked by a pinned and independently verified Net Change Limit from public chain evidence, plus stronger replayable public evidence for the major adoption, volume, revenue, and vault-performance claims. The review also noted missing milestone-gated disbursement, independent assurance, and a dependency map, which matter because treasury votes consume shared ADA and require a higher evidence bar.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -249,7 +280,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "31798d5ed5fabb14688d71adf83eddf7be63300b9bd66056488a9eb9e24aeef3"
+      "output_sha256": "8b0419b639951c5d2487390ac1b41563ed2e8ac12f7aa65b8867846a9a9b00a2"
     },
     "doctrine": {
       "family": "treasury",
@@ -269,7 +300,7 @@
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "73b7090997657a6c9efbfd74eedf13270a1bf3915023861605d2bb69ed31eb52"
+      "output_sha256": "bd6297f6c84d75f65330d7238164eec1c8300f1c21ed6b9244b67dd0397ccb7d"
     },
     "human_message": {
       "source": "precomputed",
@@ -277,10 +308,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "c88f572cd8967ab8529a70f94027221b30279387059e7d6021957cbb6ee01aca"
+      "output_sha256": "9b2f50455154904e81acdbaa30089dca7b6f748cee40c980216c8251d70d4dbf"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a71a49cd3f1483dd4fec9593.md",
-  "rationale_anchor_hash": "a71a49cd3f1483dd4fec9593cc9805cfd0f0a5b15a0391a13efcc0aa4b5edf24"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/83c7e9f0aadd0cc5c6c5ff4e.md",
+  "rationale_anchor_hash": "83c7e9f0aadd0cc5c6c5ff4ec9eebbbba2de97fb67dcfd84cccb414635eee093"
 }

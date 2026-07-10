@@ -42,7 +42,7 @@
   ],
   "inferences": [
     "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): Doctrine-aware offline lean for a parameter action: 4 well-supported claim(s), 2 unsupported high-materiality claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to \u00b10.05).",
+    "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 4 well-supported claim(s), 2 unsupported high-materiality claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to \u00b10.05).",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -60,10 +60,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "b72cb0b06083394ca79fd9d8c23a0c84d43197ee7f18ca61bd81f52317e5b4c6",
-  "snapshot_bundle_hash": "725a13af2ad8085028bcec6d9ce45f7f99d8a087722d4dc790891b6b00d502f4",
+  "snapshot_bundle_hash": "d50264c7ea716218501442d0fc6a4f2428eee3a71d600f0ba16ff73c4438137a",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -80,7 +80,7 @@
     "snapshot_age_seconds": 5,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -188,6 +188,23 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {}
+  },
   "human_message": "BEACN records ABSTAIN on Update Plutus Cost Models. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a ParameterChange. The cached anchor describes the request as: Update Plutus Cost Models. The strongest grounded claim is: This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\n\nA material claim remains proposer-asserted or thinly supported: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus. Reason code: RULE_THRESHOLD_UNMET.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
@@ -239,6 +256,6 @@
       "prompt_sha256": "6934f22e715b8ee47ca3eae22575316665c49408009b8eda3570a5f404a29a3f",
       "output_sha256": "37fb17b3b0f6de015a8e59417acca294bbac27ca2585847e5f03c7148a76502a"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }
 }

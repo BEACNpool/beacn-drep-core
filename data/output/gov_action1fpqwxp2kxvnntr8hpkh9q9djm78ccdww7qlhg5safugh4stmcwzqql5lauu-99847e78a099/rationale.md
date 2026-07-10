@@ -81,7 +81,7 @@ A material claim remains proposer-asserted or thinly supported: The majority of 
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Doctrine-aware reasoning layer nudged the score by -0.040 (clamped to ±0.05): Doctrine-aware offline lean for a info action: 1 well-supported claim(s), 6 unsupported high-materiality claim(s). Net bounded adjustment -0.040 (clamped to ±0.05).
+- Advisory model lean was -0.040 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 1 well-supported claim(s), 6 unsupported high-materiality claim(s). Net bounded adjustment -0.040 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -96,12 +96,12 @@ A material claim remains proposer-asserted or thinly supported: The majority of 
 
 ## Reproducibility
 - input_hash: `99847e78a09941961e20e53d8550bbd110800320c95c9c089e87e01521ac31d4`
-- snapshot_bundle_hash: `c64e1ad05c68bcd45617cc74c012280239969544d62acc2e8ea4d150ce0e0bcb`
+- snapshot_bundle_hash: `3d592696c2feff91441dca8a9d4890f2c08a1f4a27076ef117dc232e978b9167`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `23`
+- snapshot_age_seconds: `24`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2307, "NO": 0.7225, "YES": 0.0469}`

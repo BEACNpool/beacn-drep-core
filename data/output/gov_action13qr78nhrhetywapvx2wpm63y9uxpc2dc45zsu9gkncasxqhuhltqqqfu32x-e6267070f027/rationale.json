@@ -57,7 +57,7 @@
   ],
   "inferences": [
     "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): Doctrine-aware offline lean for a treasury action: 6 well-supported claim(s), 2 unsupported high-materiality claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to \u00b10.05).",
+    "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a treasury action: 6 well-supported claim(s), 2 unsupported high-materiality claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to \u00b10.05).",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -81,10 +81,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "e6267070f027023bb21b502991ef3a7431f3d20939d013bed6e3c1156b610d8a",
-  "snapshot_bundle_hash": "3313c3c2b563e73e8176d117c49070f94c3974ca2267242c3458df5cc2f5eaea",
+  "snapshot_bundle_hash": "4d2293f5dd287ac3d40e8ded837f6ef57919f9a2682405a1594eb37dc7d3831c",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,7 +107,7 @@
     "snapshot_age_seconds": 10,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "snapshot_time": "2026-07-10T13:26:29.366380Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -230,6 +230,36 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.65,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.35,
+      "composite": -0.24,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence"
+      ]
+    }
+  },
   "human_message": "BEACN records NEEDS_MORE_INFO on Cardano x Draper Dragon: Orion Fund. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano x Draper Dragon: Orion Fund. It asks the treasury for 50.00M ADA. The strongest grounded claim is: (\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap.\n\nA material claim remains proposer-asserted or thinly supported: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed. Reason code: VERIFIED_NCL_REQUIRED.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
@@ -281,6 +311,6 @@
       "prompt_sha256": "68fd2bd4fd679205e975d94e012aafaa494df67ee6c7b687dd133d45d56aa600",
       "output_sha256": "057e4b0b6594ce0c03f20ac36cd86215baf47d71431b8e7d1bee6bb4be1db80c"
     },
-    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }
 }

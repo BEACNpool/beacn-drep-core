@@ -79,7 +79,7 @@ A residual watch item: this claim remains proposer-asserted rather than independ
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by +0.005 (clamped to ±0.05): Doctrine-aware offline lean for a info action: 6 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to ±0.05).
+- Advisory model lean was +0.005 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 6 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to ±0.05).
 - Directional vote forced by completed readiness packet (treasury-aware).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -94,10 +94,10 @@ A residual watch item: this claim remains proposer-asserted rather than independ
 
 ## Reproducibility
 - input_hash: `0f5e3a24efd488e90465a2d416d301eb35afdd4bb69bc46d81299675b6856c07`
-- snapshot_bundle_hash: `fc0e98ab8fbfb4f7a43386a1c8a3721fd15f970dfb813f803fabdfdbe37f77e7`
+- snapshot_bundle_hash: `1e84e5b1bb868dc8ea13a9b2a1814546a5564cd56c16eea485da1a20c0ba5ad0`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `13`
 - uncertainty_band: `LOW`

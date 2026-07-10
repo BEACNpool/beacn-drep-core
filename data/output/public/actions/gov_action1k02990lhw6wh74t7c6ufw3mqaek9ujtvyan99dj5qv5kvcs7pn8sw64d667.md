@@ -47,9 +47,9 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Proof of vote
 - input_hash: `41e1b5327d5bf4d81fb7d4d3587753d581d2b21664982f54655ae8792d0e8f50`
 - snapshot_bundle_hash: `5a7e6f6719fda9b24130a625835e4b3e21f0b2cf12eb15f6c2ede70d7b663e02`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
-- core_commit: `6a69215e397aead82a0107f47e3ca65a265f18a4`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
+- resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
 - score: `-0.2133`
 - confidence: `0.7733`
 

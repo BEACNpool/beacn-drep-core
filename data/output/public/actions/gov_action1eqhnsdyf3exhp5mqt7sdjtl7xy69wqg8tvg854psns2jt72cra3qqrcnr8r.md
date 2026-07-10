@@ -43,9 +43,9 @@ Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insuffic
 ## Proof of vote
 - input_hash: `b72cb0b06083394ca79fd9d8c23a0c84d43197ee7f18ca61bd81f52317e5b4c6`
 - snapshot_bundle_hash: `d50264c7ea716218501442d0fc6a4f2428eee3a71d600f0ba16ff73c4438137a`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
-- core_commit: `6a69215e397aead82a0107f47e3ca65a265f18a4`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
+- resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
 - score: `0.0`
 - confidence: `0.45`
 

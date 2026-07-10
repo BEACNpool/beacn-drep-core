@@ -43,9 +43,9 @@ Vote: ABSTAIN. For this HardForkInitiation (active), evidence quality was insuff
 ## Proof of vote
 - input_hash: `29e8f7e0d9844fc6000296a8494f08c2f450fd3f4bc0869fa1b5f117b05b6417`
 - snapshot_bundle_hash: `72b0ee6f6c2637187d805fe9e784de8521fae3f6554e6dce8580047ec4628290`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
-- core_commit: `6a69215e397aead82a0107f47e3ca65a265f18a4`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
+- resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
 - score: `0.0`
 - confidence: `0.5`
 

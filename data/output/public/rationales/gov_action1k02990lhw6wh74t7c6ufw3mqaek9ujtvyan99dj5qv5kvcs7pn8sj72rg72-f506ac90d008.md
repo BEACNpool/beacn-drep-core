@@ -1,16 +1,14 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72
-Recommendation: **NO**
-Score: `-0.2733` (raw `-0.2533` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7883` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (precomputed): The proposal has relatively concrete deliverables, governance process references, NCL assertions, and oversight mechanics, but several core value claims about ecosystem need, AI-agent demand, and integration impact remain largely proposer-asserted, while the ask is large for software and documentation work under BEACN's post-AI cost caution. A small negative nudge is justified for treasury stewardship and evidence quality without overriding the deterministic assessment.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because the proposal asked for a large treasury withdrawal while a core technical claim was not independently supported by replayable evidence.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 1,684,050 ada to fund Tx3 by TxPipe over 12 months, including 1,308,000 ada for work, a 327,000 ada contingency reserve, and a 49,050 ada Intersect administration fee. The proposal described Tx3 as an open API layer for Cardano dApp protocols, with 12 additional protocol onboardings, developer and agent coverage, an MCP server, documentation, SDKs, and live JSON-RPC endpoints.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Tx3 by TxPipe, described as an open API layer for Cardano dApp protocols. It asks the treasury for 1,684,050 ADA. The strongest grounded claim is: The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.
 
-Several parts of the proposal were supported or independently checkable: the pinned anchor document was available, the budget breakdown was clear, the 12-month delivery structure was specific, the action had passed the relevant Intersect Budget Process support step, and the requested amount was asserted to be within the applicable Net Change Limit at submission. The proposal also cited existing Tx3 protocol registry activity and oversight through Intersect-administered treasury management smart contracts.
-
-The NO vote came from treasury scrutiny and evidence quality. Treasury withdrawals consume shared ada and set precedent, so BEACN applies a higher bar. In this review, claims about Tx3 providing a standard open-source interface, the lack of a common ecosystem interface, and the resulting integration-cost problem remained too dependent on proposer assertion. The review also found thin claims-and-evidence support, missing sustainability and cost-benefit clarity, no independent assurance, no clear rollback or remedy path, and an unfavorable treasury flow signal. That was enough for the costs and precedent risk to outweigh the supported case for funding.
+A material claim remains proposer-asserted or thinly supported: Tx3 is intended to provide a standard, open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -55,7 +53,7 @@ The NO vote came from treasury scrutiny and evidence quality. Treasury withdrawa
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.67
 - missing: sustainability path
 - missing: cost-benefit clarity
@@ -103,6 +101,7 @@ The NO vote came from treasury scrutiny and evidence quality. Treasury withdrawa
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): The proposal has relatively concrete deliverables, governance process references, NCL assertions, and oversight mechanics, but several core value claims about ecosystem need, AI-agent demand, and integration impact remain largely proposer-asserted, while the ask is large for software and documentation work under BEACN's post-AI cost caution. A small negative nudge is justified for treasury stewardship and evidence quality without overriding the deterministic assessment.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -111,7 +110,7 @@ The NO vote came from treasury scrutiny and evidence quality. Treasury withdrawa
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Claims and evidence missing: Independent evidence for: Tx3 is intended to provide a standard, open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.
 - Claims and evidence missing: Independent evidence for: The proposal states that there is currently no common interface mechanism across the Cardano ecosystem, causing integrators to relearn protocols, rebuild understanding independently, and face higher integration costs.
 - Claims and evidence status is thin.
@@ -120,15 +119,20 @@ The NO vote came from treasury scrutiny and evidence quality. Treasury withdrawa
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+
 ## Reproducibility
 - input_hash: `f506ac90d0086750c41146410d2151ceb8b2fb82bc05b935909ace209ce32a2e`
-- snapshot_bundle_hash: `1b0eecd033a004b269e3c68d2973c6d064c0650effc49fb3ebe1eeb22cc00c3e`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `7bb8e6624d2c0f054ffeb7679e5af4f19592dc217feef20d8b48737d95e44c03`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `2`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2047, "NO": 0.7491, "YES": 0.0462}`
+- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
 

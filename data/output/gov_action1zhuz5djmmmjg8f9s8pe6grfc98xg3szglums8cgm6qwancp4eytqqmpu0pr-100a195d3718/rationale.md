@@ -1,6 +1,6 @@
 # Rationale: gov_action1zhuz5djmmmjg8f9s8pe6grfc98xg3szglums8cgm6qwancp4eytqqmpu0pr
 Recommendation: **NO**
-Score: `-0.34` (raw `-0.3` + doctrine-LLM nudge `-0.04`) | Confidence: `0.545` | Readiness: `0.85`
+Score: `-0.3` (raw `-0.3` + doctrine-LLM nudge `-0.04`) | Confidence: `0.535` | Readiness: `0.85`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 1 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.040 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
@@ -92,13 +92,13 @@ A material claim remains proposer-asserted or thinly supported: The Chang+1 hard
 
 ## Reproducibility
 - input_hash: `100a195d3718ad9e188ca909272f239a2fb28e4d96afa43aaee8bf312e97107f`
-- snapshot_bundle_hash: `879668bda56600be45a7c7cfb944d1b7089f5ebf8e36332914e5234412fe8935`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `45e8bfccf6924b95d26c8769688890fadad6ddae8ad0aa6a4b934a8636a0ea71`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `24`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `26`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2253, "NO": 0.73, "YES": 0.0447}`
+- decision_probs: `{"ABSTAIN": 0.2351, "NO": 0.7185, "YES": 0.0464}`
 

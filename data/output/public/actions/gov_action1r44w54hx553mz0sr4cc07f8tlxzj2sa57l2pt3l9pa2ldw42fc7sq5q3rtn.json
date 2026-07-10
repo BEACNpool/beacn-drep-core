@@ -9,7 +9,7 @@
     "detected_at": "2026-02-09T18:50:25.950966+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "published_at": "2026-07-07T13:00:01.166949+00:00",
     "signed": false,
     "submitted": false,
@@ -17,28 +17,33 @@
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NO",
-    "score": -0.3633,
-    "confidence": 0.7808,
+    "vote": "NEEDS_MORE_INFO",
+    "score": -0.3433,
+    "confidence": 0.7758,
     "input_hash": "5ca69dbccd8b297c61f782f8d2d9dfb6d717d499b5411f01cf9a7e936c32afe0",
-    "snapshot_bundle_hash": "e38e6be6ef169a3654b34d5ec124c676ee40cc902f514ccf8c099f5c7d932c1f",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "snapshot_bundle_hash": "4b16435fb0ad805043720affc79328838f205e05c680cac3e9c213a9168ce5c5",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1r44w54hx553mz0sr4cc07f8tlxzj2sa57l2pt3l9pa2ldw42fc7sq5q3rtn-5ca69dbccd8b.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the proposal substantiates \"This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms.\" and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.36; confidence 78.1%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms.\" and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.",
     "summary_raw": "Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to \u00b10.05): Doctrine-aware offline lean for a treasury action: 7 well-supported claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
     "top_fixes": [
-      "Provide line-item budget.",
-      "Provide milestone-gated disbursement.",
-      "Provide sustainability path."
+      "Provide: independent ecosystem-value evidence packet",
+      "Provide: verified ecosystem benefit or strategic necessity",
+      "Provide: cost comparables, budget proportionality, or sustainability evidence"
     ],
     "markdown_path": "/data/output/public/rationales/gov_action1r44w54hx553mz0sr4cc07f8tlxzj2sa57l2pt3l9pa2ldw42fc7sq5q3rtn-5ca69dbccd8b.md",
-    "missing_evidence": [],
+    "missing_evidence": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence",
+      "delivery controls, milestones, assurance, or remedy path"
+    ],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -94,7 +99,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -161,7 +166,7 @@
     "anchor_hash": "2c6f7b5ff6456abf209329c4ce8b72e978722144ef67a60950f684cc8a2a7c0f",
     "file_sha256": "5071c6491bd19c1c2ab63ea00c67aaac7dceb1d4c7c1010571524b778cf66ef8",
     "content_bytes": "14419",
-    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "fetched_at_utc": "2026-07-10T03:21:55Z",
     "download_path": "/proposals/gov_action1r44w54hx553mz0sr4cc07f8tlxzj2sa57l2pt3l9pa2ldw42fc7sq5q3rtn.txt",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
@@ -174,12 +179,11 @@
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "resource_ids_used": [
-      "gov_actions_api",
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
       "drep_vote_history_snapshot",
@@ -190,15 +194,15 @@
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
       "gov_anchor_documents",
-      "deep_research_dossiers"
+      "deep_research_dossiers",
+      "ecosystem_value_profiles",
+      "treasury_policy_state",
+      "treasury_portfolio",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
     ]
   },
   "inputs_used": [
-    {
-      "resource_id": "gov_actions_api",
-      "type": "csv",
-      "path": "registries/resource_registry.csv"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "type": "csv",
@@ -253,19 +257,44 @@
       "resource_id": "deep_research_dossiers",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "ecosystem_value_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_policy_state",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_portfolio",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
-    "budget_pressure": 0.3633,
+    "budget_pressure": 0.3433,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.7808
+    "governance_alignment": 0.7758
   },
   "freshness": {
-    "snapshot_age_seconds": 14,
+    "snapshot_age_seconds": 15,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -1,6 +1,6 @@
 # Rationale: gov_action15ce4qnwug759939wqv782pvh6qg68khspg8kh02gmex99mcsytwqqqr7jkr
 Recommendation: **ABSTAIN**
-Score: `0.01` (raw `-0.02` + doctrine-LLM nudge `+0.03`) | Confidence: `0.5725` | Readiness: `0.0`
+Score: `-0.02` (raw `-0.02` + doctrine-LLM nudge `+0.03`) | Confidence: `0.575` | Readiness: `0.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
@@ -97,13 +97,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Reproducibility
 - input_hash: `9708f2a8fd91bde7fcd48df5ea395b71bb055e82fcde2bcd9eaf385558ed1b3e`
-- snapshot_bundle_hash: `8c0f3a8c68264b597886645612e8be669df7111a347f38b49df0cbc7f4843415`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `530f4b2f78b197d6e5c8e9e4cba54380f76c09325305b254585ad7a495c6db24`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `11`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `12`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4631, "NO": 0.2584, "YES": 0.2784}`
+- decision_probs: `{"ABSTAIN": 0.4637, "NO": 0.2881, "YES": 0.2481}`
 

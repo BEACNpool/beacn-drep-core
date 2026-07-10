@@ -1,16 +1,14 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste
-Recommendation: **NO**
-Score: `-0.2333` (raw `-0.2533` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7783` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (precomputed): The claims show a public open-source infrastructure project with a defined 12-month maintenance scope, externally checkable repository and voting references, NCL compliance assertions, and described milestone/oversight controls. The positive nudge is small because several important performance and prior-delivery claims remain proposer-asserted and the treasury ask is still material.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a material treasury withdrawal and the evidence record was too thin on important claims, especially the core technical claim that Dolos is a lightweight Rust data node providing efficient chain-data access without full-node overhead.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 540,750 ada to fund Year 2 of TxPipe’s Dolos work over 12 months. The proposal described maintenance, protocol compatibility, performance improvements, bug fixing, documentation, community support, AI-friendly integration resources, and milestone-based disbursement through Intersect treasury management smart contracts. It also stated the amount included 525,000 ada for Dolos maintenance and enhancement plus a 15,750 ada Intersect administration fee.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2, including maintenance, enhancement, community support, and AI-friendly documentation/integration resources over 12 months. It asks the treasury for 540750 ADA. The strongest grounded claim is: The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.
 
-Several claims were supported well enough for review: the requested amount and fee structure, the presence of a pinned and replayable proposal anchor, the stated repository activity metrics and GitHub reference, the Intersect Budget Process support threshold documentation, the Net Change Limit compliance claim, and the described oversight and milestone controls. BEACN also recognized the strongest YES case: this is public open-source infrastructure with a defined 12-month scope and some externally checkable references.
-
-The NO came from the higher bar applied to treasury spending. Key claims remained proposer-asserted or lacked independent evidence, including the core technical description of Dolos, the claimed alignment with the relevant budget pillar, execution risk, independent assurance, remedy or rollback paths, sustainability path, and cost-benefit clarity. BEACN’s review also noted an unsustainable treasury flow signal, so even though the proposal had meaningful positives, the evidence did not justify approving this withdrawal from shared ada.
+A material claim remains proposer-asserted or thinly supported: Dolos is described as a lightweight Cardano data node written in Rust that provides efficient chain-data access without the overhead of traditional full nodes. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -55,7 +53,7 @@ The NO came from the higher bar applied to treasury spending. Key claims remaine
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.68
 - missing: sustainability path
 - missing: cost-benefit clarity
@@ -103,6 +101,7 @@ The NO came from the higher bar applied to treasury spending. Key claims remaine
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to ±0.05): The claims show a public open-source infrastructure project with a defined 12-month maintenance scope, externally checkable repository and voting references, NCL compliance assertions, and described milestone/oversight controls. The positive nudge is small because several important performance and prior-delivery claims remain proposer-asserted and the treasury ask is still material.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -111,7 +110,7 @@ The NO came from the higher bar applied to treasury spending. Key claims remaine
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Claims and evidence missing: Independent evidence for: Dolos is described as a lightweight Cardano data node written in Rust that provides efficient chain-data access without the overhead of traditional full nodes.
 - Claims and evidence missing: Independent evidence for: The proposer claims Dolos aligns with Pillar 2 focus area A.3 on Developer Experience and open-source incentives for maintaining core Cardano SDKs, frameworks, and infrastructure.
 - Claims and evidence status is thin.
@@ -120,15 +119,20 @@ The NO came from the higher bar applied to treasury spending. Key claims remaine
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+
 ## Reproducibility
 - input_hash: `669706a423aa13b99df39c7de461593e9749783b36c1b1805dce75bae79ef2d4`
-- snapshot_bundle_hash: `23268494c2c921d6d2d06c1614e7fe52a4fc1a2c28b6b74edc2707d32ce21f8f`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `dde335322c44ea3c5a6dacd750c38d718ec9edb447e0119a3133eaf5592e1cdb`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `1`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `2`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.214, "NO": 0.7379, "YES": 0.048}`
+- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
 

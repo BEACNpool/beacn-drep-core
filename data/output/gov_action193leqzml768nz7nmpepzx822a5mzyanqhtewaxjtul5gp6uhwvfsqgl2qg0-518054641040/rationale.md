@@ -1,14 +1,14 @@
 # Rationale: gov_action193leqzml768nz7nmpepzx822a5mzyanqhtewaxjtul5gp6uhwvfsqgl2qg0
-Recommendation: **NO**
-Score: `-0.2033` (raw `-0.2233` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7708` | Readiness: `0.0`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.1833` (raw `-0.1833` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7658` | Readiness: `0.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a treasury action: 8 well-supported claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records NO on Withdraw ₳99,600 for BloxBean Java Tools Maintenance and Enhancement. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+BEACN records NEEDS_MORE_INFO on Withdraw ₳99,600 for BloxBean Java Tools Maintenance and Enhancement. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
 The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw ₳99,600 for BloxBean Java Tools Maintenance and Enhancement. It asks the treasury for 99.6k ADA. The strongest grounded claim is: This treasury withdrawal funds BloxBean Java Tools Maintenance and Enhancement which will provide the following services: BloxBean provides several essential Java libraries and tools for building applications on Cardano.
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -50,7 +50,7 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: unknown
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -101,6 +101,7 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
 - Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to ±0.05): Doctrine-aware offline lean for a treasury action: 8 well-supported claim(s), treasury doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -109,7 +110,7 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -117,15 +118,21 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+- delivery controls, milestones, assurance, or remedy path
+
 ## Reproducibility
 - input_hash: `518054641040420c14563cdb76f13b8df706f04a9ff4f6b20da282413e5cd493`
-- snapshot_bundle_hash: `dbdc6e67c98ab5ef979da72c1140777f374f7bdd3fdacf79f151458e608e777c`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `a87a5c2fefb1aec213e723da3614d752079481d54fbcf9d481bcc3d01368ad84`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `14`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `16`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2215, "NO": 0.729, "YES": 0.0495}`
+- decision_probs: `{"ABSTAIN": 0.5114, "NO": 0.4276, "YES": 0.061}`
 

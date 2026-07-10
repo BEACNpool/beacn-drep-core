@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 62.7%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 62.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -38,10 +38,10 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 
 ## Proof of vote
 - input_hash: `96b73a53cd152102a8b344cfabc34f46bedaf50774072184dac8244029c2ba00`
-- snapshot_bundle_hash: `18fea1e385e4fdb6828cd3954f7342eb3d1880e32b3b37ce0019df84a3a35015`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `0.11`
-- confidence: `0.6275`
+- snapshot_bundle_hash: `c243c5e7e0b05914d51b0bae483d8a86130ae2f716150f1a8f758b473efb7b44`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.08`
+- confidence: `0.62`
 

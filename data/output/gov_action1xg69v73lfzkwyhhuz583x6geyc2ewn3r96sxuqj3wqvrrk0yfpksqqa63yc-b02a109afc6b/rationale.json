@@ -1,14 +1,14 @@
 {
   "action_id": "gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NO",
+  "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": null,
+  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3033,
-  "raw_score": -0.2833,
+  "score": -0.2433,
+  "raw_score": -0.2433,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,8 +28,21 @@
   ],
   "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
   "directional_threshold": 0.06,
-  "confidence": 0.7958,
+  "confidence": 0.7808,
   "readiness_score": 0.85,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.75,
+    "cost_efficiency": 0.5,
+    "downside_risk": 0.1625,
+    "composite": -0.0869,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity"
+    ]
+  },
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -43,6 +56,7 @@
   ],
   "inferences": [
     "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal shows credible public-benefit alignment through open-source infrastructure, narrowed scope, milestones, and named deliverables, but several important adoption, governance, and execution claims remain proposer-asserted rather than evidenced inside the anchor text. Given the large treasury request and the doctrine's caution around treasury stewardship and evidence quality, a small negative nudge is justified rather than a positive one.",
+    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -51,7 +65,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
     "Claims and evidence missing: Independent evidence for: Delivery is milestone-based and will be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
@@ -60,14 +74,16 @@
     "Risk review missing: independent assurance",
     "Risk review missing: dependency map"
   ],
-  "missing_evidence": [],
+  "missing_evidence": [
+    "independent ecosystem-value evidence packet",
+    "verified ecosystem benefit or strategic necessity"
+  ],
   "input_hash": "b02a109afc6b522ac3daf4dc1c28c8ed8e5ab931ffdfa33f0317fef319c49fb4",
-  "snapshot_bundle_hash": "e76d11b4a51d5dc34e74bb3f33e0cef230e087b257cdaba9d0f1f41e0c12fb4e",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "dba0c3fb78371720cc0dd0ff8733f5e52d7b79a205c1d0639bcf805eed8f12cc",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
@@ -78,19 +94,24 @@
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
     "gov_anchor_documents",
-    "deep_research_dossiers"
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.0449,
-    "NO": 0.7569,
-    "ABSTAIN": 0.1982
+    "YES": 0.0476,
+    "NO": 0.4622,
+    "ABSTAIN": 0.4902
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -154,7 +175,7 @@
           "Clawback/refund path: confirmed",
           "Cost/benefit clarity: confirmed",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
           "Financial confidence: 0.86"
         ],
         "missing": [
@@ -208,8 +229,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NO because this was a large treasury request and several important claims did not meet the evidence bar required for spending shared ADA. The proposal had credible parts, but the review found that cost, precedent, and unsupported adoption and governance claims outweighed the demonstrated benefit.\n\nThe action requested \u20b32,464,844 for a 9-month continuation of Scalus by Lantr Engineering, covering maintenance, Dijkstra readiness, interoperability with JVM and JS/TS ecosystems, and initial application runtime components. The proposer described Scalus as established open-source Cardano infrastructure, and that claim was well-supported. The proposal also supported the budget, narrowed scope, reduced resubmission, and technical need for Dijkstra readiness.\n\nThe weaker parts were evidence quality around adoption and governance. The review found missing independent evidence for claims that Scalus is used directly by named projects and reused by several ecosystem tools. It also found missing independent evidence for the claim that delivery would be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance. Treasury analysis was also missing a sustainability path, and the risk review was missing independent assurance and a dependency map.\n\nBecause treasury withdrawals require elevated scrutiny, BEACN treated these gaps as material. The proposal had a pinned, replayable anchor and medium execution risk, and it presented a strong YES case around Scalus as established infrastructure. But with a \u20b32,464,844 request, thin evidence status, unsupported material claims, and an advisory treasury sustainability penalty, the evidence did not justify a directional YES.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Scalus 2026: Maintenance, Dijkstra Readiness, Interoperability & Application Runtime. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund a 9-month continuation of Scalus covering maintenance, Dijkstra hard fork readiness, interoperability across JVM and JS/TS ecosystems, and a first scoped application runtime. It asks the treasury for 2464844 ADA. The strongest grounded claim is: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.\n\nA material claim remains proposer-asserted or thinly supported: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit. Reason code: VERIFIED_NCL_REQUIRED.",
+  "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -252,15 +273,15 @@
       "output_sha256": "403cff16dc314bae2a472d1fa010b4493b0559c302d7379af28814af767b111b"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "deterministic-heuristic",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "4738b396a4f58d92bb00f86047b906adc37aadfec454efa6558d1cf93eb0bbe6"
+      "model": "local-deterministic",
+      "prompt_sha256": "cc3708c5d47c33e4cdda1ef87fc9e42fb633d5e726f161ec8b4421a0ead07ee5",
+      "output_sha256": "b5476d19d40884fb117dfea03d622fe601fb70b0538e9e7011c9dc52e4e0210e"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/963fc0ad93cff21554a2877e.md",
-  "rationale_anchor_hash": "963fc0ad93cff21554a2877e2e378dcc4bd1754afa7eb64dc55dbd76a4b8d75c"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/dd1110050089724af184b473.md",
+  "rationale_anchor_hash": "dd1110050089724af184b4739697564cbd94c9cadc519765901e8d14d08486dc"
 }

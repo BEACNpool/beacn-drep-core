@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Intersect’s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the “van Rossem Hard Fork” in memory of Cardano community contributor Max van Rossem." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.12; confidence 47.9%.
+Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Intersect’s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the “van Rossem Hard Fork” in memory of Cardano community contributor Max van Rossem." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 47.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -40,10 +40,10 @@ Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient 
 
 ## Proof of vote
 - input_hash: `fcb0d5b04c8abdfeea39f6f50fa9c85b52162a2701c2b94c80f31b5468679b20`
-- snapshot_bundle_hash: `c5ae868552e6daf828d3f7d100be6309efdf7689ce81b2050ee9031a75e732e8`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `0.115`
-- confidence: `0.4787`
+- snapshot_bundle_hash: `7cc21a1b5c772dc48edb3668a6a5da45cd4c2df7284ebe49099bddeaf14d77a8`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.11`
+- confidence: `0.4775`
 

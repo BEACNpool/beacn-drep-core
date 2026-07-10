@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance proposal seeks to reduce the treasury cut from 20% to 10% to enhance staking incentives, improve decentralization, and align economic sustainability with the Cardano ecosystem's long term growth." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 62.0%.
+Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "This governance proposal seeks to reduce the treasury cut from 20% to 10% to enhance staking incentives, improve decentralization, and align economic sustainability with the Cardano ecosystem's long term growth." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 60.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -27,7 +27,7 @@ Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insuffic
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Rule-based system; does not infer unstated intent.
+- Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
@@ -39,10 +39,10 @@ Vote: ABSTAIN. For this ParameterChange (expired), evidence quality was insuffic
 
 ## Proof of vote
 - input_hash: `f7c7ac2b9ba95f869049d18492c17ecd8219016ac07f28ab020ced58fb66a121`
-- snapshot_bundle_hash: `7200f15fee9fa30217c49f8a103eb60892bf47f08fd7527257d81cb329d22cc3`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `0.08`
-- confidence: `0.62`
+- snapshot_bundle_hash: `b62d28dfd957af8bb06f3f43ada263d3652f0defc0e437968cfd653de8f7ef4f`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.0`
+- confidence: `0.6`
 

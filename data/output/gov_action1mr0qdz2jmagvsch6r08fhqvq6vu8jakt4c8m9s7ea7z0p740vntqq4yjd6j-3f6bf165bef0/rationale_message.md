@@ -1,13 +1,11 @@
 # Se7en Labs: Daedalus Wallet Maintenance and Improvements 2026-2027
-**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — deterministic-heuristic)_
 
-BEACN voted NO because this treasury withdrawal did not meet the higher evidence bar required for spending shared ADA, especially with a material claim about Daedalus being Cardano’s only full-node desktop wallet left unsupported by independent evidence.
+BEACN records NEEDS_MORE_INFO on Se7en Labs: Daedalus Wallet Maintenance and Improvements 2026-2027. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The proposal requested 1,785,333 ADA for Se7en Labs, Inc. to maintain and improve Daedalus through 2026-2027, with Intersect administering and disbursing funds. The work included protocol maintenance, hard fork readiness, hardware wallet support, CIP-30 support, Japanese localisation, user support, multi-platform builds, and an architecture assessment by Q3 2027. The proposer also claimed prior Daedalus delivery work under an IOG contract and cited opt-in telemetry of about 4,000 monthly active users, while saying the true count is meaningfully higher.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Daedalus Wallet maintenance and improvements for 2026-2027 as a time-and-materials engagement delivered by Se7en Labs, Inc. It asks the treasury for 1,785,333 ADA. The strongest grounded claim is: The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited.
 
-Several parts were well-supported. The budget breakdown was provided, success metrics were independently verifiable in several cases, release timing could be checked through public GitHub repositories and mainnet chain data, and Intersect’s milestone and fund administration role was described. The strongest YES case was that Daedalus private keys are generated and stored on the user’s device, never transmitted externally, and auditable through Apache 2.0 open-source code.
-
-The NO came from the remaining gaps under treasury scrutiny. Claims and evidence were thin overall, independent evidence was missing for the full-node uniqueness claim and the usage claim, and the treasury review was missing a sustainability path and clear cost-benefit case. The risk review also lacked independent assurance and a rollback or remedy path. With medium execution risk, an advisory treasury-flow sustainability penalty, and a flag score reducing confidence, BEACN concluded the proposal did not justify a directional YES for this withdrawal.
+A material claim remains proposer-asserted or thinly supported: Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends. Reason code: VERIFIED_NCL_REQUIRED.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

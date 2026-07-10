@@ -1,0 +1,13 @@
+# Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — precomputed)_
+
+BEACN voted ABSTAIN because the review was missing baseline evidence needed for a responsible treasury vote. This is a conservative, evidence-based hold, not a rejection of the idea or the proposer.
+
+The action requested a withdrawal of 3,961,538 ada for “Bringing Real-World Payments to Cardano with Wirex,” submitted by Intersect on behalf of Wirex, with funds going to the listed 2026 Treasury Reserve Smart Contract stake address. The proposal says the funding would cover WP1 payments and card infrastructure, including open-source payments infrastructure, on-chain settlement, banking rails, stablecoin and wallet connections, Visa card issuance linked to on-chain balances, and self-custody wallet integration. It also states that 3,846,153 ada would fund WP1 and 115,385 ada would cover the Intersect Budget Administration fee.
+
+Some governance and treasury-control claims were supported or independently verifiable, including the on-chain withdrawal value, the listed treasury smart contract address, references to Hydra voting and audited results, the claim that the request did not breach the applicable 350M Net Change Limit, and the existence of treasury management addresses, oversight entities, authorization thresholds, and an auditing dashboard. But important delivery and adoption claims remained only proposer assertions, including the proposed technical buildout and Visa card spending claims. The review also found missing or incomplete baseline materials: treasury amount in lovelace was missing from required review fields, the proposal summary, budget analysis, feasibility assessment, risk analysis, alternatives analysis, failure-mode analysis, and community impact analysis were incomplete or missing, and risk mitigation and independent assurance evidence were thin.
+
+The evidence that would unblock a directional vote is a complete review dossier: the required treasury amount field in lovelace, a complete proposal summary, line-item budget, milestone-gated disbursement evidence, feasibility and risk assessments, alternatives and failure-mode analysis, community impact analysis, and independent evidence for the major technical and adoption claims. Without that, BEACN could not vote yes or no without overstating certainty.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

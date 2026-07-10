@@ -1,13 +1,13 @@
 # gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j
 
 ## Vote
-- Decision: **NO**
+- Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states any unspent labor, hardware, or audit budget at contract close will be returned to the treasury; Provide sustainability path. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.28; confidence 79.1%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -30,7 +30,7 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.
 - Claims and evidence missing: Independent evidence for: According to opt-in telemetry cited by the proposer, Daedalus has approximately 4,000 monthly active users, while the proposer asserts the true count is meaningfully higher.
@@ -41,16 +41,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Risk review missing: rollback/remedy path
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposal states any unspent labor, hardware, or audit budget at contract close will be returned to the treasury.
-- Provide sustainability path.
-- Provide cost-benefit clarity.
+- Provide: independent ecosystem-value evidence packet
+- Provide: verified ecosystem benefit or strategic necessity
+- Provide: cost comparables, budget proportionality, or sustainability evidence
 
 ## Proof of vote
 - input_hash: `3f6bf165bef09c0437ec8ba119e6b340c47839e11f08c1f31bc1322d93a74bcf`
-- snapshot_bundle_hash: `0948c40dd6cfe4edb605a20019e420cac9ece1d2f24b22cdf32f7ce86ac420c8`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `-0.2833`
-- confidence: `0.7908`
+- snapshot_bundle_hash: `e1712c285c1a0c5ad7d1932a7aa20b861a2416fbafbb2e3049b8e35ad4b4ec8b`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `-0.2433`
+- confidence: `0.7808`
 

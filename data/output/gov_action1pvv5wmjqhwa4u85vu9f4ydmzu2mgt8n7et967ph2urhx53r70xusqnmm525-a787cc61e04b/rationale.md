@@ -1,14 +1,14 @@
 # Rationale: gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525
-Recommendation: **YES**
-Score: `-0.03` (raw `-0.07` + doctrine-LLM nudge `+0.04`) | Confidence: `0.7075` | Readiness: `0.85`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `-0.07` + doctrine-LLM nudge `+0.04`) | Confidence: `0.7` | Readiness: `0.85`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records YES on Hard Fork to Protocol Version 10 ("Plomin" Hard Fork). The deterministic gates found enough evidence and no decisive blocker.
+BEACN records ABSTAIN on Hard Fork to Protocol Version 10 ("Plomin" Hard Fork). This is a conservative abstention because the evidence does not justify stronger certainty.
 
 The action is a HardForkInitiation. The cached anchor describes the request as: Hard Fork to Protocol Version 10 ("Plomin" Hard Fork). The strongest grounded claim is: We propose to upgrade Cardano mainnet to Protocol Version 10.
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: DREP_DISTRIBUTION_MISSING.
 
 ## Review Tree
 - overall_status: `ready`
@@ -78,7 +78,6 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Inferences
 - Doctrine-aware reasoning layer nudged the score by +0.040 (clamped to ±0.05): Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05).
-- Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -87,16 +86,17 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Uncertainty
 - No DRep distribution available.
+- Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan
 
 ## Reproducibility
 - input_hash: `a787cc61e04b8ad7a6904f569d2b69ff13f01e9e341d36c2ef5d04fdf151be76`
-- snapshot_bundle_hash: `b6ff9bc71d5a07ada267717ced9ea0f261491f7ca32d0c27dfe20ca4b7f134cd`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `367fbe7b9c525b8debe76c12eac24b2a1d3d98ee4f524a29527dba1fc6499f21`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `23`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `25`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2316, "NO": 0.2816, "YES": 0.4869}`
+- decision_probs: `{"ABSTAIN": 0.495, "NO": 0.2525, "YES": 0.2525}`
 

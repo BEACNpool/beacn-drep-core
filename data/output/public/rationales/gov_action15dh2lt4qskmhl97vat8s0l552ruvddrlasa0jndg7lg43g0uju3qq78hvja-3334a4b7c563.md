@@ -1,14 +1,14 @@
 # Rationale: gov_action15dh2lt4qskmhl97vat8s0l552ruvddrlasa0jndg7lg43g0uju3qq78hvja
-Recommendation: **YES**
-Score: `0.14` (raw `0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.635` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05). — **this nudge changed the directional outcome.**
+Recommendation: **ABSTAIN**
+Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.6275` | Readiness: `0.0`
+> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records YES on Securing Generic Top-Level Domains for the Cardano Ecosystem. The deterministic gates found enough evidence and no decisive blocker.
+BEACN records ABSTAIN on Securing Generic Top-Level Domains for the Cardano Ecosystem. This is a conservative abstention because the evidence does not justify stronger certainty.
 
 The action is a InfoAction. The cached anchor describes the request as: Securing Generic Top-Level Domains for the Cardano Ecosystem. The strongest grounded claim is: The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026.
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: RULE_THRESHOLD_UNMET.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -96,13 +96,13 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Reproducibility
 - input_hash: `3334a4b7c563edebf85cffae78b468f9099bb82786d8cb220711f11b42586389`
-- snapshot_bundle_hash: `8a573ff2032576f7e54ef5063afc0fe0e225f8d6dc4fce0ea51613eb9d02adb9`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `0a5aab9d4d2ab3cc22ca02b0aabe6f2acf66fc11979ac26fcb8fa876c3e2a85a`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `12`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `14`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2406, "NO": 0.1206, "YES": 0.6388}`
+- decision_probs: `{"ABSTAIN": 0.4769, "NO": 0.1516, "YES": 0.3716}`
 

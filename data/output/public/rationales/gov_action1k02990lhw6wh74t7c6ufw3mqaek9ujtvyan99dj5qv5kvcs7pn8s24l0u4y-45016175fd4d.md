@@ -1,16 +1,14 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s24l0u4y
-Recommendation: **NO**
-Score: `-0.2733` (raw `-0.2533` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7883` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (precomputed): The proposal has stronger-than-thin governance and custody evidence through checkable voting, NCL, smart-contract, audit, and dashboard references, but the core economic justification and deliverable specifics remain limited relative to a 3.81M ada treasury withdrawal. A small cautionary nudge is warranted because treasury stewardship and evidence quality are only partly satisfied by process controls, not by detailed scope, milestones, or cost basis in the supplied claims.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because the proposal asks for a large treasury withdrawal, but the supplied evidence did not sufficiently support the core technical and economic case for spending 3,810,423 ada.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Withdraw 3,810,423 ada for Mithril Protocol. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 3,810,423 ada for Mithril Protocol continuous development through Intersect, with 3,699,440 ada for development and 110,983 ada for Intersect’s administration fee. The proposal included milestone-based disbursement controls through treasury smart contracts, oversight arrangements, reporting obligations, and a public dashboard. It also cleared some important process checks: the anchor document was available, the request did not breach the applicable Net Change Limit, and it had passed the 2026 Intersect Budget Process Hydra Voting threshold.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Mithril Protocol continuous development through Intersect on behalf of the vendor. It asks the treasury for 3,810,423 ADA. The strongest grounded claim is: The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol continuous development and 110,983 ada for the Intersect budget administration fee.
 
-However, the review found the evidence base too thin for a treasury withdrawal of this size. The strongest technical claims, including that Mithril enables trustless certification of Cardano state using stake-based threshold multi-signatures and addresses slow full-node synchronization and light-client trust reliance, were treated as proposer assertions without independent evidence in the supplied review. The review also found missing cost-benefit clarity, no stated sustainability path, unknown execution risk, no independent assurance, and no clear rollback or remedy path.
-
-This was not a rejection of Mithril’s potential value. It was a treasury-stewardship decision: process controls and governance support helped the proposal, but they did not fully answer whether the requested amount was justified by independently supported deliverables, costs, risks, and remedies.
+A material claim remains proposer-asserted or thinly supported: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -56,7 +54,7 @@ This was not a rejection of Mithril’s potential value. It was a treasury-stewa
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.52
 - missing: sustainability path
 - missing: cost-benefit clarity
@@ -104,6 +102,7 @@ This was not a rejection of Mithril’s potential value. It was a treasury-stewa
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): The proposal has stronger-than-thin governance and custody evidence through checkable voting, NCL, smart-contract, audit, and dashboard references, but the core economic justification and deliverable specifics remain limited relative to a 3.81M ada treasury withdrawal. A small cautionary nudge is warranted because treasury stewardship and evidence quality are only partly satisfied by process controls, not by detailed scope, milestones, or cost basis in the supplied claims.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -112,7 +111,7 @@ This was not a rejection of Mithril’s potential value. It was a treasury-stewa
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Claims and evidence missing: Independent evidence for: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.
 - Claims and evidence missing: Independent evidence for: Mithril addresses slow full-node synchronization and centralized-trust reliance by light clients.
 - Claims and evidence status is thin.
@@ -121,15 +120,20 @@ This was not a rejection of Mithril’s potential value. It was a treasury-stewa
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+
 ## Reproducibility
 - input_hash: `45016175fd4db381f1fc62ea19259c8740ea72dd9286c4e9693159d8057f9f09`
-- snapshot_bundle_hash: `5f3f6e2f4908cfbddd3d902d7a3e47c70d5cc26f41551993e6dd845996c57284`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `dac3b2ace2e7c4a751436c8eae752cd8901ebe223d68184922c9e8bc427c6420`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `2`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `3`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2047, "NO": 0.7491, "YES": 0.0462}`
+- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
 

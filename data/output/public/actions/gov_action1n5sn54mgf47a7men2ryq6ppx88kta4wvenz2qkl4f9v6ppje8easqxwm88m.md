@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.16; confidence 74.0%.
+Vote: YES. For this InfoAction (expired), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 72.8%.
 
 ## Assessment tree
 - assessment_status: `ready`
@@ -35,10 +35,10 @@ Vote: YES. For this InfoAction (expired), available evidence supports proceeding
 
 ## Proof of vote
 - input_hash: `1c44dea097e7f5f8b76d661a0304faef54d353bd5522730991fe76c0af219516`
-- snapshot_bundle_hash: `7eab105da1561b351a3a9c1e164537aef89ecb5931891f27373e952de547abe3`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `0.16`
-- confidence: `0.74`
+- snapshot_bundle_hash: `e579c330d2835fa2ba9661c46c55dc85d5f6cc4efdf921706e81d6ba9b3344f9`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.11`
+- confidence: `0.7275`
 

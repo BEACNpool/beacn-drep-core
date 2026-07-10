@@ -1,14 +1,14 @@
 # Rationale: gov_action1llcd7ezdx299xeep9azm4dvsvz7783qfrhykcu3sv2ykl4sewv2qq4myfpk
-Recommendation: **YES**
-Score: `0.14` (raw `0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.635` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05). — **this nudge changed the directional outcome.**
+Recommendation: **ABSTAIN**
+Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.6275` | Readiness: `0.0`
+> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records YES on Rename the Chang 2 Hard Fork to the Plomin Hard Fork. The deterministic gates found enough evidence and no decisive blocker.
+BEACN records ABSTAIN on Rename the Chang 2 Hard Fork to the Plomin Hard Fork. This is a conservative abstention because the evidence does not justify stronger certainty.
 
 The action is a InfoAction. The cached anchor describes the request as: Rename the Chang 2 Hard Fork to the Plomin Hard Fork. The strongest grounded claim is: The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the “Plomin Hard Fork” in memory of Cardano community contributor Matthew Plomin.
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: RULE_THRESHOLD_UNMET.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -96,13 +96,13 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Reproducibility
 - input_hash: `9336ef5637bb03eb5c0de8f773325264ec5304f741ae25106f0adf48330bfc43`
-- snapshot_bundle_hash: `9621a2a99dcfb9716b78f321102400b315a7f3382a75263f235489383c07a8ca`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `51c3fc9ba169a25cb1caf47c6cbf1e1873fc13d4256b4b7005f12499faf66973`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `23`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `25`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2406, "NO": 0.1206, "YES": 0.6388}`
+- decision_probs: `{"ABSTAIN": 0.4769, "NO": 0.1516, "YES": 0.3716}`
 

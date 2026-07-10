@@ -1,13 +1,13 @@
 # gov_action1ttgs45ulfxs0jwkfrecystc3flduhszmyzk8wnd7yw5za77tsg9qq4afmus
 
 ## Vote
-- Decision: **NO**
+- Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `enacted`
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact." though 7 review blocker(s) remain open. What would change this vote to YES: Provide independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g; Provide independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.43; confidence 49.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact." though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,9 +19,7 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (7), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 32.92M ADA
@@ -30,8 +28,7 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
 - Claims and evidence missing: Independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.
 - Claims and evidence status is thin.
@@ -46,16 +43,16 @@ Vote: NO. For this TreasuryWithdrawals (enacted), downside risk and/or weak safe
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
-- Provide independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.
-- Provide complete proposal summary.
+- Provide: Deep research dossier is required for treasury actions before directional voting.
+- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Provide: Missing dossier section: complete proposal summary
 
 ## Proof of vote
 - input_hash: `99ea5c1f7d469147a2917736cf6dedecf78c562ac95103a6f748a1a0e39b3702`
-- snapshot_bundle_hash: `b1c5b37b69c6709c80005a9ced52e1463e64698befb7b3190adf51637148ef28`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `-0.4333`
-- confidence: `0.49`
+- snapshot_bundle_hash: `358cf481ecca8dbfebfb860a14fe7ecbd34f2bc7ea4fd5fcf664572ec263b3bb`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.0`
+- confidence: `0.2`
 

@@ -9,7 +9,7 @@
     "detected_at": "2026-06-16T17:00:02.086757+00:00"
   },
   "decision": {
-    "vote": "YES",
+    "vote": "ABSTAIN",
     "published_at": "2026-07-07T13:00:01.166949+00:00",
     "signed": false,
     "submitted": false,
@@ -17,20 +17,20 @@
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": -0.04,
-    "confidence": 0.51,
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.5,
     "input_hash": "29e8f7e0d9844fc6000296a8494f08c2f450fd3f4bc0869fa1b5f117b05b6417",
-    "snapshot_bundle_hash": "7ae58409c5555a83ca789bc5dca92b1f8a7f466c56a36fe448652af87d35a107",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "snapshot_bundle_hash": "0a6705aa47ab1ede71e0421e9d6d1dba9dfc3aa533468eb114bc8e003a1c0e48",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc-29e8f7e0d984.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/746abdb8ce282f82577e85c5.md",
-    "rationale_anchor_hash": "746abdb8ce282f82577e85c513c292f9bc2755fc1093d677467e995ecc9392e5"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/54f07f64757df0dd46dba111.md",
+    "rationale_anchor_hash": "54f07f64757df0dd46dba111108a941c8db567b508c3dee5a9911d0f9062d711"
   },
   "rationale": {
-    "summary": "Vote: YES. For this HardForkInitiation (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 without an era transition.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The upgrade adds UPLC case expressions over Bool, Integer and Data, which the proposer says will improve performance and simplify script logic.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score -0.04; confidence 51.0%.",
+    "summary": "Vote: ABSTAIN. For this HardForkInitiation (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 without an era transition.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposer says security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan Confidence context: score 0.00; confidence 50.0%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide independent evidence for: The proposer says security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
@@ -145,19 +145,18 @@
     "anchor_hash": "7f683eaf65629963cdc726e0cb7d3be295eb586fc5ba93985878f98e29cee897",
     "file_sha256": "3b1cb614fd19ac9e263879ef36cee3de92de263905cb2af5faf58798ec800af7",
     "content_bytes": "23788",
-    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "fetched_at_utc": "2026-07-10T03:21:55Z",
     "download_path": "/proposals/gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "deep_research": null,
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "resource_ids_used": [
-      "gov_actions_api",
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
       "gov_actions_all_snapshot",
@@ -165,15 +164,12 @@
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
-      "gov_anchor_documents"
+      "gov_anchor_documents",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
     ]
   },
   "inputs_used": [
-    {
-      "resource_id": "gov_actions_api",
-      "type": "csv",
-      "path": "registries/resource_registry.csv"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "type": "csv",
@@ -213,19 +209,29 @@
       "resource_id": "gov_anchor_documents",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
-    "budget_pressure": 0.04,
+    "budget_pressure": 0.0,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.51
+    "governance_alignment": 0.5
   },
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

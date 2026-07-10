@@ -1,0 +1,13 @@
+# Withdraw 1,310,960 ada for Hardware Wallet Maintenance 2026
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — precomputed)_
+
+BEACN voted ABSTAIN because the review was missing baseline evidence needed to responsibly support or oppose a treasury withdrawal. This is a conservative, evidence-based hold, not a rejection of hardware-wallet maintenance.
+
+The action requested 1,310,960 ada for 12 months of 2026 Cardano hardware-wallet production maintenance, submitted by Intersect on behalf of the vendor to the Intersect Treasury Reserve Smart Contract stake address. The proposal says the funds cover Ledger and Trezor compatibility updates, supporting libraries and cardano-hw-cli, integrator support, externally maintained integration paths, possible vendor-required audits, capped time-and-materials reporting, and milestone-based disbursement controls. It also breaks the request into 1,272,777 ada for maintenance and compatibility assurance plus 38,183 ada for Intersect budget administration.
+
+Some claims were supported or independently verifiable in the proposal record: the requested amount and fee split, the Intersect Budget Process support threshold claim, the statement that the request did not breach the relevant Net Change Limit, treasury administration through Sundae Labs smart contracts, oversight arrangements, and disclosure of prior related funding links. But key claims remained unsupported by independent evidence, including that the work is production maintenance rather than a new wallet product, and that ongoing protocol, firmware, app, wallet, and dApp changes create the stated compatibility risk.
+
+The review gates did not clear enough evidence for a directional vote. Intake was blocked because `treasury_amount_lovelace` was missing for a treasury withdrawal. Treasury analysis was incomplete because budget analysis, line-item budget, and milestone-gated disbursement evidence were missing. Claims and evidence, risk review, feasibility, alternatives, failure-mode, and community-impact analysis were also incomplete or thin. A YES or NO vote would require a complete proposal summary, the missing treasury amount field, line-item budget evidence, milestone controls evidence, feasibility and risk analysis, mitigation and independent assurance evidence, alternatives analysis, failure-mode analysis, and community impact analysis.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

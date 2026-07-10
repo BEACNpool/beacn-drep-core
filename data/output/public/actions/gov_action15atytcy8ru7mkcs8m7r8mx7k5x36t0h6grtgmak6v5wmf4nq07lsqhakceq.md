@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a new Cardano Treasury Net Change Limit of 500,000,000 ada for Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposer asserts that the existing 350,000,000 ada limit has been useful but that practical room under it is becoming constrained; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.07; confidence 48.8%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a new Cardano Treasury Net Change Limit of 500,000,000 ada for Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposer asserts that the existing 350,000,000 ada limit has been useful but that practical room under it is becoming constrained; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 48.2%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -42,10 +42,10 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 
 ## Proof of vote
 - input_hash: `021d41161d9716de87a3e00afe2c7ba2c14a859015d538aa938199ec558afe2d`
-- snapshot_bundle_hash: `721371b04a929c2b19f0ba32f657b386d594635f7b987ffb18f8482d26df6295`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `-0.07`
-- confidence: `0.4875`
+- snapshot_bundle_hash: `781172752b2ef57f234b9896a5192bc1c5ec025f4dc58b81363d6206fa847967`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `-0.05`
+- confidence: `0.4825`
 

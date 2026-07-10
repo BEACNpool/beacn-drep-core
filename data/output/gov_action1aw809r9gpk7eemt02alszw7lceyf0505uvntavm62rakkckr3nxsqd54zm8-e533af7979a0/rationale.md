@@ -1,7 +1,7 @@
 # Rationale: gov_action1aw809r9gpk7eemt02alszw7lceyf0505uvntavm62rakkckr3nxsqd54zm8
 Recommendation: **YES**
-Score: `0.15` (raw `0.11` + doctrine-LLM nudge `+0.04`) | Confidence: `0.7375` | Readiness: `0.85`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05). — **this nudge changed the directional outcome.**
+Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.04`) | Confidence: `0.7275` | Readiness: `0.85`
+> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
 BEACN records YES on Add Constitutional Committee Member - Christina. The deterministic gates found enough evidence and no decisive blocker.
@@ -78,6 +78,7 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
 - Doctrine-aware reasoning layer nudged the score by +0.040 (clamped to ±0.05): Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05).
+- Directional vote forced by completed readiness packet (treasury-aware).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -89,13 +90,13 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Reproducibility
 - input_hash: `e533af7979a0d623271df9ed8e95d174e58abb1ef729ca9e2bb0d4671e54496b`
-- snapshot_bundle_hash: `6ccc2806cf78693e79755aa6763363d87ce6385130890b8f819418956c1393fc`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `0720ed9850e991a0da836b19afe03bcdf1775c1ca71e4ca92160dfad2251c649`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `11`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `13`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2278, "NO": 0.0978, "YES": 0.6744}`
+- decision_probs: `{"ABSTAIN": 0.2291, "NO": 0.1391, "YES": 0.6319}`
 

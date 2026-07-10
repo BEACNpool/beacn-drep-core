@@ -18,19 +18,19 @@
   },
   "proof_of_vote": {
     "vote": "ABSTAIN",
-    "score": 0.04,
-    "confidence": 0.58,
+    "score": 0.01,
+    "confidence": 0.5725,
     "input_hash": "02613447e9f429b3862e8cc13448ef63373368a2277d1d01312c506bc359beaf",
-    "snapshot_bundle_hash": "2c56efa55406d26f7bc5ebad69c20f175f3af8d64a619da2c9985080f3c1e685",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "snapshot_bundle_hash": "4e4af4317ca1dff28385a21274ca52228af208a13f1d9dc37805f1913c1636d8",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action10lty9xka3unprtvdfrqvcjgsz33sjwhv9p06afqzar8au782trtsq7dhd95-02613447e9f4.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The K parameter was created to limit the total number of ADA staked to one pool.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.04; confidence 58.0%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The K parameter was created to limit the total number of ADA staked to one pool.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 57.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide mitigation evidence.",
@@ -140,19 +140,18 @@
     "anchor_hash": "e68cba056c70187e475f05317ce54eeade3376d5b744b32f2c60492b4984b4bf",
     "file_sha256": "75638b44a055d69cda7217007ab7e22b30794c1fd77052fbff03ae789151b051",
     "content_bytes": "3803",
-    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "fetched_at_utc": "2026-07-10T03:21:56Z",
     "download_path": "/proposals/gov_action10lty9xka3unprtvdfrqvcjgsz33sjwhv9p06afqzar8au782trtsq7dhd95.txt",
     "preview": "{\n  \"@context\": {\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"name\": \"http://xmlns.com/f"
   },
   "deep_research": null,
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "resource_ids_used": [
-      "gov_actions_api",
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
       "gov_actions_all_snapshot",
@@ -160,15 +159,12 @@
       "gov_action_flags_snapshot",
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
-      "gov_anchor_documents"
+      "gov_anchor_documents",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
     ]
   },
   "inputs_used": [
-    {
-      "resource_id": "gov_actions_api",
-      "type": "csv",
-      "path": "registries/resource_registry.csv"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "type": "csv",
@@ -208,19 +204,29 @@
       "resource_id": "gov_anchor_documents",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
     "budget_pressure": 0.0,
     "conflict_risk": 0.0,
-    "technical_value": 0.04,
-    "governance_alignment": 0.58
+    "technical_value": 0.01,
+    "governance_alignment": 0.5725
   },
   "freshness": {
-    "snapshot_age_seconds": 24,
+    "snapshot_age_seconds": 26,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

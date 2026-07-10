@@ -1,13 +1,13 @@
 {
   "action_id": "gov_action15dh2lt4qskmhl97vat8s0l552ruvddrlasa0jndg7lg43g0uju3qq78hvja",
   "action_type": "InfoAction",
-  "recommendation": "YES",
-  "abstain_reason_code": null,
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": 0.14,
+  "score": 0.11,
   "raw_score": 0.11,
   "llm_score_adjustment": 0.03,
   "llm_lean": {
@@ -20,16 +20,17 @@
     "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
     "cap": 0.05
   },
-  "llm_assisted": true,
-  "llm_assisted_reason_code": "LLM_ASSISTED_DIRECTIONAL",
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
   "doctrine_files": [
     "values_hierarchy.md",
     "info_action_doctrine.md"
   ],
   "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
   "directional_threshold": 0.12,
-  "confidence": 0.635,
+  "confidence": 0.6275,
   "readiness_score": 0.0,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Intake: Action type: InfoAction",
@@ -55,12 +56,11 @@
   ],
   "missing_evidence": [],
   "input_hash": "3334a4b7c563edebf85cffae78b468f9099bb82786d8cb220711f11b42586389",
-  "snapshot_bundle_hash": "8a573ff2032576f7e54ef5063afc0fe0e225f8d6dc4fce0ea51613eb9d02adb9",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "0a5aab9d4d2ab3cc22ca02b0aabe6f2acf66fc11979ac26fcb8fa876c3e2a85a",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -68,19 +68,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 14,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.6388,
-    "NO": 0.1206,
-    "ABSTAIN": 0.2406
+    "YES": 0.3716,
+    "NO": 0.1516,
+    "ABSTAIN": 0.4769
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 3,
@@ -178,7 +180,7 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records YES on Securing Generic Top-Level Domains for the Cardano Ecosystem. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a InfoAction. The cached anchor describes the request as: Securing Generic Top-Level Domains for the Cardano Ecosystem. The strongest grounded claim is: The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message": "BEACN records ABSTAIN on Securing Generic Top-Level Domains for the Cardano Ecosystem. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Securing Generic Top-Level Domains for the Cardano Ecosystem. The strongest grounded claim is: The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026.\n\nReason code: RULE_THRESHOLD_UNMET.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
@@ -216,7 +218,7 @@
       "direction": "YES",
       "score_adjustment": 0.03,
       "cap": 0.05,
-      "assisted_directional": true,
+      "assisted_directional": false,
       "prompt_sha256": "1dbed6c212706aecd25387cac1ddb8d7cc0ab2a2d62e939a6bfb9e1111065ac2",
       "output_sha256": "346af6537ffd94efdb8c5243592242887c91c678d36f44e77a1cb4f9328ddc1e"
     },
@@ -225,8 +227,8 @@
       "available": true,
       "reason": null,
       "model": "local-deterministic",
-      "prompt_sha256": "7e9d1434876123abe890419cc708f6f2ac495bdc75ddbbb7e2960a8474b8c414",
-      "output_sha256": "22c7502b7caed9342849db04187b70e749a5b5e0f844df5f03074cb4d59f6877"
+      "prompt_sha256": "eb9c01086a8b3b91eb1edaa5d39e8283d6e45c41d367d7b59c72fbbcfb75cb22",
+      "output_sha256": "faad0702fdfa197ec93b514a2005b8c63c66b10a869d113ad83edff566f956c1"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

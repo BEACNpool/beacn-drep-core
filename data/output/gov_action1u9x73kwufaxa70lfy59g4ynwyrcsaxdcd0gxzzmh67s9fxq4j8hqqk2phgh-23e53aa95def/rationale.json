@@ -1,13 +1,13 @@
 {
   "action_id": "gov_action1u9x73kwufaxa70lfy59g4ynwyrcsaxdcd0gxzzmh67s9fxq4j8hqqk2phgh",
   "action_type": "InfoAction",
-  "recommendation": "YES",
-  "abstain_reason_code": null,
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": 0.14,
+  "score": 0.11,
   "raw_score": 0.11,
   "llm_score_adjustment": 0.03,
   "llm_lean": {
@@ -20,16 +20,17 @@
     "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
     "cap": 0.05
   },
-  "llm_assisted": true,
-  "llm_assisted_reason_code": "LLM_ASSISTED_DIRECTIONAL",
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
   "doctrine_files": [
     "values_hierarchy.md",
     "info_action_doctrine.md"
   ],
   "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
   "directional_threshold": 0.12,
-  "confidence": 0.635,
+  "confidence": 0.6275,
   "readiness_score": 0.0,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Intake: Action type: InfoAction",
@@ -55,12 +56,11 @@
   ],
   "missing_evidence": [],
   "input_hash": "23e53aa95def89fb8d1828875b02d906b949be3cab1e8d1b2d99a1ed81be028d",
-  "snapshot_bundle_hash": "658be2da5b673e9513ba80c6d2ce2c9403dc5badac0a7ef2317bc505fda42fb5",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "6754b0fd5413d7d776283cbaf9fff10b7331feff8f7c45db8cb9810126649b75",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -68,19 +68,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 22,
+    "snapshot_age_seconds": 23,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.6388,
-    "NO": 0.1206,
-    "ABSTAIN": 0.2406
+    "YES": 0.3716,
+    "NO": 0.1516,
+    "ABSTAIN": 0.4769
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 3,
@@ -178,7 +180,7 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records YES on Cardano Blockchain Ecosystem Budget - 275M ada Administered by Intersect. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a InfoAction. The cached anchor describes the request as: Cardano Blockchain Ecosystem Budget - 275M ada Administered by Intersect. The strongest grounded claim is: On behalf of Intersect and the Cardano Budget Committee, this Budget Info Action proposes a Cardano Blockchain Ecosystem Budget of 275,269,340 ada.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message": "BEACN records ABSTAIN on Cardano Blockchain Ecosystem Budget - 275M ada Administered by Intersect. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Cardano Blockchain Ecosystem Budget - 275M ada Administered by Intersect. The strongest grounded claim is: On behalf of Intersect and the Cardano Budget Committee, this Budget Info Action proposes a Cardano Blockchain Ecosystem Budget of 275,269,340 ada.\n\nReason code: RULE_THRESHOLD_UNMET.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
@@ -216,7 +218,7 @@
       "direction": "YES",
       "score_adjustment": 0.03,
       "cap": 0.05,
-      "assisted_directional": true,
+      "assisted_directional": false,
       "prompt_sha256": "e56fdfa9ce74e5dd9716ad178037e801094a716a0140e0f8d9854b3b9e474250",
       "output_sha256": "346af6537ffd94efdb8c5243592242887c91c678d36f44e77a1cb4f9328ddc1e"
     },
@@ -225,8 +227,8 @@
       "available": true,
       "reason": null,
       "model": "local-deterministic",
-      "prompt_sha256": "6bf96b8a9774797cd6dbc711589c24b9ca35c12d2cbc80b74eebada1c8b48de5",
-      "output_sha256": "44a483cb2674e784113ba4246d5003e999d3bad5a699f3ff01f05b1475b64d69"
+      "prompt_sha256": "371f893ec87902644b93b75756c900946674627ed857a2a2551e6d4a507eced8",
+      "output_sha256": "532ccb7703d8bfe1dd96f8f6764ae3056da66947ae35884604d61df43bb8a608"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

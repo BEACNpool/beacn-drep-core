@@ -1,16 +1,14 @@
 # Rationale: gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc
-Recommendation: **NO**
-Score: `-0.3033` (raw `-0.2833` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7958` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2433` (raw `-0.2433` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7808` | Readiness: `0.85`
 > Reasoning layer (precomputed): The proposal shows credible public-benefit alignment through open-source infrastructure, narrowed scope, milestones, and named deliverables, but several important adoption, governance, and execution claims remain proposer-asserted rather than evidenced inside the anchor text. Given the large treasury request and the doctrine's caution around treasury stewardship and evidence quality, a small negative nudge is justified rather than a positive one.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a large treasury request and several important claims did not meet the evidence bar required for spending shared ADA. The proposal had credible parts, but the review found that cost, precedent, and unsupported adoption and governance claims outweighed the demonstrated benefit.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Scalus 2026: Maintenance, Dijkstra Readiness, Interoperability & Application Runtime. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested ₳2,464,844 for a 9-month continuation of Scalus by Lantr Engineering, covering maintenance, Dijkstra readiness, interoperability with JVM and JS/TS ecosystems, and initial application runtime components. The proposer described Scalus as established open-source Cardano infrastructure, and that claim was well-supported. The proposal also supported the budget, narrowed scope, reduced resubmission, and technical need for Dijkstra readiness.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund a 9-month continuation of Scalus covering maintenance, Dijkstra hard fork readiness, interoperability across JVM and JS/TS ecosystems, and a first scoped application runtime. It asks the treasury for 2464844 ADA. The strongest grounded claim is: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
 
-The weaker parts were evidence quality around adoption and governance. The review found missing independent evidence for claims that Scalus is used directly by named projects and reused by several ecosystem tools. It also found missing independent evidence for the claim that delivery would be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance. Treasury analysis was also missing a sustainability path, and the risk review was missing independent assurance and a dependency map.
-
-Because treasury withdrawals require elevated scrutiny, BEACN treated these gaps as material. The proposal had a pinned, replayable anchor and medium execution risk, and it presented a strong YES case around Scalus as established infrastructure. But with a ₳2,464,844 request, thin evidence status, unsupported material claims, and an advisory treasury sustainability penalty, the evidence did not justify a directional YES.
+A material claim remains proposer-asserted or thinly supported: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -55,7 +53,7 @@ Because treasury withdrawals require elevated scrutiny, BEACN treated these gaps
 - finding: Clawback/refund path: confirmed
 - finding: Cost/benefit clarity: confirmed
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.86
 - missing: sustainability path
 - conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -100,6 +98,7 @@ Because treasury withdrawals require elevated scrutiny, BEACN treated these gaps
 
 ## Inferences
 - Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): The proposal shows credible public-benefit alignment through open-source infrastructure, narrowed scope, milestones, and named deliverables, but several important adoption, governance, and execution claims remain proposer-asserted rather than evidenced inside the anchor text. Given the large treasury request and the doctrine's caution around treasury stewardship and evidence quality, a small negative nudge is justified rather than a positive one.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -108,7 +107,7 @@ Because treasury withdrawals require elevated scrutiny, BEACN treated these gaps
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.
 - Claims and evidence missing: Independent evidence for: Delivery is milestone-based and will be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.
@@ -117,15 +116,19 @@ Because treasury withdrawals require elevated scrutiny, BEACN treated these gaps
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+
 ## Reproducibility
 - input_hash: `b02a109afc6b522ac3daf4dc1c28c8ed8e5ab931ffdfa33f0317fef319c49fb4`
-- snapshot_bundle_hash: `e76d11b4a51d5dc34e74bb3f33e0cef230e087b257cdaba9d0f1f41e0c12fb4e`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `dba0c3fb78371720cc0dd0ff8733f5e52d7b79a205c1d0639bcf805eed8f12cc`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `0`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1982, "NO": 0.7569, "YES": 0.0449}`
+- decision_probs: `{"ABSTAIN": 0.4902, "NO": 0.4622, "YES": 0.0476}`
 

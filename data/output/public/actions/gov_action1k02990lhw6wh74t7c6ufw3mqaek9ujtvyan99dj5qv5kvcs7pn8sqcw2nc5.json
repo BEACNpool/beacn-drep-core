@@ -9,7 +9,7 @@
     "detected_at": "2026-06-23T17:00:01.584060+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "published_at": "2026-07-07T13:00:01.166949+00:00",
     "signed": false,
     "submitted": false,
@@ -17,28 +17,32 @@
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "NO",
-    "score": -0.2733,
-    "confidence": 0.7883,
+    "vote": "NEEDS_MORE_INFO",
+    "score": -0.2133,
+    "confidence": 0.7733,
     "input_hash": "6a88dcaaa00d9e3c4f441a88a1d5e26b1c165ad8cd08dc0ca23f8e8b592eda09",
-    "snapshot_bundle_hash": "c0bf6b7813017d4de92ecd2699006044b5a308201307170ae3ebf489d23c6f66",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "snapshot_bundle_hash": "3c9470127c4267329ee201e4cb35c5cc2bb8b77a56068e183fb5b4eef997b516",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5-6a88dcaaa00d.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/7a7bb8edcc7357f7ba327d6f.md",
-    "rationale_anchor_hash": "7a7bb8edcc7357f7ba327d6f85695d5e0ba005892a6826626348cb07df86a5c2"
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/27fdadeb8aa3b5c97d9e03ca.md",
+    "rationale_anchor_hash": "27fdadeb8aa3b5c97d9e03ca47e7c4625c476e3dfdb307175d8ee443107e8f30"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal states Wirex has not received ada from the Cardano Treasury within the last 24 months; Provide sustainability path. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.27; confidence 78.8%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.21; confidence 77.3%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide independent evidence for: The proposal states Wirex has not received ada from the Cardano Treasury within the last 24 months.",
-      "Provide sustainability path.",
-      "Provide cost-benefit clarity."
+      "Provide: independent ecosystem-value evidence packet",
+      "Provide: verified ecosystem benefit or strategic necessity",
+      "Provide: cost comparables, budget proportionality, or sustainability evidence"
     ],
     "markdown_path": "/data/output/public/rationales/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5-6a88dcaaa00d.md",
-    "missing_evidence": [],
+    "missing_evidence": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -99,7 +103,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: 0.52"
           ],
           "missing": [
@@ -163,7 +167,7 @@
     "anchor_hash": "7026fbe6411338673aa859e31bce8ae707566eff26de9b290db70d06e59b258f",
     "file_sha256": "9a9e723afedc0ea2f5cf6d373e0097149c41a0191880d77a98977ad23aa804cb",
     "content_bytes": "13893",
-    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "fetched_at_utc": "2026-07-10T03:21:55Z",
     "download_path": "/proposals/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -187,12 +191,11 @@
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "resource_ids_used": [
-      "gov_actions_api",
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
       "drep_vote_history_snapshot",
@@ -203,15 +206,15 @@
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
       "gov_anchor_documents",
-      "deep_research_dossiers"
+      "deep_research_dossiers",
+      "ecosystem_value_profiles",
+      "treasury_policy_state",
+      "treasury_portfolio",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
     ]
   },
   "inputs_used": [
-    {
-      "resource_id": "gov_actions_api",
-      "type": "csv",
-      "path": "registries/resource_registry.csv"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "type": "csv",
@@ -266,19 +269,44 @@
       "resource_id": "deep_research_dossiers",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "ecosystem_value_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_policy_state",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_portfolio",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
-    "budget_pressure": 0.2733,
+    "budget_pressure": 0.2133,
     "conflict_risk": 0.0,
     "technical_value": 0.0,
-    "governance_alignment": 0.7883
+    "governance_alignment": 0.7733
   },
   "freshness": {
     "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

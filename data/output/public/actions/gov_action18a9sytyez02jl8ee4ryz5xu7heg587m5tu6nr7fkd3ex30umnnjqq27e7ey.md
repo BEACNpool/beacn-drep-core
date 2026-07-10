@@ -1,13 +1,13 @@
 # gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey
 
 ## Vote
-- Decision: **NO**
+- Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages." though 5 review blocker(s) remain open. What would change this vote to YES: Provide budget analysis; Provide feasibility assessment. Residual uncertainty: Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining. Confidence context: score -0.63; confidence 64.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages." though 5 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -19,9 +19,7 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (7), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2750000
@@ -30,9 +28,7 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- No milestone-gated disbursement documented.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900.
 - Claims and evidence missing: Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says funding would substantially expand Cardano presence, accessibility, participation, and industry outreach.
 - Claims and evidence status is thin.
@@ -46,16 +42,16 @@ Vote: NO. For this TreasuryWithdrawals (expired), downside risk and/or weak safe
 - Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide budget analysis.
-- Provide feasibility assessment.
-- Provide alternatives analysis.
+- Provide: Deep research dossier is required for treasury actions before directional voting.
+- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Provide: Missing dossier section: budget analysis
 
 ## Proof of vote
 - input_hash: `fc9d66176427a7e3d36a11675fa5493d889de26068a3c5db9b91b27d00805e4a`
-- snapshot_bundle_hash: `95731716330f211b299f28ee7d0ffba3a9a23219068d959dfd2a6016788707b5`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `-0.6333`
-- confidence: `0.64`
+- snapshot_bundle_hash: `ee6cc0653c1567073ba1fcfee94ccb944edacabfcfdc01213cf94bb6ce2ec48d`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.0`
+- confidence: `0.2`
 

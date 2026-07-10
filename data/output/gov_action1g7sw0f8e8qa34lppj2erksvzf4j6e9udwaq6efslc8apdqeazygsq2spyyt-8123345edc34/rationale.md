@@ -1,6 +1,6 @@
 # Rationale: gov_action1g7sw0f8e8qa34lppj2erksvzf4j6e9udwaq6efslc8apdqeazygsq2spyyt
 Recommendation: **ABSTAIN**
-Score: `0.03` (raw `0.01` + doctrine-LLM nudge `+0.02`) | Confidence: `0.5775` | Readiness: `0.0`
+Score: `0.01` (raw `0.01` + doctrine-LLM nudge `+0.02`) | Confidence: `0.5725` | Readiness: `0.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
@@ -97,13 +97,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Reproducibility
 - input_hash: `8123345edc341d669033e91bc1faa46e600c51ab1d963f2d1ab001640dd7cd82`
-- snapshot_bundle_hash: `9c07152d1067ed358300c9e16608d7a232afcfaab1c1d47fd944ca84854eb6fd`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `ef9a5e5cc567a580a15179d838bbae8f78220109b8953cf3048fdb833812366f`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `14`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `15`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4644, "NO": 0.2378, "YES": 0.2978}`
+- decision_probs: `{"ABSTAIN": 0.4631, "NO": 0.2584, "YES": 0.2784}`
 

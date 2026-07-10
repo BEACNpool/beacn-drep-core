@@ -1,13 +1,13 @@
 {
   "action_id": "gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age",
   "action_type": "InfoAction",
-  "recommendation": "YES",
+  "recommendation": "NO",
   "abstain_reason_code": null,
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": 0.01,
+  "score": -0.02,
   "raw_score": -0.02,
   "llm_score_adjustment": 0.03,
   "llm_lean": {
@@ -28,8 +28,9 @@
   ],
   "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
   "directional_threshold": 0.12,
-  "confidence": 0.5225,
+  "confidence": 0.525,
   "readiness_score": 0.85,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Flag score present (3), reducing confidence.",
@@ -56,12 +57,11 @@
   ],
   "missing_evidence": [],
   "input_hash": "d5f2627e2c78e230731725c1541e8818a74ee8ff66d9d1632074b3a9173092f3",
-  "snapshot_bundle_hash": "c8f00735338e30079789d53b681e4eaa5d6356183c99954e3b70b43bc61647ab",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "2c0d415cc8bdb2d1180c11c6c5b3b4908474062be1b7a7c62c08d43adbb2105a",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -69,19 +69,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 14,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.4806,
-    "NO": 0.2647,
-    "ABSTAIN": 0.2547
+    "YES": 0.2544,
+    "NO": 0.4913,
+    "ABSTAIN": 0.2544
   },
   "uncertainty_band": "LOW",
   "evidence_depth_score": 3,
@@ -176,7 +178,7 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records YES on Defining the Cardano 2030 Vision & Strategy. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a InfoAction. The cached anchor describes the request as: Defining the Cardano 2030 Vision & Strategy. The strongest grounded claim is: This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.\n\nA residual watch item: this claim remains proposer-asserted rather than independently shown: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.",
+  "human_message": "BEACN records NO on Defining the Cardano 2030 Vision & Strategy. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.\n\nThe action is a InfoAction. The cached anchor describes the request as: Defining the Cardano 2030 Vision & Strategy. The strongest grounded claim is: This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.\n\nA material claim remains proposer-asserted or thinly supported: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
@@ -223,8 +225,8 @@
       "available": true,
       "reason": null,
       "model": "local-deterministic",
-      "prompt_sha256": "cda6487ce620c5407affd77f83b55a74866e57d6174fcb7348a4f81fecbdda77",
-      "output_sha256": "37d51d14e2cad9e1a3eb0020d22f2da18b19e368911adaf526e0b902a1bcf134"
+      "prompt_sha256": "345c806133ba77ca57e008e6f2df977dfee17c23459f79e4ba3e8228a51ccf7e",
+      "output_sha256": "c4e06b406787b4979f47cfdd2fab19276314ebdd093f2edd7334c9a2347efafb"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

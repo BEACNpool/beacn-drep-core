@@ -1,14 +1,14 @@
 # Rationale: gov_action1zljrlljt9cxlz7ra2nep43nxg0r54wcnrgexyuhuam9ah0ws607qq2vcg4x
-Recommendation: **NO**
-Score: `-0.6033` (raw `-0.5733` + doctrine-LLM nudge `-0.03`) | Confidence: `0.64` | Readiness: `0.7`
-> Reasoning layer (precomputed): The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analysis. Within the claims extracted here, the proposal has some governance and delivery-control detail, but several high-materiality technical and economic claims rely on proposer assertion, and the large treasury ask should be treated cautiously when budget justification and feasibility evidence are incomplete.
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records NO on Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026–2027. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+BEACN records NEEDS_MORE_INFO on Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026–2027. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
 The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Tweag by Modus Create's delivery of three Cardano core infrastructure work packages over 2026-2027. It asks the treasury for 18263496.00 ADA. The strongest grounded claim is: The proposal requests ₳18,263,496.00, stated as USD $4,565,874.00, for three Cardano core infrastructure work packages over 2026-2027.
 
-A material claim remains proposer-asserted or thinly supported: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis.
+A material claim remains proposer-asserted or thinly supported: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -58,7 +58,7 @@ A material claim remains proposer-asserted or thinly supported: Peras v1 is desc
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.40
 - missing: milestone-gated disbursement
 - missing: sustainability path
@@ -100,9 +100,7 @@ A material claim remains proposer-asserted or thinly supported: Peras v1 is desc
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (7), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 18263496
@@ -111,8 +109,7 @@ A material claim remains proposer-asserted or thinly supported: Peras v1 is desc
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The deterministic assessment is already blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analysis. Within the claims extracted here, the proposal has some governance and delivery-control detail, but several high-materiality technical and economic claims rely on proposer assertion, and the large treasury ask should be treated cautiously when budget justification and feasibility evidence are incomplete.
+- Directional voting is blocked until dossier quality gates pass.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -121,9 +118,7 @@ A material claim remains proposer-asserted or thinly supported: Peras v1 is desc
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- No milestone-gated disbursement documented.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: Peras v1 is described as enabling faster finality of approximately 2 minutes compared with approximately 12 minutes today.
 - Claims and evidence missing: Independent evidence for: The proposal asserts that Leios throughput could cause SPO disk usage to surge to approximately 1 GB per hour at 100-1000 TPS without History Expiry.
 - Claims and evidence status is thin.
@@ -136,15 +131,24 @@ A material claim remains proposer-asserted or thinly supported: Peras v1 is desc
 - Synthesis missing: missing feasibility assessment
 - Synthesis status is blocked.
 
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Missing dossier section: budget analysis
+- Missing dossier section: feasibility assessment
+- Missing dossier section: alternatives analysis
+- Missing dossier section: failure-mode analysis
+- Missing dossier section: community impact analysis
+
 ## Reproducibility
 - input_hash: `ca61cc65c321448febaa581848968f6f837c086b0d44380f22d8129abd91ac8d`
-- snapshot_bundle_hash: `4702181a05cad39357579a5828b5ab5cc9e42ffc30402454796fbb67aaf73c0e`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `b67f686148a79a1c0e3c239f99ad98037075ecd05ff4dde76fb56e3e4226e817`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `4`
-- uncertainty_band: `MEDIUM`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `5`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1935, "NO": 0.7661, "YES": 0.0403}`
+- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
 

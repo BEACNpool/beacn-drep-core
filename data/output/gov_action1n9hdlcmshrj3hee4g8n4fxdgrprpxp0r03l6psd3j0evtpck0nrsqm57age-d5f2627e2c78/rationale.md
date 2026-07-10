@@ -1,14 +1,14 @@
 # Rationale: gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age
-Recommendation: **YES**
-Score: `0.01` (raw `-0.02` + doctrine-LLM nudge `+0.03`) | Confidence: `0.5225` | Readiness: `0.85`
+Recommendation: **NO**
+Score: `-0.02` (raw `-0.02` + doctrine-LLM nudge `+0.03`) | Confidence: `0.525` | Readiness: `0.85`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records YES on Defining the Cardano 2030 Vision & Strategy. The deterministic gates found enough evidence and no decisive blocker.
+BEACN records NO on Defining the Cardano 2030 Vision & Strategy. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
 
 The action is a InfoAction. The cached anchor describes the request as: Defining the Cardano 2030 Vision & Strategy. The strongest grounded claim is: This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed Cardano 2030 vision & strategy.
 
-A residual watch item: this claim remains proposer-asserted rather than independently shown: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.
+A material claim remains proposer-asserted or thinly supported: This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -94,13 +94,13 @@ A residual watch item: this claim remains proposer-asserted rather than independ
 
 ## Reproducibility
 - input_hash: `d5f2627e2c78e230731725c1541e8818a74ee8ff66d9d1632074b3a9173092f3`
-- snapshot_bundle_hash: `c8f00735338e30079789d53b681e4eaa5d6356183c99954e3b70b43bc61647ab`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `2c0d415cc8bdb2d1180c11c6c5b3b4908474062be1b7a7c62c08d43adbb2105a`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `13`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `14`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2547, "NO": 0.2647, "YES": 0.4806}`
+- decision_probs: `{"ABSTAIN": 0.2544, "NO": 0.4913, "YES": 0.2544}`
 

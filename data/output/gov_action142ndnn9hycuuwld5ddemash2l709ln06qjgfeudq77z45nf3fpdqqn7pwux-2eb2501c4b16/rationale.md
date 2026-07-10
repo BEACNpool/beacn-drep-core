@@ -1,14 +1,14 @@
 # Rationale: gov_action142ndnn9hycuuwld5ddemash2l709ln06qjgfeudq77z45nf3fpdqqn7pwux
-Recommendation: **NO**
-Score: `-0.4533` (raw `-0.4233` + doctrine-LLM nudge `-0.03`) | Confidence: `0.64` | Readiness: `0.75`
-> Reasoning layer (precomputed): The claims include meaningful milestone structure, named application paths, and administrative controls, but the ask is large and the deterministic assessment remains blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analyses. Under a treasury-spending posture, those evidence gaps justify a small cautionary nudge rather than any positive adjustment.
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records NO on 5am.earth Trust Layer Targeting Vision 2030 KPIs. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+BEACN records NEEDS_MORE_INFO on 5am.earth Trust Layer Targeting Vision 2030 KPIs. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
 The action is a TreasuryWithdrawals. The cached anchor describes the request as: Build an open, Cardano-anchored trust layer for global agricultural supply chains combining Veridian self-sovereign identity and a Cardano on-chain satellite oracle. It asks the treasury for 10000000 ADA. The strongest grounded claim is: The requested 10,000,000 ADA is structured as 5,000,000 ADA on approval, 2,000,000 ADA on M1 acceptance, and 3,000,000 ADA on M2 acceptance.
 
-A material claim remains proposer-asserted or thinly supported: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis.
+A material claim remains proposer-asserted or thinly supported: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -59,7 +59,7 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.40
 - missing: line-item budget
 - missing: sustainability path
@@ -100,9 +100,7 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (7), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 10000000
@@ -111,8 +109,7 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The claims include meaningful milestone structure, named application paths, and administrative controls, but the ask is large and the deterministic assessment remains blocked for missing budget, feasibility, alternatives, failure-mode, and community impact analyses. Under a treasury-spending posture, those evidence gaps justify a small cautionary nudge rather than any positive adjustment.
+- Directional voting is blocked until dossier quality gates pass.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -121,8 +118,7 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: Project Swaminathan is operating on Cardano Mainnet with 10,500 cumulative farmer and farm registrations as of 5 May 2026.
 - Claims and evidence missing: Independent evidence for: The pilot phase from January to March 2026 validated 1,056 farms across three phases at a 100% blockchain success rate.
 - Claims and evidence status is thin.
@@ -135,15 +131,24 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 - Synthesis missing: missing feasibility assessment
 - Synthesis status is blocked.
 
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Missing dossier section: budget analysis
+- Missing dossier section: feasibility assessment
+- Missing dossier section: alternatives analysis
+- Missing dossier section: failure-mode analysis
+- Missing dossier section: community impact analysis
+
 ## Reproducibility
 - input_hash: `2eb2501c4b164ccad24bd445095717f5b79ab108ec3f1bc426b643b87354dca4`
-- snapshot_bundle_hash: `21d80bf7c3741d8600b2e6a4dbdad38d86ba0fec91b27bdab4021d95b73b031c`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `525a0cdaa8b055337ad5fa66564c7448994c202531dcb2a2ddb01e1b48aeb044`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `5`
-- uncertainty_band: `MEDIUM`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `6`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1935, "NO": 0.7661, "YES": 0.0403}`
+- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
 

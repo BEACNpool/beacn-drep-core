@@ -1,0 +1,272 @@
+{
+  "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "treasury_dimensions": null,
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 0",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to operate a dOSPO and OMF program for Cardano open source sustainability.\" though 1 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: Independent evidence for: The proposal claims there are 90 pages of expert-vetted whitepapers explaining how the structure will operate.",
+    "Claims and evidence missing: Independent evidence for: The proposal claims external experts and organizations including Bitergia, CHAOSS, Apache Software Foundation, Linux Foundation Decentralized Trust, Intersect, Andamio Platform, Modus Create, Leadingbit Solutions, and the Chinstrap Community collaborated on the OMF and dOSPO whitepapers.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis missing: sustainability path",
+    "Risk review missing: independent assurance",
+    "Risk review missing: dependency map",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "aedb81d5ab15424e2f4f6a85da8f5da768f36a2d00be06c95d3c788e7555c1ba",
+  "snapshot_bundle_hash": "9cce22043ec0f7600ddb061f9783f8536975b747a4987ff263bea7ae9337b025",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 641",
+          "Expires after epoch: 648",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Establish a decentralized Open Source Program Office (dOSPO) and Open Maintenance Framework (OMF) to manage open source sustainability programs for Cardano over 12 months.",
+          "Recipient: Christian Taylor / Open Source Cowboy Consulting as administrator, with a planned transition target to a dOSPO 501(c)(3) public charity subject to governance.",
+          "Stated amount: 4,094,000 ADA",
+          "Deliverables: Four programs: Maintenance Fund, Maintainer Development, CodeForUs bounty program, and Ecosystem Activation Reserve, Two advisory councils chartered by Week 6 with charters, COI policies, member names, and meeting records published on-chain, A dOSPO legal entity structured as a U.S. 501(c)(3) public charity targeted by Month 6, Quarterly public reports with Mill Law Firm financial review attached, Dependency audit, SBOMs, centrality scoring, bus factor assessments, and coverage gap analysis for Cardano OSS dependencies, Maintenance retainers for selected open source infrastructure projects, Public CHAOSS-aligned dashboard for funded projects",
+          "Deadline/expiry: 12 months",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months to operate a dOSPO and OMF program for Cardano open source sustainability.",
+          "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole Article II.7.5 administrator at the moment of treasury withdrawal.",
+          "Claim (governance, supported_in_proposal, high materiality): Mill Law Firm is designated as independent financial auditor on a quarterly cadence through Month 12.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal states that governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if the initiative is shut down.",
+          "Claim (technical, supported_in_proposal, high materiality): The proposal claims the program will use dependency centrality data, bus factor assessments, SBOMs, and a published rubric to select high-risk open source infrastructure for maintenance funding.",
+          "Claim (economic, supported_in_proposal, high materiality): The Maintenance Fund would deploy 2,000,000 ADA over 12 months across retainer tiers and a portfolio reserve, with undeployed reserve funds returned to the treasury."
+        ],
+        "missing": [
+          "Independent evidence for: The proposal claims there are 90 pages of expert-vetted whitepapers explaining how the structure will operate.",
+          "Independent evidence for: The proposal claims external experts and organizations including Bitergia, CHAOSS, Apache Software Foundation, Linux Foundation Decentralized Trust, Intersect, Andamio Platform, Modus Create, Leadingbit Solutions, and the Chinstrap Community collaborated on the OMF and dOSPO whitepapers."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 0",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.78"
+        ],
+        "missing": [
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to operate a dOSPO and OMF program for Cardano open source sustainability.\" though 1 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposal claims there are 90 pages of expert-vetted whitepapers explaining how the structure will operate.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted ABSTAIN because the review was missing baseline evidence needed to responsibly vote yes or no on a treasury withdrawal. This is a conservative, evidence-based hold, not a rejection of the idea.\n\nThe action requested a 12-month dOSPO and Open Maintenance Framework program for Cardano open source sustainability, with 4,094,000 ADA described in the proposal intake. It named Christian Taylor / Open Source Cowboy Consulting as the initial administrator, planned a transition target to a dOSPO 501(c)(3), and listed programs including a Maintenance Fund, maintainer development, CodeForUs bounties, and an ecosystem activation reserve. The proposal also described advisory councils, quarterly reports with Mill Law Firm financial review, dependency analysis work, maintenance retainers, and a CHAOSS-aligned dashboard.\n\nSeveral core claims were supported by the proposal itself: the 12-month operating request, the initial administrator, the quarterly Mill Law Firm financial review, the governance mechanism to replace the administrator or shut down the initiative, and the intended use of dependency centrality data, bus factor assessments, SBOMs, and a published rubric. But important claims remained unsupported by independent evidence, including the claim of 90 pages of expert-vetted whitepapers and the claim that named outside experts and organizations collaborated on those whitepapers.\n\nThe review gates did not provide enough completed evidence for a directional vote. Intake was blocked because `treasury_amount_lovelace` was missing for a treasury withdrawal. Claims and evidence were thin, treasury analysis was incomplete, and risk review was thin. The missing items included a line-item budget, milestone-gated disbursement, mitigation evidence, independent assurance, feasibility analysis, alternatives analysis, failure-mode analysis, and community impact analysis. A YES or NO vote would require that baseline treasury amount field, a complete proposal summary, public replayable evidence for key claims, a budget analysis, and stronger feasibility and risk evidence.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmRyqT2c9tHbk9hMrYjjpJ3omRSC2HpSVCBT69kYsm7Szr",
+        "file_sha256": "cdc48d2b3b3f1c2730744515062f662e0813a877d4f5cd836fa906472abdedfc",
+        "file_path": "data/input/governance/anchors/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983-0-20260708T113010Z.bin",
+        "content_chars": 34845
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "fcb71ed2b9914638fdfb04922789af276b45e433659f9be801c6bffdb0d7bb90"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "75b325454c0ebbb9df2872926e3737be56b352506c58a8cc0e4ee9489967f1e2"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "76f8e2254521aaf7ef7267a022a334835bc769d8de765afccf2066fd4e2887fa"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c5434627513bdfdc66d0b6d5.md",
+  "rationale_anchor_hash": "c5434627513bdfdc66d0b6d548a3096445f32f211b8d2b6d72e7d403cabb5f15"
+}

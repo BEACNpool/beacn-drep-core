@@ -1,14 +1,14 @@
 {
   "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NO",
+  "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": null,
+  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3133,
-  "raw_score": -0.2833,
+  "score": -0.2433,
+  "raw_score": -0.2433,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,8 +28,21 @@
   ],
   "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
   "directional_threshold": 0.06,
-  "confidence": 0.7983,
+  "confidence": 0.7808,
   "readiness_score": 0.8,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.55,
+    "cost_efficiency": 0.7,
+    "downside_risk": 0.25,
+    "composite": -0.11,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity"
+    ]
+  },
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -43,6 +56,7 @@
   ],
   "inferences": [
     "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal aligns with public-benefit ecosystem growth and includes milestones, KPIs, security-review gates, and some repayment/non-disbursement language, but the requested amount is large and the value-for-money case depends heavily on projected adoption, future liquidity, and proposer assertions rather than demonstrated commitments from external integrators or independently reproduced cost evidence.",
+    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -51,7 +65,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.",
     "Claims and evidence status is thin.",
@@ -59,14 +73,16 @@
     "Risk review missing: independent assurance",
     "Risk review missing: dependency map"
   ],
-  "missing_evidence": [],
+  "missing_evidence": [
+    "independent ecosystem-value evidence packet",
+    "verified ecosystem benefit or strategic necessity"
+  ],
   "input_hash": "b7d7592e754096d3fafd87d75db9523024368b5e5eda85b80509e66b5a0e8bc3",
-  "snapshot_bundle_hash": "a61b39db0257ef0939bdb581165cb064a8b223c4284364d5d676bbd60acc2eb7",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "382a99e3f08f80683ec2717c0291fdc60c896fe86b76ae75ebad58a4a17003c2",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
@@ -77,19 +93,24 @@
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
     "gov_anchor_documents",
-    "deep_research_dossiers"
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.0445,
-    "NO": 0.7594,
-    "ABSTAIN": 0.1961
+    "YES": 0.0476,
+    "NO": 0.4622,
+    "ABSTAIN": 0.4902
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -151,7 +172,7 @@
           "Clawback/refund path: confirmed",
           "Cost/benefit clarity: confirmed",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
           "Financial confidence: 0.68"
         ],
         "missing": [
@@ -205,8 +226,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NO because this treasury request is large and one material accountability claim was not independently supported: the proposal says Minswap Labs would administer funds, review milestones, and provide accountability, but the review did not find replayable independent evidence for that role.\n\nThe action requested 3,333,000 ADA for Dano Finance, with 3,300,000 ADA for delivery and 33,000 ADA as a 1% budget administration fee. The proposed work included a DeFi Kernel registry, a Spot Leverage Order Book, an American Options market-making protocol, a Composable DeFi Transaction Builder SDK, public documentation, reporting, security review or audit outputs, mainnet deployments, and integration support. The proposal did not state a deadline.\n\nSeveral claims were well supported in the proposal itself: the requested amount, the four work packages, the intended open and fee-free DeFi Kernel standard, security-review gates before mainnet release, public KPIs for trading and options volume, SDK documentation and integration support, return or non-spending of unused funds, and a 5% protocol-fee return for 12 months after launch. Some adoption claims were independently verifiable, including about USD 18 million in TVL and more than 10,000 on-chain transactions.\n\nThe review found that the anchor document was available and replayable, and the proposal had milestones, KPIs, security language, and some repayment or non-disbursement protections. But treasury withdrawals require a higher bar because they spend shared ADA. The evidence base was still thin, execution risk was unknown, milestone-gated disbursement was missing from the treasury analysis, and independent assurance and a dependency map were missing from risk review. On balance, BEACN judged that the cost and precedent risk outweighed the supported benefits.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Global Order Book connect Cardano DeFi to increase transaction. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Dano Finance's DeFi Kernel registry, Spot Leverage Order Book, American Options Market-Making Pools, and Composable DeFi Transaction Builder SDK. It asks the treasury for 3333000 ADA. The strongest grounded claim is: The proposal requests 3,333,000 ADA, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee.\n\nA material claim remains proposer-asserted or thinly supported: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability. Reason code: VERIFIED_NCL_REQUIRED.",
+  "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -248,15 +269,15 @@
       "output_sha256": "d7481ecc21421894db16b03b58a3a4d4cb4d53fb250992b4d15a9d9afa8b35d9"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "deterministic-heuristic",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "3a295577089f4c0229828dc76257820d54ac02112552e230faf99bf0aa02feb2"
+      "model": "local-deterministic",
+      "prompt_sha256": "9efb5eb803f3ec12daa7ac970555f06803e7784e4e62d3831e53d8db4c10a312",
+      "output_sha256": "1741ccfd2aca6a1933bbf17defbe95fd3f2f4300d1bf5b3615b2f5d71899e7ff"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6f64b0098605d64a7c67fee9.md",
-  "rationale_anchor_hash": "6f64b0098605d64a7c67fee9f9a1541b71c2a31adb38aef434f62f957e84e75b"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/2d21b60b9594be30b9c20b45.md",
+  "rationale_anchor_hash": "2d21b60b9594be30b9c20b457af60dc740cc0c2023dedd7291f52fa4c0b1aa91"
 }

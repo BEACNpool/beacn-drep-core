@@ -1,16 +1,14 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5
-Recommendation: **NO**
-Score: `-0.2733` (raw `-0.2533` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7883` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (precomputed): The proposal has stronger-than-minimal governance and custody detail, including budget breakdown, NCL assertion, smart-contract addresses, oversight roles, and external references, but the central value case depends on large adoption and enterprise-payment claims that are asserted more than demonstrated in the supplied text. Given the large treasury ask and BEACN's caution around thin or unverifiable spending upside, a small negative evidence-quality nudge is warranted without overriding the deterministic readiness assessment.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because the request was a large treasury withdrawal and the central adoption case was not supported strongly enough by independent, replayable evidence.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 3,961,538 ada for “Bringing Real-World Payments to Cardano with Wirex”: 3,846,153 ada for WP1 and 115,385 ada for Intersect budget administration. The proposal described open-source payments infrastructure for Cardano, including smart contracts, account abstraction, batched transactions, settlement logic, wallet and API components, Visa card issuance linked to on-chain balances, banking rail integration, stablecoin systems, compliance architecture, and milestone-based disbursement through TRSC/PSSC treasury management smart contracts.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex, including on-chain payments and card infrastructure plus Intersect administration. It asks the treasury for 3,961,538 ADA. The strongest grounded claim is: The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee.
 
-Several governance and custody claims were well-supported. The review found a pinned, replayable anchor document, a clear amount and recipient, TRSC and PSSC addresses, role thresholds, oversight entities, a public tracking dashboard, Intersect process references, and described audit, reporting, and milestone controls. The strongest case for YES was that the budget request and governance process details cleared the evidence gates.
-
-The NO came from the evidence gap around the proposal’s main value case. The claims that the project would connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance for spending at millions of merchants were treated as unsupported by independent evidence in the supplied review. The same was true for the stated Wirex adoption figures and the broader claims about increased utility, transaction volume, user growth, institutional participation, and real-world activity. For a treasury withdrawal, BEACN applies elevated scrutiny because shared ada is being spent and precedent is being set; with thin claims-and-evidence status, missing cost-benefit clarity, no sustainability path, unknown execution risk, no independent assurance, and no rollback or remedy path, the conservative evidence-based vote was NO.
+A material claim remains proposer-asserted or thinly supported: The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -56,7 +54,7 @@ The NO came from the evidence gap around the proposal’s main value case. The c
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: unknown
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.52
 - missing: sustainability path
 - missing: cost-benefit clarity
@@ -104,6 +102,7 @@ The NO came from the evidence gap around the proposal’s main value case. The c
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): The proposal has stronger-than-minimal governance and custody detail, including budget breakdown, NCL assertion, smart-contract addresses, oversight roles, and external references, but the central value case depends on large adoption and enterprise-payment claims that are asserted more than demonstrated in the supplied text. Given the large treasury ask and BEACN's caution around thin or unverifiable spending upside, a small negative evidence-quality nudge is warranted without overriding the deterministic readiness assessment.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -112,7 +111,7 @@ The NO came from the evidence gap around the proposal’s main value case. The c
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Claims and evidence missing: Independent evidence for: The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants.
 - Claims and evidence missing: Independent evidence for: Wirex is claimed to have 7 million users, more than 1.5 million cards issued, over $20 billion in transaction volume, and Visa Principal Member experience.
 - Claims and evidence status is thin.
@@ -121,15 +120,20 @@ The NO came from the evidence gap around the proposal’s main value case. The c
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+
 ## Reproducibility
 - input_hash: `6a88dcaaa00d9e3c4f441a88a1d5e26b1c165ad8cd08dc0ca23f8e8b592eda09`
-- snapshot_bundle_hash: `c0bf6b7813017d4de92ecd2699006044b5a308201307170ae3ebf489d23c6f66`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `3c9470127c4267329ee201e4cb35c5cc2bb8b77a56068e183fb5b4eef997b516`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `2`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2047, "NO": 0.7491, "YES": 0.0462}`
+- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
 

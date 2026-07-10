@@ -1,16 +1,14 @@
 # Rationale: gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry
-Recommendation: **NO**
-Score: `-0.4533` (raw `-0.4233` + doctrine-LLM nudge `-0.03`) | Confidence: `0.64` | Readiness: `0.6`
-> Reasoning layer (precomputed): The claims describe plausible public-benefit infrastructure and some milestone and assurance structure, but the deterministic assessment flags thin evidence and missing budget, feasibility, alternatives, failure-mode, and community-impact analysis for a large treasury withdrawal. Under BEACN's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than adding support for spending.
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a large treasury withdrawal request, and the review found too many unresolved evidence gaps around budget, feasibility, alternatives, failure modes, and community impact to justify spending ₳5,100,781.
 
-The proposal requested funding to harden and improve Hydra v2 across performance, operations, ecosystem support, and developer experience. It claimed the work would deliver 2x to 10x improvements in snapshot signing and memory profile, reduce L1 fees through contract optimization, improve runbooks, configuration, observability, logging, and TUI tooling, support production users and integrators, and fund maintenance, CI, tooling, and technical debt reduction. The proposal also said funding would be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on IO: Hydra. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-Some claims were supported in the proposal itself, including the requested amount, the general milestone-gated assurance structure, Hydra’s stated technical benefits, possible L1 fee benefits from Hydra usage, and identified use cases such as institutional DEXes, agent-to-agent commerce, gaming, point of sale, micropayments, and verifiable information processing. But several important claims were only proposer assertions or lacked independent evidence in the review record, including claims about Hydra being the only production-grade Layer 2 on Cardano, named live workloads, Cardano L1 finality, fees, TPS comparisons, and migration risk if the proposal slipped.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund production hardening and performance improvements for Hydra v2 across performance optimization, operational excellence, ecosystem support, and developer experience workstreams. It asks the treasury for 5100781 ADA. The strongest grounded claim is: The proposal asks for ₳5,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.
 
-The review passed the basic intake and anchor checks: the action had a pinned, replayable proposal anchor. But treasury actions require elevated scrutiny because they spend shared ADA and set precedent. The treasury analysis was incomplete, with missing line-item budget and milestone-disbursement evidence; the risk review found medium execution risk and missing mitigation evidence and independent assurance; and synthesis was blocked by missing budget and feasibility assessment. BEACN therefore voted NO on the available record: the project may describe plausible public-benefit infrastructure, but the evidence package did not meet the standard required for this size of treasury withdrawal.
+A material claim remains proposer-asserted or thinly supported: The proposer states that Hydra is the only production-grade Layer 2 on Cardano and is already running live workloads for Delta DeFi, Masumi, Intersect, Vtechcom, and others. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -61,7 +59,7 @@ The review passed the basic intake and anchor checks: the action had a pinned, r
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.40
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -104,9 +102,7 @@ The review passed the basic intake and anchor checks: the action had a pinned, r
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (7), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 5100781
@@ -115,8 +111,7 @@ The review passed the basic intake and anchor checks: the action had a pinned, r
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The claims describe plausible public-benefit infrastructure and some milestone and assurance structure, but the deterministic assessment flags thin evidence and missing budget, feasibility, alternatives, failure-mode, and community-impact analysis for a large treasury withdrawal. Under BEACN's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than adding support for spending.
+- Directional voting is blocked until dossier quality gates pass.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -125,8 +120,7 @@ The review passed the basic intake and anchor checks: the action had a pinned, r
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: The proposer states that Hydra is the only production-grade Layer 2 on Cardano and is already running live workloads for Delta DeFi, Masumi, Intersect, Vtechcom, and others.
 - Claims and evidence missing: Independent evidence for: The proposer states Cardano L1 has over two hours of finality, about $0.17 transaction fees, and roughly 7 to 10 TPS, while competing platforms offer faster finality, lower fees, and higher throughput.
 - Claims and evidence status is thin.
@@ -139,15 +133,24 @@ The review passed the basic intake and anchor checks: the action had a pinned, r
 - Synthesis missing: missing feasibility assessment
 - Synthesis status is blocked.
 
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Missing dossier section: budget analysis
+- Missing dossier section: feasibility assessment
+- Missing dossier section: alternatives analysis
+- Missing dossier section: failure-mode analysis
+- Missing dossier section: community impact analysis
+
 ## Reproducibility
 - input_hash: `39ce6f4e2dbf5dc94fcef3bd21af3069960b539dd1c862ff8170e07c39c5b5ef`
-- snapshot_bundle_hash: `90844f47fe7715698b4af19d53b1019e17f55d49b928afe41320a0e5f9cf4080`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `9d9e710c8607a917787f6932e732fbcf68f0be1982e70f172c64749542e0a760`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `4`
-- uncertainty_band: `MEDIUM`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `5`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1935, "NO": 0.7661, "YES": 0.0403}`
+- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
 

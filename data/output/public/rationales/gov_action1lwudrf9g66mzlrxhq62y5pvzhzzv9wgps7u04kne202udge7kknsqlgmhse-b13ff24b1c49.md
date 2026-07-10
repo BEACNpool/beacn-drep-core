@@ -1,16 +1,14 @@
 # Rationale: gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse
-Recommendation: **NO**
-Score: `-0.5233` (raw `-0.5033` + doctrine-LLM nudge `-0.02`) | Confidence: `0.79` | Readiness: `0.8`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.4633` (raw `-0.4633` + doctrine-LLM nudge `-0.02`) | Confidence: `0.79` | Readiness: `0.8`
 > Reasoning layer (precomputed): A small negative nudge is justified because the ask is large and operational, the deterministic assessment marks claims and evidence as thin, and several high-materiality adoption and ecosystem-impact claims are proposer-asserted rather than evidenced in the document. The repayment, audit, and public-wallet commitments improve stewardship but do not fully offset the evidence gap for a treasury withdrawal of this size.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a large treasury withdrawal request, and several material claims needed stronger independent evidence before shared ADA should be committed.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Eternl: Path to Sustainability - v2. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The proposal asked for ₳2,350,000 to fund 12 months of Eternl operations, maintenance, support, infrastructure, audits or oversight metrics, and continued development from August 2026 through July 2027. The proposer described Eternl as a non-custodial Cardano light wallet across web, browser extension, Android, and iOS, and that core description was supported in the proposal. The budget math was also stated clearly: about $420,000 in annual costs, 6.0 FTE across 10 contributors, conversion of up to $420,000 worth of ADA into stablecoins, and return of ADA above that amount to the treasury.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: 12 months of operations, maintenance, support, infrastructure, audits/oversight metrics, and continued development for the Eternl Cardano light wallet. It asks the treasury for 2350000 ADA. The strongest grounded claim is: Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.
 
-The review found that some important claims were only proposer-asserted rather than independently evidenced. That included the stated install base of about 100,000 browser-extension installs and 30,000 mobile installs, the claim that Eternl accounts for 10-18% of Cardano mainnet transactions, and the future independent-audit arrangement. The proposal did include stewardship commitments such as a public company wallet, planned audits, on-chain Pro plan records, and published reporting, but those did not fully offset the evidence gap for a treasury request of this size.
-
-The treasury gates carried extra weight because this action withdraws shared ADA and sets precedent. The review also noted no documented milestone-gated disbursement, thin claims-and-evidence status, missing cost-benefit clarity, missing independent assurance, and an unknown execution-risk picture. BEACN’s NO vote reflects that the proposal may describe valuable work, but the evidence and safeguards were not strong enough for this level of treasury spending.
+A material claim remains proposer-asserted or thinly supported: Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -55,7 +53,7 @@ The treasury gates carried extra weight because this action withdraws shared ADA
 - finding: Clawback/refund path: confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.74
 - missing: milestone-gated disbursement
 - missing: cost-benefit clarity
@@ -102,6 +100,7 @@ The treasury gates carried extra weight because this action withdraws shared ADA
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): A small negative nudge is justified because the ask is large and operational, the deterministic assessment marks claims and evidence as thin, and several high-materiality adoption and ecosystem-impact claims are proposer-asserted rather than evidenced in the document. The repayment, audit, and public-wallet commitments improve stewardship but do not fully offset the evidence gap for a treasury withdrawal of this size.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,7 +109,7 @@ The treasury gates carried extra weight because this action withdraws shared ADA
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - No milestone-gated disbursement documented.
 - Claims and evidence missing: Independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.
 - Claims and evidence missing: Independent evidence for: Treasury-fund-use audits will be performed by an independent party unaffiliated with Tastenkunst GmbH or the Eternl team in February 2027 and August 2027.
@@ -120,15 +119,19 @@ The treasury gates carried extra weight because this action withdraws shared ADA
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+
 ## Reproducibility
 - input_hash: `b13ff24b1c499108ca110632cf2fc7da59cd8ff406880a54cacc7c8527a10b43`
-- snapshot_bundle_hash: `a69cc99722994a58f1c4624dd9d5c1300397c657ad869a7e1c561882031e017b`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `7d7dd9cc314efdd5a115a69af192bffe89c041b4b4aaf24a1b716d037d215a14`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `3`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `4`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1758, "NO": 0.7845, "YES": 0.0397}`
+- decision_probs: `{"ABSTAIN": 0.4111, "NO": 0.5492, "YES": 0.0397}`
 

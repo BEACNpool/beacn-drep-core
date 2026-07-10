@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-08T11:30:04.410760+00:00`
+- Published at: `2026-07-10T03:21:53.574905+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.
@@ -48,11 +48,11 @@ Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insu
 - Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `34b62c9d78875d60c20312eb74fbed68ba9930052c9a40bbf67fb3a0d73ada4a`
-- snapshot_bundle_hash: `c860f8e56978039cb35e2f32787422bc3991a4fdeb990060642b37bdefbe50f8`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
+- input_hash: `a1378da5b846d205716bdc1b5c9f09cfb8937e02bde82e7307ae49152d976019`
+- snapshot_bundle_hash: `fbcd2f60a6430a2c1b08c5a24406a6a672de399fde6b96888cf1b04365f2b2b5`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
 - score: `0.0`
 - confidence: `0.1`
 

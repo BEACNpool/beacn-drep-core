@@ -1,16 +1,14 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8
-Recommendation: **NO**
-Score: `-0.2333` (raw `-0.2533` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7783` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (precomputed): A small positive nudge is justified because the proposal is for open-source core developer infrastructure, includes a concrete 12-month scope, budget breakdown, external voting and audit references, on-chain administration details, and oversight controls. The nudge remains small because the amount is substantial and several adoption and delivery-history claims are asserted or externally checkable rather than demonstrated inside the document.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a treasury withdrawal with a substantial ADA request, and the evidence package did not clear the higher bar for shared treasury spending. The proposal had a clear budget and scope, but important benefit and risk questions remained too thin for a YES.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 540,750 ada for Year 2 maintenance and enhancement of Pallas by TxPipe: 525,000 ada for the work and 15,750 ada for Intersect administration. The work described included a part-time maintainer over 12 months, dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, issue triage, community support, public communication, and AI-friendly documentation and integration resources. The proposer also described Pallas as core Rust infrastructure for Cardano and cited usage by projects such as Aiken, Dolos, Lucid, Oura, Mithril, Amaru, and UTxO-RPC.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund Pallas by TxPipe maintenance and enhancement for Year 2, including a part-time maintainer over 12 months, essential maintenance, community support, and AI-friendly documentation and integration resources. It asks the treasury for 540,750 ADA. The strongest grounded claim is: The proposal requests 540,750 ADA total, composed of 525,000 ADA for Pallas maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee.
 
-Several parts were well-supported: the requested amount and budget breakdown, the 12-month maintenance scope, the Intersect budget-process support and audit references, the claim that the withdrawal stayed within the applicable Net Change Limit, and the proposed smart-contract administration and oversight structure. However, BEACN found key claims still unsupported or thin, especially independent evidence that the named ecosystem projects rely on Pallas and independent support for TxPipe’s delivery-history claim across Project Catalyst grants.
-
-The review gates showed the action was reviewable because the pinned anchor document was available, and the strongest YES case was acknowledged: the proposal had a concrete scope, budget, and several governance controls. But treasury actions require elevated scrutiny. The review also flagged an unsustainable treasury-flow signal, missing sustainability path, missing cost-benefit clarity, unknown execution risk, missing independent assurance, and no clear rollback or remedy path. On balance, those gaps outweighed the positive evidence, so BEACN voted NO.
+A material claim remains proposer-asserted or thinly supported: The proposal states that projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and others rely on Pallas for low-level protocol functionality. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -54,7 +52,7 @@ The review gates showed the action was reviewable because the pinned anchor docu
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.66
 - missing: sustainability path
 - missing: cost-benefit clarity
@@ -102,6 +100,7 @@ The review gates showed the action was reviewable because the pinned anchor docu
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to ±0.05): A small positive nudge is justified because the proposal is for open-source core developer infrastructure, includes a concrete 12-month scope, budget breakdown, external voting and audit references, on-chain administration details, and oversight controls. The nudge remains small because the amount is substantial and several adoption and delivery-history claims are asserted or externally checkable rather than demonstrated inside the document.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,7 +109,7 @@ The review gates showed the action was reviewable because the pinned anchor docu
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Claims and evidence missing: Independent evidence for: The proposal states that projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and others rely on Pallas for low-level protocol functionality.
 - Claims and evidence missing: Independent evidence for: The proposal discloses TxPipe has received 30 Project Catalyst grants across Funds 9 through 14, with 26 successfully delivered and 4 currently under development and on schedule.
 - Claims and evidence status is thin.
@@ -119,15 +118,20 @@ The review gates showed the action was reviewable because the pinned anchor docu
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+
 ## Reproducibility
 - input_hash: `496354452e55aa3e3bcb929c93c2a443e324fa864b4b734ab281dce129b92c49`
-- snapshot_bundle_hash: `08431d670b2d61193b560d6284add230a7c849d01187ca34d8775bd119f8405c`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `1ff780824ee7e81cc76896355fbae146c0c61655023675b6532b155641ddd607`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `2`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.214, "NO": 0.7379, "YES": 0.048}`
+- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
 

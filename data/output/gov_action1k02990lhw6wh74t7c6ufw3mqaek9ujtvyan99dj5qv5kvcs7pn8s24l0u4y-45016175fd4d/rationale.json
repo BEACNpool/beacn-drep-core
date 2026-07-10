@@ -1,14 +1,14 @@
 {
   "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s24l0u4y",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NO",
+  "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": null,
+  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2733,
-  "raw_score": -0.2533,
+  "score": -0.2133,
+  "raw_score": -0.2133,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,8 +28,22 @@
   ],
   "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
   "directional_threshold": 0.06,
-  "confidence": 0.7883,
+  "confidence": 0.7733,
   "readiness_score": 0.85,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.6,
+    "cost_efficiency": 0.25,
+    "downside_risk": 0.35,
+    "composite": -0.2025,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ]
+  },
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -44,6 +58,7 @@
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has stronger-than-thin governance and custody evidence through checkable voting, NCL, smart-contract, audit, and dashboard references, but the core economic justification and deliverable specifics remain limited relative to a 3.81M ada treasury withdrawal. A small cautionary nudge is warranted because treasury stewardship and evidence quality are only partly satisfied by process controls, not by detailed scope, milestones, or cost basis in the supplied claims.",
+    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -52,7 +67,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "Claims and evidence missing: Independent evidence for: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.",
     "Claims and evidence missing: Independent evidence for: Mithril addresses slow full-node synchronization and centralized-trust reliance by light clients.",
     "Claims and evidence status is thin.",
@@ -61,14 +76,17 @@
     "Risk review missing: independent assurance",
     "Risk review missing: rollback/remedy path"
   ],
-  "missing_evidence": [],
+  "missing_evidence": [
+    "independent ecosystem-value evidence packet",
+    "verified ecosystem benefit or strategic necessity",
+    "cost comparables, budget proportionality, or sustainability evidence"
+  ],
   "input_hash": "45016175fd4db381f1fc62ea19259c8740ea72dd9286c4e9693159d8057f9f09",
-  "snapshot_bundle_hash": "5f3f6e2f4908cfbddd3d902d7a3e47c70d5cc26f41551993e6dd845996c57284",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "dac3b2ace2e7c4a751436c8eae752cd8901ebe223d68184922c9e8bc427c6420",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
@@ -79,19 +97,24 @@
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
     "gov_anchor_documents",
-    "deep_research_dossiers"
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.0462,
-    "NO": 0.7491,
-    "ABSTAIN": 0.2047
+    "YES": 0.049,
+    "NO": 0.4477,
+    "ABSTAIN": 0.5033
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -156,7 +179,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
           "Financial confidence: 0.52"
         ],
         "missing": [
@@ -212,8 +235,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NO because the proposal asks for a large treasury withdrawal, but the supplied evidence did not sufficiently support the core technical and economic case for spending 3,810,423 ada.\n\nThe action requested 3,810,423 ada for Mithril Protocol continuous development through Intersect, with 3,699,440 ada for development and 110,983 ada for Intersect\u2019s administration fee. The proposal included milestone-based disbursement controls through treasury smart contracts, oversight arrangements, reporting obligations, and a public dashboard. It also cleared some important process checks: the anchor document was available, the request did not breach the applicable Net Change Limit, and it had passed the 2026 Intersect Budget Process Hydra Voting threshold.\n\nHowever, the review found the evidence base too thin for a treasury withdrawal of this size. The strongest technical claims, including that Mithril enables trustless certification of Cardano state using stake-based threshold multi-signatures and addresses slow full-node synchronization and light-client trust reliance, were treated as proposer assertions without independent evidence in the supplied review. The review also found missing cost-benefit clarity, no stated sustainability path, unknown execution risk, no independent assurance, and no clear rollback or remedy path.\n\nThis was not a rejection of Mithril\u2019s potential value. It was a treasury-stewardship decision: process controls and governance support helped the proposal, but they did not fully answer whether the requested amount was justified by independently supported deliverables, costs, risks, and remedies.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw 3,810,423 ada for Mithril Protocol. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Mithril Protocol continuous development through Intersect on behalf of the vendor. It asks the treasury for 3,810,423 ADA. The strongest grounded claim is: The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol continuous development and 110,983 ada for the Intersect budget administration fee.\n\nA material claim remains proposer-asserted or thinly supported: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain. Reason code: VERIFIED_NCL_REQUIRED.",
+  "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -255,15 +278,15 @@
       "output_sha256": "fe6d633c39c0d1e4e459514f59b8753162f99aed1630b201f8ff64d075080232"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "deterministic-heuristic",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "eda18e532b874ae0a99438f85794612e73114a7ad4fcbef04d0f62fdd132eff1"
+      "model": "local-deterministic",
+      "prompt_sha256": "214ab01ab7354f9bf32abcf36c9038bacf8d3a2ce9a9ba3b4f347e57031cf177",
+      "output_sha256": "2257b100da0c9b91a600824f6185ad4b4d07cf35135f40bb3061c2385e402630"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/bb175368fd92b77f92c749d0.md",
-  "rationale_anchor_hash": "bb175368fd92b77f92c749d081f0cc4937501704a65b6eece4cc241d7575eb12"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/39a6c9f97105f8d1533b5cd4.md",
+  "rationale_anchor_hash": "39a6c9f97105f8d1533b5cd433bd9c2abdc76226cd792bdc7db08bcce02e48b6"
 }

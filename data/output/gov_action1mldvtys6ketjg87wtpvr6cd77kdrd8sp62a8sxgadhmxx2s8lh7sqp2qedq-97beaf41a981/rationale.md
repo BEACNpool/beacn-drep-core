@@ -1,14 +1,14 @@
 # Rationale: gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq
-Recommendation: **YES**
-Score: `0.05` (raw `0.03` + doctrine-LLM nudge `+0.02`) | Confidence: `0.6125` | Readiness: `0.0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.03` + doctrine-LLM nudge `+0.02`) | Confidence: `0.6` | Readiness: `0.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records YES on Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5. The deterministic gates found enough evidence and no decisive blocker.
+BEACN records ABSTAIN on Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5. This is a conservative abstention because the evidence does not justify stronger certainty.
 
 The action is a ParameterChange. The cached anchor describes the request as: Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5. The strongest grounded claim is: Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: RULE_THRESHOLD_UNMET.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -83,7 +83,6 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to ±0.05): Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
-- Action-type policy: a clean committeeMinSize liveness parameter may proceed despite thin generic risk fields; governance-risk detail remains explicit uncertainty.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,20 +90,20 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Rule-based system; does not infer unstated intent.
+- Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `97beaf41a981dcdfe9dccf4cd8cbf7bf983565e7e7a719798f17b2b232c9c18d`
-- snapshot_bundle_hash: `bfddddc26ae25f3cfa72624c93a0bc9dcd09bb12db1f7d12481975d6e0800359`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `e61192e016886abd2ce94821c476d6b0d47dea3c24cb984232b7e00a2e98d2de`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `10`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `11`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2434, "NO": 0.2134, "YES": 0.5431}`
+- decision_probs: `{"ABSTAIN": 0.47, "NO": 0.265, "YES": 0.265}`
 

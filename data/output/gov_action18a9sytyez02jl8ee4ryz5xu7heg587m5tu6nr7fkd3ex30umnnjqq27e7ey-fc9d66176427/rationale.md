@@ -1,14 +1,14 @@
 # Rationale: gov_action18a9sytyez02jl8ee4ryz5xu7heg587m5tu6nr7fkd3ex30umnnjqq27e7ey
-Recommendation: **NO**
-Score: `-0.6333` (raw `-0.6033` + doctrine-LLM nudge `-0.03`) | Confidence: `0.64` | Readiness: `0.6`
-> Reasoning layer (precomputed): The extracted claims show plausible public-benefit ecosystem growth, but the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community-impact analyses for a large treasury withdrawal. The treasury-return and equal-value substitution claims are material but mostly proposer-asserted, so a small cautionary negative nudge is justified without overriding the blocked status.
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records NO on Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+BEACN records NEEDS_MORE_INFO on Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
 The action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano title sponsorship for Rare Evo 2026 main stage/global livestream and Cardano Dev Gov Day 2026 sponsorship. It asks the treasury for 2750000 ADA. The strongest grounded claim is: Rare Network requests ₳2,750,000, valued by the proposer at $660,000 using $0.24 per ADA, to fund two Cardano sponsorship packages.
 
-A material claim remains proposer-asserted or thinly supported: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis.
+A material claim remains proposer-asserted or thinly supported: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -59,7 +59,7 @@ A material claim remains proposer-asserted or thinly supported: Rare Network sta
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: not confirmed
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.35
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -102,9 +102,7 @@ A material claim remains proposer-asserted or thinly supported: Rare Network sta
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (7), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2750000
@@ -113,8 +111,7 @@ A material claim remains proposer-asserted or thinly supported: Rare Network sta
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- DRep ratification support is material but below threshold; treated as a modest context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The extracted claims show plausible public-benefit ecosystem growth, but the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community-impact analyses for a large treasury withdrawal. The treasury-return and equal-value substitution claims are material but mostly proposer-asserted, so a small cautionary negative nudge is justified without overriding the blocked status.
+- Directional voting is blocked until dossier quality gates pass.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -123,9 +120,7 @@ A material claim remains proposer-asserted or thinly supported: Rare Network sta
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
-- No milestone-gated disbursement documented.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: Rare Network states it will return 20% of all VIP ticket sales to the Cardano Treasury, with current VIP ticket retail value listed as $900.
 - Claims and evidence missing: Independent evidence for: Rare Evo 2026 will occur regardless of treasury funding, but the proposal says funding would substantially expand Cardano presence, accessibility, participation, and industry outreach.
 - Claims and evidence status is thin.
@@ -138,15 +133,24 @@ A material claim remains proposer-asserted or thinly supported: Rare Network sta
 - Synthesis missing: missing feasibility assessment
 - Synthesis status is blocked.
 
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Missing dossier section: budget analysis
+- Missing dossier section: feasibility assessment
+- Missing dossier section: alternatives analysis
+- Missing dossier section: failure-mode analysis
+- Missing dossier section: community impact analysis
+
 ## Reproducibility
 - input_hash: `fc9d66176427a7e3d36a11675fa5493d889de26068a3c5db9b91b27d00805e4a`
-- snapshot_bundle_hash: `95731716330f211b299f28ee7d0ffba3a9a23219068d959dfd2a6016788707b5`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `ee6cc0653c1567073ba1fcfee94ccb944edacabfcfdc01213cf94bb6ce2ec48d`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `5`
-- uncertainty_band: `MEDIUM`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1935, "NO": 0.7661, "YES": 0.0403}`
+- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
 

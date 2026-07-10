@@ -1,14 +1,14 @@
 # Rationale: gov_action1cp0w6zwgwpj98jtu3r2q838lgwmhs6j49l58zx4q05lx220lmzaqqztnljz
-Recommendation: **NO**
-Score: `-0.3633` (raw `-0.3233` + doctrine-LLM nudge `-0.04`) | Confidence: `0.6608` | Readiness: `0.6`
-> Reasoning layer (precomputed): A small negative nudge is justified because the request is large, vendor-level costs are confidential, the recipient structure recently received a much larger related treasury withdrawal, and the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community impact analyses; these gaps weaken evidence quality and treasury downside protection despite stated oversight and refund mechanisms.
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records NO on Cardano Critical Integrations V2. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+BEACN records NEEDS_MORE_INFO on Cardano Critical Integrations V2. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
 The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdrawal from the Cardano Treasury for Cardano Critical Integrations V2, covering Year 2 contracted costs, a 12-month enhancement and maintenance program for CCI V1 integrations, and a new native Fireblocks integration. It asks the treasury for 23000000 ADA. The strongest grounded claim is: The proposal requests ₳23,000,000, described as USD 5,750,000 at $0.25 per ADA, from the Cardano Treasury.
 
-A material claim remains proposer-asserted or thinly supported: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis.
+A material claim remains proposer-asserted or thinly supported: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs budget analysis; feasibility assessment; alternatives analysis. Reason code: DEEP_RESEARCH_REQUIRED.
 
 ## Review Tree
 - overall_status: `blocked`
@@ -58,7 +58,7 @@ A material claim remains proposer-asserted or thinly supported: CCI V1 integrati
 - finding: Clawback/refund path: not confirmed
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.40
 - missing: line-item budget
 - missing: milestone-gated disbursement
@@ -101,9 +101,7 @@ A material claim remains proposer-asserted or thinly supported: CCI V1 integrati
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (4), reducing confidence.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 23000000
@@ -112,8 +110,7 @@ A material claim remains proposer-asserted or thinly supported: CCI V1 integrati
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.040 (clamped to ±0.05): A small negative nudge is justified because the request is large, vendor-level costs are confidential, the recipient structure recently received a much larger related treasury withdrawal, and the deterministic assessment identifies missing budget, feasibility, alternatives, failure-mode, and community impact analyses; these gaps weaken evidence quality and treasury downside protection despite stated oversight and refund mechanisms.
+- Directional voting is blocked until dossier quality gates pass.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -122,8 +119,7 @@ A material claim remains proposer-asserted or thinly supported: CCI V1 integrati
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury diligence dossier incomplete; soft gate applied a -0.1 caution penalty and judged on available repo context (anchor + doctrine + reasoning lean) rather than abstaining.
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: CCI V1 integrations listed as Circle USDCx, LayerZero, Pyth, and Dune either launched on mainnet or are in implementation, and CCI V2 is intended to sustain, optimize, and extend them.
 - Claims and evidence missing: Independent evidence for: The CCI V1 integrations require ongoing annual payments for licensing, services, or attestations to remain operational.
 - Claims and evidence status is thin.
@@ -136,15 +132,24 @@ A material claim remains proposer-asserted or thinly supported: CCI V1 integrati
 - Synthesis missing: missing feasibility assessment
 - Synthesis status is blocked.
 
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Missing dossier section: budget analysis
+- Missing dossier section: feasibility assessment
+- Missing dossier section: alternatives analysis
+- Missing dossier section: failure-mode analysis
+- Missing dossier section: community impact analysis
+
 ## Reproducibility
 - input_hash: `bbd867b196508a5a2d8fa3fb70aa36fe33e140fc7f11e6de8d92fee9e116b149`
-- snapshot_bundle_hash: `b0188cbb10c104d4b1bcbc5ecf811c459215a54797eed32b16b7c33456fc1ffb`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `0f59e973978acbc6fa0dce38b669266cdaad8cd30678c105a8b198b1d99e64ac`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `5`
-- uncertainty_band: `MEDIUM`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `6`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.2054, "NO": 0.7514, "YES": 0.0433}`
+- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
 

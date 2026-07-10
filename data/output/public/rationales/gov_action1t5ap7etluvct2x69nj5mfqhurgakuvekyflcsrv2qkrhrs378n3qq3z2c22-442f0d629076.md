@@ -1,6 +1,6 @@
 # Rationale: gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22
 Recommendation: **ABSTAIN**
-Score: `-0.07` (raw `-0.05` + doctrine-LLM nudge `-0.02`) | Confidence: `0.5375` | Readiness: `0.5`
+Score: `-0.05` (raw `-0.05` + doctrine-LLM nudge `-0.02`) | Confidence: `0.5325` | Readiness: `0.5`
 > Reasoning layer (precomputed): The proposal has a clear governance intent and offers concrete discussion structure, which aligns with support for info actions that improve governance clarity. However, several high-materiality premises about ecosystem harm, gridlock, and existential danger are asserted without evidence, so evidence quality and framing integrity justify a small cautionary nudge rather than positive support.
 
 ## Plain-language explanation (precomputed)
@@ -103,13 +103,13 @@ This abstention is a conservative, evidence-based hold, not active opposition. A
 
 ## Reproducibility
 - input_hash: `442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162`
-- snapshot_bundle_hash: `e63c328b38e8745d4372d0a4723410d79b92cef17d401d01222f2d95e55d925d`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `624429d9bc7b2de4adb5f5fbae52e9306ea131eb91d90e065f09b720de9e4d95`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `4`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4544, "NO": 0.3428, "YES": 0.2028}`
+- decision_probs: `{"ABSTAIN": 0.4531, "NO": 0.3234, "YES": 0.2234}`
 

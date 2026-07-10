@@ -7,7 +7,7 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": 0.03,
+  "score": 0.0,
   "raw_score": 0.06,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
@@ -28,8 +28,9 @@
   ],
   "doctrine_hash": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a",
   "directional_threshold": 0.12,
-  "confidence": 0.4575,
+  "confidence": 0.45,
   "readiness_score": 0.0,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Protocol parameter changes carry system-wide risk.",
@@ -49,7 +50,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Rule-based system; does not infer unstated intent.",
+    "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
     "Claims and evidence missing: Independent evidence for: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
     "Claims and evidence missing: Independent evidence for: Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
     "Claims and evidence status is thin.",
@@ -59,12 +60,11 @@
   ],
   "missing_evidence": [],
   "input_hash": "b72cb0b06083394ca79fd9d8c23a0c84d43197ee7f18ca61bd81f52317e5b4c6",
-  "snapshot_bundle_hash": "096c435b41ee7679e9a595bef306f377df6f99cabb4c796f1c4018b211af5ce9",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "b08594c4de49ec641b4dfeb8b2fedc5a11c0c2858ac3071671f1eb0d74d3c021",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -72,19 +72,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 5,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.3128,
-    "NO": 0.2528,
-    "ABSTAIN": 0.4344
+    "YES": 0.2838,
+    "NO": 0.2838,
+    "ABSTAIN": 0.4325
   },
   "uncertainty_band": "LOW",
   "evidence_depth_score": 3,

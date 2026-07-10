@@ -32,11 +32,10 @@
   },
   "input_hash": "aa0f3e5c404811d020cd905989b017520dcdfd00ef9f4f0a6023c1ed34caab96",
   "action_type": "InfoAction",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -44,15 +43,11 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "resource_snapshots": [
-    {
-      "resource_id": "gov_actions_api",
-      "kind": "remote",
-      "source_url": "https://api.gov.tools",
-      "note": "remote resources must be pinned to local snapshot for strict replay"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "kind": "file",
@@ -69,7 +64,7 @@
       "resource_id": "gov_actions_all_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_all.csv",
-      "file_hash": "f079d6c8a9dacdd98cf837389bdc426f7b23b4f4ee27e66536ba9aaf7407f6cd",
+      "file_hash": "8025355170e6edf4045af59832464d3652e92f6202502cbb5abd0d496fb08b28",
       "selected_row": {
         "action_id": "gov_action1a95na44kgedjk3k64ajpfp4p9d9jj3sgzc6tt9nmnkvgj7c9nraqq7g4d2u",
         "tx_hash": "e9693ed6b6465b2b46daaf641486a12b4b2946081634b5967b9d98897b0598fa",
@@ -106,7 +101,7 @@
       "resource_id": "gov_actions_active_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_active.csv",
-      "file_hash": "029be9f4d64ae52d8ce1dfd93a31ff1e3b5e9d00d40cf37d942407bbbde9707f"
+      "file_hash": "a18fd66683b84979dc6e11c0342ca18c4f97b5b22390c569e12b25f85ac22c7c"
     },
     {
       "resource_id": "gov_action_flags_snapshot",
@@ -118,7 +113,7 @@
       "resource_id": "gov_poll_runs_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_poll_runs.csv",
-      "file_hash": "f2a9370f56aab6166b191b9d4cdafbce47f85701aae3899bcdd8b77db1bbfab7"
+      "file_hash": "4532707693ee8e0081541a929439d6fea1505506fb32114c75cd98c3e0d698d6"
     },
     {
       "resource_id": "top_drep_votes_snapshot",
@@ -130,11 +125,23 @@
       "resource_id": "gov_anchor_documents",
       "kind": "directory",
       "path": "data/input/governance/anchors/",
-      "files_count": 342,
-      "dir_hash": "c475fbc1d453bcf8a88a94618d00aba627967a96b4d1cfa56152c87f02dcab46"
+      "files_count": 343,
+      "dir_hash": "05c3b53fe0809cfb00bf2b7001e3ad9daf85c3819e5ea46797e28e80721bf7b0"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "kind": "file",
+      "path": "data/history/governance_outcomes.csv",
+      "file_hash": "5c57094fbb74597db876163107406a0a4e4baf7811b39bdc9766e7a0051cedb9"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "kind": "file",
+      "path": "data/input/governance/decision_support/protocol_readiness_profiles.csv",
+      "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "fbe011b12b041a08bab71636ad64c1014ab4e536f1efb154baacbdc7c0c55fec",
+  "snapshot_bundle_hash": "04a9d1c50f65b4616343388be723f5398a45f6f33a478e8197f9c6fe17f11d4a",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -171,7 +178,7 @@
       "direction": "YES",
       "score_adjustment": 0.03,
       "cap": 0.05,
-      "assisted_directional": true,
+      "assisted_directional": false,
       "prompt_sha256": "5e529b10fc2e0444042d2a495d6dbdabc39ccd768361930f72ce9edde7ec568c",
       "output_sha256": "346af6537ffd94efdb8c5243592242887c91c678d36f44e77a1cb4f9328ddc1e"
     },
@@ -180,8 +187,8 @@
       "available": true,
       "reason": null,
       "model": "local-deterministic",
-      "prompt_sha256": "eee2ead345cb36dec1ecf5fc6ed487a977f37fb7ad4938ab83ed1806014cec3b",
-      "output_sha256": "ab4b22c81f7d8c913ddcd7c103a045480bee2b0ef054c8ba7c058c2101487918"
+      "prompt_sha256": "b8aaaf958106e070456edcc58b92fe6129d10aeb957e99a6ea1ae74a299a786b",
+      "output_sha256": "1f57c754a1d7232b4d64fa6bbaa8eb7ccec7a7918303a77bb9c59e396a77a125"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

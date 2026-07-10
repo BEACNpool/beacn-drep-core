@@ -1,14 +1,14 @@
 # Rationale: gov_action1k2jertppnnndejjcglszfqq4yzw8evzrd2nt66rr6rqlz54xp0zsq05ecsn
-Recommendation: **YES**
-Score: `0.04` (raw `0.0` + doctrine-LLM nudge `+0.04`) | Confidence: `0.71` | Readiness: `0.85`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.04`) | Confidence: `0.7` | Readiness: `0.85`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records YES on Plutus V3 Cost Model Parameter Changes Prior to Chang#2. The deterministic gates found enough evidence and no decisive blocker.
+BEACN records ABSTAIN on Plutus V3 Cost Model Parameter Changes Prior to Chang#2. This is a conservative abstention because the evidence does not justify stronger certainty.
 
 The action is a ParameterChange. The cached anchor describes the request as: Plutus V3 Cost Model Parameter Changes Prior to Chang 2. The strongest grounded claim is: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: DREP_DISTRIBUTION_MISSING.
 
 ## Review Tree
 - overall_status: `ready`
@@ -78,7 +78,6 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Inferences
 - Doctrine-aware reasoning layer nudged the score by +0.040 (clamped to ±0.05): Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to ±0.05).
-- Directional vote forced by completed readiness packet (treasury-aware).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -87,16 +86,17 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Uncertainty
 - No DRep distribution available.
+- Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
 
 ## Reproducibility
 - input_hash: `c17d933a6d04ab1d4288cea0e183a65c50f703989d478ac6c5efd5d435cc7232`
-- snapshot_bundle_hash: `de05570018adeeb814413b3e79cbfc641ed479178b8e5c2e64e108082cf1b0a9`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `caafe00fedff1c04c26d837dd5c1ff552b114035f941db785ca1c316c83d3f0f`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `24`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `25`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2313, "NO": 0.2113, "YES": 0.5575}`
+- decision_probs: `{"ABSTAIN": 0.495, "NO": 0.2525, "YES": 0.2525}`
 

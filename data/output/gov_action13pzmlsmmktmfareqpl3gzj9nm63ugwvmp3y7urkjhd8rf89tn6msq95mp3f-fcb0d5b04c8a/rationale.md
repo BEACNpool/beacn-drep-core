@@ -1,6 +1,6 @@
 # Rationale: gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f
 Recommendation: **ABSTAIN**
-Score: `0.115` (raw `0.11` + doctrine-LLM nudge `+0.005`) | Confidence: `0.4787` | Readiness: `0.0`
+Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.005`) | Confidence: `0.4775` | Readiness: `0.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
@@ -99,13 +99,13 @@ A material claim remains proposer-asserted or thinly supported: He made signific
 
 ## Reproducibility
 - input_hash: `fcb0d5b04c8abdfeea39f6f50fa9c85b52162a2701c2b94c80f31b5468679b20`
-- snapshot_bundle_hash: `c5ae868552e6daf828d3f7d100be6309efdf7689ce81b2050ee9031a75e732e8`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `7cc21a1b5c772dc48edb3668a6a5da45cd4c2df7284ebe49099bddeaf14d77a8`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `11`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `12`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4397, "NO": 0.1652, "YES": 0.3952}`
+- decision_probs: `{"ABSTAIN": 0.4394, "NO": 0.1703, "YES": 0.3903}`
 

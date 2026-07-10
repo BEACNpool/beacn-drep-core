@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:da67519b835755a17a50e8be78ae52ebd51387d8845fb894b0c39c069fd9540c",
+    "raw_input_hash": "sha256:a37d70790c99e42436d7abbd289a8e234f5d0b60a9113a6a4581794d20664a21",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "published_at": "2026-07-10T03:21:53.574905+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,12 +20,12 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.1,
-    "input_hash": "da67519b835755a17a50e8be78ae52ebd51387d8845fb894b0c39c069fd9540c",
-    "snapshot_bundle_hash": "d74ea2804559201b57a9ada7af19e9fd6774341486c7692d9c46d28ce0aba7b5",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
-    "rationale_markdown_path": "/data/output/public/rationales/4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0-da67519b8357.md",
+    "input_hash": "a37d70790c99e42436d7abbd289a8e234f5d0b60a9113a6a4581794d20664a21",
+    "snapshot_bundle_hash": "9209abe42d2ddbb44a139f6f84d6c19ae095d55d418b3a577710af9e0a7f81ce",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
+    "rationale_markdown_path": "/data/output/public/rationales/4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0-a37d70790c99.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
@@ -37,7 +37,7 @@
       "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
       "Provide No structured claim/evidence extraction from the proposal document."
     ],
-    "markdown_path": "/data/output/public/rationales/4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0-da67519b8357.md",
+    "markdown_path": "/data/output/public/rationales/4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0-a37d70790c99.md",
     "missing_evidence": [
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ],
@@ -97,7 +97,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -171,7 +171,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0-da67519b8357.assessment.json"
+    "assessment_path": "/data/output/public/rationales/4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0-a37d70790c99.assessment.json"
   },
   "proposal_evidence": {
     "available": false,
@@ -181,12 +181,11 @@
   "deep_research": null,
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "resource_ids_used": [
-      "gov_actions_api",
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
       "drep_vote_history_snapshot",
@@ -197,15 +196,15 @@
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
       "gov_anchor_documents",
-      "deep_research_dossiers"
+      "deep_research_dossiers",
+      "ecosystem_value_profiles",
+      "treasury_policy_state",
+      "treasury_portfolio",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
     ]
   },
   "inputs_used": [
-    {
-      "resource_id": "gov_actions_api",
-      "type": "csv",
-      "path": "registries/resource_registry.csv"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "type": "csv",
@@ -260,6 +259,31 @@
       "resource_id": "deep_research_dossiers",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "ecosystem_value_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_policy_state",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_portfolio",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
@@ -269,10 +293,10 @@
     "governance_alignment": 0.1
   },
   "freshness": {
-    "snapshot_age_seconds": 10,
+    "snapshot_age_seconds": 12,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

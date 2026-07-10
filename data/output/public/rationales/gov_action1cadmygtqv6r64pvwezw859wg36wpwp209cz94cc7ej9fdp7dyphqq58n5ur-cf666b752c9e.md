@@ -1,16 +1,14 @@
 # Rationale: gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur
-Recommendation: **YES**
-Score: `0.06` (raw `0.06` + doctrine-LLM nudge `+0.0`) | Confidence: `0.565` | Readiness: `0.6`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.06` + doctrine-LLM nudge `+0.0`) | Confidence: `0.55` | Readiness: `0.6`
 > Reasoning layer (precomputed): The proposal provides a clear governance rationale, impact discussion, guardrail mapping, references to review materials, and a reversion plan, while also acknowledging a meaningful governance tradeoff around veto power at smaller committee sizes. Because the deterministic assessment is already ready and the evidence largely addresses the parameter-change doctrine without adding treasury-spending upside, no additional nudge is warranted.
 
-## Plain-language explanation (precomputed)
-BEACN voted YES because the core request is clear, replayable, and directly addresses a governance liveness risk: reducing `committeeMinSize` from 7 to 5 creates an operational buffer so the Constitutional Committee can keep functioning if one or two seats become inactive.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records ABSTAIN on Reduce the committeeMinSize parameter from 7 to 5. This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action requested a protocol parameter change setting `committee_min_size` to 5. The proposal says the current committee has 7 members, equal to the current minimum of 7, and that falling below the minimum would make actions needing Constitutional Committee approval ineligible for ratification, including parameter changes, constitution updates, treasury withdrawals, and hard forks. The review found the requested parameter change itself well-supported, along with the claim that a lower minimum would preserve continuity and still satisfy the stated CMS-01, CMS-02, and CMS-03 guardrails.
+The action is a ParameterChange. The cached anchor describes the request as: Reduce the committeeMinSize protocol parameter from 7 to 5. The strongest grounded claim is: The proposal changes the committeeMinSize parameter from 7 to 5.
 
-Some claims were thinner. The review did not have independent evidence that the current Constitutional Committee has exactly 7 members, and it treated the claim that the change does not signal a desire to reduce committee size as proposer-asserted rather than independently proven. Risk review also lacked mitigation evidence and independent assurance, though execution risk was assessed as low and no decisive blockers were found.
-
-The evidence gates were sufficient for a directional vote because the anchor document was available, the change was specific, the guardrail claims were supported in the proposal, and the governance-risk tradeoff was explicit. BEACN’s YES is therefore a cautious approval of a clean liveness parameter change, while recognizing residual uncertainty around independently verifying some supporting governance claims.
+A material claim remains proposer-asserted or thinly supported: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7. Reason code: RULE_THRESHOLD_UNMET.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -85,7 +83,6 @@ The evidence gates were sufficient for a directional vote because the anchor doc
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Action-type policy: a clean committeeMinSize liveness parameter may proceed despite thin generic risk fields; governance-risk detail remains explicit uncertainty.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -93,7 +90,7 @@ The evidence gates were sufficient for a directional vote because the anchor doc
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Rule-based system; does not infer unstated intent.
+- Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
 - Claims and evidence missing: Independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize of 7.
 - Claims and evidence missing: Independent evidence for: The proposal states that it does not directly affect the current number of Constitutional Committee members and does not imply a desire to reduce the committee size.
 - Claims and evidence status is thin.
@@ -102,13 +99,13 @@ The evidence gates were sufficient for a directional vote because the anchor doc
 
 ## Reproducibility
 - input_hash: `cf666b752c9ef29377293b8126b29dfb49f0f151f9c3357c67c535acc16de3bd`
-- snapshot_bundle_hash: `3e1be81f650db05ad2c286f2c0f684f0e78ed7ea3a808e84128feca0d1fdbaff`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `efdde5503b5dc65db19fce3db31ac6bbd0fe12ba9dfb641dcf0a56854329537d`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `4`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `5`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.2494, "NO": 0.2094, "YES": 0.5413}`
+- decision_probs: `{"ABSTAIN": 0.4575, "NO": 0.2712, "YES": 0.2712}`
 

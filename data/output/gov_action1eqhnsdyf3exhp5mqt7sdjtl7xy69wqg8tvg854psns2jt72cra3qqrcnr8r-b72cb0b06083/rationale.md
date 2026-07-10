@@ -1,6 +1,6 @@
 # Rationale: gov_action1eqhnsdyf3exhp5mqt7sdjtl7xy69wqg8tvg854psns2jt72cra3qqrcnr8r
 Recommendation: **ABSTAIN**
-Score: `0.03` (raw `0.06` + doctrine-LLM nudge `-0.03`) | Confidence: `0.4575` | Readiness: `0.0`
+Score: `0.0` (raw `0.06` + doctrine-LLM nudge `-0.03`) | Confidence: `0.45` | Readiness: `0.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: 4 well-supported claim(s), 2 unsupported high-materiality claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
@@ -93,7 +93,7 @@ A material claim remains proposer-asserted or thinly supported: Intersect's Para
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Rule-based system; does not infer unstated intent.
+- Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
 - Claims and evidence missing: Independent evidence for: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...
 - Claims and evidence missing: Independent evidence for: Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.
 - Claims and evidence status is thin.
@@ -103,13 +103,13 @@ A material claim remains proposer-asserted or thinly supported: Intersect's Para
 
 ## Reproducibility
 - input_hash: `b72cb0b06083394ca79fd9d8c23a0c84d43197ee7f18ca61bd81f52317e5b4c6`
-- snapshot_bundle_hash: `096c435b41ee7679e9a595bef306f377df6f99cabb4c796f1c4018b211af5ce9`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `b08594c4de49ec641b4dfeb8b2fedc5a11c0c2858ac3071671f1eb0d74d3c021`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `4`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `5`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4344, "NO": 0.2528, "YES": 0.3128}`
+- decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`
 

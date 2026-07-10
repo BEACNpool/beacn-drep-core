@@ -1,0 +1,115 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity",
+        "Recipient: Strike Finance liquidity deployment administered by an independent council/multisig composed of Rami from Snek, Phil from Surf, and James from Monetra/Snek/Surf/Moneta as stated inconsistently in the document",
+        "Stated amount: 9,000,000 ADA",
+        "Deliverables: Deploy treasury-owned capital into Strike Finance V2 USDM liquidity for 12 months, Return realized yield from the first six months to the Cardano Treasury at month 6, Return 100% of treasury-owned deployed assets plus remaining realized yield at month 12, minus any realized losses in a wind-down, Provide monthly public transparency reports covering deployment status, liquidity utilization, volume, open interest, P&L, yield, drawdown, stablecoin exposure, market quality metrics, distributions, and material risks, Provide third-party assurance reports for deployment confirmation, month-6 yield distribution, and month-12 return of funds",
+        "Deadline/expiry: 12 months after deployment, with midpoint yield return at month 6",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 9,000,000 ADA for a 12-month non-grant liquidity deployment into Strike Finance V2, with treasury ownership retained throughout deployment.",
+        "Claim (economic, supported_in_proposal, high materiality): The deployed ADA would be sold for USDM, modeled at ADA = 0.15 USD to produce approximately 1,350,000 USDM of stablecoin liquidity.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal models a 10% USD-denominated annual percentage rate generating approximately 135,000 USD or 900,000 ADA-equivalent in annual yield, but states these returns are not guaranteed.",
+        "Claim (adoption, proposer_asserted, high materiality): Strike Finance claims it has processed over 1.13 billion USD in cumulative volume, facilitated roughly 968,000 to 1,001,000 trades, served over 3,000 unique traders, produced over 1.16 million USD in protocol revenue, and generated over 3.25 million USD in liquidity provider profit.",
+        "Claim (adoption, proposer_asserted, medium materiality): The document claims Strike represented over 50% of Cardano trading activity over the past six months.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal says V2 public data from 2026-03-20 through 2026-06-15 shows 87,288,044 USD total V2 volume, 410,800 trades, 2,681 users, 30,105 USD revenue, and peak open interest of 1,246,007 USD."
+      ],
+      "missing": [
+        "Independent evidence for: Strike Finance claims it has processed over 1.13 billion USD in cumulative volume, facilitated roughly 968,000 to 1,001,000 trades, served over 3,000 unique traders, produced over 1.16 million USD in protocol revenue, and generated over 3.25 million USD in liquidity provider profit.",
+        "Independent evidence for: The document claims Strike represented over 50% of Cardano trading activity over the past six months.",
+        "Independent evidence for: The proposal says V2 public data from 2026-03-20 through 2026-06-15 shows 87,288,044 USD total V2 volume, 410,800 trades, 2,681 users, 30,105 USD revenue, and peak open interest of 1,246,007 USD.",
+        "Independent evidence for: The proposal states the Strike Liquidity Provider vault has 985,271.59 USD TVL, 43.52% APR, +8.85% all-time return, +69,537.24 USD all-time P&L, 1.15% maximum drawdown, and a 4.97 Sharpe ratio."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.68"
+      ],
+      "missing": [
+        "milestone-gated disbursement"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month non-grant liquidity deployment into Strike Finance V2, with treasury ownership retained throughout deployment.\" though 1 review blocker(s) remain open.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Strike Finance claims it has processed over 1.13 billion USD in cumulative volume, facilitated roughly 968,000 to 1,001,000 trades, served over 3,000 unique traders, produced over 1.16 million USD in protocol revenue, and generated over 3.25 million USD in liquidity provider profit.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ]
+}

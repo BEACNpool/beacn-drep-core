@@ -1,13 +1,13 @@
 # gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525
 
 ## Vote
-- Decision: **YES**
+- Decision: **ABSTAIN**
 - Action type: `HardForkInitiation`
 - Status: `enacted`
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: YES. For this HardForkInitiation (enacted), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates "We propose to upgrade Cardano mainnet to Protocol Version 10." and clears the evidence gates. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: No DRep distribution available. Confidence context: score -0.03; confidence 70.8%.
+Vote: ABSTAIN. For this HardForkInitiation (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "We propose to upgrade Cardano mainnet to Protocol Version 10." and clears the evidence gates. What would enable a directional vote: Use stable, reproducible anchor links (commit-pinned when possible); Provide migration readiness evidence across tooling/wallet/exchange dependencies. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 70.0%.
 
 ## Assessment tree
 - assessment_status: `ready`
@@ -28,6 +28,7 @@ Vote: YES. For this HardForkInitiation (enacted), available evidence supports pr
 
 ## Remaining uncertainty
 - No DRep distribution available.
+- Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan
 
 ## Top 3 fixes to improve next submission
 - Use stable, reproducible anchor links (commit-pinned when possible).
@@ -36,10 +37,10 @@ Vote: YES. For this HardForkInitiation (enacted), available evidence supports pr
 
 ## Proof of vote
 - input_hash: `a787cc61e04b8ad7a6904f569d2b69ff13f01e9e341d36c2ef5d04fdf151be76`
-- snapshot_bundle_hash: `b6ff9bc71d5a07ada267717ced9ea0f261491f7ca32d0c27dfe20ca4b7f134cd`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
-- resources_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- core_commit: `e445331eea310b6381e354fba1d0c01617e16d84`
-- score: `-0.03`
-- confidence: `0.7075`
+- snapshot_bundle_hash: `367fbe7b9c525b8debe76c12eac24b2a1d3d98ee4f524a29527dba1fc6499f21`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- score: `0.0`
+- confidence: `0.7`
 

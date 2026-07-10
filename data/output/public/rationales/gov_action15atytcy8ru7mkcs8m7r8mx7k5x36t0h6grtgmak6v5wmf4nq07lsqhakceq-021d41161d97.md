@@ -1,6 +1,6 @@
 # Rationale: gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq
 Recommendation: **ABSTAIN**
-Score: `-0.07` (raw `-0.05` + doctrine-LLM nudge `-0.02`) | Confidence: `0.4875` | Readiness: `0.6`
+Score: `-0.05` (raw `-0.05` + doctrine-LLM nudge `-0.02`) | Confidence: `0.4825` | Readiness: `0.6`
 > Reasoning layer (precomputed): The proposal has clear intent and accounting mechanics, and it preserves per-withdrawal discretion, which supports governance clarity. However, the material justification for raising the guardrail from 350,000,000 ada to 500,000,000 ada rests mainly on an asserted constraint rather than quantified Treasury demand or demonstrated need, so a small cautionary nudge is warranted for treasury stewardship and evidence quality.
 
 ## Plain-language explanation (precomputed)
@@ -104,13 +104,13 @@ The review gates found a pinned and replayable proposal anchor, and the stronges
 
 ## Reproducibility
 - input_hash: `021d41161d9716de87a3e00afe2c7ba2c14a859015d538aa938199ec558afe2d`
-- snapshot_bundle_hash: `721371b04a929c2b19f0ba32f657b386d594635f7b987ffb18f8482d26df6295`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `781172752b2ef57f234b9896a5192bc1c5ec025f4dc58b81363d6206fa847967`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `0`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4419, "NO": 0.3491, "YES": 0.2091}`
+- decision_probs: `{"ABSTAIN": 0.4406, "NO": 0.3297, "YES": 0.2297}`
 

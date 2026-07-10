@@ -1,14 +1,14 @@
 # Rationale: gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw
-Recommendation: **NO**
-Score: `-0.4033` (raw `-0.3833` + doctrine-LLM nudge `-0.02`) | Confidence: `0.57` | Readiness: `1.0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `-0.3833` + doctrine-LLM nudge `-0.02`) | Confidence: `0.47` | Readiness: `1.0`
 > Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to ±0.05).
 
 ## Plain-language explanation (deterministic-heuristic)
-BEACN records NO on gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+BEACN records ABSTAIN on gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw. This is a conservative abstention because the evidence does not justify stronger certainty.
 
 The action is a ParameterChange. The cached anchor describes the request as: not stated.
 
-Residual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.
+Reason code: CONTEXT_THIN_ANCHOR_UNPINNED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -78,18 +78,19 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 ## Uncertainty
 - Anchor document is not yet pinned locally for this action.
 - No DRep distribution available.
+- Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
 - Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence status is thin.
 
 ## Reproducibility
 - input_hash: `1969ca6977ee1d2f538cc66cf56a2c189c18adf125c6fbdb61f09e2113afed43`
-- snapshot_bundle_hash: `3786d31a0d696fc48778debb778a04ade1be62099ba3ecd36eccfc1c05810600`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `ee7e7cf21334047ad66acf87bf35657cb9b2ee776c396e1f841305818f4d5dd6`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents`
-- snapshot_age_seconds: `24`
-- uncertainty_band: `MEDIUM`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `25`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.21, "NO": 0.7478, "YES": 0.0422}`
+- decision_probs: `{"ABSTAIN": 0.4375, "NO": 0.2812, "YES": 0.2812}`
 

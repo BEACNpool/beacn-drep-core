@@ -1,0 +1,81 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,810,423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Intersect Budget Administration"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with project-specific management through Intersect and a PSSC payment address.",
+    "what": "Treasury withdrawal to fund Mithril Protocol continuous development and Intersect budget administration."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,810,423 ada, split into 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that full node synchronisation is slow and light clients rely on centralized trust, making secure access and verification of blockchain state a pressing infrastructure challenge.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer claims Mithril will lower onboarding friction for exchanges, wallets, and monitoring by enabling faster sync times.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and references voting documentation, audited results, and an audit report.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount is asserted not to breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713, either alone or in aggregate at submission time.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit and oversight costs are included in the proposal overhead, with independent oversight to be provided through Intersect and technically capable third parties, including reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal identifies Sundae Labs, Cardano Foundation, Dquadrant, NMKR, Sundial, and Eternl as the six external Oversight Committee entities that verify key administrative actions using on-chain logic.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that Teragone has not previously received direct funding from Cardano treasury or community governance programs, while having worked on Mithril through IOG-funded collaboration.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "A treasury dashboard and smart-contract repository, guide, and audit reports are referenced for community auditability and verification of the TRSC and PSSC arrangements.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 3,810,423 ada for Mithril Protocol work administered by Intersect through treasury smart contracts, with asserted strategic infrastructure value, budget-process approval, NCL compliance, and oversight mechanisms, but it does not provide a complete timeline, detailed milestone plan, feasibility analysis, alternatives analysis, or full risk analysis in the anchor text.",
+  "output_sha256": "15bc315fdd30e8464d9a55192d78136dcbf20115d1886eec46b006c944d4b02e"
+}

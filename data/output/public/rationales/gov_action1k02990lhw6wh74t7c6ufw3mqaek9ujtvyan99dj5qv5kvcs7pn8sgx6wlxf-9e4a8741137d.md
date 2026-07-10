@@ -1,16 +1,14 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf
-Recommendation: **NO**
-Score: `-0.2333` (raw `-0.2533` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7783` | Readiness: `0.85`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.85`
 > Reasoning layer (precomputed): A small positive adjustment is justified because the claims show unusually concrete treasury-control details for a large withdrawal, including disclosed prior funding, work-package amounts, smart contract addresses, sign-off thresholds, external references, and assurance mechanisms. The adjustment remains small because several high-materiality operational-performance claims are still proposer asserted and the ask is large.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a large treasury withdrawal and the review found that some material claims about value, savings, and delivery capacity were not independently supported enough to meet the higher evidence bar for spending shared ADA.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Withdraw 25,400,000 ada for Intersect: Governance coordination and technical . This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 25,400,000 ada for Intersect’s June 2026 to June 2027 operating model, paid to the stated 2026 Treasury Reserve Smart Contract stake address. The proposal broke the budget into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for management of critical processes. It also described milestone-based drawdowns, smart-contract treasury controls, evidence-backed reporting, transparent disclosures, and external assurance.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Intersect governance coordination, technical stewardship, incident response, release coordination, ecosystem operations, and management of critical processes for June 2026 to June 2027. It asks the treasury for 25,400,000 ADA. The strongest grounded claim is: Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027.
 
-Several important parts were well supported. The proposal anchor was available and replayable. The requested amount, work-package allocations, prior treasury funding disclosures, smart contract addresses, sign-off thresholds, and public dashboard details were present. The review also treated the 2026 Intersect Budget Process Hydra Voting support and Net Change Limit references as independently verifiable context.
-
-The NO came from the remaining gaps. The claim that the ask was reduced from last year while preserving critical Cardano functions lacked independent evidence. The claim that Intersect had coordinated two network upgrades, was preparing for a third, and led coordination during the November 2025 chain partition incident was also still proposer asserted. The treasury review also found missing cost-benefit clarity, no sustainability path, unknown execution risk, missing independent assurance, and no rollback or remedy path. For a 25,400,000 ada withdrawal in an unsustainable treasury-flow regime, BEACN judged those gaps enough for cost and precedent risk to outweigh the supported benefits.
+A material claim remains proposer-asserted or thinly supported: Intersect states that the current ask is reduced from last year's $7.875M to $6.35M while preserving functions critical to Cardano continuity and maturity. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -54,7 +52,7 @@ The NO came from the remaining gaps. The claim that the ask was reduced from las
 - finding: Clawback/refund path: unknown
 - finding: Cost/benefit clarity: unknown
 - finding: Recurring funding dependency: confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.64
 - missing: sustainability path
 - missing: cost-benefit clarity
@@ -102,6 +100,7 @@ The NO came from the remaining gaps. The claim that the ask was reduced from las
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to ±0.05): A small positive adjustment is justified because the claims show unusually concrete treasury-control details for a large withdrawal, including disclosed prior funding, work-package amounts, smart contract addresses, sign-off thresholds, external references, and assurance mechanisms. The adjustment remains small because several high-materiality operational-performance claims are still proposer asserted and the ask is large.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,7 +109,7 @@ The NO came from the remaining gaps. The claim that the ask was reduced from las
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - Claims and evidence missing: Independent evidence for: Intersect states that the current ask is reduced from last year's $7.875M to $6.35M while preserving functions critical to Cardano continuity and maturity.
 - Claims and evidence missing: Independent evidence for: Intersect says it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.
 - Claims and evidence status is thin.
@@ -119,15 +118,20 @@ The NO came from the remaining gaps. The claim that the ask was reduced from las
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+- cost comparables, budget proportionality, or sustainability evidence
+
 ## Reproducibility
 - input_hash: `9e4a8741137d9f68ac94bfca2535f44c5f39eb762956956e62c86f683c6e5f12`
-- snapshot_bundle_hash: `b8b27a751415c4318a6c53fd550b30834d95c118b84b907cc8085175898450ec`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `ff129aa559ed7264b88491a6c4d784788247476280018ddd76b182183d051097`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `2`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `3`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.214, "NO": 0.7379, "YES": 0.048}`
+- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
 

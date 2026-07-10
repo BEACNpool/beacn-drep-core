@@ -32,11 +32,10 @@
   },
   "input_hash": "99847e78a09941961e20e53d8550bbd110800320c95c9c089e87e01521ac31d4",
   "action_type": "InfoAction",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -44,15 +43,11 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "resource_snapshots": [
-    {
-      "resource_id": "gov_actions_api",
-      "kind": "remote",
-      "source_url": "https://api.gov.tools",
-      "note": "remote resources must be pinned to local snapshot for strict replay"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "kind": "file",
@@ -69,7 +64,7 @@
       "resource_id": "gov_actions_all_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_all.csv",
-      "file_hash": "f079d6c8a9dacdd98cf837389bdc426f7b23b4f4ee27e66536ba9aaf7407f6cd",
+      "file_hash": "8025355170e6edf4045af59832464d3652e92f6202502cbb5abd0d496fb08b28",
       "selected_row": {
         "action_id": "gov_action1fpqwxp2kxvnntr8hpkh9q9djm78ccdww7qlhg5safugh4stmcwzqql5lauu",
         "tx_hash": "4840e305563327358cf70dae5015b2df8f8c35cef03f74521d4f117ac17bc384",
@@ -106,7 +101,7 @@
       "resource_id": "gov_actions_active_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_active.csv",
-      "file_hash": "029be9f4d64ae52d8ce1dfd93a31ff1e3b5e9d00d40cf37d942407bbbde9707f"
+      "file_hash": "a18fd66683b84979dc6e11c0342ca18c4f97b5b22390c569e12b25f85ac22c7c"
     },
     {
       "resource_id": "gov_action_flags_snapshot",
@@ -125,7 +120,7 @@
       "resource_id": "gov_poll_runs_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_poll_runs.csv",
-      "file_hash": "f2a9370f56aab6166b191b9d4cdafbce47f85701aae3899bcdd8b77db1bbfab7"
+      "file_hash": "4532707693ee8e0081541a929439d6fea1505506fb32114c75cd98c3e0d698d6"
     },
     {
       "resource_id": "top_drep_votes_snapshot",
@@ -137,11 +132,23 @@
       "resource_id": "gov_anchor_documents",
       "kind": "directory",
       "path": "data/input/governance/anchors/",
-      "files_count": 342,
-      "dir_hash": "c475fbc1d453bcf8a88a94618d00aba627967a96b4d1cfa56152c87f02dcab46"
+      "files_count": 343,
+      "dir_hash": "05c3b53fe0809cfb00bf2b7001e3ad9daf85c3819e5ea46797e28e80721bf7b0"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "kind": "file",
+      "path": "data/history/governance_outcomes.csv",
+      "file_hash": "5c57094fbb74597db876163107406a0a4e4baf7811b39bdc9766e7a0051cedb9"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "kind": "file",
+      "path": "data/input/governance/decision_support/protocol_readiness_profiles.csv",
+      "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "10fc91edb6d4548d65719ef8e84d8b4747cbdbf92e4338dab9e1dba65d920ab2",
+  "snapshot_bundle_hash": "2b0ced49dba7169f5c888c99dca6bcc5e753bae230c7b112fd049015efbeadd5",
   "model_layer": {
     "claim_extraction": {
       "available": true,

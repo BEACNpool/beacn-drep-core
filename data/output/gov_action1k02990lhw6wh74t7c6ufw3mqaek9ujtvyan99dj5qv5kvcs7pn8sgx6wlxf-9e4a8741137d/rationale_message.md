@@ -1,13 +1,11 @@
 # Withdraw 25,400,000 ada for Intersect: Governance coordination and technical ...
-**BEACN DRep vote: NO**  _(plain-language explanation — precomputed)_
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — deterministic-heuristic)_
 
-BEACN voted NO because this was a large treasury withdrawal and the review found that some material claims about value, savings, and delivery capacity were not independently supported enough to meet the higher evidence bar for spending shared ADA.
+BEACN records NEEDS_MORE_INFO on Withdraw 25,400,000 ada for Intersect: Governance coordination and technical . This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 25,400,000 ada for Intersect’s June 2026 to June 2027 operating model, paid to the stated 2026 Treasury Reserve Smart Contract stake address. The proposal broke the budget into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for management of critical processes. It also described milestone-based drawdowns, smart-contract treasury controls, evidence-backed reporting, transparent disclosures, and external assurance.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Intersect governance coordination, technical stewardship, incident response, release coordination, ecosystem operations, and management of critical processes for June 2026 to June 2027. It asks the treasury for 25,400,000 ADA. The strongest grounded claim is: Intersect requests 25,400,000 ADA for its core operating model covering June 2026 to June 2027.
 
-Several important parts were well supported. The proposal anchor was available and replayable. The requested amount, work-package allocations, prior treasury funding disclosures, smart contract addresses, sign-off thresholds, and public dashboard details were present. The review also treated the 2026 Intersect Budget Process Hydra Voting support and Net Change Limit references as independently verifiable context.
-
-The NO came from the remaining gaps. The claim that the ask was reduced from last year while preserving critical Cardano functions lacked independent evidence. The claim that Intersect had coordinated two network upgrades, was preparing for a third, and led coordination during the November 2025 chain partition incident was also still proposer asserted. The treasury review also found missing cost-benefit clarity, no sustainability path, unknown execution risk, missing independent assurance, and no rollback or remedy path. For a 25,400,000 ada withdrawal in an unsustainable treasury-flow regime, BEACN judged those gaps enough for cost and precedent risk to outweigh the supported benefits.
+A material claim remains proposer-asserted or thinly supported: Intersect states that the current ask is reduced from last year's $7.875M to $6.35M while preserving functions critical to Cardano continuity and maturity. Reason code: VERIFIED_NCL_REQUIRED.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

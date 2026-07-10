@@ -1,14 +1,14 @@
 {
   "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NO",
+  "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": null,
+  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2733,
-  "raw_score": -0.2533,
+  "score": -0.2133,
+  "raw_score": -0.2133,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,8 +28,22 @@
   ],
   "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
   "directional_threshold": 0.06,
-  "confidence": 0.7883,
+  "confidence": 0.7733,
   "readiness_score": 0.85,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.6,
+    "cost_efficiency": 0.25,
+    "downside_risk": 0.4375,
+    "composite": -0.2156,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ]
+  },
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -44,6 +58,7 @@
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal has relatively concrete deliverables, governance process references, NCL assertions, and oversight mechanics, but several core value claims about ecosystem need, AI-agent demand, and integration impact remain largely proposer-asserted, while the ask is large for software and documentation work under BEACN's post-AI cost caution. A small negative nudge is justified for treasury stewardship and evidence quality without overriding the deterministic assessment.",
+    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -52,7 +67,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "Claims and evidence missing: Independent evidence for: Tx3 is intended to provide a standard, open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.",
     "Claims and evidence missing: Independent evidence for: The proposal states that there is currently no common interface mechanism across the Cardano ecosystem, causing integrators to relearn protocols, rebuild understanding independently, and face higher integration costs.",
     "Claims and evidence status is thin.",
@@ -61,14 +76,17 @@
     "Risk review missing: independent assurance",
     "Risk review missing: rollback/remedy path"
   ],
-  "missing_evidence": [],
+  "missing_evidence": [
+    "independent ecosystem-value evidence packet",
+    "verified ecosystem benefit or strategic necessity",
+    "cost comparables, budget proportionality, or sustainability evidence"
+  ],
   "input_hash": "f506ac90d0086750c41146410d2151ceb8b2fb82bc05b935909ace209ce32a2e",
-  "snapshot_bundle_hash": "1b0eecd033a004b269e3c68d2973c6d064c0650effc49fb3ebe1eeb22cc00c3e",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "7bb8e6624d2c0f054ffeb7679e5af4f19592dc217feef20d8b48737d95e44c03",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
@@ -79,19 +97,24 @@
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
     "gov_anchor_documents",
-    "deep_research_dossiers"
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
     "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.0462,
-    "NO": 0.7491,
-    "ABSTAIN": 0.2047
+    "YES": 0.049,
+    "NO": 0.4477,
+    "ABSTAIN": 0.5033
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -155,7 +178,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
           "Recurring funding dependency: unknown",
-          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
           "Financial confidence: 0.67"
         ],
         "missing": [
@@ -211,8 +234,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NO because the proposal asked for a large treasury withdrawal while a core technical claim was not independently supported by replayable evidence.\n\nThe action requested 1,684,050 ada to fund Tx3 by TxPipe over 12 months, including 1,308,000 ada for work, a 327,000 ada contingency reserve, and a 49,050 ada Intersect administration fee. The proposal described Tx3 as an open API layer for Cardano dApp protocols, with 12 additional protocol onboardings, developer and agent coverage, an MCP server, documentation, SDKs, and live JSON-RPC endpoints.\n\nSeveral parts of the proposal were supported or independently checkable: the pinned anchor document was available, the budget breakdown was clear, the 12-month delivery structure was specific, the action had passed the relevant Intersect Budget Process support step, and the requested amount was asserted to be within the applicable Net Change Limit at submission. The proposal also cited existing Tx3 protocol registry activity and oversight through Intersect-administered treasury management smart contracts.\n\nThe NO vote came from treasury scrutiny and evidence quality. Treasury withdrawals consume shared ada and set precedent, so BEACN applies a higher bar. In this review, claims about Tx3 providing a standard open-source interface, the lack of a common ecosystem interface, and the resulting integration-cost problem remained too dependent on proposer assertion. The review also found thin claims-and-evidence support, missing sustainability and cost-benefit clarity, no independent assurance, no clear rollback or remedy path, and an unfavorable treasury flow signal. That was enough for the costs and precedent risk to outweigh the supported case for funding.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Tx3 by TxPipe, described as an open API layer for Cardano dApp protocols. It asks the treasury for 1,684,050 ADA. The strongest grounded claim is: The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\n\nA material claim remains proposer-asserted or thinly supported: Tx3 is intended to provide a standard, open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints. Reason code: VERIFIED_NCL_REQUIRED.",
+  "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -254,15 +277,15 @@
       "output_sha256": "10e766e318b62ab1c3d0478ac71d47de4828a820d26fb0f91b1183f641e0714c"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "deterministic-heuristic",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "481eb58d3674e923959397fe3f950ecd95947db3e03573e9c262c9720511e45c"
+      "model": "local-deterministic",
+      "prompt_sha256": "a9314e4fb400cee4ac6c9e058826a1f46a154f2ab48787cf225f0805b4d12a88",
+      "output_sha256": "3d4f076c8d23a43120317a1f62ce0cc5f24d287d2b9ddf4a82001dc0b3f3bc0a"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/12ff061cba2e53818c67daf0.md",
-  "rationale_anchor_hash": "12ff061cba2e53818c67daf0a1cc7b82c2b9e08ce56d497acfd9097c3916428e"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c250e0296aebe4918f57e25f.md",
+  "rationale_anchor_hash": "c250e0296aebe4918f57e25f87183313a03316808acaf3e6db0aa9bc9b5b14cd"
 }

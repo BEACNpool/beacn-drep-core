@@ -1,13 +1,13 @@
 {
   "action_id": "gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525",
   "action_type": "HardForkInitiation",
-  "recommendation": "YES",
-  "abstain_reason_code": null,
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "DREP_DISTRIBUTION_MISSING",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
-  "agentic_high_impact_reason_code": "HIGH_IMPACT_HARD_FORK",
-  "score": -0.03,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
   "raw_score": -0.07,
   "llm_score_adjustment": 0.04,
   "llm_lean": {
@@ -28,8 +28,9 @@
   ],
   "doctrine_hash": "6f53967349f63aa48fbbdec2a1d6a164bef78184c62a7ccebf36f47a9585733c",
   "directional_threshold": 0.12,
-  "confidence": 0.7075,
+  "confidence": 0.7,
   "readiness_score": 0.85,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Hard fork actions are high-impact protocol upgrades and require operator-aware review.",
@@ -41,7 +42,6 @@
   ],
   "inferences": [
     "Doctrine-aware reasoning layer nudged the score by +0.040 (clamped to \u00b10.05): Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.040 (clamped to \u00b10.05).",
-    "Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -49,16 +49,16 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "No DRep distribution available."
+    "No DRep distribution available.",
+    "Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan"
   ],
   "missing_evidence": [],
   "input_hash": "a787cc61e04b8ad7a6904f569d2b69ff13f01e9e341d36c2ef5d04fdf151be76",
-  "snapshot_bundle_hash": "b6ff9bc71d5a07ada267717ced9ea0f261491f7ca32d0c27dfe20ca4b7f134cd",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "367fbe7b9c525b8debe76c12eac24b2a1d3d98ee4f524a29527dba1fc6499f21",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -66,19 +66,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 23,
+    "snapshot_age_seconds": 25,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.4869,
-    "NO": 0.2816,
-    "ABSTAIN": 0.2316
+    "YES": 0.2525,
+    "NO": 0.2525,
+    "ABSTAIN": 0.495
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 3,
@@ -171,7 +173,7 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records YES on Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork). The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a HardForkInitiation. The cached anchor describes the request as: Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork). The strongest grounded claim is: We propose to upgrade Cardano mainnet to Protocol Version 10.\n\nResidual uncertainty remains limited to the replayed evidence and the public resources cited by the run manifest.",
+  "human_message": "BEACN records ABSTAIN on Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork). This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a HardForkInitiation. The cached anchor describes the request as: Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork). The strongest grounded claim is: We propose to upgrade Cardano mainnet to Protocol Version 10.\n\nReason code: DREP_DISTRIBUTION_MISSING.",
   "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
@@ -218,8 +220,8 @@
       "available": true,
       "reason": null,
       "model": "local-deterministic",
-      "prompt_sha256": "b0e2bc946ed0dedcd8bb85ed1ff11b3e6de2798cde045f16ce12efe232e0426b",
-      "output_sha256": "3eee36599d2618c52cb7af7fe71e139295b577fd96a078e26f6c5038927d4870"
+      "prompt_sha256": "193e7c03d7aa05e075c912cce6fbd8ab824b50d481dcf72ad39d7f61b18dae09",
+      "output_sha256": "a71080ef1eabccae17c10ff5879ee8698316cb8f49671e44be389dbdf0d6bbde"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

@@ -7,7 +7,7 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.07,
+  "score": -0.05,
   "raw_score": -0.05,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
@@ -28,8 +28,9 @@
   ],
   "doctrine_hash": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572",
   "directional_threshold": 0.12,
-  "confidence": 0.5375,
+  "confidence": 0.5325,
   "readiness_score": 0.5,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Flag score present (3), reducing confidence.",
@@ -57,12 +58,11 @@
   ],
   "missing_evidence": [],
   "input_hash": "442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162",
-  "snapshot_bundle_hash": "e63c328b38e8745d4372d0a4723410d79b92cef17d401d01222f2d95e55d925d",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "624429d9bc7b2de4adb5f5fbae52e9306ea131eb91d90e065f09b720de9e4d95",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -70,19 +70,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
     "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.2028,
-    "NO": 0.3428,
-    "ABSTAIN": 0.4544
+    "YES": 0.2234,
+    "NO": 0.3234,
+    "ABSTAIN": 0.4531
   },
   "uncertainty_band": "LOW",
   "evidence_depth_score": 3,
@@ -236,6 +238,6 @@
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/cb32323f4e1a22d139b242fe.md",
-  "rationale_anchor_hash": "cb32323f4e1a22d139b242fe48422c23185ade066270d2da4b96544a4acaef6a"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a05bc65f8e7d0e3c55d20288.md",
+  "rationale_anchor_hash": "a05bc65f8e7d0e3c55d2028843873bd47727a18cae8d39f0188f41720513e434"
 }

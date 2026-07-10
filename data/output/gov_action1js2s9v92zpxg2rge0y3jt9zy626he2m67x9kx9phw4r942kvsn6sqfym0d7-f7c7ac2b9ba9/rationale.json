@@ -7,7 +7,7 @@
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": 0.08,
+  "score": 0.0,
   "raw_score": 0.06,
   "llm_score_adjustment": 0.02,
   "llm_lean": {
@@ -28,8 +28,9 @@
   ],
   "doctrine_hash": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a",
   "directional_threshold": 0.12,
-  "confidence": 0.62,
+  "confidence": 0.6,
   "readiness_score": 0.0,
+  "treasury_dimensions": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Protocol parameter changes carry system-wide risk.",
@@ -49,19 +50,18 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Rule-based system; does not infer unstated intent.",
+    "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
     "Risk review status is thin."
   ],
   "missing_evidence": [],
   "input_hash": "f7c7ac2b9ba95f869049d18492c17ecd8219016ac07f28ab020ced58fb66a121",
-  "snapshot_bundle_hash": "7200f15fee9fa30217c49f8a103eb60892bf47f08fd7527257d81cb329d22cc3",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "b62d28dfd957af8bb06f3f43ada263d3652f0defc0e437968cfd653de8f7ef4f",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
     "gov_actions_all_snapshot",
@@ -69,19 +69,21 @@
     "gov_action_flags_snapshot",
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
-    "gov_anchor_documents"
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 23,
+    "snapshot_age_seconds": 25,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.3425,
-    "NO": 0.1825,
-    "ABSTAIN": 0.475
+    "YES": 0.265,
+    "NO": 0.265,
+    "ABSTAIN": 0.47
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 3,

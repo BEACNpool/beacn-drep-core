@@ -5,12 +5,12 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:8d696a4a3b05ec0b85d85e501cb2786a7a5028bb533c0a97dc1c6001ca0f9b66",
+    "raw_input_hash": "sha256:4e9ee62b0ccf5e71ed7260d0e1f8691d24ef0c3af952c70fca32e46e26406fb3",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-08T11:30:04.410760+00:00",
+    "published_at": "2026-07-10T03:21:53.574905+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,12 +20,12 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.1,
-    "input_hash": "8d696a4a3b05ec0b85d85e501cb2786a7a5028bb533c0a97dc1c6001ca0f9b66",
-    "snapshot_bundle_hash": "4e20ceaeba04355b846f77ba5a3d6909433c3bc6420f8427fa60587a6b949a90",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
-    "rationale_markdown_path": "/data/output/public/rationales/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0-8d696a4a3b05.md",
+    "input_hash": "4e9ee62b0ccf5e71ed7260d0e1f8691d24ef0c3af952c70fca32e46e26406fb3",
+    "snapshot_bundle_hash": "5c4b6d319cdbf84c57f5779473cb42f5d80ca58247c4806fcdb39c8f46d78816",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
+    "rationale_markdown_path": "/data/output/public/rationales/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0-4e9ee62b0ccf.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
@@ -37,7 +37,7 @@
       "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
       "Provide complete proposal summary."
     ],
-    "markdown_path": "/data/output/public/rationales/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0-8d696a4a3b05.md",
+    "markdown_path": "/data/output/public/rationales/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0-4e9ee62b0ccf.md",
     "missing_evidence": [
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ],
@@ -106,7 +106,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: unknown"
           ],
           "missing": [
@@ -180,7 +180,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0-8d696a4a3b05.assessment.json"
+    "assessment_path": "/data/output/public/rationales/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0-4e9ee62b0ccf.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -191,19 +191,18 @@
     "anchor_hash": "0b26f47137d669af9776bf74076388d1952f8a0451bad655653b4e42dbf50c3e",
     "file_sha256": "a180f870acae46b8258b06e2b31e3b4d454cf8cc09f9d1ca406d4c6a3cee322c",
     "content_bytes": "39615",
-    "fetched_at_utc": "2026-07-08T11:30:10Z",
+    "fetched_at_utc": "2026-07-10T03:21:55Z",
     "download_path": "/proposals/3f4b022c9913d52f9f39a8c82a1b9ebe5143fb745f3531f9366c7268bf9b9ce4#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation"
   },
   "deep_research": null,
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
-    "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+    "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
-    "core_commit": "e445331eea310b6381e354fba1d0c01617e16d84",
+    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
     "resource_ids_used": [
-      "gov_actions_api",
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
       "drep_vote_history_snapshot",
@@ -214,15 +213,15 @@
       "gov_poll_runs_snapshot",
       "top_drep_votes_snapshot",
       "gov_anchor_documents",
-      "deep_research_dossiers"
+      "deep_research_dossiers",
+      "ecosystem_value_profiles",
+      "treasury_policy_state",
+      "treasury_portfolio",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
     ]
   },
   "inputs_used": [
-    {
-      "resource_id": "gov_actions_api",
-      "type": "csv",
-      "path": "registries/resource_registry.csv"
-    },
     {
       "resource_id": "gov_actions_snapshot",
       "type": "csv",
@@ -277,6 +276,31 @@
       "resource_id": "deep_research_dossiers",
       "type": "csv",
       "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "ecosystem_value_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_policy_state",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_portfolio",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
     }
   ],
   "scoring": {
@@ -289,7 +313,7 @@
     "snapshot_age_seconds": 5,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -1,16 +1,14 @@
 # Rationale: gov_action1suskjc6c4nw58c6wtmv77xe79gwj47wp4gvh9cqhhxujwxmam3cqqkz5nwj
-Recommendation: **NO**
-Score: `-0.5633` (raw `-0.5333` + doctrine-LLM nudge `-0.03`) | Confidence: `0.79` | Readiness: `0.8`
+Recommendation: **NEEDS_MORE_INFO**
+Score: `-0.4933` (raw `-0.4933` + doctrine-LLM nudge `-0.03`) | Confidence: `0.79` | Readiness: `0.8`
 > Reasoning layer (precomputed): The proposal has a coherent structure with custody, reporting, risk triggers, and return terms, but the core economic case depends on proposer-reported traction, a short vault history, modeled yield, and material exposure to ADA price, USDM, smart contract, and custody risks. Given the large treasury amount and limited independently verifiable support in the supplied document, a small cautionary negative nudge is justified beyond the mechanical assessment.
 
-## Plain-language explanation (precomputed)
-BEACN voted NO because this was a large treasury withdrawal and the core economic case was not supported by enough independent, replayable evidence. The proposal had a coherent structure, but the expected return depended on modeled yield, proposer-reported traction, and a short vault history, while exposing treasury funds to ADA price risk, USDM risk, smart contract risk, and custody or operational risk.
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Strike Finance Liquidity Deployment. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
 
-The action requested 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity infrastructure. The ADA would be sold for USDM, modeled at ADA = 0.15 USD, to create about 1,350,000 USDM of stablecoin liquidity. The proposal said the first six months of realized yield would be returned to the Cardano Treasury at month 6, and that all treasury-owned deployed assets, including remaining principal and realized yield, would be returned at month 12. It also promised monthly transparency reports and third-party assurance reports at deployment, month 6, and month 12.
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity. It asks the treasury for 9000000 ADA. The strongest grounded claim is: The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity infrastructure rather than grant funding.
 
-Several basic claims were supported in the proposal: the amount requested, the 12-month deployment structure, the ADA-to-USDM liquidity plan, the independent multisig custody arrangement, and the stated risk categories. But important claims were not independently evidenced in the supplied review, including the projected 900,000 ADA-equivalent annual yield and the reported cumulative Strike traction figures. The review also found the evidence base thin, no documented milestone-gated disbursement, missing independent assurance in the risk review, and no dependency map.
-
-The proposal passed enough intake and anchor checks to be reviewed, and the strongest YES case was that this was structured as a productive deployment rather than ordinary grant spending. But treasury withdrawals require a higher bar because they consume shared ADA and set precedent. With 9,000,000 ADA at stake, unsupported material return claims and unresolved execution evidence outweighed the potential benefit, so BEACN voted NO.
+A material claim remains proposer-asserted or thinly supported: Under conservative modeled assumptions, the deployment is expected to generate approximately 900,000 ADA-equivalent in annual yield, but returns are not guaranteed. Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -56,7 +54,7 @@ The proposal passed enough intake and anchor checks to be reviewed, and the stro
 - finding: Clawback/refund path: confirmed
 - finding: Cost/benefit clarity: confirmed
 - finding: Recurring funding dependency: not confirmed
-- finding: Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
 - finding: Financial confidence: 0.72
 - missing: milestone-gated disbursement
 - conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -101,6 +99,7 @@ The proposal passed enough intake and anchor checks to be reviewed, and the stro
 
 ## Inferences
 - Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The proposal has a coherent structure with custody, reporting, risk triggers, and return terms, but the core economic case depends on proposer-reported traction, a short vault history, modeled yield, and material exposure to ADA price, USDM, smart contract, and custody risks. Given the large treasury amount and limited independently verifiable support in the supplied document, a small cautionary negative nudge is justified beyond the mechanical assessment.
+- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -109,7 +108,7 @@ The proposal passed enough intake and anchor checks to be reviewed, and the stro
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - No milestone-gated disbursement documented.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Under conservative modeled assumptions, the deployment is expected to generate approximately 900,000 ADA-equivalent in annual yield, but returns are not guaranteed.
@@ -119,15 +118,19 @@ The proposal passed enough intake and anchor checks to be reviewed, and the stro
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
 
+## Missing Evidence
+- independent ecosystem-value evidence packet
+- verified ecosystem benefit or strategic necessity
+
 ## Reproducibility
 - input_hash: `1b091b80946f67485feefea5fb75a44b5fb54c34efc039817dd93cb3cf83751b`
-- snapshot_bundle_hash: `f11d19e0cf172277abe50765187233442906a643dce1b7c6616380f1b0e3cfbf`
-- soul_commit: `6831a5e0ecdb429fd793fe9b865f94a0af9b0e31`
+- snapshot_bundle_hash: `ca05e4a2b66aa03269e7c6d89f3280ccafad8b0d753561d4240620337ec9f050`
+- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3`
-- resources_used: `gov_actions_api, gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers`
-- snapshot_age_seconds: `3`
+- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `4`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.1758, "NO": 0.7845, "YES": 0.0397}`
+- decision_probs: `{"ABSTAIN": 0.4111, "NO": 0.5492, "YES": 0.0397}`
 

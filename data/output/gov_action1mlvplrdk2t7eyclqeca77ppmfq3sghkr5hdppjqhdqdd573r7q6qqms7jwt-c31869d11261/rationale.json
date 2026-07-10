@@ -1,14 +1,14 @@
 {
   "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NO",
+  "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": null,
+  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3133,
-  "raw_score": -0.2833,
+  "score": -0.2433,
+  "raw_score": -0.2433,
   "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
@@ -28,8 +28,22 @@
   ],
   "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
   "directional_threshold": 0.06,
-  "confidence": 0.7983,
+  "confidence": 0.7808,
   "readiness_score": 0.8,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.4,
+    "cost_efficiency": 0.7,
+    "downside_risk": 0.6125,
+    "composite": -0.2019,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "delivery controls, milestones, assurance, or remedy path"
+    ]
+  },
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -43,6 +57,7 @@
   ],
   "inferences": [
     "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal describes a potentially public-benefit interoperability project, but the high treasury ask depends on security, adoption, revenue, and SPO-threshold custody claims that are largely asserted in the anchor text while the deterministic assessment already marks claims and evidence as thin. A small negative nudge is justified because treasury stewardship and evidence quality should dominate plausible ecosystem growth when the main benefits and downside controls are not yet strongly evidenced in the supplied claims.",
+    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -51,7 +66,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Treasury flow signal is in unsustainable regime, ratio 2.28 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
     "Claims and evidence missing: Independent evidence for: Public rollout and 24 months of operations are intentionally deferred to a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.",
@@ -60,14 +75,17 @@
     "Risk review missing: independent assurance",
     "Risk review missing: rollback/remedy path"
   ],
-  "missing_evidence": [],
+  "missing_evidence": [
+    "independent ecosystem-value evidence packet",
+    "verified ecosystem benefit or strategic necessity",
+    "delivery controls, milestones, assurance, or remedy path"
+  ],
   "input_hash": "c31869d1126149cb19b18718209277982ba9989fbc89f038a7523d22c858de31",
-  "snapshot_bundle_hash": "548a591714c0d3c6ad35527cf84fe5c046bf9ad089684b7a65cb8f3ca8eb3279",
-  "soul_commit": "6831a5e0ecdb429fd793fe9b865f94a0af9b0e31",
+  "snapshot_bundle_hash": "50c06cd6edab3853b2b839155468bd95cf394a237b3de1289b98cf11b474d8df",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ac61a1f4a2a6f8653b1f45352baf3efd8220c5e3",
+  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
   "resources_used": [
-    "gov_actions_api",
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
     "drep_vote_history_snapshot",
@@ -78,19 +96,24 @@
     "gov_poll_runs_snapshot",
     "top_drep_votes_snapshot",
     "gov_anchor_documents",
-    "deep_research_dossiers"
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
   ],
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-08T12:59:30.909570Z",
+    "snapshot_time": "2026-07-10T03:36:58.527204Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.0445,
-    "NO": 0.7594,
-    "ABSTAIN": 0.1961
+    "YES": 0.0476,
+    "NO": 0.4622,
+    "ABSTAIN": 0.4902
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -155,7 +178,7 @@
           "Clawback/refund path: unknown",
           "Cost/benefit clarity: confirmed",
           "Recurring funding dependency: confirmed",
-          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
           "Financial confidence: 0.78"
         ],
         "missing": [
@@ -210,8 +233,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN voted NO because this was a large Treasury request and the evidence did not meet the higher bar needed for spending shared ADA. The proposal describes a potentially useful Bitcoin-to-Cardano bridge, but several key delivery, security, operating, and risk-control claims were still mostly asserted rather than independently supported.\n\nThe action requested \u20b312,332,031 for Phase 1 of 2, running from July 2026 to March 2027. The goal was to move Bifrost from a working testnet toward launch readiness, including mainnet controlled access in both custody modes, audits, formal verification, ecosystem readiness, partner preparation, stewardship, and economic foundations. The proposer also stated that public rollout and 24 months of operations would come later in a Phase 2 proposal.\n\nSome important claims were supported: the anchor document was available and replayable, Bifrost\u2019s basic design as a Bitcoin-Cardano bridge was substantiated, the budget and timeline were clear, and the bridge was reported as already live on testnet with working peg-ins, peg-outs, and participating SPOs. But the review found thin evidence for the most important Phase 1 outcome: an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access. It also lacked independent evidence for the deferred Phase 2 plan.\n\nThe Treasury gate carried elevated scrutiny because this action would withdraw a large amount of ADA. The review also found high execution risk, no milestone-gated disbursement, no independent assurance, and no rollback or remedy path. With those gaps, the strongest YES case was real but not enough to overcome the cost, risk, and precedent concerns, so BEACN voted NO.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN records NEEDS_MORE_INFO on Bifrost: Unlocking Bitcoin DeFi on Cardano \u2014 Road to Mainnet (Phase 1 of 2). This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Phase 1 of 2 funding to take Bifrost from a working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, and stewardship and economic foundations for launch. It asks the treasury for 12332031 ADA. The strongest grounded claim is: Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.\n\nA material claim remains proposer-asserted or thinly supported: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access. Reason code: VERIFIED_NCL_REQUIRED.",
+  "human_message_source": "deterministic-heuristic",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -254,15 +277,15 @@
       "output_sha256": "dc0f217b0a309d807640ba365fcc68ff0f03b9eb09c362fe42858cd9f24744fd"
     },
     "human_message": {
-      "source": "precomputed",
+      "source": "deterministic-heuristic",
       "available": true,
       "reason": null,
-      "model": "claude-opus-4-8",
-      "prompt_sha256": null,
-      "output_sha256": "ed4975d74bf963d00dee8af048e8cf010c3c54fcd14a864f5a0ccf5e501790c0"
+      "model": "local-deterministic",
+      "prompt_sha256": "c8938ed29bf1d6289b51974d8632f2e8ff62396cad74b344dbebfb713584bedb",
+      "output_sha256": "0c44e45623f1c7c5625d7e1c4868fc8c6017b8571f428c247128da0f19bfcefc"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/49ef5ed7c84f075a11b6d07f.md",
-  "rationale_anchor_hash": "49ef5ed7c84f075a11b6d07fff77a938a926f6fec903e503fdcfbbd97cdbfc45"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/de5021f74286781484110f12.md",
+  "rationale_anchor_hash": "de5021f74286781484110f12dccf76a73d9b075293584a8e98c7f1ca5470dc14"
 }

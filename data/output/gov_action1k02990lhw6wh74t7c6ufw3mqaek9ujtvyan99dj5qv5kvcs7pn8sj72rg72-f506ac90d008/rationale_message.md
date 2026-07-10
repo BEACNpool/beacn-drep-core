@@ -1,11 +1,13 @@
 # Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P...
-**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
 
-BEACN records NEEDS_MORE_INFO on Withdraw 1,684,050 ada for Tx3 by TxPipe: Open API Layer for Cardano's dApp P. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+BEACN voted NEEDS_MORE_INFO because this treasury withdrawal depends on a required Net Change Limit check that was not pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the project.
 
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Tx3 by TxPipe, described as an open API layer for Cardano dApp protocols. It asks the treasury for 1,684,050 ADA. The strongest grounded claim is: The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.
+The action requested 1,684,050 ada for Tx3 by TxPipe, submitted by Intersect on behalf of TxPipe, to fund 12 additional protocol onboardings over 12 months, developer and agent coverage, an MCP server, protocol skills packaging, agent-first documentation, auto-generated SDKs, and live JSON-RPC endpoints. The proposal’s budget structure was clear: 1,308,000 ada for the work, 327,000 ada contingency, and a 49,050 ada Intersect administration fee.
 
-A material claim remains proposer-asserted or thinly supported: Tx3 is intended to provide a standard, open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints. Reason code: VERIFIED_NCL_REQUIRED.
+Several parts of the case were supported: the proposal anchor was pinned and replayable, the requested amount was clear, the action passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase, and the proposal stated Intersect-backed oversight, reporting, audit, and milestone-based disbursement controls. But important claims remained thin or unsupported by independent evidence, including the claim that Tx3’s verified interface definitions produce documentation, multi-language SDKs, and live JSON-RPC endpoints, and the claim that the ecosystem lacks a common interface mechanism that raises integration costs.
+
+Because this is a treasury withdrawal, BEACN applied elevated scrutiny. The vote can move from NEEDS_MORE_INFO to a directional vote when the applicable Net Change Limit is pinned and independently verified from public chain evidence, and when the weaker technical, adoption, cost-benefit, sustainability, assurance, and remedy-path evidence is strengthened enough for delegators to audit.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

@@ -32,7 +32,7 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets.
+- Claims and evidence missing: Independent evidence for: The proposer asserts Cardano currently lacks a serious production BTCfi infrastructure layer and that failure to pass the proposal would leave Bitcoin-backed structured exposure to consolidate on other chains and off-chain markets.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -46,10 +46,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `64e861e262eb5205d59a72d9c98ab8b86b965377bdec54eebf6a8e1c27e60a91`
-- snapshot_bundle_hash: `7c80a2d587a5763d28cc3905b3ab9b9147e8d969b62a90acbebbead45ad0c8df`
+- snapshot_bundle_hash: `3da095ca8882f78e3a89459ce8c0da3e1284027d1bdc945b8ca3f310e2238594`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.3433`
 - confidence: `0.7758`
 

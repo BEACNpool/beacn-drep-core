@@ -31,8 +31,8 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- Claims and evidence missing: Independent evidence for: Tx3 is intended to provide a standard, open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.
-- Claims and evidence missing: Independent evidence for: The proposal states that there is currently no common interface mechanism across the Cardano ecosystem, causing integrators to relearn protocols, rebuild understanding independently, and face higher integration costs.
+- Claims and evidence missing: Independent evidence for: Tx3 is presented as a framework where each protocol is described once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints.
+- Claims and evidence missing: Independent evidence for: The proposal states that there is currently no common interface mechanism across the ecosystem, forcing integrators to relearn each protocol and raising integration costs.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -46,10 +46,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `f506ac90d0086750c41146410d2151ceb8b2fb82bc05b935909ace209ce32a2e`
-- snapshot_bundle_hash: `7bb8e6624d2c0f054ffeb7679e5af4f19592dc217feef20d8b48737d95e44c03`
+- snapshot_bundle_hash: `3bce2c5fff6bb476c916af286e8b61d390ca1c298c23b8651b5b86abd0aa8d76`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.2133`
 - confidence: `0.7733`
 

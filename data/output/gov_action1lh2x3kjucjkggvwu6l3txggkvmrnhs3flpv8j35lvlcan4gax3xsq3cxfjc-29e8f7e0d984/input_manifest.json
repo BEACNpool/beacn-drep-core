@@ -34,7 +34,7 @@
   "action_type": "HardForkInitiation",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -64,7 +64,7 @@
       "resource_id": "gov_actions_all_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_all.csv",
-      "file_hash": "8025355170e6edf4045af59832464d3652e92f6202502cbb5abd0d496fb08b28",
+      "file_hash": "1e701e7bfe3c5de1eee03af7fe94d6cd831e0e34f61a150f9561d85cd4ec3b90",
       "selected_row": {
         "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
         "tx_hash": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d",
@@ -101,7 +101,7 @@
       "resource_id": "gov_actions_active_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_active.csv",
-      "file_hash": "a18fd66683b84979dc6e11c0342ca18c4f97b5b22390c569e12b25f85ac22c7c",
+      "file_hash": "97c397ec8cf0b9c69e3d9030e8d2928cc3c200adbc3fb0a2936427b178c0da28",
       "selected_row": {
         "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
         "tx_hash": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d",
@@ -144,7 +144,7 @@
       "resource_id": "gov_poll_runs_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_poll_runs.csv",
-      "file_hash": "4532707693ee8e0081541a929439d6fea1505506fb32114c75cd98c3e0d698d6"
+      "file_hash": "3dca2f83176a6cab49209924989f494c03f503c5e4a767e921f244a2c3b2337c"
     },
     {
       "resource_id": "top_drep_votes_snapshot",
@@ -172,7 +172,7 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "0a6705aa47ab1ede71e0421e9d6d1dba9dfc3aa533468eb114bc8e003a1c0e48",
+  "snapshot_bundle_hash": "3eb2e7cbce2854ced62c8c26b39bc220244c2797d2241ad2a93f33c3fd83c12b",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -191,7 +191,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "892be88734949bd44100570f3e6b109b33e1382194ff56d6c526532be9042403"
+      "output_sha256": "6064834041aa5fee339c40824ce4fb81d19cdcfa955040d7610aea5776397874"
     },
     "doctrine": {
       "family": "hardfork",
@@ -206,20 +206,20 @@
       "source": "precomputed",
       "reason": null,
       "model": "claude-opus-4-8",
-      "direction": "NO",
-      "score_adjustment": -0.03,
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "4d1d4338b90227c0849e42e3d29c562e3ee86f675333485b2a753308c654337c"
+      "output_sha256": "373cf18aec05963d251a23bc89399735132743193ade61a5fd6ff1cc9cb2feaa"
     },
     "human_message": {
-      "source": "deterministic-heuristic",
+      "source": "precomputed",
       "available": true,
       "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "0f8564b935926cf76d36e0106fba5c07ed5f5c642343e96e2f656f0fab902e84",
-      "output_sha256": "db59324b4e85cef83fcb15f7c6c625c903c06a7bcecd728e3da90795379f456c"
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "142a89021763190a3bc37edc8eda8c7845726524055cafd9cf6b831122f4bd65"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

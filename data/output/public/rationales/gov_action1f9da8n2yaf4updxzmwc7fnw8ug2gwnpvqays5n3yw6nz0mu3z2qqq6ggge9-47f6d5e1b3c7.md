@@ -102,12 +102,12 @@ A material claim remains proposer-asserted or thinly supported: In order to ensu
 
 ## Reproducibility
 - input_hash: `47f6d5e1b3c71ba5d201a144490a10842106252f2b7845ebd3ef85a2f2266070`
-- snapshot_bundle_hash: `e893601e3b0189e5d0ae3617d817f9fd23b441f0818769c81772196607c36fbf`
+- snapshot_bundle_hash: `e1114c024f47b36db9de74bcec79f009171270838f62c3933d72112180979305`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `23`
+- snapshot_age_seconds: `22`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

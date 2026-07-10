@@ -148,10 +148,10 @@ A material claim remains proposer-asserted or thinly supported: This is a techni
 
 ## Reproducibility
 - input_hash: `da042cf2e663acc8693c21a5d42f25ca92651b46d6aebdfe60a6dc5d8ff5aef5`
-- snapshot_bundle_hash: `20b1e2fd1fc6d9006ccb579a68fca3d14460afee77d45f6926af0508fe775eee`
+- snapshot_bundle_hash: `91fa5040883d1d9e64906c4b68d931c1a15e2b5d099fe6525b8f8d648d045c46`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `8`
 - uncertainty_band: `LOW`

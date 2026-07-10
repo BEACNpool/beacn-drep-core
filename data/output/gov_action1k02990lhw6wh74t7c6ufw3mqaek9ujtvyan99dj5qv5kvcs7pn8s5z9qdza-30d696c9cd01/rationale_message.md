@@ -1,11 +1,13 @@
 # Withdraw 540,750 ada for UTxO RPC by TxPipe: Maintaining Cardano’s Integratio...
-**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
 
-BEACN records NEEDS_MORE_INFO on Withdraw 540,750 ada for UTxO RPC by TxPipe: Maintaining Cardano’s Integratio. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund UTxO RPC by TxPipe maintenance and enhancement for Year 2, including part-time maintainer work and Intersect administration. It asks the treasury for 540,750 ADA. The strongest grounded claim is: The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.
+The action requested 540,750 ada for Year 2 maintenance and enhancement of UTxO RPC by TxPipe, including part-time maintainer coverage, SDK and specification maintenance, community support, and AI-friendly documentation resources. The proposal states that 525,000 ada would fund the work and 15,750 ada would cover Intersect budget administration. It also describes the maintainer portion as 420,000 ada plus a 105,000 ada contingency reserve over 12 months.
 
-A material claim remains proposer-asserted or thinly supported: The proposal says UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface. Reason code: VERIFIED_NCL_REQUIRED.
+Several parts of the proposal were well-supported enough to review: the anchor document was pinned and replayable, the requested amount was clear, the work scope was stated, and governance and oversight references were independently verifiable. But important claims were still thin or unsupported, including independent evidence that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, and independent evidence for TxPipe’s stated Catalyst delivery history. The review also found missing clarity on sustainability, cost-benefit, independent assurance, and rollback or remedy paths.
+
+This is a conservative, evidence-based hold, not a rejection of the project. BEACN would need the Net Change Limit pinned and independently verified from public chain evidence before making a directional treasury vote, with stronger public evidence for the major adoption and delivery-history claims improving confidence.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

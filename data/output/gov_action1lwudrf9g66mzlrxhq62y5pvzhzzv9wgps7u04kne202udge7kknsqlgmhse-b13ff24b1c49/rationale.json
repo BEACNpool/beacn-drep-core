@@ -9,15 +9,15 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.4633,
   "raw_score": -0.4633,
-  "llm_score_adjustment": -0.02,
+  "llm_score_adjustment": -0.03,
   "llm_lean": {
     "source": "precomputed",
     "model": "claude-opus-4-8",
     "direction": "NO",
-    "score_adjustment": -0.02,
-    "confidence": 0.74,
-    "rationale": "A small negative nudge is justified because the ask is large and operational, the deterministic assessment marks claims and evidence as thin, and several high-materiality adoption and ecosystem-impact claims are proposer-asserted rather than evidenced in the document. The repayment, audit, and public-wallet commitments improve stewardship but do not fully offset the evidence gap for a treasury withdrawal of this size.",
-    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "score_adjustment": -0.03,
+    "confidence": 0.64,
+    "rationale": "The proposal has a plausible public-benefit case for maintaining a widely used Cardano wallet and includes repayment, refund, and audit commitments, but the evidence quality remains thin for the size of the treasury ask: install base, transaction share, FTE need, conversion controls, auditor identity, and Pro-plan uptake are mostly asserted in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh ecosystem growth when a large spend depends on non-verified adoption and revenue assumptions, so a small cautionary negative nudge is justified beyond the mechanical assessment.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; if ecosystem growth conflicts with treasury stewardship and evidence is weak, prefer caution.",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -51,12 +51,12 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 2350000",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Eternl asks for \u20b32,350,000, valued at about $0.1787 per Ada, to cover an estimated $420,000 annual operating cost for 12 months.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): A small negative nudge is justified because the ask is large and operational, the deterministic assessment marks claims and evidence as thin, and several high-materiality adoption and ecosystem-impact claims are proposer-asserted rather than evidenced in the document. The repayment, audit, and public-wallet commitments improve stewardship but do not fully offset the evidence gap for a treasury withdrawal of this size.",
+    "Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to \u00b10.05): The proposal has a plausible public-benefit case for maintaining a widely used Cardano wallet and includes repayment, refund, and audit commitments, but the evidence quality remains thin for the size of the treasury ask: install base, transaction share, FTE need, conversion controls, auditor identity, and Pro-plan uptake are mostly asserted in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh ecosystem growth when a large spend depends on non-verified adoption and revenue assumptions, so a small cautionary negative nudge is justified beyond the mechanical assessment.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -68,8 +68,8 @@
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "No milestone-gated disbursement documented.",
-    "Claims and evidence missing: Independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.",
-    "Claims and evidence missing: Independent evidence for: Treasury-fund-use audits will be performed by an independent party unaffiliated with Tastenkunst GmbH or the Eternl team in February 2027 and August 2027.",
+    "Claims and evidence missing: Independent evidence for: The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+    "Claims and evidence missing: Independent evidence for: Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis missing: cost-benefit clarity",
@@ -81,10 +81,10 @@
     "verified ecosystem benefit or strategic necessity"
   ],
   "input_hash": "b13ff24b1c499108ca110632cf2fc7da59cd8ff406880a54cacc7c8527a10b43",
-  "snapshot_bundle_hash": "7d7dd9cc314efdd5a115a69af192bffe89c041b4b4aaf24a1b716d037d215a14",
+  "snapshot_bundle_hash": "2b6ba7c6c37c81167d4469c8eadaac5a517f7b4f18ca5bdd608a53f9233e9efb",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,7 +107,7 @@
     "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T03:36:58.527204Z",
+    "snapshot_time": "2026-07-10T12:14:14.719196Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -148,22 +148,23 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: 12 months of operations, maintenance, support, infrastructure, audits/oversight metrics, and continued development for the Eternl Cardano light wallet.",
-          "Recipient: Tastenkunst GmbH, Eternl",
+          "Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, audits, and continued development while Eternl introduces paid Pro plans.",
+          "Recipient: Tastenkunst GmbH / Eternl",
           "Stated amount: 2350000",
-          "Deliverables: Frontend maintenance and cross-platform development for browser extension, web/PWA, iOS, Android, and beta channel, Backend infrastructure and operations including multi-region servers, Cardano node operation, DBSync indexers, application servers, metadata aggregation, Hub backend services, and monitoring, User support through Discord ticketing, Telegram, public community channels, project support, wiki maintenance, and educational videos, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and proposal creation, Independent audits of treasury fund use and oversight metrics in February 2027 and August 2027",
-          "Deadline/expiry: 12-month delivery period from August 2026 to July 2027",
-          "Claim (adoption, supported_in_proposal, high materiality): Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b32,350,000, calculated at about $0.1787 per Ada, to cover approximately $420,000 in annual costs.",
-          "Claim (economic, supported_in_proposal, high materiality): The funded work covers 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
-          "Claim (adoption, proposer_asserted, high materiality): Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.",
-          "Claim (economic, supported_in_proposal, high materiality): If roughly 5,500 users, or about 4.2% of the stated install base, buy the planned Pro plan, that income would fully cover the annual $420,000 cost.",
-          "Claim (economic, supported_in_proposal, high materiality): The team will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury."
+          "Deliverables: 12 months of frontend and backend maintenance and development, Backend infrastructure and operations including multi-region servers, Cardano node operation, indexers, app servers, metadata aggregation, monitoring, and incident response, User support through Discord, Telegram, public channels, ecosystem project support, wiki updates, and educational videos, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and governance proposal creation, Eternl Core rewrite, Eternl Hub features, enhanced hardware wallet support, mobile Bluetooth hardware wallet support, and enhanced wallet data export, Periodic independent audits of treasury fund use in February 2027 and August 2027, Public reporting of balances, conversion rates, transaction hashes, Pro plan earnings, repayment hashes, refunds, and repayments",
+          "Deadline/expiry: 12-month delivery period, August 2026 to July 2027",
+          "Claim (economic, supported_in_proposal, high materiality): Eternl asks for \u20b32,350,000, valued at about $0.1787 per Ada, to cover an estimated $420,000 annual operating cost for 12 months.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal allocates the ask as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
+          "Claim (economic, proposer_asserted, high materiality): The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+          "Claim (economic, proposer_asserted, high materiality): Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.",
+          "Claim (economic, supported_in_proposal, high materiality): Every December and June, Eternl will use surplus remaining treasury stablecoins plus paid plan income above $420,000 to repay the treasury until $420,000 in Ada has been repaid, and later donate 50% of paid-plan income above $420,000 until an additional $210,000 in Ada has been donated.",
+          "Claim (economic, supported_in_proposal, high materiality): Eternl plans Personal and Company Pro plans at $96/year and $360/year, and asserts that about 5,500 paying users, about 4.2% of its stated install base, would cover the $420,000 annual cost."
         ],
         "missing": [
-          "Independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.",
-          "Independent evidence for: Treasury-fund-use audits will be performed by an independent party unaffiliated with Tastenkunst GmbH or the Eternl team in February 2027 and August 2027.",
-          "Independent evidence for: Eternl says 10-18% of Cardano mainnet transactions are conducted via Eternl."
+          "Independent evidence for: The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+          "Independent evidence for: Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.",
+          "Independent evidence for: Eternl states it has about 100,000 browser-extension installs and about 30,000 Android and iOS installs.",
+          "Independent evidence for: Eternl states that 10-18% of Cardano mainnet transactions are conducted via Eternl."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -209,8 +210,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"Eternl asks for \u20b32,350,000, valued at about $0.1787 per Ada, to cover an estimated $420,000 annual operating cost for 12 months.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposal funds 6.0 FTE across 10 contributors at $70,000 per FTE.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -232,8 +233,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records NEEDS_MORE_INFO on Eternl: Path to Sustainability - v2. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: 12 months of operations, maintenance, support, infrastructure, audits/oversight metrics, and continued development for the Eternl Cardano light wallet. It asks the treasury for 2350000 ADA. The strongest grounded claim is: Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\n\nA material claim remains proposer-asserted or thinly supported: Eternl has about 100,000 browser-extension installs and about 30,000 installs across Android and iOS. Reason code: VERIFIED_NCL_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Eternl or its public-benefit case.\n\nThe action requests \u20b32,350,000 for 12 months of Eternl operations from August 2026 through July 2027, including frontend and backend maintenance, infrastructure, support, governance tooling, audits, reporting, and continued development while Eternl introduces paid Pro plans. The proposal says this equals about $420,000 in annual operating cost, allocates the funds across frontend, backend, support, admin, and audits, and includes commitments around public wallets, stablecoin conversion, refunds, repayments, Pro-plan income reporting, and audits in February 2027 and August 2027.\n\nSeveral core claims were supported by the proposal itself, including the requested amount, the budget allocation, the repayment structure, and the planned Pro pricing. But other important claims were still mostly proposer assertions rather than independently verified evidence, including the 6.0 FTE staffing need, install base, transaction-share claims, conversion controls, auditor identity, and expected Pro-plan uptake. The review also noted thin claims-and-evidence status, no documented milestone-gated disbursement, missing cost-benefit clarity, missing independent assurance, and an unknown execution-risk profile.\n\nThe review gates established that the proposal anchor was pinned and replayable, and the strongest YES case was acknowledged: Eternl presented a plausible request to fund a widely used Cardano wallet with repayment, refund, audit, and reporting commitments. But because this is a large treasury withdrawal, BEACN applies elevated scrutiny. A directional YES or NO would require the verified Net Change Limit from public chain evidence, plus stronger independent support for the major cost, adoption, conversion, assurance, and delivery claims.",
+  "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -252,7 +253,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "1ee10e5405095e519a131225f116dee232218ae9049ad9d0543d099ff182aa0e"
+      "output_sha256": "9cec1d4afbd61eb5abb441041a5c9e21cf6a6b1b681142b836f0d422af1745f7"
     },
     "doctrine": {
       "family": "treasury",
@@ -268,22 +269,22 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "direction": "NO",
-      "score_adjustment": -0.02,
+      "score_adjustment": -0.03,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "d7b9d0566f7b08c046452a5dd0870f98357e91b51607d914c40fa3429e84b4b1"
+      "output_sha256": "101387c52b84521b4530fcafcf87e49a3356cc049f87979ac899b31de659bd4c"
     },
     "human_message": {
-      "source": "deterministic-heuristic",
+      "source": "precomputed",
       "available": true,
       "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "e605c052cee979b9f4337eb45c0565141013cd8f9cdc10c1d72f8e9942e18860",
-      "output_sha256": "cf93bf1effcdfdb960bd66ffbe4ae7cf57516c9da6ebcc57857688ebf95e8bae"
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "1fe439f162250284393dd9915ac17389e6528fe61934f86397a5d0a85116f0e0"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/b8ba5d3691225031128ac820.md",
-  "rationale_anchor_hash": "b8ba5d3691225031128ac820be659f48993d68618ef4c5a054d4093f242fd994"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/f0ac15166fefb4047f1ec10f.md",
+  "rationale_anchor_hash": "f0ac15166fefb4047f1ec10f16fc8599e4d8904f42029fcfd7482fbe21688385"
 }

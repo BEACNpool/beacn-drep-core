@@ -26,23 +26,22 @@
         "Proposal document read by reasoning layer: yes",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Treasury withdrawal to fund Daedalus Wallet maintenance and improvements for 2026-2027 as a time-and-materials engagement delivered by Se7en Labs, Inc.",
-        "Recipient: Se7en Labs, Inc., with administration and disbursement through Intersect as described in the proposal",
-        "Stated amount: 1,785,333",
-        "Deliverables: Protocol maintenance including node upgrades, hard fork readiness, and compatible releases at least 2 weeks before each mainnet hard fork, Ecosystem expansion including Keystone and Flex hardware wallet support, CIP-30 dApp connector, and Japanese localisation, User support across GitHub, community forums, direct channels, and Japanese-language support, Maintenance of Windows, macOS x86_64, macOS aarch64, and Linux builds, Architecture assessment covering current state, options, resource estimates, and recommendation",
-        "Deadline/expiry: Contract year through Q3 2027 for architecture assessment; other work spans 52 weeks or milestone durations stated in document",
-        "Claim (technical, proposer_asserted, high materiality): Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.",
-        "Claim (technical, independently_verifiable, high materiality): The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited.",
-        "Claim (adoption, proposer_asserted, medium materiality): According to opt-in telemetry cited by the proposer, Daedalus has approximately 4,000 monthly active users, while the proposer asserts the true count is meaningfully higher.",
-        "Claim (technical, proposer_asserted, high materiality): Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, the drt release CLI, and Nix build modernization.",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal states the requested 1,785,333 ADA is allocated as 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and 52,000 ADA for Intersect administration.",
-        "Claim (economic, proposer_asserted, medium materiality): The proposal states any unspent labor, hardware, or audit budget at contract close will be returned to the treasury."
+        "Requested: Treasury withdrawal to fund Daedalus Wallet Maintenance and Improvements 2026-2027 as a time-and-materials engagement delivered by Se7en Labs, Inc.",
+        "Recipient: Se7en Labs, Inc. with Intersect serving as administrator and milestone verifier",
+        "Stated amount: 1,785,333 ADA",
+        "Deliverables: Protocol maintenance including cardano-node and cardano-wallet upgrades, hard fork readiness, platform support, release engineering, and security/dependency maintenance, Compatible Daedalus release at least 2 weeks before each mainnet hard fork, Keystone and Flex hardware wallet support in a stable release, CIP-30 dApp connector in Daedalus with documentation and verified interoperability, Ongoing user support including Japanese-language support and full Japanese translation for new features, Architecture assessment published publicly by Q3 2027, Independent financial audit and milestone-based oversight through Intersect",
+        "Deadline/expiry: Contract year covering 2026-2027; IOG contract stated as closing August 31, 2026; architecture assessment by Q3 2027",
+        "Claim (technical, proposer_asserted, high materiality): Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+        "Claim (technical, supported_in_proposal, high materiality): Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with open-source Apache 2.0 code allowing auditability.",
+        "Claim (adoption, proposer_asserted, medium materiality): Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the proposer asserts the true count is meaningfully higher.",
+        "Claim (technical, supported_in_proposal, high materiality): Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and shipped Mithril bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, Nix modernization, and Daedalus 8.0 and 11.0.",
+        "Claim (technical, independently_verifiable, high materiality): The proposal commits to stable Daedalus releases at least 2 weeks before each mainnet hard fork and to keeping cardano-node no more than 2 major versions behind the mainnet recommendation.",
+        "Claim (technical, supported_in_proposal, high materiality): The work includes Keystone and Flex hardware wallet support, a CIP-30 dApp connector, Japanese localisation, user support, and a public architecture assessment."
       ],
       "missing": [
-        "Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.",
-        "Independent evidence for: According to opt-in telemetry cited by the proposer, Daedalus has approximately 4,000 monthly active users, while the proposer asserts the true count is meaningfully higher.",
-        "Independent evidence for: Se7en Labs says it assumed Daedalus responsibility under an IOG contract in January 2026 and shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, the drt release CLI, and Nix build modernization.",
-        "Independent evidence for: The proposal states any unspent labor, hardware, or audit budget at contract close will be returned to the treasury."
+        "Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+        "Independent evidence for: Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the proposer asserts the true count is meaningfully higher.",
+        "Independent evidence for: Any unspent labor, test hardware, or audit budget at contract close is to be returned to the treasury."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -89,8 +88,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the proposal substantiates \"Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with open-source Apache 2.0 code allowing auditability.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

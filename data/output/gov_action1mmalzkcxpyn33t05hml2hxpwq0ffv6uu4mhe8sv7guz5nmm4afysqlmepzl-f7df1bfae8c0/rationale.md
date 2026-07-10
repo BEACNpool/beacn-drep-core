@@ -100,10 +100,10 @@ A material claim remains proposer-asserted or thinly supported: A key issue in t
 
 ## Reproducibility
 - input_hash: `f7df1bfae8c03d0711311c754752c8248fd649ddf102e90fbbadc79e58721a79`
-- snapshot_bundle_hash: `c3ab48c63d8a4ecf01084dbc2008a77726970538ae7abd4a85893403c9ebb648`
+- snapshot_bundle_hash: `63c497b89244df94b0324efea22d279503afc74f11425758c3f593e562c4a9c0`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `23`
 - uncertainty_band: `LOW`

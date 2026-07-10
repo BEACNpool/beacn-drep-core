@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a new Cardano Treasury Net Change Limit of 500,000,000 ada for Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposer asserts that the existing 350,000,000 ada limit has been useful but that practical room under it is becoming constrained; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 48.2%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for the Cardano Treasury during Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 48.2%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,29 +23,29 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a new Cardano Treasury Net Change Limit of 500,000,000 ada for Epochs 613-713." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for the Cardano Treasury during Epochs 613-713." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal states that the new limit supersedes any prior Net Change Limit for the same period, including a previously agreed 350,000,000 ada limit.
-- Claims and evidence missing: Independent evidence for: The proposer asserts that the existing 350,000,000 ada limit has been useful but that practical room under it is becoming constrained.
+- Claims and evidence missing: Independent evidence for: The existing 350,000,000 ada Net Change Limit for Epochs 613-713 has served as a useful fiscal guardrail but practical room under it is becoming constrained.
+- Claims and evidence missing: Independent evidence for: A higher 500,000,000 ada limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while keeping a fixed fiscal guardrail.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The proposer asserts that the existing 350,000,000 ada limit has been useful but that practical room under it is becoming constrained.
 - Provide mitigation evidence.
 - Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
 - input_hash: `021d41161d9716de87a3e00afe2c7ba2c14a859015d538aa938199ec558afe2d`
-- snapshot_bundle_hash: `781172752b2ef57f234b9896a5192bc1c5ec025f4dc58b81363d6206fa847967`
+- snapshot_bundle_hash: `042ff1e6cee0bee41734d9fe00829ae0a45480fdd0c1993a9a009a5399ebf37f`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.05`
 - confidence: `0.4825`
 

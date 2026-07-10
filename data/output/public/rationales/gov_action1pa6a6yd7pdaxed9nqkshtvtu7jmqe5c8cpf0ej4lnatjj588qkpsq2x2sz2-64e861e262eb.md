@@ -1,14 +1,16 @@
 # Rationale: gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2
 Recommendation: **NEEDS_MORE_INFO**
 Score: `-0.3433` (raw `-0.3433` + doctrine-LLM nudge `-0.03`) | Confidence: `0.7758` | Readiness: `0.85`
-> Reasoning layer (precomputed): The proposal gives more detail than a thin treasury ask, including separated pools, staged liquidity, risk mitigations, audit allocation, reporting, pause rules, and return conditions. However, the requested amount is large, key adoption and market-need claims rely partly on proposer framing or external references rather than evidence contained in the document, and the technical/economic design remains novel with material reserve, oracle, bridge, and protocol-layer risks. A small cautionary negative nudge is justified beyond the mechanical assessment because treasury stewardship and evidence quality should dominate plausible ecosystem-growth upside.
+> Reasoning layer (precomputed): A small negative nudge is warranted because the ask is large, technically novel, and dependent on pending administration, external protocol security, adoption, and future governance actions, while several strategic demand and Cardano-gap claims are asserted or only externally referenced rather than demonstrated in the proposal text. The proposal does include meaningful controls and budget detail, so the adjustment should be modest rather than maximal.
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+## Plain-language explanation (precomputed)
+BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal and the required Net Change Limit has not yet been pinned and independently verified from public chain evidence. That blocks a directional treasury vote under BEACN’s evidence rules, so this is a conservative hold rather than a judgment that the proposal should pass or fail.
 
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer with reserve architecture, FIRE and ICE assets, dashboards, adapters, reporting, audits, legal/compliance work, go-to-market execution, and staged launch liquidity. It asks the treasury for 10000000 ADA. The strongest grounded claim is: The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools.
+The action requests 10,000,000 ada to fund Alchemy, a Cardano-native Bitcoin treasury protocol by Sundial Protocol and Charms. The proposal describes two roughly USD 1 million planning pools at an approximate USD 0.20 per ada reference value: one for protocol infrastructure and staged launch liquidity, and one for delivery, audits, integrations, dashboards, reporting, legal/compliance work, and launch execution. It also claims treasury-supported profits, yield, and returns would go back to the Cardano Treasury quarterly, with principal return dependent on later TVL conditions and governance approval.
 
-A material claim remains proposer-asserted or thinly supported: The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets. Reason code: VERIFIED_NCL_REQUIRED.
+Several core proposal details were supported in the proposal itself: the budget structure, the staged liquidity plan, the FIRE and ICE asset design, reserve-ratio formulas, safety zones, identified risks, and proposed mitigations such as overcollateralization, security review, dashboards, pause rules, reporting, and administrator oversight. Other claims were weaker. In particular, the claim that Cardano lacks a serious production BTCfi infrastructure layer, and that failure to fund this would push Bitcoin-backed structured exposure elsewhere, was treated as unsupported by independent evidence. Intersect is also only proposed as interim fund administrator, with confirmation and final agreement still pending.
+
+The review found a replayable anchor document and a plausible strongest-YES case around the documented budget, but treasury withdrawals require elevated scrutiny because they spend shared ada and set precedent. The hold would be unblocked by a pinned, independently verified Net Change Limit from public chain evidence, plus stronger independent support for the strategic adoption claims, clearer sustainability and cost-benefit analysis, independent assurance, and a dependency map for execution and governance risk.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -29,18 +31,18 @@ A material claim remains proposer-asserted or thinly supported: The proposer sta
 - finding: Proposal document read by reasoning layer: yes
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: complete
-- finding: Requested: Fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer with reserve architecture, FIRE and ICE assets, dashboards, adapters, reporting, audits, legal/compliance work, go-to-market execution, and staged launch liquidity.
-- finding: Recipient: Sundial Protocol and Charms, with Intersect proposed as interim fund administrator subject to confirmation and final agreement
-- finding: Stated amount: 10000000
-- finding: Deliverables: Shared BTC reserve architecture with reserve-ratio safety mechanisms, Composable Cardano-native FIRE and ICE assets, Open-source SDKs and adapters for wallets, DEXs, and DeFi protocols, Always-on public dashboards for reserve ratio, asset supply, liquidity health, fee flows, and deployment status, Monthly governance reports and reporting standards, Independent security review, audit, and economic modeling, Staged treasury-supported launch liquidity, Legal/compliance work, disclosures, risk documentation, and go-to-market execution
-- finding: Deadline/expiry: Three-month staged liquidity deployment after enactment with monthly reporting; full delivery deadline not stated in document
+- finding: Requested: Treasury withdrawal to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms.
+- finding: Recipient: Intersect is proposed as interim fund administrator subject to confirmation and final agreement; Sundial remains accountable for deployment and delivery with Charms as technical partner.
+- finding: Stated amount: 10,000,000 ada
+- finding: Deliverables: BTC reserve architecture with transparent safety mechanisms, Composable FIRE and ICE Cardano-native assets, Open-source SDKs and adapters for wallets, DEXs, and DeFi protocols, Always-on public dashboards for reserve ratio, asset supply, liquidity health, fee flows, and deployment status, Monthly governance reports and reporting standards, Independent security review, audit, and economic modeling, Staged launch liquidity deployed over three months, Legal/compliance work, documentation, DRep communications, partner activation, and launch coordination
+- finding: Deadline/expiry: Staged liquidity deployment over three months after enactment, with monthly reporting; exact final delivery deadline not stated in document.
 - finding: Claim (economic, supported_in_proposal, high materiality): The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools.
-- finding: Claim (economic, supported_in_proposal, high materiality): Pool 1 will support protocol infrastructure and staged launch liquidity, remain separate from operating spend, deploy in three monthly tranches, and return launch-liquidity profits, yield, and returns to the Cardano Treasury quarterly.
-- finding: Claim (economic, supported_in_proposal, high materiality): Pool 2 will fund delivery, audits, integrations, dashboards, legal/compliance work, reporting, administration, and go-to-market execution through itemized planning allocations totaling approximately USD 1.0 million.
-- finding: Claim (technical, supported_in_proposal, high materiality): Alchemy will use a shared BTC reserve for FIRE and ICE, targeting an initial 5.0x reserve ratio with safety zones above 4.0x, between 2.0x and 4.0x, and below 2.0x to constrain minting, redemption, and risky activity under stress.
-- finding: Claim (technical, supported_in_proposal, high materiality): FIRE is described as a volatility-absorbing residual BTC-backed claim, while ICE is described as a lower-volatility USD-denominated BTC-backed asset, both intended to be composable Cardano-native primitives.
-- finding: Claim (adoption, proposer_asserted, high materiality): The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets.
-- missing: Independent evidence for: The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets.
+- finding: Claim (economic, supported_in_proposal, high materiality): Pool 1 would provide protocol infrastructure and staged launch liquidity, kept separate from operating spend and deployed in three monthly tranches of approximately USD 250,000, USD 250,000, and USD 500,000.
+- finding: Claim (economic, supported_in_proposal, high materiality): Pool 2 would fund delivery, audit, integrations, dashboards, governance reporting, legal/compliance work, and go-to-market execution with itemized planning allocations totaling approximately USD 1.0 million.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal says profits, yield, and returns from treasury-supported launch liquidity will be returned to the Cardano Treasury quarterly, while principal may be returned only after a 30-day time-weighted average TVL of at least USD 60 million and a later governance approval.
+- finding: Claim (technical, supported_in_proposal, high materiality): Alchemy would use a shared BTC reserve backing FIRE and ICE, with reserve ratio formula (V x P) / L, FIRE price formula ((V x P) - L) / N+, an initial 5.0x target reserve ratio, and safety zones above 4.0x, between 2.0x and 4.0x, and below 2.0x.
+- finding: Claim (technical, supported_in_proposal, high materiality): FIRE is described as a volatility-absorbing residual BTC reserve claim with first-loss downside and upside exposure, while ICE is described as a USD-denominated BTC-backed asset intended for lower-volatility exposure with growth potential.
+- missing: Independent evidence for: The proposer asserts Cardano currently lacks a serious production BTCfi infrastructure layer and that failure to pass the proposal would leave Bitcoin-backed structured exposure to consolidate on other chains and off-chain markets.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Treasury analysis
@@ -74,7 +76,7 @@ A material claim remains proposer-asserted or thinly supported: The proposer sta
 ### Counterargument pass
 - status: `complete`
 - finding: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools." and clears the evidence gates.
-- finding: Strongest NO: a material claim is unsupported — "The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets." — so cost or precedent may outweigh the benefit.
+- finding: Strongest NO: a material claim is unsupported — "The proposer asserts Cardano currently lacks a serious production BTCfi infrastructure layer and that failure to pass the proposal would leave Bitcoin-backed structured exposure to consolidate on other chains and off-chain markets." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -96,7 +98,7 @@ A material claim remains proposer-asserted or thinly supported: The proposer sta
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The proposal gives more detail than a thin treasury ask, including separated pools, staged liquidity, risk mitigations, audit allocation, reporting, pause rules, and return conditions. However, the requested amount is large, key adoption and market-need claims rely partly on proposer framing or external references rather than evidence contained in the document, and the technical/economic design remains novel with material reserve, oracle, bridge, and protocol-layer risks. A small cautionary negative nudge is justified beyond the mechanical assessment because treasury stewardship and evidence quality should dominate plausible ecosystem-growth upside.
+- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): A small negative nudge is warranted because the ask is large, technically novel, and dependent on pending administration, external protocol security, adoption, and future governance actions, while several strategic demand and Cardano-gap claims are asserted or only externally referenced rather than demonstrated in the proposal text. The proposal does include meaningful controls and budget detail, so the adjustment should be modest rather than maximal.
 - Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -108,7 +110,7 @@ A material claim remains proposer-asserted or thinly supported: The proposer sta
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposer states that Cardano currently lacks a serious production BTCfi infrastructure layer and that without Alchemy, Bitcoin-backed structured exposure will continue consolidating on other chains and off-chain markets.
+- Claims and evidence missing: Independent evidence for: The proposer asserts Cardano currently lacks a serious production BTCfi infrastructure layer and that failure to pass the proposal would leave Bitcoin-backed structured exposure to consolidate on other chains and off-chain markets.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -122,10 +124,10 @@ A material claim remains proposer-asserted or thinly supported: The proposer sta
 
 ## Reproducibility
 - input_hash: `64e861e262eb5205d59a72d9c98ab8b86b965377bdec54eebf6a8e1c27e60a91`
-- snapshot_bundle_hash: `7c80a2d587a5763d28cc3905b3ab9b9147e8d969b62a90acbebbead45ad0c8df`
+- snapshot_bundle_hash: `3da095ca8882f78e3a89459ce8c0da3e1284027d1bdc945b8ca3f310e2238594`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `1`
 - uncertainty_band: `MEDIUM`

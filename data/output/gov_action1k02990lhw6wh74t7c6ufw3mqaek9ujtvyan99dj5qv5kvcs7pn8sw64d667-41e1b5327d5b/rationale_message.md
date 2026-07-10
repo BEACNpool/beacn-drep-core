@@ -1,11 +1,13 @@
 # Withdraw 540,750 ada for Oura by TxPipe: Maintaining Cardano’s Event Pipeline
-**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
 
-BEACN records NEEDS_MORE_INFO on Withdraw 540,750 ada for Oura by TxPipe: Maintaining Cardano’s Event Pipeline. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+BEACN voted NEEDS_MORE_INFO because this treasury withdrawal cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Oura by TxPipe maintenance and enhancement over 12 months. It asks the treasury for 540750 ADA. The strongest grounded claim is: The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.
+The action requested 540,750 ada for 12 months of Oura by TxPipe maintenance: 420,000 ada for a part-time maintainer, 105,000 ada as contingency, and 15,750 ada for Intersect administration. The proposal describes Oura as a Rust-native Cardano event pipeline tool and gives a concrete maintenance scope: dependency updates, protocol compatibility, performance improvements, bug fixes, documentation, issue triage, contribution review, ecosystem-driven enhancements, and AI-friendly documentation resources.
 
-A material claim remains proposer-asserted or thinly supported: Oura has been funded twice through Project Catalyst in Fund 9 and Fund 13 for feature development. Reason code: VERIFIED_NCL_REQUIRED.
+Several core claims were supported in the proposal, including the requested budget, the technical description of Oura, the maintenance scope, the recipient treasury reserve smart contract address, and the Intersect-administered disbursement structure. Other claims remained weaker because they were proposer-asserted or not independently evidenced in the review, including past Catalyst funding for Oura and TxPipe’s broader Catalyst delivery history. The review also noted thin claims-and-evidence coverage, unknown execution risk, missing independent assurance, no rollback or remedy path, and missing sustainability-path evidence.
+
+This is a conservative, evidence-based hold, not a rejection of Oura’s usefulness. A directional vote would be unblocked by pinned, independently verifiable public chain evidence for the relevant Net Change Limit, along with stronger independent evidence for the unsupported funding and delivery-history claims and clearer assurance around milestone-gated disbursement, sustainability, and remedies if execution fails.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

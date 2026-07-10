@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 9,832,979 ADA, stated as 1,868,266 USD at 0.19 USD per ADA, for 18 months of transition and operations." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 9832979
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own node." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,832,979 ADA, stated as 1,868,266 USD at 0.19 USD per ADA, for 18 months of transition and operations." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal states that Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.
+- Claims and evidence missing: Independent evidence for: The proposal states that Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.
 - Claims and evidence missing: Independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
@@ -47,10 +47,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `f834cbe6ce97b268c9f453eec13ab619c9b5ecb97075763fda9b0e46b17be46e`
-- snapshot_bundle_hash: `26c30af4972565165b2813c784f2e032946f9d85e1a8af70532f75d09c69bca2`
+- snapshot_bundle_hash: `08e135ae69cac23c9b42adecc17b3a1af1995d5d68f5fcbc5ccc9196ae00bcfd`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.3433`
 - confidence: `0.7758`
 

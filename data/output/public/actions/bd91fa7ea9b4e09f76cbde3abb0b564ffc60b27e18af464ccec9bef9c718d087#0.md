@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-10T03:21:53.574905+00:00`
+- Published at: `2026-07-10T11:30:04.499477+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.
@@ -48,11 +48,11 @@ Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insu
 - Provide complete proposal summary.
 
 ## Proof of vote
-- input_hash: `a1378da5b846d205716bdc1b5c9f09cfb8937e02bde82e7307ae49152d976019`
-- snapshot_bundle_hash: `fbcd2f60a6430a2c1b08c5a24406a6a672de399fde6b96888cf1b04365f2b2b5`
+- input_hash: `977d3c76abfbd073483c33b48446b0d19f36e2a5d160e64306477f80bd62a504`
+- snapshot_bundle_hash: `0641501dcef8d83bcf89256beaccd387829a4b8187b03e2da9fc895b77e1080d`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `0.0`
 - confidence: `0.1`
 

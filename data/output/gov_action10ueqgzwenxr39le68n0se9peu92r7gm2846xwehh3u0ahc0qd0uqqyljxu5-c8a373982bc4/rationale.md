@@ -93,10 +93,10 @@ A material claim remains proposer-asserted or thinly supported: The Net Change L
 
 ## Reproducibility
 - input_hash: `c8a373982bc4a056ca9976c5a2fe4dc12ef0c57b260d2c9946f7141587cd8033`
-- snapshot_bundle_hash: `f04e4f6db12465c41750cec6893fe966da4ecc5e5f75b3dffba7c4d3397979c2`
+- snapshot_bundle_hash: `dd95966365a49adc9f497bc13da9d1f136bb73223aa0cdf64432f3759baaf6ec`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `24`
 - uncertainty_band: `MEDIUM`

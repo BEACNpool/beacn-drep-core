@@ -126,10 +126,10 @@ Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Reproducibility
 - input_hash: `9daf9934c9088d501f2939bbaac3f4e8d897eec740fe5321caa77f52219c0144`
-- snapshot_bundle_hash: `abe196500c916f6181339f4efc311843a21ff067c8361cb801fde946d769174e`
+- snapshot_bundle_hash: `1993a8ebebd967e34c97ecf3173ccd17ab0379f446083e70ee0fd0eefb02f300`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `18`
 - uncertainty_band: `MEDIUM`

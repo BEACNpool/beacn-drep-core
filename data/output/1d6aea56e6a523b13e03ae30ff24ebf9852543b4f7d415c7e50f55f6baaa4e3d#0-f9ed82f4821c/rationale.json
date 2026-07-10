@@ -1,0 +1,293 @@
+{
+  "action_id": "1d6aea56e6a523b13e03ae30ff24ebf9852543b4f7d415c7e50f55f6baaa4e3d#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "treasury_dimensions": null,
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: not specified",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms.\" though 8 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: complete proposal summary",
+    "Claims and evidence missing: budget analysis",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin.",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Synthesis missing: missing complete proposal summary"
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "f9ed82f4821c9bd2064a55fba2eed332a9beb78bd7a84684d4a34486496b03d0",
+  "snapshot_bundle_hash": "a6f33b6ab03a2438ca69963ac022acb292f384d9610a979b8e0014f5091a0682",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 15,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "1d6aea56e6a523b13e03ae30ff24ebf9852543b4f7d415c7e50f55f6baaa4e3d#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: expired",
+          "Proposed epoch: 573",
+          "Expires after epoch: 580",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: required",
+          "Requested: Withdraw \u20b35M for Cardano's Global Listing Expansion - Powered by Snek",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms., SNEK is the largest community token on Cardano, holding the highest market capitalization, over 42,000 wallets, and more than 2 billion ADA in all-time trading volume., Over the past two years, the Snek Foundation has already invested over $4 million, entirely self funded, to secure major exchange listings., We\u2019ve delivered the first and second ever Tier 1 listings for any Cardano native token, with Kraken and Crypto.com setting historic precedents for the ecosystem.",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms.",
+          "Claim (economic, supported_in_proposal, medium materiality): SNEK is the largest community token on Cardano, holding the highest market capitalization, over 42,000 wallets, and more than 2 billion ADA in all-time trading volume.",
+          "Claim (economic, supported_in_proposal, high materiality): Over the past two years, the Snek Foundation has already invested over $4 million, entirely self funded, to secure major exchange listings.",
+          "Claim (economic, supported_in_proposal, low materiality): We\u2019ve delivered the first and second ever Tier 1 listings for any Cardano native token, with Kraken and Crypto.com setting historic precedents for the ecosystem.",
+          "Claim (economic, proposer_asserted, low materiality): This proposal aims to address the following challenges: - Lack of exchange presence for Cardano native tokens: Most major centralized exchanges and retail brokers still do not support Cardano Native Tokens (CNTs).",
+          "Claim (economic, supported_in_proposal, low materiality): This severely limits Cardano\u2019s accessibility and competitiveness on a global scale."
+        ],
+        "missing": [
+          "complete proposal summary",
+          "budget analysis",
+          "feasibility assessment",
+          "risk analysis",
+          "alternatives analysis",
+          "failure-mode analysis",
+          "community impact analysis"
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: not specified",
+          "Budget granularity: unknown",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: unknown"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms.\" though 8 review blocker(s) remain open.",
+          "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing for a treasury withdrawal) means costs or weak controls may outweigh the claimed benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal",
+          "missing complete proposal summary",
+          "missing budget analysis",
+          "missing feasibility assessment",
+          "missing risk analysis",
+          "missing alternatives analysis",
+          "missing failure-mode analysis",
+          "missing community impact analysis"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal",
+      "missing complete proposal summary",
+      "missing budget analysis",
+      "missing feasibility assessment",
+      "missing risk analysis",
+      "missing alternatives analysis",
+      "missing failure-mode analysis",
+      "missing community impact analysis"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN records ABSTAIN on Withdraw \u20b35M for Cardano's Global Listing Expansion - Powered by Snek. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b35M for Cardano's Global Listing Expansion - Powered by Snek. The strongest grounded claim is: This treasury withdrawal funds the Cardano Global Listing Expansion initiative, a strategic proposal by the Snek Foundation to list SNEK on major centralized exchanges (CEXs), retail brokers, and other widely adopted platforms.\n\nOpen blockers: treasury_amount_lovelace is missing for a treasury withdrawal. BEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: MISSING_BASELINE_EVIDENCE.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "1d6aea56e6a523b13e03ae30ff24ebf9852543b4f7d415c7e50f55f6baaa4e3d#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://raw.githubusercontent.com/snekadmin/Public/refs/heads/main/data_final.jsonld",
+        "file_sha256": "5071c6491bd19c1c2ab63ea00c67aaac7dceb1d4c7c1010571524b778cf66ef8",
+        "file_path": "data/input/governance/anchors/gov_action1r44w54hx553mz0sr4cc07f8tlxzj2sa57l2pt3l9pa2ldw42fc7sq5q3rtn-20260326T175230Z.bin",
+        "content_chars": 14353
+      },
+      "claim_count": 8,
+      "prompt_sha256": "bcf8040d142bc36cd1f701e56244635458584c22e2846a366ed3eafd7aa29d7b",
+      "output_sha256": "456c74f842d3d969716d990c2325e28b5f554ba3a8e8c10b69c8b699e7c9c49c"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "6e1ab0b571b23ef0fcbc2bd53e6dcf3a534103e3053ae0e3702055489020d52c",
+      "output_sha256": "ba4333c9b6b0fdd73bb12dae2bce529bbc648b91bb0ac3a07f2b705bb5271495"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "f7a03bce0e7da6ee970bafecfe9afeffc02217a9bb5952fb5b0eb04f3ae2e43a",
+      "output_sha256": "53f26591815746700817d2507e60682c9bd0592e75e3ca65e06847fed72754fc"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  }
+}

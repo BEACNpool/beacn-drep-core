@@ -16,8 +16,8 @@
     "direction": "ABSTAIN",
     "score_adjustment": -0.02,
     "confidence": 0.66,
-    "rationale": "The proposal shows credible public-benefit alignment through open-source infrastructure, narrowed scope, milestones, and named deliverables, but several important adoption, governance, and execution claims remain proposer-asserted rather than evidenced inside the anchor text. Given the large treasury request and the doctrine's caution around treasury stewardship and evidence quality, a small negative nudge is justified rather than a positive one.",
-    "doctrine_basis": "Treasury stewardship and downside protection; Evidence quality and reproducibility",
+    "rationale": "The proposal is aligned with public-benefit developer infrastructure and includes a narrower scope, milestone framing, and some independently checkable adoption indicators, but several high-materiality claims about direct usage, governance controls, and prior delivery are asserted rather than evidenced inside the document. Given the large treasury request and BEACN's caution around evidence quality and treasury stewardship, a small negative nudge is warranted rather than a positive spending lean.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -55,7 +55,7 @@
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal shows credible public-benefit alignment through open-source infrastructure, narrowed scope, milestones, and named deliverables, but several important adoption, governance, and execution claims remain proposer-asserted rather than evidenced inside the anchor text. Given the large treasury request and the doctrine's caution around treasury stewardship and evidence quality, a small negative nudge is justified rather than a positive one.",
+    "Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to \u00b10.05): The proposal is aligned with public-benefit developer infrastructure and includes a narrower scope, milestone framing, and some independently checkable adoption indicators, but several high-materiality claims about direct usage, governance controls, and prior delivery are asserted rather than evidenced inside the document. Given the large treasury request and BEACN's caution around evidence quality and treasury stewardship, a small negative nudge is warranted rather than a positive spending lean.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -67,8 +67,8 @@
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
-    "Claims and evidence missing: Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
-    "Claims and evidence missing: Independent evidence for: Delivery is milestone-based and will be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+    "Claims and evidence missing: Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+    "Claims and evidence missing: Independent evidence for: Delivery is proposed to be milestone-based through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Risk review missing: independent assurance",
@@ -79,10 +79,10 @@
     "verified ecosystem benefit or strategic necessity"
   ],
   "input_hash": "b02a109afc6b522ac3daf4dc1c28c8ed8e5ab931ffdfa33f0317fef319c49fb4",
-  "snapshot_bundle_hash": "dba0c3fb78371720cc0dd0ff8733f5e52d7b79a205c1d0639bcf805eed8f12cc",
+  "snapshot_bundle_hash": "8a20183e25f7d5eba24d637ddcee30d298eba12cce959dc5903e092df5b6f72e",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,7 +105,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T03:36:58.527204Z",
+    "snapshot_time": "2026-07-10T12:14:14.719196Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -146,22 +146,23 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Fund a 9-month continuation of Scalus covering maintenance, Dijkstra hard fork readiness, interoperability across JVM and JS/TS ecosystems, and a first scoped application runtime.",
+          "Requested: Funding for a 9-month continuation of Scalus covering maintenance, Dijkstra hard-fork readiness, interoperability across JVM and JS/TS ecosystems, and a scoped application runtime.",
           "Recipient: Lantr Engineering",
           "Stated amount: 2464844",
-          "Deliverables: Ongoing maintenance including bug fixes, dependency upkeep, security patches, and releases, Dijkstra readiness including Plutus V4 support, ledger rules, transaction-builder updates, conformance testing, nested transactions, accounts, and guard scripts, Improved JS/TS interfaces and documentation for components embedded in MeshJS, Evolution SDK, and Lucid Evolution, Java/Kotlin interoperability including Spring Boot and Ktor examples and cleaner integration with Cardano Client Lib and Yaci, Foundational runtime components including reactive workers, chain follower, and task scheduler",
+          "Deliverables: Ongoing maintenance: bug fixes, dependency upkeep, security patches, and releases, Dijkstra readiness including Plutus V4 support, ledger rules, transaction-builder updates, conformance testing, nested transactions, accounts, and guard scripts, Improved JS/TS interfaces and documentation for components embedded in MeshJS, Evolution SDK, and Lucid Evolution, Java/Kotlin interoperability including Spring Boot and Ktor examples and cleaner integration with Cardano Client Lib and Yaci, Foundational runtime components including reactive workers, chain follower, and task scheduler, Reference applications, integration tests, early-user feedback, public reporting, third-party assurance, and milestone-based delivery",
           "Deadline/expiry: March 2027",
           "Claim (technical, supported_in_proposal, high materiality): Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
-          "Claim (adoption, proposer_asserted, high materiality): Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal asks for \u20b32,464,844 over 9 months, equivalent to about $394,375 at a $0.16/ADA reference rate, with no contingency.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal is a reduced resubmission of a prior \u20b38,503,000 12-month proposal, with FTE reduced from 8.25 to 2.25 and scope narrowed by removing the standalone L1 node, full L2 integration, broad formal verification, and advanced devnet expansion.",
-          "Claim (governance, proposer_asserted, high materiality): Delivery is milestone-based and will be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
-          "Claim (technical, supported_in_proposal, high materiality): Dijkstra readiness is needed because Dijkstra introduces changes such as Plutus V4 support, nested transactions, guard script types, and accounts that affect smart contract development, Plutus evaluation, transaction building, ledger rules, testing, and workflows."
+          "Claim (adoption, proposer_asserted, high materiality): Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b32,464,844 for 9 months, equivalent to about $394,375 at a $0.16/ADA reference rate, with no contingency.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal is a reduced resubmission of a prior Scalus proposal, cutting the ask from \u20b38.503 million to about \u20b32.465 million, reducing duration from 12 to 9 months, reducing FTE from 8.25 to 2.25, and removing the standalone L1 node, full L2 integration, and broad formal verification from scope.",
+          "Claim (governance, proposer_asserted, high materiality): Delivery is proposed to be milestone-based through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+          "Claim (adoption, independently_verifiable, medium materiality): The proposal says Scalus has 4,642 commits across 32 releases, 12 contributors, and Scalus.js reaches more than 20,000 monthly downloads."
         ],
         "missing": [
-          "Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
-          "Independent evidence for: Delivery is milestone-based and will be administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
-          "Independent evidence for: Lantr Engineering states that every prior milestone was delivered on time and commits to public reporting, open community sessions, and on-time milestone delivery for treasury-funded work."
+          "Independent evidence for: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+          "Independent evidence for: Delivery is proposed to be milestone-based through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+          "Independent evidence for: Dijkstra readiness is presented as necessary because the hard fork introduces Plutus V4 support, nested transactions, guard script types, and accounts affecting smart contract development, evaluation, transaction building, ledger rules, testing, and workflows.",
+          "Independent evidence for: Lantr Engineering says it has delivered every prior Scalus milestone on time and commits to public reporting, open community sessions, and on-time milestone delivery for treasury-funded work."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -207,7 +208,7 @@
         "status": "complete",
         "findings": [
           "Strongest YES: the proposal substantiates \"Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -229,8 +230,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records NEEDS_MORE_INFO on Scalus 2026: Maintenance, Dijkstra Readiness, Interoperability & Application Runtime. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund a 9-month continuation of Scalus covering maintenance, Dijkstra hard fork readiness, interoperability across JVM and JS/TS ecosystems, and a first scoped application runtime. It asks the treasury for 2464844 ADA. The strongest grounded claim is: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.\n\nA material claim remains proposer-asserted or thinly supported: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm, and its components are reused by MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit. Reason code: VERIFIED_NCL_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal asks for \u20b32,464,844 to fund nine more months of Scalus work by Lantr Engineering, covering maintenance, Dijkstra hard-fork readiness, JVM and JS/TS interoperability, and a scoped application runtime through March 2027. The proposer says Scalus is an established open-source Cardano development platform with three years of delivery, a reduced scope compared with the prior \u20b38.503 million request, milestone-based delivery, public reporting, and ecosystem use across several projects and libraries.\n\nSome parts were well supported in the review: the action has a pinned, replayable proposal anchor; the budget, duration, reduced scope, and core technical purpose were clear; and the strongest case for support is that Scalus appears to be established open-source developer infrastructure. But several high-materiality claims were still only asserted rather than independently evidenced inside the review, including direct usage by named projects, reuse in named ecosystem libraries, the governance controls around audited SundaeSwap treasury contracts and oversight, and the record of prior on-time delivery.\n\nThis is a conservative, evidence-based hold, not a rejection of the work. To unblock a directional vote, BEACN would need the applicable Net Change Limit pinned and independently verified from public chain evidence, plus stronger replayable evidence for the major adoption and governance-control claims, along with clearer treasury sustainability, independent assurance, and dependency-map information.",
+  "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -250,7 +251,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "31fc4f2eb20642aafb9a368d83945fa980ef11adc680a6a3a1293d1460a41b10"
+      "output_sha256": "aa41c27cd5ec5c2d347f1e0b4c049960cbaed27f5fe7f78b35eb798602529b34"
     },
     "doctrine": {
       "family": "treasury",
@@ -270,18 +271,18 @@
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "403cff16dc314bae2a472d1fa010b4493b0559c302d7379af28814af767b111b"
+      "output_sha256": "ab50ec989ee32b5ea53ab819c7a69b4618f9c9294fb6766a188214fec30554a1"
     },
     "human_message": {
-      "source": "deterministic-heuristic",
+      "source": "precomputed",
       "available": true,
       "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "cc3708c5d47c33e4cdda1ef87fc9e42fb633d5e726f161ec8b4421a0ead07ee5",
-      "output_sha256": "b5476d19d40884fb117dfea03d622fe601fb70b0538e9e7011c9dc52e4e0210e"
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "2aece25f3eb0d74b367dab7bf3915eae49a5a2140a321720db5bf5840b2877b2"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/dd1110050089724af184b473.md",
-  "rationale_anchor_hash": "dd1110050089724af184b4739697564cbd94c9cadc519765901e8d14d08486dc"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/da9ee87588b530eecccf27c6.md",
+  "rationale_anchor_hash": "da9ee87588b530eecccf27c695864a94a3f8e78ba2f3e105638d75dcc658df21"
 }

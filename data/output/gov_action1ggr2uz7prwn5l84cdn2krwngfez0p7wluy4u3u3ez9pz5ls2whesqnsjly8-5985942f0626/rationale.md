@@ -146,12 +146,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `5985942f062697dfaf5abf1ab9d4dbdef024513b654ab941b19c3ce205973914`
-- snapshot_bundle_hash: `8e1775e3394bf858a707a1178789fa7d5c1cce5f600257b2245ac33b61b6b86c`
+- snapshot_bundle_hash: `44b3d0310a68e8e43199a30b1a3f97281c2cb500a3081077d149e1ff850f9779`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `7`
+- snapshot_age_seconds: `6`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

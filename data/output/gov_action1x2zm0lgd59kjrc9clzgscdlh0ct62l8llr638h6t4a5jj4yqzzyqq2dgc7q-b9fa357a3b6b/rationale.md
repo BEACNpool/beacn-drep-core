@@ -103,10 +103,10 @@ A material claim remains proposer-asserted or thinly supported: There was signif
 
 ## Reproducibility
 - input_hash: `b9fa357a3b6bd01e4b26cbffdfb16f81a5780267d0eb3d10d4e9029f656f493d`
-- snapshot_bundle_hash: `402c33fb7d729ec2db30e58321168f13e31cd50867a1e097b4857056ddaedeef`
+- snapshot_bundle_hash: `cfcf04ba7ad2f88c0096254eda2d8bb1b8019b2837263f9c01dd211c3fe5b4b4`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `13`
 - uncertainty_band: `LOW`

@@ -1,16 +1,16 @@
 # Rationale: gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22
 Recommendation: **ABSTAIN**
-Score: `-0.05` (raw `-0.05` + doctrine-LLM nudge `-0.02`) | Confidence: `0.5325` | Readiness: `0.5`
-> Reasoning layer (precomputed): The proposal has a clear governance intent and offers concrete discussion structure, which aligns with support for info actions that improve governance clarity. However, several high-materiality premises about ecosystem harm, gridlock, and existential danger are asserted without evidence, so evidence quality and framing integrity justify a small cautionary nudge rather than positive support.
+Score: `-0.05` (raw `-0.05` + doctrine-LLM nudge `-0.01`) | Confidence: `0.5325` | Readiness: `0.5`
+> Reasoning layer (precomputed): The proposal aligns with the Info Action doctrine's support for governance clarity by offering a concrete discussion framework and budget-process structure, but several high-materiality premises about dysfunction, conflict, and ecosystem risk are asserted without evidence, so evidence quality warrants a small cautionary nudge rather than directional support.
 
 ## Plain-language explanation (precomputed)
-BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The action has a clear governance purpose and a replayable anchor document, but several material claims about the current state of Cardano treasury governance were asserted without independent evidence.
+BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The action offered a useful discussion framework for treasury governance reform, but several important claims about the current state of Cardano treasury governance were asserted without independent, replayable support.
 
-The action requested an InfoAction to introduce ideas for reforming treasury governance, encourage public discussion, and outline possible guardrails such as a strategic entity, an expert commission, budget voting, budget structure, and a functional reserve. The proposal was strongest where it argued for clearer treasury direction, coherent strategy, dedicated thematic budgets, and a staged process for voting on the Net Change Limit, budget allocation, and an overall treasury withdrawal.
+The proposal requested an InfoAction to bring basic ideas for treasury governance reform into public discussion. It sketched guardrails, budget structure, process reforms, ecosystem collaboration, and a sequence for voting on the Net Change Limit, budget structure, allocations, and final treasury withdrawals. The proposer argued for clearer direction, a coherent strategy, a roadmap, balanced budget domains, dedicated budgets, and voted bodies such as a strategic entity and expert commission. Those process ideas were supported within the proposal itself, and the pinned anchor document was available and replayable.
 
-The review found those structural discussion points reasonably supported in the proposal itself. However, higher-materiality claims that treasury governance is currently in a poor state due to a funding impasse, lack of governance-system support, and harmful competition or toxicity around scarce resources lacked independent supporting evidence. The risk review judged execution risk as low, but mitigation evidence and independent assurance were missing, and the claims-and-evidence status remained thin.
+The main weakness was evidence quality. The review found thin support for high-materiality claims that treasury governance is in a poor state because of a funding impasse, limited direct governance support, and harmful conflict between funding domains. The risk review rated execution risk as low, but mitigation evidence and independent assurance were missing. A flag score was also present, which reduced confidence.
 
-This abstention is a conservative, evidence-based hold, not active opposition. A directional vote would be unblocked by replayable independent evidence for the proposal’s claims about the current treasury impasse, ecosystem harm from the existing withdrawal process, and the need for the specific governance reforms proposed.
+This abstention is a conservative, evidence-based hold, not active opposition. A directional vote would be unblocked by independent evidence for the proposal’s claims about the funding impasse, governance-system gaps, resource competition, and community conflict, along with clearer mitigation evidence and independent assurance for the proposed process reforms.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -31,20 +31,20 @@ This abstention is a conservative, evidence-based hold, not active opposition. A
 - finding: Proposal document read by reasoning layer: yes
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Info action to introduce basic ideas for reforming Cardano treasury governance into public discussion and encourage collaboration on future implementation.
+- finding: Requested: InfoAction to introduce basic ideas for reforming Cardano treasury governance into public discussion, including guardrails, budget structure, and process reforms.
 - finding: Recipient: not stated in document
 - finding: Stated amount: not stated in document
-- finding: Deliverables: Provide an impetus for improving the treasury governance process., Outline guardrails for strategic direction., Present discussion ideas including a strategic entity, expert commission, budget voting process, budget structure, and functional reserve.
+- finding: Deliverables: Sketch basic ideas for treasury governance reform, Provide an impetus for improving the treasury governance process, Outline guardrails for strategic direction, Encourage ecosystem collaboration on treasury governance reform
 - finding: Deadline/expiry: not stated in document
-- finding: Claim (governance, proposer_asserted, high materiality): The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.
-- finding: Claim (governance, proposer_asserted, high materiality): The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.
-- finding: Claim (governance, supported_in_proposal, high materiality): The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.
-- finding: Claim (governance, supported_in_proposal, high materiality): The proposal states treasury governance should be explicitly addressed and supported by the governance system and the constitution.
-- finding: Claim (governance, proposer_asserted, medium materiality): The proposal argues the Net Change Limit should not be treated as the overall potential budget and is only a vague initial approximation of a budget.
-- finding: Claim (governance, supported_in_proposal, high materiality): The proposal recommends dedicated and balanced thematic budgets instead of isolated treasury withdrawal votes for individual projects competing against each other.
-- missing: Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.
-- missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.
-- missing: Independent evidence for: The proposal argues the Net Change Limit should not be treated as the overall potential budget and is only a vague initial approximation of a budget.
+- finding: Claim (governance, proposer_asserted, high materiality): The proposer states that Cardano treasury governance is in a poor state due to a funding impasse and limited direct support in the existing governance system.
+- finding: Claim (governance, proposer_asserted, high materiality): The proposer states that treasury withdrawal actions across important domains have created perceived competition for scarce resources and harmful community conflict.
+- finding: Claim (governance, supported_in_proposal, high materiality): The proposer argues that treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability.
+- finding: Claim (governance, supported_in_proposal, high materiality): The proposer argues that treasury governance should be explicitly addressed and supported by the governance system and the constitution.
+- finding: Claim (governance, proposer_asserted, medium materiality): The proposer claims the NCL should not be treated as the potential overall budget and is insufficient by itself for effective treasury governance.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposer recommends a dedicated investment budget that includes strategic direction and a roadmap.
+- missing: Independent evidence for: The proposer states that Cardano treasury governance is in a poor state due to a funding impasse and limited direct support in the existing governance system.
+- missing: Independent evidence for: The proposer states that treasury withdrawal actions across important domains have created perceived competition for scarce resources and harmful community conflict.
+- missing: Independent evidence for: The proposer claims the NCL should not be treated as the potential overall budget and is insufficient by itself for effective treasury governance.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -65,8 +65,8 @@ This abstention is a conservative, evidence-based hold, not active opposition. A
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability." and clears the evidence gates.
-- finding: Strongest NO: a material claim is unsupported — "The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the proposal substantiates "The proposer argues that treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability." and clears the evidence gates.
+- finding: Strongest NO: a material claim is unsupported — "The proposer states that Cardano treasury governance is in a poor state due to a funding impasse and limited direct support in the existing governance system." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -82,11 +82,11 @@ This abstention is a conservative, evidence-based hold, not active opposition. A
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal argues treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposer argues that treasury governance must provide clear direction, coherent strategy, and a specific roadmap for Cardano's growth and stability." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): The proposal has a clear governance intent and offers concrete discussion structure, which aligns with support for info actions that improve governance clarity. However, several high-materiality premises about ecosystem harm, gridlock, and existential danger are asserted without evidence, so evidence quality and framing integrity justify a small cautionary nudge rather than positive support.
+- Doctrine-aware reasoning layer nudged the score by -0.010 (clamped to ±0.05): The proposal aligns with the Info Action doctrine's support for governance clarity by offering a concrete discussion framework and budget-process structure, but several high-materiality premises about dysfunction, conflict, and ecosystem risk are asserted without evidence, so evidence quality warrants a small cautionary nudge rather than directional support.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -95,18 +95,18 @@ This abstention is a conservative, evidence-based hold, not active opposition. A
 
 ## Uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal says Cardano treasury governance is currently in a poor state due to a funding impasse and lack of direct governance-system support.
-- Claims and evidence missing: Independent evidence for: The proposal claims current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, ill will, and strife that harm the ecosystem.
+- Claims and evidence missing: Independent evidence for: The proposer states that Cardano treasury governance is in a poor state due to a funding impasse and limited direct support in the existing governance system.
+- Claims and evidence missing: Independent evidence for: The proposer states that treasury withdrawal actions across important domains have created perceived competition for scarce resources and harmful community conflict.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
 ## Reproducibility
 - input_hash: `442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162`
-- snapshot_bundle_hash: `624429d9bc7b2de4adb5f5fbae52e9306ea131eb91d90e065f09b720de9e4d95`
+- snapshot_bundle_hash: `f0fe3b5b6e1c2a04e8bef9b4fc03e382c6a95e057dd4c2c39b43c55776af20d7`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `4`
 - uncertainty_band: `LOW`

@@ -34,7 +34,7 @@
   "action_type": "InfoAction",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -64,7 +64,7 @@
       "resource_id": "gov_actions_all_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_all.csv",
-      "file_hash": "8025355170e6edf4045af59832464d3652e92f6202502cbb5abd0d496fb08b28",
+      "file_hash": "1e701e7bfe3c5de1eee03af7fe94d6cd831e0e34f61a150f9561d85cd4ec3b90",
       "selected_row": {
         "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
         "tx_hash": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2",
@@ -101,7 +101,7 @@
       "resource_id": "gov_actions_active_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_active.csv",
-      "file_hash": "a18fd66683b84979dc6e11c0342ca18c4f97b5b22390c569e12b25f85ac22c7c",
+      "file_hash": "97c397ec8cf0b9c69e3d9030e8d2928cc3c200adbc3fb0a2936427b178c0da28",
       "selected_row": {
         "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
         "tx_hash": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2",
@@ -151,7 +151,7 @@
       "resource_id": "gov_poll_runs_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_poll_runs.csv",
-      "file_hash": "4532707693ee8e0081541a929439d6fea1505506fb32114c75cd98c3e0d698d6"
+      "file_hash": "3dca2f83176a6cab49209924989f494c03f503c5e4a767e921f244a2c3b2337c"
     },
     {
       "resource_id": "top_drep_votes_snapshot",
@@ -179,7 +179,7 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "624429d9bc7b2de4adb5f5fbae52e9306ea131eb91d90e065f09b720de9e4d95",
+  "snapshot_bundle_hash": "f0fe3b5b6e1c2a04e8bef9b4fc03e382c6a95e057dd4c2c39b43c55776af20d7",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -198,7 +198,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "1b9a6d8da69b23da0fdfd35cbde05d846d89dd32d2b0578225169c1a53141b7c"
+      "output_sha256": "fe4ebe0b20ee3312d6506e5f420d43792856c474ed59bb60eb2d454613963659"
     },
     "doctrine": {
       "family": "info",
@@ -214,11 +214,11 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "direction": "ABSTAIN",
-      "score_adjustment": -0.02,
+      "score_adjustment": -0.01,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "c9cf51442350a1349d6c9f6b0c22a3682963699df82d676995c3ecbedea5cb6e"
+      "output_sha256": "e56b7f631f67ca28289d91bf3282d3d92c51b9a34934e92ef55756ea2782f1ef"
     },
     "human_message": {
       "source": "precomputed",
@@ -226,7 +226,7 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "f13251c483667112984d945e740e2d7a84fd2a5042ae3b685d106983241dba11"
+      "output_sha256": "5d412afa5634d1e482e2980f4a5bf936ab1e671f58aa4787e6f045e3c47581b3"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

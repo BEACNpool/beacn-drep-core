@@ -1,0 +1,13 @@
+# Blockfrost's transformation to not-for-profit
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — precomputed)_
+
+BEACN voted ABSTAIN because a required baseline treasury field was missing: `treasury_amount_lovelace` was not available for a TreasuryWithdrawals action. Even though the anchor document states a request of 9,832,979 ADA, the deterministic review could not responsibly issue a directional vote while the machine-readable treasury amount was missing.
+
+The proposal requested 18 months of funding to transition Blockfrost into a free, community-governed public API/public good under an independent not-for-profit structure. It described funding of 9,832,979 ADA, or 1,868,266 USD at 0.19 USD per ADA, for transition and operations. It also proposed deliverables including legal setup or a host-organization agreement, a technical transition plan, a public usage dashboard, board election rules and voting, service for mainnet, preview, and preprod traffic, transfer of source code, trademarks, domains, and related assets, public consultation on sustainability, 99% monthly uptime, and quarterly technical and budget reports.
+
+Some claims were supported in the proposal, including the stated ADA request, the staffing and operations budget split, the proposed five-seat governance model, and the use of delivery assurance and budget-management structures. The review also found an independently verifiable adoption claim from Cardano Foundation survey links showing Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025. But several important claims remained only proposer-asserted or thinly evidenced, including the future free community-governed API model, the transfer of Blockfrost intellectual property, recent usage figures, and the claim that Blockfrost submits more than 50% of transactions in most epochs.
+
+This ABSTAIN is a conservative, evidence-based hold, not a rejection of the idea. The intake and synthesis gates were blocked by the missing `treasury_amount_lovelace` field, claims-and-evidence was thin, treasury analysis lacked sustainability path and cost-benefit clarity, and risk review lacked independent assurance and a dependency map. A directional vote would be unblocked by the missing treasury amount field, independent evidence for the governance and IP-transfer claims, clearer sustainability and cost-benefit evidence, and stronger assurance and dependency documentation.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

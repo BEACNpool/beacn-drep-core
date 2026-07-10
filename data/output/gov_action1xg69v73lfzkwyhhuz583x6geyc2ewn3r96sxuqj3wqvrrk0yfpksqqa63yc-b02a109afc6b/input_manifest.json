@@ -34,7 +34,7 @@
   "action_type": "TreasuryWithdrawals",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -76,7 +76,7 @@
       "resource_id": "gov_actions_all_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_all.csv",
-      "file_hash": "8025355170e6edf4045af59832464d3652e92f6202502cbb5abd0d496fb08b28",
+      "file_hash": "1e701e7bfe3c5de1eee03af7fe94d6cd831e0e34f61a150f9561d85cd4ec3b90",
       "selected_row": {
         "action_id": "gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc",
         "tx_hash": "3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d",
@@ -113,7 +113,7 @@
       "resource_id": "gov_actions_active_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_actions_active.csv",
-      "file_hash": "a18fd66683b84979dc6e11c0342ca18c4f97b5b22390c569e12b25f85ac22c7c",
+      "file_hash": "97c397ec8cf0b9c69e3d9030e8d2928cc3c200adbc3fb0a2936427b178c0da28",
       "selected_row": {
         "action_id": "gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc",
         "tx_hash": "3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d",
@@ -175,7 +175,7 @@
       "resource_id": "gov_poll_runs_snapshot",
       "kind": "file",
       "path": "data/input/governance/governance_poll_runs.csv",
-      "file_hash": "4532707693ee8e0081541a929439d6fea1505506fb32114c75cd98c3e0d698d6"
+      "file_hash": "3dca2f83176a6cab49209924989f494c03f503c5e4a767e921f244a2c3b2337c"
     },
     {
       "resource_id": "top_drep_votes_snapshot",
@@ -194,14 +194,14 @@
       "resource_id": "deep_research_dossiers",
       "kind": "directory",
       "path": "data/input/governance/decision_support/dossiers",
-      "files_count": 90,
-      "dir_hash": "6726d10d10a7ca3fadbe62b9dc2a8c8ddb2bee5c73e617e099302f6f33fac79d"
+      "files_count": 92,
+      "dir_hash": "fcca93b4f73b599513066443a69787d69c1d4846dfd441ee267a2200a53032d5"
     },
     {
       "resource_id": "ecosystem_value_profiles",
       "kind": "file",
       "path": "data/input/governance/decision_support/ecosystem_value_profiles.csv",
-      "file_hash": "c109ea7710c29257ca1a892ab7d4d3ae7cad3468a603109af5960d85982029db"
+      "file_hash": "c9c219f5917403afed538a0ecd1fd310561a84692609cd0aa4dcc2926f6ecd25"
     },
     {
       "resource_id": "treasury_policy_state",
@@ -213,7 +213,7 @@
       "resource_id": "treasury_portfolio",
       "kind": "file",
       "path": "data/input/governance/treasury_portfolio.json",
-      "file_hash": "351f737827a29f42755fc1c8e78b7078e4f317795a2b6b22f6d5e58ba64814ae"
+      "file_hash": "399f4d1c7fd342ba62592f9e2fde0241cf9d218e3e043df4b7a4b305ce1b7849"
     },
     {
       "resource_id": "governance_outcomes",
@@ -228,7 +228,7 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "dba0c3fb78371720cc0dd0ff8733f5e52d7b79a205c1d0639bcf805eed8f12cc",
+  "snapshot_bundle_hash": "8a20183e25f7d5eba24d637ddcee30d298eba12cce959dc5903e092df5b6f72e",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -248,7 +248,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "31fc4f2eb20642aafb9a368d83945fa980ef11adc680a6a3a1293d1460a41b10"
+      "output_sha256": "aa41c27cd5ec5c2d347f1e0b4c049960cbaed27f5fe7f78b35eb798602529b34"
     },
     "doctrine": {
       "family": "treasury",
@@ -268,15 +268,15 @@
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "403cff16dc314bae2a472d1fa010b4493b0559c302d7379af28814af767b111b"
+      "output_sha256": "ab50ec989ee32b5ea53ab819c7a69b4618f9c9294fb6766a188214fec30554a1"
     },
     "human_message": {
-      "source": "deterministic-heuristic",
+      "source": "precomputed",
       "available": true,
       "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "cc3708c5d47c33e4cdda1ef87fc9e42fb633d5e726f161ec8b4421a0ead07ee5",
-      "output_sha256": "b5476d19d40884fb117dfea03d622fe601fb70b0538e9e7011c9dc52e4e0210e"
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "2aece25f3eb0d74b367dab7bf3915eae49a5a2140a321720db5bf5840b2877b2"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   }

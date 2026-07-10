@@ -1,0 +1,113 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 640",
+        "Expires after epoch: 647",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund Dano Finance's DeFi Kernel work, including a public registry, Spot Leverage Order Book, American Options Market-Making protocol, and Composable DeFi Transaction Builder SDK.",
+        "Recipient: Dano Finance, with Minswap Labs as budget administrator",
+        "Stated amount: 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee",
+        "Deliverables: DeFi Kernel Registry Website and Submission Process, Spot Leverage Order Book, American Options Market-Making Protocol, Composable DeFi Transaction Builder SDK, Public reports, KPI reporting, security review or audit reports, issue resolution reports, and final impact/work-package reports",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,333,000 ADA in total, with 3,300,000 ADA for delivery and 33,000 ADA for Minswap Labs' 1% budget administration fee.",
+        "Claim (technical, supported_in_proposal, high materiality): Dano Finance will deliver four work packages: a DeFi Kernel registry, a Spot Leverage Order Book, an American Options Protocol, and a Composable DeFi Transaction Builder SDK.",
+        "Claim (technical, supported_in_proposal, high materiality): The DeFi Kernel is intended to provide an open, fee-free, royalty-free compatibility standard for discoverable and composable Cardano DeFi contracts.",
+        "Claim (adoption, proposer_asserted, medium materiality): Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+        "Claim (technical, supported_in_proposal, high materiality): The Spot Leverage Order Book work package will include protocol design, testnet deployment, security review or audit, mainnet release, published script hashes and schemas, integration documentation, and usage reporting.",
+        "Claim (technical, supported_in_proposal, high materiality): The American Options Protocol work package will deliver a Cardano-native American options market-making protocol using an extended concentrated-pool model with security review or audit before mainnet release."
+      ],
+      "missing": [
+        "Independent evidence for: Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+        "Independent evidence for: The proposal says unused or unearned funds will remain unspent or be returned to the Cardano Treasury according to the administrator's process."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.68"
+      ],
+      "missing": [
+        "milestone-gated disbursement"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: high",
+        "Governance risk: medium",
+        "Technical risk: high",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 3,333,000 ADA in total, with 3,300,000 ADA for delivery and 33,000 ADA for Minswap Labs' 1% budget administration fee.\" though 1 review blocker(s) remain open.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Dano Finance currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ]
+}

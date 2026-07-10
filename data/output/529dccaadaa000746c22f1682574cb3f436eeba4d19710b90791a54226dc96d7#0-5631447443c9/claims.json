@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "120,000,000",
+    "deadline": "12 months",
+    "deliverables": [
+      "Phase 1 public current-state audit",
+      "Phase 2 identification of integration, product, and ecosystem-support gaps",
+      "Phase 3 incentives and capital deployment after Operating Group affirmation",
+      "Published recommendations and disbursement records",
+      "Quarterly financial and ecosystem impact metrics",
+      "Independent audit or assurance allocation of 2,000,000 ada"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Treasury withdrawal to fund AlphaGrowth's Cardano PRIME, a 12-month community-overseen program for DeFi protocol readiness, incentives, and durable liquidity across Cardano markets."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "PRIME is described as a 12-month program executed by AlphaGrowth under Operating Group oversight, with Intersect acting as Constitutional Administrator and direct fund manager.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests 120,000,000 ada and states USD figures are only planning references based on a $0.16 per ADA assumption.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the full withdrawal at enactment.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer states Cardano DeFi had approximately $90 million in TVL and $45 million in stablecoin supply as of June 2026.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal claims Cardano has infrastructure additions such as USDCx, LayerZero, Pyth, Dune, and others, but has not converted them into enough durable DeFi liquidity, application depth, LP participation, or institutional awareness.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The program separates recommendations, oversight, and custody by having AlphaGrowth produce analyses and memos, the Operating Group review and potentially veto or condition actions, and Intersect manage funds in a separate auditable account.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal includes milestone-gated and action-gated releases, including a Month 4 Phase 3 release gate and return-to-treasury triggers for unused, unearned, unreleased, or excess funds.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "A 2,000,000 ada allocation is dedicated to independent audit or assurance funding.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The performance fee is tied to verified qualifying TVL growth, excluding ADA price effects and non-PRIME attributable TVL under an attribution methodology.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document references a full proposal PDF, a Sundae Labs treasury-contracts GitHub repository, and two budget management smart contract audit reports.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The anchor describes a 120,000,000 ada treasury withdrawal for a 12-month DeFi liquidity and incentive program with oversight, custody separation, gated releases, reporting, audit funding, and return triggers, while several market-need claims are asserted without evidence in the anchor text itself.",
+  "output_sha256": "7e70a69bdc15d4c7f992ebd8576e9dd2d041268994e02be0e1622a8ecc61306a"
+}

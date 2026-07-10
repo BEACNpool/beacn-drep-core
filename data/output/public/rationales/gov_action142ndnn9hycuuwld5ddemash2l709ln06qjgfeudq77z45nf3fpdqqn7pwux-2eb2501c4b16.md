@@ -142,12 +142,12 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 
 ## Reproducibility
 - input_hash: `2eb2501c4b164ccad24bd445095717f5b79ab108ec3f1bc426b643b87354dca4`
-- snapshot_bundle_hash: `525a0cdaa8b055337ad5fa66564c7448994c202531dcb2a2ddb01e1b48aeb044`
+- snapshot_bundle_hash: `150ee6336e5adac11b67f845e09ddc0e9ae138a65ab614d4032dfd54318e8c32`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `6`
+- snapshot_age_seconds: `5`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

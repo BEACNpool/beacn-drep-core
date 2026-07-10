@@ -5,12 +5,12 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:03640c90d695094368dbb926bfbc9f2002ac9b37be6564b2f992ff0b36c94853",
+    "raw_input_hash": "sha256:4fae926f69089b9b3d7197d8520e567f710813eef16fa22f19f1879c1c245ce0",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-10T03:21:53.574905+00:00",
+    "published_at": "2026-07-10T11:30:04.499477+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.1,
-    "input_hash": "03640c90d695094368dbb926bfbc9f2002ac9b37be6564b2f992ff0b36c94853",
-    "snapshot_bundle_hash": "9750d5e6433c34a204ad54c5ad361e00b56708d191eda885e8eeeebdc10070c4",
+    "input_hash": "4fae926f69089b9b3d7197d8520e567f710813eef16fa22f19f1879c1c245ce0",
+    "snapshot_bundle_hash": "608134a2e6eef98807e331572fcd8076f9235712b1b9d6a25ca09ba2276016da",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
-    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
-    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
-    "rationale_markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-03640c90d695.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/59cd28ee5b19fb358f20dfc0.md",
-    "rationale_anchor_hash": "59cd28ee5b19fb358f20dfc0c5ab5260d3cd98e489b96c0f5ce2ec16d3a3520f"
+    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
+    "rationale_markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-4fae926f6908.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/59f09f6b1b3724a6258eaa59.md",
+    "rationale_anchor_hash": "59f09f6b1b3724a6258eaa596665f30d67547f2d15e0b917f92f7c5263558cd1"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"The proposal requests 1,785,333 ADA, consisting of 1,666,667 ADA for maintenance and improvements, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and has shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend work, Apple Silicon builds, the drt release CLI, and Nix build modernization.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
     "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
     "top_fixes": [
       "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
       "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
-      "Provide sustainability path."
+      "Provide independent evidence for: Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is claimed to be higher."
     ],
-    "markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-03640c90d695.md",
+    "markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-4fae926f6908.md",
     "missing_evidence": [
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ],
@@ -73,22 +73,22 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund Daedalus Wallet Maintenance and Improvements 2026-2027 as a time-and-materials engagement delivered by Se7en Labs, Inc.",
-            "Recipient: Se7en Labs, Inc. with administration and milestone verification by Intersect",
+            "Requested: Treasury withdrawal to fund Daedalus Wallet maintenance and improvements for 2026-2027 delivered by Se7en Labs, Inc.",
+            "Recipient: Se7en Labs, Inc., with administration by Intersect",
             "Stated amount: 1,785,333",
-            "Deliverables: Protocol maintenance including node and wallet backend updates, hard fork readiness, and compatible releases at least 2 weeks before each mainnet hard fork, Ecosystem expansion including Keystone and Flex hardware wallet support and a CIP-30 dApp connector, User support across GitHub, community forums, direct channels, and Japanese-language support with full Japanese translation maintained, Security and dependency maintenance including Electron, Node.js, reproducible Nix builds, platform compatibility, and signed releases, Architecture assessment covering current state, options, resource estimates, and recommendation",
-            "Deadline/expiry: Contract year through 2026-2027; architecture assessment by Q3 2027",
+            "Deliverables: Protocol maintenance including node upgrades, hard fork readiness, and compatible releases at least 2 weeks before each mainnet hard fork, Ecosystem expansion including Keystone and Flex hardware wallet support, CIP-30 dApp connector, and Japanese localisation, Responsive user support including dedicated attention to the Japanese community, Architecture assessment covering current state, options, resource estimates, and recommendation, Independent financial audit and test hardware acquisition/maintenance",
+            "Deadline/expiry: Contract year through 2026-2027; architecture assessment by Q3 2027; IOG contract closes August 31, 2026",
             "Claim (technical, proposer_asserted, high materiality): Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,785,333 ADA, consisting of 1,666,667 ADA for maintenance and improvements, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
-            "Claim (adoption, proposer_asserted, high materiality): Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026, shipped Daedalus 8.0 and 11.0, and has not received Cardano Treasury ada in the last 24 months.",
-            "Claim (technical, independently_verifiable, high materiality): The team commits to a compatible stable Daedalus release at least 2 weeks before each mainnet hard fork and says release timing and version-currency metrics are independently verifiable from public GitHub repositories and the Cardano mainnet chain.",
-            "Claim (technical, supported_in_proposal, medium materiality): The work includes maintaining all four platform targets: Windows, macOS x86_64, macOS aarch64, and Linux.",
-            "Claim (adoption, proposer_asserted, medium materiality): The proposal states that Daedalus has approximately 4,000 monthly active users according to opt-in telemetry and that the true count is meaningfully higher because privacy-conscious users are less likely to opt in."
+            "Claim (adoption, proposer_asserted, medium materiality): Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is claimed to be higher.",
+            "Claim (technical, supported_in_proposal, high materiality): Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and has shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend work, Apple Silicon builds, the drt release CLI, and Nix build modernization.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposal commits to compatible Daedalus stable releases at least 2 weeks before every mainnet hard fork during the contract period.",
+            "Claim (technical, supported_in_proposal, high materiality): The scope includes Keystone and Flex hardware wallet support, a CIP-30 dApp connector, full Japanese translation, ongoing user support, and an architecture assessment.",
+            "Claim (technical, independently_verifiable, medium materiality): All release-timing and version-currency metrics are stated to be independently verifiable from public GitHub repositories and the Cardano mainnet chain."
           ],
           "missing": [
             "Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
-            "Independent evidence for: Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026, shipped Daedalus 8.0 and 11.0, and has not received Cardano Treasury ada in the last 24 months.",
-            "Independent evidence for: The proposal states that Daedalus has approximately 4,000 monthly active users according to opt-in telemetry and that the true count is meaningfully higher because privacy-conscious users are less likely to opt in."
+            "Independent evidence for: Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is claimed to be higher.",
+            "Independent evidence for: Se7en Labs says it does not monetize Daedalus usage and that all funded outputs will be public assets under the Apache 2.0 license."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -135,7 +135,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 1,785,333 ADA, consisting of 1,666,667 ADA for maintenance and improvements, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" though 1 review blocker(s) remain open.",
+            "Strongest YES: the proposal substantiates \"Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and has shipped Mithril Snapshot Bootstrap, UTxO-HD/LSM backend work, Apple Silicon builds, the drt release CLI, and Nix build modernization.\" though 1 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
           ],
@@ -159,7 +159,7 @@
         "treasury_amount_lovelace is missing for a treasury withdrawal"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-03640c90d695.assessment.json"
+    "assessment_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-4fae926f6908.assessment.json"
   },
   "proposal_evidence": {
     "available": true,
@@ -170,7 +170,7 @@
     "anchor_hash": "d53fb4d05888001d60d03f5bca438f9cff434c441a9743d5ba898c3a17464c45",
     "file_sha256": "5638dce7b2360cdea8ba04ae975fecebfdff0051b809581fbd27037b92dee950",
     "content_bytes": "32633",
-    "fetched_at_utc": "2026-07-10T03:21:55Z",
+    "fetched_at_utc": "2026-07-10T11:30:13Z",
     "download_path": "/proposals/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0.json",
     "preview": "{\n  \"@context\": {\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"rationale\": \"CIP108:rationale\",\n        \"motivation\": \"CIP108:motivation\",\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@context\": {\n            \"uri\": \"CIP100:reference-uri\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            },\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\"\n          },\n          \"@container\": \"@set\"\n        },\n        \"onChain\": {\n          \"@id\": \"CIP169:onChain\",\n          \"@context\": {\n            \"deposit\": {\n              \"@id\": \"CIP116:deposit\",\n              \"@type\": \"CIP116:UInt64\"\n            },\n            \"reward_account\": {\n              \"@id\": \"CIP116:reward_account\",\n              \"@type\": \"CIP116:RewardAddress\"\n            },\n            \"gov_action\": {\n         "
   },
@@ -196,8 +196,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
-    "core_commit": "477180351445c61a6d12f92a427347abee714f40",
+    "resources_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+    "core_commit": "7c53e3475697c48b72ac851878f0f89d203e813b",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -309,7 +309,7 @@
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T03:36:58.527204Z",
+    "snapshot_time": "2026-07-10T12:14:14.719196Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

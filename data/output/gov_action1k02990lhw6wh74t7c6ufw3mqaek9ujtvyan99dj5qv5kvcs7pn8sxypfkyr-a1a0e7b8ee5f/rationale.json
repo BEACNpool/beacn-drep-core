@@ -9,15 +9,15 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.2133,
   "raw_score": -0.2133,
-  "llm_score_adjustment": 0.01,
+  "llm_score_adjustment": 0.02,
   "llm_lean": {
     "source": "precomputed",
     "model": "claude-opus-4-8",
     "direction": "YES",
-    "score_adjustment": 0.01,
-    "confidence": 0.68,
-    "rationale": "A very small positive nudge is justified because the proposal includes a clear budget breakdown, named work packages, prior-funding disclosure, NCL and Hydra voting references, smart-contract custody details, and external assurance commitments. The nudge remains small because several central benefit claims about ecosystem impact and necessity are still proposer-asserted, and treasury stewardship requires caution for a seven-figure ADA withdrawal.",
-    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; public-benefit ecosystem growth",
+    "score_adjustment": 0.02,
+    "confidence": 0.73,
+    "rationale": "A small positive nudge is justified because the claims include a clear budget breakdown, externally checkable Hydra voting and NCL references, disclosed smart-contract custody controls, and planned assurance, which improve evidence quality and treasury stewardship beyond a thin ask. The adjustment remains small because the document still relies on proposer assertions for strategic impact and because execution is contingent on another IntersectMBO budget approval.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -52,12 +52,12 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 1193000",
     "Risk review: Execution risk: medium",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The TSC requests $298,250, equivalent to 1,193,000 ADA, to support activities for 12 months.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Intersect's Technical Steering Committee requests 1,193,000 ADA, described as $298,250, for 12 months of support activities.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Doctrine-aware reasoning layer nudged the score by +0.010 (clamped to \u00b10.05): A very small positive nudge is justified because the proposal includes a clear budget breakdown, named work packages, prior-funding disclosure, NCL and Hydra voting references, smart-contract custody details, and external assurance commitments. The nudge remains small because several central benefit claims about ecosystem impact and necessity are still proposer-asserted, and treasury stewardship requires caution for a seven-figure ADA withdrawal.",
+    "Doctrine-aware reasoning layer nudged the score by +0.020 (clamped to \u00b10.05): A small positive nudge is justified because the claims include a clear budget breakdown, externally checkable Hydra voting and NCL references, disclosed smart-contract custody controls, and planned assurance, which improve evidence quality and treasury stewardship beyond a thin ask. The adjustment remains small because the document still relies on proposer assertions for strategic impact and because execution is contingent on another IntersectMBO budget approval.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -68,8 +68,8 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
-    "Claims and evidence missing: Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-    "Claims and evidence missing: Independent evidence for: The proposer asserts the TSC work supports Cardano technical governance, DRep decision-making, protocol evolution, ecosystem resilience, and 2030 strategy pillars.",
+    "Claims and evidence missing: Independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+    "Claims and evidence missing: Independent evidence for: The proposal claims TSC work is foundational technical governance capacity that supports Cardano's strategy pillars, including uptime, DRep participation, governance quality, and ecosystem resilience.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Treasury analysis missing: cost-benefit clarity",
@@ -82,10 +82,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "a1a0e7b8ee5f6b277cc25b92a0f4ff804b66463cac60b4b96ad4897e7a523048",
-  "snapshot_bundle_hash": "08c007bab7294a56ca30c6d3671339a2386229d28447fb88b6392601ce6f2259",
+  "snapshot_bundle_hash": "1b31f5d522c8744ebcc7086b078ac2f24be72725551971a8e65346604fda7c66",
   "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "ef21df7fcecbb56f66c12028d9c7dafb58b68c52",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -108,7 +108,7 @@
     "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T03:36:58.527204Z",
+    "snapshot_time": "2026-07-10T12:14:14.719196Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -149,21 +149,21 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Treasury withdrawal to fund Intersect Technical Steering Committee support activities for 12 months across community-facing technical coordination, protocol governance and evolution, and technical review.",
-          "Recipient: Intersect on behalf of the vendor, with funds directed to the 2026 Treasury Reserve Smart Contract stake address stated in the proposal.",
-          "Stated amount: 1,193,000",
-          "Deliverables: WP 1: Community-Facing Technical Coordination, including expert attendance at major ecosystem events and commissioning technical reports, budgeted at 256,000 ADA., WP 2: Protocol Governance and Evolution, funding the Parameter Committee, CIP editors, and Hard Fork Working Group, budgeted at 832,000 ADA., WP 3: Technical Review, establishing a pilot independent technical review programme launching in 2027, budgeted at 105,000 ADA., Milestone-based drawdowns, evidence-backed reporting, transparent disclosures, external assurance, and return of any unspent funds to the Cardano treasury.",
-          "Deadline/expiry: 12 months; WP3 pilot independent technical review programme launching in 2027.",
-          "Claim (economic, supported_in_proposal, high materiality): The TSC requests $298,250, equivalent to 1,193,000 ADA, to support activities for 12 months.",
-          "Claim (economic, supported_in_proposal, high materiality): The requested budget is divided into 256,000 ADA for WP1, 832,000 ADA for WP2, and 105,000 ADA for WP3.",
+          "Requested: Treasury withdrawal to fund Intersect Technical Steering Committee Support for 12 months across community engagement, protocol governance, and independent technical review.",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor",
+          "Stated amount: 1193000",
+          "Deliverables: WP 1: Community-Facing Technical Coordination, including technical expert attendance at major ecosystem events and commissioned technical reports, WP 2: Protocol Governance and Evolution, funding the Parameter Committee, CIP editors, and Hard Fork Working Group, WP 3: Technical Review, establishing a pilot independent technical review programme launching in 2027, Milestone-based drawdowns, evidence-backed reporting, transparent disclosures, and external assurance",
+          "Deadline/expiry: 12 months; WP3 pilot launching in 2027",
+          "Claim (economic, supported_in_proposal, high materiality): Intersect's Technical Steering Committee requests 1,193,000 ADA, described as $298,250, for 12 months of support activities.",
+          "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as 256,000 ADA for WP1, 832,000 ADA for WP2, and 105,000 ADA for WP3.",
           "Claim (governance, supported_in_proposal, high materiality): Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.",
-          "Claim (economic, proposer_asserted, high materiality): The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-          "Claim (governance, independently_verifiable, medium materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
-          "Claim (economic, independently_verifiable, high materiality): The proposer states the withdrawal does not breach the applicable 350M Net Change Limit at the moment of submission."
+          "Claim (economic, proposer_asserted, high materiality): All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting documentation, audited results, and an audit report.",
+          "Claim (economic, independently_verifiable, high materiality): The requested amount does not, at submission, breach the 350M ADA Net Change Limit covering Epoch 613 to Epoch 713."
         ],
         "missing": [
-          "Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-          "Independent evidence for: The proposer asserts the TSC work supports Cardano technical governance, DRep decision-making, protocol evolution, ecosystem resilience, and 2030 strategy pillars."
+          "Independent evidence for: All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+          "Independent evidence for: The proposal claims TSC work is foundational technical governance capacity that supports Cardano's strategy pillars, including uptime, DRep participation, governance quality, and ecosystem resilience."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -209,8 +209,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The TSC requests $298,250, equivalent to 1,193,000 ADA, to support activities for 12 months.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"Intersect's Technical Steering Committee requests 1,193,000 ADA, described as $298,250, for 12 months of support activities.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -232,8 +232,8 @@
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
   "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
-  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Intersect Technical Steering Committee support activities for 12 months across community-facing technical coordination, protocol governance and evolution, and technical review. It asks the treasury for 1,193,000 ADA. The strongest grounded claim is: The TSC requests $298,250, equivalent to 1,193,000 ADA, to support activities for 12 months.\n\nA material claim remains proposer-asserted or thinly supported: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury. Reason code: VERIFIED_NCL_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a Treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the work.\n\nThe proposal requests 1,193,000 ada for 12 months of Intersect Technical Steering Committee support, covering community-facing technical coordination, protocol governance work, and a pilot independent technical review programme. The proposer gives a clear budget split: 256,000 ada for WP1, 832,000 ada for WP2, and 105,000 ada for WP3. The review found several stronger points: the proposal anchor is available and replayable, the requested amount does not appear to breach the stated 350M ada Net Change Limit at submission, the Hydra voting support claim is externally checkable, and the custody setup through Sundae Labs smart contracts is disclosed.\n\nThe hold comes from the evidence gaps that still matter for a Treasury vote. Some claims remain proposer assertions rather than independently supported facts, including that all spending will be fully accounted for and unspent funds returned, and that the TSC work will deliver the claimed strategic benefits for uptime, DRep participation, governance quality, and ecosystem resilience. The review also flagged thin claims-and-evidence status, missing sustainability and cost-benefit clarity, missing independent assurance, and an incomplete dependency map.\n\nTo unblock a directional vote, BEACN would need the applicable Net Change Limit pinned and independently verified from public chain evidence. Stronger independent evidence for spending accountability, return of unspent funds, assurance, dependencies, and cost-benefit clarity would also reduce uncertainty.",
+  "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -252,7 +252,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "8d72b57e5ef95321e041b6ef2ecca71646f00ef8e6962bffb18151f21d466e61"
+      "output_sha256": "81bbf4b5a3a907aba8dd4f1fbb00661bfc0d07d01d8df29ea02f5bce3ea846e3"
     },
     "doctrine": {
       "family": "treasury",
@@ -268,22 +268,22 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "direction": "YES",
-      "score_adjustment": 0.01,
+      "score_adjustment": 0.02,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "c28da02524b1d6d9f12018077e3538ae507f1708f49cbdae771fae92efa0c618"
+      "output_sha256": "9e456459cd9601c0146aeda84a6d33119fe7b828dc808ab7b6f245933f90fdac"
     },
     "human_message": {
-      "source": "deterministic-heuristic",
+      "source": "precomputed",
       "available": true,
       "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "7cb1d38fd7c72328d2238012f9ae80b834e0fcea61088834d7df1c661bcc30e1",
-      "output_sha256": "e3eb83ec5962bba99186bc0fff1108788a66c405ed0743eb3a82961db2ca963f"
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "712de5af25099ce8635efed1f07def9bc82daa286d2d5ca32b3172609a449eeb"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/23bf5a91683989c1bc23957b.md",
-  "rationale_anchor_hash": "23bf5a91683989c1bc23957b1fed38d5fc7547d8be64d3eebed1931c78e74e9b"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ced109905023067fcd5fa576.md",
+  "rationale_anchor_hash": "ced109905023067fcd5fa576eccb0d31d31ea9627305ab8bd158ead91d6dfa26"
 }

@@ -37,10 +37,10 @@ Vote: ABSTAIN. For this HardForkInitiation (enacted), evidence quality was insuf
 
 ## Proof of vote
 - input_hash: `a787cc61e04b8ad7a6904f569d2b69ff13f01e9e341d36c2ef5d04fdf151be76`
-- snapshot_bundle_hash: `367fbe7b9c525b8debe76c12eac24b2a1d3d98ee4f524a29527dba1fc6499f21`
+- snapshot_bundle_hash: `835c6ca4889c279c366fbcb68ca13cd71fb85a21b5d8341ff3bdd78c7ac58928`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `0.0`
 - confidence: `0.7`
 

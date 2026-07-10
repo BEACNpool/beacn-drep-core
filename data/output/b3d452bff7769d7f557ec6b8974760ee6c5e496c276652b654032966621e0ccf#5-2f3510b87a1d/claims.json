@@ -1,0 +1,76 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,810,423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Administrative oversight via Intersect Budget Administration fee",
+      "Milestone-based disbursement controls through TRSC/PSSC smart contracts"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with Intersect administering funds on behalf of the vendor.",
+    "what": "Treasury withdrawal to fund Mithril Protocol continuous development and related Intersect administration costs."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,810,423 ADA, consisting of 3,699,440 ADA for Mithril Protocol Continuous Development and 110,983 ADA for an Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Mithril lowers onboarding friction through faster sync times and can unlock tooling for exchanges, wallets, monitoring, bridges, light wallets, full wallets, and light clients.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount does not, at time of submission, alone or in aggregate, breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit and oversight costs are included in the overhead, and independent oversight will be provided through Intersect and technically capable third parties with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Teragone has not previously received direct funding from Cardano treasury or community governance programs, while its Mithril work to date has been funded by IOG.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Intersect will use Sundae Labs treasury management smart contracts with a Treasury Reserve Smart Contract, one Project-Specific Smart Contract, specified on-chain addresses, and role-based authorization thresholds involving Intersect admins, Intersect leadership, and six oversight entities.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "A dashboard at treasury.sundae.fi is available for the community to audit the TRSC or PSSC and track metrics related to the withdrawn ADA, with activity also verifiable on chain.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document describes a 3,810,423 ADA treasury withdrawal administered by Intersect for continued Mithril Protocol development, with stated budget breakdown, governance process references, NCL compliance assertion, smart-contract custody details, and oversight arrangements.",
+  "output_sha256": "e982af90fcd4c343c6bbbdcbdb767d297d6670d780063d40ede689f597422b5e"
+}

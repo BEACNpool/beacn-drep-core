@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as native fBTC." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 12332031
 - Risk review: Execution risk: high
-- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as native fBTC." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.
-- Claims and evidence missing: Independent evidence for: Public rollout and 24 months of operations are intentionally deferred to a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.
+- Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.
+- Claims and evidence missing: Independent evidence for: If SPO coordination fails, Bifrost will use a federated mode as an operational fallback.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Risk review missing: independent assurance
@@ -46,10 +46,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `c31869d1126149cb19b18718209277982ba9989fbc89f038a7523d22c858de31`
-- snapshot_bundle_hash: `50c06cd6edab3853b2b839155468bd95cf394a237b3de1289b98cf11b474d8df`
+- snapshot_bundle_hash: `22dabba0c90314047251ca9e9bc923c05e2d4f4c52c291626d765a73469fcfe2`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.2433`
 - confidence: `0.7808`
 

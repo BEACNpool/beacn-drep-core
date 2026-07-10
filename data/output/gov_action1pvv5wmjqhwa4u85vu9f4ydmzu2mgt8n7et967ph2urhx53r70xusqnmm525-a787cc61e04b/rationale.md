@@ -90,12 +90,12 @@ Reason code: DREP_DISTRIBUTION_MISSING.
 
 ## Reproducibility
 - input_hash: `a787cc61e04b8ad7a6904f569d2b69ff13f01e9e341d36c2ef5d04fdf151be76`
-- snapshot_bundle_hash: `367fbe7b9c525b8debe76c12eac24b2a1d3d98ee4f524a29527dba1fc6499f21`
+- snapshot_bundle_hash: `835c6ca4889c279c366fbcb68ca13cd71fb85a21b5d8341ff3bdd78c7ac58928`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `25`
+- snapshot_age_seconds: `24`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.495, "NO": 0.2525, "YES": 0.2525}`

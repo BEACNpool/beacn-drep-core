@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with open-source Apache 2.0 code allowing auditability." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1785333
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal says Daedalus private keys are generated and stored on the user's device, are never transmitted to an external service, and the Apache 2.0 open-source code allows this to be audited." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Daedalus private keys are generated and stored on the user's device and are never transmitted to an external service, with open-source Apache 2.0 code allowing auditability." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.
-- Claims and evidence missing: Independent evidence for: According to opt-in telemetry cited by the proposer, Daedalus has approximately 4,000 monthly active users, while the proposer asserts the true count is meaningfully higher.
+- Claims and evidence missing: Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.
+- Claims and evidence missing: Independent evidence for: Opt-in telemetry shows approximately 4,000 monthly active Daedalus users, while the proposer asserts the true count is meaningfully higher.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -47,10 +47,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `3f6bf165bef09c0437ec8ba119e6b340c47839e11f08c1f31bc1322d93a74bcf`
-- snapshot_bundle_hash: `e1712c285c1a0c5ad7d1932a7aa20b861a2416fbafbb2e3049b8e35ad4b4ec8b`
+- snapshot_bundle_hash: `ee0c8dd595fb74d7d0231b66ed21aee02b14921bab899b75504d19ba26f7f597`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.2433`
 - confidence: `0.7808`
 

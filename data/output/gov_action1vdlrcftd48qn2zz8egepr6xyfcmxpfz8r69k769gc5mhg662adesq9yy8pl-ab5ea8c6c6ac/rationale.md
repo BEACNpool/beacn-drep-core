@@ -97,10 +97,10 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Reproducibility
 - input_hash: `ab5ea8c6c6aca99ceaade352977f19443bcfe6fa51c7866afce0e1d679627244`
-- snapshot_bundle_hash: `7e3773950ed718ffc90799f53f0322e3c52dbd758fb2f3777ace27fa310d596c`
+- snapshot_bundle_hash: `2adfbe7b8e4b3e84672628fc211116406f61d214fb319305edf178ce604e622e`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `23`
 - uncertainty_band: `MEDIUM`

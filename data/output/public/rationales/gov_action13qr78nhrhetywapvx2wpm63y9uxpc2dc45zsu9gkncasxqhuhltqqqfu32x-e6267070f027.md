@@ -123,10 +123,10 @@ A material claim remains proposer-asserted or thinly supported: Importantly, the
 
 ## Reproducibility
 - input_hash: `e6267070f027023bb21b502991ef3a7431f3d20939d013bed6e3c1156b610d8a`
-- snapshot_bundle_hash: `7b8e7ef03575ed9a13f9515ec37aeeeb770c6b8316db9d7068ac00762147e1ac`
+- snapshot_bundle_hash: `3313c3c2b563e73e8176d117c49070f94c3974ca2267242c3458df5cc2f5eaea`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `10`
 - uncertainty_band: `MEDIUM`

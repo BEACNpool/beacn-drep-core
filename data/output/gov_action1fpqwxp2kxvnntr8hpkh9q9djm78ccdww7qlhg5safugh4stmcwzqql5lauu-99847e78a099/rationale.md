@@ -96,12 +96,12 @@ A material claim remains proposer-asserted or thinly supported: The majority of 
 
 ## Reproducibility
 - input_hash: `99847e78a09941961e20e53d8550bbd110800320c95c9c089e87e01521ac31d4`
-- snapshot_bundle_hash: `2b0ced49dba7169f5c888c99dca6bcc5e753bae230c7b112fd049015efbeadd5`
+- snapshot_bundle_hash: `c64e1ad05c68bcd45617cc74c012280239969544d62acc2e8ea4d150ce0e0bcb`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `24`
+- snapshot_age_seconds: `23`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2307, "NO": 0.7225, "YES": 0.0469}`

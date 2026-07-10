@@ -39,10 +39,10 @@ Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insuffic
 
 ## Proof of vote
 - input_hash: `7cea8ff755cd5693199de760cded14d12b55f8476a2a66c55b2f0a9171f2fdef`
-- snapshot_bundle_hash: `2a61f7f64795579df2159f581c0dca77c3a9d438384f946ef21cfcb3f92561e8`
+- snapshot_bundle_hash: `1aaf0b9c018a1c871426da72247e63748c516ea28ff13df5ca5706f7de0a0ec8`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `0.01`
 - confidence: `0.5725`
 

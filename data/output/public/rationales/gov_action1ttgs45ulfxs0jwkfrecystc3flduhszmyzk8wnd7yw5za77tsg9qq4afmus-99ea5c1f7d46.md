@@ -149,10 +149,10 @@ A material claim remains proposer-asserted or thinly supported: Human-centred de
 
 ## Reproducibility
 - input_hash: `99ea5c1f7d469147a2917736cf6dedecf78c562ac95103a6f748a1a0e39b3702`
-- snapshot_bundle_hash: `358cf481ecca8dbfebfb860a14fe7ecbd34f2bc7ea4fd5fcf664572ec263b3bb`
+- snapshot_bundle_hash: `e76e2d4bd1ad3b57b1dc0c98c687877a630eb8f159ba9ae5aab0b0cff7171475`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `6`
 - uncertainty_band: `LOW`

@@ -131,12 +131,12 @@ A material claim remains proposer-asserted or thinly supported: This is our seco
 
 ## Reproducibility
 - input_hash: `275170fd92d0b86d90851c23a1f6f067aad413615e03b608509d3335214ff191`
-- snapshot_bundle_hash: `38031d05141c491cd5c929f624eb915fc14059a4b4f1a169cc76d73f5c182a37`
+- snapshot_bundle_hash: `877c93db4e02462317862624575d6b5ca31faf0b5ef42fe09d284d1fffe6f7dc`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `11`
+- snapshot_age_seconds: `10`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.4419, "NO": 0.5113, "YES": 0.0467}`

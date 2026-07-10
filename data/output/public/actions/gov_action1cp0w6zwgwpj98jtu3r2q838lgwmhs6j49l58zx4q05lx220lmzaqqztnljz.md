@@ -48,10 +48,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical informat
 
 ## Proof of vote
 - input_hash: `bbd867b196508a5a2d8fa3fb70aa36fe33e140fc7f11e6de8d92fee9e116b149`
-- snapshot_bundle_hash: `0f59e973978acbc6fa0dce38b669266cdaad8cd30678c105a8b198b1d99e64ac`
+- snapshot_bundle_hash: `f74e0bbe281e94a2c853e0d5fb0b297f1841ae4fb2e0f0847d1b88c71a7f9838`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `0.0`
 - confidence: `0.2`
 

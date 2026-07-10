@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "\u20b312,332,031 approximate, including a 10% refundable contingency",
+    "deadline": "9-month delivery period from July 2026 to March 2027",
+    "deliverables": [
+      "Audited bridge running on Cardano mainnet in both custody modes under controlled access",
+      "Hardening, security audits, and formal verification",
+      "Ecosystem and partner readiness",
+      "Stewardship structure",
+      "Hardened economic model",
+      "SPO/dApp partner pipeline required for public launch"
+    ],
+    "recipient": "FluidTokens and Lantr Engineering",
+    "what": "Phase 1 of 2 funding to take Bifrost from a working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations for launch."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests approximately \u20b312,332,031 from the Cardano Treasury for a 9-month Phase 1 delivery period from July 2026 to March 2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost custody of locked BTC is distributed across 400+ Cardano SPOs weighted by delegation, and moving funds requires a cryptographic threshold of SPOs representing the majority of delegated stake.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "If SPO coordination fails, Bifrost can activate a federated mode as an operational fallback.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost smart contracts, off-chain tooling, and SDK are released under Apache 2.0 and can be audited, forked, run, or built on without permission.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Bifrost is currently funded through Catalyst Fund 14 for \u20b3739,000 to prove the architecture end-to-end on testnet, with listed milestones M1 and M2 marked done and approved.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "Bifrost targets 1,200 BTC TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer asserts bridge fee surplus will be split to SPOs and the Cardano Treasury in fBTC.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Public rollout and 24 months of operations are intentionally excluded from this request and deferred to a Phase 2 proposal in Q1 2027.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document describes a large Phase 1 treasury request for Bifrost, a Bitcoin-Cardano bridge moving from testnet toward audited mainnet readiness, with material technical, custody, adoption, and treasury-return claims that are mostly proposer-asserted or externally checkable rather than evidenced in the anchor text itself.",
+  "output_sha256": "00cf9e5314bb25a8b851285b170debe04257d91ed89b6ddda50a71ba2b106b50"
+}

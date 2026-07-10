@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal says funded projects are required to track monthly active users, TVL, and on-chain transactions." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Builder DAO is designed to fund builders whose work can improve Cardano Strategy 2030 KPIs such as TVL, monthly transactions, and monthly active users." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 20000000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal says funded projects are required to track monthly active users, TVL, and on-chain transactions." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano Builder DAO is designed to fund builders whose work can improve Cardano Strategy 2030 KPIs such as TVL, monthly transactions, and monthly active users." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The Cardano Builder DAO is presented as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs.
-- Claims and evidence missing: Independent evidence for: The DAO says it built Version 1 and Version 2 of a KPI dashboard, moving from self-reported KPI tracking toward tracking tied directly to live on-chain Cardano data.
+- Claims and evidence missing: Independent evidence for: The DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.
+- Claims and evidence missing: Independent evidence for: Round 1 funded 20 companies, involved 38 voting members and 27 requesting members, achieved 83% participation, and distributed 5,541,335 ADA through a smart contract-governed process.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: sustainability path
@@ -47,10 +47,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `b22ea5de12b32ab50dc3a4850dfa63d02d6a0d278497e4d9507b3ab5bee09a5c`
-- snapshot_bundle_hash: `5109272491d87ec5e888164dc210cffc2575be2f21f5ceeb1fedbc8b81dd403a`
+- snapshot_bundle_hash: `13c7a5ba31e4f8cfe239429f275ca4a7ca7677fdbe16bf1e3fe85ba96fc17e07`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.3433`
 - confidence: `0.7758`
 

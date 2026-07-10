@@ -1,14 +1,16 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7733` | Readiness: `0.85`
-> Reasoning layer (precomputed): The proposal has stronger-than-minimal governance and custody detail, including budget breakdown, NCL assertion, smart-contract addresses, oversight roles, and external references, but the central value case depends on large adoption and enterprise-payment claims that are asserted more than demonstrated in the supplied text. Given the large treasury ask and BEACN's caution around thin or unverifiable spending upside, a small negative evidence-quality nudge is warranted without overriding the deterministic readiness assessment.
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `-0.03`) | Confidence: `0.7733` | Readiness: `0.85`
+> Reasoning layer (precomputed): The proposal describes potentially high public-benefit growth and includes concrete governance and fund-management mechanics, but the largest treasury-relevant claims about adoption impact, merchant utility, Visa-linked spending outcomes, and Wirex execution scale are mostly proposer assertions in the supplied document. Given the large withdrawal size and BEACN's priority for treasury stewardship and reproducible evidence, a small cautionary negative nudge is warranted beyond the mechanical gates.
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+## Plain-language explanation (precomputed)
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the idea.
 
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex, including on-chain payments and card infrastructure plus Intersect administration. It asks the treasury for 3,961,538 ADA. The strongest grounded claim is: The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee.
+The proposal asks to withdraw 3,961,538 ada to fund Wirex-related real-world payments work: 3,846,153 ada for on-chain payments and card infrastructure, plus 115,385 ada for Intersect budget administration. It describes open-source payments infrastructure, account abstraction, batched transactions, settlement logic, wallet and API layers, Visa card issuance linked to on-chain balances, and integrations with banking rails, stablecoins, wallets, and self-custody tools. The document also says funds would be handled through Treasury Reserve and project-specific smart contracts with oversight, reporting, milestone controls, and public dashboard processes.
 
-A material claim remains proposer-asserted or thinly supported: The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants. Reason code: VERIFIED_NCL_REQUIRED.
+The best-supported facts are the requested amount, the stated budget split, the pinned proposal anchor, the use of Intersect-administered smart contract processes, and the proposal’s references to Intersect budget voting and Net Change Limit materials. The weaker parts are the large adoption and execution claims: Wirex’s ability to deliver the full stack, the claimed merchant-spending impact, the expected growth in Cardano utility and transaction volume, and the execution scale claims are mostly proposer assertions in the supplied material rather than independently verified evidence.
+
+The review gates were strong enough to establish that the action can be reviewed, but not strong enough for a YES or NO treasury vote. Treasury withdrawals carry elevated scrutiny because they consume shared ada and set precedent; here, execution risk remains unknown, claims evidence is thin, and the review still lacks independent assurance, a rollback or remedy path, cost-benefit clarity, and a sustainability path. A directional vote would be unblocked by pinned, independently verifiable Net Change Limit evidence from public chain data, plus stronger independent evidence for the main technical delivery and adoption claims.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -29,21 +31,21 @@ A material claim remains proposer-asserted or thinly supported: The proposal say
 - finding: Proposal document read by reasoning layer: yes
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: complete
-- finding: Requested: Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex, including on-chain payments and card infrastructure plus Intersect administration.
-- finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v
+- finding: Requested: Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex.
+- finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect with project-specific smart contract processes described in the document.
 - finding: Stated amount: 3,961,538
-- finding: Deliverables: WP1 - Enabling Onchain Payments & Card Infrastructure, Smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem layer, Visa card issuance linked directly to on-chain balances, Integration with banking rails, stablecoin systems, self-custody wallets, and compliance architecture, Milestone-based disbursement through TRSC/PSSC treasury management smart contracts
+- finding: Deliverables: Enabling Onchain Payments & Card Infrastructure, Open-source on-chain payments infrastructure including smart contract engineering, account abstraction, batched transactions, settlement logic, and a wallet and API ecosystem layer, Visa card issuance linked directly to on-chain balances, Integration with banking rails, stablecoin systems, wallet interfaces, and self-custody wallets
 - finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee.
-- finding: Claim (technical, supported_in_proposal, high materiality): Wirex proposes full-stack, open-source payments infrastructure for Cardano that includes smart contracts, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem components.
-- finding: Claim (adoption, proposer_asserted, high materiality): The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants.
-- finding: Claim (adoption, proposer_asserted, high materiality): Wirex is claimed to have 7 million users, more than 1.5 million cards issued, over $20 billion in transaction volume, and Visa Principal Member experience.
-- finding: Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and references voting, documentation, audited results, and audit report sources.
-- finding: Claim (governance, independently_verifiable, high materiality): The requested withdrawal is asserted not to breach the applicable 350M Net Change Limit for Epoch 613 to Epoch 713 at the time of submission, with a governance-action reference provided.
-- missing: Independent evidence for: The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants.
-- missing: Independent evidence for: Wirex is claimed to have 7 million users, more than 1.5 million cards issued, over $20 billion in transaction volume, and Visa Principal Member experience.
-- missing: Independent evidence for: The proposal states Wirex has not received ada from the Cardano Treasury within the last 24 months.
-- missing: Independent evidence for: The proposal claims the project will increase Cardano utility, transaction volume, user growth, institutional participation, and real-world economic activity on-chain.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 Enabling Onchain Payments & Card Infrastructure and 115,385 ada for the Intersect Budget Administration fee.
+- finding: Claim (technical, proposer_asserted, high materiality): Wirex proposes to deliver full-stack open-source payments infrastructure connecting Cardano on-chain settlement with banking rails, stablecoin systems, wallet interfaces, and Visa card issuance.
+- finding: Claim (adoption, proposer_asserted, high materiality): The proposal says the infrastructure will enable users to spend digital assets globally at millions of merchants through Visa cards linked directly to on-chain balances.
+- finding: Claim (adoption, proposer_asserted, high materiality): The document states Wirex has 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.
+- finding: Claim (adoption, proposer_asserted, high materiality): The proposal claims the work will increase Cardano utility, transaction volume, user growth, institutional participation, and real-world economic activity on-chain.
+- finding: Claim (governance, independently_verifiable, medium materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting documentation and audited results.
+- missing: Independent evidence for: Wirex proposes to deliver full-stack open-source payments infrastructure connecting Cardano on-chain settlement with banking rails, stablecoin systems, wallet interfaces, and Visa card issuance.
+- missing: Independent evidence for: The proposal says the infrastructure will enable users to spend digital assets globally at millions of merchants through Visa cards linked directly to on-chain balances.
+- missing: Independent evidence for: The document states Wirex has 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.
+- missing: Independent evidence for: The proposal claims the work will increase Cardano utility, transaction volume, user growth, institutional participation, and real-world economic activity on-chain.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Treasury analysis
@@ -77,8 +79,8 @@ A material claim remains proposer-asserted or thinly supported: The proposal say
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee." and clears the evidence gates.
-- finding: Strongest NO: a material claim is unsupported — "The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the proposal substantiates "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 Enabling Onchain Payments & Card Infrastructure and 115,385 ada for the Intersect Budget Administration fee." and clears the evidence gates.
+- finding: Strongest NO: a material claim is unsupported — "Wirex proposes to deliver full-stack open-source payments infrastructure connecting Cardano on-chain settlement with banking rails, stablecoin systems, wallet interfaces, and Visa card issuance." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -96,12 +98,12 @@ A material claim remains proposer-asserted or thinly supported: The proposal say
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3961538
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for an Intersect Budget Administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 Enabling Onchain Payments & Card Infrastructure and 115,385 ada for the Intersect Budget Administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Doctrine-aware reasoning layer nudged the score by -0.020 (clamped to ±0.05): The proposal has stronger-than-minimal governance and custody detail, including budget breakdown, NCL assertion, smart-contract addresses, oversight roles, and external references, but the central value case depends on large adoption and enterprise-payment claims that are asserted more than demonstrated in the supplied text. Given the large treasury ask and BEACN's caution around thin or unverifiable spending upside, a small negative evidence-quality nudge is warranted without overriding the deterministic readiness assessment.
+- Doctrine-aware reasoning layer nudged the score by -0.030 (clamped to ±0.05): The proposal describes potentially high public-benefit growth and includes concrete governance and fund-management mechanics, but the largest treasury-relevant claims about adoption impact, merchant utility, Visa-linked spending outcomes, and Wirex execution scale are mostly proposer assertions in the supplied document. Given the large withdrawal size and BEACN's priority for treasury stewardship and reproducible evidence, a small cautionary negative nudge is warranted beyond the mechanical gates.
 - Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -112,8 +114,8 @@ A material claim remains proposer-asserted or thinly supported: The proposal say
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- Claims and evidence missing: Independent evidence for: The proposal says the infrastructure will connect Cardano to banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to on-chain balances for spending at millions of merchants.
-- Claims and evidence missing: Independent evidence for: Wirex is claimed to have 7 million users, more than 1.5 million cards issued, over $20 billion in transaction volume, and Visa Principal Member experience.
+- Claims and evidence missing: Independent evidence for: Wirex proposes to deliver full-stack open-source payments infrastructure connecting Cardano on-chain settlement with banking rails, stablecoin systems, wallet interfaces, and Visa card issuance.
+- Claims and evidence missing: Independent evidence for: The proposal says the infrastructure will enable users to spend digital assets globally at millions of merchants through Visa cards linked directly to on-chain balances.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -127,10 +129,10 @@ A material claim remains proposer-asserted or thinly supported: The proposal say
 
 ## Reproducibility
 - input_hash: `6a88dcaaa00d9e3c4f441a88a1d5e26b1c165ad8cd08dc0ca23f8e8b592eda09`
-- snapshot_bundle_hash: `3c9470127c4267329ee201e4cb35c5cc2bb8b77a56068e183fb5b4eef997b516`
+- snapshot_bundle_hash: `69dd0c73a888ea0e264002a8a09f88bdece6d98abc6fe7c8c9344784ce5f7926`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `2`
 - uncertainty_band: `MEDIUM`

@@ -92,12 +92,12 @@ A material claim remains proposer-asserted or thinly supported: The Chang+1 hard
 
 ## Reproducibility
 - input_hash: `100a195d3718ad9e188ca909272f239a2fb28e4d96afa43aaee8bf312e97107f`
-- snapshot_bundle_hash: `45e8bfccf6924b95d26c8769688890fadad6ddae8ad0aa6a4b934a8636a0ea71`
+- snapshot_bundle_hash: `d844a10acf5cb020ee4f43072d90f712b126f0659d4783d04976c1441327e8f9`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `26`
+- snapshot_age_seconds: `25`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2351, "NO": 0.7185, "YES": 0.0464}`

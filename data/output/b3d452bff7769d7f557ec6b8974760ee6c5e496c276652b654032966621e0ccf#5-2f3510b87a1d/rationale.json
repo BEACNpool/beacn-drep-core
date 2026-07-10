@@ -1,0 +1,274 @@
+{
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "treasury_dimensions": null,
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 0",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 3,810,423 ADA, consisting of 3,699,440 ADA for Mithril Protocol Continuous Development and 110,983 ADA for an Intersect Budget Administration fee.\" though 1 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: Independent evidence for: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+    "Claims and evidence missing: Independent evidence for: The proposal says Mithril lowers onboarding friction through faster sync times and can unlock tooling for exchanges, wallets, monitoring, bridges, light wallets, full wallets, and light clients.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Treasury analysis status is incomplete.",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "2f3510b87a1d1a8e7b4c1728491d8c8f1034a1ae367b73004229b11c6f991ecb",
+  "snapshot_bundle_hash": "ced69597aba9eb4b7566d48c86ed5516e031b148df9755b9416330e406b9ebba",
+  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "1016d41a520361eb8cc704812b2053b147b40d14",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 3,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-10T12:14:14.719196Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: required",
+          "Requested: Treasury withdrawal to fund Mithril Protocol continuous development and related Intersect administration costs.",
+          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with Intersect administering funds on behalf of the vendor.",
+          "Stated amount: 3,810,423",
+          "Deliverables: Mithril Protocol Continuous Development, Administrative oversight via Intersect Budget Administration fee, Milestone-based disbursement controls through TRSC/PSSC smart contracts",
+          "Deadline/expiry: not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,810,423 ADA, consisting of 3,699,440 ADA for Mithril Protocol Continuous Development and 110,983 ADA for an Intersect Budget Administration fee.",
+          "Claim (technical, proposer_asserted, high materiality): Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+          "Claim (adoption, proposer_asserted, medium materiality): The proposal says Mithril lowers onboarding friction through faster sync times and can unlock tooling for exchanges, wallets, monitoring, bridges, light wallets, full wallets, and light clients.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework.",
+          "Claim (governance, independently_verifiable, high materiality): The requested amount does not, at time of submission, alone or in aggregate, breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713.",
+          "Claim (governance, supported_in_proposal, high materiality): Audit and oversight costs are included in the overhead, and independent oversight will be provided through Intersect and technically capable third parties with reporting obligations and milestone-based disbursement controls."
+        ],
+        "missing": [
+          "Independent evidence for: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.",
+          "Independent evidence for: The proposal says Mithril lowers onboarding friction through faster sync times and can unlock tooling for exchanges, wallets, monitoring, bridges, light wallets, full wallets, and light clients.",
+          "Independent evidence for: Teragone has not previously received direct funding from Cardano treasury or community governance programs, while its Mithril work to date has been funded by IOG."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "incomplete",
+        "findings": [
+          "Requested ADA: 0",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.58"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 3,810,423 ADA, consisting of 3,699,440 ADA for Mithril Protocol Continuous Development and 110,983 ADA for an Intersect Budget Administration fee.\" though 1 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way, enabling nodes and applications to verify state rapidly without relying on the entire chain.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "human_message": "BEACN voted ABSTAIN because the review was blocked by missing baseline evidence, especially the missing `treasury_amount_lovelace` field required for a treasury withdrawal. This is a conservative, evidence-based hold, not a rejection of Mithril or of the stated funding purpose.\n\nThe action requests 3,810,423 ada for Mithril Protocol continuous development and related Intersect administration costs, with funds sent to the 2026 Treasury Reserve Smart Contract and administered by Intersect on behalf of the vendor. The proposal says this includes 3,699,440 ada for development and 110,983 ada for administration, with milestone-based disbursement controls through TRSC/PSSC smart contracts. It also claims Mithril improves Cardano state verification and lowers onboarding friction through faster sync times and broader tooling possibilities.\n\nSome governance and funding-process claims were well supported: the proposal anchor was pinned and replayable, the action passed the required 67% Intersect Budget Process Hydra Voting threshold, the amount did not breach the applicable Net Change Limit at submission, and the smart-contract administration structure and oversight approach were described. But important parts remained unsupported or incomplete, including independent evidence for the technical and adoption claims, a sustainability path, cost-benefit clarity, independent assurance, and a rollback or remedy path.\n\nA directional YES or NO vote would require the missing treasury amount field to be complete and the review dossier to include stronger independent evidence for the key technical claims, clearer treasury analysis, and a fuller risk review. Until then, BEACN abstained rather than pretending the evidence base was strong enough for a responsible treasury vote.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreibk6hukcc2ou2aabwau6a6xcaqn7mwo2vj2wzpk723yxlmdn2dcra",
+        "file_sha256": "2af1e8a10b4ea68000d814f03d71020dfb2ced553ab65eafeb78bad836e86288",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s24l0u4y-20260624T113057Z.bin",
+        "content_chars": 12821
+      },
+      "claim_count": 9,
+      "prompt_sha256": null,
+      "output_sha256": "e982af90fcd4c343c6bbbdcbdb767d297d6670d780063d40ede689f597422b5e"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "d46d46b4b46567e9de1cdcef460fe68975c7215329de1eb9d651bae5d8f0d7d9"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "21d9ad5a45057bdf675643013e8618b47b5446735ffd21791564ae2edf0b4cfd"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer may apply a bounded score nudge of at most \u00b10.05, clamped and recorded here (raw_score + llm_score_adjustment), so its influence is fully auditable and replayable."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/774e39f3314a497457efc002.md",
+  "rationale_anchor_hash": "774e39f3314a497457efc0025d4f1c9f1ba63a03f7ea91d20e9d4c6b0b5e4d64"
+}

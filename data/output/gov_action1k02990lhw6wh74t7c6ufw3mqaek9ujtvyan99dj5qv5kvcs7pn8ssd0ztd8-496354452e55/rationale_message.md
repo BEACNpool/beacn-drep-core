@@ -1,11 +1,13 @@
 # Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li...
-**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
 
-BEACN records NEEDS_MORE_INFO on Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund Pallas by TxPipe maintenance and enhancement for Year 2, including a part-time maintainer over 12 months, essential maintenance, community support, and AI-friendly documentation and integration resources. It asks the treasury for 540,750 ADA. The strongest grounded claim is: The proposal requests 540,750 ADA total, composed of 525,000 ADA for Pallas maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee.
+The proposal asks to withdraw 540,750 ada for a 12-month Year 2 grant to maintain and enhance Pallas by TxPipe, described as core Cardano Rust libraries. The request includes 420,000 ada for work, a 105,000 ada contingency reserve, and a 15,750 ada Intersect Budget Administration fee. The stated work covers maintenance, dependency updates, protocol compatibility, performance improvements, bug fixes, documentation, issue triage, review of outside contributions, ecosystem-feedback enhancements, public developer communication, and AI-friendly documentation and integration resources.
 
-A material claim remains proposer-asserted or thinly supported: The proposal states that projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and others rely on Pallas for low-level protocol functionality. Reason code: VERIFIED_NCL_REQUIRED.
+Several important claims were supported well enough for review: the pinned proposal anchor was available and replayable, the requested amount and fee structure were substantiated, Pallas’ technical scope was supported in the proposal, the Intersect budget-process support threshold was independently verifiable, and the withdrawal did not itself appear to breach the stated 350M ada Net Change Limit at submission. The proposal also described oversight, reporting, milestone controls, treasury smart-contract administration, and public tracking.
+
+The hold is conservative and evidence-based, not a rejection of the work. The review still found thin evidence in important areas: independent proof that Pallas is used by the listed ecosystem projects, independent proof of TxPipe’s stated Catalyst delivery history, a clearer sustainability path, clearer cost-benefit analysis, independent assurance, and a rollback or remedy path. Most importantly, BEACN needs the applicable Net Change Limit pinned and independently verified from public chain evidence before it can cast a YES or NO on this treasury withdrawal.
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

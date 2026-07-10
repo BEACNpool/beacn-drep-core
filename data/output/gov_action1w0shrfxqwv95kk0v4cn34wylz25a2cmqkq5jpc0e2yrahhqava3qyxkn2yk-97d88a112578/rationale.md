@@ -148,10 +148,10 @@ A material claim remains proposer-asserted or thinly supported: This proposal fo
 
 ## Reproducibility
 - input_hash: `97d88a1125780a3ef4b141e7a33b1fcbc74d29ee0c123cde086121649d6945ed`
-- snapshot_bundle_hash: `7f021690943fc78e2435c912d5d48d44f2c4cc18957dbe994f7150dfb6ce3a6b`
+- snapshot_bundle_hash: `d588e12d3b105dadf3617b25093a6effaa19a75377e346e80b73cace26583fcf`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `8`
 - uncertainty_band: `LOW`

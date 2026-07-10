@@ -12,74 +12,73 @@
       "Critical breakages and serious vulnerabilities",
       "Protocol-era and hard-fork compatibility",
       "Bug fixes, correctness improvements, and optimizations",
-      "Documentation, examples, technical blog posts, and developer-experience improvements",
-      "Intersect Budget Administration fee"
+      "Documentation, examples, technical blog posts, and developer-experience improvements"
     ],
-    "recipient": "Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for administration on behalf of the vendor MLabs.",
-    "what": "Annual funding for maintenance and enhancement of MLabs Core Tooling: Plutarch and Ply."
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor MLabs",
+    "what": "Annual funding for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, and developer-experience improvements."
   },
   "claims": [
     {
-      "category": "economic",
-      "claim": "The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect administration fee.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
       "category": "technical",
-      "claim": "Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply is described as supporting serialization to and from CIP-57 blueprint-style artifacts with inferred types.",
+      "claim": "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "adoption",
-      "claim": "MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
+      "claim": "MLabs says Plutarch and Ply are extensively used in the Cardano ecosystem and reports an internal audit count of at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "technical",
-      "claim": "MLabs states that public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory, and provides a benchmark URL.",
+      "claim": "MLabs claims public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while using comparatively low on-chain compute and memory.",
       "materiality": "medium",
       "support": "independently_verifiable"
     },
     {
       "category": "technical",
-      "claim": "The proposal says the next funding period will prioritize critical breakages and vulnerabilities, protocol-era and hard-fork compatibility, bug fixes and optimizations, then documentation and developer-experience improvements.",
+      "claim": "The proposed funding period is intended to cover Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land during the funding period.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal prioritizes resources first to critical breakages and serious vulnerabilities, then protocol-era and hard-fork compatibility, then bug fixes and optimizations, then documentation and developer-experience improvements.",
       "materiality": "high",
       "support": "supported_in_proposal"
-    },
-    {
-      "category": "governance",
-      "claim": "The proposal states it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission under the approved Budget Process Framework.",
-      "materiality": "medium",
-      "support": "independently_verifiable"
-    },
-    {
-      "category": "economic",
-      "claim": "The proposal asserts that the requested withdrawal does not, at submission, breach the applicable 350M ada Net Change Limit for Epoch 613 to Epoch 713, either alone or in aggregate.",
-      "materiality": "high",
-      "support": "independently_verifiable"
-    },
-    {
-      "category": "economic",
-      "claim": "The document discloses prior MLabs-related treasury and ecosystem funding, including prior Plutarch/Ply Catalyst funding, other MLabs proposals, and 70,000 ada from Intersect for Conway-era Plutarch updates.",
-      "materiality": "high",
-      "support": "supported_in_proposal"
-    },
-    {
-      "category": "governance",
-      "claim": "The proposal says funds will be administered through Intersect-controlled Treasury Reserve and Project-Specific Smart Contracts with named addresses, multi-party authorization rules, an Oversight Committee, milestone-based disbursement controls, and a public dashboard.",
-      "materiality": "high",
-      "support": "independently_verifiable"
     },
     {
       "category": "adoption",
-      "claim": "The proposal asserts that maintaining Plutarch and Ply supports Cardano 2030, developer experience, open-source tooling, and application-layer utility including DeFi, RWAs, payments, and games.",
+      "claim": "The proposal claims it directly supports Cardano 2030 Pillar 2 Adoption & Utility by maintaining core open-source developer tooling for smart contract builders.",
       "materiality": "medium",
       "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain treasury withdrawal submission under the approved process.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested 1,162,746 ada consists of 1,128,880 ada for Plutarch and Ply maintenance, compatibility, and developer experience plus a 33,866 ada Intersect budget administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states the withdrawal does not exceed the applicable 350M ada Net Change Limit at the moment of submission, either on its own or in aggregate.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect will use Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, external oversight entities, multisignature-style authorization thresholds, milestone-based disbursement controls, and a public dashboard for auditability.",
+      "materiality": "high",
+      "support": "independently_verifiable"
     }
   ],
-  "summary": "The proposal is a treasury withdrawal for 1,162,746 ada to maintain and enhance Plutarch and Ply, with stated ecosystem use, technical priorities, prior funding disclosures, NCL compliance claims, and Intersect smart-contract administration and oversight arrangements.",
-  "output_sha256": "e7ac108d917d219793cca0d1153761cb4e17bf420661e59e286ea5eb5fb74c48"
+  "summary": "The document requests 1,162,746 ada for annual maintenance and enhancement of MLabs' Plutarch and Ply tooling, routed through Intersect-managed treasury smart contracts with stated oversight, prior funding disclosures, and references to voting, audit, benchmark, and treasury-management sources.",
+  "output_sha256": "9a57b9e78b75d612d821ca60fb868c8b4b583df74b8cc08cae990df537bc57e4"
 }

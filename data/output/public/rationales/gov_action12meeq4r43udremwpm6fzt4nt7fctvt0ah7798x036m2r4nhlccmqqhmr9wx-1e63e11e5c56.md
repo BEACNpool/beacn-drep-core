@@ -101,10 +101,10 @@ A material claim remains proposer-asserted or thinly supported: The DRep vote wi
 
 ## Reproducibility
 - input_hash: `1e63e11e5c56833d0c753737934c3a4d7f1d91ccddf7a4e0193a4f39b936bd4c`
-- snapshot_bundle_hash: `fdc06568ec68deef60462344b93127af2fc23e857b3f3658f722bb789d861bb4`
+- snapshot_bundle_hash: `08ca72cc996b4ebaca73e2751c8892426f5380b8c8405d715c69f9cee54f9e1f`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
+- resource_registry_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `24`
 - uncertainty_band: `LOW`

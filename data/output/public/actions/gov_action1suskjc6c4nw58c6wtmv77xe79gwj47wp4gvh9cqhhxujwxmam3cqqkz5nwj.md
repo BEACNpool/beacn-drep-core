@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity infrastructure rather than grant funding." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.49; confidence 79.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment into Strike Finance V2 rather than grant funding." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.49; confidence 79.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,15 +26,15 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 9000000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity infrastructure rather than grant funding." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment into Strike Finance V2 rather than grant funding." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - No milestone-gated disbursement documented.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Under conservative modeled assumptions, the deployment is expected to generate approximately 900,000 ADA-equivalent in annual yield, but returns are not guaranteed.
-- Claims and evidence missing: Independent evidence for: Strike reports over 1.13 billion USD in cumulative volume, roughly 968,000 to 1,001,000 trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.
+- Claims and evidence missing: Independent evidence for: The proposal claims liquidity is the primary bottleneck to Strike's further growth and that increased stablecoin liquidity has coincided with higher volume, fee generation, and vault performance.
+- Claims and evidence missing: Independent evidence for: The proposal states Strike V2 has had unofficial reviews and that an official audit by Christian Schmitz is expected to be finalized by July 1, 2026, but the report is not included in the document.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Risk review missing: independent assurance
@@ -43,14 +43,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Top 3 fixes to improve next submission
 - Provide: independent ecosystem-value evidence packet
 - Provide: verified ecosystem benefit or strategic necessity
-- Provide independent evidence for: The proposal states Strike represented over 50% of Cardano trading activity during the past six months.
+- Provide milestone-gated disbursement.
 
 ## Proof of vote
 - input_hash: `1b091b80946f67485feefea5fb75a44b5fb54c34efc039817dd93cb3cf83751b`
-- snapshot_bundle_hash: `ca05e4a2b66aa03269e7c6d89f3280ccafad8b0d753561d4240620337ec9f050`
+- snapshot_bundle_hash: `46752526f555fd6f19af8278045ee151aba686e23446e2d388f464482d90b69d`
 - soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
-- resources_commit: `ef21df7fcecbb56f66c12028d9c7dafb58b68c52`
-- core_commit: `477180351445c61a6d12f92a427347abee714f40`
+- resources_commit: `1016d41a520361eb8cc704812b2053b147b40d14`
+- core_commit: `7c53e3475697c48b72ac851878f0f89d203e813b`
 - score: `-0.4933`
 - confidence: `0.79`
 

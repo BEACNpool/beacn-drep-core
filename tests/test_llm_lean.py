@@ -57,13 +57,13 @@ class LeanTests(unittest.TestCase):
         result = score(near_threshold_info_action(), lean=lean)
         self.assertEqual(result["llm_score_adjustment"], round(LLM_SCORE_ADJUST_CAP, 4))
 
-    def test_positive_lean_tips_near_threshold_action_to_yes(self):
+    def test_positive_lean_cannot_tip_near_threshold_action_to_yes(self):
         lean = {"available": True, "score_adjustment": LLM_SCORE_ADJUST_CAP,
                 "direction": "YES", "source": "test", "rationale": "doctrine-aligned"}
         result = score(near_threshold_info_action(), lean=lean)
-        self.assertEqual(result["recommendation"], "YES")
-        self.assertTrue(result["llm_assisted"])
-        self.assertEqual(result["llm_assisted_reason_code"], "LLM_ASSISTED_DIRECTIONAL")
+        self.assertEqual(result["recommendation"], "ABSTAIN")
+        self.assertFalse(result["llm_assisted"])
+        self.assertIsNone(result["llm_assisted_reason_code"])
         self.assertEqual(result["raw_score"], 0.11)
 
     def test_no_lean_leaves_near_threshold_action_abstaining(self):

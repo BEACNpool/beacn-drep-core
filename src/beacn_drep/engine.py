@@ -147,6 +147,26 @@ def _load_treasury_doctrine() -> dict:
         return {}
 
 
+def _load_treasury_policy_state() -> dict:
+    p = RESOURCES_REPO / "data" / "input" / "governance" / "treasury_policy_state.json"
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _load_treasury_portfolio() -> dict:
+    p = RESOURCES_REPO / "data" / "input" / "governance" / "treasury_portfolio.json"
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 _DOCTRINE_FILES = {
     "treasury": "treasury_spending_doctrine.md",
     "hardfork": "hardfork_doctrine.md",
@@ -789,6 +809,116 @@ def _treasury_gate_config(treasury_doctrine: dict | None) -> tuple[str, float]:
     return mode, penalty
 
 
+def _treasury_dimensions(
+    action: dict,
+    value_row: dict | None,
+    readiness_row: dict | None,
+    financial_row: dict | None,
+    risk_row: dict | None,
+    deep_complete: bool,
+) -> dict:
+    """Balanced treasury assessment.
+
+    Missing evidence is never negative evidence. Ecosystem-benefit claims count
+    only after an admitted independent-evidence pass; proposal-only extraction is
+    retained for research but cannot produce YES or NO by itself.
+    """
+    value = value_row or {}
+    independent = (value.get("evidence_status") or "").lower() == "independently_verified"
+
+    benefit_fields = {
+        "critical_infrastructure": 0.25,
+        "open_source_public_good": 0.20,
+        "measurable_existing_adoption": 0.15,
+        "ecosystem_leverage": 0.15,
+        "strategic_necessity": 0.15,
+        "credible_prior_delivery": 0.10,
+    }
+    benefit = sum(weight for field, weight in benefit_fields.items()
+                  if independent and _yn(value.get(field)) is True)
+
+    delivery = 0.0
+    if deep_complete:
+        delivery += 0.15
+    for field, weight in (
+        ("timeline_defined", 0.10),
+        ("risk_profile_complete", 0.10),
+    ):
+        if _yn((readiness_row or {}).get(field)) is True:
+            delivery += weight
+    for field, weight in (
+        ("milestone_payment_gates", 0.20),
+        ("clawback_refund_path", 0.15),
+    ):
+        if _yn((financial_row or {}).get(field)) is True:
+            delivery += weight
+    for field, weight in (
+        ("mitigation_evidence_present", 0.15),
+        ("independent_assurance_present", 0.15),
+    ):
+        if _yn((risk_row or {}).get(field)) is True:
+            delivery += weight
+
+    cost = 0.0
+    for field, weight in (
+        ("budget_granularity", 0.25),
+        ("cost_benefit_clarity", 0.25),
+        ("sustainability_path_clear", 0.20),
+    ):
+        if _yn((financial_row or {}).get(field)) is True:
+            cost += weight
+    if independent and _yn(value.get("cost_compared_to_market")) is True:
+        cost += 0.20
+    if independent and _yn(value.get("output_priced")) is True:
+        cost += 0.10
+
+    risk_levels = [
+        (risk_row or {}).get("execution_risk_level"),
+        (risk_row or {}).get("governance_risk_level"),
+        (risk_row or {}).get("technical_risk_level"),
+        (risk_row or {}).get("treasury_exposure_risk_level"),
+    ]
+    risk_map = {"low": 0.15, "medium": 0.50, "high": 0.85, "unknown": 0.50, "": 0.50}
+    downside = sum(risk_map.get(str(level or "").lower(), 0.50) for level in risk_levels) / 4
+    if _yn((risk_row or {}).get("mitigation_evidence_present")) is True:
+        downside = max(0.0, downside - 0.15)
+    if _yn((financial_row or {}).get("clawback_refund_path")) is True:
+        downside = max(0.0, downside - 0.10)
+
+    affirmative_waste = []
+    if independent and _yn(value.get("material_duplication")) is True:
+        affirmative_waste.append("independently verified material duplication")
+    if independent and _yn(value.get("private_capture_risk")) is True:
+        affirmative_waste.append("independently verified private-value capture")
+    if independent and _yn(value.get("cost_compared_to_market")) is False:
+        affirmative_waste.append("independently verified excessive cost versus market comparables")
+    if independent and _yn(value.get("credible_prior_delivery")) is False:
+        affirmative_waste.append("independently verified delivery failure or non-performance history")
+
+    missing = []
+    if not independent:
+        missing.append("independent ecosystem-value evidence packet")
+    if benefit < 0.35:
+        missing.append("verified ecosystem benefit or strategic necessity")
+    if cost < 0.40:
+        missing.append("cost comparables, budget proportionality, or sustainability evidence")
+    if delivery < 0.45:
+        missing.append("delivery controls, milestones, assurance, or remedy path")
+
+    composite = round((0.40 * benefit) + (0.25 * delivery) + (0.20 * cost)
+                      + (0.15 * (1.0 - downside)) - 0.50, 4)
+    return {
+        "evidence_status": value.get("evidence_status") or "missing",
+        "benefit": round(min(1.0, benefit), 4),
+        "delivery_confidence": round(min(1.0, delivery), 4),
+        "cost_efficiency": round(min(1.0, cost), 4),
+        "downside_risk": round(min(1.0, downside), 4),
+        "composite": composite,
+        "affirmative_waste_evidence": affirmative_waste,
+        "missing": missing,
+    }
+
+
 def _score_action(
     action: dict,
     flags: list[dict],
@@ -804,6 +934,10 @@ def _score_action(
     treasury_doctrine: dict | None = None,
     scoring_weights: dict | None = None,
     llm_lean: dict | None = None,
+    value_row: dict | None = None,
+    treasury_policy_state: dict | None = None,
+    treasury_portfolio: dict | None = None,
+    protocol_row: dict | None = None,
 ) -> dict:
     action_type = (action.get("action_type") or "").lower()
     action_family = _action_family(action_type)
@@ -871,14 +1005,16 @@ def _score_action(
             "missing_evidence": missing_evidence,
         }
 
-    # Deep-research gate for treasury proposals.
+    # Deep-research gate for treasury proposals. Missing information is not
+    # evidence of waste, so an incomplete dossier can never become directional.
     treasury_gate_mode, treasury_no_dossier_penalty = _treasury_gate_config(treasury_doctrine)
     treasury_dossier_incomplete = False
     if action_family == "treasury":
         deep_ok = _yn((deep_row or {}).get("dossier_complete")) is True
         if not deep_ok:
             deep_missing = _missing_deep_research(deep_row)
-            if treasury_gate_mode == "hard":
+            # Directional treasury voting always requires a completed dossier.
+            if not deep_ok:
                 need = [
                     "Deep research dossier is required for treasury actions before directional voting.",
                     "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
@@ -894,8 +1030,7 @@ def _score_action(
                     "uncertainty": ["Dossier completeness not confirmed for this treasury proposal.", *assessment_uncertainty],
                     "missing_evidence": need,
                 }
-            # soft mode: judge directionally on available repo context, with a caution penalty.
-            treasury_dossier_incomplete = True
+            treasury_dossier_incomplete = True  # unreachable; retained for legacy artifact schema
 
     score = 0.0
 
@@ -946,7 +1081,7 @@ def _score_action(
                 )
 
         # Rolling-window concentration checks if NCL annual is provided.
-        ncl_annual = _to_float(os.environ.get("BEACN_NCL_ANNUAL_LOVELACE"))
+        ncl_annual = _to_float((treasury_policy_state or {}).get("ncl_lovelace"))
         if ncl_annual > 0:
             w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
             available = max(0.0, ncl_annual - w73)
@@ -1041,7 +1176,8 @@ def _score_action(
     if llm_lean and llm_lean.get("available"):
         llm_adjustment = max(-LLM_SCORE_ADJUST_CAP, min(
             LLM_SCORE_ADJUST_CAP, float(llm_lean.get("score_adjustment") or 0.0)))
-        score += llm_adjustment
+        # The model is advisory only. Record its lean, but never add it to the
+        # binding score or allow it to cross a directional boundary.
         llm_info = {
             "source": llm_lean.get("source"),
             "model": llm_lean.get("model"),
@@ -1067,7 +1203,7 @@ def _score_action(
     rt = (treasury_doctrine or {}).get("regime_thresholds", {})
     sustainable_max = _to_float(rt.get("sustainable_max_ratio")) or 1.0
     hard_no_ratio = _to_float(rt.get("unsustainable_hard_no_ratio")) or 2.0
-    ncl_annual = _to_float(os.environ.get("BEACN_NCL_ANNUAL_LOVELACE"))
+    ncl_annual = _to_float((treasury_policy_state or {}).get("ncl_lovelace"))
     available = None
     if ncl_annual > 0:
         w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
@@ -1096,25 +1232,98 @@ def _score_action(
     # boundary (hysteresis) when deciding whether to change an existing on-chain vote.
     directional_threshold = 0.06 if treasury_doctrine_ready else 0.12
 
+    treasury_dimensions = None
+    if action_family == "treasury":
+        treasury_dimensions = _treasury_dimensions(
+            action, value_row, readiness_row, financial_row, risk_row, treasury_doctrine_ready
+        )
+
+    needs_more_info_reason_code = None
+    ncl_verified = (
+        action_family != "treasury" or (
+            (treasury_policy_state or {}).get("verification_status") == "verified_on_chain"
+            and _to_float((treasury_policy_state or {}).get("ncl_lovelace")) > 0
+        )
+    )
+    portfolio_row = next(
+        (row for row in (treasury_portfolio or {}).get("candidates", [])
+         if row.get("action_id") == action.get("action_id")), {}
+    )
+    portfolio_verified = (
+        action_family != "treasury" or (
+            (treasury_portfolio or {}).get("status") == "verified" and portfolio_row
+        )
+    )
+    protocol_verified = (protocol_row or {}).get("evidence_status") == "independently_verified"
+    protocol_missing = []
+    if action_family == "hardfork":
+        required_protocol = ("version_guardrails_pass", "testnet_results_pass", "spo_readiness_pass",
+                             "exchange_readiness_pass", "dapp_readiness_pass", "security_review_pass",
+                             "constitutional_alignment_pass", "rollback_or_containment_plan")
+        protocol_missing = [f for f in required_protocol if _yn((protocol_row or {}).get(f)) is not True]
+    elif action_family == "parameter":
+        required_protocol = ("constitutional_alignment_pass", "impact_analysis_complete",
+                             "rollback_or_containment_plan", "safety_margin_clear")
+        protocol_missing = [f for f in required_protocol if _yn((protocol_row or {}).get(f)) is not True]
+
     if hard_blocker:
         rec = "ABSTAIN"
         unc.append("Hard blocker present in vote-readiness matrix.")
     elif flag_score >= 9 and not (risk_row and _yn(risk_row.get("mitigation_evidence_present")) is True):
         rec = "ABSTAIN"
         unc.append("High risk flags triggered conservative abstain.")
+    elif action_family in ("hardfork", "parameter") and protocol_verified and _yn((protocol_row or {}).get("affirmative_blocker")) is True:
+        rec = "NO"
+        score = min(-0.12, score)
+        inf.append("Directional NO is supported by an independently verified protocol-readiness blocker.")
+    elif action_family in ("hardfork", "parameter") and (not protocol_verified or protocol_missing):
+        rec = "ABSTAIN"
+        score = 0.0
+        unc.append("Protocol action lacks a complete independently pinned readiness packet: " + ", ".join(protocol_missing or ["independent verification"]))
+    elif action_family == "hardfork" and protocol_verified:
+        rec = "YES"
+        score = max(0.12, score)
+        inf.append("Hard-fork YES cleared independently verified guardrail, testing, ecosystem-readiness, security, and containment gates.")
+    elif action_family == "parameter" and protocol_verified:
+        rec = "YES"
+        score = max(0.12, score)
+        inf.append("Parameter-change YES cleared independently verified constitutional, impact, containment, and safety-margin gates.")
+    elif action_family == "treasury" and not ncl_verified:
+        rec = "NEEDS_MORE_INFO"
+        needs_more_info_reason_code = "VERIFIED_NCL_REQUIRED"
+        inf.append("Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.")
+    elif action_family == "treasury" and not portfolio_verified:
+        rec = "NEEDS_MORE_INFO"
+        needs_more_info_reason_code = "TREASURY_PORTFOLIO_REQUIRED"
+        inf.append("Directional treasury voting is blocked until this action is ranked against competing active proposals and verified NCL capacity.")
     elif treasury_doctrine_ready and available is not None and available <= 0:
         rec = "NO"
         inf.append("Directional NO forced: rolling-window available treasury capacity is depleted.")
+    elif action_family == "treasury":
+        d = treasury_dimensions or {}
+        if d.get("affirmative_waste_evidence") and d.get("benefit", 0) < 0.55:
+            rec = "NO"
+            score = min(-0.12, float(d.get("composite", 0)))
+            inf.append("Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery — not by missing information.")
+        elif (d.get("benefit", 0) >= 0.55 and d.get("delivery_confidence", 0) >= 0.55
+              and d.get("cost_efficiency", 0) >= 0.45 and d.get("downside_risk", 1) <= 0.55):
+            if _yn(portfolio_row.get("funding_eligible")) is True:
+                rec = "YES"
+                score = max(0.12, float(d.get("composite", 0)))
+                inf.append("Directional YES cleared ecosystem benefit, delivery, cost-efficiency, downside-protection, and portfolio-capacity floors.")
+            else:
+                rec = "NEEDS_MORE_INFO"
+                needs_more_info_reason_code = "PORTFOLIO_CAPACITY_NOT_CLEARED"
+                inf.append(f"Proposal clears individual quality floors but is not currently portfolio-eligible: {portfolio_row.get('portfolio_reason', 'capacity/rank unavailable')}.")
+        else:
+            rec = "NEEDS_MORE_INFO"
+            needs_more_info_reason_code = "BALANCED_TREASURY_EVIDENCE_REQUIRED"
+            score = float(d.get("composite", 0))
+            inf.append("Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.")
     elif score >= directional_threshold:
         rec = "YES"
     elif score <= -directional_threshold:
         rec = "NO"
-    elif clean_hardfork and score > -0.10:
-        rec = "YES"
-        inf.append("Action-type policy: a clean hard-fork initiation may proceed despite thin generic risk fields; missing risk detail remains explicit uncertainty.")
-    elif clean_committee_liveness_parameter and score > -0.12:
-        rec = "YES"
-        inf.append("Action-type policy: a clean committeeMinSize liveness parameter may proceed despite thin generic risk fields; governance-risk detail remains explicit uncertainty.")
     elif readiness_score >= 0.70 or treasury_doctrine_ready:
         # Force directional decision when structured evidence packet is sufficiently complete.
         rec = "YES" if score >= 0 else "NO"
@@ -1122,7 +1331,7 @@ def _score_action(
     else:
         rec = "ABSTAIN"
 
-    # Did the bounded LLM nudge actually move the action across a directional
+    # The model is advisory-only and can never move the binding outcome.
     # boundary? Recorded so the public can see exactly when the reasoning layer
     # changed an outcome the mechanical rules would not have reached.
     llm_assisted = False
@@ -1134,10 +1343,7 @@ def _score_action(
             if s <= -directional_threshold:
                 return "NO"
             return "MID"
-        if _band(raw_score) != _band(score):
-            llm_assisted = True
-            if rec in ("YES", "NO"):
-                llm_assisted_reason_code = "LLM_ASSISTED_DIRECTIONAL"
+        llm_assisted = False
 
     confidence = _calibrated_confidence(
         anchor_ok=anchor_ok,
@@ -1169,6 +1375,7 @@ def _score_action(
 
     return {
         "recommendation": rec,
+        "needs_more_info_reason_code": needs_more_info_reason_code,
         "abstain_reason_code": reason_code,
         "operator_review_required": False,
         "operator_review_reason_code": None,
@@ -1178,6 +1385,10 @@ def _score_action(
         "raw_score": round(raw_score, 4),
         "treasury_gate_mode": treasury_gate_mode,
         "treasury_dossier_incomplete": treasury_dossier_incomplete,
+        "treasury_dimensions": treasury_dimensions,
+        "treasury_policy_state": treasury_policy_state,
+        "treasury_portfolio_rank": portfolio_row.get("rank"),
+        "treasury_portfolio_eligible": portfolio_row.get("funding_eligible"),
         "llm_score_adjustment": round(llm_adjustment, 4),
         "llm_lean": llm_info,
         "llm_assisted": llm_assisted,
@@ -1187,7 +1398,7 @@ def _score_action(
         "facts": [*(facts or ["Deterministic rule set applied."]), *assessment_facts],
         "inferences": [*(inf or ["No additional inference."]), *assessment_inferences],
         "uncertainty": [*(unc or ["Rule-based system; does not infer unstated intent."]), *assessment_uncertainty],
-        "missing_evidence": [],
+        "missing_evidence": (treasury_dimensions or {}).get("missing", []) if rec == "NEEDS_MORE_INFO" else [],
     }
 
 
@@ -1300,8 +1511,12 @@ def run_once(action_id: str | None = None) -> dict:
     financial_map = _load_decision_support_csv("financial_sustainability_profiles.csv")
     risk_map = _load_decision_support_csv("risk_mitigation_registry.csv")
     deep_map = _load_decision_support_csv("deep_research_dossiers.csv")
+    value_map = _load_decision_support_csv("ecosystem_value_profiles.csv")
+    protocol_map = _load_decision_support_csv("protocol_readiness_profiles.csv")
     treasury_flow = _load_treasury_flow()
     treasury_doctrine = _load_treasury_doctrine()
+    treasury_policy_state = _load_treasury_policy_state()
+    treasury_portfolio = _load_treasury_portfolio()
     scoring_weights = _load_scoring_weights()
 
     freshness = _check_freshness()
@@ -1349,6 +1564,10 @@ def run_once(action_id: str | None = None) -> dict:
         treasury_doctrine,
         scoring_weights,
         lean,
+        value_map.get(action["action_id"]),
+        treasury_policy_state,
+        treasury_portfolio,
+        protocol_map.get(action["action_id"]),
     )
     intelligence = _enrich_decision_metadata(action, score_obj, resources_used, freshness, missing_evidence)
 
@@ -1372,6 +1591,7 @@ def run_once(action_id: str | None = None) -> dict:
         "directional_threshold": score_obj.get("directional_threshold", 0.12),
         "confidence": score_obj["confidence"],
         "readiness_score": score_obj.get("readiness_score"),
+        "treasury_dimensions": score_obj.get("treasury_dimensions"),
         "facts": score_obj["facts"],
         "inferences": score_obj["inferences"],
         "uncertainty": score_obj["uncertainty"],

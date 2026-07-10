@@ -9,9 +9,9 @@ current limitations are. Nothing here is hidden from delegators.
 ## The binding contract
 The **directional vote, score, and gates are pure deterministic Python** (`src/beacn_drep/engine.py`).
 They are the binding record and are byte-for-byte replayable (`cli verify-replay`). A language
-model assists with two clearly-labelled, **non-authoritative** layers only: reading the proposal
-to extract claims, and writing the plain-language explanation. The model can never set, change,
-or veto a vote.
+model assists with clearly-labelled, **non-authoritative** extraction, dossier drafting, evidence
+review, and plain-language explanation. Its lean is recorded for transparency but is never added
+to the binding score and can never set, change, or veto a vote.
 
 ## The pipeline (per proposal)
 1. **Intake / claim extraction** *(model-assisted, advisory)* — read the proposal's cached
@@ -21,9 +21,13 @@ or veto a vote.
 2. **Evidence check** *(deterministic)* — baseline integrity (anchor pinned, metadata, amount),
    freshness, and the decision-support evidence (`beacn-drep-resources/.../decision_support/*.csv`).
 3. **Analysis** *(deterministic)* — treasury sustainability (rolling-window regime) and risk review.
-4. **Score + gates** *(deterministic, authoritative)* — weighted score from
-   `beacn-drep-soul/scoring_weights.json`, with hard gates (stale data → ABSTAIN; treasury
-   without a completed deep-research dossier → NEEDS_MORE_INFO; etc.). Produces the vote.
+4. **Score + gates** *(deterministic, authoritative)* — non-treasury actions use declared weights.
+   Treasury actions use four explicit dimensions: independently verified ecosystem benefit,
+   delivery confidence, cost efficiency, and downside protection. Stale data → ABSTAIN; an
+   incomplete dossier, unverified NCL, or missing independent value packet → NEEDS_MORE_INFO.
+   Missing evidence can never become NO; directional NO requires affirmative independently pinned
+   evidence of waste, duplication, excessive cost, failed delivery, private capture, or unacceptable
+   downside.
 5. **Rationale** *(deterministic)* — facts/inferences/uncertainty, per-proposal counterarguments
    (best YES / NO / hold case derived from the actual claims and failed gates), `assessment.json`.
 6. **Human message** *(model-assisted)* — plain-English explanation of the *already-decided*

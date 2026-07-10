@@ -49,6 +49,7 @@ DOSSIER_DIR = DS / "dossiers"
 DEEP_CSV = DS / "deep_research_dossiers.csv"
 FIN_CSV = DS / "financial_sustainability_profiles.csv"
 RISK_CSV = DS / "risk_mitigation_registry.csv"
+VALUE_CSV = DS / "ecosystem_value_profiles.csv"
 READY_CSV = DS / "vote_readiness_matrix.csv"
 METRICS = RESOURCES / "data" / "history" / "governance_metrics" / "latest"
 OWNER = "drep-agent-extract"
@@ -136,8 +137,32 @@ DOSSIER_SCHEMA = {
                          "rollback_or_remedy_path", "dependency_map_complete",
                          "risk_profile_confidence", "notes"],
         },
+        "ecosystem_value_profile": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "critical_infrastructure": _TRI,
+                "open_source_public_good": _TRI,
+                "measurable_existing_adoption": _TRI,
+                "ecosystem_leverage": _TRI,
+                "strategic_necessity": _TRI,
+                "credible_prior_delivery": _TRI,
+                "cost_compared_to_market": _TRI,
+                "output_priced": _TRI,
+                "material_duplication": _TRI,
+                "private_capture_risk": _TRI,
+                "evidence_refs": {"type": "array", "items": {"type": "string"}},
+                "confidence": {"type": "number"},
+            },
+            "required": ["critical_infrastructure", "open_source_public_good",
+                         "measurable_existing_adoption", "ecosystem_leverage",
+                         "strategic_necessity", "credible_prior_delivery",
+                         "cost_compared_to_market", "output_priced", "material_duplication",
+                         "private_capture_risk", "evidence_refs", "confidence"],
+        },
     },
-    "required": ["facts", "inferences", "uncertainty", "sections", "financial_profile", "risk_profile"],
+    "required": ["facts", "inferences", "uncertainty", "sections", "financial_profile",
+                 "risk_profile", "ecosystem_value_profile"],
 }
 
 SYSTEM = (
@@ -157,7 +182,10 @@ SYSTEM = (
     "5. Alternatives analysis must consider: not funding, partial funding, other providers or "
     "mechanisms named in the record, and deferral — from the supplied material and doctrine only.\n"
     "6. Be neutral and precise. Critique proposals, never people. Do not recommend a vote — a "
-    "separate deterministic engine decides."
+    "separate deterministic engine decides.\n"
+    "7. Extract the ecosystem-value profile conservatively. This draft sees proposer material and "
+    "on-chain context only, so these fields remain proposal claims until a separate independent "
+    "evidence pass verifies them. Unknown is preferable to inference."
 )
 
 
@@ -350,6 +378,7 @@ def build(args) -> int:
                 "dossier_complete", "analyst_notes", "owner", "status"]
     fin_hdr, _ = _read_csv(FIN_CSV)
     risk_hdr, _ = _read_csv(RISK_CSV)
+    value_hdr, _ = _read_csv(VALUE_CSV)
 
     ok = fail = skipped = 0
     for a in actions:
@@ -444,6 +473,25 @@ def build(args) -> int:
             "risk_blocker": "no",
             "notes": (rp.get("notes") or "")[:300],
             "owner": OWNER, "status": "machine_extracted_from_anchor",
+        }, overwrite=args.overwrite)
+
+        vp = data.get("ecosystem_value_profile") or {}
+        _upsert(VALUE_CSV, value_hdr, {
+            "action_id": aid, "action_type": a.get("action_type"),
+            "critical_infrastructure": _tri(vp.get("critical_infrastructure")),
+            "open_source_public_good": _tri(vp.get("open_source_public_good")),
+            "measurable_existing_adoption": _tri(vp.get("measurable_existing_adoption")),
+            "ecosystem_leverage": _tri(vp.get("ecosystem_leverage")),
+            "strategic_necessity": _tri(vp.get("strategic_necessity")),
+            "credible_prior_delivery": _tri(vp.get("credible_prior_delivery")),
+            "cost_compared_to_market": _tri(vp.get("cost_compared_to_market")),
+            "output_priced": _tri(vp.get("output_priced")),
+            "material_duplication": _tri(vp.get("material_duplication")),
+            "private_capture_risk": _tri(vp.get("private_capture_risk")),
+            "evidence_status": "proposal_only",
+            "evidence_refs": json.dumps(vp.get("evidence_refs") or [], separators=(",", ":")),
+            "confidence": f"{max(0.0, min(1.0, float(vp.get('confidence') or 0.0))):.2f}",
+            "owner": OWNER, "status": "awaiting_independent_evidence",
         }, overwrite=args.overwrite)
 
         ok += 1

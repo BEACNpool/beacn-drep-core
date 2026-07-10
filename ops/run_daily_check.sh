@@ -24,7 +24,8 @@ log() { echo "[$(date -u +%FT%TZ)] $*"; }
 commit_if_changed() {
   local repo="$1"
   local message="$2"
-  git -C "$repo" add -A
+  shift 2
+  git -C "$repo" add -A -- "$@"
   if git -C "$repo" diff --cached --quiet; then
     log "no changes in $(basename "$repo")"
   else
@@ -34,11 +35,15 @@ commit_if_changed() {
 }
 
 publish_web_gh_pages() {
-  local tmp
+  local tmp stage
   tmp="$(mktemp -d)"
+  stage="$(mktemp -d)"
   log "syncing web main to gh-pages"
   git -C "$WEB" worktree add "$tmp" gh-pages
-  rsync -a --delete --exclude .git --exclude node_modules "$WEB"/ "$tmp"/
+  # Publish committed HEAD, never the working tree: unrelated local UI/source
+  # edits must not leak into an automated Pages deployment.
+  git -C "$WEB" worktree add --detach "$stage" HEAD
+  rsync -a --delete --exclude .git --exclude node_modules "$stage"/ "$tmp"/
   git -C "$tmp" add -A
   if git -C "$tmp" diff --cached --quiet; then
     log "no changes in beacn-drep-web gh-pages"
@@ -47,28 +52,37 @@ publish_web_gh_pages() {
     git -C "$tmp" push origin gh-pages
   fi
   git -C "$WEB" worktree remove "$tmp"
+  git -C "$WEB" worktree remove "$stage"
   rmdir "$tmp" 2>/dev/null || true
+  rmdir "$stage" 2>/dev/null || true
 }
 
-ensure_clean_or_ours() {
+ensure_source_clean() {
   local repo="$1"
-  if [ -n "$(git -C "$repo" status --porcelain)" ]; then
-    log "$(basename "$repo") has local changes; continuing because this job owns DRep generated artifacts"
+  shift
+  local dirty
+  dirty="$(git -C "$repo" status --porcelain -- . ":(exclude)$1" 2>/dev/null || true)"
+  if [ -n "$dirty" ]; then
+    log "$(basename "$repo") has source/unapproved local changes; continuing without staging them"
+    printf '%s\n' "$dirty"
   fi
 }
 
 log "starting BEACN DRep daily offline check"
 
 for repo in "$SOUL" "$RES" "$CORE" "$WEB"; do
-  git -C "$repo" fetch origin --prune
-  if git -C "$repo" status --short --branch | head -1 | grep -q "behind"; then
-    git -C "$repo" pull --ff-only origin main
+  if git -C "$repo" fetch origin --prune; then
+    if git -C "$repo" status --short --branch | head -1 | grep -q "behind"; then
+      git -C "$repo" pull --ff-only origin main
+    fi
+  else
+    log "WARNING: GitHub fetch failed for $(basename "$repo"); continuing from pinned local HEAD"
   fi
 done
 
-ensure_clean_or_ours "$RES"
-ensure_clean_or_ours "$CORE"
-ensure_clean_or_ours "$WEB"
+ensure_source_clean "$RES" "data/"
+ensure_source_clean "$CORE" "data/output/"
+ensure_source_clean "$WEB" "data/output/"
 
 if [ -d "$HOME/gov-bot-env" ]; then
   # shellcheck disable=SC1091
@@ -120,8 +134,22 @@ PYTHONPATH=src python3 scripts/build_deep_research_dossiers.py \
 
 log "verifying pending dossiers (independent fact-check; agentic approval on pass)"
 PYTHONPATH=src python3 scripts/verify_dossiers.py \
-    --backend "${BEACN_DREP_LLM_BACKEND:-codex}" \
+    --backend "${BEACN_DREP_VERIFY_BACKEND:-claude}" \
   || log "WARNING: dossier verification errored; unverified dossiers stay pending (strict posture)"
+
+log "verifying pinned independent ecosystem-value evidence"
+PYTHONPATH=src python3 scripts/verify_ecosystem_value_evidence.py \
+  || log "WARNING: one or more value-evidence packets failed; affected actions stay non-directional"
+
+log "verifying pinned protocol-readiness evidence"
+PYTHONPATH=src python3 scripts/verify_protocol_readiness_evidence.py \
+  || log "WARNING: one or more protocol packets failed; affected actions stay ABSTAIN"
+
+log "building treasury opportunity-cost portfolio"
+PYTHONPATH=src python3 scripts/build_treasury_portfolio.py
+
+log "updating historical policy calibration"
+PYTHONPATH=src python3 scripts/calibrate_policy.py
 
 log "running rationales for all proposals (cache where present, offline fallback elsewhere)"
 PYTHONPATH=src python3 -m beacn_drep.cli run-all
@@ -165,8 +193,11 @@ for d in runs.iterdir():
     aid = d.name.rsplit("-", 1)[0]
     if aid in ids and (aid not in latest or d.stat().st_mtime > latest[aid].stat().st_mtime):
         latest[aid] = d
-sample_ids = ids[:3] + ids[len(ids)//2:len(ids)//2+3] + ids[-3:]
-for aid in sample_ids:
+active_ids = []
+with resources.open(newline="", encoding="utf-8") as f:
+    active_ids = [r["action_id"] for r in csv.DictReader(f)
+                  if (r.get("status") or "").lower() == "active"]
+for aid in active_ids:
     if aid in latest:
         print(latest[aid].name)
 PY
@@ -194,9 +225,12 @@ python3 scripts/build_share_card.py --all || card_rc=$?
 rsync -a --delete "$WEB/data/output/public/" "$WEB/public/data/output/public/"
 
 stamp="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-commit_if_changed "$RES" "data: governance snapshot ${stamp}"
-commit_if_changed "$CORE" "decisions: offline rationale refresh ${stamp}"
-commit_if_changed "$WEB" "publish: rationale refresh ${stamp}"
+commit_if_changed "$RES" "data: governance snapshot ${stamp}" \
+  data/input/governance data/history/governance_metrics
+commit_if_changed "$CORE" "decisions: offline rationale refresh ${stamp}" \
+  data/output logs/audit_log.jsonl
+commit_if_changed "$WEB" "publish: rationale refresh ${stamp}" \
+  status.json data/output/public public/data/output/public
 publish_web_gh_pages
 
 if [ "$card_rc" -ne 0 ]; then

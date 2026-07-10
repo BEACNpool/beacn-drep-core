@@ -176,6 +176,17 @@ def verify_one(action: dict, row: dict, backend: str, autoapprove: bool) -> tupl
     if not (dossier_path.exists() and receipt_path.exists()):
         return "gate_failed", record
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+    drafter_identity = (str(receipt.get("backend") or "").lower(),
+                        str(receipt.get("model") or "").lower())
+    verifier_identity = (str(record["backend"]).lower(), str(record["model"]).lower())
+    independent_model = drafter_identity != verifier_identity
+    record["gates"]["different_model_from_drafter"] = independent_model
+    if not independent_model:
+        record["note"] = (
+            "Verification must use a different backend/model from dossier drafting; "
+            f"both resolved to {verifier_identity}."
+        )
+        return "gate_failed", record
 
     anchor_text, _meta = load_anchor_text(aid)
     anchor_match = bool(anchor_text) and _sha(anchor_text) == receipt.get("anchor_sha256")

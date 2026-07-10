@@ -28,6 +28,7 @@ def score_for(
     readiness_row: dict | None = None,
     risk_row: dict | None = None,
     deep_row: dict | None = None,
+    protocol_row: dict | None = None,
 ) -> dict:
     freshness = {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"}
     missing = []
@@ -52,7 +53,7 @@ def score_for(
                     "category": "technical",
                     "support": "independently_verifiable",
                     "materiality": "high",
-                }
+                },
             ],
         },
     )
@@ -80,12 +81,19 @@ def score_for(
                 "drep_margin_cap": 0.10,
             }
         },
+        protocol_row=protocol_row,
     )
 
 
 class EnginePolicyTests(unittest.TestCase):
     def test_clean_hardfork_low_ratification_support_is_agentic_yes(self) -> None:
-        result = score_for(base_action("HardForkInitiation"))
+        result = score_for(base_action("HardForkInitiation"), protocol_row={
+            "evidence_status": "independently_verified", "version_guardrails_pass": "yes",
+            "testnet_results_pass": "yes", "spo_readiness_pass": "yes",
+            "exchange_readiness_pass": "yes", "dapp_readiness_pass": "yes",
+            "security_review_pass": "yes", "constitutional_alignment_pass": "yes",
+            "rollback_or_containment_plan": "yes", "affirmative_blocker": "no",
+        })
 
         self.assertEqual(result["recommendation"], "YES")
         self.assertFalse(result["operator_review_required"])
@@ -98,13 +106,17 @@ class EnginePolicyTests(unittest.TestCase):
         action["metadata_title"] = "Reduce the committeeMinSize parameter from 7 to 5"
         action["param_changes"] = '{"committee_min_size": 5}'
 
-        result = score_for(action)
+        result = score_for(action, protocol_row={
+            "evidence_status": "independently_verified", "constitutional_alignment_pass": "yes",
+            "impact_analysis_complete": "yes", "rollback_or_containment_plan": "yes",
+            "safety_margin_clear": "yes", "affirmative_blocker": "no",
+        })
 
         self.assertEqual(result["recommendation"], "YES")
         self.assertFalse(result["operator_review_required"])
         self.assertIsNone(result["operator_review_reason_code"])
         self.assertEqual(result["agentic_high_impact_reason_code"], "GOVERNANCE_LIVENESS_PARAMETER")
-        self.assertIn("committeeMinSize liveness", " ".join(result["inferences"]))
+        self.assertIn("independently verified", " ".join(result["inferences"]))
 
     def test_generic_parameter_change_does_not_use_liveness_exception(self) -> None:
         action = base_action("ParameterChange")
@@ -147,9 +159,9 @@ class EnginePolicyTests(unittest.TestCase):
         self.assertEqual(result["recommendation"], "NEEDS_MORE_INFO")
         self.assertEqual(result["needs_more_info_reason_code"], "DEEP_RESEARCH_REQUIRED")
 
-    def test_treasury_soft_gate_votes_directionally_not_nmi(self) -> None:
-        # Soul doctrine sets dossier_gate.mode=soft -> judge directionally with a
-        # caution penalty instead of holding at NEEDS_MORE_INFO.
+    def test_treasury_soft_gate_cannot_turn_missing_evidence_into_no(self) -> None:
+        # Doctrine v1.4: even a legacy soft setting cannot turn missing evidence
+        # into a directional treasury vote.
         action = base_action("TreasuryWithdrawals")
         action["treasury_amount_lovelace"] = "1000000000"
         soft = {"dossier_gate": {"mode": "soft", "incomplete_penalty": -0.10}}
@@ -161,10 +173,8 @@ class EnginePolicyTests(unittest.TestCase):
             {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
                          "flag_score_divisor": 30.0, "drep_margin_cap": 0.10}},
         )
-        self.assertNotEqual(result["recommendation"], "NEEDS_MORE_INFO")
-        self.assertIn(result["recommendation"], ("NO", "ABSTAIN", "YES"))
-        self.assertEqual(result["treasury_gate_mode"], "soft")
-        self.assertTrue(result["treasury_dossier_incomplete"])
+        self.assertEqual(result["recommendation"], "NEEDS_MORE_INFO")
+        self.assertEqual(result["needs_more_info_reason_code"], "DEEP_RESEARCH_REQUIRED")
 
 
     def test_stale_treasury_flow_does_not_penalize(self) -> None:
@@ -186,7 +196,7 @@ class EnginePolicyTests(unittest.TestCase):
             action, [],
             {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"},
             [], True, {"sections": [], "overall_status": "ready", "blocking_questions": []},
-            None, None, None, {"dossier_complete": "no"}, stale_flow, soft,
+            None, None, None, {"dossier_complete": "yes"}, stale_flow, soft,
             {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
                          "treasury_flow_unsustainable_penalty": -0.10, "flag_score_divisor": 30.0,
                          "drep_margin_cap": 0.10}},
@@ -247,14 +257,62 @@ class EnginePolicyTests(unittest.TestCase):
         fresh = {"is_stale": False, "snapshot_age_seconds": 1, "freshness_source": "test"}
         empty_assessment = {"sections": [], "overall_status": "ready", "blocking_questions": []}
         r_reimb = _score_action(reimb, [], fresh, [], True, empty_assessment,
-                                None, financial, None, {"dossier_complete": "no"}, {}, soft, weights)
+                                None, financial, None, {"dossier_complete": "yes"}, {}, soft, weights)
         general["treasury_amount_lovelace"] = "103000000000"
         r_general = _score_action(general, [], fresh, [], True, empty_assessment,
-                                  None, financial, None, {"dossier_complete": "no"}, {}, soft, weights)
+                                  None, financial, None, {"dossier_complete": "yes"}, {}, soft, weights)
         # Same inputs except the title: the reimbursement must not carry the -0.15
         # no-milestones penalty that the general spend does.
         self.assertAlmostEqual(r_reimb["raw_score"] - r_general["raw_score"], 0.15, places=4)
         self.assertTrue(any("reimbursement" in f.lower() for f in r_reimb["facts"]))
+
+    def test_balanced_treasury_yes_requires_verified_benefit_and_controls(self) -> None:
+        action = base_action("TreasuryWithdrawals")
+        action["treasury_amount_lovelace"] = "1000000000"
+        result = _score_action(
+            action, [], {"is_stale": False}, [], True,
+            {"sections": [], "overall_status": "ready"},
+            {"timeline_defined": "yes", "risk_profile_complete": "yes"},
+            {"budget_granularity": "yes", "milestone_payment_gates": "yes",
+             "clawback_refund_path": "yes", "cost_benefit_clarity": "yes",
+             "sustainability_path_clear": "yes"},
+            {"execution_risk_level": "low", "governance_risk_level": "low",
+             "technical_risk_level": "medium", "treasury_exposure_risk_level": "low",
+             "mitigation_evidence_present": "yes", "independent_assurance_present": "yes"},
+            {"dossier_complete": "yes"}, {}, {"dossier_gate": {"mode": "hard"}},
+            {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
+                         "flag_score_divisor": 30.0}}, None,
+            {"evidence_status": "independently_verified", "critical_infrastructure": "yes",
+             "open_source_public_good": "yes", "measurable_existing_adoption": "yes",
+             "ecosystem_leverage": "yes", "credible_prior_delivery": "yes",
+             "cost_compared_to_market": "yes", "output_priced": "yes"},
+            {"verification_status": "verified_on_chain", "ncl_lovelace": 500_000_000_000_000},
+            {"status": "verified", "candidates": [{"action_id": "gov_action_test",
+             "funding_eligible": "yes", "rank": 1}]},
+        )
+        self.assertEqual(result["recommendation"], "YES")
+        self.assertGreaterEqual(result["treasury_dimensions"]["benefit"], 0.55)
+
+    def test_balanced_treasury_no_requires_affirmative_waste_evidence(self) -> None:
+        action = base_action("TreasuryWithdrawals")
+        action["treasury_amount_lovelace"] = "1000000000"
+        result = _score_action(
+            action, [], {"is_stale": False}, [], True,
+            {"sections": [], "overall_status": "ready"}, None,
+            {"budget_granularity": "yes", "cost_benefit_clarity": "no"},
+            {"execution_risk_level": "high", "governance_risk_level": "medium",
+             "technical_risk_level": "medium", "treasury_exposure_risk_level": "high"},
+            {"dossier_complete": "yes"}, {}, {"dossier_gate": {"mode": "hard"}},
+            {"weights": {"treasury_base_penalty": -0.10, "anchor_present_bonus": 0.05,
+                         "flag_score_divisor": 30.0}}, None,
+            {"evidence_status": "independently_verified", "material_duplication": "yes",
+             "critical_infrastructure": "no", "open_source_public_good": "no"},
+            {"verification_status": "verified_on_chain", "ncl_lovelace": 500_000_000_000_000},
+            {"status": "verified", "candidates": [{"action_id": "gov_action_test",
+             "funding_eligible": "no", "rank": 2}]},
+        )
+        self.assertEqual(result["recommendation"], "NO")
+        self.assertTrue(result["treasury_dimensions"]["affirmative_waste_evidence"])
 
 
 if __name__ == "__main__":

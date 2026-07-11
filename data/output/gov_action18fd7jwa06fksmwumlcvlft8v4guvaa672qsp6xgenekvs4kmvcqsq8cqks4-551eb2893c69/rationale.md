@@ -96,12 +96,12 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Reproducibility
 - input_hash: `551eb2893c6912d364f05d63233b6239fc51f29dd42c52786ab03892a44598e8`
-- snapshot_bundle_hash: `5178998a7342c7ac0785f55c3fd4b24acea2c1afda4d03050ee2d2728e35cfee`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `20ea9ede0ea98064773320c8efa7388e0cb84dd220f5738218214dccbfe3f3a2`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `13`
+- snapshot_age_seconds: `12`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4769, "NO": 0.1516, "YES": 0.3716}`

@@ -9,15 +9,15 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.2433,
   "raw_score": -0.2433,
-  "llm_score_adjustment": 0.0,
+  "llm_score_adjustment": 0.02,
   "llm_lean": {
     "source": "precomputed",
     "model": "claude-opus-4-8",
-    "direction": "ABSTAIN",
-    "score_adjustment": 0.0,
-    "confidence": 0.67,
-    "rationale": "The extracted claims show a clearly scoped public-good maintenance proposal with concrete deliverables, success metrics, and some independently verifiable outputs, but many key factual assertions about usage, prior delivery, team track record, and cost necessity remain proposer-asserted within the document. The deterministic treasury and risk rules appear to have already captured the main spending, oversight, and evidence issues, so no additional bounded nudge is justified.",
-    "doctrine_basis": "Treasury stewardship and evidence quality/reproducibility",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.68,
+    "rationale": "A small positive nudge is justified because the extracted claims describe established open-source wallet infrastructure, concrete maintenance deliverables, independently verifiable release/version metrics, and milestone-based Intersect oversight. The nudge remains small because several important adoption and track-record claims are proposer asserted and the request is a substantial treasury spend.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; public-benefit ecosystem growth",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -26,7 +26,7 @@
     "values_hierarchy.md",
     "treasury_spending_doctrine.md"
   ],
-  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
   "confidence": 0.7808,
   "readiness_score": 0.85,
@@ -44,6 +44,8 @@
       "cost comparables, budget proportionality, or sustainability evidence"
     ]
   },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -52,10 +54,11 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 1785333",
     "Risk review: Execution risk: medium",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The requested 1,785,333 ADA budget is allocated to 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 1,785,333 ADA, including 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive nudge is justified because the extracted claims describe established open-source wallet infrastructure, concrete maintenance deliverables, independently verifiable release/version metrics, and milestone-based Intersect oversight. The nudge remains small because several important adoption and track-record claims are proposer asserted and the request is a substantial treasury spend.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -67,8 +70,8 @@
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
-    "Claims and evidence missing: Independent evidence for: Daedalus is presented as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.",
-    "Claims and evidence missing: Independent evidence for: The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, with true usage asserted to be higher because privacy-conscious users are less likely to opt in.",
+    "Claims and evidence missing: Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+    "Claims and evidence missing: Independent evidence for: Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is asserted to be higher.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Treasury analysis missing: cost-benefit clarity",
@@ -81,10 +84,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "3f6bf165bef09c0437ec8ba119e6b340c47839e11f08c1f31bc1322d93a74bcf",
-  "snapshot_bundle_hash": "a3991afcb68e10fb7ac91e4b2031f30189ee4d72fd1fc4662907d6b1719a6457",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "f4589d1eec27bd078212e352e12cd91251f3578381c8340d4c2459561dbf7993",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,7 +110,7 @@
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -148,23 +151,23 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Daedalus Wallet Maintenance and Improvements 2026-2027 as a time-and-materials engagement covering protocol maintenance, ecosystem expansion, user support, and related oversight.",
-          "Recipient: Se7en Labs, Inc. administered through Intersect",
+          "Requested: Daedalus Wallet Maintenance and Improvements 2026-2027 delivered by Se7en Labs, Inc.",
+          "Recipient: Se7en Labs, Inc. via Intersect administration and project-specific treasury smart contract arrangements",
           "Stated amount: 1,785,333",
-          "Deliverables: Integrate cardano-node and cardano-wallet releases and maintain Nix build infrastructure, dependency updates, security patches, and platform compatibility., Provide Daedalus-compatible stable releases at least 2 weeks before each mainnet hard fork and maintain Leios, Peras, and Nested Transactions readiness., Maintain binary signing continuity through the IOG signing arrangement for official releases., Maintain Windows, macOS x86_64, macOS aarch64, and Linux platform builds with full Japanese translation across new features., Add Keystone and Flex hardware wallet support and support newer hardware wallet models as they emerge., Implement a CIP-30 dApp connector in Daedalus with documentation and no external API dependency., Provide ongoing user support through GitHub, community forums, and direct channels, including Japanese-language support., Publish a Daedalus architecture assessment by Q3 2027.",
-          "Deadline/expiry: Contract year through 2026-2027; architecture assessment by Q3 2027; IOG contract noted as closing August 31, 2026.",
-          "Claim (technical, proposer_asserted, high materiality): Daedalus is presented as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.",
-          "Claim (adoption, proposer_asserted, medium materiality): The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, with true usage asserted to be higher because privacy-conscious users are less likely to opt in.",
-          "Claim (technical, proposer_asserted, high materiality): Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026 and shipped Mithril snapshot bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization.",
-          "Claim (economic, proposer_asserted, medium materiality): The proposal says Se7en Labs has not received ADA from the Cardano Treasury within the last 24 months.",
-          "Claim (economic, supported_in_proposal, high materiality): The requested 1,785,333 ADA budget is allocated to 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
-          "Claim (economic, proposer_asserted, medium materiality): The proposal states that any unspent labor, hardware, or audit budget at contract close will be returned to the treasury."
+          "Deliverables: Protocol maintenance including node upgrades, hard fork readiness, and releases at least 2 weeks before each mainnet hard fork, Ecosystem expansion including Keystone and Flex hardware wallet support, CIP-30 dApp connector, and Japanese localisation, User support across GitHub, community forums, direct channels, and Japanese-language support, Security and dependency maintenance for Electron, Node.js, wallet dependencies, Nix build infrastructure, and signed releases, Architecture assessment covering current state, options, resource estimates, and recommendation",
+          "Deadline/expiry: Contract year covering 52 weeks; architecture assessment by Q3 2027",
+          "Claim (technical, proposer_asserted, high materiality): Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+          "Claim (adoption, proposer_asserted, high materiality): Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is asserted to be higher.",
+          "Claim (adoption, proposer_asserted, high materiality): Se7en Labs has operated under an IOG contract for Daedalus maintenance since January 2026, closing August 31, 2026, and shipped Daedalus 8.0 and 11.0 during that period.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,785,333 ADA, including 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.",
+          "Claim (technical, supported_in_proposal, high materiality): The work will maintain Daedalus compatibility with upcoming Cardano protocol changes, including hard forks, Leios, Peras, and Nested Transactions, with compatible stable releases at least two weeks before mainnet activation.",
+          "Claim (technical, supported_in_proposal, medium materiality): The proposal commits to implementing Keystone and Flex hardware wallet support and a CIP-30 dApp connector in stable Daedalus releases during the contract period."
         ],
         "missing": [
-          "Independent evidence for: Daedalus is presented as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.",
-          "Independent evidence for: The proposal states that opt-in telemetry shows approximately 4,000 monthly active Daedalus users, with true usage asserted to be higher because privacy-conscious users are less likely to opt in.",
-          "Independent evidence for: Se7en Labs says it has maintained Daedalus under an IOG contract since January 2026 and shipped Mithril snapshot bootstrap, UTxO-HD/LSM backend integration, Apple Silicon builds, a release CLI, and Nix build modernization.",
-          "Independent evidence for: The proposal says Se7en Labs has not received ADA from the Cardano Treasury within the last 24 months."
+          "Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.",
+          "Independent evidence for: Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is asserted to be higher.",
+          "Independent evidence for: Se7en Labs has operated under an IOG contract for Daedalus maintenance since January 2026, closing August 31, 2026, and shipped Daedalus 8.0 and 11.0 during that period.",
+          "Independent evidence for: Se7en Labs states it has not received ADA from the Cardano Treasury within the last 24 months."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -211,8 +214,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The requested 1,785,333 ADA budget is allocated to 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is presented as Cardano's only full-node desktop wallet, deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 1,785,333 ADA, including 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for financial audit, and a 52,000 ADA Intersect administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -240,6 +243,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -262,9 +266,12 @@
         "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
-    }
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a Treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal requested 1,785,333 ADA for a time-and-materials engagement for Daedalus maintenance and improvements in 2026-2027, administered through Intersect for Se7en Labs. It covered protocol maintenance, releases before hard forks, Nix and dependency work, security patches, platform support, binary signing continuity, Japanese translation and support, Keystone and Flex hardware wallet support, CIP-30 support, user support, and a public architecture assessment by Q3 2027.\n\nSeveral parts of the proposal were well structured. The budget was broken down into 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for a financial audit, and a 52,000 ADA Intersect administration fee. The proposal also gave concrete success metrics, including signed releases, platform CI coverage, version-currency targets, hardware wallet support, CIP-30 support, Japanese support, and a public architecture assessment. Intersect administration, milestone verification, monthly disbursement against verified work, a dedicated auditable account, and external oversight were also described.\n\nThe hold is conservative and evidence-based. The proposal anchor was available and replayable, but the claims-and-evidence record was thin, with missing independent evidence for material claims such as Daedalus being Cardano\u2019s only full-node desktop wallet and the roughly 4,000 monthly active user figure. Treasury review also lacked a clear sustainability path, cost-benefit clarity, independent assurance, and rollback or remedy path. The evidence that would unblock a directional vote is pinned, independently verifiable Net Change Limit evidence from public chain data, plus replayable public evidence for the material product and adoption claims.",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this treasury withdrawal requires independent Net Change Limit verification before a directional vote. The proposal says the withdrawal does not breach the applicable 350 million ADA Net Change Limit for Epoch 613 to Epoch 713, but BEACN\u2019s review requires that limit to be pinned and independently verified from public chain evidence before supporting or opposing a treasury action.\n\nThe proposal asks for 1,785,333 ADA for Se7en Labs, Inc. to maintain and improve Daedalus over a 52-week contract period, administered through Intersect and project-specific treasury smart contract arrangements. The requested budget is clearly broken down: 1,666,667 ADA for team labor, 33,333 ADA for test hardware, 33,333 ADA for a financial audit, and 52,000 ADA for Intersect administration. The work includes protocol maintenance, hard fork readiness, support for Keystone and Flex hardware wallets, a CIP-30 dApp connector, Japanese localisation, user support, security and dependency maintenance, signed releases, and an architecture assessment due by Q3 2027.\n\nSeveral parts of the proposal were well-supported enough to review: the anchor document was pinned and replayable, the budget was specific, release timing and version-currency metrics were described as publicly verifiable, and Intersect was described as administrator and independent milestone verifier with monthly disbursements against verified work. But important claims remained unsupported by independent evidence, including that Daedalus is Cardano\u2019s only full-node desktop wallet, that it avoids third-party APIs or trusted backends, and that it has about 4,000 monthly active users with a higher true count. The review also found thin evidence overall, medium execution risk, missing sustainability and cost-benefit clarity, missing independent assurance, and no clear rollback or remedy path.\n\nThis is a conservative, evidence-based hold, not a rejection of the work. A directional vote would be unblocked by pinned, independently verifiable public chain evidence for the applicable Net Change Limit, plus stronger independent evidence for the key wallet, adoption, assurance, sustainability, cost-benefit, and remedy claims.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -284,7 +291,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "ffaf32c1c62506b2392c7a8547d6c30905ef56f976c712b2826e442366ccc3ec"
+      "output_sha256": "150cef5e2ebe2997cc6c19d7139cb1bd9e02d557180723c6bdb33eef2289e851"
     },
     "doctrine": {
       "family": "treasury",
@@ -292,19 +299,19 @@
         "values_hierarchy.md",
         "treasury_spending_doctrine.md"
       ],
-      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
       "available": true,
       "source": "precomputed",
       "reason": null,
       "model": "claude-opus-4-8",
-      "direction": "ABSTAIN",
-      "score_adjustment": 0.0,
+      "direction": "YES",
+      "score_adjustment": 0.02,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "f88ca3e13a00ed0aeb17e0f614127cb74fcc99ce7510d42123d1cc871527b203"
+      "output_sha256": "9665292513d7ff235c1bc55e55756e58dd559644fa784f8bf3f7b9d540a016c6"
     },
     "human_message": {
       "source": "precomputed",
@@ -312,10 +319,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "7c3a51e80b12252937704e7f94be3b28d62497566bf89336eb6623e64209519d"
+      "output_sha256": "251dbda5d1b1eb832998241d78620ad7e88983da7becf7b6c5d6f91a07dc7cc8"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6af0ed64f109dc004a82b1ec.md",
-  "rationale_anchor_hash": "6af0ed64f109dc004a82b1ecaf17e59d81085f75e55ffbc7b95de4a4f859eecc"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/785b87ab142b22f115341e0b.md",
+  "rationale_anchor_hash": "785b87ab142b22f115341e0b37f6e2394f6b5932e1c54c6eac12a22554f1e56a"
 }

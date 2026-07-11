@@ -146,10 +146,10 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `b0f5c88ab1ea6a54221931fda06dead5ef89cf56b56bf8219277e87ac015b1f7`
-- snapshot_bundle_hash: `4097145d2dc34a1b42af23640c7d84239b50895c387620494bd709070dbe3421`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `86c302c95dc227a3996d5ab68a51f4917e7a1a54f631c22c3f1a6baaac578646`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `10`
 - uncertainty_band: `LOW`

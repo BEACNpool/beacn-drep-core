@@ -1,0 +1,88 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "c21b00f90f18fce4003edf42b0b0d455126e01c946e80cc5341a9f9750caf795#0",
+  "action_type": "ParameterChange",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: enacted",
+        "Proposed epoch: 606",
+        "Expires after epoch: 613",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Increase Transaction and Block Memory Units (Part 1 of 2)",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: Intersect's Parameter Committee proposes the first of two Parameter Update governance actions., The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04., 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers., 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, independently_verifiable, high materiality): Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.",
+        "Claim (technical, independently_verifiable, medium materiality): The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.",
+        "Claim (technical, independently_verifiable, low materiality): 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers.",
+        "Claim (technical, independently_verifiable, low materiality): 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
+        "Claim (technical, independently_verifiable, medium materiality): Community members have expressed a desire to increase the Plutus script memory unit limits to simplify DApp development and enhance scalability - see PCP-003 and public survey results.",
+        "Claim (technical, independently_verifiable, high materiality): Raising maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory] could significantly improve Plutus script throughput with minimal impact on block propagation or node performance, making it a low-risk and high-impact change."
+      ],
+      "missing": [],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.\" and clears the evidence gates.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

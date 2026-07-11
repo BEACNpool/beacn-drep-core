@@ -90,12 +90,12 @@ Residual uncertainty remains limited to the replayed evidence and the public res
 
 ## Reproducibility
 - input_hash: `e533af7979a0d623271df9ed8e95d174e58abb1ef729ca9e2bb0d4671e54496b`
-- snapshot_bundle_hash: `0f9bc9442f8d07f70914094cedaa547eec203bb00fd8cf54cee42401a27c9eeb`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `7dbbe8faf89164d32d80166dc3b33058cf1178e9e4a88f6f705dfdf0b7374ed5`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `13`
+- snapshot_age_seconds: `12`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2291, "NO": 0.1391, "YES": 0.6319}`

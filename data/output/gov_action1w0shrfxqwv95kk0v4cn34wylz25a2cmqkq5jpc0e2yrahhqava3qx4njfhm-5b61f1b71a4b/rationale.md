@@ -148,10 +148,10 @@ A material claim remains proposer-asserted or thinly supported: This proposal fu
 
 ## Reproducibility
 - input_hash: `5b61f1b71a4b196d2e78df8c27095efc70153e2a8432233f5dfbcf188b6eee42`
-- snapshot_bundle_hash: `3dc2f061b84097996414d9a0d8f04a48f3cf9ccdb9c132e08f7a7e2f47ce36a0`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `c372533f8eb523db4cf63b48bbef41439ba1d183c87d60fbf1632dee9b0dacec`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `8`
 - uncertainty_band: `LOW`

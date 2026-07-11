@@ -17,18 +17,34 @@
     "values_hierarchy.md",
     "treasury_spending_doctrine.md"
   ],
-  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.12,
   "confidence": 0.2,
   "readiness_score": null,
-  "treasury_dimensions": null,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.1,
+    "cost_efficiency": 0.0,
+    "downside_risk": 0.5875,
+    "composite": -0.4131,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence",
+      "delivery controls, milestones, assurance, or remedy path"
+    ]
+  },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
   "facts": [
     "Treasury actions are high-impact and require a completed deep research dossier.",
     "Intake: Action type: TreasuryWithdrawals",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 5100781",
     "Risk review: Execution risk: medium",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal states the requested treasury amount is \u20b35,100,781 and that funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.\" though 5 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests \u20b35,100,781 and states the funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.\" though 5 review blocker(s) remain open.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -42,8 +58,8 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
-    "Claims and evidence missing: Independent evidence for: Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution with sub-second finality, near-zero fees, high throughput, and Cardano L1 settlement as the backstop.",
-    "Claims and evidence missing: Independent evidence for: The proposal says Hydra is already used or demonstrated by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
+    "Claims and evidence missing: Independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.",
+    "Claims and evidence missing: Independent evidence for: The document claims Hydra has powered Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost payments, and Midgard withdrawals.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
@@ -64,10 +80,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "39ce6f4e2dbf5dc94fcef3bd21af3069960b539dd1c862ff8170e07c39c5b5ef",
-  "snapshot_bundle_hash": "e195ed75e0188829b2022ec3beb5eff323d98b562b29b1fb510f2f80828bab73",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "4c7c5d70a897e72812a7ee59ee52117b32e5c570c183c88621548414cf11bd30",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -87,10 +103,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 5,
+    "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -131,23 +147,23 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Treasury withdrawal to fund IO: Hydra workstreams for performance optimization, operational excellence, ecosystem support, and developer experience toward a feature-complete and hardened Hydra v2.",
-          "Recipient: Input Output Global / IO: Hydra, with Intersect providing administrative treasury governance",
+          "Requested: Funding for IO: Hydra to deliver a feature-complete and hardened Hydra v2 through performance optimization, operational excellence, ecosystem support, and developer experience workstreams.",
+          "Recipient: Input Output Global / Intersect administrative treasury governance",
           "Stated amount: 5100781",
-          "Deliverables: 2x to 10x improvements in snapshot signing and memory profile, Reduced L1 fees through on-chain contract optimization, Operator runbooks, simpler node configuration, observability and logging, and improved TUI, Features requested by production users and pipeline integrators, Hydra Alliance facilitation, hackathons, and developer relations, CI, tooling, and technical debt reduction for protocol maintenance and developer experience, Milestone-gated delivery with independent third-party assurance",
+          "Deliverables: 2x to 10x improvements in snapshot signing and memory profile, Reduced L1 fees through on-chain contract optimization, Operator runbooks, simpler node configuration, observability and logging, and improved TUI, Features requested by production users and pipeline integrators, Hydra Alliance facilitation, hackathons, and developer relations, CI, tooling, and technical debt reduction",
           "Deadline/expiry: not stated in document",
-          "Claim (technical, proposer_asserted, high materiality): Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution with sub-second finality, near-zero fees, high throughput, and Cardano L1 settlement as the backstop.",
-          "Claim (adoption, proposer_asserted, high materiality): The proposal says Hydra is already used or demonstrated by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
-          "Claim (technical, proposer_asserted, high materiality): The proposal claims Cardano L1 has over two hours of finality, about $0.17 payment fees, $1 to $3 DeFi transaction fees, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1.",
-          "Claim (adoption, proposer_asserted, high materiality): The proposal claims competing ecosystems offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS, causing builders to exclude Cardano before evaluating its strengths.",
-          "Claim (technical, proposer_asserted, high materiality): The proposal claims the funded work will improve Hydra snapshot signing and memory profile by 2x to 10x and reduce L1 fees through on-chain contract optimization.",
-          "Claim (economic, proposer_asserted, high materiality): The proposal claims Hydra applications can increase Cardano ecosystem activity, TVL, monthly active users, transactions, throughput capacity, reliability, uptime, and annual protocol revenue."
+          "Claim (technical, proposer_asserted, high materiality): Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.",
+          "Claim (governance, supported_in_proposal, high materiality): The proposal requests \u20b35,100,781 and states the funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.",
+          "Claim (technical, supported_in_proposal, high materiality): Hydra is claimed to provide sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement guarantees.",
+          "Claim (adoption, proposer_asserted, high materiality): The document claims Hydra has powered Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost payments, and Midgard withdrawals.",
+          "Claim (adoption, proposer_asserted, medium materiality): The document claims provisional users evaluating Hydra include Bodega Market, Atlas Defi, Wingriders, Houselink, European Public Network, and others.",
+          "Claim (technical, proposer_asserted, high materiality): The proposal claims Cardano L1 has over two hours of finality, about $0.17 payment transaction cost, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1."
         ],
         "missing": [
-          "Independent evidence for: Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution with sub-second finality, near-zero fees, high throughput, and Cardano L1 settlement as the backstop.",
-          "Independent evidence for: The proposal says Hydra is already used or demonstrated by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost, and Midgard.",
-          "Independent evidence for: The proposal claims Cardano L1 has over two hours of finality, about $0.17 payment fees, $1 to $3 DeFi transaction fees, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1.",
-          "Independent evidence for: The proposal claims competing ecosystems offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS, causing builders to exclude Cardano before evaluating its strengths.",
+          "Independent evidence for: Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.",
+          "Independent evidence for: The document claims Hydra has powered Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost payments, and Midgard withdrawals.",
+          "Independent evidence for: The document claims provisional users evaluating Hydra include Bodega Market, Atlas Defi, Wingriders, Houselink, European Public Network, and others.",
+          "Independent evidence for: The proposal claims Cardano L1 has over two hours of finality, about $0.17 payment transaction cost, and roughly 7 to 10 TPS, making high-performance applications uncompetitive on L1.",
           "budget analysis",
           "feasibility assessment",
           "alternatives analysis",
@@ -202,8 +218,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal states the requested treasury amount is \u20b35,100,781 and that funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.\" though 5 review blocker(s) remain open.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution with sub-second finality, near-zero fees, high throughput, and Cardano L1 settlement as the backstop.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests \u20b35,100,781 and states the funding will be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.\" though 5 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Hydra is described as the only production-grade or production-ready Layer 2 scaling solution on Cardano.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
         "missing": [],
@@ -243,6 +259,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -252,9 +269,26 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.1,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5875,
+      "composite": -0.4131,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a high-impact treasury withdrawal and the deep-research dossier was not complete enough to support a directional vote. This is a conservative, evidence-based hold, not a rejection of Hydra or its goals.\n\nThe action requested \u20b35,100,781 for IO: Hydra workstreams covering performance optimization, operational excellence, ecosystem support, developer experience, and work toward a feature-complete and hardened Hydra v2, with Intersect providing administrative treasury governance. The proposal claimed Hydra is a production-grade Cardano Layer 2 with sub-second finality, near-zero fees, high throughput, and L1 settlement as a backstop; it also claimed current or demonstrated use by several projects and institutions, and projected benefits including better performance, lower L1 fees, more ecosystem activity, and stronger developer adoption.\n\nSome governance basics were supported: the proposal anchor was pinned and replayable, the requested amount was stated, and the proposal said funding would be milestone-gated with independent third-party assurance and Intersect administration. But key claims still lacked independent replayable evidence, including the production-grade Hydra claim and the listed adoption or demonstration claims. The treasury review was also incomplete because line-item budget analysis and milestone-gated disbursement evidence were missing, and the risk review still needed mitigation evidence and independent assurance.\n\nA directional YES or NO would be unblocked by a completed deep-research dossier, including budget analysis, feasibility assessment, alternatives analysis, failure-mode analysis, community impact analysis, stronger independent evidence for major technical and adoption claims, and clearer treasury and risk evidence. Until those gates pass, BEACN\u2019s vote remains NEEDS_MORE_INFO because voting directionally would require more certainty than the record currently supports.",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal, and the deep-research dossier was not complete enough to support a directional vote. The proposal asks for \u20b35,100,781 for IO: Hydra work toward a feature-complete and hardened Hydra v2, but treasury actions consume shared ADA and require a higher evidence bar before BEACN can vote yes or no.\n\nThe proposal says the funding would support performance improvements, lower L1 fees through contract optimization, operator runbooks, simpler configuration, observability and logging, TUI improvements, production-user features, Hydra Alliance facilitation, hackathons, developer relations, CI, tooling, and technical debt reduction. It also claims Hydra offers sub-second finality, near-zero or zero internal fees, high throughput, and L1-grade settlement guarantees. One important governance claim was supported in the proposal: the request is for \u20b35,100,781 and says funding would be milestone-gated with independent third-party assurance and Intersect administrative treasury governance.\n\nThe hold comes from what was still missing. Several important claims remained proposer-asserted rather than independently evidenced, including the claim that Hydra is the only production-grade or production-ready Layer 2 scaling solution on Cardano, and the claimed usage by Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs, Blockfrost payments, and Midgard withdrawals. The treasury review was also incomplete: it was missing a line-item budget, confirmed milestone-gated disbursement analysis, mitigation evidence, independent assurance evidence, budget analysis, and feasibility assessment.\n\nThis is a conservative, evidence-based hold, not a rejection of Hydra. A directional vote would be unblocked by a complete deep-research dossier with independent evidence for the major technical and adoption claims, a line-item budget, milestone and disbursement details, feasibility analysis, alternatives analysis, failure-mode analysis, mitigation evidence, independent assurance evidence, and community impact analysis.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -274,7 +308,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "a022d294941699c972d579199b15cb75d87209b2bd9cc4f834f4b6a71389490a"
+      "output_sha256": "7618b40b5e54b8a32e4d45e626e858304e02151fba4ac46463fcf2b982a9be19"
     },
     "doctrine": {
       "family": "treasury",
@@ -282,7 +316,7 @@
         "values_hierarchy.md",
         "treasury_spending_doctrine.md"
       ],
-      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
       "available": true,
@@ -294,7 +328,7 @@
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "48f0791e3bbdbfb5d07693a6a839d430a4aa46bb9f1035c4bfeca723e16440d9"
+      "output_sha256": "bff37af14bea8cad35524ef2fd7a3028cecbd2d96266a832e6cacea3930dd38e"
     },
     "human_message": {
       "source": "precomputed",
@@ -302,10 +336,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "bd9242a497bf4766b3220e52da9814c180fb992aeb2e2dd278dd5cf01ada4aeb"
+      "output_sha256": "bd108dad0dad19af93fc2fb623e03318e8abb34ad64b75a70c6493df9c320072"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/58e82192886ff7bc7577a8b4.md",
-  "rationale_anchor_hash": "58e82192886ff7bc7577a8b493f3004fa2375a7a620f39936665d514be379556"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/46180d98fe2c6446b6810800.md",
+  "rationale_anchor_hash": "46180d98fe2c6446b6810800d7a712fed97f7a3315ca5d3f750150063de2b63f"
 }

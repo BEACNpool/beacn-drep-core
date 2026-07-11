@@ -31,6 +31,8 @@
   "confidence": 0.4775,
   "readiness_score": 0.0,
   "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Intake: Action type: InfoAction",
@@ -58,10 +60,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "fcb0d5b04c8abdfeea39f6f50fa9c85b52162a2701c2b94c80f31b5468679b20",
-  "snapshot_bundle_hash": "d2e4f43570c81721c10db58e27828b7b7cbbb76dfea0fa6fd39fd3dd9175d8c1",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "16aca5668fc0e0f4410e11f5232949c31dda57dd69863152703863dbc966daff",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -75,10 +77,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 11,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -190,6 +192,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -199,7 +202,10 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "human_message": "BEACN records ABSTAIN on Name Protocol Version 11 hard fork - van Rossem. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Name Protocol Version 11 hard fork - van Rossem. The strongest grounded claim is: Intersect\u2019s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the \u201cvan Rossem Hard Fork\u201d in memory of Cardano community contributor Max van Rossem.\n\nA material claim remains proposer-asserted or thinly supported: He made significant contributions to the development of Cardano\u2019s constitution and to many of the governance discussions and optimizations that will help shape the network\u2019s future. Reason code: RULE_THRESHOLD_UNMET.",
   "human_message_source": "deterministic-heuristic",

@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Scalus components are reused in Cardano developer tooling including MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2464844
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Scalus components are reused in Cardano developer tooling including MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Scalus is used directly by projects including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.
-- Claims and evidence missing: Independent evidence for: Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.
+- Claims and evidence missing: Independent evidence for: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
+- Claims and evidence missing: Independent evidence for: Protocols and applications including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm are built on Scalus.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Risk review missing: independent assurance
@@ -42,14 +42,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Top 3 fixes to improve next submission
 - Provide: independent ecosystem-value evidence packet
 - Provide: verified ecosystem benefit or strategic necessity
-- Provide independent evidence for: Scalus is used directly by projects including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.
+- Provide independent evidence for: Scalus is an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
 
 ## Proof of vote
 - input_hash: `b02a109afc6b522ac3daf4dc1c28c8ed8e5ab931ffdfa33f0317fef319c49fb4`
-- snapshot_bundle_hash: `5e168cf538a48178048693c2c9adad25b3bd2c52c79f4de3e8ad2389023d9d9a`
+- snapshot_bundle_hash: `274fb0e98ea92d3ca91cd1ca684fa3cf0d4fcb78d85a130d0658f045114c0b0c`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.2433`
 - confidence: `0.7808`
 

@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $420,000 using an Ada conversion rate of $0.1787, for a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.46; confidence 79.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 in annual operating costs for August 2026 through July 2027." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.46; confidence 79.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 2350000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Eternl requests ₳2,350,000, valued at about $420,000 using an Ada conversion rate of $0.1787, for a 12-month delivery period from August 2026 to July 2027." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Eternl asks for ₳2,350,000, valued at about $0.1787 per Ada, to cover approximately $420,000 in annual operating costs for August 2026 through July 2027." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - No milestone-gated disbursement documented.
-- Claims and evidence missing: Independent evidence for: Eternl says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, return any Ada above that amount to the treasury, and keep pre-conversion Ada undelegated to an SPO and delegated to abstain voting.
-- Claims and evidence missing: Independent evidence for: Eternl claims an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
+- Claims and evidence missing: Independent evidence for: Eternl has about 100,000 browser-extension installs and about 30,000 Android and iOS installs, and about 5,500 Pro users would fully cover the stated $420,000 annual cost.
+- Claims and evidence missing: Independent evidence for: Eternl says 10-18% of Cardano mainnet transactions are conducted via Eternl.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis missing: cost-benefit clarity
@@ -43,14 +43,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Top 3 fixes to improve next submission
 - Provide: independent ecosystem-value evidence packet
 - Provide: verified ecosystem benefit or strategic necessity
-- Provide independent evidence for: Eternl claims an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
+- Provide independent evidence for: Eternl says 10-18% of Cardano mainnet transactions are conducted via Eternl.
 
 ## Proof of vote
 - input_hash: `b13ff24b1c499108ca110632cf2fc7da59cd8ff406880a54cacc7c8527a10b43`
-- snapshot_bundle_hash: `73da02893d6bdc04b7ca98a11489489d5cc49fa92cf57918c36724860375d564`
+- snapshot_bundle_hash: `4ab28cb13fb20c5f8b811d2f7e8d83be0d78f4a65a17d7171cde708b52d2850f`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.4633`
 - confidence: `0.79`
 

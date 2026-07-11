@@ -1,0 +1,133 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "b11527fbcdc9d41e8f497de64a029a18673a5eefc413718459046f0b7a1a6656#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: expired",
+        "Proposed epoch: 621",
+        "Expires after epoch: 628",
+        "Treasury request: 8.04M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Pebble + Gerolamo - HLabs 2026 Budget",
+        "Recipient: ",
+        "Stated amount: 8.04M ADA",
+        "Deliverables: Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem., Harmonic Laboratories supports and maintains a considerable portion of the TypeScript tooling for the Cardano ecosystem, which the majority of Cardano developers use, either directly, or indirectly via other libraries that depend on code written and maintai..., The mission of HLabs is for true decentralization to become the baseline of application development, not only a nice-to-have feature., Duration & Milestones This proposal spans over 12 months , throughout which there will be several deliveries and demos.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, low materiality): Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem.",
+        "Claim (economic, independently_verifiable, low materiality): Harmonic Laboratories supports and maintains a considerable portion of the TypeScript tooling for the Cardano ecosystem, which the majority of Cardano developers use, either directly, or indirectly via other libraries that depend on code written and maintai...",
+        "Claim (economic, independently_verifiable, low materiality): The mission of HLabs is for true decentralization to become the baseline of application development, not only a nice-to-have feature.",
+        "Claim (economic, independently_verifiable, medium materiality): Duration & Milestones This proposal spans over 12 months , throughout which there will be several deliveries and demos.",
+        "Claim (technical, independently_verifiable, low materiality): Ecosystem benefits Gerolamo, Pebble, and ongoing tooling maintenance each serve distinct stakeholders while collectively strengthening Cardano's infrastructure, developer and user experience, and long-term sustainability.",
+        "Claim (technical, independently_verifiable, high materiality): TL;DR - dApps for trust-minimized applications - wallets for daedalus-like security - SPOs for relay nodes dApps Decentralized applications benefit immensely from trust-minimized access to blockchain data."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 8.04M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem.\" though 7 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

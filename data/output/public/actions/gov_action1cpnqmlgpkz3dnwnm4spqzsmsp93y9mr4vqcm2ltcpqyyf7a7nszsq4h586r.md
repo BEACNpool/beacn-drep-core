@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% budget administration fee." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 78.1%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3333000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% budget administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: Dano Finance states that Cardano DeFi is fragmented across liquidity, metadata, and execution paths, limiting market depth, integrations, and advanced financial applications.
-- Claims and evidence missing: Independent evidence for: The DeFi Kernel is intended to be open, fee-free, royalty-free, and not require payment, licensing fees, certification fees, listing fees, revenue share, or smart-contract open-sourcing for registration.
+- Claims and evidence missing: Independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.
+- Claims and evidence missing: Independent evidence for: Dano Finance says it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Risk review missing: independent assurance
@@ -42,14 +42,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 ## Top 3 fixes to improve next submission
 - Provide: independent ecosystem-value evidence packet
 - Provide: verified ecosystem benefit or strategic necessity
-- Provide independent evidence for: Dano Finance says it currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.
+- Provide independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.
 
 ## Proof of vote
 - input_hash: `b7d7592e754096d3fafd87d75db9523024368b5e5eda85b80509e66b5a0e8bc3`
-- snapshot_bundle_hash: `47035bbff1a28ba185baf960e3b2d66ecaab04389a35b975cd9b51314e7e2f55`
+- snapshot_bundle_hash: `474212f489931eabdb69ff352efd89d8131b179a23ace0a2c531b1d90704f549`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.2433`
 - confidence: `0.7808`
 

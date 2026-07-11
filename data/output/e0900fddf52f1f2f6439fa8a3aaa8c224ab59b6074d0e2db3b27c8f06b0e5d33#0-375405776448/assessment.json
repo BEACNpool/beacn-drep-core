@@ -1,0 +1,133 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "e0900fddf52f1f2f6439fa8a3aaa8c224ab59b6074d0e2db3b27c8f06b0e5d33#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: expired",
+        "Proposed epoch: 630",
+        "Expires after epoch: 637",
+        "Treasury request: 8.50M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Scalus: Cardano\u2019s Application Platform for Building, Launching, and Scaling",
+        "Recipient: not stated in document",
+        "Stated amount: 8.50M ADA",
+        "Deliverables: Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning., But the next bottleneck is no longer core infrastructure, it is application delivery., Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling., It lacks an integrated application platform that has it all and just works.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, proposer_asserted, low materiality): Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning.",
+        "Claim (technical, proposer_asserted, low materiality): But the next bottleneck is no longer core infrastructure, it is application delivery.",
+        "Claim (economic, supported_in_proposal, low materiality): Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.",
+        "Claim (economic, proposer_asserted, low materiality): It lacks an integrated application platform that has it all and just works.",
+        "Claim (technical, proposer_asserted, low materiality): The Application Layer Decides the Next Chapter Cardano has shipped the protocol foundations.",
+        "Claim (economic, proposer_asserted, low materiality): The question is no longer \"can Cardano do X?\" but \"how fast can builders ship X?\"."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 8.50M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.\" though 7 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

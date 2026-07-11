@@ -94,12 +94,12 @@ A material claim remains proposer-asserted or thinly supported: This vote empowe
 
 ## Reproducibility
 - input_hash: `d5f2627e2c78e230731725c1541e8818a74ee8ff66d9d1632074b3a9173092f3`
-- snapshot_bundle_hash: `480e9b4f1e947f8157fb9ca9c7d7674457f20963ebb801bf65fa7524dd3e0d0f`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `ef46b80b642dc7d22ee80c49297e0b75a54ba099882962154be2de9e2cd75e23`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `15`
+- snapshot_age_seconds: `14`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.2544, "NO": 0.4913, "YES": 0.2544}`

@@ -9,14 +9,14 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.2133,
   "raw_score": -0.2133,
-  "llm_score_adjustment": -0.02,
+  "llm_score_adjustment": 0.02,
   "llm_lean": {
     "source": "precomputed",
     "model": "claude-opus-4-8",
-    "direction": "ABSTAIN",
-    "score_adjustment": -0.02,
-    "confidence": 0.72,
-    "rationale": "The proposal is aligned with public-benefit ecosystem growth because it funds maintenance of an open-source developer infrastructure tool, and it includes concrete scope, budget breakdown, governance-process references, and smart-contract oversight details. The small negative adjustment reflects treasury stewardship caution: the ask includes a sizable contingency and salary-rate framing while several important performance, dependency, and prior-delivery claims are asserted rather than evidenced inside the document, so the evidence quality does not justify a positive nudge.",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.74,
+    "rationale": "A small positive adjustment is justified because the claims describe maintenance of existing open-source developer infrastructure, include concrete technical scope, on-chain fund-routing details, NCL compliance assertions, and externally checkable voting and tooling references. The nudge remains small because some important adoption and delivery-history claims are proposer asserted rather than independently evidenced within the extracted claims, and treasury stewardship still requires caution on a 540,750 ADA withdrawal.",
     "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; public-benefit ecosystem growth",
     "cap": 0.05
   },
@@ -26,7 +26,7 @@
     "values_hierarchy.md",
     "treasury_spending_doctrine.md"
   ],
-  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
   "confidence": 0.7733,
   "readiness_score": 0.75,
@@ -45,6 +45,8 @@
       "delivery controls, milestones, assurance, or remedy path"
     ]
   },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -53,12 +55,12 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 540750",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal is aligned with public-benefit ecosystem growth because it funds maintenance of an open-source developer infrastructure tool, and it includes concrete scope, budget breakdown, governance-process references, and smart-contract oversight details. The small negative adjustment reflects treasury stewardship caution: the ask includes a sizable contingency and salary-rate framing while several important performance, dependency, and prior-delivery claims are asserted rather than evidenced inside the document, so the evidence quality does not justify a positive nudge.",
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive adjustment is justified because the claims describe maintenance of existing open-source developer infrastructure, include concrete technical scope, on-chain fund-routing details, NCL compliance assertions, and externally checkable voting and tooling references. The nudge remains small because some important adoption and delivery-history claims are proposer asserted rather than independently evidenced within the extracted claims, and treasury stewardship still requires caution on a 540,750 ADA withdrawal.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -69,8 +71,8 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
-    "Claims and evidence missing: Independent evidence for: The maintainer work is intended to keep Oura usable, reliable, and up to date for downstream users through maintenance, community support, and AI-friendly documentation resources.",
-    "Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule.",
+    "Claims and evidence missing: Independent evidence for: The proposer claims Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.",
+    "Claims and evidence missing: Independent evidence for: The proposal states TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis missing: sustainability path",
@@ -84,10 +86,10 @@
     "delivery controls, milestones, assurance, or remedy path"
   ],
   "input_hash": "41e1b5327d5bf4d81fb7d4d3587753d581d2b21664982f54655ae8792d0e8f50",
-  "snapshot_bundle_hash": "5a7e6f6719fda9b24130a625835e4b3e21f0b2cf12eb15f6c2ede70d7b663e02",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "7b9b038df6f236d46c349c75cb7d420e055b1d57b6ca518820b558eaf382df85",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -110,7 +112,7 @@
     "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -151,21 +153,21 @@
           "Proposal document read by reasoning layer: yes",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Treasury withdrawal to fund Oura by TxPipe maintenance over 12 months, submitted by Intersect on behalf of the vendor.",
-          "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, for Oura by TxPipe via Intersect administration.",
-          "Stated amount: 540,750",
-          "Deliverables: Part-time maintainer for Oura over 12 months, Dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public developer communication, AI-friendly documentation and integration resources, Milestone-based disbursement controls and reporting obligations through Intersect and third-party oversight",
-          "Deadline/expiry: 12 months",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.",
-          "Claim (economic, supported_in_proposal, high materiality): The on-chain withdrawal total is 540,750 ADA, consisting of 525,000 ADA for Oura maintenance and enhancement plus a 15,750 ADA Intersect Budget Administration fee.",
-          "Claim (technical, supported_in_proposal, high materiality): Oura is a Rust-native pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
-          "Claim (technical, supported_in_proposal, medium materiality): Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and supports sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
-          "Claim (adoption, independently_verifiable, medium materiality): Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and is the most starred project in the TxPipe portfolio.",
-          "Claim (technical, proposer_asserted, high materiality): The maintainer work is intended to keep Oura usable, reliable, and up to date for downstream users through maintenance, community support, and AI-friendly documentation resources."
+          "Requested: Treasury withdrawal to fund Oura by TxPipe maintenance and enhancement over 12 months, including Intersect administration fee.",
+          "Recipient: Intersect 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for work on behalf of TxPipe/Oura vendor.",
+          "Stated amount: 540750",
+          "Deliverables: Part-time maintainer for Oura over 12 months, Dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication, AI-friendly documentation and integration resources, Milestone-based disbursement controls and reporting obligations through Intersect oversight",
+          "Deadline/expiry: 12 months; exact start and end dates not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.",
+          "Claim (economic, supported_in_proposal, high materiality): The motivation section states the underlying maintainer request is 420,000 ADA plus a 105,000 ADA contingency reserve at an annual rate of $105,000 USD.",
+          "Claim (technical, supported_in_proposal, high materiality): Oura is described as a Rust-native pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
+          "Claim (technical, supported_in_proposal, medium materiality): The proposal states Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC and many sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
+          "Claim (adoption, independently_verifiable, medium materiality): The proposal states Oura has 654 commits, 288 stars, 79 forks, and 58 contributors and identifies it as the most starred project in the TxPipe portfolio.",
+          "Claim (adoption, proposer_asserted, high materiality): The proposer claims Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing."
         ],
         "missing": [
-          "Independent evidence for: The maintainer work is intended to keep Oura usable, reliable, and up to date for downstream users through maintenance, community support, and AI-friendly documentation resources.",
-          "Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule."
+          "Independent evidence for: The proposer claims Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.",
+          "Independent evidence for: The proposal states TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -213,8 +215,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"The maintainer work is intended to keep Oura usable, reliable, and up to date for downstream users through maintenance, community support, and AI-friendly documentation resources.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposer claims Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -242,6 +244,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -265,9 +268,12 @@
         "cost comparables, budget proportionality, or sustainability evidence",
         "delivery controls, milestones, assurance, or remedy path"
       ]
-    }
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action asks to withdraw 540,750 ada for 12 months of Oura by TxPipe maintenance, administered through Intersect. The proposal describes funding for a part-time maintainer, dependency updates, Cardano protocol compatibility, performance work, bug fixes, documentation, issue triage, review of outside contributions, ecosystem-feedback-driven enhancements, AI-friendly integration resources, and milestone-based controls. It also states that 525,000 ada is for Oura maintenance and enhancement, with a 15,750 ada Intersect administration fee.\n\nSeveral important points were supported well enough to count in the review. The pinned proposal anchor was available and replayable. The proposal\u2019s budget structure, Oura\u2019s role as a Rust-native Cardano event pipeline tool, its listed integrations, its public repository activity, Intersect Budget Process support, and the use of treasury management smart contracts were treated as supported or independently verifiable. The review also recognized the strongest case for voting yes: the proposal gives a concrete 12-month maintenance scope and budget rationale.\n\nThe hold comes from evidence discipline, not from rejecting Oura. Treasury withdrawals receive elevated scrutiny because they spend shared ada and set precedent. The review found thin evidence in important places: independent support was missing for the claimed maintenance outcomes, the Catalyst delivery-history claim, milestone-gated disbursement, sustainability path, independent assurance, and rollback or remedy path. To unblock a YES or NO vote, BEACN would need the Net Change Limit independently verified from public chain evidence, plus stronger replayable evidence for the unsupported delivery, oversight, sustainability, and risk controls.",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action asks to withdraw 540,750 ada for 12 months of Oura maintenance and enhancement by TxPipe, routed through Intersect\u2019s 2026 Treasury Reserve Smart Contract. The proposal says this includes 525,000 ada for the work and a 15,750 ada Intersect administration fee. It describes Oura as a Rust-native Cardano event pipeline tool, with work covering dependency updates, protocol compatibility, performance improvements, bug fixes, documentation, community support, AI-friendly integration resources, and milestone-based oversight through Intersect.\n\nSeveral core facts were supported well enough to review: the anchor document was available and replayable, the requested amount was clear, the technical description of Oura was supported in the proposal, and the proposal included fund-routing and oversight details. The review also treated the claimed Intersect budget-process support and the proposal\u2019s NCL compliance statement as independently verifiable context signals. However, important benefit and track-record claims remained weaker: ecosystem usage was proposer-asserted, and the Catalyst delivery-history claim also lacked independent evidence in the extracted review.\n\nThis is a conservative, evidence-based hold, not a rejection of Oura or the maintenance scope. To unblock a YES or NO vote, BEACN would need the applicable Net Change Limit pinned and independently verified from public chain evidence, plus stronger replayable evidence for the claimed ecosystem usage and delivery record. The review also noted thin evidence on milestone-gated disbursement, sustainability path, independent assurance, and rollback or remedy path, which matters more because this action would spend shared treasury ada.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -287,7 +293,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "96872b381571da664d0c1d1f2d643909cc62d7a2bed02452a7c4ef92ab16e5f0"
+      "output_sha256": "87e05bb712fb8f3fc2cd91fa77a8cb963797b9c7176d41f1bec7a8c461519737"
     },
     "doctrine": {
       "family": "treasury",
@@ -295,19 +301,19 @@
         "values_hierarchy.md",
         "treasury_spending_doctrine.md"
       ],
-      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
       "available": true,
       "source": "precomputed",
       "reason": null,
       "model": "claude-opus-4-8",
-      "direction": "ABSTAIN",
-      "score_adjustment": -0.02,
+      "direction": "YES",
+      "score_adjustment": 0.02,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "b4c05055ac0ea2bd57ac7bf1e2bdf0fb1dc46a890c05c8d95f34a6b4ab970c64"
+      "output_sha256": "758f7e24d0bb65dad3881e7258974fa93642d2136d6fcb65e8bc204752a02e86"
     },
     "human_message": {
       "source": "precomputed",
@@ -315,10 +321,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "2af16eebbede193763139974c626d0f72caa0b9813ffcbfd1ffa8a1864a2cd4c"
+      "output_sha256": "3c4f20240a1398cef95b63ef06f9471174c6698c2c34da2613940dc673052d8a"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/67da05a0db0c1795709b7395.md",
-  "rationale_anchor_hash": "67da05a0db0c1795709b7395efb70c2b8c2959af5cce8cec312312b71ad016e0"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a4bdaef7aabba861f51b817f.md",
+  "rationale_anchor_hash": "a4bdaef7aabba861f51b817fc03c04568d3b00eb721bb7fad6927e461596ba8a"
 }

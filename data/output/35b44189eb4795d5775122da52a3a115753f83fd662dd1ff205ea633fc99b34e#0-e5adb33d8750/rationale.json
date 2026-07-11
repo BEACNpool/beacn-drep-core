@@ -1,0 +1,319 @@
+{
+  "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.11,
+  "raw_score": -0.11,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.02,
+    "confidence": 0.68,
+    "rationale": "The proposal is aligned with public-benefit ecosystem growth and includes milestone gating, audit commitments, budget detail, and a repayment structure, but several of the most material adoption and execution claims remain proposer-asserted within the extracted record, including Phase 1 live status, Sellout user volume, Yellowstone deployment economics, and projected usage. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment for plausible growth upside.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; public-benefit ecosystem growth",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
+  "directional_threshold": 0.06,
+  "confidence": 0.7775,
+  "readiness_score": 0.9,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.75,
+    "cost_efficiency": 0.7,
+    "downside_risk": 0.25,
+    "composite": -0.06,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity"
+    ]
+  },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 0",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal is aligned with public-benefit ecosystem growth and includes milestone gating, audit commitments, budget detail, and a repayment structure, but several of the most material adoption and execution claims remain proposer-asserted within the extracted record, including Phase 1 live status, Sellout user volume, Yellowstone deployment economics, and projected usage. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment for plausible growth upside.",
+    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+    "Claims and evidence missing: Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [
+    "independent ecosystem-value evidence packet",
+    "verified ecosystem benefit or strategic necessity"
+  ],
+  "input_hash": "e5adb33d8750d996405d4b0a66a24348f2e4500a02fa7d3852c13b9935893fc8",
+  "snapshot_bundle_hash": "e24cecc185bc7002b3c0a6f66bd5f72e9df6c40906aaa4aa9da00adecd556cb3",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.1328,
+    "NO": 0.3528,
+    "ABSTAIN": 0.5144
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: 4.97M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, audit, and launch campaign.",
+          "Recipient: Intersect as budget administrator by prior agreement, holding and disbursing funds through the Sundae Labs TRSC/PSSC framework; project delivered by Anvil Development Agency and Sellout.",
+          "Stated amount: 4,969,231",
+          "Deliverables: Secondary marketplace for listing, pricing, and reselling tickets with on-chain settlement, Smart-contract-level royalty enforcement for artists and venues, Configurable anti-scalping controls including price ceilings, transfer limits, identity-binding, and time-based restrictions, Custodial wallet onboarding inside Sellout's existing user flow with self-custody export described for testnet milestone, Organizer dashboard and tools for resale parameters, lifecycle data, royalty distributions, and ticket verification, Independent third-party smart-contract audit with report and remediation published, Public launch campaign including Big Storm marketing and three trade-show activations, Public metrics dashboard, quarterly reports, and final governance report",
+          "Deadline/expiry: 8 months across five milestones",
+          "Claim (technical, proposer_asserted, high materiality): Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+          "Claim (economic, proposer_asserted, medium materiality): Sellout has invested over $130,000 of its own capital into Phase 1.",
+          "Claim (adoption, proposer_asserted, high materiality): Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
+          "Claim (adoption, proposer_asserted, high materiality): The proposal projects 12-month launch targets of 200+ on-chain events, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets.",
+          "Claim (adoption, proposer_asserted, high materiality): The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment projected to move $6M+ through Cardano in year one, with 2025 historical revenue of $5.88M.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward."
+        ],
+        "missing": [
+          "Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+          "Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
+          "Independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
+          "Independent evidence for: The proposal projects 12-month launch targets of 200+ on-chain events, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 0",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: confirmed",
+          "Recurring funding dependency: not confirmed",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.82"
+        ],
+        "missing": [],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.7,
+      "downside_risk": 0.25,
+      "composite": -0.06,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the project.\n\nThe action requests 4,969,231 ada to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, with Intersect acting as budget administrator under the Sundae Labs TRSC/PSSC framework. The proposal describes an 8-month, five-milestone plan covering a secondary ticket marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, a third-party smart-contract audit, public launch activity, a metrics dashboard, quarterly reports, and a final governance report.\n\nSeveral parts of the proposal were well-supported in the submitted record: the anchor document was pinned and replayable, the budget included line items and a 3% Intersect administration fee, funds would be milestone-gated, and the proposal commits to repay 1,093,231 ada to the Treasury through a revenue-share mechanism. However, some of the most material claims remained proposer-asserted rather than independently verified in the extracted review, including that Phase 1 is already live on Cardano mainnet, Sellout\u2019s user and ticketing volume, the Yellowstone Club deployment economics, and the projected adoption targets.\n\nThe review gates showed enough structure to review the action, and the strongest positive case was acknowledged: the repayment commitment and milestone framework are real supporting factors. But treasury votes require a higher bar because they spend shared ada and set precedent. To unblock a YES or NO vote, BEACN would need the Net Change Limit pinned and independently verified from public chain evidence, plus stronger independent evidence for the live Phase 1 mainnet claims and clearer assurance around execution risk, rollback, and remedies.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmYVmiR5xqF5kTW55EazGVsC5rsBxPno94m1sDu4SFndMc",
+        "file_sha256": "43934d3d5d83db7e22ba1f5467213f7664b817607355a2ddd27246b1190b0fe5",
+        "file_path": "data/input/governance/anchors/gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d-20260625T113100Z.bin",
+        "content_chars": 27770
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "1884e47f02aaba56544356ece721bce829e153b2891efa02394167890bf050b7"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "0c83ff365785bbc3ebdcefc3e8bf17fe1e25b1564de240fb523f583e54c1133e"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "375eb224635bf641cb65486c7a882c09605493cd3a000f499e4afd6e8802f13b"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/79aa6125ce4a3408a76d733c.md",
+  "rationale_anchor_hash": "79aa6125ce4a3408a76d733c407c6d989cce6b96ca3255822998cea622a153cd"
+}

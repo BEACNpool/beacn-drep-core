@@ -31,6 +31,8 @@
   "confidence": 0.5725,
   "readiness_score": 0.0,
   "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
   "facts": [
     "Pinned anchor document is available for this action.",
     "Flag score present (3), reducing confidence.",
@@ -57,10 +59,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "c9e088707e7822698ecfd5caee30c80ef032e256fca881f2fdab8da286eca9ca",
-  "snapshot_bundle_hash": "c0252e05fc07a63bb658cf21ac7eb13f5166e5747e08927ea5ca502109d15f65",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "76c38933b0497d9a2aed39bab61299224875068a572dafb9b45b8d9b0df67032",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -77,7 +79,7 @@
     "snapshot_age_seconds": 15,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -187,6 +189,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -196,7 +199,10 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "human_message": "BEACN records ABSTAIN on CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a NewConstitution. The cached anchor describes the request as: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0. The strongest grounded claim is: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see \"List of changes from v1.0 to v2.0\".\n\nReason code: RULE_THRESHOLD_UNMET.",
   "human_message_source": "deterministic-heuristic",

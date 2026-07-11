@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference rate for an approximately USD 2.0 million planning budget." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximately USD 0.20 ADA reference rate for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,13 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 10000000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference rate for an approximately USD 2.0 million planning budget." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 10,000,000 ada, using an approximately USD 0.20 ADA reference rate for an approximately USD 2.0 million planning budget split into two approximately USD 1.0 million pools." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal asserts that Cardano currently lacks a credible production BTCfi infrastructure layer and risks Bitcoin-backed structured exposure consolidating on other chains and off-chain markets.
-- Claims and evidence missing: Independent evidence for: The proposal states that Charms provides Bitcoin-native logic and compatibility infrastructure allowing FIRE and ICE to circulate into Cardano wallets, DEXs, and DeFi tooling.
+- Claims and evidence missing: Independent evidence for: The proposal asserts that Cardano currently lacks a credible production BTCfi infrastructure layer and risks losing Bitcoin-backed structured exposure markets to Ethereum, BNB, Solana, and Bitcoin-adjacent ecosystems.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -47,10 +46,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `64e861e262eb5205d59a72d9c98ab8b86b965377bdec54eebf6a8e1c27e60a91`
-- snapshot_bundle_hash: `0c7200f76999a825b65a9078150391a946f93ed0d7b2fe748714b03ae7844cb3`
+- snapshot_bundle_hash: `315d76a69ddc8f9976da99057ec2dcd029915409822517770f8878a072cec9b4`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.3433`
 - confidence: `0.7758`
 

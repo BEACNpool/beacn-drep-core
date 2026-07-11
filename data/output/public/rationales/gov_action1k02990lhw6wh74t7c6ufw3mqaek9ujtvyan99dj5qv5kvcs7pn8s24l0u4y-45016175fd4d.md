@@ -1,16 +1,16 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s24l0u4y
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7733` | Readiness: `0.85`
-> Reasoning layer (precomputed): The claims show strong protocol-infrastructure alignment and several externally checkable governance and oversight references, but the document does not provide detailed milestones, acceptance criteria, or cost justification for the 3,699,440 ada development work. The deterministic engine has already handled treasury and risk gates, so no additional bounded nudge is warranted.
+Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.85`
+> Reasoning layer (precomputed): A small positive nudge is justified because the extracted claims show a public-benefit infrastructure proposal with specific budget allocation, checkable governance-process references, NCL compliance claims, smart-contract custody details, and audit/oversight references. The adjustment remains small because several core benefit and vendor-history claims are still proposer asserted rather than evidenced within the document itself.
 
 ## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Mithril or the requested work.
 
-The action requests 3,810,423 ada to fund Mithril Protocol continuous development through Intersect’s budget process. Of that, 3,699,440 ada is for Mithril development and 110,983 ada is for Intersect budget administration. The proposal says funds would go through the 2026 Treasury Reserve Smart Contract stake address, with Intersect administering the vendor/project and milestone-based disbursement controls through TRSC/PSSC smart contracts.
+The action requested 3,810,423 ada from the treasury for Mithril Protocol continuous development and Intersect budget administration. The proposal says 3,699,440 ada would fund Mithril continuous development and 110,983 ada would cover the Intersect administration fee. It also says Intersect would administer the funds for Teragone through the Treasury Reserve Smart Contract and Project-Specific Smart Contract framework, with milestone-based controls, audit and oversight references, and an Oversight Committee role limited to verifying administrative actions through on-chain logic.
 
-The review found several important claims were supported: Mithril’s use of stake-based threshold multi-signatures to certify Cardano state, the Intersect budget-process support threshold, the stated allocation of funds, oversight and reporting structures, and the use of Sundae Labs treasury management smart contracts with specified addresses and role controls. But other material claims remained unsupported by independent evidence, including the claims about full-node synchronization, light-client reliance on centralized trust, and the need for this funding to preserve decentralization while avoiding centralized indexers and hosted APIs.
+Several important points were supported well enough to review: the proposal anchor was pinned and replayable, the budget split was stated, the Intersect Budget Process Hydra Voting threshold claim was substantiated, and the smart-contract custody framework and references were checkable. But some material claims were still not independently evidenced in the supplied review, including the claim that Mithril reduces the cost and complexity of securely accessing and verifying Cardano state, and the claim that it will lower onboarding friction through faster sync times and enable tooling for exchanges, wallets, monitoring, bridges, full wallets, light wallets, and light clients.
 
-This is a conservative, evidence-based hold, not a rejection of Mithril. The review gates showed the proposal anchor was pinned and replayable, but treasury scrutiny is higher because shared ADA would be spent. A directional vote would be unblocked by pinned, independently verifiable public-chain evidence for the Net Change Limit, stronger independent support for the thin claims, and clearer treasury evidence on sustainability, cost-benefit, independent assurance, and rollback or remedy paths.
+Because this is a treasury withdrawal, BEACN applies elevated scrutiny. The review also noted stressed treasury-flow conditions, thin claims-and-evidence status, unknown execution risk, and missing support for sustainability path, cost-benefit clarity, independent assurance, and rollback or remedy path. The evidence that would unblock a directional vote is public, independently verifiable Net Change Limit evidence for the applicable period, plus stronger replayable evidence for the main technical benefit claims and the missing treasury and risk items.
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -31,20 +31,21 @@ This is a conservative, evidence-based hold, not a rejection of Mithril. The rev
 - finding: Proposal document read by reasoning layer: yes
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: complete
-- finding: Requested: Treasury withdrawal to fund Mithril Protocol continuous development through Intersect's budget process
-- finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with Intersect administering funds for the vendor/project
+- finding: Requested: Treasury withdrawal to fund Mithril Protocol continuous development and Intersect budget administration.
+- finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect on behalf of the vendor Teragone
 - finding: Stated amount: 3,810,423
-- finding: Deliverables: Mithril Protocol Continuous Development, Intersect budget administration and oversight, Milestone-based disbursement controls through TRSC/PSSC smart contracts
+- finding: Deliverables: Mithril Protocol Continuous Development, Intersect Budget Administration fee, Audit and oversight through Intersect and technically capable third parties, Milestone-based disbursement controls through TRSC and PSSC smart contracts
 - finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, supported_in_proposal, high materiality): Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.
-- finding: Claim (technical, proposer_asserted, high materiality): The proposal states that full node synchronization is slow and light clients currently rely on centralized trust, making secure access to verified blockchain state a pressing infrastructure challenge.
-- finding: Claim (technical, proposer_asserted, high materiality): Funding Mithril's continued development through Intersect is presented as a way for Cardano to scale while preserving decentralization guarantees and avoiding dependency on centralized indexers and hosted APIs.
-- finding: Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission under the approved Budget Process Framework.
-- finding: Claim (economic, supported_in_proposal, high materiality): The requested 3,810,423 ada is allocated as 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.
-- finding: Claim (governance, independently_verifiable, high materiality): The proposer states that the withdrawal did not, at submission, breach the 350M Net Change Limit for Epoch 613 to Epoch 713, either alone or in aggregate.
-- missing: Independent evidence for: The proposal states that full node synchronization is slow and light clients currently rely on centralized trust, making secure access to verified blockchain state a pressing infrastructure challenge.
-- missing: Independent evidence for: Funding Mithril's continued development through Intersect is presented as a way for Cardano to scale while preserving decentralization guarantees and avoiding dependency on centralized indexers and hosted APIs.
-- missing: Independent evidence for: Teragone has not previously received direct Cardano treasury or community governance funding, but has worked on Mithril for several years through IOG-funded collaboration.
+- finding: Claim (technical, proposer_asserted, high materiality): Mithril addresses the cost and complexity of securely accessing and verifying Cardano blockchain state by using stake-based threshold multi-signatures to certify Cardano state in a trustless way.
+- finding: Claim (adoption, proposer_asserted, high materiality): The proposal states Mithril will lower onboarding friction through faster sync times and enable tooling for exchanges, wallets, monitoring, bridges, full wallets, light wallets, and light clients.
+- finding: Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework.
+- finding: Claim (economic, supported_in_proposal, high materiality): The requested 3,810,423 ada is split into 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.
+- finding: Claim (economic, independently_verifiable, high materiality): The proposal states the requested withdrawal does not, at submission, individually or in aggregate breach the applicable 350M ada Net Change Limit for Epoch 613 to Epoch 713.
+- finding: Claim (governance, proposer_asserted, medium materiality): Audit and oversight costs are included in the proposal overhead, with independent oversight provided through Intersect and technically capable third parties, reporting obligations, and milestone-based disbursement controls.
+- missing: Independent evidence for: Mithril addresses the cost and complexity of securely accessing and verifying Cardano blockchain state by using stake-based threshold multi-signatures to certify Cardano state in a trustless way.
+- missing: Independent evidence for: The proposal states Mithril will lower onboarding friction through faster sync times and enable tooling for exchanges, wallets, monitoring, bridges, full wallets, light wallets, and light clients.
+- missing: Independent evidence for: Audit and oversight costs are included in the proposal overhead, with independent oversight provided through Intersect and technically capable third parties, reporting obligations, and milestone-based disbursement controls.
+- missing: Independent evidence for: Teragone has not previously received direct funding from the Cardano treasury or community governance programs, while prior Mithril work was funded by IOG.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Treasury analysis
@@ -78,8 +79,8 @@ This is a conservative, evidence-based hold, not a rejection of Mithril. The rev
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain." and clears the evidence gates.
-- finding: Strongest NO: a material claim is unsupported — "The proposal states that full node synchronization is slow and light clients currently rely on centralized trust, making secure access to verified blockchain state a pressing infrastructure challenge." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the proposal substantiates "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework." and clears the evidence gates.
+- finding: Strongest NO: a material claim is unsupported — "Mithril addresses the cost and complexity of securely accessing and verifying Cardano blockchain state by using stake-based threshold multi-signatures to certify Cardano state in a trustless way." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -97,11 +98,12 @@ This is a conservative, evidence-based hold, not a rejection of Mithril. The rev
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3810423
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
+- Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: A small positive nudge is justified because the extracted claims show a public-benefit infrastructure proposal with specific budget allocation, checkable governance-process references, NCL compliance claims, smart-contract custody details, and audit/oversight references. The adjustment remains small because several core benefit and vendor-history claims are still proposer asserted rather than evidenced within the document itself.
 - Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
@@ -112,8 +114,8 @@ This is a conservative, evidence-based hold, not a rejection of Mithril. The rev
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- Claims and evidence missing: Independent evidence for: The proposal states that full node synchronization is slow and light clients currently rely on centralized trust, making secure access to verified blockchain state a pressing infrastructure challenge.
-- Claims and evidence missing: Independent evidence for: Funding Mithril's continued development through Intersect is presented as a way for Cardano to scale while preserving decentralization guarantees and avoiding dependency on centralized indexers and hosted APIs.
+- Claims and evidence missing: Independent evidence for: Mithril addresses the cost and complexity of securely accessing and verifying Cardano blockchain state by using stake-based threshold multi-signatures to certify Cardano state in a trustless way.
+- Claims and evidence missing: Independent evidence for: The proposal states Mithril will lower onboarding friction through faster sync times and enable tooling for exchanges, wallets, monitoring, bridges, full wallets, light wallets, and light clients.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -127,12 +129,12 @@ This is a conservative, evidence-based hold, not a rejection of Mithril. The rev
 
 ## Reproducibility
 - input_hash: `45016175fd4db381f1fc62ea19259c8740ea72dd9286c4e9693159d8057f9f09`
-- snapshot_bundle_hash: `7dd445ff086be572d1d883e00400def7badee39a03b09b88b62b5c41b9657236`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `e6f53c6932f837d753ef5b90b758fd419789ae6e4133b417c23b56a11234b502`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `2`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`

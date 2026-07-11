@@ -1,0 +1,133 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "c05eed09c8706453c97c88d403c4ff43b7786a552fe8711aa07d3e6529ffd8ba#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 632",
+        "Expires after epoch: 639",
+        "Treasury request: 23.00M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Cardano Critical Integrations V2",
+        "Recipient: ",
+        "Stated amount: 23.00M ADA",
+        "Deliverables: This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive..., The CCI V2 initiative provides the necessary funding for the ongoing operation and optimization of infrastructure previously established., While CCI V1 was responsible for delivering the primary foundational framework and launch readiness, CCI V2 ensures that this infrastructure remains functional, reliable, and equipped with advanced features to support the expanding needs of the ecosystem., Fund administration Funds will be administered by Intersect under the Treasury Reserve Smart Contract Framework over a 12 month delivery window.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive...",
+        "Claim (technical, independently_verifiable, high materiality): The CCI V2 initiative provides the necessary funding for the ongoing operation and optimization of infrastructure previously established.",
+        "Claim (technical, independently_verifiable, low materiality): While CCI V1 was responsible for delivering the primary foundational framework and launch readiness, CCI V2 ensures that this infrastructure remains functional, reliable, and equipped with advanced features to support the expanding needs of the ecosystem.",
+        "Claim (economic, independently_verifiable, high materiality): Fund administration Funds will be administered by Intersect under the Treasury Reserve Smart Contract Framework over a 12 month delivery window.",
+        "Claim (economic, independently_verifiable, low materiality): CCI V1 Contracted Year 2 Licensing/Platform fees All primary integrations from CCI V1 - specifically Circle, LayerZero, Pyth, and Dune - require ongoing annual payments for licensing, services, or attestations to remain operational.",
+        "Claim (technical, independently_verifiable, low materiality): These recurring costs represent the necessary subscription investment for top-tier infrastructure access."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 23.00M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive...\" though 7 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

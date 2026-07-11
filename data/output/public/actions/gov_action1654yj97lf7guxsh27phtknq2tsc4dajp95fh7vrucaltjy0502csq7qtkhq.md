@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "The proposal requests 103,000 ADA from the treasury to reimburse a 100,000 ADA governance action deposit plus 3,000 ADA for lost staking rewards." though 5 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "The proposal requests 103,000 ADA from the Cardano treasury to reimburse a lost 100,000 ADA governance action deposit and add 3,000 ADA for missed staking rewards." though 5 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
@@ -24,13 +24,13 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 103000
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 103,000 ADA from the treasury to reimburse a 100,000 ADA governance action deposit plus 3,000 ADA for lost staking rewards." though 5 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 103,000 ADA from the Cardano treasury to reimburse a lost 100,000 ADA governance action deposit and add 3,000 ADA for missed staking rewards." though 5 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: The original Ikigai Info governance action was a symbolic action thanking contributors and expressing hope for Cardano's future.
-- Claims and evidence missing: Independent evidence for: The submitter was unable to recover the 100,000 ADA deposit because of a Cardano node bug that permitted an unregistered stake key to be used in the governance action.
+- Claims and evidence missing: Independent evidence for: A Cardano node bug allowed an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.
+- Claims and evidence missing: Independent evidence for: The proposer states there was significant community sentiment at the time that the Ikigai deposit should be reimbursed.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -47,10 +47,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `31da0abac4087cd2084307bf3e78123feadd69854728aac48c5d7887b96d8f2f`
-- snapshot_bundle_hash: `6454c840d186388be187fafab1fbbaa14d36b34e301b6a03ad3523356b10e88e`
+- snapshot_bundle_hash: `c6dbc71cfd23f5eb22e83f2ea4249aea2df6f60f1f0f80a0c8d9b647a2d6fb8f`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `0.0`
 - confidence: `0.2`
 

@@ -21,10 +21,10 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "b0f5c88ab1ea6a54221931fda06dead5ef89cf56b56bf8219277e87ac015b1f7",
-    "snapshot_bundle_hash": "4097145d2dc34a1b42af23640c7d84239b50895c387620494bd709070dbe3421",
+    "snapshot_bundle_hash": "86c302c95dc227a3996d5ab68a51f4917e7a1a54f631c22c3f1a6baaac578646",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1ky2j077de82par6f0hny5q56rpnn5hh0csfhrpzeq3hsk7s6vetqquz3scv-b0f5c88ab1ea.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
@@ -185,13 +185,28 @@
       ]
     },
     "assessment_path": "/data/output/public/rationales/gov_action1ky2j077de82par6f0hny5q56rpnn5hh0csfhrpzeq3hsk7s6vetqquz3scv-b0f5c88ab1ea.assessment.json",
-    "treasury_dimensions": null,
+    "treasury_dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.0,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5,
+      "composite": -0.425,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
       "model_vote_influence": 0,
       "weights_version": "1.1.0",
       "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
       "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
       "yes_floors": {
         "benefit": 0.55,
         "delivery_confidence": 0.55,
@@ -201,10 +216,27 @@
       "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-      "dimensions": {}
+      "dimensions": {
+        "evidence_status": "missing",
+        "benefit": 0,
+        "delivery_confidence": 0.0,
+        "cost_efficiency": 0.0,
+        "downside_risk": 0.5,
+        "composite": -0.425,
+        "affirmative_waste_evidence": [],
+        "missing": [
+          "independent ecosystem-value evidence packet",
+          "verified ecosystem benefit or strategic necessity",
+          "cost comparables, budget proportionality, or sustainability evidence",
+          "delivery controls, milestones, assurance, or remedy path"
+        ]
+      },
+      "merit_recommendation": "NEEDS_MORE_INFO",
+      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": null,
-    "merit_reason": null
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -212,6 +244,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -221,7 +254,24 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.0,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5,
+      "composite": -0.425,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
     "available": true,
@@ -232,7 +282,7 @@
     "anchor_hash": "09a9d51df80d12097227fc010657f190fb5d71fe75aa020335b04be07b8e3efd",
     "file_sha256": "e8fa0f45d81b5106130fab2141f414c4aef0a829b346047c9f6d949f4b22d7fd",
     "content_bytes": "31272",
-    "fetched_at_utc": "2026-07-10T12:45:13Z",
+    "fetched_at_utc": "2026-07-11T11:30:14Z",
     "download_path": "/proposals/gov_action1ky2j077de82par6f0hny5q56rpnn5hh0csfhrpzeq3hsk7s6vetqquz3scv.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": \"CIP108:references\",\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    }\n  },\n  \"hashAlgorithm\": \"blake2b-256\",\n  \"body\": {\n    \"title\": \"Pebble + Gerolamo - HLabs 2026 Budget\",\n    \"abstract\": \"\\nHarmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem.\\n\\nHarmonic Laboratories supports and maintains a considerable portion of the TypeScript tooling for the Cardano ecosystem, which the majority of Cardano developers use, either directly, or indirectly via other libraries that depend on code written and maintained by HLabs.\\n\\nThe mission of HLabs is for true decentralization to become the baseline of application development, not only a nice-to-have feature.\\n\\n### Durati"
   },
@@ -242,7 +292,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -355,7 +405,7 @@
     "snapshot_age_seconds": 10,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

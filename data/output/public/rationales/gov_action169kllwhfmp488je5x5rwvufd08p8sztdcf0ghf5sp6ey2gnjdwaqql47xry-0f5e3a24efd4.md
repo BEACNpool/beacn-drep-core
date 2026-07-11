@@ -94,10 +94,10 @@ A residual watch item: this claim remains proposer-asserted rather than independ
 
 ## Reproducibility
 - input_hash: `0f5e3a24efd488e90465a2d416d301eb35afdd4bb69bc46d81299675b6856c07`
-- snapshot_bundle_hash: `1e84e5b1bb868dc8ea13a9b2a1814546a5564cd56c16eea485da1a20c0ba5ad0`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `bcc722ca26348fe978c4f2e6e6da3a08f40f836128c3e2de711ea5497eff44d1`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `13`
 - uncertainty_band: `LOW`

@@ -5,64 +5,63 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:92d005308968570c959cbd5f648cf6667899e59eecb696824554dc9ddcb0edde",
+    "raw_input_hash": "sha256:30a61338d66a2fb400eff4c93d288e81f181701d3802a6e41bed4e3ecba98462",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
-    "published_at": "2026-07-10T12:44:41.901950+00:00",
+    "vote": "NEEDS_MORE_INFO",
+    "published_at": "2026-07-11T11:30:05.186378+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "ABSTAIN",
+    "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
-    "confidence": 0.1,
-    "input_hash": "92d005308968570c959cbd5f648cf6667899e59eecb696824554dc9ddcb0edde",
-    "snapshot_bundle_hash": "1b72e1ff2fb36d2415b649cb1ee5dc9f4fd3a790be21cb804ae9e8a20a0ad2a1",
+    "confidence": 0.2,
+    "input_hash": "30a61338d66a2fb400eff4c93d288e81f181701d3802a6e41bed4e3ecba98462",
+    "snapshot_bundle_hash": "de2b3bbe9fc7d406f18d1264080ff5093c7f5452b4d67229e116dca4cbaa7b1d",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-92d005308968.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1991b730ac7da35e11307a2b.md",
-    "rationale_anchor_hash": "1991b730ac7da35e11307a2bcbf4e6f51de2bd4c691a0bf80f5688431ff36fa6"
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-30a61338d66a.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/fa7a50242d7a68843a7e1d88.md",
+    "rationale_anchor_hash": "fa7a50242d7a68843a7e1d8897d9fe5547971c5c3896bda516db2cd1d229648f"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and a 115,385 ada Intersect Budget Administration fee.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
-    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 Enabling Onchain Payments & Card Infrastructure and 115,385 ada for an Intersect Budget Administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
-      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
-      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
+      "Provide: Deep research dossier is required for treasury actions before directional voting.",
+      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
       "Provide independent evidence for: Wirex has not received ada from the Cardano Treasury within the last 24 months."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-92d005308968.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-30a61338d66a.md",
     "missing_evidence": [
-      "treasury_amount_lovelace is missing for a treasury withdrawal"
+      "Deep research dossier is required for treasury actions before directional voting.",
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
     ],
-    "assessment_status": "blocked",
+    "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "blocked",
+      "overall_status": "incomplete",
       "sections": [
         {
           "title": "Intake",
-          "status": "blocked",
+          "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: active",
             "Proposed epoch: 638",
             "Expires after epoch: 645",
-            "Treasury request: not specified",
+            "Treasury request: 3.96M ADA",
             "Anchor pinned locally: yes"
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -73,22 +72,22 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Bringing Real-World Payments to Cardano with Wirex through open-source payments infrastructure, onchain settlement, smart contracts, wallet/API ecosystem components, banking rails, stablecoin systems, and Visa card integration.",
-            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with project funds later transferred to a Project-Specific Smart Contract for the Wirex project.",
+            "Requested: Withdraw treasury funds for Bringing Real-World Payments to Cardano with Wirex.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor Wirex",
             "Stated amount: 3,961,538",
-            "Deliverables: WP1 \u2013 Enabling Onchain Payments & Card Infrastructure, Open-source on-chain payments infrastructure, Smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem layer, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, Milestone-based disbursement controls through Intersect treasury management smart contracts",
+            "Deliverables: Full-stack open-source payments infrastructure enabling onchain settlement through smart contracts, Connections to banking rails, stablecoin systems, and wallet interfaces, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, Smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem layer, Milestone-based disbursement controls through Intersect treasury management smart contracts",
             "Deadline/expiry: not stated in document",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and a 115,385 ada Intersect Budget Administration fee.",
-            "Claim (technical, supported_in_proposal, high materiality): The on-chain metadata lists a treasury withdrawal reward of 3,961,538,000,000 lovelace to the 2026 Treasury Reserve Smart Contract stake address.",
-            "Claim (technical, proposer_asserted, high materiality): Wirex will deliver full-stack open-source payments infrastructure connecting Cardano onchain settlement to smart contracts, banking rails, stablecoin systems, and wallet interfaces.",
-            "Claim (adoption, proposer_asserted, high materiality): A core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
-            "Claim (adoption, proposer_asserted, high materiality): Wirex has 7 million users, over 1.5 million cards issued, more than 20 billion dollars in transaction volume, and experience as a Visa Principal Member.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase."
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 Enabling Onchain Payments & Card Infrastructure and 115,385 ada for an Intersect Budget Administration fee.",
+            "Claim (technical, proposer_asserted, high materiality): Wirex will deliver open-source on-chain payments infrastructure covering smart contracts, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem components.",
+            "Claim (adoption, proposer_asserted, high materiality): The proposed solution will enable Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+            "Claim (adoption, proposer_asserted, high materiality): Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
+            "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+            "Claim (governance, independently_verifiable, high materiality): The requested amount does not breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission."
           ],
           "missing": [
-            "Independent evidence for: Wirex will deliver full-stack open-source payments infrastructure connecting Cardano onchain settlement to smart contracts, banking rails, stablecoin systems, and wallet interfaces.",
-            "Independent evidence for: A core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
-            "Independent evidence for: Wirex has 7 million users, over 1.5 million cards issued, more than 20 billion dollars in transaction volume, and experience as a Visa Principal Member.",
+            "Independent evidence for: Wirex will deliver open-source on-chain payments infrastructure covering smart contracts, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem components.",
+            "Independent evidence for: The proposed solution will enable Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+            "Independent evidence for: Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
             "Independent evidence for: Wirex has not received ada from the Cardano Treasury within the last 24 months."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
@@ -137,8 +136,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and a 115,385 ada Intersect Budget Administration fee.\" though 1 review blocker(s) remain open.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Wirex will deliver full-stack open-source payments infrastructure connecting Cardano onchain settlement to smart contracts, banking rails, stablecoin systems, and wallet interfaces.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 Enabling Onchain Payments & Card Infrastructure and 115,385 ada for an Intersect Budget Administration fee.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Wirex will deliver open-source on-chain payments infrastructure covering smart contracts, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem components.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -146,29 +145,39 @@
         },
         {
           "title": "Synthesis",
-          "status": "blocked",
+          "status": "ready",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": [
-        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-30a61338d66a.assessment.json",
+    "treasury_dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.45,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.35,
+      "composite": -0.29,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-92d005308968.assessment.json",
-    "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
       "model_vote_influence": 0,
       "weights_version": "1.1.0",
       "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
       "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
       "yes_floors": {
         "benefit": 0.55,
         "delivery_confidence": 0.55,
@@ -178,10 +187,26 @@
       "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-      "dimensions": {}
+      "dimensions": {
+        "evidence_status": "missing",
+        "benefit": 0,
+        "delivery_confidence": 0.45,
+        "cost_efficiency": 0.0,
+        "downside_risk": 0.35,
+        "composite": -0.29,
+        "affirmative_waste_evidence": [],
+        "missing": [
+          "independent ecosystem-value evidence packet",
+          "verified ecosystem benefit or strategic necessity",
+          "cost comparables, budget proportionality, or sustainability evidence"
+        ]
+      },
+      "merit_recommendation": "NEEDS_MORE_INFO",
+      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": null,
-    "merit_reason": null
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -189,6 +214,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -198,7 +224,23 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.45,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.35,
+      "composite": -0.29,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
     "available": true,
@@ -209,7 +251,7 @@
     "anchor_hash": "7026fbe6411338673aa859e31bce8ae707566eff26de9b290db70d06e59b258f",
     "file_sha256": "9a9e723afedc0ea2f5cf6d373e0097149c41a0191880d77a98977ad23aa804cb",
     "content_bytes": "13893",
-    "fetched_at_utc": "2026-07-10T12:45:13Z",
+    "fetched_at_utc": "2026-07-11T11:30:14Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -236,7 +278,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -342,14 +384,14 @@
     "binding_score": 0.0,
     "raw_score": 0.0,
     "directional_threshold": 0.12,
-    "confidence": 0.1,
+    "confidence": 0.2,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

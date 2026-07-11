@@ -5,12 +5,12 @@
   "status": "ratified",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:75ec56a33e84b642e823cf0360dd2c929aeaca92dddd1d44c2c0231e9d86ffea",
+    "raw_input_hash": "sha256:f0e543254803a3d6f0f618a789d6e5f041eeab24b8b7af988e3a3058e01f639e",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
-    "published_at": "2026-07-10T12:44:41.901950+00:00",
+    "published_at": "2026-07-11T11:30:05.186378+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -20,24 +20,24 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.5,
-    "input_hash": "75ec56a33e84b642e823cf0360dd2c929aeaca92dddd1d44c2c0231e9d86ffea",
-    "snapshot_bundle_hash": "58e55c9ed9c0e80c3b7cce3cce2b2d9d68998f685d4be55928ac03c06dfe973e",
+    "input_hash": "f0e543254803a3d6f0f618a789d6e5f041eeab24b8b7af988e3a3058e01f639e",
+    "snapshot_bundle_hash": "ecdd24dac6118111e50a4c9f49f5c485ffd9c53ca4c85221c32d01842d8915d5",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
-    "rationale_markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-75ec56a33e84.md",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
+    "rationale_markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-f0e543254803.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (ratified), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7; Provide mitigation evidence. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 50.0%.",
-    "summary_raw": "No additional inference.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (ratified), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 50.0%.",
+    "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.",
       "Provide mitigation evidence.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-75ec56a33e84.md",
+    "markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-f0e543254803.md",
     "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -131,7 +131,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-75ec56a33e84.assessment.json",
+    "assessment_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-f0e543254803.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -139,6 +139,7 @@
       "weights_version": "1.1.0",
       "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
       "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
       "yes_floors": {
         "benefit": 0.55,
         "delivery_confidence": 0.55,
@@ -148,7 +149,10 @@
       "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-      "dimensions": {}
+      "dimensions": {},
+      "merit_recommendation": null,
+      "merit_reason": null,
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
     "merit_recommendation": null,
     "merit_reason": null
@@ -159,6 +163,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -168,7 +173,10 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
     "available": true,
@@ -179,7 +187,7 @@
     "anchor_hash": "8c7c510c1c959d5c587de268350ce9275af45a05f5774c15fd424b924e18e749",
     "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
     "content_bytes": "18525",
-    "fetched_at_utc": "2026-07-10T12:45:13Z",
+    "fetched_at_utc": "2026-07-11T11:30:14Z",
     "download_path": "/proposals/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -189,7 +197,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -257,7 +265,7 @@
   ],
   "scoring": {
     "binding_score": 0.0,
-    "raw_score": 0.0,
+    "raw_score": 0.06,
     "directional_threshold": 0.12,
     "confidence": 0.5,
     "model_vote_influence": 0
@@ -266,7 +274,7 @@
     "snapshot_age_seconds": 5,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

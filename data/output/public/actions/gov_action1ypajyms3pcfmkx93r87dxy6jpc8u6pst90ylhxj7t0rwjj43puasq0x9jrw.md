@@ -39,10 +39,10 @@ Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insuffic
 
 ## Proof of vote
 - input_hash: `c9e088707e7822698ecfd5caee30c80ef032e256fca881f2fdab8da286eca9ca`
-- snapshot_bundle_hash: `c0252e05fc07a63bb658cf21ac7eb13f5166e5747e08927ea5ca502109d15f65`
+- snapshot_bundle_hash: `76c38933b0497d9a2aed39bab61299224875068a572dafb9b45b8d9b0df67032`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `0.01`
 - confidence: `0.5725`
 

@@ -26,7 +26,7 @@
     "values_hierarchy.md",
     "treasury_spending_doctrine.md"
   ],
-  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
   "confidence": 0.8608,
   "readiness_score": 0.85,
@@ -44,6 +44,8 @@
       "cost comparables, budget proportionality, or sustainability evidence"
     ]
   },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -78,10 +80,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "6674a00fa216a3388e3f4c489bb4e09d1c2e6264dbac9d7e90ad6b1a0c32966b",
-  "snapshot_bundle_hash": "5b56e67a42298f80d90909dd8cce46ddafb5a0646cce590fefd6c98eb2d11ca4",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "fb03b811036718985923cb80fc9082f5ae610917a7b6a1ef593409b3b14d77fb",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -101,10 +103,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 10,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -230,6 +232,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -252,7 +255,10 @@
         "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
-    }
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "human_message": "BEACN records NEEDS_MORE_INFO on Cardano Defi Liquidity Budget - Withdrawal 1. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano Defi Liquidity Budget - Withdrawal 1. It asks the treasury for 800.0k ADA. The strongest grounded claim is: Executive Summary For the last year, we have engaged the Cardano community to discuss deployment of treasury funds into the DeFi ecosystem to boost liquidity.\n\nReason code: VERIFIED_NCL_REQUIRED.",
   "human_message_source": "deterministic-heuristic",
@@ -282,7 +288,7 @@
         "values_hierarchy.md",
         "treasury_spending_doctrine.md"
       ],
-      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
       "available": true,

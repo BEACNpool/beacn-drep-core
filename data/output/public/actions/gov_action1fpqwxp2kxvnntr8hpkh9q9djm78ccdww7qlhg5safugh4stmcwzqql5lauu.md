@@ -38,11 +38,11 @@ Vote: NO. For this InfoAction (expired), downside risk and/or weak safeguards ou
 - Map each major claim to primary receipts and stable source links.
 
 ## Proof of vote
-- input_hash: `99847e78a09941961e20e53d8550bbd110800320c95c9c089e87e01521ac31d4`
-- snapshot_bundle_hash: `3d592696c2feff91441dca8a9d4890f2c08a1f4a27076ef117dc232e978b9167`
+- input_hash: `8b6dccf205222b4a27152e439c4059b0487d3b766351649065747c1d23da9372`
+- snapshot_bundle_hash: `76b6f53af2f552f50c92b08876d55fb990da724c623d992691058be792293e9c`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.2833`
 - confidence: `0.5908`
 

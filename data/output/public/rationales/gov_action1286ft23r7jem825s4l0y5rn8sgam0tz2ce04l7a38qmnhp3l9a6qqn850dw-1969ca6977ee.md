@@ -84,12 +84,12 @@ Reason code: CONTEXT_THIN_ANCHOR_UNPINNED.
 
 ## Reproducibility
 - input_hash: `1969ca6977ee1d2f538cc66cf56a2c189c18adf125c6fbdb61f09e2113afed43`
-- snapshot_bundle_hash: `7e449edd71a9018fbab0db6be55d900d21abb92a40ee81551cc4fe1e1b49608b`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `d62d5342a9bd9cb3661d32a152af46713ddcc462d8e2855fd972a7122e70a0bc`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `26`
+- snapshot_age_seconds: `25`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4375, "NO": 0.2812, "YES": 0.2812}`

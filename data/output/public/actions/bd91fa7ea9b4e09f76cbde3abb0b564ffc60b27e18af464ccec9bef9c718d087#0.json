@@ -5,41 +5,49 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:d4f4369e2e7b0fe31c128393821b41abbd39e3b1cc8aed7410c6553b3faaf98b",
+    "raw_input_hash": "sha256:5c6de37af2f039a40196a34bbe7a08662ce0820db6c2e50f2bcd2a85af1a8697",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
-    "published_at": "2026-07-10T12:44:41.901950+00:00",
+    "vote": "NEEDS_MORE_INFO",
+    "published_at": "2026-07-11T11:30:05.186378+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "ABSTAIN",
+    "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
-    "confidence": 0.1,
-    "input_hash": "d4f4369e2e7b0fe31c128393821b41abbd39e3b1cc8aed7410c6553b3faaf98b",
-    "snapshot_bundle_hash": "1cc9164f519efd1dc9c40a1d916b83791d15e9fbde061bec6664435433e9963e",
+    "confidence": 0.2,
+    "input_hash": "5c6de37af2f039a40196a34bbe7a08662ce0820db6c2e50f2bcd2a85af1a8697",
+    "snapshot_bundle_hash": "7639c25895c2ed58fae32be4c6371fba7e0351126f528c08974cfadb42657953",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
-    "rationale_markdown_path": "/data/output/public/rationales/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0-d4f4369e2e7b.md",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
+    "rationale_markdown_path": "/data/output/public/rationales/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0-5c6de37af2f0.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in...\" though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
-    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in...\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
-      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
-      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
-      "Provide complete proposal summary."
+      "Provide: Deep research dossier is required for treasury actions before directional voting.",
+      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Provide: Missing dossier section: complete proposal summary"
     ],
-    "markdown_path": "/data/output/public/rationales/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0-d4f4369e2e7b.md",
+    "markdown_path": "/data/output/public/rationales/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0-5c6de37af2f0.md",
     "missing_evidence": [
-      "treasury_amount_lovelace is missing for a treasury withdrawal"
+      "Deep research dossier is required for treasury actions before directional voting.",
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: complete proposal summary",
+      "Missing dossier section: budget analysis",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: risk analysis",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis",
+      "Missing dossier section: community impact analysis"
     ],
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
@@ -51,18 +59,16 @@
       "sections": [
         {
           "title": "Intake",
-          "status": "blocked",
+          "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: expired",
             "Proposed epoch: 623",
             "Expires after epoch: 630",
-            "Treasury request: not specified",
+            "Treasury request: 14.08M ADA",
             "Anchor pinned locally: yes"
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -75,7 +81,7 @@
             "Deep research dossier: required",
             "Requested: Cardano Summit 2026 and TOKEN2049 Singapore",
             "Recipient: not stated in document",
-            "Stated amount: not stated in document",
+            "Stated amount: 14.08M ADA",
             "Deliverables: Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..., This strategy is designed to maximize budget efficiency by co-locating two key events to maximize the reach of Cardano and its ecosystem: 1., The Cardano Summit 2026: A two-day dedicated event hosted by the Cardano Foundation, providing a showcase for Cardano's community innovation and technology, enterprise applications, institutional use cases, regulatory roundtables, and governance maturity., Interest in the Cardano Summit, from both media and enterprise, has steadily increased since its inception, reaching its highest level in 2025/2026.",
             "Deadline/expiry: not stated in document",
             "Claim (economic, supported_in_proposal, high materiality): Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in...",
@@ -101,7 +107,7 @@
           "title": "Treasury analysis",
           "status": "incomplete",
           "findings": [
-            "Requested ADA: not specified",
+            "Requested ADA: 14.08M ADA",
             "Budget granularity: unknown",
             "Milestone payment gates: unknown",
             "Clawback/refund path: unknown",
@@ -143,7 +149,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in...\" though 8 review blocker(s) remain open.",
+            "Strongest YES: the proposal substantiates \"Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in...\" though 7 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha...\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -158,7 +164,6 @@
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
           "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal",
             "missing complete proposal summary",
             "missing budget analysis",
             "missing feasibility assessment",
@@ -171,7 +176,6 @@
         }
       ],
       "blocking_questions": [
-        "treasury_amount_lovelace is missing for a treasury withdrawal",
         "missing complete proposal summary",
         "missing budget analysis",
         "missing feasibility assessment",
@@ -181,14 +185,29 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0-d4f4369e2e7b.assessment.json",
-    "treasury_dimensions": null,
+    "assessment_path": "/data/output/public/rationales/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0-5c6de37af2f0.assessment.json",
+    "treasury_dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.0,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5,
+      "composite": -0.425,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
       "model_vote_influence": 0,
       "weights_version": "1.1.0",
       "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
       "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
       "yes_floors": {
         "benefit": 0.55,
         "delivery_confidence": 0.55,
@@ -198,10 +217,27 @@
       "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-      "dimensions": {}
+      "dimensions": {
+        "evidence_status": "missing",
+        "benefit": 0,
+        "delivery_confidence": 0.0,
+        "cost_efficiency": 0.0,
+        "downside_risk": 0.5,
+        "composite": -0.425,
+        "affirmative_waste_evidence": [],
+        "missing": [
+          "independent ecosystem-value evidence packet",
+          "verified ecosystem benefit or strategic necessity",
+          "cost comparables, budget proportionality, or sustainability evidence",
+          "delivery controls, milestones, assurance, or remedy path"
+        ]
+      },
+      "merit_recommendation": "NEEDS_MORE_INFO",
+      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": null,
-    "merit_reason": null
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -209,6 +245,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -218,7 +255,24 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.0,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5,
+      "composite": -0.425,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
     "available": true,
@@ -229,7 +283,7 @@
     "anchor_hash": "c183fa5432c8f149aa9b4fe5b7e512a7e94474f804a4e1d4b3d2e561d32b6fb9",
     "file_sha256": "125b557426a9604968bd3681252be0ca86e27c17366680f19096e4cb6ce11d77",
     "content_bytes": "1300353",
-    "fetched_at_utc": "2026-07-10T12:45:13Z",
+    "fetched_at_utc": "2026-07-11T11:30:14Z",
     "download_path": "/proposals/bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n      \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abs"
   },
@@ -239,7 +293,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -345,14 +399,14 @@
     "binding_score": 0.0,
     "raw_score": 0.0,
     "directional_threshold": 0.12,
-    "confidence": 0.1,
+    "confidence": 0.2,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 10,
+    "snapshot_age_seconds": 9,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

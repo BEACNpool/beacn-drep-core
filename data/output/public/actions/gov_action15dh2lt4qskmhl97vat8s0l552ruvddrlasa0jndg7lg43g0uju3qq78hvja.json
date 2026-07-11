@@ -21,10 +21,10 @@
     "score": 0.11,
     "confidence": 0.6275,
     "input_hash": "3334a4b7c563edebf85cffae78b468f9099bb82786d8cb220711f11b42586389",
-    "snapshot_bundle_hash": "775777f8ae546ccc4e54044ef6e4e9a0a3647f4c43397f9457c16624e80f86a9",
+    "snapshot_bundle_hash": "557cc3fd42f8c8996651425de5f068347c834ee948f247c8eaf509312df5ce81",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action15dh2lt4qskmhl97vat8s0l552ruvddrlasa0jndg7lg43g0uju3qq78hvja-3334a4b7c563.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
@@ -137,6 +137,7 @@
       "weights_version": "1.1.0",
       "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
       "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
       "yes_floors": {
         "benefit": 0.55,
         "delivery_confidence": 0.55,
@@ -146,7 +147,10 @@
       "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-      "dimensions": {}
+      "dimensions": {},
+      "merit_recommendation": null,
+      "merit_reason": null,
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
     "merit_recommendation": null,
     "merit_reason": null
@@ -157,6 +161,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -166,7 +171,10 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
     "available": true,
@@ -177,7 +185,7 @@
     "anchor_hash": "235613f1d231e9a877eab4599f2d6a693d8cb279e2bc9c94c5f42f53750a34f9",
     "file_sha256": "b1d0ce10a0a2863d16b4d5696590b494f941cf4de057d943f453718d076941aa",
     "content_bytes": "7020",
-    "fetched_at_utc": "2026-07-10T12:45:13Z",
+    "fetched_at_utc": "2026-07-11T11:30:14Z",
     "download_path": "/proposals/gov_action15dh2lt4qskmhl97vat8s0l552ruvddrlasa0jndg7lg43g0uju3qq78hvja.json",
     "preview": "{\n    \"@context\":\n    {\n        \"@context\":\n        {\n            \"@language\": \"en\",\n            \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n            \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n            \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n            \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n            \"body\":\n            {\n                \"@id\": \"CIP108:body\",\n                \"@context\":\n                {\n                    \"references\":\n                    {\n                        \"@id\": \"CIP108:references\",\n                        \"@container\": \"@set\",\n                        \"@context\":\n                        {\n                            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n                            \"Other\": \"CIP100:OtherReference\",\n                            \"label\": \"CIP100:reference-label\",\n                            \"uri\": \"CIP100:reference-uri\",\n                            \"referenceHash\":\n                            {\n                                \"@id\": \"CIP108:referenceHash\","
   },
@@ -187,7 +195,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -261,10 +269,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 14,
+    "snapshot_age_seconds": 13,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

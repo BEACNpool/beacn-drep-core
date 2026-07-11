@@ -142,12 +142,12 @@ A material claim remains proposer-asserted or thinly supported: Project Swaminat
 
 ## Reproducibility
 - input_hash: `2eb2501c4b164ccad24bd445095717f5b79ab108ec3f1bc426b643b87354dca4`
-- snapshot_bundle_hash: `8f55538f1dc76e48ce221eee558598d8d63b6b3a4d44bba4a2e1b6b0dd8d5a26`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `114c6d47bd162bc7c450f2400a64724d7dc8b6993bdbd53b0c43256c4a6d39e2`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `6`
+- snapshot_age_seconds: `5`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

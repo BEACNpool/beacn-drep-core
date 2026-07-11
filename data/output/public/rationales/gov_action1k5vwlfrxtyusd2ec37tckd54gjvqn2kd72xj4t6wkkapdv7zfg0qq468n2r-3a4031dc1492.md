@@ -100,10 +100,10 @@ A material claim remains proposer-asserted or thinly supported: This transition 
 
 ## Reproducibility
 - input_hash: `3a4031dc1492e7e21cf5f72816d82ceaf5826eff4a00c3cf81b31ae12827f4a2`
-- snapshot_bundle_hash: `3cbbc96ff80b7dde12de75ca173adff847deff310c0809f277bc1d32a39b94c3`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `f64d07d25cc810f47d9bb15766a79113cc564f8575f5f52d61d80b3b93842233`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `10`
 - uncertainty_band: `LOW`

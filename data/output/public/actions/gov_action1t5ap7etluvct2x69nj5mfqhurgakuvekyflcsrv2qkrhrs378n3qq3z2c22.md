@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The document proposes a dedicated investment budget that includes strategic direction and a roadmap." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The document claims treasury governance should be explicitly addressed and supported by the governance system and the constitution; Provide mitigation evidence. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 53.2%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "Treasury governance should be explicitly addressed and supported by the governance system and constitution." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 53.2%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,28 +23,28 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The document proposes a dedicated investment budget that includes strategic direction and a roadmap." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Treasury governance should be explicitly addressed and supported by the governance system and constitution." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The document states that Cardano treasury governance is currently in a poor state because of a funding impasse and limited direct support in the existing governance system.
-- Claims and evidence missing: Independent evidence for: The document claims treasury withdrawal actions from important domains have created perceived competition for scarce resources, hostility, toxicity, and ecosystem-harming strife.
+- Claims and evidence missing: Independent evidence for: Cardano treasury governance is currently in a poor state with a funding impasse and insufficient direct support from the existing governance system.
+- Claims and evidence missing: Independent evidence for: Current treasury withdrawal voting has created perceived competition for scarce resources, hostility, toxicity, and gridlock among governance coalitions.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The document claims treasury governance should be explicitly addressed and supported by the governance system and the constitution.
 - Provide mitigation evidence.
 - Provide independent assurance.
+- Provide rollback/remedy path.
 
 ## Proof of vote
 - input_hash: `442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162`
-- snapshot_bundle_hash: `f4bbe0e0c0e3cf826c55f52144595ac7c062b71cd15988e61f5796a8757ef806`
+- snapshot_bundle_hash: `4834880d51e915b2ac1a33ad21de9bfcbf9d8022422254192117b744909ad892`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.05`
 - confidence: `0.5325`
 

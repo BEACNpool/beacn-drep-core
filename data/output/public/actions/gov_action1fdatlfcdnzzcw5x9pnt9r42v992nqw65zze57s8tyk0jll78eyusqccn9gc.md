@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism for projects advancing Vision 2030 KPIs." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 KPIs." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.34; confidence 77.6%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,14 +26,14 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 20000000
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism for projects advancing Vision 2030 KPIs." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 KPIs." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposer states that KPI dashboard Version 1 enabled public self-reported KPI tracking and Version 2 moved toward KPI tracking tied to live on-chain Cardano data.
-- Claims and evidence missing: Independent evidence for: The Cardano Builder DAO has already distributed 11.1M ADA across 34 proposals in two funding rounds.
+- Claims and evidence missing: Independent evidence for: The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 2 moving toward KPI tracking tied directly to live on-chain Cardano data.
+- Claims and evidence missing: Independent evidence for: The CB DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: sustainability path
@@ -47,10 +47,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `b22ea5de12b32ab50dc3a4850dfa63d02d6a0d278497e4d9507b3ab5bee09a5c`
-- snapshot_bundle_hash: `76f752585187de6b11d219bc0ea317e1e9199981a8e7d889a518d8f6fd73bf6d`
+- snapshot_bundle_hash: `85ce8a6bbfd1f2954ab83a8e76b5fd1fa714c16b38d31cd146a32efc7e9820d8`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.3433`
 - confidence: `0.7758`
 

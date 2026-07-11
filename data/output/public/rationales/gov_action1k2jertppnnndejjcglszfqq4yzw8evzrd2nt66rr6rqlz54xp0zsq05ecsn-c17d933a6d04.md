@@ -90,12 +90,12 @@ Reason code: DREP_DISTRIBUTION_MISSING.
 
 ## Reproducibility
 - input_hash: `c17d933a6d04ab1d4288cea0e183a65c50f703989d478ac6c5efd5d435cc7232`
-- snapshot_bundle_hash: `a5222817e03a9007fdb6d0943e90164e274e8c23cda39a64bca5361a7e4eb39b`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `cdf6df030b586ffb0e6ff0f56742e50de809ac2e91f9b2e2fed2ccb5ff459635`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `26`
+- snapshot_age_seconds: `25`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.495, "NO": 0.2525, "YES": 0.2525}`

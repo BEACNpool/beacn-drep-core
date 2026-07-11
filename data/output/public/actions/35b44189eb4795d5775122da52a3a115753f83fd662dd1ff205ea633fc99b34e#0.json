@@ -5,64 +5,63 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:52bfba48d9cfdcf53df74fbde7a002e9277f32ee4af7727d7524a806c9d4f3e6",
+    "raw_input_hash": "sha256:e5adb33d8750d996405d4b0a66a24348f2e4500a02fa7d3852c13b9935893fc8",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
-    "published_at": "2026-07-10T12:44:41.901950+00:00",
+    "vote": "NEEDS_MORE_INFO",
+    "published_at": "2026-07-11T11:30:05.186378+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "ABSTAIN",
-    "score": 0.0,
-    "confidence": 0.1,
-    "input_hash": "52bfba48d9cfdcf53df74fbde7a002e9277f32ee4af7727d7524a806c9d4f3e6",
-    "snapshot_bundle_hash": "a8b3325cf0526007d08ccfd9bd5f1f36f184e80d34dc26a9074171900da520df",
+    "vote": "NEEDS_MORE_INFO",
+    "score": -0.11,
+    "confidence": 0.7775,
+    "input_hash": "e5adb33d8750d996405d4b0a66a24348f2e4500a02fa7d3852c13b9935893fc8",
+    "snapshot_bundle_hash": "e24cecc185bc7002b3c0a6f66bd5f72e9df6c40906aaa4aa9da00adecd556cb3",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
-    "rationale_markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-52bfba48d9cf.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/f56706d1431b250c466f9e16.md",
-    "rationale_anchor_hash": "f56706d1431b250c466f9e167e8adb5a73dae4caa10baac5ba4717a293bd73c0"
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
+    "rationale_markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-e5adb33d8750.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/79aa6125ce4a3408a76d733c.md",
+    "rationale_anchor_hash": "79aa6125ce4a3408a76d733c407c6d989cce6b96ca3255822998cea622a153cd"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"The withdrawal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, inclusive of a 3% Intersect administration fee over 8 months.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
-    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward.\" and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.11; confidence 77.8%.",
+    "summary_raw": "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal is aligned with public-benefit ecosystem growth and includes milestone gating, audit commitments, budget detail, and a repayment structure, but several of the most material adoption and execution claims remain proposer-asserted within the extracted record, including Phase 1 live status, Sellout user volume, Yellowstone deployment economics, and projected usage. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment for plausible growth upside.",
     "top_fixes": [
-      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
-      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
-      "Provide independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually."
+      "Provide: independent ecosystem-value evidence packet",
+      "Provide: verified ecosystem benefit or strategic necessity",
+      "Provide independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1."
     ],
-    "markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-52bfba48d9cf.md",
+    "markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-e5adb33d8750.md",
     "missing_evidence": [
-      "treasury_amount_lovelace is missing for a treasury withdrawal"
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity"
     ],
-    "assessment_status": "blocked",
+    "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "blocked",
+      "overall_status": "incomplete",
       "sections": [
         {
           "title": "Intake",
-          "status": "blocked",
+          "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: active",
             "Proposed epoch: 639",
             "Expires after epoch: 646",
-            "Treasury request: not specified",
+            "Treasury request: 4.97M ADA",
             "Anchor pinned locally: yes"
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -73,23 +72,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund Phase 2 of a Cardano-native ticketing platform: secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, security audit, and launch campaign.",
-            "Recipient: Intersect as budget administrator through the Sundae Labs TRSC/PSSC framework, for Anvil Development Agency and Sellout.io project delivery.",
+            "Requested: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, audit, and launch campaign.",
+            "Recipient: Intersect as budget administrator by prior agreement, holding and disbursing funds through the Sundae Labs TRSC/PSSC framework; project delivered by Anvil Development Agency and Sellout.",
             "Stated amount: 4,969,231",
-            "Deliverables: Secondary ticket resale marketplace settling transactions on-chain, Smart-contract royalty enforcement, Per-event anti-scalping controls, Custodial wallet onboarding for Sellout users, Organizer dashboard/tools, Independent third-party security audit with remediation/reporting, Public launch campaign and trade-show activations, Public metrics dashboard and quarterly reporting",
-            "Deadline/expiry: 8 months over five milestones",
-            "Claim (technical, proposer_asserted, high materiality): Phase 1 is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000.",
-            "Claim (economic, supported_in_proposal, high materiality): The withdrawal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, inclusive of a 3% Intersect administration fee over 8 months.",
-            "Claim (technical, supported_in_proposal, high materiality): Phase 2 will deliver a secondary marketplace, smart-contract royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent audit, and a professional launch campaign.",
+            "Deliverables: Secondary marketplace for listing, pricing, and reselling tickets with on-chain settlement, Smart-contract-level royalty enforcement for artists and venues, Configurable anti-scalping controls including price ceilings, transfer limits, identity-binding, and time-based restrictions, Custodial wallet onboarding inside Sellout's existing user flow with self-custody export described for testnet milestone, Organizer dashboard and tools for resale parameters, lifecycle data, royalty distributions, and ticket verification, Independent third-party smart-contract audit with report and remediation published, Public launch campaign including Big Storm marketing and three trade-show activations, Public metrics dashboard, quarterly reports, and final governance report",
+            "Deadline/expiry: 8 months across five milestones",
+            "Claim (technical, proposer_asserted, high materiality): Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+            "Claim (economic, proposer_asserted, medium materiality): Sellout has invested over $130,000 of its own capital into Phase 1.",
             "Claim (adoption, proposer_asserted, high materiality): Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
-            "Claim (adoption, proposer_asserted, high materiality): The Yellowstone Club 2026 concert series is contracted as an anchor deployment and is projected to move more than $6 million through Cardano in Year 1.",
-            "Claim (economic, supported_in_proposal, high materiality): The team commits to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism using 25% of fees until reimbursement, then 5% permanently."
+            "Claim (adoption, proposer_asserted, high materiality): The proposal projects 12-month launch targets of 200+ on-chain events, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets.",
+            "Claim (adoption, proposer_asserted, high materiality): The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment projected to move $6M+ through Cardano in year one, with 2025 historical revenue of $5.88M.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward."
           ],
           "missing": [
-            "Independent evidence for: Phase 1 is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000.",
+            "Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+            "Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
             "Independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and currently supports 350+ events annually.",
-            "Independent evidence for: The Yellowstone Club 2026 concert series is contracted as an anchor deployment and is projected to move more than $6 million through Cardano in Year 1.",
-            "Independent evidence for: Anvil claims a record of 250+ Cardano projects delivered, 456,000+ assets minted, 50,000,000+ ADA staked through its infrastructure, and 267,000+ on-chain transactions."
+            "Independent evidence for: The proposal projects 12-month launch targets of 200+ on-chain events, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -133,38 +132,47 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The withdrawal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, inclusive of a 3% Intersect administration fee over 8 months.\" though 1 review blocker(s) remain open.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000.\" \u2014 so cost or precedent may outweigh the benefit.",
-            "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+            "Strongest YES: the proposal substantiates \"The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
           "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
         },
         {
           "title": "Synthesis",
-          "status": "blocked",
+          "status": "ready",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": [
-        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-e5adb33d8750.assessment.json",
+    "treasury_dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.7,
+      "downside_risk": 0.25,
+      "composite": -0.06,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-52bfba48d9cf.assessment.json",
-    "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
       "model_vote_influence": 0,
       "weights_version": "1.1.0",
       "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
       "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
       "yes_floors": {
         "benefit": 0.55,
         "delivery_confidence": 0.55,
@@ -174,10 +182,25 @@
       "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-      "dimensions": {}
+      "dimensions": {
+        "evidence_status": "missing",
+        "benefit": 0,
+        "delivery_confidence": 0.75,
+        "cost_efficiency": 0.7,
+        "downside_risk": 0.25,
+        "composite": -0.06,
+        "affirmative_waste_evidence": [],
+        "missing": [
+          "independent ecosystem-value evidence packet",
+          "verified ecosystem benefit or strategic necessity"
+        ]
+      },
+      "merit_recommendation": "NEEDS_MORE_INFO",
+      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": null,
-    "merit_reason": null
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -185,6 +208,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -194,7 +218,22 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {}
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.7,
+      "downside_risk": 0.25,
+      "composite": -0.06,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
     "available": true,
@@ -205,7 +244,7 @@
     "anchor_hash": "1a25307b01b45cc3a13a33c21a9048a0c7672178f776d36154f78ac7b289fb1c",
     "file_sha256": "43934d3d5d83db7e22ba1f5467213f7664b817607355a2ddd27246b1190b0fe5",
     "content_bytes": "27771",
-    "fetched_at_utc": "2026-07-10T12:45:13Z",
+    "fetched_at_utc": "2026-07-11T11:30:14Z",
     "download_path": "/proposals/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -232,7 +271,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "98204209c1160292d57e948cc03515956c20be3e",
-    "core_commit": "5058f0ec84f4a9dbe9f052ec37220292019008fa",
+    "core_commit": "55c0f3f68cffa73033d65fea06087205839b256e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -335,17 +374,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.0,
-    "raw_score": 0.0,
-    "directional_threshold": 0.12,
-    "confidence": 0.1,
+    "binding_score": -0.11,
+    "raw_score": -0.11,
+    "directional_threshold": 0.06,
+    "confidence": 0.7775,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -118,12 +118,12 @@ Reason code: VERIFIED_NCL_REQUIRED.
 
 ## Reproducibility
 - input_hash: `6674a00fa216a3388e3f4c489bb4e09d1c2e6264dbac9d7e90ad6b1a0c32966b`
-- snapshot_bundle_hash: `5b56e67a42298f80d90909dd8cce46ddafb5a0646cce590fefd6c98eb2d11ca4`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `fb03b811036718985923cb80fc9082f5ae610917a7b6a1ef593409b3b14d77fb`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `11`
+- snapshot_age_seconds: `10`
 - uncertainty_band: `HIGH`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.4861, "NO": 0.4684, "YES": 0.0454}`

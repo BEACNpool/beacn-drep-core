@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada for Cardano Treasury withdrawals during Epochs 613-713." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 48.2%.
+Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal sets a Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for the Cardano Treasury." and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: DRep ratification support is below threshold; this is not treated as active opposition. Confidence context: score -0.05; confidence 48.2%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,13 +23,13 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada for Cardano Treasury withdrawals during Epochs 613-713." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for the Cardano Treasury." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposer states that an existing 350,000,000 ada Net Change Limit for Epochs 613-713 has served as a useful fiscal guardrail but is becoming constrained.
-- Claims and evidence missing: Independent evidence for: The proposer states that the new limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed guardrail.
+- Claims and evidence missing: Independent evidence for: The proposed 500,000,000 ada limit supersedes any prior Net Change Limit for Epochs 613-713, including the previously agreed 350,000,000 ada limit.
+- Claims and evidence missing: Independent evidence for: The proposer asserts that the existing 350,000,000 ada limit is becoming practically constrained and that a higher limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
@@ -42,10 +42,10 @@ Vote: ABSTAIN. For this InfoAction (active), evidence quality was insufficient f
 
 ## Proof of vote
 - input_hash: `021d41161d9716de87a3e00afe2c7ba2c14a859015d538aa938199ec558afe2d`
-- snapshot_bundle_hash: `6066fea471df80968ae91834940b45734062c8046c78d3f3b0f50d6c202c5c27`
+- snapshot_bundle_hash: `bd2149be986f2bae65b5c744e43ddb075544a8053bb0d5f6a93b136373a65c5a`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.05`
 - confidence: `0.4825`
 

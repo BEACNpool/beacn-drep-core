@@ -137,10 +137,10 @@ A material claim remains proposer-asserted or thinly supported: Eternl plans to 
 
 ## Reproducibility
 - input_hash: `d47c4124c810ab91ec8e123693e617a0b7d5cc2c161f15fd3a5dbb0858bdb771`
-- snapshot_bundle_hash: `ec7775550dd59b635d5305fb012bed8a04f0a7a7dd2b2edb5cb4b0c16c359881`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `abeee13936324409733f034b51961bc64490f8efcb7feb67fce10bc6b95fe9fd`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `6`
 - uncertainty_band: `LOW`

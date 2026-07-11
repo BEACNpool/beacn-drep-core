@@ -103,10 +103,10 @@ A material claim remains proposer-asserted or thinly supported: Intersect's Para
 
 ## Reproducibility
 - input_hash: `b72cb0b06083394ca79fd9d8c23a0c84d43197ee7f18ca61bd81f52317e5b4c6`
-- snapshot_bundle_hash: `d50264c7ea716218501442d0fc6a4f2428eee3a71d600f0ba16ff73c4438137a`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `f60954cdcf8552d3cefe43777c91758bed493e09391ab215d511d48338b5bf1e`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `5`
 - uncertainty_band: `LOW`

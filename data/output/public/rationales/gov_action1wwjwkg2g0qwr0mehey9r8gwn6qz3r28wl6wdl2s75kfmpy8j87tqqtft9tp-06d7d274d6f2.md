@@ -100,10 +100,10 @@ A material claim remains proposer-asserted or thinly supported: Total treasury i
 
 ## Reproducibility
 - input_hash: `06d7d274d6f21fa076c28b927b6af41754acf32de9b53817b3ac2de16d772ded`
-- snapshot_bundle_hash: `bfb41d616413b9fa32d31bbca9f1271ae9ebbfbd2bf26cbdddf8f1d2decc5e2f`
-- soul_commit: `204e26c8230587b4b4df20eeb0a8485d478b54a9`
+- snapshot_bundle_hash: `e71ed6324129d9beef48efc29470aea5b4e8ded9d88e90ad39dfbf4a77fd4761`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `e3acb15e16a35828f6fc5c72eadf18669f12e080`
+- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
 - snapshot_age_seconds: `11`
 - uncertainty_band: `LOW`

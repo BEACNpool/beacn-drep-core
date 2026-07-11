@@ -6,69 +6,69 @@
   "model": "claude-opus-4-8",
   "request": {
     "amount_ada": "9000000",
-    "deadline": "12 months after deployment",
+    "deadline": "12 months after deployment; month-6 yield distribution; monthly reporting; wind-down reconciliation within 30 days if triggered",
     "deliverables": [
-      "Deploy treasury-owned capital as USDM liquidity for Strike Finance V2",
+      "Deploy treasury-owned capital as USDM-denominated liquidity for Strike Finance V2",
       "Return realized yield from the first six months to the Cardano Treasury at month 6",
-      "Return 100% of treasury-owned deployed assets, including remaining principal and realized yield, at month 12 subject to realized losses",
-      "Provide monthly public transparency reports covering deployment status, liquidity utilization, volume, open interest, profit and loss, yield, drawdown, stablecoin exposure, market quality metrics, distributions, and material risks",
-      "Publish independent third-party assurance reports for deployment confirmation, month-6 yield distribution, and month-12 return of funds"
+      "Return 100% of treasury-owned deployed assets, including remaining principal and realized yield, to the Cardano Treasury at month 12, minus any realized losses in wind-down scenarios",
+      "Provide monthly public transparency reports covering deployment status, utilization, volume, open interest, P&L, yield, drawdown, stablecoin exposure, market quality, distributions, and material risks",
+      "Provide third-party assurance reports at deployment confirmation, month-6 distribution, and month-12 return"
     ],
-    "recipient": "independent multisig council administering Strike Finance liquidity deployment",
-    "what": "12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity"
+    "recipient": "independent council composed of Rami from Snek, Phil from Surf, and James from Monetra/Moneta as administrator and multisig overseer; exact treasury receiving account not stated in document",
+    "what": "12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM stablecoin liquidity and returned after the deployment period."
   },
   "claims": [
     {
       "category": "economic",
-      "claim": "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment rather than grant funding.",
+      "claim": "The proposal requests 9,000,000 ADA for a 12-month liquidity deployment into Strike Finance V2 rather than grant funding.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "economic",
-      "claim": "The deployed ADA will be sold for USDM, modeled at ADA = 0.15 USD to create approximately 1,350,000 USDM of stablecoin liquidity.",
+      "claim": "The deployed ADA will be sold for USDM, modeled at ADA = 0.15 USD to produce approximately 1,350,000 USDM of stablecoin liquidity.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "economic",
-      "claim": "The proposal models a 10% USD-denominated APR producing approximately 135,000 USD, or 900,000 ADA-equivalent, in annual yield, while stating returns are not guaranteed.",
+      "claim": "Under modeled assumptions of a 10% USD-denominated annual percentage rate, the deployment is expected to generate approximately 135,000 USD or 900,000 ADA-equivalent in annual yield, but returns are not guaranteed.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "adoption",
-      "claim": "Strike claims it has processed over 1.13 billion USD in cumulative volume, facilitated about 968,000 to 1,001,000 trades, served over 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity provider profit.",
+      "claim": "Strike claims it has processed more than 1.13 billion USD in cumulative volume, facilitated roughly 968,000 to 1,001,000 trades, served more than 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity-provider profit.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "adoption",
-      "claim": "The proposal states Strike V2 produced 87,288,044 USD in total volume from 2026-03-20 through 2026-06-15, including 75,322,500 USD in 30-day volume and 29,220,000 USD in 7-day volume.",
-      "materiality": "medium",
-      "support": "proposer_asserted"
-    },
-    {
-      "category": "economic",
-      "claim": "The proposal asserts the Strike Liquidity Provider vault has 985,271.59 USD TVL, 43.52% APR, +8.85% all-time return, 1.15% maximum drawdown, and a 4.97 Sharpe ratio over two months of history.",
+      "claim": "The document claims Strike represented over 50% of Cardano trading activity during the past six months.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
     {
       "category": "governance",
-      "claim": "Operational custody is proposed to be handled by an independent multisig council composed of Rami from Snek, Phil from Surf, and James from Monetra or Moneta, with Strike Finance lacking unilateral control of treasury assets.",
+      "claim": "The proposal states that operational custody will be handled by an independent multisig council and that Strike Finance will not have unilateral custody or control of treasury assets.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "technical",
-      "claim": "The proposal identifies major risks including ADA appreciation underperformance, USDM depeg or redemption risk, smart contract risk, yield underperformance, liquidity risk, and multisig operational risk.",
+      "claim": "The document identifies major risks including ADA price appreciation risk, USDM depeg or redemption risk, smart contract risk, yield underperformance, custody risk, and operational multisig risk.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Governance review is triggered if drawdown exceeds 8%, reporting is missed for two consecutive monthly cycles, or unresolved custody, accounting, stablecoin, redemption, or smart contract concerns arise, with mandatory review at 10% drawdown and separate wind-down review above 20% drawdown.",
       "materiality": "high",
       "support": "supported_in_proposal"
     },
     {
       "category": "technical",
-      "claim": "The proposal says Christian Schmitz is conducting an official audit expected by July 1, 2026, and that the report will be published upon completion.",
+      "claim": "Strike V2 is described as live on mainnet with public performance history, unofficial reviews, and an official audit by Christian Schmitz expected to be finalized by July 1, 2026.",
       "materiality": "high",
       "support": "proposer_asserted"
     },
@@ -79,6 +79,6 @@
       "support": "supported_in_proposal"
     }
   ],
-  "summary": "The document asks for 9,000,000 ADA to be converted into USDM and deployed for 12 months as Strike Finance V2 liquidity, administered by an independent multisig council with monthly reporting, third-party assurance, midpoint yield return, and final return of treasury-owned assets. The central case rests on Strike's asserted traction, modeled yield, liquidity-growth thesis, and proposed custody and risk controls.",
-  "output_sha256": "8b0419b639951c5d2487390ac1b41563ed2e8ac12f7aa65b8867846a9a9b00a2"
+  "summary": "The document asks for a 9,000,000 ADA, 12-month treasury-owned liquidity deployment into Strike Finance V2, administered by an independent multisig council, with modeled yield, reporting, risk triggers, and return of funds, while relying heavily on proposer-stated adoption and performance metrics.",
+  "output_sha256": "150b4efbe4bcc91ac00aeed2988c97dc2bdc4ec2e0e42cfabf811b717317e8c5"
 }

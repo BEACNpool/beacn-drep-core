@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this ParameterChange (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal changes only the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 55.0%.
+Vote: ABSTAIN. For this ParameterChange (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5." and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize setting of 7; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 55.0%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -23,27 +23,28 @@ Vote: ABSTAIN. For this ParameterChange (active), evidence quality was insuffici
 - Intake: Action type: ParameterChange
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: low
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal changes only the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
-- Claims and evidence missing: Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.
+- Claims and evidence missing: Independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize setting of 7.
+- Claims and evidence missing: Independent evidence for: The proposal states that it does not directly affect the current number of Committee members and does not imply that reducing Constitutional Committee size is desired.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.
+- Provide independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize setting of 7.
 - Provide mitigation evidence.
 - Provide independent assurance.
 
 ## Proof of vote
 - input_hash: `cf666b752c9ef29377293b8126b29dfb49f0f151f9c3357c67c535acc16de3bd`
-- snapshot_bundle_hash: `098d3486aedf503eec5ad1205943519c3522bc5cfdd2792272f68c20d718933d`
+- snapshot_bundle_hash: `1ff8a935698ae7578f9670f98ba9d42d9a0afd84b5a31792c6deaeae9aafeb42`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `0.0`
 - confidence: `0.55`
 

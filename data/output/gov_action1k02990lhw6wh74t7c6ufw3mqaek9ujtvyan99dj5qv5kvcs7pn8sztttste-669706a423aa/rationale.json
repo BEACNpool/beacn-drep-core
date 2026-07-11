@@ -9,15 +9,15 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.2133,
   "raw_score": -0.2133,
-  "llm_score_adjustment": 0.0,
+  "llm_score_adjustment": 0.02,
   "llm_lean": {
     "source": "precomputed",
     "model": "claude-opus-4-8",
-    "direction": "NEUTRAL",
-    "score_adjustment": 0.0,
-    "confidence": 0.75,
-    "rationale": "The claims show a public-benefit developer infrastructure project with meaningful governance and custody details, but the deterministic assessment already marked claims, treasury analysis, risk review, and synthesis as complete; the remaining evidence-quality issues, including several proposer-asserted delivery and prior-performance claims, do not justify an additional positive or negative nudge beyond the engine's scoring.",
-    "doctrine_basis": "Treasury stewardship and evidence quality/reproducibility",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.72,
+    "rationale": "The extracted claims show a specific open-source infrastructure maintenance scope, disclosed budget components, stated governance-process approval, NCL compliance, and concrete oversight mechanisms with externally checkable references. The nudge is small because several material adoption and delivery-history claims remain proposer-stated rather than verified within the document, and treasury stewardship still cautions against over-weighting ecosystem benefit alone.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; public-benefit ecosystem growth",
     "cap": 0.05
   },
   "llm_assisted": false,
@@ -26,7 +26,7 @@
     "values_hierarchy.md",
     "treasury_spending_doctrine.md"
   ],
-  "doctrine_hash": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1",
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
   "confidence": 0.7733,
   "readiness_score": 0.85,
@@ -44,6 +44,8 @@
       "cost comparables, budget proportionality, or sustainability evidence"
     ]
   },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
@@ -52,11 +54,12 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 540750",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ada total, consisting of 525,000 ada for Dolos maintenance and enhancement and a 15,750 ada Intersect budget administration fee.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Dolos maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: The extracted claims show a specific open-source infrastructure maintenance scope, disclosed budget components, stated governance-process approval, NCL compliance, and concrete oversight mechanisms with externally checkable references. The nudge is small because several material adoption and delivery-history claims remain proposer-stated rather than verified within the document, and treasury stewardship still cautions against over-weighting ecosystem benefit alone.",
     "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -67,8 +70,8 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
-    "Claims and evidence missing: Independent evidence for: Dolos is presented as an open-source alternative for querying Cardano chain data without running a full node, intended to remain reliable and performant as developer adoption grows.",
-    "Claims and evidence missing: Independent evidence for: TxPipe is said to have received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development and on schedule, plus prior Intersect maintenance funding for Pallas, Dolos, and UTxO RPC being delivered on schedule.",
+    "Claims and evidence missing: Independent evidence for: Dolos is described as a lightweight Cardano data node in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+    "Claims and evidence missing: Independent evidence for: TxPipe is stated to have received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Treasury analysis missing: cost-benefit clarity",
@@ -81,10 +84,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "669706a423aa13b99df39c7de461593e9749783b36c1b1805dce75bae79ef2d4",
-  "snapshot_bundle_hash": "49165b75c5ae39df652c1076106275d254d5f2a7ddffa8c960d722150204f53b",
-  "soul_commit": "204e26c8230587b4b4df20eeb0a8485d478b54a9",
+  "snapshot_bundle_hash": "88c6cc349cdc4931e5ed2d1eaa82e41145a48232cf09e693cc710bd4bcd856aa",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "e3acb15e16a35828f6fc5c72eadf18669f12e080",
+  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,7 +110,7 @@
     "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-10T13:26:29.366380Z",
+    "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -150,19 +153,19 @@
           "Deep research dossier: complete",
           "Requested: Treasury withdrawal to fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2.",
           "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe.",
-          "Stated amount: 540750",
-          "Deliverables: Part-time maintainer for Dolos over 12 months after the existing contract closes., Essential maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation., Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public developer communication., AI-friendly documentation and integration resources for AI-driven development workflows.",
-          "Deadline/expiry: 12-month grant period beginning after closure of the existing contract; exact dates not stated in document.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ada total, consisting of 525,000 ada for Dolos maintenance and enhancement and a 15,750 ada Intersect budget administration fee.",
-          "Claim (economic, supported_in_proposal, high materiality): The maintainer funding is described as 420,000 ADA plus a 105,000 ADA contingency reserve for 12 months at an annual rate of $105,000 USD.",
-          "Claim (technical, supported_in_proposal, high materiality): Dolos is a lightweight Cardano data node built in Rust that connects directly to the Cardano network, indexes ledger primitives, and exposes multiple query interfaces including Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros N2C unix socket.",
-          "Claim (adoption, independently_verifiable, medium materiality): The proposal states Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors, with the GitHub repository provided as a reference.",
-          "Claim (technical, proposer_asserted, high materiality): Dolos is presented as an open-source alternative for querying Cardano chain data without running a full node, intended to remain reliable and performant as developer adoption grows.",
-          "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission under the approved framework."
+          "Stated amount: 540,750",
+          "Deliverables: Part-time maintainer for Dolos over 12 months, Essential maintenance including dependency updates, protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, contribution review, feedback-driven enhancements, and public communication, AI-friendly documentation and integration resources, Milestone-based disbursement controls and reporting obligations",
+          "Deadline/expiry: 12 months; grant period begins after closure of existing contract",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Dolos maintainer over 12 months at an annual rate of $105,000 USD.",
+          "Claim (economic, supported_in_proposal, high materiality): The total withdrawal is 540,750 ADA, consisting of 525,000 ADA for Dolos maintenance and enhancement and 15,750 ADA for the Intersect budget administration fee.",
+          "Claim (technical, proposer_asserted, high materiality): Dolos is described as a lightweight Cardano data node in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+          "Claim (technical, supported_in_proposal, medium materiality): Dolos exposes five query interfaces, including Mini-Blockfrost HTTP, UTxO-RPC gRPC, Mini-Kupo, and an Ouroboros N2C unix socket compatible with existing Cardano tooling.",
+          "Claim (adoption, independently_verifiable, medium materiality): The proposal states Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors.",
+          "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase."
         ],
         "missing": [
-          "Independent evidence for: Dolos is presented as an open-source alternative for querying Cardano chain data without running a full node, intended to remain reliable and performant as developer adoption grows.",
-          "Independent evidence for: TxPipe is said to have received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development and on schedule, plus prior Intersect maintenance funding for Pallas, Dolos, and UTxO RPC being delivered on schedule."
+          "Independent evidence for: Dolos is described as a lightweight Cardano data node in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+          "Independent evidence for: TxPipe is stated to have received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -209,8 +212,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ada total, consisting of 525,000 ada for Dolos maintenance and enhancement and a 15,750 ada Intersect budget administration fee.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Dolos is presented as an open-source alternative for querying Cardano chain data without running a full node, intended to remain reliable and performant as developer adoption grows.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Dolos maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Dolos is described as a lightweight Cardano data node in Rust that provides efficient chain-data access without the overhead of traditional full nodes.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -238,6 +241,7 @@
     "weights_version": "1.1.0",
     "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
     "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
     "yes_floors": {
       "benefit": 0.55,
       "delivery_confidence": 0.55,
@@ -260,9 +264,12 @@
         "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
-    }
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a Treasury withdrawal and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action requested 540,750 ada to fund Year 2 maintenance of Dolos by TxPipe, submitted by Intersect on behalf of TxPipe to the 2026 Treasury Reserve Smart Contract stake address. The proposal says this includes 525,000 ada for Dolos maintenance and enhancement plus a 15,750 ada Intersect administration fee. It describes a 12-month part-time maintainer role covering dependency updates, protocol compatibility, performance work, bug fixes, documentation, community support, and AI-friendly integration resources, beginning after the current contract closes, though exact dates were not stated.\n\nSeveral core facts were supported well enough for review: the anchor document was pinned and replayable, the requested amount and budget split were substantiated, Dolos was technically described as a Rust-based lightweight Cardano data node with multiple query interfaces, and the proposal\u2019s passage through the 2026 Intersect Budget Process was independently verifiable. The proposal also described oversight, reporting, milestone-based disbursement controls, smart contract addresses, authorization thresholds, committee roles, and audit references.\n\nThe hold is conservative and evidence-based. BEACN did not reject the proposal\u2019s purpose, but the review found thin claims evidence, unknown execution risk, missing sustainability and cost-benefit clarity, missing independent assurance, and no clear rollback or remedy path. It also lacked independent evidence for some material claims, including Dolos\u2019s role as an open-source alternative to running a full node and TxPipe\u2019s delivery record across Catalyst and prior Intersect funding. A directional vote would be unblocked by pinned, independently verifiable Net Change Limit evidence from public chain data, plus stronger public evidence for those unsupported claims and clearer treasury-risk mitigations.",
+  "human_message": "BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the Dolos maintenance work.\n\nThe proposal requested 540,750 ada for Year 2 maintenance of Dolos by TxPipe, with funds going to the 2026 Treasury Reserve Smart Contract stake address. The request includes 525,000 ada for Dolos maintenance and enhancement, including a part-time maintainer over 12 months, dependency updates, protocol compatibility, performance improvements, bug fixing, documentation, community support, AI-friendly integration resources, milestone-based disbursement controls, and reporting obligations. It also includes a 15,750 ada Intersect budget administration fee.\n\nSeveral parts of the proposal were well-supported in the review: the pinned anchor document was available and replayable, the budget structure was disclosed, the Intersect budget-process support threshold was stated, oversight and milestone controls were described, and public tracking through a dashboard and smart-contract framework was stated. However, some material claims remained too thin or unsupported for a confident treasury withdrawal vote, including independent evidence that Dolos provides the claimed lightweight node benefits and independent evidence for TxPipe\u2019s Catalyst delivery history. The review also flagged missing clarity on sustainability, cost-benefit, independent assurance, and rollback or remedy path.\n\nBecause this is a treasury withdrawal, BEACN applies a higher evidence bar: spending shared ada sets precedent and must be auditable by skeptical delegators. The specific evidence that would unblock a directional vote is a pinned, independently verifiable Net Change Limit check from public chain evidence, along with stronger independent support for the material technical and delivery-history claims.",
   "human_message_source": "precomputed",
   "model_layer": {
     "claim_extraction": {
@@ -282,7 +289,7 @@
       },
       "claim_count": 10,
       "prompt_sha256": null,
-      "output_sha256": "bd52f843f7036552ec5d22d1918a89613705233c2ba6ecee74adddbc934707c5"
+      "output_sha256": "23c087563e37ac403cb8dd11e565ef769e0f4981cfd8ebb13a29ddbf7eec9bf4"
     },
     "doctrine": {
       "family": "treasury",
@@ -290,19 +297,19 @@
         "values_hierarchy.md",
         "treasury_spending_doctrine.md"
       ],
-      "sha256": "7178a8ad997fdddf922ee000bc8c4df1011eeadb6b757f24e6e4bc8cbb36a2c1"
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
       "available": true,
       "source": "precomputed",
       "reason": null,
       "model": "claude-opus-4-8",
-      "direction": "NEUTRAL",
-      "score_adjustment": 0.0,
+      "direction": "YES",
+      "score_adjustment": 0.02,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "9cf9a8b202d8aa503d04de17144f87c76bf90c4840358a51bc451ec75ea01782"
+      "output_sha256": "127244c9995168503c6ece6826be6cfbfdc70edfb22951b75630b61f6c8dfba8"
     },
     "human_message": {
       "source": "precomputed",
@@ -310,10 +317,10 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "20991f873c2e08fc6c93733b0a42c29af414d7e387043a5a276faea7cd1e0dcb"
+      "output_sha256": "839082d5af4b199577608995da19b0fa34809dd20b67a00b2e067f39003763e4"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6eca05692d77dca4878d8649.md",
-  "rationale_anchor_hash": "6eca05692d77dca4878d8649bf7a8bf83860fa7ad8da11f0842e7186346fe04c"
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/b99cb6c7d2ff11d96f2b9fef.md",
+  "rationale_anchor_hash": "b99cb6c7d2ff11d96f2b9feff10b3091bbfddd5704afb7847e2105867c76c2bd"
 }

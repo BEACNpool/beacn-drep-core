@@ -1,17 +1,17 @@
 # bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0
 
 ## Vote
-- Decision: **ABSTAIN**
+- Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-10T12:44:41.901950+00:00`
+- Published at: `2026-07-11T11:30:05.186378+00:00`
 
 ## Human-readable rationale
-Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
 
 ## Assessment tree
 - assessment_status: `blocked`
-- Intake: `blocked` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Intake: `complete` — Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: `thin` — Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: `incomplete` — Treasury votes require a higher bar because they consume shared ADA and create precedent.
 - Risk review: `thin` — Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -19,18 +19,16 @@ Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insu
 - Synthesis: `blocked` — The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## What influenced this vote
-- Critical evidence fields are missing for this action.
+- Treasury actions are high-impact and require a completed deep research dossier.
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
-- Treasury analysis: Requested ADA: not specified
+- Treasury analysis: Requested ADA: 14.08M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 8 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 7 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Missing: treasury_amount_lovelace is missing for a treasury withdrawal
-- Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal
-- Intake status is blocked.
+- Dossier completeness not confirmed for this treasury proposal.
 - Claims and evidence missing: Independent evidence for: By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha...
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
@@ -40,19 +38,21 @@ Vote: ABSTAIN. For this TreasuryWithdrawals (expired), evidence quality was insu
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
-- Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- Synthesis missing: missing complete proposal summary
+- Synthesis missing: missing budget analysis
+- Synthesis status is blocked.
 
 ## Top 3 fixes to improve next submission
-- Provide: treasury_amount_lovelace is missing for a treasury withdrawal
-- Provide treasury_amount_lovelace is missing for a treasury withdrawal.
-- Provide complete proposal summary.
+- Provide: Deep research dossier is required for treasury actions before directional voting.
+- Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Provide: Missing dossier section: complete proposal summary
 
 ## Proof of vote
-- input_hash: `d4f4369e2e7b0fe31c128393821b41abbd39e3b1cc8aed7410c6553b3faaf98b`
-- snapshot_bundle_hash: `1cc9164f519efd1dc9c40a1d916b83791d15e9fbde061bec6664435433e9963e`
+- input_hash: `5c6de37af2f039a40196a34bbe7a08662ce0820db6c2e50f2bcd2a85af1a8697`
+- snapshot_bundle_hash: `7639c25895c2ed58fae32be4c6371fba7e0351126f528c08974cfadb42657953`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `0.0`
-- confidence: `0.1`
+- confidence: `0.2`
 

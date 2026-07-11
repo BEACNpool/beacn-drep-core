@@ -7,7 +7,7 @@
 - Published at: `2026-07-07T13:00:01.166949+00:00`
 
 ## Human-readable rationale
-Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Pallas maintenance and enhancement and a 15,750 ADA Intersect budget administration fee." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.21; confidence 77.3%.
+Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Pallas maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.21; confidence 77.3%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -26,13 +26,13 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 540750
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Pallas maintenance and enhancement and a 15,750 ADA Intersect budget administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time Pallas maintainer over 12 months at an annual rate of $105,000 USD." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- Claims and evidence missing: Independent evidence for: The proposal says Pallas is shared infrastructure used by projects including Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and others.
-- Claims and evidence missing: Independent evidence for: The proposal states TxPipe previously received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development on schedule, and also received 2025 Intersect maintenance funding for Pallas, Dolos, and UTxO RPC that is being delivered on schedule.
+- Claims and evidence missing: Independent evidence for: The proposer states that Pallas is shared infrastructure used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.
+- Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule.
 - Claims and evidence status is thin.
 - Treasury analysis missing: sustainability path
 - Treasury analysis missing: cost-benefit clarity
@@ -46,10 +46,10 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical informati
 
 ## Proof of vote
 - input_hash: `496354452e55aa3e3bcb929c93c2a443e324fa864b4b734ab281dce129b92c49`
-- snapshot_bundle_hash: `2ea3f7436887e7c8208209e9b8cd3859d2283339f0563c6a77d279e0f8dbf413`
+- snapshot_bundle_hash: `776edf8359a0aa83d1f7af4f764645eacc4e326512cc4a4c20a9f38348ae9be6`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `98204209c1160292d57e948cc03515956c20be3e`
-- core_commit: `5058f0ec84f4a9dbe9f052ec37220292019008fa`
+- core_commit: `55c0f3f68cffa73033d65fea06087205839b256e`
 - score: `-0.2133`
 - confidence: `0.7733`
 

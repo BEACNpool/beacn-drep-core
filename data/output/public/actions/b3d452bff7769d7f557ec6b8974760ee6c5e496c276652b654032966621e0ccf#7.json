@@ -20,29 +20,28 @@
   },
   "proof_of_vote": {
     "vote": "NEEDS_MORE_INFO",
-    "score": 0.0,
-    "confidence": 0.2,
+    "score": 0.127,
+    "confidence": 0.7517,
     "input_hash": "c5dc3c19012a838a509accc95425cf3bfc274518bbb8ded38f8d75bd4261b9d7",
-    "snapshot_bundle_hash": "28e1b12f29a957ad6069f0a984e23a5540acedbe079d31b388335cdb46b80a6b",
+    "snapshot_bundle_hash": "c59688aeff2c5e9bce8cbb168fc0d9e2dee70daca7e0a3f27b0bf58aa011a309",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7-c5dc3c19012a.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/e3e9534b19a34e964f0907ea.md",
+    "rationale_anchor_hash": "e3e9534b19a34e964f0907ea2499d49b3d0e3581135ac7309d2b00e4a974e4d2"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
-    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.13; confidence 75.2%.",
+    "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide: Deep research dossier is required for treasury actions before directional voting.",
-      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide independent evidence for: The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing."
+      "Provide: cost comparables, budget proportionality, or sustainability evidence",
+      "Provide independent evidence for: The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.",
+      "Provide independent evidence for: The proposer states Oura has been funded twice through Project Catalyst, in Funds 9 and 13, for feature development."
     ],
     "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7-c5dc3c19012a.md",
     "missing_evidence": [
-      "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
+      "cost comparables, budget proportionality, or sustainability evidence"
     ],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
@@ -72,8 +71,8 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
-            "Deep research dossier: required",
+            "Snapshot freshness source: governance_actions_all.csv",
+            "Deep research dossier: complete",
             "Requested: Withdraw treasury funds for Oura by TxPipe maintenance over 12 months, submitted by Intersect on behalf of the vendor.",
             "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for subsequent project-specific management.",
             "Stated amount: 540,750",
@@ -95,7 +94,7 @@
         },
         {
           "title": "Treasury analysis",
-          "status": "incomplete",
+          "status": "complete",
           "findings": [
             "Requested ADA: 0",
             "Budget granularity: confirmed",
@@ -138,7 +137,7 @@
           "findings": [
             "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee.\" and clears the evidence gates.",
             "Strongest NO: a material claim is unsupported \u2014 \"The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.\" \u2014 so cost or precedent may outweigh the benefit.",
-            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
           "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
@@ -158,16 +157,14 @@
     },
     "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7-c5dc3c19012a.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.45,
+      "evidence_status": "independently_verified",
+      "benefit": 0.73,
+      "delivery_confidence": 0.75,
       "cost_efficiency": 0.25,
       "downside_risk": 0.35,
-      "composite": -0.24,
+      "composite": 0.127,
       "affirmative_waste_evidence": [],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
@@ -188,16 +185,14 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.45,
+        "evidence_status": "independently_verified",
+        "benefit": 0.73,
+        "delivery_confidence": 0.75,
         "cost_efficiency": 0.25,
         "downside_risk": 0.35,
-        "composite": -0.24,
+        "composite": 0.127,
         "affirmative_waste_evidence": [],
         "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity",
           "cost comparables, budget proportionality, or sustainability evidence"
         ]
       },
@@ -225,16 +220,14 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.45,
+      "evidence_status": "independently_verified",
+      "benefit": 0.73,
+      "delivery_confidence": 0.75,
       "cost_efficiency": 0.25,
       "downside_risk": 0.35,
-      "composite": -0.24,
+      "composite": 0.127,
       "affirmative_waste_evidence": [],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
@@ -256,20 +249,20 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "deep_research": {
-    "status": "verification_failed",
-    "dossier_complete": "no",
+    "status": "approved_agentic",
+    "dossier_complete": "yes",
     "sections_grounded": 7,
     "sections_total": 7,
     "owner": "drep-agent-extract",
     "dossier_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7.md",
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7.receipt.json",
     "verification": {
-      "passed": false,
-      "verified_at_utc": "2026-07-10T13:17:20+00:00",
+      "passed": true,
+      "verified_at_utc": "2026-07-12T14:49:59+00:00",
       "model": "claude-cli",
       "fact_count": 27,
-      "supported": 0,
-      "support_ratio": 0.0,
+      "supported": 27,
+      "support_ratio": 1.0,
       "material_discrepancies": 0
     }
   },
@@ -308,7 +301,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -411,17 +404,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.0,
-    "raw_score": 0.0,
-    "directional_threshold": 0.12,
-    "confidence": 0.2,
+    "binding_score": 0.127,
+    "raw_score": -0.08,
+    "directional_threshold": 0.06,
+    "confidence": 0.7517,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 21,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

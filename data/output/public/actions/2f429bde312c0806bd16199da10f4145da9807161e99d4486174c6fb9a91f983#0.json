@@ -5,11 +5,11 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b05ebd1ca68d6646344cd233d301e56f747dcfd5fab192a9b20dea9f4069dc69",
+    "raw_input_hash": "sha256:a76e03c1ce8c347be7be0dc700ee681e4b068276c7fda1e4dee4dbb601e18209",
     "detected_at": "2026-07-08T05:00:01.231638+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
+    "vote": "NO",
     "onchain_vote": null,
     "diverged": false,
     "published_at": "2026-07-12T13:27:08.053028+00:00",
@@ -19,52 +19,48 @@
     "submitted_at": null
   },
   "proof_of_vote": {
-    "vote": "ABSTAIN",
-    "score": 0.0,
-    "confidence": 0.1,
-    "input_hash": "b05ebd1ca68d6646344cd233d301e56f747dcfd5fab192a9b20dea9f4069dc69",
-    "snapshot_bundle_hash": "c0d2a2cddd4e63ec4942279a46e6ef036cae2016d21a36e1879e61863b5edfbd",
+    "vote": "NO",
+    "score": -0.135,
+    "confidence": 0.7537,
+    "input_hash": "a76e03c1ce8c347be7be0dc700ee681e4b068276c7fda1e4dee4dbb601e18209",
+    "snapshot_bundle_hash": "c32aeb61e8d5e42f283f16fe57704e486704f4b88da12521f0e12dcb8877ae5d",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
-    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-b05ebd1ca68d.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
+    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-a76e03c1ce8c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3c76689ebdfad529ae041458.md",
+    "rationale_anchor_hash": "3c76689ebdfad529ae04145814bf15dfa776d3449960f0221661cc107a321d78"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
-    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" and clears the evidence gates. What would change this vote to YES: Provide milestone-gated disbursement; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.14; confidence 75.4%.",
+    "summary_raw": "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: The claims show a public-benefit open source sustainability aim and some concrete milestones, but the proposal places initial full allocation authority with a single administrator, relies on several governance and legal structures that are not yet formed, and the deterministic assessment already flags thin evidence and a blocking treasury amount mismatch for a treasury withdrawal. Under the doctrine, treasury stewardship and evidence quality justify only a small cautionary negative nudge, not an override of the hard gate.",
     "top_fixes": [
-      "Provide: treasury_amount_lovelace is missing for a treasury withdrawal",
-      "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
-      "Provide milestone-gated disbursement."
+      "Provide milestone-gated disbursement.",
+      "Provide sustainability path.",
+      "Provide cost-benefit clarity."
     ],
-    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-b05ebd1ca68d.md",
-    "missing_evidence": [
-      "treasury_amount_lovelace is missing for a treasury withdrawal"
-    ],
-    "assessment_status": "blocked",
+    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-a76e03c1ce8c.md",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "blocked",
+      "overall_status": "incomplete",
       "sections": [
         {
           "title": "Intake",
-          "status": "blocked",
+          "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: active",
             "Proposed epoch: 641",
             "Expires after epoch: 648",
-            "Treasury request: not specified",
+            "Treasury request: 4.09M ADA",
             "Anchor pinned locally: yes"
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -73,7 +69,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: governance_actions_all.csv",
             "Deep research dossier: complete",
             "Requested: Establish and fund a one-year independent Cardano dOSPO and Open Maintenance Framework program to sustain open source infrastructure through operations, maintenance retainers, maintainer development, bounties, and ecosystem activation.",
             "Recipient: Christian Taylor / Open Source Cowboy Consulting as Article II.7.5 funds administrator at withdrawal, with intended later transition target to a dOSPO 501(c)(3) public charity subject to governance.",
@@ -135,41 +131,39 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 1 review blocker(s) remain open.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" and clears the evidence gates.",
             "Strongest NO: a material claim is unsupported \u2014 \"The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down.\" \u2014 so cost or precedent may outweigh the benefit.",
-            "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
           "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
         },
         {
           "title": "Synthesis",
-          "status": "blocked",
+          "status": "ready",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing for a treasury withdrawal"
-          ],
+          "missing": [],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": [
-        "treasury_amount_lovelace is missing for a treasury withdrawal"
-      ]
+      "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-b05ebd1ca68d.assessment.json",
+    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-a76e03c1ce8c.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.55,
+      "evidence_status": "independently_verified",
+      "benefit": 0.1,
+      "delivery_confidence": 0.65,
       "cost_efficiency": 0.25,
       "downside_risk": 0.25,
-      "composite": -0.2,
-      "affirmative_waste_evidence": [],
+      "composite": -0.135,
+      "affirmative_waste_evidence": [
+        "independently verified material duplication",
+        "independently verified private-value capture"
+      ],
       "missing": [
-        "independent ecosystem-value evidence packet",
         "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
@@ -191,25 +185,27 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.55,
+        "evidence_status": "independently_verified",
+        "benefit": 0.1,
+        "delivery_confidence": 0.65,
         "cost_efficiency": 0.25,
         "downside_risk": 0.25,
-        "composite": -0.2,
-        "affirmative_waste_evidence": [],
+        "composite": -0.135,
+        "affirmative_waste_evidence": [
+          "independently verified material duplication",
+          "independently verified private-value capture"
+        ],
         "missing": [
-          "independent ecosystem-value evidence packet",
           "verified ecosystem benefit or strategic necessity",
           "cost comparables, budget proportionality, or sustainability evidence"
         ]
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "NO",
+      "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -228,21 +224,23 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.55,
+      "evidence_status": "independently_verified",
+      "benefit": 0.1,
+      "delivery_confidence": 0.65,
       "cost_efficiency": 0.25,
       "downside_risk": 0.25,
-      "composite": -0.2,
-      "affirmative_waste_evidence": [],
+      "composite": -0.135,
+      "affirmative_waste_evidence": [
+        "independently verified material duplication",
+        "independently verified private-value capture"
+      ],
       "missing": [
-        "independent ecosystem-value evidence packet",
         "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -303,15 +301,15 @@
     "verification_status": "verified_onchain_info_action",
     "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
     "portfolio_status": "verified",
-    "requested_lovelace": 0,
-    "fits_remaining": false
+    "requested_lovelace": 4094000000000,
+    "fits_remaining": true
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -414,17 +412,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.0,
-    "raw_score": 0.0,
-    "directional_threshold": 0.12,
-    "confidence": 0.1,
+    "binding_score": -0.135,
+    "raw_score": -0.46,
+    "directional_threshold": 0.06,
+    "confidence": 0.7537,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 19,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

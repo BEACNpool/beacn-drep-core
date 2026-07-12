@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -24,7 +24,7 @@
       "findings": [
         "Proposal anchor: pinned and replayable",
         "Proposal document read by reasoning layer: yes",
-        "Snapshot freshness source: manifest",
+        "Snapshot freshness source: governance_actions_all.csv",
         "Deep research dossier: required",
         "Requested: Annual treasury funding for MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements.",
         "Recipient: Intersect treasury reserve smart contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs.",
@@ -41,7 +41,10 @@
       "missing": [
         "Independent evidence for: MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.",
         "Independent evidence for: The rationale separately says MLabs conservatively counted at least 15 teams building with Plutarch and Ply.",
-        "Independent evidence for: The proposal states that if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face more friction, migration risk, bespoke workarounds, or avoidable rewrites."
+        "Independent evidence for: The proposal states that if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face more friction, migration risk, bespoke workarounds, or avoidable rewrites.",
+        "feasibility assessment",
+        "alternatives analysis",
+        "failure-mode analysis"
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -49,18 +52,17 @@
       "title": "Treasury analysis",
       "status": "incomplete",
       "findings": [
-        "Requested ADA: 0",
+        "Requested ADA: 1162746",
         "Budget granularity: not confirmed",
-        "Milestone payment gates: unknown",
+        "Milestone payment gates: confirmed",
         "Clawback/refund path: unknown",
-        "Cost/benefit clarity: unknown",
-        "Recurring funding dependency: unknown",
+        "Cost/benefit clarity: not confirmed",
+        "Recurring funding dependency: confirmed",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.64"
+        "Financial confidence: 0.60"
       ],
       "missing": [
         "line-item budget",
-        "milestone-gated disbursement",
         "sustainability path",
         "cost-benefit clarity"
       ],
@@ -70,18 +72,17 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: unknown",
+        "Execution risk: medium",
         "Governance risk: medium",
-        "Technical risk: unknown",
-        "Treasury exposure risk: high",
+        "Technical risk: low",
+        "Treasury exposure risk: low",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
-        "Rollback/remedy path: unknown",
+        "Rollback/remedy path: confirmed",
         "Flag count: 1"
       ],
       "missing": [
         "independent assurance",
-        "rollback/remedy path",
         "dependency map"
       ],
       "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
@@ -90,7 +91,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],
@@ -99,14 +100,22 @@
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "missing feasibility assessment",
+    "missing alternatives analysis",
+    "missing failure-mode analysis"
+  ]
 }

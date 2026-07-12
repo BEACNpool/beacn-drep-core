@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -24,7 +24,7 @@
       "findings": [
         "Proposal anchor: pinned and replayable",
         "Proposal document read by reasoning layer: yes",
-        "Snapshot freshness source: manifest",
+        "Snapshot freshness source: governance_actions_all.csv",
         "Deep research dossier: required",
         "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity",
         "Recipient: Independent multisig council composed of Rami from Snek, Phil from Surf, and James from Monetra/Moneta as administrator",
@@ -40,7 +40,8 @@
       ],
       "missing": [
         "Independent evidence for: Strike reports over 1.13 billion USD in cumulative volume, around one million trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.",
-        "Independent evidence for: The proposal states that the main constraint on further Strike growth is liquidity depth and that additional stablecoin liquidity would improve execution, volume, fee generation, and Cardano-native DeFi strength."
+        "Independent evidence for: The proposal states that the main constraint on further Strike growth is liquidity depth and that additional stablecoin liquidity would improve execution, volume, fee generation, and Cardano-native DeFi strength.",
+        "alternatives analysis"
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -48,16 +49,17 @@
       "title": "Treasury analysis",
       "status": "incomplete",
       "findings": [
-        "Requested ADA: 0",
-        "Budget granularity: confirmed",
+        "Requested ADA: 9000000",
+        "Budget granularity: not confirmed",
         "Milestone payment gates: not confirmed",
         "Clawback/refund path: confirmed",
         "Cost/benefit clarity: confirmed",
         "Recurring funding dependency: not confirmed",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.68"
+        "Financial confidence: 0.60"
       ],
       "missing": [
+        "line-item budget",
         "milestone-gated disbursement"
       ],
       "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
@@ -66,10 +68,10 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: unknown",
-        "Governance risk: unknown",
-        "Technical risk: unknown",
-        "Treasury exposure risk: unknown",
+        "Execution risk: high",
+        "Governance risk: high",
+        "Technical risk: high",
+        "Treasury exposure risk: high",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
         "Rollback/remedy path: confirmed",
@@ -85,7 +87,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity rather than grant funding.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity rather than grant funding.\" though 1 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"Strike reports over 1.13 billion USD in cumulative volume, around one million trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],
@@ -94,14 +96,18 @@
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "missing alternatives analysis"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "missing alternatives analysis"
+  ]
 }

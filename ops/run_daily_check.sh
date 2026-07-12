@@ -97,8 +97,18 @@ log "exporting governance CSV snapshot"
 cd "$CORE"
 PYTHONPATH=src python3 -m beacn_drep.exporters.export_proposals_to_resources
 
-log "refreshing cached proposal anchors"
 cd "$RES"
+# The poller scrapes the requested amount out of proposal metadata and sometimes gets NOTHING.
+# A blank amount is not harmless: the engine cannot run capacity or cost arithmetic without it, so
+# the action trips MISSING_BASELINE_EVIDENCE and ABSTAINS regardless of the evidence against it.
+# That silently neutralised the two largest asks on the 2026-07-12 ballot (AlphaGrowth's 120M,
+# which already had verified duplication + excessive-cost evidence, and dOSPO's 4.09M).
+# The amount is on-chain in db-sync's treasury_withdrawal table -- authoritative, not scraped.
+log "backfilling any missing treasury amounts from chain (relay db-sync, read-only)"
+python3 scripts/backfill_treasury_amounts.py \
+  || log "WARNING: treasury-amount backfill failed; actions with a blank amount will abstain"
+
+log "refreshing cached proposal anchors"
 python3 scripts/fetch_anchor_documents.py
 python3 scripts/compile_action_resource_index.py
 

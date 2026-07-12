@@ -9,7 +9,7 @@
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "YES",
     "onchain_vote": "NO",
     "diverged": true,
     "published_at": "2026-07-12T13:27:08.053028+00:00",
@@ -19,31 +19,28 @@
     "submitted_at": "2026-07-02T00:23:53+00:00"
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": 0.0,
-    "confidence": 0.2,
+    "vote": "YES",
+    "score": 0.275,
+    "confidence": 0.7887,
     "input_hash": "a8be0fb198a61fc4c57198667823eb38f5f1601c7de9ee0c0c61ec6fb923e41e",
-    "snapshot_bundle_hash": "44465e401e5f4287eb262977a427951eebe8329667427a9e320d16a4eb6869b9",
+    "snapshot_bundle_hash": "b3a7fd3a5f244da209be11850e273c83e0a0881c730e4cfbca9395ce42833369",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-a8be0fb198a6.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/af9d09076cf8ccc56a2b2b21.md",
+    "rationale_anchor_hash": "af9d09076cf8ccc56a2b2b212f71eb2032934faa71d923045bd1d1c15a764324"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product.\" and clears the evidence gates. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
-    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.28; confidence 78.9%.",
+    "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide: Deep research dossier is required for treasury actions before directional voting.",
-      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide sustainability path."
+      "Provide sustainability path.",
+      "Provide cost-benefit clarity.",
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-a8be0fb198a6.md",
-    "missing_evidence": [
-      "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
-    ],
+    "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -72,8 +69,8 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
-            "Deep research dossier: required",
+            "Snapshot freshness source: governance_actions_all.csv",
+            "Deep research dossier: complete",
             "Requested: Hardware Wallet Maintenance 2026 for Cardano hardware-wallet support, including Ledger and Trezor compatibility updates, interoperability libraries, cardano-hw-cli, developer support, shared hardware-wallet integration paths, and vendor-required audits.",
             "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor.",
             "Stated amount: 1,310,960",
@@ -94,7 +91,7 @@
         },
         {
           "title": "Treasury analysis",
-          "status": "incomplete",
+          "status": "complete",
           "findings": [
             "Requested ADA: 0",
             "Budget granularity: confirmed",
@@ -137,7 +134,7 @@
           "findings": [
             "Strongest YES: the proposal substantiates \"The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product.\" and clears the evidence gates.",
             "Strongest NO: a material claim is unsupported \u2014 \"Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes.\" \u2014 so cost or precedent may outweigh the benefit.",
-            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
           "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
@@ -157,18 +154,14 @@
     },
     "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-a8be0fb198a6.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.45,
-      "cost_efficiency": 0.25,
+      "evidence_status": "independently_verified",
+      "benefit": 1.0,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.45,
       "downside_risk": 0.35,
-      "composite": -0.24,
+      "composite": 0.275,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
+      "missing": []
     },
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -187,25 +180,21 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.45,
-        "cost_efficiency": 0.25,
+        "evidence_status": "independently_verified",
+        "benefit": 1.0,
+        "delivery_confidence": 0.75,
+        "cost_efficiency": 0.45,
         "downside_risk": 0.35,
-        "composite": -0.24,
+        "composite": 0.275,
         "affirmative_waste_evidence": [],
-        "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity",
-          "cost comparables, budget proportionality, or sustainability evidence"
-        ]
+        "missing": []
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "YES",
+      "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -224,21 +213,17 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.45,
-      "cost_efficiency": 0.25,
+      "evidence_status": "independently_verified",
+      "benefit": 1.0,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.45,
       "downside_risk": 0.35,
-      "composite": -0.24,
+      "composite": 0.275,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
+      "missing": []
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -255,20 +240,20 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "deep_research": {
-    "status": "verification_failed",
-    "dossier_complete": "no",
+    "status": "approved_agentic",
+    "dossier_complete": "yes",
     "sections_grounded": 7,
     "sections_total": 7,
     "owner": "drep-agent-extract",
     "dossier_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2.md",
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2.receipt.json",
     "verification": {
-      "passed": false,
-      "verified_at_utc": "2026-07-10T13:20:50+00:00",
+      "passed": true,
+      "verified_at_utc": "2026-07-12T14:53:49+00:00",
       "model": "claude-cli",
       "fact_count": 19,
-      "supported": 0,
-      "support_ratio": 0.0,
+      "supported": 19,
+      "support_ratio": 1.0,
       "material_discrepancies": 0
     }
   },
@@ -307,7 +292,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -410,17 +395,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.0,
-    "raw_score": 0.0,
-    "directional_threshold": 0.12,
-    "confidence": 0.2,
+    "binding_score": 0.275,
+    "raw_score": -0.08,
+    "directional_threshold": 0.06,
+    "confidence": 0.7887,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 21,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

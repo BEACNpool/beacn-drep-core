@@ -9,9 +9,9 @@
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "NO",
     "onchain_vote": "NO",
-    "diverged": true,
+    "diverged": false,
     "published_at": "2026-07-12T13:27:08.053028+00:00",
     "signed": true,
     "submitted": true,
@@ -19,32 +19,28 @@
     "submitted_at": "2026-07-02T00:24:51+00:00"
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": -0.2,
-    "confidence": 0.74,
+    "vote": "NO",
+    "score": -0.12,
+    "confidence": 0.72,
     "input_hash": "7dd0b9b70363c3ee1f0b74d08152f2495298624d3421f8861a1426e3788d4814",
-    "snapshot_bundle_hash": "2220712a5f8f2985dda3bee376c2e7e75835812fdb343fb15dbdc79c545fd6ac",
+    "snapshot_bundle_hash": "a6825d30181df387332826465c1b76bd9dbd4753015dc7d1a54ba35be28976d1",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-7dd0b9b70363.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/016fdb2c318da54d17a63efa.md",
+    "rationale_anchor_hash": "016fdb2c318da54d17a63efa913ff3b1ddeba798cd60ecf7c2b5f2a12556a28c"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Funded projects are required to track monthly active users, TVL, and on-chain transactions.\" and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.20; confidence 74.0%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The Cardano Builder DAO is intended to allocate capital to builders who can improve Cardano KPIs including monthly active users, monthly on-chain transactions, and TVL.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"Funded projects are required to track monthly active users, TVL, and on-chain transactions.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The CB DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 72.0%.",
     "summary_raw": "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal aligns with public-benefit ecosystem growth and includes some independently checkable references, repayment history, and milestone-administrator controls, but many high-materiality claims about prior performance, KPI dashboard capability, participation, and measurable impact remain largely proposer-asserted in the anchor text while the requested treasury amount is large. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than a positive adjustment.",
     "top_fixes": [
-      "Provide: independent ecosystem-value evidence packet",
-      "Provide: verified ecosystem benefit or strategic necessity",
-      "Provide: cost comparables, budget proportionality, or sustainability evidence"
+      "Provide independent evidence for: The CB DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+      "Provide line-item budget.",
+      "Provide sustainability path."
     ],
     "markdown_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-7dd0b9b70363.md",
-    "missing_evidence": [
-      "independent ecosystem-value evidence packet",
-      "verified ecosystem benefit or strategic necessity",
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ],
+    "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -73,7 +69,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: governance_actions_all.csv",
             "Deep research dossier: complete",
             "Requested: Treasury withdrawal for the Cardano Builder DAO, described as an ecosystem-wide smart contract-governed funding mechanism for builders advancing Cardano Vision 2030 KPIs.",
             "Recipient: Cardano Builder DAO, with withdrawal receipt and milestone disbursement overseen by an independent council/multisig of dRep DAO members.",
@@ -160,16 +156,17 @@
     },
     "assessment_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-7dd0b9b70363.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.75,
+      "evidence_status": "independently_verified",
+      "benefit": 0.35,
+      "delivery_confidence": 0.9,
       "cost_efficiency": 0.0,
       "downside_risk": 0.25,
-      "composite": -0.2,
-      "affirmative_waste_evidence": [],
+      "composite": -0.0225,
+      "affirmative_waste_evidence": [
+        "independently verified material duplication",
+        "independently verified private-value capture"
+      ],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
@@ -190,25 +187,26 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.75,
+        "evidence_status": "independently_verified",
+        "benefit": 0.35,
+        "delivery_confidence": 0.9,
         "cost_efficiency": 0.0,
         "downside_risk": 0.25,
-        "composite": -0.2,
-        "affirmative_waste_evidence": [],
+        "composite": -0.0225,
+        "affirmative_waste_evidence": [
+          "independently verified material duplication",
+          "independently verified private-value capture"
+        ],
         "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity",
           "cost comparables, budget proportionality, or sustainability evidence"
         ]
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "NO",
+      "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -227,21 +225,22 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.75,
+      "evidence_status": "independently_verified",
+      "benefit": 0.35,
+      "delivery_confidence": 0.9,
       "cost_efficiency": 0.0,
       "downside_risk": 0.25,
-      "composite": -0.2,
-      "affirmative_waste_evidence": [],
+      "composite": -0.0225,
+      "affirmative_waste_evidence": [
+        "independently verified material duplication",
+        "independently verified private-value capture"
+      ],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -315,7 +314,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -418,17 +417,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.2,
+    "binding_score": -0.12,
     "raw_score": -0.66,
     "directional_threshold": 0.06,
-    "confidence": 0.74,
+    "confidence": 0.72,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 20,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

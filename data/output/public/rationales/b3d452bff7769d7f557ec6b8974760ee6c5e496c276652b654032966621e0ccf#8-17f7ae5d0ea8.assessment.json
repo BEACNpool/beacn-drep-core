@@ -24,8 +24,8 @@
       "findings": [
         "Proposal anchor: pinned and replayable",
         "Proposal document read by reasoning layer: yes",
-        "Snapshot freshness source: manifest",
-        "Deep research dossier: required",
+        "Snapshot freshness source: governance_actions_all.csv",
+        "Deep research dossier: complete",
         "Requested: Fund Pallas by TxPipe: Maintaining Cardano's Core Rust Libraries, Year 2, including maintenance, community support, and AI-friendly documentation/integration resources.",
         "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for eventual project-specific disbursement to the vendor via Intersect-managed contracts",
         "Stated amount: 540750",
@@ -46,18 +46,19 @@
     },
     {
       "title": "Treasury analysis",
-      "status": "incomplete",
+      "status": "complete",
       "findings": [
-        "Requested ADA: 0",
-        "Budget granularity: confirmed",
+        "Requested ADA: 540750",
+        "Budget granularity: not confirmed",
         "Milestone payment gates: confirmed",
         "Clawback/refund path: unknown",
         "Cost/benefit clarity: unknown",
         "Recurring funding dependency: confirmed",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.66"
+        "Financial confidence: 0.55"
       ],
       "missing": [
+        "line-item budget",
         "sustainability path",
         "cost-benefit clarity"
       ],
@@ -67,10 +68,10 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: unknown",
-        "Governance risk: unknown",
-        "Technical risk: unknown",
-        "Treasury exposure risk: unknown",
+        "Execution risk: low",
+        "Governance risk: medium",
+        "Technical risk: low",
+        "Treasury exposure risk: low",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
         "Rollback/remedy path: unknown",
@@ -89,7 +90,7 @@
       "findings": [
         "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" and clears the evidence gates.",
         "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.\" \u2014 so cost or precedent may outweigh the benefit.",
-        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],
       "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."

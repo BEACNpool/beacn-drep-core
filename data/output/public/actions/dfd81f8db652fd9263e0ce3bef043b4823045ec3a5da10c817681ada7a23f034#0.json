@@ -9,9 +9,9 @@
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "NO",
     "onchain_vote": "NO",
-    "diverged": true,
+    "diverged": false,
     "published_at": "2026-07-12T13:27:08.053028+00:00",
     "signed": true,
     "submitted": true,
@@ -19,33 +19,28 @@
     "submitted_at": "2026-07-04T16:54:01+00:00"
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": -0.2525,
-    "confidence": 0.7831,
+    "vote": "NO",
+    "score": -0.1475,
+    "confidence": 0.7569,
     "input_hash": "8dfb8a19d401b65baf84d0bfb51c6793c3e0741b9f3e32daef50da2a6c9cac07",
-    "snapshot_bundle_hash": "51259401ea470ba54af7c10b1fc59322afea9e2f933c28af50a85eaee9ecbdc0",
+    "snapshot_bundle_hash": "6682e0feb37db7f61d534fee12a0f8217c86f5290c96ef560a92faabd9d067f0",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/dfd81f8db652fd9263e0ce3bef043b4823045ec3a5da10c817681ada7a23f034#0-8dfb8a19d401.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/e451e58ab57bd604b26c4de2.md",
+    "rationale_anchor_hash": "e451e58ab57bd604b26c4de2f7d10ce20b787a04cf2c82cfe5784790d2aaa245"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as a native Cardano asset for DeFi use cases.\" and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.25; confidence 78.3%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as a native Cardano asset for DeFi use cases.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: If SPO coordination fails, Bifrost uses a federated mode as an operational fallback continuity layer; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.15; confidence 75.7%.",
     "summary_raw": "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: The extracted claims describe potentially high public-benefit infrastructure, but the largest and most decision-critical assertions about SPO-threshold custody, fallback safety, audit readiness, adoption targets, and economic returns are mostly proposer-asserted rather than evidenced in the supplied document. Given the large treasury request and the deterministic assessment that claims and evidence are thin, a small cautionary nudge is justified without overriding the engine\u2019s incomplete-status handling.",
     "top_fixes": [
-      "Provide: independent ecosystem-value evidence packet",
-      "Provide: verified ecosystem benefit or strategic necessity",
-      "Provide: cost comparables, budget proportionality, or sustainability evidence"
+      "Provide independent evidence for: If SPO coordination fails, Bifrost uses a federated mode as an operational fallback continuity layer.",
+      "Provide milestone-gated disbursement.",
+      "Provide sustainability path."
     ],
     "markdown_path": "/data/output/public/rationales/dfd81f8db652fd9263e0ce3bef043b4823045ec3a5da10c817681ada7a23f034#0-8dfb8a19d401.md",
-    "missing_evidence": [
-      "independent ecosystem-value evidence packet",
-      "verified ecosystem benefit or strategic necessity",
-      "cost comparables, budget proportionality, or sustainability evidence",
-      "delivery controls, milestones, assurance, or remedy path"
-    ],
+    "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -74,7 +69,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: governance_actions_all.csv",
             "Deep research dossier: complete",
             "Requested: Phase 1 of 2 for Bifrost, taking a Bitcoin-Cardano bridge from working testnet to launch readiness through hardening, security audits, formal verification, ecosystem and partner readiness, and stewardship/economic foundations.",
             "Recipient: FluidTokens and Lantr Engineering",
@@ -162,18 +157,18 @@
     },
     "assessment_path": "/data/output/public/rationales/dfd81f8db652fd9263e0ce3bef043b4823045ec3a5da10c817681ada7a23f034#0-8dfb8a19d401.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.4,
-      "cost_efficiency": 0.25,
+      "evidence_status": "independently_verified",
+      "benefit": 0.1,
+      "delivery_confidence": 0.5,
+      "cost_efficiency": 0.45,
       "downside_risk": 0.35,
-      "composite": -0.2525,
-      "affirmative_waste_evidence": [],
+      "composite": -0.1475,
+      "affirmative_waste_evidence": [
+        "independently verified material duplication",
+        "independently verified private-value capture"
+      ],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence",
-        "delivery controls, milestones, assurance, or remedy path"
+        "verified ecosystem benefit or strategic necessity"
       ]
     },
     "decision_contract": {
@@ -193,26 +188,26 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.4,
-        "cost_efficiency": 0.25,
+        "evidence_status": "independently_verified",
+        "benefit": 0.1,
+        "delivery_confidence": 0.5,
+        "cost_efficiency": 0.45,
         "downside_risk": 0.35,
-        "composite": -0.2525,
-        "affirmative_waste_evidence": [],
+        "composite": -0.1475,
+        "affirmative_waste_evidence": [
+          "independently verified material duplication",
+          "independently verified private-value capture"
+        ],
         "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity",
-          "cost comparables, budget proportionality, or sustainability evidence",
-          "delivery controls, milestones, assurance, or remedy path"
+          "verified ecosystem benefit or strategic necessity"
         ]
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "NO",
+      "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -231,22 +226,22 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.4,
-      "cost_efficiency": 0.25,
+      "evidence_status": "independently_verified",
+      "benefit": 0.1,
+      "delivery_confidence": 0.5,
+      "cost_efficiency": 0.45,
       "downside_risk": 0.35,
-      "composite": -0.2525,
-      "affirmative_waste_evidence": [],
+      "composite": -0.1475,
+      "affirmative_waste_evidence": [
+        "independently verified material duplication",
+        "independently verified private-value capture"
+      ],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence",
-        "delivery controls, milestones, assurance, or remedy path"
+        "verified ecosystem benefit or strategic necessity"
       ]
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -315,7 +310,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -418,17 +413,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.2525,
+    "binding_score": -0.1475,
     "raw_score": -0.56,
     "directional_threshold": 0.06,
-    "confidence": 0.7831,
+    "confidence": 0.7569,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 20,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

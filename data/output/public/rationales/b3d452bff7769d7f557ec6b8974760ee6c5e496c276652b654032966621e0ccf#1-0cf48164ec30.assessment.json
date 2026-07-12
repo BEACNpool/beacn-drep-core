@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -24,7 +24,7 @@
       "findings": [
         "Proposal anchor: pinned and replayable",
         "Proposal document read by reasoning layer: yes",
-        "Snapshot freshness source: manifest",
+        "Snapshot freshness source: governance_actions_all.csv",
         "Deep research dossier: required",
         "Requested: Fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2, including part-time maintenance and enhancement work over 12 months plus Intersect administration.",
         "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
@@ -40,7 +40,9 @@
       ],
       "missing": [
         "Independent evidence for: The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
-        "Independent evidence for: The document says project milestones will be outlined within metadata when funding is transferred to the project-specific smart contract, but the milestone details are not included in the anchor text."
+        "Independent evidence for: The document says project milestones will be outlined within metadata when funding is transferred to the project-specific smart contract, but the milestone details are not included in the anchor text.",
+        "alternatives analysis",
+        "failure-mode analysis"
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -48,16 +50,17 @@
       "title": "Treasury analysis",
       "status": "incomplete",
       "findings": [
-        "Requested ADA: 0",
-        "Budget granularity: confirmed",
+        "Requested ADA: 540750",
+        "Budget granularity: not confirmed",
         "Milestone payment gates: confirmed",
         "Clawback/refund path: unknown",
-        "Cost/benefit clarity: unknown",
+        "Cost/benefit clarity: not confirmed",
         "Recurring funding dependency: confirmed",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.66"
+        "Financial confidence: 0.55"
       ],
       "missing": [
+        "line-item budget",
         "sustainability path",
         "cost-benefit clarity"
       ],
@@ -67,10 +70,10 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: medium",
+        "Execution risk: low",
         "Governance risk: medium",
-        "Technical risk: unknown",
-        "Treasury exposure risk: high",
+        "Technical risk: low",
+        "Treasury exposure risk: low",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
         "Rollback/remedy path: unknown",
@@ -87,7 +90,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" though 2 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],
@@ -96,14 +99,20 @@
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "missing alternatives analysis",
+        "missing failure-mode analysis"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "missing alternatives analysis",
+    "missing failure-mode analysis"
+  ]
 }

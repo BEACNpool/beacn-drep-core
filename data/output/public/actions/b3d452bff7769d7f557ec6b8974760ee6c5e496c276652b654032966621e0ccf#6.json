@@ -23,34 +23,37 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "54df4f602934e169ab84e1bd206ebefe3909dcbb96b1c8222b9990794c6727cb",
-    "snapshot_bundle_hash": "20cd469c7f81bdb385e89e80d833d2db0df97a74f8b405f446a32b0be2f8d3ad",
+    "snapshot_bundle_hash": "e94a53345294aebb7daad56c17105264a71557e33b0c834221f4820a36a57a1f",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-54df4f602934.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6c2dfa548bb724ea4aa4f944.md",
+    "rationale_anchor_hash": "6c2dfa548bb724ea4aa4f944d96460c6d9e74944fa5a64488118f76e2ad91d61"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" and clears the evidence gates. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide independent evidence for: The rationale separately says MLabs conservatively counted at least 15 teams building with Plutarch and Ply."
+      "Provide: Missing dossier section: feasibility assessment"
     ],
     "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-54df4f602934.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis"
     ],
-    "assessment_status": "incomplete",
+    "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "incomplete",
+      "overall_status": "blocked",
       "sections": [
         {
           "title": "Intake",
@@ -72,7 +75,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: governance_actions_all.csv",
             "Deep research dossier: required",
             "Requested: Annual treasury funding for MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements.",
             "Recipient: Intersect treasury reserve smart contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs.",
@@ -89,7 +92,10 @@
           "missing": [
             "Independent evidence for: MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.",
             "Independent evidence for: The rationale separately says MLabs conservatively counted at least 15 teams building with Plutarch and Ply.",
-            "Independent evidence for: The proposal states that if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face more friction, migration risk, bespoke workarounds, or avoidable rewrites."
+            "Independent evidence for: The proposal states that if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face more friction, migration risk, bespoke workarounds, or avoidable rewrites.",
+            "feasibility assessment",
+            "alternatives analysis",
+            "failure-mode analysis"
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -97,18 +103,17 @@
           "title": "Treasury analysis",
           "status": "incomplete",
           "findings": [
-            "Requested ADA: 0",
+            "Requested ADA: 1162746",
             "Budget granularity: not confirmed",
-            "Milestone payment gates: unknown",
+            "Milestone payment gates: confirmed",
             "Clawback/refund path: unknown",
-            "Cost/benefit clarity: unknown",
-            "Recurring funding dependency: unknown",
+            "Cost/benefit clarity: not confirmed",
+            "Recurring funding dependency: confirmed",
             "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-            "Financial confidence: 0.64"
+            "Financial confidence: 0.60"
           ],
           "missing": [
             "line-item budget",
-            "milestone-gated disbursement",
             "sustainability path",
             "cost-benefit clarity"
           ],
@@ -118,18 +123,17 @@
           "title": "Risk review",
           "status": "complete",
           "findings": [
-            "Execution risk: unknown",
+            "Execution risk: medium",
             "Governance risk: medium",
-            "Technical risk: unknown",
-            "Treasury exposure risk: high",
+            "Technical risk: low",
+            "Treasury exposure risk: low",
             "Mitigation evidence: confirmed",
             "Independent assurance: not confirmed",
-            "Rollback/remedy path: unknown",
+            "Rollback/remedy path: confirmed",
             "Flag count: 1"
           ],
           "missing": [
             "independent assurance",
-            "rollback/remedy path",
             "dependency map"
           ],
           "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
@@ -138,7 +142,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" and clears the evidence gates.",
+            "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -147,31 +151,36 @@
         },
         {
           "title": "Synthesis",
-          "status": "ready",
+          "status": "blocked",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [],
+          "missing": [
+            "missing feasibility assessment",
+            "missing alternatives analysis",
+            "missing failure-mode analysis"
+          ],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": []
+      "blocking_questions": [
+        "missing feasibility assessment",
+        "missing alternatives analysis",
+        "missing failure-mode analysis"
+      ]
     },
     "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-54df4f602934.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.25,
-      "cost_efficiency": 0.0,
-      "downside_risk": 0.4375,
-      "composite": -0.3531,
+      "evidence_status": "independently_verified",
+      "benefit": 0.63,
+      "delivery_confidence": 0.6,
+      "cost_efficiency": 0.2,
+      "downside_risk": 0.175,
+      "composite": 0.0658,
       "affirmative_waste_evidence": [],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence",
-        "delivery controls, milestones, assurance, or remedy path"
+        "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
     "decision_contract": {
@@ -191,18 +200,15 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.25,
-        "cost_efficiency": 0.0,
-        "downside_risk": 0.4375,
-        "composite": -0.3531,
+        "evidence_status": "independently_verified",
+        "benefit": 0.63,
+        "delivery_confidence": 0.6,
+        "cost_efficiency": 0.2,
+        "downside_risk": 0.175,
+        "composite": 0.0658,
         "affirmative_waste_evidence": [],
         "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity",
-          "cost comparables, budget proportionality, or sustainability evidence",
-          "delivery controls, milestones, assurance, or remedy path"
+          "cost comparables, budget proportionality, or sustainability evidence"
         ]
       },
       "merit_recommendation": "NEEDS_MORE_INFO",
@@ -229,18 +235,15 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.25,
-      "cost_efficiency": 0.0,
-      "downside_risk": 0.4375,
-      "composite": -0.3531,
+      "evidence_status": "independently_verified",
+      "benefit": 0.63,
+      "delivery_confidence": 0.6,
+      "cost_efficiency": 0.2,
+      "downside_risk": 0.175,
+      "composite": 0.0658,
       "affirmative_waste_evidence": [],
       "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence",
-        "delivery controls, milestones, assurance, or remedy path"
+        "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
     "merit_recommendation": "NEEDS_MORE_INFO",
@@ -261,20 +264,20 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "deep_research": {
-    "status": "verification_failed",
+    "status": "drafted_pending_review",
     "dossier_complete": "no",
-    "sections_grounded": 7,
+    "sections_grounded": 4,
     "sections_total": 7,
     "owner": "drep-agent-extract",
     "dossier_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6.md",
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6.receipt.json",
     "verification": {
-      "passed": false,
-      "verified_at_utc": "2026-07-10T13:18:10+00:00",
-      "model": "claude-cli",
-      "fact_count": 31,
-      "supported": 0,
-      "support_ratio": 0.0,
+      "passed": null,
+      "verified_at_utc": "2026-07-12T15:44:50+00:00",
+      "model": "gpt-5.5",
+      "fact_count": null,
+      "supported": null,
+      "support_ratio": null,
       "material_discrepancies": 0
     }
   },
@@ -313,7 +316,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -423,10 +426,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 21,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

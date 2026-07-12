@@ -9,7 +9,7 @@
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "YES",
     "onchain_vote": "NO",
     "diverged": true,
     "published_at": "2026-07-12T13:27:08.053028+00:00",
@@ -19,31 +19,28 @@
     "submitted_at": "2026-07-02T00:20:02+00:00"
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": -0.1,
-    "confidence": 0.745,
+    "vote": "YES",
+    "score": 0.2615,
+    "confidence": 0.7854,
     "input_hash": "eb9e991d71b04375e41d228c960d582f247b80f976c03b4182725419d719d9c3",
-    "snapshot_bundle_hash": "a73d852a3eefcf56cc79d38d1d354a42a264b0b4293ffdbfa6cb9f9f510611d2",
+    "snapshot_bundle_hash": "6a6e0758ef103ee217b0256698cde63bed9d286eeac858451df0a157b23690b8",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0-eb9e991d71b0.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/620bf1d667d9cd22c5117749.md",
+    "rationale_anchor_hash": "620bf1d667d9cd22c5117749022577ec371d81978e3088226cfb1379ff331110"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Scalus is an open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.\" and clears the evidence gates. What would enable a directional vote: Provide: independent ecosystem-value evidence packet; Provide: verified ecosystem benefit or strategic necessity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.10; confidence 74.5%.",
+    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"Scalus is an open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"Scalus components are reused in Cardano Client Lib, YaciDevKit, MeshJS SDK, Evolution SDK, and Lucid Evolution.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.26; confidence 78.5%.",
     "summary_raw": "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive nudge is justified because the claims describe bounded continuation of existing open-source infrastructure, a substantially reduced ask, explicit exclusions of larger risky scope, and milestone/assurance mechanisms. The nudge remains small because several adoption, execution, and oversight claims are proposer-asserted in the document rather than independently evidenced there, and treasury stewardship still requires caution for a multi-million ADA withdrawal.",
     "top_fixes": [
-      "Provide: independent ecosystem-value evidence packet",
-      "Provide: verified ecosystem benefit or strategic necessity",
-      "Provide independent evidence for: Scalus components are reused in Cardano Client Lib, YaciDevKit, MeshJS SDK, Evolution SDK, and Lucid Evolution."
+      "Provide independent evidence for: Scalus components are reused in Cardano Client Lib, YaciDevKit, MeshJS SDK, Evolution SDK, and Lucid Evolution.",
+      "Provide independent evidence for: The proposer says protocols and applications including Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm are built on Scalus.",
+      "Provide sustainability path."
     ],
     "markdown_path": "/data/output/public/rationales/3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0-eb9e991d71b0.md",
-    "missing_evidence": [
-      "independent ecosystem-value evidence packet",
-      "verified ecosystem benefit or strategic necessity"
-    ],
+    "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -72,7 +69,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: governance_actions_all.csv",
             "Deep research dossier: complete",
             "Requested: Continuation funding for Scalus 2026 covering maintenance, Dijkstra hard-fork readiness, interoperability across JVM and JS/TS ecosystems, and a scoped application runtime.",
             "Recipient: Lantr Engineering",
@@ -157,17 +154,14 @@
     },
     "assessment_path": "/data/output/public/rationales/3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0-eb9e991d71b0.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.75,
+      "evidence_status": "independently_verified",
+      "benefit": 0.81,
+      "delivery_confidence": 0.9,
       "cost_efficiency": 0.5,
       "downside_risk": 0.25,
-      "composite": -0.1,
+      "composite": 0.2615,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity"
-      ]
+      "missing": []
     },
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -186,24 +180,21 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.75,
+        "evidence_status": "independently_verified",
+        "benefit": 0.81,
+        "delivery_confidence": 0.9,
         "cost_efficiency": 0.5,
         "downside_risk": 0.25,
-        "composite": -0.1,
+        "composite": 0.2615,
         "affirmative_waste_evidence": [],
-        "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity"
-        ]
+        "missing": []
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "YES",
+      "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -222,20 +213,17 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.75,
+      "evidence_status": "independently_verified",
+      "benefit": 0.81,
+      "delivery_confidence": 0.9,
       "cost_efficiency": 0.5,
       "downside_risk": 0.25,
-      "composite": -0.1,
+      "composite": 0.2615,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity"
-      ]
+      "missing": []
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -304,7 +292,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -407,17 +395,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.1,
+    "binding_score": 0.2615,
     "raw_score": -0.11,
     "directional_threshold": 0.06,
-    "confidence": 0.745,
+    "confidence": 0.7854,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 20,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

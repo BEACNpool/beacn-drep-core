@@ -23,34 +23,35 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "a25d2d3fb73bcdfe270708dac1591235ede1b5b779db7902abcedbc461ef7b30",
-    "snapshot_bundle_hash": "47bd72263ff4f4d896b47a0c5dbca8c568c612d869ff882247fdaf19608a954f",
+    "snapshot_bundle_hash": "966ebd888748570f638e45090f282e43be3bfc52d10cdf4f70f3d072cd252f9b",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "rationale_markdown_path": "/data/output/public/rationales/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0-a25d2d3fb73b.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/158251197160115121c7178c.md",
+    "rationale_anchor_hash": "158251197160115121c7178caf1a9072c7408e9e57ece0edf61f83d74d934b38"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity rather than grant funding.\" and clears the evidence gates. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity rather than grant funding.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide milestone-gated disbursement."
+      "Provide: Missing dossier section: alternatives analysis"
     ],
     "markdown_path": "/data/output/public/rationales/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0-a25d2d3fb73b.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: alternatives analysis"
     ],
-    "assessment_status": "incomplete",
+    "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "incomplete",
+      "overall_status": "blocked",
       "sections": [
         {
           "title": "Intake",
@@ -72,7 +73,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: manifest",
+            "Snapshot freshness source: governance_actions_all.csv",
             "Deep research dossier: required",
             "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity",
             "Recipient: Independent multisig council composed of Rami from Snek, Phil from Surf, and James from Monetra/Moneta as administrator",
@@ -88,7 +89,8 @@
           ],
           "missing": [
             "Independent evidence for: Strike reports over 1.13 billion USD in cumulative volume, around one million trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.",
-            "Independent evidence for: The proposal states that the main constraint on further Strike growth is liquidity depth and that additional stablecoin liquidity would improve execution, volume, fee generation, and Cardano-native DeFi strength."
+            "Independent evidence for: The proposal states that the main constraint on further Strike growth is liquidity depth and that additional stablecoin liquidity would improve execution, volume, fee generation, and Cardano-native DeFi strength.",
+            "alternatives analysis"
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -96,16 +98,17 @@
           "title": "Treasury analysis",
           "status": "incomplete",
           "findings": [
-            "Requested ADA: 0",
-            "Budget granularity: confirmed",
+            "Requested ADA: 9000000",
+            "Budget granularity: not confirmed",
             "Milestone payment gates: not confirmed",
             "Clawback/refund path: confirmed",
             "Cost/benefit clarity: confirmed",
             "Recurring funding dependency: not confirmed",
             "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-            "Financial confidence: 0.68"
+            "Financial confidence: 0.60"
           ],
           "missing": [
+            "line-item budget",
             "milestone-gated disbursement"
           ],
           "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
@@ -114,10 +117,10 @@
           "title": "Risk review",
           "status": "complete",
           "findings": [
-            "Execution risk: unknown",
-            "Governance risk: unknown",
-            "Technical risk: unknown",
-            "Treasury exposure risk: unknown",
+            "Execution risk: high",
+            "Governance risk: high",
+            "Technical risk: high",
+            "Treasury exposure risk: high",
             "Mitigation evidence: confirmed",
             "Independent assurance: not confirmed",
             "Rollback/remedy path: confirmed",
@@ -133,7 +136,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity rather than grant funding.\" and clears the evidence gates.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month deployment into Strike Finance V2 liquidity rather than grant funding.\" though 1 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"Strike reports over 1.13 billion USD in cumulative volume, around one million trades, over 3,000 unique traders, over 1.16 million USD in protocol revenue, and over 3.25 million USD in liquidity provider profit.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -142,31 +145,33 @@
         },
         {
           "title": "Synthesis",
-          "status": "ready",
+          "status": "blocked",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [],
+          "missing": [
+            "missing alternatives analysis"
+          ],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": []
+      "blocking_questions": [
+        "missing alternatives analysis"
+      ]
     },
     "assessment_path": "/data/output/public/rationales/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0-a25d2d3fb73b.assessment.json",
     "treasury_dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.4,
-      "cost_efficiency": 0.7,
-      "downside_risk": 0.25,
-      "composite": -0.1475,
-      "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "delivery controls, milestones, assurance, or remedy path"
-      ]
+      "evidence_status": "independently_verified",
+      "benefit": 0.35,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.6,
+      "composite": -0.0725,
+      "affirmative_waste_evidence": [
+        "independently verified private-value capture"
+      ],
+      "missing": []
     },
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -185,25 +190,23 @@
       "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
       "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
       "dimensions": {
-        "evidence_status": "missing",
-        "benefit": 0,
-        "delivery_confidence": 0.4,
-        "cost_efficiency": 0.7,
-        "downside_risk": 0.25,
-        "composite": -0.1475,
-        "affirmative_waste_evidence": [],
-        "missing": [
-          "independent ecosystem-value evidence packet",
-          "verified ecosystem benefit or strategic necessity",
-          "delivery controls, milestones, assurance, or remedy path"
-        ]
+        "evidence_status": "independently_verified",
+        "benefit": 0.35,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.6,
+        "composite": -0.0725,
+        "affirmative_waste_evidence": [
+          "independently verified private-value capture"
+        ],
+        "missing": []
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "NO",
+      "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -222,21 +225,19 @@
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
     "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.4,
-      "cost_efficiency": 0.7,
-      "downside_risk": 0.25,
-      "composite": -0.1475,
-      "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "delivery controls, milestones, assurance, or remedy path"
-      ]
+      "evidence_status": "independently_verified",
+      "benefit": 0.35,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.6,
+      "composite": -0.0725,
+      "affirmative_waste_evidence": [
+        "independently verified private-value capture"
+      ],
+      "missing": []
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -253,20 +254,20 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
   "deep_research": {
-    "status": "verification_failed",
+    "status": "drafted_pending_review",
     "dossier_complete": "no",
-    "sections_grounded": 7,
+    "sections_grounded": 6,
     "sections_total": 7,
     "owner": "drep-agent-extract",
     "dossier_path": "/data/output/public/dossiers/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0.md",
     "receipt_path": "/data/output/public/dossiers/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0.receipt.json",
     "verification": {
-      "passed": false,
-      "verified_at_utc": "2026-07-10T13:24:16+00:00",
-      "model": "claude-cli",
-      "fact_count": 27,
-      "supported": 0,
-      "support_ratio": 0.0,
+      "passed": null,
+      "verified_at_utc": "2026-07-12T15:43:50+00:00",
+      "model": "gpt-5.5",
+      "fact_count": null,
+      "supported": null,
+      "support_ratio": null,
       "material_discrepancies": 0
     }
   },
@@ -310,7 +311,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -420,10 +421,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 22,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T13:40:44.713478Z",
-    "freshness_source": "manifest"
+    "snapshot_time": "2026-07-12T17:15:43.220895Z",
+    "freshness_source": "governance_actions_all.csv"
   }
 }

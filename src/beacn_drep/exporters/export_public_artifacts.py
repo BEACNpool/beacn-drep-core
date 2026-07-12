@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the public JSON artifact bundle for beacn-drep-web consumption."""
 import csv
+import glob
 import json
 import shutil
 import subprocess
@@ -189,6 +190,45 @@ def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
         "download_path": f"/proposals/{dst_name}",
         "preview": preview,
     }
+
+
+def _resolve_vote_receipt(action_id: str, latest_run_dir: Path) -> dict:
+    """Find the submitted vote receipt for an action, across ALL of its run dirs.
+
+    A vote is a fact about an *action*, not about one run. Run dirs are named
+    `<action_id>-<input_hash12>`, so any change to the inputs mints a NEW dir — while the
+    receipt stays behind in the dir that existed when the vote was actually cast. Reading
+    only the latest run dir therefore found a receipt for 0 of 31 voted actions, which is
+    why the public site published `transaction_hash: null` everywhere and `votes_cast: 0`
+    despite 31 real on-chain votes.
+
+    Prefer the most recently submitted receipt; fall back to the newest receipt present.
+    """
+    candidates: list[dict] = []
+    for receipt_path in RUNS.glob(f"{glob.escape(action_id)}-*/vote_receipt.json"):
+        try:
+            receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if receipt.get("action_id") and receipt["action_id"] != action_id:
+            continue  # never attribute another action's vote to this one
+        receipt["_mtime"] = receipt_path.stat().st_mtime
+        candidates.append(receipt)
+
+    if not candidates:
+        legacy = latest_run_dir / "vote_receipt.json"
+        if legacy.exists():
+            try:
+                return json.loads(legacy.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                return {}
+        return {}
+
+    submitted = [c for c in candidates if c.get("submitted")]
+    pool = submitted or candidates
+    best = max(pool, key=lambda c: (c.get("submitted_at") or "", c["_mtime"]))
+    best.pop("_mtime", None)
+    return best
 
 
 def _load_rationales_latest():
@@ -435,8 +475,7 @@ def main():
         anchor_hash = r["rationale"].get("rationale_anchor_hash")
         if anchor_hash:
             shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "r" / f"{anchor_hash[:24]}.md")
-        receipt_path = r["run_dir"] / "vote_receipt.json"
-        vote_receipt = json.loads(receipt_path.read_text(encoding="utf-8")) if receipt_path.exists() else {}
+        vote_receipt = _resolve_vote_receipt(aid, r["run_dir"])
         if vote_receipt.get("submitted"):
             votes_cast += 1
         if decision == "ABSTAIN":
@@ -483,7 +522,18 @@ def main():
                 "detected_at": a.get("first_seen", ""),
             },
             "decision": {
+                # `vote` is the engine's CURRENT recommendation. `onchain_vote` is the
+                # direction actually cast on-chain, read from the vote receipt. They can
+                # legitimately differ (evidence moved after the vote was cast, or the
+                # revision was debounced/refused), and the public site must never render
+                # one as if it were the other.
                 "vote": decision,
+                "onchain_vote": vote_receipt.get("recommendation"),
+                "diverged": bool(
+                    vote_receipt.get("submitted")
+                    and vote_receipt.get("recommendation")
+                    and vote_receipt.get("recommendation") != decision
+                ),
                 "published_at": a.get("last_updated", ""),
                 "signed": bool(vote_receipt.get("signed_tx")),
                 "submitted": bool(vote_receipt.get("submitted")),

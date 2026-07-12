@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -27,6 +28,36 @@ RES = ROOT.parent / "beacn-drep-resources"
 PACKETS = RES / "data/input/governance/decision_support/value_evidence"
 
 UA = "BEACN-DRep-evidence/1.0 (+https://beacnpool.github.io/beacn-drep-web/)"
+
+# Snapshots are arbitrary third-party pages committed to a PUBLIC repo, and any page may contain a
+# credential-shaped string: a presigned S3 URL carrying an AWS access-key id, a site's public Google
+# browser key, even a content-hashed image filename that happens to look like a Mailgun key (all
+# three showed up in the 2026-07-12 backfill and GitHub push protection rightly blocked the push).
+#
+# None of that is evidence — it is incidental page furniture — and none of it should be republished
+# from BEACN's repo. Redact on write so the problem cannot recur on the next backfill. The
+# evidential PROSE is untouched, and the sha256 is taken AFTER redaction, so the packet stays
+# internally consistent and verifiable.
+SECRET_PATTERNS = [
+    re.compile(rb"key-[0-9a-f]{32}"),                     # Mailgun-shaped (and Docusaurus asset hashes)
+    re.compile(rb"AKIA[0-9A-Z]{16}"),                     # AWS access-key id
+    re.compile(rb"ASIA[0-9A-Z]{16}"),                     # AWS temporary access-key id
+    re.compile(rb"AIza[0-9A-Za-z_\-]{35}"),               # Google API key
+    re.compile(rb"gh[pousr]_[A-Za-z0-9]{36,}"),           # GitHub token
+    re.compile(rb"xox[baprs]-[A-Za-z0-9\-]{10,}"),        # Slack token
+    re.compile(rb"sk-[A-Za-z0-9]{32,}"),                  # OpenAI-style key
+    re.compile(rb"-----BEGIN [A-Z ]*PRIVATE KEY-----"),   # any private key block
+]
+REDACTION = b"[REDACTED-CREDENTIAL-SHAPED-STRING]"
+
+
+def sanitize(data: bytes) -> tuple[bytes, int]:
+    """Strip credential-shaped strings from a fetched page. Returns (clean_bytes, n_redacted)."""
+    n = 0
+    for pat in SECRET_PATTERNS:
+        data, hits = pat.subn(REDACTION, data)
+        n += hits
+    return data, n
 
 
 def fetch(url: str) -> bytes | None:
@@ -42,6 +73,19 @@ def fetch(url: str) -> bytes | None:
 
 def main() -> int:
     total_kept = total_dropped = total_demoted = 0
+    total_redacted = 0
+    redacted_now = [0]      # redactions applied to newly fetched pages
+
+    # Re-sanitise anything already on disk from an earlier run (pre-redaction snapshots).
+    for snap in sorted((PACKETS / "snapshots").glob("*")):
+        if not snap.is_file():
+            continue
+        raw = snap.read_bytes()
+        clean, n = sanitize(raw)
+        if n:
+            snap.write_bytes(clean)
+            total_redacted += n
+            print(f"  REDACT {snap.name[:44]:46} {n} credential-shaped string(s)")
 
     for packet_path in sorted(PACKETS.glob("*.json")):
         packet = json.loads(packet_path.read_text())
@@ -59,6 +103,8 @@ def main() -> int:
                         dropped += 1
                         print(f"  DROP  {packet_path.stem[:20]:22} {field_name:30} unfetchable: {url[:60]}")
                         continue
+                    data, n_red = sanitize(data)   # never republish a credential-shaped string
+                    redacted_now[0] += n_red
                     target.parent.mkdir(parents=True, exist_ok=True)
                     target.write_bytes(data)
                     changed = True
@@ -85,7 +131,8 @@ def main() -> int:
         total_demoted += demoted
 
     print(f"\nsources pinned={total_kept} dropped(unfetchable)={total_dropped} "
-          f"fields demoted to unknown={total_demoted}")
+          f"fields demoted to unknown={total_demoted} "
+          f"credential-shaped strings redacted={total_redacted + redacted_now[0]}")
     return 0
 
 

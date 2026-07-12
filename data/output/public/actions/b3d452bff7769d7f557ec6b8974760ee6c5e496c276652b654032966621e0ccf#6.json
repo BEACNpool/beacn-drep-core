@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:54df4f602934e169ab84e1bd206ebefe3909dcbb96b1c8222b9990794c6727cb",
+    "raw_input_hash": "sha256:15efcb614ee917db842be2d7f8bda5d27cce8eaea99b219eedada4b12b6fe0a5",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-12T13:27:08.053028+00:00",
+    "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "7d98b578e736ffe3d52d69f74cea744646802a27d6bc47851e37bf53388cd1d0",
@@ -22,24 +22,24 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
     "confidence": 0.2,
-    "input_hash": "54df4f602934e169ab84e1bd206ebefe3909dcbb96b1c8222b9990794c6727cb",
-    "snapshot_bundle_hash": "e94a53345294aebb7daad56c17105264a71557e33b0c834221f4820a36a57a1f",
+    "input_hash": "15efcb614ee917db842be2d7f8bda5d27cce8eaea99b219eedada4b12b6fe0a5",
+    "snapshot_bundle_hash": "77698411ccbd7e62a4f0c23b8daf23010cd6c8aea948adf296c43be67e6ab3eb",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-54df4f602934.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6c2dfa548bb724ea4aa4f944.md",
-    "rationale_anchor_hash": "6c2dfa548bb724ea4aa4f944d96460c6d9e74944fa5a64488118f76e2ad91d61"
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-15efcb614ee9.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1d68633f24fd56e3e7a03e26.md",
+    "rationale_anchor_hash": "1d68633f24fd56e3e7a03e2680bc2e445ed8b1324d282c45ae25da75f61c915c"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
       "Provide: Missing dossier section: feasibility assessment"
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-54df4f602934.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-15efcb614ee9.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
       "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
@@ -75,24 +75,25 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: governance_actions_all.csv",
+            "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Annual treasury funding for MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements.",
-            "Recipient: Intersect treasury reserve smart contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs.",
+            "Requested: Treasury withdrawal to fund MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply annual maintenance and enhancement.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor.",
             "Stated amount: 1,162,746",
             "Deliverables: WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities, Protocol-era and hard-fork compatibility, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
             "Deadline/expiry: not stated in document",
-            "Claim (technical, supported_in_proposal, high materiality): Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
-            "Claim (adoption, proposer_asserted, high materiality): MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.",
-            "Claim (adoption, proposer_asserted, medium materiality): The rationale separately says MLabs conservatively counted at least 15 teams building with Plutarch and Ply.",
-            "Claim (technical, independently_verifiable, high materiality): MLabs\u2019 public cross-language benchmarks are cited as showing Plutarch scripts ranking among the smallest in the benchmark suite with comparatively low on-chain compute and memory.",
-            "Claim (technical, proposer_asserted, high materiality): The proposal states that if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face more friction, migration risk, bespoke workarounds, or avoidable rewrites.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission under the approved Budget Process Framework."
+            "Claim (technical, supported_in_proposal, high materiality): Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+            "Claim (adoption, proposer_asserted, high materiality): MLabs counted at least 26 teams building with Plutarch and Ply in a recent internal audit, while the rationale later states a conservative count of at least 15 teams.",
+            "Claim (technical, independently_verifiable, medium materiality): MLabs' public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory.",
+            "Claim (technical, proposer_asserted, high materiality): The proposed funding period is intended to cover ongoing Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land.",
+            "Claim (technical, proposer_asserted, high materiality): The proposal claims continued maintenance will reduce friction, migration risk, uncertainty, bespoke workarounds, and avoidable rewrites for teams maintaining production systems.",
+            "Claim (governance, proposer_asserted, medium materiality): The proposal claims alignment with Cardano 2030 Pillar 2, specifically Adoption & Utility and A.3 Developer Experience for open-source SDKs, frameworks, and infrastructure."
           ],
           "missing": [
-            "Independent evidence for: MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.",
-            "Independent evidence for: The rationale separately says MLabs conservatively counted at least 15 teams building with Plutarch and Ply.",
-            "Independent evidence for: The proposal states that if Plutarch and Ply fall behind ledger and Plutus/UPLC evolution, existing adopters may face more friction, migration risk, bespoke workarounds, or avoidable rewrites.",
+            "Independent evidence for: MLabs counted at least 26 teams building with Plutarch and Ply in a recent internal audit, while the rationale later states a conservative count of at least 15 teams.",
+            "Independent evidence for: The proposed funding period is intended to cover ongoing Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land.",
+            "Independent evidence for: The proposal claims continued maintenance will reduce friction, migration risk, uncertainty, bespoke workarounds, and avoidable rewrites for teams maintaining production systems.",
+            "Independent evidence for: The proposal claims alignment with Cardano 2030 Pillar 2, specifically Adoption & Utility and A.3 Developer Experience for open-source SDKs, frameworks, and infrastructure.",
             "feasibility assessment",
             "alternatives analysis",
             "failure-mode analysis"
@@ -142,8 +143,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open.",
-            "Strongest NO: a material claim is unsupported \u2014 \"MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open.",
+            "Strongest NO: a material claim is unsupported \u2014 \"MLabs counted at least 26 teams building with Plutarch and Ply in a recent internal audit, while the rationale later states a conservative count of at least 15 teams.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -170,7 +171,7 @@
         "missing failure-mode analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-54df4f602934.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6-15efcb614ee9.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.63,
@@ -259,7 +260,7 @@
     "anchor_hash": "7ef041d793612ddcf163127fcdb33d4188330f77fa283bda449481a47314e3f6",
     "file_sha256": "68ba550a0bd79a18108ec49e94b00443c867e50e8a9ac40d62cbdc96f82cd7d4",
     "content_bytes": "15700",
-    "fetched_at_utc": "2026-07-11T11:30:14Z",
+    "fetched_at_utc": "2026-07-12T21:15:14Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -273,8 +274,8 @@
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6.receipt.json",
     "verification": {
       "passed": null,
-      "verified_at_utc": "2026-07-12T15:44:50+00:00",
-      "model": "gpt-5.5",
+      "verified_at_utc": "2026-07-12T21:31:42+00:00",
+      "model": "claude-cli",
       "fact_count": null,
       "supported": null,
       "support_ratio": null,
@@ -315,8 +316,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -426,10 +427,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 21,
+    "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T17:15:43.220895Z",
-    "freshness_source": "governance_actions_all.csv"
+    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "freshness_source": "deep_research_dossiers.csv"
   }
 }

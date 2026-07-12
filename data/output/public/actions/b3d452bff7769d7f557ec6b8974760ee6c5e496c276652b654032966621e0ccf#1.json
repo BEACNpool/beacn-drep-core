@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:0cf48164ec30816506b99673ae49f3b277faaac12305e3d33d4c3a9d5ea8b159",
+    "raw_input_hash": "sha256:bd59fab03c6c4a4bc69655a3e535ca20b5e909259264b64d3a1a72fb36441a4f",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-12T13:27:08.053028+00:00",
+    "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "c062fdd4c001a3dcb4bcf6fc8db3c370fd8391dc20263111be8101d83c96ae10",
@@ -22,24 +22,24 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
     "confidence": 0.2,
-    "input_hash": "0cf48164ec30816506b99673ae49f3b277faaac12305e3d33d4c3a9d5ea8b159",
-    "snapshot_bundle_hash": "e27cfb079ec5db012edc3bdb3cf72fb7efc748a14bf70325464bc48ef8ffc200",
+    "input_hash": "bd59fab03c6c4a4bc69655a3e535ca20b5e909259264b64d3a1a72fb36441a4f",
+    "snapshot_bundle_hash": "2f0d4f726d05821d3878644b9206459c27f50759637859004932ecd742ea3f64",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1-0cf48164ec30.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/b60c43ceb22bcc9bf4329735.md",
-    "rationale_anchor_hash": "b60c43ceb22bcc9bf432973549fc2260cdb3dbc7eca40f7efb62439556cf06c5"
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1-bd59fab03c6c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d400cb2032dd2acf9a21ff7b.md",
+    "rationale_anchor_hash": "d400cb2032dd2acf9a21ff7b0999aa8f60ff0b797c46a17afc33dfbe3ca037be"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" though 2 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" though 2 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
       "Provide: Missing dossier section: alternatives analysis"
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1-0cf48164ec30.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1-bd59fab03c6c.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
       "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
@@ -74,23 +74,24 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: governance_actions_all.csv",
+            "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2, including part-time maintenance and enhancement work over 12 months plus Intersect administration.",
-            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
-            "Stated amount: 540,750",
-            "Deliverables: Essential maintenance of the Dolos codebase, including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation., Community support including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public developer communication., Upgrade Dolos compatibility with AI-driven development workflows through AI-friendly documentation and integration resources.",
-            "Deadline/expiry: 12 months after the closure of the existing contract; exact dates not stated in document",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.",
-            "Claim (economic, supported_in_proposal, high materiality): The motivation states the maintenance grant includes 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Dolos maintainer for 12 months at an annual rate of $105,000 USD.",
-            "Claim (technical, supported_in_proposal, high materiality): Dolos is described as a lightweight Cardano data node built in Rust that indexes ledger primitives and exposes interfaces including Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros N2C socket compatible with existing tooling.",
-            "Claim (adoption, independently_verifiable, medium materiality): The document states Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors.",
-            "Claim (technical, supported_in_proposal, high materiality): The maintainer scope covers code maintenance, community support, and AI-friendly documentation and integration resources.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting and audit materials."
+            "Requested: Fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2, including maintenance and enhancement plus Intersect administration.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe",
+            "Stated amount: 540750",
+            "Deliverables: Part-time maintainer for Dolos over 12 months, Essential maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows, Milestone-based disbursement controls and reporting obligations through Intersect oversight",
+            "Deadline/expiry: 12 months; grant period begins after closure of the existing contract",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.",
+            "Claim (technical, proposer_asserted, high materiality): Dolos is described as a lightweight Cardano data node in Rust that provides efficient access to chain data without the overhead of traditional full nodes.",
+            "Claim (technical, supported_in_proposal, medium materiality): Dolos is said to expose five query interfaces, including Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros Node-to-Client Unix socket compatible with Cardano-cli, Ogmios, and other tooling.",
+            "Claim (adoption, independently_verifiable, medium materiality): The document reports Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors.",
+            "Claim (technical, supported_in_proposal, high materiality): The maintainer scope covers dependency updates, protocol compatibility, performance improvements, bug fixing, documentation, issue triage, external contribution review, ecosystem-feedback enhancements, public communication, and AI-friendly resources.",
+            "Claim (governance, independently_verifiable, high materiality): The proposal states that it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework."
           ],
           "missing": [
-            "Independent evidence for: The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
-            "Independent evidence for: The document says project milestones will be outlined within metadata when funding is transferred to the project-specific smart contract, but the milestone details are not included in the anchor text.",
+            "Independent evidence for: Dolos is described as a lightweight Cardano data node in Rust that provides efficient access to chain data without the overhead of traditional full nodes.",
+            "Independent evidence for: The proposal states audit and oversight costs are included in overhead, with Intersect and technically capable third parties providing reporting obligations and milestone-based disbursement controls.",
+            "Independent evidence for: The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule, and that 2025 Intersect maintenance funding for Pallas, Dolos, and UTxO RPC is being delivered on schedule.",
             "alternatives analysis",
             "failure-mode analysis"
           ],
@@ -140,8 +141,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" though 2 review blocker(s) remain open.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" though 2 review blocker(s) remain open.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Dolos is described as a lightweight Cardano data node in Rust that provides efficient access to chain data without the overhead of traditional full nodes.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -166,7 +167,7 @@
         "missing failure-mode analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1-0cf48164ec30.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1-bd59fab03c6c.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.91,
@@ -255,7 +256,7 @@
     "anchor_hash": "d0b8795def551d7ca7eafd6c19de85064d78dbea75cb924e5b7d41abf1025fff",
     "file_sha256": "9b54f7bf6c5cfe4d8b618acfa41e809f0fd1d5a48f6edec3a4695bed4b3e6d32",
     "content_bytes": "13968",
-    "fetched_at_utc": "2026-07-11T11:30:14Z",
+    "fetched_at_utc": "2026-07-12T21:15:14Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -269,8 +270,8 @@
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1.receipt.json",
     "verification": {
       "passed": null,
-      "verified_at_utc": "2026-07-12T15:43:50+00:00",
-      "model": "gpt-5.5",
+      "verified_at_utc": "2026-07-12T21:31:42+00:00",
+      "model": "claude-cli",
       "fact_count": null,
       "supported": null,
       "support_ratio": null,
@@ -311,8 +312,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -422,10 +423,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 21,
+    "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T17:15:43.220895Z",
-    "freshness_source": "governance_actions_all.csv"
+    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "freshness_source": "deep_research_dossiers.csv"
   }
 }

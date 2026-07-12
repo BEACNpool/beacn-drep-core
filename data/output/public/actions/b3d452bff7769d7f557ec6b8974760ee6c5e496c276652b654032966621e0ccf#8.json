@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:17f7ae5d0ea8cf1d7c3875f4e7f306b38f708ae4c3713eff5672760f042eaa56",
+    "raw_input_hash": "sha256:9c050d8c018198c9096ce54daefa8bb7b53e7219707cfc2d35880f2dfcfc58c7",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-12T13:27:08.053028+00:00",
+    "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "28db858ee389d8684338f2dcfca905de2705e222d23740ecea67d4dbca250aae",
@@ -22,24 +22,24 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.2084,
     "confidence": 0.7721,
-    "input_hash": "17f7ae5d0ea8cf1d7c3875f4e7f306b38f708ae4c3713eff5672760f042eaa56",
-    "snapshot_bundle_hash": "940d6de4ffd638280d22f895ff8c32c3cec7ba8c0bade79a4dcb9b47820550b4",
+    "input_hash": "9c050d8c018198c9096ce54daefa8bb7b53e7219707cfc2d35880f2dfcfc58c7",
+    "snapshot_bundle_hash": "7d408f5d0c4481df68f6ac95daf05db4f53f59c2e02d8c91529fa910fe4bac25",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8-17f7ae5d0ea8.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/954401ceec39b4961092761e.md",
-    "rationale_anchor_hash": "954401ceec39b4961092761ea450fbe493fe93462f4290951b53e87772c3ae97"
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8-9c050d8c0181.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c54e71b5b69fe1cbe94e9ea7.md",
+    "rationale_anchor_hash": "c54e71b5b69fe1cbe94e9ea71319037b0ea96024d063bcc2c2460f391b82f98d"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.21; confidence 77.2%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The document states that Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and other ecosystem projects. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.21; confidence 77.2%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide independent evidence for: The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.",
+      "Provide independent evidence for: The document states that Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and other ecosystem projects.",
       "Provide line-item budget."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8-17f7ae5d0ea8.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8-9c050d8c0181.md",
     "missing_evidence": [
       "cost comparables, budget proportionality, or sustainability evidence"
     ],
@@ -71,23 +71,24 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: governance_actions_all.csv",
+            "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund Pallas by TxPipe: Maintaining Cardano's Core Rust Libraries, Year 2, including maintenance, community support, and AI-friendly documentation/integration resources.",
-            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for eventual project-specific disbursement to the vendor via Intersect-managed contracts",
-            "Stated amount: 540750",
-            "Deliverables: WP1 - Pallas Maintenance and Enhancement over 12 months, Essential codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, review of external contributions, enhancements driven by ecosystem feedback, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows, Milestone-based disbursement controls through Intersect-managed treasury smart contracts",
-            "Deadline/expiry: 12 months; grant period begins after closure of the existing contract",
+            "Requested: Treasury withdrawal to fund Pallas by TxPipe: Maintaining Cardano's Core Rust Libraries, Year 2, including maintenance, community support, and AI-friendly documentation and integration resources over 12 months.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor TxPipe",
+            "Stated amount: 540,750",
+            "Deliverables: Essential maintenance of the Pallas codebase including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation., Community support including issue triage, review of external contributions, enhancements driven by ecosystem feedback, and public communication., Upgrade Pallas compatibility with AI-driven development workflows through AI-friendly documentation and integration resources.",
+            "Deadline/expiry: 12 months; new grant period begins after closure of existing contract",
             "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.",
-            "Claim (technical, supported_in_proposal, high materiality): Pallas is a collection of Rust crates re-implementing core Ouroboros and Cardano primitives including CBOR encoding, cryptography, networking, ledger traversal, transaction building, and address handling.",
-            "Claim (adoption, proposer_asserted, high materiality): The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.",
-            "Claim (adoption, independently_verifiable, medium materiality): The proposal reports Pallas has over 649 pull requests, 199 stars, 91 forks, 60 contributors, and 214,446 crates.io downloads, with GitHub and crates.io links provided for verification.",
-            "Claim (technical, supported_in_proposal, high materiality): The planned work covers codebase maintenance, community support, and AI-friendly documentation and integration resources.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase and provides voting, documentation, audited results, and audit-report references."
+            "Claim (technical, supported_in_proposal, high materiality): Pallas is described as a collection of Rust crates re-implementing core Ouroboros and Cardano primitives including CBOR encoding, cryptographic operations, networking, ledger traversal, transaction building, and address handling.",
+            "Claim (adoption, proposer_asserted, high materiality): The document states that Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and other ecosystem projects.",
+            "Claim (adoption, independently_verifiable, high materiality): The document reports Pallas has over 649 pull requests, 199 stars, 91 forks, 60 contributors, and 214,446 crates.io downloads, with GitHub and crates.io links supplied for verification.",
+            "Claim (technical, supported_in_proposal, high materiality): The requested work covers maintenance, community support, and AI-friendly documentation and integration resources for Pallas.",
+            "Claim (governance, independently_verifiable, medium materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting and audit materials."
           ],
           "missing": [
-            "Independent evidence for: The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.",
-            "Independent evidence for: The proposal discloses that TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
+            "Independent evidence for: The document states that Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and other ecosystem projects.",
+            "Independent evidence for: The document states TxPipe has received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development and on schedule.",
+            "Independent evidence for: The document states independent oversight will be provided through Intersect and technically capable third parties, including reporting obligations and milestone-based disbursement controls."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -136,7 +137,7 @@
           "status": "complete",
           "findings": [
             "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The document states that Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC and other ecosystem projects.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -155,7 +156,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8-17f7ae5d0ea8.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8-9c050d8c0181.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.96,
@@ -244,7 +245,7 @@
     "anchor_hash": "fdad51adb75ed4039af0c86b1048c38d82c54b2d14af001ca8f1b592cf6e8c11",
     "file_sha256": "46f2ff4373574c808e3ff262ad09f178e6699c7bb6211a7458873503f60826e2",
     "content_bytes": "13938",
-    "fetched_at_utc": "2026-07-11T11:30:14Z",
+    "fetched_at_utc": "2026-07-12T21:15:14Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -300,8 +301,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -411,10 +412,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 20,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T17:15:43.220895Z",
-    "freshness_source": "governance_actions_all.csv"
+    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "freshness_source": "deep_research_dossiers.csv"
   }
 }

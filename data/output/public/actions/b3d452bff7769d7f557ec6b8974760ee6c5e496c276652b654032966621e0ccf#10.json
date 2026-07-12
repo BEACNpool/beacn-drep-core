@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:24660cf233093c1ee0c76c4c3f7794ed06addbcce289dc7e97db1e671ed7b6c7",
+    "raw_input_hash": "sha256:a2ad2a8e04f58041664cd484b314fa313cf493a4ca0a5556dee88d367c172569",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-12T13:27:08.053028+00:00",
+    "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "8c63c0bbccbe9be29dd9d0f2f8113c2b0999ff4a3a234201bff4032092a445d2",
@@ -22,24 +22,24 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.1164,
     "confidence": 0.7491,
-    "input_hash": "24660cf233093c1ee0c76c4c3f7794ed06addbcce289dc7e97db1e671ed7b6c7",
-    "snapshot_bundle_hash": "ed5ce22546cee23cf316ede01a0588b64fd0b348fc4d2d78415b44cce86d932d",
+    "input_hash": "a2ad2a8e04f58041664cd484b314fa313cf493a4ca0a5556dee88d367c172569",
+    "snapshot_bundle_hash": "5849f7de999ea6b1611d34a03f17153ec5f1d30131e3256169b37dd70c60f365",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10-24660cf23309.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/55d25c4e09bd2581053f0f19.md",
-    "rationale_anchor_hash": "55d25c4e09bd2581053f0f19c202d376b485bcb7f9416a3d584194171db5e261"
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10-a2ad2a8e04f5.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/39cdd30bb2a015d81fb0f4a1.md",
+    "rationale_anchor_hash": "39cdd30bb2a015d81fb0f4a1bdaf65bb775c7590d9a67da01d982d5b86cf2ffc"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.12; confidence 74.9%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.12; confidence 74.9%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide line-item budget.",
-      "Provide sustainability path."
+      "Provide independent evidence for: The proposal states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface.",
+      "Provide line-item budget."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10-24660cf23309.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10-a2ad2a8e04f5.md",
     "missing_evidence": [
       "cost comparables, budget proportionality, or sustainability evidence"
     ],
@@ -71,23 +71,23 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: governance_actions_all.csv",
+            "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund UTxO RPC by TxPipe: Maintaining Cardano's Integration Standard, Year 2.",
-            "Recipient: Intersect on behalf of TxPipe, with withdrawal to the 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+            "Requested: Treasury withdrawal to fund UTxO RPC by TxPipe: Maintaining Cardano's Integration Standard, Year 2.",
+            "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor TxPipe.",
             "Stated amount: 540,750",
-            "Deliverables: Part-time maintainer for UTxO RPC over 12 months, Maintenance of the protobuf specification including compatibility, versioning, and documentation, Maintenance of official SDKs including dependency updates, performance improvements, and bug fixing, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication, AI-friendly documentation and integration resources for AI-driven development workflows",
-            "Deadline/expiry: 12 months, beginning after closure of the existing contract",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.",
-            "Claim (economic, supported_in_proposal, high materiality): The maintenance work is budgeted around a part-time maintainer for 12 months at an annual rate of $105,000 USD, with a 105,000 ADA contingency reserve included in the stated funding basis.",
-            "Claim (technical, supported_in_proposal, high materiality): UTxO RPC provides an open interface specification for UTxO-based blockchains using Protocol Buffers and SDKs in Rust, Go, Node.js, .NET, Haskell, and Python.",
-            "Claim (adoption, proposer_asserted, high materiality): The proposer states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.",
-            "Claim (technical, independently_verifiable, medium materiality): The project maintains more than 10 repositories covering the core specification, language SDKs, documentation, and provider integrations, and is open-source under Apache 2.0.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal states that it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework."
+            "Deliverables: Part-time maintainer for UTxO RPC over 12 months after the existing contract closes., Maintenance of the protobuf specification, including protocol compatibility, versioning, and documentation., Maintenance of official SDKs, including dependency updates, performance improvements, and bug fixing., Community support, including issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication., AI-friendly documentation and integration resources for AI-driven development workflows.",
+            "Deadline/expiry: 12-month grant period; exact start and end dates not stated in document",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.",
+            "Claim (economic, supported_in_proposal, high materiality): The on-chain treasury withdrawal amount is 540,750 ADA, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement plus a 15,750 ADA Intersect budget administration fee.",
+            "Claim (technical, supported_in_proposal, high materiality): UTxO RPC is an open interface specification using Protocol Buffers and SDKs in Rust, Go, Node.js, .NET, Haskell, and Python to standardize interactions with UTxO-based blockchains.",
+            "Claim (adoption, proposer_asserted, high materiality): The proposal states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface.",
+            "Claim (technical, independently_verifiable, medium materiality): The project maintains more than 10 repositories covering the core specification, SDKs, documentation, and provider integrations, and is open-source under Apache 2.0.",
+            "Claim (governance, independently_verifiable, high materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase."
           ],
           "missing": [
-            "Independent evidence for: The proposer states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.",
-            "Independent evidence for: TxPipe is disclosed as having received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
+            "Independent evidence for: The proposal states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface.",
+            "Independent evidence for: TxPipe is said to have received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -135,8 +135,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for UTxO RPC maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that Amaru, Dingo, and the Haskell Cardano node have adopted UTxO RPC as a query interface, validating it as an ecosystem standard.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for a part-time UTxO RPC maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -155,7 +155,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10-24660cf23309.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10-a2ad2a8e04f5.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.73,
@@ -244,7 +244,7 @@
     "anchor_hash": "bd2b580b8a5e047ae066a4e9e906a3780c95f2d0cc6ec5b69074e12734bf683b",
     "file_sha256": "9cbda6795d3144b4e17a4161e4f77fbf9fb236e1181f9dc1ff38bcbd53f43966",
     "content_bytes": "14173",
-    "fetched_at_utc": "2026-07-11T11:30:14Z",
+    "fetched_at_utc": "2026-07-12T21:15:14Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -300,8 +300,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -411,10 +411,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 21,
+    "snapshot_age_seconds": 2,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T17:15:43.220895Z",
-    "freshness_source": "governance_actions_all.csv"
+    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "freshness_source": "deep_research_dossiers.csv"
   }
 }

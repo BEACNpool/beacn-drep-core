@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b887189513ec653ace56269f20a5d4bcf652a2b20385d6336d6414c3f6260c2b",
+    "raw_input_hash": "sha256:6179e2e1eb41a7c45fd05c327c245f821346e31c2be7b3298038c472eaac9fc7",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-12T13:27:08.053028+00:00",
+    "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "5537294956a0dcdd0bce1426265facef53ee70ec3e7c3fb175b2f2ad82b3240b",
@@ -22,24 +22,24 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.007,
     "confidence": 0.7218,
-    "input_hash": "b887189513ec653ace56269f20a5d4bcf652a2b20385d6336d6414c3f6260c2b",
-    "snapshot_bundle_hash": "280cbafbb8ed1317aef072ab903de663699ed69c2db903f702ca99f461ae8d84",
+    "input_hash": "6179e2e1eb41a7c45fd05c327c245f821346e31c2be7b3298038c472eaac9fc7",
+    "snapshot_bundle_hash": "0ccec393bfafd9fcad9f303eb27a52daafb691398ac49659605e0bf2f2e9a996",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-b887189513ec.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/7ae3114b105a32b98f197128.md",
-    "rationale_anchor_hash": "7ae3114b105a32b98f1971285edd0c89c66d39c81bbb04dcd21bba9434e4b474"
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-6179e2e1eb41.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/59957b3b3b9385fde370ff58.md",
+    "rationale_anchor_hash": "59957b3b3b9385fde370ff58337d4b5b0c529bca76442e5de8e8efeef4382260"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal claims the work aligns with Intersect budget Pillar 2 on Adoption & Utility and Pillar 4 on Community & Ecosystem Growth. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.01; confidence 72.2%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.01; confidence 72.2%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide independent evidence for: The proposal claims the work aligns with Intersect budget Pillar 2 on Adoption & Utility and Pillar 4 on Community & Ecosystem Growth.",
-      "Provide sustainability path."
+      "Provide sustainability path.",
+      "Provide cost-benefit clarity."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-b887189513ec.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-6179e2e1eb41.md",
     "missing_evidence": [
       "cost comparables, budget proportionality, or sustainability evidence"
     ],
@@ -71,25 +71,24 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: governance_actions_all.csv",
+            "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Treasury withdrawal to fund Tx3 by TxPipe: Open API Layer for Cardano's dApp Protocols, described as an open standardized interface across Cardano on-chain protocols with developer and AI-agent support.",
-            "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for administration on behalf of the vendor TxPipe.",
-            "Stated amount: 1,684,050",
-            "Deliverables: 12 additional protocol onboardings over 12 months, described as 3 per quarter, Full developer and agent coverage for onboarded protocols, MCP server for agents to discover and call published protocols, Protocol skills framework and packaging operations, Agent-first documentation and LLM-structured documentation, Open API layer work package for Cardano protocols",
+            "Requested: Fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols, including developer and agent-facing infrastructure.",
+            "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe.",
+            "Stated amount: 1684050",
+            "Deliverables: Open standardized interface across Cardano on-chain protocols, Documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from verified interface definitions, Agent-first documentation, Protocol skills packaging operations, MCP server for agents to discover and call published protocols, 12 additional protocol onboardings over 12 months, described as 3 per quarter, Shared infrastructure for all protocols on the Tx3 Protocol Registry",
             "Deadline/expiry: 12 months",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
-            "Claim (technical, proposer_asserted, high materiality): Tx3 is intended to provide a standard open-source interface for Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.",
-            "Claim (adoption, independently_verifiable, high materiality): The proposal states that Catalyst Fund 14 has already put Tx3's developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
-            "Claim (technical, proposer_asserted, high materiality): The proposal claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and rebuild understanding independently.",
-            "Claim (technical, supported_in_proposal, high materiality): The proposal says it will fund 12 additional protocol onboardings, at 3 per quarter, with developer and agent coverage.",
-            "Claim (governance, proposer_asserted, medium materiality): The proposal claims the work aligns with Intersect budget Pillar 2 on Adoption & Utility and Pillar 4 on Community & Ecosystem Growth."
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
+            "Claim (technical, proposer_asserted, high materiality): The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.",
+            "Claim (technical, proposer_asserted, high materiality): The proposer says Cardano currently lacks a common interface mechanism across protocols, causing integrators to relearn protocols, rebuild understanding, and face higher integration costs.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposer says Tx3 describes each protocol once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints.",
+            "Claim (adoption, independently_verifiable, high materiality): The document states that Catalyst Fund 14 has already put the Tx3 developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposal commits to funding 12 additional protocol onboardings, at 3 per quarter, with full developer and agent coverage."
           ],
           "missing": [
-            "Independent evidence for: Tx3 is intended to provide a standard open-source interface for Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.",
-            "Independent evidence for: The proposal claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and rebuild understanding independently.",
-            "Independent evidence for: The proposal claims the work aligns with Intersect budget Pillar 2 on Adoption & Utility and Pillar 4 on Community & Ecosystem Growth.",
-            "Independent evidence for: The proposal states TxPipe has received funding through 30 Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
+            "Independent evidence for: The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.",
+            "Independent evidence for: The proposer says Cardano currently lacks a common interface mechanism across protocols, causing integrators to relearn protocols, rebuild understanding, and face higher integration costs.",
+            "Independent evidence for: The proposer says the work aligns with Intersect Pillar 2 for Adoption and Utility through developer experience and open-source incentives."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -136,8 +135,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Tx3 is intended to provide a standard open-source interface for Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -156,7 +155,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-b887189513ec.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-6179e2e1eb41.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.43,
@@ -245,7 +244,7 @@
     "anchor_hash": "9bae52227b542364950023dcbd958f4198443a55d2a3cb4bf6f75fdd7888555f",
     "file_sha256": "79c3163a2a1f9d117ad6cfb0e08c9699dbcd3a39bc0f3cfb2462452f274461a1",
     "content_bytes": "15285",
-    "fetched_at_utc": "2026-07-11T11:30:14Z",
+    "fetched_at_utc": "2026-07-12T21:15:14Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -301,8 +300,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
-    "core_commit": "1b55a4f1b343dba7367c06b37143b4d7d8093a30",
+    "resources_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+    "core_commit": "33f88ac55ccc4bb42ee7eed3aad029fc4c50cbaa",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -412,10 +411,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 20,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T17:15:43.220895Z",
-    "freshness_source": "governance_actions_all.csv"
+    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "freshness_source": "deep_research_dossiers.csv"
   }
 }

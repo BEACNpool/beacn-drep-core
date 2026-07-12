@@ -29,7 +29,7 @@ This ABSTAIN is a conservative, evidence-based hold, not active opposition. A di
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: not required
 - finding: Requested: Info action to introduce basic ideas for reforming Cardano treasury governance into public discussion and encourage ecosystem collaboration on improved treasury governance processes.
 - finding: Recipient: not stated in document
@@ -104,12 +104,12 @@ This ABSTAIN is a conservative, evidence-based hold, not active opposition. A di
 
 ## Reproducibility
 - input_hash: `442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162`
-- snapshot_bundle_hash: `4834880d51e915b2ac1a33ad21de9bfcbf9d8022422254192117b744909ad892`
+- snapshot_bundle_hash: `90c8a845edcdb1034dfed8e1bdd97716b5dea232d02ab8f7fbf2dd096137d064`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `110`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4531, "NO": 0.3234, "YES": 0.2234}`

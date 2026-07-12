@@ -78,10 +78,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "31da0abac4087cd2084307bf3e78123feadd69854728aac48c5d7887b96d8f2f",
-  "snapshot_bundle_hash": "c6dbc71cfd23f5eb22e83f2ea4249aea2df6f60f1f0f80a0c8d9b647a2d6fb8f",
+  "snapshot_bundle_hash": "0f43deca0e01ed19c733d11c0352e4f2f1a1f1f534f4eecc26eba509dbb204fe",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -101,11 +101,11 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 110,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
     "YES": 0.315,
@@ -143,7 +143,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: required",
           "Requested: Reimburse the unrecovered deposit from the earlier Ikigai Info governance action, plus compensation for estimated missed staking rewards.",
           "Recipient: the Ikigai Info governance action submitter; specific recipient identity/address not stated in document",
@@ -331,7 +331,5 @@
       "output_sha256": "43b575f7373bf5beb0a2935198b5e0f22cf43b4340771a3dbf37c9d917f91674"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/9e2d67f619ef79cf1ffbdc28.md",
-  "rationale_anchor_hash": "9e2d67f619ef79cf1ffbdc284a63271b5256676fca0b6230ab90f8f7402bf3cb"
+  }
 }

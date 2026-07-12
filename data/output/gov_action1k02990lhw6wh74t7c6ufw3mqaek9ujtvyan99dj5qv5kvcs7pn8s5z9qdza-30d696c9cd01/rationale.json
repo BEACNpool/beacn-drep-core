@@ -3,11 +3,11 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2133,
+  "score": -0.2025,
   "raw_score": -0.2133,
   "llm_score_adjustment": 0.02,
   "llm_lean": {
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7733,
+  "confidence": 0.7706,
   "readiness_score": 0.85,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -60,7 +60,7 @@
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive nudge is justified because the supplied claims describe maintenance of established open-source developer infrastructure, checkable budget-process and NCL references, and structured disbursement oversight; the adjustment remains small because several adoption and delivery-history claims are proposer-asserted and treasury stewardship still requires caution on a sizable recurring maintenance ask.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -84,10 +84,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "30d696c9cd013ed948f7b871b12eea9aefe7e7bf5b5e5498f120f7b3b36aae93",
-  "snapshot_bundle_hash": "642b29336b2c47dc09f28e9bcf9eec57df464baaa5832272d2fa5a3dcbfff0c8",
+  "snapshot_bundle_hash": "897efadcf89cdebcbb8a2074323013e3e9f026d92c6d341f0050c38cbe72a4bc",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,16 +107,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 109,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.049,
-    "NO": 0.4477,
-    "ABSTAIN": 0.5033
+    "YES": 0.0496,
+    "NO": 0.4423,
+    "ABSTAIN": 0.5082
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -149,7 +149,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Treasury withdrawal to fund UTxO RPC by TxPipe: Maintaining Cardano's Integration Standard, Year 2.",
           "Recipient: Intersect Treasury Reserve Smart Contract stake address for administration on behalf of the vendor TxPipe",
@@ -321,7 +321,5 @@
       "output_sha256": "93c27866e42816b9ecaebd72edc259b9c239fd16765b19b4b3cf5081d0449950"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/dfb6974d991704ee9c9dc3fc.md",
-  "rationale_anchor_hash": "dfb6974d991704ee9c9dc3fc4d791795b22ee1ea8afb5809b1990ec6c0d14e39"
+  }
 }

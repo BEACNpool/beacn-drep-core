@@ -1,6 +1,6 @@
 # Rationale: gov_action1suskjc6c4nw58c6wtmv77xe79gwj47wp4gvh9cqhhxujwxmam3cqqkz5nwj
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.4933` (raw `-0.4933` + doctrine-LLM nudge `-0.02`) | Confidence: `0.79` | Readiness: `0.8`
+Score: `-0.11` (raw `-0.9433` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7175` | Readiness: `0.8`
 > Reasoning layer (precomputed): A small cautionary nudge is justified because the request exposes treasury assets to market, stablecoin, custody, and smart contract risks while several key traction, market-share, audit, and performance claims are stated without references in the anchor document. The proposal does include concrete terms, reporting commitments, custody separation, and risk triggers, so the adjustment should remain small rather than overriding the deterministic assessment.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ Because this is a TreasuryWithdrawals action, BEACN applies elevated scrutiny: s
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM stablecoin liquidity and returned after the deployment period.
 - finding: Recipient: independent council composed of Rami from Snek, Phil from Surf, and James from Monetra/Moneta as administrator and multisig overseer; exact treasury receiving account not stated in document
@@ -100,7 +100,7 @@ Because this is a TreasuryWithdrawals action, BEACN applies elevated scrutiny: s
 
 ## Inferences
 - Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: A small cautionary nudge is justified because the request exposes treasury assets to market, stablecoin, custody, and smart contract risks while several key traction, market-share, audit, and performance claims are stated without references in the anchor document. The proposal does include concrete terms, reporting commitments, custody separation, and risk triggers, so the adjustment should remain small rather than overriding the deterministic assessment.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,6 +110,7 @@ Because this is a TreasuryWithdrawals action, BEACN applies elevated scrutiny: s
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
+- Proposal requests over 50% of rolling available capacity.
 - No milestone-gated disbursement documented.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Strike claims it has processed more than 1.13 billion USD in cumulative volume, facilitated roughly 968,000 to 1,001,000 trades, served more than 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity-provider profit.
@@ -125,13 +126,13 @@ Because this is a TreasuryWithdrawals action, BEACN applies elevated scrutiny: s
 
 ## Reproducibility
 - input_hash: `1b091b80946f67485feefea5fb75a44b5fb54c34efc039817dd93cb3cf83751b`
-- snapshot_bundle_hash: `bf8cf91ed67bebbb79de72cd10e2ece039cacd09d0c9e9018f6bc17fd08cc807`
+- snapshot_bundle_hash: `0b776abe2149004b4ff5c03cc2d965182f1e7f117110a75f4c7103b9a103f2ff`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `110`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4111, "NO": 0.5492, "YES": 0.0397}`
+- decision_probs: `{"ABSTAIN": 0.4994, "NO": 0.3603, "YES": 0.1403}`
 

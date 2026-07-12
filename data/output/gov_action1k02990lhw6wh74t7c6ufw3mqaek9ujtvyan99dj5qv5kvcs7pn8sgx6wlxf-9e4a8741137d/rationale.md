@@ -1,6 +1,6 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.85`
+Score: `-0.2025` (raw `-0.6633` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7706` | Readiness: `0.85`
 > Reasoning layer (precomputed): A small positive nudge is justified because the claims include specific budget work packages, public voting and NCL references, prior-funding disclosure, external assurance, and smart-contract custody controls, which improve evidence quality and treasury accountability beyond bare assertions. The nudge remains small because several high-materiality operational performance claims are still proposer-asserted within the document.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Treasury withdrawal for Intersect governance coordination, technical stewardship, incident response, release coordination, and critical process management for June 2026 to June 2027.
 - finding: Recipient: Intersect / 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v
@@ -103,7 +103,7 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: A small positive nudge is justified because the claims include specific budget work packages, public voting and NCL references, prior-funding disclosure, external assurance, and smart-contract custody controls, which improve evidence quality and treasury accountability beyond bare assertions. The nudge remains small because several high-materiality operational performance claims are still proposer-asserted within the document.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -113,6 +113,7 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
+- Proposal requests over 50% of rolling available capacity.
 - Claims and evidence missing: Independent evidence for: The proposal says Intersect has matured over two years into a focused operational layer that supports committees and working groups, stewards core Haskell repositories, coordinates upgrades and incident response, and administers community-approved initiatives.
 - Claims and evidence missing: Independent evidence for: Intersect states the current ask is reduced from last year's $7.875M to $6.35M while preserving the functions most critical to Cardano continuity and maturity.
 - Claims and evidence status is thin.
@@ -128,13 +129,13 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 
 ## Reproducibility
 - input_hash: `9e4a8741137d9f68ac94bfca2535f44c5f39eb762956956e62c86f683c6e5f12`
-- snapshot_bundle_hash: `bb6f2c1d0561528a7892a146f665776bd4c96fe372dcb4911505fedc163a6b9e`
+- snapshot_bundle_hash: `4aceb93c5b36e573daea42a77d1c08387d26dd6512e4f51755c3cb9f21509bb2`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `2`
+- snapshot_age_seconds: `108`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
+- decision_probs: `{"ABSTAIN": 0.5082, "NO": 0.4423, "YES": 0.0496}`
 

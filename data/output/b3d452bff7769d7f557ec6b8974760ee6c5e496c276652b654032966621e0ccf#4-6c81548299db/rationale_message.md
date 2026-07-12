@@ -1,0 +1,13 @@
+# Withdraw 25,400,000 ada for Intersect: Governance coordination and technical ...
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal and the required deep-research dossier was not complete enough to support a directional vote.
+
+The action asks to withdraw 25,400,000 ada for Intersect, directed to the 2026 Treasury Reserve Smart Contract stake address. The proposal says the funding would cover June 2026 to June 2027 work across governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, ecosystem coordination, and management of critical processes. It breaks the request into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for critical process management, with milestone-based drawdowns, reporting, disclosures, and external assurance by Appold.
+
+Several important claims were supported in the proposal or linked to verifiable records: the budget breakdown, the proposal anchor, the stated Intersect Budget Process support threshold, the Net Change Limit statement, prior treasury funding disclosures, and the planned use of Sundae Labs treasury management smart contracts and a public dashboard. But other material claims still lacked independent evidence in the review, including the claim that the overall ask decreased from $7.875M to $6.35M while preserving critical functions, and the claim that Intersect coordinated two network upgrades, is preparing for a third, and led coordination during the November 2025 chain partition incident.
+
+This is a conservative, evidence-based hold. The review gates did not reach the bar needed for a treasury action: claims-and-evidence was thin, treasury analysis was incomplete, execution risk remained unknown, sustainability and cost-benefit clarity were missing, and the risk review still needed independent assurance plus a rollback or remedy path. A directional vote would be unblocked by a completed deep-research dossier with independent evidence for the unsupported material claims, clearer treasury cost-benefit and sustainability analysis, and a stronger risk review covering assurance and remedies.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

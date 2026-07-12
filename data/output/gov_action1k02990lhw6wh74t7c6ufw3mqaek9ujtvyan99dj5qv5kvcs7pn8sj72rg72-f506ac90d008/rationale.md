@@ -1,6 +1,6 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7733` | Readiness: `0.85`
+Score: `-0.2156` (raw `-0.2133` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7739` | Readiness: `0.85`
 > Reasoning layer (precomputed): The claims show plausible public-benefit ecosystem growth and several independently checkable governance and NCL references, while the deterministic assessment has already marked claims, treasury analysis, and risk review complete. No additional doctrine-based nudge is justified beyond the engine because the high-level ecosystem and AI-agent benefits remain partly proposer-asserted and the large treasury spend is already covered by the mechanical review.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ The review gates showed enough substance to take the proposal seriously, but not
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Fund Tx3 by TxPipe, described as an open API layer for Cardano dApp protocols with developer and AI-agent-facing infrastructure.
 - finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor
@@ -102,7 +102,7 @@ The review gates showed enough substance to take the proposal seriously, but not
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -127,13 +127,13 @@ The review gates showed enough substance to take the proposal seriously, but not
 
 ## Reproducibility
 - input_hash: `f506ac90d0086750c41146410d2151ceb8b2fb82bc05b935909ace209ce32a2e`
-- snapshot_bundle_hash: `66af02984c7f3ce185a6e1c8f399202729941c8def610bbef319c85e2464cbcf`
+- snapshot_bundle_hash: `7d416ea6bbf3faf3af86a06b6fb834d8141ed3bd413001d6a54671ce591b4432`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `2`
+- snapshot_age_seconds: `108`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
+- decision_probs: `{"ABSTAIN": 0.5023, "NO": 0.4488, "YES": 0.0489}`
 

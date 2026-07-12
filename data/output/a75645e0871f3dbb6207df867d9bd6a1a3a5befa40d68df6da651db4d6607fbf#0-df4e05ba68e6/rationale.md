@@ -1,7 +1,7 @@
 # Rationale: a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0
 Recommendation: **ABSTAIN**
-Score: `-0.05` (raw `-0.05` + doctrine-LLM nudge `-0.02`) | Confidence: `0.4825` | Readiness: `0.6`
-> Reasoning layer (precomputed): The proposal gives clear governance intent and accounting rules, but several high-materiality points, including superseding the prior limit, threshold interpretation, and the need for additional room under the old cap, are largely asserted rather than evidenced within the document. Under the doctrine, this supports only a small cautionary nudge because the action is signaling rather than a direct withdrawal, but it still affects treasury coordination.
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
+
 
 ## Plain-language explanation (precomputed)
 BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The action clearly states a proposed Net Change Limit of 500,000,000 ada for Cardano Treasury withdrawals during Epochs 613-713, but several material claims behind that change were asserted rather than independently supported.
@@ -13,7 +13,7 @@ The strongest supported case for Yes is that the core request and accounting rul
 This ABSTAIN is a conservative, evidence-based hold, not active opposition. A directional vote would be unblocked by replayable independent evidence showing how this action supersedes the prior limit, evidence that the existing 350,000,000 ada limit is becoming practically constrained, and clearer mitigation or assurance around the governance and execution risks.
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -65,28 +65,28 @@ This ABSTAIN is a conservative, evidence-based hold, not active opposition. A di
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The proposal supersedes any prior Net Change Limit for the same Epochs 613-713 period, including the previously agreed 350,000,000 ada limit referenced in the motivation." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Flag score present (3), reducing confidence.
+- Data freshness check failed: data is 91633s old, max allowed is 21600s
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: The proposal gives clear governance intent and accounting rules, but several high-materiality points, including superseding the prior limit, threshold interpretation, and the need for additional room under the old cap, are largely asserted rather than evidenced within the document. Under the doctrine, this supports only a small cautionary nudge because the action is signaling rather than a direct withdrawal, but it still affects treasury coordination.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -94,23 +94,27 @@ This ABSTAIN is a conservative, evidence-based hold, not active opposition. A di
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- DRep ratification support is below threshold; this is not treated as active opposition.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: The proposal supersedes any prior Net Change Limit for the same Epochs 613-713 period, including the previously agreed 350,000,000 ada limit referenced in the motivation.
 - Claims and evidence missing: Independent evidence for: The existing 350,000,000 ada Net Change Limit has served as a useful fiscal guardrail, but practical room under it is becoming constrained through mid-2027.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `df4e05ba68e67c8d82673aca9c217a4fa7671295f35844e8cee0612ae61fb434`
-- snapshot_bundle_hash: `8fcefd1a37ceac7d8b78f92ce3d6069ec72d983557eed1ac8d21e4095d8560c3`
+- snapshot_bundle_hash: `eb928163c0167360c6ea85b3e1d4c72177d656977fa97ac1040dd166be6318fc`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
+- snapshot_age_seconds: `91633`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4406, "NO": 0.3297, "YES": 0.2297}`
+- evidence_depth_score: `1`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

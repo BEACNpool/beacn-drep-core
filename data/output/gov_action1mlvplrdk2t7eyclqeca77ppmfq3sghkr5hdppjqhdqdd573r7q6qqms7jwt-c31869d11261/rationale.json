@@ -3,12 +3,12 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2433,
-  "raw_score": -0.2433,
+  "score": -0.2019,
+  "raw_score": -0.6933,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7808,
+  "confidence": 0.7705,
   "readiness_score": 0.8,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -59,7 +59,7 @@
   ],
   "inferences": [
     "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The extracted claims show potentially meaningful public-benefit growth and some checkable Catalyst/testnet references, but the largest treasury-relevant and protocol-safety claims remain mostly proposer-asserted in the supplied text, especially SPO-threshold custody, fallback safety, audited mainnet readiness, and adoption targets. Given the assessment marks evidence as thin and overall status incomplete, a small cautionary nudge is warranted rather than a positive spending nudge.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -69,6 +69,7 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Proposal requests over 50% of rolling available capacity.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO threshold modes under controlled access.",
     "Claims and evidence missing: Independent evidence for: Bifrost custody is claimed not to be held by a company, foundation, or fixed signing committee, but distributed across 400+ Cardano SPOs weighted by delegation.",
@@ -83,10 +84,10 @@
     "delivery controls, milestones, assurance, or remedy path"
   ],
   "input_hash": "c31869d1126149cb19b18718209277982ba9989fbc89f038a7523d22c858de31",
-  "snapshot_bundle_hash": "375039afe1830a1d725a6a3547e926a39ef9cca623bd0753b2242febbb2502d1",
+  "snapshot_bundle_hash": "dc44944e28172a04c4cb026d167477c7ee152cd88943e37416a5cae036831a34",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -106,16 +107,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 106,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0476,
-    "NO": 0.4622,
-    "ABSTAIN": 0.4902
+    "YES": 0.0496,
+    "NO": 0.442,
+    "ABSTAIN": 0.5084
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -148,7 +149,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Fund Phase 1 of 2 for Bifrost, a permissionless Bitcoin-Cardano bridge intended to move from working testnet to launch readiness with hardening, audits, formal verification, ecosystem and partner readiness, and stewardship/economic foundations.",
           "Recipient: FluidTokens and Lantr Engineering",
@@ -321,7 +322,5 @@
       "output_sha256": "634fd8488ba06d30c26103035e36023286a7e015a0f96bc8909565a9b765ee5b"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/aa1207d4be997711cb55355e.md",
-  "rationale_anchor_hash": "aa1207d4be997711cb55355e94e20eb8400aace37b7d4420f6c566e7f989abbd"
+  }
 }

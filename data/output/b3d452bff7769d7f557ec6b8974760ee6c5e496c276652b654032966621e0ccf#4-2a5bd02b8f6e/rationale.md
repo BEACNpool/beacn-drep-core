@@ -1,19 +1,13 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#4
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal and the required deep-research dossier was not complete enough to support a directional vote.
-
-The action asks to withdraw 25,400,000 ada for Intersect, directed to the 2026 Treasury Reserve Smart Contract stake address. The proposal says the funding would cover June 2026 to June 2027 work across governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, ecosystem coordination, and management of critical processes. It breaks the request into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for critical process management, with milestone-based drawdowns, reporting, disclosures, and external assurance by Appold.
-
-Several important claims were supported in the proposal or linked to verifiable records: the budget breakdown, the proposal anchor, the stated Intersect Budget Process support threshold, the Net Change Limit statement, prior treasury funding disclosures, and the planned use of Sundae Labs treasury management smart contracts and a public dashboard. But other material claims still lacked independent evidence in the review, including the claim that the overall ask decreased from $7.875M to $6.35M while preserving critical functions, and the claim that Intersect coordinated two network upgrades, is preparing for a third, and led coordination during the November 2025 chain partition incident.
-
-This is a conservative, evidence-based hold. The review gates did not reach the bar needed for a treasury action: claims-and-evidence was thin, treasury analysis was incomplete, execution risk remained unknown, sustainability and cost-benefit clarity were missing, and the risk review still needed independent assurance plus a rollback or remedy path. A directional vote would be unblocked by a completed deep-research dossier with independent evidence for the unsupported material claims, clearer treasury cost-benefit and sustainability analysis, and a stronger risk review covering assurance and remedies.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 25,400,000 ada for Intersect: Governance coordination and technical ..." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 25.40M ADA from the treasury. A key material claim lacks independent support: "Intersect states that its overall ask has decreased from $7.875M last year to $6.35M this year while preserving functions it considers critical to Cardano continuity and maturity.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -77,28 +71,29 @@ This is a conservative, evidence-based hold. The review gates did not reach the 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Intersect says the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, and critical unowned processes." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "Intersect says the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, and critical unowned processes." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "Intersect states that its overall ask has decreased from $7.875M last year to $6.35M this year while preserving functions it considers critical to Cardano continuity and maturity." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91636s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect says the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, and critical unowned processes." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Intersect says the proposal funds its core operating model for June 2026 to June 2027, including governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, and critical unowned processes." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -107,7 +102,7 @@ This is a conservative, evidence-based hold. The review gates did not reach the 
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: Intersect states that its overall ask has decreased from $7.875M last year to $6.35M this year while preserving functions it considers critical to Cardano continuity and maturity.
 - Claims and evidence missing: Independent evidence for: Intersect claims it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.
 - Claims and evidence status is thin.
@@ -116,20 +111,20 @@ This is a conservative, evidence-based hold. The review gates did not reach the 
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `2a5bd02b8f6e26c596c39274cf6ed4adcdba008505472fbd099ed6698791b731`
-- snapshot_bundle_hash: `09ad375ca5ec9d1db825d81627e8aa8b8d5af7b7ef337419c23b55925fe2fef5`
+- snapshot_bundle_hash: `4b81b99ad906f4d9b5aaf49c88ffec50a600e42297f04673ea70375839557d87`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `91636`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

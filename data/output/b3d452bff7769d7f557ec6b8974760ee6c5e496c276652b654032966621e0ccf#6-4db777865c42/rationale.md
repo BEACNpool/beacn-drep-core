@@ -1,19 +1,13 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and the completed deep-research dossier needed for a directional vote was not confirmed. This is a conservative, evidence-based hold, not a rejection of Plutarch, Ply, or MLabs’ work.
-
-The proposal requests 1,162,746 ada for annual maintenance and enhancement of Plutarch and Ply, including compatibility work, bug fixes, optimizations, documentation, examples, technical posts, and developer-experience improvements. It says Plutarch and Ply are core Cardano development tools, that they are used by many teams, that benchmarks show strong script-size and resource results, and that the proposal passed the required Intersect Budget Process support threshold. Some core technical claims were supported, including the description of Plutarch and Ply and the cited benchmark evidence. The budget total and Intersect administration fee were also stated.
-
-The hold comes from the evidence gaps. The review found that adoption claims, including the reported count of at least 26 teams and the separate count of at least 15 teams, still need independent evidence. The treasury analysis was incomplete, with missing line-item budget detail and missing milestone-gated disbursement evidence. The risk review also remained incomplete, with independent assurance and a rollback or remedy path still missing. Execution risk was therefore unknown.
-
-A directional vote would be unblocked by a complete deep-research dossier with replayable public evidence for the adoption claims, a clear line-item budget, confirmed milestone-gated disbursement controls, independent assurance, and a stated rollback or remedy path. Until those gates pass, BEACN cannot responsibly vote Yes or No on spending shared treasury ada.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 1,162,746 ada for MLabs Core Tool Maintenance & Enhancement: Plutarc..." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.16M ADA from the treasury. A key material claim lacks independent support: "MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -80,28 +74,29 @@ A directional vote would be unblocked by a complete deep-research dossier with r
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91636s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,7 +105,7 @@ A directional vote would be unblocked by a complete deep-research dossier with r
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem and reports an internal audit count of at least 26 teams building with them.
 - Claims and evidence missing: Independent evidence for: The rationale separately says MLabs conservatively counted at least 15 teams building with Plutarch and Ply.
 - Claims and evidence status is thin.
@@ -119,20 +114,20 @@ A directional vote would be unblocked by a complete deep-research dossier with r
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `4db777865c42f57643f57d1985968230b285c6fad5114287f9efc4430e44821a`
-- snapshot_bundle_hash: `843c6de95c47b2b734855fffb19eaeb5c67539946b77f4adfc12e4d442b7dafc`
+- snapshot_bundle_hash: `3094fae4e4ff954aaf5456d7ca1412bf66e409bc7ee21fdf3eae91515ed7980b`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `91636`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

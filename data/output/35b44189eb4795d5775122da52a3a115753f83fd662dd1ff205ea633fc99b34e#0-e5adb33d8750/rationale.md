@@ -1,19 +1,13 @@
 # Rationale: 35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0
-Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.11` (raw `-0.11` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7775` | Readiness: `0.9`
-> Reasoning layer (precomputed): The proposal is aligned with public-benefit ecosystem growth and includes milestone gating, audit commitments, budget detail, and a repayment structure, but several of the most material adoption and execution claims remain proposer-asserted within the extracted record, including Phase 1 live status, Sellout user volume, Yellowstone deployment economics, and projected usage. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment for plausible growth upside.
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the project.
 
-The action requests 4,969,231 ada to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, with Intersect acting as budget administrator under the Sundae Labs TRSC/PSSC framework. The proposal describes an 8-month, five-milestone plan covering a secondary ticket marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, a third-party smart-contract audit, public launch activity, a metrics dashboard, quarterly reports, and a final governance report.
-
-Several parts of the proposal were well-supported in the submitted record: the anchor document was pinned and replayable, the budget included line items and a 3% Intersect administration fee, funds would be milestone-gated, and the proposal commits to repay 1,093,231 ada to the Treasury through a revenue-share mechanism. However, some of the most material claims remained proposer-asserted rather than independently verified in the extracted review, including that Phase 1 is already live on Cardano mainnet, Sellout’s user and ticketing volume, the Yellowstone Club deployment economics, and the projected adoption targets.
-
-The review gates showed enough structure to review the action, and the strongest positive case was acknowledged: the repayment commitment and milestone framework are real supporting factors. But treasury votes require a higher bar because they spend shared ada and set precedent. To unblock a YES or NO vote, BEACN would need the Net Change Limit pinned and independently verified from public chain evidence, plus stronger independent evidence for the live Phase 1 mainnet claims and clearer assurance around execution risk, rollback, and remedies.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 4,969,231 ada for Cardano Enterprise Adoption: Ticketing Platform" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 4.97M ADA from the treasury. A key material claim lacks independent support: "Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -77,30 +71,29 @@ The review gates showed enough structure to review the action, and the strongest
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
+- Data freshness check failed: data is 91634s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal commits to repay $1,093,231 to the Cardano Treasury via a revenue-share mechanism, initially sending 25% of all fees until full reimbursement and 5% permanently afterward." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: The proposal is aligned with public-benefit ecosystem growth and includes milestone gating, audit commitments, budget detail, and a repayment structure, but several of the most material adoption and execution claims remain proposer-asserted within the extracted record, including Phase 1 live status, Sellout user volume, Yellowstone deployment economics, and projected usage. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment for plausible growth upside.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -109,27 +102,26 @@ The review gates showed enough structure to review the action, and the strongest
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- DRep ratification support is below threshold; this is not treated as active opposition.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.
 - Claims and evidence missing: Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.
 - Claims and evidence status is thin.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- independent ecosystem-value evidence packet
-- verified ecosystem benefit or strategic necessity
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `e5adb33d8750d996405d4b0a66a24348f2e4500a02fa7d3852c13b9935893fc8`
-- snapshot_bundle_hash: `e24cecc185bc7002b3c0a6f66bd5f72e9df6c40906aaa4aa9da00adecd556cb3`
+- snapshot_bundle_hash: `26f5afe3fecb442ce08aff3c5e6eae890bb865f2403e21943a0a6bb2d1bc4485`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
-- uncertainty_band: `MEDIUM`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5144, "NO": 0.3528, "YES": 0.1328}`
+- snapshot_age_seconds: `91634`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

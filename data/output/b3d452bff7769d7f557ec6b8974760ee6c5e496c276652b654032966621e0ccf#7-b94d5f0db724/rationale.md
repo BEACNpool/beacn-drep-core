@@ -1,19 +1,13 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and the review did not have a complete deep-research dossier for a high-impact use of shared ADA. This is a conservative, evidence-based hold, not a rejection of Oura or TxPipe.
-
-The action requested 540,750 ada for 12 months of Oura maintenance, including a part-time maintainer, dependency and protocol-compatibility work, performance improvements, bug fixes, documentation, community support, AI-friendly integration resources, and milestone-based disbursement through Intersect treasury management smart contracts. The proposal says the core request is 420,000 ada plus a 105,000 ada contingency reserve and a 15,750 ada Intersect administration fee. It also describes Oura as a Rust-native Cardano event pipeline tool, and those technical and budget claims were supported in the proposal. Some governance claims were independently checkable, including Intersect Budget Process support and the Net Change Limit statement.
-
-The review found that other important claims were still too thin for a directional treasury vote. In particular, independent evidence was missing for the claim that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing, and for the claim that Oura had prior Project Catalyst funding in Funds 9 and 13. The treasury review was also incomplete on sustainability path and cost-benefit clarity, while the risk review still lacked independent assurance and a rollback or remedy path.
-
-The evidence that would unblock a YES or NO vote is a completed deep-research dossier: replayable public evidence for the major adoption and funding claims, a clearer treasury analysis showing sustainability and cost-benefit, and a fuller risk review covering independent assurance and remedies if execution fails. Until those gates pass, BEACN cannot responsibly turn this into a directional vote.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 540,750 ada for Oura by TxPipe: Maintaining Cardano’s Event Pipeline" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 540.8k ADA from the treasury. A key material claim lacks independent support: "The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -78,28 +72,29 @@ The evidence that would unblock a YES or NO vote is a completed deep-research do
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91636s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -108,7 +103,7 @@ The evidence that would unblock a YES or NO vote is a completed deep-research do
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.
 - Claims and evidence missing: Independent evidence for: The proposer states Oura has been funded twice through Project Catalyst, in Funds 9 and 13, for feature development.
 - Claims and evidence status is thin.
@@ -117,20 +112,20 @@ The evidence that would unblock a YES or NO vote is a completed deep-research do
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `b94d5f0db724abe3f24a9aca9b6bb657ba4bb8cb449ff268115dcdf9a21b4703`
-- snapshot_bundle_hash: `9810ed49c7351a754fb406054caccd6969bb361a775468311481986161dedc7a`
+- snapshot_bundle_hash: `f913e0c9eee4e93dd6a27eb9d09153cedd6f94ba24c6c18567b843287eed4dc1`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `91636`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

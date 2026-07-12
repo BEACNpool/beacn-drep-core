@@ -3,12 +3,12 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3433,
-  "raw_score": -0.3433,
+  "score": -0.2,
+  "raw_score": -0.7933,
   "llm_score_adjustment": 0.0,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7758,
+  "confidence": 0.74,
   "readiness_score": 0.75,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -58,7 +58,7 @@
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -68,6 +68,7 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Proposal requests over 50% of rolling available capacity.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: The proposal states that Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.",
     "Claims and evidence missing: Independent evidence for: The proposal states that in the prior month Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.",
@@ -83,10 +84,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "f834cbe6ce97b268c9f453eec13ab619c9b5ecb97075763fda9b0e46b17be46e",
-  "snapshot_bundle_hash": "eebceda953b4c37aeb22c441f6ea3f0f274cba0db75bc43552cc19224687e70c",
+  "snapshot_bundle_hash": "4ab8c139a5ffe6e31cd8d9a0243cf1484c861b5abd778d671e9bac97f30c30cb",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -106,16 +107,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 107,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0435,
-    "NO": 0.5097,
-    "ABSTAIN": 0.4468
+    "YES": 0.0499,
+    "NO": 0.4464,
+    "ABSTAIN": 0.5037
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -148,7 +149,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Treasury withdrawal to fund Blockfrost's transition into a free, community-governed not-for-profit public good and support 18 months of transition and operations.",
           "Recipient: Input Output Global / Input Output, with administration involving Intersect and CDH according to the document",
@@ -322,7 +323,5 @@
       "output_sha256": "c117d1e3526d0abf8765053a027e22175ce775b8a1ed77ff66c3522b80610044"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c054a1e1f5537c8f04784e75.md",
-  "rationale_anchor_hash": "c054a1e1f5537c8f04784e751a8bd613f0a3f24b2d4433198b2ff7a7f6de1be8"
+  }
 }

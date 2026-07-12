@@ -3,12 +3,12 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2133,
-  "raw_score": -0.2133,
+  "score": -0.2025,
+  "raw_score": -0.4633,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7733,
+  "confidence": 0.7706,
   "readiness_score": 0.85,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -60,7 +60,7 @@
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The supplied claims show plausible public-benefit ecosystem growth and some independently checkable governance and treasury-management references, but the highest-value adoption and cost-effectiveness claims rely heavily on proposer assertions rather than demonstrated Cardano-specific commitments, milestones, pricing basis, or verifiable delivery evidence in the extracted record. A small cautionary nudge is justified because treasury stewardship and evidence quality are not fully matched to the size of the request.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -70,6 +70,7 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Proposal requests over 30% of rolling available capacity.",
     "Claims and evidence missing: Independent evidence for: Wirex is asserted to have more than 7 million users, over 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.",
     "Claims and evidence missing: Independent evidence for: The proposal claims Cardano currently lacks seamless rails for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
     "Claims and evidence status is thin.",
@@ -84,10 +85,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "6a88dcaaa00d9e3c4f441a88a1d5e26b1c165ad8cd08dc0ca23f8e8b592eda09",
-  "snapshot_bundle_hash": "b93bdfc54687176cd21c82292e0af4fe4669ac49f48bc96ca42b39d583c26b09",
+  "snapshot_bundle_hash": "adc39a5c6081f32daae09efd07c6709f1f3070e749e9d22c0cebf923ece869ce",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,16 +108,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 108,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.049,
-    "NO": 0.4477,
-    "ABSTAIN": 0.5033
+    "YES": 0.0496,
+    "NO": 0.4423,
+    "ABSTAIN": 0.5082
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -149,7 +150,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Withdraw treasury funds for Bringing Real-World Payments to Cardano with Wirex, submitted by Intersect on behalf of the vendor.",
           "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
@@ -322,7 +323,5 @@
       "output_sha256": "9fd450d2d613a60320c75fe43e3ce21c3699af90d4bb3284c29205ff494e72ef"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c84015dbefc97c20f31cdb05.md",
-  "rationale_anchor_hash": "c84015dbefc97c20f31cdb05cc55ea7f1c0ee5d77c3e748b8ea20ac1e96f110c"
+  }
 }

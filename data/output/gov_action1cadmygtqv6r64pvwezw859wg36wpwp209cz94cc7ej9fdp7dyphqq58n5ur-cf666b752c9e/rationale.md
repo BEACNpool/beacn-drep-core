@@ -29,7 +29,7 @@ This ABSTAIN is a conservative, evidence-based hold, not a rejection of the oper
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: not required
 - finding: Requested: Reduce the Cardano protocol parameter committeeMinSize from 7 to 5.
 - finding: Recipient: not stated in document
@@ -101,12 +101,12 @@ This ABSTAIN is a conservative, evidence-based hold, not a rejection of the oper
 
 ## Reproducibility
 - input_hash: `cf666b752c9ef29377293b8126b29dfb49f0f151f9c3357c67c535acc16de3bd`
-- snapshot_bundle_hash: `1ff8a935698ae7578f9670f98ba9d42d9a0afd84b5a31792c6deaeae9aafeb42`
+- snapshot_bundle_hash: `3094a4cc36e10cd71615a5479901a4bca78ef685ace80e392b492d25a907aa4b`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `111`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4575, "NO": 0.2712, "YES": 0.2712}`

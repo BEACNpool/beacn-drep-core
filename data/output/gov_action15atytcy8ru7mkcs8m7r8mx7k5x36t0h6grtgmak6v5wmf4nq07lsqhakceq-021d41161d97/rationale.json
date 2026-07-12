@@ -61,10 +61,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "021d41161d9716de87a3e00afe2c7ba2c14a859015d538aa938199ec558afe2d",
-  "snapshot_bundle_hash": "bd2149be986f2bae65b5c744e43ddb075544a8053bb0d5f6a93b136373a65c5a",
+  "snapshot_bundle_hash": "b2dd0313513bfae49e66fc89a6c845d91556b66a040cebcbccd157191204fc6e",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -78,11 +78,11 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 106,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
     "YES": 0.2297,
@@ -120,7 +120,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: not required",
           "Requested: Info action to agree a new Net Change Limit for the Cardano Treasury for Epochs 613-713.",
           "Recipient: not stated in document",
@@ -260,7 +260,5 @@
       "output_sha256": "8675ef99d6388e606dff4ae1344ce246b36c5348f89809b4d3af2e6d2a1324ce"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/003e6ba2fe94cf3aca634236.md",
-  "rationale_anchor_hash": "003e6ba2fe94cf3aca634236c62ae4d45836722ed3008b8722a7bdd3e96c4fee"
+  }
 }

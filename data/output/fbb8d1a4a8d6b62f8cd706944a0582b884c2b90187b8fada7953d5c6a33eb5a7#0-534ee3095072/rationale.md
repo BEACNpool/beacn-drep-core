@@ -1,0 +1,134 @@
+# Rationale: fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.1` | Readiness: `0`
+
+
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Eternl: Path to Sustainability - v2" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. A key material claim lacks independent support: "Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.". Open questions before a directional vote: treasury_amount_lovelace is missing for a treasury withdrawal. Reason code: MISSING_BASELINE_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
+
+## Review Tree
+- overall_status: `blocked`
+
+### Intake
+- status: `blocked`
+- finding: Action type: TreasuryWithdrawals
+- finding: Status: active
+- finding: Proposed epoch: 637
+- finding: Expires after epoch: 644
+- finding: Treasury request: not specified
+- finding: Anchor pinned locally: yes
+- missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+
+### Claims and evidence
+- status: `thin`
+- finding: Proposal anchor: pinned and replayable
+- finding: Proposal document read by reasoning layer: yes
+- finding: Snapshot freshness source: manifest
+- finding: Deep research dossier: complete
+- finding: Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, infrastructure, audits/oversight metrics, and continued development from August 2026 to July 2027.
+- finding: Recipient: Tastenkunst GmbH / Eternl
+- finding: Stated amount: 2350000
+- finding: Deliverables: Frontend maintenance and cross-platform development for web, browser extension, iOS, Android, and beta channel, Backend infrastructure and operations including multi-region servers, Cardano node operation, chain indexers, application servers, metadata aggregation, Hub services, monitoring, alerting, and incident response, User support through Discord ticketing, Telegram, public channels, ecosystem project support, wiki updates, and educational videos, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and proposal creation tooling, Independent audits of treasury fund use in February 2027 and August 2027 plus oversight metrics covering balances, conversion rates, transaction hashes, and repayment hashes, Conversion of up to $420,000 worth of Ada into stablecoins, public company wallet monitoring, and return of any Ada above that amount to the treasury
+- finding: Deadline/expiry: 12-month delivery period, August 2026 to July 2027
+- finding: Claim (adoption, proposer_asserted, high materiality): Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal requests ₳2,350,000 at about $0.1787 per Ada to cover approximately $420,000 in annual costs for 12 months.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.
+- finding: Claim (adoption, proposer_asserted, high materiality): Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
+- finding: Claim (economic, supported_in_proposal, high materiality): The proposer claims that about 5,500 Pro plan buyers, or about 4.2% of the stated install base, would fully cover Eternl's annual $420,000 cost.
+- finding: Claim (economic, proposer_asserted, high materiality): After withdrawal, the proposer says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
+- missing: Independent evidence for: Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.
+- missing: Independent evidence for: Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
+- missing: Independent evidence for: After withdrawal, the proposer says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.
+- missing: Independent evidence for: The proposer says independent audits by an unaffiliated party will occur in February 2027 and August 2027 and will review custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments.
+- conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+
+### Treasury analysis
+- status: `complete`
+- finding: Requested ADA: 2350000
+- finding: Budget granularity: confirmed
+- finding: Milestone payment gates: not confirmed
+- finding: Clawback/refund path: confirmed
+- finding: Cost/benefit clarity: unknown
+- finding: Recurring funding dependency: confirmed
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Financial confidence: 0.72
+- missing: milestone-gated disbursement
+- missing: cost-benefit clarity
+- conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+
+### Risk review
+- status: `complete`
+- finding: Execution risk: unknown
+- finding: Governance risk: medium
+- finding: Technical risk: unknown
+- finding: Treasury exposure risk: medium
+- finding: Mitigation evidence: confirmed
+- finding: Independent assurance: not confirmed
+- finding: Rollback/remedy path: confirmed
+- finding: Flag count: 2
+- missing: independent assurance
+- missing: dependency map
+- conclusion: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+
+### Counterargument pass
+- status: `complete`
+- finding: Strongest YES: the proposal substantiates "The proposal requests ₳2,350,000 at about $0.1787 per Ada to cover approximately $420,000 in annual costs for 12 months." though 1 review blocker(s) remain open.
+- finding: Strongest NO: a material claim is unsupported — "Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS." — so cost or precedent may outweigh the benefit.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
+- conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
+
+### Synthesis
+- status: `blocked`
+- finding: Final vote must be derived from completed sections above, not from a prose summary.
+- finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Facts
+- Critical evidence fields are missing for this action.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 2350000
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳2,350,000 at about $0.1787 per Ada to cover approximately $420,000 in annual costs for 12 months." though 1 review blocker(s) remain open.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
+
+## Inferences
+- Cannot produce a responsible recommendation without baseline evidence.
+- Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Uncertainty
+- Missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- Intake status is blocked.
+- Claims and evidence missing: Independent evidence for: Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.
+- Claims and evidence missing: Independent evidence for: Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.
+- Claims and evidence status is thin.
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis missing: cost-benefit clarity
+- Risk review missing: independent assurance
+- Risk review missing: dependency map
+- Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- Synthesis status is blocked.
+
+## Missing Evidence
+- treasury_amount_lovelace is missing for a treasury withdrawal
+
+## Reproducibility
+- input_hash: `534ee3095072577be1a14dc2bc81c4d7fd2b8dc56d1659c4bd6eaa22fc535242`
+- snapshot_bundle_hash: `0aae1a6f5b46575c35ebe14909d746343e65d9f25ac889ad086df3bec11fd2d5`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
+- soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
+- resource_registry_commit: `82a02efa3be4dedf61fea1548ca03635163347a8`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `12`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `3`
+- decision_probs: `{"ABSTAIN": 0.345, "NO": 0.3275, "YES": 0.3275}`
+

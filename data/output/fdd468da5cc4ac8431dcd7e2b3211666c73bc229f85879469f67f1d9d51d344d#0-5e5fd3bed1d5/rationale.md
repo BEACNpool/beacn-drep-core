@@ -1,7 +1,7 @@
 # Rationale: fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0
 Recommendation: **ABSTAIN**
-Score: `0.0` (raw `-0.01` + doctrine-LLM nudge `-0.02`) | Confidence: `0.5` | Readiness: `0.6`
-> Reasoning layer (precomputed): Hard fork doctrine requires highest scrutiny, implementation readiness, migration readiness, and a concrete risk register. The claims include useful references and a clear 85% SPO readiness condition, but several high-materiality readiness, testing, and audit claims are asserted rather than evidenced in the supplied document, and the deterministic assessment marks risk review as thin and overall status incomplete. A small cautionary nudge is warranted without overriding the engine's gates.
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
+
 
 ## Plain-language explanation (precomputed)
 BEACN voted ABSTAIN because the hard fork is a high-impact protocol change and the supplied evidence did not meet BEACN’s threshold for a directional vote. This is a conservative, evidence-based hold, not an objection to the upgrade itself.
@@ -13,7 +13,7 @@ The review also found important gaps. Several material readiness, testing, and a
 A directional vote would be unblocked by a complete independently pinned readiness packet, including clear evidence for implementation readiness, migration readiness, testing results, security review, constitutional alignment, and concrete mitigation or containment plans. Until those claims are tied to replayable public evidence, abstaining avoids overstating certainty on a permanent, operator-sensitive protocol upgrade.
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -66,29 +66,28 @@ A directional vote would be unblocked by a complete independently pinned readine
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The proposal asserts that transaction shape is unchanged and ecosystem upgrade effort is minimized because the change is intra-era." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Hard fork actions are high-impact protocol upgrades and require operator-aware review.
+- Data freshness check failed: data is 91637s old, max allowed is 21600s
 - Intake: Action type: HardForkInitiation
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: Hard fork doctrine requires highest scrutiny, implementation readiness, migration readiness, and a concrete risk register. The claims include useful references and a clear 85% SPO readiness condition, but several high-materiality readiness, testing, and audit claims are asserted rather than evidenced in the supplied document, and the deterministic assessment marks risk review as thin and overall status incomplete. A small cautionary nudge is warranted without overriding the engine's gates.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -96,23 +95,27 @@ A directional vote would be unblocked by a complete independently pinned readine
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: The proposal asserts that transaction shape is unchanged and ecosystem upgrade effort is minimized because the change is intra-era.
 - Claims and evidence missing: Independent evidence for: The proposer states that testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.
 - Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `5e5fd3bed1d5039762086337b946dd810a94bfb75dcd87f424d7ff86b647528d`
-- snapshot_bundle_hash: `be9b9f11c66b2ae581689aafce6edfc53652d3d79e15fb42003a2c3c6d88eb5c`
+- snapshot_bundle_hash: `c2e91ebbe65d999422d844d05e8b84e536e0856976d688e5abd14673950fa3f4`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `91637`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.445, "NO": 0.2775, "YES": 0.2775}`
+- evidence_depth_score: `1`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

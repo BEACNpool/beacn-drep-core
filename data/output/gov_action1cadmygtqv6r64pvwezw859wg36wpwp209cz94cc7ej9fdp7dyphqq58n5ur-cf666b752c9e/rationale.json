@@ -2,7 +2,7 @@
   "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
   "action_type": "ParameterChange",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "abstain_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
@@ -60,10 +60,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "cf666b752c9ef29377293b8126b29dfb49f0f151f9c3357c67c535acc16de3bd",
-  "snapshot_bundle_hash": "1ff8a935698ae7578f9670f98ba9d42d9a0afd84b5a31792c6deaeae9aafeb42",
+  "snapshot_bundle_hash": "3094a4cc36e10cd71615a5479901a4bca78ef685ace80e392b492d25a907aa4b",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -77,11 +77,11 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 5,
+    "snapshot_age_seconds": 111,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
     "YES": 0.2712,
@@ -119,7 +119,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: not required",
           "Requested: Reduce the Cardano protocol parameter committeeMinSize from 7 to 5.",
           "Recipient: not stated in document",
@@ -258,7 +258,5 @@
       "output_sha256": "476c7cf74aac5383f7bb2512090d9c54db2241cceb7d74b2432dc4481ddecfc0"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3d0157ba5390da49977bdfbc.md",
-  "rationale_anchor_hash": "3d0157ba5390da49977bdfbca23d1c19198670c5b3d82453cede9f60ae8ffc35"
+  }
 }

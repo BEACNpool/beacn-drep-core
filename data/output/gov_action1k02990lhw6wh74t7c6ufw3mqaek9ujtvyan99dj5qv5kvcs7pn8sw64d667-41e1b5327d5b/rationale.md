@@ -1,6 +1,6 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sw64d667
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.75`
+Score: `-0.2525` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7831` | Readiness: `0.75`
 > Reasoning layer (precomputed): A small positive adjustment is justified because the claims describe maintenance of existing open-source developer infrastructure, include concrete technical scope, on-chain fund-routing details, NCL compliance assertions, and externally checkable voting and tooling references. The nudge remains small because some important adoption and delivery-history claims are proposer asserted rather than independently evidenced within the extracted claims, and treasury stewardship still requires caution on a 540,750 ADA withdrawal.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of Oura or the main
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Treasury withdrawal to fund Oura by TxPipe maintenance and enhancement over 12 months, including Intersect administration fee.
 - finding: Recipient: Intersect 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for work on behalf of TxPipe/Oura vendor.
@@ -103,7 +103,7 @@ This is a conservative, evidence-based hold, not a rejection of Oura or the main
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: A small positive adjustment is justified because the claims describe maintenance of existing open-source developer infrastructure, include concrete technical scope, on-chain fund-routing details, NCL compliance assertions, and externally checkable voting and tooling references. The nudge remains small because some important adoption and delivery-history claims are proposer asserted rather than independently evidenced within the extracted claims, and treasury stewardship still requires caution on a 540,750 ADA withdrawal.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -129,13 +129,13 @@ This is a conservative, evidence-based hold, not a rejection of Oura or the main
 
 ## Reproducibility
 - input_hash: `41e1b5327d5bf4d81fb7d4d3587753d581d2b21664982f54655ae8792d0e8f50`
-- snapshot_bundle_hash: `7b9b038df6f236d46c349c75cb7d420e055b1d57b6ca518820b558eaf382df85`
+- snapshot_bundle_hash: `4b61ab666d07040495928988ec616f5611913f24228e87b22da9dd520a0448ad`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `2`
+- snapshot_age_seconds: `108`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
+- decision_probs: `{"ABSTAIN": 0.4864, "NO": 0.4664, "YES": 0.0472}`
 

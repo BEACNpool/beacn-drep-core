@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "2350000",
+    "deadline": "12-month delivery period, August 2026 to July 2027",
+    "deliverables": [
+      "Frontend maintenance and cross-platform development for web, browser extension, iOS, Android, and beta channel",
+      "Backend infrastructure and operations including multi-region servers, Cardano node operation, chain indexers, application servers, metadata aggregation, Hub services, monitoring, alerting, and incident response",
+      "User support through Discord ticketing, Telegram, public channels, ecosystem project support, wiki updates, and educational videos",
+      "Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and proposal creation tooling",
+      "Independent audits of treasury fund use in February 2027 and August 2027 plus oversight metrics covering balances, conversion rates, transaction hashes, and repayment hashes",
+      "Conversion of up to $420,000 worth of Ada into stablecoins, public company wallet monitoring, and return of any Ada above that amount to the treasury"
+    ],
+    "recipient": "Tastenkunst GmbH / Eternl",
+    "what": "Treasury withdrawal to fund 12 months of Eternl operations, maintenance, support, infrastructure, audits/oversight metrics, and continued development from August 2026 to July 2027."
+  },
+  "claims": [
+    {
+      "category": "adoption",
+      "claim": "Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b32,350,000 at about $0.1787 per Ada to cover approximately $420,000 in annual costs for 12 months.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer claims that about 5,500 Pro plan buyers, or about 4.2% of the stated install base, would fully cover Eternl's annual $420,000 cost.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "After withdrawal, the proposer says it will convert up to $420,000 worth of Ada into stablecoins, place it in a public company wallet, and return any Ada above that amount to the treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer says independent audits by an unaffiliated party will occur in February 2027 and August 2027 and will review custody, conversion, spending, balances, Pro plan income relevant to repayment, and refunds or repayments.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer says every paid Pro plan will be recorded on-chain with metadata and that Pro plan earnings reports plus repayment or donation transaction hashes will be published.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer claims 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer states the main UI will not be open-source, while some Eternl libraries will be published through the npm registry.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document asks for \u20b32,350,000 administered by Tastenkunst GmbH to fund 12 months of Eternl operations, with a Pro-plan sustainability path, public wallet monitoring, proposed repayment mechanics, and two independent fund-use audits, but several important adoption and dependency claims are asserted rather than evidenced in the anchor text.",
+  "output_sha256": "af34b427603cf30ba7c101d5f9de4e2ba5b7b8cecf0e5b9717909a35829b0945"
+}

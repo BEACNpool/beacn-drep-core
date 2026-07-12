@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540,750",
+    "deadline": "12 months",
+    "deliverables": [
+      "Part-time maintainer for Oura over 12 months",
+      "Essential codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Community support including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public communication",
+      "AI-friendly documentation and integration resources for AI-driven development workflows",
+      "Milestone-based disbursement controls through Intersect treasury management smart contracts"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v for subsequent project-specific management.",
+    "what": "Withdraw treasury funds for Oura by TxPipe maintenance over 12 months, submitted by Intersect on behalf of the vendor."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve, with a total withdrawal of 540,750 ADA including a 15,750 ADA Intersect administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura is described as a Rust-native pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and supports sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document says Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and identifies the GitHub repository where these figures can be checked.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer states Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states Oura has been funded twice through Project Catalyst, in Funds 9 and 13, for feature development.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting and audit materials.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states the requested withdrawal does not breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713 at the moment of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states independent oversight will be provided by Intersect and technically capable third parties, with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The anchor describes a 540,750 ADA treasury withdrawal administered by Intersect for 12 months of Oura maintenance, community support, documentation, and AI-workflow compatibility work, with claims of existing adoption, prior funding history, Intersect budget-process support, NCL compliance, and smart-contract-based oversight.",
+  "output_sha256": "28ba27b5fe835883ff49593d956128019c1f15381f02cb6b6972ab7129d8e3c3"
+}

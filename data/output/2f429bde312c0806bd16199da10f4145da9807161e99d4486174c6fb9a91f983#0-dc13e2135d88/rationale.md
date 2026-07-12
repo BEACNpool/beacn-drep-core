@@ -1,6 +1,6 @@
 # Rationale: 2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0
 Recommendation: **ABSTAIN**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.1` | Readiness: `0`
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
 ## Plain-language explanation (precomputed)
@@ -77,29 +77,30 @@ This ABSTAIN is a conservative, evidence-based hold, not a rejection of the prog
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program." though 1 review blocker(s) remain open.
+- finding: Strongest YES: the proposal substantiates "The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program." though 2 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
+- finding: Strongest hold: evidence is too thin for a directional vote while 2 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
 - status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - missing: treasury_amount_lovelace is missing for a treasury withdrawal
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Critical evidence fields are missing for this action.
+- Data freshness check failed: data is 91633s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program." though 1 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program." though 2 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Cannot produce a responsible recommendation without baseline evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -108,7 +109,7 @@ This ABSTAIN is a conservative, evidence-based hold, not a rejection of the prog
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- All scoring suspended until fresh data is available.
 - Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal
 - Intake status is blocked.
 - Claims and evidence missing: Independent evidence for: The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down.
@@ -117,21 +118,21 @@ This ABSTAIN is a conservative, evidence-based hold, not a rejection of the prog
 - Treasury analysis missing: sustainability path
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
+- Synthesis missing: freshness gate failed
 - Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal
 - Synthesis status is blocked.
 
-## Missing Evidence
-- treasury_amount_lovelace is missing for a treasury withdrawal
-
 ## Reproducibility
 - input_hash: `dc13e2135d884590352cb00428f8cb0a20517b1a7f1573fd7e512751a4c85d98`
-- snapshot_bundle_hash: `c85ab4f01f62bc1ff0cbe5da6b5e117a2cfcff9d3e8ac4228a7e4e297123777b`
+- snapshot_bundle_hash: `f7a8a60498a9692120113428fbdf798de80990ba7ad6b1e25eab60457412c516`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `0`
+- snapshot_age_seconds: `91633`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.345, "NO": 0.3275, "YES": 0.3275}`
+- evidence_depth_score: `1`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -89,7 +89,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.\" though 1 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.\" \u2014 so cost or precedent may outweigh the benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],
@@ -98,14 +98,18 @@
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "freshness gate failed"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "freshness gate failed"
+  ]
 }

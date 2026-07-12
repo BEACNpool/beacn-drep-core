@@ -1,19 +1,13 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a high-impact treasury withdrawal and the required deep-research dossier was not complete enough to support a directional vote.
-
-The proposal asked to withdraw 540,750 ada to fund Year 2 of Dolos by TxPipe, including 12 months of part-time maintenance and enhancement work, community support, AI-friendly documentation and integration resources, and Intersect administration. The proposal stated that 525,000 ada would go to Dolos maintenance and enhancement and 15,750 ada would cover Intersect’s budget administration fee. It also described Dolos as a lightweight Cardano data node built in Rust, with interfaces such as Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros N2C socket.
-
-Several claims were supported in the proposal, including the requested amount, the maintainer scope, the technical description of Dolos, the Intersect administration structure, and the statement that the action passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase. Other claims still needed stronger independent support, especially the stated Catalyst delivery history and the milestone details, which were not included in the anchor text. The review also found the treasury analysis incomplete, with missing sustainability-path and cost-benefit clarity, and the risk review missing independent assurance and a rollback or remedy path.
-
-This is a conservative, evidence-based hold. A directional vote would be unblocked by a completed deep-research dossier, independent evidence for the unsupported delivery-history claim, clear milestone details in the reviewable materials, stronger treasury analysis on sustainability and cost-benefit, and clearer execution safeguards such as independent assurance and a rollback or remedy path.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D..." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 540.8k ADA from the treasury. A key material claim lacks independent support: "The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -77,28 +71,29 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91636s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -107,7 +102,7 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
 - Claims and evidence missing: Independent evidence for: The document says project milestones will be outlined within metadata when funding is transferred to the project-specific smart contract, but the milestone details are not included in the anchor text.
 - Claims and evidence status is thin.
@@ -116,20 +111,20 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `ae3eb348c3937ab6a97e4cce6058b234c5421a7ec3c55eae1084529953c82047`
-- snapshot_bundle_hash: `cf53a3e47333ca06ea4f1606b17819236c461a27e8eee4243537eeb124ef03cf`
+- snapshot_bundle_hash: `6d81011c5ff34a1ce4d070753e6a14aa6a1da9b3b49c29104c80047fe02afef3`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `91636`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

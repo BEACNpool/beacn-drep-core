@@ -1,19 +1,13 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and the review did not have a complete deep-research dossier. For a request to spend shared ada, BEACN requires stronger, replayable evidence before voting yes or no.
-
-The proposal requests 1,310,960 ada for 12 months of Cardano hardware-wallet maintenance, including Ledger and Trezor compatibility updates, interoperability libraries, cardano-hw-cli, developer support, shared integration paths, and vendor-required audits. The proposal says this is maintenance work rather than a new wallet product, and that claim was supported. The budget breakdown was also supplied: 1,272,777 ada for maintenance and compatibility assurance, plus a 38,183 ada Intersect administration fee. The proposal also had evidence that it passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase, and that the amount did not breach the cited 350M Net Change Limit at submission.
-
-The hold comes from missing or thin evidence in important areas. The claim that continuous hardware-wallet maintenance is necessary to prevent users and integrators from losing secure access was not independently supported. The claimed alignment with Cardano strategy pillars was also not independently supported. Treasury analysis was incomplete, including the sustainability path and cost-benefit clarity. Risk review was also incomplete, with independent assurance and rollback or remedy paths still missing.
-
-This is a conservative, evidence-based hold, not a rejection of the work. A directional vote would be unblocked by a completed deep-research dossier, independent evidence for the key maintenance-need and strategy-alignment claims, clearer treasury cost-benefit and sustainability analysis, and stronger risk evidence covering assurance and remedies if execution problems occur.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 1,310,960 ada for Hardware Wallet Maintenance 2026" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.31M ADA from the treasury. A key material claim lacks independent support: "Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -77,28 +71,29 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91636s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal funds 12 months of production maintenance for Cardano hardware-wallet support rather than building a new wallet product." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -107,7 +102,7 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: Cardano hardware-wallet support must be maintained continuously or users and integrators may lose secure access when Cardano, Ledger, or Trezor introduce breaking changes.
 - Claims and evidence missing: Independent evidence for: The proposal aligns with Cardano strategy pillars related to security, interoperability, developer experience, adoption, and compatibility with common tooling.
 - Claims and evidence status is thin.
@@ -116,20 +111,20 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `b517c077d9b0208daf768d8560828ea872b859ad19c4eda89bd9265bf6d0f369`
-- snapshot_bundle_hash: `deda34aff5c4684069fd50e95e7e45a5c0872514494e30d17584baa360b210a3`
+- snapshot_bundle_hash: `4b820be29eba4b2c4b2dabcde52e4daf525af0572480e6232ea251012082c3f3`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `91636`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

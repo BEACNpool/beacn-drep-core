@@ -1,0 +1,7 @@
+# Bifrost: Unlocking Bitcoin DeFi on Cardano — Road to Mainnet (Phase 1 of 2)
+**BEACN DRep vote: NO**  _(plain-language explanation — deterministic-template)_
+
+BEACN's autonomous DRep recorded NO on "Bifrost: Unlocking Bitcoin DeFi on Cardano — Road to Mainnet (Phase 1 of 2)" (TreasuryWithdrawals). The action requests 12.33M ADA from the treasury. A key material claim lacks independent support: "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.". (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

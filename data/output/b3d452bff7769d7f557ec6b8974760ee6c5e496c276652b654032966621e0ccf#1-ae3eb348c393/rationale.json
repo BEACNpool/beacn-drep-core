@@ -1,9 +1,9 @@
 {
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1",
   "action_type": "TreasuryWithdrawals",
-  "recommendation": "NEEDS_MORE_INFO",
-  "abstain_reason_code": null,
-  "needs_more_info_reason_code": "DEEP_RESEARCH_REQUIRED",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "STALE_DATA",
+  "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
@@ -19,35 +19,22 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.12,
-  "confidence": 0.2,
+  "confidence": 0.0,
   "readiness_score": null,
-  "treasury_dimensions": {
-    "evidence_status": "missing",
-    "benefit": 0,
-    "delivery_confidence": 0.45,
-    "cost_efficiency": 0.25,
-    "downside_risk": 0.4375,
-    "composite": -0.2531,
-    "affirmative_waste_evidence": [],
-    "missing": [
-      "independent ecosystem-value evidence packet",
-      "verified ecosystem benefit or strategic necessity",
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ]
-  },
-  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
-  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
   "facts": [
-    "Treasury actions are high-impact and require a completed deep research dossier.",
+    "Data freshness check failed: data is 91636s old, max allowed is 21600s",
     "Intake: Action type: TreasuryWithdrawals",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 0",
     "Risk review: Execution risk: medium",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" though 1 review blocker(s) remain open.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Directional voting is blocked until dossier quality gates pass.",
+    "Cannot produce reliable recommendation with stale data.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -56,7 +43,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Dossier completeness not confirmed for this treasury proposal.",
+    "All scoring suspended until fresh data is available.",
     "Claims and evidence missing: Independent evidence for: The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
     "Claims and evidence missing: Independent evidence for: The document says project milestones will be outlined within metadata when funding is transferred to the project-specific smart contract, but the milestone details are not included in the anchor text.",
     "Claims and evidence status is thin.",
@@ -64,17 +51,16 @@
     "Treasury analysis missing: cost-benefit clarity",
     "Treasury analysis status is incomplete.",
     "Risk review missing: independent assurance",
-    "Risk review missing: rollback/remedy path"
+    "Risk review missing: rollback/remedy path",
+    "Synthesis missing: freshness gate failed",
+    "Synthesis status is blocked."
   ],
-  "missing_evidence": [
-    "Deep research dossier is required for treasury actions before directional voting.",
-    "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections."
-  ],
+  "missing_evidence": [],
   "input_hash": "ae3eb348c3937ab6a97e4cce6058b234c5421a7ec3c55eae1084529953c82047",
-  "snapshot_bundle_hash": "cf53a3e47333ca06ea4f1606b17819236c461a27e8eee4243537eeb124ef03cf",
+  "snapshot_bundle_hash": "6d81011c5ff34a1ce4d070753e6a14aa6a1da9b3b49c29104c80047fe02afef3",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -94,27 +80,27 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 91636,
     "max_allowed_seconds": 21600,
-    "is_stale": false,
+    "is_stale": true,
     "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.315,
-    "NO": 0.315,
-    "ABSTAIN": 0.37
+    "YES": 0.34,
+    "NO": 0.34,
+    "ABSTAIN": 0.32
   },
   "uncertainty_band": "LOW",
-  "evidence_depth_score": 4,
+  "evidence_depth_score": 2,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
-  "assessment_status": "incomplete",
+  "assessment_status": "blocked",
   "assessment": {
     "schema_version": "assessment-tree-v1",
     "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1",
     "action_type": "TreasuryWithdrawals",
-    "overall_status": "incomplete",
+    "overall_status": "blocked",
     "sections": [
       {
         "title": "Intake",
@@ -199,7 +185,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, composed of 525,000 ADA for Dolos maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" though 1 review blocker(s) remain open.",
           "Strongest NO: a material claim is unsupported \u2014 \"The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -208,16 +194,20 @@
       },
       {
         "title": "Synthesis",
-        "status": "ready",
+        "status": "blocked",
         "findings": [
           "Final vote must be derived from completed sections above, not from a prose summary.",
           "The public rationale should name the decisive section and the strongest counterargument."
         ],
-        "missing": [],
+        "missing": [
+          "freshness gate failed"
+        ],
         "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
       }
     ],
-    "blocking_questions": []
+    "blocking_questions": [
+      "freshness gate failed"
+    ]
   },
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
@@ -238,26 +228,13 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.45,
-      "cost_efficiency": 0.25,
-      "downside_risk": 0.4375,
-      "composite": -0.2531,
-      "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
-    },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a high-impact treasury withdrawal and the required deep-research dossier was not complete enough to support a directional vote.\n\nThe proposal asked to withdraw 540,750 ada to fund Year 2 of Dolos by TxPipe, including 12 months of part-time maintenance and enhancement work, community support, AI-friendly documentation and integration resources, and Intersect administration. The proposal stated that 525,000 ada would go to Dolos maintenance and enhancement and 15,750 ada would cover Intersect\u2019s budget administration fee. It also described Dolos as a lightweight Cardano data node built in Rust, with interfaces such as Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros N2C socket.\n\nSeveral claims were supported in the proposal, including the requested amount, the maintainer scope, the technical description of Dolos, the Intersect administration structure, and the statement that the action passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase. Other claims still needed stronger independent support, especially the stated Catalyst delivery history and the milestone details, which were not included in the anchor text. The review also found the treasury analysis incomplete, with missing sustainability-path and cost-benefit clarity, and the risk review missing independent assurance and a rollback or remedy path.\n\nThis is a conservative, evidence-based hold. A directional vote would be unblocked by a completed deep-research dossier, independent evidence for the unsupported delivery-history claim, clear milestone details in the reviewable materials, stronger treasury analysis on sustainability and cost-benefit, and clearer execution safeguards such as independent assurance and a rollback or remedy path.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D...\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 540.8k ADA from the treasury. A key material claim lacks independent support: \"The document states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.\". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -299,15 +276,13 @@
       "output_sha256": "84ab6f270fce2b4ad1e283fd6e6802b6c5f54b992ddb8b76799b86946851cf45"
     },
     "human_message": {
-      "source": "precomputed",
-      "available": true,
-      "reason": null,
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "a7025304262e7d5e9a73c222da2b208a95074715ce4eb814aab2c23961e378a9"
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a4350955932408b6e61e06ed.md",
-  "rationale_anchor_hash": "a4350955932408b6e61e06ed441bfa8d41a134780fff0df7dd845868f878407d"
+  }
 }

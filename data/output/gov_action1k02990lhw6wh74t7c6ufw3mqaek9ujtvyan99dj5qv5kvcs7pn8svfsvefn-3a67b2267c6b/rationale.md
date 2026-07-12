@@ -1,6 +1,6 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7733` | Readiness: `0.85`
+Score: `-0.2025` (raw `-0.2133` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7706` | Readiness: `0.85`
 > Reasoning layer (precomputed): The claims show plausible public-benefit infrastructure maintenance and several independently verifiable governance and oversight references, but the largest value claims around ecosystem adoption and replacement risk rely on proposer assertions and the amount is large enough that treasury stewardship and evidence quality should dominate. The deterministic assessment is already ready, so there is no clear evidence-quality or doctrine-alignment reason for an additional directional nudge.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of the tools or the
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Annual funding for maintenance and enhancement of MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply.
 - finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs
@@ -102,7 +102,7 @@ This is a conservative, evidence-based hold, not a rejection of the tools or the
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -127,13 +127,13 @@ This is a conservative, evidence-based hold, not a rejection of the tools or the
 
 ## Reproducibility
 - input_hash: `3a67b2267c6bf40f23d5d6468f2a51a0d0f35ce3de9fe9486458687f9f1c4333`
-- snapshot_bundle_hash: `dc71ef07ca82cbd419c4a9555830e9f4e6ffdc919ae814a3c20a58e1772ea9ba`
+- snapshot_bundle_hash: `30f700077f354686c168af5f3b28c3fef12c72384c5f028233dbc7a93f89834c`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `2`
+- snapshot_age_seconds: `108`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
+- decision_probs: `{"ABSTAIN": 0.5082, "NO": 0.4423, "YES": 0.0496}`
 

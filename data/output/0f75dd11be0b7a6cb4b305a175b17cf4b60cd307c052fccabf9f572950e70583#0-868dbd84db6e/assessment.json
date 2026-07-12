@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -87,23 +87,27 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.\" though 1 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that there are no DRep funds or personal compensation to Sundial or Charms principals, and that if external investment funds Alchemy development, the development portion of the request will roll into additional treasury-supported launch liquidity.\" \u2014 so cost or precedent may outweigh the benefit.",
-        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
       ],
       "missing": [],
       "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "freshness gate failed"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "freshness gate failed"
+  ]
 }

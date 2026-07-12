@@ -35,7 +35,7 @@
   "action_type": "TreasuryWithdrawals",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -226,13 +226,13 @@
       "resource_id": "treasury_policy_state",
       "kind": "file",
       "path": "data/input/governance/treasury_policy_state.json",
-      "file_hash": "248411dc148d1b61905445ad93508e0f5a092f51b2e14b9479135ed5f9da395d"
+      "file_hash": "f58b57ffbe1ed18c7a4eff20deef1b8e59a95d186e9257b23fbc6a7b3af924b6"
     },
     {
       "resource_id": "treasury_portfolio",
       "kind": "file",
       "path": "data/input/governance/treasury_portfolio.json",
-      "file_hash": "8e49691355b31be8a8bd48439e9ee3068a54ff62a0208f81d8bd1c00698cabe2"
+      "file_hash": "170e75c31971efac2ba4e63d3c2df7827e17f8d8fc03eeee33cf03f8d91609ea"
     },
     {
       "resource_id": "governance_outcomes",
@@ -247,7 +247,7 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "34d27da5821b4795ae4fc3b944749a2b8f05764f076e2135666e2d37e6d54579",
+  "snapshot_bundle_hash": "eab4d393beb789f87c653d9d904a679db5dc05d56a81b5a5100f1ed38945ab91",
   "model_layer": {
     "claim_extraction": {
       "available": true,
@@ -282,19 +282,19 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "direction": "ABSTAIN",
-      "score_adjustment": -0.02,
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
       "output_sha256": "22998ce4f8f4fefe67ab2faa53cfd059c9709b18e7372dbf06555a8ff033999c"
     },
     "human_message": {
-      "source": "precomputed",
-      "available": true,
-      "reason": null,
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "186446f5b4d7b615f85b18449fe4465ca844a376a036790d400ab009b3b138f9"
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

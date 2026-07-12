@@ -60,10 +60,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "442f0d62907693ce64f87e51ad6f3812b9c0b31ff61336ebb4dae2e5e874e162",
-  "snapshot_bundle_hash": "4834880d51e915b2ac1a33ad21de9bfcbf9d8022422254192117b744909ad892",
+  "snapshot_bundle_hash": "90c8a845edcdb1034dfed8e1bdd97716b5dea232d02ab8f7fbf2dd096137d064",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -77,11 +77,11 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 110,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
     "YES": 0.2234,
@@ -119,7 +119,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: not required",
           "Requested: Info action to introduce basic ideas for reforming Cardano treasury governance into public discussion and encourage ecosystem collaboration on improved treasury governance processes.",
           "Recipient: not stated in document",
@@ -261,7 +261,5 @@
       "output_sha256": "a771c3cefb698c425c80c28cafc2e2de7ce226ecf0da195b5e5468a31204ad8c"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3b66976e0ce52a0df5eb74c5.md",
-  "rationale_anchor_hash": "3b66976e0ce52a0df5eb74c5f2f5b27c9f7606ace330db465ced1eee07d3d312"
+  }
 }

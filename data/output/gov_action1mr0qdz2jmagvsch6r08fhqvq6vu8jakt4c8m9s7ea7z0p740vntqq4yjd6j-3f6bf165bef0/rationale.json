@@ -3,11 +3,11 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2433,
+  "score": -0.1631,
   "raw_score": -0.2433,
   "llm_score_adjustment": 0.02,
   "llm_lean": {
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7808,
+  "confidence": 0.7608,
   "readiness_score": 0.85,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -59,7 +59,7 @@
   ],
   "inferences": [
     "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive nudge is justified because the extracted claims describe established open-source wallet infrastructure, concrete maintenance deliverables, independently verifiable release/version metrics, and milestone-based Intersect oversight. The nudge remains small because several important adoption and track-record claims are proposer asserted and the request is a substantial treasury spend.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -84,10 +84,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "3f6bf165bef09c0437ec8ba119e6b340c47839e11f08c1f31bc1322d93a74bcf",
-  "snapshot_bundle_hash": "f4589d1eec27bd078212e352e12cd91251f3578381c8340d4c2459561dbf7993",
+  "snapshot_bundle_hash": "80b534d6da24773a4f7f75efb44a841aded8b07ac1c09c509de64cacc80c277e",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,16 +107,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 107,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0476,
-    "NO": 0.4622,
-    "ABSTAIN": 0.4902
+    "YES": 0.0818,
+    "NO": 0.408,
+    "ABSTAIN": 0.5102
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -149,7 +149,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Daedalus Wallet Maintenance and Improvements 2026-2027 delivered by Se7en Labs, Inc.",
           "Recipient: Se7en Labs, Inc. via Intersect administration and project-specific treasury smart contract arrangements",
@@ -322,7 +322,5 @@
       "output_sha256": "251dbda5d1b1eb832998241d78620ad7e88983da7becf7b6c5d6f91a07dc7cc8"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/785b87ab142b22f115341e0b.md",
-  "rationale_anchor_hash": "785b87ab142b22f115341e0b37f6e2394f6b5932e1c54c6eac12a22554f1e56a"
+  }
 }

@@ -1,6 +1,6 @@
 # Rationale: gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2433` (raw `-0.2433` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7808` | Readiness: `0.8`
+Score: `-0.11` (raw `-0.4933` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7475` | Readiness: `0.8`
 > Reasoning layer (precomputed): The proposal is aligned with public-benefit ecosystem growth through open registry work, reusable tooling, public reporting, security-review milestones, and on-chain-measurable KPIs, but the large treasury request relies heavily on proposer assertions for administrator role, existing adoption, repayment mechanics, and projected value-for-money; under the doctrine, weak or only partially independently verified evidence on a substantial spend warrants a small caution nudge rather than a positive adjustment.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of the project idea
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Dano Finance requests treasury funding to accelerate the DeFi Kernel as an open standard for shared liquidity, on-chain financial intents, and global order-book coordination on Cardano, including a registry, two DeFi primitives, and an SDK.
 - finding: Recipient: Dano Finance, with Minswap Labs serving as budget administrator
@@ -101,7 +101,7 @@ This is a conservative, evidence-based hold, not a rejection of the project idea
 
 ## Inferences
 - Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: The proposal is aligned with public-benefit ecosystem growth through open registry work, reusable tooling, public reporting, security-review milestones, and on-chain-measurable KPIs, but the large treasury request relies heavily on proposer assertions for administrator role, existing adoption, repayment mechanics, and projected value-for-money; under the doctrine, weak or only partially independently verified evidence on a substantial spend warrants a small caution nudge rather than a positive adjustment.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -111,6 +111,7 @@ This is a conservative, evidence-based hold, not a rejection of the project idea
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
+- Proposal requests over 30% of rolling available capacity.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Minswap Labs will serve as budget administrator for fund administration, milestone review, and accountability.
 - Claims and evidence missing: Independent evidence for: Dano Finance says it currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.
@@ -125,13 +126,13 @@ This is a conservative, evidence-based hold, not a rejection of the project idea
 
 ## Reproducibility
 - input_hash: `b7d7592e754096d3fafd87d75db9523024368b5e5eda85b80509e66b5a0e8bc3`
-- snapshot_bundle_hash: `474212f489931eabdb69ff352efd89d8131b179a23ace0a2c531b1d90704f549`
+- snapshot_bundle_hash: `8389b46d447189cc3c7acbc6f311c02b29b30b9203b3ec3494800338aec6384e`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `0`
+- snapshot_age_seconds: `106`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4902, "NO": 0.4622, "YES": 0.0476}`
+- decision_probs: `{"ABSTAIN": 0.5069, "NO": 0.3566, "YES": 0.1366}`
 

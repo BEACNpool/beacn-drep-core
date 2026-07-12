@@ -3,11 +3,11 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2133,
+  "score": -0.2025,
   "raw_score": -0.2133,
   "llm_score_adjustment": 0.0,
   "llm_lean": {
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7733,
+  "confidence": 0.7706,
   "readiness_score": 0.85,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -59,7 +59,7 @@
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -83,10 +83,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "3a67b2267c6bf40f23d5d6468f2a51a0d0f35ce3de9fe9486458687f9f1c4333",
-  "snapshot_bundle_hash": "dc71ef07ca82cbd419c4a9555830e9f4e6ffdc919ae814a3c20a58e1772ea9ba",
+  "snapshot_bundle_hash": "30f700077f354686c168af5f3b28c3fef12c72384c5f028233dbc7a93f89834c",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -106,16 +106,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 108,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.049,
-    "NO": 0.4477,
-    "ABSTAIN": 0.5033
+    "YES": 0.0496,
+    "NO": 0.4423,
+    "ABSTAIN": 0.5082
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -148,7 +148,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Annual funding for maintenance and enhancement of MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply.",
           "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor MLabs",
@@ -320,7 +320,5 @@
       "output_sha256": "895e9f8c958515cd5f611081c51efd0d770ac9542dff0f8495d191037a9d2ae9"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6b974d34817a90a8341e67c1.md",
-  "rationale_anchor_hash": "6b974d34817a90a8341e67c168cae6ce5b512f39f57a1ae7f9bc172959f4d559"
+  }
 }

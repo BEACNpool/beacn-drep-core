@@ -1,6 +1,6 @@
 # Rationale: gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.3433` (raw `-0.3433` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7758` | Readiness: `0.75`
+Score: `-0.2` (raw `-0.7933` + doctrine-LLM nudge `+0.0`) | Confidence: `0.74` | Readiness: `0.75`
 > Reasoning layer (precomputed): The extracted claims show strong public-benefit alignment for critical developer infrastructure and some independently checkable adoption evidence, but the deterministic assessment already flags thin claims and incomplete overall status. Because treasury stewardship and evidence quality are prioritized above ecosystem growth, the supplied record does not justify an additional positive nudge beyond the mechanical score, while the hard-gate posture treats unresolved diligence as needs-more-info rather than an extra negative merits penalty.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ The hold is conservative and evidence-based. Proposer assertions alone were not 
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Treasury withdrawal to fund Blockfrost's transition into a free, community-governed not-for-profit public good and support 18 months of transition and operations.
 - finding: Recipient: Input Output Global / Input Output, with administration involving Intersect and CDH according to the document
@@ -103,7 +103,7 @@ The hold is conservative and evidence-based. Proposer assertions alone were not 
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -113,6 +113,7 @@ The hold is conservative and evidence-based. Proposer assertions alone were not 
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
+- Proposal requests over 50% of rolling available capacity.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: The proposal states that Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.
 - Claims and evidence missing: Independent evidence for: The proposal states that in the prior month Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.
@@ -129,13 +130,13 @@ The hold is conservative and evidence-based. Proposer assertions alone were not 
 
 ## Reproducibility
 - input_hash: `f834cbe6ce97b268c9f453eec13ab619c9b5ecb97075763fda9b0e46b17be46e`
-- snapshot_bundle_hash: `eebceda953b4c37aeb22c441f6ea3f0f274cba0db75bc43552cc19224687e70c`
+- snapshot_bundle_hash: `4ab8c139a5ffe6e31cd8d9a0243cf1484c861b5abd778d671e9bac97f30c30cb`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
+- snapshot_age_seconds: `107`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4468, "NO": 0.5097, "YES": 0.0435}`
+- decision_probs: `{"ABSTAIN": 0.5037, "NO": 0.4464, "YES": 0.0499}`
 

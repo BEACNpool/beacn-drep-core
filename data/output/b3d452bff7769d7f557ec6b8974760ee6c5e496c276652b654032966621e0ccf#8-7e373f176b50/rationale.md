@@ -1,19 +1,13 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and the review did not yet have a complete deep-research dossier strong enough to support a directional yes or no vote.
-
-The proposal asked to withdraw 540,750 ada for Year 2 maintenance of Pallas by TxPipe, covering 12 months of Rust library maintenance, community support, and AI-friendly documentation and integration resources. The amount was described as 420,000 ada for the core request, 105,000 ada as contingency, and 15,750 ada for Intersect administration, with milestone-based disbursement through Intersect-managed treasury smart contracts.
-
-Several important points were supported in the proposal or had replayable references: Pallas was described as a set of Rust crates for core Cardano and Ouroboros functions, the planned work was clearly stated, the budget-process support threshold and net-change-limit claims were presented with references, and governance controls such as oversight, reporting, smart-contract management, and auditing were described. But some material claims still needed stronger independent evidence, especially the claimed use of Pallas by projects such as Aiken, Dolos, Lucid, Oura, Mithril, Amaru, and UTxO-RPC, and the stated Catalyst delivery history for TxPipe.
-
-This is a conservative, evidence-based hold. A directional vote would be unblocked by a completed deep-research dossier, independent evidence for the major adoption and delivery-history claims, clearer treasury analysis on sustainability and cost-benefit, and a stronger risk review covering independent assurance plus rollback or remedy paths.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li..." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 540.8k ADA from the treasury. A key material claim lacks independent support: "The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -77,28 +71,29 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91636s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -107,7 +102,7 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: The proposal says Pallas is used by Aiken, Dolos, Lucid, Oura, Mithril, Amaru, UTxO-RPC, and other Cardano ecosystem projects.
 - Claims and evidence missing: Independent evidence for: The proposal discloses that TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule.
 - Claims and evidence status is thin.
@@ -116,20 +111,20 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `7e373f176b50d0598e3ff97bf7b7655c71f80588a81ee756e766195bb64c6d2b`
-- snapshot_bundle_hash: `6a80a939c305a7b2fa65d7725bc025eea7eed41dbb96606b0d1a6529c4ceb78a`
+- snapshot_bundle_hash: `267044ea81fd43d131274d54e2974aaace22bf422cec8b475d06b882db6f4374`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `91636`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

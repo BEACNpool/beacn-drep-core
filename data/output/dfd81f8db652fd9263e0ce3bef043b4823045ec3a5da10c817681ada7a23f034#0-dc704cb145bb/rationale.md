@@ -1,19 +1,13 @@
 # Rationale: dfd81f8db652fd9263e0ce3bef043b4823045ec3a5da10c817681ada7a23f034#0
-Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.11` (raw `-0.11` + doctrine-LLM nudge `-0.03`) | Confidence: `0.7775` | Readiness: `0.75`
-> Reasoning layer (precomputed): The extracted claims describe potentially high public-benefit infrastructure, but the largest and most decision-critical assertions about SPO-threshold custody, fallback safety, audit readiness, adoption targets, and economic returns are mostly proposer-asserted rather than evidenced in the supplied document. Given the large treasury request and the deterministic assessment that claims and evidence are thin, a small cautionary nudge is justified without overriding the engine’s incomplete-status handling.
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the idea.
 
-The proposal requests ₳12,332,031 for Phase 1 of Bifrost, a Bitcoin-to-Cardano bridge intended to move from testnet work toward launch readiness over a 9-month period from July 2026 to March 2027. The proposer claims Phase 1 would produce an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes, with formal verification, a hardened economic model, a launch stewardship structure, and partner readiness.
-
-The review found some important claims were supported: the proposal substantiates that Bifrost is designed to bring BTC onto Cardano as a native asset for DeFi use cases, and the pinned proposal anchor was available and replayable. The existing Catalyst Fund 14 grant and some completed milestone status were also independently verifiable. But several decision-critical claims remained proposer-asserted rather than independently evidenced, including mainnet audit readiness, SPO-threshold custody across 400+ SPOs, fallback safety, adoption targets, and parts of the economic model.
-
-The review gates show why BEACN held back: treasury withdrawals require elevated scrutiny, evidence status was thin, execution risk was unknown, and the treasury review was missing milestone-gated disbursement and a sustainability path. A directional vote would be unblocked by the pinned and independently verified Net Change Limit, plus stronger public evidence for the audited mainnet bridge claim, SPO-threshold custody design, independent assurance, and rollback or remedy path.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Bifrost: Unlocking Bitcoin DeFi on Cardano — Road to Mainnet (Phase 1 of 2)" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 12.33M ADA from the treasury. A key material claim lacks independent support: "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -80,30 +74,29 @@ The review gates show why BEACN held back: treasury withdrawals require elevated
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as a native Cardano asset for DeFi use cases." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as a native Cardano asset for DeFi use cases." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
+- Data freshness check failed: data is 91633s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as a native Cardano asset for DeFi use cases." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Bifrost is designed as a permissionless Bitcoin-Cardano bridge that brings BTC onto Cardano as a native Cardano asset for DeFi use cases." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was -0.030 (display cap ±0.05) and had zero influence on the binding score: The extracted claims describe potentially high public-benefit infrastructure, but the largest and most decision-critical assertions about SPO-threshold custody, fallback safety, audit readiness, adoption targets, and economic returns are mostly proposer-asserted rather than evidenced in the supplied document. Given the large treasury request and the deterministic assessment that claims and evidence are thin, a small cautionary nudge is justified without overriding the engine’s incomplete-status handling.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -112,8 +105,7 @@ The review gates show why BEACN held back: treasury withdrawals require elevated
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- DRep ratification support is below threshold; this is not treated as active opposition.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access.
 - Claims and evidence missing: Independent evidence for: Bifrost custody of locked BTC is intended to be distributed across 400+ Cardano SPOs weighted by delegation, with fund movement requiring a cryptographic threshold representing the majority of delegated stake.
 - Claims and evidence status is thin.
@@ -121,22 +113,20 @@ The review gates show why BEACN held back: treasury withdrawals require elevated
 - Treasury analysis missing: sustainability path
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- independent ecosystem-value evidence packet
-- verified ecosystem benefit or strategic necessity
-- cost comparables, budget proportionality, or sustainability evidence
-- delivery controls, milestones, assurance, or remedy path
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `dc704cb145bb64846290a079344191b4ff4697d87ce6985a6174cdf82a66b6d6`
-- snapshot_bundle_hash: `65b1866578f3b61ef914780b6547041bac4f044b126afd362e1526ccd75452fd`
+- snapshot_bundle_hash: `8c1f77fe629577c4e05d26c78bfd1ae8c05aeca0cf9bc5d9c5fe25ede0bc0f67`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `0`
-- uncertainty_band: `MEDIUM`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5144, "NO": 0.3528, "YES": 0.1328}`
+- snapshot_age_seconds: `91633`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

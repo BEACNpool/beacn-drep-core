@@ -1,6 +1,6 @@
 # Rationale: gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2133` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7733` | Readiness: `0.85`
+Score: `-0.2025` (raw `-0.2133` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7706` | Readiness: `0.85`
 > Reasoning layer (precomputed): A small positive nudge is justified because the extracted claims describe established open-source developer infrastructure, public adoption metrics, governance-process references, NCL compliance, and smart-contract oversight, while the deterministic assessment is already ready and treasury-risk gates have been handled. The nudge remains small because several important adoption and delivery-history statements are proposer asserted and the request is still a material treasury spend.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of Pallas or its ma
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Fund Pallas by TxPipe: Maintaining Cardano's Core Rust Libraries, Year 2, including part-time maintenance, community support, and AI-friendly documentation/integration resources over 12 months.
 - finding: Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe/the vendor
@@ -102,7 +102,7 @@ This is a conservative, evidence-based hold, not a rejection of Pallas or its ma
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: A small positive nudge is justified because the extracted claims describe established open-source developer infrastructure, public adoption metrics, governance-process references, NCL compliance, and smart-contract oversight, while the deterministic assessment is already ready and treasury-risk gates have been handled. The nudge remains small because several important adoption and delivery-history statements are proposer asserted and the request is still a material treasury spend.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -127,13 +127,13 @@ This is a conservative, evidence-based hold, not a rejection of Pallas or its ma
 
 ## Reproducibility
 - input_hash: `496354452e55aa3e3bcb929c93c2a443e324fa864b4b734ab281dce129b92c49`
-- snapshot_bundle_hash: `776edf8359a0aa83d1f7af4f764645eacc4e326512cc4a4c20a9f38348ae9be6`
+- snapshot_bundle_hash: `0c0371f53aaed4ed47e63671f49e0f1a890e9a9c75379e53a7eae1b6409350d4`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `2`
+- snapshot_age_seconds: `108`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5033, "NO": 0.4477, "YES": 0.049}`
+- decision_probs: `{"ABSTAIN": 0.5082, "NO": 0.4423, "YES": 0.0496}`
 

@@ -1,19 +1,13 @@
 # Rationale: d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0
-Recommendation: **NEEDS_MORE_INFO**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and the review did not have a complete deep-research dossier with independent evidence for the key claim: that a Cardano node bug prevented recovery of the 100,000 ADA governance action deposit.
-
-The action asks the treasury to pay 103,000 ADA to the Ikigai Info governance action submitter: 100,000 ADA for the unrecovered deposit and 3,000 ADA for estimated lost staking rewards at 2% per year. The proposer says the original Info action, “Cardanoの生きがい - Ikigai -,” was submitted in September 2024 after the Chang hard fork, and that the action was symbolic, thanking contributors and expressing hope for Cardano’s future. The review found the existence and timing of that Info action supported in the proposal, and the request amount was clearly stated.
-
-However, several material claims remained only proposer-asserted or lacked independent support. Most importantly, the review did not have independent evidence that a node bug allowed an unregistered stake key to be used and made the deposit unrecoverable. It also lacked independent evidence that the Cardano in Oceania initiative previously included this reimbursement in a budget Info action that was not approved. The risk review found medium execution risk, with mitigation evidence and independent assurance still missing.
-
-This is a conservative, evidence-based hold. A directional vote would be unblocked by a completed treasury deep-research dossier, replayable public evidence for the claimed node bug and deposit-recovery failure, independent support for the prior Cardano in Oceania reimbursement claim, and clearer treasury/risk analysis addressing mitigation and assurance.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Reimburse Ikigai Info Governance Action Deposit." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 103.0k ADA from the treasury. A key material claim lacks independent support: "A Cardano node bug permitted use of an unregistered stake key in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -81,28 +75,29 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "An Info governance action titled "Cardanoの生きがい - Ikigai -" was submitted in September 2024 shortly after the Chang hard fork." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "An Info governance action titled "Cardanoの生きがい - Ikigai -" was submitted in September 2024 shortly after the Chang hard fork." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "A Cardano node bug permitted use of an unregistered stake key in the governance action, preventing the submitter from recovering the 100,000 ADA deposit." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Treasury actions are high-impact and require a completed deep research dossier.
+- Data freshness check failed: data is 91637s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: medium
-- Counterargument pass: Strongest YES: the proposal substantiates "An Info governance action titled "Cardanoの生きがい - Ikigai -" was submitted in September 2024 shortly after the Chang hard fork." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "An Info governance action titled "Cardanoの生きがい - Ikigai -" was submitted in September 2024 shortly after the Chang hard fork." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional voting is blocked until dossier quality gates pass.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -111,7 +106,7 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Dossier completeness not confirmed for this treasury proposal.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: A Cardano node bug permitted use of an unregistered stake key in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.
 - Claims and evidence missing: Independent evidence for: The Cardano in Oceania initiative included this reimbursement in its budget Info governance action, but that governance action was not approved.
 - Claims and evidence status is thin.
@@ -120,20 +115,20 @@ This is a conservative, evidence-based hold. A directional vote would be unblock
 - Treasury analysis status is incomplete.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
-
-## Missing Evidence
-- Deep research dossier is required for treasury actions before directional voting.
-- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `6b3f922542f25473711c2503eec35a66091278de27f6160302f39d1f21c49a7c`
-- snapshot_bundle_hash: `65862afa7005289267397282901528223d146f4a7d21468bc1bc287eebc7937c`
+- snapshot_bundle_hash: `793371a358d5f131b1797bf2c967cbc3a956afc4f67c6d424644e79f7fb308cc`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `91637`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

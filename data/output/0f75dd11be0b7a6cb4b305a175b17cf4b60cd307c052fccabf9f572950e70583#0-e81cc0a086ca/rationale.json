@@ -1,0 +1,319 @@
+{
+  "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
+  "directional_threshold": 0.12,
+  "confidence": 0.1,
+  "readiness_score": null,
+  "treasury_dimensions": {
+    "evidence_status": "missing",
+    "benefit": 0,
+    "delivery_confidence": 0.75,
+    "cost_efficiency": 0.25,
+    "downside_risk": 0.5125,
+    "composite": -0.1894,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "independent ecosystem-value evidence packet",
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ]
+  },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "facts": [
+    "Critical evidence fields are missing for this action.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 0",
+    "Risk review: Execution risk: high",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.\" though 1 review blocker(s) remain open.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Intake status is blocked.",
+    "Claims and evidence missing: Independent evidence for: The proposal states that there are no DRep funds or personal compensation to Sundial or Charms principals, and that if external investment funds Alchemy development, the development portion of the request will roll into additional treasury-supported launch liquidity.",
+    "Claims and evidence missing: Independent evidence for: The proposal says Intersect would serve as interim fund administrator if confirmed, supporting accounting, fund separation, milestone verification, reporting, and custody controls, with administrator-held ada kept in auditable accounts delegated to auto-abstain.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: dependency map",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "Synthesis status is blocked."
+  ],
+  "missing_evidence": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ],
+  "input_hash": "e81cc0a086caf4d39f247e87a615c9c1d38416b781dae7807b4770cb0db24f9c",
+  "snapshot_bundle_hash": "cd2a1fd4f61fc4d2dd42f900a67da853d986a045525a69a2ef3a2eed9dce3c2e",
+  "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
+  "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
+  "resource_registry_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 11,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-12T13:39:31.688662Z",
+    "freshness_source": "manifest"
+  },
+  "decision_probs": {
+    "YES": 0.3275,
+    "NO": 0.3275,
+    "ABSTAIN": 0.345
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "blocked",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "blocked",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "blocked",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 639",
+          "Expires after epoch: 646",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: manifest",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms.",
+          "Recipient: Intersect is proposed as interim fund administrator, subject to confirmation and final agreement; Sundial remains accountable for deployment and delivery coordination with Charms.",
+          "Stated amount: 10,000,000 ada",
+          "Deliverables: Shared BTC reserve architecture with FIRE and ICE assets, Staged treasury-supported launch liquidity, Open-source SDKs and adapters for wallets, DEXs, and DeFi protocols, Always-on public dashboards for reserve ratio, supply, liquidity health, fee flows, and deployment status, Monthly governance reports and reporting standards, Independent security review, audit, and economic modeling, Legal/compliance work, disclosures, risk documentation, and launch-readiness review, Ecosystem education, DRep communications, partner activation, and launch coordination",
+          "Deadline/expiry: Staged deployment after enactment, with three-month liquidity deployment and monthly reporting; specific full delivery deadline not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.",
+          "Claim (economic, supported_in_proposal, high materiality): Pool 1 will support protocol infrastructure and staged launch liquidity, kept separate from operating expenses and deployed over three months in approximate tranches of USD 250,000, USD 250,000, and USD 500,000.",
+          "Claim (economic, supported_in_proposal, high materiality): Pool 2 will fund delivery, audits, integrations, dashboards, legal/compliance, reporting, go-to-market, administration, and related work according to itemized planning allocations totaling approximately USD 1.0 million.",
+          "Claim (technical, supported_in_proposal, high materiality): Alchemy will use a shared BTC reserve architecture with FIRE and ICE backed by the same BTC reserve, a target initial reserve ratio of 5.0x, and safety zones that constrain minting, redemption, and risky activity as reserve conditions weaken.",
+          "Claim (technical, supported_in_proposal, high materiality): FIRE is described as a volatility-absorbing residual BTC exposure asset, while ICE is described as a lower-volatility USD-denominated BTC-backed exposure asset intended to be composable across Cardano wallets, DEXs, dashboards, and DeFi protocols.",
+          "Claim (economic, supported_in_proposal, high materiality): Profits, yield, and returns generated by the treasury-supported launch liquidity position will be returned to the Cardano Treasury quarterly, while principal may be returned only after Alchemy reaches a 30-day time-weighted average TVL of at least USD 60 million and a later governance proposal approves the return action."
+        ],
+        "missing": [
+          "Independent evidence for: The proposal states that there are no DRep funds or personal compensation to Sundial or Charms principals, and that if external investment funds Alchemy development, the development portion of the request will roll into additional treasury-supported launch liquidity.",
+          "Independent evidence for: The proposal says Intersect would serve as interim fund administrator if confirmed, supporting accounting, fund separation, milestone verification, reporting, and custody controls, with administrator-held ada kept in auditable accounts delegated to auto-abstain.",
+          "Independent evidence for: The proposal claims Cardano currently lacks a production BTCfi infrastructure layer and risks Bitcoin-backed structured exposure consolidating on Ethereum, BNB, Solana, and off-chain markets if Alchemy is not funded."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 0",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.72"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: high",
+          "Governance risk: medium",
+          "Technical risk: high",
+          "Treasury exposure risk: high",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "independent assurance",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.\" though 1 review blocker(s) remain open.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that there are no DRep funds or personal compensation to Sundial or Charms principals, and that if external investment funds Alchemy development, the development portion of the request will roll into additional treasury-supported launch liquidity.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "blocked",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [
+          "treasury_amount_lovelace is missing for a treasury withdrawal"
+        ],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": [
+      "treasury_amount_lovelace is missing for a treasury withdrawal"
+    ]
+  },
+  "missing_evidence_count": 1,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.25,
+      "downside_risk": 0.5125,
+      "composite": -0.1894,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. A key material claim lacks independent support: \"The proposal states that there are no DRep funds or personal compensation to Sundial or Charms principals, and that if external investment funds Alchemy development, the development portion of the request will roll into additional treasury-supported launch liquidity.\". Open questions before a directional vote: treasury_amount_lovelace is missing for a treasury withdrawal. Reason code: MISSING_BASELINE_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://raw.githubusercontent.com/sundial-protocol/alchemy-proposal/d5460de0ed4af81602c44b65567dd8a54cf1c61c/data.jsonld",
+        "file_sha256": "95b1c7b82fc16070198efa280db9312dc7aa0a42fc8eb5b91a64daedf8cbec57",
+        "file_path": "data/input/governance/anchors/gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2-20260624T113056Z.bin",
+        "content_chars": 23136
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "e3a928321a0c2826ac2d1acc07768b7e64f2fba21b1013e5b5c5330996dbafd2"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "870959535dac50290c33a2fe329aff1b9d9ab9a4d852f49eeb965adb0295d34a"
+    },
+    "human_message": {
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

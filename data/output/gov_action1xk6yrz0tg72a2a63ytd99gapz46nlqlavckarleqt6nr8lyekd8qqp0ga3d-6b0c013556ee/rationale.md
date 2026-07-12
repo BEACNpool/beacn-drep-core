@@ -1,6 +1,6 @@
 # Rationale: gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2433` (raw `-0.2433` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7808` | Readiness: `0.9`
+Score: `-0.0731` (raw `-0.6933` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7383` | Readiness: `0.9`
 > Reasoning layer (precomputed): The claims show meaningful public-benefit growth potential and some treasury-protection mechanisms, but the highest-impact adoption, repayment, Phase 1, and commercial anchor claims are mostly proposer-asserted rather than evidenced in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh plausible ecosystem growth, so the bounded nudge should be cautious rather than supportive.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ The review gates show why BEACN held instead of voting yes or no. The action had
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Treasury withdrawal to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency.
 - finding: Recipient: Intersect as budget administrator, with funds held and disbursed through the Sundae Labs TRSC/PSSC framework; delivery by Anvil Development Agency and Sellout.
@@ -100,7 +100,7 @@ The review gates show why BEACN held instead of voting yes or no. The action had
 
 ## Inferences
 - Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: The claims show meaningful public-benefit growth potential and some treasury-protection mechanisms, but the highest-impact adoption, repayment, Phase 1, and commercial anchor claims are mostly proposer-asserted rather than evidenced in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh plausible ecosystem growth, so the bounded nudge should be cautious rather than supportive.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,6 +110,7 @@ The review gates show why BEACN held instead of voting yes or no. The action had
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
+- Proposal requests over 50% of rolling available capacity.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.
 - Claims and evidence missing: Independent evidence for: Phase 2 targets 12-month outcomes of 200+ on-chain events, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets.
@@ -123,13 +124,13 @@ The review gates show why BEACN held instead of voting yes or no. The action had
 
 ## Reproducibility
 - input_hash: `6b0c013556ee0118b6f09090423749cc3bbc725dbafffb72a07335fcbe2412ad`
-- snapshot_bundle_hash: `8b2bb91660030bb23ce0f619a44c37a18fb6b02e55cbd38480846e5fc2eb33df`
+- snapshot_bundle_hash: `35dc1240bd19ca60e562f0a26c10fa7d507d8397533400564e77ae533925faa5`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
+- snapshot_age_seconds: `107`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4902, "NO": 0.4622, "YES": 0.0476}`
+- decision_probs: `{"ABSTAIN": 0.5046, "NO": 0.3208, "YES": 0.1746}`
 

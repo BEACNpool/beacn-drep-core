@@ -2,7 +2,7 @@
   "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
   "action_type": "TreasuryWithdrawals",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "abstain_reason_code": "STALE_DATA",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
@@ -19,35 +19,22 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.12,
-  "confidence": 0.1,
+  "confidence": 0.0,
   "readiness_score": null,
-  "treasury_dimensions": {
-    "evidence_status": "proposal_only",
-    "benefit": 0,
-    "delivery_confidence": 0.45,
-    "cost_efficiency": 0.0,
-    "downside_risk": 0.4375,
-    "composite": -0.3031,
-    "affirmative_waste_evidence": [],
-    "missing": [
-      "independent ecosystem-value evidence packet",
-      "verified ecosystem benefit or strategic necessity",
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ]
-  },
-  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
-  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
   "facts": [
-    "Critical evidence fields are missing for this action.",
+    "Data freshness check failed: data is 91633s old, max allowed is 21600s",
     "Intake: Action type: TreasuryWithdrawals",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 0",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests \u20b3120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption.\" though 1 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests \u20b3120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption.\" though 2 review blocker(s) remain open.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Cannot produce reliable recommendation with stale data.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -56,7 +43,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "All scoring suspended until fresh data is available.",
     "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
     "Intake status is blocked.",
     "Claims and evidence missing: Independent evidence for: The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the withdrawal in full at enactment.",
@@ -67,17 +54,15 @@
     "Treasury analysis status is incomplete.",
     "Risk review missing: independent assurance",
     "Risk review missing: rollback/remedy path",
-    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
-    "Synthesis status is blocked."
+    "Synthesis missing: freshness gate failed",
+    "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal"
   ],
-  "missing_evidence": [
-    "treasury_amount_lovelace is missing for a treasury withdrawal"
-  ],
+  "missing_evidence": [],
   "input_hash": "af6931d763f8addcc7544e67a5051befeff273d31cfa29668308465b00d2be70",
-  "snapshot_bundle_hash": "5540ad8a07408db64f9df68455af069f282431591e3bc23e36a066d859baab02",
+  "snapshot_bundle_hash": "a8d49444151c59925b52452df2249cd3a1a7513f23a2a4d5df50e77ea49816e7",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -97,19 +82,19 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 91633,
     "max_allowed_seconds": 21600,
-    "is_stale": false,
+    "is_stale": true,
     "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.3275,
-    "NO": 0.3275,
-    "ABSTAIN": 0.345
+    "YES": 0.34,
+    "NO": 0.34,
+    "ABSTAIN": 0.32
   },
   "uncertainty_band": "LOW",
-  "evidence_depth_score": 3,
+  "evidence_depth_score": 1,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
   "assessment_status": "blocked",
@@ -206,7 +191,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests \u20b3120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption.\" though 1 review blocker(s) remain open.",
+          "Strongest YES: the proposal substantiates \"The proposal requests \u20b3120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption.\" though 2 review blocker(s) remain open.",
           "Strongest NO: a material claim is unsupported \u2014 \"The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the withdrawal in full at enactment.\" \u2014 so cost or precedent may outweigh the benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -221,12 +206,14 @@
           "The public rationale should name the decisive section and the strongest counterargument."
         ],
         "missing": [
+          "freshness gate failed",
           "treasury_amount_lovelace is missing for a treasury withdrawal"
         ],
         "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
       }
     ],
     "blocking_questions": [
+      "freshness gate failed",
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ]
   },
@@ -249,22 +236,9 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {
-      "evidence_status": "proposal_only",
-      "benefit": 0,
-      "delivery_confidence": 0.45,
-      "cost_efficiency": 0.0,
-      "downside_risk": 0.4375,
-      "composite": -0.3031,
-      "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
-    },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "human_message": "BEACN voted ABSTAIN because the review was blocked by missing baseline evidence for a treasury withdrawal, especially the missing `treasury_amount_lovelace` field. This is a conservative, evidence-based hold, not a judgment that the proposal is bad or that it should fail.\n\nThe action requested a withdrawal of 120,000,000 ada to fund AlphaGrowth\u2019s Cardano PRIME, described as a 12-month program to improve DeFi protocol readiness, deploy incentives and capital, publish recommendations and disbursement records, provide quarterly reporting, fund independent audit or assurance work, and return unused or excess funds to the treasury. The proposal itself supported several governance claims, including milestone-gated releases, Operating Group oversight, Intersect\u2019s role in managing withdrawn funds, and limits on AlphaGrowth\u2019s unilateral control of program funds. It also provided on-chain addresses, a policy hash, and references to a full proposal PDF, smart contract repository, and audit reports.\n\nHowever, several material items were not independently established in the review. The claim that the withdrawal depends on enough remaining Net Change Limit capacity under TREASURY-01a was still only proposer-asserted, as were the June 2026 figures for Cardano DeFi TVL and stablecoin supply. The treasury analysis was incomplete because a line-item budget and sustainability path were missing, and the risk review still lacked independent assurance and a rollback or remedy path.\n\nThe evidence that would unblock a directional vote is specific: a complete treasury amount field in lovelace, independent evidence for the Net Change Limit condition and DeFi baseline figures, a line-item budget, a sustainability path, independent assurance, and a clear rollback or remedy path. Until those pieces are present, BEACN cannot responsibly vote YES or NO without pretending to have more certainty than the record supports.",
@@ -318,7 +292,5 @@
       "output_sha256": "63c67f31c5c4787c7ec800e6312fd6d878d32d4daf7ac632f9d2aa3025d91b45"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/019f8785d84b40b15408302b.md",
-  "rationale_anchor_hash": "019f8785d84b40b15408302bf2ae801489ed18362edc60ca7af8c372cb142c46"
+  }
 }

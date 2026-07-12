@@ -3,12 +3,12 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.2433,
-  "raw_score": -0.2433,
+  "score": -0.0731,
+  "raw_score": -0.6933,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7808,
+  "confidence": 0.7383,
   "readiness_score": 0.9,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -58,7 +58,7 @@
   ],
   "inferences": [
     "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The claims show meaningful public-benefit growth potential and some treasury-protection mechanisms, but the highest-impact adoption, repayment, Phase 1, and commercial anchor claims are mostly proposer-asserted rather than evidenced in the document. Under BEACN doctrine, treasury stewardship and evidence quality outweigh plausible ecosystem growth, so the bounded nudge should be cautious rather than supportive.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -68,6 +68,7 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Proposal requests over 50% of rolling available capacity.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.",
     "Claims and evidence missing: Independent evidence for: Phase 2 targets 12-month outcomes of 200+ on-chain events, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets.",
@@ -80,10 +81,10 @@
     "verified ecosystem benefit or strategic necessity"
   ],
   "input_hash": "6b0c013556ee0118b6f09090423749cc3bbc725dbafffb72a07335fcbe2412ad",
-  "snapshot_bundle_hash": "8b2bb91660030bb23ce0f619a44c37a18fb6b02e55cbd38480846e5fc2eb33df",
+  "snapshot_bundle_hash": "35dc1240bd19ca60e562f0a26c10fa7d507d8397533400564e77ae533925faa5",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -103,16 +104,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 107,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0476,
-    "NO": 0.4622,
-    "ABSTAIN": 0.4902
+    "YES": 0.1746,
+    "NO": 0.3208,
+    "ABSTAIN": 0.5046
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -145,7 +146,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Treasury withdrawal to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency.",
           "Recipient: Intersect as budget administrator, with funds held and disbursed through the Sundae Labs TRSC/PSSC framework; delivery by Anvil Development Agency and Sellout.",
@@ -313,7 +314,5 @@
       "output_sha256": "2d3623e92f4bd792ac2aca60fcfb0f74652bec4672e23e5ba605d283c9421e23"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d6f66e9a49736f8cece3ace5.md",
-  "rationale_anchor_hash": "d6f66e9a49736f8cece3ace5fd6fc55fd1ce8a8870d56b5bc534a40078e80d80"
+  }
 }

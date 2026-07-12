@@ -2,7 +2,7 @@
   "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
   "action_type": "TreasuryWithdrawals",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "MISSING_BASELINE_EVIDENCE",
+  "abstain_reason_code": "STALE_DATA",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
@@ -19,35 +19,22 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.12,
-  "confidence": 0.1,
+  "confidence": 0.0,
   "readiness_score": null,
-  "treasury_dimensions": {
-    "evidence_status": "missing",
-    "benefit": 0,
-    "delivery_confidence": 0.55,
-    "cost_efficiency": 0.25,
-    "downside_risk": 0.25,
-    "composite": -0.2,
-    "affirmative_waste_evidence": [],
-    "missing": [
-      "independent ecosystem-value evidence packet",
-      "verified ecosystem benefit or strategic necessity",
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ]
-  },
-  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
-  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
   "facts": [
-    "Critical evidence fields are missing for this action.",
+    "Data freshness check failed: data is 91633s old, max allowed is 21600s",
     "Intake: Action type: TreasuryWithdrawals",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 0",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 1 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 2 review blocker(s) remain open.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Cannot produce a responsible recommendation without baseline evidence.",
+    "Cannot produce reliable recommendation with stale data.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -56,7 +43,7 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Missing: treasury_amount_lovelace is missing for a treasury withdrawal",
+    "All scoring suspended until fresh data is available.",
     "Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal",
     "Intake status is blocked.",
     "Claims and evidence missing: Independent evidence for: The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down.",
@@ -65,17 +52,16 @@
     "Treasury analysis missing: sustainability path",
     "Risk review missing: independent assurance",
     "Risk review missing: dependency map",
+    "Synthesis missing: freshness gate failed",
     "Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal",
     "Synthesis status is blocked."
   ],
-  "missing_evidence": [
-    "treasury_amount_lovelace is missing for a treasury withdrawal"
-  ],
+  "missing_evidence": [],
   "input_hash": "dc13e2135d884590352cb00428f8cb0a20517b1a7f1573fd7e512751a4c85d98",
-  "snapshot_bundle_hash": "c85ab4f01f62bc1ff0cbe5da6b5e117a2cfcff9d3e8ac4228a7e4e297123777b",
+  "snapshot_bundle_hash": "f7a8a60498a9692120113428fbdf798de80990ba7ad6b1e25eab60457412c516",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -95,19 +81,19 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 91633,
     "max_allowed_seconds": 21600,
-    "is_stale": false,
+    "is_stale": true,
     "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.3275,
-    "NO": 0.3275,
-    "ABSTAIN": 0.345
+    "YES": 0.34,
+    "NO": 0.34,
+    "ABSTAIN": 0.32
   },
   "uncertainty_band": "LOW",
-  "evidence_depth_score": 3,
+  "evidence_depth_score": 1,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
   "assessment_status": "blocked",
@@ -201,9 +187,9 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 1 review blocker(s) remain open.",
+          "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 2 review blocker(s) remain open.",
           "Strongest NO: a material claim is unsupported \u2014 \"The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down.\" \u2014 so cost or precedent may outweigh the benefit.",
-          "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+          "Strongest hold: evidence is too thin for a directional vote while 2 blocker(s) remain open."
         ],
         "missing": [],
         "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
@@ -216,12 +202,14 @@
           "The public rationale should name the decisive section and the strongest counterargument."
         ],
         "missing": [
+          "freshness gate failed",
           "treasury_amount_lovelace is missing for a treasury withdrawal"
         ],
         "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
       }
     ],
     "blocking_questions": [
+      "freshness gate failed",
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ]
   },
@@ -244,22 +232,9 @@
     "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
     "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
     "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
-    "dimensions": {
-      "evidence_status": "missing",
-      "benefit": 0,
-      "delivery_confidence": 0.55,
-      "cost_efficiency": 0.25,
-      "downside_risk": 0.25,
-      "composite": -0.2,
-      "affirmative_waste_evidence": [],
-      "missing": [
-        "independent ecosystem-value evidence packet",
-        "verified ecosystem benefit or strategic necessity",
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
-    },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "human_message": "BEACN voted ABSTAIN because a required baseline field for a treasury withdrawal was missing: `treasury_amount_lovelace`. Without that, the review could not responsibly complete a directional vote, even though the proposal text stated a 4,094,000 ADA request.\n\nThe action requested a one-year dOSPO and Open Maintenance Framework program, administered at withdrawal by Christian Taylor / Open Source Cowboy Consulting, with an intended later transition to a dOSPO 501(c)(3). The proposal described operations, maintenance retainers, maintainer development, bounties, ecosystem activation, advisory councils, public dashboards, quarterly reporting, and a 2,000,000 ADA Maintenance Fund for high-risk Cardano open source infrastructure. It also named Mill Law Firm for quarterly independent financial reviews.\n\nSeveral basic claims were supported in the proposal itself: the 12-month 4,094,000 ADA request, the named administrator, the named auditor, the four program areas, the 2,000,000 ADA Maintenance Fund, and the stated use of dependency data, SBOMs, bus factor assessments, and rubrics for retainer selection. But one material governance claim remained unsupported by independent evidence: that governance could replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned. The treasury analysis also lacked milestone-gated disbursement and sustainability-path evidence, and the risk review still lacked independent assurance and a dependency map.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the program idea. A directional vote would require the missing treasury withdrawal baseline field, especially `treasury_amount_lovelace`, plus stronger evidence for the shutdown/replacement mechanism, milestone-gated disbursement, sustainability path, independent assurance, and dependency mapping.",
@@ -313,7 +288,5 @@
       "output_sha256": "297f2a55b2b311b5a42923b20459352b4ba8e8b3d0643f590db2678710ea8150"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6eb9e9a641473299aa786736.md",
-  "rationale_anchor_hash": "6eb9e9a641473299aa7867364d24070376d5d5b100dfe53f3351e14234042a9e"
+  }
 }

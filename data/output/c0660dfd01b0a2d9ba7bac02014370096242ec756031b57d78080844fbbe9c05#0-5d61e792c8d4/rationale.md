@@ -1,19 +1,13 @@
 # Rationale: c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0
-Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.11` (raw `-0.11` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7775` | Readiness: `0.8`
-> Reasoning layer (precomputed): The extracted claims show meaningful public-benefit alignment through reusable DeFi infrastructure, documented deliverables, KPIs, milestone structure, and security-review commitments, but the large treasury request and several ecosystem-impact claims still depend on future delivery and adoption. The deterministic assessment already marked the review ready, so the bounded reasoning layer should not add a directional nudge beyond the mechanical score.
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this treasury request cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not an endorsement or rejection of the proposal.
 
-Dano Finance requested 3,333,000 ADA, with Minswap Labs serving as budget administrator: 3,300,000 ADA for delivery and 33,000 ADA as a 1% administration fee. The proposal says the funding would accelerate a DeFi Kernel open standard for shared liquidity, on-chain financial intents, and global order-book coordination. It includes four work packages: a registry website and submission process, a spot leverage order book, an American options market-making protocol, and a composable DeFi transaction builder SDK.
-
-Several budget and technical claims were supported in the proposal, including the requested amount, the allocation across work packages, the planned registry metadata, the smart contract and SDK deliverables, KPI targets, audit or security-review expectations, unused-funds handling, and a proposed 5% protocol-fee return for 12 months after mainnet launch. However, an important adoption claim remained unsupported by independent evidence: that Cardano DeFi is fragmented across liquidity, metadata, and execution paths in ways that limit integrations, market depth, and advanced financial applications. The review also found thin overall claims-and-evidence status, high execution risk, missing milestone-gated disbursement analysis, missing independent assurance, and no dependency map.
-
-Because this is a treasury withdrawal, BEACN applies elevated scrutiny: public ADA would be spent and precedent would be set. The pinned proposal anchor was available and replayable, and the strongest case for a YES vote was that the requested budget was clearly stated and supported. But the treasury-specific Net Change Limit still needs to be pinned and independently verified from public chain evidence before BEACN can responsibly move from NEEDS_MORE_INFO to a YES or NO vote.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Global Order Book connect Cardano DeFi to increase transaction" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 3.33M ADA from the treasury. A key material claim lacks independent support: "Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which the proposer says limits integrations, market depth, and advanced financial applications.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -74,29 +68,29 @@ Because this is a treasury withdrawal, BEACN applies elevated scrutiny: public A
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which the proposer says limits integrations, market depth, and advanced financial applications." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
+- Data freshness check failed: data is 91633s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: high
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and 33,000 ADA for a 1% budget administration fee." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -105,27 +99,26 @@ Because this is a treasury withdrawal, BEACN applies elevated scrutiny: public A
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- DRep ratification support is below threshold; this is not treated as active opposition.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: Cardano DeFi is fragmented across liquidity, metadata, and execution paths, which the proposer says limits integrations, market depth, and advanced financial applications.
 - Claims and evidence status is thin.
 - Treasury analysis missing: milestone-gated disbursement
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
-
-## Missing Evidence
-- independent ecosystem-value evidence packet
-- verified ecosystem benefit or strategic necessity
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `5d61e792c8d4830bf6ec92b1f3eaf1c1e4bc5c200afa6df6a168d4979cac7031`
-- snapshot_bundle_hash: `8391670baa6854eaa6c15e1cc671296098226869103c030033ed3759c140059f`
+- snapshot_bundle_hash: `d44e1edd123ceea348d35f1e324c40c6e6bf9f2445221d1ddcb3b47561bde6ee`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `0`
-- uncertainty_band: `MEDIUM`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5144, "NO": 0.3528, "YES": 0.1328}`
+- snapshot_age_seconds: `91633`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

@@ -1,6 +1,6 @@
 # Rationale: 529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0
 Recommendation: **ABSTAIN**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.1` | Readiness: `0`
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
 
 ## Plain-language explanation (precomputed)
@@ -80,7 +80,7 @@ The evidence that would unblock a directional vote is specific: a complete treas
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "The proposal requests ₳120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption." though 1 review blocker(s) remain open.
+- finding: Strongest YES: the proposal substantiates "The proposal requests ₳120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption." though 2 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the withdrawal in full at enactment." — so cost or precedent may outweigh the benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -89,20 +89,21 @@ The evidence that would unblock a directional vote is specific: a complete treas
 - status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - missing: treasury_amount_lovelace is missing for a treasury withdrawal
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Critical evidence fields are missing for this action.
+- Data freshness check failed: data is 91633s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption." though 1 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests ₳120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption." though 2 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Cannot produce a responsible recommendation without baseline evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -111,7 +112,7 @@ The evidence that would unblock a directional vote is specific: a complete treas
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Missing: treasury_amount_lovelace is missing for a treasury withdrawal
+- All scoring suspended until fresh data is available.
 - Intake missing: treasury_amount_lovelace is missing for a treasury withdrawal
 - Intake status is blocked.
 - Claims and evidence missing: Independent evidence for: The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the withdrawal in full at enactment.
@@ -122,21 +123,20 @@ The evidence that would unblock a directional vote is specific: a complete treas
 - Treasury analysis status is incomplete.
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
+- Synthesis missing: freshness gate failed
 - Synthesis missing: treasury_amount_lovelace is missing for a treasury withdrawal
-- Synthesis status is blocked.
-
-## Missing Evidence
-- treasury_amount_lovelace is missing for a treasury withdrawal
 
 ## Reproducibility
 - input_hash: `af6931d763f8addcc7544e67a5051befeff273d31cfa29668308465b00d2be70`
-- snapshot_bundle_hash: `5540ad8a07408db64f9df68455af069f282431591e3bc23e36a066d859baab02`
+- snapshot_bundle_hash: `a8d49444151c59925b52452df2249cd3a1a7513f23a2a4d5df50e77ea49816e7`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `0`
+- snapshot_age_seconds: `91633`
 - uncertainty_band: `LOW`
-- evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.345, "NO": 0.3275, "YES": 0.3275}`
+- evidence_depth_score: `1`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

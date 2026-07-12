@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -88,23 +88,27 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests \u20b32,350,000 at about $0.1787 per Ada to cover approximately $420,000 in annual costs for 12 months.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal requests \u20b32,350,000 at about $0.1787 per Ada to cover approximately $420,000 in annual costs for 12 months.\" though 1 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\" \u2014 so cost or precedent may outweigh the benefit.",
-        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
       ],
       "missing": [],
       "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "freshness gate failed"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "freshness gate failed"
+  ]
 }

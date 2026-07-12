@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
   "action_type": "InfoAction",
-  "overall_status": "incomplete",
+  "overall_status": "blocked",
   "sections": [
     {
       "title": "Intake",
@@ -70,23 +70,27 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.\" and clears the evidence gates.",
+        "Strongest YES: the proposal substantiates \"The proposal sets a new Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for Cardano Treasury withdrawals during Epochs 613-713.\" though 1 review blocker(s) remain open.",
         "Strongest NO: a material claim is unsupported \u2014 \"The proposal supersedes any prior Net Change Limit for the same Epochs 613-713 period, including the previously agreed 350,000,000 ada limit referenced in the motivation.\" \u2014 so cost or precedent may outweigh the benefit.",
-        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
       ],
       "missing": [],
       "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
     },
     {
       "title": "Synthesis",
-      "status": "ready",
+      "status": "blocked",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [],
+      "missing": [
+        "freshness gate failed"
+      ],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": []
+  "blocking_questions": [
+    "freshness gate failed"
+  ]
 }

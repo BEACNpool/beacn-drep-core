@@ -29,7 +29,7 @@ Because hard forks are permanent, operator-sensitive changes, BEACN’s rules re
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: not required
 - finding: Requested: Initiate an intra-era hard fork of Cardano mainnet to Protocol Version 11.0, named the van Rossem hard fork.
 - finding: Recipient: not stated in document
@@ -105,12 +105,12 @@ Because hard forks are permanent, operator-sensitive changes, BEACN’s rules re
 
 ## Reproducibility
 - input_hash: `29e8f7e0d9844fc6000296a8494f08c2f450fd3f4bc0869fa1b5f117b05b6417`
-- snapshot_bundle_hash: `98ab7318ab1e99e0221f08d9e41e220784bc51ebb8feb7432c9df2b72d10975a`
+- snapshot_bundle_hash: `9572addc9754e17427cb9035deb3435f7e53dc34e63d6604916be7ecaf7c97e6`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `110`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.445, "NO": 0.2775, "YES": 0.2775}`

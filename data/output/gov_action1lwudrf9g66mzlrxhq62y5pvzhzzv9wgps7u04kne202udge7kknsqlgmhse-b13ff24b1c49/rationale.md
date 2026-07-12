@@ -1,6 +1,6 @@
 # Rationale: gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.4633` (raw `-0.4633` + doctrine-LLM nudge `-0.02`) | Confidence: `0.79` | Readiness: `0.8`
+Score: `-0.16` (raw `-0.4633` + doctrine-LLM nudge `-0.02`) | Confidence: `0.73` | Readiness: `0.8`
 > Reasoning layer (precomputed): The proposal describes useful wallet infrastructure and includes repayment, audit, and transparency mechanisms, but the deterministic assessment says claims and evidence are thin, and several high-materiality adoption and dependency claims remain proposer-asserted. Under BEACN doctrine, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ The anchor document was pinned and replayable, baseline intake passed, and the s
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, and improvements while Eternl introduces paid Pro plans intended to replace treasury support.
 - finding: Recipient: Tastenkunst GmbH / Eternl
@@ -103,7 +103,7 @@ The anchor document was pinned and replayable, baseline intake passed, and the s
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
 - Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: The proposal describes useful wallet infrastructure and includes repayment, audit, and transparency mechanisms, but the deterministic assessment says claims and evidence are thin, and several high-materiality adoption and dependency claims remain proposer-asserted. Under BEACN doctrine, treasury stewardship and evidence quality justify a small cautionary nudge rather than a positive adjustment.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -128,13 +128,13 @@ The anchor document was pinned and replayable, baseline intake passed, and the s
 
 ## Reproducibility
 - input_hash: `b13ff24b1c499108ca110632cf2fc7da59cd8ff406880a54cacc7c8527a10b43`
-- snapshot_bundle_hash: `4ab28cb13fb20c5f8b811d2f7e8d83be0d78f4a65a17d7171cde708b52d2850f`
+- snapshot_bundle_hash: `f8ae3bae8d172704fd2e0fcd3ef6ce5b77418d5ecb9692436d2e360131e0994b`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `110`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4111, "NO": 0.5492, "YES": 0.0397}`
+- decision_probs: `{"ABSTAIN": 0.5025, "NO": 0.4088, "YES": 0.0888}`
 

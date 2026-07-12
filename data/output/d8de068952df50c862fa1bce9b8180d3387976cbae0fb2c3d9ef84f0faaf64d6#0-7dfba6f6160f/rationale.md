@@ -1,19 +1,13 @@
 # Rationale: d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0
-Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.11` (raw `-0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.7775` | Readiness: `0.85`
-> Reasoning layer (precomputed): A small positive nudge is justified because the proposal describes established infrastructure maintenance with public-good licensing, concrete deliverables, milestone-based oversight, and several independently verifiable release and version-currency metrics; however, the large treasury ask and some proposer-asserted adoption and return-of-funds claims warrant keeping the adjustment modest.
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the work described.
 
-The proposal asks for 1,785,333 ADA for Se7en Labs to maintain and improve Daedalus through 2026-2027, administered through Intersect and project-specific treasury management contracts. The stated scope includes keeping Daedalus current with cardano-node and cardano-wallet, hard fork readiness, signed releases, platform support, Keystone and Flex hardware wallet support, CIP-30 dApp connector work, user support including Japanese-language support, and an architecture assessment by Q3 2027.
-
-Several parts of the proposal were well supported: the anchor document was available and replayable, the scope and success metrics were concrete, the budget was broken down, and the proposal substantiated that Se7en Labs took responsibility for Daedalus under an IOG contract in January 2026 and shipped Daedalus 8.0 and 11.0 during that period. Other important claims were not independently supported in the review, including the claim that Daedalus is Cardano’s only full-node desktop wallet and the claim about roughly 4,000 monthly active users with a higher true count.
-
-The review gates showed enough substance to keep the action reviewable, but not enough verified evidence for a YES or NO. Treasury scrutiny was elevated, claims-and-evidence status was thin, execution risk was unknown, and the review was missing independent assurance, a rollback or remedy path, sustainability path, and cost-benefit clarity. A directional vote would be unblocked by pinned, independently verifiable Net Change Limit evidence from the public chain, plus stronger replayable evidence for the key technical and adoption claims.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Se7en Labs: Daedalus Wallet Maintenance and Improvements 2026-2027" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.79M ADA from the treasury. A key material claim lacks independent support: "Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -78,30 +72,29 @@ The review gates showed enough substance to keep the action reviewable, but not 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and shipped Daedalus 8.0 and 11.0 during that contract period." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and shipped Daedalus 8.0 and 11.0 during that contract period." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
+- Data freshness check failed: data is 91634s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and shipped Daedalus 8.0 and 11.0 during that contract period." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Se7en Labs assumed responsibility for Daedalus under an IOG contract in January 2026 and shipped Daedalus 8.0 and 11.0 during that contract period." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was +0.030 (display cap ±0.05) and had zero influence on the binding score: A small positive nudge is justified because the proposal describes established infrastructure maintenance with public-good licensing, concrete deliverables, milestone-based oversight, and several independently verifiable release and version-currency metrics; however, the large treasury ask and some proposer-asserted adoption and return-of-funds claims warrant keeping the adjustment modest.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -110,8 +103,7 @@ The review gates showed enough substance to keep the action reviewable, but not 
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- DRep ratification support is below threshold; this is not treated as active opposition.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: Daedalus is Cardano's only full-node desktop wallet and derives wallet and governance data directly from the chain without third-party APIs or trusted backends.
 - Claims and evidence missing: Independent evidence for: Daedalus has approximately 4,000 monthly active users according to opt-in telemetry, while the true count is asserted to be meaningfully higher.
 - Claims and evidence status is thin.
@@ -119,21 +111,20 @@ The review gates showed enough substance to keep the action reviewable, but not 
 - Treasury analysis missing: cost-benefit clarity
 - Risk review missing: independent assurance
 - Risk review missing: rollback/remedy path
-
-## Missing Evidence
-- independent ecosystem-value evidence packet
-- verified ecosystem benefit or strategic necessity
-- cost comparables, budget proportionality, or sustainability evidence
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `7dfba6f6160f1a8f3eeb937b838b18738083935227f6bcfd3fcfec36c07f68f5`
-- snapshot_bundle_hash: `00c25fcb8e55577262d6caca0b4aa626306706bafcd2a5e27f6c63621555dbcc`
+- snapshot_bundle_hash: `b6992395652b34558c51ddeddf343e77b8b0b84d692d3c17b8874eece68b73f6`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
-- uncertainty_band: `MEDIUM`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5144, "NO": 0.3528, "YES": 0.1328}`
+- snapshot_age_seconds: `91634`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

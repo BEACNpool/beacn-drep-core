@@ -3,12 +3,12 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.4933,
-  "raw_score": -0.4933,
+  "score": -0.11,
+  "raw_score": -0.9433,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.79,
+  "confidence": 0.7175,
   "readiness_score": 0.8,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -58,7 +58,7 @@
   ],
   "inferences": [
     "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small cautionary nudge is justified because the request exposes treasury assets to market, stablecoin, custody, and smart contract risks while several key traction, market-share, audit, and performance claims are stated without references in the anchor document. The proposal does include concrete terms, reporting commitments, custody separation, and risk triggers, so the adjustment should remain small rather than overriding the deterministic assessment.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -68,6 +68,7 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Proposal requests over 50% of rolling available capacity.",
     "No milestone-gated disbursement documented.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: Strike claims it has processed more than 1.13 billion USD in cumulative volume, facilitated roughly 968,000 to 1,001,000 trades, served more than 3,000 unique traders, generated over 1.16 million USD in protocol revenue, and produced over 3.25 million USD in liquidity-provider profit.",
@@ -82,10 +83,10 @@
     "verified ecosystem benefit or strategic necessity"
   ],
   "input_hash": "1b091b80946f67485feefea5fb75a44b5fb54c34efc039817dd93cb3cf83751b",
-  "snapshot_bundle_hash": "bf8cf91ed67bebbb79de72cd10e2ece039cacd09d0c9e9018f6bc17fd08cc807",
+  "snapshot_bundle_hash": "0b776abe2149004b4ff5c03cc2d965182f1e7f117110a75f4c7103b9a103f2ff",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,16 +106,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 110,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0397,
-    "NO": 0.5492,
-    "ABSTAIN": 0.4111
+    "YES": 0.1403,
+    "NO": 0.3603,
+    "ABSTAIN": 0.4994
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -147,7 +148,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM stablecoin liquidity and returned after the deployment period.",
           "Recipient: independent council composed of Rami from Snek, Phil from Surf, and James from Monetra/Moneta as administrator and multisig overseer; exact treasury receiving account not stated in document",
@@ -316,7 +317,5 @@
       "output_sha256": "370b1706b5670d417e30b3a4c60c858e1c99da90205b2d1d5caeca57ed56e24a"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1616e7d6364fe9a693704bfc.md",
-  "rationale_anchor_hash": "1616e7d6364fe9a693704bfc2868a7108d596078bd5fe0fc46dea9aee46c2366"
+  }
 }

@@ -2,7 +2,7 @@
   "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
   "action_type": "HardForkInitiation",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "abstain_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
@@ -62,10 +62,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "29e8f7e0d9844fc6000296a8494f08c2f450fd3f4bc0869fa1b5f117b05b6417",
-  "snapshot_bundle_hash": "98ab7318ab1e99e0221f08d9e41e220784bc51ebb8feb7432c9df2b72d10975a",
+  "snapshot_bundle_hash": "9572addc9754e17427cb9035deb3435f7e53dc34e63d6604916be7ecaf7c97e6",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -79,11 +79,11 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 110,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
     "YES": 0.2775,
@@ -121,7 +121,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: not required",
           "Requested: Initiate an intra-era hard fork of Cardano mainnet to Protocol Version 11.0, named the van Rossem hard fork.",
           "Recipient: not stated in document",
@@ -262,7 +262,5 @@
       "output_sha256": "f96d10606f385268cb6a9cbe4800c79330493ab5dd5b1e0acb3a245ea527a016"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/4e878a05ef740403ef188764.md",
-  "rationale_anchor_hash": "4e878a05ef740403ef1887641984b2f29ea2303a222cc39b863491c793a48c0e"
+  }
 }

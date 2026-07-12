@@ -1,6 +1,6 @@
 # Rationale: gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.2433` (raw `-0.2433` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7808` | Readiness: `0.85`
+Score: `-0.1631` (raw `-0.2433` + doctrine-LLM nudge `+0.02`) | Confidence: `0.7608` | Readiness: `0.85`
 > Reasoning layer (precomputed): A small positive nudge is justified because the extracted claims describe established open-source wallet infrastructure, concrete maintenance deliverables, independently verifiable release/version metrics, and milestone-based Intersect oversight. The nudge remains small because several important adoption and track-record claims are proposer asserted and the request is a substantial treasury spend.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Daedalus Wallet Maintenance and Improvements 2026-2027 delivered by Se7en Labs, Inc.
 - finding: Recipient: Se7en Labs, Inc. via Intersect administration and project-specific treasury smart contract arrangements
@@ -103,7 +103,7 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 
 ## Inferences
 - Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: A small positive nudge is justified because the extracted claims describe established open-source wallet infrastructure, concrete maintenance deliverables, independently verifiable release/version metrics, and milestone-based Intersect oversight. The nudge remains small because several important adoption and track-record claims are proposer asserted and the request is a substantial treasury spend.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -129,13 +129,13 @@ This is a conservative, evidence-based hold, not a rejection of the work. A dire
 
 ## Reproducibility
 - input_hash: `3f6bf165bef09c0437ec8ba119e6b340c47839e11f08c1f31bc1322d93a74bcf`
-- snapshot_bundle_hash: `f4589d1eec27bd078212e352e12cd91251f3578381c8340d4c2459561dbf7993`
+- snapshot_bundle_hash: `80b534d6da24773a4f7f75efb44a841aded8b07ac1c09c509de64cacc80c277e`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
+- snapshot_age_seconds: `107`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4902, "NO": 0.4622, "YES": 0.0476}`
+- decision_probs: `{"ABSTAIN": 0.5102, "NO": 0.408, "YES": 0.0818}`
 

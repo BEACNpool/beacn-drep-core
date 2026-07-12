@@ -2,24 +2,15 @@
   "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
   "action_type": "HardForkInitiation",
   "recommendation": "ABSTAIN",
-  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "abstain_reason_code": "STALE_DATA",
   "needs_more_info_reason_code": null,
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
   "score": 0.0,
-  "raw_score": -0.01,
-  "llm_score_adjustment": -0.02,
-  "llm_lean": {
-    "source": "precomputed",
-    "model": "claude-opus-4-8",
-    "direction": "ABSTAIN",
-    "score_adjustment": -0.02,
-    "confidence": 0.72,
-    "rationale": "Hard fork doctrine requires highest scrutiny, implementation readiness, migration readiness, and a concrete risk register. The claims include useful references and a clear 85% SPO readiness condition, but several high-materiality readiness, testing, and audit claims are asserted rather than evidenced in the supplied document, and the deterministic assessment marks risk review as thin and overall status incomplete. A small cautionary nudge is warranted without overriding the engine's gates.",
-    "doctrine_basis": "Hard Fork Doctrine: highest scrutiny for hard forks, directional YES only when evidence quality is high and execution risk is bounded; Values Hierarchy: protocol safety and evidence quality outrank speed and momentum.",
-    "cap": 0.05
-  },
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -28,23 +19,21 @@
   ],
   "doctrine_hash": "6f53967349f63aa48fbbdec2a1d6a164bef78184c62a7ccebf36f47a9585733c",
   "directional_threshold": 0.12,
-  "confidence": 0.5,
-  "readiness_score": 0.6,
+  "confidence": 0.0,
+  "readiness_score": null,
   "treasury_dimensions": null,
   "treasury_merit_recommendation": null,
   "treasury_merit_reason": null,
   "facts": [
-    "Pinned anchor document is available for this action.",
-    "Hard fork actions are high-impact protocol upgrades and require operator-aware review.",
+    "Data freshness check failed: data is 91637s old, max allowed is 21600s",
     "Intake: Action type: HardForkInitiation",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era.\" though 1 review blocker(s) remain open.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: Hard fork doctrine requires highest scrutiny, implementation readiness, migration readiness, and a concrete risk register. The claims include useful references and a clear 85% SPO readiness condition, but several high-materiality readiness, testing, and audit claims are asserted rather than evidenced in the supplied document, and the deterministic assessment marks risk review as thin and overall status incomplete. A small cautionary nudge is warranted without overriding the engine's gates.",
+    "Cannot produce reliable recommendation with stale data.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -52,20 +41,22 @@
     "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
   ],
   "uncertainty": [
-    "Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan",
+    "All scoring suspended until fresh data is available.",
     "Claims and evidence missing: Independent evidence for: The proposal asserts that transaction shape is unchanged and ecosystem upgrade effort is minimized because the change is intra-era.",
     "Claims and evidence missing: Independent evidence for: The proposer states that testing reports show no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
     "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
-    "Risk review status is thin."
+    "Risk review status is thin.",
+    "Synthesis missing: freshness gate failed",
+    "Synthesis status is blocked."
   ],
   "missing_evidence": [],
   "input_hash": "5e5fd3bed1d5039762086337b946dd810a94bfb75dcd87f424d7ff86b647528d",
-  "snapshot_bundle_hash": "be9b9f11c66b2ae581689aafce6edfc53652d3d79e15fb42003a2c3c6d88eb5c",
+  "snapshot_bundle_hash": "c2e91ebbe65d999422d844d05e8b84e536e0856976d688e5abd14673950fa3f4",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -79,27 +70,27 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 91637,
     "max_allowed_seconds": 21600,
-    "is_stale": false,
+    "is_stale": true,
     "snapshot_time": "2026-07-11T11:59:37.109210Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.2775,
-    "NO": 0.2775,
-    "ABSTAIN": 0.445
+    "YES": 0.34,
+    "NO": 0.34,
+    "ABSTAIN": 0.32
   },
   "uncertainty_band": "LOW",
-  "evidence_depth_score": 3,
+  "evidence_depth_score": 1,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
-  "assessment_status": "incomplete",
+  "assessment_status": "blocked",
   "assessment": {
     "schema_version": "assessment-tree-v1",
     "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
     "action_type": "HardForkInitiation",
-    "overall_status": "incomplete",
+    "overall_status": "blocked",
     "sections": [
       {
         "title": "Intake",
@@ -168,25 +159,29 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era.\" and clears the evidence gates.",
+          "Strongest YES: the proposal substantiates \"The proposal would upgrade Cardano mainnet from protocol version 10.0 to protocol version 11.0 through an intra-era hard fork while remaining in the Conway era.\" though 1 review blocker(s) remain open.",
           "Strongest NO: a material claim is unsupported \u2014 \"The proposal asserts that transaction shape is unchanged and ecosystem upgrade effort is minimized because the change is intra-era.\" \u2014 so cost or precedent may outweigh the benefit.",
-          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
         ],
         "missing": [],
         "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
       },
       {
         "title": "Synthesis",
-        "status": "ready",
+        "status": "blocked",
         "findings": [
           "Final vote must be derived from completed sections above, not from a prose summary.",
           "The public rationale should name the decisive section and the strongest counterargument."
         ],
-        "missing": [],
+        "missing": [
+          "freshness gate failed"
+        ],
         "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
       }
     ],
-    "blocking_questions": []
+    "blocking_questions": [
+      "freshness gate failed"
+    ]
   },
   "missing_evidence_count": 0,
   "scoring_weights_version": "1.1.0",
@@ -248,7 +243,7 @@
       "reason": null,
       "model": "claude-opus-4-8",
       "direction": "ABSTAIN",
-      "score_adjustment": -0.02,
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
@@ -263,7 +258,5 @@
       "output_sha256": "e2058d6ebc0dafb8d6ce0dd9a6939e60c585a47ad1bdd5438f38fc895a45d5f0"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/4c8c68b7a431f0233f905718.md",
-  "rationale_anchor_hash": "4c8c68b7a431f0233f9057184850250029704cef03f3aa4f9dc3dbaa53754ee4"
+  }
 }

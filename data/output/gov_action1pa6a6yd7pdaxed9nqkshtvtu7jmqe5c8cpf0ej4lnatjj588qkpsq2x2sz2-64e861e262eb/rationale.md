@@ -1,6 +1,6 @@
 # Rationale: gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2
 Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.3433` (raw `-0.3433` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7758` | Readiness: `0.85`
+Score: `-0.15` (raw `-0.7933` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7275` | Readiness: `0.85`
 > Reasoning layer (precomputed): The extracted claims show a relatively detailed proposal with explicit budget pools, staged liquidity deployment, risk acknowledgements, reporting commitments, and treasury-return mechanics, but the deterministic assessment already marked claims, treasury analysis, and risk review complete. Under the doctrine, these details are primarily execution-eligibility and treasury-stewardship factors already suited to the mechanical gates, so no additional advisory nudge is justified.
 
 ## Plain-language explanation (precomputed)
@@ -29,7 +29,7 @@ Because this is a TreasuryWithdrawal action, BEACN applies elevated scrutiny. Th
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: complete
 - finding: Requested: Fund Alchemy by Sundial x Charms, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer with reserve architecture, FIRE and ICE assets, dashboards, adapters, reporting, audits, legal/compliance work, go-to-market execution, and staged launch liquidity.
 - finding: Recipient: Intersect is proposed as interim fund administrator, subject to confirmation and final agreement; Sundial remains accountable for deployment and delivery with Charms as technical partner.
@@ -98,7 +98,7 @@ Because this is a TreasuryWithdrawal action, BEACN applies elevated scrutiny. Th
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -108,6 +108,7 @@ Because this is a TreasuryWithdrawal action, BEACN applies elevated scrutiny. Th
 
 ## Uncertainty
 - Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
+- Proposal requests over 50% of rolling available capacity.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: The proposal asserts that Cardano currently lacks a credible production BTCfi infrastructure layer and risks losing Bitcoin-backed structured exposure markets to Ethereum, BNB, Solana, and Bitcoin-adjacent ecosystems.
 - Claims and evidence status is thin.
@@ -123,13 +124,13 @@ Because this is a TreasuryWithdrawal action, BEACN applies elevated scrutiny. Th
 
 ## Reproducibility
 - input_hash: `64e861e262eb5205d59a72d9c98ab8b86b965377bdec54eebf6a8e1c27e60a91`
-- snapshot_bundle_hash: `315d76a69ddc8f9976da99057ec2dcd029915409822517770f8878a072cec9b4`
+- snapshot_bundle_hash: `84d51d0eb8845514b65bb3ab26a39290db2f9815eca93a8d6dc6c84a8789d0e8`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
+- snapshot_age_seconds: `107`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.4468, "NO": 0.5097, "YES": 0.0435}`
+- decision_probs: `{"ABSTAIN": 0.5019, "NO": 0.3991, "YES": 0.0991}`
 

@@ -3,12 +3,12 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "VERIFIED_NCL_REQUIRED",
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": -0.3433,
-  "raw_score": -0.3433,
+  "score": -0.2131,
+  "raw_score": -0.7933,
   "llm_score_adjustment": -0.02,
   "llm_lean": {
     "source": "precomputed",
@@ -28,7 +28,7 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7758,
+  "confidence": 0.7433,
   "readiness_score": 0.75,
   "treasury_dimensions": {
     "evidence_status": "missing",
@@ -59,7 +59,7 @@
   ],
   "inferences": [
     "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal is well aligned with public-benefit ecosystem growth and includes governance controls, repayment language, and a verifiable prior repayment claim, but many high-materiality track-record and KPI-effectiveness claims remain proposer-asserted in the supplied document rather than evidenced directly there. Given the large treasury request, a small cautionary nudge is justified on evidence quality and treasury stewardship grounds.",
-    "Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -69,6 +69,7 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Proposal requests over 50% of rolling available capacity.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
     "Claims and evidence missing: Independent evidence for: The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 2 moving toward KPI tracking tied directly to live on-chain Cardano data.",
     "Claims and evidence missing: Independent evidence for: The CB DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
@@ -84,10 +85,10 @@
     "cost comparables, budget proportionality, or sustainability evidence"
   ],
   "input_hash": "b22ea5de12b32ab50dc3a4850dfa63d02d6a0d278497e4d9507b3ab5bee09a5c",
-  "snapshot_bundle_hash": "85ce8a6bbfd1f2954ab83a8e76b5fd1fa714c16b38d31cd146a32efc7e9820d8",
+  "snapshot_bundle_hash": "eea595b8e21e2ec830fa6fb22a7dcd1357af91cbdd7e69ddd821583796e1b8b3",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -107,16 +108,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 107,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
-    "YES": 0.0435,
-    "NO": 0.5097,
-    "ABSTAIN": 0.4468
+    "YES": 0.0492,
+    "NO": 0.4529,
+    "ABSTAIN": 0.4979
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -149,7 +150,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: complete",
           "Requested: Treasury withdrawal to fund the Cardano Builder DAO as a smart contract-governed funding mechanism for Cardano builders aligned to Vision 2030 KPIs.",
           "Recipient: Independent council composed of dRep DAO members receives and administers the withdrawal; Cardano Builder DAO receives funds after milestone completion is validated by the administrator.",
@@ -322,7 +323,5 @@
       "output_sha256": "a10c0d76eb0049b9c393675ea97fcefb3f51d6042f25ff556267463b1de07ac3"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/08f3dcd49834286809afced5.md",
-  "rationale_anchor_hash": "08f3dcd49834286809afced57396d23c34a757380fa3241b141d21b343b67e38"
+  }
 }

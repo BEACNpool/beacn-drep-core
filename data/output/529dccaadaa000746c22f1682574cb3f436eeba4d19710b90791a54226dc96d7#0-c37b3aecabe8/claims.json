@@ -1,0 +1,86 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "120,000,000",
+    "deadline": "12 months",
+    "deliverables": [
+      "Phase 1 public current-state audit",
+      "Phase 2 identification of integration, product, and ecosystem-support gaps",
+      "Phase 3 deployment of incentives and capital after Operating Group affirmation",
+      "Published recommendations and disbursement records",
+      "Quarterly financial and ecosystem impact reporting",
+      "Independent audit or assurance allocation",
+      "Return-to-treasury triggers for unused, unearned, unreleased, or excess funds"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Treasury withdrawal to fund AlphaGrowth's Cardano PRIME, a 12-month community-overseen program to improve DeFi protocol readiness, activate incentives, and grow durable liquidity across Cardano markets."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b3120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "PRIME is described as a 12-month program executed by AlphaGrowth under Operating Group oversight, while Intersect acts as Constitutional Administrator and manages withdrawn funds directly.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the withdrawal in full at enactment.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that, as of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer argues that Cardano's DeFi constraints include fragmented liquidity, inefficient liquidity, limited advanced liquidity products, limited risk and insurance tooling, and low external distribution.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The program uses milestone-gated and action-gated releases, including a Month 4 Phase 3 release gate and Operating Group review with veto or conditioning authority over material actions.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says AlphaGrowth does not unilaterally hold or control program funds, the Operating Group does not hold program funds, and Intersect uses a separate auditable account.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The request includes a dedicated \u20b32,000,000 allocation for independent audit or assurance funding.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The performance fee is tied to verified qualifying TVL growth, excluding ADA price effects and non-PRIME-attributable TVL under the attribution methodology.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document provides on-chain reward and payment addresses, a policy hash, and references to a full proposal PDF, smart contract repository, and two audit reports.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document describes a large \u20b3120,000,000 treasury withdrawal for a 12-month DeFi liquidity and incentives program with Intersect custody, Operating Group oversight, milestone gates, audit funding, reporting, performance-fee attribution, and return triggers, while relying on several asserted ecosystem-need claims.",
+  "output_sha256": "38e7a698517a31496cef099e04fa766845944015e5cd11c5c0abce70ba7cf11e"
+}

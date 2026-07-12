@@ -80,10 +80,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "39ce6f4e2dbf5dc94fcef3bd21af3069960b539dd1c862ff8170e07c39c5b5ef",
-  "snapshot_bundle_hash": "4c7c5d70a897e72812a7ee59ee52117b32e5c570c183c88621548414cf11bd30",
+  "snapshot_bundle_hash": "ba6f8aca03518f338dfb1d6f3947a2899f0714dd3a8a2dd0c8074060a0d64338",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "98204209c1160292d57e948cc03515956c20be3e",
+  "resource_registry_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -103,11 +103,11 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 111,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   },
   "decision_probs": {
     "YES": 0.315,
@@ -145,7 +145,7 @@
         "findings": [
           "Proposal anchor: pinned and replayable",
           "Proposal document read by reasoning layer: yes",
-          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Snapshot freshness source: manifest",
           "Deep research dossier: required",
           "Requested: Funding for IO: Hydra to deliver a feature-complete and hardened Hydra v2 through performance optimization, operational excellence, ecosystem support, and developer experience workstreams.",
           "Recipient: Input Output Global / Intersect administrative treasury governance",
@@ -339,7 +339,5 @@
       "output_sha256": "bd108dad0dad19af93fc2fb623e03318e8abb34ad64b75a70c6493df9c320072"
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/46180d98fe2c6446b6810800.md",
-  "rationale_anchor_hash": "46180d98fe2c6446b6810800d7a712fed97f7a3315ca5d3f750150063de2b63f"
+  }
 }

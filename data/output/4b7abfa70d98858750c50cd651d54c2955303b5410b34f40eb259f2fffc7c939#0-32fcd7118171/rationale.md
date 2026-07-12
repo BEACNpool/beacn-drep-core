@@ -1,19 +1,13 @@
 # Rationale: 4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0
-Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.21` (raw `-0.21` + doctrine-LLM nudge `-0.02`) | Confidence: `0.7725` | Readiness: `0.75`
-> Reasoning layer (precomputed): The proposal aligns with public-benefit ecosystem growth and includes some independently checkable references, repayment history, and milestone-administrator controls, but many high-materiality claims about prior performance, KPI dashboard capability, participation, and measurable impact remain largely proposer-asserted in the anchor text while the requested treasury amount is large. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than a positive adjustment.
+Recommendation: **ABSTAIN**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.0` | Readiness: `0`
 
-## Plain-language explanation (precomputed)
-BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the idea.
 
-The proposal requested a 20,000,000 ADA treasury withdrawal for the Cardano Builder DAO, described as a smart contract-governed funding mechanism for builders working toward Cardano Vision 2030 KPIs. It said funds would be overseen by an independent council or multisig of dRep DAO members, with milestone-based disbursement and KPI tracking for monthly active users, TVL, and on-chain transactions.
-
-Some parts of the proposal cleared review: the action had a pinned, replayable anchor document; funded projects being required to track key KPIs was supported in the proposal; and the strongest YES case was that this KPI requirement cleared the evidence gates. Other material claims remained thin or unsupported by independent replayable evidence, including claims about improving Cardano KPIs, the V1 and V2 KPI dashboard, prior participation and governance results, and measurable impact. The review also noted missing treasury details such as a line-item budget and sustainability path, plus missing risk details such as independent assurance and a dependency map.
-
-Because this is a treasury withdrawal, BEACN applied elevated scrutiny. The evidence that would unblock a directional vote is a pinned and independently verified Net Change Limit from public chain evidence, along with stronger independent support for the high-materiality claims and the missing treasury and risk materials. Until then, NEEDS_MORE_INFO avoids overstating certainty while keeping the door open for a better-supported vote.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Cardano Builder DAO" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 20.00M ADA from the treasury. A key material claim lacks independent support: "The Cardano Builder DAO is intended to allocate capital to builders who can improve Cardano KPIs including monthly active users, monthly on-chain transactions, and TVL.". Open questions before a directional vote: freshness gate failed. Reason code: STALE_DATA. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
-- overall_status: `incomplete`
+- overall_status: `blocked`
 
 ### Intake
 - status: `complete`
@@ -79,31 +73,29 @@ Because this is a treasury withdrawal, BEACN applied elevated scrutiny. The evid
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Funded projects are required to track monthly active users, TVL, and on-chain transactions." and clears the evidence gates.
+- finding: Strongest YES: the proposal substantiates "Funded projects are required to track monthly active users, TVL, and on-chain transactions." though 1 review blocker(s) remain open.
 - finding: Strongest NO: a material claim is unsupported — "The Cardano Builder DAO is intended to allocate capital to builders who can improve Cardano KPIs including monthly active users, monthly on-chain transactions, and TVL." — so cost or precedent may outweigh the benefit.
-- finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
+- finding: Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
 ### Synthesis
-- status: `ready`
+- status: `blocked`
 - finding: Final vote must be derived from completed sections above, not from a prose summary.
 - finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: freshness gate failed
 - conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Facts
-- Pinned anchor document is available for this action.
-- Treasury withdrawal actions require elevated scrutiny.
-- Flag score present (3), reducing confidence.
+- Data freshness check failed: data is 91634s old, max allowed is 21600s
 - Intake: Action type: TreasuryWithdrawals
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 0
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Funded projects are required to track monthly active users, TVL, and on-chain transactions." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "Funded projects are required to track monthly active users, TVL, and on-chain transactions." though 1 review blocker(s) remain open.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: The proposal aligns with public-benefit ecosystem growth and includes some independently checkable references, repayment history, and milestone-administrator controls, but many high-materiality claims about prior performance, KPI dashboard capability, participation, and measurable impact remain largely proposer-asserted in the anchor text while the requested treasury amount is large. Under the doctrine's hierarchy, treasury stewardship and evidence quality justify a small cautionary negative nudge rather than a positive adjustment.
-- Directional treasury voting is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+- Cannot produce reliable recommendation with stale data.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -112,8 +104,7 @@ Because this is a treasury withdrawal, BEACN applied elevated scrutiny. The evid
 - Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
 
 ## Uncertainty
-- Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).
-- DRep ratification support is below threshold; this is not treated as active opposition.
+- All scoring suspended until fresh data is available.
 - Claims and evidence missing: Independent evidence for: The Cardano Builder DAO is intended to allocate capital to builders who can improve Cardano KPIs including monthly active users, monthly on-chain transactions, and TVL.
 - Claims and evidence missing: Independent evidence for: The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 1 using public self-reported KPI tracking and Version 2 moving toward live on-chain Cardano data.
 - Claims and evidence status is thin.
@@ -121,21 +112,20 @@ Because this is a treasury withdrawal, BEACN applied elevated scrutiny. The evid
 - Treasury analysis missing: sustainability path
 - Risk review missing: independent assurance
 - Risk review missing: dependency map
-
-## Missing Evidence
-- independent ecosystem-value evidence packet
-- verified ecosystem benefit or strategic necessity
-- cost comparables, budget proportionality, or sustainability evidence
+- Synthesis missing: freshness gate failed
+- Synthesis status is blocked.
 
 ## Reproducibility
 - input_hash: `32fcd7118171609b800010b73a1bb35dcf5916024f7a2fe39637b994af0f210a`
-- snapshot_bundle_hash: `a80c38e3e6daf9dd37e9a7e7e12fc0b67d47e855b776702821082d78965aed84`
+- snapshot_bundle_hash: `0d93bc3dde9a1bcf2239a15e21bbbaa7598ef21680c7e53e02d9db024ee1086c`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1`
-- uncertainty_band: `MEDIUM`
-- evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.5048, "NO": 0.446, "YES": 0.0492}`
+- snapshot_age_seconds: `91634`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `2`
+- decision_probs: `{"ABSTAIN": 0.32, "NO": 0.34, "YES": 0.34}`
+
+- **DATA STALE**: age exceeded threshold
 

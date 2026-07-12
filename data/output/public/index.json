@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T13:00:46Z",
+  "generated_at": "2026-07-12T13:43:54Z",
   "soul": {
     "repo": "beacn-drep-soul",
     "commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
@@ -7,20 +7,41 @@
   },
   "resources": {
     "repo": "beacn-drep-resources",
-    "commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
+    "commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
     "registry_path": "registries/resource_registry.csv"
   },
   "core": {
     "repo": "beacn-drep-core",
     "version": "0.2.0",
-    "commit": "c508e924316cb585a2dacca2f70afcad2e269b49"
+    "commit": "303b267bf58d091c05d670055815667f6808cc8d"
+  },
+  "treasury_capacity": {
+    "verified": true,
+    "ncl_lovelace": 300000000000000,
+    "period_start_epoch": 613,
+    "period_end_epoch": 713,
+    "withdrawals_in_period_lovelace": 291435336000000,
+    "remaining_capacity_lovelace": 8564664000000,
+    "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
+    "drep_support": {
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
+    },
+    "verification_status": "verified_onchain_info_action",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "portfolio_status": "verified"
   },
   "stats": {
-    "actions_seen": 298,
+    "actions_seen": 150,
     "decisions_published": 150,
     "votes_cast": 31,
     "abstentions": 51,
-    "needs_more_info": 99,
+    "needs_more_info": 98,
     "anchor_fetch_total": 298,
     "anchor_fetch_ok": 294,
     "anchor_fetch_failed": 4,
@@ -32,140 +53,140 @@
       "title": "Withdraw 120,000,000 ada for AlphaGrowth\u2019s Cardano PRIME",
       "type": "TreasuryWithdrawals",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
       "title": "Revised Cardano dOSPO and OMF Program Proposal",
       "type": "TreasuryWithdrawals",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#3",
       "title": "Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0",
       "title": "Add Constitutional Committee Member",
       "type": "NewCommittee",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#16",
       "title": "Withdraw \u20b3583,000 for Eternl Maintenance administered by Intersect",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916#0",
       "title": "Name the next hard fork HOSKY Hard Fork",
       "type": "InfoAction",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#35",
       "title": "Withdraw \u20b3750,000 for Cardano Product Committee: Community-driven 2030 Carda...",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "73e171a4c0730b4b59ecae271ab89f12a9d56360b02920e1f95107dbdc1d6762#7",
       "title": "Blockfrost: Maintenance and Next Generation Indexing",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "4f6e5df9a6e14bd49e406e2bbb0d108b3be2be64b9569b930053a0c1eebe0d47#0",
       "title": "IO: Hydra",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "3f0ff0d848cab1036621f92732fef5ea1cb6466305889777ee95496933dfd1e4#0",
       "title": "Cardano at TOKEN2049 Singapore 2026: Baseline \u2018Platinum' Sponsorship Proposal",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0",
       "title": "Cardano 2030: Vision, Mission, Strategy Framework and KPIs",
       "type": "InfoAction",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#25",
       "title": "Withdraw \u20b36,000,000 for Unveiling the First Unified Global Events Marketing S...",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "bd91fa7ea9b4e09f76cbde3abb0b564ffc60b27e18af464ccec9bef9c718d087#0",
       "title": "Cardano Summit 2026 and TOKEN2049 Singapore",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#23",
       "title": "Withdraw \u20b369,459,000 for Catalyst 2025 Proposal by Input Output: Advancing De...",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "eb8ef28ca80dbd9ced6f577f013bdfc64897d1f4e326beb37a50fb6b62c38ccd#0",
       "title": "Add Constitutional Committee Member - Christina",
       "type": "NewCommittee",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "d2745225498d1c56c0f01be9971074a49144d625df0e73a86c51689624fbadb0#0",
       "title": "Constitutional Committee Compensation Epochs 581-653",
       "type": "InfoAction",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9",
       "title": "Withdraw \u20b3300,000 for Ledger App Rewrite administered by Intersect",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "60ed6ab43c840ff888a8af30a1ed27b41e9f4a91a89822b2b63d1bfc52aeec45#0",
       "title": "Amaru Treasury Withdrawal 2025",
       "type": "TreasuryWithdrawals",
       "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
+      "title": "Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support",
+      "type": "TreasuryWithdrawals",
+      "decision": "NEEDS_MORE_INFO",
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     },
     {
       "action_id": "c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0",
       "title": "Reduce the committeeMinSize parameter from 7 to 5",
       "type": "ParameterChange",
       "decision": "ABSTAIN",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
-    },
-    {
-      "action_id": "7b42570b685aa6085c8345f894a6b04df06cb6fb17f9f252cfe891ceae705ddc#0",
-      "title": "Revised Cardano Summit 2026 Singapore",
-      "type": "TreasuryWithdrawals",
-      "decision": "NEEDS_MORE_INFO",
-      "published_at": "2026-07-11T11:30:05.186378+00:00"
+      "published_at": "2026-07-12T13:27:08.053028+00:00"
     }
   ]
 }

@@ -15,6 +15,9 @@ OUT = CORE_REPO / "data" / "output" / "public"
 RUNS = CORE_REPO / "data" / "output"
 ACTIONS_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "governance_actions_all.csv"
 ANCHOR_INDEX_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "anchor_documents_index.csv"
+FLAGS_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "governance_action_flags.csv"
+POLICY_STATE = RESOURCES_REPO / "data" / "input" / "governance" / "treasury_policy_state.json"
+PORTFOLIO = RESOURCES_REPO / "data" / "input" / "governance" / "treasury_portfolio.json"
 DEEP_CSV = RESOURCES_REPO / "data" / "input" / "governance" / "decision_support" / "deep_research_dossiers.csv"
 DOSSIER_DIR = RESOURCES_REPO / "data" / "input" / "governance" / "decision_support" / "dossiers"
 _DOSSIER_SECTIONS = ("proposal_summary", "budget_analysis", "feasibility_assessment",
@@ -201,6 +204,73 @@ def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
         "fetched_at_utc": anchor_row.get("fetched_at_utc", ""),
         "download_path": f"/proposals/{dst_name}",
         "preview": preview,
+    }
+
+
+def _to_int(v) -> int:
+    try:
+        return int(float(str(v).strip()))
+    except (TypeError, ValueError):
+        return 0
+
+
+def _load_flags_map() -> dict[str, list[dict]]:
+    """Per-action risk flags. These are WHY a proposal drew scrutiny, and the public record was
+    hiding all 169 of them — including 6 RED (NO_METADATA, HASH_MISMATCH). A reader asking
+    "why didn't this pass?" deserves to see them."""
+    out: dict[str, list[dict]] = {}
+    if not FLAGS_CSV.exists():
+        return out
+    with FLAGS_CSV.open(newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            key = canonical_action_id(r.get("action_id", ""))
+            if not key:
+                continue
+            out.setdefault(key, []).append({
+                "flag": (r.get("flag") or "").strip(),
+                "severity": (r.get("severity") or "").strip(),
+                "detail": (r.get("detail") or "").strip(),
+            })
+    return out
+
+
+def _load_treasury_capacity() -> dict:
+    """The Net Change Limit and what is left of it — published so anyone can check the arithmetic.
+
+    This is the single hardest gate a treasury proposal faces, so the public must be able to see
+    the number, where it came from, and the honest caveat that no NCL is ever formally enacted.
+    """
+    try:
+        policy = json.loads(POLICY_STATE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    try:
+        portfolio = json.loads(PORTFOLIO.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        portfolio = {}
+    ncl = policy.get("ncl_lovelace")
+    if not ncl:
+        return {
+            "verified": False,
+            "why": "No Net Change Limit is currently pinned from chain evidence, so BEACN will not "
+                   "vote directionally on any treasury withdrawal.",
+        }
+    spent = policy.get("withdrawals_in_period_lovelace") or 0
+    return {
+        "verified": True,
+        "ncl_lovelace": ncl,
+        "period_start_epoch": policy.get("period_start_epoch"),
+        "period_end_epoch": policy.get("period_end_epoch"),
+        "withdrawals_in_period_lovelace": spent,
+        "remaining_capacity_lovelace": policy.get("remaining_capacity_lovelace",
+                                                  max(0, int(ncl) - int(spent))),
+        "spend_basis": policy.get("spend_basis"),
+        "source_action_id": policy.get("source_action_id"),
+        "source_anchor_hash": policy.get("source_anchor_hash"),
+        "drep_support": policy.get("drep_support"),
+        "verification_status": policy.get("verification_status"),
+        "caveat": policy.get("caveat"),
+        "portfolio_status": portfolio.get("status"),
     }
 
 
@@ -472,6 +542,8 @@ def main():
     anchor_stats = _anchor_fetch_stats(anchor_map)
     rat = _load_rationales_latest()
     deep_map = _load_deep_research_map()
+    flags_map = _load_flags_map()
+    treasury_capacity = _load_treasury_capacity()
 
     soul_commit = _git_commit(SOUL_REPO)
     res_commit = _git_commit(RESOURCES_REPO)
@@ -607,6 +679,20 @@ def main():
             "decision_contract": r["rationale"].get("decision_contract", {}),
             "proposal_evidence": proposal_snapshot,
             "deep_research": _deep_research_block(aid, deep_map.get(aid)),
+            # Why this proposal drew scrutiny, and — for treasury asks — the capacity arithmetic
+            # it had to fit inside. Both were previously invisible to the public.
+            "flags": flags_map.get(aid, []),
+            "treasury_capacity": (
+                {**treasury_capacity,
+                 "requested_lovelace": _to_int(a.get("treasury_amount_lovelace")),
+                 "fits_remaining": (
+                     _to_int(a.get("treasury_amount_lovelace")) > 0
+                     and treasury_capacity.get("remaining_capacity_lovelace") is not None
+                     and _to_int(a.get("treasury_amount_lovelace"))
+                     <= int(treasury_capacity.get("remaining_capacity_lovelace") or 0)
+                 )}
+                if a.get("action_type") == "TreasuryWithdrawals" and treasury_capacity else None
+            ),
             "reproducibility": {
                 "soul_repo": "beacn-drep-soul",
                 "soul_commit": soul_commit,
@@ -678,6 +764,7 @@ def main():
         "soul": {"repo": "beacn-drep-soul", "commit": soul_commit, "path": "README.md"},
         "resources": {"repo": "beacn-drep-resources", "commit": res_commit, "registry_path": "registries/resource_registry.csv"},
         "core": {"repo": "beacn-drep-core", "version": "0.2.0", "commit": core_commit},
+        "treasury_capacity": treasury_capacity,
         "stats": {
             "actions_seen": len(actions),
             "decisions_published": len(items),

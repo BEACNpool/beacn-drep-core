@@ -1,0 +1,114 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 641",
+        "Expires after epoch: 648",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: manifest",
+        "Deep research dossier: complete",
+        "Requested: Establish and fund a one-year independent Cardano dOSPO and Open Maintenance Framework program to sustain open source infrastructure through operations, maintenance retainers, maintainer development, bounties, and ecosystem activation.",
+        "Recipient: Christian Taylor / Open Source Cowboy Consulting as Article II.7.5 funds administrator at withdrawal, with intended later transition target to a dOSPO 501(c)(3) public charity subject to governance.",
+        "Stated amount: 4,094,000 ADA over 12 months",
+        "Deliverables: Stand up dOSPO operational team, program management systems, advisory councils, legal entity formation, and quarterly public reporting., Deploy a 2,000,000 ADA Maintenance Fund for high-risk Cardano open source infrastructure selected through dependency audits, SBOMs, centrality scores, bus factor assessment, and published rubrics., Create public CHAOSS-aligned dashboards and quarterly reports tracking funded-project health and outcomes., Constitute External Open Source Advisory Council and Technical Community Advisory Council with published feedback before program disbursements., Use Mill Law Firm as independent financial auditor on a quarterly cadence.",
+        "Deadline/expiry: 12-month program term, with listed milestones through Week 52",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.",
+        "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole Article II.7.5 administrator effective at the moment of treasury withdrawal.",
+        "Claim (governance, supported_in_proposal, high materiality): Mill Law Firm is designated as independent financial auditor for quarterly reviews through Month 12.",
+        "Claim (technical, supported_in_proposal, high materiality): The program would run four programs: a Maintenance Fund, Maintainer Development, CodeForUs bounties, and an Ecosystem Activation Reserve.",
+        "Claim (economic, supported_in_proposal, high materiality): The Maintenance Fund would deploy 2,000,000 ADA over 12 months to retainers for high-risk Cardano open source infrastructure.",
+        "Claim (technical, supported_in_proposal, high materiality): Retainer selection is claimed to follow published dependency centrality data, SBOMs, bus factor assessments, and an auditable rubric rather than relationships."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.78"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 1 review blocker(s) remain open.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal claims governance can replace the administrator or shut down the initiative through an on-chain Info Action, with remaining funds returned if shut down.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing for a treasury withdrawal"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing for a treasury withdrawal"
+  ]
+}

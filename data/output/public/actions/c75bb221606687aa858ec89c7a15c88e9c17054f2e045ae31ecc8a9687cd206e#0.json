@@ -12,7 +12,7 @@
     "vote": "ABSTAIN",
     "onchain_vote": "YES",
     "diverged": true,
-    "published_at": "2026-07-11T11:30:05.186378+00:00",
+    "published_at": "2026-07-12T13:27:08.053028+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "980a4f93c991b76b01149330cf873ef41d2dbef4e4bb0de4fd5c6c86d7f5c1f8",
@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.55,
     "input_hash": "cf666b752c9ef29377293b8126b29dfb49f0f151f9c3357c67c535acc16de3bd",
-    "snapshot_bundle_hash": "1ff8a935698ae7578f9670f98ba9d42d9a0afd84b5a31792c6deaeae9aafeb42",
+    "snapshot_bundle_hash": "3094a4cc36e10cd71615a5479901a4bca78ef685ace80e392b492d25a907aa4b",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
     "rationale_markdown_path": "/data/output/public/rationales/gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur-cf666b752c9e.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3d0157ba5390da49977bdfbc.md",
-    "rationale_anchor_hash": "3d0157ba5390da49977bdfbca23d1c19198670c5b3d82453cede9f60ae8ffc35"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (ratified), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize setting of 7; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 55.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (ratified), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize setting of 7; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 55.0%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide independent evidence for: The current Constitutional Committee comprises 7 members, equal to the current committeeMinSize setting of 7.",
@@ -69,7 +69,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Snapshot freshness source: manifest",
             "Deep research dossier: not required",
             "Requested: Reduce the Cardano protocol parameter committeeMinSize from 7 to 5.",
             "Recipient: not stated in document",
@@ -194,12 +194,14 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
   "deep_research": null,
+  "flags": [],
+  "treasury_capacity": null,
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -273,10 +275,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 5,
+    "snapshot_age_seconds": 111,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:27:10.306433Z",
+    "freshness_source": "manifest"
   }
 }

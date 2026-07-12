@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:af6931d763f8addcc7544e67a5051befeff273d31cfa29668308465b00d2be70",
+    "raw_input_hash": "sha256:a7b5904a0c178f7c93fbffd037afb837a3358bb5f817860baab17447f5544d1e",
     "detected_at": "2026-07-09T21:00:01.798380+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-11T11:30:05.186378+00:00",
+    "published_at": "2026-07-12T13:27:08.053028+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,14 +22,14 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.1,
-    "input_hash": "af6931d763f8addcc7544e67a5051befeff273d31cfa29668308465b00d2be70",
-    "snapshot_bundle_hash": "5540ad8a07408db64f9df68455af069f282431591e3bc23e36a066d859baab02",
+    "input_hash": "a7b5904a0c178f7c93fbffd037afb837a3358bb5f817860baab17447f5544d1e",
+    "snapshot_bundle_hash": "5aed3130ae06875a76975049dbef7a3819765ecaf71e98880eddaf4a84a41be6",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
-    "rationale_markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-af6931d763f8.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/019f8785d84b40b15408302b.md",
-    "rationale_anchor_hash": "019f8785d84b40b15408302bf2ae801489ed18362edc60ca7af8c372cb142c46"
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "rationale_markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-a7b5904a0c17.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests \u20b3120,000,000 for Cardano PRIME, with USD figures treated only as planning references at a $0.16/ADA assumption.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
@@ -39,7 +39,7 @@
       "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
       "Provide independent evidence for: The proposal states that, as of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply."
     ],
-    "markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-af6931d763f8.md",
+    "markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-a7b5904a0c17.md",
     "missing_evidence": [
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ],
@@ -73,7 +73,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Snapshot freshness source: manifest",
             "Deep research dossier: required",
             "Requested: Treasury withdrawal to fund AlphaGrowth's Cardano PRIME, a 12-month community-overseen program to improve DeFi protocol readiness, activate incentives, and grow durable liquidity across Cardano markets.",
             "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
@@ -162,7 +162,7 @@
         "treasury_amount_lovelace is missing for a treasury withdrawal"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-af6931d763f8.assessment.json",
+    "assessment_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-a7b5904a0c17.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "proposal_only",
       "benefit": 0,
@@ -279,12 +279,36 @@
       "material_discrepancies": 0
     }
   },
+  "flags": [],
+  "treasury_capacity": {
+    "verified": true,
+    "ncl_lovelace": 300000000000000,
+    "period_start_epoch": 613,
+    "period_end_epoch": 713,
+    "withdrawals_in_period_lovelace": 291435336000000,
+    "remaining_capacity_lovelace": 8564664000000,
+    "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
+    "drep_support": {
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
+    },
+    "verification_status": "verified_onchain_info_action",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "portfolio_status": "verified",
+    "requested_lovelace": 0,
+    "fits_remaining": false
+  },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -394,10 +418,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 11,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:40:44.713478Z",
+    "freshness_source": "manifest"
   }
 }

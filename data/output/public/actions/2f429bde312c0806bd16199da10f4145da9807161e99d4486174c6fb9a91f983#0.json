@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:dc13e2135d884590352cb00428f8cb0a20517b1a7f1573fd7e512751a4c85d98",
+    "raw_input_hash": "sha256:b05ebd1ca68d6646344cd233d301e56f747dcfd5fab192a9b20dea9f4069dc69",
     "detected_at": "2026-07-08T05:00:01.231638+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-11T11:30:05.186378+00:00",
+    "published_at": "2026-07-12T13:27:08.053028+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,14 +22,14 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.1,
-    "input_hash": "dc13e2135d884590352cb00428f8cb0a20517b1a7f1573fd7e512751a4c85d98",
-    "snapshot_bundle_hash": "c85ab4f01f62bc1ff0cbe5da6b5e117a2cfcff9d3e8ac4228a7e4e297123777b",
+    "input_hash": "b05ebd1ca68d6646344cd233d301e56f747dcfd5fab192a9b20dea9f4069dc69",
+    "snapshot_bundle_hash": "c0d2a2cddd4e63ec4942279a46e6ef036cae2016d21a36e1879e61863b5edfbd",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
-    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-dc13e2135d88.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6eb9e9a641473299aa786736.md",
-    "rationale_anchor_hash": "6eb9e9a641473299aa7867364d24070376d5d5b100dfe53f3351e14234042a9e"
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
+    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-b05ebd1ca68d.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
     "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a dOSPO and Open Maintenance Framework program.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing for a treasury withdrawal; Provide treasury_amount_lovelace is missing for a treasury withdrawal. Residual uncertainty: Missing: treasury_amount_lovelace is missing for a treasury withdrawal Confidence context: score 0.00; confidence 10.0%.",
@@ -39,7 +39,7 @@
       "Provide treasury_amount_lovelace is missing for a treasury withdrawal.",
       "Provide milestone-gated disbursement."
     ],
-    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-dc13e2135d88.md",
+    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-b05ebd1ca68d.md",
     "missing_evidence": [
       "treasury_amount_lovelace is missing for a treasury withdrawal"
     ],
@@ -73,7 +73,7 @@
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
-            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Snapshot freshness source: manifest",
             "Deep research dossier: complete",
             "Requested: Establish and fund a one-year independent Cardano dOSPO and Open Maintenance Framework program to sustain open source infrastructure through operations, maintenance retainers, maintainer development, bounties, and ecosystem activation.",
             "Recipient: Christian Taylor / Open Source Cowboy Consulting as Article II.7.5 funds administrator at withdrawal, with intended later transition target to a dOSPO 501(c)(3) public charity subject to governance.",
@@ -159,7 +159,7 @@
         "treasury_amount_lovelace is missing for a treasury withdrawal"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-dc13e2135d88.assessment.json",
+    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-b05ebd1ca68d.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "missing",
       "benefit": 0,
@@ -276,12 +276,42 @@
       "material_discrepancies": 0
     }
   },
+  "flags": [
+    {
+      "flag": "\ud83d\udfe1 NO_DISCUSSION",
+      "severity": "yellow",
+      "detail": "No links to forum discussion or community feedback"
+    }
+  ],
+  "treasury_capacity": {
+    "verified": true,
+    "ncl_lovelace": 300000000000000,
+    "period_start_epoch": 613,
+    "period_end_epoch": 713,
+    "withdrawals_in_period_lovelace": 291435336000000,
+    "remaining_capacity_lovelace": 8564664000000,
+    "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
+    "drep_support": {
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
+    },
+    "verification_status": "verified_onchain_info_action",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "portfolio_status": "verified",
+    "requested_lovelace": 0,
+    "fits_remaining": false
+  },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -391,10 +421,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 11,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-11T11:59:37.109210Z",
-    "freshness_source": "deep_research_dossiers.csv"
+    "snapshot_time": "2026-07-12T13:40:44.713478Z",
+    "freshness_source": "manifest"
   }
 }

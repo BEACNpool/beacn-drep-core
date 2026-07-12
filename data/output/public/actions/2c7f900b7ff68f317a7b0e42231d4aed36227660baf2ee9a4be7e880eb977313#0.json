@@ -12,7 +12,7 @@
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-11T11:30:05.186378+00:00",
+    "published_at": "2026-07-12T13:27:08.053028+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -25,8 +25,8 @@
     "input_hash": "babe0cd67d87628dbb480c340d7bbd0336726e0379c5ff9cfa3da8e50ed1ffd1",
     "snapshot_bundle_hash": "2b83387ea3a5de35a8215ee98b5f012bb1fb47cd7be68bb38bc6b8fed9a84fa0",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
     "rationale_markdown_path": "/data/output/public/rationales/2c7f900b7ff68f317a7b0e42231d4aed36227660baf2ee9a4be7e880eb977313#0-babe0cd67d87.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
@@ -289,12 +289,42 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
   "deep_research": null,
+  "flags": [
+    {
+      "flag": "\ud83d\udfe1 SINGLE_BENEFICIARY",
+      "severity": "yellow",
+      "detail": "Treasury withdrawal to a single address"
+    }
+  ],
+  "treasury_capacity": {
+    "verified": true,
+    "ncl_lovelace": 300000000000000,
+    "period_start_epoch": 613,
+    "period_end_epoch": 713,
+    "withdrawals_in_period_lovelace": 291435336000000,
+    "remaining_capacity_lovelace": 8564664000000,
+    "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
+    "drep_support": {
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
+    },
+    "verification_status": "verified_onchain_info_action",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "portfolio_status": "verified",
+    "requested_lovelace": 99600000000,
+    "fits_remaining": true
+  },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "eec0908e48c56be13e86e06ac5d9440d0cac813a",
-    "core_commit": "c508e924316cb585a2dacca2f70afcad2e269b49",
+    "resources_commit": "82a02efa3be4dedf61fea1548ca03635163347a8",
+    "core_commit": "303b267bf58d091c05d670055815667f6808cc8d",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",

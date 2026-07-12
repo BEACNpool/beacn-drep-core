@@ -29,7 +29,7 @@ This is a conservative, evidence-based hold, not a rejection of Hydra. A directi
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
 - finding: Proposal document read by reasoning layer: yes
-- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Snapshot freshness source: manifest
 - finding: Deep research dossier: required
 - finding: Requested: Funding for IO: Hydra to deliver a feature-complete and hardened Hydra v2 through performance optimization, operational excellence, ecosystem support, and developer experience workstreams.
 - finding: Recipient: Input Output Global / Intersect administrative treasury governance
@@ -146,12 +146,12 @@ This is a conservative, evidence-based hold, not a rejection of Hydra. A directi
 
 ## Reproducibility
 - input_hash: `39ce6f4e2dbf5dc94fcef3bd21af3069960b539dd1c862ff8170e07c39c5b5ef`
-- snapshot_bundle_hash: `4c7c5d70a897e72812a7ee59ee52117b32e5c570c183c88621548414cf11bd30`
+- snapshot_bundle_hash: `ba6f8aca03518f338dfb1d6f3947a2899f0714dd3a8a2dd0c8074060a0d64338`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `98204209c1160292d57e948cc03515956c20be3e`
+- resource_registry_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `111`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

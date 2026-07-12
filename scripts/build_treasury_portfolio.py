@@ -26,9 +26,19 @@ def main() -> int:
     deep = rows("deep_research_dossiers.csv")
     policy = E._load_treasury_policy_state()
     flow = E._load_treasury_flow()
-    verified_ncl = policy.get("verification_status") == "verified_on_chain"
+    # Single source of truth with the engine — the two must never disagree about what counts
+    # as a verified NCL, or the portfolio blocks what the engine would fund (and vice versa).
+    verified_ncl = policy.get("verification_status") in E.NCL_VERIFIED_STATUSES
     ncl = E._to_float(policy.get("ncl_lovelace")) if verified_ncl else 0.0
-    spent = E._to_float(flow.get("withdrawals_73e_lovelace"))
+    # Spend MUST be measured over the NCL's own period. This used to charge a rolling 73-epoch
+    # window against it, sweeping in withdrawals enacted BEFORE the period began (they belong to
+    # the previous NCL): 638.5M ADA vs the true 291.4M at epoch 642 — which forced remaining
+    # capacity to 0 and blocked every treasury proposal on a phantom overspend.
+    # pin_ncl_from_chain.py measures it over the pinned period; the rolling figure is only a
+    # last-resort fallback when the period-correct number is unavailable.
+    spent = E._to_float(policy.get("withdrawals_in_period_lovelace"))
+    if not spent:
+        spent = E._to_float(flow.get("withdrawals_73e_lovelace"))
     remaining = max(0.0, ncl - spent) if ncl else 0.0
 
     candidates = []

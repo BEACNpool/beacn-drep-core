@@ -1,7 +1,61 @@
 import unittest
 
 from beacn_drep.engine import (_build_assessment, _score_action, _treasury_dimensions,
-                               _treasury_merit_recommendation)
+                               _treasury_merit_recommendation, _ncl_spent_lovelace,
+                               NCL_VERIFIED_STATUSES)
+
+
+class NclCapacityWindowTests(unittest.TestCase):
+    """Spend charged against the NCL must be measured over the NCL's OWN period.
+
+    Regression (2026-07-12): the engine charged a rolling 73-epoch window against the NCL, which
+    swept in withdrawals enacted BEFORE the period began (those belong to the PREVIOUS NCL). At
+    epoch 642 that read 638.5M ADA against a 300M NCL -> available == 0 -> the engine FORCED a
+    directional NO on every treasury proposal, including "Eternl: Path to Sustainability - v2",
+    which the portfolio had ranked #1 and fundable. True in-period spend was 291.4M, leaving 8.6M.
+
+    A forced NO on a phantom overspend is the worst failure available to this system: it is
+    directional (castable on-chain) and it votes down meritorious work for a reason that is false.
+    """
+
+    NCL = 300_000_000_000_000          # 300M ADA
+    IN_PERIOD = 291_435_336_000_000    # true spend within epochs 613-713 at epoch 642
+    ROLLING_73E = 638_466_843_000_000  # rolling window — includes the PREVIOUS NCL period
+
+    def test_prefers_in_period_spend_over_rolling_window(self):
+        spent = _ncl_spent_lovelace(
+            {"withdrawals_in_period_lovelace": self.IN_PERIOD},
+            {"withdrawals_73e_lovelace": self.ROLLING_73E},
+        )
+        self.assertEqual(spent, self.IN_PERIOD)
+
+    def test_real_capacity_remains_so_a_fundable_proposal_is_not_force_voted_no(self):
+        spent = _ncl_spent_lovelace(
+            {"withdrawals_in_period_lovelace": self.IN_PERIOD},
+            {"withdrawals_73e_lovelace": self.ROLLING_73E},
+        )
+        available = self.NCL - spent
+        self.assertGreater(available, 0, "capacity must not be phantom-depleted")
+        # Eternl asks 2.35M ADA and must fit inside the real remaining capacity.
+        self.assertGreater(available, 2_350_000_000_000)
+
+    def test_rolling_window_alone_would_have_forced_the_bad_no(self):
+        # Guards the claim above: with only the rolling figure, capacity really does go to zero.
+        spent = _ncl_spent_lovelace({}, {"withdrawals_73e_lovelace": self.ROLLING_73E})
+        self.assertEqual(spent, self.ROLLING_73E)
+        self.assertLessEqual(self.NCL - spent, 0)
+
+    def test_falls_back_to_rolling_window_only_when_in_period_absent(self):
+        self.assertEqual(
+            _ncl_spent_lovelace({"withdrawals_in_period_lovelace": 0},
+                                {"withdrawals_73e_lovelace": self.ROLLING_73E}),
+            self.ROLLING_73E,
+        )
+
+    def test_info_action_ncl_counts_as_verified(self):
+        # Info actions can never be enacted, so demanding "verified_on_chain" made the treasury
+        # gate unsatisfiable and froze all funding permanently.
+        self.assertIn("verified_onchain_info_action", NCL_VERIFIED_STATUSES)
 
 
 def base_action(action_type: str) -> dict:

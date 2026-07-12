@@ -168,6 +168,46 @@ def _load_treasury_doctrine() -> dict:
         return {}
 
 
+# Accepted proofs that the applicable Net Change Limit is pinned to public chain evidence.
+#
+# "verified_on_chain" (enacted ledger state) is retained for completeness, but NO NCL can ever
+# reach it: the Constitution sets the NCL via an *Info* governance action; Info actions change no
+# ledger state, so they ALWAYS expire and can NEVER be enacted. Requiring it made the treasury
+# gate unsatisfiable by construction — a permanent freeze on ALL treasury funding regardless of a
+# proposal's merit, dressed up as caution.
+#
+# "verified_onchain_info_action" is the strongest proof the chain can actually offer, produced by
+# beacn-drep-resources/scripts/pin_ncl_from_chain.py: an anchor document byte-verified against its
+# on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep
+# stake (latest supersedes). Its `caveat` field travels with the number into every rationale that
+# relies on it, so no reader mistakes it for enacted ledger state.
+NCL_VERIFIED_STATUSES = ("verified_on_chain", "verified_onchain_info_action")
+
+
+def _ncl_spent_lovelace(treasury_policy_state: dict | None, treasury_flow: dict | None) -> float:
+    """Treasury spend to charge against the NCL, measured over the NCL's OWN period.
+
+    This used to be a rolling 73-epoch window, which swept in withdrawals enacted BEFORE the
+    current NCL period began — they belong to the PREVIOUS NCL. At epoch 642 that read 638.5M ADA
+    against a 300M NCL, so `available` computed to 0 and the engine FORCED a directional NO on
+    every treasury proposal ("rolling-window available treasury capacity is depleted") — including
+    ones the portfolio had ranked as fundable. The true in-period spend was 291.4M, leaving 8.6M
+    of real capacity.
+
+    A forced NO on a phantom overspend is the worst failure this system can have: it is directional
+    (so it can be cast on-chain), and it contradicts the doctrine that a NO requires affirmative
+    evidence of waste. Capacity depletion is a legitimate reason to vote NO — but only when the
+    depletion is real.
+
+    pin_ncl_from_chain.py measures spend over the pinned period. The rolling figure remains only as
+    a last-resort fallback when that is unavailable.
+    """
+    spent = _to_float((treasury_policy_state or {}).get("withdrawals_in_period_lovelace"))
+    if spent > 0:
+        return spent
+    return _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
+
+
 def _load_treasury_policy_state() -> dict:
     p = RESOURCES_REPO / "data" / "input" / "governance" / "treasury_policy_state.json"
     if not p.exists():
@@ -1142,7 +1182,7 @@ def _score_action(
         # Rolling-window concentration checks if NCL annual is provided.
         ncl_annual = _to_float((treasury_policy_state or {}).get("ncl_lovelace"))
         if ncl_annual > 0:
-            w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
+            w73 = _ncl_spent_lovelace(treasury_policy_state, treasury_flow)
             available = max(0.0, ncl_annual - w73)
             req = _to_float(action.get("treasury_amount_lovelace"))
             if available > 0 and req > 0:
@@ -1265,7 +1305,9 @@ def _score_action(
     ncl_annual = _to_float((treasury_policy_state or {}).get("ncl_lovelace"))
     available = None
     if ncl_annual > 0:
-        w73 = _to_float((treasury_flow or {}).get("withdrawals_73e_lovelace"))
+        # Period-correct spend — see _ncl_spent_lovelace. This value gates the forced
+        # directional NO below, so measuring it over the wrong window votes down good proposals.
+        w73 = _ncl_spent_lovelace(treasury_policy_state, treasury_flow)
         available = ncl_annual - w73
 
     clean_hardfork = (
@@ -1292,9 +1334,22 @@ def _score_action(
     directional_threshold = 0.06 if treasury_doctrine_ready else 0.12
 
     needs_more_info_reason_code = None
+    # Accepted proofs that an NCL is pinned to public chain evidence.
+    #
+    # "verified_on_chain" (enacted ledger state) is kept for completeness, but NO NCL can ever
+    # reach it: the Constitution sets the NCL by an *Info* action, Info actions change no ledger
+    # state, and so they ALWAYS expire and can NEVER be enacted. Demanding it made this gate
+    # unsatisfiable by construction -- a permanent freeze on ALL treasury funding, regardless of
+    # a proposal's merit, dressed up as caution.
+    #
+    # "verified_onchain_info_action" is the strongest proof the chain can actually offer, and is
+    # produced by beacn-drep-resources/scripts/pin_ncl_from_chain.py: an anchor document
+    # byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a
+    # majority of participating DRep stake; latest supersedes. The `caveat` field travels with the
+    # number into every rationale that relies on it, so no reader mistakes it for enacted state.
     ncl_verified = (
         action_family != "treasury" or (
-            (treasury_policy_state or {}).get("verification_status") == "verified_on_chain"
+            (treasury_policy_state or {}).get("verification_status") in NCL_VERIFIED_STATUSES
             and _to_float((treasury_policy_state or {}).get("ncl_lovelace")) > 0
         )
     )
@@ -1351,7 +1406,10 @@ def _score_action(
         inf.append("Directional treasury voting is blocked until this action is ranked against competing active proposals and verified NCL capacity.")
     elif treasury_doctrine_ready and available is not None and available <= 0:
         rec = "NO"
-        inf.append("Directional NO forced: rolling-window available treasury capacity is depleted.")
+        inf.append(
+            "Directional NO forced: the applicable Net Change Limit is exhausted — treasury "
+            "withdrawals already enacted within this NCL period leave no remaining capacity."
+        )
     elif action_family == "treasury":
         d = treasury_dimensions or {}
         if d.get("affirmative_waste_evidence") and d.get("benefit", 0) < 0.55:

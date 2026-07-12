@@ -41,6 +41,12 @@ CODEX_BIN = os.environ.get(
     "BEACN_CODEX_BIN",
     shutil.which("codex") or str(Path.home() / ".local/bin/codex"),
 )
+# Same explicit fallback for claude: cron's PATH omits ~/.local/bin, and a bare "claude"
+# there fails silently -- starving every downstream evidence gate.
+CLAUDE_BIN = os.environ.get(
+    "BEACN_CLAUDE_BIN",
+    shutil.which("claude") or str(Path.home() / ".local/bin/claude"),
+)
 
 # Combined structured-output schema for one action: {claims, lean}.
 OUTPUT_SCHEMA = {
@@ -117,7 +123,7 @@ def call_codex(prompt: str) -> dict:
 
 
 def call_claude(prompt: str) -> dict:
-    cmd = ["claude", "-p", "--output-format", "json", prompt]
+    cmd = [CLAUDE_BIN, "-p", "--output-format", "json", prompt]
     p = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
     if p.returncode != 0:
         raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:400]}")
@@ -144,7 +150,7 @@ def call_codex_text(prompt: str) -> str:
 
 
 def call_claude_text(prompt: str) -> str:
-    cmd = ["claude", "-p", "--output-format", "json", prompt]
+    cmd = [CLAUDE_BIN, "-p", "--output-format", "json", prompt]
     p = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
     if p.returncode != 0:
         raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:400]}")

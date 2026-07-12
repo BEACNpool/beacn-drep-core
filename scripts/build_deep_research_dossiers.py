@@ -294,7 +294,11 @@ def call_codex(prompt: str) -> dict:
 
 
 def call_claude(prompt: str) -> dict:
-    p = subprocess.run(["claude", "-p", "--output-format", "json", prompt],
+    # Absolute fallback: cron's PATH omits ~/.local/bin, so a bare "claude" fails
+    # silently there and no dossier is ever drafted -> no evidence -> blanket abstain.
+    claude_bin = os.environ.get("BEACN_CLAUDE_BIN") or shutil.which("claude") \
+        or str(Path.home() / ".local/bin/claude")
+    p = subprocess.run([claude_bin, "-p", "--output-format", "json", prompt],
                        capture_output=True, text=True, timeout=600)
     if p.returncode != 0:
         raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:300]}")

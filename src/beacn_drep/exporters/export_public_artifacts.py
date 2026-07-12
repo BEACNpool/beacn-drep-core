@@ -9,6 +9,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 from ..config import CORE_REPO, SOUL_REPO, RESOURCES_REPO
+from ..ids import canonical_action_id
 
 OUT = CORE_REPO / "data" / "output" / "public"
 RUNS = CORE_REPO / "data" / "output"
@@ -201,28 +202,6 @@ def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
         "download_path": f"/proposals/{dst_name}",
         "preview": preview,
     }
-
-
-def canonical_action_id(action_id: str) -> str:
-    """Collapse the two spellings of a governance action id into one canonical key.
-
-    The same action reaches us under BOTH the CIP-129 `<tx_id>#<index>` form and the legacy
-    bech32 `gov_action1…` form (different upstream sources use different spellings). bech32
-    simply encodes (tx_id, index), so the two are provably the same action -- yet the engine
-    scored each spelling separately, which put 144 duplicate entries in the public record and
-    left 7 actions published with CONTRADICTORY verdicts under their two ids.
-
-    Canonical form is `<tx_id>#<index>`.
-    """
-    aid = (action_id or "").strip()
-    if aid.startswith("gov_action"):
-        try:
-            from ..adapters.cardano_cli_adapter import decode_gov_action_id
-            tx_id, index = decode_gov_action_id(aid)
-            return f"{tx_id}#{index}"
-        except Exception:
-            return aid
-    return aid
 
 
 def _resolve_vote_receipt(action_id: str, latest_run_dir: Path) -> dict:

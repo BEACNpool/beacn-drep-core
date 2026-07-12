@@ -32,6 +32,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from beacn_drep import vote_policy  # noqa: E402
+from beacn_drep.ids import canonical_action_id  # noqa: E402
 from beacn_drep.adapters.cardano_cli_adapter import (  # noqa: E402
     DREP_KEY_HASH, _relay_query, decode_gov_action_id, prepare_vote,
 )
@@ -41,6 +42,10 @@ AUTO = {x.strip().upper() for x in os.environ.get("BEACN_AUTO_DIRECTIONS", "YES,
 
 
 def latest_runs() -> list[Path]:
+    # Key by CANONICAL id. Keying by the raw id kept BOTH spellings of the same action as
+    # separate entries, each with its own "latest" run -- and since the evidence packets are
+    # keyed by one spelling only, the other spelling carried an evidence-less verdict. The
+    # freshest run for an action now wins regardless of which spelling produced it.
     selected: dict[str, Path] = {}
     for d in OUT.iterdir():
         rj = d / "rationale.json"
@@ -52,9 +57,10 @@ def latest_runs() -> list[Path]:
             continue
         if not action_id:
             continue
-        cur = selected.get(action_id)
+        key = canonical_action_id(action_id)
+        cur = selected.get(key)
         if cur is None or rj.stat().st_mtime_ns > (cur / "rationale.json").stat().st_mtime_ns:
-            selected[action_id] = d
+            selected[key] = d
     return list(selected.values())
 
 
@@ -85,9 +91,15 @@ def main() -> int:
     report = []
     for d in latest_runs():
         rat = json.loads((d / "rationale.json").read_text())
-        action_id = rat.get("action_id")
+        # Canonical throughout: the ledger, the debounce history, and the gov-state lookup must
+        # all agree on WHICH action this is. decode_gov_action_id() only understands bech32, so a
+        # tx#idx-keyed decision used to raise here and be SILENTLY DROPPED -- which is exactly how
+        # the evidence-bearing YES on "Eternl: Path to Sustainability - v2" became invisible to the
+        # voter while the evidence-less bech32 verdict was the one considered.
+        action_id = canonical_action_id(rat.get("action_id") or "")
         try:
-            txix = decode_gov_action_id(action_id)
+            tx_id, ix = action_id.rsplit("#", 1)
+            txix = (tx_id, int(ix))
         except Exception:
             continue
         if txix not in active:

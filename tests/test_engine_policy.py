@@ -392,3 +392,38 @@ class EnginePolicyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CanonicalActionIdTests(unittest.TestCase):
+    """One action, one id — the same proposal must never get two verdicts.
+
+    Regression (2026-07-12): a governance action arrives under BOTH the CIP-129 "<tx>#<ix>" id
+    and the legacy bech32 "gov_action1…" id. The engine scored each spelling separately, and the
+    evidence packets (decision_support/*.csv) are keyed by ONE spelling — so the other spelling
+    saw no evidence and fell to NEEDS_MORE_INFO. In the same run, at the same minute, "Eternl:
+    Path to Sustainability - v2" scored YES (+0.2055) under tx#idx and NEEDS_MORE_INFO (-0.16)
+    under bech32. The vote runner resolves bech32 gov-state against run dirs, so it read the
+    evidence-less verdict — and a live on-chain NO was cast off it.
+    """
+
+    ETERNL_TX = "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0"
+    ETERNL_BECH = "gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse"
+
+    def test_bech32_and_cip129_collapse_to_one_id(self):
+        from beacn_drep.ids import canonical_action_id, same_action
+        self.assertEqual(canonical_action_id(self.ETERNL_TX), self.ETERNL_TX)
+        self.assertTrue(
+            same_action(self.ETERNL_BECH, self.ETERNL_TX),
+            "the two spellings of one action must canonicalise to the same id",
+        )
+
+    def test_canonical_form_is_cip129(self):
+        from beacn_drep.ids import canonical_action_id
+        out = canonical_action_id(self.ETERNL_BECH)
+        self.assertRegex(out, r"^[0-9a-f]{64}#\d+$")
+
+    def test_undecodable_id_is_returned_unchanged_not_guessed(self):
+        # Merging two DISTINCT actions is far worse than failing to merge two spellings of one.
+        from beacn_drep.ids import canonical_action_id
+        self.assertEqual(canonical_action_id("gov_action1notrealbech32"), "gov_action1notrealbech32")
+        self.assertEqual(canonical_action_id(""), "")

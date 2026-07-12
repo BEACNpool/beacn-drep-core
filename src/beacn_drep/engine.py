@@ -1414,6 +1414,12 @@ def _score_action(
             reason_code = "HARD_BLOCKER_PRESENT"
         elif flag_score >= 9 and not (risk_row and _yn(risk_row.get("mitigation_evidence_present")) is True):
             reason_code = "RISK_HIGH"
+        elif action_family in ("hardfork", "parameter") and (not protocol_verified or protocol_missing):
+            # The readiness packet is absent/incomplete — an absence of evidence, NOT a
+            # finding that the action fails a threshold. Naming this honestly matters: it
+            # is what stops vote_policy from retracting a cast directional vote (see
+            # vote_policy.EVIDENCE_ABSENCE_ABSTAIN_CODES).
+            reason_code = "MISSING_PROTOCOL_READINESS_EVIDENCE"
         elif not anchor_ok:
             reason_code = "CONTEXT_THIN_ANCHOR_UNPINNED"
         elif drep_yes + drep_no + drep_abstain == 0:

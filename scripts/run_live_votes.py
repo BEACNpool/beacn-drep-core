@@ -108,6 +108,7 @@ def main() -> int:
             onchain_vote=onchain_vote,
             history=ledger.get(action_id, []),
             cfg=cfg,
+            abstain_reason_code=rat.get("abstain_reason_code"),
         )
 
         entry = {

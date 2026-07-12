@@ -100,6 +100,60 @@ class RevisionTests(unittest.TestCase):
         self.assertEqual(d.action, "REVISE")
 
 
+class EvidenceAbsenceCannotRetractTests(unittest.TestCase):
+    """Missing evidence must never pull a cast directional vote back off the chain.
+
+    Regression: on 2026-07-11 the live run logged
+    "revision YES->ABSTAIN held: not persistent (persist=1/2)" for the van Rossem hard
+    fork. The ABSTAIN existed only because decision_support/protocol_readiness_profiles.csv
+    was header-only (no producer script exists), which drove score to 0.0 — deep inside the
+    dead-band, so hysteresis *approved* the retraction. The next run would have hit
+    persist=2/2 and retracted a real on-chain YES over an empty file.
+    """
+
+    def test_van_rossem_scenario_holds_instead_of_retracting(self):
+        d = vp.decide(recommendation="ABSTAIN", score=0.0, confidence=0.5,
+                      directional_threshold=0.12, onchain_vote="VoteYes",
+                      history=hist("ABSTAIN", "ABSTAIN"), cfg=CFG,
+                      abstain_reason_code="MISSING_PROTOCOL_READINESS_EVIDENCE")
+        self.assertEqual(d.action, "HOLD")
+        self.assertIn("evidence-absence", d.reason)
+
+    def test_every_absence_code_holds_against_a_live_yes(self):
+        for code in vp.EVIDENCE_ABSENCE_ABSTAIN_CODES:
+            with self.subTest(code=code):
+                d = vp.decide(recommendation="ABSTAIN", score=0.0, confidence=0.5,
+                              directional_threshold=0.12, onchain_vote="VoteYes",
+                              history=hist("ABSTAIN", "ABSTAIN"), cfg=CFG,
+                              abstain_reason_code=code)
+                self.assertEqual(d.action, "HOLD")
+
+    def test_affirmative_blocker_may_still_retract(self):
+        # A hard blocker is a real finding about the action, not missing homework --
+        # it must remain able to revise a live YES to ABSTAIN.
+        d = vp.decide(recommendation="ABSTAIN", score=0.0, confidence=0.5,
+                      directional_threshold=0.12, onchain_vote="VoteYes",
+                      history=hist("ABSTAIN", "ABSTAIN"), cfg=CFG,
+                      abstain_reason_code="HARD_BLOCKER_PRESENT")
+        self.assertEqual(d.action, "REVISE")
+
+    def test_genuine_neutral_score_may_still_retract(self):
+        d = vp.decide(recommendation="ABSTAIN", score=0.0, confidence=0.5,
+                      directional_threshold=0.12, onchain_vote="VoteYes",
+                      history=hist("ABSTAIN", "ABSTAIN"), cfg=CFG,
+                      abstain_reason_code="RULE_THRESHOLD_UNMET")
+        self.assertEqual(d.action, "REVISE")
+
+    def test_absence_code_does_not_block_a_fresh_abstain(self):
+        # Nothing on-chain yet -> there is no directional vote to protect; a conservative
+        # fresh ABSTAIN must still cast.
+        d = vp.decide(recommendation="ABSTAIN", score=0.0, confidence=0.5,
+                      directional_threshold=0.12, onchain_vote=None,
+                      history=hist("ABSTAIN"), cfg=CFG,
+                      abstain_reason_code="MISSING_PROTOCOL_READINESS_EVIDENCE")
+        self.assertEqual(d.action, "CAST")
+
+
 class NonVotableTests(unittest.TestCase):
     def test_needs_more_info_skipped(self):
         d = vp.decide(recommendation="NEEDS_MORE_INFO", score=0.0, confidence=0.2,

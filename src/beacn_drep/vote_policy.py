@@ -35,6 +35,23 @@ VOTABLE = {"YES", "NO", "ABSTAIN"}
 LEDGER_PATH = OUTPUT_DIR / "vote_state.json"
 CONFIG_PATH = CORE_REPO / "registries" / "vote_policy.json"
 
+# ABSTAIN reason codes that mean "we are missing evidence", NOT "the evidence says
+# this action is neutral". METHODOLOGY.md already holds that missing evidence can never
+# *become* a NO. The same asymmetry must apply to retraction: an empty, stale, or
+# unfetched evidence file is a fact about BEACN's pipeline, not a finding about the
+# proposal, and it must never pull a considered YES/NO vote back off the chain.
+#
+# Codes NOT listed here (HARD_BLOCKER_PRESENT, RISK_HIGH, RULE_THRESHOLD_UNMET) are
+# affirmative findings — those may legitimately revise a live vote to ABSTAIN.
+EVIDENCE_ABSENCE_ABSTAIN_CODES = {
+    "STALE_DATA",
+    "UNKNOWN_ACTION_TYPE",
+    "MISSING_BASELINE_EVIDENCE",
+    "MISSING_PROTOCOL_READINESS_EVIDENCE",
+    "CONTEXT_THIN_ANCHOR_UNPINNED",
+    "DREP_DISTRIBUTION_MISSING",
+}
+
 DEFAULTS: dict = {
     # consecutive runs the new recommendation must hold before CHANGING a live vote
     "min_persistence_revision": 2,
@@ -123,7 +140,8 @@ class Decision:
 
 
 def decide(*, recommendation: str, score, confidence, directional_threshold,
-           onchain_vote: str | None, history: list[dict], cfg: dict | None = None) -> Decision:
+           onchain_vote: str | None, history: list[dict], cfg: dict | None = None,
+           abstain_reason_code: str | None = None) -> Decision:
     """Decide what to do with a vote given the engine output and prior state.
 
     `history` must already include the current run's recommendation (record()
@@ -154,6 +172,20 @@ def decide(*, recommendation: str, score, confidence, directional_threshold,
                         f"confidence={confidence}<{cfg['min_confidence_directional']}")
 
     # Revision: changing an existing on-chain vote — higher bar.
+
+    # Absence of evidence can never retract a cast directional vote. Checked before
+    # persistence/hysteresis because it is a hard rule, not a debounce: if the reason we
+    # want to abstain is that an evidence file is empty or stale, the honest action is to
+    # leave the existing vote standing and fix the pipeline.
+    if rec == "ABSTAIN" and onchain_rec in ("YES", "NO"):
+        code = (abstain_reason_code or "").upper()
+        if code in EVIDENCE_ABSENCE_ABSTAIN_CODES:
+            return Decision(
+                "HOLD",
+                f"revision {onchain_rec}->ABSTAIN refused: abstain is evidence-absence "
+                f"({code}); missing evidence must never retract a cast directional vote",
+            )
+
     if persist < cfg["min_persistence_revision"]:
         return Decision("HOLD",
                         f"revision {onchain_rec}->{rec} held: not persistent "

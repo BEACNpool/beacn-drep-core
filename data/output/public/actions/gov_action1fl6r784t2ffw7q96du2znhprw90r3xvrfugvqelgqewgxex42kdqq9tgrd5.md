@@ -49,7 +49,7 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - snapshot_bundle_hash: `58502d850be5692bd224861c7fe41565a9a3b184757b13a3a629eb9bf8c01c25`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - resources_commit: `eec0908e48c56be13e86e06ac5d9440d0cac813a`
-- core_commit: `2527972ed211ae05d508e509dcfe9013d080d325`
+- core_commit: `c508e924316cb585a2dacca2f70afcad2e269b49`
 - score: `-0.3433`
 - confidence: `0.7758`
 

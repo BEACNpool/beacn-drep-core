@@ -26,10 +26,21 @@ def _git_commit(path: Path) -> str:
 
 
 def _load_actions_map():
+    """Action rows keyed by CANONICAL id, so a row filed under either id spelling is found.
+
+    Rows also stay reachable under their original id (harmless aliases) -- the canonical key
+    is what the export loop looks up.
+    """
     out = {}
     with ACTIONS_CSV.open(newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            out[r["action_id"]] = r
+            raw = r["action_id"]
+            out[raw] = r
+            key = canonical_action_id(raw)
+            prev = out.get(key)
+            # Prefer the richer row (a title present) if the same action appears twice.
+            if not prev or (not prev.get("metadata_title") and r.get("metadata_title")):
+                out[key] = r
     return out
 
 
@@ -192,6 +203,28 @@ def _copy_proposal_snapshot(aid: str, anchor_row: dict) -> dict:
     }
 
 
+def canonical_action_id(action_id: str) -> str:
+    """Collapse the two spellings of a governance action id into one canonical key.
+
+    The same action reaches us under BOTH the CIP-129 `<tx_id>#<index>` form and the legacy
+    bech32 `gov_action1…` form (different upstream sources use different spellings). bech32
+    simply encodes (tx_id, index), so the two are provably the same action -- yet the engine
+    scored each spelling separately, which put 144 duplicate entries in the public record and
+    left 7 actions published with CONTRADICTORY verdicts under their two ids.
+
+    Canonical form is `<tx_id>#<index>`.
+    """
+    aid = (action_id or "").strip()
+    if aid.startswith("gov_action"):
+        try:
+            from ..adapters.cardano_cli_adapter import decode_gov_action_id
+            tx_id, index = decode_gov_action_id(aid)
+            return f"{tx_id}#{index}"
+        except Exception:
+            return aid
+    return aid
+
+
 def _resolve_vote_receipt(action_id: str, latest_run_dir: Path) -> dict:
     """Find the submitted vote receipt for an action, across ALL of its run dirs.
 
@@ -204,14 +237,19 @@ def _resolve_vote_receipt(action_id: str, latest_run_dir: Path) -> dict:
 
     Prefer the most recently submitted receipt; fall back to the newest receipt present.
     """
+    want = canonical_action_id(action_id)
     candidates: list[dict] = []
-    for receipt_path in RUNS.glob(f"{glob.escape(action_id)}-*/vote_receipt.json"):
+    for receipt_path in RUNS.glob("*/vote_receipt.json"):
         try:
             receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        if receipt.get("action_id") and receipt["action_id"] != action_id:
-            continue  # never attribute another action's vote to this one
+        got = receipt.get("action_id")
+        # Match on the CANONICAL id: the vote may have been cast under the other id
+        # spelling than the one this decision is filed under. Never attribute another
+        # action's vote to this one.
+        if not got or canonical_action_id(got) != want:
+            continue
         receipt["_mtime"] = receipt_path.stat().st_mtime
         candidates.append(receipt)
 
@@ -232,6 +270,12 @@ def _resolve_vote_receipt(action_id: str, latest_run_dir: Path) -> dict:
 
 
 def _load_rationales_latest():
+    """Latest decision per action, keyed by CANONICAL action id.
+
+    Keying by the raw action_id published the same action twice (once per id spelling) and
+    could show two different verdicts for it. Keying by canonical id means the most recent
+    run wins regardless of which spelling produced it -- one action, one current position.
+    """
     by_action = {}
     for d in RUNS.iterdir():
         if not d.is_dir() or d.name == "public":
@@ -243,14 +287,16 @@ def _load_rationales_latest():
         aid = j.get("action_id")
         if not aid:
             continue
+        key = canonical_action_id(aid)
         mtime_ns = p.stat().st_mtime_ns
-        prev = by_action.get(aid)
+        prev = by_action.get(key)
         if not prev or mtime_ns > prev["mtime_ns"]:
-            by_action[aid] = {
+            by_action[key] = {
                 "run_id": d.name,
                 "run_dir": d,
                 "mtime_ns": mtime_ns,
                 "rationale": j,
+                "source_action_id": aid,
                 "md_path": f"/data/output/public/rationales/{d.name}.md",
             }
     return by_action
@@ -490,6 +536,17 @@ def main():
             "type": a.get("action_type", ""),
             "status": a.get("status", ""),
             "decision": decision,
+            # Vote proof carried on the list item so the public index can render an
+            # on-chain badge + explorer link without fetching ~300 detail files.
+            "onchain_vote": vote_receipt.get("recommendation"),
+            "submitted": bool(vote_receipt.get("submitted")),
+            "transaction_hash": vote_receipt.get("transaction_hash"),
+            "submitted_at": vote_receipt.get("submitted_at"),
+            "diverged": bool(
+                vote_receipt.get("submitted")
+                and vote_receipt.get("recommendation")
+                and vote_receipt.get("recommendation") != decision
+            ),
             "detected_at": a.get("first_seen", ""),
             "published_at": a.get("last_updated", ""),
             "detail_path": f"/actions/{aid}",

@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:7c5e1bfb662f7028d92898bcf24ff3d62a80280f8b083ea969a19a429946e2f6",
+    "raw_input_hash": "sha256:506683d38e91513ba3974d7e0a2e92de66b04aa23285ea7ad05ba63a1adaf1ff",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,12 +22,12 @@
     "vote": "ABSTAIN",
     "score": 0.01,
     "confidence": 0.4225,
-    "input_hash": "7c5e1bfb662f7028d92898bcf24ff3d62a80280f8b083ea969a19a429946e2f6",
-    "snapshot_bundle_hash": "53cfcdf524dccc24dd02287598c1bdbc44eda3229f1e5aec6c281c6098e09fad",
+    "input_hash": "506683d38e91513ba3974d7e0a2e92de66b04aa23285ea7ad05ba63a1adaf1ff",
+    "snapshot_bundle_hash": "869a216c29089c0117bad842dbe9fc571e32640c22f9bb2a65996792e6a90c8e",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0-7c5e1bfb662f.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0-506683d38e91.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: InfoAction advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The Cardano Community adopted the 2025 Net Change Limit (NCL) on 24 April 2025, which defined the maximum amount of lovelace that could be withdrawn from the Cardano Treasury from the start of Epoch 532 until the conclusion of Epoch 604.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0-7c5e1bfb662f.md",
+    "markdown_path": "/data/output/public/rationales/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0-506683d38e91.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -72,13 +72,23 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: 2025 Net Change Limit Extension",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The Cardano Community adopted the 2025 Net Change Limit (NCL) on 24 April 2025, which defined the maximum amount of lovelace that could be withdrawn from the Cardano Treasury from the start of Epoch 532 until the conclusion of Epoch 604., Because the Cardano Constitution does not allow withdrawals from the Treasury that would violate the established NCL, this \"2025 Net Change Limit Extension\" serves the purpose of extending the previously established Net Change Limit for an additional eight..., We seek to have this Governance Action adopted so that the management of the Cardano Treasury will not be disrupted by the expiration of the current NCL., Withdrawals from the Cardano Blockchain Treasury that would cause the Treasury balance to violate the applicable NCL are not permitted under Article IV, Section 3 of the Cardano Constitution and the Treasury Guardrails.",
+            "Deadline/expiry: not stated in document",
+            "Claim (adoption, supported_in_proposal, high materiality): The Cardano Community adopted the 2025 Net Change Limit (NCL) on 24 April 2025, which defined the maximum amount of lovelace that could be withdrawn from the Cardano Treasury from the start of Epoch 532 until the conclusion of Epoch 604.",
+            "Claim (governance, supported_in_proposal, high materiality): Because the Cardano Constitution does not allow withdrawals from the Treasury that would violate the established NCL, this \"2025 Net Change Limit Extension\" serves the purpose of extending the previously established Net Change Limit for an additional eight...",
+            "Claim (governance, proposer_asserted, high materiality): We seek to have this Governance Action adopted so that the management of the Cardano Treasury will not be disrupted by the expiration of the current NCL.",
+            "Claim (governance, supported_in_proposal, high materiality): Withdrawals from the Cardano Blockchain Treasury that would cause the Treasury balance to violate the applicable NCL are not permitted under Article IV, Section 3 of the Cardano Constitution and the Treasury Guardrails.",
+            "Claim (governance, supported_in_proposal, high materiality): Because the \"2025 Net Change Limit\" explicitly states that its term ends at the close of Epoch 604, any Treasury Withdrawal Governance Action (TWGA) that relies on that NCL must be both ratified and enacted before that point.",
+            "Claim (governance, supported_in_proposal, high materiality): Given the one-epoch enactment delay for Treasury Withdrawals, where a Governance Action that is ratified at one Epoch boundary is only enacted and paid out at the next Epoch boundary, the last Epoch in which such a TWGA may validly be ratified is Epoch 603..."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: We seek to have this Governance Action adopted so that the management of the Cardano Treasury will not be disrupted by the expiration of the current NCL."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -107,8 +117,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+            "Strongest YES: the proposal substantiates \"The Cardano Community adopted the 2025 Net Change Limit (NCL) on 24 April 2025, which defined the maximum amount of lovelace that could be withdrawn from the Cardano Treasury from the start of Epoch 532 until the conclusion of Epoch 604.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"We seek to have this Governance Action adopted so that the management of the Cardano Treasury will not be disrupted by the expiration of the current NCL.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -127,7 +137,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0-7c5e1bfb662f.assessment.json",
+    "assessment_path": "/data/output/public/rationales/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0-506683d38e91.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +193,7 @@
     "anchor_hash": "25b56befe5ef4e472e3020b81162b4076f4e274f68fcdacb2ec686ca6197771e",
     "file_sha256": "d92f18838fdd6b1304331f318cac5b8178dc5b216c8df1bf36de2e191427f64d",
     "content_bytes": "5957",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/d16dffbae9d86a73cb343506e6712d79c278096dc25e8ba6900eb24522726bba#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"nam"
   },
@@ -201,7 +211,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -275,10 +285,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6983,
+    "snapshot_age_seconds": 18,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

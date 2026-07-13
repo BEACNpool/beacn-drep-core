@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b92e509bedc6957529fd5d901b7510dd0a062f70184a5bcc5074d13922489aa2",
+    "raw_input_hash": "sha256:4a2706c7bb322e01de7b58536e3208c9bab94d9be89fc996b8778c756a25b943",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,12 +22,12 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
     "confidence": 0.2,
-    "input_hash": "b92e509bedc6957529fd5d901b7510dd0a062f70184a5bcc5074d13922489aa2",
-    "snapshot_bundle_hash": "f6fa706f8f2f983783e3187d0f9bf5b0b53eec0fa00a3cfb92fd7885c3123927",
+    "input_hash": "4a2706c7bb322e01de7b58536e3208c9bab94d9be89fc996b8778c756a25b943",
+    "snapshot_bundle_hash": "8406cdefc76e1b531770063fff7a6c096da17d4550ec980f5bd9e25249eb908a",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0-b92e509bedc6.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0-4a2706c7bb32.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 2.40M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT).\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
       "Provide: Missing dossier section: complete proposal summary"
     ],
-    "markdown_path": "/data/output/public/rationales/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0-b92e509bedc6.md",
+    "markdown_path": "/data/output/public/rationales/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0-4a2706c7bb32.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
       "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
@@ -79,16 +79,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: [OriLife \u00d7 TonFarm] Identifying 180 Million Durians Without Physical Labels",
+            "Recipient: ",
+            "Stated amount: 2.40M ADA",
+            "Deliverables: OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT)., The PoC works today: AI fruit identification is live at orilife.io/demo, VeData batching is verified on Cardano Preprod, and farmers across 46 communes have been onboarded over two harvest seasons (verifiable on TON)., The Alliance self-invested ~$500,000 USD before this GA., The Treasury funds production deployment.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT).",
+            "Claim (economic, independently_verifiable, low materiality): The PoC works today: AI fruit identification is live at orilife.io/demo, VeData batching is verified on Cardano Preprod, and farmers across 46 communes have been onboarded over two harvest seasons (verifiable on TON).",
+            "Claim (economic, independently_verifiable, low materiality): The Alliance self-invested ~$500,000 USD before this GA.",
+            "Claim (economic, independently_verifiable, high materiality): The Treasury funds production deployment.",
+            "Claim (economic, independently_verifiable, low materiality): The Problem: A $3.36 Billion Supply Chain Built on Peelable Stickers Vietnam's durian exports to China totaled $3.36 billion USD in 2024 \u2014 over 90% of the country's durian export revenue, employing hundreds of thousands of farmers across the Central Highlan...",
+            "Claim (economic, independently_verifiable, low materiality): The entire traceability system underpinning this supply chain rests on physical QR labels \u2014 printed paper stickers attached to each fruit \u2014 that can be peeled off one fruit and stuck onto another in seconds, with no detection, no audit trail, and no recourse."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -145,7 +154,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the 2.40M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest YES: the proposal substantiates \"OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT).\" though 7 review blocker(s) remain open.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -181,7 +190,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0-b92e509bedc6.assessment.json",
+    "assessment_path": "/data/output/public/rationales/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0-4a2706c7bb32.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -309,7 +318,7 @@
     "anchor_hash": "41cb4bddb2f3babf90b23edc7a070b436b2b68e85c90024759a7b51e65070e76",
     "file_sha256": "fefd555a12d7b112547d12838fe70012b7dac876c8d047131983921b8ee0be2b",
     "content_bytes": "28241",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/2f583d8efb7a01da81df432f561a5a9bb2f5749555cea3e19d5097a9bfb06b52#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"**OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of d"
   },
@@ -354,7 +363,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -464,10 +473,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6980,
+    "snapshot_age_seconds": 12,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

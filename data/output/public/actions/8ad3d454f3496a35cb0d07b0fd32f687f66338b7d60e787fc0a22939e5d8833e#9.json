@@ -5,14 +5,14 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:351040e3e35e09f6529c8e7ce3c23944d9858bdd00bfcf14052a7f56598fd4e5",
+    "raw_input_hash": "sha256:6267550b4b0e2c773dee10029e216f60da43395bd92fb3ff5df6d22f9c8b0c60",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,12 +22,12 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
     "confidence": 0.2,
-    "input_hash": "351040e3e35e09f6529c8e7ce3c23944d9858bdd00bfcf14052a7f56598fd4e5",
-    "snapshot_bundle_hash": "af34e879b640944490bee62ea7ec9106625996ad246d857481103df490dfbb60",
+    "input_hash": "6267550b4b0e2c773dee10029e216f60da43395bd92fb3ff5df6d22f9c8b0c60",
+    "snapshot_bundle_hash": "fb42ec823cb65bda30f90838fae7d5cbe59c641502ad2f277938aeb1cb05b3dc",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9-351040e3e35e.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9-6267550b4b0e.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 300.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal funds Ledger App Rewrite which will provide the following services: Vacuum Labs will work with Ledger team to design new UI according to the expectations.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
       "Provide: Missing dossier section: complete proposal summary"
     ],
-    "markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9-351040e3e35e.md",
+    "markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9-6267550b4b0e.md",
     "missing_evidence": [
       "Deep research dossier is required for treasury actions before directional voting.",
       "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
@@ -79,16 +79,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Withdraw \u20b3300,000 for Ledger App Rewrite administered by Intersect",
+            "Recipient: ",
+            "Stated amount: 300.0k ADA",
+            "Deliverables: This treasury withdrawal funds Ledger App Rewrite which will provide the following services: Vacuum Labs will work with Ledger team to design new UI according to the expectations., Implement new UI into the Cardano Ledger App., Pass the external audit process (costs for this shall be included in proposal)., Support the Ledger team by the release process.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Ledger App Rewrite which will provide the following services: Vacuum Labs will work with Ledger team to design new UI according to the expectations.",
+            "Claim (economic, independently_verifiable, low materiality): Implement new UI into the Cardano Ledger App.",
+            "Claim (economic, independently_verifiable, low materiality): Pass the external audit process (costs for this shall be included in proposal).",
+            "Claim (economic, independently_verifiable, low materiality): Support the Ledger team by the release process.",
+            "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: In 2018 when Ledger Cardano App was developed, there was no standard for embedded app UI.",
+            "Claim (economic, independently_verifiable, low materiality): Over the years this changed and now Cardano is the only Ledger application with non-standard UI such as requiring double-click several times during the confirmation process."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -145,7 +154,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the 300.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Ledger App Rewrite which will provide the following services: Vacuum Labs will work with Ledger team to design new UI according to the expectations.\" though 7 review blocker(s) remain open.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -181,7 +190,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9-351040e3e35e.assessment.json",
+    "assessment_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9-6267550b4b0e.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -309,7 +318,7 @@
     "anchor_hash": "544766bf20cf0099532a2c65d58b9a33c6078d8939e14dbfc4c18386d816fb32",
     "file_sha256": "3637f877dfb5c6117c98d71aa8d8c31e50d57d31efefe3e2a9aa813f9d7b6e63",
     "content_bytes": "12743",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#9.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
@@ -349,7 +358,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -459,10 +468,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6984,
+    "snapshot_age_seconds": 21,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

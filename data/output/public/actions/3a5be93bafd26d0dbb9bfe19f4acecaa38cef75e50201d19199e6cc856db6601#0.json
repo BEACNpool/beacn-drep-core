@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:2759d10960f1b4cc739aa2815571d402dd7c11bc33105441a34d1a2553fa00a4",
+    "raw_input_hash": "sha256:b6a7fc4d1d8bf207b077fee55749065dac08dbf65e1bb58637d6f998d5ab8145",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -21,13 +21,13 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.11,
-    "confidence": 0.4775,
-    "input_hash": "2759d10960f1b4cc739aa2815571d402dd7c11bc33105441a34d1a2553fa00a4",
-    "snapshot_bundle_hash": "24c605e8b2451d793b38a31b09635a469c7c2dc45861e259b9a7107444faef3c",
+    "confidence": 0.6275,
+    "input_hash": "b6a7fc4d1d8bf207b077fee55749065dac08dbf65e1bb58637d6f998d5ab8145",
+    "snapshot_bundle_hash": "83dce98b0878eb5b68f93b91b75a0c7150d99805dfd1c27d9a4da7f7b16697d2",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0-2759d10960f1.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0-b6a7fc4d1d8b.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: InfoAction advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 47.8%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy .\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 62.7%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0-2759d10960f1.md",
+    "markdown_path": "/data/output/public/rationales/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0-b6a7fc4d1d8b.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -69,17 +69,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Cardano 2030: Vision, Mission, Strategy Framework and KPIs",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy ., During the first part of 2025 this process also received delegated authority and funding by Cardano DReps during the 2025 budget cycle., The extensive process the Product Committee followed, which involved 700+ people , focused on collecting as much input as possible from the broader community with attention to representative groups via different channels such as surveys, focus groups and re..., This process can be reused in the future to keep both Vision and Strategy updated (high level process mapped): 1.",
+            "Deadline/expiry: not stated in document",
+            "Claim (governance, independently_verifiable, high materiality): Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy .",
+            "Claim (economic, independently_verifiable, high materiality): During the first part of 2025 this process also received delegated authority and funding by Cardano DReps during the 2025 budget cycle.",
+            "Claim (governance, independently_verifiable, high materiality): The extensive process the Product Committee followed, which involved 700+ people , focused on collecting as much input as possible from the broader community with attention to representative groups via different channels such as surveys, focus groups and re...",
+            "Claim (other, independently_verifiable, low materiality): This process can be reused in the future to keep both Vision and Strategy updated (high level process mapped): 1.",
+            "Claim (other, independently_verifiable, low materiality): Why a Defined Vision Matters Now More Than Ever In the rapidly evolving blockchain landscape, a clear and articulated vision is no longer a luxury, but a necessity.",
+            "Claim (other, independently_verifiable, low materiality): For Cardano, establishing a forward-looking Vision 2030 is crucial to ensure sustained growth, focused innovation, and broad legitimacy."
           ],
-          "missing": [
-            "No structured claim/evidence extraction from the proposal document."
-          ],
+          "missing": [],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -107,7 +115,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest YES: the proposal substantiates \"Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy .\" and clears the evidence gates.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -127,7 +135,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0-2759d10960f1.assessment.json",
+    "assessment_path": "/data/output/public/rationales/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0-b6a7fc4d1d8b.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +191,7 @@
     "anchor_hash": "4fbbbd12cf0f2a4be498627a5c99d95762690eb57e276089f5d646877f95cf59",
     "file_sha256": "b7be7cdded7da32a6b8dd7cbf7d349a1cd51edc96c241b636de9e1a51b3731e1",
     "content_bytes": "14252",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/3a5be93bafd26d0dbb9bfe19f4acecaa38cef75e50201d19199e6cc856db6601#0.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"@language\": \"en\",\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abstract\": \"CIP108:abstract\",\n          \"motivation\":"
   },
@@ -195,7 +203,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -265,14 +273,14 @@
     "binding_score": 0.11,
     "raw_score": 0.11,
     "directional_threshold": 0.12,
-    "confidence": 0.4775,
+    "confidence": 0.6275,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6982,
+    "snapshot_age_seconds": 17,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

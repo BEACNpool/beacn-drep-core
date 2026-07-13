@@ -5,14 +5,14 @@
   "status": "ratified",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b0b185296eac75d01dc9bb5de7f21ba7eda4f3ff6aec400e2dc135dac51a7c42",
+    "raw_input_hash": "sha256:065d0f6f555fef0e77423df89a1b98682f96f61d22c2102a28329908ad32aff2",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "YES",
     "diverged": true,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "980a4f93c991b76b01149330cf873ef41d2dbef4e4bb0de4fd5c6c86d7f5c1f8",
@@ -22,12 +22,12 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.5,
-    "input_hash": "b0b185296eac75d01dc9bb5de7f21ba7eda4f3ff6aec400e2dc135dac51a7c42",
-    "snapshot_bundle_hash": "9963e7c2e89145c068c4f9c95501e48827146a9e5c7c125ef311f0817dc4854a",
+    "input_hash": "065d0f6f555fef0e77423df89a1b98682f96f61d22c2102a28329908ad32aff2",
+    "snapshot_bundle_hash": "c41222544bbaa359d059723ff2314c3e5f07f27f0b62618c736f5a4754a26efb",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-b0b185296eac.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-065d0f6f555f.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": "9cd4fdd67bef6d9068464255744bedcc485e092f581ea4d210373351035829a8",
@@ -35,14 +35,14 @@
     "onchain_vote": "Yes"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (ratified), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 50.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (ratified), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 50.0%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.",
       "Provide mitigation evidence.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-b0b185296eac.md",
+    "markdown_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-065d0f6f555f.md",
     "missing_evidence": [],
     "blocked_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
     "assessment_status": "incomplete",
@@ -72,13 +72,23 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Reduce the committeeMinSize protocol parameter from 7 to 5.",
+            "Recipient: not stated in document",
+            "Stated amount: not stated in document",
+            "Deliverables: Set committee_min_size to 5 on-chain",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, supported_in_proposal, high materiality): The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.",
+            "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.",
+            "Claim (governance, supported_in_proposal, high materiality): If committee membership drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
+            "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 is intended to provide an operational buffer if one or two members resign or their terms expire.",
+            "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on enactment of another live Parameter Change governance action for Plutus cost model settings, with no claimed technical interaction between the parameters.",
+            "Claim (governance, independently_verifiable, medium materiality): The document says approval of this governance action was approved by Intersect's Civics Committee on 2026-03-13 and Technical Steering Committee on 2026-06-03."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -107,8 +117,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+            "Strongest YES: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -127,7 +137,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-b0b185296eac.assessment.json",
+    "assessment_path": "/data/output/public/rationales/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0-065d0f6f555f.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +193,7 @@
     "anchor_hash": "8c7c510c1c959d5c587de268350ce9275af45a05f5774c15fd424b924e18e749",
     "file_sha256": "61b9223b5eed9b191f42a9ac298583700d8ead95658242cd8fab4ea81b955b04",
     "content_bytes": "18525",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -195,7 +205,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -269,10 +279,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6978,
+    "snapshot_age_seconds": 8,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

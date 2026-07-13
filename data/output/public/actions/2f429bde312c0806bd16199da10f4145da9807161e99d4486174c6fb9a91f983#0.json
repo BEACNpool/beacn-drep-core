@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:daa039e1448a79c81d3871d53fb295d93e89b507920de86f4b88952351126ff2",
+    "raw_input_hash": "sha256:2a9dc497f0d6f3ae19bec3532cfbdb31b61c890f2210ce386a35ad83024042ce",
     "detected_at": "2026-07-08T05:00:01.231638+00:00"
   },
   "decision": {
     "vote": "NO",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,27 +22,27 @@
     "vote": "NO",
     "score": -0.135,
     "confidence": 0.7537,
-    "input_hash": "daa039e1448a79c81d3871d53fb295d93e89b507920de86f4b88952351126ff2",
-    "snapshot_bundle_hash": "6651c19345c521643a9013e10d58f86d91840d91a3c3ee567e134406f64e86d2",
+    "input_hash": "2a9dc497f0d6f3ae19bec3532cfbdb31b61c890f2210ce386a35ad83024042ce",
+    "snapshot_bundle_hash": "8713b235f64d1308303a8966d66467841b8781062f20f58b19d2ab005eabec5d",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-daa039e1448a.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null,
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-2a9dc497f0d6.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/60aae86901f3bb0fa26cbef9.md",
+    "rationale_anchor_hash": "60aae86901f3bb0fa26cbef977499d1e2af6f3f77e88313f478f7fcde09608f6",
     "onchain_anchor_hash": null,
     "onchain_anchor_url": null,
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the 4.09M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.14; confidence 75.4%.",
-    "summary_raw": "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Selection for funding is claimed to follow published dependency centrality data rather than relationships, with public quarterly reporting and explicit sunset criteria.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a Cardano dOSPO and OMF program.\" and clears the evidence gates. What would change this vote to YES: Provide milestone-gated disbursement; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.14; confidence 75.4%.",
+    "summary_raw": "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: The claims show a large treasury request with substantial administrator discretion, a legal entity and councils that are deliverables rather than preconditions, and several important assertions that depend on future publication or external verification; under the doctrine's priority for treasury stewardship and evidence quality, this supports a small cautionary negative nudge while leaving hard gating to the deterministic engine.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide milestone-gated disbursement.",
-      "Provide sustainability path."
+      "Provide sustainability path.",
+      "Provide cost-benefit clarity."
     ],
-    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-daa039e1448a.md",
+    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-2a9dc497f0d6.md",
     "missing_evidence": [],
     "blocked_reason_code": null,
     "assessment_status": "incomplete",
@@ -72,13 +72,23 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Establish a decentralized Open Source Program Office and Open Maintenance Framework to fund and coordinate Cardano open source sustainability programs for 12 months.",
+            "Recipient: Christian Taylor / Open Source Cowboy Consulting as the designated Article II.7.5 administrator, with Mill Law Firm as independent financial auditor.",
+            "Stated amount: 4094000000",
+            "Deliverables: Operations and governance infrastructure including advisory councils, dOSPO legal entity formation, and quarterly reports, Maintenance Fund for high-risk Cardano open source infrastructure retainers, Maintainer Development program, CodeForUs bounty program, Ecosystem Activation Reserve",
+            "Deadline/expiry: 12 months from treasury withdrawal",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months for a Cardano dOSPO and OMF program.",
+            "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole Article II.7.5 funds administrator from the moment of treasury withdrawal through the 12-month period.",
+            "Claim (governance, supported_in_proposal, high materiality): Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through Month 12.",
+            "Claim (governance, supported_in_proposal, high materiality): The advisory councils and dOSPO legal entity are deliverables rather than preconditions, and final allocation authority remains with the administrator unless governance approves a transition.",
+            "Claim (technical, supported_in_proposal, high materiality): The program includes four stated programs: a Maintenance Fund, a Maintainer Development program, a CodeForUs bounty program, and an Ecosystem Activation Reserve.",
+            "Claim (governance, proposer_asserted, high materiality): Selection for funding is claimed to follow published dependency centrality data rather than relationships, with public quarterly reporting and explicit sunset criteria."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: Selection for funding is claimed to follow published dependency centrality data rather than relationships, with public quarterly reporting and explicit sunset criteria."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -125,8 +135,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the 4.09M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a Cardano dOSPO and OMF program.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Selection for funding is claimed to follow published dependency centrality data rather than relationships, with public quarterly reporting and explicit sunset criteria.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -145,7 +155,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-daa039e1448a.assessment.json",
+    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-2a9dc497f0d6.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "State the cost against the benefit: what does this buy, per ada spent.",
@@ -267,7 +277,7 @@
     "anchor_hash": "c36315b5d8b5ebb5b824b4d201fb4837e75bb88d68672c413a59212900017179",
     "file_sha256": "cdc48d2b3b3f1c2730744515062f662e0813a877d4f5cd836fa906472abdedfc",
     "content_bytes": "35038",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -324,7 +334,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +444,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6975,
+    "snapshot_age_seconds": 3,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

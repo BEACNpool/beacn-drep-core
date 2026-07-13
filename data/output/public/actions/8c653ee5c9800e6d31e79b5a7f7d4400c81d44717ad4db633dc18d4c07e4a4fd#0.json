@@ -5,14 +5,14 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:47ee3c41fc94c661cbc6309a699033b8379f166ae7b2851351ad97836ef45a2c",
+    "raw_input_hash": "sha256:1a7f4df95c6d244c169e8854ad4fee023dfadc3893691223c5abbf6b5f881f6e",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -21,13 +21,13 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.01,
-    "confidence": 0.4225,
-    "input_hash": "47ee3c41fc94c661cbc6309a699033b8379f166ae7b2851351ad97836ef45a2c",
-    "snapshot_bundle_hash": "4240dc2e1dd457760538745d4c49ee454e85261ef3f6a8bd149a175c98255fe0",
+    "confidence": 0.5725,
+    "input_hash": "1a7f4df95c6d244c169e8854ad4fee023dfadc3893691223c5abbf6b5f881f6e",
+    "snapshot_bundle_hash": "1e2e95cec6ab30c98f7faa8e8736b573d2feafb301d359987e16aa6687853645",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0-47ee3c41fc94.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0-1a7f4df95c6d.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: NewConstitution advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
+    "summary": "Vote: ABSTAIN. For this NewConstitution (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This Cardano Constitution is proposed to replace the Interim Constitution.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 57.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0-47ee3c41fc94.md",
+    "markdown_path": "/data/output/public/rationales/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0-1a7f4df95c6d.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -69,17 +69,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Cardano Constitution to Replace the Interim Constitution",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: This Cardano Constitution is proposed to replace the Interim Constitution., The Cardano Constitution is the result of extensive Cardano community consultation throughout 2024., The Interim Constitution was intended to be temporary, and its Appendix II: Ratification of Final Constitution required its replacement to be submitted on-chain no later than January 31, 2025., CIP-1694 The age of Voltaire for the Cardano Blockchain laid out the foundations for decentralized decision-making.",
+            "Deadline/expiry: not stated in document",
+            "Claim (governance, independently_verifiable, high materiality): This Cardano Constitution is proposed to replace the Interim Constitution.",
+            "Claim (governance, independently_verifiable, high materiality): The Cardano Constitution is the result of extensive Cardano community consultation throughout 2024.",
+            "Claim (governance, independently_verifiable, high materiality): The Interim Constitution was intended to be temporary, and its Appendix II: Ratification of Final Constitution required its replacement to be submitted on-chain no later than January 31, 2025.",
+            "Claim (other, independently_verifiable, low materiality): CIP-1694 The age of Voltaire for the Cardano Blockchain laid out the foundations for decentralized decision-making.",
+            "Claim (economic, independently_verifiable, medium materiality): To give effect to true governance by all ada owners, including on-chain voting, members of the Cardano Community worked together for more than a year, holding global workshops, to ultimately approve a Cardano Improvement Proposal, CIP-1694, that provides a...",
+            "Claim (governance, independently_verifiable, medium materiality): CIP-1694 was first published November 18, 2022, as a minimum viable on-chain governance framework."
           ],
-          "missing": [
-            "No structured claim/evidence extraction from the proposal document."
-          ],
+          "missing": [],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -107,7 +115,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: NewConstitution advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest YES: the proposal substantiates \"This Cardano Constitution is proposed to replace the Interim Constitution.\" and clears the evidence gates.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewConstitution.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -127,7 +135,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0-47ee3c41fc94.assessment.json",
+    "assessment_path": "/data/output/public/rationales/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0-1a7f4df95c6d.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +191,7 @@
     "anchor_hash": "d085e5af96521ae2670400e76c3a1e4b4eb902139ddaa83bde7580e7e9d7ddec",
     "file_sha256": "87111473ca1be0844cd9bcf0626d9289f4c32e1b984a815df28a8542dc8300d0",
     "content_bytes": "13811",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"nam"
   },
@@ -201,7 +209,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -271,14 +279,14 @@
     "binding_score": 0.01,
     "raw_score": 0.01,
     "directional_threshold": 0.12,
-    "confidence": 0.4225,
+    "confidence": 0.5725,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6990,
+    "snapshot_age_seconds": 30,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

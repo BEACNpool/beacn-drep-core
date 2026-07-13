@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 1.16M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund annual maintenance and enhancement of MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply.",
+        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor.",
+        "Stated amount: 1162746",
+        "Deliverables: Quarterly maintenance model for Plutarch and Ply, Critical breakage and serious vulnerability response, Protocol-era and hard-fork compatibility work, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
+        "Deadline/expiry: annual funding period; exact deadline not stated in document",
+        "Claim (technical, supported_in_proposal, high materiality): Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+        "Claim (adoption, proposer_asserted, high materiality): MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports at least 26 teams in one section and at least 15 teams in another section building with them.",
+        "Claim (technical, independently_verifiable, medium materiality): MLabs public cross-language benchmarks are cited as showing that Plutarch scripts rank among the smallest in the benchmark suite while using comparatively low on-chain compute and memory.",
+        "Claim (technical, proposer_asserted, high materiality): The funding period is intended to cover ongoing Cardano ledger, Plutus, and tooling evolution, including possible protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes occur.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposer says the work will reduce friction, migration risk, and uncertainty for existing adopters that maintain production systems using Plutarch and Ply.",
+        "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and advanced under the approved Budget Process Framework."
+      ],
+      "missing": [
+        "Independent evidence for: MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports at least 26 teams in one section and at least 15 teams in another section building with them.",
+        "Independent evidence for: The funding period is intended to cover ongoing Cardano ledger, Plutus, and tooling evolution, including possible protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes occur.",
+        "Independent evidence for: The proposer says the work will reduce friction, migration risk, and uncertainty for existing adopters that maintain production systems using Plutarch and Ply."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 1162746",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.58"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"MLabs states that Plutarch and Ply have been extensively used in the Cardano ecosystem and reports at least 26 teams in one section and at least 15 teams in another section building with them.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

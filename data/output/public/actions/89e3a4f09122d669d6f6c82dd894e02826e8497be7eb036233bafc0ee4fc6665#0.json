@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:028b6e471d9a4c5ec2dcee95e2926f9053257a2e640ec4c94205decc6b2403c5",
+    "raw_input_hash": "sha256:4f08647aa8703a05057ac0a5d59effb50adcb9f7669ceb8d955f32c754cea8ce",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -21,13 +21,13 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.08,
-    "confidence": 0.47,
-    "input_hash": "028b6e471d9a4c5ec2dcee95e2926f9053257a2e640ec4c94205decc6b2403c5",
-    "snapshot_bundle_hash": "f02a8f2551f96dffa9bceaa8e4df69f8edb2680e2739ca3a00071526a1b7277f",
+    "confidence": 0.62,
+    "input_hash": "4f08647aa8703a05057ac0a5d59effb50adcb9f7669ceb8d955f32c754cea8ce",
+    "snapshot_bundle_hash": "d3d00907ed8a180000ab60b4e0daf368b5c7c6d8d41342c7bb6de2e8268f6266",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-028b6e471d9a.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-4f08647aa870.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: InfoAction advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 47.0%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically important region.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 62.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-028b6e471d9a.md",
+    "markdown_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-4f08647aa870.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -69,17 +69,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Cardano in Oceania: A community-led strategic plan for investing in growth.",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically important region., By investing in people (capacity building and community), projects (hackathons and pilots), and promotion (marketing and storytelling), we create a virtuous cycle: more talent and awareness leads to more projects, which lead to real adoption and success sto..., This aligns closely with Cardano\u2019s mission of building a world-changing ecosystem \u2013 starting locally in Oceania, with ripples globally., This initiative is aligned with the principles of the Cardano Constitution and directly contributes to the network\u2019s growth and adoption.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically important region.",
+            "Claim (adoption, independently_verifiable, medium materiality): By investing in people (capacity building and community), projects (hackathons and pilots), and promotion (marketing and storytelling), we create a virtuous cycle: more talent and awareness leads to more projects, which lead to real adoption and success sto...",
+            "Claim (adoption, independently_verifiable, low materiality): This aligns closely with Cardano\u2019s mission of building a world-changing ecosystem \u2013 starting locally in Oceania, with ripples globally.",
+            "Claim (governance, independently_verifiable, high materiality): This initiative is aligned with the principles of the Cardano Constitution and directly contributes to the network\u2019s growth and adoption.",
+            "Claim (other, independently_verifiable, low materiality): By expanding Cardano\u2019s presence in Oceania, the project strengthens decentralisation, reduces reliance on specific geographic regions, and enhances the network\u2019s global resilience.",
+            "Claim (adoption, independently_verifiable, medium materiality): Oceania provides a unique and valuable testbed for piloting community-driven growth and adoption strategies."
           ],
-          "missing": [
-            "No structured claim/evidence extraction from the proposal document."
-          ],
+          "missing": [],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -107,7 +115,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest YES: the proposal substantiates \"The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically important region.\" and clears the evidence gates.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -127,7 +135,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-028b6e471d9a.assessment.json",
+    "assessment_path": "/data/output/public/rationales/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0-4f08647aa870.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +191,7 @@
     "anchor_hash": "103ff312c9aa10e80ac8c2b572e1c0a33975f22441b0a14d09bcbbb2310b11eb",
     "file_sha256": "c8c7c680a6d4dbadfc2b68c8b1e9ef8a7a39cd1b694a21f62a236d1f5179a175",
     "content_bytes": "13099",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/89e3a4f09122d669d6f6c82dd894e02826e8497be7eb036233bafc0ee4fc6665#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"The Cardano in Oceania 2025\u20132026 strategy and budget is a comprehensive plan designed to ignite Cardano\u2019s growth in a strategically i"
   },
@@ -195,7 +203,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -265,14 +273,14 @@
     "binding_score": 0.08,
     "raw_score": 0.08,
     "directional_threshold": 0.12,
-    "confidence": 0.47,
+    "confidence": 0.62,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6984,
+    "snapshot_age_seconds": 20,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -5,14 +5,14 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:634a4ab8d054f75bfbb8107501f2ef7960a13916e83a4d6cc8214f37e620f0ad",
+    "raw_input_hash": "sha256:f50d6ed612a6a98a1388583d89be17e943f74d42256e4010a38e7d181f1c1862",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -21,13 +21,13 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.01,
-    "confidence": 0.4225,
-    "input_hash": "634a4ab8d054f75bfbb8107501f2ef7960a13916e83a4d6cc8214f37e620f0ad",
-    "snapshot_bundle_hash": "2ebe0bbea42308ff8c7c716e4f9ba1215b1f5f36c568a4b4b75957e9c31558d6",
+    "confidence": 0.5725,
+    "input_hash": "f50d6ed612a6a98a1388583d89be17e943f74d42256e4010a38e7d181f1c1862",
+    "snapshot_bundle_hash": "1ac823e78428c39c9ccd0898185740f3d8c34665b90e7495d5a195a7a36a6975",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0-634a4ab8d054.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0-f50d6ed612a6.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: NewCommittee advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
+    "summary": "Vote: ABSTAIN. For this NewCommittee (enacted), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 57.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0-634a4ab8d054.md",
+    "markdown_path": "/data/output/public/rationales/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0-f50d6ed612a6.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -69,17 +69,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Replace Interim Constitutional Committee",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025., The term for the current Interim Constitutional Committee is set to expire on September 6th (end of epoch 580)., Therefore, this governance action is critical to formalize the results of the recent election and ensure a new Constitutional Committee (CC) is enacted in time., This adheres to the Cardano Constitution's mandate for staggered elections and guarantees continuity of the committee's function (Article VII, Section 2).",
+            "Deadline/expiry: not stated in document",
+            "Claim (governance, independently_verifiable, high materiality): This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.",
+            "Claim (governance, independently_verifiable, high materiality): The term for the current Interim Constitutional Committee is set to expire on September 6th (end of epoch 580).",
+            "Claim (governance, independently_verifiable, high materiality): Therefore, this governance action is critical to formalize the results of the recent election and ensure a new Constitutional Committee (CC) is enacted in time.",
+            "Claim (governance, independently_verifiable, high materiality): This adheres to the Cardano Constitution's mandate for staggered elections and guarantees continuity of the committee's function (Article VII, Section 2).",
+            "Claim (governance, independently_verifiable, medium materiality): Electing a new CC before the current term expires is essential to ensure the seamless continuation of Cardano governance and the ability to pass actions requiring CC approval.",
+            "Claim (governance, independently_verifiable, high materiality): In accordance with the constitutional mandate for this election, seven committee seats were filled with staggered terms to ensure continuity."
           ],
-          "missing": [
-            "No structured claim/evidence extraction from the proposal document."
-          ],
+          "missing": [],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -107,7 +115,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: NewCommittee advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest YES: the proposal substantiates \"This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.\" and clears the evidence gates.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -127,7 +135,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0-634a4ab8d054.assessment.json",
+    "assessment_path": "/data/output/public/rationales/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0-f50d6ed612a6.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +191,7 @@
     "anchor_hash": "2b225f65102d3eaffc87a84029237926e391d38fc2edb01b70004815e976339f",
     "file_sha256": "56f290d0ccb6be0ce4f125fa8e4bccb0f03784456752c671ff28c8e1cbd3463b",
     "content_bytes": "8582",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/47a0e7a4f9383b1afc2192b23b41824d65ac978d7741aca61fc1fa16833d1111#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\",\n        \"on"
   },
@@ -201,7 +209,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -271,14 +279,14 @@
     "binding_score": 0.01,
     "raw_score": 0.01,
     "directional_threshold": 0.12,
-    "confidence": 0.4225,
+    "confidence": 0.5725,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6984,
+    "snapshot_age_seconds": 20,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

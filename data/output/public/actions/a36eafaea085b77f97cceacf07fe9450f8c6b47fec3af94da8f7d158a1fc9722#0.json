@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:a1b46215a121b0fa5e5f0d7f507729520723ecc1011570dd319cc29da4132aa7",
+    "raw_input_hash": "sha256:938ede9dc71a4d1c6fe38d0f3efb32d58c85098bd49cfd9122ae09f8f2aa1ca4",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -21,13 +21,13 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.11,
-    "confidence": 0.4775,
-    "input_hash": "a1b46215a121b0fa5e5f0d7f507729520723ecc1011570dd319cc29da4132aa7",
-    "snapshot_bundle_hash": "09a4a8c0789ea285d1e69418e0aa9702569ce91495899b62918f7f111d0f8f1d",
+    "confidence": 0.6275,
+    "input_hash": "938ede9dc71a4d1c6fe38d0f3efb32d58c85098bd49cfd9122ae09f8f2aa1ca4",
+    "snapshot_bundle_hash": "8a152c9e461a958189b8804a203cf43de155bcb2398f979b693ae80a229ddebf",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0-a1b46215a121.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0-938ede9dc71a.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: InfoAction advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 47.8%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 62.7%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0-a1b46215a121.md",
+    "markdown_path": "/data/output/public/rationales/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0-938ede9dc71a.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -69,17 +69,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Securing Generic Top-Level Domains for the Cardano Ecosystem",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026., This initiative will only use the Foundation\u2019s own financial resources and aims to secure a competitive digital presence for Cardano, unlock innovations and strategically position Cardano as a digital infrastructure., The upcoming gTLD application window in Q1 2026 provides a critical and unique opportunity to register .ada and .cardano as new gTLDs for the benefit of the Cardano ecosystem., This step is essential for increasing Cardano\u2019s visibility and strengthening its digital presence.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, medium materiality): The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026.",
+            "Claim (technical, independently_verifiable, low materiality): This initiative will only use the Foundation\u2019s own financial resources and aims to secure a competitive digital presence for Cardano, unlock innovations and strategically position Cardano as a digital infrastructure.",
+            "Claim (economic, independently_verifiable, low materiality): The upcoming gTLD application window in Q1 2026 provides a critical and unique opportunity to register .ada and .cardano as new gTLDs for the benefit of the Cardano ecosystem.",
+            "Claim (other, independently_verifiable, low materiality): This step is essential for increasing Cardano\u2019s visibility and strengthening its digital presence.",
+            "Claim (economic, independently_verifiable, low materiality): Beyond that, being able to buy .ada and .cardano domains (such as such as .org or .xyz) will allow the Cardano ecosystem to leverage them for innovations as well as bridge the Web2 to Web3 divide.",
+            "Claim (adoption, independently_verifiable, low materiality): The Cardano Foundation is committed to managing the gTLDs for the collective benefit of the Cardano ecosystem."
           ],
-          "missing": [
-            "No structured claim/evidence extraction from the proposal document."
-          ],
+          "missing": [],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -107,7 +115,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest YES: the proposal substantiates \"The Cardano Foundation is seeking community support to apply for the registration of the .ada and .cardano gTLDs with the Internet Corporation for Assigned Names and Numbers (ICANN) during the next application window in Q1 2026.\" and clears the evidence gates.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -127,7 +135,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0-a1b46215a121.assessment.json",
+    "assessment_path": "/data/output/public/rationales/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0-938ede9dc71a.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +191,7 @@
     "anchor_hash": "235613f1d231e9a877eab4599f2d6a693d8cb279e2bc9c94c5f42f53750a34f9",
     "file_sha256": "b1d0ce10a0a2863d16b4d5696590b494f941cf4de057d943f453718d076941aa",
     "content_bytes": "7020",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/a36eafaea085b77f97cceacf07fe9450f8c6b47fec3af94da8f7d158a1fc9722#0.json",
     "preview": "{\n    \"@context\":\n    {\n        \"@context\":\n        {\n            \"@language\": \"en\",\n            \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n            \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n            \"intersectSpec\": \"https://github.com/IntersectMBO/governance-actions/blob/main/schemas/specification.md#\",\n            \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n            \"body\":\n            {\n                \"@id\": \"CIP108:body\",\n                \"@context\":\n                {\n                    \"references\":\n                    {\n                        \"@id\": \"CIP108:references\",\n                        \"@container\": \"@set\",\n                        \"@context\":\n                        {\n                            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n                            \"Other\": \"CIP100:OtherReference\",\n                            \"label\": \"CIP100:reference-label\",\n                            \"uri\": \"CIP100:reference-uri\",\n                            \"referenceHash\":\n                            {\n                                \"@id\": \"CIP108:referenceHash\","
   },
@@ -195,7 +203,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -265,14 +273,14 @@
     "binding_score": 0.11,
     "raw_score": 0.11,
     "directional_threshold": 0.12,
-    "confidence": 0.4775,
+    "confidence": 0.6275,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6983,
+    "snapshot_age_seconds": 18,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

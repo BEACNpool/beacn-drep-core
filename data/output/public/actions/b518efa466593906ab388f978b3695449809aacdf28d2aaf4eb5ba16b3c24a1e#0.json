@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:fb08faba367754dd97aae3d5ee0cf63832e77627139801870342e0fa742ead23",
+    "raw_input_hash": "sha256:00d57e75ab59161338ae4ae2cb16a0fbea851eb2aea48308f9f23a38917e8553",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -22,12 +22,12 @@
     "vote": "ABSTAIN",
     "score": 0.01,
     "confidence": 0.4225,
-    "input_hash": "fb08faba367754dd97aae3d5ee0cf63832e77627139801870342e0fa742ead23",
-    "snapshot_bundle_hash": "ce3560d2616c6a469b0daabf2276baa447a16619f4e604644bc9531038df3d78",
+    "input_hash": "00d57e75ab59161338ae4ae2cb16a0fbea851eb2aea48308f9f23a38917e8553",
+    "snapshot_bundle_hash": "ed258e9b2f40f440b152e71c773641a82481eeb01a2c5add07a0dc96b8770699",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0-fb08faba3677.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0-00d57e75ab59.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: InfoAction advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0-fb08faba3677.md",
+    "markdown_path": "/data/output/public/rationales/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0-00d57e75ab59.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -72,13 +72,23 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Approve Cardano Foundation as New Managing Entity of Project Catalyst",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst., This will allow for full and effective transition of Catalyst operations and responsibilities from IOG to CF in accordance with the statutes of the Catalyst Foundation Company (CFC)., This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14., This approval request and Info Action is unrelated to Intersect\u2019s role as the constitutionally mandated budget administrator for funds 14 to 16.",
+            "Deadline/expiry: not stated in document",
+            "Claim (adoption, supported_in_proposal, medium materiality): The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.",
+            "Claim (other, proposer_asserted, low materiality): This will allow for full and effective transition of Catalyst operations and responsibilities from IOG to CF in accordance with the statutes of the Catalyst Foundation Company (CFC).",
+            "Claim (economic, proposer_asserted, high materiality): This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.",
+            "Claim (economic, supported_in_proposal, high materiality): This approval request and Info Action is unrelated to Intersect\u2019s role as the constitutionally mandated budget administrator for funds 14 to 16.",
+            "Claim (other, supported_in_proposal, low materiality): In February CF agreed to assume stewardship of Catalyst from IOG, with the primary goal of ensuring continuity for existing grant recipients.",
+            "Claim (adoption, supported_in_proposal, medium materiality): CF is submitting this Info Action to request the Community\u2019s approval for the transition of the Catalyst management role from IOG to CF, in accordance with CFC\u2019s statutes."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -107,8 +117,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
+            "Strongest YES: the proposal substantiates \"The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -127,7 +137,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0-fb08faba3677.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0-00d57e75ab59.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +193,7 @@
     "anchor_hash": "d03e71df06e67693e6b283a5921b124d9505546accec66872b35254d51bdb656",
     "file_sha256": "b45ac922debf28a70bc714396c3162b687e1ba4ca47df32f64de3d798d68cb4a",
     "content_bytes": "6433",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/b518efa466593906ab388f978b3695449809aacdf28d2aaf4eb5ba16b3c24a1e#0.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n      \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abs"
   },
@@ -201,7 +211,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -275,10 +285,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6981,
+    "snapshot_age_seconds": 15,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

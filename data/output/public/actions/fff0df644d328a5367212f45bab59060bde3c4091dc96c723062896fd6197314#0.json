@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:6636f734b14cf0631a1649bebd61b87674bb2d5acdbaa516db58f03455328a0a",
+    "raw_input_hash": "sha256:356780b384dfd538eb3b62f9093aa76aa7f4f6ee55869124b7ec95d8693abe95",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": null,
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": false,
     "submitted": false,
     "transaction_hash": null,
@@ -21,13 +21,13 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.11,
-    "confidence": 0.4775,
-    "input_hash": "6636f734b14cf0631a1649bebd61b87674bb2d5acdbaa516db58f03455328a0a",
-    "snapshot_bundle_hash": "b122b45ef43504fab902d80e68aad4a0616a53ca5e78d64891165d1668be019d",
+    "confidence": 0.6275,
+    "input_hash": "356780b384dfd538eb3b62f9093aa76aa7f4f6ee55869124b7ec95d8693abe95",
+    "snapshot_bundle_hash": "7cd390498b3817d7c6ce44d63a305d54c851f4b43e1b22731723ab5f9d444c68",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0-6636f734b14c.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0-356780b384df.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": null,
@@ -35,14 +35,14 @@
     "onchain_vote": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: InfoAction advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 47.8%.",
+    "summary": "Vote: ABSTAIN. For this InfoAction (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the \u201cPlomin Hard Fork\u201d in memory of Cardano community contributor Matthew Plomin.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 62.7%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance."
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0-6636f734b14c.md",
+    "markdown_path": "/data/output/public/rationales/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0-356780b384df.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -69,17 +69,25 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "thin",
+          "status": "complete",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Rename the Chang 2 Hard Fork to the Plomin Hard Fork",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the \u201cPlomin Hard Fork\u201d in memory of Cardano community contributor Matthew Plomin., There is a tradition of naming hard forks in memory of notable historical figures or significant contributors to the Cardano community., Naming this hard fork in memory of Matthew Plomin would memorialize his actions in life to selflessly support and contribute to the Cardano blockchain ecosystem., Renaming the \u201cSecond Chang Hard Fork\u201d (Chang 2) to the Plomin Hard Fork, in memory of Cardano community contributor Matthew Plomin, reflects a natural progression of Cardano\u2019s governance growth.",
+            "Deadline/expiry: not stated in document",
+            "Claim (adoption, supported_in_proposal, high materiality): The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the \u201cPlomin Hard Fork\u201d in memory of Cardano community contributor Matthew Plomin.",
+            "Claim (adoption, supported_in_proposal, high materiality): There is a tradition of naming hard forks in memory of notable historical figures or significant contributors to the Cardano community.",
+            "Claim (adoption, supported_in_proposal, high materiality): Naming this hard fork in memory of Matthew Plomin would memorialize his actions in life to selflessly support and contribute to the Cardano blockchain ecosystem.",
+            "Claim (governance, supported_in_proposal, high materiality): Renaming the \u201cSecond Chang Hard Fork\u201d (Chang 2) to the Plomin Hard Fork, in memory of Cardano community contributor Matthew Plomin, reflects a natural progression of Cardano\u2019s governance growth.",
+            "Claim (governance, supported_in_proposal, medium materiality): Phil Chang was an employee of Input Output who made significant contributions to Cardano\u2019s governance system to help transfer control and responsibility of the blockchain into the hands of the community.",
+            "Claim (adoption, supported_in_proposal, medium materiality): Matthew Plomin was an exemplar of the Cardano community, representing every individual who stands ready to pick up the torch and carry the ecosystem forward."
           ],
-          "missing": [
-            "No structured claim/evidence extraction from the proposal document."
-          ],
+          "missing": [],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -107,7 +115,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+            "Strongest YES: the proposal substantiates \"The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the \u201cPlomin Hard Fork\u201d in memory of Cardano community contributor Matthew Plomin.\" and clears the evidence gates.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -127,7 +135,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0-6636f734b14c.assessment.json",
+    "assessment_path": "/data/output/public/rationales/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0-356780b384df.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +191,7 @@
     "anchor_hash": "93106d082a93e94df5aff74f678438bae3a647dac63465fbfcde6a3058f41a1e",
     "file_sha256": "e8cf679dd4d1ae99532ffac8664d593ac441b8cd41247504dd8164f53dfedc77",
     "content_bytes": "5202",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314#0.txt",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \"nam"
   },
@@ -195,7 +203,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -265,14 +273,14 @@
     "binding_score": 0.11,
     "raw_score": 0.11,
     "directional_threshold": 0.12,
-    "confidence": 0.4775,
+    "confidence": 0.6275,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6990,
+    "snapshot_age_seconds": 30,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -5,14 +5,14 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:156d0c9a4ab63c776edb8a5b1d07d9c233ca565a5a1fc7b271decc6682ba56bc",
+    "raw_input_hash": "sha256:8e8e9a2e74857a6ee1960aeed6b637fc05b806b59a2cb01a53a4651b25dd2355",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "ABSTAIN",
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "42fe2858ff4f1631b13aa16eb72f1af6736537fe702a0f679807c9e88b678355",
@@ -22,12 +22,12 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.45,
-    "input_hash": "156d0c9a4ab63c776edb8a5b1d07d9c233ca565a5a1fc7b271decc6682ba56bc",
-    "snapshot_bundle_hash": "77d133fe1c6f0e445690776f9761d25cbcf3786b5dbede2adac61041aa3a4933",
+    "input_hash": "8e8e9a2e74857a6ee1960aeed6b637fc05b806b59a2cb01a53a4651b25dd2355",
+    "snapshot_bundle_hash": "648e6d4f4a67204de601beb97d4f58c745a4fa0680bb9f5375759be39320a145",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0-156d0c9a4ab6.md",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0-8e8e9a2e7485.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null,
     "onchain_anchor_hash": "288c9add809d63261872ba76201f87808c5e8fe803c8e5fbcf43b28ea1676ad0",
@@ -35,14 +35,14 @@
     "onchain_vote": "Abstain"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 45.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 45.0%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action.",
       "Provide mitigation evidence.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0-156d0c9a4ab6.md",
+    "markdown_path": "/data/output/public/rationales/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0-8e8e9a2e7485.md",
     "missing_evidence": [],
     "blocked_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
     "assessment_status": "incomplete",
@@ -72,13 +72,25 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Update Plutus Cost Models",
+            "Recipient: not stated in document",
+            "Stated amount: not stated in document",
+            "Deliverables: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus..., Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11., However, the changes for existing primitives will happen immediately on enactment of this governance action., This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, proposer_asserted, high materiality): Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
+            "Claim (technical, proposer_asserted, high materiality): Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
+            "Claim (technical, proposer_asserted, medium materiality): However, the changes for existing primitives will happen immediately on enactment of this governance action.",
+            "Claim (technical, supported_in_proposal, high materiality): This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.",
+            "Claim (technical, supported_in_proposal, high materiality): This proposal provides the necessary cost model settings so that these primitives can be used following the van Rossem hard fork.",
+            "Claim (technical, supported_in_proposal, low materiality): Second, the action also ensures that Plutus primitives previously limited to Plutus V3 are available in Plutus V1 and Plutus V2."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
+            "Independent evidence for: Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
+            "Independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -107,8 +119,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+            "Strongest YES: the proposal substantiates \"This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -127,7 +139,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0-156d0c9a4ab6.assessment.json",
+    "assessment_path": "/data/output/public/rationales/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0-8e8e9a2e7485.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -183,7 +195,7 @@
     "anchor_hash": "828cf92b170812446820c9f393446a2daf7d7e47d5f87354fe9f9e21a2635fb4",
     "file_sha256": "9cc282157a297a21048a07a055b0eb11c9aaf6cd9c765cfbe9d2791a3a16a7c5",
     "content_bytes": "78709",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -195,7 +207,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -269,10 +281,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6978,
+    "snapshot_age_seconds": 9,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

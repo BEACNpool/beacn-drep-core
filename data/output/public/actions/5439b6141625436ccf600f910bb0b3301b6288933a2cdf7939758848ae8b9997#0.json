@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b84734a0d9937dd7760c0efef7db91ab04701ed4fbf49c30910088320375e2ac",
+    "raw_input_hash": "sha256:e14f189f0da7b3f4b06ceddbceda307b353282a921b3269d87cc70b6e5701ef1",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "12be2b7e14b0a8d14fefe1d04043b492ab20c6052e19dd912b61a943cab1438b",
@@ -20,29 +20,29 @@
   },
   "proof_of_vote": {
     "vote": "NEEDS_MORE_INFO",
-    "score": 0.2515,
-    "confidence": 0.7529,
-    "input_hash": "b84734a0d9937dd7760c0efef7db91ab04701ed4fbf49c30910088320375e2ac",
-    "snapshot_bundle_hash": "56c074ed41111155491693a6adb67d3813990fbc39c8cda4e6eda9a69b0d20d6",
+    "score": 0.2015,
+    "confidence": 0.7404,
+    "input_hash": "e14f189f0da7b3f4b06ceddbceda307b353282a921b3269d87cc70b6e5701ef1",
+    "snapshot_bundle_hash": "2d71480d710bee17b17a92d8288d8dbb4881182176ec86461e0ddcc9facc7d06",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0-b84734a0d993.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null,
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0-e14f189f0da7.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/0ac02cef9df4575d73a7499c.md",
+    "rationale_anchor_hash": "0ac02cef9df4575d73a7499cc5384d3413bfe142e34c3dc213b966e9c127778e",
     "onchain_anchor_hash": "3d3acdb5e83f59a7a5877773df0686ecab70c88c2a5437361cc68fd5b81ea4dd",
     "onchain_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3d3acdb5e83f59a7a5877773.md",
     "onchain_vote": "No"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the 9.83M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide No structured claim/evidence extraction from the proposal document. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.25; confidence 75.3%.",
-    "summary_raw": "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Blockfrost is the number-one hosted platform used by Cardano developers in the Cardano Foundation developer ecosystem survey, rising from 39.3% usage in 2022 to 71.5% in 2025.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: In most Cardano epochs, more than 50% of all transactions are submitted through Blockfrost. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.20; confidence 74.0%.",
+    "summary_raw": "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: The claims show meaningful public-benefit alignment for established infrastructure, but several high-materiality adoption and dependency claims are proposer-asserted, and the large treasury ask relies on future sustainability paths that are not yet selected or evidenced. Given the deterministic assessment marks claims and evidence as thin, a small cautionary negative nudge is justified rather than a positive adjustment.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide No structured claim/evidence extraction from the proposal document.",
-      "Provide sustainability path."
+      "Provide independent evidence for: In most Cardano epochs, more than 50% of all transactions are submitted through Blockfrost.",
+      "Provide independent evidence for: More than 100 Icebreakers have joined the decentralized Blockfrost operator effort."
     ],
-    "markdown_path": "/data/output/public/rationales/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0-b84734a0d993.md",
+    "markdown_path": "/data/output/public/rationales/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0-e14f189f0da7.md",
     "missing_evidence": [
       "cost comparables, budget proportionality, or sustainability evidence"
     ],
@@ -74,13 +74,26 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Transition Blockfrost into a free, community-governed not-for-profit public API/public good and fund 18 months of transition and operations.",
+            "Recipient: not stated in document",
+            "Stated amount: 9,832,979",
+            "Deliverables: Legally establish a not-for-profit entity or sign a host-organization agreement under a preliminary board., Publish technical transition architecture and migration plan for community review., Launch a public usage dashboard., Hold a board election via on-chain voting under published rules., Serve all public API traffic for mainnet, preview, and preprod from the new stack., Legally transfer Blockfrost source code, trademarks, domain names, and associated assets to the governing entity., Open a sustainability consultation and publish a long-term model proposal for community feedback., Operate the public API at minimum 99% monthly uptime and publish quarterly reports covering technical metrics and budget summary.",
+            "Deadline/expiry: 18 months, with milestones from Q3 2026 through 2027",
+            "Claim (adoption, independently_verifiable, high materiality): Blockfrost is the number-one hosted platform used by Cardano developers in the Cardano Foundation developer ecosystem survey, rising from 39.3% usage in 2022 to 71.5% in 2025.",
+            "Claim (adoption, proposer_asserted, high materiality): Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.",
+            "Claim (adoption, proposer_asserted, high materiality): In most Cardano epochs, more than 50% of all transactions are submitted through Blockfrost.",
+            "Claim (technical, proposer_asserted, medium materiality): More than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+            "Claim (economic, proposer_asserted, high materiality): Ninety percent of Cardano traffic served through the Blockfrost API comes from the free tier, making the current commercial model difficult for financing public-good operations.",
+            "Claim (governance, supported_in_proposal, high materiality): The proposal would transfer all Blockfrost intellectual property, including source code, trademarks, domains, and associated assets, into a community-governed not-for-profit entity."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.",
+            "Independent evidence for: In most Cardano epochs, more than 50% of all transactions are submitted through Blockfrost.",
+            "Independent evidence for: More than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+            "Independent evidence for: Ninety percent of Cardano traffic served through the Blockfrost API comes from the free tier, making the current commercial model difficult for financing public-good operations."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -127,8 +140,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the 9.83M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest YES: the proposal substantiates \"Blockfrost is the number-one hosted platform used by Cardano developers in the Cardano Foundation developer ecosystem survey, rising from 39.3% usage in 2022 to 71.5% in 2025.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data last month.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -147,7 +160,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0-b84734a0d993.assessment.json",
+    "assessment_path": "/data/output/public/rationales/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0-e14f189f0da7.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "State the cost against the benefit: what does this buy, per ada spent.",
@@ -158,10 +171,10 @@
       ],
       "evidence_status": "independently_verified",
       "benefit": 0.91,
-      "delivery_confidence": 0.9,
+      "delivery_confidence": 0.7,
       "cost_efficiency": 0.25,
       "downside_risk": 0.25,
-      "composite": 0.2515,
+      "composite": 0.2015,
       "affirmative_waste_evidence": [],
       "missing": [
         "cost comparables, budget proportionality, or sustainability evidence"
@@ -193,10 +206,10 @@
         ],
         "evidence_status": "independently_verified",
         "benefit": 0.91,
-        "delivery_confidence": 0.9,
+        "delivery_confidence": 0.7,
         "cost_efficiency": 0.25,
         "downside_risk": 0.25,
-        "composite": 0.2515,
+        "composite": 0.2015,
         "affirmative_waste_evidence": [],
         "missing": [
           "cost comparables, budget proportionality, or sustainability evidence"
@@ -235,10 +248,10 @@
       ],
       "evidence_status": "independently_verified",
       "benefit": 0.91,
-      "delivery_confidence": 0.9,
+      "delivery_confidence": 0.7,
       "cost_efficiency": 0.25,
       "downside_risk": 0.25,
-      "composite": 0.2515,
+      "composite": 0.2015,
       "affirmative_waste_evidence": [],
       "missing": [
         "cost comparables, budget proportionality, or sustainability evidence"
@@ -257,7 +270,7 @@
     "anchor_hash": "775d70c9fc9589ee2531e1e7b9ed3f6d9a3ff1e0a600fb35dce5412b60bbd275",
     "file_sha256": "a4019acaf7058cc1722cd830f8e86e00f8a974efa599ff2c3c5819713d186c36",
     "content_bytes": "28837",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0.json",
     "preview": "{\n  \"@context\": {\n    \"@context\": {\n      \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n      \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n      \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n      \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n      \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n      \"body\": {\n        \"@id\": \"CIP108:body\",\n        \"@context\": {\n          \"references\": {\n            \"@id\": \"CIP108:references\",\n            \"@container\": \"@set\",\n            \"@context\": {\n              \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n              \"Other\": \"CIP100:OtherReference\",\n              \"label\": \"CIP100:reference-label\",\n              \"uri\": \"CIP100:reference-uri\",\n              \"referenceHash\": {\n                \"@id\": \"CIP108:referenceHash\",\n                \"@context\": {\n                  \"hashDigest\": \"CIP108:hashDigest\",\n                  \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n                }\n              }\n            }\n          },\n          \"title\": \"CIP108:title\",\n          \"abs"
   },
@@ -319,7 +332,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -422,17 +435,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.2515,
+    "binding_score": 0.2015,
     "raw_score": -0.66,
     "directional_threshold": 0.06,
-    "confidence": 0.7529,
+    "confidence": 0.7404,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6976,
+    "snapshot_age_seconds": 4,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:d38928c4c963bcc917008d0e131cc61a4f857c5323246262604cd64ab3b6a51f",
+    "raw_input_hash": "sha256:eac40b5eff760766945a063f8678599403c12eba32e2c2a27c9ae679204d39e9",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NO",
     "onchain_vote": "NO",
     "diverged": false,
-    "published_at": "2026-07-12T21:15:11.518308+00:00",
+    "published_at": "2026-07-13T04:09:38.721990+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "0d456a107829075b7be2fc3cce8d6dbc1a7c889041c8f528551ea47be009de9f",
@@ -22,27 +22,27 @@
     "vote": "NO",
     "score": -0.12,
     "confidence": 0.72,
-    "input_hash": "d38928c4c963bcc917008d0e131cc61a4f857c5323246262604cd64ab3b6a51f",
-    "snapshot_bundle_hash": "b62a6f29be23ef5efe9a0772cbf15463f1b8cc78bde319405c65fb5482eb55c4",
+    "input_hash": "eac40b5eff760766945a063f8678599403c12eba32e2c2a27c9ae679204d39e9",
+    "snapshot_bundle_hash": "326847b8d6414313178e8b883430e613426a336f5773495e5088748dd028ff67",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
-    "rationale_markdown_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-d38928c4c963.md",
-    "rationale_anchor_url": null,
-    "rationale_anchor_hash": null,
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
+    "rationale_markdown_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-eac40b5eff76.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/db25849e0315e27caf2d657a.md",
+    "rationale_anchor_hash": "db25849e0315e27caf2d657a1c54128224c81070973003fa7da99dcaa3d05640",
     "onchain_anchor_hash": "fb1c02fbb373afac5662ff1bfabaec93c6f9cab18a970baee39d78a046b15e9b",
     "onchain_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/fb1c02fbb373afac5662ff1b.md",
     "onchain_vote": "No"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the 20.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 72.0%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal says funded projects will be required to track monthly active users, TVL, and on-chain transactions, with a goal of increasingly on-chain KPI verification.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs such as monthly active users, monthly transactions, and TVL.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The Cardano Builder DAO says it has already distributed 11.1 million ADA across 34 proposals in two funding rounds; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 72.0%.",
     "summary_raw": "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
     "top_fixes": [
-      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide independent evidence for: The Cardano Builder DAO says it has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
       "Provide line-item budget.",
       "Provide sustainability path."
     ],
-    "markdown_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-d38928c4c963.md",
+    "markdown_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-eac40b5eff76.md",
     "missing_evidence": [],
     "blocked_reason_code": null,
     "assessment_status": "incomplete",
@@ -72,13 +72,26 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: no",
+            "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
+            "Requested: Treasury withdrawal for the Cardano Builder DAO, described as a smart contract-governed funding mechanism to allocate capital to Cardano builders tied to ecosystem KPIs.",
+            "Recipient: Cardano Builder DAO, with funds received and administered initially by an independent council/multisig composed of dRep DAO members before milestone-based disbursement.",
+            "Stated amount: 20000000",
+            "Deliverables: Fund builders whose work can improve monthly active users, monthly on-chain transactions, and TVL., Continue and expand KPI tracking, including movement toward KPI tracking tied to live on-chain Cardano data., Operate proposal evaluation, feedback coordination, transparent fund distribution, and result tracking for funded work., Use an independent administrator/multisig to validate milestones before Cardano Builder DAO receives funds., Return unused or unallocated DAO treasury funds to the Cardano Treasury after completion.",
+            "Deadline/expiry: not stated in document",
+            "Claim (governance, supported_in_proposal, high materiality): The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs such as monthly active users, monthly transactions, and TVL.",
+            "Claim (technical, proposer_asserted, high materiality): The proposal says funded projects will be required to track monthly active users, TVL, and on-chain transactions, with a goal of increasingly on-chain KPI verification.",
+            "Claim (economic, proposer_asserted, high materiality): The Cardano Builder DAO says it has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+            "Claim (governance, proposer_asserted, medium materiality): Round 1 is described as involving 38 voting members, 27 requesting members, 20 funded companies, 5,541,335 ADA distributed, and 83% governance participation.",
+            "Claim (governance, proposer_asserted, medium materiality): Round 2 is described as adding 18 new members, funding 14 companies, and reaching 88% member participation after review, debate, temperature checks, and final voting.",
+            "Claim (governance, proposer_asserted, medium materiality): The proposal says the DAO created and amended governing documents, elected a board, added third-party assurance, implemented merit-based proposal review, and executed treasury withdrawals on-chain with transparency."
           ],
           "missing": [
-            "No structured claim/evidence extraction from the proposal document."
+            "Independent evidence for: The proposal says funded projects will be required to track monthly active users, TVL, and on-chain transactions, with a goal of increasingly on-chain KPI verification.",
+            "Independent evidence for: The Cardano Builder DAO says it has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+            "Independent evidence for: Round 1 is described as involving 38 voting members, 27 requesting members, 20 funded companies, 5,541,335 ADA distributed, and 83% governance participation.",
+            "Independent evidence for: Round 2 is described as adding 18 new members, funding 14 companies, and reaching 88% member participation after review, debate, temperature checks, and final voting."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -125,8 +138,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the 20.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest YES: the proposal substantiates \"The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism for projects advancing Cardano Vision 2030 KPIs such as monthly active users, monthly transactions, and TVL.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposal says funded projects will be required to track monthly active users, TVL, and on-chain transactions, with a goal of increasingly on-chain KPI verification.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -145,7 +158,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-d38928c4c963.assessment.json",
+    "assessment_path": "/data/output/public/rationales/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0-eac40b5eff76.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -157,10 +170,10 @@
       ],
       "evidence_status": "independently_verified",
       "benefit": 0.35,
-      "delivery_confidence": 0.9,
+      "delivery_confidence": 0.7,
       "cost_efficiency": 0.0,
       "downside_risk": 0.25,
-      "composite": -0.0225,
+      "composite": -0.0725,
       "affirmative_waste_evidence": [
         "independently verified material duplication",
         "independently verified private-value capture"
@@ -196,10 +209,10 @@
         ],
         "evidence_status": "independently_verified",
         "benefit": 0.35,
-        "delivery_confidence": 0.9,
+        "delivery_confidence": 0.7,
         "cost_efficiency": 0.0,
         "downside_risk": 0.25,
-        "composite": -0.0225,
+        "composite": -0.0725,
         "affirmative_waste_evidence": [
           "independently verified material duplication",
           "independently verified private-value capture"
@@ -242,10 +255,10 @@
       ],
       "evidence_status": "independently_verified",
       "benefit": 0.35,
-      "delivery_confidence": 0.9,
+      "delivery_confidence": 0.7,
       "cost_efficiency": 0.0,
       "downside_risk": 0.25,
-      "composite": -0.0225,
+      "composite": -0.0725,
       "affirmative_waste_evidence": [
         "independently verified material duplication",
         "independently verified private-value capture"
@@ -267,7 +280,7 @@
     "anchor_hash": "f7ec2c08c624012b41fc101a8da8687e5bc7d395bf39467b14e11e7387362735",
     "file_sha256": "b54ba382d2bf11de5812af92f8a1936fcd412509e7769011d26307ac1a951d4b",
     "content_bytes": "13081",
-    "fetched_at_utc": "2026-07-12T21:15:14Z",
+    "fetched_at_utc": "2026-07-13T04:09:42Z",
     "download_path": "/proposals/4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
@@ -329,7 +342,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "d43566c2ec38caf2768100e67762e66da78895a8",
-    "core_commit": "608d6c9092b211d4e7e1532d0d704d3d565a0091",
+    "core_commit": "8c59d19a436106002bb496055c8047787690e835",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -439,10 +452,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6976,
+    "snapshot_age_seconds": 5,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T01:56:11.966865Z",
+    "snapshot_time": "2026-07-13T04:26:41.073349Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

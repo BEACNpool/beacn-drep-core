@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "2464844",
+    "deadline": "March 2027",
+    "deliverables": [
+      "Ongoing maintenance, bug fixes, dependency upkeep, security patches, and releases for the existing Scalus stack and supported export targets",
+      "Initial Plutus V4 support in the compiler and standard library for a Dijkstra developer preview",
+      "Updates for Dijkstra-related ledger rules, transaction building, builtins, cost models, nested transactions, accounts, guard scripts, and conformance testing",
+      "Improved JS/TS interfaces and documentation for Scalus components embedded in MeshJS, Evolution SDK, and Lucid Evolution",
+      "Java/Kotlin integration examples for Spring Boot and Ktor and cleaner integration with Cardano Client Lib and Yaci",
+      "Foundational application runtime components including reactive workers, chain follower, and task scheduler"
+    ],
+    "recipient": "Lantr Engineering",
+    "what": "Fund a 9-month continuation of Scalus focused on maintenance, Dijkstra hard-fork readiness, interoperability, and a scoped application runtime."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Scalus is presented as an established open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that Scalus components are reused in MeshJS, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Scalus has 4,642 commits across 32 releases, 12 contributors, and more than 20,000 monthly Scalus.js downloads.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested budget is \u20b32,464,844 for 9 months, described as about $394,375 at a $0.16/ADA reference rate with no contingency.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states this resubmission reduced the prior proposal from \u20b38.503M over 12 months to about \u20b32.465M over 9 months and reduced FTE from 8.25 to 2.25.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The funded scope excludes a standalone L1 node, full Gummiworm L2 integration, broad formal verification, and advanced devnet expansion.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Delivery is described as three quarterly milestones from July 2026 through March 2027, with maintenance running continuously and Dijkstra readiness, interoperability, and runtime work phased across milestones.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states delivery will be milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer argues Scalus supports Cardano 2030 adoption and utility indirectly by improving developer infrastructure for teams building applications rather than by directly producing TVL, transactions, or users.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests \u20b32,464,844 for Lantr Engineering to continue Scalus for 9 months, emphasizing maintenance, Dijkstra readiness, interoperability, and a scoped runtime, with several adoption and governance claims that are mostly asserted in the supplied text.",
+  "output_sha256": "350d85eea08f4f49fe42e3799c4ddb6caf03e5b4b14c27b8b93710599953d34b"
+}

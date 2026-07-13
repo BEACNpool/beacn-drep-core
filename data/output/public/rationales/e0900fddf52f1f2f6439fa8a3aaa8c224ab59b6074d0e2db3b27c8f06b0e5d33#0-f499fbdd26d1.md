@@ -1,0 +1,158 @@
+# Rationale: e0900fddf52f1f2f6439fa8a3aaa8c224ab59b6074d0e2db3b27c8f06b0e5d33#0
+Recommendation: **NEEDS_MORE_INFO**
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
+
+
+## Plain-language explanation (deterministic-heuristic)
+BEACN records NEEDS_MORE_INFO on Scalus: Cardano’s Application Platform for Building, Launching, and Scaling. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Scalus: Cardano’s Application Platform for Building, Launching, and Scaling. It asks the treasury for 8.50M ADA. The strongest grounded claim is: Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.
+
+BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+
+## Review Tree
+- overall_status: `blocked`
+
+### Intake
+- status: `complete`
+- finding: Action type: TreasuryWithdrawals
+- finding: Status: expired
+- finding: Proposed epoch: 630
+- finding: Expires after epoch: 637
+- finding: Treasury request: 8.50M ADA
+- finding: Anchor pinned locally: yes
+- conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+
+### Claims and evidence
+- status: `complete`
+- finding: Proposal anchor: pinned and replayable
+- finding: Proposal document read by reasoning layer: yes
+- finding: Snapshot freshness source: deep_research_dossiers.csv
+- finding: Deep research dossier: required
+- finding: Requested: Scalus: Cardano’s Application Platform for Building, Launching, and Scaling
+- finding: Recipient: not stated in document
+- finding: Stated amount: 8.50M ADA
+- finding: Deliverables: Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning., But the next bottleneck is no longer core infrastructure, it is application delivery., Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling., It lacks an integrated application platform that has it all and just works.
+- finding: Deadline/expiry: not stated in document
+- finding: Claim (technical, proposer_asserted, low materiality): Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning.
+- finding: Claim (technical, proposer_asserted, low materiality): But the next bottleneck is no longer core infrastructure, it is application delivery.
+- finding: Claim (economic, supported_in_proposal, low materiality): Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.
+- finding: Claim (economic, proposer_asserted, low materiality): It lacks an integrated application platform that has it all and just works.
+- finding: Claim (technical, proposer_asserted, low materiality): The Application Layer Decides the Next Chapter Cardano has shipped the protocol foundations.
+- finding: Claim (economic, proposer_asserted, low materiality): The question is no longer "can Cardano do X?" but "how fast can builders ship X?".
+- missing: complete proposal summary
+- missing: budget analysis
+- missing: feasibility assessment
+- missing: risk analysis
+- missing: alternatives analysis
+- missing: failure-mode analysis
+- missing: community impact analysis
+- conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+
+### Treasury analysis
+- status: `incomplete`
+- finding: Requested ADA: 8.50M ADA
+- finding: Budget granularity: unknown
+- finding: Milestone payment gates: unknown
+- finding: Clawback/refund path: unknown
+- finding: Cost/benefit clarity: unknown
+- finding: Recurring funding dependency: unknown
+- finding: Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)
+- finding: Financial confidence: unknown
+- missing: line-item budget
+- missing: milestone-gated disbursement
+- missing: sustainability path
+- missing: cost-benefit clarity
+- conclusion: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+
+### Risk review
+- status: `thin`
+- finding: Execution risk: unknown
+- finding: Governance risk: unknown
+- finding: Technical risk: unknown
+- finding: Treasury exposure risk: unknown
+- finding: Mitigation evidence: unknown
+- finding: Independent assurance: unknown
+- finding: Rollback/remedy path: unknown
+- finding: Flag count: 1
+- missing: mitigation evidence
+- missing: independent assurance
+- missing: rollback/remedy path
+- missing: dependency map
+- conclusion: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+
+### Counterargument pass
+- status: `complete`
+- finding: Strongest YES: the proposal substantiates "Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling." though 7 review blocker(s) remain open.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
+- finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
+- conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
+
+### Synthesis
+- status: `blocked`
+- finding: Final vote must be derived from completed sections above, not from a prose summary.
+- finding: The public rationale should name the decisive section and the strongest counterargument.
+- missing: missing complete proposal summary
+- missing: missing budget analysis
+- missing: missing feasibility assessment
+- missing: missing risk analysis
+- missing: missing alternatives analysis
+- missing: missing failure-mode analysis
+- missing: missing community impact analysis
+- conclusion: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Facts
+- Treasury actions are high-impact and require a completed deep research dossier.
+- Intake: Action type: TreasuryWithdrawals
+- Claims and evidence: Proposal anchor: pinned and replayable
+- Treasury analysis: Requested ADA: 8.50M ADA
+- Risk review: Execution risk: unknown
+- Counterargument pass: Strongest YES: the proposal substantiates "Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling." though 7 review blocker(s) remain open.
+- Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
+
+## Inferences
+- Directional voting is blocked until dossier quality gates pass.
+- Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
+- Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
+- Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
+- Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
+- Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.
+- Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit.
+
+## Uncertainty
+- Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: complete proposal summary
+- Claims and evidence missing: budget analysis
+- Treasury analysis missing: line-item budget
+- Treasury analysis missing: milestone-gated disbursement
+- Treasury analysis status is incomplete.
+- Risk review missing: mitigation evidence
+- Risk review missing: independent assurance
+- Risk review status is thin.
+- Synthesis missing: missing complete proposal summary
+- Synthesis missing: missing budget analysis
+- Synthesis status is blocked.
+
+## Missing Evidence
+- Deep research dossier is required for treasury actions before directional voting.
+- Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.
+- Missing dossier section: complete proposal summary
+- Missing dossier section: budget analysis
+- Missing dossier section: feasibility assessment
+- Missing dossier section: risk analysis
+- Missing dossier section: alternatives analysis
+- Missing dossier section: failure-mode analysis
+- Missing dossier section: community impact analysis
+
+## Reproducibility
+- input_hash: `f499fbdd26d1383149af97b0221c00fdcf68d050d22ebaaffa4c1fac1327d321`
+- snapshot_bundle_hash: `64610c75313b11127415a9e943baec0338ab7ac67103afa46011e760aa484d3a`
+- soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
+- soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
+- resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
+- snapshot_age_seconds: `10`
+- uncertainty_band: `LOW`
+- evidence_depth_score: `4`
+- decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`
+

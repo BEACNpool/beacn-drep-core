@@ -456,3 +456,40 @@ class AdapterActionIdDecodeTests(unittest.TestCase):
                     "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#x"):
             with self.assertRaises(ValueError):
                 decode_gov_action_id(bad)
+
+
+class MilestoneSelfClaimTests(unittest.TestCase):
+    """A proposal's claim about itself must not outrank BEACN's verified finding against it.
+
+    `milestone_payment_gates` is extracted from the proposal's own document and grants the largest
+    single delivery weight (0.20). It was granting that credit even where independent research had
+    VERIFIED `output_priced = no` — payment not tied to deliverables. Eleven proposals asking
+    67,649,589 ADA were holding unearned delivery confidence on the strength of a sentence.
+    """
+
+    def _dims(self, output_priced, evidence_status="independently_verified"):
+        from beacn_drep import engine as E
+        return E._treasury_dimensions(
+            action={"action_id": "x#0", "action_type": "TreasuryWithdrawals",
+                    "treasury_amount_lovelace": "1000000000"},
+            value_row={"evidence_status": evidence_status, "output_priced": output_priced,
+                       "critical_infrastructure": "yes"},
+            financial_row={"milestone_payment_gates": "yes"},
+            risk_row=None, readiness_row=None, deep_complete=True,
+        )
+
+    def test_verified_not_output_priced_forfeits_the_self_claimed_milestone_credit(self):
+        with_claim = self._dims("unknown")["delivery_confidence"]
+        refuted = self._dims("no")["delivery_confidence"]
+        self.assertAlmostEqual(with_claim - refuted, 0.20, places=4)
+
+    def test_unknown_never_costs_the_proposer(self):
+        # An "unknown" is BEACN's own research gap. It must never be charged to the proposal —
+        # that would be missing evidence becoming negative evidence, which doctrine forbids.
+        self.assertEqual(self._dims("unknown")["delivery_confidence"],
+                         self._dims("yes")["delivery_confidence"])
+
+    def test_credit_is_kept_when_the_evidence_is_not_independent(self):
+        # Only an INDEPENDENTLY verified contrary finding may strip the credit.
+        self.assertEqual(self._dims("no", evidence_status="proposal_only")["delivery_confidence"],
+                         self._dims("unknown", evidence_status="proposal_only")["delivery_confidence"])

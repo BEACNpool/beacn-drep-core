@@ -60,6 +60,36 @@ def sanitize(data: bytes) -> tuple[bytes, int]:
     return data, n
 
 
+# A 200 is not evidence. An API that answers `{}` has told you nothing, and hashing that nothing
+# produces a perfectly valid sha256 that LOOKS like a verified source — the most dangerous kind of
+# false confidence this system can manufacture, because the fraud is invisible to every downstream
+# check. One of these (sha256 of `{}`, from the GitHub API) was pinned as one of seven sources
+# backing "Mithril's price is fair vs market" — a claim that helps move 3,810,423 ADA.
+#
+# Note the asymmetry: an npm downloads response is ~85 bytes and is perfectly good evidence
+# ({"downloads":21810,...}). Size is not the test. EMPTINESS is the test.
+HOLLOW = {b"", b"{}", b"[]", b"null", b'{"":""}'}
+
+
+def is_hollow(data: bytes) -> bool:
+    """True if the fetched body carries no information, whatever its HTTP status said."""
+    stripped = data.strip()
+    if stripped in HOLLOW:
+        return True
+    if len(stripped) > 4096:
+        return False
+    try:
+        parsed = json.loads(stripped)
+    except Exception:
+        return False                      # non-JSON: judge it by content, not by shape
+    # An empty container, or a bare error envelope, is a failed fetch wearing a 200.
+    if parsed in ({}, [], None):
+        return True
+    if isinstance(parsed, dict) and set(parsed) <= {"message", "error", "documentation_url", "status"}:
+        return True
+    return False
+
+
 def fetch(url: str) -> bytes | None:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -105,11 +135,22 @@ def main() -> int:
                     print(f"  DROP  {packet_path.stem[:20]:22} {field_name:30} malformed source (no url/snapshot_path)")
                     continue
                 target = RES / rel_path
+                if target.exists() and is_hollow(target.read_bytes()):
+                    # Already on disk from an earlier run, and it is empty. Purge it: a hollow
+                    # snapshot that keeps its hash keeps its false authority.
+                    target.unlink()
+                    dropped += 1
+                    print(f"  DROP  {packet_path.stem[:20]:22} {field_name:30} HOLLOW (empty body): {url[:52]}")
+                    continue
                 if not target.exists():
                     data = fetch(url)
                     if data is None:
                         dropped += 1
                         print(f"  DROP  {packet_path.stem[:20]:22} {field_name:30} unfetchable: {url[:60]}")
+                        continue
+                    if is_hollow(data):
+                        dropped += 1
+                        print(f"  DROP  {packet_path.stem[:20]:22} {field_name:30} HOLLOW (200 but empty): {url[:52]}")
                         continue
                     data, n_red = sanitize(data)   # never republish a credential-shaped string
                     redacted_now[0] += n_red

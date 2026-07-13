@@ -23,6 +23,7 @@ import json
 import os
 import shlex
 import subprocess
+import time
 import tempfile
 import urllib.request
 from dataclasses import dataclass, field
@@ -400,20 +401,43 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
              "--out-file", str(vote_file)])
 
     # Build the unsigned tx on the relay (needs the socket; no signing keys leave opsbox).
-    try:
-        utxo = json.loads(_relay_query(["conway", "query", "utxo", "--mainnet",
-                                        "--address", fee_addr, "--output-json"]))
-    except Exception as e:  # noqa: BLE001
-        report.update(status="error", reasons=[f"utxo query failed: {e}"])
-        return report
-    if not utxo:
-        report.update(status="blocked", reasons=["fee wallet has no UTxO"])
-        return report
-    spendable = _spendable_utxos(utxo)
-    if not spendable:
-        report.update(status="blocked",
-                      reasons=["fee wallet has no pure-lovelace UTxO to fund the vote"])
-        return report
+    #
+    # Consecutive votes race the chain. Vote N spends the wallet's only pure UTxO and its CHANGE sits
+    # in the mempool — not yet on-chain — so vote N+1 queries the ledger, sees nothing spendable, and
+    # dies with "The UTxO is empty". That is exactly what happened on 2026-07-13: two votes landed and
+    # a third, fully approved by policy with every gate passed, failed on a wallet holding 57 ADA.
+    #
+    # So wait for the change to confirm rather than mistaking a timing artefact for an empty wallet.
+    # The distinction matters: a genuinely unfunded wallet must still fail, and fail loudly, so the
+    # bound is finite. A vote that dies here is silently NOT CAST, which looks identical to a policy
+    # hold in the logs — the most expensive kind of quiet failure this system has.
+    deadline = time.monotonic() + float(os.environ.get("BEACN_UTXO_WAIT_SECONDS", "240"))
+    waited = False
+    while True:
+        try:
+            utxo = json.loads(_relay_query(["conway", "query", "utxo", "--mainnet",
+                                            "--address", fee_addr, "--output-json"]))
+        except Exception as e:  # noqa: BLE001
+            report.update(status="error", reasons=[f"utxo query failed: {e}"])
+            return report
+
+        spendable = _spendable_utxos(utxo) if utxo else []
+        if spendable:
+            if waited:
+                report.setdefault("notes", []).append(
+                    "waited for the previous vote's change UTxO to confirm before building")
+            break
+
+        if time.monotonic() >= deadline:
+            report.update(
+                status="blocked",
+                reasons=["fee wallet has no pure-lovelace UTxO to fund the vote "
+                         "(still none after waiting for any in-flight change to confirm — "
+                         "the wallet is genuinely empty or its funds are token-locked)"])
+            return report
+
+        waited = True
+        time.sleep(15)
     tx_ins: list[str] = []
     for u in spendable:
         tx_ins += ["--tx-in", u]

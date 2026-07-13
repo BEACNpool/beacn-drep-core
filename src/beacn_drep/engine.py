@@ -920,8 +920,24 @@ def _treasury_dimensions(
         ("milestone_payment_gates", 0.20),
         ("clawback_refund_path", 0.15),
     ):
-        if _yn((financial_row or {}).get(field)) is True:
-            delivery += weight
+        if _yn((financial_row or {}).get(field)) is not True:
+            continue
+        # `milestone_payment_gates` is EXTRACTED FROM THE PROPOSAL'S OWN DOCUMENT — it is a
+        # self-claim — and it grants the single largest delivery weight in the engine. Until now it
+        # granted that credit even when BEACN's own independent research had VERIFIED that payment is
+        # not tied to deliverables at all (milestones deferred to a contract written after the money
+        # moves). A proposer's claim about itself was outranking a verified finding against it. That
+        # inversion exists nowhere else here: benefit is fully independence-gated, and every NO
+        # ground requires independent verification.
+        #
+        # Fires ONLY on an affirmative independent `no`. Never on `unknown` — an unknown is BEACN's
+        # own research gap and must never cost a proposer anything. This can only REMOVE unearned
+        # credit; there is no path from here to a NO, so doctrine's hard gate is untouched.
+        if (field == "milestone_payment_gates"
+                and independent
+                and _yn(value.get("output_priced")) is False):
+            continue
+        delivery += weight
     for field, weight in (
         ("mitigation_evidence_present", 0.15),
         ("independent_assurance_present", 0.15),

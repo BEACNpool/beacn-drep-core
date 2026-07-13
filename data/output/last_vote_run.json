@@ -1,10 +1,12 @@
 {
   "live": true,
   "auto_directions": [
-    "ABSTAIN"
+    "ABSTAIN",
+    "NO",
+    "YES"
   ],
-  "submitted": 0,
-  "active_evaluated": 27,
+  "submitted": 3,
+  "active_evaluated": 29,
   "skipped_inactive": 121,
   "policy_config": {
     "min_persistence_revision": 2,
@@ -15,7 +17,7 @@
   },
   "runs": [
     {
-      "action_id": "gov_action1fah9m7dxu99af8jqdc4mkrgs3va790nyh9tfhycq2wsvrm47p4rsqtcm6ry",
+      "action_id": "4f6e5df9a6e14bd49e406e2bbb0d108b3be2be64b9569b930053a0c1eebe0d47#0",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -23,23 +25,39 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1cadmygtqv6r64pvwezw859wg36wpwp209cz94cc7ej9fdp7dyphqq58n5ur",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": "VoteNo",
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
+    },
+    {
+      "action_id": "c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0",
       "recommendation": "ABSTAIN",
       "onchain_vote": "VoteYes",
       "policy": "HOLD",
-      "policy_reason": "revision YES->ABSTAIN held: not persistent (persist=1/2)",
+      "policy_reason": "revision YES->ABSTAIN refused: abstain is evidence-absence (MISSING_PROTOCOL_READINESS_EVIDENCE); missing evidence must never retract a cast directional vote",
       "status": "HOLD"
     },
     {
-      "action_id": "gov_action1lh2x3kjucjkggvwu6l3txggkvmrnhs3flpv8j35lvlcan4gax3xsq3cxfjc",
+      "action_id": "4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
       "recommendation": "ABSTAIN",
       "onchain_vote": "VoteYes",
       "policy": "HOLD",
-      "policy_reason": "revision YES->ABSTAIN held: not persistent (persist=1/2)",
+      "policy_reason": "revision YES->ABSTAIN refused: abstain is evidence-absence (MISSING_PROTOCOL_READINESS_EVIDENCE); missing evidence must never retract a cast directional vote",
       "status": "HOLD"
     },
     {
-      "action_id": "gov_action1654yj97lf7guxsh27phtknq2tsc4dajp95fh7vrucaltjy0502csq7qtkhq",
+      "action_id": "d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -47,7 +65,18 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action12sumv9qky4pkenmqp7gshv9nxqdk9zyn8gkd77fewkyy3t5tnxtsq457vgq",
+      "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
+      "recommendation": "YES",
+      "onchain_vote": "VoteNo",
+      "policy": "REVISE",
+      "policy_reason": "revision NO->YES approved: persist=2, margin=0.1455",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "53985b85c8fca6b413173642645bbda2c00c399aa86fd1ac78a8bfbfaf8e0957"
+    },
+    {
+      "action_id": "5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -55,7 +84,15 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d",
+      "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#10",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -63,15 +100,7 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s5z9qdza",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1t5ap7etluvct2x69nj5mfqhurgakuvekyflcsrv2qkrhrs378n3qq3z2c22",
+      "action_id": "5d3a1f657fe330b51b459ca9b482fc1a3b6e3336227f880d8a058771c23e3ce2#0",
       "recommendation": "ABSTAIN",
       "onchain_vote": "Abstain",
       "policy": "NOOP",
@@ -79,7 +108,23 @@
       "status": "NOOP"
     },
     {
-      "action_id": "gov_action1cpnqmlgpkz3dnwnm4spqzsmsp93y9mr4vqcm2ltcpqyyf7a7nszsq4h586r",
+      "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -87,7 +132,7 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1pa6a6yd7pdaxed9nqkshtvtu7jmqe5c8cpf0ej4lnatjj588qkpsq2x2sz2",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -95,7 +140,7 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sxypfkyr",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -103,7 +148,15 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -111,7 +164,7 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sw64d667",
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#8",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -119,7 +172,7 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse",
+      "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
@@ -127,108 +180,86 @@
       "status": "SKIP"
     },
     {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sztttste",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sj72rg72",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8ssd0ztd8",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1suskjc6c4nw58c6wtmv77xe79gwj47wp4gvh9cqhhxujwxmam3cqqkz5nwj",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8syhyg4hw",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1mlvplrdk2t7eyclqeca77ppmfq3sghkr5hdppjqhdqdd573r7q6qqms7jwt",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sqcw2nc5",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8s24l0u4y",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1mr0qdz2jmagvsch6r08fhqvq6vu8jakt4c8m9s7ea7z0p740vntqq4yjd6j",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1fdatlfcdnzzcw5x9pnt9r42v992nqw65zze57s8tyk0jll78eyusqccn9gc",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sgx6wlxf",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "gov_action15atytcy8ru7mkcs8m7r8mx7k5x36t0h6grtgmak6v5wmf4nq07lsqhakceq",
+      "action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
       "recommendation": "ABSTAIN",
       "onchain_vote": "Abstain",
       "policy": "NOOP",
       "policy_reason": "on-chain vote already ABSTAIN",
       "status": "NOOP"
+    },
+    {
+      "action_id": "3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0",
+      "recommendation": "YES",
+      "onchain_vote": "VoteNo",
+      "policy": "REVISE",
+      "policy_reason": "revision NO->YES approved: persist=2, margin=0.2015",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "75e48fefe8a675534f5dc4f55ceb072c7a3bc27ff86e5884a63fbbeefd437840"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2",
+      "recommendation": "YES",
+      "onchain_vote": "VoteNo",
+      "policy": "REVISE",
+      "policy_reason": "revision NO->YES approved: persist=2, margin=0.215",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "9f051084b19832ab5d0f327c3515763e56f0005d4189817f0020853a13283163"
+    },
+    {
+      "action_id": "dfd81f8db652fd9263e0ce3bef043b4823045ec3a5da10c817681ada7a23f034#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": "VoteNo",
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
+    },
+    {
+      "action_id": "d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": "VoteNo",
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#4",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": "VoteNo",
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
+    },
+    {
+      "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+      "recommendation": "NO",
+      "onchain_vote": null,
+      "policy": "CAST",
+      "policy_reason": "fresh NO: persist=2, confidence=0.7537",
+      "gates_ok": false,
+      "status": "blocked_by_gate",
+      "reasons": [
+        "per_run_cap: per-run vote cap reached"
+      ]
+    },
+    {
+      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": null,
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
     }
   ]
 }

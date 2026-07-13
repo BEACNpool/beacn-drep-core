@@ -1,0 +1,27 @@
+{
+  "doctrine_id": "beacn_drep_scoring_weights",
+  "version": "1.1.0",
+  "last_updated": "2026-06-15",
+  "change_control": {
+    "policy": "Any weight change requires explicit changelog entry in beacn-drep-soul/CHANGELOG.md and doctrine commit review.",
+    "auditable": true
+  },
+  "weights": {
+    "anchor_present_bonus": 0.05,
+    "treasury_base_penalty": -0.1,
+    "treasury_flow_sustainable_bonus": 0.03,
+    "treasury_flow_stressed_penalty": -0.06,
+    "treasury_flow_unsustainable_penalty": -0.1,
+    "parameter_change_base_penalty": -0.05,
+    "hardfork_base_penalty": -0.12,
+    "flag_score_divisor": 30.0,
+    "flag_penalty_cap": 0.35,
+    "drep_margin_cap": 0.1
+  },
+  "notes": [
+    "These weights are consumed by beacn-drep-core at runtime; the core must fail closed if this file is missing or invalid.",
+    "Treasury concentration and milestone penalties are doctrine-derived from treasury_spending_doctrine.json scoring_adjustments.",
+    "Threshold values for final YES/NO/ABSTAIN routing remain in engine policy and are auditable in source.",
+    "drep_margin_cap was reduced from 0.45 to 0.10 in v1.1.0 so the network DRep distribution can INFORM but never by itself DETERMINE a directional vote: the cap (0.10) is below the non-treasury directional threshold (0.12), so network consensus alone cannot push a neutral action across the YES/NO line. This enforces README principle 14 ('do not optimize for popularity, social pressure, or delegation size') and values_hierarchy.md rank 5 ('social consensus momentum' is the lowest-priority value). BEACN's own evidence-based penalties/bonuses must carry any directional call."
+  ]
+}

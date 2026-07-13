@@ -101,7 +101,27 @@ def _convertbits(data: list[int], frm: int, to: int) -> list[int]:
 
 
 def decode_gov_action_id(action_id: str) -> tuple[str, int]:
-    """gov_action1... -> (tx_id hex, governance action index)."""
+    """Any accepted spelling of a governance action id -> (tx_id hex, index).
+
+    An action has exactly ONE identity — (tx, index) — but two spellings in the wild: the CIP-129
+    `<tx_hex>#<index>` form the chain and our own pipeline use, and the legacy bech32 `gov_action1…`
+    form, which merely ENCODES that same pair. Accepting only bech32 here silently blocked every
+    real vote on 2026-07-12: policy approved four (three NO->YES revisions and a fresh NO), the
+    adapter's gates all passed, and then each one died at `invalid bech32 string` because the id was
+    already in its canonical `<tx>#<index>` form. It failed closed, so nothing wrong was cast — but
+    nothing right was cast either.
+
+    Parse strictly, and never guess: a malformed id raises rather than resolving to some other
+    action. Voting on the wrong governance action is the worst failure this system has.
+    """
+    if "#" in action_id:
+        tx_hex, _, idx = action_id.rpartition("#")
+        if len(tx_hex) != 64 or not all(c in "0123456789abcdefABCDEF" for c in tx_hex):
+            raise ValueError(f"action id tx hash is not 32 hex bytes: {action_id}")
+        if not idx.isdigit():
+            raise ValueError(f"action id index is not an integer: {action_id}")
+        return tx_hex.lower(), int(idx)
+
     hrp, data5 = _bech32_decode(action_id)
     if hrp != "gov_action":
         raise ValueError(f"not a gov_action id (hrp={hrp})")

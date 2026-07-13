@@ -593,6 +593,10 @@ def main():
             "submitted": bool(vote_receipt.get("submitted")),
             "transaction_hash": vote_receipt.get("transaction_hash"),
             "submitted_at": vote_receipt.get("submitted_at"),
+            # Whether a hash of the written rationale was anchored INTO the vote transaction. The
+            # earliest votes predate anchoring; the public verifier needs to distinguish "no anchor
+            # exists to check" from "the anchor does not match", which mean opposite things.
+            "rationale_anchored": bool(anchor_hash),
             "diverged": bool(
                 vote_receipt.get("submitted")
                 and vote_receipt.get("recommendation")
@@ -847,6 +851,14 @@ def main():
             "policy_doc": "docs/PUBLIC_CONTEXT_AND_LIMITS.md",
         },
     }
+
+    # Publish the doctrine's scoring weights verbatim. The public site renders the weighting system
+    # from THIS file, so what a visitor reads is the same bytes the engine scores with — it cannot
+    # drift into a flattering description of weights we don't actually use. It also carries its own
+    # version + change-control policy, so a weight change is visible rather than silent.
+    weights_src = SOUL_REPO / "scoring_weights.json"
+    if weights_src.exists():
+        (OUT / "scoring_weights.json").write_text(weights_src.read_text(encoding="utf-8"), encoding="utf-8")
 
     (OUT / "index.json").write_text(json.dumps(index, indent=2) + "\n")
     (OUT / "actions.json").write_text(json.dumps({"generated_at": now, "items": items}, indent=2) + "\n")

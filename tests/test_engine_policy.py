@@ -427,3 +427,32 @@ class CanonicalActionIdTests(unittest.TestCase):
         from beacn_drep.ids import canonical_action_id
         self.assertEqual(canonical_action_id("gov_action1notrealbech32"), "gov_action1notrealbech32")
         self.assertEqual(canonical_action_id(""), "")
+
+
+class AdapterActionIdDecodeTests(unittest.TestCase):
+    """The adapter must accept every spelling of an action id that the pipeline can hand it.
+
+    On 2026-07-12 it accepted only bech32. Policy approved four votes, every adapter gate passed,
+    and all four then died at `invalid bech32 string` because the ids were already in canonical
+    `<tx>#<index>` form. Zero votes were cast and the failure looked like a policy hold.
+    """
+
+    def test_both_spellings_decode_to_the_same_action(self):
+        from beacn_drep.adapters.cardano_cli_adapter import decode_gov_action_id
+        bech = "gov_action10dp9wzmgt2nqshyrghufff4sfhcxedhmzluly5k0azguatnsthwqqs84cjf"
+        tx, idx = decode_gov_action_id(bech)
+        self.assertEqual(decode_gov_action_id(f"{tx}#{idx}"), (tx, idx))
+
+    def test_canonical_form_decodes(self):
+        from beacn_drep.adapters.cardano_cli_adapter import decode_gov_action_id
+        tx = "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf"
+        self.assertEqual(decode_gov_action_id(f"{tx}#2"), (tx, 2))
+
+    def test_malformed_id_raises_rather_than_resolving_to_another_action(self):
+        # Voting on the WRONG governance action is the worst failure this system has. A malformed
+        # id must fail loudly, never get coerced into some neighbouring action.
+        from beacn_drep.adapters.cardano_cli_adapter import decode_gov_action_id
+        for bad in ("deadbeef#0", "z" * 64 + "#0",
+                    "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#x"):
+            with self.assertRaises(ValueError):
+                decode_gov_action_id(bad)

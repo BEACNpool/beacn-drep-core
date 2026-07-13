@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "none requested from treasury",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Upgrade Cardano mainnet protocol from major version 10 minor 0 to major version 11 minor 0.",
+      "Keep the ledger in the Conway era with unchanged transaction shape.",
+      "Enable new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "Make all Plutus built-in functions available consistently across Plutus V1, V2, and V3.",
+      "Add UPLC case expressions for Bool, Integer, and Data.",
+      "Promote or tighten several ledger and node validation, diagnostic, and security rules."
+    ],
+    "recipient": "not stated in document",
+    "what": "Initiate an intra-era Cardano mainnet hard fork to Protocol Version 11.0, named the van Rossem hard fork."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The action would upgrade Cardano mainnet from protocol version 10.0 to 11.0 while remaining in the Conway era.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says the upgrade adds new Plutus primitives defined in CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says all Plutus built-ins will become available across Plutus V1, V2, and V3, expanding capabilities of existing V1 and V2 scripts.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says UPLC case expressions for Bool, Integer, and Data will improve performance and simplify script logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says transaction shape is unchanged and ecosystem upgrade effort is minimized because this is an intra-era hard fork.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says testing reports demonstrate no behavioral regressions, complete specification-implementation conformance for new ledger rules, and correct operation of new Plutus features.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal links a Cardano Node 11.0.1 performance report and says it shows no regressions in standard value, Plutus, and voting benchmarks.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says security audits were undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says at least 85% of stake pools by active stake should have upgraded to a node version capable of protocol version 11 before ratification, and that this status still needs to be determined.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that reversion is only possible in extreme circumstances through the CIP-0135 disaster recovery process, while Plutus primitive usage could be disabled through companion cost model settings if issues are discovered.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes a no-treasury intra-era hard fork to Cardano protocol version 11.0 with Plutus, ledger, node diagnostic, and security changes, supported by CIP references and a performance report but with several important readiness, testing, audit, and migration assertions stated at a high level.",
+  "output_sha256": "be0977f03815ce32b9c9968576ff1e160037dc6511b31dd773e3cf59e0486fd0"
+}

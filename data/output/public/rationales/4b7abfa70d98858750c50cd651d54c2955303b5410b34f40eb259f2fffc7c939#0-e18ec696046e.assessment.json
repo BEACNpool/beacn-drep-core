@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 639",
+        "Expires after epoch: 646",
+        "Treasury request: 20.00M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund the Cardano Builder DAO as a smart contract-governed, KPI-driven funding mechanism for Cardano builders.",
+        "Recipient: Cardano Builder DAO, with funds first received and administered by an independent council/multisig composed of dRep DAO members before milestone-based disbursement.",
+        "Stated amount: 20000000",
+        "Deliverables: Allocate capital to builders expected to improve Cardano ecosystem KPIs including monthly active users, monthly on-chain transactions, and TVL., Require funded projects to track core KPIs: monthly active users, TVL, and on-chain transactions., Continue developing KPI tracking from self-reported dashboards toward live on-chain Cardano data., Use review, debate, temperature checks, final voting, public reporting, and administrator milestone validation before Cardano Builder DAO receives funds., Return unused or unallocated DAO treasury funds to the Cardano Treasury after approved work, governance processes, or funding activities are complete.",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, supported_in_proposal, high materiality): The Cardano Builder DAO is proposed as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 KPIs.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal says funded projects will be required to track monthly active users, TVL, and on-chain transactions.",
+        "Claim (technical, proposer_asserted, high materiality): The proposer states that DAO KPI dashboard Version 1 used self-reported KPI tracking and Version 2 moved toward tracking tied directly to live on-chain Cardano data.",
+        "Claim (economic, proposer_asserted, high materiality): The proposer states that the Cardano Builder DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
+        "Claim (adoption, supported_in_proposal, high materiality): The proposal states that Round 1 funded 20 companies, included 38 voting members and 27 requesting members, distributed 5,541,335 ADA, and achieved 83% governance participation.",
+        "Claim (adoption, supported_in_proposal, high materiality): The proposal states that Round 2 funded 14 companies, added 18 new members, and achieved 88% member participation after review, debate, temperature checks, and final voting."
+      ],
+      "missing": [
+        "Independent evidence for: The proposer states that DAO KPI dashboard Version 1 used self-reported KPI tracking and Version 2 moved toward tracking tied directly to live on-chain Cardano data.",
+        "Independent evidence for: The proposer states that the Cardano Builder DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: unknown",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.42"
+      ],
+      "missing": [
+        "line-item budget",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The Cardano Builder DAO is proposed as an ecosystem-wide, purpose-built, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 KPIs.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that DAO KPI dashboard Version 1 used self-reported KPI tracking and Version 2 moved toward tracking tied directly to live on-chain Cardano data.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

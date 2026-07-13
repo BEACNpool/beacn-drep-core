@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "2464844",
+    "deadline": "March 2027",
+    "deliverables": [
+      "Ongoing maintenance: bug fixes, dependency upkeep, security patches, and releases",
+      "Dijkstra readiness including Plutus V4 support, ledger rules, transaction-builder updates, conformance testing, nested transactions, accounts, guard scripts, and cost-model changes",
+      "Improved JS/TS interfaces and documentation for components embedded in MeshJS, Evolution SDK, and Lucid Evolution",
+      "Java/Kotlin interoperability with Spring Boot and Ktor examples and cleaner Cardano Java stack integration",
+      "Scoped application runtime components including foundational runtime pieces, reactive workers, chain follower, and task scheduler"
+    ],
+    "recipient": "not stated in document",
+    "what": "Fund a 9-month continuation of Scalus covering maintenance, Dijkstra hard-fork readiness, JVM/JS/TS interoperability, and a first scoped application runtime."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal asks for \u20b32,464,844 over 9 months, equivalent to about $394,375 at a $0.16/ADA reference rate, with no contingency.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The current proposal is a reduced resubmission from a prior \u20b38.503M/12-month scope to \u20b32.464844M/9 months, reducing FTE from 8.25 to 2.25 and removing the L1 node, full L2 integration, broad formal verification, and advanced devnet expansion from scope.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Scalus is described as an open-source Apache 2.0 Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states that Scalus has 4,642 commits, 32 releases, 12 contributors, and Scalus.js has more than 20,000 downloads per month.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states that Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm are built on Scalus.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states that Scalus components for script evaluation, cost calculation, and an in-memory Cardano node emulator are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Dijkstra introduces Plutus V4 support, nested transactions, guard script types, and accounts that affect smart contract development, evaluation, transaction building, ledger rules, testing, and workflows.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal commits to three quarterly milestones from July 2026 through March 2027, with maintenance running continuously and Dijkstra readiness, interoperability, and runtime work phased across milestones.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Delivery is described as milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal argues Scalus supports Cardano 2030 adoption and utility indirectly by improving developer infrastructure for teams building applications rather than by directly producing TVL, transactions, or users itself.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document presents a reduced, milestone-based treasury request for maintaining and extending Scalus as shared Cardano developer infrastructure, with asserted and partly independently verifiable adoption across projects and tooling.",
+  "output_sha256": "f7f4c17bf6728e513485f5d5934d4750cd8676ac91d149705f9ec389aa209ae8"
+}

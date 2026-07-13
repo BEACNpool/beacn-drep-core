@@ -1,0 +1,86 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "12332031",
+    "deadline": "9-month delivery period from July 2026 to March 2027",
+    "deliverables": [
+      "Audited Bitcoin-Cardano bridge running on Cardano mainnet under controlled access",
+      "Both custody modes: federated and SPO threshold",
+      "Hardened economic model",
+      "Stewardship structure or equivalent independent form determined in Phase 1",
+      "SPO and dApp partner pipeline required for public launch",
+      "Security audits and formal verification",
+      "Ecosystem and partner readiness for Phase 2 public rollout"
+    ],
+    "recipient": "FluidTokens and Lantr Engineering",
+    "what": "Phase 1 of 2 funding to take Bifrost from working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations for launch."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as native fBTC for DeFi use cases.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The bridge is already live on testnet under Catalyst Fund 14, with working peg-ins and peg-outs and participating SPOs.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Catalyst Fund 14 funded Bifrost for \u20b3739,000 to deliver architecture, a testnet MVP, and documentation from December 2025 to August 2026, with M1 and M2 marked done and approved.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost's locked BTC custody is intended to be distributed across 400+ Cardano SPOs weighted by delegation, with withdrawals requiring a cryptographic threshold of SPOs representing the majority of delegated stake.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "If SPO coordination fails, Bifrost plans to activate a federated custody mode as an operational fallback.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Bifrost will have no bridge token, no founder allocation, Apache 2.0 open-source code, public reporting, and an independent stewardship structure outside the founding teams.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Bifrost targets 1,200 BTC in Cardano DeFi TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that bridge fees in fBTC will fund operations and surplus will be split to SPOs and the Cardano Treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Public rollout and 24 months of operations are intentionally excluded from this request and planned for a Phase 2 proposal in Q1 2027 after the bridge has been proven on-chain.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The proposal requests \u20b312,332,031 for a nine-month Phase 1 to move Bifrost from testnet toward controlled mainnet launch readiness, with many material technical, governance, adoption, and economic claims stated by the proposer but limited independently verifiable support in the supplied text.",
+  "output_sha256": "3d7137cf6509e6ce46e4e2db740baf3cfe1beb710160c64be192b007fdff8e6b"
+}

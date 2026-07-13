@@ -90,7 +90,7 @@ BEACN's autonomous DRep recorded ABSTAIN on "Update Plutus Cost Models" (Paramet
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
 - resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3465`
+- snapshot_age_seconds: `6978`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`

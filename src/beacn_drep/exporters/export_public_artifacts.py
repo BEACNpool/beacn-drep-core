@@ -621,6 +621,12 @@ def main():
             # earliest votes predate anchoring; the public verifier needs to distinguish "no anchor
             # exists to check" from "the anchor does not match", which mean opposite things.
             "rationale_anchored": bool((onchain_anchor or {}).get("anchor_hash")),
+            # Carried on the list item so the public banner can group the open positions by CAUSE
+            # without fetching every detail file. What a reader needs to know is not "11 things are
+            # unresolved" but "2 of them BEACN should fix, 7 the proposer must, 1 is scarcity."
+            "blocked_reason_code": (r["rationale"].get("needs_more_info_reason_code")
+                                    or r["rationale"].get("abstain_reason_code")),
+            "missing_evidence": r["rationale"].get("missing_evidence", []),
             "diverged": bool(
                 vote_receipt.get("submitted")
                 and vote_receipt.get("recommendation")
@@ -704,6 +710,13 @@ def main():
                 "top_fixes": top_fixes,
                 "markdown_path": r["md_path"],
                 "missing_evidence": r["rationale"].get("missing_evidence", []),
+                # WHY the engine stopped short of a directional vote. The public site groups the
+                # open positions by this, so a reader can tell the difference between "the proposal
+                # will not show its budget", "we ran out of treasury capacity for it", and "BEACN
+                # would now vote the other way". Those look identical without it, and a site that
+                # blurs them is describing its own confusion rather than the evidence.
+                "blocked_reason_code": (r["rationale"].get("needs_more_info_reason_code")
+                                        or r["rationale"].get("abstain_reason_code")),
                 "assessment_status": r["rationale"].get("assessment_status") or assessment.get("overall_status"),
                 "assessment_schema_version": r["rationale"].get("assessment_schema_version") or assessment.get("schema_version"),
                 "assessment": assessment,

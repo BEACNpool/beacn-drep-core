@@ -975,9 +975,37 @@ def _treasury_dimensions(
     if delivery < 0.45:
         missing.append("delivery controls, milestones, assurance, or remedy path")
 
+    # Name the SPECIFIC unmet inputs, not just the dimension that failed. "cost comparables, budget
+    # proportionality, or sustainability evidence" tells a proposer nothing they can act on; "publish
+    # a line-item budget" does. Every item below is derived from a field that is actually unknown —
+    # nothing here is invented, and a proposer who publishes these is re-scored automatically on the
+    # next run. A DRep that can say precisely what would change its vote is worth more to the
+    # ecosystem than one that can only say no.
+    actionable = []
+    if cost < 0.40:
+        if _yn((financial_row or {}).get("budget_granularity")) is not True:
+            actionable.append("Publish a line-item budget: what is being bought, at what unit cost.")
+        if _yn((financial_row or {}).get("cost_benefit_clarity")) is not True:
+            actionable.append("State the cost against the benefit: what does this buy, per ada spent.")
+        if _yn((financial_row or {}).get("sustainability_path_clear")) is not True:
+            actionable.append("Describe the funding path beyond this grant, or say plainly that there isn't one.")
+        if not (independent and _yn(value.get("cost_compared_to_market")) is True):
+            actionable.append("Disclose the rate basis — headcount, FTE fraction, or day rate — so the price can be checked against the market.")
+        if not (independent and _yn(value.get("output_priced")) is True):
+            actionable.append("Tie payment to defined deliverables, not to elapsed time or headcount.")
+        # Doctrine's own axiom: AI has collapsed the marginal cost of this kind of work. A proposal
+        # that never says what it assumes about that has not justified its rate.
+        actionable.append("State your AI-cost assumption: this work is cheaper to produce than it was, and the price should show it.")
+    if delivery < 0.45:
+        if _yn((financial_row or {}).get("milestone_payment_gates")) is not True:
+            actionable.append("Gate disbursement on milestones that must be met before money moves.")
+        if _yn((financial_row or {}).get("clawback_refund_path")) is not True:
+            actionable.append("Provide a clawback or refund path if the work is not delivered.")
+
     composite = round((0.40 * benefit) + (0.25 * delivery) + (0.20 * cost)
                       + (0.15 * (1.0 - downside)) - 0.50, 4)
     return {
+        "actionable_asks": actionable,
         "evidence_status": value.get("evidence_status") or "missing",
         "benefit": round(min(1.0, benefit), 4),
         "delivery_confidence": round(min(1.0, delivery), 4),

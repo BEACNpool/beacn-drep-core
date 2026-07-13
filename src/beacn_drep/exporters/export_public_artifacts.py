@@ -214,6 +214,28 @@ def _to_int(v) -> int:
         return 0
 
 
+def _load_onchain_anchors() -> dict[str, dict]:
+    """The anchor hash the CHAIN records for each vote BEACN cast.
+
+    This is the ONLY hash the public verifier may check a published rationale against. The local
+    run's `rationale_anchor_hash` is recomputed every time the engine re-scores on fresh evidence,
+    so checking against it would compare a file to its own hash — a check that always passes and
+    proves nothing. The chain's copy is immutable and beyond our reach to revise, which is exactly
+    what makes it worth anything.
+    """
+    path = RESOURCES_REPO / "data" / "input" / "governance" / "onchain_vote_anchors.json"
+    if not path.exists():
+        return {}
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for aid, row in (raw.get("anchors") or {}).items():
+        out[canonical_action_id(aid)] = row
+    return out
+
+
 def _load_flags_map() -> dict[str, list[dict]]:
     """Per-action risk flags. These are WHY a proposal drew scrutiny, and the public record was
     hiding all 169 of them — including 6 RED (NO_METADATA, HASH_MISMATCH). A reader asking
@@ -544,6 +566,7 @@ def main():
     deep_map = _load_deep_research_map()
     flags_map = _load_flags_map()
     treasury_capacity = _load_treasury_capacity()
+    onchain_anchors = _load_onchain_anchors()
 
     soul_commit = _git_commit(SOUL_REPO)
     res_commit = _git_commit(RESOURCES_REPO)
@@ -570,6 +593,7 @@ def main():
         if assessment and assessment_path.exists():
             shutil.copyfile(assessment_path, OUT / "rationales" / f"{run_id}.assessment.json")
         anchor_hash = r["rationale"].get("rationale_anchor_hash")
+        onchain_anchor = onchain_anchors.get(aid)
         if anchor_hash:
             shutil.copyfile(r["run_dir"] / "rationale.md", OUT / "r" / f"{anchor_hash[:24]}.md")
         vote_receipt = _resolve_vote_receipt(aid, r["run_dir"])
@@ -596,7 +620,7 @@ def main():
             # Whether a hash of the written rationale was anchored INTO the vote transaction. The
             # earliest votes predate anchoring; the public verifier needs to distinguish "no anchor
             # exists to check" from "the anchor does not match", which mean opposite things.
-            "rationale_anchored": bool(anchor_hash),
+            "rationale_anchored": bool((onchain_anchor or {}).get("anchor_hash")),
             "diverged": bool(
                 vote_receipt.get("submitted")
                 and vote_receipt.get("recommendation")
@@ -662,8 +686,17 @@ def main():
                 "resources_commit": res_commit,
                 "core_commit": core_commit,
                 "rationale_markdown_path": r["md_path"],
+                # The locally-derived anchor for the CURRENT run. This is what a NEXT vote would
+                # commit to. It is NOT proof of anything about a vote already cast, because the
+                # engine rewrites it every time it re-scores on new evidence.
                 "rationale_anchor_url": r["rationale"].get("rationale_anchor_url"),
                 "rationale_anchor_hash": r["rationale"].get("rationale_anchor_hash"),
+                # The anchor the CHAIN records for the vote actually cast. Immutable, beyond BEACN's
+                # reach to revise, and therefore the only hash a public verifier should trust. The
+                # rationale it commits to is still served, byte-for-byte, at /r/<hash[:24]>.md.
+                "onchain_anchor_hash": (onchain_anchor or {}).get("anchor_hash"),
+                "onchain_anchor_url": (onchain_anchor or {}).get("anchor_url"),
+                "onchain_vote": (onchain_anchor or {}).get("vote"),
             },
             "rationale": {
                 "summary": human_summary,
@@ -859,6 +892,24 @@ def main():
     weights_src = SOUL_REPO / "scoring_weights.json"
     if weights_src.exists():
         (OUT / "scoring_weights.json").write_text(weights_src.read_text(encoding="utf-8"), encoding="utf-8")
+
+    # The rationale files under /r/ are the ONLY copies of what BEACN committed to on-chain. Their
+    # names are the first 24 hex of their own blake2b hash, so they are immutable by construction —
+    # but they are not immortal. Lose one and the vote it belongs to becomes permanently
+    # unverifiable: the chain still holds the hash, and nothing on earth can reproduce the bytes.
+    # This is the single most destructive thing that could quietly happen to this repo, so it fails
+    # loudly rather than shipping a site whose central promise is broken.
+    orphaned = [
+        (aid, a["anchor_hash"]) for aid, a in onchain_anchors.items()
+        if a.get("anchor_hash") and not (OUT / "r" / f"{a['anchor_hash'][:24]}.md").exists()
+    ]
+    if orphaned:
+        for aid, h in orphaned:
+            print(f"  ORPHANED ANCHOR  {aid}  chain expects r/{h[:24]}.md — file is GONE")
+        raise SystemExit(
+            f"REFUSING TO PUBLISH: {len(orphaned)} vote(s) have an on-chain rationale anchor whose "
+            f"published rationale is missing. Those votes would become unverifiable forever. "
+            f"Restore the files from git history before publishing.")
 
     (OUT / "index.json").write_text(json.dumps(index, indent=2) + "\n")
     (OUT / "actions.json").write_text(json.dumps({"generated_at": now, "items": items}, indent=2) + "\n")

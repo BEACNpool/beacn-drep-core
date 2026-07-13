@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Withdraw \u20b3220,914 for Dolos: Sustaining a Lightweight Cardano Data Node",
-        "Recipient: ",
-        "Stated amount: 220.9k ADA",
-        "Deliverables: This treasury withdrawal funds Dolos: Sustaining a Lightweight Cardano Data Node which will provide the following services: This request for support focuses on Dolos https://dolos.txpipe.io/ a lightweight Cardano data node, designed as a backend for dApps., It is fine-tuned to solve a very narrow scope: keeping an updated copy of the ledger and replying to queries from trusted clients., Unlike a full Cardano node, Dolos is optimized for minimal resource usage while maintaining high data integrity and responsiveness., As an open-source project, Dolos has been steadily growing in adoption, with 366 commits, 367 pull requests, and contributions from 21 developers.",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal funds Dolos: Sustaining a Lightweight Cardano Data Node which will provide the following services: This request for support focuses on Dolos https://dolos.txpipe.io/ a lightweight Cardano data node, designed as a backend for dApps.",
-        "Claim (economic, independently_verifiable, low materiality): It is fine-tuned to solve a very narrow scope: keeping an updated copy of the ledger and replying to queries from trusted clients.",
-        "Claim (technical, independently_verifiable, low materiality): Unlike a full Cardano node, Dolos is optimized for minimal resource usage while maintaining high data integrity and responsiveness.",
-        "Claim (economic, independently_verifiable, low materiality): As an open-source project, Dolos has been steadily growing in adoption, with 366 commits, 367 pull requests, and contributions from 21 developers.",
-        "Claim (technical, independently_verifiable, low materiality): This proposal aims to solve the following problem: Dolos is a specialized Cardano data node designed to maintain an updated copy of the ledger and respond efficiently to queries.",
-        "Claim (technical, independently_verifiable, low materiality): Optimized for data integrity and speed, it provides developers with reliable blockchain data access while requiring a fraction of the resources of a full node."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Dolos: Sustaining a Lightweight Cardano Data Node which will provide the following services: This request for support focuses on Dolos https://dolos.txpipe.io/ a lightweight Cardano data node, designed as a backend for dApps.\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 220.9k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

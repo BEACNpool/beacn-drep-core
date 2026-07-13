@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "ee28378e001eb94c7f9c04f18e191a3e6983fe9338d3dca4f9887ab990317825",
-    "snapshot_bundle_hash": "437be606b0fb1d0c99e686e738e0ac67957119512fda48995fba98eb6a306e45",
+    "snapshot_bundle_hash": "91f64dd718eb3fc797be9c3978703f00ade348c228d4f36465670f5065568f7d",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/60ed6ab43c840ff888a8af30a1ed27b41e9f4a91a89822b2b63d1bfc52aeec45#0-ee28378e001e.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Amaru Treasury Withdrawal 2025",
-            "Recipient: ",
-            "Stated amount: 1.50M ADA",
-            "Deliverables: Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano., It aims to improve the network's overall accessibility and robustness without compromising its safety and security., This treasury withdrawal of \u20b31.5M follows a previously submitted and now approved budget proposal., It is split across five script addresses each covering a scope of a work (ledger, consensus, mercenaries and marketing) and a contingency reserve.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, low materiality): Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.",
-            "Claim (economic, independently_verifiable, high materiality): It aims to improve the network's overall accessibility and robustness without compromising its safety and security.",
-            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal of \u20b31.5M follows a previously submitted and now approved budget proposal.",
-            "Claim (economic, independently_verifiable, low materiality): It is split across five script addresses each covering a scope of a work (ledger, consensus, mercenaries and marketing) and a contingency reserve.",
-            "Claim (economic, independently_verifiable, low materiality): Who we are Amaru is a multi-entity effort that currently sits under PRAGMA: a member-based, not-for-profit association for open-source blockchain software projects.",
-            "Claim (economic, independently_verifiable, low materiality): Five members with equal power currently drive PRAGMA's strategy and operations: Blink Labs, Cardano Foundation, dcSpark, Sundae Labs, and TxPipe."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -329,7 +320,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -439,10 +430,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 1651,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

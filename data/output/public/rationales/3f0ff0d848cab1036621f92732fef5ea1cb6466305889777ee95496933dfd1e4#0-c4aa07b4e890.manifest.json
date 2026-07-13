@@ -34,7 +34,7 @@
   "action_type": "TreasuryWithdrawals",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -164,13 +164,13 @@
       "kind": "directory",
       "path": "data/input/governance/decision_support/dossiers",
       "files_count": 92,
-      "dir_hash": "f4677453c6d8dcd16282ef7d5b74797b1c94b8312b717ea623dc6fd7c538477d"
+      "dir_hash": "4ba65d90778284e04352bb82e140958bb49e880f436d22bd319e7e933b6db7d7"
     },
     {
       "resource_id": "ecosystem_value_profiles",
       "kind": "file",
       "path": "data/input/governance/decision_support/ecosystem_value_profiles.csv",
-      "file_hash": "a48422c794220c569f00a9bb78c226938b1e54b49e55dc88bae109d74224436b"
+      "file_hash": "08c1c8cdc2c58a79f26f83678f55c7901f485c4e22ea47f2a9c3b1feacf1b72b"
     },
     {
       "resource_id": "treasury_policy_state",
@@ -197,13 +197,13 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "a0b1387b4bc0fabcd31beb7bc16c7adffa0e9a073ec7ce6d5221d14fb647fd07",
+  "snapshot_bundle_hash": "facf2a06bdec0bac09b2f3fdf872a909e3c1e8cbca921d549d5b812d1e799d10",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "3f0ff0d848cab1036621f92732fef5ea1cb6466305889777ee95496933dfd1e4#0",
         "anchor_read": true,
@@ -214,9 +214,9 @@
         "file_path": "data/input/governance/anchors/gov_action18u8lpkzge2csxe3plynn9lh4agwtv3nrqkyfwalwj4ykjv7l68jqqzmul9z-20260615T152522Z.bin",
         "content_chars": 34712
       },
-      "claim_count": 8,
-      "prompt_sha256": "03a0ed8dec7d8a9d8487eb25883d6411a357c90af694a310ee1870c2ccd14253",
-      "output_sha256": "31ed0748dd0602d0a62a3d425e4c3eae7b15c20c1d722636de3e931db4930b1f"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -227,24 +227,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "a8b15dad01f11402535f79a6331a1f1cbeec77a5b9a2b4224a17831cee01dd40",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "7f8a6b42778c09476f677c5a171fee97a6d48562c78f261ab9763d1529289ab6",
-      "output_sha256": "80b06358d5ceaf3b99a1481e806db44803ec83332eec850b9e576a14f302f1d7"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

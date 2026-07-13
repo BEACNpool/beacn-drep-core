@@ -23,26 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, improvements, infrastructure, support, administration, and audit/oversight activity.",
-        "Recipient: Tastenkunst GmbH, Eternl",
-        "Stated amount: 2350000",
-        "Deliverables: Frontend maintenance and cross-platform development for browser extension, web/PWA, iOS, Android, and beta channels, Backend infrastructure and operations including multi-region servers, Cardano nodes, DBSync/indexers, application services, metadata aggregation, and monitoring, User support through Discord ticketing, Telegram, project support channels, wiki maintenance, and educational videos, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and proposal creation, Eternl Core rewrite, Eternl Hub, enhanced hardware wallet support, enhanced wallet data export, and continued protocol/CIP compatibility work, Independent audits of treasury fund use in February 2027 and August 2027 plus public oversight metrics",
-        "Deadline/expiry: 12-month delivery period from August 2026 to July 2027",
-        "Claim (adoption, proposer_asserted, high materiality): Eternl is a non-custodial Cardano light wallet for web, browser extension, Android, and iOS used for payments, staking, governance, and DApp interaction.",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal asks for \u20b32,350,000 at about $0.1787 per Ada to cover approximately $420,000 of annual operating costs for 12 months.",
-        "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
-        "Claim (economic, proposer_asserted, high materiality): Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
-        "Claim (adoption, proposer_asserted, high materiality): Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs, and about 5,500 Pro users at $96 per year would cover the $420,000 annual cost."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: Eternl is a non-custodial Cardano light wallet for web, browser extension, Android, and iOS used for payments, staking, governance, and DApp interaction.",
-        "Independent evidence for: Eternl will convert up to $420,000 worth of Ada into stablecoins in a public company wallet and return any Ada above that amount to the treasury.",
-        "Independent evidence for: Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs, and about 5,500 Pro users at $96 per year would cover the $420,000 annual cost.",
-        "Independent evidence for: Independent audits by a party unaffiliated with Tastenkunst GmbH or the Eternl team are planned for February 2027 and August 2027 to review fund receipt, custody, conversion, spending, balances, Pro income relevant to repayment, and refunds or repayments."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -88,8 +75,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal asks for \u20b32,350,000 at about $0.1787 per Ada to cover approximately $420,000 of annual operating costs for 12 months.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"Eternl is a non-custodial Cardano light wallet for web, browser extension, Android, and iOS used for payments, staking, governance, and DApp interaction.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 2.35M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

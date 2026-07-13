@@ -1,14 +1,10 @@
 # Rationale: 0b19476e40bbbb5e1e8ce153523762e2b6859e7ecacbaf06eae0ee6a447e79b9#0
 Recommendation: **ABSTAIN**
-Score: `0.0` (raw `-0.07` + doctrine-LLM nudge `+0.02`) | Confidence: `0.6` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+Score: `0.0` (raw `-0.07` + doctrine-LLM nudge `+0.0`) | Confidence: `0.45` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on Hard Fork to Protocol Version 10 ("Plomin" Hard Fork). This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a HardForkInitiation. The cached anchor describes the request as: Hard Fork to Protocol Version 10 ("Plomin" Hard Fork). The strongest grounded claim is: We propose to upgrade Cardano mainnet to Protocol Version 10.
-
-Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Hard Fork to Protocol Version 10 ("Plomin" Hard Fork)" (HardForkInitiation). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Hard Fork to Protocol Version 10 ("Plomin" Hard Fork)
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: We propose to upgrade Cardano mainnet to Protocol Version 10., This upgrade will be achieved via a Hard Fork (called "Plomin")., The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2., All 7 governance actions that are described in CIP-1694 will be enabled; 3.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, independently_verifiable, low materiality): We propose to upgrade Cardano mainnet to Protocol Version 10.
-- finding: Claim (technical, independently_verifiable, high materiality): This upgrade will be achieved via a Hard Fork (called "Plomin").
-- finding: Claim (technical, independently_verifiable, low materiality): The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2.
-- finding: Claim (technical, independently_verifiable, medium materiality): All 7 governance actions that are described in CIP-1694 will be enabled; 3.
-- finding: Claim (technical, independently_verifiable, medium materiality): Protocol Version 10 enables the remainder of the CIP-1694 functionality, ensuring that DReps can participate in voting on all governance actions.
-- finding: Claim (technical, independently_verifiable, high materiality): It enables treasury withdrawals, the ability to record a new constitution, updates to the constitutional committee, and votes of no confidence.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "We propose to upgrade Cardano mainnet to Protocol Version 10." and clears the evidence gates.
+- finding: Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -77,11 +64,11 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 - Intake: Action type: HardForkInitiation
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "We propose to upgrade Cardano mainnet to Protocol Version 10." and clears the evidence gates.
+- Counterargument pass: Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+- No additional inference.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,19 +78,21 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 ## Uncertainty
 - No DRep distribution available.
 - Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `419fa440a9e1417bb1cec1c58b1ce940a8efa980c538c566d2aca9e59f966e06`
-- snapshot_bundle_hash: `ca2fb0551a59056b897600ea35df7228a3e57c4fa916d9b3caf3f94cb5da0a3b`
+- snapshot_bundle_hash: `bc774c3fa09132549441af0e1d93e4b0470f5361bbf7a7774173f2020ff55e10`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `13`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1656`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.47, "NO": 0.265, "YES": 0.265}`
+- decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`
 

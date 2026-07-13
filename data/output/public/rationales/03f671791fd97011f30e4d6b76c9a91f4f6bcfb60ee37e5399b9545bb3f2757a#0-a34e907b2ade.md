@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Loan ₳5,000,000 to Expand Cardano's Global Listings. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Loan ₳5,000,000 to Expand Cardano's Global Listings. It asks the treasury for 5.00M ADA. The strongest grounded claim is: This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Loan ₳5,000,000 to Expand Cardano's Global Listings" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 5.00M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Loan ₳5,000,000 to Expand Cardano's Global Listings
-- finding: Recipient: 
-- finding: Stated amount: 5.00M ADA
-- finding: Deliverables: This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms., This proposal is the first-ever loan-based treasury withdrawal in Cardano governance, introducing a new model of accountability where funds are not given as grants but repaid with interest., As part of the governance process, a Board of Advisors will be appointed to ensure transparent execution and maximize ecosystem alignment., This board will include high-profile industry veterans like Tal Cohen (former CEO of Kraken), Phillip Pon (CEO of Emurgo), Fahmi Syed (President of Midnight Foundation), and Frederik Gregaard (CEO of Cardano Foundation), with additional top-tier names to be...
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, high materiality): This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms.
-- finding: Claim (economic, independently_verifiable, high materiality): This proposal is the first-ever loan-based treasury withdrawal in Cardano governance, introducing a new model of accountability where funds are not given as grants but repaid with interest.
-- finding: Claim (economic, independently_verifiable, medium materiality): As part of the governance process, a Board of Advisors will be appointed to ensure transparent execution and maximize ecosystem alignment.
-- finding: Claim (economic, independently_verifiable, low materiality): This board will include high-profile industry veterans like Tal Cohen (former CEO of Kraken), Phillip Pon (CEO of Emurgo), Fahmi Syed (President of Midnight Foundation), and Frederik Gregaard (CEO of Cardano Foundation), with additional top-tier names to be...
-- finding: Claim (economic, independently_verifiable, low materiality): Who we are Snek Foundation is a grassroots organization responsible for launching and maintaining the SNEK ecosystem.
-- finding: Claim (economic, independently_verifiable, high materiality): Snek has never raised external funds for exchange listings and has operated for the past 31 months, entirely self-funded through its revenue and treasury.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 5.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 5.00M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This proposal seeks a 5,000,000 ada budget loan from the Cardano Treasury to fund the Cardano Global Listing Expansion, a strategic initiative led by the Snek Foundation to list SNEK on top-tier centralized exchanges, retail brokers, and trading platforms." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 5.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `a34e907b2ade4350e920f232282762f784833a2e79795c59f1d2ab5bc5f90384`
-- snapshot_bundle_hash: `25a715361fd27901a6c3d85b07a339a15a5f96b550d0d4b927cec0c308c73e25`
+- snapshot_bundle_hash: `a92483d6f5a02155cc32a91883146594c9e4e67861e58af3574a630ceb3df83d`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `7`
+- snapshot_age_seconds: `1628`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

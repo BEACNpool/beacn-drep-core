@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "21b8c71fadc0630da95bb31faaf6912462568cf3e7ae9f66d7e503da867d40aa",
-    "snapshot_bundle_hash": "536d3130cd7e5139497c5554193fb10852c2de65658b22aa2c7d08b0940ce670",
+    "snapshot_bundle_hash": "e04fff9ba364a27d39cd2f3e4250285f55137de0ac33e240314ab3dc96fdafb4",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#30-21b8c71fadc0.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 3.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Withdraw \u20b33,000,000 for High-yield RWA Asset for Cardano: Tokenized Real Estate",
-            "Recipient: ",
-            "Stated amount: 3.00M ADA",
-            "Deliverables: This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si..., By leveraging blockchain technology, our platform enables homeowners to sell fractional ownership of their home equity, instantly accessing liquidity while allowing investors to gain exposure to real estate appreciation., We have already prototyped and deployed this model on a private Ethereum blockchain, securing $20 million in Total Value Locked (TVL)., With this proposal, we aim to transition HausCoin and the liquidity protocol to Cardano, leveraging its secure, scalable, and cost-effective infrastructure to power a decentralized marketplace for home equity trading.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...",
-            "Claim (economic, independently_verifiable, low materiality): By leveraging blockchain technology, our platform enables homeowners to sell fractional ownership of their home equity, instantly accessing liquidity while allowing investors to gain exposure to real estate appreciation.",
-            "Claim (economic, independently_verifiable, low materiality): We have already prototyped and deployed this model on a private Ethereum blockchain, securing $20 million in Total Value Locked (TVL).",
-            "Claim (technical, independently_verifiable, low materiality): With this proposal, we aim to transition HausCoin and the liquidity protocol to Cardano, leveraging its secure, scalable, and cost-effective infrastructure to power a decentralized marketplace for home equity trading.",
-            "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Many homeowners are asset-rich but cash-poor, lacking access to liquidity tied up in their homes.",
-            "Claim (economic, independently_verifiable, low materiality): At the same time, investors struggle to find stable, appreciating, asset-backed alternatives to traditional stablecoins or volatile crypto assets."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 3.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 9,
+    "snapshot_age_seconds": 1638,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

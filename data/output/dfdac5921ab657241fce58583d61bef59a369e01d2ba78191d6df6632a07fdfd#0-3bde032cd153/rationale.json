@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.0,
   "raw_score": 0.03,
-  "llm_score_adjustment": 0.02,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "YES",
-    "score_adjustment": 0.02,
-    "confidence": 0.85,
-    "rationale": "Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -28,7 +19,7 @@
   ],
   "doctrine_hash": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a",
   "directional_threshold": 0.12,
-  "confidence": 0.6,
+  "confidence": 0.45,
   "readiness_score": 0.0,
   "treasury_dimensions": null,
   "treasury_merit_recommendation": null,
@@ -39,12 +30,11 @@
     "Intake: Action type: ParameterChange",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -53,16 +43,18 @@
   ],
   "uncertainty": [
     "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
+    "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
     "Risk review status is thin."
   ],
   "missing_evidence": [],
   "input_hash": "3bde032cd153db140b43d07de349b776ee7150068b5807e368bf95e8df446ed3",
-  "snapshot_bundle_hash": "a2d5571e73da69ab406353bf8ce46d003ba4997737a6cd3cb3b6ea6d993f3485",
+  "snapshot_bundle_hash": "5e8a2bb5ccabf2377efd472fd2a332282b518caf63724353ce9170f678cc0186",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -76,18 +68,18 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 6,
+    "snapshot_age_seconds": 1621,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.265,
-    "NO": 0.265,
-    "ABSTAIN": 0.47
+    "YES": 0.2838,
+    "NO": 0.2838,
+    "ABSTAIN": 0.4325
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "LOW",
   "evidence_depth_score": 3,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
@@ -114,25 +106,17 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards., The Constitutional Committee is designed to operate with seven members., However, maintaining a minimum size of seven creates operational fragility, as a single resignation or temporary unavailability can prevent the Committee from functioning., Reducing the minimum size to five provides an operational buffer, allowing the Committee to continue operating as intended and reducing the risk of governance inoperability.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, supported_in_proposal, high materiality): Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.",
-          "Claim (technical, supported_in_proposal, high materiality): The Constitutional Committee is designed to operate with seven members.",
-          "Claim (technical, supported_in_proposal, high materiality): However, maintaining a minimum size of seven creates operational fragility, as a single resignation or temporary unavailability can prevent the Committee from functioning.",
-          "Claim (technical, supported_in_proposal, high materiality): Reducing the minimum size to five provides an operational buffer, allowing the Committee to continue operating as intended and reducing the risk of governance inoperability.",
-          "Claim (technical, supported_in_proposal, high materiality): Based on the analysis conducted by the Intersect Parameter Committee, reducing the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 is considered both useful and safe for the following reasons.",
-          "Claim (technical, supported_in_proposal, high materiality): Operational resilience A minimum size of five provides an appropriate safety margin for a committee designed to have seven members."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
-        "missing": [],
+        "missing": [
+          "No structured claim/evidence extraction from the proposal document."
+        ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
       {
@@ -160,7 +144,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+          "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
           "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
@@ -204,14 +188,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a ParameterChange. The cached anchor describes the request as: Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5. The strongest grounded claim is: Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\n\nReason code: MISSING_PROTOCOL_READINESS_EVIDENCE.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5\" (ParameterChange). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "dfdac5921ab657241fce58583d61bef59a369e01d2ba78191d6df6632a07fdfd#0",
         "anchor_read": true,
@@ -222,9 +206,9 @@
         "file_path": "data/input/governance/anchors/gov_action1mldvtys6ketjg87wtpvr6cd77kdrd8sp62a8sxgadhmxx2s8lh7sqp2qedq-20260326T175206Z.bin",
         "content_chars": 5115
       },
-      "claim_count": 8,
-      "prompt_sha256": "57ba7aafbaf5698adbb05cfed787d1bccfdc80b016a346c4f80329d469ef1eda",
-      "output_sha256": "7752819f6c9a4061f0c12ed9dd42022fd3a052fc04eba8d96b216062ac238682"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "parameter",
@@ -235,24 +219,24 @@
       "sha256": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "YES",
-      "score_adjustment": 0.02,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "c026b95bc3b403254ec118f40dce2bc92387dda5dc4f59e4bb22f397f219d516",
-      "output_sha256": "3fd4149c66b779debd2f5736834684c46454e55883d7028b8a19fd9ac9b0252f"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "2d8efe134ad53c1da9516baa5a07e7877d00cf2459cedfb674df9080b38c54d6",
-      "output_sha256": "5afe344289543072a78d15acc72d2ea4e0514851a4c2b0b60dd3a4c672a2517d"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

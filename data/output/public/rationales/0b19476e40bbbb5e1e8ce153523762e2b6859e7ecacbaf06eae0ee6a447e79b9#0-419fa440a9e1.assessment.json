@@ -20,25 +20,17 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork)",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: We propose to upgrade Cardano mainnet to Protocol Version 10., This upgrade will be achieved via a Hard Fork (called \"Plomin\")., The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2., All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, independently_verifiable, low materiality): We propose to upgrade Cardano mainnet to Protocol Version 10.",
-        "Claim (technical, independently_verifiable, high materiality): This upgrade will be achieved via a Hard Fork (called \"Plomin\").",
-        "Claim (technical, independently_verifiable, low materiality): The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2.",
-        "Claim (technical, independently_verifiable, medium materiality): All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
-        "Claim (technical, independently_verifiable, medium materiality): Protocol Version 10 enables the remainder of the CIP-1694 functionality, ensuring that DReps can participate in voting on all governance actions.",
-        "Claim (technical, independently_verifiable, high materiality): It enables treasury withdrawals, the ability to record a new constitution, updates to the constitutional committee, and votes of no confidence."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
-      "missing": [],
+      "missing": [
+        "No structured claim/evidence extraction from the proposal document."
+      ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
@@ -66,7 +58,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"We propose to upgrade Cardano mainnet to Protocol Version 10.\" and clears the evidence gates.",
+        "Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
         "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

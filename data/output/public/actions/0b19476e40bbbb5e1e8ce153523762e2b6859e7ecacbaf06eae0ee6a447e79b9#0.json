@@ -21,23 +21,23 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.0,
-    "confidence": 0.6,
+    "confidence": 0.45,
     "input_hash": "419fa440a9e1417bb1cec1c58b1ce940a8efa980c538c566d2aca9e59f966e06",
-    "snapshot_bundle_hash": "ca2fb0551a59056b897600ea35df7228a3e57c4fa916d9b3caf3f94cb5da0a3b",
+    "snapshot_bundle_hash": "bc774c3fa09132549441af0e1d93e4b0470f5361bbf7a7774173f2020ff55e10",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/0b19476e40bbbb5e1e8ce153523762e2b6859e7ecacbaf06eae0ee6a447e79b9#0-419fa440a9e1.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this HardForkInitiation (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"We propose to upgrade Cardano mainnet to Protocol Version 10.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 60.0%.",
-    "summary_raw": "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "summary": "Vote: ABSTAIN. For this HardForkInitiation (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 45.0%.",
+    "summary_raw": "No additional inference.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/0b19476e40bbbb5e1e8ce153523762e2b6859e7ecacbaf06eae0ee6a447e79b9#0-419fa440a9e1.md",
     "missing_evidence": [],
@@ -65,25 +65,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork)",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: We propose to upgrade Cardano mainnet to Protocol Version 10., This upgrade will be achieved via a Hard Fork (called \"Plomin\")., The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2., All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, low materiality): We propose to upgrade Cardano mainnet to Protocol Version 10.",
-            "Claim (technical, independently_verifiable, high materiality): This upgrade will be achieved via a Hard Fork (called \"Plomin\").",
-            "Claim (technical, independently_verifiable, low materiality): The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2.",
-            "Claim (technical, independently_verifiable, medium materiality): All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
-            "Claim (technical, independently_verifiable, medium materiality): Protocol Version 10 enables the remainder of the CIP-1694 functionality, ensuring that DReps can participate in voting on all governance actions.",
-            "Claim (technical, independently_verifiable, high materiality): It enables treasury withdrawals, the ability to record a new constitution, updates to the constitutional committee, and votes of no confidence."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -111,7 +103,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"We propose to upgrade Cardano mainnet to Protocol Version 10.\" and clears the evidence gates.",
+            "Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -199,7 +191,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -269,14 +261,14 @@
     "binding_score": 0.0,
     "raw_score": -0.07,
     "directional_threshold": 0.12,
-    "confidence": 0.6,
+    "confidence": 0.45,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 1656,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

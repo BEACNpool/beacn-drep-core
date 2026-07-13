@@ -1,14 +1,10 @@
 # Rationale: e9693ed6b6465b2b46daaf641486a12b4b2946081634b5967b9d98897b0598fa#0
 Recommendation: **ABSTAIN**
-Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.6275` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.0`) | Confidence: `0.4775` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on Cardano Budget Process Framework (facilitated by Intersect). This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a InfoAction. The cached anchor describes the request as: Cardano Budget Process Framework (facilitated by Intersect). The strongest grounded claim is: This Governance Information Action provides the formal description of the Intersect Budget Process Framework for the 2026 and future cycles, until modified, administered by Intersect.
-
-Reason code: RULE_THRESHOLD_UNMET.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Cardano Budget Process Framework (facilitated by Intersect)" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Cardano Budget Process Framework (facilitated by Intersect)
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: This Governance Information Action provides the formal description of the Intersect Budget Process Framework for the 2026 and future cycles, until modified, administered by Intersect., It outlines a structured, multi-step workflow used to collect, review, consolidate, and execute Treasury-funded activities, and records the improvements introduced for the 2026 budgeting year., The Cardano governance system can benefit from a consistent and transparent framework to manage Treasury budgeting., Publishing this information ensures that all governance participants—including proposers, DReps, operational teams, and the wider community—navigate from a shared, authoritative reference.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, high materiality): This Governance Information Action provides the formal description of the Intersect Budget Process Framework for the 2026 and future cycles, until modified, administered by Intersect.
-- finding: Claim (economic, supported_in_proposal, high materiality): It outlines a structured, multi-step workflow used to collect, review, consolidate, and execute Treasury-funded activities, and records the improvements introduced for the 2026 budgeting year.
-- finding: Claim (economic, supported_in_proposal, high materiality): The Cardano governance system can benefit from a consistent and transparent framework to manage Treasury budgeting.
-- finding: Claim (governance, supported_in_proposal, medium materiality): Publishing this information ensures that all governance participants—including proposers, DReps, operational teams, and the wider community—navigate from a shared, authoritative reference.
-- finding: Claim (economic, independently_verifiable, high materiality): Recording the framework on-chain increases predictability, reduces procedural ambiguity, and supports accountability in the execution of Treasury-funded activities.
-- finding: Claim (economic, supported_in_proposal, high materiality): The 2026 Budget Process Framework formalizes improvements made following the 2025 DRep-led process and aligns the budget workflow with constitutional requirements.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This Governance Information Action provides the formal description of the Intersect Budget Process Framework for the 2026 and future cycles, until modified, administered by Intersect." and clears the evidence gates.
+- finding: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -76,12 +63,11 @@ Reason code: RULE_THRESHOLD_UNMET.
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This Governance Information Action provides the formal description of the Intersect Budget Process Framework for the 2026 and future cycles, until modified, administered by Intersect." and clears the evidence gates.
+- Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Advisory model lean was +0.030 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -90,19 +76,21 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `72745e9d0aff5df06215ff8a6404f735f7111c593559627632ecec616e3c3f8e`
-- snapshot_bundle_hash: `6bef4f885c0e3b6664c25d1720405db24df69fa31f52b4f8ac456ec67651fdb9`
+- snapshot_bundle_hash: `98805eeccf29644e6d0fcdc6f4c458a201f8e5b87a77c573d68e0a92b42d0c75`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `6`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1620`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4769, "NO": 0.1516, "YES": 0.3716}`
+- decision_probs: `{"ABSTAIN": 0.4394, "NO": 0.1703, "YES": 0.3903}`
 

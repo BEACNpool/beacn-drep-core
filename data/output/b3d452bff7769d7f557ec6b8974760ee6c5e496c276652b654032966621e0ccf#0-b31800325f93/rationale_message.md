@@ -1,11 +1,7 @@
 # Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex
-**BEACN DRep vote: NO**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: NO**  _(plain-language explanation — deterministic-template)_
 
-BEACN records NO on Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw treasury funds for “Bringing Real-World Payments to Cardano with Wirex.”. It asks the treasury for 3,961,538 ADA. The strongest grounded claim is: The proposal claims it will deliver full-stack, open-source payments infrastructure enabling onchain settlement, banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to onchain balances.
-
-A material claim remains proposer-asserted or thinly supported: The proposal says Cardano lacks seamless infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.
+BEACN's autonomous DRep recorded NO on "Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex" (TreasuryWithdrawals). The action requests 3.96M ADA from the treasury. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

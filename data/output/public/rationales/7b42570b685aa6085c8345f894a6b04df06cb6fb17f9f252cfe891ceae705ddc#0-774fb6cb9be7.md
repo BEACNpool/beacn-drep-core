@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Revised Cardano Summit 2026 Singapore. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Revised Cardano Summit 2026 Singapore. It asks the treasury for 7.80M ADA. The strongest grounded claim is: Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal.
-
-A material claim remains proposer-asserted or thinly supported: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Revised Cardano Summit 2026 Singapore" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 7.80M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: This is a revise
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Revised Cardano Summit 2026 Singapore
-- finding: Recipient: not stated in document
-- finding: Stated amount: 7.80M ADA
-- finding: Deliverables: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore., Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal., Budget is reduced by 22% or $550,000 while retaining the tier-one experience to showcase a L1 blockchain like Cardano, achieved through reduction from three stages to two which lowers production, tech and onsite logistics costs., Increased the CF’s estimated internal resource contributions to $380,000 from $250,000 to reduce external vendor costs.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, proposer_asserted, high materiality): This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore.
-- finding: Claim (economic, supported_in_proposal, medium materiality): Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal.
-- finding: Claim (economic, supported_in_proposal, high materiality): Budget is reduced by 22% or $550,000 while retaining the tier-one experience to showcase a L1 blockchain like Cardano, achieved through reduction from three stages to two which lowers production, tech and onsite logistics costs.
-- finding: Claim (economic, proposer_asserted, low materiality): Increased the CF’s estimated internal resource contributions to $380,000 from $250,000 to reduce external vendor costs.
-- finding: Claim (economic, supported_in_proposal, low materiality): Cardano Summit 2026 moves to Singapore because it aligns with the overall Cardano 2030 Vision and Strategy and fully supports it.
-- finding: Claim (economic, supported_in_proposal, low materiality): Cardano’s next phase of adoption must be shaped where enterprise, institutional, regulatory, and developer audiences already converge.
-- missing: Independent evidence for: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: This is a revise
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 7.80M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: This is a revise
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 7.80M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Following extensive discussions with the community the Foundation has revised the proposal as follows: This proposal is decoupled from EMURGO’s TOKEN2049 sponsorship proposal." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 7.80M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: This is a revise
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: This is a revised and 22% reduced budget treasury withdrawal proposal for the Cardano Summit 2026 in Singapore.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: This is a revise
 
 ## Reproducibility
 - input_hash: `774fb6cb9be75e6f7c2f9dc9f1dbcbd43ffd7a3fb70bb25cf9c0129b96da6da3`
-- snapshot_bundle_hash: `c22b8211770a21cfcb44d925114209950a1ec3e2a1d3b562d5d131e6c08f3cf7`
+- snapshot_bundle_hash: `556d759ccb852627199cc2ec00f14990c3c7a0262012ba52cdd99a4ccf8242fe`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `1613`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

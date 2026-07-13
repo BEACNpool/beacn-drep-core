@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Withdraw \u20b3700,000 for ZK Bridge administered by Intersect",
-        "Recipient: ",
-        "Stated amount: 700.0k ADA",
-        "Deliverables: This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet., As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth..., We will provide a circuit that enables a relayer to generate the ZK proof that a locking transaction was successfully added to the chain, which can then be verified on the receiving blockchain., This way, any blockchain will be able to implement a ZK bridge with Cardano, leveraging its newly added capability to generate such proofs.",
-        "Deadline/expiry: not stated in document",
-        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet.",
-        "Claim (technical, independently_verifiable, medium materiality): As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth...",
-        "Claim (economic, independently_verifiable, low materiality): We will provide a circuit that enables a relayer to generate the ZK proof that a locking transaction was successfully added to the chain, which can then be verified on the receiving blockchain.",
-        "Claim (economic, independently_verifiable, low materiality): This way, any blockchain will be able to implement a ZK bridge with Cardano, leveraging its newly added capability to generate such proofs.",
-        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Cross-chain interoperability remains one of the most critical yet unresolved challenges for Cardano.",
-        "Claim (technical, independently_verifiable, low materiality): While the ecosystem is advancing in scalability through projects like Hydra and optimistic roll ups such as Midgard it still lacks a secure, trustless, and modular zk-based bridge infrastructure."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet.\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 700.0k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

@@ -23,21 +23,21 @@
     "score": -0.12,
     "confidence": 0.72,
     "input_hash": "39e5ebb444803279af6383dacf06e36b3a6920106e35b0e5174eb913988b4813",
-    "snapshot_bundle_hash": "3e1c835c817db8405ad5e29b838439dfb671dbbf4bb1b801227c7a125be07636",
+    "snapshot_bundle_hash": "be5719a7fd3a523db2dc2af85143a213738d3fa349ee2a41d01dae860a67945b",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0-39e5ebb44480.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/453009ff962ff545c91488cb.md",
-    "rationale_anchor_hash": "453009ff962ff545c91488cb517f40cb761f4ab414d8c40e04d8675b98565aad"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal states that launch liquidity will be treasury-supported and treasury-owned, and that profits, yield, and returns from the launch liquidity position will be returned to the Cardano Treasury quarterly.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.\" and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 72.0%.",
-    "summary_raw": "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: The claims show a large treasury request with meaningful technical and market risk, and although the proposal includes useful controls such as staging, reporting, audits, pause rules, and return mechanics, many high-materiality assertions about adoption demand, administrator execution, treasury returns, and Cardano's BTCfi gap are either proposer-asserted or only externally verifiable. Given the doctrine's priority for treasury stewardship and evidence quality, a small cautionary negative nudge is justified without overriding the deterministic ready status.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the 10.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 72.0%.",
+    "summary_raw": "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide sustainability path.",
-      "Provide cost-benefit clarity.",
-      "Provide independent assurance."
+      "Provide cost-benefit clarity."
     ],
     "markdown_path": "/data/output/public/rationales/0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0-39e5ebb44480.md",
     "missing_evidence": [],
@@ -68,24 +68,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Treasury withdrawal to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms.",
-            "Recipient: Intersect is proposed as interim fund administrator, subject to confirmation and final agreement; Sundial and Charms are the delivery collaborators.",
-            "Stated amount: 10000000",
-            "Deliverables: Shared BTC reserve architecture with transparent safety mechanisms, Composable FIRE and ICE Cardano-native assets, Open-source SDKs and adapters for wallets, DEXs, and DeFi protocols, Always-on public dashboards for reserve ratio, supply, liquidity health, fee flows, and deployment status, Monthly governance reports and reporting standards, Independent security review, audit, and economic modeling, Staged launch liquidity for FIRE and ICE, Legal/compliance work, disclosures, treasury reporting, risk documentation, and launch-readiness review, Ecosystem education, DRep communications, partner activation, and launch coordination",
-            "Deadline/expiry: Three-month staged liquidity deployment after enactment with monthly reporting; exact full delivery deadline not stated in document",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.",
-            "Claim (economic, supported_in_proposal, high materiality): Pool 1 is intended for protocol infrastructure and staged launch liquidity, kept separate from operating spend, deployed over three monthly tranches of about USD 250,000, USD 250,000, and USD 500,000.",
-            "Claim (economic, supported_in_proposal, high materiality): Pool 2 is intended for delivery, audit, integrations, dashboards, governance reporting, legal/compliance work, and go-to-market execution, with itemized planning allocations totaling about USD 1.0 million.",
-            "Claim (technical, supported_in_proposal, high materiality): Alchemy will create a shared BTC reserve architecture where FIRE and ICE are backed by the same BTC reserve, with reserve-ratio formulas, a 5.0x initial target reserve ratio, and safety zones above 4.0x, between 2.0x and 4.0x, and below 2.0x.",
-            "Claim (technical, supported_in_proposal, high materiality): FIRE is described as a volatility-absorbing residual BTC-backed claim with amplified BTC exposure and first-loss downside, while ICE is described as a lower-volatility USD-denominated BTC-backed asset with growth potential.",
-            "Claim (economic, proposer_asserted, high materiality): The proposal states that launch liquidity will be treasury-supported and treasury-owned, and that profits, yield, and returns from the launch liquidity position will be returned to the Cardano Treasury quarterly."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: The proposal states that launch liquidity will be treasury-supported and treasury-owned, and that profits, yield, and returns from the launch liquidity position will be returned to the Cardano Treasury quarterly.",
-            "Independent evidence for: The proposal says Cardano lacks a serious production BTCfi infrastructure layer today and risks Bitcoin-backed structured exposure consolidating on Ethereum, BNB, Solana, and off-chain markets if Alchemy is not funded."
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -131,8 +120,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that launch liquidity will be treasury-supported and treasury-owned, and that profits, yield, and returns from the launch liquidity position will be returned to the Cardano Treasury quarterly.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 10.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -314,7 +303,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -424,10 +413,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 1599,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

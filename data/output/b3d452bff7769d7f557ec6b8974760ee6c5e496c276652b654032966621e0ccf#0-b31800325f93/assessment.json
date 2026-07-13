@@ -23,26 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Withdraw treasury funds for \u201cBringing Real-World Payments to Cardano with Wirex.\u201d",
-        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor",
-        "Stated amount: 3,961,538",
-        "Deliverables: Full-stack open-source payments infrastructure for Cardano, Onchain settlement through smart contracts, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, Stablecoin-backed banking rails and compliance architecture, Wallet and API ecosystem layer, Milestone-based disbursement controls through Intersect treasury smart contracts",
-        "Deadline/expiry: not stated in document",
-        "Claim (adoption, proposer_asserted, high materiality): The proposal says Cardano lacks seamless infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal claims it will deliver full-stack, open-source payments infrastructure enabling onchain settlement, banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to onchain balances.",
-        "Claim (adoption, proposer_asserted, high materiality): Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
-        "Claim (adoption, proposer_asserted, high materiality): The proposal claims the work will increase Cardano utility through new transaction volume, user growth, institutional participation, and real-world economic activity onchain.",
-        "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and links to voting, audit, and results references.",
-        "Claim (governance, independently_verifiable, high materiality): The proposal states the requested amount does not, at submission, breach the applicable 350M ada Net Change Limit for Epoch 613 to Epoch 713 and links to the relevant governance action."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The proposal says Cardano lacks seamless infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
-        "Independent evidence for: Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
-        "Independent evidence for: The proposal claims the work will increase Cardano utility through new transaction volume, user growth, institutional participation, and real-world economic activity onchain.",
-        "Independent evidence for: The proposal states Wirex has not received ada from the Cardano Treasury within the last 24 months."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -90,8 +77,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal claims it will deliver full-stack, open-source payments infrastructure enabling onchain settlement, banking rails, stablecoin systems, wallet interfaces, and Visa card issuance linked to onchain balances.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Cardano lacks seamless infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 3.96M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

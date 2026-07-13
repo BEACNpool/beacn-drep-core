@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "abe4aa9264aacd9c611b36cedd30bba3493c34ad92e345da3860aa2b88e60c80",
-    "snapshot_bundle_hash": "061ecf06e24ef474390b885f77625ec5a6a8e6f84f8549a38bb6d771990511dd",
+    "snapshot_bundle_hash": "b4540bbb3eddaa99c22cc46f9c0ae3162f9bd8e6d27fd2e9135dd4ee388ed0ab",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/e0900fddf52f1f2f6439fa8a3aaa8c224ab59b6074d0e2db3b27c8f06b0e5d33#0-abe4aa9264aa.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 8.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Scalus: Cardano\u2019s Application Platform for Building, Launching, and Scaling",
-            "Recipient: not stated in document",
-            "Stated amount: 8.50M ADA",
-            "Deliverables: Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning., But the next bottleneck is no longer core infrastructure, it is application delivery., Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling., It lacks an integrated application platform that has it all and just works.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, proposer_asserted, low materiality): Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning.",
-            "Claim (technical, proposer_asserted, low materiality): But the next bottleneck is no longer core infrastructure, it is application delivery.",
-            "Claim (economic, supported_in_proposal, low materiality): Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.",
-            "Claim (economic, proposer_asserted, low materiality): It lacks an integrated application platform that has it all and just works.",
-            "Claim (technical, proposer_asserted, low materiality): The Application Layer Decides the Next Chapter Cardano has shipped the protocol foundations.",
-            "Claim (economic, proposer_asserted, low materiality): The question is no longer \"can Cardano do X?\" but \"how fast can builders ship X?\"."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 8.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 1610,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

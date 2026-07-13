@@ -23,25 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Update Plutus Cost Models",
-        "Recipient: not stated in document",
-        "Stated amount: not stated in document",
-        "Deliverables: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus..., Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11., However, the changes for existing primitives will happen immediately on enactment of this governance action., This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, proposer_asserted, high materiality): Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
-        "Claim (technical, proposer_asserted, high materiality): Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
-        "Claim (technical, proposer_asserted, medium materiality): However, the changes for existing primitives will happen immediately on enactment of this governance action.",
-        "Claim (technical, supported_in_proposal, high materiality): This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.",
-        "Claim (technical, supported_in_proposal, high materiality): This proposal provides the necessary cost model settings so that these primitives can be used following the van Rossem hard fork.",
-        "Claim (technical, supported_in_proposal, low materiality): Second, the action also ensures that Plutus primitives previously limited to Plutus V3 are available in Plutus V1 and Plutus V2."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
-        "Independent evidence for: Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
-        "Independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -70,8 +58,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

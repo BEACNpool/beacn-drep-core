@@ -23,25 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols, including developer and agent-facing infrastructure.",
-        "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe.",
-        "Stated amount: 1684050",
-        "Deliverables: Open standardized interface across Cardano on-chain protocols, Documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from verified interface definitions, Agent-first documentation, Protocol skills packaging operations, MCP server for agents to discover and call published protocols, 12 additional protocol onboardings over 12 months, described as 3 per quarter, Shared infrastructure for all protocols on the Tx3 Protocol Registry",
-        "Deadline/expiry: 12 months",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
-        "Claim (technical, proposer_asserted, high materiality): The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.",
-        "Claim (technical, proposer_asserted, high materiality): The proposer says Cardano currently lacks a common interface mechanism across protocols, causing integrators to relearn protocols, rebuild understanding, and face higher integration costs.",
-        "Claim (technical, supported_in_proposal, high materiality): The proposer says Tx3 describes each protocol once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints.",
-        "Claim (adoption, independently_verifiable, high materiality): The document states that Catalyst Fund 14 has already put the Tx3 developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal commits to funding 12 additional protocol onboardings, at 3 per quarter, with full developer and agent coverage."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.",
-        "Independent evidence for: The proposer says Cardano currently lacks a common interface mechanism across protocols, causing integrators to relearn protocols, rebuild understanding, and face higher integration costs.",
-        "Independent evidence for: The proposer says the work aligns with Intersect Pillar 2 for Adoption and Utility through developer experience and open-source incentives."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -49,14 +37,14 @@
       "title": "Treasury analysis",
       "status": "complete",
       "findings": [
-        "Requested ADA: 0",
+        "Requested ADA: 1684050",
         "Budget granularity: confirmed",
         "Milestone payment gates: confirmed",
         "Clawback/refund path: unknown",
         "Cost/benefit clarity: unknown",
         "Recurring funding dependency: unknown",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.62"
+        "Financial confidence: 0.48"
       ],
       "missing": [
         "sustainability path",
@@ -88,8 +76,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 1.68M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

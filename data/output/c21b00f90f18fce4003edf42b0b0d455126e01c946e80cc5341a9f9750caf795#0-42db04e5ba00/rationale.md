@@ -1,14 +1,10 @@
 # Rationale: c21b00f90f18fce4003edf42b0b0d455126e01c946e80cc5341a9f9750caf795#0
 Recommendation: **ABSTAIN**
-Score: `0.0` (raw `0.06` + doctrine-LLM nudge `+0.02`) | Confidence: `0.57` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+Score: `0.0` (raw `0.06` + doctrine-LLM nudge `+0.0`) | Confidence: `0.42` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on Increase Transaction and Block Memory Units (Part 1 of 2). This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a ParameterChange. The cached anchor describes the request as: Increase Transaction and Block Memory Units (Part 1 of 2). The strongest grounded claim is: Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.
-
-Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Increase Transaction and Block Memory Units (Part 1 of 2)" (ParameterChange). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Increase Transaction and Block Memory Units (Part 1 of 2)
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: Intersect's Parameter Committee proposes the first of two Parameter Update governance actions., The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04., 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers., 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, independently_verifiable, high materiality): Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.
-- finding: Claim (technical, independently_verifiable, medium materiality): The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.
-- finding: Claim (technical, independently_verifiable, low materiality): 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers.
-- finding: Claim (technical, independently_verifiable, low materiality): 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.
-- finding: Claim (technical, independently_verifiable, medium materiality): Community members have expressed a desire to increase the Plutus script memory unit limits to simplify DApp development and enhance scalability - see PCP-003 and public survey results.
-- finding: Claim (technical, independently_verifiable, high materiality): Raising maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory] could significantly improve Plutus script throughput with minimal impact on block propagation or node performance, making it a low-risk and high-impact change.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Intersect's Parameter Committee proposes the first of two Parameter Update governance actions." and clears the evidence gates.
+- finding: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -77,12 +64,11 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 - Intake: Action type: ParameterChange
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Intersect's Parameter Committee proposes the first of two Parameter Update governance actions." and clears the evidence gates.
+- Counterargument pass: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,19 +77,21 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 
 ## Uncertainty
 - Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `42db04e5ba00ce569c1069d5fc9837445db5d21804d452e356350b82122eddb4`
-- snapshot_bundle_hash: `2bb860cedf1a6c15c4d5b43e1cc6c5c3ccd5f0b2d4ee6b27bc0398c982b99c89`
+- snapshot_bundle_hash: `7ea248cecd86daeeaa1da6c586b1acdfa8f4a4e2d05bd419d5c3836440e57594`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `6`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1623`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4625, "NO": 0.2688, "YES": 0.2688}`
+- decision_probs: `{"ABSTAIN": 0.425, "NO": 0.2875, "YES": 0.2875}`
 

@@ -1,14 +1,10 @@
 # Rationale: a633504ddc47a852c4ae033c750597d011a3daf00a0f6bbd48de4c52ef1022dc#0
 Recommendation: **ABSTAIN**
-Score: `-0.02` (raw `-0.02` + doctrine-LLM nudge `+0.03`) | Confidence: `0.575` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+Score: `-0.02` (raw `-0.02` + doctrine-LLM nudge `+0.0`) | Confidence: `0.425` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000). This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a InfoAction. The cached anchor describes the request as: DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000). The strongest grounded claim is: This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused.
-
-Reason code: RULE_THRESHOLD_UNMET.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000)" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000)
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused..., The requested budget is intended to: Bring the current Hydra spot DEX from beta to a production-ready venue for both API traders and everyday users; Scale the Hydra and data infrastructure so Cardano has at least one CEX-grade venue for ADA and key CNT pair..., Within the ₳1,500,000 total: 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and 20% is dedicated to the Vision 2030 KPI Measurement Programme : an initial "State of Cardano DeFi" baseline report , a public Vis..., Why this matters for Cardano, ADA and CNT holders Cardano currently lacks a low-latency order-book venue that can: Support API-driven trading, arbitrage and market-making at scale; Offer tight spreads and low slippage in key ADA–stable and ADA–CNT markets;...
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, independently_verifiable, high materiality): This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused...
-- finding: Claim (technical, independently_verifiable, high materiality): The requested budget is intended to: Bring the current Hydra spot DEX from beta to a production-ready venue for both API traders and everyday users; Scale the Hydra and data infrastructure so Cardano has at least one CEX-grade venue for ADA and key CNT pair...
-- finding: Claim (technical, independently_verifiable, high materiality): Within the ₳1,500,000 total: 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and 20% is dedicated to the Vision 2030 KPI Measurement Programme : an initial "State of Cardano DeFi" baseline report , a public Vis...
-- finding: Claim (economic, independently_verifiable, low materiality): Why this matters for Cardano, ADA and CNT holders Cardano currently lacks a low-latency order-book venue that can: Support API-driven trading, arbitrage and market-making at scale; Offer tight spreads and low slippage in key ADA–stable and ADA–CNT markets;...
-- finding: Claim (other, independently_verifiable, low materiality): Today, most Cardano trading happens on AMM-style DEXs.
-- finding: Claim (economic, independently_verifiable, low materiality): They are great for simple swaps, but they are not optimised for: Low-fee, low-slippage execution at size in core ADA and CNT pairs; Instant, predictable fills for API and bot-driven strategies; or Professional market-makers and arbitrageurs who expect CEX-l...
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused..." and clears the evidence gates.
+- finding: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -77,12 +64,11 @@ Reason code: RULE_THRESHOLD_UNMET.
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused..." and clears the evidence gates.
+- Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Advisory model lean was +0.030 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,19 +77,21 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `2a4f7314c196b77f72bd22ae26d5474aabf3e8ed1bdc8f71782a7be3e49cca94`
-- snapshot_bundle_hash: `e01eeb0e291412e634ed7790180a0e3ca8c74be594acd56794c515d30dd3331b`
+- snapshot_bundle_hash: `5822ce915613798b0abc042c7ab18740a121f7d6766521b3380ce6a7e8877292`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `6`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1624`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4637, "NO": 0.2881, "YES": 0.2481}`
+- decision_probs: `{"ABSTAIN": 0.4263, "NO": 0.3069, "YES": 0.2669}`
 

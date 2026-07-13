@@ -23,21 +23,21 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "eb3f853f589da8bdfba5a4df3474d1ea54597028513e9d4a030356945d5b2f3a",
-    "snapshot_bundle_hash": "f58a8db8138c8c4f86ec1ea35842c0245f98226f654def8e96177c141aa79957",
+    "snapshot_bundle_hash": "3200fb2a9b7a7a2df83a1a79d23c11b76f0a3d44b43e01827fa96aa6f205bd00",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/4f6e5df9a6e14bd49e406e2bbb0d108b3be2be64b9569b930053a0c1eebe0d47#0-eb3f853f589d.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (ratified), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal asks for \u20b35,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect providing administrative treasury governance.\" and clears the evidence gates. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (ratified), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 5.10M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
       "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide sustainability path."
+      "Provide No structured claim/evidence extraction from the proposal document."
     ],
     "markdown_path": "/data/output/public/rationales/4f6e5df9a6e14bd49e406e2bbb0d108b3be2be64b9569b930053a0c1eebe0d47#0-eb3f853f589d.md",
     "missing_evidence": [
@@ -71,26 +71,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Fund four Hydra v2 workstreams: performance optimization, operational excellence, ecosystem support, and developer experience to deliver a feature-complete and hardened Hydra v2.",
-            "Recipient: Input Output Global / Intersect administrative treasury governance",
-            "Stated amount: 5100781",
-            "Deliverables: Performance optimization targeting 2x to 10x improvements in snapshot signing and memory profile and reduced L1 fees through on-chain contract optimization., Operational excellence including operator runbooks, simpler node configuration, observability and logging, and an improved TUI., Ecosystem support including production-user and integrator requested features, Hydra Alliance facilitation, hackathons, and developer relations., Maintenance and developer experience work including CI, tooling, and technical debt reduction.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, proposer_asserted, high materiality): Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution that provides sub-second finality, near-zero fees, high parallel throughput, and L1-grade settlement.",
-            "Claim (governance, supported_in_proposal, high materiality): The proposal asks for \u20b35,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect providing administrative treasury governance.",
-            "Claim (adoption, proposer_asserted, high materiality): Hydra has powered or is powering applications including Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs applications, Blockfrost payments, and Midgard fast withdrawals.",
-            "Claim (technical, proposer_asserted, high materiality): The proposal claims Cardano L1 has over two hours of finality, about $0.17 per transaction, and roughly 7 to 10 TPS, while competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS.",
-            "Claim (technical, proposer_asserted, high materiality): The proposal claims a single Hydra Head processes up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly as independent Heads run in parallel.",
-            "Claim (technical, proposer_asserted, medium materiality): The proposal claims Hydra uses the same scripts, Plutus, and EUTXO model as Cardano so applications that run on Cardano can run in Hydra unchanged."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution that provides sub-second finality, near-zero fees, high parallel throughput, and L1-grade settlement.",
-            "Independent evidence for: Hydra has powered or is powering applications including Delta DeFi, Masumi, Hydra Doom, Glacier Drop, Intersect voting infrastructure, VTech Labs applications, Blockfrost payments, and Midgard fast withdrawals.",
-            "Independent evidence for: The proposal claims Cardano L1 has over two hours of finality, about $0.17 per transaction, and roughly 7 to 10 TPS, while competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS.",
-            "Independent evidence for: The proposal claims a single Hydra Head processes up to 1,000+ TPS in payment benchmarks and that aggregate throughput scales close to linearly as independent Heads run in parallel."
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -136,8 +123,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal asks for \u20b35,100,781 and says funding will be milestone-gated with independent third-party assurance and Intersect providing administrative treasury governance.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Hydra is described as the only production-grade Layer 2 on Cardano and a state-channel scaling solution that provides sub-second finality, near-zero fees, high parallel throughput, and L1-grade settlement.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 5.10M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -304,7 +291,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -414,10 +401,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 1607,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

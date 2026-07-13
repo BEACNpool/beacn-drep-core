@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Dingo: a Production-Grade Block Producer in Go by Blink Labs. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Dingo: a Production-Grade Block Producer in Go by Blink Labs. It asks the treasury for 6.90M ADA. The strongest grounded claim is: Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Dingo: a Production-Grade Block Producer in Go by Blink Labs" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 6.90M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Dingo: a Production-Grade Block Producer in Go by Blink Labs
-- finding: Recipient: 
-- finding: Stated amount: 6.90M ADA
-- finding: Deliverables: Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node., Dingo is a work in progress, and that's the whole point of this proposal., But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support., This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, independently_verifiable, high materiality): Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.
-- finding: Claim (economic, independently_verifiable, low materiality): Dingo is a work in progress, and that's the whole point of this proposal.
-- finding: Claim (technical, independently_verifiable, medium materiality): But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support.
-- finding: Claim (economic, independently_verifiable, high materiality): This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...
-- finding: Claim (economic, independently_verifiable, low materiality): Who We Are Blink Labs We're a small engineering company focused exclusively on blockchain software integrated with Cardano.
-- finding: Claim (technical, independently_verifiable, low materiality): We build in Go because it's the right language for high-performance networked systems, and because Cardano benefits from having core infrastructure that millions of developers can actually read and work on.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 6.90M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 6.90M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 6.90M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `076d018a14de0836b7500fad7985328f11d1e8b9d3032286e9e869e12d98e72f`
-- snapshot_bundle_hash: `d341bd60a7c1aa9884724de98f97b960d6464ab72fa5f7c5f875fd999113cdff`
+- snapshot_bundle_hash: `0ad7fbf90a62c8b0dc37ad12d8e6308e85b91ef9b8c890cba56cdc292526b097`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `6`
+- snapshot_age_seconds: `1619`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.12,
   "raw_score": -0.56,
-  "llm_score_adjustment": -0.02,
-  "llm_lean": {
-    "source": "precomputed",
-    "model": "claude-opus-4-8",
-    "direction": "ABSTAIN",
-    "score_adjustment": -0.02,
-    "confidence": 0.74,
-    "rationale": "The proposal has a detailed budget, milestones, oversight structure, and repayment design, but several high-materiality adoption and execution claims remain largely proposer-asserted in the extracted record, including existing mainnet status, contracted anchor deployment, projected transaction volume, and commercial revenue. Under BEACN's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge despite plausible public-benefit growth.",
-    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -54,11 +45,10 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 0",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the 4.97M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal has a detailed budget, milestones, oversight structure, and repayment design, but several high-materiality adoption and execution claims remain largely proposer-asserted in the extracted record, including existing mainnet status, contracted anchor deployment, projected transaction volume, and commercial revenue. Under BEACN's hierarchy, treasury stewardship and evidence quality justify a small cautionary nudge despite plausible public-benefit growth.",
     "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -71,18 +61,17 @@
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "Proposal requests over 50% of rolling available capacity.",
     "DRep ratification support is below threshold; this is not treated as active opposition.",
-    "Claims and evidence missing: Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
-    "Claims and evidence missing: Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Risk review missing: independent assurance",
     "Risk review missing: rollback/remedy path"
   ],
   "missing_evidence": [],
   "input_hash": "3378ad18766a5f2db035212e4e2b2ff462f385e1b9cbed99a495cea6198deeb5",
-  "snapshot_bundle_hash": "2015338535fddf38e8502e90e001a199f58d51aea274805333828a917d328692",
+  "snapshot_bundle_hash": "06125f329357fa78f398dad08ec8cb2d634583c0cf74279b9ef2225fd8ab5177",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -102,10 +91,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 1599,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,26 +132,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, security audit, and launch campaign.",
-          "Recipient: Anvil Development Agency, Inc. / Intersect as budget administrator via TRSC/PSSC framework",
-          "Stated amount: 4,969,231",
-          "Deliverables: Secondary marketplace with on-chain settlement, Smart-contract royalty enforcement, Per-event anti-scalping controls, Custodial wallet onboarding for Sellout users, Organizer dashboard and tools, Independent third-party smart-contract audit with published remediation, Public launch campaign and trade-show activations, Public metrics dashboard and governance reporting",
-          "Deadline/expiry: 8 months across five milestones",
-          "Claim (technical, proposer_asserted, high materiality): Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
-          "Claim (economic, proposer_asserted, medium materiality): Sellout has invested over $130,000 of its own capital into Phase 1.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.",
-          "Claim (technical, supported_in_proposal, high materiality): Phase 2 is planned to deliver a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent third-party audit, and launch amplification.",
-          "Claim (economic, supported_in_proposal, high materiality): The team commits to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism of 25% of fees until reimbursement, then 5% permanently.",
-          "Claim (adoption, proposer_asserted, high materiality): The proposal projects 12-month launch targets of 200+ events on-chain, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
-          "Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
-          "Independent evidence for: The proposal projects 12-month launch targets of 200+ events on-chain, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6,000,000+ ticket revenue on-chain, and 20,000+ new wallets.",
-          "Independent evidence for: The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment projected to move over $6 million through Cardano in Year 1."
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -206,8 +182,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the 4.97M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -264,13 +240,13 @@
     "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NO on Withdraw 4,969,231 ada for Cardano Enterprise Adoption: Ticketing Platform. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, security audit, and launch campaign. It asks the treasury for 4,969,231 ADA. The strongest grounded claim is: The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.\n\nA material claim remains proposer-asserted or thinly supported: Phase 1 of the ticketing platform is already live on Cardano mainnet and includes on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NO on \"Withdraw 4,969,231 ada for Cardano Enterprise Adoption: Ticketing Platform\" (TreasuryWithdrawals). The action requests 4.97M ADA from the treasury. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "precomputed",
-      "reason": null,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
@@ -282,9 +258,9 @@
         "file_path": "data/input/governance/anchors/gov_action1xk6yrz0tg72a2a63ytd99gapz46nlqlavckarleqt6nr8lyekd8qqp0ga3d-20260625T113100Z.bin",
         "content_chars": 27770
       },
-      "claim_count": 10,
+      "claim_count": 0,
       "prompt_sha256": null,
-      "output_sha256": "328db8627660e213f3198b9d489201715eeb89d87c4cd91ce30824160afa924c"
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -295,27 +271,25 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "precomputed",
-      "reason": null,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
-      "direction": "ABSTAIN",
-      "score_adjustment": -0.02,
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "06cf44cd566cb6209893864981572a6c1df36fc0bd217fa2dc7484ea84cc9c25"
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "e4bc8f4fb7c591fdeaa9fedaa5fea270670029edc17aeb8e134ef869f154e74f",
-      "output_sha256": "58a1c44e3ceba4ec77a5f75c5675c09f739c336f10ac232498218cac5e4ba89e"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/67081324757556c84ca4413a.md",
-  "rationale_anchor_hash": "67081324757556c84ca4413a678bb801902c17fab0440014bb5cf636def73fe4"
+  }
 }

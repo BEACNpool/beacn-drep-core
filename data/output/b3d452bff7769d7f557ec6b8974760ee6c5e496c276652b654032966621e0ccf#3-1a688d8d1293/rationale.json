@@ -3,23 +3,14 @@
   "action_type": "TreasuryWithdrawals",
   "recommendation": "NEEDS_MORE_INFO",
   "abstain_reason_code": null,
-  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
+  "needs_more_info_reason_code": "PORTFOLIO_CAPACITY_NOT_CLEARED",
   "operator_review_required": false,
   "operator_review_reason_code": null,
   "agentic_high_impact_reason_code": null,
-  "score": 0.2384,
+  "score": -0.08,
   "raw_score": -0.08,
-  "llm_score_adjustment": 0.02,
-  "llm_lean": {
-    "source": "precomputed",
-    "model": "claude-opus-4-8",
-    "direction": "YES",
-    "score_adjustment": 0.02,
-    "confidence": 0.74,
-    "rationale": "A small positive nudge is justified because the extracted claims show direct alignment with protocol safety and governance infrastructure, a clear work-package budget, public smart-contract custody details, prior-funding disclosure, and independently checkable process and NCL references. The adjustment remains small because several benefit claims and the Appold assurance arrangement are stated prospectively, and execution depends on the separate IntersectMBO budget approval.",
-    "doctrine_basis": "Constitutional integrity and protocol safety; treasury stewardship and downside protection; evidence quality and reproducibility",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -28,36 +19,33 @@
   ],
   "doctrine_hash": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a",
   "directional_threshold": 0.06,
-  "confidence": 0.7796,
+  "confidence": 0.74,
   "readiness_score": 0.85,
   "treasury_dimensions": {
     "evidence_status": "independently_verified",
     "benefit": 0.91,
-    "delivery_confidence": 0.9,
-    "cost_efficiency": 0.25,
-    "downside_risk": 0.3375,
-    "composite": 0.2384,
+    "delivery_confidence": 0.75,
+    "cost_efficiency": 0.45,
+    "downside_risk": 0.35,
+    "composite": 0.239,
     "affirmative_waste_evidence": [],
-    "missing": [
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ]
+    "missing": []
   },
-  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
-  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "treasury_merit_recommendation": "YES",
+  "treasury_merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
   "facts": [
     "Pinned anchor document is available for this action.",
     "Treasury withdrawal actions require elevated scrutiny.",
     "Intake: Action type: TreasuryWithdrawals",
     "Claims and evidence: Proposal anchor: pinned and replayable",
-    "Treasury analysis: Requested ADA: 0",
-    "Risk review: Execution risk: medium",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.\" and clears the evidence gates.",
+    "Treasury analysis: Requested ADA: 1193000",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the 1.19M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is material but below threshold; treated as a modest context signal.",
-    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive nudge is justified because the extracted claims show direct alignment with protocol safety and governance infrastructure, a clear work-package budget, public smart-contract custody details, prior-funding disclosure, and independently checkable process and NCL references. The adjustment remains small because several benefit claims and the Appold assurance arrangement are stated prospectively, and execution depends on the separate IntersectMBO budget approval.",
-    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
+    "Proposal clears individual quality floors but is not currently portfolio-eligible: balanced evidence floors not cleared.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
@@ -67,22 +55,19 @@
   ],
   "uncertainty": [
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
-    "Claims and evidence missing: Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-    "Claims and evidence missing: Independent evidence for: Independent audits and assurance for this proposal will be provided by Appold, with possible reviews of deliverables, controls, spending, and milestone evidence.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: sustainability path",
     "Treasury analysis missing: cost-benefit clarity",
     "Risk review missing: independent assurance",
     "Risk review missing: rollback/remedy path"
   ],
-  "missing_evidence": [
-    "cost comparables, budget proportionality, or sustainability evidence"
-  ],
+  "missing_evidence": [],
   "input_hash": "1a688d8d12933602d2f53f09c3d355df9ed1b72cebc97779cd4aa373a565bea4",
-  "snapshot_bundle_hash": "b9857933e34ada91a24bddca9b15765e25bd03a162db94d9bc448cdec6039364",
+  "snapshot_bundle_hash": "1a46f2aadb627077552bb5f0eb031b14aa7abaf61359bfbf7dc92ef08981bd45",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -102,16 +87,16 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 1603,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.4599,
-    "NO": 0.0478,
-    "ABSTAIN": 0.4923
+    "YES": 0.1675,
+    "NO": 0.3275,
+    "ABSTAIN": 0.505
   },
   "uncertainty_band": "MEDIUM",
   "evidence_depth_score": 4,
@@ -143,24 +128,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Withdraw treasury funds for Intersect Technical Steering Committee Support over 12 months.",
-          "Recipient: Intersect Technical Steering Committee support via Intersect treasury management smart contracts",
-          "Stated amount: 1,193,000",
-          "Deliverables: WP 1: Community-Facing Technical Coordination, including technical expert attendance at major ecosystem events and commissioning technical reports, WP 2: Protocol Governance and Evolution, funding the Parameter Committee, CIP editors, and Hard Fork Working Group, WP 3: Technical Review, establishing a pilot independent technical review programme launching in 2027",
-          "Deadline/expiry: 12 months; WP3 pilot launching in 2027",
-          "Claim (economic, supported_in_proposal, high materiality): Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal allocates 256,000 ADA to WP 1, 832,000 ADA to WP 2, and 105,000 ADA to WP 3, totaling 1,193,000 ADA.",
-          "Claim (technical, supported_in_proposal, high materiality): The work packages cover community-facing technical coordination, protocol governance and evolution, and a pilot independent technical review programme launching in 2027.",
-          "Claim (governance, supported_in_proposal, high materiality): Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.",
-          "Claim (economic, proposer_asserted, high materiality): The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-          "Claim (governance, independently_verifiable, medium materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides related voting and audit references."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-          "Independent evidence for: Independent audits and assurance for this proposal will be provided by Appold, with possible reviews of deliverables, controls, spending, and milestone evidence."
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -168,14 +142,14 @@
         "title": "Treasury analysis",
         "status": "complete",
         "findings": [
-          "Requested ADA: 0",
+          "Requested ADA: 1193000",
           "Budget granularity: confirmed",
           "Milestone payment gates: confirmed",
-          "Clawback/refund path: confirmed",
+          "Clawback/refund path: unknown",
           "Cost/benefit clarity: unknown",
-          "Recurring funding dependency: confirmed",
+          "Recurring funding dependency: unknown",
           "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-          "Financial confidence: 0.72"
+          "Financial confidence: 0.55"
         ],
         "missing": [
           "sustainability path",
@@ -187,10 +161,10 @@
         "title": "Risk review",
         "status": "complete",
         "findings": [
-          "Execution risk: medium",
-          "Governance risk: medium",
-          "Technical risk: medium",
-          "Treasury exposure risk: high",
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
           "Mitigation evidence: confirmed",
           "Independent assurance: not confirmed",
           "Rollback/remedy path: unknown",
@@ -207,8 +181,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the 1.19M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -249,26 +223,24 @@
     "dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.91,
-      "delivery_confidence": 0.9,
-      "cost_efficiency": 0.25,
-      "downside_risk": 0.3375,
-      "composite": 0.2384,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.35,
+      "composite": 0.239,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
+      "missing": []
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal requests 1,193,000 ada for 12 months of Intersect Technical Steering Committee support, delivered through three work packages: community-facing technical coordination, protocol governance and evolution, and a pilot independent technical review programme launching in 2027. The proposal gives a clear budget split of 256,000 ada for WP1, 832,000 ada for WP2, and 105,000 ada for WP3, and it describes custody through treasury management smart contracts with public auditability features. It also says execution depends on approval of the IntersectMBO budget proposal.\n\nSeveral core facts were supported well enough for review: the pinned anchor document was available and replayable, the amount and work packages were stated, prior treasury funding was disclosed, and the proposal provided voting, audit, custody, and NCL references. But some important claims still relied on proposer assertion rather than independent evidence, including that all spending will be fully accounted for, unspent funds will be returned to the treasury, and Appold assurance will cover deliverables, controls, spending, or milestones.\n\nThis is a conservative, evidence-based hold, not a rejection of the work itself. To unblock a YES or NO vote, BEACN needs the applicable Net Change Limit pinned and independently verified from public chain evidence. Stronger independent evidence for the spending return commitment, assurance arrangement, sustainability path, cost-benefit clarity, and rollback or remedy path would also reduce the remaining uncertainty around this treasury request.",
-  "human_message_source": "precomputed",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.19M ADA from the treasury. Reason code: PORTFOLIO_CAPACITY_NOT_CLEARED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "precomputed",
-      "reason": null,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
@@ -280,9 +252,9 @@
         "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sxypfkyr-20260624T113057Z.bin",
         "content_chars": 19769
       },
-      "claim_count": 10,
+      "claim_count": 0,
       "prompt_sha256": null,
-      "output_sha256": "08911c557e71ea74aa8f84fb742d3420dcc24153a63491eb3a9fde176c8518ce"
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -293,27 +265,25 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "precomputed",
-      "reason": null,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
-      "direction": "YES",
-      "score_adjustment": 0.02,
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "f02f6b07106a664478cd82a7e535b2624d9df6564022fe64c107d30af1a9632a"
+      "output_sha256": null
     },
     "human_message": {
-      "source": "precomputed",
-      "available": true,
-      "reason": null,
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
       "prompt_sha256": null,
-      "output_sha256": "18021fb4d68533c940406904a3f0ac36eb1e2c07d732a76f4a33405373c32cc6"
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3dda1ead24ad073df3a629c9.md",
-  "rationale_anchor_hash": "3dda1ead24ad073df3a629c925fa1ddb7ba8a1d9c8a074294a7af1b48075f638"
+  }
 }

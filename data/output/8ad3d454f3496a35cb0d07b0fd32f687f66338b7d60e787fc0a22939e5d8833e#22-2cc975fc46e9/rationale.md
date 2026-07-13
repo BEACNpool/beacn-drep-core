@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Withdraw ₳592,780 for Beyond Minimum Viable Governance: Iteratively Improvin. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw ₳592,780 for Beyond Minimum Viable Governance: Iteratively Improvin. It asks the treasury for 592.8k ADA. The strongest grounded claim is: This treasury withdrawal funds Beyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire which will provide the following services: This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw ₳592,780 for Beyond Minimum Viable Governance: Iteratively Improvin...." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 592.8k ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Withdraw ₳592,780 for Beyond Minimum Viable Governance: Iteratively Improvin....
-- finding: Recipient: 
-- finding: Stated amount: 592.8k ADA
-- finding: Deliverables: This treasury withdrawal funds Beyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire which will provide the following services: This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system., We will identify and benchmark key governance metrics to assess the health, performance, and overall impact of our decentralized decision-making processes., The resulting 'State of Governance' report will provide a structured evaluation of participation, track vital Key Performance Indicators (KPIs), map the evolving governance ecosystem, and pinpoint specific areas for improvement., To ensure our findings are grounded in real-world experience, we will engage the Cardano community through various channels.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Beyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire which will provide the following services: This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system.
-- finding: Claim (economic, independently_verifiable, medium materiality): We will identify and benchmark key governance metrics to assess the health, performance, and overall impact of our decentralized decision-making processes.
-- finding: Claim (economic, independently_verifiable, medium materiality): The resulting 'State of Governance' report will provide a structured evaluation of participation, track vital Key Performance Indicators (KPIs), map the evolving governance ecosystem, and pinpoint specific areas for improvement.
-- finding: Claim (economic, independently_verifiable, medium materiality): To ensure our findings are grounded in real-world experience, we will engage the Cardano community through various channels.
-- finding: Claim (economic, independently_verifiable, medium materiality): This proposal aims to solve the following problem: Cardano stands at the forefront of decentralized governance innovation.
-- finding: Claim (economic, independently_verifiable, medium materiality): Yet, we face a critical challenge: the absence of transparent, data-backed frameworks to evaluate our governance's effectiveness, pinpoint obstacles, and drive impactful improvements.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This treasury withdrawal funds Beyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire which will provide the following services: This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 592.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 592.8k ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This treasury withdrawal funds Beyond Minimum Viable Governance: Iteratively Improving on Cardano Voltaire which will provide the following services: This initiative will establish a robust framework for evaluating and enhancing Cardano's governance system." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 592.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `2cc975fc46e9eb4abcf0438d4fd9447db5c70a5022b74970451400c7c8861bed`
-- snapshot_bundle_hash: `aa9731d9108782423a9948b7b767276ba906aed721b52dc51dec4306810861d3`
+- snapshot_bundle_hash: `90746dce9e7e0cb8e3e01a5b52c93ceb89cef0dbe3849e271b3e2df3dcd36af7`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `10`
+- snapshot_age_seconds: `1643`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

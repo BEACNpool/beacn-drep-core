@@ -96,7 +96,15 @@ def main() -> int:
             live_sources = []
             for source in item.get("sources") or []:
                 url = source.get("url") or ""
-                target = RES / source.get("snapshot_path", "")
+                rel_path = source.get("snapshot_path") or ""
+                # Without a snapshot_path this resolved to the resources repo ROOT, and hashing it
+                # blew up with IsADirectoryError. A source we cannot pin is not evidence — drop it
+                # rather than let it ride along unhashed.
+                if not rel_path or not url:
+                    dropped += 1
+                    print(f"  DROP  {packet_path.stem[:20]:22} {field_name:30} malformed source (no url/snapshot_path)")
+                    continue
+                target = RES / rel_path
                 if not target.exists():
                     data = fetch(url)
                     if data is None:

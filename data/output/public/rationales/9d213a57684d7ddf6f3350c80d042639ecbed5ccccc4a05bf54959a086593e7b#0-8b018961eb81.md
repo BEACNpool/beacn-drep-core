@@ -1,14 +1,10 @@
 # Rationale: 9d213a57684d7ddf6f3350c80d042639ecbed5ccccc4a05bf54959a086593e7b#0
 Recommendation: **ABSTAIN**
-Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.03`) | Confidence: `0.6275` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+Score: `0.11` (raw `0.11` + doctrine-LLM nudge `+0.0`) | Confidence: `0.4775` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on Cardano GovTool Budget - 12 months full active maintenance and development. This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a InfoAction. The cached anchor describes the request as: Cardano GovTool Budget - 12 months full active maintenance and development. The strongest grounded claim is: Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i.
-
-Reason code: RULE_THRESHOLD_UNMET.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Cardano GovTool Budget - 12 months full active maintenance and development" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Cardano GovTool Budget - 12 months full active maintenance and development
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..., As current funding concludes in June 2025, the new proposal outlines a leaner, more inclusive funding structure built to reflect community priorities., Over the past four weeks, substantial feedback was collected, through open forums, working groups, and direct contributions, by the community members participating in the Consortium., This feedback was carefully analyzed and embedded into a tiered proposal that balances operational stability, cost efficiency, and ecosystem-wide participation.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (adoption, independently_verifiable, medium materiality): Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i...
-- finding: Claim (economic, independently_verifiable, high materiality): As current funding concludes in June 2025, the new proposal outlines a leaner, more inclusive funding structure built to reflect community priorities.
-- finding: Claim (adoption, independently_verifiable, medium materiality): Over the past four weeks, substantial feedback was collected, through open forums, working groups, and direct contributions, by the community members participating in the Consortium.
-- finding: Claim (economic, independently_verifiable, low materiality): This feedback was carefully analyzed and embedded into a tiered proposal that balances operational stability, cost efficiency, and ecosystem-wide participation.
-- finding: Claim (governance, independently_verifiable, medium materiality): With CIP-1694 and the Voltaire era, Cardano governance is now in the hands of the community, but power without access is meaningless.
-- finding: Claim (other, independently_verifiable, low materiality): Participation must be simple, inclusive, and equitable.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..." and clears the evidence gates.
+- finding: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -76,12 +63,11 @@ Reason code: RULE_THRESHOLD_UNMET.
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Following 4 weeks of active community consultation, the newly formed Cardano Govtool Consortium, made of all the community builders who actively develop the applications that make Govtool (ByronNetwork, WeDeliver, LidoNation and DQquadrant), those who use i..." and clears the evidence gates.
+- Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Advisory model lean was +0.030 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 8 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -90,19 +76,21 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `8b018961eb815341f09d5edac1e7d5dd8d462b919259512f42eb34b45cbe6499`
-- snapshot_bundle_hash: `93b91f5a4cb93d571f3f3d986ba0b65c4d1c5b85945d7c6548e2a072837cc5df`
+- snapshot_bundle_hash: `9da9c36577a2a1d578d5320f8a03353e03277da15f906cb6dbdb32a9e6a8cac3`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `12`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1650`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4769, "NO": 0.1516, "YES": 0.3716}`
+- decision_probs: `{"ABSTAIN": 0.4394, "NO": 0.1703, "YES": 0.3903}`
 

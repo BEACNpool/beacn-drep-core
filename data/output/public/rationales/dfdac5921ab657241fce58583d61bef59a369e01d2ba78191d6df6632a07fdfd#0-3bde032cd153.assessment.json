@@ -20,25 +20,17 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Reduce minimum Constitutional Committee size (committeeMinSize) from 7 to 5",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards., The Constitutional Committee is designed to operate with seven members., However, maintaining a minimum size of seven creates operational fragility, as a single resignation or temporary unavailability can prevent the Committee from functioning., Reducing the minimum size to five provides an operational buffer, allowing the Committee to continue operating as intended and reducing the risk of governance inoperability.",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, supported_in_proposal, high materiality): Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.",
-        "Claim (technical, supported_in_proposal, high materiality): The Constitutional Committee is designed to operate with seven members.",
-        "Claim (technical, supported_in_proposal, high materiality): However, maintaining a minimum size of seven creates operational fragility, as a single resignation or temporary unavailability can prevent the Committee from functioning.",
-        "Claim (technical, supported_in_proposal, high materiality): Reducing the minimum size to five provides an operational buffer, allowing the Committee to continue operating as intended and reducing the risk of governance inoperability.",
-        "Claim (technical, supported_in_proposal, high materiality): Based on the analysis conducted by the Intersect Parameter Committee, reducing the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 is considered both useful and safe for the following reasons.",
-        "Claim (technical, supported_in_proposal, high materiality): Operational resilience A minimum size of five provides an appropriate safety margin for a committee designed to have seven members."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
-      "missing": [],
+      "missing": [
+        "No structured claim/evidence extraction from the proposal document."
+      ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
@@ -66,7 +58,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Reduce the minimum Constitutional Committee size (committeeMinSize) from 7 to 5 in order to improve operational resilience while maintaining constitutional safeguards.\" and clears the evidence gates.",
+        "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
         "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

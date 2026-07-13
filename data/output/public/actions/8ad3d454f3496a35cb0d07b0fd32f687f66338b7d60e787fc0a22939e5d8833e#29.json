@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "81cf9f46f10aa2d06fc35a95fa6a351d38ce4e484f716d624a78a546fe39b94f",
-    "snapshot_bundle_hash": "e03f9a471da7fe6912dcc0977d78b79b9e3bf83620b0bdeff4ddcb909c48fd78",
+    "snapshot_bundle_hash": "3e89ffe3fa065cbfe5d390eeccf150c0231e4d64144fc238464423b7533bc4d7",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#29-81cf9f46f10a.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal funds Cardano Ecosystem Pavilions at Exhibitions which will provide the following services: We propose to host Ecosystem Pavilions at numerous Exhibitions around the world.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 889.5k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Withdraw \u20b3889,500 for Cardano Ecosystem Pavilions at Exhibitions",
-            "Recipient: ",
-            "Stated amount: 889.5k ADA",
-            "Deliverables: This treasury withdrawal funds Cardano Ecosystem Pavilions at Exhibitions which will provide the following services: We propose to host Ecosystem Pavilions at numerous Exhibitions around the world., The funding will ensure that projects are able to have access to much more affordable prices to have a presence at the event., Non of the spots or travel budgets will be 100% funded., We will also be ensuring that projects that sign up understand the importance of pre event work, during the event work and follow up work to achieve the best possible ROI.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Cardano Ecosystem Pavilions at Exhibitions which will provide the following services: We propose to host Ecosystem Pavilions at numerous Exhibitions around the world.",
-            "Claim (economic, independently_verifiable, high materiality): The funding will ensure that projects are able to have access to much more affordable prices to have a presence at the event.",
-            "Claim (economic, independently_verifiable, high materiality): Non of the spots or travel budgets will be 100% funded.",
-            "Claim (economic, independently_verifiable, low materiality): We will also be ensuring that projects that sign up understand the importance of pre event work, during the event work and follow up work to achieve the best possible ROI.",
-            "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: There is a genuine need to get more of a Cardano presence at Exhibitions around the world, but the costs are prohibitive for many projects currently.",
-            "Claim (economic, independently_verifiable, low materiality): Although everyone knows of \"Cardano\", they know very little, if anything about what has and is being built here or how to build here."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Cardano Ecosystem Pavilions at Exhibitions which will provide the following services: We propose to host Ecosystem Pavilions at numerous Exhibitions around the world.\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 889.5k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 10,
+    "snapshot_age_seconds": 1639,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

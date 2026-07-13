@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research. It asks the treasury for 32.92M ADA. The strongest grounded claim is: Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact.
-
-A material claim remains proposer-asserted or thinly supported: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 32.92M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,22 +22,11 @@ A material claim remains proposer-asserted or thinly supported: Human-centred de
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research
-- finding: Recipient: not stated in document
-- finding: Stated amount: 32.92M ADA
-- finding: Deliverables: Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact., Building on CV25, where delivery exceeded targets by 20%, the programme is executed through an integrated IO Research delivery model combining research (IOR), applied engineering (ARC), and product alignment (Cardano Business Unit)., CV26 is anchored around 3 priorities., Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact.
-- finding: Claim (economic, supported_in_proposal, low materiality): Building on CV25, where delivery exceeded targets by 20%, the programme is executed through an integrated IO Research delivery model combining research (IOR), applied engineering (ARC), and product alignment (Cardano Business Unit).
-- finding: Claim (economic, proposer_asserted, low materiality): CV26 is anchored around 3 priorities.
-- finding: Claim (economic, proposer_asserted, medium materiality): Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
-- finding: Claim (economic, supported_in_proposal, low materiality): The CV26 program adopts a three-layer delivery model, progressing from foundational research through to ecosystem adoption.
-- finding: Claim (economic, supported_in_proposal, low materiality): This reflects the IOR innovation pipeline, foundational research → technology innovation → implementation readiness, ensuring outputs are systematically translated into deployable capabilities and measurable impact.
-- missing: Independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
-- missing: Independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -85,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: Human-centred de
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 32.92M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -109,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: Human-centred de
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 32.92M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 32.92M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -123,8 +108,8 @@ A material claim remains proposer-asserted or thinly supported: Human-centred de
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.
-- Claims and evidence missing: Independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -149,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: Human-centred de
 
 ## Reproducibility
 - input_hash: `20471a8fac1b645bc593f8bde4641dc39e8cf666b1ff7cee78d518c2fd3dee74`
-- snapshot_bundle_hash: `1ae3358edc4e738643bf65d43af06bbaf615a03dfd081e724d6cd4ab1f3c30dd`
+- snapshot_bundle_hash: `2319d524e19318177ec4f33b231fa807c7cf04d5d33c1c35f319de5510f30c6d`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `1611`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

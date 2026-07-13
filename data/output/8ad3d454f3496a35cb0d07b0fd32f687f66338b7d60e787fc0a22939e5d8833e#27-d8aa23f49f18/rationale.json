@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 1.50M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds Complement Catalyst: Extended Quadratic Funding---Zero Operational Costs which will provide the following services: An innovative funding mechanism to complement Project Catalyst by addressing five critical challenges in block...\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "d8aa23f49f182ea0658415164132fac8254bb3be0780a9ace31c98c1d113ef6c",
-  "snapshot_bundle_hash": "a3e8ab1b896b85963825258c73fb399bd03687d5a44da454592594d15f78ebb6",
+  "snapshot_bundle_hash": "b6304b69f80184533c20205bc578755d1a9d62a0e4ade3bc7fb646b637904f96",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 10,
+    "snapshot_age_seconds": 1640,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Withdraw \u20b31,500,000 for Complement Catalyst: Extended Quadratic Funding---Zer...",
-          "Recipient: ",
-          "Stated amount: 1.50M ADA",
-          "Deliverables: This treasury withdrawal funds Complement Catalyst: Extended Quadratic Funding---Zero Operational Costs which will provide the following services: An innovative funding mechanism to complement Project Catalyst by addressing five critical challenges in block..., The solution has zero operational costs---100% of funds go directly to Cardano projects., By combining quadratic funding with a reputation-based system, it will create a more democratic, transparent, and effective allocation process while maximizing treasury fund impact., This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Complement Catalyst: Extended Quadratic Funding---Zero Operational Costs which will provide the following services: An innovative funding mechanism to complement Project Catalyst by addressing five critical challenges in block...",
-          "Claim (economic, independently_verifiable, high materiality): The solution has zero operational costs---100% of funds go directly to Cardano projects.",
-          "Claim (economic, independently_verifiable, high materiality): By combining quadratic funding with a reputation-based system, it will create a more democratic, transparent, and effective allocation process while maximizing treasury fund impact.",
-          "Claim (economic, independently_verifiable, high materiality): This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-          "Claim (economic, independently_verifiable, high materiality): Funding innovation within blockchain ecosystems presents significant challenges, yet some initiatives shine brightly.",
-          "Claim (economic, independently_verifiable, low materiality): Project Catalyst stands out as a prime example, having fueled over 2,100 projects with more than $150 million, a clear testament to Cardano's dedication to decentralized innovation."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Complement Catalyst: Extended Quadratic Funding---Zero Operational Costs which will provide the following services: An innovative funding mechanism to complement Project Catalyst by addressing five critical challenges in block...\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw \u20b31,500,000 for Complement Catalyst: Extended Quadratic Funding---Zer. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b31,500,000 for Complement Catalyst: Extended Quadratic Funding---Zer. It asks the treasury for 1.50M ADA. The strongest grounded claim is: This treasury withdrawal funds Complement Catalyst: Extended Quadratic Funding---Zero Operational Costs which will provide the following services: An innovative funding mechanism to complement Project Catalyst by addressing five critical challenges in block.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Withdraw \u20b31,500,000 for Complement Catalyst: Extended Quadratic Funding---Zer...\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.50M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#27",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpk0mqrnw-20260326T175234Z.bin",
         "content_chars": 23987
       },
-      "claim_count": 8,
-      "prompt_sha256": "c4a7543a2d8f8f39c13e575f1499cb54d9f8aa9e22f67868b6da9eafea4b6d8c",
-      "output_sha256": "c01930ff3c36601faea965598be685f2a226d9db8f48dd427eb4731d83e9f44c"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "441ed4ca30d16ce5fb1804002cc72bc2fff13e05f03f352fa8fdfd71cafe75d7",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "a7a88f9ee0b052469ba2d9c6ed32feb36fbf1bdc0f6aa911e04ce7b630f4a110",
-      "output_sha256": "fc399b25e4aa2a0450d627a069dc601685bfbccb012aad3b8c17e5633311b9df"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

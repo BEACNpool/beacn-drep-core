@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 45.2k ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Cardano.nix which will provide the following services: This proposal seeks annual funding for the maintenance and enhancement of Cardano.nix, a foundational toolset for building and d...\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 45.2k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "4aefbdb26560eb72ab26b6c35d3ce57ae8be4ab2a141140a1a72808d6341ad96",
-  "snapshot_bundle_hash": "9a23550bfb0602028758857f58f3262c6834c47c81ea8e9ad8a8936d4118a750",
+  "snapshot_bundle_hash": "60ae65b0cc60c7eabe8dc34b7b7d5fae572b24bb5672757b0f0fe53553a82ea9",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 1649,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Withdraw \u20b345,217 for MLabs Core Tool Maintenance & Enhancement: Cardano.nix",
-          "Recipient: ",
-          "Stated amount: 45.2k ADA",
-          "Deliverables: This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Cardano.nix which will provide the following services: This proposal seeks annual funding for the maintenance and enhancement of Cardano.nix, a foundational toolset for building and d..., Funding covers regular maintenance to ensure compatibility with Cardano node updates and the Nix ecosystem, bug fixes, and minor enhancements to improve the tooling based on community needs and developments in related areas like Nix Flakes ., This Treasury Withdrawal is submitted by Intersect on behalf of the vendor., The following sections; Abstract, Motivation, Rationale and Vendor Profile have been sourced from the approved proposal submitted by the Vendor as part of the Intersect budget process.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Cardano.nix which will provide the following services: This proposal seeks annual funding for the maintenance and enhancement of Cardano.nix, a foundational toolset for building and d...",
-          "Claim (technical, independently_verifiable, high materiality): Funding covers regular maintenance to ensure compatibility with Cardano node updates and the Nix ecosystem, bug fixes, and minor enhancements to improve the tooling based on community needs and developments in related areas like Nix Flakes .",
-          "Claim (economic, independently_verifiable, high materiality): This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-          "Claim (economic, independently_verifiable, high materiality): The following sections; Abstract, Motivation, Rationale and Vendor Profile have been sourced from the approved proposal submitted by the Vendor as part of the Intersect budget process.",
-          "Claim (technical, independently_verifiable, low materiality): This proposal aims to solve the following problem: Cardano.nix provides foundational toolsets for building and deploying Cardano infrastructure reproducibly using Nix.",
-          "Claim (technical, independently_verifiable, low materiality): Maintaining reliable infrastructure tooling is essential for node operators, developers, and projects running Cardano components."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Cardano.nix which will provide the following services: This proposal seeks annual funding for the maintenance and enhancement of Cardano.nix, a foundational toolset for building and d...\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 45.2k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw \u20b345,217 for MLabs Core Tool Maintenance & Enhancement: Cardano.nix. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b345,217 for MLabs Core Tool Maintenance & Enhancement: Cardano.nix. It asks the treasury for 45.2k ADA. The strongest grounded claim is: This treasury withdrawal funds MLabs Core Tool Maintenance & Enhancement: Cardano.nix which will provide the following services: This proposal seeks annual funding for the maintenance and enhancement of Cardano.nix, a foundational toolset for building and d.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Withdraw \u20b345,217 for MLabs Core Tool Maintenance & Enhancement: Cardano.nix\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 45.2k ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "3cf29192a0ee1a77985054072edcdb566ac14707730637c4635d8fb6813cb4c9#0",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action18nefry4qacd80xzs2srjahxm2e4vz3c8wvrr03rrtk8mdqfuknysq66459t-20260326T175231Z.bin",
         "content_chars": 12784
       },
-      "claim_count": 8,
-      "prompt_sha256": "cd9c1ce3d15edfe4e7fbb6951da59132849ebefd631f78194e57741a5345beea",
-      "output_sha256": "f68c4d85fcbfea673b032e7c2915498101e12b1174d3348906e5ad7c5426c82b"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "7cae976daa8b901bb7c8f1849c98184e5befb48c02b5111e632869160334498d",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "cc3a413aac8bb0d4ce1c96c88eb521eab5db0bc8f66f7e5f19e04b76a151f0c8",
-      "output_sha256": "2cf580479532faa9d413e6f5ad63f1152e2d8342262860d49d1d3cdc8f09dd97"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

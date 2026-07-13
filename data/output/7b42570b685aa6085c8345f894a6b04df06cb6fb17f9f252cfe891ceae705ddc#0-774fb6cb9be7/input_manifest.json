@@ -34,7 +34,7 @@
   "action_type": "TreasuryWithdrawals",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -164,13 +164,13 @@
       "kind": "directory",
       "path": "data/input/governance/decision_support/dossiers",
       "files_count": 92,
-      "dir_hash": "f4677453c6d8dcd16282ef7d5b74797b1c94b8312b717ea623dc6fd7c538477d"
+      "dir_hash": "4ba65d90778284e04352bb82e140958bb49e880f436d22bd319e7e933b6db7d7"
     },
     {
       "resource_id": "ecosystem_value_profiles",
       "kind": "file",
       "path": "data/input/governance/decision_support/ecosystem_value_profiles.csv",
-      "file_hash": "a48422c794220c569f00a9bb78c226938b1e54b49e55dc88bae109d74224436b"
+      "file_hash": "08c1c8cdc2c58a79f26f83678f55c7901f485c4e22ea47f2a9c3b1feacf1b72b"
     },
     {
       "resource_id": "treasury_policy_state",
@@ -197,13 +197,13 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "c22b8211770a21cfcb44d925114209950a1ec3e2a1d3b562d5d131e6c08f3cf7",
+  "snapshot_bundle_hash": "556d759ccb852627199cc2ec00f14990c3c7a0262012ba52cdd99a4ccf8242fe",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "7b42570b685aa6085c8345f894a6b04df06cb6fb17f9f252cfe891ceae705ddc#0",
         "anchor_read": true,
@@ -215,9 +215,9 @@
         "content_chars": 1236045,
         "truncated_to_chars": 60000
       },
-      "claim_count": 8,
-      "prompt_sha256": "dd68926b2b4fa4ee1a8df2b998fd9c5390afe4bcb96f84227121510b09935584",
-      "output_sha256": "9b2b83bcb36a72dbab6b6790f24eb8b6882a93a05d9d38ae0a702c63fa194d3b"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -228,24 +228,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "ce5d979ac164bc9b2166d0c9af1574db5f577c02530ce6af429724264dbbe528",
-      "output_sha256": "dc64541ed155f550b920ba79def85933605917c2d06dcc003e2bf9941c553a5c"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "98f884fa97b431898d8eb63d3ec51f97ca222231721b4e60423eb9cd25e40905",
-      "output_sha256": "1598396e382743a9894df110603ccb4c83c8c7478836090ba8fb73d8bee62c62"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

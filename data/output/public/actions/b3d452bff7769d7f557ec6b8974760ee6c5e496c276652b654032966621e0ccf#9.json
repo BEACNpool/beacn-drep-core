@@ -9,9 +9,9 @@
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "NO",
     "onchain_vote": "NO",
-    "diverged": true,
+    "diverged": false,
     "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
@@ -19,30 +19,28 @@
     "submitted_at": "2026-07-02T00:21:52+00:00"
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": 0.007,
-    "confidence": 0.7218,
+    "vote": "NO",
+    "score": -0.12,
+    "confidence": 0.75,
     "input_hash": "6179e2e1eb41a7c45fd05c327c245f821346e31c2be7b3298038c472eaac9fc7",
-    "snapshot_bundle_hash": "0ccec393bfafd9fcad9f303eb27a52daafb691398ac49659605e0bf2f2e9a996",
+    "snapshot_bundle_hash": "391d8f9001109e08d84910e302abac94ceccf3f0d0411a4358b61a02aaa26538",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-6179e2e1eb41.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/59957b3b3b9385fde370ff58.md",
-    "rationale_anchor_hash": "59957b3b3b9385fde370ff58337d4b5b0c529bca76442e5de8e8efeef4382260"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.01; confidence 72.2%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the 1.68M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide: cost comparables, budget proportionality, or sustainability evidence",
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide sustainability path.",
       "Provide cost-benefit clarity."
     ],
     "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-6179e2e1eb41.md",
-    "missing_evidence": [
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ],
+    "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -70,25 +68,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols, including developer and agent-facing infrastructure.",
-            "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe.",
-            "Stated amount: 1684050",
-            "Deliverables: Open standardized interface across Cardano on-chain protocols, Documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from verified interface definitions, Agent-first documentation, Protocol skills packaging operations, MCP server for agents to discover and call published protocols, 12 additional protocol onboardings over 12 months, described as 3 per quarter, Shared infrastructure for all protocols on the Tx3 Protocol Registry",
-            "Deadline/expiry: 12 months",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
-            "Claim (technical, proposer_asserted, high materiality): The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.",
-            "Claim (technical, proposer_asserted, high materiality): The proposer says Cardano currently lacks a common interface mechanism across protocols, causing integrators to relearn protocols, rebuild understanding, and face higher integration costs.",
-            "Claim (technical, supported_in_proposal, high materiality): The proposer says Tx3 describes each protocol once with a verified interface definition that produces documentation, multi-language SDKs, and live JSON-RPC endpoints.",
-            "Claim (adoption, independently_verifiable, high materiality): The document states that Catalyst Fund 14 has already put the Tx3 developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
-            "Claim (technical, supported_in_proposal, high materiality): The proposal commits to funding 12 additional protocol onboardings, at 3 per quarter, with full developer and agent coverage."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.",
-            "Independent evidence for: The proposer says Cardano currently lacks a common interface mechanism across protocols, causing integrators to relearn protocols, rebuild understanding, and face higher integration costs.",
-            "Independent evidence for: The proposer says the work aligns with Intersect Pillar 2 for Adoption and Utility through developer experience and open-source incentives."
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -96,14 +82,14 @@
           "title": "Treasury analysis",
           "status": "complete",
           "findings": [
-            "Requested ADA: 0",
+            "Requested ADA: 1684050",
             "Budget granularity: confirmed",
             "Milestone payment gates: confirmed",
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
             "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-            "Financial confidence: 0.62"
+            "Financial confidence: 0.48"
           ],
           "missing": [
             "sustainability path",
@@ -135,8 +121,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The stated purpose is to deliver an open, standardized interface across leading Cardano on-chain protocols so developers and AI agents can discover, integrate, and compose them through one consistent surface.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 1.68M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -163,7 +149,9 @@
       "cost_efficiency": 0.25,
       "downside_risk": 0.35,
       "composite": 0.007,
-      "affirmative_waste_evidence": [],
+      "affirmative_waste_evidence": [
+        "independently verified excessive cost versus market comparables"
+      ],
       "missing": [
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
@@ -191,17 +179,19 @@
         "cost_efficiency": 0.25,
         "downside_risk": 0.35,
         "composite": 0.007,
-        "affirmative_waste_evidence": [],
+        "affirmative_waste_evidence": [
+          "independently verified excessive cost versus market comparables"
+        ],
         "missing": [
           "cost comparables, budget proportionality, or sustainability evidence"
         ]
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "NO",
+      "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -226,13 +216,15 @@
       "cost_efficiency": 0.25,
       "downside_risk": 0.35,
       "composite": 0.007,
-      "affirmative_waste_evidence": [],
+      "affirmative_waste_evidence": [
+        "independently verified excessive cost versus market comparables"
+      ],
       "missing": [
         "cost comparables, budget proportionality, or sustainability evidence"
       ]
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "NO",
+    "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -258,7 +250,7 @@
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9.receipt.json",
     "verification": {
       "passed": true,
-      "verified_at_utc": "2026-07-12T14:48:04+00:00",
+      "verified_at_utc": "2026-07-13T01:53:15+00:00",
       "model": "claude-cli",
       "fact_count": 24,
       "supported": 24,
@@ -301,7 +293,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -404,17 +396,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.007,
+    "binding_score": -0.12,
     "raw_score": -0.08,
     "directional_threshold": 0.06,
-    "confidence": 0.7218,
+    "confidence": 0.75,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 1,
+    "snapshot_age_seconds": 1600,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

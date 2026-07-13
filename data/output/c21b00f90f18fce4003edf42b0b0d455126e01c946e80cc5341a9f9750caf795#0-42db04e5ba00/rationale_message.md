@@ -1,11 +1,7 @@
 # Increase Transaction and Block Memory Units (Part 1 of 2)
-**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-template)_
 
-BEACN records ABSTAIN on Increase Transaction and Block Memory Units (Part 1 of 2). This is a conservative abstention because the evidence does not justify stronger certainty.
-
-The action is a ParameterChange. The cached anchor describes the request as: Increase Transaction and Block Memory Units (Part 1 of 2). The strongest grounded claim is: Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.
-
-Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
+BEACN's autonomous DRep recorded ABSTAIN on "Increase Transaction and Block Memory Units (Part 1 of 2)" (ParameterChange). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Dingo: a Production-Grade Block Producer in Go by Blink Labs",
-        "Recipient: ",
-        "Stated amount: 6.90M ADA",
-        "Deliverables: Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node., Dingo is a work in progress, and that's the whole point of this proposal., But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support., This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, independently_verifiable, high materiality): Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.",
-        "Claim (economic, independently_verifiable, low materiality): Dingo is a work in progress, and that's the whole point of this proposal.",
-        "Claim (technical, independently_verifiable, medium materiality): But it's a substantial one: 1,290+ non-dependency PRs merged in the past year, Plutus V1/V2/V3 at 100% conformance, 314 passing conformance tests, VRF/KES crypto, ChainSync, mempool, and governance transaction support.",
-        "Claim (economic, independently_verifiable, high materiality): This funding gets Dingo the rest of the way to mainnet block-production readiness: Ouroboros Praos consensus completion, Dijkstra hard fork support, CIP-0164 Linear Leios built alongside IO Engineering, a proper security audit, and the operational hardening...",
-        "Claim (economic, independently_verifiable, low materiality): Who We Are Blink Labs We're a small engineering company focused exclusively on blockchain software integrated with Cardano.",
-        "Claim (technical, independently_verifiable, low materiality): We build in Go because it's the right language for high-performance networked systems, and because Cardano benefits from having core infrastructure that millions of developers can actually read and work on."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Blink Labs is requesting 6,900,000 ADA from the Cardano Treasury to fund twelve months of full-time engineering on Dingo, our Go Cardano node.\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 6.90M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

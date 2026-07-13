@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.0,
   "raw_score": 0.0,
-  "llm_score_adjustment": 0.02,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "YES",
-    "score_adjustment": 0.02,
-    "confidence": 0.85,
-    "rationale": "Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -28,7 +19,7 @@
   ],
   "doctrine_hash": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a",
   "directional_threshold": 0.12,
-  "confidence": 0.6,
+  "confidence": 0.45,
   "readiness_score": 0.0,
   "treasury_dimensions": null,
   "treasury_merit_recommendation": null,
@@ -39,11 +30,11 @@
     "Intake: Action type: ParameterChange",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "No additional inference.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -53,16 +44,18 @@
   "uncertainty": [
     "No DRep distribution available.",
     "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
+    "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
     "Risk review status is thin."
   ],
   "missing_evidence": [],
   "input_hash": "ed6f6f5bc84c8d8875de0a38ee84b234e8d53c170238c1f7c9b71211c497b2c0",
-  "snapshot_bundle_hash": "41841d7b563785b37055c6000c7d8520f7949181a316784196f898bdde23fb74",
+  "snapshot_bundle_hash": "a722ab80f840ef0c8d568f32689f89dc85bf5d3de81b25f4064b798cae8b2ca0",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -76,18 +69,18 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 1656,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.265,
-    "NO": 0.265,
-    "ABSTAIN": 0.47
+    "YES": 0.2838,
+    "NO": 0.2838,
+    "ABSTAIN": 0.4325
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "LOW",
   "evidence_depth_score": 3,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
@@ -114,25 +107,17 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: Plutus V3 Cost Model Parameter Changes Prior to Chang 2",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)., Existing Plutus cost model settings will not be changed., Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)., Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, independently_verifiable, high materiality): We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).",
-          "Claim (technical, independently_verifiable, low materiality): Existing Plutus cost model settings will not be changed.",
-          "Claim (technical, independently_verifiable, high materiality): Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork).",
-          "Claim (technical, independently_verifiable, high materiality): Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.",
-          "Claim (technical, independently_verifiable, high materiality): This governance action provides cost model settings so that these primitives can be used following the Chang 2 hard fork.",
-          "Claim (technical, independently_verifiable, high materiality): Note that the new primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
-        "missing": [],
+        "missing": [
+          "No structured claim/evidence extraction from the proposal document."
+        ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
       {
@@ -160,7 +145,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).\" and clears the evidence gates.",
+          "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
           "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
@@ -204,14 +189,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on Plutus V3 Cost Model Parameter Changes Prior to Chang#2. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a ParameterChange. The cached anchor describes the request as: Plutus V3 Cost Model Parameter Changes Prior to Chang 2. The strongest grounded claim is: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).\n\nReason code: MISSING_PROTOCOL_READINESS_EVIDENCE.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Plutus V3 Cost Model Parameter Changes Prior to Chang#2\" (ParameterChange). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "b2a591ac219ce6dcca5847e0248015209c7cb0436aa6bd6863d0c1f152a60bc5#0",
         "anchor_read": true,
@@ -222,9 +207,9 @@
         "file_path": "data/input/governance/anchors/gov_action1k2jertppnnndejjcglszfqq4yzw8evzrd2nt66rr6rqlz54xp0zsq05ecsn-20260326T175237Z.bin",
         "content_chars": 15769
       },
-      "claim_count": 7,
-      "prompt_sha256": "dc2a71e35f30c89289e1db54a68f7189965ae0b85ca274df185e09700e6594c9",
-      "output_sha256": "83952b03bd0a68a4156c47379d5055fc5adee559e58049c909ba22d565663a23"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "parameter",
@@ -235,24 +220,24 @@
       "sha256": "6c0c85d0100a3223ae172e52d6a3da535543684a40ea483a571046337bd8dc6a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "YES",
-      "score_adjustment": 0.02,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "bec9f8f69754cf10d20dc45e686cc158618146e1d67452838be3280b88c33cfb",
-      "output_sha256": "c330d3244ecbbc677252f89f10856df1f7534cde7941e80cd8085a22e864c513"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "6c80f566059705cc58c308684eaadefa38f8cec5a67b2d117e84655fead7ae14",
-      "output_sha256": "dff44c0777b80dd4f4831892006cdb43333337c33a625a2441853c05d47acdbd"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Withdraw ₳6,000,000 for Unveiling the First Unified Global Events Marketing S. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw ₳6,000,000 for Unveiling the First Unified Global Events Marketing S. It asks the treasury for 6.00M ADA. The strongest grounded claim is: This treasury withdrawal funds Unveiling the First Unified Global Events Marketing Strategy for Cardano which will provide the following services: Revitalize Cardano's global presence and foster ecosystem growth, we aim to host and participate in a dynamic.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw ₳6,000,000 for Unveiling the First Unified Global Events Marketing S..." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 6.00M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Withdraw ₳6,000,000 for Unveiling the First Unified Global Events Marketing S...
-- finding: Recipient: 
-- finding: Stated amount: 6.00M ADA
-- finding: Deliverables: This treasury withdrawal funds Unveiling the First Unified Global Events Marketing Strategy for Cardano which will provide the following services: Revitalize Cardano's global presence and foster ecosystem growth, we aim to host and participate in a dynamic..., These events will target diverse audiences, including developers, enterprises, blockchain enthusiasts, and policymakers, to drive engagement, innovation, and adoption., This Treasury Withdrawal is submitted by Intersect on behalf of the vendor., The following sections; Abstract, Motivation, Rationale and Vendor Profile have been sourced from the approved proposal submitted by the Vendor as part of the Intersect budget process.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Unveiling the First Unified Global Events Marketing Strategy for Cardano which will provide the following services: Revitalize Cardano's global presence and foster ecosystem growth, we aim to host and participate in a dynamic...
-- finding: Claim (economic, independently_verifiable, low materiality): These events will target diverse audiences, including developers, enterprises, blockchain enthusiasts, and policymakers, to drive engagement, innovation, and adoption.
-- finding: Claim (economic, independently_verifiable, high materiality): This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.
-- finding: Claim (economic, independently_verifiable, high materiality): The following sections; Abstract, Motivation, Rationale and Vendor Profile have been sourced from the approved proposal submitted by the Vendor as part of the Intersect budget process.
-- finding: Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: The Cardano ecosystem currently faces challenges in establishing a consistent and impactful presence at global blockchain events.
-- finding: Claim (economic, independently_verifiable, high materiality): Catalyst-funded initiatives often operate under independent branding which rarely mentions 'Cardano' which dilutes the visibility of Cardano within the broader blockchain community.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This treasury withdrawal funds Unveiling the First Unified Global Events Marketing Strategy for Cardano which will provide the following services: Revitalize Cardano's global presence and foster ecosystem growth, we aim to host and participate in a dynamic..." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 6.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 6.00M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This treasury withdrawal funds Unveiling the First Unified Global Events Marketing Strategy for Cardano which will provide the following services: Revitalize Cardano's global presence and foster ecosystem growth, we aim to host and participate in a dynamic..." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 6.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `9678484946c104115db23edb76559fa46a87d230b040a3a868d7dd3bf0a709f0`
-- snapshot_bundle_hash: `074567adec5ba3da62bae744194bb2a420b08e087156a59a8bd3ccd13d7ddf08`
+- snapshot_bundle_hash: `e1dae86c9865adebd3e7913f2be41e9c6161a111cce6b409a7b95754b0acb418`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `10`
+- snapshot_age_seconds: `1641`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on IO: Developer Experience Initiative. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: IO: Developer Experience Initiative. It asks the treasury for 3.60M ADA. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmQPLwjTwZeGrzsgs2QiC6crJLcMg64fU2kDYZmPZ9o7wf Cardano's long-term utility depends on attracting and retaining developers — and this proposal accelerates that by making it dramatically easier to build o.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "IO: Developer Experience Initiative" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 3.60M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: IO: Developer Experience Initiative
-- finding: Recipient: 
-- finding: Stated amount: 3.60M ADA
-- finding: Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmQPLwjTwZeGrzsgs2QiC6crJLcMg64fU2kDYZmPZ9o7wf Cardano's long-term utility depends on attracting and retaining developers — and this proposal accelerates that by making it dramatically easier to build o..., The target: a 30%+ improvement in developer growth rate within 12 months., Why this matters: Cardano currently has roughly 550 active developers, with no signs of growth, whereas Ethereum added nearly 2,000 new developers per year on average over the last 6 years., Survey data from 109 Cardano builders points to a clear set of barriers — fragmented tooling, scattered documentation, lack of coordination, and a steep learning curve.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmQPLwjTwZeGrzsgs2QiC6crJLcMg64fU2kDYZmPZ9o7wf Cardano's long-term utility depends on attracting and retaining developers — and this proposal accelerates that by making it dramatically easier to build o...
-- finding: Claim (economic, proposer_asserted, low materiality): The target: a 30%+ improvement in developer growth rate within 12 months.
-- finding: Claim (economic, supported_in_proposal, low materiality): Why this matters: Cardano currently has roughly 550 active developers, with no signs of growth, whereas Ethereum added nearly 2,000 new developers per year on average over the last 6 years.
-- finding: Claim (economic, supported_in_proposal, low materiality): Survey data from 109 Cardano builders points to a clear set of barriers — fragmented tooling, scattered documentation, lack of coordination, and a steep learning curve.
-- finding: Claim (economic, supported_in_proposal, low materiality): As a builder new to Cardano, I want to go from zero to an MVP on testnet in under two weeks, so that I can validate whether Cardano is the right platform for my project without a large upfront time investment.
-- finding: Claim (economic, supported_in_proposal, high materiality): This proposal funds a focused six-month program to streamline Cardano's developer tooling, documentation, and onboarding experience — directly targeting a 30%+ improvement in developer growth rate.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmQPLwjTwZeGrzsgs2QiC6crJLcMg64fU2kDYZmPZ9o7wf Cardano's long-term utility depends on attracting and retaining developers — and this proposal accelerates that by making it dramatically easier to build o..." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 3.60M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3.60M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmQPLwjTwZeGrzsgs2QiC6crJLcMg64fU2kDYZmPZ9o7wf Cardano's long-term utility depends on attracting and retaining developers — and this proposal accelerates that by making it dramatically easier to build o..." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 3.60M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `06bd90fba1ff753bb19ca6e85c08b1b1b51c0eb07b681a9b050fa82415b004ec`
-- snapshot_bundle_hash: `de58fe163b1cdc1cb63032b99c976842d1f449ffdb223974b4880dfa5d98a23d`
+- snapshot_bundle_hash: `abb760f34506f08b408e167f4e74f8b45bee9c330c5331031b0917df943c2011`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `1617`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

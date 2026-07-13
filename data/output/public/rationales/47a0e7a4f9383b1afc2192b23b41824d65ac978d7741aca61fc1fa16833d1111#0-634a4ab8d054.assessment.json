@@ -20,25 +20,17 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Replace Interim Constitutional Committee",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025., The term for the current Interim Constitutional Committee is set to expire on September 6th (end of epoch 580)., Therefore, this governance action is critical to formalize the results of the recent election and ensure a new Constitutional Committee (CC) is enacted in time., This adheres to the Cardano Constitution's mandate for staggered elections and guarantees continuity of the committee's function (Article VII, Section 2).",
-        "Deadline/expiry: not stated in document",
-        "Claim (governance, independently_verifiable, high materiality): This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.",
-        "Claim (governance, independently_verifiable, high materiality): The term for the current Interim Constitutional Committee is set to expire on September 6th (end of epoch 580).",
-        "Claim (governance, independently_verifiable, high materiality): Therefore, this governance action is critical to formalize the results of the recent election and ensure a new Constitutional Committee (CC) is enacted in time.",
-        "Claim (governance, independently_verifiable, high materiality): This adheres to the Cardano Constitution's mandate for staggered elections and guarantees continuity of the committee's function (Article VII, Section 2).",
-        "Claim (governance, independently_verifiable, medium materiality): Electing a new CC before the current term expires is essential to ensure the seamless continuation of Cardano governance and the ability to pass actions requiring CC approval.",
-        "Claim (governance, independently_verifiable, high materiality): In accordance with the constitutional mandate for this election, seven committee seats were filled with staggered terms to ensure continuity."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
-      "missing": [],
+      "missing": [
+        "No structured claim/evidence extraction from the proposal document."
+      ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
@@ -66,7 +58,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.\" and clears the evidence gates.",
+        "Strongest YES: NewCommittee advances a credible public benefit worth its risk if the evidence holds.",
         "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

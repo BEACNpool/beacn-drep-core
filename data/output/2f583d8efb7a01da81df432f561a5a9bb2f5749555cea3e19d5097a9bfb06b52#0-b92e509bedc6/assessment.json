@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: [OriLife \u00d7 TonFarm] Identifying 180 Million Durians Without Physical Labels",
-        "Recipient: ",
-        "Stated amount: 2.40M ADA",
-        "Deliverables: OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT)., The PoC works today: AI fruit identification is live at orilife.io/demo, VeData batching is verified on Cardano Preprod, and farmers across 46 communes have been onboarded over two harvest seasons (verifiable on TON)., The Alliance self-invested ~$500,000 USD before this GA., The Treasury funds production deployment.",
-        "Deadline/expiry: not stated in document",
-        "Claim (economic, independently_verifiable, high materiality): OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT).",
-        "Claim (economic, independently_verifiable, low materiality): The PoC works today: AI fruit identification is live at orilife.io/demo, VeData batching is verified on Cardano Preprod, and farmers across 46 communes have been onboarded over two harvest seasons (verifiable on TON).",
-        "Claim (economic, independently_verifiable, low materiality): The Alliance self-invested ~$500,000 USD before this GA.",
-        "Claim (economic, independently_verifiable, high materiality): The Treasury funds production deployment.",
-        "Claim (economic, independently_verifiable, low materiality): The Problem: A $3.36 Billion Supply Chain Built on Peelable Stickers Vietnam's durian exports to China totaled $3.36 billion USD in 2024 \u2014 over 90% of the country's durian export revenue, employing hundreds of thousands of farmers across the Central Highlan...",
-        "Claim (economic, independently_verifiable, low materiality): The entire traceability system underpinning this supply chain rests on physical QR labels \u2014 printed paper stickers attached to each fruit \u2014 that can be peeled off one fruit and stuck onto another in seconds, with no detection, no audit trail, and no recourse."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"OriLife Alliance proposes 2,400,000 ADA from the Cardano Treasury to deploy tamper-evident traceability across 12,000 hectares of durian in \u0110\u1eafk L\u1eafk, Vietnam \u2014 before the December 1, 2026 deadline (Article 15, Circular 11/2026/TT-BCT).\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 2.40M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

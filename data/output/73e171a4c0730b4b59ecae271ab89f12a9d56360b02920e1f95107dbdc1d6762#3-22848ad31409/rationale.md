@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on IO & Ensurable Systems: Cardano Maintenance Initiative. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: IO & Ensurable Systems: Cardano Maintenance Initiative. It asks the treasury for 62.13M ADA. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYKV7vbX9pwNxst2qWpmtM2k6LRJB4NKKNFJSQyh7zojz Every feature, upgrade, and innovation proposed for Cardano depends on a stable, secure, and well-maintained platform underneath.
-
-A material claim remains proposer-asserted or thinly supported: This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "IO & Ensurable Systems: Cardano Maintenance Initiative" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 62.13M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: This proposal fu
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: IO & Ensurable Systems: Cardano Maintenance Initiative
-- finding: Recipient: 
-- finding: Stated amount: 62.13M ADA
-- finding: Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYKV7vbX9pwNxst2qWpmtM2k6LRJB4NKKNFJSQyh7zojz Every feature, upgrade, and innovation proposed for Cardano depends on a stable, secure, and well-maintained platform underneath., This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027., It covers nine functional areas that together constitute the full support envelope for Cardano: bug fixing and security reviews, CI/CD and infrastructure operations (including disaster recovery per CIP-135), mainnet and mempool monitoring, the Cardano Bluep..., The value is both protective and enabling.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYKV7vbX9pwNxst2qWpmtM2k6LRJB4NKKNFJSQyh7zojz Every feature, upgrade, and innovation proposed for Cardano depends on a stable, secure, and well-maintained platform underneath.
-- finding: Claim (economic, proposer_asserted, high materiality): This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027.
-- finding: Claim (technical, supported_in_proposal, high materiality): It covers nine functional areas that together constitute the full support envelope for Cardano: bug fixing and security reviews, CI/CD and infrastructure operations (including disaster recovery per CIP-135), mainnet and mempool monitoring, the Cardano Bluep...
-- finding: Claim (economic, proposer_asserted, low materiality): The value is both protective and enabling.
-- finding: Claim (economic, supported_in_proposal, low materiality): As a stake pool operator, DApp developer, or ada holder, I want the Cardano platform to remain stable, performant, and secure with predictable release cycles, so that I can rely on it as a production-grade foundation for my operations and applications.
-- finding: Claim (economic, supported_in_proposal, high materiality): A well-maintained Cardano delivers the availability, reliability, and security that operators, developers, and users depend on.
-- missing: Independent evidence for: This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: This proposal fu
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYKV7vbX9pwNxst2qWpmtM2k6LRJB4NKKNFJSQyh7zojz Every feature, upgrade, and innovation proposed for Cardano depends on a stable, secure, and well-maintained platform underneath." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 62.13M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: This proposal fu
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 62.13M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYKV7vbX9pwNxst2qWpmtM2k6LRJB4NKKNFJSQyh7zojz Every feature, upgrade, and innovation proposed for Cardano depends on a stable, secure, and well-maintained platform underneath." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 62.13M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: This proposal fu
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: This proposal funds that foundation — continuous core maintenance and operational support from Q3 2026 through Q1 2027.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: This proposal fu
 
 ## Reproducibility
 - input_hash: `22848ad31409c7c9e78438f64cc78c4482f3bc97d858101d69aa6d2f809e2878`
-- snapshot_bundle_hash: `38910e3c31af21d2208ee9de10b138898e9d2fd0143bbb3b25a166a1641f9d26`
+- snapshot_bundle_hash: `bea081dc20c7f42eb0779bb468d48c9f939101c4a817bfc450633e13ec1937da`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `1616`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

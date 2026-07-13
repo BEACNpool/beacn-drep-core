@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Pebble + Gerolamo - HLabs 2026 Budget. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Pebble + Gerolamo - HLabs 2026 Budget. It asks the treasury for 8.04M ADA. The strongest grounded claim is: Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Pebble + Gerolamo - HLabs 2026 Budget" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 8.04M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Pebble + Gerolamo - HLabs 2026 Budget
-- finding: Recipient: 
-- finding: Stated amount: 8.04M ADA
-- finding: Deliverables: Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem., Harmonic Laboratories supports and maintains a considerable portion of the TypeScript tooling for the Cardano ecosystem, which the majority of Cardano developers use, either directly, or indirectly via other libraries that depend on code written and maintai..., The mission of HLabs is for true decentralization to become the baseline of application development, not only a nice-to-have feature., Duration & Milestones This proposal spans over 12 months , throughout which there will be several deliveries and demos.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, low materiality): Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem.
-- finding: Claim (economic, independently_verifiable, low materiality): Harmonic Laboratories supports and maintains a considerable portion of the TypeScript tooling for the Cardano ecosystem, which the majority of Cardano developers use, either directly, or indirectly via other libraries that depend on code written and maintai...
-- finding: Claim (economic, independently_verifiable, low materiality): The mission of HLabs is for true decentralization to become the baseline of application development, not only a nice-to-have feature.
-- finding: Claim (economic, independently_verifiable, medium materiality): Duration & Milestones This proposal spans over 12 months , throughout which there will be several deliveries and demos.
-- finding: Claim (technical, independently_verifiable, low materiality): Ecosystem benefits Gerolamo, Pebble, and ongoing tooling maintenance each serve distinct stakeholders while collectively strengthening Cardano's infrastructure, developer and user experience, and long-term sustainability.
-- finding: Claim (technical, independently_verifiable, high materiality): TL;DR - dApps for trust-minimized applications - wallets for daedalus-like security - SPOs for relay nodes dApps Decentralized applications benefit immensely from trust-minimized access to blockchain data.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 8.04M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 8.04M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Harmonic Laboratories (HLabs for short) is an R&D firm born and focused solely on the Cardano ecosystem." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 8.04M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `654e8e2ff17329c4f27201b4c63fc360d6d6b6a0994e786b717eaaa9be09b785`
-- snapshot_bundle_hash: `a14ec8141c288708eacfe788f9bc44d366b94706395ba200a34459e7b7f63e75`
+- snapshot_bundle_hash: `2517dd32c7771ef513633a144d3ad7060f29146ca2ecf73c58b090e405c39e25`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `1618`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

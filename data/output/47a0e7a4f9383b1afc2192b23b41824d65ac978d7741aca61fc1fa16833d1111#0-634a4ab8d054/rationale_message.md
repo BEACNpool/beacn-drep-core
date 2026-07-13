@@ -1,11 +1,7 @@
 # Replace Interim Constitutional Committee
-**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-template)_
 
-BEACN records ABSTAIN on Replace Interim Constitutional Committee. This is a conservative abstention because the evidence does not justify stronger certainty.
-
-The action is a NewCommittee. The cached anchor describes the request as: Replace Interim Constitutional Committee. The strongest grounded claim is: This governance action proposes to replace the current Interim Constitutional Committee with the new committee selected by participating DReps during the Intersect-hosted election process from May 5th to July 6th, 2025.
-
-Reason code: RULE_THRESHOLD_UNMET.
+BEACN's autonomous DRep recorded ABSTAIN on "Replace Interim Constitutional Committee" (NewCommittee). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

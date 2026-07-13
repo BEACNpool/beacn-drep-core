@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 1.50M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "ee28378e001eb94c7f9c04f18e191a3e6983fe9338d3dca4f9887ab990317825",
-  "snapshot_bundle_hash": "437be606b0fb1d0c99e686e738e0ac67957119512fda48995fba98eb6a306e45",
+  "snapshot_bundle_hash": "91f64dd718eb3fc797be9c3978703f00ade348c228d4f36465670f5065568f7d",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 1651,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Amaru Treasury Withdrawal 2025",
-          "Recipient: ",
-          "Stated amount: 1.50M ADA",
-          "Deliverables: Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano., It aims to improve the network's overall accessibility and robustness without compromising its safety and security., This treasury withdrawal of \u20b31.5M follows a previously submitted and now approved budget proposal., It is split across five script addresses each covering a scope of a work (ledger, consensus, mercenaries and marketing) and a contingency reserve.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, independently_verifiable, low materiality): Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.",
-          "Claim (economic, independently_verifiable, high materiality): It aims to improve the network's overall accessibility and robustness without compromising its safety and security.",
-          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal of \u20b31.5M follows a previously submitted and now approved budget proposal.",
-          "Claim (economic, independently_verifiable, low materiality): It is split across five script addresses each covering a scope of a work (ledger, consensus, mercenaries and marketing) and a contingency reserve.",
-          "Claim (economic, independently_verifiable, low materiality): Who we are Amaru is a multi-entity effort that currently sits under PRAGMA: a member-based, not-for-profit association for open-source blockchain software projects.",
-          "Claim (economic, independently_verifiable, low materiality): Five members with equal power currently drive PRAGMA's strategy and operations: Blink Labs, Cardano Foundation, dcSpark, Sundae Labs, and TxPipe."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Amaru Treasury Withdrawal 2025. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Amaru Treasury Withdrawal 2025. It asks the treasury for 1.50M ADA. The strongest grounded claim is: Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Amaru Treasury Withdrawal 2025\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.50M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "60ed6ab43c840ff888a8af30a1ed27b41e9f4a91a89822b2b63d1bfc52aeec45#0",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action1vrkk4dpuss8l3z9g4uc2rmf8ks0f7j534zvz9v4k85dlc54wa3zsqq68rx0-20260326T175236Z.bin",
         "content_chars": 24618
       },
-      "claim_count": 8,
-      "prompt_sha256": "fd9690bc6f9f29d63ee278cb5df8ff359f64cc8a1fec9709bf255d94277ecc05",
-      "output_sha256": "e2cc3bb361a250404769cd5632c519c229de9d615103cd5bf540b8c890641cec"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "7ce462394f07b4b9e5402bd07a09908c9d972efd04ca04ebc05dcec06983899e",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "c9cf630c382775fdb2ed090bed55fe2b34f98c38f03db0ce026e7021197c506c",
-      "output_sha256": "32024296dce610fc2e1a2c15b86e687d2fda3308febb3b2f7c0d8422cc0197c2"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

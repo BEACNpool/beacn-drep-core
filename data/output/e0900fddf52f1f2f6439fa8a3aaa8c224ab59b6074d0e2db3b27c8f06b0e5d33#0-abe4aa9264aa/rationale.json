@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 8.50M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 8.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "abe4aa9264aacd9c611b36cedd30bba3493c34ad92e345da3860aa2b88e60c80",
-  "snapshot_bundle_hash": "061ecf06e24ef474390b885f77625ec5a6a8e6f84f8549a38bb6d771990511dd",
+  "snapshot_bundle_hash": "b4540bbb3eddaa99c22cc46f9c0ae3162f9bd8e6d27fd2e9135dd4ee388ed0ab",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 1610,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Scalus: Cardano\u2019s Application Platform for Building, Launching, and Scaling",
-          "Recipient: not stated in document",
-          "Stated amount: 8.50M ADA",
-          "Deliverables: Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning., But the next bottleneck is no longer core infrastructure, it is application delivery., Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling., It lacks an integrated application platform that has it all and just works.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, proposer_asserted, low materiality): Protocol upgrades, critical integrations, DeFi liquidity, and VC capital are aligning.",
-          "Claim (technical, proposer_asserted, low materiality): But the next bottleneck is no longer core infrastructure, it is application delivery.",
-          "Claim (economic, supported_in_proposal, low materiality): Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.",
-          "Claim (economic, proposer_asserted, low materiality): It lacks an integrated application platform that has it all and just works.",
-          "Claim (technical, proposer_asserted, low materiality): The Application Layer Decides the Next Chapter Cardano has shipped the protocol foundations.",
-          "Claim (economic, proposer_asserted, low materiality): The question is no longer \"can Cardano do X?\" but \"how fast can builders ship X?\"."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 8.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Scalus: Cardano\u2019s Application Platform for Building, Launching, and Scaling. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Scalus: Cardano\u2019s Application Platform for Building, Launching, and Scaling. It asks the treasury for 8.50M ADA. The strongest grounded claim is: Teams still struggle to ship non-trivial applications because they must master and assemble too many moving parts themselves: smart contracts, formal verification, chain access, operations, and scaling.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Scalus: Cardano\u2019s Application Platform for Building, Launching, and Scaling\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 8.50M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "e0900fddf52f1f2f6439fa8a3aaa8c224ab59b6074d0e2db3b27c8f06b0e5d33#0",
         "anchor_read": true,
@@ -311,9 +303,9 @@
         "content_chars": 93761,
         "truncated_to_chars": 60000
       },
-      "claim_count": 8,
-      "prompt_sha256": "4c9e9ae1d4870e9f3fdeaf40102a514250c838f8bc965ad16c3a2d1ebb13573d",
-      "output_sha256": "b7e64ef157bfaf02c276079210e0df986ce71f1a9a4c9ca41285bec3e6aafbd5"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -324,24 +316,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "06935de4c1df7d84e2a0f15915567cf1ff15d393101953c1f582f12fd3f2ae32",
-      "output_sha256": "1eb194be8a5c57cddf9f267049f1b45cb116f138581176dcc5894e3edf79ae88"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "bc8a333437a9ac18a831afa5a7d0ef344a2b7880b23d2144789cbd3b76d6e19b",
-      "output_sha256": "9b031a0c7279eb73dc8ba226ed8cacc15424bd27e20a74f5a0fe126388c64ad3"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

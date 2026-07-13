@@ -23,26 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Treasury withdrawal to fund Blockfrost's 18-month transition and operations as a free, community-governed not-for-profit public API for Cardano.",
-        "Recipient: not stated in document",
-        "Stated amount: 9,832,979",
-        "Deliverables: Establish a not-for-profit entity or host-organization agreement under a preliminary board in Q3 2026, publish a technical transition architecture and migration plan, and launch a public usage dashboard., Hold a board election via on-chain voting under public rules in Q4 2026, with results verifiable on-chain and the elected board assuming its mandate., By Q1 2027, serve all public API traffic for mainnet, preview, and preprod from the new stack, transfer Blockfrost intellectual property to the governing entity, and maintain current service performance during cutover., In Q2-Q3 2027, open public consultation on long-term sustainability, publish a sustainability proposal for community feedback, and document the chosen direction., Operate the public API during 2027 at a minimum 99% monthly uptime SLA, publish quarterly technical and budget reports, and make monthly milestones verifiable against dashboard data.",
-        "Deadline/expiry: 18-month funding period with milestones from Q3 2026 through 2027",
-        "Claim (technical, supported_in_proposal, high materiality): Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node.",
-        "Claim (other, proposer_asserted, medium materiality): The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.",
-        "Claim (adoption, independently_verifiable, high materiality): The proposal cites Cardano Foundation developer ecosystem survey links showing Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025.",
-        "Claim (adoption, proposer_asserted, high materiality): The proposal states that last month Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.",
-        "Claim (adoption, proposer_asserted, high materiality): The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost and that more than 100 Icebreakers have joined the decentralization effort.",
-        "Claim (economic, proposer_asserted, high materiality): The proposal says 90% of Cardano traffic served through the Blockfrost API comes from the free tier and that the commercial model has struggled to finance this public-good operation."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.",
-        "Independent evidence for: The proposal states that last month Blockfrost served 781,000 unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.",
-        "Independent evidence for: The proposal states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost and that more than 100 Icebreakers have joined the decentralization effort.",
-        "Independent evidence for: The proposal says 90% of Cardano traffic served through the Blockfrost API comes from the free tier and that the commercial model has struggled to finance this public-good operation."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -50,14 +37,14 @@
       "title": "Treasury analysis",
       "status": "complete",
       "findings": [
-        "Requested ADA: 0",
+        "Requested ADA: 9832979",
         "Budget granularity: confirmed",
         "Milestone payment gates: confirmed",
         "Clawback/refund path: confirmed",
         "Cost/benefit clarity: unknown",
         "Recurring funding dependency: unknown",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.74"
+        "Financial confidence: 0.68"
       ],
       "missing": [
         "sustainability path",
@@ -72,14 +59,15 @@
         "Execution risk: medium",
         "Governance risk: medium",
         "Technical risk: medium",
-        "Treasury exposure risk: high",
+        "Treasury exposure risk: medium",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
-        "Rollback/remedy path: confirmed",
+        "Rollback/remedy path: unknown",
         "Flag count: 2"
       ],
       "missing": [
         "independent assurance",
+        "rollback/remedy path",
         "dependency map"
       ],
       "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
@@ -88,8 +76,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Blockfrost is described as a hosted REST interface that lets developers read from and interact with Cardano without running their own infrastructure or node.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 9.83M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.01,
   "raw_score": 0.01,
-  "llm_score_adjustment": 0.005,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "NEUTRAL",
-    "score_adjustment": 0.005,
-    "confidence": 0.85,
-    "rationale": "Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -39,12 +30,11 @@
     "Intake: Action type: InfoAction",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Advisory model lean was +0.005 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -53,7 +43,7 @@
   ],
   "uncertainty": [
     "Rule-based system; does not infer unstated intent.",
-    "Claims and evidence missing: Independent evidence for: A key issue in the initial budget process was the misapplication of the participation threshold.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
@@ -61,10 +51,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "091c01b940d1f51a9eb2c223cbee4a3ebf33814f95238bf20358e6b7d686ecc9",
-  "snapshot_bundle_hash": "cfc476e856011c40df77d078fc5952a849a4206c00fda580c7c231b302e2b840",
+  "snapshot_bundle_hash": "13c66a9d28f67b4f43c6a6f7b0e3cf91fc5aac1731e4191090cf8bdcd1a97949",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -78,10 +68,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 1652,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -119,23 +109,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: 2025 Cardano Blockchain Ecosystem Budget - 7.5M \u20b3 for community builders",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation., ADA holders, through Delegated Representatives (DReps) and Constitutional Committee oversight, vote on funding proposals within a capped Net Change Limit of 350 million ADA., The process includes two stages: community signaling and a binding on-chain Info Action vote., Intersect, a member-based organization, facilitates the process by organizing submissions and offering domain expertise, while final decisions rest with the community.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, independently_verifiable, high materiality): The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation.",
-          "Claim (economic, supported_in_proposal, high materiality): ADA holders, through Delegated Representatives (DReps) and Constitutional Committee oversight, vote on funding proposals within a capped Net Change Limit of 350 million ADA.",
-          "Claim (governance, independently_verifiable, medium materiality): The process includes two stages: community signaling and a binding on-chain Info Action vote.",
-          "Claim (adoption, supported_in_proposal, medium materiality): Intersect, a member-based organization, facilitates the process by organizing submissions and offering domain expertise, while final decisions rest with the community.",
-          "Claim (economic, supported_in_proposal, high materiality): The 2025 Cardano budget, established through the Intersect-led process, is designed to ensure Cardano remains secure, competitive, and growth-oriented during this pivotal first year of decentralized, constitutional governance.",
-          "Claim (economic, supported_in_proposal, high materiality): The total treasury allocation adheres to the community-approved Net Change Limit (NCL) of \u20b3350 million ada, reflecting our shared commitment to long-term financial sustainability."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: A key issue in the initial budget process was the misapplication of the participation threshold."
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -164,8 +144,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"A key issue in the initial budget process was the misapplication of the participation threshold.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -208,14 +188,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on 2025 Cardano Blockchain Ecosystem Budget - 7.5M \u20b3 for community builders. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: 2025 Cardano Blockchain Ecosystem Budget - 7.5M \u20b3 for community builders. The strongest grounded claim is: The Cardano 2025 on-chain budget process introduces a constitutionally driven, community-led model for treasury allocation.\n\nA material claim remains proposer-asserted or thinly supported: A key issue in the initial budget process was the misapplication of the participation threshold. Reason code: RULE_THRESHOLD_UNMET.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"2025 Cardano Blockchain Ecosystem Budget - 7.5M \u20b3 for community builders\" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "defbf15b06092718adf4befeab982e03d2966b9caeef93c19e470549ef75ea49#0",
         "anchor_read": true,
@@ -226,9 +206,9 @@
         "file_path": "data/input/governance/anchors/gov_action1mmalzkcxpyn33t05hml2hxpwq0ffv6uu4mhe8sv7guz5nmm4afysqlmepzl-20260326T175236Z.bin",
         "content_chars": 11003
       },
-      "claim_count": 8,
-      "prompt_sha256": "6950cc203cfdc41e55ee9ef3bd20c6e925bb37d8e3964a4cd44acbfbc60032de",
-      "output_sha256": "effc95f296aced884ceb3f6415a6c55fca011dd6fa5cee746a65e63e2e338f36"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "info",
@@ -239,24 +219,24 @@
       "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "direction": "NEUTRAL",
-      "score_adjustment": 0.005,
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "40b534314d9a0c98347e2efbcd202ddcda4e138b5ec44f16bc6b3e913e63b886",
-      "output_sha256": "4bc476bf00abf6339c77a17dbce6740f8f498c087c222cbaa3621f9f8ca15561"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "0fcfdae754c3c8508c00065e1c69a131ba08b3d249b04398d96adb67cac9c88f",
-      "output_sha256": "9ff4673169b6d192e03d3929893a42d74d4a1ff5d55746bdceb38a0128fb199c"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

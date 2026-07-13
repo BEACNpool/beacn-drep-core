@@ -20,24 +20,24 @@
   },
   "proof_of_vote": {
     "vote": "NEEDS_MORE_INFO",
-    "score": 0.219,
-    "confidence": 0.7747,
+    "score": 0.209,
+    "confidence": 0.7722,
     "input_hash": "b0dbbc184d59850e07f6937767b2de28c018776a65fb66e7a3d8975ee03ecbe6",
-    "snapshot_bundle_hash": "305773a78eb8d01d89fcbae614561e801c127fc766cfff4cdbbe00fe3f458800",
+    "snapshot_bundle_hash": "b3e41822e9c649813cd60ce757ad7ba8c399d158d3b6c2d26aa260b5df09daa9",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-b0dbbc184d59.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/69fbf5728f050c58112a8599.md",
-    "rationale_anchor_hash": "69fbf5728f050c58112a8599f9d7b58c93b5c07ecdeb7272731d5a83e3657ee3"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal says Mithril enables rapid trustless state verification for nodes and applications without relying on the entire chain. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.22; confidence 77.5%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the 3.81M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide No structured claim/evidence extraction from the proposal document. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.21; confidence 77.2%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide independent evidence for: The proposal says Mithril enables rapid trustless state verification for nodes and applications without relying on the entire chain.",
-      "Provide independent evidence for: The proposal claims faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring."
+      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide line-item budget."
     ],
     "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-b0dbbc184d59.md",
     "missing_evidence": [
@@ -70,26 +70,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Withdraw treasury funds for Mithril Protocol continued development through the Intersect budget process.",
-            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with Intersect administering funds and Teragone identified as the vendor in the rationale.",
-            "Stated amount: 3810423",
-            "Deliverables: Mithril Protocol Continuous Development, Intersect budget administration and oversight, Milestone-based disbursement controls through treasury management smart contracts",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
-            "Claim (technical, proposer_asserted, high materiality): Mithril is presented as solving the cost and complexity of securely accessing and verifying Cardano blockchain state using stake-based threshold multi-signatures.",
-            "Claim (technical, proposer_asserted, high materiality): The proposal says Mithril enables rapid trustless state verification for nodes and applications without relying on the entire chain.",
-            "Claim (adoption, proposer_asserted, medium materiality): The proposal claims faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
-            "Claim (economic, independently_verifiable, high materiality): The proposal states the requested amount does not breach the applicable 350M ada Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: Mithril is presented as solving the cost and complexity of securely accessing and verifying Cardano blockchain state using stake-based threshold multi-signatures.",
-            "Independent evidence for: The proposal says Mithril enables rapid trustless state verification for nodes and applications without relying on the entire chain.",
-            "Independent evidence for: The proposal claims faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring.",
-            "Independent evidence for: The proposal says Teragone has not previously received direct Cardano treasury or community governance funding but has worked on Mithril for several years through IOG funding."
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -97,16 +84,17 @@
           "title": "Treasury analysis",
           "status": "complete",
           "findings": [
-            "Requested ADA: 0",
-            "Budget granularity: confirmed",
+            "Requested ADA: 3810423",
+            "Budget granularity: not confirmed",
             "Milestone payment gates: confirmed",
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
             "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-            "Financial confidence: 0.58"
+            "Financial confidence: 0.45"
           ],
           "missing": [
+            "line-item budget",
             "sustainability path",
             "cost-benefit clarity"
           ],
@@ -136,8 +124,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 3,810,423 ada, consisting of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Mithril is presented as solving the cost and complexity of securely accessing and verifying Cardano blockchain state using stake-based threshold multi-signatures.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 3.81M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -161,9 +149,9 @@
       "evidence_status": "independently_verified",
       "benefit": 0.96,
       "delivery_confidence": 0.75,
-      "cost_efficiency": 0.25,
+      "cost_efficiency": 0.2,
       "downside_risk": 0.35,
-      "composite": 0.219,
+      "composite": 0.209,
       "affirmative_waste_evidence": [],
       "missing": [
         "cost comparables, budget proportionality, or sustainability evidence"
@@ -189,9 +177,9 @@
         "evidence_status": "independently_verified",
         "benefit": 0.96,
         "delivery_confidence": 0.75,
-        "cost_efficiency": 0.25,
+        "cost_efficiency": 0.2,
         "downside_risk": 0.35,
-        "composite": 0.219,
+        "composite": 0.209,
         "affirmative_waste_evidence": [],
         "missing": [
           "cost comparables, budget proportionality, or sustainability evidence"
@@ -224,9 +212,9 @@
       "evidence_status": "independently_verified",
       "benefit": 0.96,
       "delivery_confidence": 0.75,
-      "cost_efficiency": 0.25,
+      "cost_efficiency": 0.2,
       "downside_risk": 0.35,
-      "composite": 0.219,
+      "composite": 0.209,
       "affirmative_waste_evidence": [],
       "missing": [
         "cost comparables, budget proportionality, or sustainability evidence"
@@ -256,16 +244,7 @@
     "sections_total": 7,
     "owner": "drep-agent-extract",
     "dossier_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5.md",
-    "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5.receipt.json",
-    "verification": {
-      "passed": true,
-      "verified_at_utc": "2026-07-12T14:51:58+00:00",
-      "model": "claude-cli",
-      "fact_count": 29,
-      "supported": 29,
-      "support_ratio": 1.0,
-      "material_discrepancies": 0
-    }
+    "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5.receipt.json"
   },
   "flags": [
     {
@@ -302,7 +281,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -405,17 +384,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.219,
+    "binding_score": 0.209,
     "raw_score": -0.33,
     "directional_threshold": 0.06,
-    "confidence": 0.7747,
+    "confidence": 0.7722,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 1602,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -20,29 +20,27 @@
   },
   "proof_of_vote": {
     "vote": "NEEDS_MORE_INFO",
-    "score": 0.2384,
-    "confidence": 0.7796,
+    "score": -0.08,
+    "confidence": 0.74,
     "input_hash": "1a688d8d12933602d2f53f09c3d355df9ed1b72cebc97779cd4aa373a565bea4",
-    "snapshot_bundle_hash": "b9857933e34ada91a24bddca9b15765e25bd03a162db94d9bc448cdec6039364",
+    "snapshot_bundle_hash": "1a46f2aadb627077552bb5f0eb031b14aa7abaf61359bfbf7dc92ef08981bd45",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3-1a688d8d1293.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3dda1ead24ad073df3a629c9.md",
-    "rationale_anchor_hash": "3dda1ead24ad073df3a629c925fa1ddb7ba8a1d9c8a074294a7af1b48075f638"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.24; confidence 78.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the 1.19M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.08; confidence 74.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-      "Provide sustainability path."
+      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide sustainability path.",
+      "Provide cost-benefit clarity."
     ],
     "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3-1a688d8d1293.md",
-    "missing_evidence": [
-      "cost comparables, budget proportionality, or sustainability evidence"
-    ],
+    "missing_evidence": [],
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -70,24 +68,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Withdraw treasury funds for Intersect Technical Steering Committee Support over 12 months.",
-            "Recipient: Intersect Technical Steering Committee support via Intersect treasury management smart contracts",
-            "Stated amount: 1,193,000",
-            "Deliverables: WP 1: Community-Facing Technical Coordination, including technical expert attendance at major ecosystem events and commissioning technical reports, WP 2: Protocol Governance and Evolution, funding the Parameter Committee, CIP editors, and Hard Fork Working Group, WP 3: Technical Review, establishing a pilot independent technical review programme launching in 2027",
-            "Deadline/expiry: 12 months; WP3 pilot launching in 2027",
-            "Claim (economic, supported_in_proposal, high materiality): Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal allocates 256,000 ADA to WP 1, 832,000 ADA to WP 2, and 105,000 ADA to WP 3, totaling 1,193,000 ADA.",
-            "Claim (technical, supported_in_proposal, high materiality): The work packages cover community-facing technical coordination, protocol governance and evolution, and a pilot independent technical review programme launching in 2027.",
-            "Claim (governance, supported_in_proposal, high materiality): Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.",
-            "Claim (economic, proposer_asserted, high materiality): The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-            "Claim (governance, independently_verifiable, medium materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides related voting and audit references."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-            "Independent evidence for: Independent audits and assurance for this proposal will be provided by Appold, with possible reviews of deliverables, controls, spending, and milestone evidence."
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -95,14 +82,14 @@
           "title": "Treasury analysis",
           "status": "complete",
           "findings": [
-            "Requested ADA: 0",
+            "Requested ADA: 1193000",
             "Budget granularity: confirmed",
             "Milestone payment gates: confirmed",
-            "Clawback/refund path: confirmed",
+            "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
-            "Recurring funding dependency: confirmed",
+            "Recurring funding dependency: unknown",
             "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-            "Financial confidence: 0.72"
+            "Financial confidence: 0.55"
           ],
           "missing": [
             "sustainability path",
@@ -114,10 +101,10 @@
           "title": "Risk review",
           "status": "complete",
           "findings": [
-            "Execution risk: medium",
-            "Governance risk: medium",
-            "Technical risk: medium",
-            "Treasury exposure risk: high",
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
             "Mitigation evidence: confirmed",
             "Independent assurance: not confirmed",
             "Rollback/remedy path: unknown",
@@ -134,8 +121,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 1.19M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -158,14 +145,12 @@
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.91,
-      "delivery_confidence": 0.9,
-      "cost_efficiency": 0.25,
-      "downside_risk": 0.3375,
-      "composite": 0.2384,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.35,
+      "composite": 0.239,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
+      "missing": []
     },
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -186,21 +171,19 @@
       "dimensions": {
         "evidence_status": "independently_verified",
         "benefit": 0.91,
-        "delivery_confidence": 0.9,
-        "cost_efficiency": 0.25,
-        "downside_risk": 0.3375,
-        "composite": 0.2384,
+        "delivery_confidence": 0.75,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.35,
+        "composite": 0.239,
         "affirmative_waste_evidence": [],
-        "missing": [
-          "cost comparables, budget proportionality, or sustainability evidence"
-        ]
+        "missing": []
       },
-      "merit_recommendation": "NEEDS_MORE_INFO",
-      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "merit_recommendation": "YES",
+      "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
       "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass."
   },
   "decision_contract": {
     "policy": "balanced-return-risk-v1",
@@ -221,17 +204,15 @@
     "dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.91,
-      "delivery_confidence": 0.9,
-      "cost_efficiency": 0.25,
-      "downside_risk": 0.3375,
-      "composite": 0.2384,
+      "delivery_confidence": 0.75,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.35,
+      "composite": 0.239,
       "affirmative_waste_evidence": [],
-      "missing": [
-        "cost comparables, budget proportionality, or sustainability evidence"
-      ]
+      "missing": []
     },
-    "merit_recommendation": "NEEDS_MORE_INFO",
-    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
   "proposal_evidence": {
@@ -257,10 +238,10 @@
     "receipt_path": "/data/output/public/dossiers/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3.receipt.json",
     "verification": {
       "passed": true,
-      "verified_at_utc": "2026-07-08T12:57:10+00:00",
-      "model": "gpt-5.5",
-      "fact_count": 29,
-      "supported": 29,
+      "verified_at_utc": "2026-07-13T01:49:07+00:00",
+      "model": "claude-cli",
+      "fact_count": 15,
+      "supported": 15,
       "support_ratio": 1.0,
       "material_discrepancies": 0
     }
@@ -300,7 +281,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -403,17 +384,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.2384,
+    "binding_score": -0.08,
     "raw_score": -0.08,
     "directional_threshold": 0.06,
-    "confidence": 0.7796,
+    "confidence": 0.74,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 1603,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "26b67e3390c3ca4ee5be961ed8945598bb70794d589925d9c6505df71ad9d259",
-    "snapshot_bundle_hash": "a35de601c053f4ade1c1067fe2fba8b181530ce34eb7ffeab7830b03ae47a99c",
+    "snapshot_bundle_hash": "d1976b7e2bdd63de22e6b3311a6ba18153e8afde4db05e788dac5f8b8514e850",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/f8393f1ff814d3d52336a97712361fed933d9ef9e8d0909e1d31536a549fd22f#0-26b67e3390c3.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps...\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 70.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Withdraw \u20b370,000,000 for Cardano Critical Integrations Budget",
-            "Recipient: ",
-            "Stated amount: 70.00M ADA",
-            "Deliverables: This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps..., This governance action requests to withdraw \u20b370,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital asset custody and wallet..., These integrations are foundational for tier-one stablecoin deployment, large scale DeFi growth, and acceleration of RWA and DePin activity, strengthening Cardano\u2019s long term fee generation and treasury sustainability., This project is being driven through close collaboration between Input | Output Global, the Cardano Foundation, and EMURGO, together with Midnight Foundation and Intersect, all of whom are actively engaged in negotiations with integration partners.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps...",
-            "Claim (technical, independently_verifiable, high materiality): This governance action requests to withdraw \u20b370,000,000 from the Cardano Treasury to establish a strategic integration fund supporting the onboarding of critical infrastructure, including tier-one stablecoins, institutional digital asset custody and wallet...",
-            "Claim (economic, independently_verifiable, high materiality): These integrations are foundational for tier-one stablecoin deployment, large scale DeFi growth, and acceleration of RWA and DePin activity, strengthening Cardano\u2019s long term fee generation and treasury sustainability.",
-            "Claim (economic, independently_verifiable, low materiality): This project is being driven through close collaboration between Input | Output Global, the Cardano Foundation, and EMURGO, together with Midnight Foundation and Intersect, all of whom are actively engaged in negotiations with integration partners.",
-            "Claim (technical, independently_verifiable, medium materiality): Strategic Need Cardano has a strong technical and governance foundation, but lacks several critical integrations required for large-scale economic activity and external liquidity.",
-            "Claim (technical, independently_verifiable, low materiality): The absence of key systems, including stablecoin infrastructures, interoperability frameworks, and institutional-grade pricing oracle networks limits the ecosystem\u2019s capacity to attract external capital, facilitate stable on-chain operations, and support ad..."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This treasury withdrawal is submitted pursuant to the Budget Info Action \u201cCardano Critical Integrations Budget\u201d (gov action13a2dqgwxum7d6kjfprcs57cf9733ek2dkt5qnuhqd4ll5ntcwu7sqluwkxd) and can only be ratified if that Budget Info Action is approved by DReps...\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 70.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 7,
+    "snapshot_age_seconds": 1625,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

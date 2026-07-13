@@ -34,7 +34,7 @@
   "action_type": "InfoAction",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -148,13 +148,13 @@
       "file_hash": "a10f6aa25316444e7baf6cbbc727d790192f47114b820fe7f0dfc0f568a0fd39"
     }
   ],
-  "snapshot_bundle_hash": "1ba23166067e4b45fbbc5501ffad23f318789f08645b7727265f1d96ee702753",
+  "snapshot_bundle_hash": "0b4cc5a1800e3f2e95477ee7ab96885270a20efe22b86753d38df110669e6a47",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "637e3c256da9c1350847ca3211e8c44e3660a4471e8b6f68a8c537746b4aeb73#0",
         "anchor_read": true,
@@ -165,9 +165,9 @@
         "file_path": "data/input/governance/anchors/gov_action1vdlrcftd48qn2zz8egepr6xyfcmxpfz8r69k769gc5mhg662adesq9yy8pl-20260326T175236Z.bin",
         "content_chars": 3180
       },
-      "claim_count": 8,
-      "prompt_sha256": "8d7a7477ac2b634589f2d8a432ef7787f6f38cd99e3171c9ba2aac180bb05394",
-      "output_sha256": "10977e03019e0f05559b11df1db0a355a88f451aed4361cad5c5923a50682482"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "info",
@@ -178,24 +178,24 @@
       "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "YES",
-      "score_adjustment": 0.03,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "10caa3b59f5bc737904bfaada39943334131fd9f652b1fa8fd23ad2f15b7d58d",
-      "output_sha256": "35da02a99eafe08b3b4258a2217427af69a6ba92c40923a00aefc5e95136cc82"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "56b47f795b8126d672ea0695686ff0618d4982231492309ca8375c10c7d7cc08",
-      "output_sha256": "cf37573a9427fd0eedd0a00dffed2b1a67ebb1708ec2aec909afe32e8183bc57"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

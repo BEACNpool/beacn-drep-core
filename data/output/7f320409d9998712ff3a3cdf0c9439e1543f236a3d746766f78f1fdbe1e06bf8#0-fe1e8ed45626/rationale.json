@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.11,
   "raw_score": 0.11,
-  "llm_score_adjustment": 0.005,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "NEUTRAL",
-    "score_adjustment": 0.005,
-    "confidence": 0.85,
-    "rationale": "Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -38,12 +29,11 @@
     "Intake: Action type: InfoAction",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"As part of the budget approval process, it is necessary to establish a Net Change Limit.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Advisory model lean was +0.005 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -52,7 +42,7 @@
   ],
   "uncertainty": [
     "Rule-based system; does not infer unstated intent.",
-    "Claims and evidence missing: Independent evidence for: The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
@@ -60,10 +50,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "fe1e8ed4562672e936a98bef8f554b56bee33d8e2dbd6a979a5542d7497ee96e",
-  "snapshot_bundle_hash": "881979537fecb86cf4e67e5f867c21ef9ce58668134e6644e2671b102257fc10",
+  "snapshot_bundle_hash": "5f89a3b4a9473b782071348f3cd9279029b6fcb78decc7bef661b9acb531a10f",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -77,10 +67,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 1654,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -118,23 +108,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: Set 2025 Net Change Limit of 300M ADA, 2026 Net Change Limit of 250M ADA",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: As part of the budget approval process, it is necessary to establish a Net Change Limit., This serves as an opportunity for all governance stakeholders to formally express their positions regarding the proposed Net Change Limit, ensuring transparency, accountability, and alignment with organizational objectives., 2025 Net Change Limit of 300,000,000,000,000 lovelace (300M ada) 2026 Net Change Limit of 250,000,000,000,000 lovelace (250M ada) The Net Change Limit beyond 2027 is not defined in this governance action., The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, supported_in_proposal, high materiality): As part of the budget approval process, it is necessary to establish a Net Change Limit.",
-          "Claim (governance, supported_in_proposal, medium materiality): This serves as an opportunity for all governance stakeholders to formally express their positions regarding the proposed Net Change Limit, ensuring transparency, accountability, and alignment with organizational objectives.",
-          "Claim (economic, supported_in_proposal, medium materiality): 2025 Net Change Limit of 300,000,000,000,000 lovelace (300M ada) 2026 Net Change Limit of 250,000,000,000,000 lovelace (250M ada) The Net Change Limit beyond 2027 is not defined in this governance action.",
-          "Claim (economic, proposer_asserted, high materiality): The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I.",
-          "Claim (economic, supported_in_proposal, high materiality): Prior to the submission of any budget request, a Net Change Limit must be formally agreed upon.",
-          "Claim (economic, supported_in_proposal, high materiality): Failure to establish a Net Change Limit shall render any such budget request unconstitutional and, therefore, inapplicable."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I."
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -163,8 +143,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"As part of the budget approval process, it is necessary to establish a Net Change Limit.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -207,14 +187,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on Set 2025 Net Change Limit of 300M ADA, 2026 Net Change Limit of 250M ADA. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Set 2025 Net Change Limit of 300M ADA, 2026 Net Change Limit of 250M ADA. The strongest grounded claim is: As part of the budget approval process, it is necessary to establish a Net Change Limit.\n\nA material claim remains proposer-asserted or thinly supported: The Net Change Limit will be used when reviewing both budget actions and treasury withdrawal actions to ensure constitutionality as required by Article IV of the Constitution and the Treasury Withdrawal Guardrails outlined in Appendix I. Reason code: RULE_THRESHOLD_UNMET.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Set 2025 Net Change Limit of 300M ADA, 2026 Net Change Limit of 250M ADA\" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "7f320409d9998712ff3a3cdf0c9439e1543f236a3d746766f78f1fdbe1e06bf8#0",
         "anchor_read": true,
@@ -225,9 +205,9 @@
         "file_path": "data/input/governance/anchors/gov_action10ueqgzwenxr39le68n0se9peu92r7gm2846xwehh3u0ahc0qd0uqqyljxu5-20260326T175237Z.bin",
         "content_chars": 6538
       },
-      "claim_count": 8,
-      "prompt_sha256": "70188b28d3c2c5d4e506bd4cb29a6c62b8ea0d9372cf90b19dd47af86ec4fa28",
-      "output_sha256": "e29c55ccd99b2476115fe03050c037bc0d22670dba0675eacf81b53ae5bb17a7"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "info",
@@ -238,24 +218,24 @@
       "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "direction": "NEUTRAL",
-      "score_adjustment": 0.005,
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "526b2bfa036da4767c4658738f785a51ac9482ea62b55fddf0da38ea166b05f6",
-      "output_sha256": "4bc476bf00abf6339c77a17dbce6740f8f498c087c222cbaa3621f9f8ca15561"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "a21fc69d1b7503f8b2f080c9417d6311a83fb383cde510d4e507ad2983266dc4",
-      "output_sha256": "f449d9a172b16d2dfddffef0f1ed6ba9abf436108b7c792175524076a0b31b2d"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

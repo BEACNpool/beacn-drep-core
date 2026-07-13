@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "2e1218a4366ca9e093694852538a567295b2d328412a716e8df14c9944082f5c",
-    "snapshot_bundle_hash": "a4b945071794cc450cff3153c45a73083d01ea3886d0298bcaa70b2302a1d418",
+    "snapshot_bundle_hash": "7c6145d4e2a12ec9876d250d82511a85252782e1faa870a8387215c0052a404b",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/17e43ffe4b2e0df1787d54f21ac66643c74abb131a326272fceecbdbbdd0d3fc#0-2e1218a4366c.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 18.26M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132027",
-            "Recipient: ",
-            "Stated amount: 18.26M ADA",
-            "Deliverables: This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027., The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs., ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability., Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness and further support and maintenance - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Conformance Testing \u2013 CTC framework extended for Peras and...",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.",
-            "Claim (economic, independently_verifiable, high materiality): The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs.",
-            "Claim (economic, independently_verifiable, low materiality): ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability.",
-            "Claim (technical, independently_verifiable, low materiality): Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness and further support and maintenance - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Conformance Testing \u2013 CTC framework extended for Peras and...",
-            "Claim (technical, independently_verifiable, high materiality): Problem Statement Cardano's next growth phase depends on two critical protocol upgrades: Peras (faster finality) and Leios (higher throughput).",
-            "Claim (economic, independently_verifiable, low materiality): Together they unlock significantly higher transaction volume, staking rewards, and TVL."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This treasury withdrawal requests \u20b318,263,496.00 (USD $4,565,874.00) to fund Tweag by Modus Create's delivery of 3 work packages across core infrastructure areas for the Cardano ecosystem over 2026\u20132027.\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 18.26M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -329,7 +320,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -439,10 +430,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 1608,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

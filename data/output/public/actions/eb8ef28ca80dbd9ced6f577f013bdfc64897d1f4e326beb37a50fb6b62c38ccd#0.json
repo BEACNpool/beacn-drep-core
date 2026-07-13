@@ -21,23 +21,23 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.11,
-    "confidence": 0.6275,
+    "confidence": 0.4775,
     "input_hash": "27d7b8e7a987489cf4242388e262381c79ba1b15c7f1d69de4e70d831426b47c",
-    "snapshot_bundle_hash": "54aeec6fc0ad4d3d120e88d7877c883a31834dd3a65cd7bbf1e86a3102b67f27",
+    "snapshot_bundle_hash": "8718ccc19845745a93c824b34d2f28728a9281d9d10c556bd44d3947f31ad5eb",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/eb8ef28ca80dbd9ced6f577f013bdfc64897d1f4e326beb37a50fb6b62c38ccd#0-27d7b8e7a987.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewCommittee (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 62.7%.",
+    "summary": "Vote: ABSTAIN. For this NewCommittee (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: NewCommittee advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.11; confidence 47.8%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/eb8ef28ca80dbd9ced6f577f013bdfc64897d1f4e326beb37a50fb6b62c38ccd#0-27d7b8e7a987.md",
     "missing_evidence": [],
@@ -65,25 +65,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Add Constitutional Committee Member - Christina",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action., The proposal is submitted independently by community participants, in accordance with Cardano\u2019s permissionless governance framework, and explicitly references the previously submitted Update Committee action whose purpose was to add Cardano Curia to the Con..., Permissionless On-Chain Governance With the activation of full on-chain governance under CIP-1694, Cardano transitioned into a governance system where any Ada holder may submit governance actions, provided they comply with constitutional guardrails and ledg..., This permissionless design ensures that governance is not limited to institutional processes, but remains open to direct community participation.",
-            "Deadline/expiry: not stated in document",
-            "Claim (governance, independently_verifiable, high materiality): This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal is submitted independently by community participants, in accordance with Cardano\u2019s permissionless governance framework, and explicitly references the previously submitted Update Committee action whose purpose was to add Cardano Curia to the Con...",
-            "Claim (economic, independently_verifiable, high materiality): Permissionless On-Chain Governance With the activation of full on-chain governance under CIP-1694, Cardano transitioned into a governance system where any Ada holder may submit governance actions, provided they comply with constitutional guardrails and ledg...",
-            "Claim (governance, independently_verifiable, medium materiality): This permissionless design ensures that governance is not limited to institutional processes, but remains open to direct community participation.",
-            "Claim (governance, independently_verifiable, high materiality): Context of the Snap Election Intersect facilitated a snap election to fill a vacant Constitutional Committee seat following the resignation of a committee member.",
-            "Claim (governance, independently_verifiable, high materiality): That process resulted in the selection and on-chain ratification of Cardano Curia through an Update Committee governance action."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -111,7 +103,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This governance action proposes to add an additional Constitutional Committee member through a community-initiated Update Committee action.\" and clears the evidence gates.",
+            "Strongest YES: NewCommittee advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -199,7 +191,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -269,14 +261,14 @@
     "binding_score": 0.11,
     "raw_score": 0.11,
     "directional_threshold": 0.12,
-    "confidence": 0.6275,
+    "confidence": 0.4775,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 7,
+    "snapshot_age_seconds": 1625,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

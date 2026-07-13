@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 12.00M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 12.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "8418fb456043c0bab8764e2b525b31c7add503c70cefb53a7f72dbd4514e8a70",
-  "snapshot_bundle_hash": "be7803fea93567cf538e7c1064e337497ade0bd786c0a26a6238e532261a179e",
+  "snapshot_bundle_hash": "7272e4cebbf19fd340f77a08ada5784a65a094b465bdadaa805dc2e76cc62d22",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 1610,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Cardano dOSPO and OMF Program",
-          "Recipient: ",
-          "Stated amount: 12.00M ADA",
-          "Deliverables: Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding., Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors., Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants., This program establishes a community-governed, data-driven open source sustainment architecture.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, supported_in_proposal, high materiality): Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.",
-          "Claim (economic, supported_in_proposal, low materiality): Research shows 96% of commercial codebases contain OSS with fewer than 10 contributors.",
-          "Claim (technical, supported_in_proposal, high materiality): Critical protocol libraries, wallet SDKs, developer tooling, and indexing infrastructure have single maintainers, no succession plans, and no stable funding beyond episodic grants.",
-          "Claim (economic, supported_in_proposal, medium materiality): This program establishes a community-governed, data-driven open source sustainment architecture.",
-          "Claim (technical, supported_in_proposal, low materiality): Cardano has evolved into a large scale public infrastructure ecosystem, but the operational structures required to sustainably maintain that infrastructure have not evolved at the same pace.",
-          "Claim (technical, supported_in_proposal, medium materiality): Critical tooling, libraries, governance systems, developer infrastructure, and ecosystem services still depend heavily on fragmented coordination, volunteer labor, short term grants, or the stability of individual organizations."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 12.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Cardano dOSPO and OMF Program. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano dOSPO and OMF Program. It asks the treasury for 12.00M ADA. The strongest grounded claim is: Cardano's infrastructure depends on open source software maintained by a handful of individuals with no formal support, succession planning, or continuity funding.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Cardano dOSPO and OMF Program\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 12.00M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "0b3c83b5e62a63603948c247b47cfd012279756fa38cf73b0c6c19ce63f0868c#0",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action1pv7g8d0x9f3kqw2gcfrmgl8aqy38jat05wx0wwcvdsvuuclss6xqqhpzemv-20260615T152521Z.bin",
         "content_chars": 39606
       },
-      "claim_count": 8,
-      "prompt_sha256": "610b55a82661eb0971cfd8b8a0ed20812027ee85613cd103079234fa3b38c4a0",
-      "output_sha256": "f843921bd249d1ebcc8914636ee1b03e79d5c4c54d659d9c62cf7e08ce378c23"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "1a05bbe7b8f3ab84d28ee1b052a390ae91856dfa5718ac09f478f80ba8b8d370",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "61618daee7ebb5e7453f0fe84d4115b501f75674ecf91656a64ab4541918f5bb",
-      "output_sha256": "0a890ac614d3e9330782ca79d7a16890d852ed71c04f006b73fa55962656ced4"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

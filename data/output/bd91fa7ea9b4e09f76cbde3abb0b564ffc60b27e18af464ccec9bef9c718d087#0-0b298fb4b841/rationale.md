@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Cardano Summit 2026 and TOKEN2049 Singapore. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano Summit 2026 and TOKEN2049 Singapore. It asks the treasury for 14.08M ADA. The strongest grounded claim is: Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in.
-
-A material claim remains proposer-asserted or thinly supported: By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Cardano Summit 2026 and TOKEN2049 Singapore" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 14.08M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: By dedicating th
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Cardano Summit 2026 and TOKEN2049 Singapore
-- finding: Recipient: not stated in document
-- finding: Stated amount: 14.08M ADA
-- finding: Deliverables: Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..., This strategy is designed to maximize budget efficiency by co-locating two key events to maximize the reach of Cardano and its ecosystem: 1., The Cardano Summit 2026: A two-day dedicated event hosted by the Cardano Foundation, providing a showcase for Cardano's community innovation and technology, enterprise applications, institutional use cases, regulatory roundtables, and governance maturity., Interest in the Cardano Summit, from both media and enterprise, has steadily increased since its inception, reaching its highest level in 2025/2026.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, high materiality): Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in...
-- finding: Claim (economic, supported_in_proposal, high materiality): This strategy is designed to maximize budget efficiency by co-locating two key events to maximize the reach of Cardano and its ecosystem: 1.
-- finding: Claim (economic, supported_in_proposal, medium materiality): The Cardano Summit 2026: A two-day dedicated event hosted by the Cardano Foundation, providing a showcase for Cardano's community innovation and technology, enterprise applications, institutional use cases, regulatory roundtables, and governance maturity.
-- finding: Claim (economic, supported_in_proposal, low materiality): Interest in the Cardano Summit, from both media and enterprise, has steadily increased since its inception, reaching its highest level in 2025/2026.
-- finding: Claim (economic, proposer_asserted, low materiality): Building on the successes of the Cardano Summit 2025 (https://www.youtube.com/watch?v=wFmKTQIs7dM), the 2026 edition will see the flagship event move to Singapore.
-- finding: Claim (economic, supported_in_proposal, low materiality): The previous year has shown that holding the Cardano Summit in close proximity to a large tech or blockchain event (as done for two regional events, India Blockchain Week in Bangalore and Africa Tech Summit in Nairobi) significantly extends reach and increa...
-- missing: Independent evidence for: By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha...
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: By dedicating th
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha..." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 14.08M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: By dedicating th
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 14.08M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 14.08M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: By dedicating th
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: By dedicating the first day to our ecosystem and the second to our partners, Cardano Summit 2026 will be the space where community members, enterprises, institutions and regulators can meaningfully meet, connect, build meaningful partnerships and decide wha...
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: By dedicating th
 
 ## Reproducibility
 - input_hash: `0b298fb4b841cc37e07e4433214ac4075d4d47d8cf96a645f2b257e51e04bdcf`
-- snapshot_bundle_hash: `beb0ba3b92672fa57f20e59f9b10bdbccb0778ac987cadd4e41bca90b4928ddb`
+- snapshot_bundle_hash: `2b0a5e5dfad253e77c9558b108c691f9f9ba8d7b4d9961c5c2e1cdcb32c0845a`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `1617`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

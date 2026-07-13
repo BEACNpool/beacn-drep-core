@@ -23,24 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Treasury withdrawal to continue and expand the Cardano Builder DAO as a smart contract-governed, KPI-driven funding mechanism for Cardano builders.",
-        "Recipient: Cardano Builder DAO / independent council administrator composed of dRep DAO members prior to milestone-based disbursement",
-        "Stated amount: 20000000",
-        "Deliverables: Allocate capital to builders advancing Cardano Vision 2030 KPIs including monthly active users, monthly on-chain transactions, and TVL, Require funded projects to track monthly active users, TVL, and on-chain transactions, Continue KPI dashboard development toward live on-chain Cardano data tracking, Use an independent multisig governed by assigned dRep DAO members for milestone-based disbursement, Return unused or unallocated DAO treasury funds to the Cardano Treasury",
-        "Deadline/expiry: not stated in document",
-        "Claim (governance, supported_in_proposal, high materiality): The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 through measurable KPIs.",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal says funded projects will be required to track monthly active users, TVL, and on-chain transactions.",
-        "Claim (technical, proposer_asserted, medium materiality): The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 2 moving toward KPI tracking tied directly to live on-chain Cardano data.",
-        "Claim (economic, independently_verifiable, high materiality): The Cardano Builder DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.",
-        "Claim (governance, independently_verifiable, high materiality): Round 1 funded 20 companies, had 38 voting members and 27 requesting members, distributed 5,541,335 ADA, and achieved 83% participation in governance actions.",
-        "Claim (governance, independently_verifiable, high materiality): Round 2 funded 14 companies, added 18 new members, and achieved 88% participation among members after review, debate, temperature checks, and final voting."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 2 moving toward KPI tracking tied directly to live on-chain Cardano data.",
-        "Independent evidence for: The DAO says it created and amended governing documents, elected a board, added third-party assurance, implemented merit-based proposal review, and executed treasury withdrawals on-chain with transparency."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -87,8 +76,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The Cardano Builder DAO is proposed as an ecosystem-wide, smart contract-governed funding mechanism to support projects advancing Cardano Vision 2030 through measurable KPIs.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The DAO built Version 1 and Version 2 of a KPI dashboard, with Version 2 moving toward KPI tracking tied directly to live on-chain Cardano data.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 20.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

@@ -23,24 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Establish a one-year independent Cardano dOSPO and Open Maintenance Framework program to manage open source sustainability funds, operate advisory councils, form a 501(c)(3) public charity, fund maintenance retainers, and publish public reporting.",
-        "Recipient: Christian Taylor / Open Source Cowboy Consulting as sole Article II.7.5 administrator at withdrawal, with a later possible transition target to a dOSPO legal entity subject to governance.",
-        "Stated amount: 4094000000",
-        "Deliverables: Two advisory councils chartered with members named, COI policies signed, minutes published, and advisory status confirmed by week 6, dOSPO 501(c)(3) public charity formed with governance documents published and operator agreement executed by week 24, Quarterly outcome reports for all active programs with Mill Law Firm financial review attached, Dependency audit, SBOMs, centrality scores, bus factor assessments, coverage gap analysis, and published retainer selection rubric, Maintenance Fund retainer cohorts selected using rubric scores with on-chain disbursements and published advisory feedback, Public CHAOSS-aligned dashboard tracking funded projects, End-of-term portfolio review with rationale and financial audit attached",
-        "Deadline/expiry: 12 months from treasury withdrawal",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months to run four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.",
-        "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole administrator at the moment of treasury withdrawal, with final allocation authority during the program term.",
-        "Claim (governance, proposer_asserted, high materiality): Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.",
-        "Claim (governance, supported_in_proposal, high materiality): The proposal says no disbursements will be made unilaterally because advisory council feedback will be published before each allocation, while final authority remains with the administrator.",
-        "Claim (governance, supported_in_proposal, high materiality): The proposal states that governance can replace the administrator or shut down the initiative through an on-chain Info Action and that remaining funds can be returned if governance is unsatisfied.",
-        "Claim (technical, supported_in_proposal, high materiality): The Maintenance Fund would deploy 2,000,000 ADA over 12 months to fund Cardano open source infrastructure selected by dependency centrality, bus factor, and a published priority formula."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.",
-        "Independent evidence for: The proposer claims Cardano critical tooling, libraries, governance tools, developer infrastructure, and ecosystem services rely on fragmented coordination, volunteer effort, short-term grants, or individual organizations."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -87,8 +76,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to run four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 4.09M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

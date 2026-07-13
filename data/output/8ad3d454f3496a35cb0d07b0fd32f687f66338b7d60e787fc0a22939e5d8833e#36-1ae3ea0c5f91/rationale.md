@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Withdraw ₳104,347 for MLabs Research towards Tooling for Elliptical Curves. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw ₳104,347 for MLabs Research towards Tooling for Elliptical Curves. It asks the treasury for 104.3k ADA. The strongest grounded claim is: This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw ₳104,347 for MLabs Research towards Tooling for Elliptical Curves..." (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 104.3k ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Withdraw ₳104,347 for MLabs Research towards Tooling for Elliptical Curves...
-- finding: Recipient: 
-- finding: Stated amount: 104.3k ADA
-- finding: Deliverables: This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement..., The goal is to allow smart contracts on Cardano to verify cryptographic proofs over customizable curves and fields., This will include: - Plutarch support for Galois field arithmetic - Plutarch support for elliptic curve arithmetic - A generic ZK verifier in Plutarch - A validation test suite over BLS12-381 - A composable YTxP-compatible Plutarch wrapper This tool empower..., Deliver a parameterized elliptic curve and finite field cryptography framework in Plutarch, enabling developers to build smart contracts that verify zero-knowledge proofs over arbitrary curves.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement...
-- finding: Claim (economic, independently_verifiable, low materiality): The goal is to allow smart contracts on Cardano to verify cryptographic proofs over customizable curves and fields.
-- finding: Claim (economic, independently_verifiable, low materiality): This will include: - Plutarch support for Galois field arithmetic - Plutarch support for elliptic curve arithmetic - A generic ZK verifier in Plutarch - A validation test suite over BLS12-381 - A composable YTxP-compatible Plutarch wrapper This tool empower...
-- finding: Claim (economic, independently_verifiable, high materiality): Deliver a parameterized elliptic curve and finite field cryptography framework in Plutarch, enabling developers to build smart contracts that verify zero-knowledge proofs over arbitrary curves.
-- finding: Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Cardano currently lacks reusable and composable on-chain cryptographic tooling for elliptic curves and finite fields.
-- finding: Claim (economic, independently_verifiable, high materiality): Developers building ZK or privacy-preserving applications must either hardcode specific cryptographic primitives (limiting generality) or implement complex curve logic themselves (introducing security risks and inefficiencies).
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement..." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 104.3k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 104.3k ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This treasury withdrawal funds MLabs Research towards Tooling for Elliptical Curves - GrumpleStiltSkin which will provide the following services: GrumpleStiltSkin will deliver an open-source, parameterized elliptic curve and Galois field framework implement..." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 104.3k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `1ae3ea0c5f916d1505cfd6b39c7697ab28438073abf9f47f90e3b238b0279a63`
-- snapshot_bundle_hash: `fb1995aded421caa31a09ff802816547a59a775c367c0f41218c1026cdee78ca`
+- snapshot_bundle_hash: `0397ee81327a83ee21bf480e7ae31a52087ad78253035846feb7ed5bc0ff5591`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `9`
+- snapshot_age_seconds: `1636`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

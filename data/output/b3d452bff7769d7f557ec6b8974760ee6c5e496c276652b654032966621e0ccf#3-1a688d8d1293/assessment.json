@@ -23,24 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Withdraw treasury funds for Intersect Technical Steering Committee Support over 12 months.",
-        "Recipient: Intersect Technical Steering Committee support via Intersect treasury management smart contracts",
-        "Stated amount: 1,193,000",
-        "Deliverables: WP 1: Community-Facing Technical Coordination, including technical expert attendance at major ecosystem events and commissioning technical reports, WP 2: Protocol Governance and Evolution, funding the Parameter Committee, CIP editors, and Hard Fork Working Group, WP 3: Technical Review, establishing a pilot independent technical review programme launching in 2027",
-        "Deadline/expiry: 12 months; WP3 pilot launching in 2027",
-        "Claim (economic, supported_in_proposal, high materiality): Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal allocates 256,000 ADA to WP 1, 832,000 ADA to WP 2, and 105,000 ADA to WP 3, totaling 1,193,000 ADA.",
-        "Claim (technical, supported_in_proposal, high materiality): The work packages cover community-facing technical coordination, protocol governance and evolution, and a pilot independent technical review programme launching in 2027.",
-        "Claim (governance, supported_in_proposal, high materiality): Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.",
-        "Claim (economic, proposer_asserted, high materiality): The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-        "Claim (governance, independently_verifiable, medium materiality): The proposal says it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides related voting and audit references."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
-        "Independent evidence for: Independent audits and assurance for this proposal will be provided by Appold, with possible reviews of deliverables, controls, spending, and milestone evidence."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -48,14 +37,14 @@
       "title": "Treasury analysis",
       "status": "complete",
       "findings": [
-        "Requested ADA: 0",
+        "Requested ADA: 1193000",
         "Budget granularity: confirmed",
         "Milestone payment gates: confirmed",
-        "Clawback/refund path: confirmed",
+        "Clawback/refund path: unknown",
         "Cost/benefit clarity: unknown",
-        "Recurring funding dependency: confirmed",
+        "Recurring funding dependency: unknown",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.72"
+        "Financial confidence: 0.55"
       ],
       "missing": [
         "sustainability path",
@@ -67,10 +56,10 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: medium",
-        "Governance risk: medium",
-        "Technical risk: medium",
-        "Treasury exposure risk: high",
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
         "Rollback/remedy path: unknown",
@@ -87,8 +76,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Intersect requests 1,193,000 ADA, stated as $298,250, to support Technical Steering Committee activities for 12 months.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says all expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 1.19M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

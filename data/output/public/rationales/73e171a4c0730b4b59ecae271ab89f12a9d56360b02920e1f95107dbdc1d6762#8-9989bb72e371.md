@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Pogun: Capital Without Compromise. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Pogun: Capital Without Compromise. It asks the treasury for 12.29M ADA. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure.
-
-A material claim remains proposer-asserted or thinly supported: Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Pogun: Capital Without Compromise" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 12.29M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: Demonstrating ou
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Pogun: Capital Without Compromise
-- finding: Recipient: 
-- finding: Stated amount: 12.29M ADA
-- finding: Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure., The race to become the dominant credit and liquidity layer for BTC is the largest open market opportunity in crypto., Pogun is an end-to-end Bitcoin liquidity and credit engine built to position Cardano as the definitive home of Bitcoin DeFi., Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, supported_in_proposal, low materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure.
-- finding: Claim (economic, proposer_asserted, low materiality): The race to become the dominant credit and liquidity layer for BTC is the largest open market opportunity in crypto.
-- finding: Claim (economic, supported_in_proposal, low materiality): Pogun is an end-to-end Bitcoin liquidity and credit engine built to position Cardano as the definitive home of Bitcoin DeFi.
-- finding: Claim (economic, proposer_asserted, high materiality): Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid.
-- finding: Claim (economic, supported_in_proposal, low materiality): The Bitcoin Opportunity The profile of the Bitcoin owner has broadened dramatically — from early ideological holders to a wide spectrum that now includes retail investors seeking returns on savings, high-net-worth individuals diversifying portfolios, and so...
-- finding: Claim (economic, proposer_asserted, low materiality): For the increasingly sophisticated investor, capital efficiency is paramount.
-- missing: Independent evidence for: Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: Demonstrating ou
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 12.29M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: Demonstrating ou
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 12.29M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=bafybeibbrhuis55rl52hsp5rboooobjg4rvq7q5ly2mern7s7f3xcbjzwi Bitcoin is a \$1.5T asset with virtually no native DeFi infrastructure." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 12.29M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: Demonstrating ou
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Demonstrating our commitment to the proper use of public funds, Pogun will return 20% of EBITDA to the Cardano Treasury until the initial funding is repaid.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: Demonstrating ou
 
 ## Reproducibility
 - input_hash: `9989bb72e371256251bad968cc0251c2a846ae0f0449d8d6283d61d86d94a097`
-- snapshot_bundle_hash: `82f7ae45725255eb171c141183e4faca23741ad958782a61d4fa467fced3b9f9`
+- snapshot_bundle_hash: `ded627935843eb6197f8ca9cd74edb105d6dd9b5246d7da9a0481626fcc96a97`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `1614`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

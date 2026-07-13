@@ -21,23 +21,23 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.0,
-    "confidence": 0.57,
+    "confidence": 0.42,
     "input_hash": "42db04e5ba00ce569c1069d5fc9837445db5d21804d452e356350b82122eddb4",
-    "snapshot_bundle_hash": "2bb860cedf1a6c15c4d5b43e1cc6c5c3ccd5f0b2d4ee6b27bc0398c982b99c89",
+    "snapshot_bundle_hash": "7ea248cecd86daeeaa1da6c586b1acdfa8f4a4e2d05bd419d5c3836440e57594",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/c21b00f90f18fce4003edf42b0b0d455126e01c946e80cc5341a9f9750caf795#0-42db04e5ba00.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 57.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 42.0%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/c21b00f90f18fce4003edf42b0b0d455126e01c946e80cc5341a9f9750caf795#0-42db04e5ba00.md",
     "missing_evidence": [],
@@ -65,25 +65,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Increase Transaction and Block Memory Units (Part 1 of 2)",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: Intersect's Parameter Committee proposes the first of two Parameter Update governance actions., The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04., 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers., 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, high materiality): Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.",
-            "Claim (technical, independently_verifiable, medium materiality): The following change is proposed together in this rationale, but will require two separate, linked governance actions as per guardrail MTEU-M-04.",
-            "Claim (technical, independently_verifiable, low materiality): 1) increase Plutus script memory unit limits per transaction by 25% to allow greater flexibility for DApp developers.",
-            "Claim (technical, independently_verifiable, low materiality): 2) increase Plutus script memory unit limits per block by 25% to remain consistent with the current block memory limits.",
-            "Claim (technical, independently_verifiable, medium materiality): Community members have expressed a desire to increase the Plutus script memory unit limits to simplify DApp development and enhance scalability - see PCP-003 and public survey results.",
-            "Claim (technical, independently_verifiable, high materiality): Raising maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory] could significantly improve Plutus script throughput with minimal impact on block propagation or node performance, making it a low-risk and high-impact change."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -111,7 +103,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Intersect's Parameter Committee proposes the first of two Parameter Update governance actions.\" and clears the evidence gates.",
+            "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -205,7 +197,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -275,14 +267,14 @@
     "binding_score": 0.0,
     "raw_score": 0.06,
     "directional_threshold": 0.12,
-    "confidence": 0.57,
+    "confidence": 0.42,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 6,
+    "snapshot_age_seconds": 1623,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -1,11 +1,7 @@
 # Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol
-**BEACN DRep vote: NO**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: NO**  _(plain-language explanation — deterministic-template)_
 
-BEACN records NO on Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund Alchemy, a Cardano-native Bitcoin treasury protocol and BTCfi infrastructure layer by Sundial Protocol and Charms. It asks the treasury for 10000000 ADA. The strongest grounded claim is: The proposal requests 10,000,000 ada, using an approximate USD 0.20 per ada reference value for a planning budget of about USD 2.0 million split into two approximately USD 1.0 million pools.
-
-A material claim remains proposer-asserted or thinly supported: The proposal states that launch liquidity will be treasury-supported and treasury-owned, and that profits, yield, and returns from the launch liquidity position will be returned to the Cardano Treasury quarterly.
+BEACN's autonomous DRep recorded NO on "Alchemy by Sundial x Charms: Cardano-Native Bitcoin Treasury Protocol" (TreasuryWithdrawals). The action requests 10.00M ADA from the treasury. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

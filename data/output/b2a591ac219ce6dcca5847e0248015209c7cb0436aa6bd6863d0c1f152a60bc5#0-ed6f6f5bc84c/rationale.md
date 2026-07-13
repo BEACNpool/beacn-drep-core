@@ -1,14 +1,10 @@
 # Rationale: b2a591ac219ce6dcca5847e0248015209c7cb0436aa6bd6863d0c1f152a60bc5#0
 Recommendation: **ABSTAIN**
-Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.02`) | Confidence: `0.6` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.45` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on Plutus V3 Cost Model Parameter Changes Prior to Chang#2. This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a ParameterChange. The cached anchor describes the request as: Plutus V3 Cost Model Parameter Changes Prior to Chang 2. The strongest grounded claim is: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).
-
-Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Plutus V3 Cost Model Parameter Changes Prior to Chang#2" (ParameterChange). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Plutus V3 Cost Model Parameter Changes Prior to Chang 2
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)., Existing Plutus cost model settings will not be changed., Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)., Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, independently_verifiable, high materiality): We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).
-- finding: Claim (technical, independently_verifiable, low materiality): Existing Plutus cost model settings will not be changed.
-- finding: Claim (technical, independently_verifiable, high materiality): Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork).
-- finding: Claim (technical, independently_verifiable, high materiality): Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.
-- finding: Claim (technical, independently_verifiable, high materiality): This governance action provides cost model settings so that these primitives can be used following the Chang 2 hard fork.
-- finding: Claim (technical, independently_verifiable, high materiality): Note that the new primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork).
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)." and clears the evidence gates.
+- finding: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -77,11 +64,11 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 - Intake: Action type: ParameterChange
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)." and clears the evidence gates.
+- Counterargument pass: Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+- No additional inference.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,19 +78,21 @@ Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.
 ## Uncertainty
 - No DRep distribution available.
 - Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `ed6f6f5bc84c8d8875de0a38ee84b234e8d53c170238c1f7c9b71211c497b2c0`
-- snapshot_bundle_hash: `41841d7b563785b37055c6000c7d8520f7949181a316784196f898bdde23fb74`
+- snapshot_bundle_hash: `a722ab80f840ef0c8d568f32689f89dc85bf5d3de81b25f4064b798cae8b2ca0`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `13`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1656`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.47, "NO": 0.265, "YES": 0.265}`
+- decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`
 

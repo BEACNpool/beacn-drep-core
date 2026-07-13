@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.0,
   "raw_score": -0.07,
-  "llm_score_adjustment": 0.02,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "YES",
-    "score_adjustment": 0.02,
-    "confidence": 0.85,
-    "rationale": "Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -28,7 +19,7 @@
   ],
   "doctrine_hash": "6f53967349f63aa48fbbdec2a1d6a164bef78184c62a7ccebf36f47a9585733c",
   "directional_threshold": 0.12,
-  "confidence": 0.6,
+  "confidence": 0.45,
   "readiness_score": 0.0,
   "treasury_dimensions": null,
   "treasury_merit_recommendation": null,
@@ -39,11 +30,11 @@
     "Intake: Action type: HardForkInitiation",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"We propose to upgrade Cardano mainnet to Protocol Version 10.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a hardfork action: 8 well-supported claim(s), hardfork doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "No additional inference.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -53,16 +44,18 @@
   "uncertainty": [
     "No DRep distribution available.",
     "Protocol action lacks a complete independently pinned readiness packet: version_guardrails_pass, testnet_results_pass, spo_readiness_pass, exchange_readiness_pass, dapp_readiness_pass, security_review_pass, constitutional_alignment_pass, rollback_or_containment_plan",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
+    "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
     "Risk review status is thin."
   ],
   "missing_evidence": [],
   "input_hash": "419fa440a9e1417bb1cec1c58b1ce940a8efa980c538c566d2aca9e59f966e06",
-  "snapshot_bundle_hash": "ca2fb0551a59056b897600ea35df7228a3e57c4fa916d9b3caf3f94cb5da0a3b",
+  "snapshot_bundle_hash": "bc774c3fa09132549441af0e1d93e4b0470f5361bbf7a7774173f2020ff55e10",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -76,18 +69,18 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 1656,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
-    "YES": 0.265,
-    "NO": 0.265,
-    "ABSTAIN": 0.47
+    "YES": 0.2838,
+    "NO": 0.2838,
+    "ABSTAIN": 0.4325
   },
-  "uncertainty_band": "MEDIUM",
+  "uncertainty_band": "LOW",
   "evidence_depth_score": 3,
   "intelligence_profile": "deterministic-v1",
   "assessment_schema_version": "assessment-tree-v1",
@@ -114,25 +107,17 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork)",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: We propose to upgrade Cardano mainnet to Protocol Version 10., This upgrade will be achieved via a Hard Fork (called \"Plomin\")., The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2., All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, independently_verifiable, low materiality): We propose to upgrade Cardano mainnet to Protocol Version 10.",
-          "Claim (technical, independently_verifiable, high materiality): This upgrade will be achieved via a Hard Fork (called \"Plomin\").",
-          "Claim (technical, independently_verifiable, low materiality): The Cardano mainnet protocol will be upgraded to Major Version 10 and Minor Version 0; 2.",
-          "Claim (technical, independently_verifiable, medium materiality): All 7 governance actions that are described in CIP-1694 will be enabled; 3.",
-          "Claim (technical, independently_verifiable, medium materiality): Protocol Version 10 enables the remainder of the CIP-1694 functionality, ensuring that DReps can participate in voting on all governance actions.",
-          "Claim (technical, independently_verifiable, high materiality): It enables treasury withdrawals, the ability to record a new constitution, updates to the constitutional committee, and votes of no confidence."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
-        "missing": [],
+        "missing": [
+          "No structured claim/evidence extraction from the proposal document."
+        ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
       {
@@ -160,7 +145,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"We propose to upgrade Cardano mainnet to Protocol Version 10.\" and clears the evidence gates.",
+          "Strongest YES: HardForkInitiation advances a credible public benefit worth its risk if the evidence holds.",
           "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of HardForkInitiation.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
@@ -204,14 +189,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork). This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a HardForkInitiation. The cached anchor describes the request as: Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork). The strongest grounded claim is: We propose to upgrade Cardano mainnet to Protocol Version 10.\n\nReason code: MISSING_PROTOCOL_READINESS_EVIDENCE.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Hard Fork to Protocol Version 10 (\"Plomin\" Hard Fork)\" (HardForkInitiation). This is a conservative, evidence-based hold rather than opposition. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "0b19476e40bbbb5e1e8ce153523762e2b6859e7ecacbaf06eae0ee6a447e79b9#0",
         "anchor_read": true,
@@ -222,9 +207,9 @@
         "file_path": "data/input/governance/anchors/gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525-20260326T175237Z.bin",
         "content_chars": 18555
       },
-      "claim_count": 8,
-      "prompt_sha256": "7d021488ec0ce314dfc9b1ed5bff7980fe711d3da2b8812d0d6d73e15534b959",
-      "output_sha256": "ce9e57e3cfa127a3487f23b9a14afc4f23cc9eb696ae47db526185a9f94ba55b"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "hardfork",
@@ -235,24 +220,24 @@
       "sha256": "6f53967349f63aa48fbbdec2a1d6a164bef78184c62a7ccebf36f47a9585733c"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "YES",
-      "score_adjustment": 0.02,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "5eb3655417ae461427933666d26680748bbc2e2e16482647341bdccccf43f471",
-      "output_sha256": "c18f79fce712227759332030d0854f0051f448d52200980dc3636e044c1f50c2"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "2b2ead935e73dab5d67cfbe24f90394117a7f97ab8b87567a681251c71165938",
-      "output_sha256": "0855b664ac38178718632a5ebc93e290ca49128fcf03daa3d082070edf5c3393"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

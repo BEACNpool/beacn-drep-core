@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Amaru Treasury Withdrawal 2025",
-        "Recipient: ",
-        "Stated amount: 1.50M ADA",
-        "Deliverables: Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano., It aims to improve the network's overall accessibility and robustness without compromising its safety and security., This treasury withdrawal of \u20b31.5M follows a previously submitted and now approved budget proposal., It is split across five script addresses each covering a scope of a work (ledger, consensus, mercenaries and marketing) and a contingency reserve.",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, independently_verifiable, low materiality): Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.",
-        "Claim (economic, independently_verifiable, high materiality): It aims to improve the network's overall accessibility and robustness without compromising its safety and security.",
-        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal of \u20b31.5M follows a previously submitted and now approved budget proposal.",
-        "Claim (economic, independently_verifiable, low materiality): It is split across five script addresses each covering a scope of a work (ledger, consensus, mercenaries and marketing) and a contingency reserve.",
-        "Claim (economic, independently_verifiable, low materiality): Who we are Amaru is a multi-entity effort that currently sits under PRAGMA: a member-based, not-for-profit association for open-source blockchain software projects.",
-        "Claim (economic, independently_verifiable, low materiality): Five members with equal power currently drive PRAGMA's strategy and operations: Blink Labs, Cardano Foundation, dcSpark, Sundae Labs, and TxPipe."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Amaru is an open-source project implementing a new fully interoperable block-producing node for Cardano.\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 1.50M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

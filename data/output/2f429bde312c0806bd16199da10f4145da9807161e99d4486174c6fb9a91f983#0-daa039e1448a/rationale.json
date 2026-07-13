@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": -0.135,
   "raw_score": -0.46,
-  "llm_score_adjustment": -0.03,
-  "llm_lean": {
-    "source": "precomputed",
-    "model": "claude-opus-4-8",
-    "direction": "NO",
-    "score_adjustment": -0.03,
-    "confidence": 0.72,
-    "rationale": "The claims describe public-benefit ecosystem growth and some concrete reporting and KPI structure, but the assessment says evidence is thin and the proposal concentrates final allocation authority over a large treasury withdrawal in one administrator while several key assurances remain proposer-asserted. Under the doctrine hierarchy, treasury stewardship and evidence quality justify a small cautionary negative adjustment beyond mechanical scoring.",
-    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -56,11 +47,10 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 0",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to run four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: the 4.09M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
-    "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: The claims describe public-benefit ecosystem growth and some concrete reporting and KPI structure, but the assessment says evidence is thin and the proposal concentrates final allocation authority over a large treasury withdrawal in one administrator while several key assurances remain proposer-asserted. Under the doctrine hierarchy, treasury stewardship and evidence quality justify a small cautionary negative adjustment beyond mechanical scoring.",
     "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
@@ -73,8 +63,7 @@
     "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
     "Proposal requests over 30% of rolling available capacity.",
     "No DRep distribution available.",
-    "Claims and evidence missing: Independent evidence for: Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.",
-    "Claims and evidence missing: Independent evidence for: The proposer claims Cardano critical tooling, libraries, governance tools, developer infrastructure, and ecosystem services rely on fragmented coordination, volunteer effort, short-term grants, or individual organizations.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis missing: sustainability path",
@@ -83,10 +72,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "daa039e1448a79c81d3871d53fb295d93e89b507920de86f4b88952351126ff2",
-  "snapshot_bundle_hash": "b717defbbd4a485c5e44c9bef64377ef7360a6a85d2761288b647a31fa831c93",
+  "snapshot_bundle_hash": "2db1270251427fd182ebe56574a0814c15417eaeca5105e2c90e2cdf9e134d79",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -106,10 +95,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 1595,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -147,24 +136,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: complete",
-          "Requested: Establish a one-year independent Cardano dOSPO and Open Maintenance Framework program to manage open source sustainability funds, operate advisory councils, form a 501(c)(3) public charity, fund maintenance retainers, and publish public reporting.",
-          "Recipient: Christian Taylor / Open Source Cowboy Consulting as sole Article II.7.5 administrator at withdrawal, with a later possible transition target to a dOSPO legal entity subject to governance.",
-          "Stated amount: 4094000000",
-          "Deliverables: Two advisory councils chartered with members named, COI policies signed, minutes published, and advisory status confirmed by week 6, dOSPO 501(c)(3) public charity formed with governance documents published and operator agreement executed by week 24, Quarterly outcome reports for all active programs with Mill Law Firm financial review attached, Dependency audit, SBOMs, centrality scores, bus factor assessments, coverage gap analysis, and published retainer selection rubric, Maintenance Fund retainer cohorts selected using rubric scores with on-chain disbursements and published advisory feedback, Public CHAOSS-aligned dashboard tracking funded projects, End-of-term portfolio review with rationale and financial audit attached",
-          "Deadline/expiry: 12 months from treasury withdrawal",
-          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months to run four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.",
-          "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole administrator at the moment of treasury withdrawal, with final allocation authority during the program term.",
-          "Claim (governance, proposer_asserted, high materiality): Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.",
-          "Claim (governance, supported_in_proposal, high materiality): The proposal says no disbursements will be made unilaterally because advisory council feedback will be published before each allocation, while final authority remains with the administrator.",
-          "Claim (governance, supported_in_proposal, high materiality): The proposal states that governance can replace the administrator or shut down the initiative through an on-chain Info Action and that remaining funds can be returned if governance is unsatisfied.",
-          "Claim (technical, supported_in_proposal, high materiality): The Maintenance Fund would deploy 2,000,000 ADA over 12 months to fund Cardano open source infrastructure selected by dependency centrality, bus factor, and a published priority formula."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.",
-          "Independent evidence for: The proposer claims Cardano critical tooling, libraries, governance tools, developer infrastructure, and ecosystem services rely on fragmented coordination, volunteer effort, short-term grants, or individual organizations."
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -211,8 +189,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to run four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: the 4.09M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -270,13 +248,13 @@
     "merit_reason": "Affirmative independent waste/harm evidence outweighs demonstrated benefit.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NO on Revised Cardano dOSPO and OMF Program Proposal. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Establish a one-year independent Cardano dOSPO and Open Maintenance Framework program to manage open source sustainability funds, operate advisory councils, form a 501(c)(3) public charity, fund maintenance retainers, and publish public reporting. It asks the treasury for 4094000000 ADA. The strongest grounded claim is: The proposal requests 4,094,000 ADA over 12 months to run four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.\n\nA material claim remains proposer-asserted or thinly supported: Mill Law Firm is designated as the independent financial auditor on a quarterly cadence through month 12.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NO on \"Revised Cardano dOSPO and OMF Program Proposal\" (TreasuryWithdrawals). The action requests 4.09M ADA from the treasury. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "precomputed",
-      "reason": null,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
@@ -288,9 +266,9 @@
         "file_path": "data/input/governance/anchors/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983-0-20260708T113010Z.bin",
         "content_chars": 34845
       },
-      "claim_count": 10,
+      "claim_count": 0,
       "prompt_sha256": null,
-      "output_sha256": "ee47aa843ebe66cd86e9d861b5a0643e604097276dabfadb2a2560672df66b7c"
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -301,27 +279,25 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "precomputed",
-      "reason": null,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
       "model": "claude-opus-4-8",
-      "direction": "NO",
-      "score_adjustment": -0.03,
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
       "prompt_sha256": null,
-      "output_sha256": "abb7c432004a48704e780271ed039c1d51b3cf0ff8b7185f1ac6405256853e58"
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "e1bc01097dbb5cba0d93d170dd3662800ae53da16dc19a3818ef1833ba1f6a64",
-      "output_sha256": "19b5511e2e20c478e3fd7008b2b398825ca4934a7d23217fbc1c6ba8a68540d9"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
-  },
-  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/28aa7995f6dd10faca34da01.md",
-  "rationale_anchor_hash": "28aa7995f6dd10faca34da0142ac0b3a957acd6362db2c2619fda9bb7e7ae533"
+  }
 }

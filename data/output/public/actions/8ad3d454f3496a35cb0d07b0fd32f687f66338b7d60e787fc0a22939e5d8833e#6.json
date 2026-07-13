@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "e7c0da2a9b1627e8502f54746165cfd1c623b51399b5f36df0a7b828e01873ca",
-    "snapshot_bundle_hash": "8a50e8ac8c8689ef1d655f51fa7ac2181b54e51c956bfca5e005d7338d11a2de",
+    "snapshot_bundle_hash": "b5c61c08cd7b31f4de29c742c45be380af7f19310c6cc85a5d950eaeff9d72b5",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#6-e7c0da2a9b16.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal funds Lucid Evolution Maintenance which will provide the following services: Lucid Evolution is an open-source library designed to simplify and enhance the development of off-chain smart contract interactions on Cardano.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 130.9k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Withdraw \u20b3130,903 for Lucid Evolution Maintenance administered by Intersect",
-            "Recipient: ",
-            "Stated amount: 130.9k ADA",
-            "Deliverables: This treasury withdrawal funds Lucid Evolution Maintenance which will provide the following services: Lucid Evolution is an open-source library designed to simplify and enhance the development of off-chain smart contract interactions on Cardano., As the official maintainer of Lucid, Anastasia Labs is committed to evolving the library ensuring long-term support and usability for developers., This proposal seeks funding to support ongoing development, maintenance, and ecosystem adoption efforts, including compatibility updates, feature enhancements, and developer documentation., By securing funding, Lucid Evolution will continue to serve as a critical tool for DApp developers, improving accessibility and efficiency within the Cardano ecosystem.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Lucid Evolution Maintenance which will provide the following services: Lucid Evolution is an open-source library designed to simplify and enhance the development of off-chain smart contract interactions on Cardano.",
-            "Claim (economic, independently_verifiable, low materiality): As the official maintainer of Lucid, Anastasia Labs is committed to evolving the library ensuring long-term support and usability for developers.",
-            "Claim (economic, independently_verifiable, high materiality): This proposal seeks funding to support ongoing development, maintenance, and ecosystem adoption efforts, including compatibility updates, feature enhancements, and developer documentation.",
-            "Claim (economic, independently_verifiable, high materiality): By securing funding, Lucid Evolution will continue to serve as a critical tool for DApp developers, improving accessibility and efficiency within the Cardano ecosystem.",
-            "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: One of the most used offchain library called Lucid Evolution needs constant maintenance and upgrades.",
-            "Claim (economic, independently_verifiable, low materiality): We would like to make sure this library stays up to date with all of the changes and upgrades of the Cardano network."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Lucid Evolution Maintenance which will provide the following services: Lucid Evolution is an open-source library designed to simplify and enhance the development of off-chain smart contract interactions on Cardano.\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 130.9k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 9,
+    "snapshot_age_seconds": 1634,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

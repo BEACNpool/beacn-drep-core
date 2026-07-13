@@ -1,11 +1,7 @@
 # Cardano 2030: Vision, Mission, Strategy Framework and KPIs
-**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-template)_
 
-BEACN records ABSTAIN on Cardano 2030: Vision, Mission, Strategy Framework and KPIs. This is a conservative abstention because the evidence does not justify stronger certainty.
-
-The action is a InfoAction. The cached anchor describes the request as: Cardano 2030: Vision, Mission, Strategy Framework and KPIs. The strongest grounded claim is: Starting at the end of 2024 and continuing throughout 2025, the Cardano Product Committee of Intersect facilitated the first community-led process to propose a 2030 Cardano Vision and Strategy .
-
-Reason code: RULE_THRESHOLD_UNMET.
+BEACN's autonomous DRep recorded ABSTAIN on "Cardano 2030: Vision, Mission, Strategy Framework and KPIs" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

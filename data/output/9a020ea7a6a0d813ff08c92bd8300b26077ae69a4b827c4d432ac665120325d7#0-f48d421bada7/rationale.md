@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Eternl: Path to Sustainability (2026-2027). This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Eternl: Path to Sustainability (2026-2027). It asks the treasury for 1.68M ADA. The strongest grounded claim is: Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS.
-
-A material claim remains proposer-asserted or thinly supported: Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Eternl: Path to Sustainability (2026-2027)" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.68M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: Budget and Budge
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Eternl: Path to Sustainability (2026-2027)
-- finding: Recipient: 
-- finding: Stated amount: 1.68M ADA
-- finding: Deliverables: Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS., Users rely on Eternl for payments, staking, governance, and DApp interaction., This proposal enables 12 months of operations, maintenance, and improvements., It includes frontend and backend maintenance and development, backend infrastructure, user support, and day-to-day operations.[^1] The goal is to keep Eternl secure, compatible, stable, and available as Cardano keeps evolving.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, low materiality): Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS.
-- finding: Claim (economic, supported_in_proposal, medium materiality): Users rely on Eternl for payments, staking, governance, and DApp interaction.
-- finding: Claim (economic, supported_in_proposal, low materiality): This proposal enables 12 months of operations, maintenance, and improvements.
-- finding: Claim (technical, supported_in_proposal, low materiality): It includes frontend and backend maintenance and development, backend infrastructure, user support, and day-to-day operations.[^1] The goal is to keep Eternl secure, compatible, stable, and available as Cardano keeps evolving.
-- finding: Claim (economic, proposer_asserted, high materiality): Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use.
-- finding: Claim (economic, supported_in_proposal, low materiality): | Plan | Price | |----------|--------------------------:| | Personal | $96/year ($8/month) | | Company | $384/year ($32/month)[^2] | Eternl has an install base of about 100,000 on the browser extension and about 30,000 across Android and iOS.
-- missing: Independent evidence for: Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: Budget and Budge
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 1.68M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: Budget and Budge
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 1.68M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 1.68M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: Budget and Budge
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: Budget and Budge
 
 ## Reproducibility
 - input_hash: `f48d421bada76c257658fb8d6a56604d847d80ce2fb0f46f43f29eb4529e0e87`
-- snapshot_bundle_hash: `38f17da8ce29704b299cae3d8d7c2a89b83d234c1fd87c2c0c9f9a36a0fb7c33`
+- snapshot_bundle_hash: `681f45cfff61fe2b2ba6a019b76f94e9903709e0509fb87d1bec10c1de6b2f60`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `3`
+- snapshot_age_seconds: `1609`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

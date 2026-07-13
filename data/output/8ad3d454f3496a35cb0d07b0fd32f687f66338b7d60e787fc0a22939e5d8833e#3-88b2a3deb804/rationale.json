@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 424.8k ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 424.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "88b2a3deb804cc569a499bb8e1f8f6ab40f00170009f51476c8102add96f9347",
-  "snapshot_bundle_hash": "3360341e5bc813ebebe7eb8ddd0d09fa92434cd7a033b6e8fe5d8380ae482e9a",
+  "snapshot_bundle_hash": "d2007f4e9b91e48d8c4e56e51bd077c6e61b5d4a2e6ae235836467093b45f64c",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 9,
+    "snapshot_age_seconds": 1638,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect",
-          "Recipient: ",
-          "Stated amount: 424.8k ADA",
-          "Deliverables: This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes., Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc., Update cardano-hw-cli to reflect firmware changes and to reflect user needs - Support Keystone developers while doing the changes above - Provide general cardano hw wallets maintenance, development support and bugfixing., Order and manage external code audits for Ledger firmware code (Ledger requirement, has to be done by one of 2 certified auditors) This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.",
-          "Claim (economic, independently_verifiable, low materiality): Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc.",
-          "Claim (economic, independently_verifiable, low materiality): Update cardano-hw-cli to reflect firmware changes and to reflect user needs - Support Keystone developers while doing the changes above - Provide general cardano hw wallets maintenance, development support and bugfixing.",
-          "Claim (economic, independently_verifiable, high materiality): Order and manage external code audits for Ledger firmware code (Ledger requirement, has to be done by one of 2 certified auditors) This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-          "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Hardware wallets Ledger and Trezor and additional supporting tooling (cardano-hw-cli) need to be regularly updated in order to be able to support Cardano blockchain development.",
-          "Claim (economic, independently_verifiable, low materiality): There are 2 aspects of this: - regular maintenance, bugfixing and developer support - implementation of new Cardano features and breaking changes HW wallets in scope: Ledger, Trezor, Keystone (from support perspective as Keystone firmware and tooling is dev..."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 424.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect. It asks the treasury for 424.8k ADA. The strongest grounded claim is: This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 424.8k ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#3",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqx488pdm-20260326T175232Z.bin",
         "content_chars": 13904
       },
-      "claim_count": 8,
-      "prompt_sha256": "64ac902455faea4673da6dc2d333f45565c7297103a8adf96376fbcad67a9ce2",
-      "output_sha256": "857c05915285621c998e5017441745c8eb9e109090e71603c2f1f17b9f982799"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "a2387cf89fdcc7c65fba9e5195cfe9d76d2fedde6ae296cbce263852fe93e6da",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "e354ca82cc993bcd1220d31e51936c8be866fc0ae77efeb4988ce593f848a396",
-      "output_sha256": "322e8817d768c021d1db34d75b57ee706fa8c6c8d6d489aaba4fe2114ca29afb"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

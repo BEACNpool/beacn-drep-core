@@ -1,11 +1,7 @@
 # DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000)
-**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: ABSTAIN**  _(plain-language explanation — deterministic-template)_
 
-BEACN records ABSTAIN on DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000). This is a conservative abstention because the evidence does not justify stronger certainty.
-
-The action is a InfoAction. The cached anchor describes the request as: DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000). The strongest grounded claim is: This Budget Info Action asks DReps and the Cardano community to signal support for a ₳1,500,000, 6-month budget to harden and scale DeltaDeFi , a Hydra-based, low-latency order-book exchange aiming to become core trading infrastructure for Cardano , focused.
-
-Reason code: RULE_THRESHOLD_UNMET.
+BEACN's autonomous DRep recorded ABSTAIN on "DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000)" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

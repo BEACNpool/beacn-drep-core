@@ -23,19 +23,19 @@
     "score": 0.275,
     "confidence": 0.7887,
     "input_hash": "74d2739e54d526ac277163e5ee9078658c927001ac18e17f60fed57e064a8112",
-    "snapshot_bundle_hash": "4c4cf9a3fa68b709be040930a91a422af4fe90d637a4bd99974fb2d1cf902f83",
+    "snapshot_bundle_hash": "20cacfab04d10db0ab6b45c65fab5d6ce189fdcb1e98c3d3e6abb593870233ac",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-74d2739e54d5.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/dd92f24c1a0062556bf8334d.md",
-    "rationale_anchor_hash": "dd92f24c1a0062556bf8334d2600a0fba50363d54223446e9ba4527bc13df856"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The work is described as continuity maintenance for an already-proven Cardano access layer rather than creation of a new wallet product.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.28; confidence 78.9%.",
+    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the 1.31M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. Weighed against it: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.28; confidence 78.9%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide independent evidence for: The work is described as continuity maintenance for an already-proven Cardano access layer rather than creation of a new wallet product.",
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide sustainability path.",
       "Provide cost-benefit clarity."
     ],
@@ -68,26 +68,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund 12 months of Hardware Wallet Maintenance 2026 for Cardano hardware-wallet support, including Ledger and Trezor compatibility updates, interoperability libraries, cardano-hw-cli, developer support, integration-path support, and vendor-required audits.",
-            "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor",
-            "Stated amount: 1,310,960",
-            "Deliverables: WP1 - Cardano Hardware Wallet Maintenance & Compatibility Assurance, Ledger and Trezor compatibility updates, Maintenance of supporting interoperability libraries and cardano-hw-cli, Developer support for ecosystem integrators, Support for integration paths involving externally maintained components where shared hardware-wallet flows intersect, Vendor-required product or security audits where firmware or app changes trigger them, Transparent capped time-and-materials reporting, Milestone-based disbursement controls",
-            "Deadline/expiry: 12 months of funding for 2026",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.",
-            "Claim (technical, proposer_asserted, high materiality): The work is described as continuity maintenance for an already-proven Cardano access layer rather than creation of a new wallet product.",
-            "Claim (technical, proposer_asserted, high materiality): The proposer says continuous hardware-wallet maintenance is needed because Cardano protocol evolution, Ledger and Trezor release cycles, and wallet and dApp integration demand create compatibility risk.",
-            "Claim (technical, proposer_asserted, high materiality): The proposer claims non-funding would risk users and integrators losing secure access when Cardano, Ledger, or Trezor introduce breaking changes.",
-            "Claim (governance, proposer_asserted, medium materiality): The proposal says its scope is limited to hardware-wallet compatibility, tooling, release support, supporting libraries, security, and vendor-required assurance, and does not duplicate core-node, ledger, or general infrastructure maintenance budgets.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: The work is described as continuity maintenance for an already-proven Cardano access layer rather than creation of a new wallet product.",
-            "Independent evidence for: The proposer says continuous hardware-wallet maintenance is needed because Cardano protocol evolution, Ledger and Trezor release cycles, and wallet and dApp integration demand create compatibility risk.",
-            "Independent evidence for: The proposer claims non-funding would risk users and integrators losing secure access when Cardano, Ledger, or Trezor introduce breaking changes.",
-            "Independent evidence for: The proposal says its scope is limited to hardware-wallet compatibility, tooling, release support, supporting libraries, security, and vendor-required assurance, and does not duplicate core-node, ledger, or general infrastructure maintenance budgets."
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -134,8 +121,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The work is described as continuity maintenance for an already-proven Cardano access layer rather than creation of a new wallet product.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 1.31M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -294,7 +281,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -404,10 +391,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 1603,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

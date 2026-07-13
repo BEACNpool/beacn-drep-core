@@ -1,72 +1,10 @@
 {
   "stage": "claim_extraction",
-  "available": true,
-  "source": "deterministic-heuristic",
-  "reason": null,
-  "model": "local-deterministic",
-  "request": {
-    "what": "Withdraw \u20b3700,000 for ZK Bridge administered by Intersect",
-    "recipient": "",
-    "amount_ada": "700.0k ADA",
-    "deliverables": [
-      "This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet.",
-      "As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth...",
-      "We will provide a circuit that enables a relayer to generate the ZK proof that a locking transaction was successfully added to the chain, which can then be verified on the receiving blockchain.",
-      "This way, any blockchain will be able to implement a ZK bridge with Cardano, leveraging its newly added capability to generate such proofs."
-    ],
-    "deadline": "not stated in document"
-  },
-  "claims": [
-    {
-      "claim": "This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth...",
-      "category": "technical",
-      "support": "independently_verifiable",
-      "materiality": "medium"
-    },
-    {
-      "claim": "We will provide a circuit that enables a relayer to generate the ZK proof that a locking transaction was successfully added to the chain, which can then be verified on the receiving blockchain.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "This way, any blockchain will be able to implement a ZK bridge with Cardano, leveraging its newly added capability to generate such proofs.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "This proposal aims to solve the following problem: Cross-chain interoperability remains one of the most critical yet unresolved challenges for Cardano.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "While the ecosystem is advancing in scalability through projects like Hydra and optimistic roll ups such as Midgard it still lacks a secure, trustless, and modular zk-based bridge infrastructure.",
-      "category": "technical",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "Current bridges rely on centralized validators or multi-signature schemes, introducing major security risks---as demonstrated by numerous high-profile exploits in other ecosystems.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Without a native zero-knowledge bridge, Cardano is unable to safely connect with external chains, severely limiting access to external liquidity, composability with other ecosystems, and the ability to scale horizontally.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    }
-  ],
-  "summary": "This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet. As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth...",
-  "prompt_sha256": "4c19cdba5f9ca8b1229d6d2b93a9809dec5b36078abf2b278dfc5b1b69b6ac2c",
-  "output_sha256": "849c9cf351834de99850bf012808a0987d1020151efc0967bea48993a497ce18"
+  "available": false,
+  "source": null,
+  "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+  "model": "claude-opus-4-8",
+  "request": {},
+  "claims": [],
+  "summary": ""
 }

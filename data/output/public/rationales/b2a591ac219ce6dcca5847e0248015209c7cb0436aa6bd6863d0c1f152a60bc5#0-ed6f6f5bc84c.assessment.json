@@ -20,25 +20,17 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Plutus V3 Cost Model Parameter Changes Prior to Chang 2",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)., Existing Plutus cost model settings will not be changed., Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)., Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, independently_verifiable, high materiality): We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).",
-        "Claim (technical, independently_verifiable, low materiality): Existing Plutus cost model settings will not be changed.",
-        "Claim (technical, independently_verifiable, high materiality): Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork).",
-        "Claim (technical, independently_verifiable, high materiality): Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.",
-        "Claim (technical, independently_verifiable, high materiality): This governance action provides cost model settings so that these primitives can be used following the Chang 2 hard fork.",
-        "Claim (technical, independently_verifiable, high materiality): Note that the new primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
-      "missing": [],
+      "missing": [
+        "No structured claim/evidence extraction from the proposal document."
+      ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
@@ -66,7 +58,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).\" and clears the evidence gates.",
+        "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
         "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

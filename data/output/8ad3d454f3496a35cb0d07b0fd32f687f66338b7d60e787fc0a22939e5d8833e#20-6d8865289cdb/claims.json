@@ -1,72 +1,10 @@
 {
   "stage": "claim_extraction",
-  "available": true,
-  "source": "deterministic-heuristic",
-  "reason": null,
-  "model": "local-deterministic",
-  "request": {
-    "what": "Withdraw \u20b3212,000 for AdaStat.net Cardano blockchain explorer",
-    "recipient": "",
-    "amount_ada": "212.0k ADA",
-    "deliverables": [
-      "This treasury withdrawal funds AdaStat.net Cardano blockchain explorer which will provide the following services: We propose to continue development and support of the AdaStat.net Cardano blockchain explorer for the next 24 months.",
-      "Planned work includes performance optimizations, improvements to UX/UI, and new features related to Cardano's evolving governance model and on-chain tooling.",
-      "The frontend is developed using Vue.js and Tailwind CSS, which allows very small bundle size and fast loading time on different devices.",
-      "The backend is built on Node.js and PostgreSQL, combining standard DB-Sync tables with custom-optimized indexes for high-speed data access."
-    ],
-    "deadline": "not stated in document"
-  },
-  "claims": [
-    {
-      "claim": "This treasury withdrawal funds AdaStat.net Cardano blockchain explorer which will provide the following services: We propose to continue development and support of the AdaStat.net Cardano blockchain explorer for the next 24 months.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Planned work includes performance optimizations, improvements to UX/UI, and new features related to Cardano's evolving governance model and on-chain tooling.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "medium"
-    },
-    {
-      "claim": "The frontend is developed using Vue.js and Tailwind CSS, which allows very small bundle size and fast loading time on different devices.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "The backend is built on Node.js and PostgreSQL, combining standard DB-Sync tables with custom-optimized indexes for high-speed data access.",
-      "category": "technical",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "This proposal aims to solve the following problem: It's still a challenge to provide Cardano blockchain data in a way that's both decentralized and easy to use.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "Blockchain explorers are key tools in solving this issue, as they provide access to information about blocks, transactions, stake pools, governance activities, and other on-chain operations.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "medium"
-    },
-    {
-      "claim": "However, each explorer is also potential point of centralization --- it can fail, or show incorrect data.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "Because of this, it is important for ecosystem to have several independent, performant, and open-source explorers.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    }
-  ],
-  "summary": "This treasury withdrawal funds AdaStat.net Cardano blockchain explorer which will provide the following services: We propose to continue development and support of the AdaStat.net Cardano blockchain explorer for the next 24 months. Planned work includes performance optimizations, improvements to UX/UI, and new features related to Cardano's evolving governance model and on-chain tooling.",
-  "prompt_sha256": "819697854f8477b69b80dbdebe23b3f87d20d8f62e111fa8df1def5ef7d0a0e3",
-  "output_sha256": "5236f0ff89e169edd4fd0b32cf333e3b04216a75b1c5754452dce4250573ce86"
+  "available": false,
+  "source": null,
+  "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+  "model": "claude-opus-4-8",
+  "request": {},
+  "claims": [],
+  "summary": ""
 }

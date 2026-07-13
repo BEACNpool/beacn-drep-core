@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 266.7k ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 266.7k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "68bc8c8673e63b9d3d3c9abe60f4f6b9dd3e5d928ab70c16c790d7a63ae0bb0d",
-  "snapshot_bundle_hash": "9a09c8b9e5f3b3168ad25213c890fd19ef6f6aa51a240dbdf01a0938928fe459",
+  "snapshot_bundle_hash": "ab24361f5ef384346c14d2edf45663525b54632066ac447d139bf48ac446b30c",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 1643,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer...",
-          "Recipient: ",
-          "Stated amount: 266.7k ADA",
-          "Deliverables: This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem., It offers deep on-chain insights, real-time data access, and powerful tools for developers, stake pool operators, and users., With over 50,000 monthly users and millions of processed data requests, Cexplorer.io has become a trusted resource in the Cardano community., This proposal seeks funding to ensure the long-term sustainability of the platform through infrastructure maintenance and continuous improvement.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.",
-          "Claim (economic, independently_verifiable, low materiality): It offers deep on-chain insights, real-time data access, and powerful tools for developers, stake pool operators, and users.",
-          "Claim (economic, independently_verifiable, medium materiality): With over 50,000 monthly users and millions of processed data requests, Cexplorer.io has become a trusted resource in the Cardano community.",
-          "Claim (technical, independently_verifiable, high materiality): This proposal seeks funding to ensure the long-term sustainability of the platform through infrastructure maintenance and continuous improvement.",
-          "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: The Cardano ecosystem lacks a powerful, developer-friendly explorer with advanced features, real-time insights, and flexible tools for building on-chain apps.",
-          "Claim (economic, independently_verifiable, low materiality): Cexplorer.io aims to fill this gap by providing deep data access, improved UX, and ongoing enhancements to support the growing needs of users and developers."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 266.7k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer. It asks the treasury for 266.7k ADA. The strongest grounded claim is: This treasury withdrawal funds Cexplorer.io -- Developer-Focused Blockchain Explorer for Cardano which will provide the following services: Cexplorer.io is a high-performance, feature-rich blockchain explorer designed specifically for the Cardano ecosystem.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Withdraw \u20b3266,667 for Cexplorer.io -- Developer-Focused Blockchain Explorer...\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 266.7k ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#18",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlpyflfc4s-20260326T175234Z.bin",
         "content_chars": 13458
       },
-      "claim_count": 8,
-      "prompt_sha256": "c217bd6c4a4dea51427bfdde03b6fd767d85256e0b1504c1048799d645e31594",
-      "output_sha256": "5c7ea5a1b8352a8f5830dc2796a234cca90e271e90282fe221bde21ea469ad9c"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "fa4b3594a0da5069b5edbc7f9f38f75c6f543f6fc30f8f30b8604fdce1140f09",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "1d427b5b851e82ca830fde75551af914a9b27ebe93e8acde67cbaca07feccd24",
-      "output_sha256": "a453c8f16e675814bdba21bc4d5d8570decda8cb61c2c3cdbfce9b2d83205ccf"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

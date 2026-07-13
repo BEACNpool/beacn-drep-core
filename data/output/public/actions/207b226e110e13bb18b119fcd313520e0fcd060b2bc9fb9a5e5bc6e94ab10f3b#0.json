@@ -21,23 +21,23 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.01,
-    "confidence": 0.5725,
+    "confidence": 0.4225,
     "input_hash": "47bed3a605704552c9e97dc488038d4f7dde3affd4339ac668be4d3bfcc5f80c",
-    "snapshot_bundle_hash": "ead70d9563d4e0ad560cc65f1e89eb9e8d64fb29d64388fac2f0f40d2c40199a",
+    "snapshot_bundle_hash": "fc7c7bdb17cc525abff2c6d6d3f23bbd94b779f223d9116b51a5fc526eb52564",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/207b226e110e13bb18b119fcd313520e0fcd060b2bc9fb9a5e5bc6e94ab10f3b#0-47bed3a60570.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see \"List of changes from v1.0 to v2.0\".\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 57.2%.",
+    "summary": "Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: NewConstitution advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/207b226e110e13bb18b119fcd313520e0fcd060b2bc9fb9a5e5bc6e94ab10f3b#0-47bed3a60570.md",
     "missing_evidence": [],
@@ -65,25 +65,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see \"List of changes from v1.0 to v2.0\"., Here is a list of the major changes: Preamble / Article I / Article III / Appendix II: Minor wording improvements., Defined Terms: New definitions added for clarity., Removed the Budget info action requirement for treasury withdrawals.",
-            "Deadline/expiry: not stated in document",
-            "Claim (governance, supported_in_proposal, high materiality): CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see \"List of changes from v1.0 to v2.0\".",
-            "Claim (other, supported_in_proposal, low materiality): Here is a list of the major changes: Preamble / Article I / Article III / Appendix II: Minor wording improvements.",
-            "Claim (other, supported_in_proposal, low materiality): Defined Terms: New definitions added for clarity.",
-            "Claim (economic, supported_in_proposal, high materiality): Removed the Budget info action requirement for treasury withdrawals.",
-            "Claim (economic, supported_in_proposal, high materiality): The current Constitution has six key issues: 1) Typos and inconsistent spelling 2) Redundant and unclear wording 3) Vague or missing definitions 4) Unused provisions (e.g., DRep/SPO Codes of Conduct) 5) Unnecessary budget requirement for treasury withdrawals",
-            "Claim (economic, supported_in_proposal, high materiality): We addressed these issues as follows: 1) Fixed typos and cleaned up wording 2) Simplified structure and reduced word count 3) Clarified key definitions 4) Removed unused or outdated clauses 5) Removed the budget requirement for treasury withdrawals"
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -111,7 +103,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see \"List of changes from v1.0 to v2.0\".\" and clears the evidence gates.",
+            "Strongest YES: NewConstitution advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewConstitution.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -205,7 +197,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -275,14 +267,14 @@
     "binding_score": 0.01,
     "raw_score": 0.01,
     "directional_threshold": 0.12,
-    "confidence": 0.5725,
+    "confidence": 0.4225,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 8,
+    "snapshot_age_seconds": 1631,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

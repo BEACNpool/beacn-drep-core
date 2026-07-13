@@ -23,23 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Approve Cardano Foundation as New Managing Entity of Project Catalyst",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst., This will allow for full and effective transition of Catalyst operations and responsibilities from IOG to CF in accordance with the statutes of the Catalyst Foundation Company (CFC)., This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14., This approval request and Info Action is unrelated to Intersect\u2019s role as the constitutionally mandated budget administrator for funds 14 to 16.",
-        "Deadline/expiry: not stated in document",
-        "Claim (adoption, supported_in_proposal, medium materiality): The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.",
-        "Claim (other, proposer_asserted, low materiality): This will allow for full and effective transition of Catalyst operations and responsibilities from IOG to CF in accordance with the statutes of the Catalyst Foundation Company (CFC).",
-        "Claim (economic, proposer_asserted, high materiality): This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.",
-        "Claim (economic, supported_in_proposal, high materiality): This approval request and Info Action is unrelated to Intersect\u2019s role as the constitutionally mandated budget administrator for funds 14 to 16.",
-        "Claim (other, supported_in_proposal, low materiality): In February CF agreed to assume stewardship of Catalyst from IOG, with the primary goal of ensuring continuity for existing grant recipients.",
-        "Claim (adoption, supported_in_proposal, medium materiality): CF is submitting this Info Action to request the Community\u2019s approval for the transition of the Catalyst management role from IOG to CF, in accordance with CFC\u2019s statutes."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -68,8 +58,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The Cardano Foundation (CF), supported by Input Output Group (IOG), is requesting community approval to be appointed as the new managing entity for Project Catalyst.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"This transition will ensure continuity of operations and minimise delays on milestone reviews and eligible payouts for teams delivering against projects in Funds 10-14.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

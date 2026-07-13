@@ -23,24 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Withdraw treasury funds to maintain and enhance Oura, a Cardano event pipeline tool, over 12 months.",
-        "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
-        "Stated amount: 540750",
-        "Deliverables: WP1 - Oura Maintenance and Enhancement, Part-time maintainer for Oura over 12 months, Dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Issue triage, review of external contributions, ecosystem-feedback enhancements, and public developer communication, AI-friendly documentation and integration resources",
-        "Deadline/expiry: 12 months",
-        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.",
-        "Claim (economic, supported_in_proposal, high materiality): The on-chain withdrawal amount is 540,750 ADA, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.",
-        "Claim (technical, supported_in_proposal, high materiality): Oura is described as a Rust-native Cardano pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs.",
-        "Claim (technical, supported_in_proposal, medium materiality): Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and supports sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
-        "Claim (adoption, independently_verifiable, medium materiality): The proposal states that Oura has 654 commits, 288 stars, 79 forks, and 58 contributors, and links to the public GitHub repository for verification.",
-        "Claim (adoption, proposer_asserted, high materiality): The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.",
-        "Independent evidence for: The proposal states that TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 under development and on schedule."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -48,16 +37,18 @@
       "title": "Treasury analysis",
       "status": "complete",
       "findings": [
-        "Requested ADA: 0",
-        "Budget granularity: confirmed",
-        "Milestone payment gates: confirmed",
+        "Requested ADA: 540750",
+        "Budget granularity: not confirmed",
+        "Milestone payment gates: unknown",
         "Clawback/refund path: unknown",
         "Cost/benefit clarity: unknown",
         "Recurring funding dependency: unknown",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.63"
+        "Financial confidence: 0.43"
       ],
       "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
         "sustainability path",
         "cost-benefit clarity"
       ],
@@ -87,8 +78,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that Oura is used across the ecosystem for indexing, monitoring, analytics, and real-time event processing.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 540.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

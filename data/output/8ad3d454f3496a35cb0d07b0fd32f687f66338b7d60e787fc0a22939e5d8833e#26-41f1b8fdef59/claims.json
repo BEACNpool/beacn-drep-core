@@ -1,72 +1,10 @@
 {
   "stage": "claim_extraction",
-  "available": true,
-  "source": "deterministic-heuristic",
-  "reason": null,
-  "model": "local-deterministic",
-  "request": {
-    "what": "Withdraw \u20b312,000,000 for Cardano Builder DAO administered by Intersect",
-    "recipient": "",
-    "amount_ada": "12.00M ADA",
-    "deliverables": [
-      "This treasury withdrawal funds Cardano Builder DAO which will provide the following services: The Cardano Builder DAO ( CB DAO ) is a smart contract-enforced , member-governed funding mechanism created to support the application-layer growth of the Cardano...",
-      "Its core purpose is to provide sustainable financial backing and strategic oversight to high-impact projects that are directly responsible for existing user adoption, on-chain activity, Total Value Locked (TVL), and ecosystem engagement.",
-      "While Cardano's governance structure and funding mechanisms, such as Project Catalyst and core development committees, have been instrumental in bootstrapping protocol advancements and open-source tooling, there remains a substantial gap in ongoing support...",
-      "Through a transparent governance framework , strict accountability mechanisms , and a metrics-first funding approach , CB DAO ensures that builders with growing products on mainnet can scale sustainably, integrate cutting-edge Cardano infrastructure (e.g."
-    ],
-    "deadline": "not stated in document"
-  },
-  "claims": [
-    {
-      "claim": "This treasury withdrawal funds Cardano Builder DAO which will provide the following services: The Cardano Builder DAO ( CB DAO ) is a smart contract-enforced , member-governed funding mechanism created to support the application-layer growth of the Cardano...",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Its core purpose is to provide sustainable financial backing and strategic oversight to high-impact projects that are directly responsible for existing user adoption, on-chain activity, Total Value Locked (TVL), and ecosystem engagement.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "While Cardano's governance structure and funding mechanisms, such as Project Catalyst and core development committees, have been instrumental in bootstrapping protocol advancements and open-source tooling, there remains a substantial gap in ongoing support...",
-      "category": "technical",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Through a transparent governance framework , strict accountability mechanisms , and a metrics-first funding approach , CB DAO ensures that builders with growing products on mainnet can scale sustainably, integrate cutting-edge Cardano infrastructure (e.g.",
-      "category": "technical",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "This proposal aims to solve the following problem: This proposal seeks to address the lack of dedicated, sustainable financial support and strategic oversight for functioning dApps that drive real usage, transaction volume, and Total Value Locked (TVL) on t...",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    },
-    {
-      "claim": "While Cardano has mechanisms for new protocol development and early-stage funding, there is currently no infrastructure specifically designed to financially support application-layer projects that are already live on mainnet and which are driving Cardano's...",
-      "category": "technical",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Without targeted support, these projects risk stagnation, limiting Cardano's broader adoption and on-chain ecosystem growth.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "To reach mass adoption, Cardano needs to better support launched projects; this proposal aims to ensure that established builders with launched dApps can continue to build on Cardano.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "low"
-    }
-  ],
-  "summary": "This treasury withdrawal funds Cardano Builder DAO which will provide the following services: The Cardano Builder DAO ( CB DAO ) is a smart contract-enforced , member-governed funding mechanism created to support the application-layer growth of the Cardano... Its core purpose is to provide sustainable financial backing and strategic oversight to high-impact projects that are directly responsible for existing user adoption, on-chain activity, Total Value Locked (TVL), and ecosystem engagement.",
-  "prompt_sha256": "2eda14e426c5d0736fe2c9689701d46e840e46d5e4c358e0fe41293b3ccde0a1",
-  "output_sha256": "81f10499c4a171c4a59f011e7673c9853b83549d148cf3748fe58035db334012"
+  "available": false,
+  "source": null,
+  "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+  "model": "claude-opus-4-8",
+  "request": {},
+  "claims": [],
+  "summary": ""
 }

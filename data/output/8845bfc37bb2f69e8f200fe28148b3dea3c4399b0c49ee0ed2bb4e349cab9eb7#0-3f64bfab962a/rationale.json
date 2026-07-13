@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.11,
   "raw_score": 0.11,
-  "llm_score_adjustment": 0.005,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "NEUTRAL",
-    "score_adjustment": 0.005,
-    "confidence": 0.85,
-    "rationale": "Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -38,12 +29,11 @@
     "Intake: Action type: InfoAction",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Intersect\u2019s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the \u201cvan Rossem Hard Fork\u201d in memory of Cardano community contributor Max van Rossem.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Advisory model lean was +0.005 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 7 well-supported claim(s), 1 unsupported high-materiality claim(s). Net bounded adjustment +0.005 (clamped to \u00b10.05).",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -52,7 +42,7 @@
   ],
   "uncertainty": [
     "Rule-based system; does not infer unstated intent.",
-    "Claims and evidence missing: Independent evidence for: He made significant contributions to the development of Cardano\u2019s constitution and to many of the governance discussions and optimizations that will help shape the network\u2019s future.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
@@ -60,10 +50,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "3f64bfab962adf9592b5499d0bf321b9732e62fbfc2a1a49bb4810d35c4737a0",
-  "snapshot_bundle_hash": "912ee1672fba3d183352aadda3d32b805119c5839d3cf28e366334fde6737ffc",
+  "snapshot_bundle_hash": "130a33ff60f949324524faa0083d5eca38c4c852bc25bb2978fc021a9ed88cff",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -77,10 +67,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 6,
+    "snapshot_age_seconds": 1623,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -118,23 +108,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: Name Protocol Version 11 hard fork - van Rossem",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: Intersect\u2019s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the \u201cvan Rossem Hard Fork\u201d in memory of Cardano community contributor Max van Rossem., There is a tradition of naming hard forks in memory of notable historical figures or significant contributors to the Cardano community., It started with Byron and continued up until today with Shelley, Allegra, Mary, Alonzo, Vasil, Valentine, Chang and Plomin, with Vasil, Chang and Plomin named after honoured community members who recently passed away., Naming this hard fork in memory of Max van Rossem would continue the tradition of weaving lasting memories of impactful contributors to the Cardano blockchain ecosystem for their families and ecosystem as a whole.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, supported_in_proposal, high materiality): Intersect\u2019s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the \u201cvan Rossem Hard Fork\u201d in memory of Cardano community contributor Max van Rossem.",
-          "Claim (adoption, supported_in_proposal, high materiality): There is a tradition of naming hard forks in memory of notable historical figures or significant contributors to the Cardano community.",
-          "Claim (adoption, supported_in_proposal, medium materiality): It started with Byron and continued up until today with Shelley, Allegra, Mary, Alonzo, Vasil, Valentine, Chang and Plomin, with Vasil, Chang and Plomin named after honoured community members who recently passed away.",
-          "Claim (adoption, supported_in_proposal, high materiality): Naming this hard fork in memory of Max van Rossem would continue the tradition of weaving lasting memories of impactful contributors to the Cardano blockchain ecosystem for their families and ecosystem as a whole.",
-          "Claim (adoption, supported_in_proposal, medium materiality): Max was a much-loved member of the Cardano community, always thoughtful, generous, sharp-minded, and deeply committed to those he worked alongside.",
-          "Claim (governance, proposer_asserted, high materiality): He made significant contributions to the development of Cardano\u2019s constitution and to many of the governance discussions and optimizations that will help shape the network\u2019s future."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: He made significant contributions to the development of Cardano\u2019s constitution and to many of the governance discussions and optimizations that will help shape the network\u2019s future."
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -163,8 +143,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Intersect\u2019s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the \u201cvan Rossem Hard Fork\u201d in memory of Cardano community contributor Max van Rossem.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"He made significant contributions to the development of Cardano\u2019s constitution and to many of the governance discussions and optimizations that will help shape the network\u2019s future.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -207,14 +187,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on Name Protocol Version 11 hard fork - van Rossem. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Name Protocol Version 11 hard fork - van Rossem. The strongest grounded claim is: Intersect\u2019s Hard Fork Working Group proposes to name the next Cardano hard fork, to Protocol Version 11, the \u201cvan Rossem Hard Fork\u201d in memory of Cardano community contributor Max van Rossem.\n\nA material claim remains proposer-asserted or thinly supported: He made significant contributions to the development of Cardano\u2019s constitution and to many of the governance discussions and optimizations that will help shape the network\u2019s future. Reason code: RULE_THRESHOLD_UNMET.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Name Protocol Version 11 hard fork - van Rossem\" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "8845bfc37bb2f69e8f200fe28148b3dea3c4399b0c49ee0ed2bb4e349cab9eb7#0",
         "anchor_read": true,
@@ -225,9 +205,9 @@
         "file_path": "data/input/governance/anchors/gov_action13pzmlsmmktmfareqpl3gzj9nm63ugwvmp3y7urkjhd8rf89tn6msq95mp3f-20260326T175207Z.bin",
         "content_chars": 5839
       },
-      "claim_count": 8,
-      "prompt_sha256": "3c4a243231a5da73afeaa14a37c36f1e419de5b5b730db406cddfa4995049485",
-      "output_sha256": "e600863d8060f2352b45b4c0efaf56c240f576482199aca9f3cab3f8590d6b96"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "info",
@@ -238,24 +218,24 @@
       "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "direction": "NEUTRAL",
-      "score_adjustment": 0.005,
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "b22adaa5f453efbc7aff090afc6366a1698f39ffa1afafba45b94b830a91afc4",
-      "output_sha256": "4bc476bf00abf6339c77a17dbce6740f8f498c087c222cbaa3621f9f8ca15561"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "0dec2b73e73e2cbd68b83d0ff2c84ffa2490288178ffee176946a0bd6c31016e",
-      "output_sha256": "5565df0f4dfb2e8189ed9a317b0f63476be805fc9a67018ff0182967e2cfbb60"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

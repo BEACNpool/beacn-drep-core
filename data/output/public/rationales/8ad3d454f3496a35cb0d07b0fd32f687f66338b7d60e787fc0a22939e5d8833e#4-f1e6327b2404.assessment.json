@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Withdraw \u20b3220,914 for Pallas: Sustaining Critical Rust Tooling for Cardano",
-        "Recipient: ",
-        "Stated amount: 220.9k ADA",
-        "Deliverables: This treasury withdrawal funds Pallas: Sustaining Critical Rust Tooling for Cardano which will provide the following services: This request for support focuses on Pallas (github.com/txpipe/pallas), a collection of Rust-native building blocks for the Cardano..., Pallas provides reusable components, such as cryptographic primitives and CBOR encoding, to enable the development of higher-level use cases like explorers and wallets., The project remains open-source, and actively welcomes contributions from the broader Cardano developer community., With 591 commits, over 430 pull requests, and 39 contributors, it stands as a strong example of open-source collaboration in the ecosystem.",
-        "Deadline/expiry: not stated in document",
-        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Pallas: Sustaining Critical Rust Tooling for Cardano which will provide the following services: This request for support focuses on Pallas (github.com/txpipe/pallas), a collection of Rust-native building blocks for the Cardano...",
-        "Claim (economic, independently_verifiable, low materiality): Pallas provides reusable components, such as cryptographic primitives and CBOR encoding, to enable the development of higher-level use cases like explorers and wallets.",
-        "Claim (economic, independently_verifiable, medium materiality): The project remains open-source, and actively welcomes contributions from the broader Cardano developer community.",
-        "Claim (economic, independently_verifiable, low materiality): With 591 commits, over 430 pull requests, and 39 contributors, it stands as a strong example of open-source collaboration in the ecosystem.",
-        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Pallas has become a critical Rust-native foundation for Cardano development, providing essential blockchain primitives such as cryptographic primitives and CBOR encoding.",
-        "Claim (technical, independently_verifiable, low materiality): However, maintaining an open-source project of this scale requires continuous effort---bug fixes, updates to support protocol changes, performance optimizations, and new feature development."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Pallas: Sustaining Critical Rust Tooling for Cardano which will provide the following services: This request for support focuses on Pallas (github.com/txpipe/pallas), a collection of Rust-native building blocks for the Cardano...\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 220.9k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

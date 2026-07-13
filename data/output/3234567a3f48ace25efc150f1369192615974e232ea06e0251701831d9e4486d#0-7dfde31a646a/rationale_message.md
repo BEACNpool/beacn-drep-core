@@ -1,11 +1,7 @@
 # Scalus 2026: Maintenance, Dijkstra Readiness, Interoperability & Application Runtime
-**BEACN DRep vote: YES**  _(plain-language explanation — deterministic-heuristic)_
+**BEACN DRep vote: YES**  _(plain-language explanation — deterministic-template)_
 
-BEACN records YES on Scalus 2026: Maintenance, Dijkstra Readiness, Interoperability & Application Runtime. The deterministic gates found enough evidence and no decisive blocker.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Funding for a 9-month continuation of Scalus covering maintenance, Dijkstra hard-fork readiness, interoperability across JVM and JS/TS ecosystems, and a scoped application runtime. It asks the treasury for 2464844 ADA. The strongest grounded claim is: Scalus is an open-source Cardano development platform built by Lantr Engineering over three years of continuous delivery.
-
-A residual watch item: this claim remains proposer-asserted rather than independently shown: Scalus is used directly by Gummiworm L2, Bifrost, SugarRush, Vela, and DID/DIDComm projects.
+BEACN's autonomous DRep recorded YES on "Scalus 2026: Maintenance, Dijkstra Readiness, Interoperability & Application Runtime" (TreasuryWithdrawals). The action requests 2.46M ADA from the treasury. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ---
 _The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

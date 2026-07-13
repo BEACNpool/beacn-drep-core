@@ -83,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "778b48e23f84559934d608b9fc892d9054d357bf4d3fb394ed97e6cb578c2a32",
-  "snapshot_bundle_hash": "59f1e7649b33e67cf60a9e848ae1fe244d5bfaa99a8f4a5e117fad0af57e1fda",
+  "snapshot_bundle_hash": "afc51dbac499ecf1c068df5f10aa0bb7855e08a3830ed8375ff96113219a67d7",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -106,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 6,
+    "snapshot_age_seconds": 1622,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -284,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Cardano DeFi Liquidity Budget - Withdrawal 1. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano DeFi Liquidity Budget - Withdrawal 1. It asks the treasury for 500.0k ADA.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Cardano DeFi Liquidity Budget - Withdrawal 1\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 500.0k ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
       "available": false,
-      "source": "deterministic-heuristic",
+      "source": null,
       "reason": "no cached anchor document text to read",
-      "model": "local-deterministic",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "4b10e5793208cb8f228756e02113227c91602248eac4d992681a0ee760b6c4e2#0",
         "anchor_read": false,
@@ -313,24 +313,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "c1e8e611ab168d2b7230311d32a5054dad64c6c14780042412e552b95b7174ae",
-      "output_sha256": "13418458a431a0c3344edccda6820832703f4ffdf2a05d819f8b72712689bcde"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "a66b21b8ce6d66fd6a11cdfe917d1c85b4b29538b40515c9434980b670960dbf",
-      "output_sha256": "060f620fc54d9c14d82c7181408cbd0bdc102fe5b8b7de77352242ae824278c0"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

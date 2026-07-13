@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "blocked",
+  "overall_status": "incomplete",
   "sections": [
     {
       "title": "Intake",
@@ -23,47 +23,30 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
-        "Deep research dossier: required",
-        "Requested: Treasury withdrawal to fund MLabs Core Tool Maintenance & Enhancement for Plutarch and Ply annual maintenance and enhancement.",
-        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor.",
-        "Stated amount: 1,162,746",
-        "Deliverables: WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities, Protocol-era and hard-fork compatibility, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, supported_in_proposal, high materiality): Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
-        "Claim (adoption, proposer_asserted, high materiality): MLabs counted at least 26 teams building with Plutarch and Ply in a recent internal audit, while the rationale later states a conservative count of at least 15 teams.",
-        "Claim (technical, independently_verifiable, medium materiality): MLabs' public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory.",
-        "Claim (technical, proposer_asserted, high materiality): The proposed funding period is intended to cover ongoing Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land.",
-        "Claim (technical, proposer_asserted, high materiality): The proposal claims continued maintenance will reduce friction, migration risk, uncertainty, bespoke workarounds, and avoidable rewrites for teams maintaining production systems.",
-        "Claim (governance, proposer_asserted, medium materiality): The proposal claims alignment with Cardano 2030 Pillar 2, specifically Adoption & Utility and A.3 Developer Experience for open-source SDKs, frameworks, and infrastructure."
+        "Deep research dossier: complete",
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: MLabs counted at least 26 teams building with Plutarch and Ply in a recent internal audit, while the rationale later states a conservative count of at least 15 teams.",
-        "Independent evidence for: The proposed funding period is intended to cover ongoing Cardano ledger, Plutus, and tooling evolution, including protocol-era compatibility for major ledger updates such as the Dijkstra era if relevant changes land.",
-        "Independent evidence for: The proposal claims continued maintenance will reduce friction, migration risk, uncertainty, bespoke workarounds, and avoidable rewrites for teams maintaining production systems.",
-        "Independent evidence for: The proposal claims alignment with Cardano 2030 Pillar 2, specifically Adoption & Utility and A.3 Developer Experience for open-source SDKs, frameworks, and infrastructure.",
-        "feasibility assessment",
-        "alternatives analysis",
-        "failure-mode analysis"
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
       "title": "Treasury analysis",
-      "status": "incomplete",
+      "status": "complete",
       "findings": [
         "Requested ADA: 1162746",
-        "Budget granularity: not confirmed",
+        "Budget granularity: confirmed",
         "Milestone payment gates: confirmed",
         "Clawback/refund path: unknown",
-        "Cost/benefit clarity: not confirmed",
-        "Recurring funding dependency: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.60"
+        "Financial confidence: 0.58"
       ],
       "missing": [
-        "line-item budget",
         "sustainability path",
         "cost-benefit clarity"
       ],
@@ -73,17 +56,18 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: medium",
-        "Governance risk: medium",
-        "Technical risk: low",
-        "Treasury exposure risk: low",
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
-        "Rollback/remedy path: confirmed",
+        "Rollback/remedy path: unknown",
         "Flag count: 1"
       ],
       "missing": [
         "independent assurance",
+        "rollback/remedy path",
         "dependency map"
       ],
       "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
@@ -92,31 +76,23 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts through controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.\" though 3 review blocker(s) remain open.",
-        "Strongest NO: a material claim is unsupported \u2014 \"MLabs counted at least 26 teams building with Plutarch and Ply in a recent internal audit, while the rationale later states a conservative count of at least 15 teams.\" \u2014 so cost or precedent may outweigh the benefit.",
-        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        "Strongest YES: the 1.16M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],
       "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
     },
     {
       "title": "Synthesis",
-      "status": "blocked",
+      "status": "ready",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [
-        "missing feasibility assessment",
-        "missing alternatives analysis",
-        "missing failure-mode analysis"
-      ],
+      "missing": [],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": [
-    "missing feasibility assessment",
-    "missing alternatives analysis",
-    "missing failure-mode analysis"
-  ]
+  "blocking_questions": []
 }

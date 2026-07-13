@@ -1,14 +1,10 @@
 # Rationale: 51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0
 Recommendation: **ABSTAIN**
-Score: `-0.3833` (raw `-0.3833` + doctrine-LLM nudge `-0.02`) | Confidence: `0.4158` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to ±0.05).
+Score: `-0.3833` (raw `-0.3833` + doctrine-LLM nudge `+0.0`) | Confidence: `0.4158` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on 51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0. This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a ParameterChange. The cached anchor describes the request as: not stated.
-
-Reason code: RISK_HIGH.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74#0" (ParameterChange). This is a conservative, evidence-based hold rather than opposition. Reason code: RISK_HIGH. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -72,7 +68,7 @@ Reason code: RISK_HIGH.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Advisory model lean was -0.020 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.020 (clamped to ±0.05).
+- No additional inference.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,12 +87,12 @@ Reason code: RISK_HIGH.
 
 ## Reproducibility
 - input_hash: `91de3246bc81ef900308026f11175a8f75e8571ffe548f7e91876358b6d67691`
-- snapshot_bundle_hash: `c05e9793663ada4c1d9fe0f063a491530f12d5d5c7fd560caee8eca78cef1226`
+- snapshot_bundle_hash: `b4b8cc7adb0e7c704ec468f6b5268c151a557c1346fe26913d69269df386e81f`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `13`
+- snapshot_age_seconds: `1656`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.3702, "NO": 0.5862, "YES": 0.0437}`

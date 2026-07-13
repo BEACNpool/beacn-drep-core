@@ -2,7 +2,7 @@
   "schema_version": "assessment-tree-v1",
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#4",
   "action_type": "TreasuryWithdrawals",
-  "overall_status": "blocked",
+  "overall_status": "incomplete",
   "sections": [
     {
       "title": "Intake",
@@ -23,47 +23,30 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
-        "Deep research dossier: required",
-        "Requested: Treasury withdrawal to fund Intersect governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, and critical process management for June 2026 to June 2027.",
-        "Recipient: Intersect via the 2026 Treasury Reserve Smart Contract stake address.",
-        "Stated amount: 25,400,000",
-        "Deliverables: WP 1 - Intersect operations and ecosystem coordination: 6,000,000 ADA, WP 2 - Technical Stewardship, Incident Response & Coordination including core Cardano repos: 18,800,000 ADA, WP 3 - Management of critical processes: 600,000 ADA",
-        "Deadline/expiry: June 2026 to June 2027",
-        "Claim (economic, supported_in_proposal, high materiality): Intersect requests 25,400,000 ADA to fund its core operating model for June 2026 to June 2027.",
-        "Claim (economic, proposer_asserted, high materiality): The proposal says the overall ask has been reduced from $7.875M to $6.35M compared with last year while preserving critical continuity functions.",
-        "Claim (adoption, proposer_asserted, medium materiality): Intersect states it has matured over the past two years into a focused operational layer supporting committees, working groups, core Haskell repositories, upgrades, incident response, and community-approved initiatives.",
-        "Claim (technical, proposer_asserted, high materiality): Intersect states it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal claims funding will retain an open coordination layer, a response mechanism for critical unowned issues, and technical stewardship covering releases, incidents, repository management, and bug bounties.",
-        "Claim (governance, independently_verifiable, high materiality): The proposal says it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting documentation, audited results, and an audit report."
+        "Deep research dossier: complete",
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The proposal says the overall ask has been reduced from $7.875M to $6.35M compared with last year while preserving critical continuity functions.",
-        "Independent evidence for: Intersect states it has matured over the past two years into a focused operational layer supporting committees, working groups, core Haskell repositories, upgrades, incident response, and community-approved initiatives.",
-        "Independent evidence for: Intersect states it has coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.",
-        "Independent evidence for: Independent audits and assurance for the proposal will be provided by Appold, with possible reviews of deliverables, controls, spend validation, and milestone evidence.",
-        "feasibility assessment",
-        "alternatives analysis",
-        "failure-mode analysis"
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
       "title": "Treasury analysis",
-      "status": "incomplete",
+      "status": "complete",
       "findings": [
         "Requested ADA: 25400000",
-        "Budget granularity: not confirmed",
+        "Budget granularity: confirmed",
         "Milestone payment gates: confirmed",
         "Clawback/refund path: unknown",
-        "Cost/benefit clarity: not confirmed",
-        "Recurring funding dependency: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
         "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-        "Financial confidence: 0.60"
+        "Financial confidence: 0.62"
       ],
       "missing": [
-        "line-item budget",
         "sustainability path",
         "cost-benefit clarity"
       ],
@@ -73,18 +56,17 @@
       "title": "Risk review",
       "status": "complete",
       "findings": [
-        "Execution risk: medium",
-        "Governance risk: medium",
-        "Technical risk: low",
-        "Treasury exposure risk: high",
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
         "Mitigation evidence: confirmed",
         "Independent assurance: not confirmed",
-        "Rollback/remedy path: unknown",
+        "Rollback/remedy path: confirmed",
         "Flag count: 1"
       ],
       "missing": [
         "independent assurance",
-        "rollback/remedy path",
         "dependency map"
       ],
       "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
@@ -93,31 +75,23 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Intersect requests 25,400,000 ADA to fund its core operating model for June 2026 to June 2027.\" though 3 review blocker(s) remain open.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says the overall ask has been reduced from $7.875M to $6.35M compared with last year while preserving critical continuity functions.\" \u2014 so cost or precedent may outweigh the benefit.",
-        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+        "Strongest YES: the 25.40M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],
       "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
     },
     {
       "title": "Synthesis",
-      "status": "blocked",
+      "status": "ready",
       "findings": [
         "Final vote must be derived from completed sections above, not from a prose summary.",
         "The public rationale should name the decisive section and the strongest counterargument."
       ],
-      "missing": [
-        "missing feasibility assessment",
-        "missing alternatives analysis",
-        "missing failure-mode analysis"
-      ],
+      "missing": [],
       "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
     }
   ],
-  "blocking_questions": [
-    "missing feasibility assessment",
-    "missing alternatives analysis",
-    "missing failure-mode analysis"
-  ]
+  "blocking_questions": []
 }

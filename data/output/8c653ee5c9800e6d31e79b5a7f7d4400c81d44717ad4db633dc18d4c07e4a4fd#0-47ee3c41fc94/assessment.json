@@ -20,25 +20,17 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Cardano Constitution to Replace the Interim Constitution",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: This Cardano Constitution is proposed to replace the Interim Constitution., The Cardano Constitution is the result of extensive Cardano community consultation throughout 2024., The Interim Constitution was intended to be temporary, and its Appendix II: Ratification of Final Constitution required its replacement to be submitted on-chain no later than January 31, 2025., CIP-1694 The age of Voltaire for the Cardano Blockchain laid out the foundations for decentralized decision-making.",
-        "Deadline/expiry: not stated in document",
-        "Claim (governance, independently_verifiable, high materiality): This Cardano Constitution is proposed to replace the Interim Constitution.",
-        "Claim (governance, independently_verifiable, high materiality): The Cardano Constitution is the result of extensive Cardano community consultation throughout 2024.",
-        "Claim (governance, independently_verifiable, high materiality): The Interim Constitution was intended to be temporary, and its Appendix II: Ratification of Final Constitution required its replacement to be submitted on-chain no later than January 31, 2025.",
-        "Claim (other, independently_verifiable, low materiality): CIP-1694 The age of Voltaire for the Cardano Blockchain laid out the foundations for decentralized decision-making.",
-        "Claim (economic, independently_verifiable, medium materiality): To give effect to true governance by all ada owners, including on-chain voting, members of the Cardano Community worked together for more than a year, holding global workshops, to ultimately approve a Cardano Improvement Proposal, CIP-1694, that provides a...",
-        "Claim (governance, independently_verifiable, medium materiality): CIP-1694 was first published November 18, 2022, as a minimum viable on-chain governance framework."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
-      "missing": [],
+      "missing": [
+        "No structured claim/evidence extraction from the proposal document."
+      ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
@@ -66,7 +58,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This Cardano Constitution is proposed to replace the Interim Constitution.\" and clears the evidence gates.",
+        "Strongest YES: NewConstitution advances a credible public benefit worth its risk if the evidence holds.",
         "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewConstitution.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

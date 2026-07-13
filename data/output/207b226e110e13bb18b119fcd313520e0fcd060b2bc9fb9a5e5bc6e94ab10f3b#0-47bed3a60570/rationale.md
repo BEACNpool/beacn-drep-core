@@ -1,14 +1,10 @@
 # Rationale: 207b226e110e13bb18b119fcd313520e0fcd060b2bc9fb9a5e5bc6e94ab10f3b#0
 Recommendation: **ABSTAIN**
-Score: `0.01` (raw `0.01` + doctrine-LLM nudge `+0.02`) | Confidence: `0.5725` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a constitution action: 6 well-supported claim(s), constitution doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
+Score: `0.01` (raw `0.01` + doctrine-LLM nudge `+0.0`) | Confidence: `0.4225` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0. This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a NewConstitution. The cached anchor describes the request as: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0. The strongest grounded claim is: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see "List of changes from v1.0 to v2.0".
-
-Reason code: RULE_THRESHOLD_UNMET.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0" (NewConstitution). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see "List of changes from v1.0 to v2.0"., Here is a list of the major changes: Preamble / Article I / Article III / Appendix II: Minor wording improvements., Defined Terms: New definitions added for clarity., Removed the Budget info action requirement for treasury withdrawals.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (governance, supported_in_proposal, high materiality): CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see "List of changes from v1.0 to v2.0".
-- finding: Claim (other, supported_in_proposal, low materiality): Here is a list of the major changes: Preamble / Article I / Article III / Appendix II: Minor wording improvements.
-- finding: Claim (other, supported_in_proposal, low materiality): Defined Terms: New definitions added for clarity.
-- finding: Claim (economic, supported_in_proposal, high materiality): Removed the Budget info action requirement for treasury withdrawals.
-- finding: Claim (economic, supported_in_proposal, high materiality): The current Constitution has six key issues: 1) Typos and inconsistent spelling 2) Redundant and unclear wording 3) Vague or missing definitions 4) Unused provisions (e.g., DRep/SPO Codes of Conduct) 5) Unnecessary budget requirement for treasury withdrawals
-- finding: Claim (economic, supported_in_proposal, high materiality): We addressed these issues as follows: 1) Fixed typos and cleaned up wording 2) Simplified structure and reduced word count 3) Clarified key definitions 4) Removed unused or outdated clauses 5) Removed the budget requirement for treasury withdrawals
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see "List of changes from v1.0 to v2.0"." and clears the evidence gates.
+- finding: Strongest YES: NewConstitution advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewConstitution.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -77,12 +64,11 @@ Reason code: RULE_THRESHOLD_UNMET.
 - Intake: Action type: NewConstitution
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.0: https://cardano.mypinata.cloud/ipfs/bafkreigr35rigmubdmv5u7vr47d2tmvhq3i245uvtmzuciyexepcvaargu For a complete list of changes, see "List of changes from v1.0 to v2.0"." and clears the evidence gates.
+- Counterargument pass: Strongest YES: NewConstitution advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is above the hard-fork threshold; treated as a positive context signal.
-- Advisory model lean was +0.020 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a constitution action: 6 well-supported claim(s), constitution doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -91,19 +77,21 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `47bed3a605704552c9e97dc488038d4f7dde3affd4339ac668be4d3bfcc5f80c`
-- snapshot_bundle_hash: `ead70d9563d4e0ad560cc65f1e89eb9e8d64fb29d64388fac2f0f40d2c40199a`
+- snapshot_bundle_hash: `fc7c7bdb17cc525abff2c6d6d3f23bbd94b779f223d9116b51a5fc526eb52564`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `8`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1631`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.4631, "NO": 0.2584, "YES": 0.2784}`
+- decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`
 

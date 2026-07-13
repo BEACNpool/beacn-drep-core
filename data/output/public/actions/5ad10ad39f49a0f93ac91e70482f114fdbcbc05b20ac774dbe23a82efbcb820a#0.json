@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "20471a8fac1b645bc593f8bde4641dc39e8cf666b1ff7cee78d518c2fd3dee74",
-    "snapshot_bundle_hash": "1ae3358edc4e738643bf65d43af06bbaf615a03dfd081e724d6cd4ab1f3c30dd",
+    "snapshot_bundle_hash": "2319d524e19318177ec4f33b231fa807c7cf04d5d33c1c35f319de5510f30c6d",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/5ad10ad39f49a0f93ac91e70482f114fdbcbc05b20ac774dbe23a82efbcb820a#0-20471a8fac1b.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 32.92M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -78,24 +78,13 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research",
-            "Recipient: not stated in document",
-            "Stated amount: 32.92M ADA",
-            "Deliverables: Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact., Building on CV25, where delivery exceeded targets by 20%, the programme is executed through an integrated IO Research delivery model combining research (IOR), applied engineering (ARC), and product alignment (Cardano Business Unit)., CV26 is anchored around 3 priorities., Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact.",
-            "Claim (economic, supported_in_proposal, low materiality): Building on CV25, where delivery exceeded targets by 20%, the programme is executed through an integrated IO Research delivery model combining research (IOR), applied engineering (ARC), and product alignment (Cardano Business Unit).",
-            "Claim (economic, proposer_asserted, low materiality): CV26 is anchored around 3 priorities.",
-            "Claim (economic, proposer_asserted, medium materiality): Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.",
-            "Claim (economic, supported_in_proposal, low materiality): The CV26 program adopts a three-layer delivery model, progressing from foundational research through to ecosystem adoption.",
-            "Claim (economic, supported_in_proposal, low materiality): This reflects the IOR innovation pipeline, foundational research \u2192 technology innovation \u2192 implementation readiness, ensuring outputs are systematically translated into deployable capabilities and measurable impact."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.",
-            "Independent evidence for: The 42 deliverables in CV26 are broken down as follows: 1.",
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -152,8 +141,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Proposal as pdf: here Cardano Vision 2026 (CV26) delivers a structured, end-to-end innovation pipeline that translates foundational research into deployable system capabilities and measurable impact.\" though 7 review blocker(s) remain open.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Human-centred design improves usability, incentives, and governance participation through enhanced DevEx (e.g.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the 32.92M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -331,7 +320,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -441,10 +430,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 1611,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

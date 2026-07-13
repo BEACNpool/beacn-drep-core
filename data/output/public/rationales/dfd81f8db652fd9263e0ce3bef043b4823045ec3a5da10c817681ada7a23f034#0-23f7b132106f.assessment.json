@@ -23,26 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: complete",
-        "Requested: Fund Phase 1 of 2 to take Bifrost from working testnet to launch readiness, including hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations for launch.",
-        "Recipient: FluidTokens and Lantr Engineering",
-        "Stated amount: 12332031",
-        "Deliverables: Audited Bitcoin-Cardano bridge running on Cardano mainnet in federated and SPO-threshold custody modes under controlled access, Security audits and formal verification, Hardened economic model, Independent stewardship structure or equivalent form determined in Phase 1, SPO and dApp partner pipeline required for public launch, Public reporting of operations, milestone progress, treasury disbursements, and on-chain activity",
-        "Deadline/expiry: 9-month delivery period from July 2026 to March 2027",
-        "Claim (technical, supported_in_proposal, high materiality): Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as native fBTC for DeFi use cases.",
-        "Claim (economic, supported_in_proposal, high materiality): The requested treasury withdrawal is \u20b312,332,031, approximately $1,973,125 at 0.16 USD/ADA, including a 10% refundable contingency.",
-        "Claim (adoption, independently_verifiable, medium materiality): Bifrost is currently funded through Catalyst Fund 14 for \u20b3739,000 and is intended to prove the architecture end-to-end on testnet by August 2026.",
-        "Claim (technical, proposer_asserted, high materiality): The proposal states that by the end of Phase 1 Bifrost will be audited and running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
-        "Claim (technical, supported_in_proposal, high materiality): Bifrost custody of locked BTC is described as distributed across 400+ Cardano SPOs, weighted by delegation, with fund movements requiring a cryptographic threshold representing the majority of delegated stake.",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal states that fBTC will be issued and burned 1:1 with BTC locked in the Bifrost custody script on Bitcoin."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The proposal states that by the end of Phase 1 Bifrost will be audited and running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
-        "Independent evidence for: The proposer claims Bifrost will be public infrastructure with no bridge token, no founder allocation, Apache 2.0 open source code, public accountability, and independent stewardship.",
-        "Independent evidence for: The proposal targets 1,200 BTC, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029 as its base contribution to Cardano 2030 KPIs.",
-        "Independent evidence for: The proposal claims bridge fees in fBTC will fund operations and that surplus will be split to SPOs and the Cardano Treasury."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -90,8 +77,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's existing SPO ecosystem that brings BTC onto Cardano as native fBTC for DeFi use cases.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The proposal states that by the end of Phase 1 Bifrost will be audited and running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 12.33M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

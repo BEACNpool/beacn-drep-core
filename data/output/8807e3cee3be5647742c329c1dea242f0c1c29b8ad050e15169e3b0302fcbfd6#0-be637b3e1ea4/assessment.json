@@ -23,24 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Cardano x Draper Dragon: Orion Fund",
-        "Recipient: not stated in document",
-        "Stated amount: 50.00M ADA",
-        "Deliverables: (\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap..., Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed., This proposal (\u201cProposal\u201d) asks the Cardano community (\u201cCommunity\u201d) to vote only on the first Treasury withdrawal tranche of ADA 50M, which is approximately $15M USD (\u201cTranche One\u201d), calculated using an assumed ADA price of $0.30, to launch the Orion Fund., Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.",
-        "Deadline/expiry: not stated in document",
-        "Claim (economic, independently_verifiable, high materiality): (\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap...",
-        "Claim (economic, proposer_asserted, high materiality): Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.",
-        "Claim (economic, supported_in_proposal, high materiality): This proposal (\u201cProposal\u201d) asks the Cardano community (\u201cCommunity\u201d) to vote only on the first Treasury withdrawal tranche of ADA 50M, which is approximately $15M USD (\u201cTranche One\u201d), calculated using an assumed ADA price of $0.30, to launch the Orion Fund.",
-        "Claim (economic, proposer_asserted, high materiality): Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.",
-        "Claim (technical, independently_verifiable, medium materiality): Cardano's technically sophisticated eUTXO architecture, leading staking mechanism, and on-chain governance system provide the foundation for institutional DeFi and Real-World Assets.",
-        "Claim (economic, supported_in_proposal, high materiality): Yet a dedicated, professional ecosystem fund is needed to exponentially accelerate developer talent, onboard enterprises, and establish the network as the global compliance-first standard."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.",
-        "Independent evidence for: Net proceeds from the direct investments made with a majority of the Treasury withdrawal contribution to the Orion Fund will be returned to the Treasury in accordance with the repayment schedule detailed in this Proposal.",
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -97,8 +86,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"(\u201cOrion Fund\u201d), managed by Draper Dragon Orion GP, LLC (\u201cGeneral Partner\u201d or \u201cGP\u201d), is proposed as a multi-year, tranche-based ecosystem investment fund designed to support Cardano-native and Cardano-integrated companies, grow on-chain usage, and return cap...\" though 7 review blocker(s) remain open.",
-        "Strongest NO: a material claim is unsupported \u2014 \"Importantly, the Orion Fund is structured so that Treasury exposure is incremental, capped, and fully governed.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: the 50.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+        "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],
       "missing": [],

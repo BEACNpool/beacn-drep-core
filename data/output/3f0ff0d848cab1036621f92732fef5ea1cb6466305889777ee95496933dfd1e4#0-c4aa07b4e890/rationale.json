@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 3.30M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world\u2019s premier crypto event and the ultimate nexus for industry amplification.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 3.30M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "c4aa07b4e89004768a770f531fd245fd7bc8bb0b764c16a267a2c08f79e82601",
-  "snapshot_bundle_hash": "a0b1387b4bc0fabcd31beb7bc16c7adffa0e9a073ec7ce6d5221d14fb647fd07",
+  "snapshot_bundle_hash": "facf2a06bdec0bac09b2f3fdf872a909e3c1e8cbca921d549d5b812d1e799d10",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 4,
+    "snapshot_age_seconds": 1612,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Cardano at TOKEN2049 Singapore 2026: Baseline \u2018Platinum' Sponsorship Proposal",
-          "Recipient: ",
-          "Stated amount: 3.30M ADA",
-          "Deliverables: This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world\u2019s premier crypto event and the ultimate nexus for industry amplification., The proposal requests 3,303,750 ada (equivalent to $792,900 USD , calculated at an estimated rate of $0.24 per ada) to establish a high-impact, community-centric presence that serves as a dedicated stage for Cardano\u2019s builders., A strategic takeover of Asia's most influential blockchain hub., By securing the second largest booth and a dedicated Cardano stage, we're giving builders something no other ecosystem offers at this scale.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, independently_verifiable, low materiality): This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world\u2019s premier crypto event and the ultimate nexus for industry amplification.",
-          "Claim (economic, independently_verifiable, medium materiality): The proposal requests 3,303,750 ada (equivalent to $792,900 USD , calculated at an estimated rate of $0.24 per ada) to establish a high-impact, community-centric presence that serves as a dedicated stage for Cardano\u2019s builders.",
-          "Claim (economic, independently_verifiable, low materiality): A strategic takeover of Asia's most influential blockchain hub.",
-          "Claim (economic, independently_verifiable, low materiality): By securing the second largest booth and a dedicated Cardano stage, we're giving builders something no other ecosystem offers at this scale.",
-          "Claim (economic, independently_verifiable, low materiality): Empowering Builders on the Global Stage TOKEN2049 Singapore represents the most significant opportunity of the year to showcase the vibrancy of the Cardano ecosystem.",
-          "Claim (economic, independently_verifiable, low materiality): The core motivation of this proposal is to provide Cardano builders with a professional, high-traffic platform to demonstrate their innovations."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world\u2019s premier crypto event and the ultimate nexus for industry amplification.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 3.30M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Cardano at TOKEN2049 Singapore 2026: Baseline \u2018Platinum' Sponsorship Proposal. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano at TOKEN2049 Singapore 2026: Baseline \u2018Platinum' Sponsorship Proposal. It asks the treasury for 3.30M ADA. The strongest grounded claim is: This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world\u2019s premier crypto event and the ultimate nexus for industry amplification.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Cardano at TOKEN2049 Singapore 2026: Baseline \u2018Platinum' Sponsorship Proposal\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 3.30M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "3f0ff0d848cab1036621f92732fef5ea1cb6466305889777ee95496933dfd1e4#0",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action18u8lpkzge2csxe3plynn9lh4agwtv3nrqkyfwalwj4ykjv7l68jqqzmul9z-20260615T152522Z.bin",
         "content_chars": 34712
       },
-      "claim_count": 8,
-      "prompt_sha256": "03a0ed8dec7d8a9d8487eb25883d6411a357c90af694a310ee1870c2ccd14253",
-      "output_sha256": "31ed0748dd0602d0a62a3d425e4c3eae7b15c20c1d722636de3e931db4930b1f"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "a8b15dad01f11402535f79a6331a1f1cbeec77a5b9a2b4224a17831cee01dd40",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "7f8a6b42778c09476f677c5a171fee97a6d48562c78f261ab9763d1529289ab6",
-      "output_sha256": "80b06358d5ceaf3b99a1481e806db44803ec83332eec850b9e576a14f302f1d7"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

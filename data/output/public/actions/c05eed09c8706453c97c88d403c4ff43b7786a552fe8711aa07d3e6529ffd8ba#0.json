@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "9f5bb1a7c285390ce57e0b672c4f648cd7d82888309cc47732c48453989f336c",
-    "snapshot_bundle_hash": "1dc8f8e7de2cc382f815857a73c41f3cefa77933f453da725eebd6f53bcd0a0b",
+    "snapshot_bundle_hash": "4172acecff7de833bd462309be4b99c2711459c3d96b05364a1a19486e92af14",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/c05eed09c8706453c97c88d403c4ff43b7786a552fe8711aa07d3e6529ffd8ba#0-9f5bb1a7c285.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive...\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 23.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Cardano Critical Integrations V2",
-            "Recipient: ",
-            "Stated amount: 23.00M ADA",
-            "Deliverables: This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive..., The CCI V2 initiative provides the necessary funding for the ongoing operation and optimization of infrastructure previously established., While CCI V1 was responsible for delivering the primary foundational framework and launch readiness, CCI V2 ensures that this infrastructure remains functional, reliable, and equipped with advanced features to support the expanding needs of the ecosystem., Fund administration Funds will be administered by Intersect under the Treasury Reserve Smart Contract Framework over a 12 month delivery window.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, independently_verifiable, high materiality): This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive...",
-            "Claim (technical, independently_verifiable, high materiality): The CCI V2 initiative provides the necessary funding for the ongoing operation and optimization of infrastructure previously established.",
-            "Claim (technical, independently_verifiable, low materiality): While CCI V1 was responsible for delivering the primary foundational framework and launch readiness, CCI V2 ensures that this infrastructure remains functional, reliable, and equipped with advanced features to support the expanding needs of the ecosystem.",
-            "Claim (economic, independently_verifiable, high materiality): Fund administration Funds will be administered by Intersect under the Treasury Reserve Smart Contract Framework over a 12 month delivery window.",
-            "Claim (economic, independently_verifiable, low materiality): CCI V1 Contracted Year 2 Licensing/Platform fees All primary integrations from CCI V1 - specifically Circle, LayerZero, Pyth, and Dune - require ongoing annual payments for licensing, services, or attestations to remain operational.",
-            "Claim (technical, independently_verifiable, low materiality): These recurring costs represent the necessary subscription investment for top-tier infrastructure access."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This governance action requests the withdrawal of \u20b323,000,000 (USD 5,750,000 based on $0.25c) from the Cardano Treasury to cover a focused \u2018Year 2\u2019 contracted cost and a 12-month enhancement & maintenance program for the critical integrations already delive...\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 23.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 3,
+    "snapshot_age_seconds": 1609,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

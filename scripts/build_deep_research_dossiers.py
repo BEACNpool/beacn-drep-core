@@ -8,7 +8,7 @@ and writes it into beacn-drep-resources with full receipts.
 
 Honesty contract (matches METHODOLOGY.md and doctrine v1.2.0):
   * Machine-drafted diligence is NOT complete independent diligence.
-    Section flags are set from what the draft actually grounded, but
+    Section flags are set from what the draft actually analysed, but
     `dossier_complete` stays "no" with status `drafted_pending_review` until a
     human approves it (`--approve <action_id> --approver <name>`), which is the
     explicit, auditable step that lowers the engine's directional threshold.
@@ -75,13 +75,39 @@ _SECTION_SCHEMA = {
     "additionalProperties": False,
     "properties": {
         "content": {"type": "string"},
-        "grounded": {
+        # Two DIFFERENT questions, conflated until 2026-07-12 and it cost BEACN its voice.
+        #
+        # `analysis_complete` asks: did the ANALYST do the work? That is what the doctrine's hard
+        # gate is about — "incomplete independently verified DILIGENCE means NEEDS_MORE_INFO".
+        #
+        # `disclosed` asks: did the PROPOSAL cover the topic? That is a fact ABOUT the proposal.
+        #
+        # Gating the vote on `disclosed` (the old behaviour) meant a treasury ask that said nothing
+        # about its own risks, alternatives, or failure modes could never be voted on at all — its
+        # silence bought it immunity from a NO. Fourteen open positions were stuck exactly there,
+        # several with damning, fully-cited analysis sitting in the dossier. Opacity must be costly,
+        # never protective.
+        "analysis_complete": {
             "type": "boolean",
-            "description": "true only if the section is substantively supported by the supplied documents",
+            "description": (
+                "true if YOU substantively analysed this section: examined the topic, stated what "
+                "the record does AND does not say, cited it, and reached a conclusion. Documenting "
+                "the proposal's SILENCE with specific citations IS complete analysis — often the "
+                "most valuable kind. false only if you could not do the work at all."
+            ),
+        },
+        "disclosed": {
+            "type": "boolean",
+            "description": (
+                "true only if the SUPPLIED DOCUMENTS substantively cover this topic. This is a "
+                "finding about the proposal's transparency, not about your analysis. A proposal "
+                "that never mentions its own failure modes is disclosed=false — and that is a "
+                "finding, not a gap in your work."
+            ),
         },
         "evidence_refs": {"type": "array", "items": {"type": "string"}},
     },
-    "required": ["content", "grounded", "evidence_refs"],
+    "required": ["content", "analysis_complete", "disclosed", "evidence_refs"],
 }
 
 _TRI = {"type": "string", "enum": ["yes", "no", "unknown"]}
@@ -174,8 +200,16 @@ SYSTEM = (
     "2. Separate FACTS (document/on-chain supported), INFERENCES (your reasoning, labeled), and "
     "UNCERTAINTY (what cannot be verified from the record). Keep full untruncated numbers and "
     "exact quoted figures.\n"
-    "3. Mark a section grounded=true ONLY if the supplied material substantively covers it. A "
-    "section that is mostly 'the document does not say' is grounded=false.\n"
+    "3. Each section carries TWO independent flags. Do not conflate them.\n"
+    "   - analysis_complete: did YOU do the work? Set true when you examined the topic, stated what "
+    "the record does AND does not say, cited it, and reached a conclusion. A section that documents "
+    "the proposal's SILENCE with specific citations IS complete analysis — for a treasury ask it is "
+    "often the most valuable section you will write. Set false only if you genuinely could not "
+    "analyse the topic at all.\n"
+    "   - disclosed: did the PROPOSAL cover the topic? Set false when the document is silent or "
+    "evasive. This is a FINDING about the proposal's transparency, not a defect in your work. Say so "
+    "plainly in the content: an ask that will not discuss its own failure modes has told you "
+    "something important.\n"
     "4. financial/risk profile fields are EXTRACTION, not judgment: 'yes' only when the document "
     "shows it, 'no' when the document makes clear it is absent, else 'unknown'. Confidence in "
     "[0,1] reflects how well the document supports the profile.\n"
@@ -346,7 +380,8 @@ def write_dossier(action: dict, data: dict, attestation: dict) -> Path:
         sec = (data.get("sections") or {}).get(s) or {}
         lines += [
             f"## {s.replace('_', ' ').title()}",
-            f"_grounded: {'yes' if sec.get('grounded') else 'no'}_",
+            f"_analysis: {'complete' if sec.get('analysis_complete') else 'INCOMPLETE'}"
+            f" · proposal disclosure: {'yes' if sec.get('disclosed') else 'NOT DISCLOSED BY PROPOSAL'}_",
             "",
             (sec.get("content") or "(empty)").strip(),
             "",
@@ -381,6 +416,7 @@ def build(args) -> int:
     tdoc_version = (E._load_treasury_doctrine() or {}).get("version", "unknown")
 
     deep_hdr = ["action_id", "action_type", *(f"{s}_complete" for s in SECTIONS),
+                *(f"{s}_disclosed" for s in SECTIONS),
                 "dossier_complete", "analyst_notes", "owner", "status"]
     fin_hdr, _ = _read_csv(FIN_CSV)
     risk_hdr, _ = _read_csv(RISK_CSV)
@@ -435,7 +471,12 @@ def build(args) -> int:
         sections = data.get("sections") or {}
         deep_row = {
             "action_id": aid, "action_type": a.get("action_type"),
-            **{f"{s}_complete": ("yes" if (sections.get(s) or {}).get("grounded") else "no")
+            # `_complete` = BEACN's diligence is done. This is what the doctrine's hard gate tests.
+            **{f"{s}_complete": ("yes" if (sections.get(s) or {}).get("analysis_complete") else "no")
+               for s in SECTIONS},
+            # `_disclosed` = the proposal itself addressed the topic. A finding about the proposal,
+            # deliberately NOT a gate: silence must cost a proposal, not shield it.
+            **{f"{s}_disclosed": ("yes" if (sections.get(s) or {}).get("disclosed") else "no")
                for s in SECTIONS},
             "dossier_complete": "no",
             "analyst_notes": f"machine draft {attestation['generated_at_utc']}; "
@@ -505,8 +546,9 @@ def build(args) -> int:
         }, overwrite=args.overwrite)
 
         ok += 1
-        grounded = sum(1 for s in SECTIONS if (sections.get(s) or {}).get("grounded"))
-        print(f"  [dossier] ok  {aid[:24]}..  {grounded}/7 sections grounded -> {dossier_path.name}")
+        done = sum(1 for s in SECTIONS if (sections.get(s) or {}).get("analysis_complete"))
+        disc = sum(1 for s in SECTIONS if (sections.get(s) or {}).get("disclosed"))
+        print(f"  [dossier] ok  {aid[:24]}..  analysis {done}/7, proposal disclosed {disc}/7 -> {dossier_path.name}")
 
     print(f"dossiers: ok={ok} fail={fail} skipped={skipped}")
     return 0 if fail == 0 else 1
@@ -557,7 +599,7 @@ def approve(action_id: str, approver: str) -> int:
         return 1
     missing = [s for s in SECTIONS if row.get(f"{s}_complete") != "yes"]
     if missing:
-        print(f"REFUSED: sections not grounded: {', '.join(missing)} — review/complete the dossier first")
+        print(f"REFUSED: diligence incomplete for: {', '.join(missing)} — analyse those sections first")
         return 1
     if not (DOSSIER_DIR / f"{action_id}.md").exists():
         print("REFUSED: dossier document missing")
@@ -582,8 +624,8 @@ def list_queue() -> int:
     _, rows = _read_csv(DEEP_CSV)
     pending = [r for r in rows if r.get("status") == "drafted_pending_review"]
     for r in pending:
-        grounded = sum(1 for s in SECTIONS if r.get(f"{s}_complete") == "yes")
-        print(f"pending  {r['action_id']}  {grounded}/7 grounded")
+        done = sum(1 for s in SECTIONS if r.get(f"{s}_complete") == "yes")
+        print(f"pending  {r['action_id']}  analysis {done}/7")
     print(f"{len(pending)} dossier(s) pending review")
     return 0
 

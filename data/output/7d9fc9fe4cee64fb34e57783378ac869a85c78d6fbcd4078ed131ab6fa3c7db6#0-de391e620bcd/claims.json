@@ -1,72 +1,10 @@
 {
   "stage": "claim_extraction",
-  "available": true,
-  "source": "deterministic-heuristic",
-  "reason": null,
-  "model": "local-deterministic",
-  "request": {
-    "what": "2025 Cardano NCL",
-    "recipient": "",
-    "amount_ada": "not stated in document",
-    "deliverables": [
-      "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).",
-      "This means passing a NCL in a formal on-chain governance info action.",
-      "The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period.",
-      "It is a guardrail which, by definition in the Cardano Blockchain Ecosystem Constitution Definitions referenced below, protects the sustainability of the Cardano Treasury by preventing excessive withdrawals."
-    ],
-    "deadline": "not stated in document"
-  },
-  "claims": [
-    {
-      "claim": "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "This means passing a NCL in a formal on-chain governance info action.",
-      "category": "governance",
-      "support": "independently_verifiable",
-      "materiality": "medium"
-    },
-    {
-      "claim": "The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "It is a guardrail which, by definition in the Cardano Blockchain Ecosystem Constitution Definitions referenced below, protects the sustainability of the Cardano Treasury by preventing excessive withdrawals.",
-      "category": "governance",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "No funds may be withdrawn from the Cardano Treasury without establishing a NCL.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "If the community wishes to use the Treasury to continue to maintain and grow the Cardano ecosystem it\u2019s necessary to establish a NCL.",
-      "category": "adoption",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Article IV, Section I of the Cardano Constitution states: \u201cThe Cardano Community may propose one aggregate budget or multiple budgets for the Cardano Blockchain ecosystem.",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    },
-    {
-      "claim": "Such budgets are expected to cover not less than a period of 73 epochs (approximately one calendar year) but nothing shall prevent the Cardano Community from proposing budgets for shorter or longer time periods (emphasis added).",
-      "category": "economic",
-      "support": "independently_verifiable",
-      "materiality": "high"
-    }
-  ],
-  "summary": "The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL). This means passing a NCL in a formal on-chain governance info action.",
-  "prompt_sha256": "77a57676e2560a163de549859168b77c5582c6b9f7e8ffe53704bf54f3d17a81",
-  "output_sha256": "9ec0fcb97a20a6822867833274775528752f2379472850680edbc1f1287cc157"
+  "available": false,
+  "source": null,
+  "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+  "model": "claude-opus-4-8",
+  "request": {},
+  "claims": [],
+  "summary": ""
 }

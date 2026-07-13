@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 7.92M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind...\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 7.92M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "f5df82bb7c2e048dde4f36de323296c04fdcc335557fbf6adf2d24fdcadd0c7a",
-  "snapshot_bundle_hash": "fb60b1b75a9edaba6737a960af47107660782fd3b0e3d2995b62ff89565aee8f",
+  "snapshot_bundle_hash": "8128c802844948e74d171f2943cbd72a74d905bcca7530f16de44c166ad6a76a",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 5,
+    "snapshot_age_seconds": 1614,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Blockfrost: Maintenance and Next Generation Indexing",
-          "Recipient: ",
-          "Stated amount: 7.92M ADA",
-          "Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind..., As Cardano prepares for Leios, the cost of indexing the full blockchain dataset will grow substantially., Today, participating in data-serving infrastructure requires indexing the entire chain., This prices out smaller operators and concentrates infrastructure around fewer providers.",
-          "Deadline/expiry: not stated in document",
-          "Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind...",
-          "Claim (economic, proposer_asserted, low materiality): As Cardano prepares for Leios, the cost of indexing the full blockchain dataset will grow substantially.",
-          "Claim (technical, proposer_asserted, low materiality): Today, participating in data-serving infrastructure requires indexing the entire chain.",
-          "Claim (technical, proposer_asserted, low materiality): This prices out smaller operators and concentrates infrastructure around fewer providers.",
-          "Claim (economic, supported_in_proposal, low materiality): The Proposal (What) One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to index the entire Cardano blockchain dataset, even when only a fraction of that data i...",
-          "Claim (economic, proposer_asserted, low materiality): This challenge becomes increasingly significant when considering Cardano's planned scalability improvements under Project Leios and the substantial impact its adoption will have on the growth of the Cardano dataset."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind...\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 7.92M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Blockfrost: Maintenance and Next Generation Indexing. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Blockfrost: Maintenance and Next Generation Indexing. It asks the treasury for 7.92M ADA. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmUdbgB3eHms52HY4oha5u2V4mrpCZkhBw2AaozeMiz8sL One of the primary challenges in decentralizing access to data-providing services such as Blockfrost is the substantial amount of resources required to ind.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Blockfrost: Maintenance and Next Generation Indexing\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 7.92M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "73e171a4c0730b4b59ecae271ab89f12a9d56360b02920e1f95107dbdc1d6762#7",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action1w0shrfxqwv95kk0v4cn34wylz25a2cmqkq5jpc0e2yrahhqava3qwt8k9fx-20260615T152523Z.bin",
         "content_chars": 25170
       },
-      "claim_count": 8,
-      "prompt_sha256": "7822eabe7dd8edf936190a7f337e88cc4f355b834faa756074dca873c7c7d115",
-      "output_sha256": "d6c27ba6ac27448100d08a3c8abaeae6612d443390955f8611483c44ac23b527"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "800400446c019ed658825769a3deda6fcc7ac54fabcb4d51f31df3cc5eb16433",
-      "output_sha256": "c0648f8ab2f65c0fa0e1bed156d1a80a5d4c75571fb3e6be000c0ea3b8ef7d83"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "17526b5ce9273d4b25795d775f3570bb4df60fdd043977759dd5dc51489e5113",
-      "output_sha256": "374a3fcc109877580c78ced26527fcdc670f59f4e93a4bc254849896fbec084f"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

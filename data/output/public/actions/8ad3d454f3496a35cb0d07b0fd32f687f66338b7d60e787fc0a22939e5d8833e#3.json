@@ -23,16 +23,16 @@
     "score": 0.0,
     "confidence": 0.2,
     "input_hash": "88b2a3deb804cc569a499bb8e1f8f6ab40f00170009f51476c8102add96f9347",
-    "snapshot_bundle_hash": "3360341e5bc813ebebe7eb8ddd0d09fa92434cd7a033b6e8fe5d8380ae482e9a",
+    "snapshot_bundle_hash": "d2007f4e9b91e48d8c4e56e51bd077c6e61b5d4a2e6ae235836467093b45f64c",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#3-88b2a3deb804.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the 424.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
     "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
       "Provide: Deep research dossier is required for treasury actions before directional voting.",
@@ -75,25 +75,16 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: required",
-            "Requested: Withdraw \u20b3424,800 for Hardware Wallets Maintenance administered by Intersect",
-            "Recipient: ",
-            "Stated amount: 424.8k ADA",
-            "Deliverables: This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes., Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc., Update cardano-hw-cli to reflect firmware changes and to reflect user needs - Support Keystone developers while doing the changes above - Provide general cardano hw wallets maintenance, development support and bugfixing., Order and manage external code audits for Ledger firmware code (Ledger requirement, has to be done by one of 2 certified auditors) This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.",
-            "Claim (economic, independently_verifiable, low materiality): Update also if there are any breaking changes in Ledger and Trezor core firmware code, testing suites, etc.",
-            "Claim (economic, independently_verifiable, low materiality): Update cardano-hw-cli to reflect firmware changes and to reflect user needs - Support Keystone developers while doing the changes above - Provide general cardano hw wallets maintenance, development support and bugfixing.",
-            "Claim (economic, independently_verifiable, high materiality): Order and manage external code audits for Ledger firmware code (Ledger requirement, has to be done by one of 2 certified auditors) This Treasury Withdrawal is submitted by Intersect on behalf of the vendor.",
-            "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Hardware wallets Ledger and Trezor and additional supporting tooling (cardano-hw-cli) need to be regularly updated in order to be able to support Cardano blockchain development.",
-            "Claim (economic, independently_verifiable, low materiality): There are 2 aspects of this: - regular maintenance, bugfixing and developer support - implementation of new Cardano features and breaking changes HW wallets in scope: Ledger, Trezor, Keystone (from support perspective as Keystone firmware and tooling is dev..."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
+            "No structured claim/evidence extraction from the proposal document.",
             "complete proposal summary",
             "budget analysis",
             "feasibility assessment",
@@ -150,7 +141,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This treasury withdrawal funds Hardware Wallets Maintenance which will provide the following services: - Update Ledger and Trezor firmware and integration libraries with new relevant Cardano features or breaking changes.\" though 7 review blocker(s) remain open.",
+            "Strongest YES: the 424.8k ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
             "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -324,7 +315,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -434,10 +425,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 9,
+    "snapshot_age_seconds": 1638,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

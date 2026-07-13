@@ -20,25 +20,17 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Set a 300 million ADA Net Change Limit for Epochs 563\u2013635",
-        "Recipient: ",
-        "Stated amount: not stated in document",
-        "Deliverables: The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL)., This means passing a NCL in a formal on-chain governance info action., The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period., We believe that the NCL covering the period from the start of epoch 563 to the end of epoch 635 should be 300M ADA.",
-        "Deadline/expiry: not stated in document",
-        "Claim (economic, supported_in_proposal, high materiality): The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).",
-        "Claim (governance, independently_verifiable, medium materiality): This means passing a NCL in a formal on-chain governance info action.",
-        "Claim (economic, supported_in_proposal, high materiality): The NCL represents the maximum amount of ada which may be withdrawn from the Cardano Treasury in a given period.",
-        "Claim (economic, proposer_asserted, low materiality): We believe that the NCL covering the period from the start of epoch 563 to the end of epoch 635 should be 300M ADA.",
-        "Claim (other, supported_in_proposal, low materiality): Existing and pending NCLs only cover periods through the end of 2025.",
-        "Claim (economic, supported_in_proposal, high materiality): However, many current and upcoming budget proposals are structured around 12-month timelines, extending into 2026."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
-      "missing": [],
+      "missing": [
+        "No structured claim/evidence extraction from the proposal document."
+      ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
     {
@@ -66,7 +58,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The Cardano Constitution, at Article IV, Section 3, requires that before withdrawal of Treasury funds, the community must have established a Net Change Limit (NCL).\" and clears the evidence gates.",
+        "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
         "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],

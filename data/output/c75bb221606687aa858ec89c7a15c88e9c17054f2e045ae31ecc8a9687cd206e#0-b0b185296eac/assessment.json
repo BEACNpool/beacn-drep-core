@@ -23,23 +23,13 @@
       "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: not required",
-        "Requested: Reduce the committeeMinSize protocol parameter from 7 to 5.",
-        "Recipient: not stated in document",
-        "Stated amount: not stated in document",
-        "Deliverables: Set committee_min_size to 5 on-chain",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, supported_in_proposal, high materiality): The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.",
-        "Claim (governance, proposer_asserted, high materiality): The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.",
-        "Claim (governance, supported_in_proposal, high materiality): If committee membership drops below committeeMinSize, governance actions requiring Constitutional Committee approval become ineligible for ratification, including Parameter Changes, Constitution Updates, Treasury Withdrawals, and Hard Forks.",
-        "Claim (governance, supported_in_proposal, high materiality): Reducing committeeMinSize to 5 is intended to provide an operational buffer if one or two members resign or their terms expire.",
-        "Claim (technical, independently_verifiable, medium materiality): The proposal depends temporally on enactment of another live Parameter Change governance action for Plutus cost model settings, with no claimed technical interaction between the parameters.",
-        "Claim (governance, independently_verifiable, medium materiality): The document says approval of this governance action was approved by Intersect's Civics Committee on 2026-03-13 and Technical Steering Committee on 2026-06-03."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
-        "Independent evidence for: The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7."
+        "No structured claim/evidence extraction from the proposal document."
       ],
       "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
     },
@@ -68,8 +58,8 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"The proposal changes the minimum Constitutional Committee size parameter, committeeMinSize, from 7 to 5.\" and clears the evidence gates.",
-        "Strongest NO: a material claim is unsupported \u2014 \"The current Constitutional Committee has 7 members, equal to the current committeeMinSize of 7.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
+        "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
         "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
       ],
       "missing": [],

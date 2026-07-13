@@ -21,23 +21,23 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.0,
-    "confidence": 0.6,
+    "confidence": 0.45,
     "input_hash": "ed6f6f5bc84c8d8875de0a38ee84b234e8d53c170238c1f7c9b71211c497b2c0",
-    "snapshot_bundle_hash": "41841d7b563785b37055c6000c7d8520f7949181a316784196f898bdde23fb74",
+    "snapshot_bundle_hash": "a722ab80f840ef0c8d568f32689f89dc85bf5d3de81b25f4064b798cae8b2ca0",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/b2a591ac219ce6dcca5847e0248015209c7cb0436aa6bd6863d0c1f152a60bc5#0-ed6f6f5bc84c.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 60.0%.",
-    "summary_raw": "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 7 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (enacted), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: ParameterChange advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 45.0%.",
+    "summary_raw": "No additional inference.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/b2a591ac219ce6dcca5847e0248015209c7cb0436aa6bd6863d0c1f152a60bc5#0-ed6f6f5bc84c.md",
     "missing_evidence": [],
@@ -65,25 +65,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Plutus V3 Cost Model Parameter Changes Prior to Chang 2",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10)., Existing Plutus cost model settings will not be changed., Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)., Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.",
-            "Deadline/expiry: not stated in document",
-            "Claim (technical, independently_verifiable, high materiality): We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).",
-            "Claim (technical, independently_verifiable, low materiality): Existing Plutus cost model settings will not be changed.",
-            "Claim (technical, independently_verifiable, high materiality): Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork).",
-            "Claim (technical, independently_verifiable, high materiality): Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations.",
-            "Claim (technical, independently_verifiable, high materiality): This governance action provides cost model settings so that these primitives can be used following the Chang 2 hard fork.",
-            "Claim (technical, independently_verifiable, high materiality): Note that the new primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork)."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -111,7 +103,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang 2 hard fork (to Protocol Version 10).\" and clears the evidence gates.",
+            "Strongest YES: ParameterChange advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -199,7 +191,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -269,14 +261,14 @@
     "binding_score": 0.0,
     "raw_score": 0.0,
     "directional_threshold": 0.12,
-    "confidence": 0.6,
+    "confidence": 0.45,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 13,
+    "snapshot_age_seconds": 1656,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

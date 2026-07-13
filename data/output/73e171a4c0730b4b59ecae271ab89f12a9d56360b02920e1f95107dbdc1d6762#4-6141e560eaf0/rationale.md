@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on IO & Midgard Labs: L2 Scalability Initiative. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: IO & Midgard Labs: L2 Scalability Initiative. It asks the treasury for 10.43M ADA. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert.
-
-A material claim remains proposer-asserted or thinly supported: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "IO & Midgard Labs: L2 Scalability Initiative" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 10.43M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: Competing platfo
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: IO & Midgard Labs: L2 Scalability Initiative
-- finding: Recipient: 
-- finding: Stated amount: 10.43M ADA
-- finding: Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert..., Upcoming L1 upgrades (Leios, Peras) will strengthen the base layer will not alone meet the requirements of zero-fee or sub-second use cases., Layer 2 infrastructure is the only path to closing this gap in the current cycle., This proposal, led by Input Output in partnership with Midgard Labs, delivers three complementary workstreams: shared L2-agnostic infrastructure (a data availability solution benefiting all current and future Cardano L2s); production hardening of Hydra, inc...
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (technical, supported_in_proposal, high materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert...
-- finding: Claim (economic, proposer_asserted, low materiality): Upcoming L1 upgrades (Leios, Peras) will strengthen the base layer will not alone meet the requirements of zero-fee or sub-second use cases.
-- finding: Claim (technical, proposer_asserted, low materiality): Layer 2 infrastructure is the only path to closing this gap in the current cycle.
-- finding: Claim (technical, supported_in_proposal, low materiality): This proposal, led by Input Output in partnership with Midgard Labs, delivers three complementary workstreams: shared L2-agnostic infrastructure (a data availability solution benefiting all current and future Cardano L2s); production hardening of Hydra, inc...
-- finding: Claim (economic, supported_in_proposal, high materiality): As a DApp developer, I want access to production-ready L2s that offer fast finality, high throughput, and sub-cent fees, so that I can build within the Cardano ecosystem and benefit from its superior security model rather than migrating to a competing ecosy...
-- finding: Claim (economic, supported_in_proposal, high materiality): Opportunity: Cardano L1 delivers over two hours of finality, approximately $0.17 per transaction, and roughly 7-10 transactions per second (TPS).
-- missing: Independent evidence for: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: Competing platfo
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert..." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 10.43M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: Competing platfo
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 10.43M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=QmYfHrmfTKYGK9YR95ewXSwEruEfGPAtpnp1qwoEUekJa7 Cardano's current L1 infrastructure — two-hour finality, \~$0.17 per transaction, and \~7–10 TPS, systematically disqualifies it from high-performance vert..." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 10.43M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: Competing platfo
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: Competing platforms offer 400ms to 2s finality, sub-cent fees, and 1,000 to 7,000+ TPS.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: Competing platfo
 
 ## Reproducibility
 - input_hash: `6141e560eaf0e013c24f4eebec669fb0c84e87f4fe87aa7f317c6548c5f0cc83`
-- snapshot_bundle_hash: `e0471bae9f020f3e90edeba2e74ae9229ca3e12bbebd6892c93f411ddc3cd536`
+- snapshot_bundle_hash: `1a9e852496626ee9c86c145ce72706be81dfcda5d390bf1ebe7803330bd0e367`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `1615`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

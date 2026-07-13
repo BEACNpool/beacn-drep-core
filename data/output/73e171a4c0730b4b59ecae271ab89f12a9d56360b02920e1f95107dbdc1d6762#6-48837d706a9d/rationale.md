@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability. It asks the treasury for 11.88M ADA. The strongest grounded claim is: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a.
-
-A material claim remains proposer-asserted or thinly supported: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams. BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 11.88M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -26,21 +22,11 @@ A material claim remains proposer-asserted or thinly supported: This is a techni
 ### Claims and evidence
 - status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: IO & VacuumLabs: Enhancing Plutus - Performance, Correctness, and Usability
-- finding: Recipient: 
-- finding: Stated amount: 11.88M ADA
-- finding: Deliverables: Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..., It funds targeted expansion to the Plutus language with new syntactic forms and new primitives to reduce script costs, improve expressiveness, and unlock more efficient contract patterns; formal specification, conformance testing, and structured security re..., Together, these workstreams make Plutus cheaper to use, more trustworthy to build on, and easier for developers to adopt, helping Cardano support a broader range of applications while also providing stronger foundations for alternative node implementations..., This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, supported_in_proposal, low materiality): Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a...
-- finding: Claim (technical, supported_in_proposal, high materiality): It funds targeted expansion to the Plutus language with new syntactic forms and new primitives to reduce script costs, improve expressiveness, and unlock more efficient contract patterns; formal specification, conformance testing, and structured security re...
-- finding: Claim (technical, supported_in_proposal, low materiality): Together, these workstreams make Plutus cheaper to use, more trustworthy to build on, and easier for developers to adopt, helping Cardano support a broader range of applications while also providing stronger foundations for alternative node implementations...
-- finding: Claim (technical, proposer_asserted, medium materiality): This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.
-- finding: Claim (technical, supported_in_proposal, low materiality): As a smart contract developer building on Cardano, whether authoring decentralized finance (DeFi) protocols, zero-knowledge (ZK) applications, or high-assurance infrastructure, I want a Plutus platform that compiles cleanly, runs efficiently, and carries fo...
-- finding: Claim (technical, supported_in_proposal, low materiality): Opportunity: Plutus, a compact lambda-calculus-based language executed by Cardano nodes, serves as the foundation of all Cardano smart contracts.
-- missing: Independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -84,8 +70,8 @@ A material claim remains proposer-asserted or thinly supported: This is a techni
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." though 7 review blocker(s) remain open.
-- finding: Strongest NO: a material claim is unsupported — "This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams." — so cost or precedent may outweigh the benefit.
+- finding: Strongest YES: the 11.88M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
+- finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
 
@@ -108,7 +94,7 @@ A material claim remains proposer-asserted or thinly supported: This is a techni
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 11.88M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "Proposal as pdf: https://ipnso-com.ipns.dweb.link/?cid=Qmd7G7L6xinunTLU9JorPLYyFCLGRarXEn7RngdNYgNH3B This proposal strengthens Cardano’s smart contract platform across three critical and closely connected areas: language capabilities, formal correctness, a..." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 11.88M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -122,7 +108,7 @@ A material claim remains proposer-asserted or thinly supported: This is a techni
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
-- Claims and evidence missing: Independent evidence for: This is a technical collaboration with Input Output and VacuumLabs, distributing Plutus stewardship across expert teams.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
@@ -148,12 +134,12 @@ A material claim remains proposer-asserted or thinly supported: This is a techni
 
 ## Reproducibility
 - input_hash: `48837d706a9d22bb87106d1b4fe18a25372c05a945c75684ae5eadf2be97a2eb`
-- snapshot_bundle_hash: `384501a9a1b8b39b4a03d93d8b00c4ecaa3f9c9593da07beb6e27fdcece0a436`
+- snapshot_bundle_hash: `c553aaf2e7c1079970757f445789f4c80b7cda1f22a7b5349c838f85530a8bf5`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `5`
+- snapshot_age_seconds: `1614`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

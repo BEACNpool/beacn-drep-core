@@ -9,9 +9,9 @@
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "NO",
     "onchain_vote": "NO",
-    "diverged": true,
+    "diverged": false,
     "published_at": "2026-07-12T21:15:11.518308+00:00",
     "signed": true,
     "submitted": true,
@@ -19,39 +19,35 @@
     "submitted_at": "2026-06-19T16:10:58+00:00"
   },
   "proof_of_vote": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": 0.0,
-    "confidence": 0.2,
+    "vote": "NO",
+    "score": -0.12,
+    "confidence": 0.72,
     "input_hash": "24407892614762d5d833d9fdfc1f8f06a0be769d96984c43fae2ba5ff6efe9d6",
-    "snapshot_bundle_hash": "414e774c9dd02c2fc58a7659327b3ff96f52177ba01d3119afbf48b40bfec4e8",
+    "snapshot_bundle_hash": "9fe5e35b8a545839747077dddf5148c888ac16aeeba90b965f618551023c6dcd",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0-244078926147.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ef8cffde7b0985717e0a4b3b.md",
-    "rationale_anchor_hash": "ef8cffde7b0985717e0a4b3b042af728b047d1c2d416f91eacb8979fc5a6084b"
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month liquidity deployment, not grant funding, with treasury ownership retained throughout deployment.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
-    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals. Weighed against it: the 9.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold. What would change this vote to YES: Provide No structured claim/evidence extraction from the proposal document; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 72.0%.",
+    "summary_raw": "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
     "top_fixes": [
-      "Provide: Deep research dossier is required for treasury actions before directional voting.",
-      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Provide: Missing dossier section: alternatives analysis"
+      "Provide No structured claim/evidence extraction from the proposal document.",
+      "Provide milestone-gated disbursement.",
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0-244078926147.md",
-    "missing_evidence": [
-      "Deep research dossier is required for treasury actions before directional voting.",
-      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
-      "Missing dossier section: alternatives analysis"
-    ],
-    "assessment_status": "blocked",
+    "missing_evidence": [],
+    "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "blocked",
+      "overall_status": "incomplete",
       "sections": [
         {
           "title": "Intake",
@@ -72,43 +68,30 @@
           "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
-            "Deep research dossier: required",
-            "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure, with ADA sold for USDM to provide stablecoin-denominated liquidity and returned with realized yield.",
-            "Recipient: Independent council administering Strike Finance liquidity deployment",
-            "Stated amount: 9000000",
-            "Deliverables: Deploy treasury-owned capital into Strike Finance V2 USDM liquidity infrastructure, Return realized yield from the first six months to the Cardano Treasury at month 6, Return 100% of treasury-owned deployed assets, including remaining principal and realized yield, at month 12, Provide monthly public transparency reports covering deployment, utilization, volume, P&L, yield, drawdown, stablecoin exposure, market quality, distributions, and material risks, Provide third-party assurance reports at deployment confirmation, month 6, and month 12",
-            "Deadline/expiry: 12 months after deployment, with month-6 yield distribution",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 9,000,000 ADA for a 12-month liquidity deployment, not grant funding, with treasury ownership retained throughout deployment.",
-            "Claim (economic, supported_in_proposal, high materiality): The deployed ADA will be sold for USDM, modeled at ADA = 0.15 USD to produce approximately 1,350,000 USDM of stablecoin liquidity.",
-            "Claim (economic, supported_in_proposal, high materiality): The deployment is modeled to generate approximately 900,000 ADA-equivalent in annual yield at a 10% USD-denominated APR, but returns are not guaranteed.",
-            "Claim (adoption, proposer_asserted, high materiality): Strike reports more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, more than 3,000 unique traders, more than 1.16 million USD protocol revenue, and more than 3.25 million USD liquidity provider profit.",
-            "Claim (adoption, supported_in_proposal, high materiality): Strike V2 data from 2026-03-20 through 2026-06-15 is presented as showing accelerating volume, revenue, trades, users, and open interest as liquidity deepened.",
-            "Claim (economic, proposer_asserted, high materiality): The Strike Liquidity Provider vault is described as having about 985,271.59 USD TVL, 43.52% APR, +8.85% all-time return, 1.15% maximum drawdown, 4.97 Sharpe ratio, and 208 depositors after two months."
+            "Deep research dossier: complete",
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
           "missing": [
-            "Independent evidence for: Strike reports more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, more than 3,000 unique traders, more than 1.16 million USD protocol revenue, and more than 3.25 million USD liquidity provider profit.",
-            "Independent evidence for: The Strike Liquidity Provider vault is described as having about 985,271.59 USD TVL, 43.52% APR, +8.85% all-time return, 1.15% maximum drawdown, 4.97 Sharpe ratio, and 208 depositors after two months.",
-            "alternatives analysis"
+            "No structured claim/evidence extraction from the proposal document."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
           "title": "Treasury analysis",
-          "status": "incomplete",
+          "status": "complete",
           "findings": [
             "Requested ADA: 9000000",
-            "Budget granularity: not confirmed",
-            "Milestone payment gates: not confirmed",
+            "Budget granularity: confirmed",
+            "Milestone payment gates: unknown",
             "Clawback/refund path: confirmed",
             "Cost/benefit clarity: confirmed",
             "Recurring funding dependency: not confirmed",
             "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
-            "Financial confidence: 0.60"
+            "Financial confidence: 0.66"
           ],
           "missing": [
-            "line-item budget",
             "milestone-gated disbursement"
           ],
           "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
@@ -117,9 +100,9 @@
           "title": "Risk review",
           "status": "complete",
           "findings": [
-            "Execution risk: high",
-            "Governance risk: high",
-            "Technical risk: high",
+            "Execution risk: medium",
+            "Governance risk: medium",
+            "Technical risk: medium",
             "Treasury exposure risk: high",
             "Mitigation evidence: confirmed",
             "Independent assurance: not confirmed",
@@ -136,38 +119,34 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month liquidity deployment, not grant funding, with treasury ownership retained throughout deployment.\" though 1 review blocker(s) remain open.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Strike reports more than 1.13 billion USD in cumulative volume, about 968,000 to 1,001,000 trades, more than 3,000 unique traders, more than 1.16 million USD protocol revenue, and more than 3.25 million USD liquidity provider profit.\" \u2014 so cost or precedent may outweigh the benefit.",
-            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+            "Strongest YES: the 9.00M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
+            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of TreasuryWithdrawals.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
           "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
         },
         {
           "title": "Synthesis",
-          "status": "blocked",
+          "status": "ready",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [
-            "missing alternatives analysis"
-          ],
+          "missing": [],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": [
-        "missing alternatives analysis"
-      ]
+      "blocking_questions": []
     },
     "assessment_path": "/data/output/public/rationales/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0-244078926147.assessment.json",
     "treasury_dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.35,
-      "delivery_confidence": 0.55,
-      "cost_efficiency": 0.45,
-      "downside_risk": 0.6,
-      "composite": -0.0725,
+      "delivery_confidence": 0.7,
+      "cost_efficiency": 0.7,
+      "downside_risk": 0.3375,
+      "composite": 0.0544,
       "affirmative_waste_evidence": [
         "independently verified private-value capture"
       ],
@@ -192,10 +171,10 @@
       "dimensions": {
         "evidence_status": "independently_verified",
         "benefit": 0.35,
-        "delivery_confidence": 0.55,
-        "cost_efficiency": 0.45,
-        "downside_risk": 0.6,
-        "composite": -0.0725,
+        "delivery_confidence": 0.7,
+        "cost_efficiency": 0.7,
+        "downside_risk": 0.3375,
+        "composite": 0.0544,
         "affirmative_waste_evidence": [
           "independently verified private-value capture"
         ],
@@ -227,10 +206,10 @@
     "dimensions": {
       "evidence_status": "independently_verified",
       "benefit": 0.35,
-      "delivery_confidence": 0.55,
-      "cost_efficiency": 0.45,
-      "downside_risk": 0.6,
-      "composite": -0.0725,
+      "delivery_confidence": 0.7,
+      "cost_efficiency": 0.7,
+      "downside_risk": 0.3375,
+      "composite": 0.0544,
       "affirmative_waste_evidence": [
         "independently verified private-value capture"
       ],
@@ -254,20 +233,20 @@
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
   "deep_research": {
-    "status": "drafted_pending_review",
-    "dossier_complete": "no",
-    "sections_grounded": 6,
+    "status": "approved_agentic",
+    "dossier_complete": "yes",
+    "sections_grounded": 7,
     "sections_total": 7,
     "owner": "drep-agent-extract",
     "dossier_path": "/data/output/public/dossiers/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0.md",
     "receipt_path": "/data/output/public/dossiers/8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0.receipt.json",
     "verification": {
-      "passed": null,
-      "verified_at_utc": "2026-07-12T21:31:42+00:00",
+      "passed": true,
+      "verified_at_utc": "2026-07-13T01:55:19+00:00",
       "model": "claude-cli",
-      "fact_count": null,
-      "supported": null,
-      "support_ratio": null,
+      "fact_count": 21,
+      "supported": 21,
+      "support_ratio": 1.0,
       "material_discrepancies": 0
     }
   },
@@ -311,7 +290,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -414,17 +393,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.0,
-    "raw_score": 0.0,
-    "directional_threshold": 0.12,
-    "confidence": 0.2,
+    "binding_score": -0.12,
+    "raw_score": -0.66,
+    "directional_threshold": 0.06,
+    "confidence": 0.72,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 2,
+    "snapshot_age_seconds": 1605,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

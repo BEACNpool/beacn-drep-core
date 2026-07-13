@@ -44,7 +44,7 @@
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Treasury analysis: Requested ADA: 11.07M ADA",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"This treasury withdrawal funds TWEAG's Proposals for multiple core budget projects for Cardano 2025 which will provide the following services: A suite of core infrastructure projects aimed at advancing the technical foundations of the Cardano blockchain.\" though 7 review blocker(s) remain open.",
+    "Counterargument pass: Strongest YES: the 11.07M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
@@ -58,8 +58,9 @@
   ],
   "uncertainty": [
     "Dossier completeness not confirmed for this treasury proposal.",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence missing: complete proposal summary",
-    "Claims and evidence missing: budget analysis",
+    "Claims and evidence status is thin.",
     "Treasury analysis missing: line-item budget",
     "Treasury analysis missing: milestone-gated disbursement",
     "Treasury analysis status is incomplete.",
@@ -82,10 +83,10 @@
     "Missing dossier section: community impact analysis"
   ],
   "input_hash": "b3ffe70a45c8e0d5bfd5ec9557604108e193792adacb5c90f3ab13107624dc2e",
-  "snapshot_bundle_hash": "922ce5d1e65306595b4220e8fbe1eb690acc30570e317dc2ad15e3e6aa11b70b",
+  "snapshot_bundle_hash": "5b6b32d21d1ef72f66fcec0c31c5931f2baaf781ea654e404d1193f4d2cfc5b3",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "treasury_withdrawals_snapshot",
@@ -105,10 +106,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 11,
+    "snapshot_age_seconds": 1645,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -143,25 +144,16 @@
       },
       {
         "title": "Claims and evidence",
-        "status": "complete",
+        "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: required",
-          "Requested: Withdraw \u20b311,070,323 for TWEAG's Proposals for multiple core budget project...",
-          "Recipient: ",
-          "Stated amount: 11.07M ADA",
-          "Deliverables: This treasury withdrawal funds TWEAG's Proposals for multiple core budget projects for Cardano 2025 which will provide the following services: A suite of core infrastructure projects aimed at advancing the technical foundations of the Cardano blockchain., These initiatives focus on novel, high-impact developments across key areas of the Cardano stack., In the months ahead, Tweag intends to collaborate closely with qualified suppliers, DReps, and Intersect to further shape the structure and scope of these engagements., The proposals presented here represent Tweag's intended contribution to Cardano's continued evolution.",
-          "Deadline/expiry: not stated in document",
-          "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal funds TWEAG's Proposals for multiple core budget projects for Cardano 2025 which will provide the following services: A suite of core infrastructure projects aimed at advancing the technical foundations of the Cardano blockchain.",
-          "Claim (economic, independently_verifiable, low materiality): These initiatives focus on novel, high-impact developments across key areas of the Cardano stack.",
-          "Claim (economic, independently_verifiable, low materiality): In the months ahead, Tweag intends to collaborate closely with qualified suppliers, DReps, and Intersect to further shape the structure and scope of these engagements.",
-          "Claim (economic, independently_verifiable, low materiality): The proposals presented here represent Tweag's intended contribution to Cardano's continued evolution.",
-          "Claim (technical, independently_verifiable, medium materiality): This proposal aims to solve the following problem: Backed by Tweag by Modus Create and a consortium of trusted ecosystem contributors, this proposal combines deep technical experience with proven delivery capability.",
-          "Claim (economic, independently_verifiable, low materiality): It not only addresses current pain points but lays the groundwork for Cardano's continued success as a scalable, decentralized, and open blockchain platform."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
+          "No structured claim/evidence extraction from the proposal document.",
           "complete proposal summary",
           "budget analysis",
           "feasibility assessment",
@@ -218,7 +210,7 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"This treasury withdrawal funds TWEAG's Proposals for multiple core budget projects for Cardano 2025 which will provide the following services: A suite of core infrastructure projects aimed at advancing the technical foundations of the Cardano blockchain.\" though 7 review blocker(s) remain open.",
+          "Strongest YES: the 11.07M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
           "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
           "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
         ],
@@ -292,14 +284,14 @@
     "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records NEEDS_MORE_INFO on Withdraw \u20b311,070,323 for TWEAG's Proposals for multiple core budget project. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Withdraw \u20b311,070,323 for TWEAG's Proposals for multiple core budget project. It asks the treasury for 11.07M ADA. The strongest grounded claim is: This treasury withdrawal funds TWEAG's Proposals for multiple core budget projects for Cardano 2025 which will provide the following services: A suite of core infrastructure projects aimed at advancing the technical foundations of the Cardano blockchain.\n\nBEACN's own independent diligence is also incomplete \u2014 before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded NEEDS_MORE_INFO on \"Withdraw \u20b311,070,323 for TWEAG's Proposals for multiple core budget project...\" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 11.07M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#14",
         "anchor_read": true,
@@ -310,9 +302,9 @@
         "file_path": "data/input/governance/anchors/gov_action13tfag48nf94rtjcdq7c06vhkslmxxw9h6c88sl7q5g5nnewcsvlqudh2k4c-20260326T175232Z.bin",
         "content_chars": 16582
       },
-      "claim_count": 8,
-      "prompt_sha256": "83d5fb3cb5ebacfba78a18c7e18ad92196e504fde9ddd3be3a6d6e38ef5fac53",
-      "output_sha256": "22bf4af4913b8d4588ea6216619f44cd261e2004ac679bdc197a94397516497d"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "treasury",
@@ -323,24 +315,24 @@
       "sha256": "bf65b314428ab42deb53ca6befbb50400236e1a09cb69c45d5788cddfd3b4a4a"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
       "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "ddd4c26ef1ae6fe114439359493a33b33e4e0e8c54becee17c1e38af1cbb72fe",
-      "output_sha256": "8c610f8a50f65fabcceb4fef7005209109d2e8ed6fcc7fb213fcbccf8bf78f36"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "3609b8f1ae97c46d7bfb37f33cfae1b8b552d9cdcc0dc73b3d6dcddb42813766",
-      "output_sha256": "ded43df3e4fb99269474b9e8a70f2bf2fd0c8bf50a68c1b58173f38fc2d6739f"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

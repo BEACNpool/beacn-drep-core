@@ -20,25 +20,16 @@
     },
     {
       "title": "Claims and evidence",
-      "status": "complete",
+      "status": "thin",
       "findings": [
         "Proposal anchor: pinned and replayable",
-        "Proposal document read by reasoning layer: yes",
+        "Proposal document read by reasoning layer: no",
         "Snapshot freshness source: deep_research_dossiers.csv",
         "Deep research dossier: required",
-        "Requested: Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026\u20132028",
-        "Recipient: ",
-        "Stated amount: 39.79M ADA",
-        "Deliverables: This treasury withdrawal requests \u20b339,787,316 (USD $9,946,829) to fund Tweag by Modus Create's delivery of 17 work packages across 9 core infrastructure areas for the Cardano ecosystem over 2026\u20132028., The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs., ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability., Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness - Peras v2 \u2013 pre-agreement algorithm, cooldown recovery, performance optimizations - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Hard Fork Me...",
-        "Deadline/expiry: not stated in document",
-        "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal requests \u20b339,787,316 (USD $9,946,829) to fund Tweag by Modus Create's delivery of 17 work packages across 9 core infrastructure areas for the Cardano ecosystem over 2026\u20132028.",
-        "Claim (economic, independently_verifiable, high materiality): The primary focus is the mainnet deployment of Peras (faster finality: ~2 min vs.",
-        "Claim (economic, independently_verifiable, low materiality): ~12 min today), alongside improvements to resilience, scalability, developer tooling, and network observability.",
-        "Claim (technical, independently_verifiable, high materiality): Work packages include: - Peras v1 \u2013 production cryptography, KillSwitch, mainnet readiness - Peras v2 \u2013 pre-agreement algorithm, cooldown recovery, performance optimizations - History Expiry \u2013 partial-history nodes to reduce SPO storage costs - Hard Fork Me...",
-        "Claim (technical, independently_verifiable, high materiality): Problem Statement Cardano's next growth phase depends on two critical protocol upgrades: Peras (faster finality) and Leios (higher throughput).",
-        "Claim (economic, independently_verifiable, low materiality): Together they unlock significantly higher transaction volume, staking rewards, and TVL."
+        "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
       ],
       "missing": [
+        "No structured claim/evidence extraction from the proposal document.",
         "complete proposal summary",
         "budget analysis",
         "feasibility assessment",
@@ -95,7 +86,7 @@
       "title": "Counterargument pass",
       "status": "complete",
       "findings": [
-        "Strongest YES: the proposal substantiates \"This treasury withdrawal requests \u20b339,787,316 (USD $9,946,829) to fund Tweag by Modus Create's delivery of 17 work packages across 9 core infrastructure areas for the Cardano ecosystem over 2026\u20132028.\" though 7 review blocker(s) remain open.",
+        "Strongest YES: the 39.79M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.",
         "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
         "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
       ],

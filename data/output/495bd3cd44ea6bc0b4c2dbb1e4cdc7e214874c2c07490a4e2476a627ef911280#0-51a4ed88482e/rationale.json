@@ -9,17 +9,8 @@
   "agentic_high_impact_reason_code": null,
   "score": 0.01,
   "raw_score": 0.01,
-  "llm_score_adjustment": -0.02,
-  "llm_lean": {
-    "source": "deterministic-heuristic",
-    "model": "local-deterministic",
-    "direction": "NO",
-    "score_adjustment": -0.02,
-    "confidence": 0.64,
-    "rationale": "Doctrine-aware offline lean for a info action: 3 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.020 (clamped to \u00b10.05).",
-    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
-    "cap": 0.05
-  },
+  "llm_score_adjustment": 0.0,
+  "llm_lean": null,
   "llm_assisted": false,
   "llm_assisted_reason_code": null,
   "doctrine_files": [
@@ -39,12 +30,11 @@
     "Intake: Action type: InfoAction",
     "Claims and evidence: Proposal anchor: pinned and replayable",
     "Risk review: Execution risk: unknown",
-    "Counterargument pass: Strongest YES: the proposal substantiates \"We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere.\" and clears the evidence gates.",
+    "Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
     "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
   ],
   "inferences": [
     "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
-    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 3 well-supported claim(s), 2 unsupported high-materiality claim(s). Net bounded adjustment -0.020 (clamped to \u00b10.05).",
     "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
     "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
     "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
@@ -53,8 +43,7 @@
   ],
   "uncertainty": [
     "Rule-based system; does not infer unstated intent.",
-    "Claims and evidence missing: Independent evidence for: In order to ensure Tempo.Vote will continue running smoothly to service Cardano community, we are seeking to withdraw from Treasury 380k ADA for the 6 month period (1 Aug 2025 - 31 Jan 2026) with the following breakdown: - Infrastructure Cost: 200k ADA - De...",
-    "Claims and evidence missing: Independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services)",
+    "Claims and evidence missing: No structured claim/evidence extraction from the proposal document.",
     "Claims and evidence status is thin.",
     "Risk review missing: mitigation evidence",
     "Risk review missing: independent assurance",
@@ -62,10 +51,10 @@
   ],
   "missing_evidence": [],
   "input_hash": "51a4ed88482ec5b4f0d04a25b367459abb6f4b82a2b2bba9a3f4ea25ee064ea0",
-  "snapshot_bundle_hash": "697fc4ce03b7f9c4408eb1bf361ecce2526272ec5afd2751527de873257159e6",
+  "snapshot_bundle_hash": "d66cf0b492892d371dcfa0713bce9b847825f95baa10cb2ec2e3fa788d9193c5",
   "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
   "soul_text_hash": "a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10",
-  "resource_registry_commit": "45e29dd06273ee8ec35264b00dafd2aa30667f62",
+  "resource_registry_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
   "resources_used": [
     "gov_actions_snapshot",
     "drep_vote_history_snapshot",
@@ -79,10 +68,10 @@
     "protocol_readiness_profiles"
   ],
   "freshness": {
-    "snapshot_age_seconds": 12,
+    "snapshot_age_seconds": 1650,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   },
   "decision_probs": {
@@ -120,24 +109,13 @@
         "status": "thin",
         "findings": [
           "Proposal anchor: pinned and replayable",
-          "Proposal document read by reasoning layer: yes",
+          "Proposal document read by reasoning layer: no",
           "Snapshot freshness source: deep_research_dossiers.csv",
           "Deep research dossier: not required",
-          "Requested: Tempo for Cardono Governance - Maintenance & Development Budget for 2025",
-          "Recipient: ",
-          "Stated amount: not stated in document",
-          "Deliverables: Tempo.Vote was developed out of passion to support Cardano decentralized mission., We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere., Tempo.Vote runs our own Cardano node, backend indexer independently to ensure we have the most accurate governance voting data so that we are not reliant on any 3rd party centralized provider., However this independent infrastructure comes at significant running cost.",
-          "Deadline/expiry: not stated in document",
-          "Claim (governance, proposer_asserted, low materiality): Tempo.Vote was developed out of passion to support Cardano decentralized mission.",
-          "Claim (economic, independently_verifiable, medium materiality): We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere.",
-          "Claim (technical, supported_in_proposal, medium materiality): Tempo.Vote runs our own Cardano node, backend indexer independently to ensure we have the most accurate governance voting data so that we are not reliant on any 3rd party centralized provider.",
-          "Claim (technical, proposer_asserted, low materiality): However this independent infrastructure comes at significant running cost.",
-          "Claim (technical, proposer_asserted, high materiality): In order to ensure Tempo.Vote will continue running smoothly to service Cardano community, we are seeking to withdraw from Treasury 380k ADA for the 6 month period (1 Aug 2025 - 31 Jan 2026) with the following breakdown: - Infrastructure Cost: 200k ADA - De...",
-          "Claim (governance, supported_in_proposal, medium materiality): In the next 6 months, Tempo aim to deliver the following features to support Cardano Governance: - Optimize Governance Action Voting & Display - Improve UX for submitting Governance Action - Support Lending Pool to allow anyone to pay a small fee and borrow..."
+          "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
         ],
         "missing": [
-          "Independent evidence for: In order to ensure Tempo.Vote will continue running smoothly to service Cardano community, we are seeking to withdraw from Treasury 380k ADA for the 6 month period (1 Aug 2025 - 31 Jan 2026) with the following breakdown: - Infrastructure Cost: 200k ADA - De...",
-          "Independent evidence for: If Approved, this budget and associated Treasury Withdrawal will be administered by Selfdriven (https://selfdriven.fyi/services)"
+          "No structured claim/evidence extraction from the proposal document."
         ],
         "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
       },
@@ -166,8 +144,8 @@
         "title": "Counterargument pass",
         "status": "complete",
         "findings": [
-          "Strongest YES: the proposal substantiates \"We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere.\" and clears the evidence gates.",
-          "Strongest NO: a material claim is unsupported \u2014 \"In order to ensure Tempo.Vote will continue running smoothly to service Cardano community, we are seeking to withdraw from Treasury 380k ADA for the 6 month period (1 Aug 2025 - 31 Jan 2026) with the following breakdown: - Infrastructure Cost: 200k ADA - De...\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.",
           "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
         ],
         "missing": [],
@@ -210,14 +188,14 @@
     "merit_reason": null,
     "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
   },
-  "human_message": "BEACN records ABSTAIN on Tempo for Cardono Governance - Maintenance & Development Budget for 2025. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Tempo for Cardono Governance - Maintenance & Development Budget for 2025. The strongest grounded claim is: We aim to make Cardano governance easily accessible, especially on mobile phone & wallet to ADA holder can vote on-chain anytime, anywhere.\n\nA material claim remains proposer-asserted or thinly supported: In order to ensure Tempo.Vote will continue running smoothly to service Cardano community, we are seeking to withdraw from Treasury 380k ADA for the 6 month period (1 Aug 2025 - 31 Jan 2026) with the following breakdown: - Infrastructure Cost: 200k ADA - De. Reason code: RULE_THRESHOLD_UNMET.",
-  "human_message_source": "deterministic-heuristic",
+  "human_message": "BEACN's autonomous DRep recorded ABSTAIN on \"Tempo for Cardono Governance - Maintenance & Development Budget for 2025\" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)",
+  "human_message_source": "deterministic-template",
   "model_layer": {
     "claim_extraction": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
       "anchor": {
         "action_id": "495bd3cd44ea6bc0b4c2dbb1e4cdc7e214874c2c07490a4e2476a627ef911280#0",
         "anchor_read": true,
@@ -228,9 +206,9 @@
         "file_path": "data/input/governance/anchors/gov_action1f9da8n2yaf4updxzmwc7fnw8ug2gwnpvqays5n3yw6nz0mu3z2qqq6ggge9-20260326T175235Z.bin",
         "content_chars": 2448
       },
-      "claim_count": 7,
-      "prompt_sha256": "7c6c7d511880b239ef49bcf2fa33c4af1ec37b720967a0429dbebe198aad760c",
-      "output_sha256": "dab27b0b570404c403a486985ed008904c507334a57db9d3070e522db9084cd9"
+      "claim_count": 0,
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "doctrine": {
       "family": "info",
@@ -241,24 +219,24 @@
       "sha256": "893aed2820bb7c1a47f9f79e6fb427be4dfd0d4a2974b7ced1b1c68f08dcb572"
     },
     "lean": {
-      "available": true,
-      "source": "deterministic-heuristic",
-      "reason": null,
-      "model": "local-deterministic",
-      "direction": "NO",
-      "score_adjustment": -0.02,
+      "available": false,
+      "source": null,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
       "cap": 0.05,
       "assisted_directional": false,
-      "prompt_sha256": "8454632df302c93a3c51fe5badf1bd40f3da7b8a1e435c1ce2837417f833646b",
-      "output_sha256": "8e4def2d7685a14b3fb2fdf238874e01eab7f1b680829c9be80ce9cf4887ed17"
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "human_message": {
-      "source": "deterministic-heuristic",
-      "available": true,
-      "reason": null,
-      "model": "local-deterministic",
-      "prompt_sha256": "492ab54ba283a607737a72014632a7d37919adb4a73d58583cbedf887c235b31",
-      "output_sha256": "337c3d812cd10e5221177405baa9b4c2641ecd2942f15ea5a5d1524ba639cd9d"
+      "source": "deterministic-template",
+      "available": false,
+      "reason": "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)",
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": null
     },
     "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
   }

@@ -21,23 +21,23 @@
   "proof_of_vote": {
     "vote": "ABSTAIN",
     "score": 0.01,
-    "confidence": 0.5725,
+    "confidence": 0.4225,
     "input_hash": "a77f14cc3432cd314cb5d7fabd15196957d025d0b6c86983e86882db99533600",
-    "snapshot_bundle_hash": "3c19686053bf49191530425232fe97782d7693d444cdd063320ed95810a4281d",
+    "snapshot_bundle_hash": "bf7ce32096ee2910cf3670d1dbd70583df7dd4ff002d533393a787ac62313795",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "rationale_markdown_path": "/data/output/public/rationales/c882f194684d672316212f01efc6d28177e8965b7cd6956981fe37cc6715961e#0-a77f14cc3432.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Cardano Constitution v2.3 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 57.2%.",
+    "summary": "Vote: ABSTAIN. For this NewConstitution (expired), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: NewConstitution advances a credible public benefit worth its risk if the evidence holds. What would enable a directional vote: Provide No structured claim/evidence extraction from the proposal document; Provide mitigation evidence. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.01; confidence 42.2%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
+      "Provide No structured claim/evidence extraction from the proposal document.",
       "Provide mitigation evidence.",
-      "Provide independent assurance.",
-      "Provide rollback/remedy path."
+      "Provide independent assurance."
     ],
     "markdown_path": "/data/output/public/rationales/c882f194684d672316212f01efc6d28177e8965b7cd6956981fe37cc6715961e#0-a77f14cc3432.md",
     "missing_evidence": [],
@@ -65,25 +65,17 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
-            "Proposal document read by reasoning layer: yes",
+            "Proposal document read by reasoning layer: no",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.3",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: Cardano Constitution v2.3 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance., It adds clear definitions, enforces immutability of proposal documents, and applies treasury audit/accountability safeguards to all withdrawals., Community review of v2.0 had 86.23% DRep participation, and v2.3 incorporates feedback and improvements, addressing prior concerns to reinforce legitimacy and broad input., CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.3 https://ipfs.io/ipfs/bafkreihjgclyeemuvvn27mil5whoexjsuhn3fuwgjefawwbonmwo6hsxsq 2.",
-            "Deadline/expiry: not stated in document",
-            "Claim (economic, independently_verifiable, high materiality): Cardano Constitution v2.3 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.",
-            "Claim (other, independently_verifiable, high materiality): It adds clear definitions, enforces immutability of proposal documents, and applies treasury audit/accountability safeguards to all withdrawals.",
-            "Claim (governance, independently_verifiable, medium materiality): Community review of v2.0 had 86.23% DRep participation, and v2.3 incorporates feedback and improvements, addressing prior concerns to reinforce legitimacy and broad input.",
-            "Claim (governance, independently_verifiable, high materiality): CARDANO BLOCKCHAIN ECOSYSTEM CONSTITUTION v2.3 https://ipfs.io/ipfs/bafkreihjgclyeemuvvn27mil5whoexjsuhn3fuwgjefawwbonmwo6hsxsq 2.",
-            "Claim (economic, independently_verifiable, high materiality): Simplify governance by removing non-binding expectations and redundant mechanisms like Budget Info Action.",
-            "Claim (other, independently_verifiable, low materiality): Improve clarity and consistency through unified terminology, added definitions, and streamlined provisions."
+            "Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled))."
           ],
-          "missing": [],
+          "missing": [
+            "No structured claim/evidence extraction from the proposal document."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -111,7 +103,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Cardano Constitution v2.3 removes non-binding expectations, the Budget Info Action mechanism, and mandatory CC conduct rules, streamlining governance.\" and clears the evidence gates.",
+            "Strongest YES: NewConstitution advances a credible public benefit worth its risk if the evidence holds.",
             "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewConstitution.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
@@ -205,7 +197,7 @@
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
     "resources_commit": "43f638f63313b9fb26ab7f5513f7a587a5d6546b",
-    "core_commit": "288517565ce0f891d8c59cf63396b8c8e0e8f645",
+    "core_commit": "f8d04e7ff8f83288330b1b1674a65c4b20740e69",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -275,14 +267,14 @@
     "binding_score": 0.01,
     "raw_score": 0.01,
     "directional_threshold": 0.12,
-    "confidence": 0.5725,
+    "confidence": 0.4225,
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 7,
+    "snapshot_age_seconds": 1629,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-12T21:31:42.186734Z",
+    "snapshot_time": "2026-07-13T01:56:11.966865Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

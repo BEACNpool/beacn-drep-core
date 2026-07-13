@@ -3,12 +3,8 @@ Recommendation: **NEEDS_MORE_INFO**
 Score: `0.0` (raw `0.0` + doctrine-LLM nudge `+0.0`) | Confidence: `0.2` | Readiness: `0`
 
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records NEEDS_MORE_INFO on Cardano at TOKEN2049 Singapore 2026: Baseline ‘Platinum' Sponsorship Proposal. This is an evidence hold, not opposition: BEACN cannot make a directional treasury judgment from the current record.
-
-The action is a TreasuryWithdrawals. The cached anchor describes the request as: Cardano at TOKEN2049 Singapore 2026: Baseline ‘Platinum' Sponsorship Proposal. It asks the treasury for 3.30M ADA. The strongest grounded claim is: This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world’s premier crypto event and the ultimate nexus for industry amplification.
-
-BEACN's own independent diligence is also incomplete — before this vote could move to YES, BEACN's published review still needs complete proposal summary; budget analysis; feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Cardano at TOKEN2049 Singapore 2026: Baseline ‘Platinum' Sponsorship Proposal" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 3.30M ADA from the treasury. Open questions before a directional vote: missing complete proposal summary; missing budget analysis; missing feasibility assessment. Reason code: DEEP_RESEARCH_REQUIRED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `blocked`
@@ -24,22 +20,13 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: required
-- finding: Requested: Cardano at TOKEN2049 Singapore 2026: Baseline ‘Platinum' Sponsorship Proposal
-- finding: Recipient: 
-- finding: Stated amount: 3.30M ADA
-- finding: Deliverables: This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world’s premier crypto event and the ultimate nexus for industry amplification., The proposal requests 3,303,750 ada (equivalent to $792,900 USD , calculated at an estimated rate of $0.24 per ada) to establish a high-impact, community-centric presence that serves as a dedicated stage for Cardano’s builders., A strategic takeover of Asia's most influential blockchain hub., By securing the second largest booth and a dedicated Cardano stage, we're giving builders something no other ecosystem offers at this scale.
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, low materiality): This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world’s premier crypto event and the ultimate nexus for industry amplification.
-- finding: Claim (economic, independently_verifiable, medium materiality): The proposal requests 3,303,750 ada (equivalent to $792,900 USD , calculated at an estimated rate of $0.24 per ada) to establish a high-impact, community-centric presence that serves as a dedicated stage for Cardano’s builders.
-- finding: Claim (economic, independently_verifiable, low materiality): A strategic takeover of Asia's most influential blockchain hub.
-- finding: Claim (economic, independently_verifiable, low materiality): By securing the second largest booth and a dedicated Cardano stage, we're giving builders something no other ecosystem offers at this scale.
-- finding: Claim (economic, independently_verifiable, low materiality): Empowering Builders on the Global Stage TOKEN2049 Singapore represents the most significant opportunity of the year to showcase the vibrancy of the Cardano ecosystem.
-- finding: Claim (economic, independently_verifiable, low materiality): The core motivation of this proposal is to provide Cardano builders with a professional, high-traffic platform to demonstrate their innovations.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - missing: complete proposal summary
 - missing: budget analysis
 - missing: feasibility assessment
@@ -83,7 +70,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world’s premier crypto event and the ultimate nexus for industry amplification." though 7 review blocker(s) remain open.
+- finding: Strongest YES: the 3.30M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - finding: Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.
 - finding: Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -107,7 +94,7 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 3.30M ADA
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This proposal seeks to catapult the Cardano ecosystem into the global spotlight at TOKEN2049 Singapore, the world’s premier crypto event and the ultimate nexus for industry amplification." though 7 review blocker(s) remain open.
+- Counterargument pass: Strongest YES: the 3.30M ADA request funds TreasuryWithdrawals with public benefit worth the risk if its controls and delivery hold.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
@@ -121,8 +108,9 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Uncertainty
 - Dossier completeness not confirmed for this treasury proposal.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
 - Claims and evidence missing: complete proposal summary
-- Claims and evidence missing: budget analysis
+- Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
 - Treasury analysis status is incomplete.
@@ -146,12 +134,12 @@ BEACN's own independent diligence is also incomplete — before this vote could 
 
 ## Reproducibility
 - input_hash: `c4aa07b4e89004768a770f531fd245fd7bc8bb0b764c16a267a2c08f79e82601`
-- snapshot_bundle_hash: `a0b1387b4bc0fabcd31beb7bc16c7adffa0e9a073ec7ce6d5221d14fb647fd07`
+- snapshot_bundle_hash: `facf2a06bdec0bac09b2f3fdf872a909e3c1e8cbca921d549d5b812d1e799d10`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `4`
+- snapshot_age_seconds: `1612`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

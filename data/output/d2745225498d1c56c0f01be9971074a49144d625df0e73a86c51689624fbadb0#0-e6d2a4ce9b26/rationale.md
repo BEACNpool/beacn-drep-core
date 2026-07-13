@@ -1,14 +1,10 @@
 # Rationale: d2745225498d1c56c0f01be9971074a49144d625df0e73a86c51689624fbadb0#0
 Recommendation: **ABSTAIN**
-Score: `0.08` (raw `0.08` + doctrine-LLM nudge `+0.03`) | Confidence: `0.62` | Readiness: `0.0`
-> Reasoning layer (deterministic-heuristic): Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
+Score: `0.08` (raw `0.08` + doctrine-LLM nudge `+0.0`) | Confidence: `0.47` | Readiness: `0.0`
 
-## Plain-language explanation (deterministic-heuristic)
-BEACN records ABSTAIN on Constitutional Committee Compensation Epochs 581-653. This is a conservative abstention because the evidence does not justify stronger certainty.
 
-The action is a InfoAction. The cached anchor describes the request as: Constitutional Committee Compensation Epochs 581-653. The strongest grounded claim is: This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653.
-
-Reason code: RULE_THRESHOLD_UNMET.
+## Plain-language explanation (deterministic-template)
+BEACN's autonomous DRep recorded ABSTAIN on "Constitutional Committee Compensation Epochs 581-653" (InfoAction). This is a conservative, evidence-based hold rather than opposition. Reason code: RULE_THRESHOLD_UNMET. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -24,22 +20,13 @@ Reason code: RULE_THRESHOLD_UNMET.
 - conclusion: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 
 ### Claims and evidence
-- status: `complete`
+- status: `thin`
 - finding: Proposal anchor: pinned and replayable
-- finding: Proposal document read by reasoning layer: yes
+- finding: Proposal document read by reasoning layer: no
 - finding: Snapshot freshness source: deep_research_dossiers.csv
 - finding: Deep research dossier: not required
-- finding: Requested: Constitutional Committee Compensation Epochs 581-653
-- finding: Recipient: 
-- finding: Stated amount: not stated in document
-- finding: Deliverables: This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653., The current Constitutional Committee (CC) was seated on the Cardano blockchain at the beginning of epoch 581., According to Article I, Section 1, Tenet 4 of the Cardano Constitution, “Contributions by the Cardano Community on the Cardano Blockchain shall be recognized, recorded and assessed fairly through reward sharing with SPOs, potential compensation to DReps and..., Executive Summary While Cardano offers an on-chain mechanism to compensate Stake Pool Operators (SPOs) for their work and Delegate Representatives (DReps) may be compensated by Ada holders (Article V, Section 5), the Constitutional Committee (CC) is “limite...
-- finding: Deadline/expiry: not stated in document
-- finding: Claim (economic, independently_verifiable, high materiality): This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653.
-- finding: Claim (governance, independently_verifiable, high materiality): The current Constitutional Committee (CC) was seated on the Cardano blockchain at the beginning of epoch 581.
-- finding: Claim (governance, independently_verifiable, high materiality): According to Article I, Section 1, Tenet 4 of the Cardano Constitution, “Contributions by the Cardano Community on the Cardano Blockchain shall be recognized, recorded and assessed fairly through reward sharing with SPOs, potential compensation to DReps and...
-- finding: Claim (economic, independently_verifiable, high materiality): Executive Summary While Cardano offers an on-chain mechanism to compensate Stake Pool Operators (SPOs) for their work and Delegate Representatives (DReps) may be compensated by Ada holders (Article V, Section 5), the Constitutional Committee (CC) is “limite...
-- finding: Claim (governance, independently_verifiable, high materiality): Carrying out this mandate requires careful review of governance actions, familiarity with the Constitution and governance mechanisms, and the capacity to act impartially.
-- finding: Claim (economic, independently_verifiable, low materiality): CC members also face significant administrative costs in performing these duties, including research, deliberation, drafting, and participation in cross-time-zone meetings.
+- finding: Proposal claims not extracted (model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)).
+- missing: No structured claim/evidence extraction from the proposal document.
 - conclusion: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 
 ### Risk review
@@ -60,7 +47,7 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ### Counterargument pass
 - status: `complete`
-- finding: Strongest YES: the proposal substantiates "This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653." and clears the evidence gates.
+- finding: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - finding: Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of InfoAction.
 - finding: Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty.
 - conclusion: A defensible rationale must show the best opposing case before it reaches a vote.
@@ -76,12 +63,11 @@ Reason code: RULE_THRESHOLD_UNMET.
 - Intake: Action type: InfoAction
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "This governance action proposes a budget of 1,000,000 ada to provide compensation for Cardano Constitutional Committee members serving between epochs 581 and 653." and clears the evidence gates.
+- Counterargument pass: Strongest YES: InfoAction advances a credible public benefit worth its risk if the evidence holds.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Advisory model lean was +0.030 (display cap ±0.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 7 well-supported claim(s). Net bounded adjustment +0.030 (clamped to ±0.05).
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.
@@ -90,19 +76,21 @@ Reason code: RULE_THRESHOLD_UNMET.
 
 ## Uncertainty
 - Rule-based system; does not infer unstated intent.
+- Claims and evidence missing: No structured claim/evidence extraction from the proposal document.
+- Claims and evidence status is thin.
 - Risk review missing: mitigation evidence
 - Risk review missing: independent assurance
 - Risk review status is thin.
 
 ## Reproducibility
 - input_hash: `e6d2a4ce9b26e8b97770a5cefd8bf0b27ce7321214ad46aaa671c375da2df118`
-- snapshot_bundle_hash: `fc4e8c293d044d036cc23ee303453e13f8dfcf0309b14d50f1e0e7f5e010ec15`
+- snapshot_bundle_hash: `d9ac3fc0d5e895f74f326d8c20e3e089a3a3ecffa1e7fd7301543c8165231ac1`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `45e29dd06273ee8ec35264b00dafd2aa30667f62`
+- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `7`
-- uncertainty_band: `MEDIUM`
+- snapshot_age_seconds: `1628`
+- uncertainty_band: `LOW`
 - evidence_depth_score: `3`
-- decision_probs: `{"ABSTAIN": 0.475, "NO": 0.1825, "YES": 0.3425}`
+- decision_probs: `{"ABSTAIN": 0.4375, "NO": 0.2013, "YES": 0.3613}`
 

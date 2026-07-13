@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Replace Interim Constitutional Comm
 
 ## Reproducibility
 - input_hash: `634a4ab8d054f75bfbb8107501f2ef7960a13916e83a4d6cc8214f37e620f0ad`
-- snapshot_bundle_hash: `4ca417b133b74363bfb02dead1eadbb2976ddea1f4a4d6edb4b19146f450e50c`
+- snapshot_bundle_hash: `2ebe0bbea42308ff8c7c716e4f9ba1215b1f5f36c568a4b4b75957e9c31558d6`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1632`
+- snapshot_age_seconds: `3470`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

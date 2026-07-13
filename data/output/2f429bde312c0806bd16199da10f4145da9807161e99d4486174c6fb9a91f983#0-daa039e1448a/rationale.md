@@ -104,12 +104,12 @@ BEACN's autonomous DRep recorded NO on "Revised Cardano dOSPO and OMF Program Pr
 
 ## Reproducibility
 - input_hash: `daa039e1448a79c81d3871d53fb295d93e89b507920de86f4b88952351126ff2`
-- snapshot_bundle_hash: `2db1270251427fd182ebe56574a0814c15417eaeca5105e2c90e2cdf9e134d79`
+- snapshot_bundle_hash: `6651c19345c521643a9013e10d58f86d91840d91a3c3ee567e134406f64e86d2`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1595`
+- snapshot_age_seconds: `3462`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.2258, "NO": 0.6634, "YES": 0.1108}`

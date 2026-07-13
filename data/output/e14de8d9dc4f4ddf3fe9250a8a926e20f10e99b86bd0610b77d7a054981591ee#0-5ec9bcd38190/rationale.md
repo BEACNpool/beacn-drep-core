@@ -84,12 +84,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Cardano Blockchain Ecosystem Budget
 
 ## Reproducibility
 - input_hash: `5ec9bcd381904e4027b58d660a238e0dd51c1c5cef5320e5634e5872bf0b9157`
-- snapshot_bundle_hash: `e2328b04f5716374ef1e853c0c75c866fbf850a1a7ed7cdfbf80b3121a0ea6bb`
+- snapshot_bundle_hash: `ec94cfd6993d57f939d52abb0de27ca9849a0fbeec7984c155f3a32feb648269`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1651`
+- snapshot_age_seconds: `3475`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4394, "NO": 0.1703, "YES": 0.3903}`

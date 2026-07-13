@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Decrease Treasury Tax from 20% to 1
 
 ## Reproducibility
 - input_hash: `21f81efacee152c582627649e2f4889e15cd37099e07d410349b0b0b78527fb9`
-- snapshot_bundle_hash: `0d5a2ff0142466df13b5288a8b77137fbe92a2fb448318d63375e2a604295c81`
+- snapshot_bundle_hash: `05ea0e0d2c5960c3dd61250e29729cdf4ff2db40a8f17b7f97aa31f89e01754b`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1655`
+- snapshot_age_seconds: `3475`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`

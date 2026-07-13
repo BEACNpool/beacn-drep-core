@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Cardano Critical Integrations Budge
 
 ## Reproducibility
 - input_hash: `5f504e37df9ffa92086c7c7e122165f0c0deb1a883e827ad149706c16f4c6ead`
-- snapshot_bundle_hash: `ba2d88348e032e34bddb5269ba992a96317cf4a1835efa6ca3858be6ae36469a`
+- snapshot_bundle_hash: `834643d9c4e8e2933b6682fd15ece897a7aad6e731ac32585e59d24883312036`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1627`
+- snapshot_age_seconds: `3469`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

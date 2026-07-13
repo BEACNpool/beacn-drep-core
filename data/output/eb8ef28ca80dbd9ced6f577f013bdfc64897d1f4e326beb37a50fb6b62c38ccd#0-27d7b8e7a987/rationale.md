@@ -84,12 +84,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Add Constitutional Committee Member
 
 ## Reproducibility
 - input_hash: `27d7b8e7a987489cf4242388e262381c79ba1b15c7f1d69de4e70d831426b47c`
-- snapshot_bundle_hash: `8718ccc19845745a93c824b34d2f28728a9281d9d10c556bd44d3947f31ad5eb`
+- snapshot_bundle_hash: `b3e62295c481a2fff9a839f3024751ed0c4de90adcfd4f615783f128ea49bcae`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1625`
+- snapshot_age_seconds: `3469`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4394, "NO": 0.1703, "YES": 0.3903}`

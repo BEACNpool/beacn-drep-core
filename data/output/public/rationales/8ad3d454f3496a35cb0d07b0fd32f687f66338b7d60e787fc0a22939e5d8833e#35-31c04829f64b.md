@@ -134,12 +134,12 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw ₳750,000 for Car
 
 ## Reproducibility
 - input_hash: `31c04829f64bcda2f92af8f7f6823872dc8bbf8817624ccde7fc0018aa0d9ad0`
-- snapshot_bundle_hash: `8941678b717a977fda86e6190fcc609369dd8cead39a69afb400c49930121bbc`
+- snapshot_bundle_hash: `9d7d67104abc2fbc98ad44ced0244dc6a0703e608479cf36fba8cdd016250706`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1636`
+- snapshot_age_seconds: `3471`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "CARDANO BLOCKCHAIN ECOSYSTEM CONSTI
 
 ## Reproducibility
 - input_hash: `3b1828dabb0c05681bd947fb68cdfcac004aa5e26dd04226951d2b3b065e2eb6`
-- snapshot_bundle_hash: `470600406ff41d7b2be9e574e7b27f77d2897483f1e96548d4061b90e6870034`
+- snapshot_bundle_hash: `c5f2961f3a963a2b7e81d8f08686a22c92535694c5e12bd89e66898a52ad1a43`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1624`
+- snapshot_age_seconds: `3469`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

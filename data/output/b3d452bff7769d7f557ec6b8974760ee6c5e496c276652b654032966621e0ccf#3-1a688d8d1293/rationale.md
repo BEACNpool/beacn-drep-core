@@ -1,10 +1,10 @@
 # Rationale: b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3
-Recommendation: **NEEDS_MORE_INFO**
-Score: `-0.08` (raw `-0.08` + doctrine-LLM nudge `+0.0`) | Confidence: `0.74` | Readiness: `0.85`
+Recommendation: **YES**
+Score: `0.239` (raw `-0.08` + doctrine-LLM nudge `+0.0`) | Confidence: `0.7797` | Readiness: `0.85`
 
 
 ## Plain-language explanation (deterministic-template)
-BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support" (TreasuryWithdrawals). This is a conservative, evidence-based hold rather than opposition. The action requests 1.19M ADA from the treasury. Reason code: PORTFOLIO_CAPACITY_NOT_CLEARED. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
+BEACN's autonomous DRep recorded YES on "Withdraw 1,193,000 ada for Intersect Technical Steering Committee Support" (TreasuryWithdrawals). The action requests 1.19M ADA from the treasury. (Plain-language summary generated deterministically; a model-written explanation appears here when the reasoning layer is enabled.)
 
 ## Review Tree
 - overall_status: `incomplete`
@@ -83,7 +83,7 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw 1,193,000 ada for 
 
 ## Inferences
 - DRep ratification support is material but below threshold; treated as a modest context signal.
-- Proposal clears individual quality floors but is not currently portfolio-eligible: balanced evidence floors not cleared.
+- Directional YES cleared ecosystem benefit, delivery, cost-efficiency, downside-protection, and portfolio-capacity floors.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -102,13 +102,13 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw 1,193,000 ada for 
 
 ## Reproducibility
 - input_hash: `1a688d8d12933602d2f53f09c3d355df9ed1b72cebc97779cd4aa373a565bea4`
-- snapshot_bundle_hash: `1a46f2aadb627077552bb5f0eb031b14aa7abaf61359bfbf7dc92ef08981bd45`
+- snapshot_bundle_hash: `6d8c12d7afea8cb855211b3658d4d638d6f9a2ef0499de88b55ebf2d441f235c`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1603`
+- snapshot_age_seconds: `3464`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
-- decision_probs: `{"ABSTAIN": 0.505, "NO": 0.3275, "YES": 0.1675}`
+- decision_probs: `{"ABSTAIN": 0.2127, "NO": 0.0478, "YES": 0.7396}`
 

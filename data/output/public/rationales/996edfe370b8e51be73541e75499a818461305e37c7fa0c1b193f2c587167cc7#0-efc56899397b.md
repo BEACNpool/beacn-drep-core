@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Defining the Cardano 2030 Vision & 
 
 ## Reproducibility
 - input_hash: `efc56899397bb5ce5726e70bc384c745500ed1a1bbcf5e200e8c19c21ddd6757`
-- snapshot_bundle_hash: `1230156be23fd297e1b8bbf1d6aafa9af922b0a235b9344bff9ace4304cd7dd1`
+- snapshot_bundle_hash: `a94255ee14df73575c6e273eca7598a01e33a0f3ffd412c4c20581991eed1bf4`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1629`
+- snapshot_age_seconds: `3470`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4263, "NO": 0.3069, "YES": 0.2669}`

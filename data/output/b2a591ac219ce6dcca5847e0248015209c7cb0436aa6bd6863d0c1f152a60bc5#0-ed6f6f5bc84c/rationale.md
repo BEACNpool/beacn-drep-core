@@ -86,12 +86,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Plutus V3 Cost Model Parameter Chan
 
 ## Reproducibility
 - input_hash: `ed6f6f5bc84c8d8875de0a38ee84b234e8d53c170238c1f7c9b71211c497b2c0`
-- snapshot_bundle_hash: `a722ab80f840ef0c8d568f32689f89dc85bf5d3de81b25f4064b798cae8b2ca0`
+- snapshot_bundle_hash: `22cd8a74b280381c0669f57be692916c0539580b78ac8327115f6420208ceaa8`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1656`
+- snapshot_age_seconds: `3476`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`

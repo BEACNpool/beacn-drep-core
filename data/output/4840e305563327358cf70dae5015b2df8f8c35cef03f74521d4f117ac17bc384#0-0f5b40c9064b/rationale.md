@@ -86,12 +86,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Cardano Treasury DeFi Liquidity Bud
 
 ## Reproducibility
 - input_hash: `0f5b40c9064b0b2352b5cfa6bffcf73ff44b465745cd85b505cf961d97436bda`
-- snapshot_bundle_hash: `b37f596436ce0c13229452cd7de619691070ff69e348ab1f38443309640a2b5e`
+- snapshot_bundle_hash: `642e490ddb7d0c01ddac30da347c6ebedd6cf50c7e46cacc06dc964f70f856e8`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1653`
+- snapshot_age_seconds: `3475`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4028, "NO": 0.5502, "YES": 0.047}`

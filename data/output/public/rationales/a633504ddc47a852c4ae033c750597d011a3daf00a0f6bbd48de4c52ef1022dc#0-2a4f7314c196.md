@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "DeltaDeFi: Hydra Trading Infrastruc
 
 ## Reproducibility
 - input_hash: `2a4f7314c196b77f72bd22ae26d5474aabf3e8ed1bdc8f71782a7be3e49cca94`
-- snapshot_bundle_hash: `5822ce915613798b0abc042c7ab18740a121f7d6766521b3380ce6a7e8877292`
+- snapshot_bundle_hash: `d09225c5adfd95618a4cf09ddf7162041ef5d6005644d4cfaec743d68b336917`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1624`
+- snapshot_age_seconds: `3469`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4263, "NO": 0.3069, "YES": 0.2669}`

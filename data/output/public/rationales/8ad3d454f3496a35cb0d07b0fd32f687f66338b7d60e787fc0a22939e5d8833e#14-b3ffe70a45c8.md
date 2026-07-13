@@ -134,12 +134,12 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw ₳11,070,323 for 
 
 ## Reproducibility
 - input_hash: `b3ffe70a45c8e0d5bfd5ec9557604108e193792adacb5c90f3ab13107624dc2e`
-- snapshot_bundle_hash: `5b6b32d21d1ef72f66fcec0c31c5931f2baaf781ea654e404d1193f4d2cfc5b3`
+- snapshot_bundle_hash: `9b84d92136fd9057a015f623b2209e6039a5494bd39c4f3b60c134744374dba2`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1645`
+- snapshot_age_seconds: `3474`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

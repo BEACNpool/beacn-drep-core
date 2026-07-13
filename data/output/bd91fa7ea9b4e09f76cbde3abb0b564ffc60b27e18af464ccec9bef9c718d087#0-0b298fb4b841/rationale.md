@@ -134,12 +134,12 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Cardano Summit 2026 and TOK
 
 ## Reproducibility
 - input_hash: `0b298fb4b841cc37e07e4433214ac4075d4d47d8cf96a645f2b257e51e04bdcf`
-- snapshot_bundle_hash: `2b0a5e5dfad253e77c9558b108c691f9f9ba8d7b4d9961c5c2e1cdcb32c0845a`
+- snapshot_bundle_hash: `252d9da407e32692a34a542aa9112856661ddd991900396620b9be24dd642a45`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1617`
+- snapshot_age_seconds: `3468`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.37, "NO": 0.315, "YES": 0.315}`

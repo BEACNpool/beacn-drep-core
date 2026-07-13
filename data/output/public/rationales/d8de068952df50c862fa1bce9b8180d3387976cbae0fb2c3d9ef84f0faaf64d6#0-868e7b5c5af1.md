@@ -82,7 +82,7 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Se7en Labs: Daedalus Wallet
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Inferences
-- Proposal clears individual quality floors but is not currently portfolio-eligible: balanced evidence floors not cleared.
+- Proposal clears individual quality floors but is not currently portfolio-eligible: insufficient remaining NCL capacity after higher-ranked proposals.
 - Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.
 - Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.
 - Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.
@@ -102,12 +102,12 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Se7en Labs: Daedalus Wallet
 
 ## Reproducibility
 - input_hash: `868e7b5c5af18b033b4c8e8ccead33ca8b1ab8aa7ba7e7e3f47cf59633f3103a`
-- snapshot_bundle_hash: `b08438b5199d6e725b8951eecb0ef6c0f683bf5ec35545b0a4716727e458b429`
+- snapshot_bundle_hash: `1437e8c1ecc86d62f691870209f48b01de37e403589277116c3a2dc03729f9f3`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1597`
+- snapshot_age_seconds: `3462`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.5069, "NO": 0.3566, "YES": 0.1366}`

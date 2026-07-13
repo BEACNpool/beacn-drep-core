@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Reduce the committeeMinSize paramet
 
 ## Reproducibility
 - input_hash: `b0b185296eac75d01dc9bb5de7f21ba7eda4f3ff6aec400e2dc135dac51a7c42`
-- snapshot_bundle_hash: `ecaf275f211a161ce66b9fd3a75047ff0e4fd9058f7b5c5d12f4e3830a0b96da`
+- snapshot_bundle_hash: `9963e7c2e89145c068c4f9c95501e48827146a9e5c7c125ef311f0817dc4854a`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1607`
+- snapshot_age_seconds: `3465`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.445, "NO": 0.2775, "YES": 0.2775}`

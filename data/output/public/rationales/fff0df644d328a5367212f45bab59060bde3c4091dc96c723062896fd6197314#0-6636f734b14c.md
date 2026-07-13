@@ -84,12 +84,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Rename the Chang 2 Hard Fork to the
 
 ## Reproducibility
 - input_hash: `6636f734b14cf0631a1649bebd61b87674bb2d5acdbaa516db58f03455328a0a`
-- snapshot_bundle_hash: `216750e0307ff4f454cbcf75c2404b9fe60eb427dd81e752ae059c043ffc3f7b`
+- snapshot_bundle_hash: `b122b45ef43504fab902d80e68aad4a0616a53ca5e78d64891165d1668be019d`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1656`
+- snapshot_age_seconds: `3476`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4394, "NO": 0.1703, "YES": 0.3903}`

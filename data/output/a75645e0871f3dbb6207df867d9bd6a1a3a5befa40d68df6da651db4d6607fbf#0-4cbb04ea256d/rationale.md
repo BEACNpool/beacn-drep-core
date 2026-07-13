@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Net Change Limit: Cardano Treasury 
 
 ## Reproducibility
 - input_hash: `4cbb04ea256de936dcc7c66b7bd674b2b2c39fd378bc816e5f94c645ac8e7410`
-- snapshot_bundle_hash: `9915d85971c18b25dbeb20b7bb1c0a9811706eb26201480d6efaa55d260b2fca`
+- snapshot_bundle_hash: `c4f2949dc706d1bc7c53e5b7962243fdce437e63a47e2bb7f73b5113c6225f4d`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1596`
+- snapshot_age_seconds: `3462`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4406, "NO": 0.3297, "YES": 0.2297}`

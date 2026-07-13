@@ -84,12 +84,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Cardano in Oceania: A community-led
 
 ## Reproducibility
 - input_hash: `028b6e471d9a4c5ec2dcee95e2926f9053257a2e640ec4c94205decc6b2403c5`
-- snapshot_bundle_hash: `934ea663e718af6ff00610ca2e511b9ad478117771ace989f3d1580d2115022e`
+- snapshot_bundle_hash: `f02a8f2551f96dffa9bceaa8e4df69f8edb2680e2739ca3a00071526a1b7277f`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1631`
+- snapshot_age_seconds: `3470`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4375, "NO": 0.2013, "YES": 0.3613}`

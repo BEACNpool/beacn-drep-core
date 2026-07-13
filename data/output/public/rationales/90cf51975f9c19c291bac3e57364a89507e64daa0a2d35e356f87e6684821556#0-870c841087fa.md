@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Budget: ₳5M Loan for Cardano's Gl
 
 ## Reproducibility
 - input_hash: `870c841087fa8c416443f2c619739bfb1a3e9efb2f6c84ea3a0e0354d1e70dfa`
-- snapshot_bundle_hash: `220b75ba86ee858a006a1833a68709c94c24db41e542149107ffac9624ff5b6d`
+- snapshot_bundle_hash: `244e998165f9a42a8db1c0ba676b1a7c8306eeee5b935ab59f098dfea564b69f`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1630`
+- snapshot_age_seconds: `3470`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

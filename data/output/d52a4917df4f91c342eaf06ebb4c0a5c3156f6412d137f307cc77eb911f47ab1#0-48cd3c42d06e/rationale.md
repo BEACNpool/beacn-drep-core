@@ -106,12 +106,12 @@ BEACN's autonomous DRep recorded NO on "Reimburse Ikigai Info Governance Action 
 
 ## Reproducibility
 - input_hash: `48cd3c42d06e09a9fbc51057c0657d04a2f55f6239efcc0c68beb26d8505854d`
-- snapshot_bundle_hash: `b55d6612a121136a127bab44a16d60c6fa60f7f6ffa884856a87fa6a74cb31f3`
+- snapshot_bundle_hash: `07b1f4ac46230e215fa3e76dc02d118791b2f9706d2eb67c070052af85a6cf75`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1606`
+- snapshot_age_seconds: `3464`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.2169, "NO": 0.7351, "YES": 0.0479}`

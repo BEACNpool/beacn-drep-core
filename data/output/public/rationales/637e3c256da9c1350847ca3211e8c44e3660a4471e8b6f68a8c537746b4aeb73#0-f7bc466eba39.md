@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Set a 300 million ADA Net Change Li
 
 ## Reproducibility
 - input_hash: `f7bc466eba39ea6b33c61949a7e3d8f459c541a3361fc4987495ae906a0d19a2`
-- snapshot_bundle_hash: `0b4cc5a1800e3f2e95477ee7ab96885270a20efe22b86753d38df110669e6a47`
+- snapshot_bundle_hash: `4a7dd9163266d355e6d6a092db3c76f347ee5d1a843bfd63eedb949a3ab17513`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1652`
+- snapshot_age_seconds: `3475`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

@@ -101,12 +101,12 @@ BEACN's autonomous DRep recorded NO on "Strike Finance Liquidity Deployment" (Tr
 
 ## Reproducibility
 - input_hash: `24407892614762d5d833d9fdfc1f8f06a0be769d96984c43fae2ba5ff6efe9d6`
-- snapshot_bundle_hash: `9fe5e35b8a545839747077dddf5148c888ac16aeeba90b965f618551023c6dcd`
+- snapshot_bundle_hash: `3c867bbc5f9ceea005f480a75edfead8e9fc0655317525cb1374ef36737fda9e`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1605`
+- snapshot_age_seconds: `3464`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.23, "NO": 0.64, "YES": 0.13}`

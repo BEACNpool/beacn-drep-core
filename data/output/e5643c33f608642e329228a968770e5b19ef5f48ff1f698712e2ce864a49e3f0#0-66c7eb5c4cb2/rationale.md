@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Stablecoin DeFi Liquidity Budget" (
 
 ## Reproducibility
 - input_hash: `66c7eb5c4cb260c47f1a447f1068f11e897084cb903ccdb67c061e6c9aea7e2b`
-- snapshot_bundle_hash: `d8e58c7b8fc0395003b13e442e021d9288ca9ea2878d87675874d1d80cde570e`
+- snapshot_bundle_hash: `f49f70e3e4cfa4f20ccf5694504fb2c779f441022ddf9b284965f4da307f928f`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1630`
+- snapshot_age_seconds: `3470`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4256, "NO": 0.2772, "YES": 0.2972}`

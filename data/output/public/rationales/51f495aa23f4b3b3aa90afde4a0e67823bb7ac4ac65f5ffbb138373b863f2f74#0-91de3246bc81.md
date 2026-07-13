@@ -87,12 +87,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "51f495aa23f4b3b3aa90afde4a0e67823bb
 
 ## Reproducibility
 - input_hash: `91de3246bc81ef900308026f11175a8f75e8571ffe548f7e91876358b6d67691`
-- snapshot_bundle_hash: `b4b8cc7adb0e7c704ec468f6b5268c151a557c1346fe26913d69269df386e81f`
+- snapshot_bundle_hash: `50911605a28c1c269f66dd82038ae48330591b6e94f2084b5fd9f6df57e38e7d`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1656`
+- snapshot_age_seconds: `3476`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.3702, "NO": 0.5862, "YES": 0.0437}`

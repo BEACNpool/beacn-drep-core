@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Reduce minimum Constitutional Commi
 
 ## Reproducibility
 - input_hash: `3bde032cd153db140b43d07de349b776ee7150068b5807e368bf95e8df446ed3`
-- snapshot_bundle_hash: `5e8a2bb5ccabf2377efd472fd2a332282b518caf63724353ce9170f678cc0186`
+- snapshot_bundle_hash: `de69a57bdc921f0e5f8fc6de196895ae1cefeed3898a244de0903118d92d51d3`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1621`
+- snapshot_age_seconds: `3468`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.4325, "NO": 0.2838, "YES": 0.2838}`

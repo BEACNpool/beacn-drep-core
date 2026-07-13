@@ -107,12 +107,12 @@ BEACN's autonomous DRep recorded NEEDS_MORE_INFO on "Withdraw 540,750 ada for Ou
 
 ## Reproducibility
 - input_hash: `87c23466227972e63560f3a0c1acbfbd7571290143af0919635e63a1827738cb`
-- snapshot_bundle_hash: `09c4eb10b8519ce4f3cf93fd58855a54cc7703fcc1e6b498f65fa9e10f27e44e`
+- snapshot_bundle_hash: `8d2deb8bad81195255bc0976f06670413baba502b807da3d117ee228a808a3a3`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1601`
+- snapshot_age_seconds: `3463`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.5017, "NO": 0.2222, "YES": 0.2762}`

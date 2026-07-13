@@ -85,12 +85,12 @@ BEACN's autonomous DRep recorded ABSTAIN on "Hard Fork to Protocol Version 11 ('
 
 ## Reproducibility
 - input_hash: `10a9fdd23e4d17bcff83e3941e1115a24448ffe4a3ef96b799babce6e4e02b19`
-- snapshot_bundle_hash: `8dbb6be4f3845610e4e772ad4a43b4764d7b5c72547628560e8f1b4d63ace4e9`
+- snapshot_bundle_hash: `b2ea1fd6818fc311a738ccfcbaae15b6af9b1b04a33e6c8f0b3f444e17e62806`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1605`
+- snapshot_age_seconds: `3464`
 - uncertainty_band: `LOW`
 - evidence_depth_score: `3`
 - decision_probs: `{"ABSTAIN": 0.445, "NO": 0.2775, "YES": 0.2775}`

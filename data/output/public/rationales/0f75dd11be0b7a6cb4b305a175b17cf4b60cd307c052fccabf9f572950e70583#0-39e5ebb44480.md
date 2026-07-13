@@ -103,12 +103,12 @@ BEACN's autonomous DRep recorded NO on "Alchemy by Sundial x Charms: Cardano-Nat
 
 ## Reproducibility
 - input_hash: `39e5ebb444803279af6383dacf06e36b3a6920106e35b0e5174eb913988b4813`
-- snapshot_bundle_hash: `be5719a7fd3a523db2dc2af85143a213738d3fa349ee2a41d01dae860a67945b`
+- snapshot_bundle_hash: `56a35a08f390e0ef637f1a398eaa07f669d2de4e1610a34565c02b7e58879d63`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
 - soul_text_hash: `a8c48e8e59534bbaa71af9a923ef942aa2cda51cb9e259331cef24e0da27ae10`
-- resource_registry_commit: `43f638f63313b9fb26ab7f5513f7a587a5d6546b`
+- resource_registry_commit: `d43566c2ec38caf2768100e67762e66da78895a8`
 - resources_used: `gov_actions_snapshot, treasury_withdrawals_snapshot, drep_vote_history_snapshot, gov_actions_all_snapshot, gov_actions_active_snapshot, gov_treasury_recipients_snapshot, gov_action_flags_snapshot, gov_poll_runs_snapshot, top_drep_votes_snapshot, gov_anchor_documents, deep_research_dossiers, ecosystem_value_profiles, treasury_policy_state, treasury_portfolio, governance_outcomes, protocol_readiness_profiles`
-- snapshot_age_seconds: `1599`
+- snapshot_age_seconds: `3463`
 - uncertainty_band: `MEDIUM`
 - evidence_depth_score: `4`
 - decision_probs: `{"ABSTAIN": 0.23, "NO": 0.64, "YES": 0.13}`

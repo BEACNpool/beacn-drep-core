@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540750",
+    "deadline": "12 months; grant period begins after closure of the existing contract",
+    "deliverables": [
+      "WP1 - Dolos Maintenance and Enhancement",
+      "Dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Issue triage, review of external contributions, ecosystem-feedback enhancements, and public communication",
+      "AI-friendly documentation and integration resources",
+      "Intersect budget administration and oversight"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe",
+    "what": "Fund Dolos by TxPipe: Maintaining Cardano's Lightweight Data Node, Year 2, including a part-time maintainer over 12 months and Intersect administration."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Dolos maintainer over 12 months at an annual rate of $105,000 USD.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The total withdrawal is 540,750 ADA, consisting of 525,000 ADA for Dolos maintenance and enhancement and 15,750 ADA for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Dolos is a lightweight Cardano data node built in Rust that provides efficient chain-data access without the overhead of traditional full nodes.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Dolos exposes five query interfaces, including Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros N2C Unix socket compatible with Cardano-cli, Ogmios, and other tooling.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The maintainer work will cover essential maintenance, community support, and upgrades for AI-driven development workflows.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested amount does not, at submission, breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Independent oversight will be provided through Intersect and technically capable third parties, with reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe has received funding through 30 Project Catalyst proposals across Funds 9 through 14, with 26 delivered and 4 currently under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests 540,750 ADA for a year of Dolos maintenance through Intersect-managed treasury smart contracts, citing open-source project metrics, prior funding history, Hydra voting approval, NCL compliance, and oversight/disbursement controls.",
+  "output_sha256": "4ec6d5073c776525e21070bf00d0d85ff6fab2b67a13e2f6ba3a6dab06251df7"
+}

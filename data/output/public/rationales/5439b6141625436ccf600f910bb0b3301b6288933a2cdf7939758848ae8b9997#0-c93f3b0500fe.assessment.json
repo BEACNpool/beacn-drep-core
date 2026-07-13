@@ -1,0 +1,111 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 639",
+        "Expires after epoch: 646",
+        "Treasury request: 9.83M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Transition Blockfrost into a free, community-governed public API/public good under an independent not-for-profit, including 18 months of transition and operations.",
+        "Recipient: Input Output Global / Input Output, with Intersect administering delivery and treasury management through CDH-related arrangements described in the document",
+        "Stated amount: 9,832,979",
+        "Deliverables: Legally establish a not-for-profit entity or sign a host-organization agreement under the preliminary board in Q3 2026., Publish technical transition architecture and migration plan for community review in Q3 2026., Launch a public usage dashboard in Q3 2026., Hold a board election via on-chain voting under publicly published rules in Q4 2026., Have the elected board formally assume its mandate from the preliminary board in Q4 2026., Serve all public API traffic for mainnet, preview, and preprod from the new stack in Q1 2027., Legally transfer Blockfrost source code, trademarks, domain names, and associated assets to the governing entity in Q1 2027., Maintain service performance at current levels during cutover., Open public consultation and publish a long-term sustainability proposal in Q2-Q3 2027., Operate the public API at a minimum 99% monthly uptime SLA with quarterly technical and budget reports during 2027 operational milestones.",
+        "Deadline/expiry: 18-month transition and operations period, with milestones from Q3 2026 through 2027",
+        "Claim (adoption, independently_verifiable, high materiality): Blockfrost is the number-one hosted platform used by Cardano developers and its reported survey adoption rose from 39.3% in 2022 to 71.5% in 2025.",
+        "Claim (adoption, proposer_asserted, high materiality): Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data in the prior month.",
+        "Claim (adoption, proposer_asserted, high materiality): In most Cardano epochs, more than 50% of all transactions are submitted through Blockfrost.",
+        "Claim (technical, proposer_asserted, medium materiality): More than 100 Icebreakers have joined the effort to decentralize Blockfrost operations.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal would transfer Blockfrost source code, trademarks, domains, and associated assets into stewardship by a community-governed not-for-profit entity.",
+        "Claim (technical, supported_in_proposal, high materiality): The not-for-profit would provide an open, free public API for Cardano mainnet, preview, and preprod networks in their current format."
+      ],
+      "missing": [
+        "Independent evidence for: Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data in the prior month.",
+        "Independent evidence for: In most Cardano epochs, more than 50% of all transactions are submitted through Blockfrost.",
+        "Independent evidence for: More than 100 Icebreakers have joined the effort to decentralize Blockfrost operations.",
+        "Independent evidence for: Long-term sustainability may come from paid tiers or a vendor-backed not-for-profit model, with future profits or fees intended to offset free-tier costs and potentially flow back to the treasury."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 9832979",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.68"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Blockfrost is the number-one hosted platform used by Cardano developers and its reported survey adoption rose from 39.3% in 2022 to 71.5% in 2025.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data in the prior month.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

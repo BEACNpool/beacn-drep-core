@@ -1,0 +1,13 @@
+# Withdraw 25,400,000 ada for Intersect: Governance coordination and technical ...
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the proposal.
+
+The action requests 25,400,000 ada for Intersect’s June 2026 to June 2027 operating model, covering governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, ecosystem coordination, and management of critical processes. The proposal breaks the ask into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for critical process management, with milestone-based drawdowns, evidence-backed reporting, transparent disclosures, Sundae Labs treasury management smart contracts, and external assurance by Appold.
+
+Several important claims were well-supported in the proposal or independently verifiable: the pinned anchor document was available and replayable, the proposal disclosed prior treasury funding, described the smart contract structure and oversight model, provided references for the contract framework and audits, and stated that the withdrawal did not breach the 350M ada Net Change Limit at submission. But other material claims remained unsupported by independent evidence, including the claim that this proposal is more focused than last year’s while preserving critical functions, and the claim about Intersect’s past coordination of network upgrades and the November 2025 chain partition incident.
+
+Because this is a treasury withdrawal, BEACN applies elevated scrutiny. The review found thin evidence in some areas, unknown execution risk, missing sustainability and cost-benefit clarity, missing independent assurance, and no dependency map. A directional vote would be unblocked by public, replayable chain evidence pinning and independently verifying the applicable Net Change Limit, plus stronger independent evidence for the material performance, cost, assurance, and execution-risk claims.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

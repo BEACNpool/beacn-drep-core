@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 641",
+        "Expires after epoch: 648",
+        "Treasury request: 4.09M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Establish a one-year independent Cardano dOSPO and Open Maintenance Framework program to manage open source sustainability funds through four programs: Maintenance Fund, Maintainer Development, CodeForUs bounties, and Ecosystem Activation Reserve.",
+        "Recipient: Christian Taylor / Open Source Cowboy Consulting as Article II.7.5 administrator at withdrawal, with a target transition to a dOSPO 501(c)(3) subject to governance.",
+        "Stated amount: 4094000000",
+        "Deliverables: Constitute two advisory councils with charters, conflict-of-interest policies, named members, and meeting records., Form a dOSPO legal entity as a United States 501(c)(3) public charity and publish governance documents., Publish quarterly public outcome reports with Mill Law Firm financial review attached., Run a dependency audit with SBOMs, centrality scores, bus factor assessments, and a coverage gap analysis., Fund retainer cohorts for high-risk Cardano open source infrastructure using a published priority formula., Launch a public CHAOSS-aligned health dashboard for funded projects., Operate maintainer development, CodeForUs bounty, and ecosystem activation programs as described in the proposal.",
+        "Deadline/expiry: 12 months from treasury withdrawal, with milestones through weeks 6, 12, 13, 16, 18, 24, 26, 39, and 52",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months to fund a Cardano dOSPO and OMF program.",
+        "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole Article II.7.5 funds administrator at the moment of treasury withdrawal.",
+        "Claim (governance, proposer_asserted, high materiality): Mill Law Firm is designated as independent financial auditor on a quarterly cadence through Month 12.",
+        "Claim (technical, supported_in_proposal, high materiality): The program will use four programs: a Maintenance Fund, Maintainer Development program, CodeForUs bounty program, and Ecosystem Activation Reserve.",
+        "Claim (economic, supported_in_proposal, high materiality): The Maintenance Fund will deploy 2,000,000 ADA over 12 months to support high-risk Cardano open source infrastructure selected by dependency centrality and bus factor data.",
+        "Claim (governance, supported_in_proposal, high materiality): Before any WP2-WP5 disbursement, advisory council feedback will be published on-chain, while final allocation authority remains with the administrator."
+      ],
+      "missing": [
+        "Independent evidence for: Mill Law Firm is designated as independent financial auditor on a quarterly cadence through Month 12.",
+        "Independent evidence for: The proposer says the OMF and dOSPO whitepapers were developed with experts from Bitergia, CHAOSS, Apache Software Foundation, Linux Foundation Decentralized Trust, Intersect, Andamio Platform, Modus Create, Leadingbit Solutions, and the Chinstrap Community."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.78"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to fund a Cardano dOSPO and OMF program.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Mill Law Firm is designated as independent financial auditor on a quarterly cadence through Month 12.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

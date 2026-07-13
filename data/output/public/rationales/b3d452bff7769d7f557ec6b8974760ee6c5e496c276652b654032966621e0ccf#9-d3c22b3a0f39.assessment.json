@@ -1,0 +1,111 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 1.68M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Fund Tx3 by TxPipe: an open API layer for Cardano dApp protocols, including standardized interfaces, documentation, SDKs, JSON-RPC endpoints, agent-facing documentation, protocol skills packaging, and an MCP server.",
+        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
+        "Stated amount: 1684050",
+        "Deliverables: 12 additional protocol onboardings over 12 months, stated as 3 per quarter, Full developer and agent coverage for onboarded protocols, MCP server for agents to discover and call published protocols, Skill framework and protocol skills packaging operations, Agent-first documentation and LLM-structured documentation, Open API layer work package for Cardano protocols",
+        "Deadline/expiry: 12 months",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
+        "Claim (technical, proposer_asserted, high materiality): Tx3 is described as producing documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from a verified interface definition for each protocol.",
+        "Claim (adoption, independently_verifiable, high materiality): The proposal states that Catalyst Fund 14 has already put the Tx3 developer layer into production with 5 protocols live on the Tx3 Protocol Registry.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal funds 12 additional protocol onboardings, at 3 per quarter, with full developer and agent coverage.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal claims there is currently no common interface mechanism across Cardano protocols, increasing integration cost and making cross-protocol composability impractical.",
+        "Claim (technical, proposer_asserted, medium materiality): The proposal claims AI agents create a need for auditable intent-based interaction with deterministic underlying transactions to avoid irreversible hallucinated on-chain actions."
+      ],
+      "missing": [
+        "Independent evidence for: Tx3 is described as producing documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from a verified interface definition for each protocol.",
+        "Independent evidence for: The proposal claims there is currently no common interface mechanism across Cardano protocols, increasing integration cost and making cross-protocol composability impractical.",
+        "Independent evidence for: The proposal claims AI agents create a need for auditable intent-based interaction with deterministic underlying transactions to avoid irreversible hallucinated on-chain actions.",
+        "Independent evidence for: The proposal states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 1684050",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.48"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Tx3 is described as producing documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from a verified interface definition for each protocol.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

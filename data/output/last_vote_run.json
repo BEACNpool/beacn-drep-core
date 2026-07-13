@@ -5,7 +5,7 @@
     "NO",
     "YES"
   ],
-  "submitted": 2,
+  "submitted": 1,
   "active_evaluated": 29,
   "skipped_inactive": 121,
   "policy_config": {
@@ -27,13 +27,10 @@
     {
       "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
       "recommendation": "YES",
-      "onchain_vote": "VoteNo",
-      "policy": "REVISE",
-      "policy_reason": "revision NO->YES approved: persist=2, margin=0.129",
-      "gates_ok": true,
-      "status": "submitted",
-      "submitted": true,
-      "transaction_hash": "6e6e99673babd717414e0a8a8d596cf7109c50b6ecea281dfddd5c7d7e0eed5f"
+      "onchain_vote": "VoteYes",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already YES",
+      "status": "NOOP"
     },
     {
       "action_id": "c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e#0",
@@ -45,6 +42,22 @@
     },
     {
       "action_id": "4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
+      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": null,
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
+    },
+    {
+      "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
@@ -128,14 +141,11 @@
       "recommendation": "YES",
       "onchain_vote": "VoteNo",
       "policy": "REVISE",
-      "policy_reason": "revision NO->YES approved: persist=2, margin=0.06",
+      "policy_reason": "revision NO->YES approved: persist=3, margin=0.06",
       "gates_ok": true,
-      "status": "error",
-      "submitted": false,
-      "transaction_hash": null,
-      "reasons": [
-        "tx build failed: Command failed: transaction build\nError: The UTxO is empty\nCallStack (from HasCallStack):\n  fromExceptTCli, called at src/Cardano/CLI/EraBased/Transaction/Run.hs:298:7 in cardano-cli-11.0.0.0-DbgJAJWdTSWmMNUHLqpe:Cardano.CLI.EraBased.Transaction.Run\n  runTransactionBuildCmd, called at src/Cardano/CLI/EraBased/Transaction/Run.hs:102:5 in cardano-cli-11.0.0.0-DbgJAJWdTSWmMNUHLqpe:Cardano.CLI.EraBased.Transaction.Run\n  runTransactionCmds, called at src/Cardano/CLI/EraBased/Run.hs:61:5 in cardano-cli-11.0.0.0-DbgJAJWdTSWmMNUHLqpe:Cardano.CLI.EraBased.Run\n  runCmds, called at src/Cardano/CLI/EraBased/Run.hs:35:35 in cardano-cli-11.0.0.0-DbgJAJWdTSWmMNUHLqpe:Cardano.CLI.EraBased.Run\n  runAnyEraCommand, called at src/Cardano/CLI/Run.hs:56:5 in cardano-cli-11.0.0.0-DbgJAJWdTSWmMNUHLqpe:Cardano.CLI.Run\n  runClientCommand, called at app/cardano-cli.hs:58:14 in cardano-cli-11.0.0.0-DP01eOLXcc22wWHvPuOBL9-cardano-cli:Main"
-      ]
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "5643ef25f9ab8864a9e91fa5649c6ac38556bb0eedb2213b253c0b8631be9b65"
     },
     {
       "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
@@ -176,14 +186,6 @@
       "policy": "SKIP",
       "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
       "status": "SKIP"
-    },
-    {
-      "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
-      "recommendation": "NO",
-      "onchain_vote": "VoteNo",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already NO",
-      "status": "NOOP"
     },
     {
       "action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
@@ -244,21 +246,10 @@
     {
       "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
       "recommendation": "NO",
-      "onchain_vote": null,
-      "policy": "CAST",
-      "policy_reason": "fresh NO: persist=3, confidence=0.7537",
-      "gates_ok": true,
-      "status": "submitted",
-      "submitted": true,
-      "transaction_hash": "705ca34716852b04da22f888250fe1f2b3c7dda37accc8ea2c71e1a27b53eb2a"
-    },
-    {
-      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": null,
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
     }
   ]
 }

@@ -2,17 +2,17 @@
   "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
   "title": "Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)",
   "type": "HardForkInitiation",
-  "status": "active",
+  "status": "ratified",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:980f02ac2ca5b5087d3b2fd1ffd5d5a2fa30214be330a228d347612b24ae2e41",
+    "raw_input_hash": "sha256:21466b7b353b952fe893136b154980e7fc13bd91d8c744fed83bae8b315ed959",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "YES",
     "diverged": true,
-    "published_at": "2026-07-13T15:15:32.806919+00:00",
+    "published_at": "2026-07-14T11:30:04.426205+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "19e6c5452ae9e8e0fdffc47eeafe28452443ec3220800033772b221c3aaa65c3",
@@ -22,27 +22,27 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.5,
-    "input_hash": "980f02ac2ca5b5087d3b2fd1ffd5d5a2fa30214be330a228d347612b24ae2e41",
-    "snapshot_bundle_hash": "f86e53c365eee99e4dabc21b920431250458d26e1f725291ce3529d237915a96",
+    "input_hash": "21466b7b353b952fe893136b154980e7fc13bd91d8c744fed83bae8b315ed959",
+    "snapshot_bundle_hash": "f75d099b01be23a5db74e9562977219b0cf4020570ff916e7474470456d4f206",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "a650e5f55d3662a45d71b3a19d5301fd64c2bbee",
-    "core_commit": "ded627116d3160ff38c58fb5f3db6f3956f0cced",
-    "rationale_markdown_path": "/data/output/public/rationales/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0-980f02ac2ca5.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1d91620c2b5c8acb8a855170.md",
-    "rationale_anchor_hash": "1d91620c2b5c8acb8a85517033aa5843feb440cb4fc6f0c2864e1cb9c8ce5a39",
+    "resources_commit": "fcde47763a7f055ead02e3e3a1dac917f51a9a68",
+    "core_commit": "6dc63c69d2e3aa4ef3f81afc6f4512c768c7fb9e",
+    "rationale_markdown_path": "/data/output/public/rationales/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0-21466b7b353b.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null,
     "onchain_anchor_hash": "5c3a16a1ab6f46a1971dc1e1d70e345649eb1ff02dd00ce798084794acd6f4ef",
     "onchain_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/5c3a16a1ab6f46a1971dc1e1.md",
     "onchain_vote": "Yes"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this HardForkInitiation (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The action upgrades Cardano Mainnet from protocol version 10.0 to protocol version 11.0 without an era transition.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic; Provide independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: security_review_pass Confidence context: score 0.00; confidence 50.0%.",
+    "summary": "Vote: ABSTAIN. For this HardForkInitiation (ratified), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The action upgrades Cardano Mainnet from protocol version 10.0 to protocol version 11.0 without an era transition.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic; Provide independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: security_review_pass Confidence context: score 0.00; confidence 50.0%.",
     "summary_raw": "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
     "top_fixes": [
       "Provide independent evidence for: UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic.",
       "Provide independent evidence for: Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
       "Provide mitigation evidence."
     ],
-    "markdown_path": "/data/output/public/rationales/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0-980f02ac2ca5.md",
+    "markdown_path": "/data/output/public/rationales/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0-21466b7b353b.md",
     "missing_evidence": [],
     "blocked_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
     "assessment_status": "incomplete",
@@ -58,7 +58,7 @@
           "status": "complete",
           "findings": [
             "Action type: HardForkInitiation",
-            "Status: active",
+            "Status: ratified",
             "Proposed epoch: 637",
             "Expires after epoch: 644",
             "Treasury request: not specified",
@@ -139,7 +139,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0-980f02ac2ca5.assessment.json",
+    "assessment_path": "/data/output/public/rationales/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0-21466b7b353b.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -195,7 +195,7 @@
     "anchor_hash": "7f683eaf65629963cdc726e0cb7d3be295eb586fc5ba93985878f98e29cee897",
     "file_sha256": "3b1cb614fd19ac9e263879ef36cee3de92de263905cb2af5faf58798ec800af7",
     "content_bytes": "23788",
-    "fetched_at_utc": "2026-07-13T15:16:04Z",
+    "fetched_at_utc": "2026-07-14T11:30:23Z",
     "download_path": "/proposals/fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -206,8 +206,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "a650e5f55d3662a45d71b3a19d5301fd64c2bbee",
-    "core_commit": "ded627116d3160ff38c58fb5f3db6f3956f0cced",
+    "resources_commit": "fcde47763a7f055ead02e3e3a1dac917f51a9a68",
+    "core_commit": "6dc63c69d2e3aa4ef3f81afc6f4512c768c7fb9e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -284,7 +284,7 @@
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T15:31:49.224054Z",
+    "snapshot_time": "2026-07-14T11:45:37.315175Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

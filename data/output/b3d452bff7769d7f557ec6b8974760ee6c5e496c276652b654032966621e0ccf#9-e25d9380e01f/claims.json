@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1684050",
+    "deadline": "12 months",
+    "deliverables": [
+      "Open, standardized interface across Cardano on-chain protocols",
+      "Documentation, auto-generated SDKs in multiple languages, and live JSON-RPC endpoints from verified interface definitions",
+      "Agent-first documentation, protocol skills packaging operations, and an MCP server for agents to discover and call published protocols",
+      "Onboarding of 12 additional protocols over 12 months, 3 per quarter, with developer and agent coverage",
+      "Milestone-based disbursement controls and reporting obligations through Intersect oversight"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor TxPipe",
+    "what": "Withdraw treasury funds for Tx3 by TxPipe, described as an open API layer for Cardano dApp protocols with developer and AI-agent-facing infrastructure."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total withdrawal of 1,684,050 ADA including a 49,050 ADA Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Tx3 is intended to provide a standard open-source interface to Cardano protocols, including documentation, multi-language SDKs, and live RPC endpoints.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal claims Cardano currently lacks a common interface mechanism across ecosystem protocols, forcing integrators to relearn each protocol and rebuild understanding independently.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe has already put the developer layer into production through Catalyst Fund 14 with 5 protocols live on the Tx3 Protocol Registry at https://tx3.land.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal funds 12 additional protocol onboardings, at 3 per quarter, plus development of an MCP server and skill framework as shared infrastructure for registry protocols.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states that protocols including Strike Finance, Indigo Protocol, VyFinance, Bodega Market, and Fluid Tokens are already accessible through Tx3.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain Treasury Withdrawal submission under the approved process.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested amount is claimed not to breach the applicable 350M Net Change Limit at submission, either alone or in aggregate, for Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe is said to have received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect open-source maintenance funding for Pallas, Dolos, and UTxO RPC that is on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect states that funds will be managed through Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, multi-party authorization thresholds, an Oversight Committee, milestone-based disbursement controls, and a public dashboard.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document asks for 1,684,050 ADA to fund TxPipe's Tx3 over 12 months, expanding a protocol interface registry and adding AI-agent infrastructure, with Intersect-administered smart-contract custody and oversight.",
+  "output_sha256": "8536ffafa793aa779e41b6728f2dbcc420866c58a983257d7d646dee897e80ae"
+}

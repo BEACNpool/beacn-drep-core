@@ -5,46 +5,46 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:e83e61d9caace6a900c1603f5e23eff10d3708351d50c885723de5c3b3b3afc1",
+    "raw_input_hash": "sha256:450d20b3120accd8ed66905c9e670facbf714770b362d7d82b0e155bb3c197ec",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "YES",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "YES",
-    "diverged": false,
-    "published_at": "2026-07-13T15:15:32.806919+00:00",
+    "diverged": true,
+    "published_at": "2026-07-14T11:30:04.426205+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "53985b85c8fca6b413173642645bbda2c00c399aa86fd1ac78a8bfbfaf8e0957",
     "submitted_at": "2026-07-13T00:13:23+00:00"
   },
   "proof_of_vote": {
-    "vote": "YES",
-    "score": 0.2055,
-    "confidence": 0.7414,
-    "input_hash": "e83e61d9caace6a900c1603f5e23eff10d3708351d50c885723de5c3b3b3afc1",
-    "snapshot_bundle_hash": "57a4a02d7141cd3cd6f652e6ab455464dd8ad1c01572f7a0d72c5abf2195748f",
+    "vote": "NEEDS_MORE_INFO",
+    "score": -0.78,
+    "confidence": 0.79,
+    "input_hash": "450d20b3120accd8ed66905c9e670facbf714770b362d7d82b0e155bb3c197ec",
+    "snapshot_bundle_hash": "4271b4e8a8c80ba9f9dd48286490817ef9ae6e5e7ac1037e119a4cd08fd36e6b",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "a650e5f55d3662a45d71b3a19d5301fd64c2bbee",
-    "core_commit": "ded627116d3160ff38c58fb5f3db6f3956f0cced",
-    "rationale_markdown_path": "/data/output/public/rationales/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0-e83e61d9caac.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/dc59ab93fc4c922546370d88.md",
-    "rationale_anchor_hash": "dc59ab93fc4c922546370d88a3789d984b59c406378cfb509fbf00c6f19795a4",
+    "resources_commit": "fcde47763a7f055ead02e3e3a1dac917f51a9a68",
+    "core_commit": "6dc63c69d2e3aa4ef3f81afc6f4512c768c7fb9e",
+    "rationale_markdown_path": "/data/output/public/rationales/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0-450d20b3120a.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/bb28b96322cdf9cd74877b05.md",
+    "rationale_anchor_hash": "bb28b96322cdf9cd74877b05d54b115fe71d79f2451287180491460aaba0e627",
     "onchain_anchor_hash": "3acbb91820a61a786b277c29945f9375f8d2ac697adbc536ee08916eb1f66a63",
     "onchain_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3acbb91820a61a786b277c29.md",
     "onchain_vote": "Yes"
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $420,000 using $0.1787 per Ada, to fund a 12-month operating period.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"Eternl states that 6.0 FTE across 10 contributors at $70,000 per FTE are required for its annual operations.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.21; confidence 74.1%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs; Provide independent evidence for: The proposer states that 10-18% of Cardano mainnet transactions are conducted via Eternl. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.78; confidence 79.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide independent evidence for: Eternl states that 6.0 FTE across 10 contributors at $70,000 per FTE are required for its annual operations.",
-      "Provide independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+      "Provide independent evidence for: Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs.",
+      "Provide independent evidence for: The proposer states that 10-18% of Cardano mainnet transactions are conducted via Eternl.",
       "Provide milestone-gated disbursement."
     ],
-    "markdown_path": "/data/output/public/rationales/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0-e83e61d9caac.md",
+    "markdown_path": "/data/output/public/rationales/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0-450d20b3120a.md",
     "missing_evidence": [],
-    "blocked_reason_code": null,
+    "blocked_reason_code": "PORTFOLIO_CAPACITY_NOT_CLEARED",
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -75,23 +75,21 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Treasury withdrawal for 12 months of Eternl operations, maintenance, support, infrastructure, audits/oversight, and continued development while Eternl introduces paid Pro plans.",
-            "Recipient: Tastenkunst GmbH / Eternl",
+            "Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, and improvements from August 2026 to July 2027.",
+            "Recipient: Tastenkunst GmbH, Eternl",
             "Stated amount: 2350000",
-            "Deliverables: Frontend maintenance and cross-platform development for web, browser extension, iOS, Android, and beta channels, Backend infrastructure and operations including multi-region servers, Cardano nodes, DBSync/indexers, metadata aggregation, and monitoring, User support through Discord, Telegram, public channels, partner channels, wiki updates, and educational content, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and proposal creation, Independent treasury fund-use audits in February 2027 and August 2027 with oversight metrics for balances, conversion rates, transaction hashes, and repayment hashes",
-            "Deadline/expiry: 12-month delivery period from August 2026 to July 2027",
-            "Claim (economic, supported_in_proposal, high materiality): Eternl requests \u20b32,350,000, valued at about $420,000 using $0.1787 per Ada, to fund a 12-month operating period.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal allocates the request across frontend, backend, support, admin, and audits, with frontend receiving 55% and backend 25%.",
-            "Claim (economic, proposer_asserted, high materiality): Eternl states that 6.0 FTE across 10 contributors at $70,000 per FTE are required for its annual operations.",
-            "Claim (adoption, proposer_asserted, high materiality): Eternl says it has about 100,000 browser-extension installs and about 30,000 Android/iOS installs, and that about 5,500 Pro users would cover the $420,000 annual cost.",
-            "Claim (governance, supported_in_proposal, high materiality): The proposer commits to converting up to $420,000 worth of Ada into stablecoins, placing it in a public company wallet, and returning any Ada above that amount to the treasury.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposer commits to semiannual repayment checks and to using surplus treasury stablecoins plus paid-plan income to repay up to the received $420,000 USD value in Ada, with possible additional donations capped at $210,000 worth of Ada."
+            "Deliverables: Frontend maintenance and cross-platform development, Backend infrastructure and operations, User support, Administrative operations, Periodic independent audits of treasury fund use and oversight metrics, Eternl Pro plan rollout, Governance tooling enhancements, Eternl Core rewrite, Eternl Hub, enhanced hardware wallet support, and wallet data export improvements",
+            "Deadline/expiry: July 2027",
+            "Claim (adoption, supported_in_proposal, high materiality): Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b32,350,000, valued at about $0.1787 per Ada, to cover an annual operating cost of about $420,000.",
+            "Claim (economic, supported_in_proposal, high materiality): The budget allocates 55% to frontend, 25% to backend, 5% to support, 13% to admin, and 2% to audits.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal funds 6.0 FTE distributed across 10 contributors at $70,000 per FTE.",
+            "Claim (adoption, proposer_asserted, high materiality): Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs.",
+            "Claim (economic, supported_in_proposal, high materiality): If roughly 5,500 users, or about 4.2% of the install base, buy the Pro plan, Pro income would fully cover the annual $420,000 cost."
           ],
           "missing": [
-            "Independent evidence for: Eternl states that 6.0 FTE across 10 contributors at $70,000 per FTE are required for its annual operations.",
-            "Independent evidence for: Eternl says it has about 100,000 browser-extension installs and about 30,000 Android/iOS installs, and that about 5,500 Pro users would cover the $420,000 annual cost.",
-            "Independent evidence for: Independent audits of treasury fund use are planned for February 2027 and August 2027 by a party unaffiliated with Tastenkunst GmbH or the Eternl team.",
-            "Independent evidence for: Eternl claims 10-18% of Cardano mainnet transactions are conducted via Eternl."
+            "Independent evidence for: Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs.",
+            "Independent evidence for: The proposer states that 10-18% of Cardano mainnet transactions are conducted via Eternl."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -137,8 +135,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $420,000 using $0.1787 per Ada, to fund a 12-month operating period.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Eternl states that 6.0 FTE across 10 contributors at $70,000 per FTE are required for its annual operations.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Eternl has about 100,000 browser extension installs and about 30,000 Android and iOS installs.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -157,7 +155,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0-e83e61d9caac.assessment.json",
+    "assessment_path": "/data/output/public/rationales/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0-450d20b3120a.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [],
       "evidence_status": "independently_verified",
@@ -243,7 +241,7 @@
     "anchor_hash": "8021a950826f251399495e5d370c4998723dd7dca2457b06c15ef218ba93df6a",
     "file_sha256": "2f053756779e2cf3bf4665d04d7294c6862393d40dbcf288bce84a41084b2090",
     "content_bytes": "20050",
-    "fetched_at_utc": "2026-07-13T15:16:04Z",
+    "fetched_at_utc": "2026-07-14T11:30:23Z",
     "download_path": "/proposals/fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
@@ -282,8 +280,8 @@
     "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
-    "withdrawals_in_period_lovelace": 291435336000000,
-    "remaining_capacity_lovelace": 8564664000000,
+    "withdrawals_in_period_lovelace": 296536117000000,
+    "remaining_capacity_lovelace": 3463883000000,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
     "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
     "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
@@ -304,8 +302,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "a650e5f55d3662a45d71b3a19d5301fd64c2bbee",
-    "core_commit": "ded627116d3160ff38c58fb5f3db6f3956f0cced",
+    "resources_commit": "fcde47763a7f055ead02e3e3a1dac917f51a9a68",
+    "core_commit": "6dc63c69d2e3aa4ef3f81afc6f4512c768c7fb9e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -408,17 +406,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.2055,
-    "raw_score": -0.33,
+    "binding_score": -0.78,
+    "raw_score": -0.78,
     "directional_threshold": 0.06,
-    "confidence": 0.7414,
+    "confidence": 0.79,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T15:31:49.224054Z",
+    "snapshot_time": "2026-07-14T11:45:37.315175Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

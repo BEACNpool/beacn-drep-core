@@ -2,49 +2,52 @@
   "action_id": "d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0",
   "title": "Reimburse Ikigai Info Governance Action Deposit.",
   "type": "TreasuryWithdrawals",
-  "status": "active",
+  "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:44237a7b01966bf2f42deca9b2210724e4838b336c254e1299e94b20d51d83b2",
+    "raw_input_hash": "sha256:ba4b919ccbb70ec6774db295ad49d5aff34b3cd2ad3cc9dea872e5c4ba452a2f",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
-    "diverged": false,
-    "published_at": "2026-07-13T15:15:32.806919+00:00",
+    "diverged": true,
+    "published_at": "2026-07-14T11:30:04.426205+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "81a26baf7f480b368830afef55f3b216a3eebe4499350851fd3d647c13206c31",
     "submitted_at": "2026-06-19T16:08:34+00:00"
   },
   "proof_of_vote": {
-    "vote": "NO",
-    "score": -0.2394,
-    "confidence": 0.7498,
-    "input_hash": "44237a7b01966bf2f42deca9b2210724e4838b336c254e1299e94b20d51d83b2",
-    "snapshot_bundle_hash": "ca647ffbc22d3bef7b4a37df26cd2f23cdf34b0bb79f5c4d65636e4983ac3cab",
+    "vote": "NEEDS_MORE_INFO",
+    "score": -0.18,
+    "confidence": 0.735,
+    "input_hash": "ba4b919ccbb70ec6774db295ad49d5aff34b3cd2ad3cc9dea872e5c4ba452a2f",
+    "snapshot_bundle_hash": "980d88fe30834af41227119b12866cc1b25ddf3c9cdbf6b4dc968e7fc2651d79",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
-    "resources_commit": "a650e5f55d3662a45d71b3a19d5301fd64c2bbee",
-    "core_commit": "ded627116d3160ff38c58fb5f3db6f3956f0cced",
-    "rationale_markdown_path": "/data/output/public/rationales/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0-44237a7b0196.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/ed4ed9f3b327e28d2136d3ce.md",
-    "rationale_anchor_hash": "ed4ed9f3b327e28d2136d3ce51b2bed1698ffc94338da15e6d1aa0389c1e0938",
+    "resources_commit": "fcde47763a7f055ead02e3e3a1dac917f51a9a68",
+    "core_commit": "6dc63c69d2e3aa4ef3f81afc6f4512c768c7fb9e",
+    "rationale_markdown_path": "/data/output/public/rationales/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0-ba4b919ccbb7.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null,
     "onchain_anchor_hash": "2381771257d26389c0fc5aad11dc3b441665557e7bc23bf15d7f223a00201b90",
     "onchain_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/2381771257d26389c0fc5aad.md",
     "onchain_vote": "No"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork as a symbolic Info action thanking contributors and expressing hope for Cardano's future.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal asks for 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for lost staking rewards at 2% per annum.\" and clears the evidence gates. What would change this vote to YES: Provide milestone-gated disbursement; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.24; confidence 75.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal asks for 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for lost staking rewards at 2% per annum.\" and clears the evidence gates. What would enable a directional vote: Provide: verified ecosystem benefit or strategic necessity; Provide: delivery controls, milestones, assurance, or remedy path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.18; confidence 73.5%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide milestone-gated disbursement.",
-      "Provide sustainability path.",
-      "Provide cost-benefit clarity."
+      "Provide: verified ecosystem benefit or strategic necessity",
+      "Provide: delivery controls, milestones, assurance, or remedy path",
+      "Provide milestone-gated disbursement."
     ],
-    "markdown_path": "/data/output/public/rationales/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0-44237a7b0196.md",
-    "missing_evidence": [],
-    "blocked_reason_code": null,
+    "markdown_path": "/data/output/public/rationales/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0-ba4b919ccbb7.md",
+    "missing_evidence": [
+      "verified ecosystem benefit or strategic necessity",
+      "delivery controls, milestones, assurance, or remedy path"
+    ],
+    "blocked_reason_code": "TREASURY_PORTFOLIO_REQUIRED",
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -58,7 +61,7 @@
           "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
-            "Status: active",
+            "Status: expired",
             "Proposed epoch: 636",
             "Expires after epoch: 643",
             "Treasury request: 103.0k ADA",
@@ -160,7 +163,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0-44237a7b0196.assessment.json",
+    "assessment_path": "/data/output/public/rationales/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0-ba4b919ccbb7.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Gate disbursement on milestones that must be met before money moves.",
@@ -270,7 +273,7 @@
     "anchor_hash": "abaf67cde8defc914712009094cd3805bcf8911d3fa79c6edfd6c975dcf9d471",
     "file_sha256": "c2705f5116cc7c0c6c3a2a84d83c377ab118d24ae54a25aa4e5d6ba570f38515",
     "content_bytes": "4649",
-    "fetched_at_utc": "2026-07-13T15:16:04Z",
+    "fetched_at_utc": "2026-07-14T11:30:23Z",
     "download_path": "/proposals/d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d"
   },
@@ -309,8 +312,8 @@
     "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
-    "withdrawals_in_period_lovelace": 291435336000000,
-    "remaining_capacity_lovelace": 8564664000000,
+    "withdrawals_in_period_lovelace": 296536117000000,
+    "remaining_capacity_lovelace": 3463883000000,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
     "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
     "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
@@ -331,8 +334,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "d866057afd0ecaf599eb0202220b1ec8339b9b09",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "a650e5f55d3662a45d71b3a19d5301fd64c2bbee",
-    "core_commit": "ded627116d3160ff38c58fb5f3db6f3956f0cced",
+    "resources_commit": "fcde47763a7f055ead02e3e3a1dac917f51a9a68",
+    "core_commit": "6dc63c69d2e3aa4ef3f81afc6f4512c768c7fb9e",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -435,17 +438,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.2394,
+    "binding_score": -0.18,
     "raw_score": -0.18,
     "directional_threshold": 0.06,
-    "confidence": 0.7498,
+    "confidence": 0.735,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-13T15:31:49.224054Z",
+    "snapshot_time": "2026-07-14T11:45:37.315175Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

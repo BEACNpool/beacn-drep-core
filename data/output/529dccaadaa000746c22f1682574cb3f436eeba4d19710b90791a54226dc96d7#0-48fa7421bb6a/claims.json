@@ -1,0 +1,86 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "120,000,000",
+    "deadline": "12-month program; specific completion date not stated in document",
+    "deliverables": [
+      "Phase 1 public current-state audit",
+      "Phase 2 identification of integration, product, and ecosystem-support gaps",
+      "Phase 3 incentives and capital deployment after Operating Group affirmation of the Phase 3 release plan",
+      "Published recommendations and disbursement records",
+      "Quarterly financial and ecosystem impact reporting",
+      "Independent audit or assurance funded by a dedicated 2,000,000 ada allocation",
+      "Return-to-treasury process for unused, unearned, unreleased, or excess funds"
+    ],
+    "recipient": "Intersect treasury reserve smart contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with execution by AlphaGrowth under Operating Group oversight and Intersect managing withdrawn funds directly.",
+    "what": "Treasury withdrawal to fund AlphaGrowth's Cardano PRIME, a 12-month community-overseen program to improve DeFi protocol readiness, activate incentives, and grow durable liquidity across Cardano markets."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 120,000,000 ada to fund Cardano PRIME, with USD figures used only as planning references at a $0.16 per ADA assumption.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Cardano PRIME is described as a 12-month program executed by AlphaGrowth, overseen by an Operating Group, and custody-managed by Intersect as Constitutional Administrator.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The withdrawal is conditional on an applicable Net Change Limit under TREASURY-01a having enough remaining capacity to cover the withdrawal in full at enactment.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The document states that as of June 2026 Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal argues Cardano's DeFi problem includes fragmented and inefficient liquidity, limited advanced liquidity products, limited risk and insurance tooling, and low external distribution.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "PRIME uses a phased model in which incentives and capital are deployed only after the Operating Group affirms the Phase 3 release plan.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal separates recommendations, oversight, and custody by assigning AlphaGrowth analysis and memo duties, Operating Group review and veto or conditioning authority, and Intersect fund management.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal includes a dedicated 2,000,000 ada independent audit or assurance allocation, a separate auditable account, quarterly reporting, and six return triggers for unused, unearned, unreleased, or excess funds.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The performance fee is stated to be tied to verified qualifying TVL growth, excluding ADA price effects and non-PRIME attributable TVL under an attribution methodology.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The document says AlphaGrowth has not received Cardano Treasury funding within the prior 24 months.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The anchor document describes a 120,000,000 ada treasury withdrawal for a 12-month DeFi liquidity and incentives program with Intersect custody, AlphaGrowth execution, Operating Group oversight, phased release controls, audit funding, reporting, and return triggers, but several central economic premises and attribution details are asserted rather than evidenced in the anchor text.",
+  "output_sha256": "9b04d147f32b6b0f52213272d3b69f993cfcadfae7748f6129d92df92b58c1b3"
+}

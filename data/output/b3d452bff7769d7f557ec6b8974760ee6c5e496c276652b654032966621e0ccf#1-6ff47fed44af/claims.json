@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540,750",
+    "deadline": "12-month grant period beginning after closure of the existing contract",
+    "deliverables": [
+      "Part-time maintainer for Dolos over 12 months",
+      "Dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation",
+      "Issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public developer communication",
+      "AI-friendly documentation and integration resources",
+      "Milestone-based disbursement controls through Intersect-managed smart contracts"
+    ],
+    "recipient": "Intersect Treasury Reserve Smart Contract stake address for administration on behalf of TxPipe as vendor",
+    "what": "Fund Dolos by TxPipe: maintaining Cardano's lightweight data node for Year 2 over 12 months, including maintenance, community support, and AI-friendly documentation/integration resources."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve for Dolos maintenance, with a 15,750 ADA Intersect administration fee for a total withdrawal of 540,750 ADA.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Dolos is described as a Rust-based lightweight Cardano data node that connects to the Cardano network, indexes ledger primitives, and exposes multiple query interfaces including Mini-Blockfrost, UTxO-RPC, Mini-Kupo, and an Ouroboros N2C socket.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Dolos has 939 commits, 80 releases, 129 stars, 51 forks, and 27 contributors.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The maintainer scope includes code maintenance, protocol compatibility, performance work, bug fixes, documentation, community support, contribution review, and AI-friendly documentation and integration resources.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal asserts Dolos provides an open-source alternative for querying Cardano chain data without running a full node and supports developer and infrastructure operator needs.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states the requested amount does not breach the applicable 350M ADA Net Change Limit for Epoch 613 to Epoch 713 at submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit, oversight, reporting obligations, and milestone-based disbursement controls are described as included through Intersect administration and third-party oversight.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal discloses that TxPipe has received funding through 30 Project Catalyst proposals, with 26 delivered and 4 under development and on schedule, plus 2025 Intersect open-source maintenance funding for Pallas, Dolos, and UTxO RPC being delivered on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says Intersect will administer funds through Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, role-based authorization thresholds, oversight entities, and a public dashboard.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 540,750 ADA to fund 12 months of Dolos maintenance through Intersect-administered treasury smart contracts, presenting Dolos as open-source Cardano infrastructure with claimed adoption metrics, prior delivery history, NCL compliance, and oversight controls.",
+  "output_sha256": "a04529852376aaccb6d2c62dbf4ee5f573997f725edc51427a26af46ec07e198"
+}

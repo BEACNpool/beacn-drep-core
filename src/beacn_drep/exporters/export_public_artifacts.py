@@ -332,6 +332,9 @@ def _load_treasury_capacity() -> dict:
         "drep_support": policy.get("drep_support"),
         "verification_status": policy.get("verification_status"),
         "caveat": policy.get("caveat"),
+        # A later NCL proposal whose voting is still open: disclosed so nobody is surprised
+        # if the ceiling changes when it closes — but never the operative number.
+        "pending_candidate": policy.get("pending_candidate"),
         "portfolio_status": portfolio.get("status"),
     }
 

@@ -1,0 +1,317 @@
+{
+  "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "YES",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.2055,
+  "raw_score": -0.33,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.02,
+    "confidence": 0.66,
+    "rationale": "A small cautionary nudge is justified because several high-materiality adoption and counterfactual-risk claims, including install base, transaction share, and consequences of non-funding, are proposer-asserted rather than independently evidenced in the supplied document. The proposal does include useful treasury-stewardship commitments such as excess Ada return, public wallet monitoring, repayment mechanics, and fund-use audits, so the adjustment should remain small rather than strongly negative.",
+    "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4",
+  "directional_threshold": 0.06,
+  "confidence": 0.7414,
+  "readiness_score": 0.8,
+  "treasury_dimensions": {
+    "actionable_asks": [],
+    "evidence_status": "independently_verified",
+    "benefit": 0.82,
+    "delivery_confidence": 0.7,
+    "cost_efficiency": 0.45,
+    "downside_risk": 0.25,
+    "composite": 0.2055,
+    "affirmative_waste_evidence": [],
+    "missing": []
+  },
+  "treasury_merit_recommendation": "YES",
+  "treasury_merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 2350000",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to fund a 12-month delivery period from August 2026 through July 2027.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small cautionary nudge is justified because several high-materiality adoption and counterfactual-risk claims, including install base, transaction share, and consequences of non-funding, are proposer-asserted rather than independently evidenced in the supplied document. The proposal does include useful treasury-stewardship commitments such as excess Ada return, public wallet monitoring, repayment mechanics, and fund-use audits, so the adjustment should remain small rather than strongly negative.",
+    "Directional YES cleared ecosystem benefit, delivery, cost-efficiency, downside-protection, and portfolio-capacity floors.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "No milestone-gated disbursement documented.",
+    "Claims and evidence missing: Independent evidence for: Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.",
+    "Claims and evidence missing: Independent evidence for: The proposal says 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: dependency map"
+  ],
+  "missing_evidence": [],
+  "input_hash": "782a2a607ec840db5d0ae1815175a42d06e8c5a89e5ba8ab6cdca879f64cd7c3",
+  "snapshot_bundle_hash": "643bdbe24e749e6ff1b58e07da10d8c6d8d99da8dc03f57759e5f490dd5e86a2",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "d68b33ee7989803aaecd7edc03d77c134a98a7f1",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-15T16:49:18.786766Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.7249,
+    "NO": 0.0496,
+    "ABSTAIN": 0.2255
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 637",
+          "Expires after epoch: 644",
+          "Treasury request: 2.35M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Treasury withdrawal for 12 months of Eternl operations, maintenance, and improvements, including frontend and backend maintenance and development, backend infrastructure, user support, day-to-day operations, audits, and oversight metrics.",
+          "Recipient: Tastenkunst GmbH / Eternl",
+          "Stated amount: 2350000",
+          "Deliverables: Convert up to $420,000 worth of Ada into stablecoins and deposit it into a public company wallet for monitoring, Return any Ada above $420,000 to the treasury, Hold any Ada before conversion or return in an auditable account, not delegated to an SPO, and delegated to the predefined abstain voting option, Fund 6.0 FTE distributed across 10 contributors at $70,000 per FTE, Maintain and develop Eternl across web, browser extension, Android, and iOS, Operate backend infrastructure including Cardano nodes, DBSync indexers, application servers, metadata aggregation, and monitoring, Provide user support through Discord, Telegram, public channels, ecosystem project channels, wiki updates, and educational videos, Run independent audits of treasury fund use in February 2027 and August 2027, Publish oversight metrics including balances, conversion rates, transaction hashes, and treasury repayment hashes, Assess treasury repayment every December and June based on remaining treasury stablecoins and paid plan income",
+          "Deadline/expiry: 12-month delivery period from August 2026 to July 2027",
+          "Claim (economic, supported_in_proposal, high materiality): Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to fund a 12-month delivery period from August 2026 through July 2027.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal states Eternl costs about $420,000 per year and that the requested funds cover 6.0 FTE at $70,000 per FTE across 10 contributors.",
+          "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
+          "Claim (economic, supported_in_proposal, high materiality): Eternl plans to introduce Personal and Company Pro plans priced at $96/year and $360/year, and says about 5,500 paying users would fully cover the annual $420,000 cost.",
+          "Claim (adoption, proposer_asserted, high materiality): Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.",
+          "Claim (adoption, proposer_asserted, high materiality): The proposal says 10-18% of Cardano mainnet transactions are conducted via Eternl."
+        ],
+        "missing": [
+          "Independent evidence for: Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.",
+          "Independent evidence for: The proposal says 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+          "Independent evidence for: Eternl says that without treasury funding and sufficient paid license sales beyond August, it may let developers go, scale down to essential maintenance, shift focus outside Cardano, and potentially remove the free option."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 2350000",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: not confirmed",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: confirmed",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.72"
+        ],
+        "missing": [
+          "milestone-gated disbursement",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: medium",
+          "Technical risk: unknown",
+          "Treasury exposure risk: medium",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 2"
+        ],
+        "missing": [
+          "independent assurance",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to fund a 12-month delivery period from August 2026 through July 2027.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "actionable_asks": [],
+      "evidence_status": "independently_verified",
+      "benefit": 0.82,
+      "delivery_confidence": 0.7,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.25,
+      "composite": 0.2055,
+      "affirmative_waste_evidence": [],
+      "missing": []
+    },
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN records YES on Eternl: Path to Sustainability - v2. The deterministic gates found enough evidence and no decisive blocker.\n\nThe action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal for 12 months of Eternl operations, maintenance, and improvements, including frontend and backend maintenance and development, backend infrastructure, user support, day-to-day operations, audits, and oversight metrics. It asks the treasury for 2350000 ADA. The strongest grounded claim is: Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to fund a 12-month delivery period from August 2026 through July 2027.\n\nA residual watch item: this claim remains proposer-asserted rather than independently shown: Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmQ6cDaLLeBMnf1zio7Xn8jV8uTUk68tPirx5uKH6HLr3L",
+        "file_sha256": "2f053756779e2cf3bf4665d04d7294c6862393d40dbcf288bce84a41084b2090",
+        "file_path": "data/input/governance/anchors/gov_action1lwudrf9g66mzlrxhq62y5pvzhzzv9wgps7u04kne202udge7kknsqlgmhse-20260616T113030Z.bin",
+        "content_chars": 20016
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "e7604708b4f88a90266a94e6e4bb6410da4f0a3549f9a314d4816c46e79a5a04"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "621132d9d15ab5706419e3908988e64d5263e9b7ba4c4551f37b50e70f609a90"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "a50121cff05af27e4f1a9f892f92b9d4a89f81d4133520c072ad44d125c7e2a3",
+      "output_sha256": "af079cfe7a09e8a894aee4fa4590cbf99e75255ee0413d0bd20b70e1527fb108"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d656287216e1fb45d0978635.md",
+  "rationale_anchor_hash": "d656287216e1fb45d09786351f9e96f5024cb582866eaa8fe89ce5436ec42673"
+}

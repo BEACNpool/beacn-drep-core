@@ -1,0 +1,337 @@
+{
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "BALANCED_TREASURY_EVIDENCE_REQUIRED",
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.027,
+  "raw_score": -0.08,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.72,
+    "rationale": "A small positive nudge is justified because the proposal concerns established open-source developer infrastructure, provides concrete maintenance scope and budget structure, identifies on-chain fund-management controls, and points to verifiable governance and repository evidence; the nudge remains small because several delivery-history and adoption claims are still proposer-asserted within the document.",
+    "doctrine_basis": "Evidence quality and reproducibility; public-benefit ecosystem growth; treasury stewardship and downside protection",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4",
+  "directional_threshold": 0.06,
+  "confidence": 0.7268,
+  "readiness_score": 0.65,
+  "treasury_dimensions": {
+    "actionable_asks": [
+      "Publish a line-item budget: what is being bought, at what unit cost.",
+      "State the cost against the benefit: what does this buy, per ada spent.",
+      "Describe the funding path beyond this grant, or say plainly that there isn't one.",
+      "Disclose the rate basis \u2014 headcount, FTE fraction, or day rate \u2014 so the price can be checked against the market.",
+      "Tie payment to defined deliverables, not to elapsed time or headcount.",
+      "State your AI-cost assumption: this work is cheaper to produce than it was, and the price should show it."
+    ],
+    "evidence_status": "independently_verified",
+    "benefit": 0.73,
+    "delivery_confidence": 0.55,
+    "cost_efficiency": 0.0,
+    "downside_risk": 0.35,
+    "composite": 0.027,
+    "affirmative_waste_evidence": [],
+    "missing": [
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ]
+  },
+  "treasury_merit_recommendation": "NEEDS_MORE_INFO",
+  "treasury_merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 540750",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: A small positive nudge is justified because the proposal concerns established open-source developer infrastructure, provides concrete maintenance scope and budget structure, identifies on-chain fund-management controls, and points to verifiable governance and repository evidence; the nudge remains small because several delivery-history and adoption claims are still proposer-asserted within the document.",
+    "Treasury evidence is not sufficient for YES and does not affirmatively prove waste; requesting the missing evidence instead of defaulting to NO.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals).",
+    "Claims and evidence missing: Independent evidence for: Oura has previously been funded twice through Project Catalyst, in Fund 9 and Fund 13, for feature development.",
+    "Claims and evidence missing: Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: line-item budget",
+    "Treasury analysis missing: milestone-gated disbursement",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [
+    "cost comparables, budget proportionality, or sustainability evidence"
+  ],
+  "input_hash": "bcff61def8c7c4d126c959da689f4c13cf34e2a7a998ba69bca60b904b6550ba",
+  "snapshot_bundle_hash": "a31b01bbae16e42dab29648adc35276e5a8b70682ab3c8ef33421a7342a9ff53",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "d68b33ee7989803aaecd7edc03d77c134a98a7f1",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-07-15T16:49:18.786766Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2762,
+    "NO": 0.2222,
+    "ABSTAIN": 0.5017
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: active",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 540.8k ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Fund Oura by TxPipe maintenance and enhancement for 12 months, including part-time maintainer work, community support, documentation, protocol compatibility, performance improvements, bug fixing, and AI-friendly integration resources.",
+          "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of TxPipe as vendor",
+          "Stated amount: 540750",
+          "Deliverables: WP1 - Oura Maintenance and Enhancement, Essential codebase maintenance including dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, and documentation, Community support including issue triage, review of external contributions, ecosystem-feedback enhancements, and public developer communication, AI-friendly documentation and integration resources, Milestone-based disbursement controls through Intersect treasury management smart contracts",
+          "Deadline/expiry: 12 months",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.",
+          "Claim (economic, supported_in_proposal, high materiality): The maintenance funding is described as 420,000 ADA plus a 105,000 ADA contingency reserve to fund a part-time Oura maintainer over 12 months at an annual rate of $105,000 USD.",
+          "Claim (technical, supported_in_proposal, high materiality): Oura is a Rust-native pipeline tool that connects to Cardano nodes, monitors blockchain events, and routes matching patterns to pluggable outputs for processing.",
+          "Claim (technical, supported_in_proposal, medium materiality): Oura supports multiple data sources including N2C, N2N, S3, Mithril, and UTxO RPC, and multiple sinks including Kafka, Elasticsearch, AWS services, RabbitMQ, Redis, SQL databases, and webhooks.",
+          "Claim (adoption, independently_verifiable, medium materiality): The proposal states that Oura has 654 commits, 288 stars, 79 forks, and 58 contributors and is the most starred project in the TxPipe portfolio.",
+          "Claim (economic, proposer_asserted, medium materiality): Oura has previously been funded twice through Project Catalyst, in Fund 9 and Fund 13, for feature development."
+        ],
+        "missing": [
+          "Independent evidence for: Oura has previously been funded twice through Project Catalyst, in Fund 9 and Fund 13, for feature development.",
+          "Independent evidence for: TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 successfully delivered and 4 under development and on schedule."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 540750",
+          "Budget granularity: not confirmed",
+          "Milestone payment gates: unknown",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.43"
+        ],
+        "missing": [
+          "line-item budget",
+          "milestone-gated disbursement",
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 540,750 ADA total, consisting of 525,000 ADA for Oura maintenance and enhancement and a 15,750 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Oura has previously been funded twice through Project Catalyst, in Fund 9 and Fund 13, for feature development.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "actionable_asks": [
+        "Publish a line-item budget: what is being bought, at what unit cost.",
+        "State the cost against the benefit: what does this buy, per ada spent.",
+        "Describe the funding path beyond this grant, or say plainly that there isn't one.",
+        "Disclose the rate basis \u2014 headcount, FTE fraction, or day rate \u2014 so the price can be checked against the market.",
+        "Tie payment to defined deliverables, not to elapsed time or headcount.",
+        "State your AI-cost assumption: this work is cheaper to produce than it was, and the price should show it."
+      ],
+      "evidence_status": "independently_verified",
+      "benefit": 0.73,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.35,
+      "composite": 0.027,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "cost comparables, budget proportionality, or sustainability evidence"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a Treasury withdrawal and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action requests 540,750 ada for 12 months of Oura by TxPipe maintenance and enhancement, including part-time maintainer work, community support, documentation, protocol compatibility, performance work, bug fixes, and AI-friendly integration resources. The proposal says 525,000 ada would fund the Oura work and 15,750 ada would cover Intersect budget administration, with funds administered through treasury management smart contracts and milestone-based controls.\n\nSeveral core claims were supported well enough for review: the requested amount and budget structure, Oura\u2019s role as a Rust-native Cardano event pipeline, the pinned and replayable proposal anchor, and the fact that the proposal passed the required Intersect Budget Process Hydra Voting threshold. However, some material claims remained unsupported by independent evidence, including prior Project Catalyst funding for Oura and TxPipe\u2019s broader Catalyst delivery history. The review also found the evidence base thin in places, with missing or incomplete support around line-item budgeting, milestone-gated disbursement, independent assurance, execution risk, and rollback or remedy paths.\n\nThis is a conservative, evidence-based hold, not a rejection of Oura or the maintenance work. A directional vote would be unblocked by public, replayable evidence verifying the applicable Net Change Limit from chain data, plus stronger independent evidence for the unsupported funding and delivery-history claims and clearer treasury-risk controls.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#7",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreicf3r76m64xzy4jqhfbbhmzwpjz2qcw7q27hzjm3r7eo24lbxr7li",
+        "file_sha256": "45dc7fe67b97ce38981ca109d99b3d39d4056fc35f3e52cdc7e476b8b0de3f5a",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8sw64d667-20260624T113057Z.bin",
+        "content_chars": 14088
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "0b1a8a816782f55ba08aae50b726c28b36722fd64527ee8f5e2f90c533cfa113"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "f5817b45cbfe513ceb0ac724df971e3c73e9c3fc077fdd1c010ee8a92935778e"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "63d4dad4ecd4b0a2260da60e3e81fd4527037300b6dc02873aabd080861f2567"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6b806e1a3d7cb53f5188162a.md",
+  "rationale_anchor_hash": "6b806e1a3d7cb53f5188162a912895389be5f81b0bc39c5f4c4ad105f1ec227e"
+}

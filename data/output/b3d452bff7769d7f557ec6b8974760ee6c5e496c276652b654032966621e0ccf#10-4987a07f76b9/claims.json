@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "540750",
+    "deadline": "12 months after closure of the existing contract; exact dates not stated in document",
+    "deliverables": [
+      "12 months of part-time maintainer work for UTxO RPC",
+      "Maintenance of the protobuf specification including protocol compatibility, versioning, and documentation",
+      "Maintenance of official SDKs including dependency updates, performance improvements, and bug fixing",
+      "Community support including issue triage, review of external contributions, ecosystem-feedback-driven enhancements, and public communication",
+      "AI-friendly documentation and integration resources for AI-driven development workflows"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect on behalf of the vendor",
+    "what": "Treasury withdrawal to fund UTxO RPC by TxPipe: Maintaining Cardano's Integration Standard, Year 2"
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 420,000 ADA plus a 105,000 ADA contingency reserve and a 15,750 ADA Intersect administration fee, totaling 540,750 ADA.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "UTxO RPC is an open interface specification for UTxO-based blockchains using Protocol Buffers and SDKs in Rust, Go, Node.js, .NET, Haskell, and Python.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "UTxO RPC has been adopted by Amaru, Dingo, and the Haskell Cardano node as a query interface or ecosystem standard.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The project maintains more than 10 repositories covering the core specification, SDKs, documentation, and provider integrations, and is open source under Apache 2.0.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The funded work would cover specification maintenance, SDK maintenance, community support, and AI-friendly documentation and integration resources.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved framework.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The requested withdrawal does not, at submission, individually or in aggregate breach the 350M ADA Net Change Limit covering Epoch 613 to Epoch 713.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect states that independent oversight and milestone-based disbursement controls will be provided through Intersect and technically capable third parties using the Sundae Labs treasury management smart contract framework.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document identifies specific TRSC and PSSC addresses, role thresholds, oversight committee entities, external references, and a dashboard for community audit and on-chain verification.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document describes a 540,750 ADA treasury withdrawal administered by Intersect to fund 12 months of UTxO RPC maintenance by TxPipe, with stated deliverables, budget composition, governance-process references, NCL compliance claims, prior funding disclosure, smart-contract custody details, and oversight mechanisms.",
+  "output_sha256": "e508c4a73b0bf0f8bc031077716b67bf46379deed2e91ab0e86ba3ae97a1ff87"
+}

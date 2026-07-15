@@ -1,0 +1,88 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "9,832,979",
+    "deadline": "18-month funding period, with named milestones from Q3 2026 through 2027",
+    "deliverables": [
+      "Not-for-profit entity legally established or host-organization agreement signed under the preliminary board in Q3 2026.",
+      "Technical transition architecture and migration plan published for community review in Q3 2026.",
+      "Public usage dashboard live in Q3 2026.",
+      "Board election held via on-chain voting under public rules in Q4 2026.",
+      "Newly elected board formally assumes its mandate from the preliminary board in Q4 2026.",
+      "All public API traffic for mainnet, preview, and preprod served by the new stack in Q1 2027.",
+      "Blockfrost source code, trademarks, domain names, and associated assets legally transferred to the governing entity in Q1 2027.",
+      "Public API operated at minimum 99% monthly uptime SLA during 2027 operational milestones.",
+      "Quarterly reports published covering technical metrics and budget summary."
+    ],
+    "recipient": "Input Output Global / Blockfrost transition under Intersect-administered treasury governance, with eventual governing not-for-profit entity; exact withdrawal recipient address not stated in document.",
+    "what": "Transition Blockfrost into a free, community-governed public good under an independent not-for-profit and fund 18 months of transition and operations."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Blockfrost is presented as a reliable hosted REST interface that lets Cardano developers read from and interact with the chain without running and maintaining their own node.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "other",
+      "claim": "The proposal says Blockfrost was founded in 2020 by Five Binaries and joined IOG in 2024 with the goal of decentralizing it.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document cites Cardano Foundation developer ecosystem survey links showing Blockfrost hosted-platform usage rising from 39.3% in 2022 to 71.5% in 2025.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer states that last month Blockfrost served 781k unique visitors, more than 1.84 billion API requests, almost 700 requests per second, and over 7 TB of API data.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer states that in most Cardano epochs more than 50% of all transactions are submitted through Blockfrost.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says more than 100 Icebreakers have joined the decentralized Blockfrost operator effort.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal asserts that 90% of Cardano traffic served through the Blockfrost API comes from the free tier and that the commercial model has struggled to finance the public-good operation.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal commits to transferring Blockfrost source code, trademarks, domain names, and associated assets to the governing not-for-profit entity as part of the transition.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests 9,832,979 ADA, equivalent to $1,868,266 at $0.19 per ADA, allocated to staffing, operations and infrastructure, and legal and accounting for 18 months.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that unspent post-transition infrastructure budget will be returned to the treasury and that quarterly reports will include technical data and a budget summary.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests 9,832,979 ADA to move Blockfrost into community-governed not-for-profit stewardship, operate the free public API for 18 months, transfer IP, run governance elections, publish usage and budget reporting, and maintain service availability.",
+  "output_sha256": "4c86e1fa9e064cc9fed473346a194b1009bf964c9c5a8ccdaa8bc8e1abb06bbd"
+}

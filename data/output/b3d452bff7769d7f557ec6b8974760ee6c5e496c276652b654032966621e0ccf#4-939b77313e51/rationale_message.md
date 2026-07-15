@@ -1,0 +1,13 @@
+# Withdraw 25,400,000 ada for Intersect: Governance coordination and technical ...
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+
+The action asks to withdraw 25,400,000 ada for Intersect’s June 2026 to June 2027 work: governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, ecosystem coordination, and management of critical processes. The budget is split into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for management of critical processes, with milestone drawdowns, reporting, disclosures, and external assurance.
+
+Several parts of the proposal were well-supported in the review. The anchor document was available, pinned, and replayable. The proposal gave concrete budget splits, identified the recipient stake address, referenced Intersect Budget Process voting documentation and audited results, disclosed prior treasury funding of 22,385,000 ada in the past 24 months, and described the use of a Sundae Labs treasury management smart contract framework with oversight and audit features. But some material claims remained unsupported by independent evidence in the review, including the claim that the overall ask fell from $7.875M to $6.35M while preserving critical functions, and the claim that Intersect coordinated two network upgrades, is preparing a third, and led coordination during the November 2025 chain partition incident.
+
+This is a conservative, evidence-based hold, not a rejection of the work described. The gates that matter most here are stricter because treasury withdrawals spend shared ada and set precedent. A directional vote would be unblocked by independently verified public chain evidence for the applicable Net Change Limit, plus stronger evidence on the missing treasury and risk items: sustainability path, cost-benefit clarity, independent assurance, dependency mapping, and the currently unsupported operational-impact claims.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

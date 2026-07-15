@@ -1,0 +1,13 @@
+# Withdraw 540,750 ada for by TxPipe Dolos: Maintaining Cardano's Lightweight D...
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Dolos or the requested work.
+
+The proposal asks for 540,750 ada for Year 2 maintenance of Dolos by TxPipe: 420,000 ada for the work, 105,000 ada as contingency, and 15,750 ada for Intersect administration. The requested scope includes 12 months of part-time maintenance, dependency updates, protocol compatibility, performance work, bug fixes, documentation, issue triage, contribution review, community communication, and AI-friendly documentation and integration resources. The proposal also says funds would be administered through Intersect with milestone controls, smart-contract treasury management, reporting obligations, and public auditability.
+
+Several parts were well supported or independently checkable. The funding breakdown was clear. The proposal anchor was pinned and replayable. The proposal provided references for Intersect budget-process support, repository activity, NCL status at submission, treasury administration, voting records, audited results, contract addresses, and dashboard-based oversight. But some material technical and delivery claims remained only proposer-asserted or thinly evidenced, including independent evidence that Dolos is a lightweight Rust Cardano data node, that it provides the stated interfaces and network functions, and that execution risk, cost-benefit clarity, sustainability path, independent assurance, and rollback or remedy paths are adequately covered.
+
+Because shared treasury ada is being requested, BEACN applies a higher evidence bar. The specific evidence that would unblock a directional vote is independently pinned public-chain verification of the applicable Net Change Limit, plus stronger replayable evidence for the material Dolos technical claims and the missing treasury and risk-review items. Until then, NEEDS_MORE_INFO avoids overstating certainty while leaving room for a YES or NO once the evidence is complete.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

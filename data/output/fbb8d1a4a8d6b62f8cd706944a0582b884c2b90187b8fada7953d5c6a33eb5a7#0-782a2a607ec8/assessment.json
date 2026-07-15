@@ -1,0 +1,109 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: 2.35M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal for 12 months of Eternl operations, maintenance, and improvements, including frontend and backend maintenance and development, backend infrastructure, user support, day-to-day operations, audits, and oversight metrics.",
+        "Recipient: Tastenkunst GmbH / Eternl",
+        "Stated amount: 2350000",
+        "Deliverables: Convert up to $420,000 worth of Ada into stablecoins and deposit it into a public company wallet for monitoring, Return any Ada above $420,000 to the treasury, Hold any Ada before conversion or return in an auditable account, not delegated to an SPO, and delegated to the predefined abstain voting option, Fund 6.0 FTE distributed across 10 contributors at $70,000 per FTE, Maintain and develop Eternl across web, browser extension, Android, and iOS, Operate backend infrastructure including Cardano nodes, DBSync indexers, application servers, metadata aggregation, and monitoring, Provide user support through Discord, Telegram, public channels, ecosystem project channels, wiki updates, and educational videos, Run independent audits of treasury fund use in February 2027 and August 2027, Publish oversight metrics including balances, conversion rates, transaction hashes, and treasury repayment hashes, Assess treasury repayment every December and June based on remaining treasury stablecoins and paid plan income",
+        "Deadline/expiry: 12-month delivery period from August 2026 to July 2027",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to fund a 12-month delivery period from August 2026 through July 2027.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal states Eternl costs about $420,000 per year and that the requested funds cover 6.0 FTE at $70,000 per FTE across 10 contributors.",
+        "Claim (economic, supported_in_proposal, high materiality): The budget is allocated as \u20b31,292,500 frontend, \u20b3587,500 backend, \u20b3117,500 support, \u20b3305,500 admin, and \u20b347,000 audits.",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl plans to introduce Personal and Company Pro plans priced at $96/year and $360/year, and says about 5,500 paying users would fully cover the annual $420,000 cost.",
+        "Claim (adoption, proposer_asserted, high materiality): Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal says 10-18% of Cardano mainnet transactions are conducted via Eternl."
+      ],
+      "missing": [
+        "Independent evidence for: Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.",
+        "Independent evidence for: The proposal says 10-18% of Cardano mainnet transactions are conducted via Eternl.",
+        "Independent evidence for: Eternl says that without treasury funding and sufficient paid license sales beyond August, it may let developers go, scale down to essential maintenance, shift focus outside Cardano, and potentially remove the free option."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 2350000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.72"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: medium",
+        "Technical risk: unknown",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Eternl requests \u20b32,350,000, valued at about $0.1787 per Ada, to fund a 12-month delivery period from August 2026 through July 2027.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Eternl reports an install base of about 100,000 browser-extension users and about 30,000 Android and iOS users combined.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

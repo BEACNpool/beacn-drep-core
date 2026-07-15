@@ -2,9 +2,10 @@ import csv
 import hashlib
 import json
 import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from .config import SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_SECONDS, LLM_SCORE_ADJUST_CAP
+from .config import CORE_REPO, SOUL_REPO, RESOURCES_REPO, OUTPUT_DIR, AUDIT_LOG, MAX_STALE_SECONDS, LLM_SCORE_ADJUST_CAP
 from .routing import select_resources
 from .adapters.git_adapter import commit_hash
 from .replay import sha256_file, canonical_json_hash, csv_row_by_action, write_manifest, read_manifest
@@ -358,9 +359,25 @@ def _check_missing_evidence(action: dict) -> list[str]:
         missing.append("anchor_hash is empty — proposal integrity cannot be verified")
 
     if "treasury" in action_type:
-        amt = action.get("treasury_amount_lovelace", "")
-        if not amt or amt == "0" or amt == "":
-            missing.append("treasury_amount_lovelace is missing for a treasury withdrawal")
+        raw_amt = action.get("treasury_amount_lovelace", "")
+        try:
+            amt = float(str(raw_amt).strip() or 0)
+        except (TypeError, ValueError):
+            amt = 0.0
+        # amount <= 0 is treated exactly like a missing amount: it is never a real ask, it is a
+        # broken upstream row. A known 120M-ADA withdrawal once reached scoring reading as 0, so
+        # this fails loudly toward MISSING_BASELINE_EVIDENCE instead of scoring a phantom zero.
+        if amt <= 0:
+            print(
+                f"ALARM: treasury_amount_lovelace={raw_amt!r} (missing/zero/non-positive) for "
+                f"{action.get('action_id')} — run beacn-drep-resources/scripts/"
+                f"backfill_treasury_amounts.py before trusting this row",
+                file=sys.stderr, flush=True,
+            )
+            missing.append(
+                "treasury_amount_lovelace is missing, zero, or non-positive for a treasury "
+                "withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+            )
 
     # proposer_address can be unavailable in current upstream snapshots; treat as non-critical.
     return missing
@@ -1645,6 +1662,7 @@ def run_once(action_id: str | None = None) -> dict:
     soul_text, soul_text_hash = _load_soul()
     soul_commit = commit_hash(SOUL_REPO)
     resources_commit = commit_hash(RESOURCES_REPO)
+    engine_commit = commit_hash(CORE_REPO)
 
     registry = _load_registry()
     resources = select_resources(registry, action_type)
@@ -1867,6 +1885,9 @@ def run_once(action_id: str | None = None) -> dict:
         "soul_commit": soul_commit,
         "soul_text_hash": soul_text_hash,
         "resource_registry_commit": resources_commit,
+        # Provenance only — which engine produced this run. Deliberately NOT part of the
+        # snapshot_bundle_hash preimage: old manifests must keep verifying under replay.
+        "engine_commit": engine_commit,
         "resources_used": resources_used,
         "resource_snapshots": resource_snapshots,
         "snapshot_bundle_hash": snapshot_bundle_hash,
@@ -1913,12 +1934,22 @@ def run_once(action_id: str | None = None) -> dict:
             assessment_section.append(f"- conclusion: {section['conclusion']}")
         assessment_section.append("")
 
+    # The header must state the TRUE score composition. The old "raw + doctrine-LLM nudge"
+    # parenthetical was arithmetic that never held: the lean is recorded but never added to the
+    # binding score, and for treasury actions the binding score is the dimensions/floors
+    # composite, not raw-plus-anything.
+    lean_txt = f"LLM lean `{score_obj.get('llm_score_adjustment', 0.0):+}` recorded, not added"
+    if _action_family(action_type) == "treasury":
+        score_composition = (f"binding treasury composite; advisory raw signal "
+                             f"`{score_obj.get('raw_score', score_obj['score'])}`; {lean_txt}")
+    else:
+        score_composition = f"base + flags + capped margin; {lean_txt}"
+
     (out_dir / "rationale.md").write_text(
         "\n".join([
             f"# Rationale: {action['action_id']}",
             f"Recommendation: **{score_obj['recommendation']}**",
-            f"Score: `{score_obj['score']}` (raw `{score_obj.get('raw_score', score_obj['score'])}` "
-            f"+ doctrine-LLM nudge `{score_obj.get('llm_score_adjustment', 0.0):+}`) "
+            f"Score: `{score_obj['score']}` ({score_composition}) "
             f"| Confidence: `{score_obj['confidence']}` | Readiness: `{score_obj.get('readiness_score', 0)}`",
             (f"> Reasoning layer ({(score_obj.get('llm_lean') or {}).get('source', 'n/a')}): "
              f"{(score_obj.get('llm_lean') or {}).get('rationale', 'no nudge applied')}"

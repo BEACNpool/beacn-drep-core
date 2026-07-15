@@ -37,9 +37,24 @@ def main() -> int:
             continue
         detail = json.loads(path.read_text())
         detail_vote = verdict((detail.get("decision") or {}).get("vote"))
-        proof_vote = verdict((detail.get("proof_of_vote") or {}).get("vote"))
-        if detail_vote != decision or proof_vote != decision:
-            errors.append(f"{aid}: index={decision}, detail={detail_vote}, proof={proof_vote}")
+        if detail_vote != decision:
+            errors.append(f"{aid}: index={decision}, detail={detail_vote}")
+        proof = detail.get("proof_of_vote") or {}
+        proof_vote = verdict(proof.get("vote"))
+        if proof.get("frozen"):
+            # A frozen proof is vote-time truth: it must match the vote actually CAST
+            # (decision.onchain_vote), never today's recommendation — the two may
+            # legitimately diverge, and forcing agreement here would demand the exact
+            # rewrite of history the frozen snapshot exists to prevent. The re-derived
+            # today-values live in the `current` block and must track the decision.
+            cast_vote = verdict((detail.get("decision") or {}).get("onchain_vote"))
+            if cast_vote and proof_vote != cast_vote:
+                errors.append(f"{aid}: frozen proof={proof_vote} contradicts cast vote {cast_vote}")
+            current_vote = verdict((detail.get("current") or {}).get("vote"))
+            if current_vote != decision:
+                errors.append(f"{aid}: index={decision}, current={current_vote}")
+        elif proof_vote != decision:
+            errors.append(f"{aid}: index={decision}, proof={proof_vote}")
         summary = (detail.get("rationale") or {}).get("summary", "")
         if not summary or not message_matches_recommendation(summary, decision):
             errors.append(f"{aid}: rationale summary contradicts {decision}")

@@ -17,6 +17,7 @@ WEB = Path(__file__).resolve().parents[2] / "beacn-drep-web"
 APP = WEB / "app.assessment.js"
 
 
+@unittest.skipUnless(APP.exists(), "beacn-drep-web is not checked out beside this repo (CI runs core alone)")
 class PublicContractTests(unittest.TestCase):
     def setUp(self):
         self.app = APP.read_text(encoding="utf-8")

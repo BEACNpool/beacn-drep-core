@@ -48,11 +48,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Provide: Missing dossier section: complete proposal summary
 
 ## Proof of vote
-- input_hash: `51ddd34acfd8aea55e0735816a389c9453b2364bc9ed75e227141dc1883460b4`
-- snapshot_bundle_hash: `b97c725b3dfeef006f6320eadaead586c34aafa4f17f75bddbef8b94226d34d3`
+- input_hash: `c8b1ddb021232e398b9129f9b266b9177ac79543e19418c65588fb5cfbda64a9`
+- snapshot_bundle_hash: `eafc38cfd75d5d748b1d92f44a0cba488045077b75d7ad882eb91649ca6b7dcb`
 - soul_commit: `d866057afd0ecaf599eb0202220b1ec8339b9b09`
-- resources_commit: `afd630a34be9d7440e2fac020ac552cde501098f`
-- core_commit: `bbc95f787bad2603657870cfbb7e5106b6fddbdb`
+- resources_commit: `4abcb1c989f8d580e793668e746c72421161481a`
+- core_commit: `610865c5d6a0ca0b0a52b04f16914cdd081ac1ee`
 - score: `0.0`
 - confidence: `0.2`
 

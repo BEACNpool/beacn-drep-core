@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 
 from ..config import CORE_REPO, SOUL_REPO, RESOURCES_REPO
 from ..ids import canonical_action_id
+from ..vote_snapshots import load_snapshots, latest_snapshot
 
 OUT = CORE_REPO / "data" / "output" / "public"
 RUNS = CORE_REPO / "data" / "output"
@@ -234,6 +235,45 @@ def _load_onchain_anchors() -> dict[str, dict]:
     for aid, row in (raw.get("anchors") or {}).items():
         out[canonical_action_id(aid)] = row
     return out
+
+
+def _proof_of_vote_block(frozen: dict | None, current_eval: dict, onchain_anchor: dict | None) -> dict:
+    """The vote-time truth for a cast vote, taken from the frozen submission snapshot.
+
+    Before this existed, proof_of_vote republished the LATEST engine run, so every re-score
+    quietly rewrote the score/confidence/hashes shown as evidence of a vote cast weeks earlier.
+    A frozen snapshot is written once by the live-vote path and never recomputed; `reconstructed`
+    marks the historic entries rebuilt from chain anchors + receipts rather than written live.
+    """
+    # The anchor the CHAIN records for the vote actually cast. Immutable, beyond BEACN's
+    # reach to revise, and therefore the only hash a public verifier should trust. The
+    # rationale it commits to is still served, byte-for-byte, at /r/<hash[:24]>.md.
+    chain_fields = {
+        "onchain_anchor_hash": (onchain_anchor or {}).get("anchor_hash"),
+        "onchain_anchor_url": (onchain_anchor or {}).get("anchor_url"),
+        "onchain_vote": (onchain_anchor or {}).get("vote"),
+    }
+    if not frozen:
+        return {**current_eval, "frozen": False, **chain_fields}
+    anchor_hash = frozen.get("rationale_anchor_hash")
+    return {
+        "frozen": True,
+        "reconstructed": bool(frozen.get("reconstructed")),
+        "vote": frozen.get("vote"),
+        "recommendation": frozen.get("recommendation"),
+        "score": frozen.get("score"),
+        "confidence": frozen.get("confidence"),
+        "transaction_hash": frozen.get("tx_hash"),
+        "submitted_at": frozen.get("submitted_at"),
+        "run_id": frozen.get("run_id"),
+        "input_hash": frozen.get("input_hash"),
+        "snapshot_bundle_hash": frozen.get("snapshot_bundle_hash"),
+        "soul_commit": frozen.get("soul_commit"),
+        "resources_commit": frozen.get("resources_commit"),
+        "rationale_anchor_hash": anchor_hash,
+        "rationale_markdown_path": f"/data/output/public/r/{anchor_hash[:24]}.md" if anchor_hash else None,
+        **chain_fields,
+    }
 
 
 def _load_flags_map() -> dict[str, list[dict]]:
@@ -567,6 +607,7 @@ def main():
     flags_map = _load_flags_map()
     treasury_capacity = _load_treasury_capacity()
     onchain_anchors = _load_onchain_anchors()
+    vote_snapshots = load_snapshots()
 
     soul_commit = _git_commit(SOUL_REPO)
     res_commit = _git_commit(RESOURCES_REPO)
@@ -653,6 +694,24 @@ def main():
         }
         rationale_items.append(rd)
 
+        frozen = latest_snapshot(vote_snapshots, aid)
+        current_eval = {
+            "vote": decision,
+            "score": r["rationale"].get("score"),
+            "confidence": r["rationale"].get("confidence"),
+            "input_hash": r["rationale"].get("input_hash"),
+            "snapshot_bundle_hash": r["rationale"].get("snapshot_bundle_hash"),
+            "soul_commit": soul_commit,
+            "resources_commit": res_commit,
+            "core_commit": core_commit,
+            "rationale_markdown_path": r["md_path"],
+            # The locally-derived anchor for the CURRENT run. This is what a NEXT vote would
+            # commit to. It is NOT proof of anything about a vote already cast, because the
+            # engine rewrites it every time it re-scores on new evidence.
+            "rationale_anchor_url": r["rationale"].get("rationale_anchor_url"),
+            "rationale_anchor_hash": r["rationale"].get("rationale_anchor_hash"),
+        }
+        proof_of_vote = _proof_of_vote_block(frozen, current_eval, onchain_anchor)
         action_detail = {
             "action_id": aid,
             "title": title,
@@ -682,28 +741,16 @@ def main():
                 "transaction_hash": vote_receipt.get("transaction_hash"),
                 "submitted_at": vote_receipt.get("submitted_at"),
             },
-            "proof_of_vote": {
-                "vote": decision,
-                "score": r["rationale"].get("score"),
-                "confidence": r["rationale"].get("confidence"),
-                "input_hash": r["rationale"].get("input_hash"),
-                "snapshot_bundle_hash": r["rationale"].get("snapshot_bundle_hash"),
-                "soul_commit": soul_commit,
-                "resources_commit": res_commit,
-                "core_commit": core_commit,
-                "rationale_markdown_path": r["md_path"],
-                # The locally-derived anchor for the CURRENT run. This is what a NEXT vote would
-                # commit to. It is NOT proof of anything about a vote already cast, because the
-                # engine rewrites it every time it re-scores on new evidence.
-                "rationale_anchor_url": r["rationale"].get("rationale_anchor_url"),
-                "rationale_anchor_hash": r["rationale"].get("rationale_anchor_hash"),
-                # The anchor the CHAIN records for the vote actually cast. Immutable, beyond BEACN's
-                # reach to revise, and therefore the only hash a public verifier should trust. The
-                # rationale it commits to is still served, byte-for-byte, at /r/<hash[:24]>.md.
-                "onchain_anchor_hash": (onchain_anchor or {}).get("anchor_hash"),
-                "onchain_anchor_url": (onchain_anchor or {}).get("anchor_url"),
-                "onchain_vote": (onchain_anchor or {}).get("vote"),
-            },
+            # For a CAST vote this is the frozen vote-time snapshot (vote_time_snapshots.json,
+            # written at submission and append-only) — it never moves when the engine re-scores.
+            # For an uncast action there is no vote-time truth to freeze, so it falls back to the
+            # current derivation. `frozen` says which one a reader is looking at; the re-derived
+            # today-values always live in the separate `current` block below.
+            "proof_of_vote": proof_of_vote,
+            # The engine's CURRENT derivation: what a NEXT vote would commit to. It is NOT proof
+            # of anything about a vote already cast, because the engine rewrites it every time it
+            # re-scores on new evidence.
+            "current": current_eval,
             "rationale": {
                 "summary": human_summary,
                 "summary_raw": (r["rationale"].get("inferences") or [""])[0],
@@ -794,14 +841,14 @@ def main():
             "## Top 3 fixes to improve next submission",
             *[f"- {x}" for x in top_fixes],
             "",
-            "## Proof of vote",
-            f"- input_hash: `{r['rationale'].get('input_hash', '')}`",
-            f"- snapshot_bundle_hash: `{r['rationale'].get('snapshot_bundle_hash', '')}`",
-            f"- soul_commit: `{soul_commit}`",
-            f"- resources_commit: `{res_commit}`",
-            f"- core_commit: `{core_commit}`",
-            f"- score: `{r['rationale'].get('score', '')}`",
-            f"- confidence: `{r['rationale'].get('confidence', '')}`",
+            "## Proof of vote" + (" (frozen at submission)" if proof_of_vote.get("frozen") else ""),
+            f"- input_hash: `{proof_of_vote.get('input_hash') or ''}`",
+            f"- snapshot_bundle_hash: `{proof_of_vote.get('snapshot_bundle_hash') or ''}`",
+            f"- soul_commit: `{proof_of_vote.get('soul_commit') or ''}`",
+            f"- resources_commit: `{proof_of_vote.get('resources_commit') or ''}`",
+            f"- core_commit: `{proof_of_vote.get('core_commit') or ''}`",
+            f"- score: `{proof_of_vote.get('score') if proof_of_vote.get('score') is not None else ''}`",
+            f"- confidence: `{proof_of_vote.get('confidence') if proof_of_vote.get('confidence') is not None else ''}`",
             "",
         ])
         (OUT / "actions" / f"{aid}.md").write_text(human_md + "\n", encoding="utf-8")
@@ -846,15 +893,64 @@ def main():
         except Exception:
             flow = {}
 
+    flow_bases = flow.get("basis") or {}
+
+    # Kept for compatibility only. Its field names are misleading: `inflows_6m` was only ever
+    # the FEE-DERIVED slice of treasury inflow (20% of chain fees), while `outflow_inflow_ratio`
+    # is measured against TOTAL inflow — two different bases in one block, unlabeled. Renaming
+    # the fields would break existing consumers, so the bases are labeled in place and the whole
+    # artifact points at its labeled successor.
     treasury_summary = {
         "generated_at": now,
+        "deprecated": "superseded by budget_state.json, which labels every number's basis; "
+                      "note that treasury.inflows_6m here is FEE-DERIVED inflow only",
         "rolling_6m_fees": [flow.get("chain_fees_6m_lovelace", 0)] if flow else [],
         "treasury": {
             "inflows_6m": flow.get("treasury_fee_inflow_6m_lovelace", 0),
+            "inflows_6m_basis": "fee_derived: 20% of chain fees (organic-revenue context only), "
+                                "NOT total treasury inflow",
             "outflows_6m": flow.get("treasury_withdrawals_6m_lovelace", 0),
+            "outflows_6m_basis": flow_bases.get("outflow", ""),
             "outflow_inflow_ratio": flow.get("outflow_inflow_ratio"),
+            "outflow_inflow_ratio_basis": "outflow vs TOTAL treasury inflow — a different basis "
+                                          "than inflows_6m above",
             "window_days": flow.get("window_days", 180),
             "treasury_tax_assumed": flow.get("treasury_tax_assumed", 0.20),
+        },
+    }
+
+    # The honest replacement: every figure carries its basis, and both spend ratios are
+    # published side by side so neither the flattering nor the alarming one can be quoted
+    # as if it were the only measure.
+    inflow_total = _to_int(flow.get("treasury_inflow_total_6m_lovelace"))
+    inflow_fee = _to_int(flow.get("treasury_fee_inflow_6m_lovelace"))
+    outflow_total = _to_int(flow.get("treasury_withdrawals_6m_lovelace"))
+    try:
+        ncl_block = json.loads(POLICY_STATE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        ncl_block = {}
+    budget_state = {
+        "schema_version": 1,
+        "generated_at": now,
+        "ncl": ncl_block,
+        "inflow_36ep": {
+            "total": inflow_total,
+            "fee_derived": inflow_fee,
+            "reserves_derived": max(0, inflow_total - inflow_fee),
+            "bases": {
+                "total": flow_bases.get("inflow", ""),
+                "fee_derived": flow_bases.get("fee_inflow", ""),
+                "reserves_derived": "residual: total inflow minus fee-derived inflow "
+                                    "(monetary expansion + donations)",
+            },
+        },
+        "outflow_36ep": {
+            "total": outflow_total,
+            "basis": flow_bases.get("outflow", ""),
+        },
+        "ratios": {
+            "spend_vs_total_inflow": round(outflow_total / inflow_total, 6) if inflow_total else None,
+            "spend_vs_fee_inflow": round(outflow_total / inflow_fee, 6) if inflow_fee else None,
         },
     }
 
@@ -928,6 +1024,7 @@ def main():
     (OUT / "actions.json").write_text(json.dumps({"generated_at": now, "items": items}, indent=2) + "\n")
     (OUT / "rationales.json").write_text(json.dumps({"generated_at": now, "items": rationale_items}, indent=2) + "\n")
     (OUT / "treasury_summary.json").write_text(json.dumps(treasury_summary, indent=2) + "\n")
+    (OUT / "budget_state.json").write_text(json.dumps(budget_state, indent=2) + "\n")
     (OUT / "drep_summary.json").write_text(json.dumps(drep_summary, indent=2) + "\n")
     (OUT / "audit_status.json").write_text(json.dumps(audit_status, indent=2) + "\n")
 

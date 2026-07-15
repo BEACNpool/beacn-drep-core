@@ -32,6 +32,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+
+from beacn_drep.ids import canonical_action_id  # noqa: E402
+
 RUNS = ROOT / "data" / "output"
 OUT = ROOT / "data" / "output" / "public" / "statements.json"
 RESOURCES = Path(os.environ.get("BEACN_RESOURCES_REPO", Path.home() / ".openclaw/workspace/beacn-drep-resources"))
@@ -55,17 +59,29 @@ SYSTEM = (
 
 
 def load_titles() -> dict[str, str]:
+    """Titles under BOTH spellings, so a canonical key finds a row filed under either."""
     out: dict[str, str] = {}
     if ACTIONS_CSV.exists():
         with ACTIONS_CSV.open(newline="", encoding="utf-8") as f:
             for r in csv.DictReader(f):
                 aid = r.get("action_id", "")
-                if aid:
-                    out[aid] = r.get("metadata_title") or ""
+                if not aid:
+                    continue
+                title = r.get("metadata_title") or ""
+                out.setdefault(aid, title)
+                key = canonical_action_id(aid)
+                if title or key not in out:
+                    out[key] = title
     return out
 
 
 def latest_rationales() -> dict[str, dict]:
+    """Latest decision per action, keyed by CANONICAL id (see ids.py).
+
+    Keying by the raw action_id published the same statement twice — once per id
+    spelling — as duplicate top-level keys in statements.json. One action, one key;
+    the source spelling survives inside the entry as `alias_action_id`.
+    """
     by: dict[str, tuple[int, dict]] = {}
     for d in RUNS.iterdir():
         if not d.is_dir() or d.name == "public":
@@ -80,10 +96,36 @@ def latest_rationales() -> dict[str, dict]:
         aid = j.get("action_id")
         if not aid:
             continue
+        key = canonical_action_id(aid)
         m = p.stat().st_mtime_ns
-        if aid not in by or m > by[aid][0]:
-            by[aid] = (m, j)
+        if key not in by or m > by[key][0]:
+            by[key] = (m, j)
     return {aid: j for aid, (m, j) in by.items()}
+
+
+def canonicalize_store(store: dict) -> dict:
+    """Fold an existing statements store onto canonical keys.
+
+    Where both spellings of one action were published, the newer statement wins and the
+    losing spelling is preserved as `alias_action_id` inside the entry — an alias FIELD,
+    never a duplicate top-level key.
+    """
+    out: dict[str, dict] = {}
+    for aid, entry in sorted(store.items()):
+        key = canonical_action_id(aid)
+        if aid != key:
+            entry.setdefault("alias_action_id", aid)
+        prev = out.get(key)
+        if prev is None:
+            out[key] = entry
+            continue
+        keep, drop = ((entry, prev)
+                      if (entry.get("generated_at") or "") > (prev.get("generated_at") or "")
+                      else (prev, entry))
+        if drop.get("alias_action_id") and not keep.get("alias_action_id"):
+            keep["alias_action_id"] = drop["alias_action_id"]
+        out[key] = keep
+    return out
 
 
 def build_user(aid: str, j: dict, title: str) -> str:
@@ -115,7 +157,7 @@ def main() -> int:
     rats = {a: j for a, j in latest_rationales().items() if not str(a).startswith("ga_")}
     titles = load_titles()
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    store = json.loads(OUT.read_text()) if OUT.exists() else {}
+    store = canonicalize_store(json.loads(OUT.read_text())) if OUT.exists() else {}
     todo = [aid for aid in rats if args.force or aid not in store]
     todo.sort()
     if args.limit:
@@ -128,6 +170,14 @@ def main() -> int:
             print("\n--- sample SYSTEM ---\n" + SYSTEM[:400] + " …")
             print("\n--- sample USER prompt ---\n" + build_user(todo[0], rats[todo[0]], titles.get(todo[0], "")))
         return 0
+
+    # Persist the canonical-key fold even when nothing new is generated — duplicate
+    # id-spelling keys must leave the published artifact, not wait for the next statement.
+    if OUT.exists():
+        folded = json.dumps(store, indent=2, sort_keys=True) + "\n"
+        if folded != OUT.read_text():
+            OUT.write_text(folded)
+            print(f"statements store canonicalized: {len(store)} entries")
 
     if OFFLINE_REVIEW:
         from beacn_drep.exporters.export_public_artifacts import _assessment_extract, _top_fixes
@@ -162,6 +212,8 @@ def main() -> int:
                 "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source_input_hash": j.get("input_hash"),
             }
+            if (j.get("action_id") or aid) != aid:
+                store[aid]["alias_action_id"] = j["action_id"]
             print(f"[{i}/{len(todo)}] {str(j.get('recommendation')):16} {(titles.get(aid) or aid)[:54]}")
         OUT.write_text(json.dumps(store, indent=2, sort_keys=True) + "\n")
         print(f"done · {len(store)} offline statements in {OUT}")
@@ -193,6 +245,8 @@ def main() -> int:
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "source_input_hash": j.get("input_hash"),
         }
+        if (j.get("action_id") or aid) != aid:
+            store[aid]["alias_action_id"] = j["action_id"]
         OUT.write_text(json.dumps(store, indent=2, sort_keys=True) + "\n")  # save each time
         print(f"[{i}/{len(todo)}] {str(j.get('recommendation')):16} {(titles.get(aid) or aid)[:54]}")
         time.sleep(0.15)

@@ -524,6 +524,17 @@ def prepare_vote(run_dir: str | Path, *, live: bool = False) -> dict:
     (run_dir / "vote_receipt.json").write_text(
         json.dumps(report, indent=2) + "\n", encoding="utf-8"
     )
+    # Freeze the vote-time truth (score/confidence/hashes as they were CAST) into the
+    # append-only ledger the public exporter republishes proof_of_vote from. The vote is
+    # already on-chain at this point, so a snapshot failure must be loud but non-fatal —
+    # raising here would make a submitted vote look failed.
+    try:
+        from ..vote_snapshots import record_submission  # lazy; keeps the vote path import-light
+        record_submission(run_dir, report)
+    except Exception as e:  # noqa: BLE001
+        report.setdefault("notes", []).append(
+            f"WARNING: vote_time_snapshots.json append failed ({e}); "
+            f"run scripts/backfill_vote_time_snapshots.py to reconstruct this entry")
     return report
 
 

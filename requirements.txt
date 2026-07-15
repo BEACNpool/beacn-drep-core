@@ -1,0 +1,5 @@
+# Runtime deps actually imported by this repo. The engine, exporters, and the vote path
+# are stdlib-only by design — keep them that way.
+anthropic==0.109.2  # scripts/generate_statements.py (lazy import; offline mode needs nothing)
+Pillow==10.2.0      # scripts/build_social_post_pack.py share-card rendering
+pytest==7.4.4       # test suite — the publish/vote gate runs it

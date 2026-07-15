@@ -182,7 +182,10 @@ def build_pack(action_row: dict) -> dict:
     verdict = verdict_key(decision.get("vote") or proof.get("vote") or status_row.get("recommendation"))
     title = detail.get("title") or action_row.get("metadata_title") or "Governance action"
     reason = first_reason(rationale.get("summary") or "")
-    receipt_url = proof.get("rationale_anchor_url") or f"{PUBLIC_BASE}/#/action/{action_id}"
+    # For a cast vote the chain-recorded anchor is the receipt (frozen proofs carry no
+    # locally-derived anchor url — that one belongs to the CURRENT run, not the vote).
+    receipt_url = (proof.get("onchain_anchor_url") or proof.get("rationale_anchor_url")
+                   or f"{PUBLIC_BASE}/#/action/{action_id}")
     action_url = f"{PUBLIC_BASE}/#/action/{action_id}"
 
     post_text = (

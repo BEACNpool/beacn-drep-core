@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "500,000,000",
+    "deadline": "Period begins at the start of Epoch 613 on February 13, 2026 and ends at the close of Epoch 713 on or about July 3, 2027",
+    "deliverables": [
+      "Set a fixed cap of 500,000,000 ada on total Treasury withdrawals debited during Epochs 613-713",
+      "Supersede any prior Net Change Limit for the same period",
+      "Record DRep agreement if Yes votes exceed 50% of active voting stake",
+      "Clarify that the action has no direct on-chain effect and does not authorize any Treasury Withdrawal"
+    ],
+    "recipient": "not stated in document",
+    "what": "Info action to agree a new Net Change Limit for Cardano Treasury withdrawals for Epochs 613-713"
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The proposal sets a new Net Change Limit of 500,000,000 ada for Cardano Treasury withdrawals during Epochs 613-713.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposed limit caps only total lovelace removed from the Treasury through enacted Treasury Withdrawals and does not count Treasury inflows.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Treasury Withdrawals already debited during the Epoch 613-713 period count toward the proposed 500,000,000 ada cumulative limit.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that this Info action has no direct on-chain effect and does not authorize any Treasury Withdrawal.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says it supersedes any prior Net Change Limit for the same Epoch 613-713 period, including a previously agreed 350,000,000 ada limit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer claims the existing 350,000,000 ada limit has become practically constrained while its window runs into mid-2027.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer claims a 500,000,000 ada limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that Yes votes exceeding 50% of active voting stake are the TREASURY-01a threshold for agreeing a Net Change Limit.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal claims it complies with the enacted Cardano Constitution version 2.4 and Appendix I Guardrails, and references the constitution by IPFS URI.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal asserts that nothing in the Constitution limits DReps to a single Net Change Limit or prevents a newly agreed Net Change Limit from applying to the same period.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document proposes an Info action to raise and define the Cardano Treasury Net Change Limit for Epochs 613-713 at 500,000,000 ada, with detailed accounting rules but limited evidence for the fiscal need and constitutional interpretation beyond an external constitution reference.",
+  "output_sha256": "3f261a030ed085654be9fba645fd82378f95860797da3073f1d1713f58cfbc48"
+}

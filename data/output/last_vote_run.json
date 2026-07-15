@@ -5,7 +5,7 @@
     "NO",
     "YES"
   ],
-  "submitted": 0,
+  "submitted": 1,
   "active_evaluated": 27,
   "skipped_inactive": 123,
   "policy_config": {
@@ -20,9 +20,12 @@
       "action_id": "d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0",
       "recommendation": "YES",
       "onchain_vote": "VoteNo",
-      "policy": "HOLD",
-      "policy_reason": "revision NO->YES held: not persistent (persist=1/2)",
-      "status": "HOLD"
+      "policy": "REVISE",
+      "policy_reason": "revision NO->YES approved: persist=2, margin=0.06",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "89b0279906e04ff9c669557812224688e19da7719b8aeb251264aa5de9799698"
     },
     {
       "action_id": "d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0",
@@ -145,6 +148,14 @@
       "status": "NOOP"
     },
     {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
+      "recommendation": "YES",
+      "onchain_vote": "VoteYes",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already YES",
+      "status": "NOOP"
+    },
+    {
       "action_id": "dfd81f8db652fd9263e0ce3bef043b4823045ec3a5da10c817681ada7a23f034#0",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
@@ -193,12 +204,12 @@
       "status": "SKIP"
     },
     {
-      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#3",
-      "recommendation": "YES",
-      "onchain_vote": "VoteYes",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already YES",
-      "status": "NOOP"
+      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": null,
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
     },
     {
       "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
@@ -207,14 +218,6 @@
       "policy": "HOLD",
       "policy_reason": "revision YES->ABSTAIN refused: abstain is evidence-absence (MISSING_PROTOCOL_READINESS_EVIDENCE); missing evidence must never retract a cast directional vote",
       "status": "HOLD"
-    },
-    {
-      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": null,
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
     },
     {
       "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",

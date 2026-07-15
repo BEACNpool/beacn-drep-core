@@ -1,0 +1,108 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#4",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 25.40M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Withdraw treasury funds for Intersect governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, operations, ecosystem coordination, and management of critical processes for June 2026 to June 2027.",
+        "Recipient: Intersect via the 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+        "Stated amount: 25,400,000",
+        "Deliverables: WP 1 - Intersect operations and ecosystem coordination: 6,000,000 ADA, WP 2 - Technical Stewardship, Incident Response & Coordination, including core Cardano repos: 18,800,000 ADA, WP 3 - Management of critical processes: 600,000 ADA, Milestone-based drawdowns, evidence-backed reporting, transparent disclosures, and external assurance by Appold, Use of Sundae Labs treasury management smart contracts with TRSC and PSSC addresses and specified authorization thresholds",
+        "Deadline/expiry: June 2026 to June 2027",
+        "Claim (technical, supported_in_proposal, high materiality): Intersect states that this withdrawal funds its core operating model for June 2026 to June 2027, including ecosystem coordination, reserved capacity for critical unowned processes, technical stewardship, incident response, and release coordination.",
+        "Claim (economic, proposer_asserted, medium materiality): The proposal says Intersect's overall ask decreased from $7.875M last year to $6.35M while preserving functions it considers critical to Cardano continuity and maturity.",
+        "Claim (technical, proposer_asserted, high materiality): Intersect claims it has already coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident.",
+        "Claim (governance, supported_in_proposal, medium materiality): The proposal claims primary alignment with infrastructure and research excellence, governance, and ecosystem sustainability and resilience, with secondary alignment to adoption and community growth.",
+        "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to the voting proposal, documentation, final audited results, and audit materials.",
+        "Claim (economic, independently_verifiable, high materiality): The proposal states that the requested 25,400,000 ADA does not, at submission alone or in aggregate, breach the applicable 350M Net Change Limit for Epoch 613 to Epoch 713."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal says Intersect's overall ask decreased from $7.875M last year to $6.35M while preserving functions it considers critical to Cardano continuity and maturity.",
+        "Independent evidence for: Intersect claims it has already coordinated two network upgrades, is preparing for a third, and led ecosystem coordination during the November 2025 chain partition incident."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 25400000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.62"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Intersect states that this withdrawal funds its core operating model for June 2026 to June 2027, including ecosystem coordination, reserved capacity for critical unowned processes, technical stewardship, incident response, and release coordination.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal says Intersect's overall ask decreased from $7.875M last year to $6.35M while preserving functions it considers critical to Cardano continuity and maturity.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

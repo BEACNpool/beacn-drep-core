@@ -1,0 +1,111 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 642",
+        "Expires after epoch: 649",
+        "Treasury request: 120.00M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Treasury withdrawal to fund AlphaGrowth's Cardano PRIME, a 12-month community-overseen program for DeFi protocol readiness, incentives, and liquidity growth across Cardano markets.",
+        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with Intersect managing withdrawn funds directly and AlphaGrowth executing program analysis and recommendations under Operating Group oversight.",
+        "Stated amount: 120,000,000",
+        "Deliverables: Phase 1 public current-state audit, Phase 2 identification of integration, product, and ecosystem-support gaps, Phase 3 deployment of incentives and capital after Operating Group affirmation of the Phase 3 release plan, Published recommendations and disbursement records, Quarterly financial and ecosystem impact metric reporting, Independent audit or assurance funded by a dedicated 2,000,000 ada allocation, Separate auditable account for withdrawn funds, Return-to-treasury triggers for unused, unearned, unreleased, or excess funds",
+        "Deadline/expiry: 12-month program; Month 4 Phase 3 release gate",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 120,000,000 ada to fund Cardano PRIME for 12 months.",
+        "Claim (adoption, proposer_asserted, high materiality): PRIME is intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.",
+        "Claim (adoption, proposer_asserted, high materiality): As of June 2026, Cardano DeFi has approximately $90 million in TVL and $45 million in stablecoin supply.",
+        "Claim (adoption, proposer_asserted, medium materiality): The proposer states Cardano's existing infrastructure additions have not yet converted into enough durable DeFi liquidity, application depth, LP participation, or institutional awareness.",
+        "Claim (technical, supported_in_proposal, high materiality): The program uses three phases: a public current-state audit, gap identification, and incentive or capital deployment after Operating Group affirmation of the Phase 3 release plan.",
+        "Claim (governance, supported_in_proposal, high materiality): The proposal separates roles by having AlphaGrowth produce analyses and recommendations, the Operating Group review and potentially veto or condition material actions, and Intersect manage funds in a separate auditable account."
+      ],
+      "missing": [
+        "Independent evidence for: PRIME is intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.",
+        "Independent evidence for: As of June 2026, Cardano DeFi has approximately $90 million in TVL and $45 million in stablecoin supply.",
+        "Independent evidence for: The proposer states Cardano's existing infrastructure additions have not yet converted into enough durable DeFi liquidity, application depth, LP participation, or institutional awareness.",
+        "Independent evidence for: AlphaGrowth has not received Cardano Treasury funding within the prior 24 months."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 120000000",
+        "Budget granularity: not confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.58"
+      ],
+      "missing": [
+        "line-item budget",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 120,000,000 ada to fund Cardano PRIME for 12 months.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"PRIME is intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

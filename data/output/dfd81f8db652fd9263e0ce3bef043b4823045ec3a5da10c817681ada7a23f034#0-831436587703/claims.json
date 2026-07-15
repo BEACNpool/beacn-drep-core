@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "12332031",
+    "deadline": "9-month delivery period from July 2026 to March 2027",
+    "deliverables": [
+      "Hardening",
+      "Security audits",
+      "Formal verification",
+      "Ecosystem and partner readiness",
+      "Stewardship and economic foundations for launch",
+      "Audited bridge running on Cardano mainnet in federated and SPO threshold custody modes under controlled access"
+    ],
+    "recipient": "FluidTokens and Lantr Engineering",
+    "what": "Phase 1 of 2 funding to take Bifrost from working testnet to launch readiness for a Bitcoin-Cardano bridge."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The bridge is on testnet under Catalyst Fund 14 and is intended to prove the architecture end-to-end on Bitcoin Testnet4 and Cardano Preprod by August 2026.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposers request \u20b312,332,031, described as approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month Phase 1 delivery period.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO threshold custody modes under controlled access.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Custody of locked BTC is claimed to be distributed across 400+ Cardano SPOs weighted by delegation, with fund movement requiring a cryptographic threshold representing a majority of delegated stake.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "If SPO coordination fails, Bifrost claims a federated mode can activate as an operational fallback.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost claims fBTC will be issued and burned in 1:1 correspondence with BTC locked in the Bifrost custody script on Bitcoin and will be usable as a native Cardano token.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states Bifrost has no bridge token, no founder allocation, Apache 2.0 open-source components, public reporting, and an independent stewardship structure to be determined in Phase 1.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal targets 1,200 BTC TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says Catalyst Fund 14 funded Bifrost with \u20b3739,000, 585 approving votes, and deliverables covering architecture, testnet MVP, and documentation on a December 2025 to August 2026 timeline.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document presents a large Phase 1 treasury request for launch-readiness work on a Bitcoin-Cardano bridge, with detailed technical architecture claims but many core security, custody, adoption, and stewardship assertions remaining proposer-stated within the supplied text.",
+  "output_sha256": "a0e533a3b3cb801841238e1fd6f7a58a19fbcec7cb652cf0c1cd8d1d93a6718a"
+}

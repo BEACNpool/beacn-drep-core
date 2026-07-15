@@ -1,0 +1,108 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 639",
+        "Expires after epoch: 646",
+        "Treasury request: 4.97M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, security audit, and launch campaign.",
+        "Recipient: Anvil Development Agency, Inc. and Intersect as budget administrator through the Sundae Labs TRSC/PSSC framework",
+        "Stated amount: 4,969,231",
+        "Deliverables: Secondary marketplace for listing, pricing, and reselling tickets with on-chain settlement, Smart-contract royalty enforcement for artists and venues on resales, Configurable anti-scalping controls including price ceilings, transfer limits, identity-binding, and time restrictions, Custodial wallet onboarding inside Sellout's existing flow with self-custody export described for testnet milestone, Organizer dashboard and tools for resale parameters, ticket lifecycle data, royalty distributions, and verification, Independent third-party smart-contract security audit with remediation and published report, Public launch campaign, trade-show activations, metrics dashboard, and final governance report",
+        "Deadline/expiry: 8 months across five milestones",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,969,231 ada, stated as approximately $1,093,231 at $0.22 per ADA, over 8 months with milestone-gated disbursement.",
+        "Claim (adoption, proposer_asserted, high materiality): Phase 1 of the ticketing platform is already live on Cardano mainnet and was funded by Sellout with over $130,000 of its own capital.",
+        "Claim (adoption, proposer_asserted, high materiality): Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and runs 350+ events annually at current cadence.",
+        "Claim (adoption, supported_in_proposal, high materiality): Phase 2 targets 200+ events on-chain, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6M+ ticket revenue on-chain, and 20,000+ new wallets within 12 months from launch.",
+        "Claim (adoption, proposer_asserted, high materiality): The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment expected to move over $6M through Cardano in year one, based on stated 2025 historical revenue of $5.88M.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposer commits to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism in which 25% of fees are paid quarterly until full reimbursement and 5% thereafter, with exact revenue-base definitions finalized in M1 contracting."
+      ],
+      "missing": [
+        "Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet and was funded by Sellout with over $130,000 of its own capital.",
+        "Independent evidence for: Sellout has 200,000+ registered users, has issued 250,000+ tickets to date, and runs 350+ events annually at current cadence.",
+        "Independent evidence for: The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment expected to move over $6M through Cardano in year one, based on stated 2025 historical revenue of $5.88M.",
+        "Independent evidence for: The proposer states that Anvil/Sellout have not received ada from the Cardano Treasury within the last 24 months and that the request does not breach the applicable 350M Net Change Limit at submission."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.82"
+      ],
+      "missing": [],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, stated as approximately $1,093,231 at $0.22 per ADA, over 8 months with milestone-gated disbursement.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the ticketing platform is already live on Cardano mainnet and was funded by Sellout with over $130,000 of its own capital.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

@@ -1,0 +1,11 @@
+# Cardano Builder DAO
+**BEACN DRep vote: NO**  _(plain-language explanation — deterministic-heuristic)_
+
+BEACN records NO on Cardano Builder DAO. On the evidence available to BEACN's published review, the request does not clear the bar for spending shared treasury funds.
+
+The action is a TreasuryWithdrawals. The cached anchor describes the request as: Treasury withdrawal to fund the Cardano Builder DAO as a smart contract-governed, KPI-driven funding mechanism for Cardano builders. It asks the treasury for 20000000 ADA. The strongest grounded claim is: The proposal says the Cardano Builder DAO is a smart contract-governed funding mechanism intended to support projects advancing Cardano Vision 2030 through measurable KPIs including MAU, monthly on-chain transactions, and TVL.
+
+A material claim remains proposer-asserted or thinly supported: The proposal says the DAO has already distributed 11.1 million ADA across 34 proposals in two funding rounds.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

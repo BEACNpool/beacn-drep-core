@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,193,000",
+    "deadline": "12 months; specific completion date not stated in document",
+    "deliverables": [
+      "WP 1: Community-Facing Technical Coordination, including technical expert attendance at major ecosystem events and commissioning technical reports",
+      "WP 2: Protocol Governance and Evolution, including support for the Parameter Committee, CIP editors, and Hard Fork Working Group",
+      "WP 3: Technical Review, including a pilot independent technical review programme launching in 2027"
+    ],
+    "recipient": "Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Withdraw treasury funds for Intersect Technical Steering Committee Support over 12 months, covering community engagement, protocol governance, and independent technical review activities."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "Intersect requests 1,193,000 ADA, described as $298,250, to fund Technical Steering Committee support activities for 12 months.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal divides the requested budget into 256,000 ADA for WP 1, 832,000 ADA for WP 2, and 105,000 ADA for WP 3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Execution of the work packages is contingent on approval of the IntersectMBO budget proposal.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "All expenditure will be fully accounted for and any unspent funds returned to the Cardano treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain submission under the approved Budget Process Framework.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested amount is asserted not to breach the applicable 350M ADA Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Independent audits and assurance for this proposal will be provided by Appold, with possible reviews covering deliverable verification, control testing, spend validation, and milestone evidence.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Intersect discloses that the Technical Steering Committee has not received Cardano Treasury funding in the past 24 months, while Intersect and its committees have received 22,385,000 ADA through listed prior governance actions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "Intersect will administer the funds through Sundae Labs treasury management smart contracts with specified TRSC and PSSC addresses, admin roles, leadership roles, and an external Oversight Committee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "A dashboard at treasury.sundae.fi is provided for community tracking and on-chain verification of the withdrawn ADA and related metrics.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 1,193,000 ADA for 12 months of TSC support under Intersect, with a work-package budget, stated accounting and return-of-unused-funds commitments, external assurance, prior-funding disclosure, NCL compliance assertion, and smart-contract-based fund administration.",
+  "output_sha256": "b193a846d8a7c86c84c09f38c85f034156b6d3b9ca1c19abf5eb310c3e7b94aa"
+}

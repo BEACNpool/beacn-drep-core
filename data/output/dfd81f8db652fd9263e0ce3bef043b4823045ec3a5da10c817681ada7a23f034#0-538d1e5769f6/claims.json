@@ -1,0 +1,87 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "12332031",
+    "deadline": "9-month delivery period from July 2026 to March 2027",
+    "deliverables": [
+      "Audited bridge running on Cardano mainnet in both federated and SPO threshold custody modes under controlled access",
+      "Security audits",
+      "Formal verification",
+      "Hardened economic model",
+      "Stewardship structure determined for launch",
+      "SPO and dApp partner pipeline required for public launch",
+      "Ecosystem and partner readiness",
+      "Public rollout and 24 months of operations deferred to Phase 2"
+    ],
+    "recipient": "FluidTokens and Lantr Engineering",
+    "what": "Phase 1 of 2 for Bifrost, a Bitcoin-Cardano bridge, to move from working testnet to launch readiness through hardening, security audits, formal verification, ecosystem and partner readiness, stewardship, and economic foundations."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Bifrost is designed as a permissionless Bitcoin-Cardano bridge secured by Cardano's SPO ecosystem that brings BTC onto Cardano as a native Cardano asset.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal requests \u20b312,332,031, stated as approximately $1,973,125 at 0.16 USD/ADA including a 10% refundable contingency, for a 9-month delivery period.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "By the end of Phase 1, Bifrost will be an audited bridge running on Cardano mainnet in both federated and SPO-threshold custody modes under controlled access.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost's custody model distributes locked BTC across 400+ Cardano SPOs weighted by delegation, with movement requiring a cryptographic threshold representing the majority of delegated stake.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "If SPO coordination fails, Bifrost uses a federated mode as an operational fallback for continuity.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Bifrost's smart contracts, off-chain tooling, and SDK are released under Apache 2.0 so anyone can audit, fork, run, or build on the bridge without permission.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Bifrost is currently funded through Catalyst Fund 14 for \u20b3739,000 and aims to prove the architecture end-to-end on Bitcoin Testnet4 and Cardano Preprod by August 2026.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The document states Catalyst milestones M1 and M2 are done and approved, while later milestone details are truncated in the supplied text.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal targets 1,200 BTC TVL, about 600,000 annual transactions, and 3,000 fBTC-holding wallets by Q2 2029 as Bifrost contributions to Cardano 2030 KPIs.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states bridge fees in fBTC will fund operations and surplus will split to SPOs and the Cardano Treasury.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests \u20b312,332,031 for Phase 1 launch-readiness work on Bifrost, a Bitcoin-to-Cardano bridge using SPO-threshold custody, native fBTC issuance, audits, formal verification, stewardship setup, and partner readiness before a later Phase 2 public rollout.",
+  "output_sha256": "4598980d279710d0b2519bfdbb9b5e4652abccbe968524a68fc8deb0c3b8cb31"
+}

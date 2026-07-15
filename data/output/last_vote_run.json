@@ -5,7 +5,7 @@
     "NO",
     "YES"
   ],
-  "submitted": 0,
+  "submitted": 1,
   "active_evaluated": 27,
   "skipped_inactive": 123,
   "policy_config": {
@@ -23,6 +23,14 @@
       "policy": "NOOP",
       "policy_reason": "on-chain vote already YES",
       "status": "NOOP"
+    },
+    {
+      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
+      "recommendation": "NEEDS_MORE_INFO",
+      "onchain_vote": "VoteNo",
+      "policy": "SKIP",
+      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
+      "status": "SKIP"
     },
     {
       "action_id": "d52a4917df4f91c342eaf06ebb4c0a5c3156f6412d137f307cc77eb911f47ab1#0",
@@ -169,14 +177,6 @@
       "status": "NOOP"
     },
     {
-      "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": "VoteNo",
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
       "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
       "recommendation": "YES",
       "onchain_vote": "VoteYes",
@@ -193,28 +193,20 @@
       "status": "SKIP"
     },
     {
+      "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
+    },
+    {
       "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#1",
       "recommendation": "NEEDS_MORE_INFO",
       "onchain_vote": "VoteNo",
       "policy": "SKIP",
       "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
       "status": "SKIP"
-    },
-    {
-      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
-      "recommendation": "NEEDS_MORE_INFO",
-      "onchain_vote": null,
-      "policy": "SKIP",
-      "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
-      "status": "SKIP"
-    },
-    {
-      "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
-      "recommendation": "ABSTAIN",
-      "onchain_vote": "VoteYes",
-      "policy": "HOLD",
-      "policy_reason": "revision YES->ABSTAIN refused: abstain is evidence-absence (MISSING_PROTOCOL_READINESS_EVIDENCE); missing evidence must never retract a cast directional vote",
-      "status": "HOLD"
     },
     {
       "action_id": "0f75dd11be0b7a6cb4b305a175b17cf4b60cd307c052fccabf9f572950e70583#0",
@@ -225,12 +217,23 @@
       "status": "NOOP"
     },
     {
-      "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
+      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
       "recommendation": "NO",
-      "onchain_vote": "VoteNo",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already NO",
-      "status": "NOOP"
+      "onchain_vote": null,
+      "policy": "CAST",
+      "policy_reason": "fresh NO: persist=1, confidence=0.7837",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "e54a6aaae3984eda835a92432274db4e05d6660401d7da0a00018f6bbbf7a48b"
+    },
+    {
+      "action_id": "fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0",
+      "recommendation": "ABSTAIN",
+      "onchain_vote": "VoteYes",
+      "policy": "HOLD",
+      "policy_reason": "revision YES->ABSTAIN refused: abstain is evidence-absence (MISSING_PROTOCOL_READINESS_EVIDENCE); missing evidence must never retract a cast directional vote",
+      "status": "HOLD"
     }
   ]
 }

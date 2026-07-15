@@ -1,0 +1,106 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: 9.00M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: 12-month productive treasury deployment into Strike Finance V2 liquidity infrastructure",
+        "Recipient: independent council administrator for Strike Finance liquidity deployment",
+        "Stated amount: 9000000",
+        "Deliverables: Sell deployed ADA for USDM to provide stablecoin-denominated Strike V2 liquidity, Return realized yield from the first six months to the Cardano Treasury at month 6, Return 100% of treasury-owned deployed assets, including remaining principal and realized yield, at month 12, Provide monthly public transparency reports covering deployment status, utilization, volume, P&L, yield, drawdown, stablecoin exposure, market quality, distributions, and material risks, Provide third-party assurance reports at deployment confirmation, month 6, and month 12",
+        "Deadline/expiry: 12 months after deployment",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 9,000,000 ADA for a 12-month treasury-owned liquidity deployment, not grant funding.",
+        "Claim (economic, supported_in_proposal, high materiality): The deployed ADA would be sold for USDM, modeled at ADA = 0.15 USD to produce about 1,350,000 USDM of stablecoin liquidity.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal models a 10% USD-denominated annual return, or about 135,000 USD / 900,000 ADA-equivalent in annual yield, while stating returns are not guaranteed.",
+        "Claim (adoption, supported_in_proposal, high materiality): Strike claims more than 1.13 billion USD cumulative volume, about 968,000 to 1,001,000 trades, over 3,000 unique traders, more than 1.16 million USD protocol revenue, and more than 3.25 million USD liquidity-provider profit.",
+        "Claim (adoption, proposer_asserted, high materiality): The document says Strike accounted for more than 50% of Cardano trading activity over the past six months.",
+        "Claim (adoption, supported_in_proposal, medium materiality): Strike V2 data from 2026-03-20 through 2026-06-15 is presented as 87,288,044 USD total volume, 410,800 total trades, 2,681 users, 30,105 USD revenue, and 1,246,007 USD peak open interest."
+      ],
+      "missing": [
+        "Independent evidence for: The document says Strike accounted for more than 50% of Cardano trading activity over the past six months."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 9000000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.66"
+      ],
+      "missing": [
+        "milestone-gated disbursement"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: medium",
+        "Governance risk: medium",
+        "Technical risk: medium",
+        "Treasury exposure risk: high",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 9,000,000 ADA for a 12-month treasury-owned liquidity deployment, not grant funding.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The document says Strike accounted for more than 50% of Cardano trading activity over the past six months.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

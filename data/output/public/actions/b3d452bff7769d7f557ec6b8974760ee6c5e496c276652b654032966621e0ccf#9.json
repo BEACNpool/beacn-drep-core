@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:374400210fe703a72b1aa5633318e7be0f03c62df9888572da2dc153c227e3ff",
+    "raw_input_hash": "sha256:727a83d234f8f5349e9c6b8f55958f2993ea16614227ada8e0ef6b2cdefea901",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NO",
     "onchain_vote": "NO",
     "diverged": false,
-    "published_at": "2026-07-15T17:40:21.239637+00:00",
+    "published_at": "2026-07-15T20:03:02.022493+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "5537294956a0dcdd0bce1426265facef53ee70ec3e7c3fb175b2f2ad82b3240b",
@@ -42,24 +42,24 @@
     "vote": "NO",
     "score": -0.12,
     "confidence": 0.75,
-    "input_hash": "374400210fe703a72b1aa5633318e7be0f03c62df9888572da2dc153c227e3ff",
-    "snapshot_bundle_hash": "01ee17e3c9cab9f7fb83d2dc5f910b2ee26908efce1443bfbae0272ba6ecdb70",
+    "input_hash": "727a83d234f8f5349e9c6b8f55958f2993ea16614227ada8e0ef6b2cdefea901",
+    "snapshot_bundle_hash": "d5653419f97ec5afd50e3a7c80ad76f486f91f81beb74305d28084d008b49750",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "3e3c343fc0dd14a03a92aad1216ba6620b3d0185",
-    "core_commit": "4279cec70cd9b6b43db3772a904ec6126d63f55c",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-374400210fe7.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/9a75c76aed7719a640354b12.md",
-    "rationale_anchor_hash": "9a75c76aed7719a640354b1280a51514e44a1a269a711de7fb79cdbe46498b7a"
+    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
+    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-727a83d234f8.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/cfd0db2df72b424d6b20e68d.md",
+    "rationale_anchor_hash": "cfd0db2df72b424d6b20e68d5c09fedac2b92947cb1fa062327001502e29f8ae"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Tx3 is described as a framework where each protocol is specified once with a verified interface definition that produces documentation, auto-generated SDKs, and live JSON-RPC endpoints.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total budget summary of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposer claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and increasing integration costs.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 1,684,050 ADA total, consisting of 1,635,000 ADA for the Open API Layer for Cardano Protocols and a 49,050 ADA Intersect Budget Administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide sustainability path; Provide cost-benefit clarity. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide sustainability path.",
       "Provide cost-benefit clarity.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-374400210fe7.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-727a83d234f8.md",
     "missing_evidence": [],
     "blocked_reason_code": null,
     "assessment_status": "incomplete",
@@ -92,23 +92,22 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Treasury withdrawal to fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols.",
-            "Recipient: Intersect Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor TxPipe.",
+            "Requested: Fund Tx3 by TxPipe as an open API layer for Cardano dApp protocols, including developer and agent-facing infrastructure.",
+            "Recipient: Intersect treasury reserve smart contract stake address on behalf of TxPipe/vendor",
             "Stated amount: 1,684,050",
-            "Deliverables: 12-month delivery of Tx3 open standardized interface work, 12 additional protocol onboardings at 3 per quarter, MCP server for agents to discover and call published protocols, Agent-first documentation, Protocol skills packaging operations, Auto-generated SDKs in multiple languages and live JSON-RPC endpoints for onboarded protocols",
+            "Deliverables: 12 additional protocol onboardings over 12 months, described as 3 per quarter, full developer and agent coverage for onboarded protocols, MCP server development, protocol skills framework development, agent-first documentation and LLM-structured documentation, auto-generated SDKs in multiple languages and live JSON-RPC endpoints",
             "Deadline/expiry: 12 months",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total budget summary of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.",
-            "Claim (technical, proposer_asserted, high materiality): Tx3 is described as a framework where each protocol is specified once with a verified interface definition that produces documentation, auto-generated SDKs, and live JSON-RPC endpoints.",
-            "Claim (adoption, independently_verifiable, high materiality): Through Catalyst Fund 14, TxPipe has put the developer layer into production with 5 protocols live on the Tx3 Protocol Registry at tx3.land.",
-            "Claim (technical, supported_in_proposal, high materiality): The proposal will fund 12 additional protocol onboardings, at 3 per quarter, with developer and agent coverage.",
-            "Claim (technical, proposer_asserted, medium materiality): The proposal claims there is currently no common interface mechanism across the Cardano ecosystem, causing integrators to relearn each protocol and making cross-protocol composability impractical.",
-            "Claim (adoption, proposer_asserted, medium materiality): The proposal claims AI agents will be an important next wave of on-chain activity and that Cardano protocols need shared, auditable, deterministic interfaces to support agent-driven workflows safely."
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,684,050 ADA total, consisting of 1,635,000 ADA for the Open API Layer for Cardano Protocols and a 49,050 ADA Intersect Budget Administration fee.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposal says Tx3 will provide a standard open-source interface to Cardano protocols through documentation, multi-language SDKs, and live RPC endpoints.",
+            "Claim (adoption, proposer_asserted, high materiality): The proposer claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and increasing integration costs.",
+            "Claim (technical, proposer_asserted, medium materiality): The proposer claims AI agents will increase on-chain activity but require shared, auditable interfaces because hallucinated transactions can irreversibly move assets on-chain.",
+            "Claim (adoption, independently_verifiable, high materiality): The document states TxPipe has already put the developer layer into production through Catalyst Fund 14 with 5 protocols live on the Tx3 Protocol Registry.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposal says the funded work will onboard 12 additional protocols, at 3 per quarter, with full developer and agent coverage."
           ],
           "missing": [
-            "Independent evidence for: Tx3 is described as a framework where each protocol is specified once with a verified interface definition that produces documentation, auto-generated SDKs, and live JSON-RPC endpoints.",
-            "Independent evidence for: The proposal claims there is currently no common interface mechanism across the Cardano ecosystem, causing integrators to relearn each protocol and making cross-protocol composability impractical.",
-            "Independent evidence for: The proposal claims AI agents will be an important next wave of on-chain activity and that Cardano protocols need shared, auditable, deterministic interfaces to support agent-driven workflows safely.",
-            "Independent evidence for: The proposal states TxPipe has received funding through 30 Project Catalyst proposals from Funds 9 through 14, with 26 delivered and 4 under development and on schedule, plus Intersect 2025 maintenance funding for Pallas, Dolos, and UTxO RPC that is being delivered on schedule."
+            "Independent evidence for: The proposer claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and increasing integration costs.",
+            "Independent evidence for: The proposer claims AI agents will increase on-chain activity but require shared, auditable interfaces because hallucinated transactions can irreversibly move assets on-chain.",
+            "Independent evidence for: The proposal says TxPipe has received 30 Catalyst-funded proposals across Funds 9 through 14, with 26 delivered and 4 currently under development and on schedule."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -155,8 +154,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 1,308,000 ADA plus a 327,000 ADA contingency reserve over 12 months, with a total budget summary of 1,684,050 ADA including a 49,050 ADA Intersect administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Tx3 is described as a framework where each protocol is specified once with a verified interface definition that produces documentation, auto-generated SDKs, and live JSON-RPC endpoints.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 1,684,050 ADA total, consisting of 1,635,000 ADA for the Open API Layer for Cardano Protocols and a 49,050 ADA Intersect Budget Administration fee.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer claims there is currently no common interface mechanism across the Cardano ecosystem, forcing integrators to relearn each protocol and increasing integration costs.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -175,7 +174,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-374400210fe7.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9-727a83d234f8.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "State the cost against the benefit: what does this buy, per ada spent.",
@@ -291,7 +290,7 @@
     "anchor_hash": "9bae52227b542364950023dcbd958f4198443a55d2a3cb4bf6f75fdd7888555f",
     "file_sha256": "79c3163a2a1f9d117ad6cfb0e08c9699dbcd3a39bc0f3cfb2462452f274461a1",
     "content_bytes": "15285",
-    "fetched_at_utc": "2026-07-15T17:40:23Z",
+    "fetched_at_utc": "2026-07-15T20:03:04Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#9.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -322,23 +321,32 @@
   ],
   "treasury_capacity": {
     "verified": true,
-    "ncl_lovelace": 500000000000000,
+    "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
     "withdrawals_in_period_lovelace": 296536117000000,
-    "remaining_capacity_lovelace": 203463883000000,
+    "remaining_capacity_lovelace": 3463883000000,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
-    "source_action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
-    "source_anchor_hash": "d420037401626f4db20a255ca52d9d39764f68edfdc02686007cf9c731564f88",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
     "drep_support": {
-      "yes_stake_lovelace": 720317413116322,
-      "no_stake_lovelace": 706591415784234,
-      "yes_pct_of_participating_stake": 50.48,
-      "yes_dreps": 44,
-      "no_dreps": 40
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
     },
     "verification_status": "verified_onchain_info_action",
-    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, whose voting CLOSED with a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "pending_candidate": {
+      "source_action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
+      "ncl_lovelace": 500000000000000,
+      "period_start_epoch": 613,
+      "period_end_epoch": 713,
+      "voting_open_until_epoch": 647,
+      "interim_yes_pct_of_participating_stake": 50.48,
+      "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
+    },
     "portfolio_status": "verified",
     "requested_lovelace": 1684050000000,
     "fits_remaining": true
@@ -347,8 +355,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "3e3c343fc0dd14a03a92aad1216ba6620b3d0185",
-    "core_commit": "4279cec70cd9b6b43db3772a904ec6126d63f55c",
+    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
+    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -452,7 +460,7 @@
   ],
   "scoring": {
     "binding_score": -0.12,
-    "raw_score": -0.08,
+    "raw_score": -0.33,
     "directional_threshold": 0.06,
     "confidence": 0.75,
     "model_vote_influence": 0
@@ -461,7 +469,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-15T17:58:58.472285Z",
+    "snapshot_time": "2026-07-15T20:20:56.738971Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

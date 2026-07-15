@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:f5474fac74a018d3fcdb4c8a7f88a5425ba84a8f365e4f0e4885365b8aca8fca",
+    "raw_input_hash": "sha256:2625df61353c2adb9664ca9728a50976eaaa53535bd9f6108a52dd360184b6a2",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-07-15T17:40:21.239637+00:00",
+    "published_at": "2026-07-15T20:03:02.022493+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "008a436aee48fa0d114caa24aaa9513f075bd7005bd3bf076239b3c8dca72ee6",
@@ -42,24 +42,24 @@
     "vote": "NEEDS_MORE_INFO",
     "score": 0.209,
     "confidence": 0.7722,
-    "input_hash": "f5474fac74a018d3fcdb4c8a7f88a5425ba84a8f365e4f0e4885365b8aca8fca",
-    "snapshot_bundle_hash": "dd94198fd839f0158f549c37f75e33081b2735d59d4afb1bcb2cb0d229492f1d",
+    "input_hash": "2625df61353c2adb9664ca9728a50976eaaa53535bd9f6108a52dd360184b6a2",
+    "snapshot_bundle_hash": "856a46adb5cd6044ef3027cfe5daffb0a7ddf739646c1799d0e4aa4e2e67d30d",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "3e3c343fc0dd14a03a92aad1216ba6620b3d0185",
-    "core_commit": "4279cec70cd9b6b43db3772a904ec6126d63f55c",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-f5474fac74a0.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/17983e005d44ef6b6d9f8756.md",
-    "rationale_anchor_hash": "17983e005d44ef6b6d9f87565e27fea27e817844ca85bf89d355074ee20e26db"
+    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
+    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-2625df61353c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/069c07a0ec83ea714d1c8323.md",
+    "rationale_anchor_hash": "069c07a0ec83ea714d1c8323705cc782cfe06426eb86360ad52757a7ab907f00"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: Full node synchronisation is slow today and light clients rely on centralized trust. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.21; confidence 77.2%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal says faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.21; confidence 77.2%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
-      "Provide independent evidence for: Full node synchronisation is slow today and light clients rely on centralized trust.",
+      "Provide independent evidence for: The proposal says faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring.",
       "Provide line-item budget."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-f5474fac74a0.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-2625df61353c.md",
     "missing_evidence": [
       "cost comparables, budget proportionality, or sustainability evidence"
     ],
@@ -94,21 +94,22 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Treasury withdrawal to fund Mithril Protocol continued development through the Intersect budget process.",
-            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor; vendor identified as Teragone in the funding disclosure.",
-            "Stated amount: 3810423",
-            "Deliverables: Mithril Protocol Continuous Development, Intersect budget administration and oversight, Milestone-based disbursement controls through TRSC/PSSC smart contracts",
+            "Requested: Withdraw treasury funds for Mithril Protocol continuous development and Intersect budget administration.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, managed by Intersect using TRSC/PSSC framework",
+            "Stated amount: 3,810,423",
+            "Deliverables: Mithril Protocol Continuous Development, Intersect Budget Administration fee, milestone-based disbursement controls through TRSC/PSSC",
             "Deadline/expiry: not stated in document",
-            "Claim (technical, supported_in_proposal, high materiality): Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.",
-            "Claim (technical, proposer_asserted, high materiality): Full node synchronisation is slow today and light clients rely on centralized trust.",
-            "Claim (adoption, proposer_asserted, high materiality): Funding Mithril continued development through Intersect MBO is presented as preserving Cardano decentralization while supporting scaling.",
+            "Claim (technical, proposer_asserted, high materiality): Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.",
+            "Claim (technical, proposer_asserted, medium materiality): The proposal says Mithril is fully aligned with Infrastructure & Research Excellence because state proofs strengthen cross-chain interoperability.",
+            "Claim (adoption, proposer_asserted, high materiality): The proposal says faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring.",
             "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
-            "Claim (economic, supported_in_proposal, high materiality): The requested 3,810,423 ada consists of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
-            "Claim (economic, independently_verifiable, high materiality): The proposer states the withdrawal does not breach the applicable 350M Net Change Limit at the time of submission, either on its own or in aggregate."
+            "Claim (governance, independently_verifiable, high materiality): The requested withdrawal does not, at time of submission alone or in aggregate, breach the 350M ada Net Change Limit covering Epoch 613 to Epoch 713.",
+            "Claim (governance, supported_in_proposal, high materiality): Audit and oversight costs are included in the proposal overhead, with Intersect and technically capable third parties providing reporting obligations and milestone-based disbursement controls."
           ],
           "missing": [
-            "Independent evidence for: Full node synchronisation is slow today and light clients rely on centralized trust.",
-            "Independent evidence for: Funding Mithril continued development through Intersect MBO is presented as preserving Cardano decentralization while supporting scaling.",
+            "Independent evidence for: Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.",
+            "Independent evidence for: The proposal says Mithril is fully aligned with Infrastructure & Research Excellence because state proofs strengthen cross-chain interoperability.",
+            "Independent evidence for: The proposal says faster sync times lower onboarding friction and unlock tooling for exchanges, wallets, and monitoring.",
             "Independent evidence for: Teragone has not previously received direct funding from Cardano treasury or community governance programs, while prior Mithril work was funded by IOG."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
@@ -157,8 +158,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Full node synchronisation is slow today and light clients rely on centralized trust.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -177,7 +178,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-f5474fac74a0.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-2625df61353c.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -287,7 +288,7 @@
     "anchor_hash": "c8700afb0a090e80de6e3924e97b160ea174ecab35bfe2d786ad26c47cd1a0fb",
     "file_sha256": "2af1e8a10b4ea68000d814f03d71020dfb2ced553ab65eafeb78bad836e86288",
     "content_bytes": "12836",
-    "fetched_at_utc": "2026-07-15T17:40:23Z",
+    "fetched_at_utc": "2026-07-15T20:03:04Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -309,33 +310,42 @@
   ],
   "treasury_capacity": {
     "verified": true,
-    "ncl_lovelace": 500000000000000,
+    "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
     "withdrawals_in_period_lovelace": 296536117000000,
-    "remaining_capacity_lovelace": 203463883000000,
+    "remaining_capacity_lovelace": 3463883000000,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
-    "source_action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
-    "source_anchor_hash": "d420037401626f4db20a255ca52d9d39764f68edfdc02686007cf9c731564f88",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
     "drep_support": {
-      "yes_stake_lovelace": 720317413116322,
-      "no_stake_lovelace": 706591415784234,
-      "yes_pct_of_participating_stake": 50.48,
-      "yes_dreps": 44,
-      "no_dreps": 40
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
     },
     "verification_status": "verified_onchain_info_action",
-    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, which won a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, whose voting CLOSED with a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "pending_candidate": {
+      "source_action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
+      "ncl_lovelace": 500000000000000,
+      "period_start_epoch": 613,
+      "period_end_epoch": 713,
+      "voting_open_until_epoch": 647,
+      "interim_yes_pct_of_participating_stake": 50.48,
+      "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
+    },
     "portfolio_status": "verified",
     "requested_lovelace": 3810423000000,
-    "fits_remaining": true
+    "fits_remaining": false
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "3e3c343fc0dd14a03a92aad1216ba6620b3d0185",
-    "core_commit": "4279cec70cd9b6b43db3772a904ec6126d63f55c",
+    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
+    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -439,7 +449,7 @@
   ],
   "scoring": {
     "binding_score": 0.209,
-    "raw_score": -0.08,
+    "raw_score": -0.53,
     "directional_threshold": 0.06,
     "confidence": 0.7722,
     "model_vote_influence": 0
@@ -448,7 +458,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-15T17:58:58.472285Z",
+    "snapshot_time": "2026-07-15T20:20:56.738971Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

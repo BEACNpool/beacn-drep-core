@@ -1,0 +1,13 @@
+# Withdraw 3,810,423 ada for Mithril Protocol
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Mithril or of the requested work.
+
+The action requests 3,810,423 ada from the treasury for Mithril Protocol continuous development and Intersect budget administration. The proposal says Mithril improves fast, trustless verification of Cardano state, supports interoperability, and can reduce onboarding friction for exchanges, wallets, monitoring tools, nodes, and applications. It also states that 3,699,440 ada would go to Mithril development and 110,983 ada to Intersect administration, with funds managed through the 2026 Treasury Reserve Smart Contract stake address using the TRSC/PSSC framework.
+
+Several governance and custody claims were well supported: the proposal anchor was pinned and replayable, the action passed the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase, the submitted withdrawal did not by itself or in aggregate breach the stated 350M ada Net Change Limit for Epoch 613 to Epoch 713, and the treasury management framework includes listed contract addresses, oversight entities, multisignature thresholds, and a public dashboard. But several important claims remained thin or unsupported by independent evidence, including the core technical claim about Mithril’s stake-based threshold multi-signatures, the claimed alignment with Infrastructure & Research Excellence, execution risk, independent assurance, rollback or remedy paths, a full line-item budget, and a sustainability path.
+
+Because this is a treasury withdrawal, BEACN applies a higher evidence bar: shared ADA is being spent and precedent is being set. A YES vote could be unblocked by pinned, independently verifiable public chain evidence for the applicable Net Change Limit, plus stronger independent evidence for the missing technical, budget, sustainability, assurance, and remedy details. Until then, NEEDS_MORE_INFO avoids overstating certainty while keeping the proposal open for a better-evidenced directional vote.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

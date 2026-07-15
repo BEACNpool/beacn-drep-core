@@ -1,0 +1,108 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 641",
+        "Expires after epoch: 648",
+        "Treasury request: 4.09M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Establish a one-year decentralized Open Source Program Office (dOSPO) and Open Maintenance Framework (OMF) to manage open source sustainability funds for the Cardano ecosystem.",
+        "Recipient: Christian Taylor / Open Source Cowboy Consulting as administrator, with eventual dOSPO public charity transition target subject to governance.",
+        "Stated amount: 4094000000000 lovelace / 4,094,000 ADA",
+        "Deliverables: Two advisory councils chartered, members named, COI policies signed, first meeting held, and charters published on-chain by week 6., A dOSPO legal entity constituted as a 501(c)(3) public charity with governance documents published and operator agreement executed by week 24., Quarterly outcome reports for active programs published on-chain, with Mill Law Firm financial review attached., A Maintenance Fund deploying retainers to high-risk Cardano open source infrastructure after dependency audit, SBOMs, centrality scoring, and published selection rubric., A public CHAOSS-aligned dashboard tracking funded projects., End-of-term portfolio review with financial audit attached.",
+        "Deadline/expiry: 12 months, with stated milestone dates at weeks 6, 12, 13, 16, 18, 24, 26, 39, and 52.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,094,000 ADA over 12 months to fund the dOSPO and OMF program.",
+        "Claim (governance, supported_in_proposal, high materiality): Christian Taylor / Open Source Cowboy Consulting is designated as the sole Article II.7.5 administrator from the moment of treasury withdrawal through the 12-month period.",
+        "Claim (governance, supported_in_proposal, high materiality): Mill Law Firm is designated as the independent financial auditor for quarterly reviews through month 12.",
+        "Claim (governance, supported_in_proposal, high materiality): Final allocation authority resides with the administrator, while advisory councils provide published feedback before disbursements.",
+        "Claim (governance, proposer_asserted, high materiality): The proposer states that DReps can replace the administrator or shut down the initiative through an on-chain Info Action and that remaining funds would be returned if governance is unsatisfied.",
+        "Claim (technical, supported_in_proposal, high materiality): The program includes four components: a Maintenance Fund, Maintainer Development program, CodeForUs bounty program, and Ecosystem Activation Reserve."
+      ],
+      "missing": [
+        "Independent evidence for: The proposer states that DReps can replace the administrator or shut down the initiative through an on-chain Info Action and that remaining funds would be returned if governance is unsatisfied."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.78"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months to fund the dOSPO and OMF program.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that DReps can replace the administrator or shut down the initiative through an on-chain Info Action and that remaining funds would be returned if governance is unsatisfied.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

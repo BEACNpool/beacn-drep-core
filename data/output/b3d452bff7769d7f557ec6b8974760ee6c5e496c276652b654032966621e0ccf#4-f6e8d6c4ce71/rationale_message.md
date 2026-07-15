@@ -1,0 +1,13 @@
+# Withdraw 25,400,000 ada for Intersect: Governance coordination and technical ...
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because this is a large Treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+
+The action requests 25,400,000 ada for Intersect’s June 2026 to June 2027 operating model, covering governance coordination, technical stewardship, incident response, release coordination, repository management, security initiatives, operations, ecosystem coordination, and management of critical processes. The proposal breaks this into 6,000,000 ada for operations and ecosystem coordination, 18,800,000 ada for technical stewardship and incident response, and 600,000 ada for management of critical processes, with milestone-based drawdowns, evidence-backed reporting, transparent disclosures, and external assurance.
+
+Several important claims were supported in the supplied review: the requested amount and budget split were stated in the proposal, the anchor document was pinned and replayable, the proposal passed the required Intersect Budget Process Hydra Voting threshold, prior Treasury funding was disclosed, Appold assurance was identified, and the use of a Sundae Labs treasury management smart contract framework with oversight and a public dashboard was independently verifiable. However, some central claims remained only proposer asserted, including the claimed reduction from last year’s budget while preserving critical functions, and Intersect’s claimed delivery history around two network upgrades, preparation for a third, and coordination during the November 2025 chain partition incident.
+
+This is a conservative, evidence-based hold, not a rejection of the work described. The review gates found enough structure to review the action, but Treasury votes require elevated scrutiny because they spend shared ada and create precedent. BEACN would need the Net Change Limit pinned and independently verified from public chain evidence, plus stronger independent evidence for the unsupported delivery-history and budget-comparison claims, clearer sustainability and cost-benefit analysis, independent assurance detail, and a dependency map before moving from NEEDS_MORE_INFO to a directional yes or no.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

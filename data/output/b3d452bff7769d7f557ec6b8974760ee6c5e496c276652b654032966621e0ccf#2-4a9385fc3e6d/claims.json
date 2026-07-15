@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,310,960",
+    "deadline": "12 months of funding for 2026",
+    "deliverables": [
+      "Ledger and Trezor compatibility updates",
+      "maintenance of supporting interoperability libraries and cardano-hw-cli",
+      "developer support for ecosystem integrators",
+      "support for integration paths involving externally maintained components where shared hardware-wallet flows intersect",
+      "vendor-required product or security audits where firmware or app changes trigger them",
+      "transparent capped time-and-materials reporting and milestone-based disbursement controls"
+    ],
+    "recipient": "Intersect on behalf of the vendor, with withdrawal to the 2026 Treasury Reserve Smart Contract stake address.",
+    "what": "Fund 12 months of Hardware Wallet Maintenance 2026 for Cardano hardware-wallet support, compatibility, tooling, developer support, and vendor-required audit work."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The work is framed as continuity maintenance for an already-proven Cardano hardware-wallet access layer rather than creation of a new wallet product.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims continuous maintenance is needed so Cardano, Ledger, or Trezor changes do not break secure access for users and integrations.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says the scope is limited to compatibility, security, supporting libraries and tooling, release support, and vendor-required audit work, and does not duplicate broader core-node, ledger, or general infrastructure maintenance budgets.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal claims it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and cites voting documentation and audited-results references.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states the requested amount does not breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission and links to the relevant governance action.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect will administer funds using a Sundae Labs treasury management smart contract framework with specified TRSC and PSSC addresses, role thresholds, and an external Oversight Committee.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The Oversight Committee is stated to consist of Sundae Labs, Cardano Foundation, Dquadrant, NMKR, Sundial, and Eternl, with a role of verifying key administrative actions using on-chain logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal discloses prior treasury and Catalyst funding related to hardware wallets, Ledger app rewrite, Plutus, security, and developer tooling via listed governance-action and Project Catalyst links.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "A dashboard at treasury.sundae.fi is presented as available for community auditing and tracking of withdrawn ada, with metrics also described as immutably verifiable on chain.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests 1,310,960 ada for 2026 Cardano hardware-wallet maintenance, describing a continuity/security scope, budget breakdown, Intersect budget-process approval, NCL compliance, prior-funding disclosures, and smart-contract-based oversight and disbursement arrangements.",
+  "output_sha256": "fc0fa29059d40386044011f683c15e21211aeedbad1d063011b13ef169d9e512"
+}

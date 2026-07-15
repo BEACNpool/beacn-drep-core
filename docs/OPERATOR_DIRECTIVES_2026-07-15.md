@@ -86,6 +86,13 @@ the record showing that when this system was wrong, it said so first and
 specifically. Candor about past defects is cheaper than the discount the
 public correctly applies to a sanitized log.
 
+**Amended later the same day (David's direction):** the corrections *page* was
+removed from the pre-launch site — beta-era defects will not headline a product
+that has not launched. `corrections.json` remains published in the repo,
+append-only and hash-chained, so the record is intact and provable; the page
+returns (or its content folds into a launch retrospective) when the site goes
+public. The data was never curated; only its placement changed.
+
 ### 7. No git-history rewrite of the web repo; retention + mirror removal instead; data-repo split deferred and pre-announced
 
 The web repo's git history is not rewritten. History rewriting on a public

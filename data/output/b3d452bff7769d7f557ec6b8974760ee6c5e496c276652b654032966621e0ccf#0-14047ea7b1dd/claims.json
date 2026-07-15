@@ -1,0 +1,85 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3,961,538",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Full-stack open-source payments infrastructure for Cardano",
+      "Onchain settlement through smart contracts",
+      "Connections to banking rails, stablecoin systems, and wallet interfaces",
+      "Visa card issuance linked directly to onchain balances",
+      "Native integration with self-custody wallets",
+      "WP1 - Enabling Onchain Payments & Card Infrastructure"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v",
+    "what": "Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex"
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "Intersect submitted the treasury withdrawal on behalf of the vendor, and the abstract, motivation, and rationale were sourced from the vendor's approved Intersect budget-process proposal.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says Wirex will deliver open-source payments infrastructure including smart contracts, account abstraction, batched transactions, settlement logic, wallet support, and an API ecosystem layer.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says the solution will enable Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal states Wirex has 7 million users, over 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states the withdrawal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states the requested amount does not breach the applicable 350M ada Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states Wirex has not received ada from the Cardano Treasury within the last 24 months.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states funds will be administered through Intersect using Sundae Labs treasury-management smart contracts, with TRSC and PSSC addresses, multisignature permissions, milestone-based disbursement controls, and external oversight entities identified.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal references a dashboard, smart-contract guide, GitHub repository, and audit reports for community auditability and verification of the treasury-management framework.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document describes a 3,961,538 ada treasury withdrawal for Wirex payments infrastructure, with detailed budget routing and oversight mechanics, but the main adoption and commercial-impact claims are largely asserted in the anchor text while governance-process and smart-contract-management claims are more externally checkable.",
+  "output_sha256": "1e905b46e6ee63bd886bf3e6be9af8851fd9f1c0949b8bfa73aa0d12af46feb6"
+}

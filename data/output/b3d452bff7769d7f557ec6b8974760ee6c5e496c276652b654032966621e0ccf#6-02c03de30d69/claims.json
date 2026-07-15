@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "1,162,746",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience",
+      "Critical breakages and serious vulnerabilities",
+      "Protocol-era and hard-fork compatibility",
+      "Bug fixes, correctness improvements, and optimizations",
+      "Documentation, examples, technical blog posts, and developer-experience improvements"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor MLabs",
+    "what": "Annual funding for maintenance and enhancement of MLabs Plutarch and Ply, including maintenance, compatibility, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Plutarch is a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply serializes Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "MLabs says Plutarch and Ply have been extensively used across the Cardano ecosystem, with an internal audit counting at least 26 teams in the motivation section and at least 15 teams in the rationale section.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "MLabs says Plutarch scripts rank among the smallest in its public cross-language benchmark suite while requiring comparatively low on-chain compute and memory.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says continued maintenance is needed to track Cardano ledger, Plutus, UPLC, tooling, and possible Dijkstra-era changes during the funding period.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says non-funding could increase friction, migration risk, uncertainty, bespoke workarounds, expensive smart contract stack migrations, or avoidable rewrites for existing adopters.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal claims alignment with Cardano 2030 Pillar 2 Adoption & Utility by supporting developer experience and core open-source smart contract tooling.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and was advanced for on-chain treasury withdrawal submission.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested withdrawal is stated not to breach the applicable 350M Net Change Limit for Epoch 613 to Epoch 713 at the moment of submission.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The budget totals 1,162,746 ADA, consisting of 1,128,880 ADA for Plutarch and Ply work and 33,866 ADA for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal says funds will be administered through Intersect using Sundae Labs treasury management smart contracts, with specified TRSC and PSSC addresses, multi-party authorization rules, oversight entities, milestone-based disbursement controls, and a public dashboard.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The proposal requests 1,162,746 ADA for annual maintenance and enhancement of MLabs Plutarch and Ply through Intersect-administered treasury smart contracts, citing developer-tooling importance, claimed ecosystem use, public benchmarks, Intersect budget-process approval, NCL compliance, prior funding disclosures, and oversight mechanisms.",
+  "output_sha256": "01dd044d9743ac894e0d66a6de9c2746b1f2dc02ae2f2faecf9c6eb2b3c36d83"
+}

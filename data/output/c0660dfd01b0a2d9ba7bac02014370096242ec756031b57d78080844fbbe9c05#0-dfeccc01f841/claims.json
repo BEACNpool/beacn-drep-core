@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3333000",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "WP1: DeFi Kernel Registry Website and Submission Process, including compatibility requirements, registry data structure, submission template, review checklist, metadata requirements, public website updates, documentation for at least two smart contract packages, onboarding support, monthly progress reports, and final impact report.",
+      "WP2: Spot Leverage Order Book, including protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, integration documentation, security review or audit report, issue resolution report, mainnet deployment, published script hashes and schemas, DeFi Kernel compatibility documentation, usage reports, and final reporting.",
+      "WP3: American Options Market-Making Protocol, including protocol specification, smart contract design, datum/redeemer schema draft, testnet deployment, integration documentation, security review or audit report, issue resolution report, mainnet deployment, published script hashes and schemas, DeFi Kernel compatibility documentation, usage reports, and final reporting.",
+      "WP4: Composable DeFi Transaction Builder SDK, including SDK architecture, public API specification, registry schema reader, metadata parser, discovery helpers, transaction-construction helper design, adapters, alpha release, SDK v1 release, examples, tests, documentation, integration support, issue resolution, release updates, external integration status report, developer-support report, and final SDK report."
+    ],
+    "recipient": "Dano Finance, with Minswap Labs serving as budget administrator",
+    "what": "Dano Finance requests treasury funding to accelerate the DeFi Kernel as an open standard for shared liquidity, on-chain financial intents, and global order-book coordination on Cardano, including a registry, two DeFi primitives, and an SDK."
+  },
+  "claims": [
+    {
+      "category": "economic",
+      "claim": "The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% administration fee for Minswap Labs.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposed delivery budget is divided into 300,000 ADA for the DeFi Kernel registry and 1,000,000 ADA each for the Spot Leverage Order Book, American Options Protocol, and Composable DeFi Transaction Builder SDK.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Dano Finance claims Cardano DeFi is fragmented across liquidity, metadata, and execution paths, creating integration friction for builders, wallets, bots, indexers, liquidity providers, and traders.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The DeFi Kernel is presented as an open, fee-free, royalty-free compatibility standard that lets compatible contracts publish metadata such as script hashes, datum and redeemer schemas, integration instructions, audit or security status, TVL or usage references, and discovery mechanisms.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "Dano Finance claims it currently has approximately USD 18 million in TVL and more than 10,000 on-chain transactions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The Spot Leverage Order Book is proposed as a DeFi Kernel-compatible leveraged spot trading protocol covering collateral, borrowing, debt accounting, swap execution, risk parameters, position state, repayment, liquidation conditions, and settlement.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The American Options Protocol is proposed as a Cardano-native market-making protocol using an extended concentrated-pool model with option-specific behavior including strike, expiry, premium, collateral or exposure, exercise conditions, settlement, and LP risk accounting.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal commits smart contract workstreams to security review or audit before mainnet release, with unresolved critical security issues blocking affected mainnet milestones.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal sets KPIs of at least USD 1,000,000 rolling 30-day trading volume for the Spot Leverage Order Book and at least USD 1,000,000 rolling 30-day option notional volume for the American Options Protocol within 90 days of mainnet launch, measured using public on-chain data.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "Dano Finance states it will return 5% of protocol fees generated by the Treasury-funded Spot Leverage Order Book and American Options contracts for 12 months after mainnet launch, after specified direct costs and with public reporting.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests 3,333,000 ADA for Dano Finance to deliver a DeFi Kernel registry, leveraged spot order book, American options market-making protocol, and composable transaction builder SDK, with Minswap Labs as administrator, milestone-based delivery, security review requirements, public reporting, volume KPIs, and a 12-month 5% protocol-fee return commitment.",
+  "output_sha256": "8b9400c10a31b5527e6ab583b90901907f6aeb62c2ddb5edd9db1a7bc8aaf79d"
+}

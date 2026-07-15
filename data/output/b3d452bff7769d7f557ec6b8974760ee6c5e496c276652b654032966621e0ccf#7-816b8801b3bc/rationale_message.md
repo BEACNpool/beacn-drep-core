@@ -1,0 +1,13 @@
+# Withdraw 540,750 ada for Oura by TxPipe: Maintaining Cardano’s Event Pipeline
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.
+
+The action requests 540,750 ada for 12 months of Oura maintenance and enhancement by TxPipe, submitted by Intersect on behalf of the vendor. The proposal says this includes 525,000 ada for Oura work and a 15,750 ada Intersect administration fee, with the Oura budget described as 420,000 ada plus a 105,000 ada contingency reserve for a part-time maintainer. The work would cover dependency updates, Cardano protocol compatibility, performance improvements, bug fixing, documentation, community support, AI-friendly integration resources, and milestone-based disbursement and reporting through Intersect oversight.
+
+Several important claims were supported well enough for review: the proposal anchor was pinned and replayable, Oura’s technical role as a Rust-native Cardano event pipeline was supported, repository activity and adoption signals were independently verifiable, and the proposal’s passage through the 2026 Intersect Budget Process Hydra Voting phase was independently verifiable. The review also found that the requested amount did not breach the stated 350M ada Net Change Limit at submission, and that Intersect would administer funds through treasury management smart contracts with oversight, authorization thresholds, reporting, milestone controls, and a public dashboard.
+
+This is a conservative, evidence-based hold, not a rejection of Oura. The review found thin evidence in some areas: independent evidence was missing for the Project Catalyst funding-history claims, the line-item budget was missing, milestone-gated disbursement evidence was missing from treasury analysis, and the risk review lacked independent assurance plus a rollback or remedy path. The specific evidence that would unblock a directional vote is pinned, independently verifiable public chain evidence for the applicable Net Change Limit, with stronger support for the missing budget, milestone, assurance, and remedy details.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

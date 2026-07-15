@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:8d9c1473d1b2af2d18e6a6b58e88facf512ec51e16d035eb829fe456b13f49c9",
+    "raw_input_hash": "sha256:6208950ae09a85fc75d682bbd6b251ebb4c4e2dc905bbda242ad8ac1a9ef6956",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NO",
     "onchain_vote": "NO",
     "diverged": false,
-    "published_at": "2026-07-15T17:15:33.674501+00:00",
+    "published_at": "2026-07-15T17:40:21.239637+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "7728a43cf06a4e9d9d3e7491d2a6da28b6e4bc0e380d631f099132c99f6ecc09",
@@ -42,24 +42,24 @@
     "vote": "NO",
     "score": -0.12,
     "confidence": 0.75,
-    "input_hash": "8d9c1473d1b2af2d18e6a6b58e88facf512ec51e16d035eb829fe456b13f49c9",
-    "snapshot_bundle_hash": "4301f99258e287e35c0213e83420f3ea84b4b591024a5902a52301616cbb3bdf",
+    "input_hash": "6208950ae09a85fc75d682bbd6b251ebb4c4e2dc905bbda242ad8ac1a9ef6956",
+    "snapshot_bundle_hash": "e4a8ffd6c4a1773f655c2241c08f34cc9fc6f1a5c4e2a3c0a4e12f4204512b49",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "880436a840989202a38cccce66fd8f1cbf15004d",
-    "core_commit": "3c8b756dc9ad8229daf2efde6da0d961fa785154",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-8d9c1473d1b2.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/26e842b004bbca588ea89281.md",
-    "rationale_anchor_hash": "26e842b004bbca588ea892811d762a38fc9ddc82a734b0ad77e63ef5f84c8448"
+    "resources_commit": "3e3c343fc0dd14a03a92aad1216ba6620b3d0185",
+    "core_commit": "4279cec70cd9b6b43db3772a904ec6126d63f55c",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-6208950ae09a.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/21ad5d96682e127c29d8ba63.md",
+    "rationale_anchor_hash": "21ad5d96682e127c29d8ba63e6eb9876d9d1bfd0665959f50f4398cb2a870aa5"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposer states that Cardano currently lacks seamless rails for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Wirex is stated not to have received ada from the Cardano Treasury within the last 24 months; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Wirex addresses a claimed gap in Cardano by providing infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and a 115,385 ada Intersect Budget Administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Wirex has not received ada from the Cardano Treasury within the last 24 months; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
-      "Provide independent evidence for: Wirex is stated not to have received ada from the Cardano Treasury within the last 24 months.",
+      "Provide independent evidence for: Wirex has not received ada from the Cardano Treasury within the last 24 months.",
       "Provide line-item budget.",
       "Provide sustainability path."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-8d9c1473d1b2.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-6208950ae09a.md",
     "missing_evidence": [],
     "blocked_reason_code": null,
     "assessment_status": "incomplete",
@@ -92,22 +92,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Withdraw 3,961,538 ada to fund Bringing Real-World Payments to Cardano with Wirex.",
-            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the Wirex project",
+            "Requested: Treasury withdrawal to fund Bringing Real-World Payments to Cardano with Wirex.",
+            "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, administered by Intersect for the vendor.",
             "Stated amount: 3,961,538",
-            "Deliverables: Full-stack open-source payments infrastructure for Cardano, Onchain settlement through smart contracts, Connections to banking rails, stablecoin systems, and wallet interfaces, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, Smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem layer",
+            "Deliverables: Enabling onchain payments and card infrastructure, Open-source on-chain payments infrastructure including smart contract engineering, account abstraction, batched transactions, settlement logic, and wallet/API ecosystem layer, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, Stablecoin-backed banking rails and compliance architecture, Milestone-based disbursement controls through TRSC and PSSC smart contracts",
             "Deadline/expiry: not stated in document",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.",
-            "Claim (technical, supported_in_proposal, high materiality): Wirex proposes to deliver open-source payments infrastructure enabling onchain settlement, banking-rail connections, stablecoin systems, wallet interfaces, and Visa card issuance linked to onchain balances.",
-            "Claim (adoption, proposer_asserted, high materiality): The proposer states that Cardano currently lacks seamless rails for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
-            "Claim (adoption, proposer_asserted, high materiality): Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
-            "Claim (economic, independently_verifiable, high materiality): The requested withdrawal is stated not to breach the 350M ada Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission."
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and a 115,385 ada Intersect Budget Administration fee.",
+            "Claim (adoption, proposer_asserted, high materiality): Wirex addresses a claimed gap in Cardano by providing infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposed solution will provide full-stack, open-source payments infrastructure for onchain settlement through smart contracts connected to banking rails, stablecoin systems, and wallet interfaces.",
+            "Claim (adoption, proposer_asserted, high materiality): A core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+            "Claim (adoption, proposer_asserted, high materiality): Wirex is asserted to have more than 7 million users, over 1.5 million cards issued, over $20 billion in transaction volume, and experience as a Visa Principal Member.",
+            "Claim (governance, independently_verifiable, high materiality): The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase."
           ],
           "missing": [
-            "Independent evidence for: The proposer states that Cardano currently lacks seamless rails for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
-            "Independent evidence for: Wirex is described as having 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and experience as a Visa Principal Member.",
-            "Independent evidence for: Wirex is stated not to have received ada from the Cardano Treasury within the last 24 months."
+            "Independent evidence for: Wirex addresses a claimed gap in Cardano by providing infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity.",
+            "Independent evidence for: A core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+            "Independent evidence for: Wirex is asserted to have more than 7 million users, over 1.5 million cards issued, over $20 billion in transaction volume, and experience as a Visa Principal Member.",
+            "Independent evidence for: Wirex has not received ada from the Cardano Treasury within the last 24 months."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -155,8 +156,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and 115,385 ada for the Intersect Budget Administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that Cardano currently lacks seamless rails for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 3,961,538 ada, consisting of 3,846,153 ada for WP1 and a 115,385 ada Intersect Budget Administration fee.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Wirex addresses a claimed gap in Cardano by providing infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -175,7 +176,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-8d9c1473d1b2.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-6208950ae09a.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -297,7 +298,7 @@
     "anchor_hash": "7026fbe6411338673aa859e31bce8ae707566eff26de9b290db70d06e59b258f",
     "file_sha256": "9a9e723afedc0ea2f5cf6d373e0097149c41a0191880d77a98977ad23aa804cb",
     "content_bytes": "13893",
-    "fetched_at_utc": "2026-07-15T17:15:36Z",
+    "fetched_at_utc": "2026-07-15T17:40:23Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -353,8 +354,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "880436a840989202a38cccce66fd8f1cbf15004d",
-    "core_commit": "3c8b756dc9ad8229daf2efde6da0d961fa785154",
+    "resources_commit": "3e3c343fc0dd14a03a92aad1216ba6620b3d0185",
+    "core_commit": "4279cec70cd9b6b43db3772a904ec6126d63f55c",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -467,7 +468,7 @@
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-15T17:33:37.423658Z",
+    "snapshot_time": "2026-07-15T17:58:58.472285Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -1,0 +1,133 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#30",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: expired",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: 3.00M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Withdraw \u20b33,000,000 for High-yield RWA Asset for Cardano: Tokenized Real Estate",
+        "Recipient: ",
+        "Stated amount: 3.00M ADA",
+        "Deliverables: This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si..., By leveraging blockchain technology, our platform enables homeowners to sell fractional ownership of their home equity, instantly accessing liquidity while allowing investors to gain exposure to real estate appreciation., We have already prototyped and deployed this model on a private Ethereum blockchain, securing $20 million in Total Value Locked (TVL)., With this proposal, we aim to transition HausCoin and the liquidity protocol to Cardano, leveraging its secure, scalable, and cost-effective infrastructure to power a decentralized marketplace for home equity trading.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, independently_verifiable, high materiality): This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...",
+        "Claim (economic, independently_verifiable, low materiality): By leveraging blockchain technology, our platform enables homeowners to sell fractional ownership of their home equity, instantly accessing liquidity while allowing investors to gain exposure to real estate appreciation.",
+        "Claim (economic, independently_verifiable, low materiality): We have already prototyped and deployed this model on a private Ethereum blockchain, securing $20 million in Total Value Locked (TVL).",
+        "Claim (technical, independently_verifiable, low materiality): With this proposal, we aim to transition HausCoin and the liquidity protocol to Cardano, leveraging its secure, scalable, and cost-effective infrastructure to power a decentralized marketplace for home equity trading.",
+        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Many homeowners are asset-rich but cash-poor, lacking access to liquidity tied up in their homes.",
+        "Claim (economic, independently_verifiable, low materiality): At the same time, investors struggle to find stable, appreciating, asset-backed alternatives to traditional stablecoins or volatile crypto assets."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 3.00M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds High-yield RWA Asset for Cardano : Tokenized Real Estate which will provide the following services: Haus is building an open-source Tokenized Home Equity Liquidity Protocol to unlock the $16 trillion in illiquid home equity si...\" though 7 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

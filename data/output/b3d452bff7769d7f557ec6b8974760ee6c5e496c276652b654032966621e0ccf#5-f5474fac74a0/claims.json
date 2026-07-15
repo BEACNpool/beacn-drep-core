@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "3810423",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Mithril Protocol Continuous Development",
+      "Intersect budget administration and oversight",
+      "Milestone-based disbursement controls through TRSC/PSSC smart contracts"
+    ],
+    "recipient": "2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor; vendor identified as Teragone in the funding disclosure.",
+    "what": "Treasury withdrawal to fund Mithril Protocol continued development through the Intersect budget process."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "Mithril uses stake-based threshold multi-signatures to certify Cardano state in a trustless way so nodes and applications can verify state rapidly without relying on the entire chain.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Full node synchronisation is slow today and light clients rely on centralized trust.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "adoption",
+      "claim": "Funding Mithril continued development through Intersect MBO is presented as preserving Cardano decentralization while supporting scaling.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested 3,810,423 ada consists of 3,699,440 ada for Mithril Protocol Continuous Development and 110,983 ada for the Intersect Budget Administration fee.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states the withdrawal does not breach the applicable 350M Net Change Limit at the time of submission, either on its own or in aggregate.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "Audit and oversight costs are included in the proposal overhead and administration fee, with independent oversight through Intersect and technically capable third parties plus reporting obligations and milestone-based disbursement controls.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "Teragone has not previously received direct funding from Cardano treasury or community governance programs, while prior Mithril work was funded by IOG.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Intersect will use Sundae Labs treasury management smart contracts with one Treasury Reserve Smart Contract and one Project-Specific Smart Contract for administration and disbursement.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The Oversight Committee is stated to consist of Sundae Labs, Cardano Foundation, Dquadrant, NMKR, Sundial, and Eternl, and to verify key administrative actions using on-chain logic without discretion over governance decisions.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document requests 3,810,423 ada for Mithril Protocol continued development and Intersect administration, arguing that Mithril provides trustless rapid state verification, has budget-process approval, complies with the NCL at submission, and will be managed through smart-contract-based treasury controls with external oversight.",
+  "output_sha256": "ae2502b0de5e9bdea0e6281d57468d77938c675af99df43932110ca07300434d"
+}

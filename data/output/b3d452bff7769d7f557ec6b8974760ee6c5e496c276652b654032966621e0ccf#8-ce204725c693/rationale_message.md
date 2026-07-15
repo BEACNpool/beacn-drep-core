@@ -1,0 +1,13 @@
+# Withdraw 540,750 ada for Pallas by TxPipe: Maintaining Cardano's Core Rust Li...
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of Pallas or TxPipe.
+
+The proposal requested 540,750 ada for 12 months of Pallas maintenance and enhancement: 420,000 ada for the work, a 105,000 ada contingency reserve, and a 15,750 ada Intersect administration fee. It described Pallas as core Rust infrastructure for Cardano and listed maintenance, protocol compatibility, performance work, bug fixing, documentation, community support, contribution review, and AI-friendly integration resources as deliverables. The proposal also said Intersect would administer funds through milestone-based smart contract controls.
+
+Several claims were well-supported in the proposal, including the requested amount, the maintenance scope, the nature of Pallas as Rust infrastructure, and the planned Intersect administration and oversight structure. Some claims were checkable but still required independent verification, including GitHub and crates.io activity, Intersect Budget Process support, and the statement that the request did not breach the 350M ada Net Change Limit for Epoch 613 to Epoch 713. Other material claims remained unsupported by independent evidence in the review, especially the claim that Pallas is shared infrastructure for projects such as Aiken, Dolos, Lucid, Oura, Mithril, Amaru, and UTxO-RPC, and the claim about TxPipe’s prior Catalyst delivery record.
+
+The review passed the basic intake gate because the pinned anchor document was available and replayable, and it found a credible strongest-YES case around the clearly stated budget and maintenance purpose. But treasury withdrawals receive elevated scrutiny because they spend shared ada, and the review still found thin evidence, stressed treasury-flow conditions, missing sustainability and cost-benefit clarity, no independent assurance, and no clear rollback or remedy path. A directional vote would be unblocked by public, independently replayable evidence for the Net Change Limit and stronger independent evidence for the material adoption and delivery-history claims.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

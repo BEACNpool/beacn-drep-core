@@ -66,7 +66,6 @@ PYTHONPATH=src BEACN_WEB_REPO="$WEB" python3 scripts/update_web_status.py >/dev/
 cd "$WEB"
 ids="$(python3 -c "import json;print(' '.join(a['cip129_action_id'] for a in json.load(open('status.json'))['actions'] if str(a.get('status','')).lower()=='open' and a.get('cip129_action_id')))" 2>/dev/null)"
 for id in $ids; do python3 scripts/build_share_card.py --id "$id" >/dev/null 2>&1 || true; done
-rsync -a data/output/public/share/ public/data/output/public/share/
 
 git add -A
 if git diff --cached --quiet; then

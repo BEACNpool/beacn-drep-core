@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:dc2424d7a4002bde192574908f04b937d6ebda45590fc432473a6fbf3ecbe002",
+    "raw_input_hash": "sha256:c905eb4429f80b0ce284bdea8b9b16957308e22e0a31eec5a62e426a2c3ef49e",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NO",
     "onchain_vote": "NO",
     "diverged": false,
-    "published_at": "2026-07-15T20:03:02.022493+00:00",
+    "published_at": "2026-07-16T11:30:04.765626+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "f01e9eadc6e7c62688957c429ca8c9c7a3263ae788703a68df9e25337f299b98",
@@ -42,24 +42,24 @@
     "vote": "NO",
     "score": -0.12,
     "confidence": 0.75,
-    "input_hash": "dc2424d7a4002bde192574908f04b937d6ebda45590fc432473a6fbf3ecbe002",
-    "snapshot_bundle_hash": "3c7bdce95491547d4727484e53854e83ba5e3a1bbad23d87be130cc73576f3de",
+    "input_hash": "c905eb4429f80b0ce284bdea8b9b16957308e22e0a31eec5a62e426a2c3ef49e",
+    "snapshot_bundle_hash": "f5f35cf8cfbea7458a8c7c52eeee1e9f939b9ae80d466b025d58408d9513b220",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
-    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
-    "rationale_markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-dc2424d7a400.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/52469738bfe87348ef035c06.md",
-    "rationale_anchor_hash": "52469738bfe87348ef035c06aac7971071fbce353b79b130250167bf21a499da"
+    "resources_commit": "cf10b7dbeda9a1c22264141d5790e689bc38a168",
+    "core_commit": "d453001532354a9829db082557872666319abf7c",
+    "rationale_markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-c905eb4429f8.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/17080efaef948ecb84529746.md",
+    "rationale_anchor_hash": "17080efaef948ecb845297469b77dd6f04a246690f4f26b67b0493b2205993ba"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Phase 1 is described as already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22/ADA, inclusive of a 3% Intersect administration fee, over 8 months.\" and clears the evidence gates. What would change this vote to YES: Provide independent assurance; Provide rollback/remedy path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Phase 1 of the ticketing platform is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 4,969,231 ada, stated as approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1; Provide independent assurance. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
     "summary_raw": "Directional NO is supported by affirmative independent evidence of waste, duplication, excessive cost, or failed delivery \u2014 not by missing information.",
     "top_fixes": [
+      "Provide independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
       "Provide independent assurance.",
-      "Provide rollback/remedy path.",
-      "Provide dependency map."
+      "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-dc2424d7a400.md",
+    "markdown_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-c905eb4429f8.md",
     "missing_evidence": [],
     "blocked_reason_code": null,
     "assessment_status": "incomplete",
@@ -92,22 +92,23 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund Phase 2 of a production Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency, including secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, audit, and launch campaign.",
-            "Recipient: Anvil Development Agency, Inc. / Intersect as budget administrator under the TRSC/PSSC framework",
+            "Requested: Treasury withdrawal to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency.",
+            "Recipient: Anvil Development Agency, Inc. / Intersect as budget administrator",
             "Stated amount: 4,969,231",
-            "Deliverables: Secondary marketplace with on-chain settlement, Smart-contract royalty enforcement, Per-event anti-scalping controls, Custodial wallet onboarding with self-custody export, Organizer dashboard and support verification tools, Independent third-party security audit with remediation report, Public launch campaign and three trade-show activations, Public metrics dashboard and governance reporting",
-            "Deadline/expiry: 8 months across five milestones",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22/ADA, inclusive of a 3% Intersect administration fee, over 8 months.",
-            "Claim (technical, proposer_asserted, high materiality): Phase 1 is described as already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.",
-            "Claim (technical, supported_in_proposal, high materiality): Phase 2 will deliver a secondary marketplace, smart-contract royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent audit, and public launch amplification.",
-            "Claim (adoption, proposer_asserted, high materiality): Sellout is described as a Web2 ticketing platform with 200,000+ registered users, 250,000+ tickets issued to date, and 350+ events annually at current cadence.",
-            "Claim (adoption, proposer_asserted, high materiality): The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment projected to move $6M+ through Cardano in Year 1, based on $5.88M historical 2025 ticket revenue.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal commits to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism, initially sending 25% of fees until full reimbursement and then 5% permanently."
+            "Deliverables: Secondary ticket marketplace with on-chain settlement, Smart-contract royalty enforcement, Per-event anti-scalping controls, Custodial wallet onboarding for Sellout users, Organizer dashboard/tools, Independent third-party security audit with published report and remediation, Public launch campaign and trade-show activations, Public on-chain metrics dashboard and quarterly reporting, Revenue-share repayment mechanism to the Cardano Treasury",
+            "Deadline/expiry: 8 months over five milestones",
+            "Claim (technical, proposer_asserted, high materiality): Phase 1 of the ticketing platform is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+            "Claim (economic, proposer_asserted, medium materiality): Sellout has invested over $130,000 of its own capital into Phase 1.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 4,969,231 ada, stated as approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.",
+            "Claim (technical, supported_in_proposal, high materiality): Phase 2 will deliver a secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent audit, and launch amplification.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposers commit to repay $1,093,231 to the Cardano Treasury through a revenue-share mechanism, with 25% of fees paid until full reimbursement and 5% thereafter.",
+            "Claim (adoption, proposer_asserted, high materiality): The proposal targets 200+ events on-chain, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6 million plus ticket revenue on-chain, and 20,000+ new wallets within 12 months from launch."
           ],
           "missing": [
-            "Independent evidence for: Phase 1 is described as already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.",
-            "Independent evidence for: Sellout is described as a Web2 ticketing platform with 200,000+ registered users, 250,000+ tickets issued to date, and 350+ events annually at current cadence.",
-            "Independent evidence for: The Yellowstone Club 2026 concert series is presented as a contracted anchor deployment projected to move $6M+ through Cardano in Year 1, based on $5.88M historical 2025 ticket revenue."
+            "Independent evidence for: Phase 1 of the ticketing platform is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.",
+            "Independent evidence for: Sellout has invested over $130,000 of its own capital into Phase 1.",
+            "Independent evidence for: The proposal targets 200+ events on-chain, 75,000+ CIP-68 NFT tickets, 150,000+ on-chain interactions, $6 million plus ticket revenue on-chain, and 20,000+ new wallets within 12 months from launch.",
+            "Independent evidence for: The Yellowstone Club 2026 concert series is described as a contracted anchor deployment projected to move over $6 million through Cardano in Year 1."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -151,8 +152,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, approximately $1,093,231 at $0.22/ADA, inclusive of a 3% Intersect administration fee, over 8 months.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 is described as already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification funded by Sellout with over $130,000 of its own capital.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 4,969,231 ada, stated as approximately $1,093,231 at $0.22 per ADA, including a 3% Intersect administration fee, over 8 months.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"Phase 1 of the ticketing platform is already live on Cardano mainnet with on-chain event creation, CIP-68 ticket minting, transfers, and attendance verification.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -171,7 +172,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-dc2424d7a400.assessment.json",
+    "assessment_path": "/data/output/public/rationales/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0-c905eb4429f8.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [],
       "evidence_status": "independently_verified",
@@ -272,7 +273,7 @@
     "anchor_hash": "1a25307b01b45cc3a13a33c21a9048a0c7672178f776d36154f78ac7b289fb1c",
     "file_sha256": "43934d3d5d83db7e22ba1f5467213f7664b817607355a2ddd27246b1190b0fe5",
     "content_bytes": "27771",
-    "fetched_at_utc": "2026-07-15T20:03:04Z",
+    "fetched_at_utc": "2026-07-16T11:30:07Z",
     "download_path": "/proposals/35b44189eb4795d5775122da52a3a115753f83fd662dd1ff205ea633fc99b34e#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -337,8 +338,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
-    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
+    "resources_commit": "cf10b7dbeda9a1c22264141d5790e689bc38a168",
+    "core_commit": "d453001532354a9829db082557872666319abf7c",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -451,7 +452,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-15T20:20:56.738971Z",
+    "snapshot_time": "2026-07-16T11:48:05.649587Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -1,0 +1,112 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 3.96M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Withdraw treasury funds for Bringing Real-World Payments to Cardano with Wirex.",
+        "Recipient: 2026 Treasury Reserve Smart Contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, with project funding later transferred to a Project-Specific Smart Contract for Wirex when legal contract and vendor readiness conditions are met.",
+        "Stated amount: 3,961,538",
+        "Deliverables: Full-stack open-source payments infrastructure for Cardano, Onchain settlement through smart contracts, Connections to banking rails, stablecoin systems, and wallet interfaces, Visa card issuance linked directly to onchain balances, Native integration with self-custody wallets, Smart contract engineering, account abstraction, batched transactions, settlement logic, wallet layer, and API ecosystem layer",
+        "Deadline/expiry: not stated in document",
+        "Claim (adoption, proposer_asserted, high materiality): Wirex says the proposal addresses Cardano's lack of integrated infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal states it will deliver full-stack open-source payments infrastructure enabling onchain settlement through smart contracts and connectivity to banking rails, stablecoin systems, and wallet interfaces.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal states a core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+        "Claim (adoption, proposer_asserted, high materiality): The proposal states Wirex has 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
+        "Claim (governance, supported_in_proposal, medium materiality): The proposal says the work aligns with Pillar 1 by providing public-good on-chain infrastructure including smart contracts, account abstraction, batched transactions, settlement logic, and wallet and API ecosystem components.",
+        "Claim (governance, independently_verifiable, high materiality): The proposal says it achieved the required 67% support threshold in the 2026 Intersect Budget Process Hydra Voting phase and provides references to voting materials, documentation, final audited results, and an audit report."
+      ],
+      "missing": [
+        "Independent evidence for: Wirex says the proposal addresses Cardano's lack of integrated infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.",
+        "Independent evidence for: The proposal states a core outcome is Visa card issuance linked directly to onchain balances so users can spend digital assets globally at millions of merchants.",
+        "Independent evidence for: The proposal states Wirex has 7 million users, more than 1.5 million cards issued, more than $20 billion in transaction volume, and Visa Principal Member experience.",
+        "Independent evidence for: The proposal states Wirex has not received ADA from the Cardano Treasury within the last 24 months."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 0",
+        "Budget granularity: not confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.62"
+      ],
+      "missing": [
+        "line-item budget",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: medium",
+        "Technical risk: unknown",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal states it will deliver full-stack open-source payments infrastructure enabling onchain settlement through smart contracts and connectivity to banking rails, stablecoin systems, and wallet interfaces.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Wirex says the proposal addresses Cardano's lack of integrated infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

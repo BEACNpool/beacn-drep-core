@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 637",
+        "Expires after epoch: 644",
+        "Treasury request: 2.35M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Treasury withdrawal to fund 12 months of Eternl operations, maintenance, and improvements, including frontend and backend work, infrastructure, support, administration, and audits/oversight.",
+        "Recipient: Tastenkunst GmbH, Eternl",
+        "Stated amount: 2350000",
+        "Deliverables: 12 months of frontend maintenance and cross-platform development, 12 months of backend infrastructure and operations, User support through Discord ticketing, Telegram, public channels, ecosystem project support, wiki updates, and educational videos, Day-to-day operations including release management, vendor and ecosystem coordination, code review, and security practices, Governance tooling enhancements including DRep dashboards, proposal browsers, in-wallet voting, and governance proposal creation, Periodic independent audits of treasury fund use and implementation of oversight metrics",
+        "Deadline/expiry: August 2026 to July 2027",
+        "Claim (adoption, supported_in_proposal, high materiality): Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b32,350,000 at about $0.1787 per Ada to cover approximately $420,000 of annual operating costs.",
+        "Claim (economic, supported_in_proposal, high materiality): The requested budget funds 6.0 FTE across 10 contributors at $70,000 per FTE.",
+        "Claim (economic, supported_in_proposal, high materiality): Eternl plans to introduce paid Pro plans priced at $96 per year for personal users and $360 per year for companies, and says about 5,500 paying users would fully cover the annual $420,000 cost.",
+        "Claim (economic, proposer_asserted, high materiality): The team says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, and return any Ada above that amount to the treasury.",
+        "Claim (governance, proposer_asserted, high materiality): The proposal states that independent audits by a party unaffiliated with Tastenkunst GmbH or the Eternl team will occur in February 2027 and August 2027 and will review custody, conversion, spending, balances, Pro plan income relevant to repayment, and treasury refunds or repayments."
+      ],
+      "missing": [
+        "Independent evidence for: The team says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, and return any Ada above that amount to the treasury.",
+        "Independent evidence for: The proposal states that independent audits by a party unaffiliated with Tastenkunst GmbH or the Eternl team will occur in February 2027 and August 2027 and will review custody, conversion, spending, balances, Pro plan income relevant to repayment, and treasury refunds or repayments.",
+        "Independent evidence for: The proposal claims Eternl has about 100,000 browser extension installs and about 30,000 installs across Android and iOS.",
+        "Independent evidence for: The proposal claims 10-18% of Cardano mainnet transactions are conducted via Eternl."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 2350000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: confirmed",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.72"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: medium",
+        "Technical risk: unknown",
+        "Treasury exposure risk: medium",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Eternl is a non-custodial Cardano light wallet available on web, browser extension, Android, and iOS.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The team says it will convert up to $420,000 worth of Ada into stablecoins, deposit it into a public company wallet, and return any Ada above that amount to the treasury.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

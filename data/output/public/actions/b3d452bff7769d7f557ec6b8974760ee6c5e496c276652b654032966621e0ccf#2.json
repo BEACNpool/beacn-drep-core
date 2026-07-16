@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:4a9385fc3e6dba029fcbe100252797c6ee7cea9fab4b6264b4f5d14ea5b0d708",
+    "raw_input_hash": "sha256:7890af5fc11c64e7b43f14f8373cf80bf325c4e5be73e486c6f13ee47e933858",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "YES",
     "onchain_vote": "YES",
     "diverged": false,
-    "published_at": "2026-07-15T20:03:02.022493+00:00",
+    "published_at": "2026-07-16T11:30:04.765626+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "9f051084b19832ab5d0f327c3515763e56f0005d4189817f0020853a13283163",
@@ -42,24 +42,24 @@
     "vote": "YES",
     "score": 0.275,
     "confidence": 0.7887,
-    "input_hash": "4a9385fc3e6dba029fcbe100252797c6ee7cea9fab4b6264b4f5d14ea5b0d708",
-    "snapshot_bundle_hash": "7f7d5457db2fb61be00f2026cc392a63620111de0a7614920755de15728f6ecb",
+    "input_hash": "7890af5fc11c64e7b43f14f8373cf80bf325c4e5be73e486c6f13ee47e933858",
+    "snapshot_bundle_hash": "41efe4c2d3d3441f9071015a769824ea10c1ac639b954fe6a42fbc2d6c8cee2c",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
-    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-4a9385fc3e6d.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/f1d53decd5fd8d25cd393a27.md",
-    "rationale_anchor_hash": "f1d53decd5fd8d25cd393a27b4e2213ad8f5aee8fa7524f0843e6f6febac1369"
+    "resources_commit": "cf10b7dbeda9a1c22264141d5790e689bc38a168",
+    "core_commit": "d453001532354a9829db082557872666319abf7c",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-7890af5fc11c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/17fcecac76b05c438eda2065.md",
+    "rationale_anchor_hash": "17fcecac76b05c438eda2065234688303b79871ddeb4947d00a5eea037cae28a"
   },
   "rationale": {
-    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The work is framed as continuity maintenance for an already-proven Cardano hardware-wallet access layer rather than creation of a new wallet product.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.28; confidence 78.9%.",
+    "summary": "Vote: YES. For this TreasuryWithdrawals (active), available evidence supports proceeding, with risk judged manageable under current context. Decisive reason: the proposal substantiates \"The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for an Intersect Budget Administration fee.\" and clears the evidence gates. Weighed against it: a material claim is unsupported \u2014 \"The proposer states that continuous maintenance is needed because Cardano protocol evolution, vendor firmware and app release cycles, and wallet and dApp integration demand create compatibility risk at a security-critical access layer.\" \u2014 so cost or precedent may outweigh the benefit. What could still change this vote to NO: Material counter-evidence on the decisive points above, or failure of the stated safeguards, would trigger a revision. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score 0.28; confidence 78.9%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide sustainability path.",
       "Provide cost-benefit clarity.",
       "Provide independent assurance."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-4a9385fc3e6d.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-7890af5fc11c.md",
     "missing_evidence": [],
     "blocked_reason_code": null,
     "assessment_status": "incomplete",
@@ -92,23 +92,21 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: complete",
-            "Requested: Fund 12 months of Hardware Wallet Maintenance 2026 for Cardano hardware-wallet support, compatibility, tooling, developer support, and vendor-required audit work.",
-            "Recipient: Intersect on behalf of the vendor, with withdrawal to the 2026 Treasury Reserve Smart Contract stake address.",
+            "Requested: Hardware Wallet Maintenance 2026 for Cardano hardware-wallet support, including Ledger and Trezor compatibility updates, supporting interoperability libraries and cardano-hw-cli, developer support for integrators, externally maintained shared hardware-wallet flow support, and vendor-required product or security audits.",
+            "Recipient: Intersect treasury reserve smart contract stake address stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v, submitted by Intersect on behalf of the vendor",
             "Stated amount: 1,310,960",
-            "Deliverables: Ledger and Trezor compatibility updates, maintenance of supporting interoperability libraries and cardano-hw-cli, developer support for ecosystem integrators, support for integration paths involving externally maintained components where shared hardware-wallet flows intersect, vendor-required product or security audits where firmware or app changes trigger them, transparent capped time-and-materials reporting and milestone-based disbursement controls",
-            "Deadline/expiry: 12 months of funding for 2026",
-            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.",
-            "Claim (technical, proposer_asserted, high materiality): The work is framed as continuity maintenance for an already-proven Cardano hardware-wallet access layer rather than creation of a new wallet product.",
-            "Claim (technical, proposer_asserted, high materiality): The proposer claims continuous maintenance is needed so Cardano, Ledger, or Trezor changes do not break secure access for users and integrations.",
-            "Claim (technical, proposer_asserted, medium materiality): The proposal says the scope is limited to compatibility, security, supporting libraries and tooling, release support, and vendor-required audit work, and does not duplicate broader core-node, ledger, or general infrastructure maintenance budgets.",
-            "Claim (governance, independently_verifiable, high materiality): The proposal claims it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and cites voting documentation and audited-results references.",
-            "Claim (governance, independently_verifiable, high materiality): The proposer states the requested amount does not breach the applicable 350M Net Change Limit covering Epoch 613 to Epoch 713 at the time of submission and links to the relevant governance action."
+            "Deliverables: 12 months of production maintenance for Cardano hardware-wallet support, Ledger and Trezor compatibility updates, Maintenance of supporting interoperability libraries and cardano-hw-cli, Developer support for ecosystem integrators, Support for integration paths involving externally maintained components where shared hardware-wallet flows intersect, Vendor-required product or security audits where firmware or app changes trigger them, Transparent capped time-and-materials reporting, Milestone-based disbursement controls",
+            "Deadline/expiry: 2026 maintenance period; exact milestone dates not stated in document",
+            "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for an Intersect Budget Administration fee.",
+            "Claim (technical, supported_in_proposal, high materiality): The requested withdrawal is for 12 months of production maintenance of Cardano hardware-wallet support rather than building a new wallet product.",
+            "Claim (technical, supported_in_proposal, high materiality): The proposed scope includes Ledger and Trezor compatibility updates, interoperability libraries, cardano-hw-cli, integrator developer support, externally maintained shared-flow support, and vendor-required audits.",
+            "Claim (technical, proposer_asserted, high materiality): The proposer states that continuous maintenance is needed because Cardano protocol evolution, vendor firmware and app release cycles, and wallet and dApp integration demand create compatibility risk at a security-critical access layer.",
+            "Claim (economic, proposer_asserted, medium materiality): The proposer states that funding continuity in 2026 is less costly and less disruptive than waiting for hardware-wallet breakage to accumulate.",
+            "Claim (governance, independently_verifiable, high materiality): The proposal states it achieved the required 67% support threshold during the 2026 Intersect Budget Process Hydra Voting phase and provides references to the vote, documentation, audited results, and audit materials."
           ],
           "missing": [
-            "Independent evidence for: The work is framed as continuity maintenance for an already-proven Cardano hardware-wallet access layer rather than creation of a new wallet product.",
-            "Independent evidence for: The proposer claims continuous maintenance is needed so Cardano, Ledger, or Trezor changes do not break secure access for users and integrations.",
-            "Independent evidence for: The proposal says the scope is limited to compatibility, security, supporting libraries and tooling, release support, and vendor-required audit work, and does not duplicate broader core-node, ledger, or general infrastructure maintenance budgets.",
-            "Independent evidence for: The Oversight Committee is stated to consist of Sundae Labs, Cardano Foundation, Dquadrant, NMKR, Sundial, and Eternl, with a role of verifying key administrative actions using on-chain logic."
+            "Independent evidence for: The proposer states that continuous maintenance is needed because Cardano protocol evolution, vendor firmware and app release cycles, and wallet and dApp integration demand create compatibility risk at a security-critical access layer.",
+            "Independent evidence for: The proposer states that funding continuity in 2026 is less costly and less disruptive than waiting for hardware-wallet breakage to accumulate."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -155,8 +153,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for the Intersect Budget Administration fee.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The work is framed as continuity maintenance for an already-proven Cardano hardware-wallet access layer rather than creation of a new wallet product.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The proposal requests 1,310,960 ada, consisting of 1,272,777 ada for Cardano Hardware Wallet Maintenance & Compatibility Assurance and 38,183 ada for an Intersect Budget Administration fee.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer states that continuous maintenance is needed because Cardano protocol evolution, vendor firmware and app release cycles, and wallet and dApp integration demand create compatibility risk at a security-critical access layer.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -175,7 +173,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-4a9385fc3e6d.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2-7890af5fc11c.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [],
       "evidence_status": "independently_verified",
@@ -261,7 +259,7 @@
     "anchor_hash": "4c9c23982902b87120f15dcbfdd3c77e31fcfcfcefa1eab126f8e1e33ddd0ede",
     "file_sha256": "76976f6c88556f9705c22e831433b83ca39fe57d958c521974c0bc944aa89109",
     "content_bytes": "14896",
-    "fetched_at_utc": "2026-07-15T20:03:04Z",
+    "fetched_at_utc": "2026-07-16T11:30:07Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#2.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -326,8 +324,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "05bc17eb7f8c498b4adfa70bbeda8dcd97978738",
-    "core_commit": "2bb82a1e3be16c08026e9c78644819f5b83f9bf5",
+    "resources_commit": "cf10b7dbeda9a1c22264141d5790e689bc38a168",
+    "core_commit": "d453001532354a9829db082557872666319abf7c",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -437,10 +435,10 @@
     "model_vote_influence": 0
   },
   "freshness": {
-    "snapshot_age_seconds": 0,
+    "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-15T20:20:56.738971Z",
+    "snapshot_time": "2026-07-16T11:48:05.649587Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

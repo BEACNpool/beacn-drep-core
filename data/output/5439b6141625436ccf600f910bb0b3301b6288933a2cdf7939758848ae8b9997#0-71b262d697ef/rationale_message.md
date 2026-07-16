@@ -1,0 +1,13 @@
+# Blockfrost's transformation to not-for-profit
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because this is a large treasury withdrawal and the required Net Change Limit was not pinned and independently verified from public chain evidence. That blocks a directional treasury vote under BEACN’s rules, even though the proposal presents a plausible public-good case for Blockfrost.
+
+The action asks for 9,832,979 ADA to fund 18 months of transition and operations, moving Blockfrost into a free, community-governed not-for-profit public API for Cardano. The proposer commits to legal setup or a host-organization agreement, a technical transition plan, a public usage dashboard, an on-chain board election, migration of public API traffic, transfer of source code and related assets, sustainability consultation, quarterly reporting, and a 99% monthly uptime SLA during 2027. The proposal also gives a budget of $1,478,266 for staffing, $360,000 for operations and infrastructure, and $30,000 for legal and accounting.
+
+Some claims were well-supported in the proposal: the funding amount, the description of Blockfrost as hosted Cardano API infrastructure, the planned asset transfer to a community-governed entity, the proposed board structure, and the budget categories. The adoption claim based on Cardano Foundation developer survey figures was marked independently verifiable. But several high-materiality claims remained proposer-asserted, including last month’s traffic figures, the claim that more than 50% of Cardano transactions are submitted through Blockfrost in most epochs, and the claim that 90% of Cardano traffic served through Blockfrost comes from the free tier. The review also found thin claims-and-evidence status, missing sustainability path, missing cost-benefit clarity, missing independent assurance, and no clear rollback or remedy path.
+
+This is a conservative, evidence-based hold, not a rejection of the public-good argument. A directional vote would be unblocked by the applicable Net Change Limit being pinned and independently verified from public chain evidence, along with stronger independent evidence for the key usage, transaction-share, free-tier, sustainability, assurance, and remedy claims that materially affect treasury risk.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

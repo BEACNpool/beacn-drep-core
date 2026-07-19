@@ -1,0 +1,133 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#15",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: enacted",
+        "Proposed epoch: 570",
+        "Expires after epoch: 577",
+        "Treasury request: 700.0k ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Withdraw \u20b3700,000 for ZK Bridge administered by Intersect",
+        "Recipient: ",
+        "Stated amount: 700.0k ADA",
+        "Deliverables: This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet., As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth..., We will provide a circuit that enables a relayer to generate the ZK proof that a locking transaction was successfully added to the chain, which can then be verified on the receiving blockchain., This way, any blockchain will be able to implement a ZK bridge with Cardano, leveraging its newly added capability to generate such proofs.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, high materiality): This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet.",
+        "Claim (technical, independently_verifiable, medium materiality): As part of this initiative, we will define a communication protocol for the bridge, provide the full source code of the smart contracts on the Cardano side, and produce comprehensive technical documentation detailing the protocol between Cardano and any oth...",
+        "Claim (economic, independently_verifiable, low materiality): We will provide a circuit that enables a relayer to generate the ZK proof that a locking transaction was successfully added to the chain, which can then be verified on the receiving blockchain.",
+        "Claim (economic, independently_verifiable, low materiality): This way, any blockchain will be able to implement a ZK bridge with Cardano, leveraging its newly added capability to generate such proofs.",
+        "Claim (economic, independently_verifiable, low materiality): This proposal aims to solve the following problem: Cross-chain interoperability remains one of the most critical yet unresolved challenges for Cardano.",
+        "Claim (technical, independently_verifiable, low materiality): While the ecosystem is advancing in scalability through projects like Hydra and optimistic roll ups such as Midgard it still lacks a secure, trustless, and modular zk-based bridge infrastructure."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 700.0k ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"This treasury withdrawal funds ZK Bridge which will provide the following services: Our proposal is building a ZK bridge for Cardano, which we will deploy on the Cardano testnet.\" though 7 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

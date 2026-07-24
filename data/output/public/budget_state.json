@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-23T11:34:21Z",
+  "generated_at": "2026-07-24T11:34:12Z",
   "ncl": {
     "schema_version": "treasury-policy-state-v1",
     "verification_status": "verified_onchain_info_action",
@@ -10,10 +10,10 @@
     "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
     "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
     "source_anchor_url": "ipfs://bafkreid7tr5uotr4bp2jp54q7lbm5p5eldncuahprj53msy6kqgjscyrdu",
-    "verified_at_utc": "2026-07-23T11:32:53Z",
-    "verified_at_epoch": 644,
-    "withdrawals_in_period_lovelace": 296536117000000,
-    "remaining_capacity_lovelace": 3463883000000,
+    "verified_at_utc": "2026-07-24T11:33:07Z",
+    "verified_at_epoch": 645,
+    "withdrawals_in_period_lovelace": 302733167000000,
+    "remaining_capacity_lovelace": 0,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
     "drep_support": {
       "yes_stake_lovelace": 2460643090332089,
@@ -28,16 +28,16 @@
       "period_start_epoch": 613,
       "period_end_epoch": 713,
       "voting_open_until_epoch": 647,
-      "interim_yes_pct_of_participating_stake": 66.99,
+      "interim_yes_pct_of_participating_stake": 66.91,
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, whose voting CLOSED with a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
     "note": "Produced by scripts/pin_ncl_from_chain.py from relay db-sync. Re-run each cycle: a later NCL action covering the same period supersedes this one only after ITS voting closes with Yes > No; open actions surface as pending_candidate, never as the ceiling."
   },
   "inflow_36ep": {
-    "total": 158350102410597,
-    "fee_derived": 301052016981,
-    "reserves_derived": 158049050393616,
+    "total": 158108151808789,
+    "fee_derived": 300927610661,
+    "reserves_derived": 157807224198128,
     "bases": {
       "total": "ada_pots treasury delta + enacted withdrawals (tau + donations)",
       "fee_derived": "20% of chain fees \u2014 organic-revenue context only",
@@ -45,11 +45,11 @@
     }
   },
   "outflow_36ep": {
-    "total": 296536117000000,
+    "total": 302733167000000,
     "basis": "treasury_withdrawal joined to gov_action_proposal.enacted_epoch (enacted only)"
   },
   "ratios": {
-    "spend_vs_total_inflow": 1.872661,
-    "spend_vs_fee_inflow": 984.999602
+    "spend_vs_total_inflow": 1.914722,
+    "spend_vs_fee_inflow": 1005.999969
   }
 }

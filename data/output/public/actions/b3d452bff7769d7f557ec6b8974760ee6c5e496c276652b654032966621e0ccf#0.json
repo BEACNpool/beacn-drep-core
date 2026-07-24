@@ -2,17 +2,17 @@
   "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0",
   "title": "Withdraw 3,961,538 ada for Bringing Real-World Payments to Cardano with Wirex",
   "type": "TreasuryWithdrawals",
-  "status": "active",
+  "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:af2e56cb9285f8efd191144eae133e347efde934ba98130b23b299ad300b3b07",
+    "raw_input_hash": "sha256:908b8a3fe727770194f0c6fd737ee26818ca214d93636f39fa50c5f20e60f61b",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
-    "diverged": false,
-    "published_at": "2026-07-23T11:30:04.464257+00:00",
+    "diverged": true,
+    "published_at": "2026-07-24T11:30:04.533449+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "7728a43cf06a4e9d9d3e7491d2a6da28b6e4bc0e380d631f099132c99f6ecc09",
@@ -39,29 +39,31 @@
     "onchain_vote": "No"
   },
   "current": {
-    "vote": "NO",
-    "score": -0.12,
-    "confidence": 0.75,
-    "input_hash": "af2e56cb9285f8efd191144eae133e347efde934ba98130b23b299ad300b3b07",
-    "snapshot_bundle_hash": "2e5774a67e0a0bac10f21d8b6223db6373e3599d8452c3604b5a6291a92c80d1",
+    "vote": "NEEDS_MORE_INFO",
+    "score": -0.08,
+    "confidence": 0.74,
+    "input_hash": "908b8a3fe727770194f0c6fd737ee26818ca214d93636f39fa50c5f20e60f61b",
+    "snapshot_bundle_hash": "29fd7b4706968afe9ef2c0b6a4919388a0e05272150b50e426d5423baa68fc65",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "c70e49a5fa2f8a5a7e6d215c061bb18a5ab33e17",
-    "core_commit": "571b9fee08e27520fa1183657ee64f3adb147e34",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-af2e56cb9285.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/101c9d673dcdccdf5b933e3a.md",
-    "rationale_anchor_hash": "101c9d673dcdccdf5b933e3a607f20b008549ae3ea83eb9f90f74ba35085219a"
+    "resources_commit": "2d4ca1500b8dba4c613121f0e0daabae335dbd3a",
+    "core_commit": "eeec0ce64f656361661632f773bdba7931ac6470",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-908b8a3fe727.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal says Cardano lacks seamless infrastructure for everyday spending, merchant acceptance, and fiat-connected financial activity at scale.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal will deliver full-stack open-source payments infrastructure for on-chain settlement through smart contracts connected to banking rails, stablecoin systems, and wallet interfaces.\" and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.12; confidence 75.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal will deliver full-stack open-source payments infrastructure for on-chain settlement through smart contracts connected to banking rails, stablecoin systems, and wallet interfaces.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide line-item budget. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.08; confidence 74.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
+      "Provide: cost comparables, budget proportionality, or sustainability evidence",
       "Provide line-item budget.",
-      "Provide sustainability path.",
-      "Provide cost-benefit clarity."
+      "Provide sustainability path."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-af2e56cb9285.md",
-    "missing_evidence": [],
-    "blocked_reason_code": null,
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-908b8a3fe727.md",
+    "missing_evidence": [
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ],
+    "blocked_reason_code": "TREASURY_PORTFOLIO_REQUIRED",
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -75,7 +77,7 @@
           "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
-            "Status: active",
+            "Status: expired",
             "Proposed epoch: 638",
             "Expires after epoch: 645",
             "Treasury request: 3.96M ADA",
@@ -176,7 +178,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-af2e56cb9285.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0-908b8a3fe727.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -298,7 +300,7 @@
     "anchor_hash": "7026fbe6411338673aa859e31bce8ae707566eff26de9b290db70d06e59b258f",
     "file_sha256": "9a9e723afedc0ea2f5cf6d373e0097149c41a0191880d77a98977ad23aa804cb",
     "content_bytes": "13893",
-    "fetched_at_utc": "2026-07-23T11:30:06Z",
+    "fetched_at_utc": "2026-07-24T11:30:07Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -332,8 +334,8 @@
     "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
-    "withdrawals_in_period_lovelace": 296536117000000,
-    "remaining_capacity_lovelace": 3463883000000,
+    "withdrawals_in_period_lovelace": 302733167000000,
+    "remaining_capacity_lovelace": 0,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
     "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
     "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
@@ -352,7 +354,7 @@
       "period_start_epoch": 613,
       "period_end_epoch": 713,
       "voting_open_until_epoch": 647,
-      "interim_yes_pct_of_participating_stake": 66.99,
+      "interim_yes_pct_of_participating_stake": 66.91,
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "portfolio_status": "verified",
@@ -363,8 +365,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "c70e49a5fa2f8a5a7e6d215c061bb18a5ab33e17",
-    "core_commit": "571b9fee08e27520fa1183657ee64f3adb147e34",
+    "resources_commit": "2d4ca1500b8dba4c613121f0e0daabae335dbd3a",
+    "core_commit": "eeec0ce64f656361661632f773bdba7931ac6470",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -467,17 +469,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.12,
-    "raw_score": -0.53,
+    "binding_score": -0.08,
+    "raw_score": -0.08,
     "directional_threshold": 0.06,
-    "confidence": 0.75,
+    "confidence": 0.74,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-23T11:34:14.898883Z",
+    "snapshot_time": "2026-07-24T11:34:05.983253Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

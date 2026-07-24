@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:95c672201b33b1741139e78cf97c367f7260de9da3395a758746eb6e084466eb",
+    "raw_input_hash": "sha256:0744ddec02e395f9927d73a446e408eef19f73a8aab9f006a1b17f720ef81efe",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NEEDS_MORE_INFO",
+    "vote": "NO",
     "onchain_vote": "YES",
     "diverged": true,
-    "published_at": "2026-07-23T11:30:04.464257+00:00",
+    "published_at": "2026-07-24T11:30:04.533449+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "89b0279906e04ff9c669557812224688e19da7719b8aeb251264aa5de9799698",
@@ -39,29 +39,29 @@
     "onchain_vote": "No"
   },
   "current": {
-    "vote": "NEEDS_MORE_INFO",
-    "score": -0.56,
-    "confidence": 0.82,
-    "input_hash": "95c672201b33b1741139e78cf97c367f7260de9da3395a758746eb6e084466eb",
-    "snapshot_bundle_hash": "d0ab44a331e8dc1df3579685d8ab596faf197ee91d15756b07df4c919d86cf2b",
+    "vote": "NO",
+    "score": -0.11,
+    "confidence": 0.7475,
+    "input_hash": "0744ddec02e395f9927d73a446e408eef19f73a8aab9f006a1b17f720ef81efe",
+    "snapshot_bundle_hash": "0f51f20ff2d13a760c7e6acbc63980158e810fe6ee3109bb2bd2be47f6eac241",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "c70e49a5fa2f8a5a7e6d215c061bb18a5ab33e17",
-    "core_commit": "571b9fee08e27520fa1183657ee64f3adb147e34",
-    "rationale_markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-95c672201b33.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/f8513cb32770947dd42c0679.md",
-    "rationale_anchor_hash": "f8513cb32770947dd42c0679913f85c85f19c75369c08620e94496a65b654b0a"
+    "resources_commit": "2d4ca1500b8dba4c613121f0e0daabae335dbd3a",
+    "core_commit": "eeec0ce64f656361661632f773bdba7931ac6470",
+    "rationale_markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-0744ddec02e3.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/89e6999c45f0d0d8a8c93977.md",
+    "rationale_anchor_hash": "89e6999c45f0d0d8a8c93977acbd58bfe97fd803b14c478b664273f103f64f82"
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal commits to a compatible stable Daedalus release at least 2 weeks before every mainnet hard fork and says release timing and version-currency metrics are independently verifiable from public GitHub repositories and the Cardano mainnet chain.\" and clears the evidence gates. What would enable a directional vote: Provide independent evidence for: The proposer states that any unspent labor, hardware, and audit budget at contract close will be returned to the treasury; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.56; confidence 82.0%.",
-    "summary_raw": "Proposal clears individual quality floors but is not currently portfolio-eligible: insufficient remaining NCL capacity after higher-ranked proposals.",
+    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"Daedalus is described as Cardano's only full-node desktop wallet, running an embedded Cardano node and deriving wallet and governance data directly from chain data without third-party APIs or trusted backends.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal commits to a compatible stable Daedalus release at least 2 weeks before every mainnet hard fork and says release timing and version-currency metrics are independently verifiable from public GitHub repositories and the Cardano mainnet chain.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposer states that any unspent labor, hardware, and audit budget at contract close will be returned to the treasury; Provide sustainability path. Residual uncertainty: Treasury flow signal is in stressed regime (total inflow (tau + donations) vs enacted withdrawals). Confidence context: score -0.11; confidence 74.8%.",
+    "summary_raw": "Directional NO forced: the applicable Net Change Limit is exhausted \u2014 treasury withdrawals already enacted within this NCL period leave no remaining capacity.",
     "top_fixes": [
       "Provide independent evidence for: The proposer states that any unspent labor, hardware, and audit budget at contract close will be returned to the treasury.",
       "Provide sustainability path.",
       "Provide cost-benefit clarity."
     ],
-    "markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-95c672201b33.md",
+    "markdown_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-0744ddec02e3.md",
     "missing_evidence": [],
-    "blocked_reason_code": "PORTFOLIO_CAPACITY_NOT_CLEARED",
+    "blocked_reason_code": null,
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -175,7 +175,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-95c672201b33.assessment.json",
+    "assessment_path": "/data/output/public/rationales/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0-0744ddec02e3.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [],
       "evidence_status": "independently_verified",
@@ -261,7 +261,7 @@
     "anchor_hash": "d53fb4d05888001d60d03f5bca438f9cff434c441a9743d5ba898c3a17464c45",
     "file_sha256": "5638dce7b2360cdea8ba04ae975fecebfdff0051b809581fbd27037b92dee950",
     "content_bytes": "32633",
-    "fetched_at_utc": "2026-07-23T11:30:06Z",
+    "fetched_at_utc": "2026-07-24T11:30:07Z",
     "download_path": "/proposals/d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0.json",
     "preview": "{\n  \"@context\": {\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"rationale\": \"CIP108:rationale\",\n        \"motivation\": \"CIP108:motivation\",\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@context\": {\n            \"uri\": \"CIP100:reference-uri\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            },\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\"\n          },\n          \"@container\": \"@set\"\n        },\n        \"onChain\": {\n          \"@id\": \"CIP169:onChain\",\n          \"@context\": {\n            \"deposit\": {\n              \"@id\": \"CIP116:deposit\",\n              \"@type\": \"CIP116:UInt64\"\n            },\n            \"reward_account\": {\n              \"@id\": \"CIP116:reward_account\",\n              \"@type\": \"CIP116:RewardAddress\"\n            },\n            \"gov_action\": {\n         "
   },
@@ -286,8 +286,8 @@
     "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
-    "withdrawals_in_period_lovelace": 296536117000000,
-    "remaining_capacity_lovelace": 3463883000000,
+    "withdrawals_in_period_lovelace": 302733167000000,
+    "remaining_capacity_lovelace": 0,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
     "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
     "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
@@ -306,19 +306,19 @@
       "period_start_epoch": 613,
       "period_end_epoch": 713,
       "voting_open_until_epoch": 647,
-      "interim_yes_pct_of_participating_stake": 66.99,
+      "interim_yes_pct_of_participating_stake": 66.91,
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "portfolio_status": "verified",
     "requested_lovelace": 1785333000000,
-    "fits_remaining": true
+    "fits_remaining": false
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "c70e49a5fa2f8a5a7e6d215c061bb18a5ab33e17",
-    "core_commit": "571b9fee08e27520fa1183657ee64f3adb147e34",
+    "resources_commit": "2d4ca1500b8dba4c613121f0e0daabae335dbd3a",
+    "core_commit": "eeec0ce64f656361661632f773bdba7931ac6470",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -421,17 +421,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.56,
-    "raw_score": -0.56,
+    "binding_score": -0.11,
+    "raw_score": -0.11,
     "directional_threshold": 0.06,
-    "confidence": 0.82,
+    "confidence": 0.7475,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-07-23T11:34:14.898883Z",
+    "snapshot_time": "2026-07-24T11:34:05.983253Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

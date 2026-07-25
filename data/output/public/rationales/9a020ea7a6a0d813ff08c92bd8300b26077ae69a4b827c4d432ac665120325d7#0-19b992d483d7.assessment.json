@@ -1,0 +1,134 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "9a020ea7a6a0d813ff08c92bd8300b26077ae69a4b827c4d432ac665120325d7#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: expired",
+        "Proposed epoch: 631",
+        "Expires after epoch: 638",
+        "Treasury request: 1.68M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Eternl: Path to Sustainability (2026-2027)",
+        "Recipient: ",
+        "Stated amount: 1.68M ADA",
+        "Deliverables: Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS., Users rely on Eternl for payments, staking, governance, and DApp interaction., This proposal enables 12 months of operations, maintenance, and improvements., It includes frontend and backend maintenance and development, backend infrastructure, user support, and day-to-day operations.[^1] The goal is to keep Eternl secure, compatible, stable, and available as Cardano keeps evolving.",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, supported_in_proposal, low materiality): Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS.",
+        "Claim (economic, supported_in_proposal, medium materiality): Users rely on Eternl for payments, staking, governance, and DApp interaction.",
+        "Claim (economic, supported_in_proposal, low materiality): This proposal enables 12 months of operations, maintenance, and improvements.",
+        "Claim (technical, supported_in_proposal, low materiality): It includes frontend and backend maintenance and development, backend infrastructure, user support, and day-to-day operations.[^1] The goal is to keep Eternl secure, compatible, stable, and available as Cardano keeps evolving.",
+        "Claim (economic, proposer_asserted, high materiality): Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use.",
+        "Claim (economic, supported_in_proposal, low materiality): | Plan | Price | |----------|--------------------------:| | Personal | $96/year ($8/month) | | Company | $384/year ($32/month)[^2] | Eternl has an install base of about 100,000 on the browser extension and about 30,000 across Android and iOS."
+      ],
+      "missing": [
+        "Independent evidence for: Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use.",
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: 1.68M ADA",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Eternl is a non-custodial Cardano light wallet for the web, browser extension, Android, and iOS.\" though 7 review blocker(s) remain open.",
+        "Strongest NO: a material claim is unsupported \u2014 \"Budget and Budget Breakdown The Path to Sustainability Eternl will introduce a Pro plan for personal and company use.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

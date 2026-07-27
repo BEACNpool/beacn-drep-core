@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: ratified",
+        "Proposed epoch: 638",
+        "Expires after epoch: 645",
+        "Treasury request: 1.16M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Annual funding for maintenance and enhancement of Plutarch and Ply, including compatibility work, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements.",
+        "Recipient: Intersect treasury reserve smart contract stake address for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply",
+        "Stated amount: 1,162,746",
+        "Deliverables: WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities addressed as first priority, Protocol-era and hard-fork compatibility, including Dijkstra era if relevant changes land during the funding period, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
+        "Deadline/expiry: annual funding period; specific dates not stated in document",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance and 33,866 ada for an Intersect Budget Administration fee.",
+        "Claim (technical, supported_in_proposal, high materiality): Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+        "Claim (adoption, proposer_asserted, high materiality): MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.",
+        "Claim (technical, independently_verifiable, medium materiality): MLabs states that its public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal states that continued maintenance is crucial for teams needing smart contract tooling that tracks Cardano ledger, Plutus, and UPLC evolution.",
+        "Claim (technical, proposer_asserted, high materiality): The proposal states that if Plutarch and Ply fall behind protocol evolution, existing adopters may face friction, migration risk, bespoke workarounds, avoidable rewrites, or expensive smart contract stack migrations."
+      ],
+      "missing": [
+        "Independent evidence for: MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.",
+        "Independent evidence for: The proposal states that continued maintenance is crucial for teams needing smart contract tooling that tracks Cardano ledger, Plutus, and UPLC evolution.",
+        "Independent evidence for: The proposal states that if Plutarch and Ply fall behind protocol evolution, existing adopters may face friction, migration risk, bespoke workarounds, avoidable rewrites, or expensive smart contract stack migrations."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 1162746",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: confirmed",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: stressed (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.58"
+      ],
+      "missing": [
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance and 33,866 ada for an Intersect Budget Administration fee.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

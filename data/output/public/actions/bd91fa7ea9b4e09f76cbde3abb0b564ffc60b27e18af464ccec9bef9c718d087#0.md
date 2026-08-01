@@ -4,7 +4,7 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-07-31T11:30:05.006356+00:00`
+- Published at: `2026-08-01T11:30:04.316088+00:00`
 
 ## Human-readable rationale
 Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
@@ -48,11 +48,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Provide: Missing dossier section: complete proposal summary
 
 ## Proof of vote
-- input_hash: `c8f8b3d1c83a4159c28a315dbed07c6c084b7c83b9912bcb735eb4a08d0f783d`
-- snapshot_bundle_hash: `0c490c50b5a15c5516eb0f58254afcf2cfca75f5474b18a4d9f43da0f5c6c1f9`
+- input_hash: `054bf7bde856b11bf70cfe40d6a8ce49e281cf0944c554fdd3a1d0a8226ef485`
+- snapshot_bundle_hash: `76e713ed37211deeb8a7b6d6a258f040b3e7acee91c745a175aca443b3444944`
 - soul_commit: `c813ed97f64dba61150d01964327553baf720d38`
-- resources_commit: `eb5bd214274157aaaaf6475f48d8cd3dd00981db`
-- core_commit: `24403b91d099867cc4b5bc00b3fbae919762ba81`
+- resources_commit: `e4aab620873b4034c039e125070cfe683216dda7`
+- core_commit: `17f8c6838f9d25b536b9f6259799910e57f6734e`
 - score: `0.0`
 - confidence: `0.2`
 

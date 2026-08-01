@@ -1,0 +1,72 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "deterministic-heuristic",
+  "reason": null,
+  "model": "local-deterministic",
+  "request": {
+    "what": "Should K increased?",
+    "recipient": "",
+    "amount_ada": "not stated in document",
+    "deliverables": [
+      "The K parameter was created to limit the total number of ADA staked to one pool.",
+      "The K parameter determines the saturation of stakepools.",
+      "To calculate the saturation of stakepools you can take the total number of ADA and divide it by K.",
+      "K is currently 500, and pool saturation is currently 74,551,771.86 ADA."
+    ],
+    "deadline": "not stated in document"
+  },
+  "claims": [
+    {
+      "claim": "The K parameter was created to limit the total number of ADA staked to one pool.",
+      "category": "economic",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "The K parameter determines the saturation of stakepools.",
+      "category": "other",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "To calculate the saturation of stakepools you can take the total number of ADA and divide it by K.",
+      "category": "economic",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "K is currently 500, and pool saturation is currently 74,551,771.86 ADA.",
+      "category": "economic",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "This governance action is by no means a suggestion of what Cardano protocol parameters should be modified to or if they should be modified at this time.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "The goal of this governance action is to increase governance participation before the next hardfork.",
+      "category": "governance",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    },
+    {
+      "claim": "You can register to be a dRep now with your own wallet, or delegate to another dRep today.",
+      "category": "governance",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "We believe that it's important to submit governance info actions to encourage community participation in Cardano's governance before larger, and potentially more serious proposals are introduced.",
+      "category": "governance",
+      "support": "independently_verifiable",
+      "materiality": "medium"
+    }
+  ],
+  "summary": "The K parameter was created to limit the total number of ADA staked to one pool. The K parameter determines the saturation of stakepools.",
+  "prompt_sha256": "363fb796d20b711e9c4b21028603554afb26718b93428b387a5bab28a4da0a4c",
+  "output_sha256": "2f2b68adb82faccc8992ef938bee334864590b7a5621cbcafc896f2b197a3a09"
+}

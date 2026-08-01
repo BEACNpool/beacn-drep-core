@@ -5,8 +5,8 @@
     "NO",
     "YES"
   ],
-  "submitted": 0,
-  "active_evaluated": 12,
+  "submitted": 1,
+  "active_evaluated": 13,
   "skipped_inactive": 139,
   "policy_config": {
     "min_persistence_revision": 2,
@@ -23,6 +23,14 @@
       "policy": "SKIP",
       "policy_reason": "recommendation NEEDS_MORE_INFO is not votable",
       "status": "SKIP"
+    },
+    {
+      "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
+      "recommendation": "NO",
+      "onchain_vote": "VoteNo",
+      "policy": "NOOP",
+      "policy_reason": "on-chain vote already NO",
+      "status": "NOOP"
     },
     {
       "action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
@@ -97,7 +105,7 @@
       "status": "SKIP"
     },
     {
-      "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
+      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
       "recommendation": "NO",
       "onchain_vote": "VoteNo",
       "policy": "NOOP",
@@ -105,12 +113,15 @@
       "status": "NOOP"
     },
     {
-      "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
-      "recommendation": "NO",
-      "onchain_vote": "VoteNo",
-      "policy": "NOOP",
-      "policy_reason": "on-chain vote already NO",
-      "status": "NOOP"
+      "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+      "recommendation": "ABSTAIN",
+      "onchain_vote": null,
+      "policy": "CAST",
+      "policy_reason": "fresh abstain (conservative default)",
+      "gates_ok": true,
+      "status": "submitted",
+      "submitted": true,
+      "transaction_hash": "80251d3c02ede3b0ef1cb7acf4fc2a787846bdca12e85b2dda422fa383bd9823"
     }
   ]
 }

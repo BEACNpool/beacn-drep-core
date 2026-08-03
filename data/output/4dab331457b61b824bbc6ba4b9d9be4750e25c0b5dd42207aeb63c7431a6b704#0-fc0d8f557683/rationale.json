@@ -1,0 +1,259 @@
+{
+  "action_id": "4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0",
+  "action_type": "NewCommittee",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.01,
+  "raw_score": 0.01,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "committee_update_doctrine.md"
+  ],
+  "doctrine_hash": "dd036d55202e112e294b78140f80824fd0e4417f4177bc43b086a3516b5572e0",
+  "directional_threshold": 0.12,
+  "confidence": 0.5725,
+  "readiness_score": 0.0,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (3), reducing confidence.",
+    "Intake: Action type: NewCommittee",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "fc0d8f557683de1bf1452542f7802467506e64ec675d2017e25a01ddbf89d0a3",
+  "snapshot_bundle_hash": "58d343ac5acc01a8bb568baff569aaa92b1fe2feff79591f0a6c296c3d7ec546",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "9af8dae3d59b6c3395a80226f5025d654d063bab",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 3,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-03T11:36:20.201147Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2784,
+    "NO": 0.2584,
+    "ABSTAIN": 0.4631
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0",
+    "action_type": "NewCommittee",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: NewCommittee",
+          "Status: enacted",
+          "Proposed epoch: 599",
+          "Expires after epoch: 606",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Add Constitutional Committee Member",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December., Adding one more member brings the Constitutional Committee member count to meet the committeeMinSize parameter, enabling on-chain governance to resume in full., Emergence of Governance The Chang Hard Fork was initiated by the Genesis Key Holders and approved by stake pool operators becoming effective on September 1st, 2024., Deploying initial on-chain governance features to Cardano and ushering in an interim (or technical bootstrap phase) for Cardano governance.",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, independently_verifiable, high materiality): This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.",
+          "Claim (governance, independently_verifiable, high materiality): Adding one more member brings the Constitutional Committee member count to meet the committeeMinSize parameter, enabling on-chain governance to resume in full.",
+          "Claim (governance, independently_verifiable, high materiality): Emergence of Governance The Chang Hard Fork was initiated by the Genesis Key Holders and approved by stake pool operators becoming effective on September 1st, 2024.",
+          "Claim (technical, independently_verifiable, medium materiality): Deploying initial on-chain governance features to Cardano and ushering in an interim (or technical bootstrap phase) for Cardano governance.",
+          "Claim (governance, independently_verifiable, high materiality): This instated an interim Constitutional Committee, including the founding entities, three community consortiums and Intersect for an 74 epoch term (~1 year).",
+          "Claim (technical, independently_verifiable, medium materiality): The second upgrade, known as Plomin, moved governance out of the interim and technical bootstrap phase into full minimum viable on-chain governance as described in CIP-1694 | A First Step Towards On-Chain Decentralized Governance."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN records ABSTAIN on Add Constitutional Committee Member. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a NewCommittee. The cached anchor describes the request as: Add Constitutional Committee Member. The strongest grounded claim is: This governance action proposes to add a new Constitutional Committee member selected by participating DReps during the Intersect hosted snap-election process from 26th of November to 5th of December.\n\nReason code: RULE_THRESHOLD_UNMET.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "4dab331457b61b824bbc6ba4b9d9be4750e25c0b5dd42207aeb63c7431a6b704#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreibqxuceexlhali4nhqo7tvsdzrcndzr775pv7wfsdq2lbxtyk4emu",
+        "file_sha256": "30bd04425d6702d1c69e0efceb21e62268f31fffafafec590e1a586f3c2b8465",
+        "file_path": "data/input/governance/anchors/gov_action1fk4nx9zhkcdcyjaudwjtnkd7gagwyhqtth2zypawkc78gvdxkuzqqtvqdkv-20260326T175208Z.bin",
+        "content_chars": 10086
+      },
+      "claim_count": 8,
+      "prompt_sha256": "bd2f691195f53d7fb462a308d024bdf970f90b9e67c1cd515d73804184001aa3",
+      "output_sha256": "7672a0775a775aa9dd1bf51441211b9731de77b3cca0d9225f7170efc3ee94dc"
+    },
+    "doctrine": {
+      "family": "committee",
+      "files": [
+        "values_hierarchy.md",
+        "committee_update_doctrine.md"
+      ],
+      "sha256": "dd036d55202e112e294b78140f80824fd0e4417f4177bc43b086a3516b5572e0"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "af8a3003cd2df996866cf1f35e265173c9535b9b6f95b4072cc213d02e5ced37",
+      "output_sha256": "4c12b67fc98691cc460586e10b3150617d8fddc57ba8eed4365f11618bef947c"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "9ef0aa0c346dd1432f129a4953a716b7438c8a82c0a285d879880598a0dce261",
+      "output_sha256": "8e60c5cfae27ee8c6b06d6bb767e695b0493bee901644b8238bfe336e02b88ec"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

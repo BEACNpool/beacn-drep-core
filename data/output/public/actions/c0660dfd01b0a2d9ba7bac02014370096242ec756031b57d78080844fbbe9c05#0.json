@@ -2,17 +2,17 @@
   "action_id": "c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0",
   "title": "Global Order Book connect Cardano DeFi to increase transaction",
   "type": "TreasuryWithdrawals",
-  "status": "active",
+  "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b43996ad2d3129273b25e4a53d0e973e07ff95b2ad8abae0045c121685e272c8",
+    "raw_input_hash": "sha256:6c02a4a2f2ca45afb2433447972451221c5cb53670ced092e9a23e7f2d2e4abc",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
-    "diverged": false,
-    "published_at": "2026-08-02T11:30:04.266791+00:00",
+    "diverged": true,
+    "published_at": "2026-08-03T11:30:04.311183+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "457e478bc080b222e7498b536504ebb54480516939b2767fd103ce1c93a2cebf",
@@ -39,29 +39,31 @@
     "onchain_vote": "No"
   },
   "current": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "score": -0.15,
     "confidence": 0.7575,
-    "input_hash": "b43996ad2d3129273b25e4a53d0e973e07ff95b2ad8abae0045c121685e272c8",
-    "snapshot_bundle_hash": "d7da923a162eee2ca5b93eb0e3a771204e79d93345109ca6b031ae2fe8b150cd",
+    "input_hash": "6c02a4a2f2ca45afb2433447972451221c5cb53670ced092e9a23e7f2d2e4abc",
+    "snapshot_bundle_hash": "b9b199be4c88e0a4083e6cafb2cd9991d0071fc4e3348b3ece7123f8725d2046",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "df6e8a66d9454cb8cae1983e6d9f10083dd8c639",
-    "core_commit": "5c3e561f359f9dc81b9e5b8e62ca7cf7fc97a9ad",
-    "rationale_markdown_path": "/data/output/public/rationales/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0-b43996ad2d31.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/c48a234460a4f23d17bfe508.md",
-    "rationale_anchor_hash": "c48a234460a4f23d17bfe5083ce36cc87d71ea0428d8e0ce9b086b9f2c538101"
+    "resources_commit": "9af8dae3d59b6c3395a80226f5025d654d063bab",
+    "core_commit": "a95c1e26d8e58a729f87de9271b02d99e7f6092b",
+    "rationale_markdown_path": "/data/output/public/rationales/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0-6c02a4a2f2ca.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal says Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% budget administration fee.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The proposal says Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.13 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.15; confidence 75.8%.",
-    "summary_raw": "Directional NO forced: the applicable Net Change Limit is exhausted \u2014 treasury withdrawals already enacted within this NCL period leave no remaining capacity.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 3,333,000 ADA total, consisting of 3,300,000 ADA for delivery and a 33,000 ADA 1% budget administration fee.\" and clears the evidence gates. What would enable a directional vote: Provide: verified ecosystem benefit or strategic necessity; Provide independent evidence for: The proposal says Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.15; confidence 75.8%.",
+    "summary_raw": "Directional treasury voting is blocked until this action is ranked against competing active proposals and verified NCL capacity.",
     "top_fixes": [
+      "Provide: verified ecosystem benefit or strategic necessity",
       "Provide independent evidence for: The proposal says Dano Finance currently has approximately USD 18M in TVL and more than 10,000 on-chain transactions.",
-      "Provide milestone-gated disbursement.",
-      "Provide independent assurance."
+      "Provide milestone-gated disbursement."
     ],
-    "markdown_path": "/data/output/public/rationales/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0-b43996ad2d31.md",
-    "missing_evidence": [],
-    "blocked_reason_code": null,
+    "markdown_path": "/data/output/public/rationales/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0-6c02a4a2f2ca.md",
+    "missing_evidence": [
+      "verified ecosystem benefit or strategic necessity"
+    ],
+    "blocked_reason_code": "TREASURY_PORTFOLIO_REQUIRED",
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -75,7 +77,7 @@
           "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
-            "Status: active",
+            "Status: expired",
             "Proposed epoch: 640",
             "Expires after epoch: 647",
             "Treasury request: 3.33M ADA",
@@ -170,7 +172,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0-b43996ad2d31.assessment.json",
+    "assessment_path": "/data/output/public/rationales/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0-6c02a4a2f2ca.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [],
       "evidence_status": "independently_verified",
@@ -274,7 +276,7 @@
     "anchor_hash": "d2d4bf0c17716b9ce7cb8cae1d85af45c236fd64a142a367e030115521a558cf",
     "file_sha256": "fe57ffe098d09cbe0b500d160e2c4420276b33ef2007e9509cf74ea0e6d5201b",
     "content_bytes": "23502",
-    "fetched_at_utc": "2026-08-02T11:30:06Z",
+    "fetched_at_utc": "2026-08-03T11:30:06Z",
     "download_path": "/proposals/c0660dfd01b0a2d9ba7bac02014370096242ec756031b57d78080844fbbe9c05#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"This proposal requests **3,333,000 ADA** (3,300,000 ADA for delivery and 33,000 ADA for the 1% budget administration fee) for Dano Fi"
   },
@@ -308,7 +310,7 @@
     "ncl_lovelace": 300000000000000,
     "period_start_epoch": 613,
     "period_end_epoch": 713,
-    "withdrawals_in_period_lovelace": 335610296000000,
+    "withdrawals_in_period_lovelace": 337395629000000,
     "remaining_capacity_lovelace": 0,
     "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
     "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
@@ -328,7 +330,7 @@
       "period_start_epoch": 613,
       "period_end_epoch": 713,
       "voting_open_until_epoch": 647,
-      "interim_yes_pct_of_participating_stake": 67.94,
+      "interim_yes_pct_of_participating_stake": 70.57,
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "portfolio_status": "verified",
@@ -339,8 +341,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "df6e8a66d9454cb8cae1983e6d9f10083dd8c639",
-    "core_commit": "5c3e561f359f9dc81b9e5b8e62ca7cf7fc97a9ad",
+    "resources_commit": "9af8dae3d59b6c3395a80226f5025d654d063bab",
+    "core_commit": "a95c1e26d8e58a729f87de9271b02d99e7f6092b",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -453,7 +455,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-02T11:33:59.516344Z",
+    "snapshot_time": "2026-08-03T11:36:20.201147Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

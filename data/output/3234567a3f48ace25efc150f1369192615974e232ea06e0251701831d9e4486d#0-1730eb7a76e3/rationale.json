@@ -1,0 +1,311 @@
+{
+  "action_id": "3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "TREASURY_PORTFOLIO_REQUIRED",
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.15,
+  "raw_score": -0.15,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NEUTRAL",
+    "score_adjustment": 0.0,
+    "confidence": 0.74,
+    "rationale": "The claims show a narrower scope, reduced budget, excluded high-risk items, and plausible public-infrastructure alignment, while key adoption, delivery-history, and governance-assurance claims remain mostly proposer asserted in the supplied text. The deterministic assessment is already ready, so the evidence mix does not justify an additional directional nudge.",
+    "doctrine_basis": "Treasury stewardship and evidence quality/reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4",
+  "directional_threshold": 0.06,
+  "confidence": 0.7575,
+  "readiness_score": 0.85,
+  "treasury_dimensions": {
+    "actionable_asks": [],
+    "evidence_status": "independently_verified",
+    "benefit": 0.81,
+    "delivery_confidence": 0.9,
+    "cost_efficiency": 0.5,
+    "downside_risk": 0.25,
+    "composite": 0.2615,
+    "affirmative_waste_evidence": [],
+    "missing": []
+  },
+  "treasury_merit_recommendation": "YES",
+  "treasury_merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 0",
+    "Risk review: Execution risk: medium",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Scalus is an open-source, JVM-native Cardano development platform built by Lantr Engineering over three years of continuous delivery.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Directional treasury voting is blocked until this action is ranked against competing active proposals and verified NCL capacity.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "Claims and evidence missing: Independent evidence for: Scalus components are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+    "Claims and evidence missing: Independent evidence for: Delivery is milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Risk review missing: independent assurance",
+    "Risk review missing: dependency map"
+  ],
+  "missing_evidence": [],
+  "input_hash": "1730eb7a76e3fdb3bc61a8f3acb11f1a2b97f93185fc620ed4e27928531a8e6d",
+  "snapshot_bundle_hash": "6b482b11fc4b445b5324c61b2d941d1cddeb9eb76c21fba4f1b49503ff9e86eb",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "7cc2ca895727fd2f849b52f8b388a5bc51e345d4",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-04T11:34:38.187833Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.0953,
+    "NO": 0.3953,
+    "ABSTAIN": 0.5094
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: expired",
+          "Proposed epoch: 640",
+          "Expires after epoch: 647",
+          "Treasury request: 2.46M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Scalus 2026 maintenance, Dijkstra hard-fork readiness, interoperability, and a scoped application runtime over 9 months",
+          "Recipient: Lantr Engineering",
+          "Stated amount: 2464844",
+          "Deliverables: Ongoing maintenance of the existing Scalus stack and supported export targets, Dijkstra readiness including Plutus V4 support, ledger rules, transaction-builder updates, conformance testing, nested transactions, accounts, guard scripts, and cost models, Improved JS/TS component interfaces and documentation for MeshJS, Evolution SDK, and Lucid Evolution reuse, Java/Kotlin interoperability with Spring Boot and Ktor examples and cleaner integration with Cardano Client Lib and Yaci, Scoped application runtime components including foundational reactive workers, chain follower, task scheduler, backend workflow support, and validation through reference applications, integration tests, and early-user feedback",
+          "Deadline/expiry: March 2027",
+          "Claim (technical, supported_in_proposal, high materiality): Scalus is an open-source, JVM-native Cardano development platform built by Lantr Engineering over three years of continuous delivery.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests \u20b32,464,844 for a 9-month continuation at a $0.16/ADA reference rate with no contingency.",
+          "Claim (adoption, proposer_asserted, high materiality): Scalus components are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+          "Claim (adoption, independently_verifiable, high materiality): Scalus has 4,642 commits across 32 releases, 12 contributors, and Scalus.js receives more than 20,000 downloads per month.",
+          "Claim (technical, supported_in_proposal, high materiality): The funded scope excludes a standalone L1 node, full Gummiworm L2 integration, broad formal verification, and advanced devnet expansion.",
+          "Claim (economic, supported_in_proposal, high materiality): This resubmission reduces the prior proposal from \u20b38.503 million over 12 months to about \u20b32.465 million over 9 months, and reduces FTE-months from 99 to 20.25."
+        ],
+        "missing": [
+          "Independent evidence for: Scalus components are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.",
+          "Independent evidence for: Delivery is milestone-based and administered through audited SundaeSwap treasury contracts with an independent oversight board and third-party assurance.",
+          "Independent evidence for: Lantr Engineering says every prior Scalus milestone was delivered on time and commits to public reporting and open community sessions for treasury-funded work."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 0",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: confirmed",
+          "Cost/benefit clarity: confirmed",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.82"
+        ],
+        "missing": [
+          "sustainability path"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: medium",
+          "Governance risk: medium",
+          "Technical risk: medium",
+          "Treasury exposure risk: medium",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: confirmed",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Scalus is an open-source, JVM-native Cardano development platform built by Lantr Engineering over three years of continuous delivery.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Scalus components are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "actionable_asks": [],
+      "evidence_status": "independently_verified",
+      "benefit": 0.81,
+      "delivery_confidence": 0.9,
+      "cost_efficiency": 0.5,
+      "downside_risk": 0.25,
+      "composite": 0.2615,
+      "affirmative_waste_evidence": [],
+      "missing": []
+    },
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal and the applicable Net Change Limit was not pinned and independently verified from public chain evidence. That blocks a directional treasury vote, even though parts of the proposal are reviewable and some technical claims were supported.\n\nThe action requests funding for 9 months of Scalus 2026 work by Lantr Engineering: maintenance of the existing Scalus stack, Dijkstra hard-fork readiness, interoperability improvements, and a scoped application runtime. The proposal asks for \u20b32,464,844 and says this is a reduced resubmission from a larger prior request. It also states that Scalus is an open-source, JVM-native Cardano development platform built over three years, and that claim was treated as well-supported. Independent adoption signals were also present, including 4,642 commits, 32 releases, 12 contributors, and more than 20,000 monthly Scalus.js downloads.\n\nOther important claims were not independently verified. The review lacked independent evidence that Scalus components are reused in MeshJS SDK, Evolution SDK, Lucid Evolution, Cardano Client Lib, and YaciDevKit. It also lacked independent evidence for the claimed milestone-based delivery structure using audited SundaeSwap treasury contracts, an oversight board, and third-party assurance. The treasury review also remained thin on sustainability path, independent assurance, and dependency mapping, with medium execution risk noted.\n\nThis is a conservative, evidence-based hold, not a rejection of the work. A directional vote would be unblocked by a pinned and independently verified Net Change Limit from public chain evidence, plus replayable public evidence for the major adoption and governance-assurance claims that currently remain unsupported.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "3234567a3f48ace25efc150f1369192615974e232ea06e0251701831d9e4486d#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/QmcZPndRnPR3giqybj1u24VVFx5q4csN9uYHuFCtT38uqD",
+        "file_sha256": "96dfef611f19c0b286fd372b15cff22d1f4d3c758f3254418084c775799d5cc3",
+        "file_path": "data/input/governance/anchors/gov_action1xg69v73lfzkwyhhuz583x6geyc2ewn3r96sxuqj3wqvrrk0yfpksqqa63yc-20260630T113110Z.bin",
+        "content_chars": 62834,
+        "truncated_to_chars": 60000
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "cc5b79d6103a73de5dcc3ffb19969d9108dbb454368822a4e6bab339cec25bdb"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "34473fa848935d6d5def52c71387333d02fd1287f60b5c299d2084c88e981ce6"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "d8f456e5e635bbccd564e63f9a3cc8ac1a39c572df7212c5c1267802f9063cd0"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

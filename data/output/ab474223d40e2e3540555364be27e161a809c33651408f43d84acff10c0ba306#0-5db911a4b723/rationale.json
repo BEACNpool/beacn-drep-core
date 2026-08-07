@@ -1,0 +1,261 @@
+{
+  "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+  "action_type": "ParameterChange",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.0,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "parameter_change_doctrine.md"
+  ],
+  "doctrine_hash": "9d525573a4510e7da39e093ec99b90840e497854ead5066421d56b0561b3c3d4",
+  "directional_threshold": 0.12,
+  "confidence": 0.65,
+  "readiness_score": 0.5,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Protocol parameter changes carry system-wide risk.",
+    "Intake: Action type: ParameterChange",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 8 well-supported claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "No DRep distribution available.",
+    "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "5db911a4b723e11b2d02f9f58f541aa8d76d655a5d0b7616e46640aa0001c64c",
+  "snapshot_bundle_hash": "045c14961315fed1366a22bcc698e106207149e99f5d29db933e4d86d5ce04d7",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "2f00a43bcd90feaf63548ad7c261ac8595880b59",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-07T11:33:04.235053Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2588,
+    "NO": 0.2588,
+    "ABSTAIN": 0.4825
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+    "action_type": "ParameterChange",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: ParameterChange",
+          "Status: active",
+          "Proposed epoch: 646",
+          "Expires after epoch: 653",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Reduce minPoolCost to 75 ada and increase Plutus Memory Limits (Part 2)",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1., minPoolCost: decrease minPoolCost from 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%., Plutus memory unit limits (Part 2 of 2): increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 units (+6.1%) and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000 units (+7.6%), completing the two-step, cumulative 25% increase to bot..., These two changes are otherwise unrelated: one lowers the stake pool fixed-fee floor, the other increases Plutus script execution headroom.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, independently_verifiable, high materiality): Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1.",
+          "Claim (technical, independently_verifiable, low materiality): minPoolCost: decrease minPoolCost from 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%.",
+          "Claim (technical, independently_verifiable, low materiality): Plutus memory unit limits (Part 2 of 2): increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 units (+6.1%) and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000 units (+7.6%), completing the two-step, cumulative 25% increase to bot...",
+          "Claim (technical, independently_verifiable, low materiality): These two changes are otherwise unrelated: one lowers the stake pool fixed-fee floor, the other increases Plutus script execution headroom.",
+          "Claim (technical, independently_verifiable, high materiality): minPoolCost was reduced from 340 ada to 170 ada in 2023 (PCP-001), but the relief that reduction provided has been substantially eroded by the continuing decline in reserve-funded block rewards: the delegator penalty on single-block pools, which fell to ~28...",
+          "Claim (technical, independently_verifiable, low materiality): IO Research's updated incentives report has also reversed its earlier position, now assessing that a high fixed-fee floor favours rather than deters Sybil-style stake fragmentation by large operators."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of ParameterChange.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN records ABSTAIN on Reduce minPoolCost to 75 ada and increase Plutus Memory Limits (Part 2). This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a ParameterChange. The cached anchor describes the request as: Reduce minPoolCost to 75 ada and increase Plutus Memory Limits (Part 2). The strongest grounded claim is: Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1.\n\nReason code: MISSING_PROTOCOL_READINESS_EVIDENCE.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreifc5ct5fpeu4ygx6k4cqzbyzny7xfmuljywgn7jge3zkf2tidacym",
+        "file_sha256": "a2e8a7d2bc94e60d7f2b8286438cb71fb95945a716337e9313795175340c02c3",
+        "file_path": "data/input/governance/anchors/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306-0-20260731T113007Z.bin",
+        "content_chars": 33056
+      },
+      "claim_count": 8,
+      "prompt_sha256": "d16850017a304debbda64795c2669f1e9045af72816acabaf01b834eb8ba29b8",
+      "output_sha256": "5089a5632343ddc5dad3eeb24bb5e688ef1dd1059b7deb11bc13322105e681cd"
+    },
+    "doctrine": {
+      "family": "parameter",
+      "files": [
+        "values_hierarchy.md",
+        "parameter_change_doctrine.md"
+      ],
+      "sha256": "9d525573a4510e7da39e093ec99b90840e497854ead5066421d56b0561b3c3d4"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "b9bea55ea2ab4f22faa0dc028d0e886e91232da810a5b4ba869363ece136db0b",
+      "output_sha256": "3fd4149c66b779debd2f5736834684c46454e55883d7028b8a19fd9ac9b0252f"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "b8815bee9abe8c2e2364c5360a58fe328407b1e32df3a91bd8a04eab4c00a581",
+      "output_sha256": "13cd20563825fbca89583e3e691c43c0addb86a6e05c1b975a7582283bde8953"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/79f76b1c6a1bc8a28d5465cb.md",
+  "rationale_anchor_hash": "79f76b1c6a1bc8a28d5465cbbb13146f4638e6524b28aa138a2f8711d794bfb2"
+}

@@ -2,17 +2,17 @@
   "action_id": "2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0",
   "title": "Revised Cardano dOSPO and OMF Program Proposal",
   "type": "TreasuryWithdrawals",
-  "status": "active",
+  "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:930c4917049a037dfb0d7a204ca6d7bf2bbf38e9846e565c51e8ffd5d6d133e1",
+    "raw_input_hash": "sha256:609fa903cec85ffa89c8da3953e05e558ffb8cc991329d6a5d900789a2377b56",
     "detected_at": "2026-07-08T05:00:01.231638+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
-    "diverged": false,
-    "published_at": "2026-08-07T11:30:06.438937+00:00",
+    "diverged": true,
+    "published_at": "2026-08-08T11:30:04.488543+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "705ca34716852b04da22f888250fe1f2b3c7dda37accc8ea2c71e1a27b53eb2a",
@@ -39,29 +39,32 @@
     "onchain_vote": "No"
   },
   "current": {
-    "vote": "NO",
+    "vote": "NEEDS_MORE_INFO",
     "score": -0.25,
     "confidence": 0.7825,
-    "input_hash": "930c4917049a037dfb0d7a204ca6d7bf2bbf38e9846e565c51e8ffd5d6d133e1",
-    "snapshot_bundle_hash": "54a55f9ee1e157fbf50a349fc6d17dd7cc2f92ac1b32e1d3c40124365635854d",
+    "input_hash": "609fa903cec85ffa89c8da3953e05e558ffb8cc991329d6a5d900789a2377b56",
+    "snapshot_bundle_hash": "48029df7783e3811be5c3c57837f9c11321bf38b34e8ddd9266fec947b710632",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "2f00a43bcd90feaf63548ad7c261ac8595880b59",
-    "core_commit": "5306e051b25bc41e2a9258de4fd481f2c5c2f255",
-    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-930c4917049a.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/abfb326c173d8c9adfdd3176.md",
-    "rationale_anchor_hash": "abfb326c173d8c9adfdd3176302853a24a287cd9b242fbfac68914fa89d97798"
+    "resources_commit": "e59ac4c0a9c88aa62e7fd53b799b841f57858626",
+    "core_commit": "020b00aad9ed62d4931da0aa225d944a1f22deb6",
+    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-609fa903cec8.md",
+    "rationale_anchor_url": null,
+    "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"The proposal says a 501(c)(3) public charity legal entity is in progress and targeted to be operational by month 6, but initial capital is needed to complete establishment.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a revised Cardano dOSPO and OMF program.\" and clears the evidence gates. What would change this vote to YES: Provide milestone-gated disbursement; Provide sustainability path. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.2%.",
-    "summary_raw": "Directional NO forced: the applicable Net Change Limit is exhausted \u2014 treasury withdrawals already enacted within this NCL period leave no remaining capacity.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal requests 4,094,000 ADA over 12 months for a revised Cardano dOSPO and OMF program.\" and clears the evidence gates. What would enable a directional vote: Provide: verified ecosystem benefit or strategic necessity; Provide: cost comparables, budget proportionality, or sustainability evidence. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.25; confidence 78.2%.",
+    "summary_raw": "Directional treasury voting is blocked until this action is ranked against competing active proposals and verified NCL capacity.",
     "top_fixes": [
-      "Provide milestone-gated disbursement.",
-      "Provide sustainability path.",
-      "Provide cost-benefit clarity."
+      "Provide: verified ecosystem benefit or strategic necessity",
+      "Provide: cost comparables, budget proportionality, or sustainability evidence",
+      "Provide milestone-gated disbursement."
     ],
-    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-930c4917049a.md",
-    "missing_evidence": [],
-    "blocked_reason_code": null,
+    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-609fa903cec8.md",
+    "missing_evidence": [
+      "verified ecosystem benefit or strategic necessity",
+      "cost comparables, budget proportionality, or sustainability evidence"
+    ],
+    "blocked_reason_code": "TREASURY_PORTFOLIO_REQUIRED",
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -75,7 +78,7 @@
           "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
-            "Status: active",
+            "Status: expired",
             "Proposed epoch: 641",
             "Expires after epoch: 648",
             "Treasury request: 4.09M ADA",
@@ -172,7 +175,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-930c4917049a.assessment.json",
+    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-609fa903cec8.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "State the cost against the benefit: what does this buy, per ada spent.",
@@ -294,7 +297,7 @@
     "anchor_hash": "c36315b5d8b5ebb5b824b4d201fb4837e75bb88d68672c413a59212900017179",
     "file_sha256": "cdc48d2b3b3f1c2730744515062f662e0813a877d4f5cd836fa906472abdedfc",
     "content_bytes": "35038",
-    "fetched_at_utc": "2026-08-07T11:30:08Z",
+    "fetched_at_utc": "2026-08-08T11:30:05Z",
     "download_path": "/proposals/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -359,8 +362,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "2f00a43bcd90feaf63548ad7c261ac8595880b59",
-    "core_commit": "5306e051b25bc41e2a9258de4fd481f2c5c2f255",
+    "resources_commit": "e59ac4c0a9c88aa62e7fd53b799b841f57858626",
+    "core_commit": "020b00aad9ed62d4931da0aa225d944a1f22deb6",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -473,7 +476,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-07T11:33:04.235053Z",
+    "snapshot_time": "2026-08-08T11:33:01.217801Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

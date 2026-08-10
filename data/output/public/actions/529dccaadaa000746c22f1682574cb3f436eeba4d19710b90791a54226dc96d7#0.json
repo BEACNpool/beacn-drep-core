@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:1db5536ddafe789ac7ff27b21ed67ff3bfb0213790c6e99b93d841ac472b9cc7",
+    "raw_input_hash": "sha256:1802b0711639892de781c66375a899a368e2cad971a54205016fbda1827d0fa2",
     "detected_at": "2026-07-09T21:00:01.798380+00:00"
   },
   "decision": {
-    "vote": "NO",
+    "vote": "ABSTAIN",
     "onchain_vote": "NO",
-    "diverged": false,
-    "published_at": "2026-08-09T11:30:04.707168+00:00",
+    "diverged": true,
+    "published_at": "2026-08-10T11:30:04.656762+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "e54a6aaae3984eda835a92432274db4e05d6660401d7da0a00018f6bbbf7a48b",
@@ -39,49 +39,53 @@
     "onchain_vote": null
   },
   "current": {
-    "vote": "NO",
-    "score": -0.15,
-    "confidence": 0.7875,
-    "input_hash": "1db5536ddafe789ac7ff27b21ed67ff3bfb0213790c6e99b93d841ac472b9cc7",
-    "snapshot_bundle_hash": "6485f4fe003cbc98d0c83cf4754a6db6e6f106cfedec2209c6723aac158b799c",
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "1802b0711639892de781c66375a899a368e2cad971a54205016fbda1827d0fa2",
+    "snapshot_bundle_hash": "b220b47bcd1ccf0b65d0828bcd603bb1dbc556b7ba28e144a180eff75393212b",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "31d33aaec2d673169d99c44c40814570b6799d19",
-    "core_commit": "2bb6048cf2e2c1e21cb2efb8157e32f4547f113e",
-    "rationale_markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-1db5536ddafe.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/3d22c05686a2ce4a506ad665.md",
-    "rationale_anchor_hash": "3d22c05686a2ce4a506ad6655b76ef9dca994b6fbd28a7181bc99fe809b94fc2"
+    "resources_commit": "271d12ccc72bdf16178ed85ffe88558fb5bb8f43",
+    "core_commit": "7e3ad7e22cf9cee9c93f1f576abe4fed1e2b9fee",
+    "rationale_markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-1802b0711639.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/cdf8ab9d3aaf10c552768d1a.md",
+    "rationale_anchor_hash": "cdf8ab9d3aaf10c552768d1a85b98bcf3c467d65762469807192680713a5e2d3"
   },
   "rationale": {
-    "summary": "Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported \u2014 \"As of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply.\" \u2014 so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates \"Cardano PRIME is a 12-month program intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.\" and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: As of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply; Provide independent evidence for: AlphaGrowth has not received Cardano Treasury funding within the prior 24 months. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.15; confidence 78.8%.",
-    "summary_raw": "Directional NO forced: the applicable Net Change Limit is exhausted \u2014 treasury withdrawals already enacted within this NCL period leave no remaining capacity.",
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: evidence is too thin for a directional vote while 1 blocker(s) remain open. Weighed against it: the proposal substantiates \"Cardano PRIME is a 12-month program intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.\" though 1 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py); Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py). Residual uncertainty: Missing: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py) Confidence context: score 0.00; confidence 10.0%.",
+    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
     "top_fixes": [
-      "Provide independent evidence for: As of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply.",
-      "Provide independent evidence for: AlphaGrowth has not received Cardano Treasury funding within the prior 24 months.",
-      "Provide line-item budget."
+      "Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
+      "Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py).",
+      "Provide independent evidence for: As of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply."
     ],
-    "markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-1db5536ddafe.md",
-    "missing_evidence": [],
-    "blocked_reason_code": null,
-    "assessment_status": "incomplete",
+    "markdown_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-1802b0711639.md",
+    "missing_evidence": [
+      "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+    ],
+    "blocked_reason_code": "MISSING_BASELINE_EVIDENCE",
+    "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
       "schema_version": "assessment-tree-v1",
       "action_id": "529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0",
       "action_type": "TreasuryWithdrawals",
-      "overall_status": "incomplete",
+      "overall_status": "blocked",
       "sections": [
         {
           "title": "Intake",
-          "status": "complete",
+          "status": "blocked",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: active",
             "Proposed epoch: 642",
             "Expires after epoch: 649",
-            "Treasury request: 120.00M ADA",
+            "Treasury request: not specified",
             "Anchor pinned locally: yes"
           ],
-          "missing": [],
+          "missing": [
+            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+          ],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -153,27 +157,31 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Cardano PRIME is a 12-month program intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.\" and clears the evidence gates.",
+            "Strongest YES: the proposal substantiates \"Cardano PRIME is a 12-month program intended to improve DeFi protocol readiness, activate incentives responsibly, and grow durable liquidity across Cardano markets.\" though 1 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"As of June 2026, Cardano DeFi has approximately $90M in TVL and $45M in stablecoin supply.\" \u2014 so cost or precedent may outweigh the benefit.",
-            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+            "Strongest hold: evidence is too thin for a directional vote while 1 blocker(s) remain open."
           ],
           "missing": [],
           "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
         },
         {
           "title": "Synthesis",
-          "status": "ready",
+          "status": "blocked",
           "findings": [
             "Final vote must be derived from completed sections above, not from a prose summary.",
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
-          "missing": [],
+          "missing": [
+            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+          ],
           "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
         }
       ],
-      "blocking_questions": []
+      "blocking_questions": [
+        "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+      ]
     },
-    "assessment_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-1db5536ddafe.assessment.json",
+    "assessment_path": "/data/output/public/rationales/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0-1802b0711639.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -298,7 +306,7 @@
     "anchor_hash": "1ac5c12a6b09d68d6602d79df4ea82e92f1c15dc306a31c320fd546b4b7ad690",
     "file_sha256": "80245ed2d5215ac7c7e2c899371096ea204ba2d5601122a5c46c916afe2ab447",
     "content_bytes": "8594",
-    "fetched_at_utc": "2026-08-09T11:30:06Z",
+    "fetched_at_utc": "2026-08-10T11:30:06Z",
     "download_path": "/proposals/529dccaadaa000746c22f1682574cb3f436eeba4d19710b90791a54226dc96d7#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -350,15 +358,15 @@
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "portfolio_status": "verified",
-    "requested_lovelace": 120000000000000,
+    "requested_lovelace": 0,
     "fits_remaining": false
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "31d33aaec2d673169d99c44c40814570b6799d19",
-    "core_commit": "2bb6048cf2e2c1e21cb2efb8157e32f4547f113e",
+    "resources_commit": "271d12ccc72bdf16178ed85ffe88558fb5bb8f43",
+    "core_commit": "7e3ad7e22cf9cee9c93f1f576abe4fed1e2b9fee",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -461,17 +469,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.15,
-    "raw_score": -0.15,
-    "directional_threshold": 0.06,
-    "confidence": 0.7875,
+    "binding_score": 0.0,
+    "raw_score": 0.0,
+    "directional_threshold": 0.12,
+    "confidence": 0.1,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-09T11:33:15.551835Z",
+    "snapshot_time": "2026-08-10T11:30:18.856324Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

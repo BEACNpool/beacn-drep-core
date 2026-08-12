@@ -1,0 +1,72 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "deterministic-heuristic",
+  "reason": null,
+  "model": "local-deterministic",
+  "request": {
+    "what": "Reduce minPoolCost to 75 ada and increase Plutus Memory Limits (Part 2)",
+    "recipient": "",
+    "amount_ada": "not stated in document",
+    "deliverables": [
+      "Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1.",
+      "minPoolCost: decrease minPoolCost from 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%.",
+      "Plutus memory unit limits (Part 2 of 2): increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 units (+6.1%) and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000 units (+7.6%), completing the two-step, cumulative 25% increase to bot...",
+      "These two changes are otherwise unrelated: one lowers the stake pool fixed-fee floor, the other increases Plutus script execution headroom."
+    ],
+    "deadline": "not stated in document"
+  },
+  "claims": [
+    {
+      "claim": "Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "minPoolCost: decrease minPoolCost from 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "Plutus memory unit limits (Part 2 of 2): increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 units (+6.1%) and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000 units (+7.6%), completing the two-step, cumulative 25% increase to bot...",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "These two changes are otherwise unrelated: one lowers the stake pool fixed-fee floor, the other increases Plutus script execution headroom.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "minPoolCost was reduced from 340 ada to 170 ada in 2023 (PCP-001), but the relief that reduction provided has been substantially eroded by the continuing decline in reserve-funded block rewards: the delegator penalty on single-block pools, which fell to ~28...",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "high"
+    },
+    {
+      "claim": "IO Research's updated incentives report has also reversed its earlier position, now assessing that a high fixed-fee floor favours rather than deters Sybil-style stake fragmentation by large operators.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "PCP-006 (Cerkoryn, 2026) proposes a further reduction to 75 ada as an evidence-based interim step, pending the more structural solution of a proportional minPoolMargin (CIP-0023).",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    },
+    {
+      "claim": "Part 1 of this two-step change increased maxTxExecutionUnits[memory] and maxBlockExecutionUnits[memory] by the maximum single-epoch amount permitted under guardrails MTEU-M-04 and MBEU-M-03.",
+      "category": "technical",
+      "support": "independently_verifiable",
+      "materiality": "low"
+    }
+  ],
+  "summary": "Intersect's Parameter Committee proposes a single Parameter Update governance action bundling two independent, previously recommended protocol parameter changes: 1. minPoolCost: decrease minPoolCost from 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%.",
+  "prompt_sha256": "d16850017a304debbda64795c2669f1e9045af72816acabaf01b834eb8ba29b8",
+  "output_sha256": "5089a5632343ddc5dad3eeb24bb5e688ef1dd1059b7deb11bc13322105e681cd"
+}

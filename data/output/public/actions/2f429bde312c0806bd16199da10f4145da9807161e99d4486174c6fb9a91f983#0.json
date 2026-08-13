@@ -5,14 +5,14 @@
   "status": "expired",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:f0f817bb4ab8d474d516bd3a9a542c92cae6f064b6db32cd5864844d3b0a8028",
+    "raw_input_hash": "sha256:07920d62f45481771afc79bdcfab3ef2f90697d7941a4a31f757d79215b9d4d8",
     "detected_at": "2026-07-08T05:00:01.231638+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-08-12T11:30:04.681155+00:00",
+    "published_at": "2026-08-13T11:30:04.621357+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "705ca34716852b04da22f888250fe1f2b3c7dda37accc8ea2c71e1a27b53eb2a",
@@ -42,12 +42,12 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.1,
-    "input_hash": "f0f817bb4ab8d474d516bd3a9a542c92cae6f064b6db32cd5864844d3b0a8028",
-    "snapshot_bundle_hash": "860b003d7a7095828a3abecd5db42531684da15192dfd723056ab8594fb654f7",
+    "input_hash": "07920d62f45481771afc79bdcfab3ef2f90697d7941a4a31f757d79215b9d4d8",
+    "snapshot_bundle_hash": "4e9258e3af02e0b6304b627eef08ef05e9c0bddd13f97419ad2c2670b03f3b3f",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "3774b81728668d10caf18a59e771fdc63a10968e",
-    "core_commit": "133c9864c43c6901efe5e75a62ed39645de57569",
-    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-f0f817bb4ab8.md",
+    "resources_commit": "27e7eab026a9f8afd0bee9bfa9a1edc4a848dbf9",
+    "core_commit": "7b2ffac904470b63eec3fa5ac1428fc06b42d288",
+    "rationale_markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-07920d62f454.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
@@ -59,7 +59,7 @@
       "Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py).",
       "Provide milestone-gated disbursement."
     ],
-    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-f0f817bb4ab8.md",
+    "markdown_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-07920d62f454.md",
     "missing_evidence": [
       "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
     ],
@@ -180,7 +180,7 @@
         "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-f0f817bb4ab8.assessment.json",
+    "assessment_path": "/data/output/public/rationales/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0-07920d62f454.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "State the cost against the benefit: what does this buy, per ada spent.",
@@ -302,7 +302,7 @@
     "anchor_hash": "c36315b5d8b5ebb5b824b4d201fb4837e75bb88d68672c413a59212900017179",
     "file_sha256": "cdc48d2b3b3f1c2730744515062f662e0813a877d4f5cd836fa906472abdedfc",
     "content_bytes": "35038",
-    "fetched_at_utc": "2026-08-12T11:30:05Z",
+    "fetched_at_utc": "2026-08-13T11:30:05Z",
     "download_path": "/proposals/2f429bde312c0806bd16199da10f4145da9807161e99d4486174c6fb9a91f983#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -367,8 +367,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "3774b81728668d10caf18a59e771fdc63a10968e",
-    "core_commit": "133c9864c43c6901efe5e75a62ed39645de57569",
+    "resources_commit": "27e7eab026a9f8afd0bee9bfa9a1edc4a848dbf9",
+    "core_commit": "7b2ffac904470b63eec3fa5ac1428fc06b42d288",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -481,7 +481,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-12T11:30:18.153075Z",
+    "snapshot_time": "2026-08-13T11:30:13.217176Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

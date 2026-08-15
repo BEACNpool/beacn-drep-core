@@ -4,7 +4,7 @@
 - Decision: **NEEDS_MORE_INFO**
 - Action type: `TreasuryWithdrawals`
 - Status: `expired`
-- Published at: `2026-08-14T11:30:04.813346+00:00`
+- Published at: `2026-08-15T11:30:04.823074+00:00`
 
 ## Human-readable rationale
 Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Treasury Withdrawal Proposal By: Cardano Foundation & EMURGO This Proposal as a PDF: https://ipnso-com.ipns.dweb.link/?cid=QmQc5zt319nHtseyj4vVKkm4PFCHS7To3WCs6pH3SGgrxq This proposal outlines a high-impact, effective, dual-event strategy to be executed in..." though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.
@@ -48,11 +48,11 @@ Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (expired), critical informat
 - Provide: Missing dossier section: complete proposal summary
 
 ## Proof of vote
-- input_hash: `d7beb81378cb1a7398cde5b9f0ae638dec0fea707a63fc41f17516921ab629ed`
-- snapshot_bundle_hash: `3101513e387f914b4d860992c112abeb8674eef2a05048d1fb1fc57d9b80e1df`
+- input_hash: `f1bb19ecb152ca011e7b1590709c2cc8aa2d591ab0c256b2958dcab05d6484a4`
+- snapshot_bundle_hash: `79d739230a46e961bc365b11be2af0c0efb196cfac488e5cdea21d4ae354ffcd`
 - soul_commit: `c813ed97f64dba61150d01964327553baf720d38`
-- resources_commit: `ef85d07c90c6bede6f4999502ba5fb3296da465c`
-- core_commit: `47f336d67c55c5dfae959c04d4e1a5c34caf6ffd`
+- resources_commit: `480a04af9041d4372ef8a5c8ae7abf3a77fcefc5`
+- core_commit: `a208abda28818620367803ed2c8b5271e491bcc4`
 - score: `0.0`
 - confidence: `0.2`
 

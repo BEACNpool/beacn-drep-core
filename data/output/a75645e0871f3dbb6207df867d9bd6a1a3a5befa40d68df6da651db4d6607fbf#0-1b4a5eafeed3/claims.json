@@ -1,0 +1,76 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "Close of Epoch 713, on or about July 3, 2027.",
+    "deliverables": [
+      "Record DRep agreement to a 500,000,000 ada Net Change Limit for Epochs 613-713.",
+      "Supersede any prior Net Change Limit for the same period.",
+      "Define that prior Treasury Withdrawals already debited during the period count toward the limit."
+    ],
+    "recipient": "not stated in document",
+    "what": "Info action to agree a new Net Change Limit for Cardano Treasury withdrawals during Epochs 613-713."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The proposal sets a Net Change Limit of 500,000,000 ada, equal to 500,000,000,000,000 lovelace, for the Cardano Treasury.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposed limit applies from the start of Epoch 613 on February 13, 2026 through the close of Epoch 713, on or about July 3, 2027.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The Net Change Limit caps only the cumulative lovelace removed from the Treasury through enacted Treasury Withdrawals recorded on the Cardano ledger during the period.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Treasury inflows, including reserve and protocol allocations, transaction-fee allocations, refunds, and returns of Treasury-funded amounts, do not count toward or increase the limit.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that Treasury Withdrawals already debited during the period count toward the 500,000,000 ada limit and remain valid.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that this Info action has no direct on-chain effect and does not authorize any Treasury Withdrawal.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer asserts that the existing 350,000,000 ada Net Change Limit for Epochs 613-713 has become practically constrained while still serving as a useful fiscal guardrail.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal asserts that agreeing a higher 500,000,000 ada limit preserves DReps' ability to consider credible Treasury Withdrawals on their merits while retaining a fixed fiscal guardrail.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal cites the enacted Cardano Constitution v2.4 by IPFS reference and asserts that the action complies with it and Appendix I Guardrails.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes a signaling Info action to replace the prior Treasury Net Change Limit for Epochs 613-713 with a 500,000,000 ada cap, defines how ledger-debited withdrawals count, excludes inflows, and states that the action itself does not authorize spending.",
+  "output_sha256": "abef41dbe1f026f2ec7bf8d9b6402eddf7ed65c37047904723addf3fd54e832c"
+}

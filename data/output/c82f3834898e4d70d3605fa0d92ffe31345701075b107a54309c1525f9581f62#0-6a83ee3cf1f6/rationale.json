@@ -1,0 +1,267 @@
+{
+  "action_id": "c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0",
+  "action_type": "ParameterChange",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.06,
+  "llm_score_adjustment": -0.03,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "NO",
+    "score_adjustment": -0.03,
+    "confidence": 0.72,
+    "rationale": "Doctrine-aware offline lean for a parameter action: 4 well-supported claim(s), 2 unsupported high-materiality claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "parameter_change_doctrine.md"
+  ],
+  "doctrine_hash": "9d525573a4510e7da39e093ec99b90840e497854ead5066421d56b0561b3c3d4",
+  "directional_threshold": 0.12,
+  "confidence": 0.45,
+  "readiness_score": 0.0,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Protocol parameter changes carry system-wide risk.",
+    "Intake: Action type: ParameterChange",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is above the hard-fork threshold; treated as a positive context signal.",
+    "Advisory model lean was -0.030 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a parameter action: 4 well-supported claim(s), 2 unsupported high-materiality claim(s), parameter doctrine demands elevated scrutiny. Net bounded adjustment -0.030 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
+    "Claims and evidence missing: Independent evidence for: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
+    "Claims and evidence missing: Independent evidence for: Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "6a83ee3cf1f62f018853aeb7bac8dd799f63fa6eae5ce44c57195b59bca7fcb1",
+  "snapshot_bundle_hash": "d7cd121e2f32a49483e9b4623bad73ff55527edae659e3f9d8fa162db1350bf5",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "47bddcf76a3ee4dfa2ebef65c0231a1e3dc57ec4",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-16T11:30:18.526415Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2838,
+    "NO": 0.2838,
+    "ABSTAIN": 0.4325
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0",
+    "action_type": "ParameterChange",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: ParameterChange",
+          "Status: enacted",
+          "Proposed epoch: 633",
+          "Expires after epoch: 640",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Update Plutus Cost Models",
+          "Recipient: not stated in document",
+          "Stated amount: not stated in document",
+          "Deliverables: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus..., Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11., However, the changes for existing primitives will happen immediately on enactment of this governance action., This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, proposer_asserted, high materiality): Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
+          "Claim (technical, proposer_asserted, high materiality): Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
+          "Claim (technical, proposer_asserted, medium materiality): However, the changes for existing primitives will happen immediately on enactment of this governance action.",
+          "Claim (technical, supported_in_proposal, high materiality): This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.",
+          "Claim (technical, supported_in_proposal, high materiality): This proposal provides the necessary cost model settings so that these primitives can be used following the van Rossem hard fork.",
+          "Claim (technical, supported_in_proposal, low materiality): Second, the action also ensures that Plutus primitives previously limited to Plutus V3 are available in Plutus V1 and Plutus V2."
+        ],
+        "missing": [
+          "Independent evidence for: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...",
+          "Independent evidence for: Note that the new primitives will not be enabled in Protocol version 10, but only following the enactment of the hard fork to Protocol Version 11.",
+          "Independent evidence for: However, the changes for existing primitives will happen immediately on enactment of this governance action."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus...\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN records ABSTAIN on Update Plutus Cost Models. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a ParameterChange. The cached anchor describes the request as: Update Plutus Cost Models. The strongest grounded claim is: This governance action is motivated by three objectives: First, following the hard fork to Protocol Version 11, new Plutus primitives become available.\n\nA material claim remains proposer-asserted or thinly supported: Intersect's Parameter Committee proposes to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the van Rossem hard fork (to Protocol Version 11), to enable all Plutus. Reason code: MISSING_PROTOCOL_READINESS_EVIDENCE.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "c82f3834898e4d70d3605fa0d92ffe31345701075b107a54309c1525f9581f62#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreie4ykbbk6rjpiqqjcqhubk3b2yrzgvpntm4ozopx2ospendufvhyu",
+        "file_sha256": "9cc282157a297a21048a07a055b0eb11c9aaf6cd9c765cfbe9d2791a3a16a7c5",
+        "file_path": "data/input/governance/anchors/gov_action1eqhnsdyf3exhp5mqt7sdjtl7xy69wqg8tvg854psns2jt72cra3qqrcnr8r-20260615T152519Z.bin",
+        "content_chars": 78706,
+        "truncated_to_chars": 60000
+      },
+      "claim_count": 8,
+      "prompt_sha256": "6f583be4c8c56c51cb1544fc4bc93ecf8d9e61997f2cfd3abdf433f426612b00",
+      "output_sha256": "55bcde85cc0ade8142c75a78e8a639a35a84e31d8759d00a52060389f98f081d"
+    },
+    "doctrine": {
+      "family": "parameter",
+      "files": [
+        "values_hierarchy.md",
+        "parameter_change_doctrine.md"
+      ],
+      "sha256": "9d525573a4510e7da39e093ec99b90840e497854ead5066421d56b0561b3c3d4"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": -0.03,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "1e301ed8078447ee8ce5f26bd807cf3993a5971397771eb127e2098bcd3130ca",
+      "output_sha256": "53078017395069f7c95e06d6b158bb29b982eb0a8e8dc3d55e4baae27d6e0c69"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "93339114bb864ce44aa62a5ba9e14ab42d6a11144282041fc35b82002d407960",
+      "output_sha256": "b62121eaaff4df11a259d73a8a4c0baf8dd3461229ce5a2b6a58fdb8a38fcdb4"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

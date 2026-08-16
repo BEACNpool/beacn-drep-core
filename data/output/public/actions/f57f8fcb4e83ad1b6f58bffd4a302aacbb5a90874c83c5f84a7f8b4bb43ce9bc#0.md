@@ -4,7 +4,7 @@
 - Decision: **ABSTAIN**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-08-15T11:30:04.823074+00:00`
+- Published at: `2026-08-16T11:30:04.515577+00:00`
 
 ## Human-readable rationale
 Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates "Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes." though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py); Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py). Residual uncertainty: Missing: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py) Confidence context: score 0.00; confidence 10.0%.
@@ -47,12 +47,12 @@ Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insuf
 - Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py).
 - Provide complete proposal summary.
 
-## Proof of vote
+## Proof of vote (frozen at submission)
 - input_hash: `b6a9648c66f609d6b8ca6c6e4b9a97d9f63016f0cc20cc664865a11ef0d5edc9`
 - snapshot_bundle_hash: `059ef766ffc02356294eff08f00bef91aaae264427910977ddd3d0f8bcc30160`
 - soul_commit: `c813ed97f64dba61150d01964327553baf720d38`
 - resources_commit: `480a04af9041d4372ef8a5c8ae7abf3a77fcefc5`
-- core_commit: `a208abda28818620367803ed2c8b5271e491bcc4`
+- core_commit: ``
 - score: `0.0`
 - confidence: `0.1`
 

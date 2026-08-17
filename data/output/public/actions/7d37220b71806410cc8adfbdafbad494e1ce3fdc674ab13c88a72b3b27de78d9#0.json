@@ -1,0 +1,498 @@
+{
+  "action_id": "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0",
+  "title": "Reimburse Ikigai Info Governance Action Deposit.",
+  "type": "TreasuryWithdrawals",
+  "status": "active",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:e4585ab12049058653dbc208d079a68eea54108731eaf27e62b49b63f2a07fdc",
+    "detected_at": "2026-08-17T11:30:05.163347+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "onchain_vote": null,
+    "diverged": false,
+    "published_at": "2026-08-17T11:30:05.163347+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "e4585ab12049058653dbc208d079a68eea54108731eaf27e62b49b63f2a07fdc",
+    "snapshot_bundle_hash": "f2317f880983e93155cfe8d2a2db2927c4166d6ff027e419cbabe0f0038103c4",
+    "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+    "resources_commit": "26cfa2c4f8de8f6b0f25367143ff772f718c0801",
+    "core_commit": "8ae915ccdea78d74959db3b06a77d11621c82744",
+    "rationale_markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-e4585ab12049.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/0deab549e9b63647263e1da1.md",
+    "rationale_anchor_hash": "0deab549e9b63647263e1da1c1825144cf4965f7169d9590b184a7cba0c01498",
+    "frozen": false,
+    "onchain_anchor_hash": null,
+    "onchain_anchor_url": null,
+    "onchain_vote": null
+  },
+  "current": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.1,
+    "input_hash": "e4585ab12049058653dbc208d079a68eea54108731eaf27e62b49b63f2a07fdc",
+    "snapshot_bundle_hash": "f2317f880983e93155cfe8d2a2db2927c4166d6ff027e419cbabe0f0038103c4",
+    "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+    "resources_commit": "26cfa2c4f8de8f6b0f25367143ff772f718c0801",
+    "core_commit": "8ae915ccdea78d74959db3b06a77d11621c82744",
+    "rationale_markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-e4585ab12049.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/0deab549e9b63647263e1da1.md",
+    "rationale_anchor_hash": "0deab549e9b63647263e1da1c1825144cf4965f7169d9590b184a7cba0c01498"
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py); Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py). Residual uncertainty: Missing: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py) Confidence context: score 0.00; confidence 10.0%.",
+    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "top_fixes": [
+      "Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
+      "Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py).",
+      "Provide independent evidence for: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed."
+    ],
+    "markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-e4585ab12049.md",
+    "missing_evidence": [
+      "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+    ],
+    "blocked_reason_code": "MISSING_BASELINE_EVIDENCE",
+    "assessment_status": "blocked",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0",
+      "action_type": "TreasuryWithdrawals",
+      "overall_status": "blocked",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "blocked",
+          "findings": [
+            "Action type: TreasuryWithdrawals",
+            "Status: active",
+            "Proposed epoch: 649",
+            "Expires after epoch: 656",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+          ],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: required",
+            "Requested: Reimburse Ikigai Info Governance Action Deposit.",
+            "Recipient: ",
+            "Stated amount: not stated in document",
+            "Deliverables: In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted., This was only a symbolic governance action, as it simply asked the community whether they agreed with a statement thanking those that helped get Cardano to this point and expressing a sense of hope for the future., Unfortunately, due to a bug in the code of the Cardano node that permitted an unregistered stake key to be used in the governance action, the submitter was unable to recover their deposit of 100K ADA., While the community expressed at the time the importance of reimbursing this deposit via a treasury withdrawal; once the ability to do so became available, following the Plomin hard fork; unfortunately none of the entity based budget submissions included it.",
+            "Deadline/expiry: not stated in document",
+            "Claim (economic, independently_verifiable, high materiality): In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.",
+            "Claim (economic, supported_in_proposal, medium materiality): This was only a symbolic governance action, as it simply asked the community whether they agreed with a statement thanking those that helped get Cardano to this point and expressing a sense of hope for the future.",
+            "Claim (technical, supported_in_proposal, medium materiality): Unfortunately, due to a bug in the code of the Cardano node that permitted an unregistered stake key to be used in the governance action, the submitter was unable to recover their deposit of 100K ADA.",
+            "Claim (economic, supported_in_proposal, high materiality): While the community expressed at the time the importance of reimbursing this deposit via a treasury withdrawal; once the ability to do so became available, following the Plomin hard fork; unfortunately none of the entity based budget submissions included it.",
+            "Claim (economic, proposer_asserted, medium materiality): There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.",
+            "Claim (economic, proposer_asserted, medium materiality): It was considered that the submitter should not lose one hundred thousand ADA, for being an early pioneer of Cardano governance."
+          ],
+          "missing": [
+            "Independent evidence for: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.",
+            "Independent evidence for: It was considered that the submitter should not lose one hundred thousand ADA, for being an early pioneer of Cardano governance.",
+            "complete proposal summary",
+            "budget analysis",
+            "feasibility assessment",
+            "risk analysis",
+            "alternatives analysis",
+            "failure-mode analysis",
+            "community impact analysis"
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Treasury analysis",
+          "status": "incomplete",
+          "findings": [
+            "Requested ADA: not specified",
+            "Budget granularity: unknown",
+            "Milestone payment gates: unknown",
+            "Clawback/refund path: unknown",
+            "Cost/benefit clarity: unknown",
+            "Recurring funding dependency: unknown",
+            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Financial confidence: unknown"
+          ],
+          "missing": [
+            "line-item budget",
+            "milestone-gated disbursement",
+            "sustainability path",
+            "cost-benefit clarity"
+          ],
+          "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 1"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" though 8 review blocker(s) remain open.",
+            "Strongest NO: a material claim is unsupported \u2014 \"There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "blocked",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [
+            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
+            "missing complete proposal summary",
+            "missing budget analysis",
+            "missing feasibility assessment",
+            "missing risk analysis",
+            "missing alternatives analysis",
+            "missing failure-mode analysis",
+            "missing community impact analysis"
+          ],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": [
+        "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ]
+    },
+    "assessment_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-e4585ab12049.assessment.json",
+    "treasury_dimensions": {
+      "actionable_asks": [
+        "Publish a line-item budget: what is being bought, at what unit cost.",
+        "State the cost against the benefit: what does this buy, per ada spent.",
+        "Describe the funding path beyond this grant, or say plainly that there isn't one.",
+        "Disclose the rate basis \u2014 headcount, FTE fraction, or day rate \u2014 so the price can be checked against the market.",
+        "Tie payment to defined deliverables, not to elapsed time or headcount.",
+        "State your AI-cost assumption: this work is cheaper to produce than it was, and the price should show it.",
+        "Gate disbursement on milestones that must be met before money moves.",
+        "Provide a clawback or refund path if the work is not delivered."
+      ],
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.1,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5,
+      "composite": -0.4,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {
+        "actionable_asks": [
+          "Publish a line-item budget: what is being bought, at what unit cost.",
+          "State the cost against the benefit: what does this buy, per ada spent.",
+          "Describe the funding path beyond this grant, or say plainly that there isn't one.",
+          "Disclose the rate basis \u2014 headcount, FTE fraction, or day rate \u2014 so the price can be checked against the market.",
+          "Tie payment to defined deliverables, not to elapsed time or headcount.",
+          "State your AI-cost assumption: this work is cheaper to produce than it was, and the price should show it.",
+          "Gate disbursement on milestones that must be met before money moves.",
+          "Provide a clawback or refund path if the work is not delivered."
+        ],
+        "evidence_status": "missing",
+        "benefit": 0,
+        "delivery_confidence": 0.1,
+        "cost_efficiency": 0.0,
+        "downside_risk": 0.5,
+        "composite": -0.4,
+        "affirmative_waste_evidence": [],
+        "missing": [
+          "independent ecosystem-value evidence packet",
+          "verified ecosystem benefit or strategic necessity",
+          "cost comparables, budget proportionality, or sustainability evidence",
+          "delivery controls, milestones, assurance, or remedy path"
+        ]
+      },
+      "merit_recommendation": "NEEDS_MORE_INFO",
+      "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete."
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "actionable_asks": [
+        "Publish a line-item budget: what is being bought, at what unit cost.",
+        "State the cost against the benefit: what does this buy, per ada spent.",
+        "Describe the funding path beyond this grant, or say plainly that there isn't one.",
+        "Disclose the rate basis \u2014 headcount, FTE fraction, or day rate \u2014 so the price can be checked against the market.",
+        "Tie payment to defined deliverables, not to elapsed time or headcount.",
+        "State your AI-cost assumption: this work is cheaper to produce than it was, and the price should show it.",
+        "Gate disbursement on milestones that must be met before money moves.",
+        "Provide a clawback or refund path if the work is not delivered."
+      ],
+      "evidence_status": "missing",
+      "benefit": 0,
+      "delivery_confidence": 0.1,
+      "cost_efficiency": 0.0,
+      "downside_risk": 0.5,
+      "composite": -0.4,
+      "affirmative_waste_evidence": [],
+      "missing": [
+        "independent ecosystem-value evidence packet",
+        "verified ecosystem benefit or strategic necessity",
+        "cost comparables, budget proportionality, or sustainability evidence",
+        "delivery controls, milestones, assurance, or remedy path"
+      ]
+    },
+    "merit_recommendation": "NEEDS_MORE_INFO",
+    "merit_reason": "Intrinsic quality floors or independent evidence are not complete.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok_cached",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://most-brass-sun.quicknode-ipfs.com/ipfs/QmSy2CiQhPBzzNLKDFVvMQaDb1FQDbmn9bJf6fVntVAQ1t",
+    "anchor_hash": "abaf67cde8defc914712009094cd3805bcf8911d3fa79c6edfd6c975dcf9d471",
+    "file_sha256": "c2705f5116cc7c0c6c3a2a84d83c377ab118d24ae54a25aa4e5d6ba570f38515",
+    "content_bytes": "4649",
+    "fetched_at_utc": "2026-08-17T11:30:06Z",
+    "download_path": "/proposals/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0.json",
+    "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d"
+  },
+  "deep_research": null,
+  "flags": [
+    {
+      "flag": "\ud83d\udfe1 NO_DISCUSSION",
+      "severity": "yellow",
+      "detail": "No links to forum discussion or community feedback"
+    }
+  ],
+  "treasury_capacity": {
+    "verified": true,
+    "ncl_lovelace": 300000000000000,
+    "period_start_epoch": 613,
+    "period_end_epoch": 713,
+    "withdrawals_in_period_lovelace": 337395629000000,
+    "remaining_capacity_lovelace": 0,
+    "spend_basis": "gross_treasury_withdrawals_enacted_within_period",
+    "source_action_id": "73a4eb2148781c37ef37c90a33a1d3d00511a8eefe9cdfaa1ea593b090f23f96#0",
+    "source_anchor_hash": "4e264b46f948da4a1917be590d14f10f9e36372075fd11561669180747c0588b",
+    "drep_support": {
+      "yes_stake_lovelace": 2460643090332089,
+      "no_stake_lovelace": 1754593207208598,
+      "yes_pct_of_participating_stake": 58.37,
+      "yes_dreps": 125,
+      "no_dreps": 44
+    },
+    "verification_status": "verified_onchain_info_action",
+    "caveat": "Set by an Info governance action. Info actions change no ledger state and can NEVER be enacted -- they always expire -- so no formally ratified NCL exists or can exist. This is the strongest available public chain evidence: an anchor document byte-verified against its on-chain blake2b-256 hash, covering the current epoch, whose voting CLOSED with a majority of participating DRep stake. It is NOT enacted ledger state, and the majority may fall short of the supermajority other action types require. Published with every treasury rationale that relies on it.",
+    "pending_candidate": {
+      "source_action_id": "a75645e0871f3dbb6207df867d9bd6a1a3a5befa40d68df6da651db4d6607fbf#0",
+      "ncl_lovelace": 500000000000000,
+      "period_start_epoch": 613,
+      "period_end_epoch": 713,
+      "voting_open_until_epoch": 647,
+      "interim_yes_pct_of_participating_stake": 70.57,
+      "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
+    },
+    "portfolio_status": "verified",
+    "requested_lovelace": 0,
+    "fits_remaining": false
+  },
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "26cfa2c4f8de8f6b0f25367143ff772f718c0801",
+    "core_commit": "8ae915ccdea78d74959db3b06a77d11621c82744",
+    "resource_ids_used": [
+      "gov_actions_snapshot",
+      "treasury_withdrawals_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_treasury_recipients_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents",
+      "deep_research_dossiers",
+      "ecosystem_value_profiles",
+      "treasury_policy_state",
+      "treasury_portfolio",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_withdrawals_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_treasury_recipients_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "deep_research_dossiers",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "ecosystem_value_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_policy_state",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "treasury_portfolio",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "binding_score": 0.0,
+    "raw_score": 0.0,
+    "directional_threshold": 0.12,
+    "confidence": 0.1,
+    "model_vote_influence": 0
+  },
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-17T11:30:24.653144Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

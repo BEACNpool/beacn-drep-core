@@ -1,0 +1,137 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "blocked",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "blocked",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 649",
+        "Expires after epoch: 656",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+      ],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "complete",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: required",
+        "Requested: Governance Incentives Framework 2026",
+        "Recipient: ",
+        "Stated amount: not stated in document",
+        "Deliverables: Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes., The project separates evidence-based validation from governance legitimacy: candidate incentive mechanisms will first be evaluated through research, data, modeling, and evidence, and then presented to governance for a decision on adoption., Significant work already exists across Cardano on governance compensation, participation, rationale incentives, reward distribution, voting-power concentration, and governance reward design., The Governance Incentives Working Group has already created a mapping document identifying 49 relevant efforts, proposals, research papers, tools, and related initiatives across this space [1].",
+        "Deadline/expiry: not stated in document",
+        "Claim (economic, independently_verifiable, medium materiality): Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.",
+        "Claim (economic, independently_verifiable, medium materiality): The project separates evidence-based validation from governance legitimacy: candidate incentive mechanisms will first be evaluated through research, data, modeling, and evidence, and then presented to governance for a decision on adoption.",
+        "Claim (economic, independently_verifiable, medium materiality): Significant work already exists across Cardano on governance compensation, participation, rationale incentives, reward distribution, voting-power concentration, and governance reward design.",
+        "Claim (economic, independently_verifiable, medium materiality): The Governance Incentives Working Group has already created a mapping document identifying 49 relevant efforts, proposals, research papers, tools, and related initiatives across this space [1].",
+        "Claim (economic, independently_verifiable, medium materiality): Cardano governance depends on sustained, informed, and high-integrity participation from governance actors and stakeholders.",
+        "Claim (economic, independently_verifiable, low materiality): However, there is currently no structured and data-driven framework for determining how these contributions should be incentivized, measured, or supported over time."
+      ],
+      "missing": [
+        "complete proposal summary",
+        "budget analysis",
+        "feasibility assessment",
+        "risk analysis",
+        "alternatives analysis",
+        "failure-mode analysis",
+        "community impact analysis"
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "incomplete",
+      "findings": [
+        "Requested ADA: not specified",
+        "Budget granularity: unknown",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: unknown",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: unknown"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.\" though 8 review blocker(s) remain open.",
+        "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)) means costs or weak controls may outweigh the claimed benefit.",
+        "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "blocked",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [
+        "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
+        "missing complete proposal summary",
+        "missing budget analysis",
+        "missing feasibility assessment",
+        "missing risk analysis",
+        "missing alternatives analysis",
+        "missing failure-mode analysis",
+        "missing community impact analysis"
+      ],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": [
+    "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
+    "missing complete proposal summary",
+    "missing budget analysis",
+    "missing feasibility assessment",
+    "missing risk analysis",
+    "missing alternatives analysis",
+    "missing failure-mode analysis",
+    "missing community impact analysis"
+  ]
+}

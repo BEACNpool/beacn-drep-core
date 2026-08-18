@@ -6,7 +6,7 @@
     "YES"
   ],
   "submitted": 0,
-  "active_evaluated": 5,
+  "active_evaluated": 6,
   "skipped_inactive": 149,
   "policy_config": {
     "min_persistence_revision": 2,
@@ -55,6 +55,18 @@
       "policy": "NOOP",
       "policy_reason": "on-chain vote already ABSTAIN",
       "status": "NOOP"
+    },
+    {
+      "action_id": "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0",
+      "recommendation": "ABSTAIN",
+      "onchain_vote": null,
+      "policy": "CAST",
+      "policy_reason": "fresh abstain (conservative default)",
+      "gates_ok": false,
+      "status": "blocked_by_gate",
+      "reasons": [
+        "rationale_anchor: published rationale unreachable or hash mismatch"
+      ]
     }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Upgrade Cardano mainnet protocol to major version 11 and minor version 0 while remaining in the Conway era.",
+      "Make new Plutus primitives from CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153 available.",
+      "Make all Plutus built-in functions consistently available across Plutus V1, V2, and V3.",
+      "Add UPLC case expressions for Bool, Integer, and Data.",
+      "Promote or tighten ledger and node validation, diagnostics, and security rules including VRF key hash uniqueness and PPView mismatch reporting."
+    ],
+    "recipient": "not stated in document",
+    "what": "Initiate an intra-era hard fork of Cardano Mainnet to Protocol Version 11.0, called the van Rossem hard fork."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The action upgrades Cardano Mainnet from protocol version 10.0 to protocol version 11.0 without an era transition.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The upgrade introduces new Plutus primitives defined by CIP-0109, CIP-0132, CIP-0133, CIP-0138, and CIP-0153.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "All Plutus built-in functions, including newly introduced ones, will become available across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "UPLC case expressions over Bool, Integer, and Data will provide significant performance improvements and cleaner script logic.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The hard fork promotes VRF key hash uniqueness to a ledger-level rule so no two stake pools can register or operate with the same VRF key.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Testing reports demonstrate no behavioral regressions, complete conformance between specification and implementation for new ledger rules, and correct operation of new Plutus primitives and case expressions across Plutus V1, V2, and V3.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "Security audits have been undertaken for Plutus BLS primitives and execution costs for all Plutus primitives.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "A linked Cardano Node 11.0.1 performance report shows no regressions for standard value, Plutus, and voting benchmarks and acceptable baseline performance for new primitives and case expressions.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "At least 85% of stake pools by active stake should have upgraded to a node version capable of protocol version 11 before ratification, and this must be determined before ratification.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "Reversion is only possible in extreme circumstances through the CIP-0135 disaster recovery process, while Plutus primitive use could be disabled by changing companion cost model settings if issues are found.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes a no-treasury hard fork to Cardano protocol version 11.0, centered on Plutus capability and performance changes, ledger-rule tightening, node diagnostics, and constitutional guardrail alignment, with several claims supported by linked CIPs and a performance report but readiness, testing, audits, and risk mitigation mostly asserted rather than fully evidenced in the text.",
+  "output_sha256": "55d01a95f1d7ffbd6c32cb8f8657d035be0ed23629005ba5c7faf52628b9659b"
+}

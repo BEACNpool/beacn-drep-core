@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:33c0c7213d618d6dee81a387c3d718ca7bd6415b3bff92e3d52bb81227edfc4e",
-    "detected_at": "2026-07-31T20:00:01.607289+00:00"
+    "raw_input_hash": "sha256:fa7b37a878c504ebfa8489aa00795e4cd5026f0a6bc851db920809075d85b1fd",
+    "detected_at": "2026-08-22T08:00:01.626531+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "ABSTAIN",
     "diverged": false,
-    "published_at": "2026-08-21T11:30:04.961156+00:00",
+    "published_at": "2026-08-22T11:30:04.676200+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "17f99949e91ba260645d3c78c12eba21659916917776c6da2b211aa8fe20fbd8",
@@ -40,28 +40,28 @@
   },
   "current": {
     "vote": "ABSTAIN",
-    "score": 0.05,
-    "confidence": 0.6625,
-    "input_hash": "33c0c7213d618d6dee81a387c3d718ca7bd6415b3bff92e3d52bb81227edfc4e",
-    "snapshot_bundle_hash": "f911c10ab6aba2587444cc1b6b37af1a6736cbd0c8f36be47fd62c9a33fb000e",
+    "score": 0.08,
+    "confidence": 0.67,
+    "input_hash": "fa7b37a878c504ebfa8489aa00795e4cd5026f0a6bc851db920809075d85b1fd",
+    "snapshot_bundle_hash": "2c25242c908a061c7db7d286fe46519196d50f37b029e6fb46a1d16fac92dd3c",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "482b3cd8acb5021d3a1270281789b6e25977adaa",
-    "core_commit": "7bf3fbbcd0197abeab6595133ac459fd248258f6",
-    "rationale_markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-33c0c7213d61.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/36de50ac4ca0541f0f4a62f4.md",
-    "rationale_anchor_hash": "36de50ac4ca0541f0f4a62f4dc74bdcd5e91d224cd3625222528e3416b5d9d99"
+    "resources_commit": "3e03a751e5597a849929a2fc2b16e7a6f2c3125f",
+    "core_commit": "4c1e509ae2b816983236b9e09664b07c842bf2f4",
+    "rationale_markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-fa7b37a878c5.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/4bd4c6c1504b04c839654582.md",
+    "rationale_anchor_hash": "4bd4c6c1504b04c839654582700d51b78990921209fcb78f16483d8dec9854be"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewCommittee (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: DRep distribution signal was unavailable for this action. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score 0.05; confidence 66.2%.",
-    "summary_raw": "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "summary": "Vote: ABSTAIN. For this NewCommittee (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 67.0%.",
+    "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide mitigation evidence.",
       "Provide independent assurance.",
       "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-33c0c7213d61.md",
+    "markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-fa7b37a878c5.md",
     "missing_evidence": [],
-    "blocked_reason_code": "DREP_DISTRIBUTION_MISSING",
+    "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -152,7 +152,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-33c0c7213d61.assessment.json",
+    "assessment_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-fa7b37a878c5.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -208,7 +208,7 @@
     "anchor_hash": "6014f3e6c052eb1e83ce344bda1ee5262000a83d1d1aa62d63726d91316e6647",
     "file_sha256": "bad77bb3ee24010711effe3e4ca4b4de55da1dbbf815369e3f29089248d74111",
     "content_bytes": "14580",
-    "fetched_at_utc": "2026-08-21T11:30:06Z",
+    "fetched_at_utc": "2026-08-22T11:30:11Z",
     "download_path": "/proposals/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -219,8 +219,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "482b3cd8acb5021d3a1270281789b6e25977adaa",
-    "core_commit": "7bf3fbbcd0197abeab6595133ac459fd248258f6",
+    "resources_commit": "3e03a751e5597a849929a2fc2b16e7a6f2c3125f",
+    "core_commit": "4c1e509ae2b816983236b9e09664b07c842bf2f4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -287,17 +287,17 @@
     }
   ],
   "scoring": {
-    "binding_score": 0.05,
-    "raw_score": 0.05,
+    "binding_score": 0.08,
+    "raw_score": 0.08,
     "directional_threshold": 0.12,
-    "confidence": 0.6625,
+    "confidence": 0.67,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-21T11:30:22.608494Z",
+    "snapshot_time": "2026-08-22T11:30:28.690461Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:25188a90f552cca53da9e5d7b7461be84e7dc0e6a556bf0061b1ef10c931b69c",
-    "detected_at": "2026-08-15T00:00:02.025111+00:00"
+    "raw_input_hash": "sha256:1739f5aaa08e4942b8b6715aa9c60f4e01f9f5342e36e8ac314245e317bdcada",
+    "detected_at": "2026-08-22T08:00:01.626531+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "ABSTAIN",
-    "diverged": false,
-    "published_at": "2026-08-21T11:30:04.961156+00:00",
+    "diverged": true,
+    "published_at": "2026-08-22T11:30:04.676200+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "d141d5f8b4cbe0a85bc7378840f99f5f73abca192b78dc1c356444d48f7f112c",
@@ -39,31 +39,39 @@
     "onchain_vote": null
   },
   "current": {
-    "vote": "ABSTAIN",
+    "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
-    "confidence": 0.1,
-    "input_hash": "25188a90f552cca53da9e5d7b7461be84e7dc0e6a556bf0061b1ef10c931b69c",
-    "snapshot_bundle_hash": "85eb2e8f15a874c53714aa0160dffb130a533c9c7e77e7e666b58ef1cf02bfd8",
+    "confidence": 0.2,
+    "input_hash": "1739f5aaa08e4942b8b6715aa9c60f4e01f9f5342e36e8ac314245e317bdcada",
+    "snapshot_bundle_hash": "4659623c617f04f5a218647b9c4a530689c71fd74c95c4d851cc307ee6821f64",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "482b3cd8acb5021d3a1270281789b6e25977adaa",
-    "core_commit": "7bf3fbbcd0197abeab6595133ac459fd248258f6",
-    "rationale_markdown_path": "/data/output/public/rationales/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0-25188a90f552.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/88d22a7d31b8caa94e6d28cb.md",
-    "rationale_anchor_hash": "88d22a7d31b8caa94e6d28cb0dd1899a4e8c777c802de89f2e5608897dc7ad0e"
+    "resources_commit": "3e03a751e5597a849929a2fc2b16e7a6f2c3125f",
+    "core_commit": "4c1e509ae2b816983236b9e09664b07c842bf2f4",
+    "rationale_markdown_path": "/data/output/public/rationales/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0-1739f5aaa08e.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/952aca621092479647821380.md",
+    "rationale_anchor_hash": "952aca6210924796478213801ab6b414df3f66ae95eece17684b5b56004279c1"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.\" though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py); Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py). Residual uncertainty: Missing: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py) Confidence context: score 0.00; confidence 10.0%.",
-    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
-      "Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
-      "Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py).",
-      "Provide complete proposal summary."
+      "Provide: Deep research dossier is required for treasury actions before directional voting.",
+      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Provide: Missing dossier section: complete proposal summary"
     ],
-    "markdown_path": "/data/output/public/rationales/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0-25188a90f552.md",
+    "markdown_path": "/data/output/public/rationales/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0-1739f5aaa08e.md",
     "missing_evidence": [
-      "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+      "Deep research dossier is required for treasury actions before directional voting.",
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: complete proposal summary",
+      "Missing dossier section: budget analysis",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: risk analysis",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis",
+      "Missing dossier section: community impact analysis"
     ],
-    "blocked_reason_code": "MISSING_BASELINE_EVIDENCE",
+    "blocked_reason_code": "DEEP_RESEARCH_REQUIRED",
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -74,18 +82,16 @@
       "sections": [
         {
           "title": "Intake",
-          "status": "blocked",
+          "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: active",
             "Proposed epoch: 649",
             "Expires after epoch: 656",
-            "Treasury request: not specified",
+            "Treasury request: 4.21M ADA",
             "Anchor pinned locally: yes"
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
-          ],
+          "missing": [],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -98,7 +104,7 @@
             "Deep research dossier: required",
             "Requested: Governance Incentives Framework 2026",
             "Recipient: ",
-            "Stated amount: not stated in document",
+            "Stated amount: 4.21M ADA",
             "Deliverables: Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes., The project separates evidence-based validation from governance legitimacy: candidate incentive mechanisms will first be evaluated through research, data, modeling, and evidence, and then presented to governance for a decision on adoption., Significant work already exists across Cardano on governance compensation, participation, rationale incentives, reward distribution, voting-power concentration, and governance reward design., The Governance Incentives Working Group has already created a mapping document identifying 49 relevant efforts, proposals, research papers, tools, and related initiatives across this space [1].",
             "Deadline/expiry: not stated in document",
             "Claim (economic, independently_verifiable, medium materiality): Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.",
@@ -123,7 +129,7 @@
           "title": "Treasury analysis",
           "status": "incomplete",
           "findings": [
-            "Requested ADA: not specified",
+            "Requested ADA: 4.21M ADA",
             "Budget granularity: unknown",
             "Milestone payment gates: unknown",
             "Clawback/refund path: unknown",
@@ -151,7 +157,7 @@
             "Mitigation evidence: unknown",
             "Independent assurance: unknown",
             "Rollback/remedy path: unknown",
-            "Flag count: 0"
+            "Flag count: 1"
           ],
           "missing": [
             "mitigation evidence",
@@ -165,8 +171,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.\" though 8 review blocker(s) remain open.",
-            "Strongest NO: an unresolved blocker (treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)) means costs or weak controls may outweigh the claimed benefit.",
+            "Strongest YES: the proposal substantiates \"Cardano is approaching consequential decisions about governance incentives without a shared evidence base for determining which mechanisms work, what they cost, or who should remain accountable for their outcomes.\" though 7 review blocker(s) remain open.",
+            "Strongest NO: an unresolved blocker (missing complete proposal summary) means costs or weak controls may outweigh the claimed benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
           "missing": [],
@@ -180,7 +186,6 @@
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
           "missing": [
-            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
             "missing complete proposal summary",
             "missing budget analysis",
             "missing feasibility assessment",
@@ -193,7 +198,6 @@
         }
       ],
       "blocking_questions": [
-        "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
         "missing complete proposal summary",
         "missing budget analysis",
         "missing feasibility assessment",
@@ -203,7 +207,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0-25188a90f552.assessment.json",
+    "assessment_path": "/data/output/public/rationales/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0-1739f5aaa08e.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -331,12 +335,18 @@
     "anchor_hash": "7130cd947a523fe5436355c1a6ba25f9d59b57c77898fb55c86685c1fa7e4a96",
     "file_sha256": "1cb55c7d381c387bd556579ec03c462bd2f0dd73a7a3b8b51307a4b78aa130d4",
     "content_bytes": "33733",
-    "fetched_at_utc": "2026-08-21T11:30:06Z",
+    "fetched_at_utc": "2026-08-22T11:30:11Z",
     "download_path": "/proposals/f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en-us\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": \"CIP108:motivation\",\n        \"rationale\": \"CIP108:rationale\"\n      }\n    },\n    \"authors\": {\n      \"@id\": \"CIP100:authors\",\n      \"@container\": \"@set\",\n      \"@context\": {\n        \""
   },
   "deep_research": null,
-  "flags": [],
+  "flags": [
+    {
+      "flag": "\ud83d\udfe1 SINGLE_BENEFICIARY",
+      "severity": "yellow",
+      "detail": "Treasury withdrawal to a single address"
+    }
+  ],
   "treasury_capacity": {
     "verified": true,
     "ncl_lovelace": 300000000000000,
@@ -366,15 +376,15 @@
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "portfolio_status": "verified",
-    "requested_lovelace": 0,
+    "requested_lovelace": 4207967000000,
     "fits_remaining": false
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "482b3cd8acb5021d3a1270281789b6e25977adaa",
-    "core_commit": "7bf3fbbcd0197abeab6595133ac459fd248258f6",
+    "resources_commit": "3e03a751e5597a849929a2fc2b16e7a6f2c3125f",
+    "core_commit": "4c1e509ae2b816983236b9e09664b07c842bf2f4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -480,14 +490,14 @@
     "binding_score": 0.0,
     "raw_score": 0.0,
     "directional_threshold": 0.12,
-    "confidence": 0.1,
+    "confidence": 0.2,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-21T11:30:22.608494Z",
+    "snapshot_time": "2026-08-22T11:30:28.690461Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

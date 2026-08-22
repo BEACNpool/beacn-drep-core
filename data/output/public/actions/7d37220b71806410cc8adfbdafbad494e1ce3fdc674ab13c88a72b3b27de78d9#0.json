@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:5788914b182f51eed36edbe9faa373c5c4a2811510cbba90f110efad93664c57",
-    "detected_at": "2026-08-17T11:30:05.163347+00:00"
+    "raw_input_hash": "sha256:366a2243515fc3ffa4b128c71ac2ad38d4498e3323db4b0874f751c022599a00",
+    "detected_at": "2026-08-22T08:00:01.626531+00:00"
   },
   "decision": {
-    "vote": "ABSTAIN",
+    "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "ABSTAIN",
-    "diverged": false,
-    "published_at": "2026-08-21T11:30:04.961156+00:00",
+    "diverged": true,
+    "published_at": "2026-08-22T11:30:04.676200+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "47b0a30a15b52cf8eb7ef59f7300328067a4c81a631e3c546baf3febcd3f1f50",
@@ -39,31 +39,39 @@
     "onchain_vote": null
   },
   "current": {
-    "vote": "ABSTAIN",
+    "vote": "NEEDS_MORE_INFO",
     "score": 0.0,
-    "confidence": 0.1,
-    "input_hash": "5788914b182f51eed36edbe9faa373c5c4a2811510cbba90f110efad93664c57",
-    "snapshot_bundle_hash": "873149e7d7aab0b375581d7cc60fafa131424d6b8ef47d8032414e41b93ff435",
+    "confidence": 0.2,
+    "input_hash": "366a2243515fc3ffa4b128c71ac2ad38d4498e3323db4b0874f751c022599a00",
+    "snapshot_bundle_hash": "eeafa97a0b47f168bc30520f824b967fbba2c011b175b746ced8ce2ec2e34886",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "482b3cd8acb5021d3a1270281789b6e25977adaa",
-    "core_commit": "7bf3fbbcd0197abeab6595133ac459fd248258f6",
-    "rationale_markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-5788914b182f.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/1108d86b1edd9f8eed516c36.md",
-    "rationale_anchor_hash": "1108d86b1edd9f8eed516c367899bd1ef53051cdbec84d2ead120ac45f6f85e5"
+    "resources_commit": "3e03a751e5597a849929a2fc2b16e7a6f2c3125f",
+    "core_commit": "4c1e509ae2b816983236b9e09664b07c842bf2f4",
+    "rationale_markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-366a2243515f.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/6d970dfeb8e3b5dd036b249b.md",
+    "rationale_anchor_hash": "6d970dfeb8e3b5dd036b249ba9a768bf21ae0b58c33ae7ac998ab4c7733e54e9"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this TreasuryWithdrawals (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" though 8 review blocker(s) remain open. What would enable a directional vote: Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py); Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py). Residual uncertainty: Missing: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py) Confidence context: score 0.00; confidence 10.0%.",
-    "summary_raw": "Cannot produce a responsible recommendation without baseline evidence.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (active), critical information needed for a responsible directional vote is still missing. Decisive reason: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty. Weighed against it: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" though 7 review blocker(s) remain open. What would enable a directional vote: Provide: Deep research dossier is required for treasury actions before directional voting; Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections. Residual uncertainty: Dossier completeness not confirmed for this treasury proposal. Confidence context: score 0.00; confidence 20.0%.",
+    "summary_raw": "Directional voting is blocked until dossier quality gates pass.",
     "top_fixes": [
-      "Provide: treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
-      "Provide treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py).",
-      "Provide independent evidence for: There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed."
+      "Provide: Deep research dossier is required for treasury actions before directional voting.",
+      "Provide: Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Provide: Missing dossier section: complete proposal summary"
     ],
-    "markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-5788914b182f.md",
+    "markdown_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-366a2243515f.md",
     "missing_evidence": [
-      "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
+      "Deep research dossier is required for treasury actions before directional voting.",
+      "Complete proposal summary, budget analysis, feasibility, risks, alternatives, and failure-mode sections.",
+      "Missing dossier section: complete proposal summary",
+      "Missing dossier section: budget analysis",
+      "Missing dossier section: feasibility assessment",
+      "Missing dossier section: risk analysis",
+      "Missing dossier section: alternatives analysis",
+      "Missing dossier section: failure-mode analysis",
+      "Missing dossier section: community impact analysis"
     ],
-    "blocked_reason_code": "MISSING_BASELINE_EVIDENCE",
+    "blocked_reason_code": "DEEP_RESEARCH_REQUIRED",
     "assessment_status": "blocked",
     "assessment_schema_version": "assessment-tree-v1",
     "assessment": {
@@ -74,18 +82,16 @@
       "sections": [
         {
           "title": "Intake",
-          "status": "blocked",
+          "status": "complete",
           "findings": [
             "Action type: TreasuryWithdrawals",
             "Status: active",
             "Proposed epoch: 649",
             "Expires after epoch: 656",
-            "Treasury request: not specified",
+            "Treasury request: 103.0k ADA",
             "Anchor pinned locally: yes"
           ],
-          "missing": [
-            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)"
-          ],
+          "missing": [],
           "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
         },
         {
@@ -98,7 +104,7 @@
             "Deep research dossier: required",
             "Requested: Reimburse Ikigai Info Governance Action Deposit.",
             "Recipient: ",
-            "Stated amount: not stated in document",
+            "Stated amount: 103.0k ADA",
             "Deliverables: In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted., This was only a symbolic governance action, as it simply asked the community whether they agreed with a statement thanking those that helped get Cardano to this point and expressing a sense of hope for the future., Unfortunately, due to a bug in the code of the Cardano node that permitted an unregistered stake key to be used in the governance action, the submitter was unable to recover their deposit of 100K ADA., While the community expressed at the time the importance of reimbursing this deposit via a treasury withdrawal; once the ability to do so became available, following the Plomin hard fork; unfortunately none of the entity based budget submissions included it.",
             "Deadline/expiry: not stated in document",
             "Claim (economic, independently_verifiable, high materiality): In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.",
@@ -125,7 +131,7 @@
           "title": "Treasury analysis",
           "status": "incomplete",
           "findings": [
-            "Requested ADA: not specified",
+            "Requested ADA: 103.0k ADA",
             "Budget granularity: unknown",
             "Milestone payment gates: unknown",
             "Clawback/refund path: unknown",
@@ -153,7 +159,7 @@
             "Mitigation evidence: unknown",
             "Independent assurance: unknown",
             "Rollback/remedy path: unknown",
-            "Flag count: 1"
+            "Flag count: 2"
           ],
           "missing": [
             "mitigation evidence",
@@ -167,7 +173,7 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" though 8 review blocker(s) remain open.",
+            "Strongest YES: the proposal substantiates \"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted.\" though 7 review blocker(s) remain open.",
             "Strongest NO: a material claim is unsupported \u2014 \"There was significant sentiment at the time that the Ikigai Info governance action deposit should be reimbursed.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: a treasury action without a complete deep-research dossier cannot be voted directionally without pretending certainty."
           ],
@@ -182,7 +188,6 @@
             "The public rationale should name the decisive section and the strongest counterargument."
           ],
           "missing": [
-            "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
             "missing complete proposal summary",
             "missing budget analysis",
             "missing feasibility assessment",
@@ -195,7 +200,6 @@
         }
       ],
       "blocking_questions": [
-        "treasury_amount_lovelace is missing, zero, or non-positive for a treasury withdrawal (backfill via beacn-drep-resources/scripts/backfill_treasury_amounts.py)",
         "missing complete proposal summary",
         "missing budget analysis",
         "missing feasibility assessment",
@@ -205,7 +209,7 @@
         "missing community impact analysis"
       ]
     },
-    "assessment_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-5788914b182f.assessment.json",
+    "assessment_path": "/data/output/public/rationales/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0-366a2243515f.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -333,7 +337,7 @@
     "anchor_hash": "abaf67cde8defc914712009094cd3805bcf8911d3fa79c6edfd6c975dcf9d471",
     "file_sha256": "c2705f5116cc7c0c6c3a2a84d83c377ab118d24ae54a25aa4e5d6ba570f38515",
     "content_bytes": "4649",
-    "fetched_at_utc": "2026-08-21T11:30:06Z",
+    "fetched_at_utc": "2026-08-22T11:30:11Z",
     "download_path": "/proposals/7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0.json",
     "preview": "{\"@context\":{\"CIP100\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\"CIP108\":\"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\"authors\":{\"@container\":\"@set\",\"@context\":{\"name\":\"http://xmlns.com/foaf/0.1/name\",\"witness\":{\"@context\":{\"publicKey\":\"CIP100:publicKey\",\"signature\":\"CIP100:signature\",\"witnessAlgorithm\":\"CIP100:witnessAlgorithm\"},\"@id\":\"CIP100:witness\"}},\"@id\":\"CIP100:authors\"},\"body\":{\"@context\":{\"abstract\":\"CIP108:abstract\",\"motivation\":\"CIP108:motivation\",\"rationale\":\"CIP108:rationale\",\"references\":{\"@container\":\"@set\",\"@context\":{\"GovernanceMetadata\":\"CIP100:GovernanceMetadataReference\",\"Other\":\"CIP100:OtherReference\",\"label\":\"CIP100:reference-label\",\"referenceHash\":{\"@context\":{\"hashAlgorithm\":\"CIP100:hashAlgorithm\",\"hashDigest\":\"CIP108:hashDigest\"},\"@id\":\"CIP108:referenceHash\"},\"uri\":\"CIP100:reference-uri\"},\"@id\":\"CIP108:references\"},\"title\":\"CIP108:title\"},\"@id\":\"CIP108:body\"},\"hashAlgorithm\":\"CIP100:hashAlgorithm\"},\"authors\":[],\"hashAlgorithm\":\"blake2b-256\",\"body\":{\"abstract\":\"In September 2024, only weeks after the Chang hard fork to introduce on-chain governance, an Info governance action titled Cardano\u306e\u751f\u304d"
   },
@@ -343,6 +347,11 @@
       "flag": "\ud83d\udfe1 NO_DISCUSSION",
       "severity": "yellow",
       "detail": "No links to forum discussion or community feedback"
+    },
+    {
+      "flag": "\ud83d\udfe1 SINGLE_BENEFICIARY",
+      "severity": "yellow",
+      "detail": "Treasury withdrawal to a single address"
     }
   ],
   "treasury_capacity": {
@@ -374,15 +383,15 @@
       "note": "Voting on this action is still open; its interim tally does not set the operative ceiling. It becomes the pin only if it closes with Yes > No."
     },
     "portfolio_status": "verified",
-    "requested_lovelace": 0,
+    "requested_lovelace": 103000000000,
     "fits_remaining": false
   },
   "reproducibility": {
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "482b3cd8acb5021d3a1270281789b6e25977adaa",
-    "core_commit": "7bf3fbbcd0197abeab6595133ac459fd248258f6",
+    "resources_commit": "3e03a751e5597a849929a2fc2b16e7a6f2c3125f",
+    "core_commit": "4c1e509ae2b816983236b9e09664b07c842bf2f4",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -488,14 +497,14 @@
     "binding_score": 0.0,
     "raw_score": 0.0,
     "directional_threshold": 0.12,
-    "confidence": 0.1,
+    "confidence": 0.2,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-21T11:30:22.608494Z",
+    "snapshot_time": "2026-08-22T11:30:28.690461Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

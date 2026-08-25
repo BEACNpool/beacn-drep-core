@@ -1,0 +1,13 @@
+# Cardano Builder DAO
+**BEACN DRep vote: NEEDS_MORE_INFO**  _(plain-language explanation — precomputed)_
+
+BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the goal.
+
+The proposal requests a 20,000,000 ADA treasury withdrawal to fund the Cardano Builder DAO as a smart contract-governed funding mechanism for builders aligned with Vision 2030 KPIs, including monthly active users, on-chain transactions, and TVL. It says funds would be held and administered through an independent council/multisig before milestone-based disbursement, with unused or unallocated funds returned to the Cardano Treasury. No deadline was stated.
+
+Several core claims were supported in the proposal: the DAO is presented as an ecosystem-wide funding mechanism, funded projects would be required to track key KPIs, and the administrator would use separate auditable accounts, avoid stake pool delegation, delegate voting power to abstain, and disburse only after milestone validation. However, several material claims remained only proposer-asserted or thinly evidenced, including the V1/V2 KPI dashboard progress, the claim that 11.1 million ADA was already distributed across 34 proposals, the round-by-round participation and funding figures, and governance process claims. The claimed return of 354,790 ADA was described as independently checkable through an AdaStat transaction URL, but the broader track record still needed stronger replayable public evidence.
+
+The review gates found a pinned, replayable proposal anchor and a defensible strongest-YES case around KPI alignment and milestone-gated stewardship. But treasury withdrawals require elevated scrutiny because they spend shared ADA and set precedent. The review also flagged missing or uncertain items: the applicable verified Net Change Limit, line-item budget, sustainability path, independent assurance, dependency map, and clearer execution-risk evidence. The evidence that would unblock a directional vote is a pinned and independently verified Net Change Limit from public chain data, plus stronger replayable evidence for the DAO’s dashboard, prior distributions, governance participation, and treasury stewardship claims.
+
+---
+_The vote, score, and gates are produced deterministically and are the binding record. This explanation is a model-assisted plain-language layer over that record. Full reasoning, provenance, and limitations are documented openly in METHODOLOGY.md; the decision is byte-for-byte replayable via `cli verify-replay`._

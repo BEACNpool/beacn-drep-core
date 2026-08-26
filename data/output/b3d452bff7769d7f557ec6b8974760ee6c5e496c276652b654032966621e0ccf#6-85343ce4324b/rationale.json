@@ -1,0 +1,313 @@
+{
+  "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
+  "action_type": "TreasuryWithdrawals",
+  "recommendation": "NEEDS_MORE_INFO",
+  "abstain_reason_code": null,
+  "needs_more_info_reason_code": "TREASURY_PORTFOLIO_REQUIRED",
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.12,
+  "raw_score": -0.12,
+  "llm_score_adjustment": 0.0,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NEUTRAL",
+    "score_adjustment": 0.0,
+    "confidence": 0.78,
+    "rationale": "The claims include meaningful public-benefit and infrastructure-continuity arguments, and the proposal gives some checkable references for voting process, benchmarks, NCL compliance, prior funding, and custody controls. The main value questions around adoption magnitude and migration risk are still largely proposer-asserted, and the doctrine already prioritizes treasury stewardship and evidence quality, so no additional nudge beyond the deterministic assessment is justified.",
+    "doctrine_basis": "Treasury stewardship and evidence quality/reproducibility",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_hash": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4",
+  "directional_threshold": 0.06,
+  "confidence": 0.75,
+  "readiness_score": 0.85,
+  "treasury_dimensions": {
+    "actionable_asks": [],
+    "evidence_status": "independently_verified",
+    "benefit": 0.63,
+    "delivery_confidence": 0.55,
+    "cost_efficiency": 0.45,
+    "downside_risk": 0.35,
+    "composite": 0.077,
+    "affirmative_waste_evidence": [],
+    "missing": []
+  },
+  "treasury_merit_recommendation": "YES",
+  "treasury_merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Treasury withdrawal actions require elevated scrutiny.",
+    "Intake: Action type: TreasuryWithdrawals",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Treasury analysis: Requested ADA: 1162746",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance and 33,866 ada for an Intersect Budget Administration fee.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Directional treasury voting is blocked until this action is ranked against competing active proposals and verified NCL capacity.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Treasury analysis: Treasury votes require a higher bar because they consume shared ADA and create precedent.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.",
+    "Claims and evidence missing: Independent evidence for: MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.",
+    "Claims and evidence missing: Independent evidence for: The proposal states that continued maintenance is crucial for teams needing smart contract tooling that tracks Cardano ledger, Plutus, and UPLC evolution.",
+    "Claims and evidence status is thin.",
+    "Treasury analysis missing: sustainability path",
+    "Treasury analysis missing: cost-benefit clarity",
+    "Risk review missing: independent assurance",
+    "Risk review missing: rollback/remedy path"
+  ],
+  "missing_evidence": [],
+  "input_hash": "85343ce4324bfa22033380176520a77baf13b2b97da3cf4e1d5e4466d22f2cae",
+  "snapshot_bundle_hash": "b3eb0525951269bfa9eaca589cd3137581b17993d09187a83d050de8dbea8122",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "4fe76eacab9852fd1f6c55801850c40fff5c72e4",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "treasury_withdrawals_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_treasury_recipients_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "deep_research_dossiers",
+    "ecosystem_value_profiles",
+    "treasury_policy_state",
+    "treasury_portfolio",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 1,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-26T11:30:19.521903Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.1263,
+    "NO": 0.3663,
+    "ABSTAIN": 0.5075
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 4,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
+    "action_type": "TreasuryWithdrawals",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: TreasuryWithdrawals",
+          "Status: enacted",
+          "Proposed epoch: 638",
+          "Expires after epoch: 645",
+          "Treasury request: 1.16M ADA",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: complete",
+          "Requested: Annual funding for maintenance and enhancement of Plutarch and Ply, including compatibility work, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements.",
+          "Recipient: Intersect treasury reserve smart contract stake address for MLabs Core Tool Maintenance & Enhancement: Plutarch and Ply",
+          "Stated amount: 1,162,746",
+          "Deliverables: WP1 - Plutarch and Ply Maintenance, Compatibility & Developer Experience, Critical breakages and serious vulnerabilities addressed as first priority, Protocol-era and hard-fork compatibility, including Dijkstra era if relevant changes land during the funding period, Bug fixes, correctness improvements, and optimizations, Documentation, examples, technical blog posts, and developer-experience improvements",
+          "Deadline/expiry: annual funding period; specific dates not stated in document",
+          "Claim (economic, supported_in_proposal, high materiality): The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance and 33,866 ada for an Intersect Budget Administration fee.",
+          "Claim (technical, supported_in_proposal, high materiality): Plutarch is described as a Haskell eDSL for creating efficient Cardano smart contracts via controlled compilation into UPLC, and Ply is described as helping serialize Plutarch scripts to and from CIP-57 blueprint-style artifacts with inferred types.",
+          "Claim (adoption, proposer_asserted, high materiality): MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.",
+          "Claim (technical, independently_verifiable, medium materiality): MLabs states that its public cross-language benchmarks show Plutarch scripts rank among the smallest in the benchmark suite while requiring comparatively low on-chain compute and memory.",
+          "Claim (technical, proposer_asserted, high materiality): The proposal states that continued maintenance is crucial for teams needing smart contract tooling that tracks Cardano ledger, Plutus, and UPLC evolution.",
+          "Claim (technical, proposer_asserted, high materiality): The proposal states that if Plutarch and Ply fall behind protocol evolution, existing adopters may face friction, migration risk, bespoke workarounds, avoidable rewrites, or expensive smart contract stack migrations."
+        ],
+        "missing": [
+          "Independent evidence for: MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.",
+          "Independent evidence for: The proposal states that continued maintenance is crucial for teams needing smart contract tooling that tracks Cardano ledger, Plutus, and UPLC evolution.",
+          "Independent evidence for: The proposal states that if Plutarch and Ply fall behind protocol evolution, existing adopters may face friction, migration risk, bespoke workarounds, avoidable rewrites, or expensive smart contract stack migrations."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Treasury analysis",
+        "status": "complete",
+        "findings": [
+          "Requested ADA: 1162746",
+          "Budget granularity: confirmed",
+          "Milestone payment gates: confirmed",
+          "Clawback/refund path: unknown",
+          "Cost/benefit clarity: unknown",
+          "Recurring funding dependency: unknown",
+          "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+          "Financial confidence: 0.58"
+        ],
+        "missing": [
+          "sustainability path",
+          "cost-benefit clarity"
+        ],
+        "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+      },
+      {
+        "title": "Risk review",
+        "status": "complete",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: confirmed",
+          "Independent assurance: not confirmed",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The proposal requests 1,162,746 ada, consisting of 1,128,880 ada for Plutarch and Ply maintenance and 33,866 ada for an Intersect Budget Administration fee.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"MLabs says a recent internal audit counted at least 26 teams using Plutarch and Ply, while the rationale section separately says it conservatively counted at least 15 teams.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {
+      "actionable_asks": [],
+      "evidence_status": "independently_verified",
+      "benefit": 0.63,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.35,
+      "composite": 0.077,
+      "affirmative_waste_evidence": [],
+      "missing": []
+    },
+    "merit_recommendation": "YES",
+    "merit_reason": "Intrinsic benefit, delivery, cost, and downside-risk floors all pass.",
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal asks to withdraw 1,162,746 ada for annual maintenance and enhancement of Plutarch and Ply, including compatibility work, bug fixes, optimizations, documentation, examples, technical blog posts, and developer-experience improvements. The proposer says the amount includes 1,128,880 ada for the work itself and 33,866 ada for Intersect budget administration. The proposal also says Plutarch and Ply are Cardano smart contract tooling, that prior funding exists, that the action passed the 2026 Intersect Budget Process Hydra Voting threshold, and that oversight would come through Intersect and technically capable third parties with milestone-based controls.\n\nSeveral basic review gates passed: the anchor document was available, pinned, and replayable; the requested amount was clear; the tool descriptions and budget split were supported in the proposal; and the Intersect process and Net Change Limit claims were treated as independently verifiable in principle. But the evidence base was still thin for a treasury decision. The adoption claim was not independently supported, including the stated count of at least 26 teams and the separate conservative count of at least 15 teams. The proposal\u2019s claims about maintenance being crucial, migration risk if the tools fall behind, sustainability path, cost-benefit clarity, independent assurance, and rollback or remedy path also remained insufficiently evidenced.\n\nThis is a conservative, evidence-based hold, not a rejection of the work. A directional vote would be unblocked by pinned public chain evidence for the applicable Net Change Limit, stronger independent evidence for adoption and ecosystem need, and clearer treasury-risk support around sustainability, cost-benefit, assurance, and remedies if delivery problems arise.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#6",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreidixjkquc6xtimbbdwet2klabcdzbt6kduktlca2ywl3slpqlgx2q",
+        "file_sha256": "68ba550a0bd79a18108ec49e94b00443c867e50e8a9ac40d62cbdc96f82cd7d4",
+        "file_path": "data/input/governance/anchors/gov_action1k02990lhw6wh74t7c6ufw3mqaek9ujtvyan99dj5qv5kvcs7pn8svfsvefn-20260624T113057Z.bin",
+        "content_chars": 15677
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "45f1d064137abceef530ce967b855559caba60f00d851239498cdaaca687c9ab"
+    },
+    "doctrine": {
+      "family": "treasury",
+      "files": [
+        "values_hierarchy.md",
+        "treasury_spending_doctrine.md"
+      ],
+      "sha256": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NEUTRAL",
+      "score_adjustment": 0.0,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "c4f41d676a7101170753ce3d9067776ed868c5ee8c2b91b34c2ce3ad22e0c30c"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "0f45e611a4ebf6cf5ae0bc5f515b25dc6008d479704f3d5d6410413045f4b935"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

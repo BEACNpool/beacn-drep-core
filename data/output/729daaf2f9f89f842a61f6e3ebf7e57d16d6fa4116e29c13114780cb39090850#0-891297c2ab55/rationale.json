@@ -1,0 +1,260 @@
+{
+  "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+  "action_type": "NewCommittee",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.08,
+  "raw_score": 0.08,
+  "llm_score_adjustment": 0.02,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "YES",
+    "score_adjustment": 0.02,
+    "confidence": 0.85,
+    "rationale": "Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "committee_update_doctrine.md"
+  ],
+  "doctrine_hash": "dd036d55202e112e294b78140f80824fd0e4417f4177bc43b086a3516b5572e0",
+  "directional_threshold": 0.12,
+  "confidence": 0.67,
+  "readiness_score": 0.6,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Intake: Action type: NewCommittee",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Advisory model lean was +0.020 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a committee action: 8 well-supported claim(s), committee doctrine demands elevated scrutiny. Net bounded adjustment +0.020 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "891297c2ab55efdaa983ec2b23dbd7f3136fb26cf5299855c4e1594c1fef9238",
+  "snapshot_bundle_hash": "3288e31006876372c85ab9d25a2c7f8112a9d9bcb06fdc568d8f5362d0835699",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "34691515104de111b6c4beffa7060e440003a76c",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-27T11:30:18.857980Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.3363,
+    "NO": 0.1763,
+    "ABSTAIN": 0.4875
+  },
+  "uncertainty_band": "MEDIUM",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+    "action_type": "NewCommittee",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: NewCommittee",
+          "Status: active",
+          "Proposed epoch: 646",
+          "Expires after epoch: 653",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "complete",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Update Constitutional Committee 2026",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election., The successful candidates will serve new terms ending at Epoch 799, in accordance with the current committeeMaxTermLength protocol parameter., The Constitutional Committee must be renewed as members' terms expire to maintain a functioning committee at or above the minimum size required by the committeeMinSize protocol parameter., This action replaces the four seats expiring at Epoch 653 with the candidates elected by the community through the 2026 Constitutional Committee election, facilitated by Intersect.",
+          "Deadline/expiry: not stated in document",
+          "Claim (governance, independently_verifiable, high materiality): This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.",
+          "Claim (technical, independently_verifiable, high materiality): The successful candidates will serve new terms ending at Epoch 799, in accordance with the current committeeMaxTermLength protocol parameter.",
+          "Claim (technical, independently_verifiable, high materiality): The Constitutional Committee must be renewed as members' terms expire to maintain a functioning committee at or above the minimum size required by the committeeMinSize protocol parameter.",
+          "Claim (governance, independently_verifiable, high materiality): This action replaces the four seats expiring at Epoch 653 with the candidates elected by the community through the 2026 Constitutional Committee election, facilitated by Intersect.",
+          "Claim (governance, independently_verifiable, medium materiality): The election included candidate registration, a public voting period, an independent audit of the results, and publication of the audited outcome before submission of this governance action.",
+          "Claim (governance, independently_verifiable, high materiality): In accordance with the Cardano constitution, Article III, Section 3 (2), Intersect has facilitated a public \u201cprocess\u2026 for \\[the\\] election of members of the CC consistent with the requirements of the Guardrails\u201d, to update the positions due to expire at Epo..."
+        ],
+        "missing": [],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates.",
+          "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN records ABSTAIN on Update Constitutional Committee 2026. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a NewCommittee. The cached anchor describes the request as: Update Constitutional Committee 2026. The strongest grounded claim is: This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\n\nReason code: RULE_THRESHOLD_UNMET.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreif22553h3reaedrd376hzgkjng6kxnb3o7ycu3j4pzjbcjerv2bce",
+        "file_sha256": "bad77bb3ee24010711effe3e4ca4b4de55da1dbbf815369e3f29089248d74111",
+        "file_path": "data/input/governance/anchors/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850-0-20260801T113006Z.bin",
+        "content_chars": 14571
+      },
+      "claim_count": 8,
+      "prompt_sha256": "9e3e6fc2f4d0ab8601497f33c34bf8c4bde2d7d49cc6a7a0e361474999044045",
+      "output_sha256": "1d5663b66d173db9ce26a6a28d2683132316194f49aa37fee89d3bcaf1adca35"
+    },
+    "doctrine": {
+      "family": "committee",
+      "files": [
+        "values_hierarchy.md",
+        "committee_update_doctrine.md"
+      ],
+      "sha256": "dd036d55202e112e294b78140f80824fd0e4417f4177bc43b086a3516b5572e0"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "YES",
+      "score_adjustment": 0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "84bba9ad65f14cd60ad931dae41d2ca3ba1eb27ac962a07a3bca891d9eafeda5",
+      "output_sha256": "4c12b67fc98691cc460586e10b3150617d8fddc57ba8eed4365f11618bef947c"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "dedf479d3cc1625b7eb6c6a5581a8f990815188b23f44536615eef29e0a4ee40",
+      "output_sha256": "dc835d2c5d414dbd3109ead0fcc6d4508eb28a6ca125b8fc7a1c48c7e9f39613"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d329fe8ec6bce1a6887bf2b1.md",
+  "rationale_anchor_hash": "d329fe8ec6bce1a6887bf2b173e15a634a108d7d2aedf516227a4e8ebad2b31a"
+}

@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:2411835d7cdf2597be28ce5a7f41d49f558c6c31aa3f8686ebde0930ea509217",
+    "raw_input_hash": "sha256:05578951411c03a17c58e79ba9a4be61308e8ff93ed1871581ef077d221771f6",
     "detected_at": "2026-07-31T20:00:01.607289+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "ABSTAIN",
     "diverged": false,
-    "published_at": "2026-08-29T11:30:04.842662+00:00",
+    "published_at": "2026-08-30T11:30:05.029933+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "17f99949e91ba260645d3c78c12eba21659916917776c6da2b211aa8fe20fbd8",
@@ -41,25 +41,25 @@
   "current": {
     "vote": "ABSTAIN",
     "score": 0.08,
-    "confidence": 0.67,
-    "input_hash": "2411835d7cdf2597be28ce5a7f41d49f558c6c31aa3f8686ebde0930ea509217",
-    "snapshot_bundle_hash": "878237d7bab1ff68b0bc939fadc9b118a074aa1c55a8073c92ed792403111fcc",
+    "confidence": 0.52,
+    "input_hash": "05578951411c03a17c58e79ba9a4be61308e8ff93ed1871581ef077d221771f6",
+    "snapshot_bundle_hash": "a4e9feb69fc97fc38b21570a0f721c06e53f3c6f920e63b7a59c8e2f3456df72",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "12c471a81be406ec9d98f8d39c908359cfb11994",
-    "core_commit": "57b0fc688dcd6df50ac9debddcc44aaaaff6c400",
-    "rationale_markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-2411835d7cdf.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/7c05bc75bf51b5aa37480795.md",
-    "rationale_anchor_hash": "7c05bc75bf51b5aa3748079544c04e631e21d74147d2ad9925b97e180428379c"
+    "resources_commit": "b1db09ba938f08baa6793685b174697cd0258ff7",
+    "core_commit": "cee10ce30d775447ac0b9e40f0d5d17b578c9103",
+    "rationale_markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-05578951411c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/bfef756609c35bcda5fbfb4d.md",
+    "rationale_anchor_hash": "bfef756609c35bcda5fbfb4d339485128d9807890b5b148a9886f6156ac23b86"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this NewCommittee (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 67.0%.",
+    "summary": "Vote: ABSTAIN. For this NewCommittee (active), evidence quality was insufficient for a reliable YES or NO decision. Primary blocker: evidence did not clear the directional decision threshold. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Rule-based system; does not infer unstated intent. Confidence context: score 0.08; confidence 52.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide mitigation evidence.",
       "Provide independent assurance.",
       "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-2411835d7cdf.md",
+    "markdown_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-05578951411c.md",
     "missing_evidence": [],
     "blocked_reason_code": "RULE_THRESHOLD_UNMET",
     "assessment_status": "incomplete",
@@ -86,25 +86,27 @@
         },
         {
           "title": "Claims and evidence",
-          "status": "complete",
+          "status": "thin",
           "findings": [
             "Proposal anchor: pinned and replayable",
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Update Constitutional Committee 2026",
-            "Recipient: ",
-            "Stated amount: not stated in document",
-            "Deliverables: This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election., The successful candidates will serve new terms ending at Epoch 799, in accordance with the current committeeMaxTermLength protocol parameter., The Constitutional Committee must be renewed as members' terms expire to maintain a functioning committee at or above the minimum size required by the committeeMinSize protocol parameter., This action replaces the four seats expiring at Epoch 653 with the candidates elected by the community through the 2026 Constitutional Committee election, facilitated by Intersect.",
-            "Deadline/expiry: not stated in document",
-            "Claim (governance, independently_verifiable, high materiality): This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.",
-            "Claim (technical, independently_verifiable, high materiality): The successful candidates will serve new terms ending at Epoch 799, in accordance with the current committeeMaxTermLength protocol parameter.",
-            "Claim (technical, independently_verifiable, high materiality): The Constitutional Committee must be renewed as members' terms expire to maintain a functioning committee at or above the minimum size required by the committeeMinSize protocol parameter.",
-            "Claim (governance, independently_verifiable, high materiality): This action replaces the four seats expiring at Epoch 653 with the candidates elected by the community through the 2026 Constitutional Committee election, facilitated by Intersect.",
-            "Claim (governance, independently_verifiable, medium materiality): The election included candidate registration, a public voting period, an independent audit of the results, and publication of the audited outcome before submission of this governance action.",
-            "Claim (governance, independently_verifiable, high materiality): In accordance with the Cardano constitution, Article III, Section 3 (2), Intersect has facilitated a public \u201cprocess\u2026 for \\[the\\] election of members of the CC consistent with the requirements of the Guardrails\u201d, to update the positions due to expire at Epo..."
+            "Requested: Update the Constitutional Committee by renewing or replacing seats expiring at Epoch 653 with candidates from the 2026 Constitutional Committee election, with new terms expiring at Epoch 799.",
+            "Recipient: Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, Cardano Curia, and the resulting Constitutional Committee composition stated in the document",
+            "Stated amount: no treasury withdrawal stated in document",
+            "Deliverables: Remove the specified outgoing committee credentials from the on-chain committee set., Set the incoming or renewed committee credentials to expire at Epoch 799., Keep the signature threshold at 2/3., Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged until their Epoch 726 expirations.",
+            "Deadline/expiry: The document states the action can only be enacted at Epoch 653 and the new member terms expire at Epoch 799.",
+            "Claim (governance, supported_in_proposal, high materiality): The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.",
+            "Claim (governance, supported_in_proposal, high materiality): The incoming members listed are Marek Mahut, Phil_uplc, Leandros BSP, and Cardano Curia, each with a 146-epoch term expiring at Epoch 799.",
+            "Claim (technical, independently_verifiable, high materiality): The on-chain action removes three credentials and sets four committee credentials to expire at Epoch 799 while preserving a 2/3 signature threshold.",
+            "Claim (governance, supported_in_proposal, high materiality): The proposal states that no quorum change is made and that the committee threshold remains 2/3.",
+            "Claim (governance, supported_in_proposal, medium materiality): The proposal states that Eastern Cardano Council, Tingvard, and Ace Alliance remain unchanged with terms expiring at Epoch 726.",
+            "Claim (governance, supported_in_proposal, high materiality): The election process included candidate registration, a public DRep voting period, a voting-power snapshot, an independent audit period, and publication of audited results before submission."
           ],
-          "missing": [],
+          "missing": [
+            "Independent evidence for: The document does not provide candidate biographies, track records, independence analysis, or conflict-of-interest disclosures beyond names, voting results, and cold credentials."
+          ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
         {
@@ -132,8 +134,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"This governance action updates the four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing the candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates.",
-            "Strongest NO: weak controls, unclear delivery, or governance precedent could outweigh the benefit of NewCommittee.",
+            "Strongest YES: the proposal substantiates \"The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The document does not provide candidate biographies, track records, independence analysis, or conflict-of-interest disclosures beyond names, voting results, and cold credentials.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -152,7 +154,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-2411835d7cdf.assessment.json",
+    "assessment_path": "/data/output/public/rationales/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0-05578951411c.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -208,7 +210,7 @@
     "anchor_hash": "6014f3e6c052eb1e83ce344bda1ee5262000a83d1d1aa62d63726d91316e6647",
     "file_sha256": "bad77bb3ee24010711effe3e4ca4b4de55da1dbbf815369e3f29089248d74111",
     "content_bytes": "14580",
-    "fetched_at_utc": "2026-08-29T11:30:06Z",
+    "fetched_at_utc": "2026-08-30T11:30:06Z",
     "download_path": "/proposals/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -219,8 +221,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "12c471a81be406ec9d98f8d39c908359cfb11994",
-    "core_commit": "57b0fc688dcd6df50ac9debddcc44aaaaff6c400",
+    "resources_commit": "b1db09ba938f08baa6793685b174697cd0258ff7",
+    "core_commit": "cee10ce30d775447ac0b9e40f0d5d17b578c9103",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -290,14 +292,14 @@
     "binding_score": 0.08,
     "raw_score": 0.08,
     "directional_threshold": 0.12,
-    "confidence": 0.67,
+    "confidence": 0.52,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-29T11:30:20.111658Z",
+    "snapshot_time": "2026-08-30T11:47:32.864615Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

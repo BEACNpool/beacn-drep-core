@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Decrease minPoolCost from 170,000,000 Lovelace to 75,000,000 Lovelace.",
+      "Increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000.",
+      "Increase maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000."
+    ],
+    "recipient": "not stated in document",
+    "what": "Parameter-change governance action to reduce minPoolCost from 170 ADA to 75 ADA and increase Plutus memory limits to maxTxExecutionUnits[memory] 17,500,000 and maxBlockExecutionUnits[memory] 77,500,000."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The proposal bundles two otherwise unrelated parameter changes for submission efficiency and SPO input on minPoolCost.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The minPoolCost change would reduce the fixed-fee floor from 170 ADA to 75 ADA, a decrease of approximately 55.9%.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states that declining reserve-funded block rewards have increased the delegator penalty on single-block pools to about 52.8% and could reach 100% around epoch 758 if unaddressed.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer claims lowering minPoolCost is expected to improve small-pool competitiveness and support future effectiveness of stakePoolTargetNum increases.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states that the treasury impact of reducing minPoolCost is marginal and that no evidence has emerged to change the 2023 assessment that it poses no long-term economic stability risk.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The document says IO Research revised its view and now assesses that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators rather than deter it.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The document says post-2023 data did not show a race to the bottom after minPoolCost fell to 170 ADA, with 340 ADA remaining the dominant fixed-fee setting.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The Plutus memory increase completes a two-step cumulative 25% increase previously recommended by Intersect's Parameter Committee and ratified by the Technical Steering Committee.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer states that the full target Plutus memory values were exercised together on the Preview testnet during July 2026 under a cited governance action id.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer claims IOE performance analysis on node versions 10.2 and 10.3 indicates adequate headroom in critical timing metrics for the complete Plutus memory increase.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document requests a non-treasury parameter update combining a minPoolCost reduction with the second step of a Plutus memory-limit increase, citing committee processes, testnet exercise, and performance references while leaving some economic and risk claims as proposer assertions.",
+  "output_sha256": "9d165a9fb7549b8afafd6148d1909ae09fbc6dca6eff7093950d8aa7dff2cad6"
+}

@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "no treasury withdrawal stated in document",
+    "deadline": "The document states the action can only be enacted at Epoch 653 and the new member terms expire at Epoch 799.",
+    "deliverables": [
+      "Remove the specified outgoing committee credentials from the on-chain committee set.",
+      "Set the incoming or renewed committee credentials to expire at Epoch 799.",
+      "Keep the signature threshold at 2/3.",
+      "Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged until their Epoch 726 expirations."
+    ],
+    "recipient": "Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, Cardano Curia, and the resulting Constitutional Committee composition stated in the document",
+    "what": "Update the Constitutional Committee by renewing or replacing seats expiring at Epoch 653 with candidates from the 2026 Constitutional Committee election, with new terms expiring at Epoch 799."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The incoming members listed are Marek Mahut, Phil_uplc, Leandros BSP, and Cardano Curia, each with a 146-epoch term expiring at Epoch 799.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The on-chain action removes three credentials and sets four committee credentials to expire at Epoch 799 while preserving a 2/3 signature threshold.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that no quorum change is made and that the committee threshold remains 2/3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that Eastern Cardano Council, Tingvard, and Ace Alliance remain unchanged with terms expiring at Epoch 726.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The election process included candidate registration, a public DRep voting period, a voting-power snapshot, an independent audit period, and publication of audited results before submission.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that DQuadrant independently audited the DRep vote results and provides IPFS and ballot references for the audited files and election ballot.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The four highest voting-power candidates shown in the results table were Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document explains that because expiration epoch is fixed and committeeMaxTermLength is 146 epochs, enactment is only valid in Epoch 653 for terms expiring at Epoch 799.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document does not provide candidate biographies, track records, independence analysis, or conflict-of-interest disclosures beyond names, voting results, and cold credentials.",
+      "materiality": "high",
+      "support": "unsupported"
+    }
+  ],
+  "summary": "The document presents a non-treasury Constitutional Committee update grounded in election results, on-chain credentials, timing mechanics, and audit references, but it lacks candidate-level track-record and conflict-of-interest evidence required for a full committee-composition review.",
+  "output_sha256": "b9d414a9939f8ef8f579d270ca80d6310a30401ff2f4f56770762f335984a8cb"
+}

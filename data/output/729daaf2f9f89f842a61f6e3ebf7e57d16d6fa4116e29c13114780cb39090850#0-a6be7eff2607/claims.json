@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "Action can only be enacted at Epoch 653; new terms expire at Epoch 799",
+    "deliverables": [
+      "Remove expiring or retired committee credentials listed in the action",
+      "Seat four incoming committee members with expiration epoch 799",
+      "Keep the signature threshold at 2/3",
+      "Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged"
+    ],
+    "recipient": "Marek Mahut, Phil_uplc / Philip DiSarro, Leandros BSP, and Cardano Curia as incoming committee members",
+    "what": "Update Constitutional Committee 2026 by replacing expiring Constitutional Committee seats with elected candidates"
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The successful candidates will serve terms ending at Epoch 799, with each listed incoming member assigned a 146-epoch term.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states that the committee quorum remains unchanged at 2/3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The election process included candidate registration, a public voting period, an independent audit of results, and publication of the audited outcome before submission.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The four candidates receiving the most voting power were Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document provides IPFS references for audited election results and audited files, plus an Ekklesia ballot URL.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The results of the DRep vote were independently audited by DQuadrant.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The action changes only the four expiring seats and leaves Eastern Cardano Council, Tingvard, and Ace Alliance unchanged until epoch 726.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document explains that ledger term-limit rules make enactment valid only in Epoch 653 because earlier enactment would exceed committeeMaxTermLength.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document does not provide candidate track records, independence disclosures, or conflict-of-interest disclosures for the incoming committee members.",
+      "materiality": "high",
+      "support": "unsupported"
+    }
+  ],
+  "summary": "The proposal documents the requested committee update, election results, on-chain credentials, term timing, quorum continuity, and audit references, but it lacks candidate track-record and independence/conflict disclosures required by the committee update doctrine.",
+  "output_sha256": "208f2d3b72cb70874ff3e18abfd76c5ff527cf560055b810f28210dda77c5559"
+}

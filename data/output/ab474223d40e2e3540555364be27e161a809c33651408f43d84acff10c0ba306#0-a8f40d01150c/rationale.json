@@ -1,0 +1,267 @@
+{
+  "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+  "action_type": "ParameterChange",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.0,
+  "raw_score": 0.03,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "NO",
+    "score_adjustment": -0.02,
+    "confidence": 0.66,
+    "rationale": "The claims include meaningful rationale, committee process, testnet exercise, and performance references, but the deterministic assessment still marks the review incomplete with a thin risk review, and the doctrine treats parameter changes as conservative because they can create system-wide externalities. A small negative nudge is warranted for caution on evidence quality and impact coverage, especially where expected small-pool competitiveness and treasury-stability effects are partly asserted rather than demonstrated.",
+    "doctrine_basis": "Parameter Change Doctrine: conservative default, required measurable rationale, SPO impact analysis, and rollback/fallback where applicable; Values Hierarchy: protocol safety and evidence quality before ecosystem growth or speed.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "parameter_change_doctrine.md"
+  ],
+  "doctrine_hash": "9d525573a4510e7da39e093ec99b90840e497854ead5066421d56b0561b3c3d4",
+  "directional_threshold": 0.12,
+  "confidence": 0.47,
+  "readiness_score": 0.6,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Protocol parameter changes carry system-wide risk.",
+    "Intake: Action type: ParameterChange",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The claims include meaningful rationale, committee process, testnet exercise, and performance references, but the deterministic assessment still marks the review incomplete with a thin risk review, and the doctrine treats parameter changes as conservative because they can create system-wide externalities. A small negative nudge is warranted for caution on evidence quality and impact coverage, especially where expected small-pool competitiveness and treasury-stability effects are partly asserted rather than demonstrated.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear",
+    "Claims and evidence missing: Independent evidence for: The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+    "Claims and evidence missing: Independent evidence for: The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "a8f40d01150cee101914ffcb9c735651989149ffec27b093fdd4e5258b545649",
+  "snapshot_bundle_hash": "92efbede96ffe07061723641a2f8c70f3906314b1c1dac82f9a67a5448446dd3",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "7532f2d0da41a7116f5a6d587dedd0b18bd03c80",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-08-31T11:35:02.067101Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.2812,
+    "NO": 0.2812,
+    "ABSTAIN": 0.4375
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+    "action_type": "ParameterChange",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: ParameterChange",
+          "Status: active",
+          "Proposed epoch: 646",
+          "Expires after epoch: 653",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Parameter change to reduce minPoolCost from 170 ada to 75 ada and increase Plutus memory limits as Part 2 of a two-step increase.",
+          "Recipient: not stated in document",
+          "Stated amount: none",
+          "Deliverables: Set minPoolCost to 75,000,000 lovelace., Set maxTxExecutionUnits[memory] to 17,500,000 units., Set maxBlockExecutionUnits[memory] to 77,500,000 units.",
+          "Deadline/expiry: not stated in document",
+          "Claim (technical, supported_in_proposal, high materiality): The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.",
+          "Claim (economic, supported_in_proposal, high materiality): The proposer says declining reserve-funded block rewards have eroded the 2023 minPoolCost reduction, with the single-block-pool delegator penalty now around 52.8% and projected to reach 100% around epoch 758 in February 2028 if unaddressed.",
+          "Claim (economic, proposer_asserted, high materiality): The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+          "Claim (economic, proposer_asserted, high materiality): The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk.",
+          "Claim (technical, independently_verifiable, high materiality): The proposal says IO Research updated its incentives analysis to conclude that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally with proportional minPoolMargin.",
+          "Claim (adoption, supported_in_proposal, medium materiality): The proposal says post-2023 data did not show a race to the fixed-fee floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting 170 ada."
+        ],
+        "missing": [
+          "Independent evidence for: The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+          "Independent evidence for: The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 1"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN voted ABSTAIN because the proposal did not provide enough independently pinned protocol-readiness evidence for a system-wide parameter change.\n\nThe action requested lowering minPoolCost from 170 ada to 75 ada, and raising Plutus transaction and block memory limits as Part 2 of a two-step increase. The proposer argued that fixed pool costs now penalize small pools more heavily, that lowering the floor should improve small-pool competitiveness, that treasury impact would be marginal, and that the Plutus memory targets had committee support, Preview testnet exercise, and cited performance headroom.\n\nThe review found some claims well-supported: the anchor was pinned and replayable, the bundled parameter changes were clearly stated, and the proposal included meaningful rationale, committee process, testnet, and performance references. But key claims remained thin or asserted rather than demonstrated, especially the expected small-pool competitiveness effect and the treasury-stability claim. The risk review also stayed thin: execution risk was unknown, with missing mitigation evidence and missing independent assurance.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the goals. A directional vote would need a complete independently pinned readiness packet, including constitutional alignment, impact analysis, rollback or containment planning, and clear safety-margin evidence, plus independent support for the small-pool and treasury-impact claims.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreifc5ct5fpeu4ygx6k4cqzbyzny7xfmuljywgn7jge3zkf2tidacym",
+        "file_sha256": "a2e8a7d2bc94e60d7f2b8286438cb71fb95945a716337e9313795175340c02c3",
+        "file_path": "data/input/governance/anchors/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306-0-20260731T113007Z.bin",
+        "content_chars": 33056
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "9a86a2f036960ad14363374f8e552bdd98e79931197095702f804b4807e22523"
+    },
+    "doctrine": {
+      "family": "parameter",
+      "files": [
+        "values_hierarchy.md",
+        "parameter_change_doctrine.md"
+      ],
+      "sha256": "9d525573a4510e7da39e093ec99b90840e497854ead5066421d56b0561b3c3d4"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "NO",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "8471ec4e97e262387f512a3e4d66403a86ee696750ce26a1b8ae39ce4aaf98c5"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "b1687ead987cac7e6ed8ee97e3ae89f75c9d71fe8dcd0c867e4bb543202c6bc5"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  },
+  "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d949a92b969d80cfc3e99af0.md",
+  "rationale_anchor_hash": "d949a92b969d80cfc3e99af0e00295581a1df1a5523b2f1037d73d6c78addf04"
+}

@@ -5,14 +5,14 @@
   "status": "active",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:b8b5655156a766f30ee0f5d27abbf5f1574570df654812f2e4cd5cdf50cc497c",
+    "raw_input_hash": "sha256:a8f40d01150cee101914ffcb9c735651989149ffec27b093fdd4e5258b545649",
     "detected_at": "2026-07-30T20:00:01.581936+00:00"
   },
   "decision": {
     "vote": "ABSTAIN",
     "onchain_vote": "ABSTAIN",
     "diverged": false,
-    "published_at": "2026-08-30T11:30:05.029933+00:00",
+    "published_at": "2026-08-31T11:30:04.791861+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "80251d3c02ede3b0ef1cb7acf4fc2a787846bdca12e85b2dda422fa383bd9823",
@@ -42,24 +42,24 @@
     "vote": "ABSTAIN",
     "score": 0.0,
     "confidence": 0.47,
-    "input_hash": "b8b5655156a766f30ee0f5d27abbf5f1574570df654812f2e4cd5cdf50cc497c",
-    "snapshot_bundle_hash": "170c86e9fc8970848b6b3c1070d9de876858bf9bc227098b7e969a839d7f1344",
+    "input_hash": "a8f40d01150cee101914ffcb9c735651989149ffec27b093fdd4e5258b545649",
+    "snapshot_bundle_hash": "92efbede96ffe07061723641a2f8c70f3906314b1c1dac82f9a67a5448446dd3",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "b1db09ba938f08baa6793685b174697cd0258ff7",
-    "core_commit": "cee10ce30d775447ac0b9e40f0d5d17b578c9103",
-    "rationale_markdown_path": "/data/output/public/rationales/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0-b8b5655156a7.md",
-    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/a7cec16ea9bf27cd49dddae6.md",
-    "rationale_anchor_hash": "a7cec16ea9bf27cd49dddae6be944fd92f8fc59bbeacc230d6598d109f18ac9d"
+    "resources_commit": "7532f2d0da41a7116f5a6d587dedd0b18bd03c80",
+    "core_commit": "b0b3d482a564ac40aecca5044e82313b5e7b12a2",
+    "rationale_markdown_path": "/data/output/public/rationales/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0-a8f40d01150c.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/d949a92b969d80cfc3e99af0.md",
+    "rationale_anchor_hash": "d949a92b969d80cfc3e99af0e00295581a1df1a5523b2f1037d73d6c78addf04"
   },
   "rationale": {
-    "summary": "Vote: ABSTAIN. For this ParameterChange (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal bundles two otherwise unrelated parameter changes for submission efficiency and SPO input on minPoolCost.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 47.0%.",
+    "summary": "Vote: ABSTAIN. For this ParameterChange (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: Protocol action lacks a complete independently pinned readiness packet: constitutional_alignment_pass, impact_analysis_complete, rollback_or_containment_plan, safety_margin_clear Confidence context: score 0.00; confidence 47.0%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide mitigation evidence.",
       "Provide independent assurance.",
       "Provide rollback/remedy path."
     ],
-    "markdown_path": "/data/output/public/rationales/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0-b8b5655156a7.md",
+    "markdown_path": "/data/output/public/rationales/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0-a8f40d01150c.md",
     "missing_evidence": [],
     "blocked_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
     "assessment_status": "incomplete",
@@ -92,22 +92,21 @@
             "Proposal document read by reasoning layer: yes",
             "Snapshot freshness source: deep_research_dossiers.csv",
             "Deep research dossier: not required",
-            "Requested: Parameter-change governance action to reduce minPoolCost from 170 ADA to 75 ADA and increase Plutus memory limits to maxTxExecutionUnits[memory] 17,500,000 and maxBlockExecutionUnits[memory] 77,500,000.",
+            "Requested: Parameter change to reduce minPoolCost from 170 ada to 75 ada and increase Plutus memory limits as Part 2 of a two-step increase.",
             "Recipient: not stated in document",
-            "Stated amount: not stated in document",
-            "Deliverables: Decrease minPoolCost from 170,000,000 Lovelace to 75,000,000 Lovelace., Increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000., Increase maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000.",
+            "Stated amount: none",
+            "Deliverables: Set minPoolCost to 75,000,000 lovelace., Set maxTxExecutionUnits[memory] to 17,500,000 units., Set maxBlockExecutionUnits[memory] to 77,500,000 units.",
             "Deadline/expiry: not stated in document",
-            "Claim (governance, supported_in_proposal, medium materiality): The proposal bundles two otherwise unrelated parameter changes for submission efficiency and SPO input on minPoolCost.",
-            "Claim (economic, supported_in_proposal, high materiality): The minPoolCost change would reduce the fixed-fee floor from 170 ADA to 75 ADA, a decrease of approximately 55.9%.",
-            "Claim (economic, supported_in_proposal, high materiality): The proposer states that declining reserve-funded block rewards have increased the delegator penalty on single-block pools to about 52.8% and could reach 100% around epoch 758 if unaddressed.",
-            "Claim (economic, proposer_asserted, high materiality): The proposer claims lowering minPoolCost is expected to improve small-pool competitiveness and support future effectiveness of stakePoolTargetNum increases.",
-            "Claim (economic, proposer_asserted, high materiality): The proposer states that the treasury impact of reducing minPoolCost is marginal and that no evidence has emerged to change the 2023 assessment that it poses no long-term economic stability risk.",
-            "Claim (technical, independently_verifiable, high materiality): The document says IO Research revised its view and now assesses that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators rather than deter it."
+            "Claim (technical, supported_in_proposal, high materiality): The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.",
+            "Claim (economic, supported_in_proposal, high materiality): The proposer says declining reserve-funded block rewards have eroded the 2023 minPoolCost reduction, with the single-block-pool delegator penalty now around 52.8% and projected to reach 100% around epoch 758 in February 2028 if unaddressed.",
+            "Claim (economic, proposer_asserted, high materiality): The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+            "Claim (economic, proposer_asserted, high materiality): The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk.",
+            "Claim (technical, independently_verifiable, high materiality): The proposal says IO Research updated its incentives analysis to conclude that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally with proportional minPoolMargin.",
+            "Claim (adoption, supported_in_proposal, medium materiality): The proposal says post-2023 data did not show a race to the fixed-fee floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting 170 ada."
           ],
           "missing": [
-            "Independent evidence for: The proposer claims lowering minPoolCost is expected to improve small-pool competitiveness and support future effectiveness of stakePoolTargetNum increases.",
-            "Independent evidence for: The proposer states that the treasury impact of reducing minPoolCost is marginal and that no evidence has emerged to change the 2023 assessment that it poses no long-term economic stability risk.",
-            "Independent evidence for: The document says post-2023 data did not show a race to the bottom after minPoolCost fell to 170 ADA, with 340 ADA remaining the dominant fixed-fee setting."
+            "Independent evidence for: The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+            "Independent evidence for: The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk."
           ],
           "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
         },
@@ -136,8 +135,8 @@
           "title": "Counterargument pass",
           "status": "complete",
           "findings": [
-            "Strongest YES: the proposal substantiates \"The proposal bundles two otherwise unrelated parameter changes for submission efficiency and SPO input on minPoolCost.\" and clears the evidence gates.",
-            "Strongest NO: a material claim is unsupported \u2014 \"The proposer claims lowering minPoolCost is expected to improve small-pool competitiveness and support future effectiveness of stakePoolTargetNum increases.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest YES: the proposal substantiates \"The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.\" \u2014 so cost or precedent may outweigh the benefit.",
             "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
           ],
           "missing": [],
@@ -156,7 +155,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0-b8b5655156a7.assessment.json",
+    "assessment_path": "/data/output/public/rationales/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0-a8f40d01150c.assessment.json",
     "treasury_dimensions": null,
     "decision_contract": {
       "policy": "balanced-return-risk-v1",
@@ -212,7 +211,7 @@
     "anchor_hash": "f200d39e39a3db74bdaa4f04865b4da38b5403322984c6fdcaf09bd44cacf868",
     "file_sha256": "a2e8a7d2bc94e60d7f2b8286438cb71fb95945a716337e9313795175340c02c3",
     "content_bytes": "33071",
-    "fetched_at_utc": "2026-08-30T11:30:06Z",
+    "fetched_at_utc": "2026-08-31T11:30:06Z",
     "download_path": "/proposals/ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -229,8 +228,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "b1db09ba938f08baa6793685b174697cd0258ff7",
-    "core_commit": "cee10ce30d775447ac0b9e40f0d5d17b578c9103",
+    "resources_commit": "7532f2d0da41a7116f5a6d587dedd0b18bd03c80",
+    "core_commit": "b0b3d482a564ac40aecca5044e82313b5e7b12a2",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "drep_vote_history_snapshot",
@@ -307,7 +306,7 @@
     "snapshot_age_seconds": 0,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-08-30T11:47:32.864615Z",
+    "snapshot_time": "2026-08-31T11:35:02.067101Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

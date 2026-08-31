@@ -1,0 +1,91 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+  "action_type": "NewCommittee",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: NewCommittee",
+        "Status: active",
+        "Proposed epoch: 646",
+        "Expires after epoch: 653",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Update Constitutional Committee 2026 by replacing expiring Constitutional Committee seats with elected candidates",
+        "Recipient: Marek Mahut, Phil_uplc / Philip DiSarro, Leandros BSP, and Cardano Curia as incoming committee members",
+        "Stated amount: not stated in document",
+        "Deliverables: Remove expiring or retired committee credentials listed in the action, Seat four incoming committee members with expiration epoch 799, Keep the signature threshold at 2/3, Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged",
+        "Deadline/expiry: Action can only be enacted at Epoch 653; new terms expire at Epoch 799",
+        "Claim (governance, supported_in_proposal, high materiality): The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.",
+        "Claim (governance, supported_in_proposal, high materiality): The successful candidates will serve terms ending at Epoch 799, with each listed incoming member assigned a 146-epoch term.",
+        "Claim (governance, supported_in_proposal, high materiality): The document states that the committee quorum remains unchanged at 2/3.",
+        "Claim (governance, supported_in_proposal, high materiality): The election process included candidate registration, a public voting period, an independent audit of results, and publication of the audited outcome before submission.",
+        "Claim (governance, supported_in_proposal, high materiality): The four candidates receiving the most voting power were Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia.",
+        "Claim (technical, independently_verifiable, high materiality): The document provides IPFS references for audited election results and audited files, plus an Ekklesia ballot URL."
+      ],
+      "missing": [
+        "Independent evidence for: The results of the DRep vote were independently audited by DQuadrant.",
+        "Independent evidence for: The document does not provide candidate track records, independence disclosures, or conflict-of-interest disclosures for the incoming committee members."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The results of the DRep vote were independently audited by DQuadrant.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

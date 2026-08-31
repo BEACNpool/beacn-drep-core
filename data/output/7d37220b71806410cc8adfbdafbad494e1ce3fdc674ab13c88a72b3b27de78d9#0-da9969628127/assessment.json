@@ -1,0 +1,112 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 649",
+        "Expires after epoch: 656",
+        "Treasury request: 103.0k ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Reimburse the lost deposit for the Ikigai Info governance action, plus claimed missed staking rewards.",
+        "Recipient: Ikigai Info governance action submitter; exact recipient address not stated in document",
+        "Stated amount: 103000",
+        "Deliverables: Immediate on-chain treasury distribution to the intended recipient upon enactment",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, independently_verifiable, medium materiality): An Info governance action titled \"Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -\" was submitted in September 2024 as a symbolic action thanking contributors and expressing hope for Cardano's future.",
+        "Claim (technical, proposer_asserted, high materiality): The proposer says a Cardano node bug allowed an unregistered stake key to be used, preventing the submitter from recovering a 100000 ADA governance action deposit.",
+        "Claim (governance, proposer_asserted, medium materiality): The proposer says there was significant community sentiment at the time that the Ikigai deposit should be reimbursed.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposal requests 103000 ADA, consisting of the original 100000 ADA deposit plus 3000 ADA for missed staking rewards at 2% per annum.",
+        "Claim (economic, proposer_asserted, medium materiality): The proposer states the withdrawal has no associated costs or expenses beyond the reimbursement amount.",
+        "Claim (economic, proposer_asserted, medium materiality): The proposer states there are no circumstances under which the withdrawal would be refunded to the Cardano Treasury."
+      ],
+      "missing": [
+        "Independent evidence for: The proposer says a Cardano node bug allowed an unregistered stake key to be used, preventing the submitter from recovering a 100000 ADA governance action deposit.",
+        "Independent evidence for: The proposer says there was significant community sentiment at the time that the Ikigai deposit should be reimbursed.",
+        "Independent evidence for: The proposer states the withdrawal has no associated costs or expenses beyond the reimbursement amount.",
+        "Independent evidence for: The proposer states there are no circumstances under which the withdrawal would be refunded to the Cardano Treasury."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 103000",
+        "Budget granularity: confirmed",
+        "Milestone payment gates: not confirmed",
+        "Clawback/refund path: not confirmed",
+        "Cost/benefit clarity: unknown",
+        "Recurring funding dependency: not confirmed",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.62"
+      ],
+      "missing": [
+        "milestone-gated disbursement",
+        "sustainability path",
+        "cost-benefit clarity"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: not confirmed",
+        "Flag count: 2"
+      ],
+      "missing": [
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"An Info governance action titled \"Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -\" was submitted in September 2024 as a symbolic action thanking contributors and expressing hope for Cardano's future.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposer says a Cardano node bug allowed an unregistered stake key to be used, preventing the submitter from recovering a 100000 ADA governance action deposit.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

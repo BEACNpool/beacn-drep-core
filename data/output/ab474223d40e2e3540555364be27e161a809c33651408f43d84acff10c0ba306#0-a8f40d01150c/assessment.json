@@ -1,0 +1,91 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+  "action_type": "ParameterChange",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 646",
+        "Expires after epoch: 653",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Parameter change to reduce minPoolCost from 170 ada to 75 ada and increase Plutus memory limits as Part 2 of a two-step increase.",
+        "Recipient: not stated in document",
+        "Stated amount: none",
+        "Deliverables: Set minPoolCost to 75,000,000 lovelace., Set maxTxExecutionUnits[memory] to 17,500,000 units., Set maxBlockExecutionUnits[memory] to 77,500,000 units.",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, supported_in_proposal, high materiality): The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.",
+        "Claim (economic, supported_in_proposal, high materiality): The proposer says declining reserve-funded block rewards have eroded the 2023 minPoolCost reduction, with the single-block-pool delegator penalty now around 52.8% and projected to reach 100% around epoch 758 in February 2028 if unaddressed.",
+        "Claim (economic, proposer_asserted, high materiality): The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+        "Claim (economic, proposer_asserted, high materiality): The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk.",
+        "Claim (technical, independently_verifiable, high materiality): The proposal says IO Research updated its incentives analysis to conclude that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally with proportional minPoolMargin.",
+        "Claim (adoption, supported_in_proposal, medium materiality): The proposal says post-2023 data did not show a race to the fixed-fee floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting 170 ada."
+      ],
+      "missing": [
+        "Independent evidence for: The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+        "Independent evidence for: The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

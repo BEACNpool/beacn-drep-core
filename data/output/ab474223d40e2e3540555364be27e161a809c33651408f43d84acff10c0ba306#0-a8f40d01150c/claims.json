@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "none",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "Set minPoolCost to 75,000,000 lovelace.",
+      "Set maxTxExecutionUnits[memory] to 17,500,000 units.",
+      "Set maxBlockExecutionUnits[memory] to 77,500,000 units."
+    ],
+    "recipient": "not stated in document",
+    "what": "Parameter change to reduce minPoolCost from 170 ada to 75 ada and increase Plutus memory limits as Part 2 of a two-step increase."
+  },
+  "claims": [
+    {
+      "category": "technical",
+      "claim": "The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer says declining reserve-funded block rewards have eroded the 2023 minPoolCost reduction, with the single-block-pool delegator penalty now around 52.8% and projected to reach 100% around epoch 758 in February 2028 if unaddressed.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says IO Research updated its incentives analysis to conclude that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally with proportional minPoolMargin.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal says post-2023 data did not show a race to the fixed-fee floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting 170 ada.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposal cites IO Research figures that 873 of 1,614 active pool operators remain below the roughly 3M ada delegation threshold for consistent block production, while only 289 pools could theoretically saturate under current delegated stake.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal states that the full 25% Plutus memory increase was recommended by Intersect's Parameter Committee on 2025-05-08 and ratified by Intersect's Technical Steering Committee on 2025-10-01.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal states that the full target Plutus memory values were exercised together on the Preview testnet during July 2026 under a specified governance action id.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposal says Praos timing guarantees are maintained after the full Plutus memory increase and cites IOE Performance and Tracing reports for node versions 10.2 and 10.3 indicating adequate timing headroom.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    }
+  ],
+  "summary": "The document proposes no treasury withdrawal and asks for a bundled parameter update affecting stake pool economics and Plutus memory headroom, with stronger external references for Plutus performance and governance process than for some minPoolCost economic expectations.",
+  "output_sha256": "9a86a2f036960ad14363374f8e552bdd98e79931197095702f804b4807e22523"
+}

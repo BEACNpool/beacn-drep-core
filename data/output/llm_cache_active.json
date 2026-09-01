@@ -809,37 +809,25 @@
       "claims": [
         {
           "category": "governance",
-          "claim": "The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected through the 2026 Constitutional Committee election.",
+          "claim": "The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected in the 2026 Constitutional Committee election.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "governance",
-          "claim": "The successful candidates will serve terms ending at Epoch 799, with each listed incoming member assigned a 146-epoch term.",
+          "claim": "The incoming members are Marek Mahut, Phil_uplc, Leandros BSP, and Cardano Curia, each with a 146-epoch term ending at Epoch 799.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "governance",
-          "claim": "The document states that the committee quorum remains unchanged at 2/3.",
+          "claim": "The election results list Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia as the top four candidates by voting power.",
           "materiality": "high",
-          "support": "supported_in_proposal"
+          "support": "independently_verifiable"
         },
         {
           "category": "governance",
-          "claim": "The election process included candidate registration, a public voting period, an independent audit of results, and publication of the audited outcome before submission.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "governance",
-          "claim": "The four candidates receiving the most voting power were Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "technical",
-          "claim": "The document provides IPFS references for audited election results and audited files, plus an Ekklesia ballot URL.",
+          "claim": "The election process included candidate registration, a DRep voting period, a voting power snapshot, an independent audit, and publication of audited results.",
           "materiality": "high",
           "support": "independently_verifiable"
         },
@@ -851,123 +839,129 @@
         },
         {
           "category": "governance",
-          "claim": "The action changes only the four expiring seats and leaves Eastern Cardano Council, Tingvard, and Ace Alliance unchanged until epoch 726.",
-          "materiality": "medium",
+          "claim": "The action keeps the Constitutional Committee signature threshold at 2/3.",
+          "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "technical",
-          "claim": "The document explains that ledger term-limit rules make enactment valid only in Epoch 653 because earlier enactment would exceed committeeMaxTermLength.",
+          "claim": "The document states that the action can only be enacted at Epoch 653 because earlier enactment would exceed the 146-epoch committeeMaxTermLength limit.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The document states that re-elected members Cardano Curia and Phil_uplc receive fresh maximum-length terms and that prior service does not count toward the 146-epoch limit.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The action includes a 100000000000 lovelace deposit and a stated reward account, with no treasury withdrawal requested.",
           "materiality": "medium",
           "support": "supported_in_proposal"
         },
         {
           "category": "governance",
-          "claim": "The document does not provide candidate track records, independence disclosures, or conflict-of-interest disclosures for the incoming committee members.",
+          "claim": "The document provides credentials for incoming members but does not provide candidate track records or conflict-of-interest disclosures.",
           "materiality": "high",
           "support": "unsupported"
         }
       ],
       "request": {
-        "amount_ada": "not stated in document",
-        "deadline": "Action can only be enacted at Epoch 653; new terms expire at Epoch 799",
+        "amount_ada": "none",
+        "deadline": "Enactment described as only valid at Epoch 653, with new terms expiring at Epoch 799.",
         "deliverables": [
-          "Remove expiring or retired committee credentials listed in the action",
-          "Seat four incoming committee members with expiration epoch 799",
-          "Keep the signature threshold at 2/3",
-          "Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged"
+          "Appoint Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, and Cardano Curia to terms expiring at Epoch 799.",
+          "Remove or replace the seats associated with credentials expiring at Epoch 653.",
+          "Keep the committee signature threshold at 2/3.",
+          "Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged."
         ],
-        "recipient": "Marek Mahut, Phil_uplc / Philip DiSarro, Leandros BSP, and Cardano Curia as incoming committee members",
-        "what": "Update Constitutional Committee 2026 by replacing expiring Constitutional Committee seats with elected candidates"
+        "recipient": "not stated in document",
+        "what": "Update the Cardano Constitutional Committee by replacing expiring seats and appointing the 2026 election winners."
       },
-      "summary": "The proposal documents the requested committee update, election results, on-chain credentials, term timing, quorum continuity, and audit references, but it lacks candidate track-record and independence/conflict disclosures required by the committee update doctrine."
+      "summary": "The document describes a non-treasury Constitutional Committee update based on a 2026 election, with credential-level implementation details, election results, audit references, timing rationale, and retained 2/3 quorum, but it lacks candidate track-record and conflict-of-interest evidence."
     },
     "lean": {
-      "confidence": 0.68,
+      "confidence": 0.62,
       "direction": "ABSTAIN",
-      "doctrine_basis": "Committee Update Doctrine: trust architecture first; required evidence includes credential and track-record clarity, independence and conflict-of-interest transparency, and continuity/accountability impacts; ABSTAIN when candidate or governance-process evidence is materially incomplete.",
-      "rationale": "The proposal has useful process evidence, election-result references, and clear on-chain committee details, but the extracted claims show materially incomplete candidate track-record and independence/conflict-of-interest evidence for a committee control-surface decision.",
+      "doctrine_basis": "Committee Update Doctrine: trust architecture first; required evidence includes credential and track-record clarity, independence and conflict-of-interest transparency, and continuity and accountability impacts; abstain when candidate or governance-process evidence is materially incomplete.",
+      "rationale": "The proposal has useful process evidence, audited-result references, and on-chain credential detail, but the committee update doctrine requires track-record clarity and independence/conflict transparency, and the extracted claims show those are not supplied while the assessment remains incomplete with thin risk review.",
       "score_adjustment": -0.02
     },
-    "message": "BEACN voted ABSTAIN because the action did not meet the rule-based evidence threshold for a directional vote. The proposal was clear and anchored, but the review found thin evidence on candidate track records, independence, conflict-of-interest disclosures, and risk mitigation.\n\nThe action asked to replace expiring Constitutional Committee seats with Marek Mahut, Philip DiSarro / Phil_uplc, Leandros BSP, and Cardano Curia through Epoch 799, while keeping the quorum at 2/3 and leaving Eastern Cardano Council, Tingvard, and Ace Alliance unchanged. The proposal supported several core claims: the seats expire at the end of Epoch 653, the incoming members came from the 2026 committee election, the election had registration, public voting, audit publication, and replayable references including IPFS files and an Ekklesia ballot URL.\n\nThe hold was conservative and evidence-based. The review did not treat proposer assertions alone as enough, and it found missing independent evidence for the DQuadrant audit claim, missing candidate track records and independence/conflict disclosures, and thin risk review with no mitigation evidence or independent assurance. A directional vote would be unblocked by replayable public evidence for those missing candidate disclosures, the independent audit claim, and risk mitigations for the committee update."
+    "message": "BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The core action was clear, but important governance evidence was missing or only asserted.\n\nThe proposal asks to update the Constitutional Committee at Epoch 653 by replacing expiring seats and appointing Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, and Cardano Curia to terms ending at Epoch 799, while keeping the signature threshold at 2/3 and leaving Eastern Cardano Council, Tingvard, and Ace Alliance unchanged. The review found support for the basic election-result claims, the incoming member list, the 146-epoch term structure, the Epoch 653 timing constraint, and the fact that no treasury withdrawal was requested.\n\nThe hold comes from what was not sufficiently evidenced. The claimed DQuadrant audit was treated as proposer-asserted without independent evidence in the review, and the document did not provide candidate track records or conflict-of-interest disclosures. The risk review was also thin: execution risk was unknown, with mitigation evidence and independent assurance missing.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the committee update. A directional vote would need replayable independent evidence for the audit claim, clearer track-record and independence/conflict disclosures for the incoming members, and stronger risk or mitigation assurance around execution."
   },
   "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0": {
     "claims": {
       "claims": [
         {
           "category": "governance",
-          "claim": "An Info governance action titled \"Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -\" was submitted in September 2024 as a symbolic action thanking contributors and expressing hope for Cardano's future.",
+          "claim": "An Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted in September 2024 soon after the Chang hard fork.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The Ikigai action was symbolic and asked the community to agree with a statement thanking contributors and expressing hope for Cardano's future.",
+          "materiality": "low",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "A Cardano node bug permitted an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal points to an external governance record for the prior Ikigai action.",
           "materiality": "medium",
           "support": "independently_verifiable"
         },
         {
-          "category": "technical",
-          "claim": "The proposer says a Cardano node bug allowed an unregistered stake key to be used, preventing the submitter from recovering a 100000 ADA governance action deposit.",
-          "materiality": "high",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "governance",
-          "claim": "The proposer says there was significant community sentiment at the time that the Ikigai deposit should be reimbursed.",
+          "category": "adoption",
+          "claim": "The proposer says there was significant community sentiment that the Ikigai deposit should be reimbursed.",
           "materiality": "medium",
           "support": "proposer_asserted"
         },
         {
           "category": "economic",
-          "claim": "The proposal requests 103000 ADA, consisting of the original 100000 ADA deposit plus 3000 ADA for missed staking rewards at 2% per annum.",
+          "claim": "The requested withdrawal is 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for lost staking rewards at 2% per annum.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "economic",
-          "claim": "The proposer states the withdrawal has no associated costs or expenses beyond the reimbursement amount.",
-          "materiality": "medium",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "economic",
-          "claim": "The proposer states there are no circumstances under which the withdrawal would be refunded to the Cardano Treasury.",
+          "claim": "The proposer states there are no costs, expenses, audit budget, refund circumstances, or administrator custody associated with this withdrawal because funds would be distributed directly on-chain.",
           "materiality": "medium",
           "support": "proposer_asserted"
         },
         {
           "category": "governance",
-          "claim": "The proposer states the recipient has not previously received treasury funds.",
+          "claim": "The proposer states the recipient has not previously received treasury funds and that the requested amount does not exceed the current Net Change Limit.",
           "materiality": "high",
           "support": "proposer_asserted"
-        },
-        {
-          "category": "economic",
-          "claim": "The proposer states the requested amount does not exceed the current Net Change Limit.",
-          "materiality": "high",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "governance",
-          "claim": "The proposer states no administrator custody is required because funds will be directly distributed and auditable on-chain.",
-          "materiality": "medium",
-          "support": "supported_in_proposal"
         }
       ],
       "request": {
         "amount_ada": "103000",
-        "deadline": "not stated in document",
+        "deadline": "Instantly as part of governance action enactment on-chain",
         "deliverables": [
-          "Immediate on-chain treasury distribution to the intended recipient upon enactment"
+          "Instant on-chain treasury withdrawal to the intended recipient upon enactment"
         ],
-        "recipient": "Ikigai Info governance action submitter; exact recipient address not stated in document",
-        "what": "Reimburse the lost deposit for the Ikigai Info governance action, plus claimed missed staking rewards."
+        "recipient": "Ikigai Info governance action submitter; exact name and recipient address not stated in document",
+        "what": "Reimburse the Ikigai Info governance action submitter for a lost 100,000 ADA deposit plus 3,000 ADA for missed staking rewards."
       },
-      "summary": "The document requests 103000 ADA to reimburse a claimed unrecoverable Ikigai Info governance action deposit and missed staking rewards, but most key facts about the bug, recipient, prior funding, and NCL compliance are asserted rather than evidenced in the anchor text."
+      "summary": "The document requests 103,000 ADA to reimburse a prior governance-action deposit loss and missed staking rewards, but much of the key evidence is asserted rather than demonstrated in the document."
     },
     "lean": {
-      "confidence": 0.56,
-      "direction": "NEUTRAL",
-      "doctrine_basis": "Treasury Spending Doctrine dossier gate posture; Values Hierarchy on treasury stewardship and evidence quality",
-      "rationale": "The deterministic assessment already captures that the review is incomplete and the claims evidence is thin; under BEACN doctrine, missing independently verified diligence should remain a needs-more-info state rather than becoming a directional penalty.",
-      "score_adjustment": 0.0
+      "confidence": 0.62,
+      "direction": "NO",
+      "doctrine_basis": "Evidence quality and reproducibility; treasury stewardship and downside protection",
+      "rationale": "The request has a clear narrow purpose and small delivery surface, but the deterministic assessment marks the evidence as thin, and the highest-materiality claims about the node bug, non-recovery, prior treasury funding, and NCL adherence are mostly asserted rather than evidenced in the document.",
+      "score_adjustment": -0.03
     },
-    "message": "BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal asks for 103,000 ADA to reimburse the Ikigai Info action submitter: 100,000 ADA for the lost governance action deposit and 3,000 ADA for claimed missed staking rewards. It also asks for immediate on-chain treasury distribution, but the exact recipient address was not stated in the document.\n\nThe review found the proposal anchor was pinned and replayable, and the existence of the September 2024 Ikigai Info action was supported. The requested amount and reimbursement framing were stated clearly. However, key claims remained unsupported by independent public evidence, especially the claim that a Cardano node bug allowed use of an unregistered stake key and prevented recovery of the 100,000 ADA deposit. The claimed community support, recipient funding history, lack of extra costs, no refund path, and Net Change Limit claim were also proposer assertions rather than independently verified facts.\n\nThis is a conservative, evidence-based hold, not a rejection of the reimbursement idea. A directional vote would be unblocked by public, replayable evidence verifying the applicable Net Change Limit and independently supporting the core deposit-loss claim. The review also noted treasury scrutiny is higher because shared ADA is being withdrawn, claims evidence was thin, execution risk was unknown, independent assurance and rollback/remedy paths were missing, and the treasury flow signal carried an advisory sustainability penalty."
+    "message": "BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action asks for 103,000 ADA from the treasury: 100,000 ADA to reimburse the lost Ikigai Info governance action deposit, plus 3,000 ADA for missed staking rewards. The proposal says the earlier Ikigai action was submitted in September 2024, was symbolic, and that a Cardano node bug allowed an unregistered stake key, preventing deposit recovery. It also says the recipient has not previously received treasury funds and that the request does not exceed the current Net Change Limit.\n\nThe review found the anchor document was pinned and replayable, and the prior Ikigai action itself was supported by the proposal and externally verifiable. But the highest-materiality claims were still thin: the node bug, the unrecoverable deposit, community sentiment, prior treasury funding status, and Net Change Limit compliance were mostly asserted rather than independently evidenced in the document. The recipient\u2019s exact name and address were also not stated.\n\nThis is a conservative, evidence-based hold, not a rejection. A directional vote would require the Net Change Limit to be pinned and independently verified from public chain evidence, with stronger replayable evidence for the node-bug and non-recovery claims."
   },
   "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0": {
     "claims": {
@@ -1141,87 +1135,87 @@
     "claims": {
       "claims": [
         {
+          "category": "governance",
+          "claim": "The action bundles two otherwise unrelated parameter changes for submission efficiency and to allow SPO input on minPoolCost.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
           "category": "technical",
-          "claim": "The action bundles two otherwise unrelated protocol parameter changes and states that no other protocol parameters or Plutus cost model settings are changed.",
+          "claim": "minPoolCost would be reduced from 170,000,000 Lovelace to 75,000,000 Lovelace, a decrease of about 55.9%.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "economic",
-          "claim": "The proposer says declining reserve-funded block rewards have eroded the 2023 minPoolCost reduction, with the single-block-pool delegator penalty now around 52.8% and projected to reach 100% around epoch 758 in February 2028 if unaddressed.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "economic",
-          "claim": "The proposer says lowering minPoolCost is expected to improve small-pool competitiveness because market pressure should lead pools currently at the floor to adopt the new lower floor.",
+          "claim": "The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection of 100% around epoch 758 in February 2028 if unaddressed.",
           "materiality": "high",
           "support": "proposer_asserted"
         },
         {
           "category": "economic",
-          "claim": "The proposal states that reducing minPoolCost marginally decreases treasury inflow but cites a prior Parameter Committee economic working group assessment that the treasury balance was above projections and the reduction posed no long-term economic stability risk.",
+          "claim": "The proposer says lowering minPoolCost should improve competitiveness for small pools but would not force any SPO to reduce its fee.",
           "materiality": "high",
           "support": "proposer_asserted"
         },
         {
           "category": "technical",
-          "claim": "The proposal says IO Research updated its incentives analysis to conclude that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally with proportional minPoolMargin.",
+          "claim": "The proposer says IO Research's updated incentives report concludes that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally paired with minPoolMargin.",
           "materiality": "high",
           "support": "independently_verifiable"
         },
         {
-          "category": "adoption",
-          "claim": "The proposal says post-2023 data did not show a race to the fixed-fee floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting 170 ada.",
+          "category": "economic",
+          "claim": "The proposer says two years of post-2023 data show the market did not collapse toward the 170 ada floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting the lower floor.",
           "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The Plutus memory change would increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000, completing a cumulative 25% increase across Part 1 and Part 2.",
+          "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
-          "category": "adoption",
-          "claim": "The proposal cites IO Research figures that 873 of 1,614 active pool operators remain below the roughly 3M ada delegation threshold for consistent block production, while only 289 pools could theoretically saturate under current delegated stake.",
+          "category": "technical",
+          "claim": "The proposer says the full Plutus memory target values were exercised together on Preview testnet during July 2026 and provides a governance action identifier.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposer says IOE performance evaluations on node versions 10.2 and 10.3 indicate adequate timing headroom for the complete Plutus memory increase, with more recent node versions providing further performance improvements.",
           "materiality": "high",
           "support": "independently_verifiable"
         },
         {
           "category": "governance",
-          "claim": "The proposal states that the full 25% Plutus memory increase was recommended by Intersect's Parameter Committee on 2025-05-08 and ratified by Intersect's Technical Steering Committee on 2025-10-01.",
-          "materiality": "medium",
-          "support": "independently_verifiable"
-        },
-        {
-          "category": "technical",
-          "claim": "The proposal states that the full target Plutus memory values were exercised together on the Preview testnet during July 2026 under a specified governance action id.",
+          "claim": "The proposer says relevant guardrails and notice requirements are satisfied or automatically enforced by ledger ratification rules for both the minPoolCost and Plutus memory changes.",
           "materiality": "high",
-          "support": "independently_verifiable"
-        },
-        {
-          "category": "technical",
-          "claim": "The proposal says Praos timing guarantees are maintained after the full Plutus memory increase and cites IOE Performance and Tracing reports for node versions 10.2 and 10.3 indicating adequate timing headroom.",
-          "materiality": "high",
-          "support": "independently_verifiable"
+          "support": "supported_in_proposal"
         }
       ],
       "request": {
-        "amount_ada": "none",
+        "amount_ada": "not stated in document",
         "deadline": "not stated in document",
         "deliverables": [
-          "Set minPoolCost to 75,000,000 lovelace.",
-          "Set maxTxExecutionUnits[memory] to 17,500,000 units.",
-          "Set maxBlockExecutionUnits[memory] to 77,500,000 units."
+          "minPoolCost changed to 75,000,000 Lovelace",
+          "maxTxExecutionUnits[memory] changed from 16,500,000 to 17,500,000",
+          "maxBlockExecutionUnits[memory] changed from 72,000,000 to 77,500,000"
         ],
         "recipient": "not stated in document",
-        "what": "Parameter change to reduce minPoolCost from 170 ada to 75 ada and increase Plutus memory limits as Part 2 of a two-step increase."
+        "what": "Decrease minPoolCost from 170 ada to 75 ada and increase Plutus memory limits to complete a two-step cumulative 25% increase."
       },
-      "summary": "The document proposes no treasury withdrawal and asks for a bundled parameter update affecting stake pool economics and Plutus memory headroom, with stronger external references for Plutus performance and governance process than for some minPoolCost economic expectations."
+      "summary": "The document proposes a no-treasury parameter-change action bundling a minPoolCost reduction with the second step of a Plutus memory limit increase, citing committee process, guardrails, economic rationale for small pools, and test/performance evidence for Plutus memory."
     },
     "lean": {
-      "confidence": 0.66,
+      "confidence": 0.62,
       "direction": "NO",
-      "doctrine_basis": "Parameter Change Doctrine: conservative default, required measurable rationale, SPO impact analysis, and rollback/fallback where applicable; Values Hierarchy: protocol safety and evidence quality before ecosystem growth or speed.",
-      "rationale": "The claims include meaningful rationale, committee process, testnet exercise, and performance references, but the deterministic assessment still marks the review incomplete with a thin risk review, and the doctrine treats parameter changes as conservative because they can create system-wide externalities. A small negative nudge is warranted for caution on evidence quality and impact coverage, especially where expected small-pool competitiveness and treasury-stability effects are partly asserted rather than demonstrated.",
+      "doctrine_basis": "Parameter Change Doctrine: conservative default for system-wide externalities; required evidence includes clear measurable rationale, SPO impact analysis, and rollback or fallback planning.",
+      "rationale": "The document gives concrete parameter values and some checkable references, but the deterministic assessment marks the risk review as thin and the proposal bundles unrelated system-wide changes, so parameter-change caution slightly outweighs the public-benefit and developer-headroom rationale.",
       "score_adjustment": -0.02
     },
-    "message": "BEACN voted ABSTAIN because the proposal did not provide enough independently pinned protocol-readiness evidence for a system-wide parameter change.\n\nThe action requested lowering minPoolCost from 170 ada to 75 ada, and raising Plutus transaction and block memory limits as Part 2 of a two-step increase. The proposer argued that fixed pool costs now penalize small pools more heavily, that lowering the floor should improve small-pool competitiveness, that treasury impact would be marginal, and that the Plutus memory targets had committee support, Preview testnet exercise, and cited performance headroom.\n\nThe review found some claims well-supported: the anchor was pinned and replayable, the bundled parameter changes were clearly stated, and the proposal included meaningful rationale, committee process, testnet, and performance references. But key claims remained thin or asserted rather than demonstrated, especially the expected small-pool competitiveness effect and the treasury-stability claim. The risk review also stayed thin: execution risk was unknown, with missing mitigation evidence and missing independent assurance.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the goals. A directional vote would need a complete independently pinned readiness packet, including constitutional alignment, impact analysis, rollback or containment planning, and clear safety-margin evidence, plus independent support for the small-pool and treasury-impact claims."
+    "message": "BEACN voted ABSTAIN because the proposal did not include enough independently pinned protocol readiness evidence for a system-wide parameter change.\n\nThe action asked to lower minPoolCost from 170 ada to 75 ada and raise Plutus memory limits, moving maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000. The proposal gave concrete parameter values and some checkable references, including Preview testnet exercise and IOE performance evaluations. The strongest supported case was that the minPoolCost change itself was clearly specified and evidence-gated.\n\nThe hold came from what was still thin. The proposal bundled two otherwise unrelated changes, but the review found missing independent evidence for that bundling rationale and for the economic penalty projections. More importantly, the risk review left execution risk unknown and lacked mitigation evidence and independent assurance.\n\nThis is a conservative, evidence-based abstention. A directional vote would need a complete independently pinned readiness packet: constitutional alignment, completed impact analysis, rollback or containment plan, clear safety margin, plus independent support for the major economic and bundling claims."
   },
   "b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#0": {
     "claims": {
@@ -2622,85 +2616,81 @@
         },
         {
           "category": "governance",
-          "claim": "The proposal says active DReps declined in every 12-epoch period during Cardano's first year of on-chain governance, while the DRep Gini coefficient rose from 0.92 to 0.94 and 11-16 DReps represented 51% of voting power.",
+          "claim": "The proposal states that the Governance Incentives Working Group has mapped 49 relevant efforts, proposals, papers, tools, and initiatives related to governance incentives.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal says early governance data shows active DReps declined in every 12-epoch period, the DRep Gini coefficient rose from 0.92 to 0.94, and 11-16 DReps represent 51% of voting power.",
           "materiality": "high",
           "support": "independently_verifiable"
         },
         {
           "category": "governance",
-          "claim": "The proposal states that the Governance Incentives Working Group mapped 49 relevant efforts, proposals, papers, tools, and initiatives related to governance incentives.",
-          "materiality": "medium",
-          "support": "independently_verifiable"
+          "claim": "The proposal states that poorly designed incentives could reward surface-level activity, reinforce voting-power concentration, encourage gaming, or spend treasury resources without meaningful governance value.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
         },
         {
           "category": "technical",
-          "claim": "The project will evaluate incentive mechanisms using research, governance data, modeling, controlled testing, and community input before presenting adoption decisions to governance.",
+          "claim": "The project will develop and simulate incentive models using governance activity data, community feedback, expert input, formal reward-scheme research, and process-first Cardano-specific analysis.",
           "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The project will include one clearly defined controlled incentive pilot experiment and publish its methodology, results, deviations, limitations, and implications.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal commits to public transparency outputs including a website, dashboard, datasets with definitions and limitations, monthly updates, feedback documentation, and public milestone reports.",
+          "materiality": "medium",
           "support": "supported_in_proposal"
         },
         {
           "category": "other",
-          "claim": "The proposal commits to seven staged milestones over 12 months, moving from discovery through framework design, data collection, modeling, dashboarding, pilot testing, final validation, and governance integration.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "governance",
-          "claim": "The project will produce public research and feedback reports, structured governance activity data, a public dashboard, documented incentive models, controlled pilot findings, and a submitted Governance Incentives Framework CIP.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "adoption",
-          "claim": "The proposal targets 50+ engaged governance actors, 10+ public workshops, 12 monthly progress updates, 50+ simulation scenarios, at least five dashboards, and one or more publication-ready research papers.",
+          "claim": "The team claims relevant track record, including Seomon's Cardano governance roles and 10+ closed Catalyst proposals and Sebastian Pereira's listed blockchain, government, and Catalyst delivery experience.",
           "materiality": "medium",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "economic",
-          "claim": "The budget totals 4,207,967 ADA across workstreams including modeling, research, administration, engagement, data engineering, dashboarding, pilot costs, contingency, and independent audit and oversight.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "economic",
-          "claim": "The detailed operational budget is maintained separately and the anchor document presents only workstream-level allocations.",
-          "materiality": "high",
           "support": "proposer_asserted"
         },
         {
-          "category": "adoption",
-          "claim": "The team section claims prior Cardano governance, Catalyst, research, ambassador, consulting, and delivery experience across Seomon, Sebastian Pereira, and Cerkoryn.",
-          "materiality": "medium",
-          "support": "independently_verifiable"
+          "category": "economic",
+          "claim": "The budget requests \u20b34,207,967 across workstreams including \u20b3884,000 for modeling, \u20b3476,666.67 for science and research, \u20b3472,000 for administration, \u20b3437,328 contingency, and \u20b3126,239 for independent audit and oversight.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
         }
       ],
       "request": {
         "amount_ada": "4207967",
-        "deadline": "12 months",
+        "deadline": "12 months from project start; exact start date not stated in document",
         "deliverables": [
-          "Governance Incentives Framework report",
-          "public dataset and dashboard",
-          "documented incentive models and formula outputs",
-          "controlled incentive pilot findings",
-          "at least one publication-ready research paper submitted for peer review",
-          "completed and submitted Governance Incentives Framework CIP",
-          "governance integration pathway",
-          "final financial and milestone report"
+          "Governance Incentives Framework and final report",
+          "Public governance activity dataset",
+          "Public dashboard and documentation",
+          "Documented incentive models and formula outputs",
+          "Controlled incentive pilot findings report",
+          "At least one publication-ready research paper submitted for peer review",
+          "Community feedback report",
+          "Completed and submitted Governance Incentives Framework CIP",
+          "Governance integration pathway and governance action submitted to DReps",
+          "Final financial and milestone report"
         ],
         "recipient": "not stated in document",
-        "what": "Fund a 12-month Governance Incentives Framework project to research, model, test, document, and submit a governance incentive framework and integration pathway for Cardano."
+        "what": "Governance Incentives Framework 2026: a 12-month project to produce a governance incentives framework, public dataset and dashboard, model/formula outputs, research publications, controlled incentive pilot findings, and a governance integration pathway."
       },
-      "summary": "The document requests 4,207,967 ADA for a 12-month Cardano governance incentives research, modeling, dashboard, pilot, and CIP pathway project, with extensive milestone deliverables and KPIs but only workstream-level budget detail in the anchor text."
+      "summary": "The document requests \u20b34,207,967 for a 12-month governance incentives R&D program with staged milestones, public data and dashboard outputs, modeling and simulation, a controlled pilot, research publication, a CIP, and governance integration materials."
     },
     "lean": {
-      "confidence": 0.74,
+      "confidence": 0.72,
       "direction": "NEUTRAL",
       "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility",
-      "rationale": "The supplied claims show strong governance alignment, staged public deliverables, and measurable outputs, but the large treasury request and separately maintained detailed budget are treasury-stewardship issues already suited to the deterministic assessment rather than a discretionary nudge.",
+      "rationale": "The claims show a governance-focused R&D proposal with public outputs, staged milestones, risk-aware modeling, and a stated pilot, while the large treasury request is only workstream-level in the supplied document and the recipient is not stated. Those evidence and stewardship considerations are already central to the deterministic assessment, so no additional discretionary nudge is justified.",
       "score_adjustment": 0.0
     },
-    "message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal, and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not active opposition.\n\nThe proposal asks for 4,207,967 ADA over 12 months for a Governance Incentives Framework project. The recipient was not stated. The work would produce reports, public data and dashboards, incentive models, pilot findings, a submitted CIP, an integration pathway, and final milestone and financial reporting.\n\nSome claims were supported in the proposal, including the staged milestone plan, the proposed research/modeling/testing process, the public outputs, and the workstream-level budget. One important governance claim was treated as substantiated: active DReps declined across 12-epoch periods, concentration rose, and 11-16 DReps held 51% of voting power. Other claims were thinner or unsupported by independent replayable evidence, including the claim that Cardano lacks a structured incentive framework and the separately maintained detailed operational budget.\n\nThe review gates found the anchor document pinned and replayable, but treasury scrutiny remains higher because the action spends shared ADA and sets precedent. Missing items include the verified Net Change Limit, line-item budget, milestone-gated disbursement, independent assurance, and dependency map. A directional vote would be unblocked by public chain evidence verifying the applicable Net Change Limit, with the missing treasury and risk materials supplied clearly enough for delegators to audit."
+    "message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal and a directional vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action requests \u20b34,207,967 for a 12-month Governance Incentives Framework 2026 project, including a public dataset and dashboard, incentive models, research publications, a controlled pilot, a CIP, governance integration work, and final financial and milestone reporting. The recipient is not stated, and the exact project start date is not stated.\n\nThe review found some claims well-supported: the proposal has a pinned, replayable anchor; it substantiates that the working group mapped 49 relevant efforts; it describes risks from poorly designed incentives; it commits to public outputs, model simulations, a controlled pilot, and budget categories. Other claims were not independently supported, including the broader claim that Cardano lacks a structured data-driven incentives framework and the team track-record claims.\n\nThis is a conservative, evidence-based hold, not opposition to the idea. To unblock a YES or NO vote, BEACN would need the verified Net Change Limit from public chain evidence, plus stronger independent evidence for the unsupported claims and missing treasury/risk details: a line-item budget, milestone-gated disbursement, independent assurance, and a dependency map."
   },
   "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0": {
     "claims": {

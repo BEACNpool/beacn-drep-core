@@ -1,0 +1,93 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+  "action_type": "ParameterChange",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 646",
+        "Expires after epoch: 653",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Decrease minPoolCost from 170 ada to 75 ada and increase Plutus memory limits to complete a two-step cumulative 25% increase.",
+        "Recipient: not stated in document",
+        "Stated amount: not stated in document",
+        "Deliverables: minPoolCost changed to 75,000,000 Lovelace, maxTxExecutionUnits[memory] changed from 16,500,000 to 17,500,000, maxBlockExecutionUnits[memory] changed from 72,000,000 to 77,500,000",
+        "Deadline/expiry: not stated in document",
+        "Claim (governance, proposer_asserted, medium materiality): The action bundles two otherwise unrelated parameter changes for submission efficiency and to allow SPO input on minPoolCost.",
+        "Claim (technical, supported_in_proposal, high materiality): minPoolCost would be reduced from 170,000,000 Lovelace to 75,000,000 Lovelace, a decrease of about 55.9%.",
+        "Claim (economic, proposer_asserted, high materiality): The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection of 100% around epoch 758 in February 2028 if unaddressed.",
+        "Claim (economic, proposer_asserted, high materiality): The proposer says lowering minPoolCost should improve competitiveness for small pools but would not force any SPO to reduce its fee.",
+        "Claim (technical, independently_verifiable, high materiality): The proposer says IO Research's updated incentives report concludes that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally paired with minPoolMargin.",
+        "Claim (economic, proposer_asserted, medium materiality): The proposer says two years of post-2023 data show the market did not collapse toward the 170 ada floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting the lower floor."
+      ],
+      "missing": [
+        "Independent evidence for: The action bundles two otherwise unrelated parameter changes for submission efficiency and to allow SPO input on minPoolCost.",
+        "Independent evidence for: The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection of 100% around epoch 758 in February 2028 if unaddressed.",
+        "Independent evidence for: The proposer says lowering minPoolCost should improve competitiveness for small pools but would not force any SPO to reduce its fee.",
+        "Independent evidence for: The proposer says two years of post-2023 data show the market did not collapse toward the 170 ada floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting the lower floor."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"minPoolCost would be reduced from 170,000,000 Lovelace to 75,000,000 Lovelace, a decrease of about 55.9%.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The action bundles two otherwise unrelated parameter changes for submission efficiency and to allow SPO input on minPoolCost.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

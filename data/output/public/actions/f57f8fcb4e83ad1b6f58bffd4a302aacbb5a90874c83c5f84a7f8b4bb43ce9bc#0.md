@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-08-31T11:30:04.791861+00:00`
+- Published at: `2026-09-01T11:30:07.750028+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that Cardano lacks a structured, data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal says active DReps declined in every 12-epoch period during Cardano's first year of on-chain governance, while the DRep Gini coefficient rose from 0.92 to 0.94 and 11-16 DReps represented 51% of voting power." and clears the evidence gates. What would change this vote to YES: Provide independent evidence for: The detailed operational budget is maintained separately and the anchor document presents only workstream-level allocations; Provide line-item budget. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.15; confidence 75.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal states that Cardano lacks a structured, data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal states that the Governance Incentives Working Group has mapped 49 relevant efforts, proposals, papers, tools, and initiatives related to governance incentives." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.15; confidence 75.8%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -25,14 +25,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 4207967
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The proposal says active DReps declined in every 12-epoch period during Cardano's first year of on-chain governance, while the DRep Gini coefficient rose from 0.92 to 0.94 and 11-16 DReps represented 51% of voting power." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal states that the Governance Incentives Working Group has mapped 49 relevant efforts, proposals, papers, tools, and initiatives related to governance incentives." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
 - Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
 - DRep ratification support is below threshold; this is not treated as active opposition.
 - Claims and evidence missing: Independent evidence for: The proposal states that Cardano lacks a structured, data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time.
-- Claims and evidence missing: Independent evidence for: The detailed operational budget is maintained separately and the anchor document presents only workstream-level allocations.
+- Claims and evidence missing: Independent evidence for: The team claims relevant track record, including Seomon's Cardano governance roles and 10+ closed Catalyst proposals and Sebastian Pereira's listed blockchain, government, and Catalyst delivery experience.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement
@@ -40,16 +40,16 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Risk review missing: dependency map
 
 ## Top 3 fixes to improve next submission
-- Provide independent evidence for: The detailed operational budget is maintained separately and the anchor document presents only workstream-level allocations.
 - Provide line-item budget.
 - Provide milestone-gated disbursement.
+- Provide sustainability path.
 
 ## Proof of vote (frozen at submission)
-- input_hash: `b6a9648c66f609d6b8ca6c6e4b9a97d9f63016f0cc20cc664865a11ef0d5edc9`
-- snapshot_bundle_hash: `059ef766ffc02356294eff08f00bef91aaae264427910977ddd3d0f8bcc30160`
+- input_hash: `1a1e34c6fdfb840e214063d8f0dbefc1680ffbafc71256fe187caa81ada40d90`
+- snapshot_bundle_hash: `61aee7110ecaf7251918277b4e884374edfc3faa9edff27d950ade81521d1407`
 - soul_commit: `c813ed97f64dba61150d01964327553baf720d38`
-- resources_commit: `480a04af9041d4372ef8a5c8ae7abf3a77fcefc5`
+- resources_commit: `7532f2d0da41a7116f5a6d587dedd0b18bd03c80`
 - core_commit: ``
-- score: `0.0`
-- confidence: `0.1`
+- score: `-0.15`
+- confidence: `0.7575`
 

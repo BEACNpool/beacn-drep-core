@@ -1,0 +1,83 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "none",
+    "deadline": "Enactment described as only valid at Epoch 653, with new terms expiring at Epoch 799.",
+    "deliverables": [
+      "Appoint Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, and Cardano Curia to terms expiring at Epoch 799.",
+      "Remove or replace the seats associated with credentials expiring at Epoch 653.",
+      "Keep the committee signature threshold at 2/3.",
+      "Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged."
+    ],
+    "recipient": "not stated in document",
+    "what": "Update the Cardano Constitutional Committee by replacing expiring seats and appointing the 2026 election winners."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected in the 2026 Constitutional Committee election.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The incoming members are Marek Mahut, Phil_uplc, Leandros BSP, and Cardano Curia, each with a 146-epoch term ending at Epoch 799.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The election results list Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia as the top four candidates by voting power.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The election process included candidate registration, a DRep voting period, a voting power snapshot, an independent audit, and publication of audited results.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The results of the DRep vote were independently audited by DQuadrant.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The action keeps the Constitutional Committee signature threshold at 2/3.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The document states that the action can only be enacted at Epoch 653 because earlier enactment would exceed the 146-epoch committeeMaxTermLength limit.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document states that re-elected members Cardano Curia and Phil_uplc receive fresh maximum-length terms and that prior service does not count toward the 146-epoch limit.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The action includes a 100000000000 lovelace deposit and a stated reward account, with no treasury withdrawal requested.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The document provides credentials for incoming members but does not provide candidate track records or conflict-of-interest disclosures.",
+      "materiality": "high",
+      "support": "unsupported"
+    }
+  ],
+  "summary": "The document describes a non-treasury Constitutional Committee update based on a 2026 election, with credential-level implementation details, election results, audit references, timing rationale, and retained 2/3 quorum, but it lacks candidate track-record and conflict-of-interest evidence.",
+  "output_sha256": "a27219f49254c0a4390da62ca4c60e491104aa7bd23e3dcc4925a878e400f290"
+}

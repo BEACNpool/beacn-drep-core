@@ -1,0 +1,68 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "103000",
+    "deadline": "Instantly as part of governance action enactment on-chain",
+    "deliverables": [
+      "Instant on-chain treasury withdrawal to the intended recipient upon enactment"
+    ],
+    "recipient": "Ikigai Info governance action submitter; exact name and recipient address not stated in document",
+    "what": "Reimburse the Ikigai Info governance action submitter for a lost 100,000 ADA deposit plus 3,000 ADA for missed staking rewards."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "An Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted in September 2024 soon after the Chang hard fork.",
+      "materiality": "medium",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "governance",
+      "claim": "The Ikigai action was symbolic and asked the community to agree with a statement thanking contributors and expressing hope for Cardano's future.",
+      "materiality": "low",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "A Cardano node bug permitted an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposal points to an external governance record for the prior Ikigai action.",
+      "materiality": "medium",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "adoption",
+      "claim": "The proposer says there was significant community sentiment that the Ikigai deposit should be reimbursed.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The requested withdrawal is 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for lost staking rewards at 2% per annum.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer states there are no costs, expenses, audit budget, refund circumstances, or administrator custody associated with this withdrawal because funds would be distributed directly on-chain.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer states the recipient has not previously received treasury funds and that the requested amount does not exceed the current Net Change Limit.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    }
+  ],
+  "summary": "The document requests 103,000 ADA to reimburse a prior governance-action deposit loss and missed staking rewards, but much of the key evidence is asserted rather than demonstrated in the document.",
+  "output_sha256": "f51a1a9974653c23a5c1dbe80d19469df4cc512d526009df857a0c35c8058668"
+}

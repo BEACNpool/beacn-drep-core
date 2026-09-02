@@ -1,0 +1,267 @@
+{
+  "action_id": "4840e305563327358cf70dae5015b2df8f8c35cef03f74521d4f117ac17bc384#0",
+  "action_type": "InfoAction",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RISK_HIGH",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": -0.3,
+  "raw_score": -0.3,
+  "llm_score_adjustment": -0.04,
+  "llm_lean": {
+    "source": "deterministic-heuristic",
+    "model": "local-deterministic",
+    "direction": "NO",
+    "score_adjustment": -0.04,
+    "confidence": 0.3,
+    "rationale": "Doctrine-aware offline lean for a info action: 1 well-supported claim(s), 6 unsupported high-materiality claim(s). Net bounded adjustment -0.040 (clamped to \u00b10.05).",
+    "doctrine_basis": "values_hierarchy.md; values hierarchy: protocol safety & treasury stewardship over speed",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "info_action_doctrine.md"
+  ],
+  "doctrine_hash": "3e38b8435e100fc8b9b0e947edb57a5ba49374dd9d4795e55778fc4e2b03e1db",
+  "directional_threshold": 0.12,
+  "confidence": 0.435,
+  "readiness_score": 0.0,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Flag score present (13), reducing confidence.",
+    "Intake: Action type: InfoAction",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "Advisory model lean was -0.040 (display cap \u00b10.05) and had zero influence on the binding score: Doctrine-aware offline lean for a info action: 1 well-supported claim(s), 6 unsupported high-materiality claim(s). Net bounded adjustment -0.040 (clamped to \u00b10.05).",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "DRep ratification support is below threshold; this is not treated as active opposition.",
+    "High risk flags triggered conservative abstain.",
+    "Claims and evidence missing: Independent evidence for: The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano.",
+    "Claims and evidence missing: Independent evidence for: The funds are managed by a 7 person administrating committee composed of publicly identified individuals who are part of multi-signature (multisig) wallet from which liquidity will be managed.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "64800b331526cebd39e8f4b2113d6070b34ab09a4c4e3b5eacf1ec2663836df4",
+  "snapshot_bundle_hash": "8b9c27b48bf345ba8d9666dbb4dd4d77b9e45492090158408f17e5a5eb3677e3",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "0a1b0f1cb82758c45016a1c6fb1b56be69b8aa1f",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 6,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-09-02T11:38:11.226325Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.047,
+    "NO": 0.5502,
+    "ABSTAIN": 0.4028
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "4840e305563327358cf70dae5015b2df8f8c35cef03f74521d4f117ac17bc384#0",
+    "action_type": "InfoAction",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: InfoAction",
+          "Status: expired",
+          "Proposed epoch: 556",
+          "Expires after epoch: 563",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Cardano Treasury DeFi Liquidity Budget",
+          "Recipient: ",
+          "Stated amount: not stated in document",
+          "Deliverables: The goal of this proposal is to increase liquidity on Cardano, specifically by supporting stablecoin liquidity., 50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem., The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano., The funds are managed by a 7 person administrating committee composed of publicly identified individuals who are part of multi-signature (multisig) wallet from which liquidity will be managed.",
+          "Deadline/expiry: not stated in document",
+          "Claim (other, proposer_asserted, low materiality): The goal of this proposal is to increase liquidity on Cardano, specifically by supporting stablecoin liquidity.",
+          "Claim (economic, supported_in_proposal, high materiality): 50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem.",
+          "Claim (technical, proposer_asserted, high materiality): The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano.",
+          "Claim (economic, proposer_asserted, high materiality): The funds are managed by a 7 person administrating committee composed of publicly identified individuals who are part of multi-signature (multisig) wallet from which liquidity will be managed.",
+          "Claim (economic, proposer_asserted, high materiality): High Level Overview Amount - The Cardano treasury should dedicate 3.33% of treasury funds (50 million ada) to purchasing fiat backed stablecoins, spread out over 12 monthly purchases.",
+          "Claim (economic, proposer_asserted, high materiality): The committee should make every effort to help mitigate the potential price impact of converting ADA to fiat to mint as stable coins over the 12 month period."
+        ],
+        "missing": [
+          "Independent evidence for: The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano.",
+          "Independent evidence for: The funds are managed by a 7 person administrating committee composed of publicly identified individuals who are part of multi-signature (multisig) wallet from which liquidity will be managed.",
+          "Independent evidence for: High Level Overview Amount - The Cardano treasury should dedicate 3.33% of treasury funds (50 million ada) to purchasing fiat backed stablecoins, spread out over 12 monthly purchases.",
+          "Independent evidence for: The committee should make every effort to help mitigate the potential price impact of converting ADA to fiat to mint as stable coins over the 12 month period."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 3"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN records ABSTAIN on Cardano Treasury DeFi Liquidity Budget. This is a conservative abstention because the evidence does not justify stronger certainty.\n\nThe action is a InfoAction. The cached anchor describes the request as: Cardano Treasury DeFi Liquidity Budget. The strongest grounded claim is: 50,000,000 ADA is requested over the course of 12 months (the duration of the budget) to support the Cardano decentralized finance (DeFi) ecosystem.\n\nA material claim remains proposer-asserted or thinly supported: The majority of the funds in this budget will be disbursed to DeFi protocols including decentralized exchanges (DEXs) and lending protocols to help seed liquidity on Cardano. Reason code: RISK_HIGH.",
+  "human_message_source": "deterministic-heuristic",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "anchor": {
+        "action_id": "4840e305563327358cf70dae5015b2df8f8c35cef03f74521d4f117ac17bc384#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok",
+        "anchor_url": "https://raw.githubusercontent.com/theeldermillenial/2025-liquidity-budget/df0b26d8796b19b566008ea9eaa8f17fef2cb6d4/info.jsonld",
+        "file_sha256": "49680fbb9f3c4426bf81bd1c6d8c6f6a40a888984c114ad1456ff9172d337a9b",
+        "file_path": "data/input/governance/anchors/4840e305563327358cf70dae5015b2df8f8c35cef03f74521d4f117ac17bc384-0-20260902T113006Z.bin",
+        "content_chars": 18126
+      },
+      "claim_count": 8,
+      "prompt_sha256": "9369b3f3b04ac3988a5312b1ed7f9f6dd9b836fd267975498e7abfc8f60fb12e",
+      "output_sha256": "8b888cbcce2b58d28115f8af7bfbf647736d8991e08bb79ad84f1706f145c27e"
+    },
+    "doctrine": {
+      "family": "info",
+      "files": [
+        "values_hierarchy.md",
+        "info_action_doctrine.md"
+      ],
+      "sha256": "3e38b8435e100fc8b9b0e947edb57a5ba49374dd9d4795e55778fc4e2b03e1db"
+    },
+    "lean": {
+      "available": true,
+      "source": "deterministic-heuristic",
+      "reason": null,
+      "model": "local-deterministic",
+      "direction": "NO",
+      "score_adjustment": -0.04,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": "5d6b5e880ca99d4d1e06f9935047a78e0377e15ab68d60106614b449748abacd",
+      "output_sha256": "46c3c3161471e7ddc731e5a3463c1a549828bf4beed842f62c37b6b984c1880f"
+    },
+    "human_message": {
+      "source": "deterministic-heuristic",
+      "available": true,
+      "reason": null,
+      "model": "local-deterministic",
+      "prompt_sha256": "2f1dfe4eff0a830f4cc3023d5a5822eb97f2a1b1333a522ba88d6f7ab72cb6dc",
+      "output_sha256": "53fa00157829dbeb4dffb8451b89980098c65e3a7d95db7a6ae258f9ce545b68"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "stage": "claim_extraction",
+  "available": true,
+  "source": "precomputed",
+  "reason": null,
+  "model": "claude-opus-4-8",
+  "request": {
+    "amount_ada": "not stated in document",
+    "deadline": "not stated in document",
+    "deliverables": [
+      "minPoolCost changed to 75,000,000 Lovelace",
+      "maxTxExecutionUnits[memory] changed from 16,500,000 to 17,500,000",
+      "maxBlockExecutionUnits[memory] changed from 72,000,000 to 77,500,000"
+    ],
+    "recipient": "not stated in document",
+    "what": "Decrease minPoolCost from 170 ada to 75 ada and increase Plutus memory limits to complete a two-step cumulative 25% increase."
+  },
+  "claims": [
+    {
+      "category": "governance",
+      "claim": "The action bundles two otherwise unrelated parameter changes for submission efficiency and to allow SPO input on minPoolCost.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "minPoolCost would be reduced from 170,000,000 Lovelace to 75,000,000 Lovelace, a decrease of about 55.9%.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection of 100% around epoch 758 in February 2028 if unaddressed.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer says lowering minPoolCost should improve competitiveness for small pools but would not force any SPO to reduce its fee.",
+      "materiality": "high",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer says IO Research's updated incentives report concludes that a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally paired with minPoolMargin.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "economic",
+      "claim": "The proposer says two years of post-2023 data show the market did not collapse toward the 170 ada floor, with 340 ada remaining dominant and smaller competitively positioned pools adopting the lower floor.",
+      "materiality": "medium",
+      "support": "proposer_asserted"
+    },
+    {
+      "category": "technical",
+      "claim": "The Plutus memory change would increase maxTxExecutionUnits[memory] from 16,500,000 to 17,500,000 and maxBlockExecutionUnits[memory] from 72,000,000 to 77,500,000, completing a cumulative 25% increase across Part 1 and Part 2.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer says the full Plutus memory target values were exercised together on Preview testnet during July 2026 and provides a governance action identifier.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "technical",
+      "claim": "The proposer says IOE performance evaluations on node versions 10.2 and 10.3 indicate adequate timing headroom for the complete Plutus memory increase, with more recent node versions providing further performance improvements.",
+      "materiality": "high",
+      "support": "independently_verifiable"
+    },
+    {
+      "category": "governance",
+      "claim": "The proposer says relevant guardrails and notice requirements are satisfied or automatically enforced by ledger ratification rules for both the minPoolCost and Plutus memory changes.",
+      "materiality": "high",
+      "support": "supported_in_proposal"
+    }
+  ],
+  "summary": "The document proposes a no-treasury parameter-change action bundling a minPoolCost reduction with the second step of a Plutus memory limit increase, citing committee process, guardrails, economic rationale for small pools, and test/performance evidence for Plutus memory.",
+  "output_sha256": "78213a05bafd6875013bd526b5dca29b374e20c31585bf34b67881250c020bbb"
+}

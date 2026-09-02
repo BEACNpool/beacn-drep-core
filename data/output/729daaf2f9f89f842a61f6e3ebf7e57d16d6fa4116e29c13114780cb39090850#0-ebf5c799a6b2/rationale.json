@@ -1,0 +1,264 @@
+{
+  "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+  "action_type": "NewCommittee",
+  "recommendation": "ABSTAIN",
+  "abstain_reason_code": "RULE_THRESHOLD_UNMET",
+  "needs_more_info_reason_code": null,
+  "operator_review_required": false,
+  "operator_review_reason_code": null,
+  "agentic_high_impact_reason_code": null,
+  "score": 0.08,
+  "raw_score": 0.08,
+  "llm_score_adjustment": -0.02,
+  "llm_lean": {
+    "source": "precomputed",
+    "model": "claude-opus-4-8",
+    "direction": "ABSTAIN",
+    "score_adjustment": -0.02,
+    "confidence": 0.62,
+    "rationale": "The proposal has useful process evidence, audited-result references, and on-chain credential detail, but the committee update doctrine requires track-record clarity and independence/conflict transparency, and the extracted claims show those are not supplied while the assessment remains incomplete with thin risk review.",
+    "doctrine_basis": "Committee Update Doctrine: trust architecture first; required evidence includes credential and track-record clarity, independence and conflict-of-interest transparency, and continuity and accountability impacts; abstain when candidate or governance-process evidence is materially incomplete.",
+    "cap": 0.05
+  },
+  "llm_assisted": false,
+  "llm_assisted_reason_code": null,
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "committee_update_doctrine.md"
+  ],
+  "doctrine_hash": "dd036d55202e112e294b78140f80824fd0e4417f4177bc43b086a3516b5572e0",
+  "directional_threshold": 0.12,
+  "confidence": 0.52,
+  "readiness_score": 0.6,
+  "treasury_dimensions": null,
+  "treasury_merit_recommendation": null,
+  "treasury_merit_reason": null,
+  "facts": [
+    "Pinned anchor document is available for this action.",
+    "Intake: Action type: NewCommittee",
+    "Claims and evidence: Proposal anchor: pinned and replayable",
+    "Risk review: Execution risk: unknown",
+    "Counterargument pass: Strongest YES: the proposal substantiates \"The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected in the 2026 Constitutional Committee election.\" and clears the evidence gates.",
+    "Synthesis: Final vote must be derived from completed sections above, not from a prose summary."
+  ],
+  "inferences": [
+    "DRep ratification support is material but below threshold; treated as a modest context signal.",
+    "Advisory model lean was -0.020 (display cap \u00b10.05) and had zero influence on the binding score: The proposal has useful process evidence, audited-result references, and on-chain credential detail, but the committee update doctrine requires track-record clarity and independence/conflict transparency, and the extracted claims show those are not supplied while the assessment remains incomplete with thin risk review.",
+    "Intake: Baseline fields and source anchors establish whether the proposal can be reviewed at all.",
+    "Claims and evidence: Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence.",
+    "Risk review: Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal.",
+    "Counterargument pass: A defensible rationale must show the best opposing case before it reaches a vote.",
+    "Synthesis: The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+  ],
+  "uncertainty": [
+    "Rule-based system; does not infer unstated intent.",
+    "Claims and evidence missing: Independent evidence for: The results of the DRep vote were independently audited by DQuadrant.",
+    "Claims and evidence missing: Independent evidence for: The document provides credentials for incoming members but does not provide candidate track records or conflict-of-interest disclosures.",
+    "Claims and evidence status is thin.",
+    "Risk review missing: mitigation evidence",
+    "Risk review missing: independent assurance",
+    "Risk review status is thin."
+  ],
+  "missing_evidence": [],
+  "input_hash": "ebf5c799a6b22b6695d53e7c2bda366d34c81fd5f026f449fde5620af6ce8d7f",
+  "snapshot_bundle_hash": "8ffce670d40ab873a36600478f596c90bc20e6a625512a8dee17b6062a3f9882",
+  "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+  "soul_text_hash": "fa491ed711b9834e5a3c72d35903cec18afe8d93e1262f42ffcb20f5fce2c276",
+  "resource_registry_commit": "0a1b0f1cb82758c45016a1c6fb1b56be69b8aa1f",
+  "resources_used": [
+    "gov_actions_snapshot",
+    "drep_vote_history_snapshot",
+    "gov_actions_all_snapshot",
+    "gov_actions_active_snapshot",
+    "gov_action_flags_snapshot",
+    "gov_poll_runs_snapshot",
+    "top_drep_votes_snapshot",
+    "gov_anchor_documents",
+    "governance_outcomes",
+    "protocol_readiness_profiles"
+  ],
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-09-02T11:38:11.226325Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  },
+  "decision_probs": {
+    "YES": 0.355,
+    "NO": 0.195,
+    "ABSTAIN": 0.45
+  },
+  "uncertainty_band": "LOW",
+  "evidence_depth_score": 3,
+  "intelligence_profile": "deterministic-v1",
+  "assessment_schema_version": "assessment-tree-v1",
+  "assessment_status": "incomplete",
+  "assessment": {
+    "schema_version": "assessment-tree-v1",
+    "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+    "action_type": "NewCommittee",
+    "overall_status": "incomplete",
+    "sections": [
+      {
+        "title": "Intake",
+        "status": "complete",
+        "findings": [
+          "Action type: NewCommittee",
+          "Status: ratified",
+          "Proposed epoch: 646",
+          "Expires after epoch: 653",
+          "Treasury request: not specified",
+          "Anchor pinned locally: yes"
+        ],
+        "missing": [],
+        "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+      },
+      {
+        "title": "Claims and evidence",
+        "status": "thin",
+        "findings": [
+          "Proposal anchor: pinned and replayable",
+          "Proposal document read by reasoning layer: yes",
+          "Snapshot freshness source: deep_research_dossiers.csv",
+          "Deep research dossier: not required",
+          "Requested: Update the Cardano Constitutional Committee by replacing expiring seats and appointing the 2026 election winners.",
+          "Recipient: not stated in document",
+          "Stated amount: none",
+          "Deliverables: Appoint Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, and Cardano Curia to terms expiring at Epoch 799., Remove or replace the seats associated with credentials expiring at Epoch 653., Keep the committee signature threshold at 2/3., Leave Eastern Cardano Council, Tingvard, and Ace Alliance unchanged.",
+          "Deadline/expiry: Enactment described as only valid at Epoch 653, with new terms expiring at Epoch 799.",
+          "Claim (governance, supported_in_proposal, high materiality): The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected in the 2026 Constitutional Committee election.",
+          "Claim (governance, supported_in_proposal, high materiality): The incoming members are Marek Mahut, Phil_uplc, Leandros BSP, and Cardano Curia, each with a 146-epoch term ending at Epoch 799.",
+          "Claim (governance, independently_verifiable, high materiality): The election results list Philip DiSarro, Leandros BSP, Marek Mahut, and Cardano Curia as the top four candidates by voting power.",
+          "Claim (governance, independently_verifiable, high materiality): The election process included candidate registration, a DRep voting period, a voting power snapshot, an independent audit, and publication of audited results.",
+          "Claim (governance, proposer_asserted, high materiality): The results of the DRep vote were independently audited by DQuadrant.",
+          "Claim (governance, supported_in_proposal, high materiality): The action keeps the Constitutional Committee signature threshold at 2/3."
+        ],
+        "missing": [
+          "Independent evidence for: The results of the DRep vote were independently audited by DQuadrant.",
+          "Independent evidence for: The document provides credentials for incoming members but does not provide candidate track records or conflict-of-interest disclosures."
+        ],
+        "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+      },
+      {
+        "title": "Risk review",
+        "status": "thin",
+        "findings": [
+          "Execution risk: unknown",
+          "Governance risk: unknown",
+          "Technical risk: unknown",
+          "Treasury exposure risk: unknown",
+          "Mitigation evidence: unknown",
+          "Independent assurance: unknown",
+          "Rollback/remedy path: unknown",
+          "Flag count: 0"
+        ],
+        "missing": [
+          "mitigation evidence",
+          "independent assurance",
+          "rollback/remedy path",
+          "dependency map"
+        ],
+        "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+      },
+      {
+        "title": "Counterargument pass",
+        "status": "complete",
+        "findings": [
+          "Strongest YES: the proposal substantiates \"The action updates four Constitutional Committee seats whose terms expire at the end of Epoch 653 by appointing candidates elected in the 2026 Constitutional Committee election.\" and clears the evidence gates.",
+          "Strongest NO: a material claim is unsupported \u2014 \"The results of the DRep vote were independently audited by DQuadrant.\" \u2014 so cost or precedent may outweigh the benefit.",
+          "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+        ],
+        "missing": [],
+        "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+      },
+      {
+        "title": "Synthesis",
+        "status": "ready",
+        "findings": [
+          "Final vote must be derived from completed sections above, not from a prose summary.",
+          "The public rationale should name the decisive section and the strongest counterargument."
+        ],
+        "missing": [],
+        "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+      }
+    ],
+    "blocking_questions": []
+  },
+  "missing_evidence_count": 0,
+  "scoring_weights_version": "1.1.0",
+  "scoring_weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "human_message": "BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The core action was clear, but important governance evidence was missing or only asserted.\n\nThe proposal asks to update the Constitutional Committee at Epoch 653 by replacing expiring seats and appointing Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, and Cardano Curia to terms ending at Epoch 799, while keeping the signature threshold at 2/3 and leaving Eastern Cardano Council, Tingvard, and Ace Alliance unchanged. The review found support for the basic election-result claims, the incoming member list, the 146-epoch term structure, the Epoch 653 timing constraint, and the fact that no treasury withdrawal was requested.\n\nThe hold comes from what was not sufficiently evidenced. The claimed DQuadrant audit was treated as proposer-asserted without independent evidence in the review, and the document did not provide candidate track records or conflict-of-interest disclosures. The risk review was also thin: execution risk was unknown, with mitigation evidence and independent assurance missing.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the committee update. A directional vote would need replayable independent evidence for the audit claim, clearer track-record and independence/conflict disclosures for the incoming members, and stronger risk or mitigation assurance around execution.",
+  "human_message_source": "precomputed",
+  "model_layer": {
+    "claim_extraction": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "anchor": {
+        "action_id": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+        "anchor_read": true,
+        "reason": null,
+        "fetch_status": "ok_cached",
+        "anchor_url": "https://ipfs.io/ipfs/bafkreif22553h3reaedrd376hzgkjng6kxnb3o7ycu3j4pzjbcjerv2bce",
+        "file_sha256": "bad77bb3ee24010711effe3e4ca4b4de55da1dbbf815369e3f29089248d74111",
+        "file_path": "data/input/governance/anchors/729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850-0-20260801T113006Z.bin",
+        "content_chars": 14571
+      },
+      "claim_count": 10,
+      "prompt_sha256": null,
+      "output_sha256": "a27219f49254c0a4390da62ca4c60e491104aa7bd23e3dcc4925a878e400f290"
+    },
+    "doctrine": {
+      "family": "committee",
+      "files": [
+        "values_hierarchy.md",
+        "committee_update_doctrine.md"
+      ],
+      "sha256": "dd036d55202e112e294b78140f80824fd0e4417f4177bc43b086a3516b5572e0"
+    },
+    "lean": {
+      "available": true,
+      "source": "precomputed",
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "direction": "ABSTAIN",
+      "score_adjustment": -0.02,
+      "cap": 0.05,
+      "assisted_directional": false,
+      "prompt_sha256": null,
+      "output_sha256": "f60cc50f7af744bb712e9077900983ef59b6c715f99fff1c8bc6c76c0b45852c"
+    },
+    "human_message": {
+      "source": "precomputed",
+      "available": true,
+      "reason": null,
+      "model": "claude-opus-4-8",
+      "prompt_sha256": null,
+      "output_sha256": "30827c2ef3cd75ffb8d85be4d0307bc2b83b1354ffaba938dafb76d5def7f725"
+    },
+    "note": "Claim extraction and the plain-language message are model-assisted, advisory layers. The hard gates (stale data, missing evidence, treasury-needs-dossier, hard blockers, high flags) are deterministic and binding. The doctrine-aware reasoning layer records a bounded advisory lean of at most \u00b10.05, but it is not added to the binding score and cannot change the vote."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "f57f8fcb4e83ad1b6f58bffd4a302aacbb5a90874c83c5f84a7f8b4bb43ce9bc#0",
+  "action_type": "TreasuryWithdrawals",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: TreasuryWithdrawals",
+        "Status: active",
+        "Proposed epoch: 649",
+        "Expires after epoch: 656",
+        "Treasury request: 4.21M ADA",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: complete",
+        "Requested: Fund a 12-month Governance Incentives Framework project to research, model, test, document, and submit a governance incentives framework for Cardano.",
+        "Recipient: not stated in document",
+        "Stated amount: 4207967",
+        "Deliverables: Governance Incentives Framework report, public dataset and dashboard, documented incentive models and formula outputs, controlled incentive pilot findings report, publication-ready research paper submitted for peer review, completed and submitted Governance Incentives Framework CIP, governance integration pathway and final financial/milestone reporting",
+        "Deadline/expiry: 12 months",
+        "Claim (governance, supported_in_proposal, high materiality): The project will evaluate candidate governance incentive mechanisms through research, data, modeling, controlled testing, and community input before presenting adoption decisions to governance.",
+        "Claim (governance, independently_verifiable, medium materiality): Existing Cardano governance incentive work includes 49 relevant efforts, proposals, research papers, tools, and initiatives mapped by the Governance Incentives Working Group.",
+        "Claim (governance, independently_verifiable, high materiality): During Cardano's first year of on-chain governance, active DReps declined in every 12-epoch period, DRep voting-power concentration increased, and 11-16 DReps represented 51% of voting power.",
+        "Claim (governance, proposer_asserted, high materiality): The proposal argues that poor incentive design could reward surface-level activity, reinforce voting-power concentration, encourage gaming, or spend treasury resources without meaningful governance value.",
+        "Claim (governance, supported_in_proposal, high materiality): The project will deliver seven staged milestones covering discovery, framework definition, data collection, modeling, dashboarding, validation, and governance integration.",
+        "Claim (adoption, supported_in_proposal, medium materiality): The proposal sets measurable KPIs including 50+ governance actors engaged, 10+ workshops, 12 monthly updates, 50+ simulation scenarios, at least 99% monitoring service availability, and 5+ dashboards."
+      ],
+      "missing": [
+        "Independent evidence for: The proposal argues that poor incentive design could reward surface-level activity, reinforce voting-power concentration, encourage gaming, or spend treasury resources without meaningful governance value.",
+        "Independent evidence for: The team claims relevant Cardano and governance experience, including Catalyst closeouts, ambassador and committee roles, blockchain instruction, and prior governance incentives work.",
+        "Independent evidence for: The detailed operational budget is maintained separately and the anchor document presents only workstream-level allocations."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Treasury analysis",
+      "status": "complete",
+      "findings": [
+        "Requested ADA: 4207967",
+        "Budget granularity: not confirmed",
+        "Milestone payment gates: unknown",
+        "Clawback/refund path: confirmed",
+        "Cost/benefit clarity: confirmed",
+        "Recurring funding dependency: unknown",
+        "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+        "Financial confidence: 0.73"
+      ],
+      "missing": [
+        "line-item budget",
+        "milestone-gated disbursement",
+        "sustainability path"
+      ],
+      "conclusion": "Treasury votes require a higher bar because they consume shared ADA and create precedent."
+    },
+    {
+      "title": "Risk review",
+      "status": "complete",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: confirmed",
+        "Independent assurance: not confirmed",
+        "Rollback/remedy path: confirmed",
+        "Flag count: 1"
+      ],
+      "missing": [
+        "independent assurance",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The project will evaluate candidate governance incentive mechanisms through research, data, modeling, controlled testing, and community input before presenting adoption decisions to governance.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposal argues that poor incentive design could reward surface-level activity, reinforce voting-power concentration, encourage gaming, or spend treasury resources without meaningful governance value.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

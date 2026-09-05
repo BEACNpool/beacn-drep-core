@@ -1,4 +1,4 @@
-"""Claude reasoning layer for the BEACN DRep pipeline — the stages that need real
+"""Codex reasoning layer for the BEACN DRep pipeline — the stages that need real
 language understanding.
 
   Stage 1 — extract_claims(): read the proposal's cached anchor document and
@@ -25,12 +25,12 @@ Determinism / safety contract:
     regardless of what the model returns, records the raw score, the clamped
     adjustment, the rationale, and prompt/output hashes, so every run is
     auditable and the influence is fully transparent on the public record.
-  * With no ANTHROPIC_API_KEY / anthropic SDK / BEACN_DREP_DISABLE_LLM, the live
-    path is unavailable; the pipeline still runs. Under BEACN_DREP_OFFLINE_REVIEW
+  * Without explicit BEACN_DREP_LIVE_LLM=1, or with BEACN_DREP_DISABLE_LLM,
+    the live path is unavailable; the pipeline still runs. Under BEACN_DREP_OFFLINE_REVIEW
     a deterministic, doctrine-aware lean is produced instead (reproducible, so
     replay stays clean). With nothing available the adjustment is 0 (no change).
 
-Model defaults to claude-opus-4-8 (override with BEACN_DREP_MODEL).
+Model defaults to gpt-5.6-sol (override with BEACN_DREP_MODEL).
 """
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ import json
 import os
 import re
 
-MODEL = os.environ.get("BEACN_DREP_MODEL", "claude-opus-4-8")
+MODEL = os.environ.get("BEACN_DREP_MODEL", "gpt-5.6-sol")
 
 _CACHE: dict | None = None
 _CACHE_LOADED = False
@@ -79,21 +79,17 @@ def _cache() -> dict:
 
 
 def _client():
-    """Return an Anthropic client, or None if the model layer is unavailable."""
-    if _disabled() or not os.environ.get("ANTHROPIC_API_KEY"):
+    """Optional Codex callable. Normal engine runs remain cached/offline only."""
+    if _disabled() or os.environ.get("BEACN_DREP_LIVE_LLM", "").lower() not in ("1", "true", "yes"):
         return None
     try:
-        import anthropic  # imported lazily so the deterministic pipeline needs no SDK
-    except Exception:
+        from pathlib import Path
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "tools"))
+        from codex_inference import run
+        return run
+    except (ImportError, OSError):
         return None
-    try:
-        return anthropic.Anthropic()
-    except Exception:
-        return None
-
-
-def _text_of(resp) -> str:
-    return "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
 
 
 def _clean_text(value) -> str:
@@ -564,26 +560,16 @@ def extract_claims(action: dict, anchor_text: str | None, doctrine_text: str | N
         return base
     client = _client()
     if client is None:
-        base["reason"] = "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)"
+        base["reason"] = "model layer unavailable (live Codex not enabled, or disabled)"
         return base
 
     user = _build_claims_user(action, anchor_text, doctrine_text)
     try:
-        resp = client.messages.create(
-            model=MODEL,
-            max_tokens=4000,
-            system=CLAIM_SYSTEM,
-            messages=[{"role": "user", "content": user}],
-            output_config={"format": {"type": "json_schema", "schema": CLAIMS_SCHEMA}},
-        )
+        text = client(user, model=MODEL, system=CLAIM_SYSTEM, schema=CLAIMS_SCHEMA,
+                      timeout=300, effort="high")
     except Exception as e:  # noqa: BLE001 - degrade, never crash the pipeline
         base["reason"] = f"extraction call failed: {e}"
         return base
-    if getattr(resp, "stop_reason", None) == "refusal":
-        base["reason"] = "model refused extraction"
-        return base
-
-    text = _text_of(resp)
     try:
         data = json.loads(text)
     except Exception as e:  # noqa: BLE001
@@ -765,7 +751,7 @@ def assess_lean(action: dict, claims: dict | None, assessment: dict | None,
         return _offline_assess_lean(action, claims, assessment, doctrine_text, family)
     client = _client()
     if client is None:
-        base["reason"] = "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)"
+        base["reason"] = "model layer unavailable (live Codex not enabled, or disabled)"
         return base
 
     user = (
@@ -779,21 +765,11 @@ def assess_lean(action: dict, claims: dict | None, assessment: dict | None,
         f"Give your bounded score_adjustment within [-{_cap()}, {_cap()}] and the doctrine-grounded rationale."
     )
     try:
-        resp = client.messages.create(
-            model=MODEL,
-            max_tokens=1500,
-            system=_lean_system(),
-            thinking={"type": "adaptive"},
-            messages=[{"role": "user", "content": user}],
-            output_config={"format": {"type": "json_schema", "schema": LEAN_SCHEMA}},
-        )
+        text = client(user, model=MODEL, system=_lean_system(), schema=LEAN_SCHEMA,
+                      timeout=300, effort="high")
     except Exception as e:  # noqa: BLE001 - degrade, never crash the pipeline
         base["reason"] = f"lean call failed: {e}"
         return base
-    if getattr(resp, "stop_reason", None) == "refusal":
-        base["reason"] = "model refused the lean"
-        return base
-    text = _text_of(resp)
     try:
         data = json.loads(text)
     except Exception as e:  # noqa: BLE001
@@ -918,26 +894,16 @@ def write_human_message(action: dict, title: str, rationale: dict, assessment: d
         return _offline_human_message(action, title, rationale, assessment, claims)
     client = _client()
     if client is None:
-        base["reason"] = "model layer unavailable (no ANTHROPIC_API_KEY / anthropic SDK, or disabled)"
+        base["reason"] = "model layer unavailable (live Codex not enabled, or disabled)"
         return base
 
     user = _build_message_user(action, title, rationale, assessment, claims)
     try:
-        resp = client.messages.create(
-            model=MODEL,
-            max_tokens=1200,
-            system=MESSAGE_SYSTEM,
-            thinking={"type": "adaptive"},
-            messages=[{"role": "user", "content": user}],
-        )
+        text = client(user, model=MODEL, system=MESSAGE_SYSTEM,
+                      timeout=300, effort="high")
     except Exception as e:  # noqa: BLE001
         base["reason"] = f"message call failed: {e}"
         return base
-    if getattr(resp, "stop_reason", None) == "refusal":
-        base["reason"] = "model refused to write the message"
-        return base
-
-    text = _text_of(resp)
     if not text:
         base["reason"] = "model returned an empty message"
         return base

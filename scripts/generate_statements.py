@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate plain-language rationale STATEMENTS for every reviewed governance action.
 
-For each deterministic decision the engine has produced, this asks Claude to write a
+For each deterministic decision the engine has produced, this asks Codex to write a
 short, public-facing explanation of WHY BEACN voted the way it did — for delegators to
 read on the website. The model is given BEACN's deterministic verdict and the exact
 facts that produced it, and is instructed to EXPLAIN that verdict faithfully. It never
@@ -17,8 +17,8 @@ Ethos / reproducibility: the binding rationale and its hashes remain the determi
 record (rationale.json / rationales.json). These statements are a clearly-labeled
 plain-language layer whose only inputs are that public deterministic record.
 
-  ANTHROPIC_API_KEY=...  python3 scripts/generate_statements.py [--limit N] [--force] [--dry-run]
-  BEACN_STATEMENT_MODEL  overrides the model (default claude-opus-4-8).
+  python3 scripts/generate_statements.py [--limit N] [--force] [--dry-run]
+  BEACN_STATEMENT_MODEL  overrides the model (default gpt-5.6-sol).
 """
 from __future__ import annotations
 
@@ -40,7 +40,10 @@ RUNS = ROOT / "data" / "output"
 OUT = ROOT / "data" / "output" / "public" / "statements.json"
 RESOURCES = Path(os.environ.get("BEACN_RESOURCES_REPO", Path.home() / ".openclaw/workspace/beacn-drep-resources"))
 ACTIONS_CSV = RESOURCES / "data" / "input" / "governance" / "governance_actions_all.csv"
-MODEL = os.environ.get("BEACN_STATEMENT_MODEL", "claude-opus-4-8")
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
+from codex_inference import run as codex_text
+
+MODEL = os.environ.get("BEACN_STATEMENT_MODEL", "gpt-5.6-sol")
 OFFLINE_REVIEW = os.environ.get("BEACN_DREP_OFFLINE_REVIEW", "").strip().lower() in ("1", "true", "yes")
 
 SYSTEM = (
@@ -219,22 +222,14 @@ def main() -> int:
         print(f"done · {len(store)} offline statements in {OUT}")
         return 0
 
-    import anthropic  # imported here so --dry-run works without the SDK
-    client = anthropic.Anthropic()
     for i, aid in enumerate(todo, 1):
         j = rats[aid]
         try:
-            resp = client.messages.create(
-                model=MODEL, max_tokens=400, system=SYSTEM,
-                messages=[{"role": "user", "content": build_user(aid, j, titles.get(aid, ""))}],
-            )
+            text = codex_text(build_user(aid, j, titles.get(aid, "")),
+                              system=SYSTEM, model=MODEL, timeout=180)
         except Exception as e:  # noqa: BLE001 - keep going; resumable
             print(f"[{i}/{len(todo)}] ERROR {aid}: {e}", file=sys.stderr)
             continue
-        if resp.stop_reason == "refusal":
-            text = ""
-        else:
-            text = "".join(b.text for b in resp.content if b.type == "text").strip()
         if not text:
             print(f"[{i}/{len(todo)}] empty/refusal, skipping {aid}", file=sys.stderr)
             continue

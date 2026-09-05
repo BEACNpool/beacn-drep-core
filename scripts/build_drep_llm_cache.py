@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Build the BEACN DRep reasoning cache WITHOUT an Anthropic API key.
+"""Build the BEACN DRep reasoning cache through Codex.
 
 The engine never calls a live model; it only reads a precomputed cache via
 BEACN_DREP_LLM_CACHE (source: precomputed) and stays deterministic + replayable.
 This builder is the only thing that talks to a model, and it does so through a CLI
-agent you already pay for — Claude Code (`claude -p`) or OpenCLAW/codex (`codex exec`,
-ChatGPT OAuth) — so no API key is required.
+Codex CLI (`codex exec`, ChatGPT OAuth), with no local tools or private context.
 
 For each selected action it asks the agent for {claims, lean} grounded in the
 proposal's cached anchor document and the matching soul doctrine. Output is merged
@@ -17,7 +16,6 @@ engine fills any gap with its deterministic offline heuristic.
 
 Usage:
   python3 scripts/build_drep_llm_cache.py --backend codex   --status active
-  python3 scripts/build_drep_llm_cache.py --backend claude  --status active
   python3 scripts/build_drep_llm_cache.py --backend offline --status active   # no quota, plumbing test
 """
 from __future__ import annotations
@@ -25,13 +23,14 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess
 import shutil
 import sys
-import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
+from codex_inference import run as codex_text
 
 from beacn_drep import engine as E, llm  # noqa: E402
 from beacn_drep.anchors import load_anchor_text  # noqa: E402
@@ -41,13 +40,6 @@ CODEX_BIN = os.environ.get(
     "BEACN_CODEX_BIN",
     shutil.which("codex") or str(Path.home() / ".local/bin/codex"),
 )
-# Same explicit fallback for claude: cron's PATH omits ~/.local/bin, and a bare "claude"
-# there fails silently -- starving every downstream evidence gate.
-CLAUDE_BIN = os.environ.get(
-    "BEACN_CLAUDE_BIN",
-    shutil.which("claude") or str(Path.home() / ".local/bin/claude"),
-)
-
 # Combined structured-output schema for one action: {claims, lean}.
 OUTPUT_SCHEMA = {
     "type": "object",
@@ -102,63 +94,15 @@ def _extract_json(text: str) -> dict:
 
 
 def call_codex(prompt: str) -> dict:
-    with tempfile.TemporaryDirectory() as td:
-        schema_f = Path(td) / "schema.json"
-        out_f = Path(td) / "out.json"
-        schema_f.write_text(json.dumps(OUTPUT_SCHEMA), encoding="utf-8")
-        cmd = [
-            CODEX_BIN, "exec", "--skip-git-repo-check", "-s", "read-only",
-            "-c", "approval_policy=\"never\"",
-            "-m", os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5"),
-            "--color", "never",
-            "--output-schema", str(schema_f),
-            "-o", str(out_f), "-",
-        ]
-        p = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=300)
-        if out_f.exists() and out_f.read_text(encoding="utf-8").strip():
-            return _extract_json(out_f.read_text(encoding="utf-8"))
-        if p.returncode != 0:
-            raise RuntimeError(f"codex exec failed rc={p.returncode}: {p.stderr.strip()[:400]}")
-        return _extract_json(p.stdout)
-
-
-def call_claude(prompt: str) -> dict:
-    cmd = [CLAUDE_BIN, "-p", "--output-format", "json", prompt]
-    p = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
-    if p.returncode != 0:
-        raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:400]}")
-    env = json.loads(p.stdout)
-    return _extract_json(env.get("result", p.stdout))
+    return json.loads(codex_text(prompt, model=os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5"),
+                                schema=OUTPUT_SCHEMA, timeout=300, effort="high"))
 
 
 def call_codex_text(prompt: str) -> str:
-    with tempfile.TemporaryDirectory() as td:
-        out_f = Path(td) / "out.txt"
-        cmd = [
-            CODEX_BIN, "exec", "--skip-git-repo-check", "-s", "read-only",
-            "-c", "approval_policy=\"never\"",
-            "-m", os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5"),
-            "--color", "never",
-            "-o", str(out_f), "-",
-        ]
-        p = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=300)
-        if out_f.exists() and out_f.read_text(encoding="utf-8").strip():
-            return out_f.read_text(encoding="utf-8").strip()
-        if p.returncode != 0:
-            raise RuntimeError(f"codex exec failed rc={p.returncode}: {p.stderr.strip()[:400]}")
-        return p.stdout.strip()
+    return codex_text(prompt, model=os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5"), timeout=300, effort="high")
 
 
-def call_claude_text(prompt: str) -> str:
-    cmd = [CLAUDE_BIN, "-p", "--output-format", "json", prompt]
-    p = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
-    if p.returncode != 0:
-        raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:400]}")
-    env = json.loads(p.stdout)
-    return str(env.get("result", "")).strip()
-
-
-TEXT_BACKENDS = {"codex": call_codex_text, "claude": call_claude_text}
+TEXT_BACKENDS = {"codex": call_codex_text}
 
 
 def _predicted_verdict(action, flags, freshness, missing, anchor_ok, assessment,
@@ -183,7 +127,7 @@ def call_offline(action, anchor_text, doctrine, assessment) -> dict:
     }
 
 
-BACKENDS = {"codex": call_codex, "claude": call_claude, "offline": None}
+BACKENDS = {"codex": call_codex, "offline": None}
 
 
 def main() -> int:

@@ -38,15 +38,15 @@ import hashlib
 import json
 import os
 import re
-import shutil
-import subprocess
 import sys
-import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
+from codex_inference import run as codex_text
 
 from beacn_drep import engine as E, llm  # noqa: E402
 from beacn_drep.anchors import load_anchor_text  # noqa: E402
@@ -120,42 +120,11 @@ def _extract_facts(dossier_md: str) -> list[str]:
 
 
 def call_codex(prompt: str) -> dict:
-    with tempfile.TemporaryDirectory() as td:
-        schema_f = Path(td) / "schema.json"
-        out_f = Path(td) / "out.json"
-        schema_f.write_text(json.dumps(VERIFY_SCHEMA), encoding="utf-8")
-        cmd = [
-            drafting.CODEX_BIN, "exec", "--skip-git-repo-check", "-s", "read-only",
-            "-c", "approval_policy=\"never\"",
-            "-m", os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5"),
-            "--color", "never",
-            "--output-schema", str(schema_f),
-            "-o", str(out_f), "-",
-        ]
-        p = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=600)
-        raw = out_f.read_text(encoding="utf-8") if out_f.exists() else p.stdout
-        if not raw.strip():
-            raise RuntimeError(f"codex exec produced no output rc={p.returncode}: {p.stderr.strip()[:300]}")
-        start, end = raw.find("{"), raw.rfind("}")
-        return json.loads(raw[start:end + 1])
+    return json.loads(codex_text(prompt, model=os.environ.get("BEACN_DREP_VERIFY_MODEL", "gpt-5.6-sol"),
+                                schema=VERIFY_SCHEMA, timeout=600, effort="high"))
 
 
-def call_claude(prompt: str) -> dict:
-    # Absolute fallback: cron's PATH omits ~/.local/bin, so a bare "claude" fails
-    # silently there and no dossier is ever verified -> no evidence -> blanket abstain.
-    claude_bin = os.environ.get("BEACN_CLAUDE_BIN") or shutil.which("claude") \
-        or str(Path.home() / ".local/bin/claude")
-    p = subprocess.run([claude_bin, "-p", "--output-format", "json", prompt],
-                       capture_output=True, text=True, timeout=600)
-    if p.returncode != 0:
-        raise RuntimeError(f"claude -p failed rc={p.returncode}: {p.stderr.strip()[:300]}")
-    env = json.loads(p.stdout)
-    raw = str(env.get("result", ""))
-    start, end = raw.find("{"), raw.rfind("}")
-    return json.loads(raw[start:end + 1])
-
-
-BACKENDS = {"codex": call_codex, "claude": call_claude}
+BACKENDS = {"codex": call_codex}
 
 
 def verify_one(action: dict, row: dict, backend: str, autoapprove: bool) -> tuple[str, dict]:
@@ -165,7 +134,7 @@ def verify_one(action: dict, row: dict, backend: str, autoapprove: bool) -> tupl
     record: dict = {
         "verified_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "backend": backend,
-        "model": os.environ.get("BEACN_CODEX_MODEL", "gpt-5.5") if backend == "codex" else "claude-cli",
+        "model": os.environ.get("BEACN_DREP_VERIFY_MODEL", "gpt-5.6-sol"),
         "thresholds": {"min_fact_support_ratio": MIN_SUPPORT_RATIO,
                        "max_material_discrepancies": MAX_MATERIAL_DISCREPANCIES},
         "gates": {},

@@ -206,7 +206,7 @@ export BEACN_DREP_LLM_CACHE="$CORE/data/output/llm_cache_active.json"
 if [ "${BEACN_DREP_LLM_BACKEND:-codex}" = "none" ]; then
   log "reasoning cache refresh SKIPPED (backend=none); reusing existing cache"
 else
-  log "refreshing model reasoning cache (backend: ${BEACN_DREP_LLM_BACKEND:-codex}; keyless — uses Claude Code / codex OAuth, no API key)"
+  log "refreshing model reasoning cache (backend: ${BEACN_DREP_LLM_BACKEND:-codex}; keyless — uses Codex OAuth, no API key)"
   if PYTHONPATH=src python3 scripts/build_drep_llm_cache.py \
        --backend "${BEACN_DREP_LLM_BACKEND:-codex}" --status active; then
     log "reasoning cache refreshed (active proposals)"
@@ -226,7 +226,7 @@ PYTHONPATH=src python3 scripts/build_deep_research_dossiers.py \
 
 log "verifying pending dossiers (independent fact-check; agentic approval on pass)"
 PYTHONPATH=src python3 scripts/verify_dossiers.py \
-    --backend "${BEACN_DREP_VERIFY_BACKEND:-claude}" \
+    --backend "${BEACN_DREP_VERIFY_BACKEND:-codex}" \
   || log "WARNING: dossier verification errored; unverified dossiers stay pending (strict posture)"
 
 log "verifying pinned independent ecosystem-value evidence"

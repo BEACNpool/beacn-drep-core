@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# 2026-09-12: David sunset the DRep. Resume is an explicit governance decision.
+if [ -f "${BEACN_WORKSPACE:-$HOME/.openclaw/workspace}/state/drep-sunset.json" ]; then
+  export BEACN_AUTOVOTE_DISABLED=1 BEACN_DOSSIER_AUTOAPPROVE_DISABLED=1
+  echo 'BEACN DRep is paused (state/drep-sunset.json); no check, publication or vote run.'
+  exit 0
+fi
+
 # Daily gated on-chain vote step. Runs AFTER run_daily_check.sh, which has
 # already generated rationales, recorded + published rationale anchors, refreshed
 # status.json, and pushed the web bundle.

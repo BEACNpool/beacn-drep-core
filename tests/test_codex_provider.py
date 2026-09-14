@@ -6,6 +6,11 @@ import sys
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
+import pytest
+
+# The Codex runner lives in the operator workspace, not this repository; skip in clean CI.
+pytest.importorskip("codex_inference")
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import verify_dossiers as verifier
 from beacn_drep import llm

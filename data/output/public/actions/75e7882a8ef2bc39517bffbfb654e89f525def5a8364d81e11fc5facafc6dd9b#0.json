@@ -1,0 +1,305 @@
+{
+  "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+  "title": "Reduce minPoolCost to 75 ada",
+  "type": "ParameterChange",
+  "status": "active",
+  "source": {
+    "origin": "governance fetch pipeline",
+    "raw_input_hash": "sha256:7187dd0f85a90e7e26e8dbd7355416b8ded3ec694750414e41e7884b88265814",
+    "detected_at": "2026-09-12T00:00:01.405476+00:00"
+  },
+  "decision": {
+    "vote": "ABSTAIN",
+    "onchain_vote": null,
+    "diverged": false,
+    "published_at": "2026-09-12T11:30:04.877745+00:00",
+    "signed": false,
+    "submitted": false,
+    "transaction_hash": null,
+    "submitted_at": null
+  },
+  "proof_of_vote": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.5,
+    "input_hash": "7187dd0f85a90e7e26e8dbd7355416b8ded3ec694750414e41e7884b88265814",
+    "snapshot_bundle_hash": "774202d6ffb6e62917b8072955657d997d21bc51e6bafe7758717d17a2b9f9b6",
+    "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+    "resources_commit": "bd2895f90a3cd964e102675461b8ea0fbc829ea1",
+    "core_commit": "68199f1f67ec6f3ddbb95af51b34f8009676a7fd",
+    "rationale_markdown_path": "/data/output/public/rationales/75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0-7187dd0f85a9.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/74037d426b2c95e70e014e30.md",
+    "rationale_anchor_hash": "74037d426b2c95e70e014e30ee76114b02f0b04be93882f7b78d515ed14e2283",
+    "frozen": false,
+    "onchain_anchor_hash": null,
+    "onchain_anchor_url": null,
+    "onchain_vote": null
+  },
+  "current": {
+    "vote": "ABSTAIN",
+    "score": 0.0,
+    "confidence": 0.5,
+    "input_hash": "7187dd0f85a90e7e26e8dbd7355416b8ded3ec694750414e41e7884b88265814",
+    "snapshot_bundle_hash": "774202d6ffb6e62917b8072955657d997d21bc51e6bafe7758717d17a2b9f9b6",
+    "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+    "resources_commit": "bd2895f90a3cd964e102675461b8ea0fbc829ea1",
+    "core_commit": "68199f1f67ec6f3ddbb95af51b34f8009676a7fd",
+    "rationale_markdown_path": "/data/output/public/rationales/75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0-7187dd0f85a9.md",
+    "rationale_anchor_url": "https://beacnpool.github.io/beacn-drep-web/data/output/public/r/74037d426b2c95e70e014e30.md",
+    "rationale_anchor_hash": "74037d426b2c95e70e014e30ee76114b02f0b04be93882f7b78d515ed14e2283"
+  },
+  "rationale": {
+    "summary": "Vote: ABSTAIN. For this ParameterChange (active), evidence quality was insufficient for a reliable YES or NO decision. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal changes only minPoolCost to 75,000,000 lovelace, a decrease of approximately 55.9% from 170 ada.\" and clears the evidence gates. What would enable a directional vote: Provide mitigation evidence; Provide independent assurance. Residual uncertainty: No DRep distribution available. Confidence context: score 0.00; confidence 50.0%.",
+    "summary_raw": "Advisory model lean was +0.010 (display cap \u00b10.05) and had zero influence on the binding score: The proposal is aligned with the parameter-change doctrine's preference for clear rationale, measurable economic effects, SPO impact discussion, and a rollback plan, but the deterministic assessment notes a thin risk review and several key impact claims remain asserted rather than fully demonstrated in-document, so only a very small positive nudge is justified.",
+    "top_fixes": [
+      "Provide mitigation evidence.",
+      "Provide independent assurance.",
+      "Provide rollback/remedy path."
+    ],
+    "markdown_path": "/data/output/public/rationales/75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0-7187dd0f85a9.md",
+    "missing_evidence": [],
+    "blocked_reason_code": "MISSING_PROTOCOL_READINESS_EVIDENCE",
+    "assessment_status": "incomplete",
+    "assessment_schema_version": "assessment-tree-v1",
+    "assessment": {
+      "schema_version": "assessment-tree-v1",
+      "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+      "action_type": "ParameterChange",
+      "overall_status": "incomplete",
+      "sections": [
+        {
+          "title": "Intake",
+          "status": "complete",
+          "findings": [
+            "Action type: ParameterChange",
+            "Status: active",
+            "Proposed epoch: 654",
+            "Expires after epoch: 661",
+            "Treasury request: not specified",
+            "Anchor pinned locally: yes"
+          ],
+          "missing": [],
+          "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+        },
+        {
+          "title": "Claims and evidence",
+          "status": "thin",
+          "findings": [
+            "Proposal anchor: pinned and replayable",
+            "Proposal document read by reasoning layer: yes",
+            "Snapshot freshness source: deep_research_dossiers.csv",
+            "Deep research dossier: not required",
+            "Requested: Reduce the Cardano protocol parameter minPoolCost from 170,000,000 lovelace (170 ada) to 75,000,000 lovelace (75 ada), with no other protocol parameters changed.",
+            "Recipient: not applicable; this is a protocol parameter change, not a treasury payment",
+            "Stated amount: 0; no treasury withdrawal is requested",
+            "Deliverables: Set min_pool_cost to 75,000,000 lovelace",
+            "Deadline/expiry: not stated in document",
+            "Claim (technical, supported_in_proposal, high materiality): The proposal changes only minPoolCost to 75,000,000 lovelace, a decrease of approximately 55.9% from 170 ada.",
+            "Claim (economic, proposer_asserted, high materiality): The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.",
+            "Claim (economic, proposer_asserted, high materiality): The document states that lowering minPoolCost is expected to improve small-pool competitiveness because delegators can observe advertised Return on Staking and small pools at the fixed-fee floor are structurally disadvantaged versus larger pools.",
+            "Claim (technical, independently_verifiable, high materiality): The proposal asserts that Input Output Research's updated incentives report concludes a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally paired with minPoolMargin.",
+            "Claim (economic, proposer_asserted, medium materiality): The document says two years of post-2023 data show the market did not collapse to the 170 ada floor, with 340 ada remaining the dominant fixed-fee setting and mostly smaller competitive pools adopting the lower floor.",
+            "Claim (adoption, independently_verifiable, medium materiality): The proposal states that 873 of 1,614 active pools remain below the roughly 3M ada delegation threshold associated with consistent block production, while only 289 pools could theoretically saturate given current delegated stake."
+          ],
+          "missing": [
+            "Independent evidence for: The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.",
+            "Independent evidence for: The document states that lowering minPoolCost is expected to improve small-pool competitiveness because delegators can observe advertised Return on Staking and small pools at the fixed-fee floor are structurally disadvantaged versus larger pools.",
+            "Independent evidence for: The document says two years of post-2023 data show the market did not collapse to the 170 ada floor, with 340 ada remaining the dominant fixed-fee setting and mostly smaller competitive pools adopting the lower floor.",
+            "Independent evidence for: The proposer claims the change affects reward distribution only and has no bearing on block production, propagation, execution limits, DApps, scripts, or transaction-level rework."
+          ],
+          "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+        },
+        {
+          "title": "Risk review",
+          "status": "thin",
+          "findings": [
+            "Execution risk: unknown",
+            "Governance risk: unknown",
+            "Technical risk: unknown",
+            "Treasury exposure risk: unknown",
+            "Mitigation evidence: unknown",
+            "Independent assurance: unknown",
+            "Rollback/remedy path: unknown",
+            "Flag count: 0"
+          ],
+          "missing": [
+            "mitigation evidence",
+            "independent assurance",
+            "rollback/remedy path",
+            "dependency map"
+          ],
+          "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+        },
+        {
+          "title": "Counterargument pass",
+          "status": "complete",
+          "findings": [
+            "Strongest YES: the proposal substantiates \"The proposal changes only minPoolCost to 75,000,000 lovelace, a decrease of approximately 55.9% from 170 ada.\" and clears the evidence gates.",
+            "Strongest NO: a material claim is unsupported \u2014 \"The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.\" \u2014 so cost or precedent may outweigh the benefit.",
+            "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+          ],
+          "missing": [],
+          "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+        },
+        {
+          "title": "Synthesis",
+          "status": "ready",
+          "findings": [
+            "Final vote must be derived from completed sections above, not from a prose summary.",
+            "The public rationale should name the decisive section and the strongest counterargument."
+          ],
+          "missing": [],
+          "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+        }
+      ],
+      "blocking_questions": []
+    },
+    "assessment_path": "/data/output/public/rationales/75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0-7187dd0f85a9.assessment.json",
+    "treasury_dimensions": null,
+    "decision_contract": {
+      "policy": "balanced-return-risk-v1",
+      "model_vote_influence": 0,
+      "weights_version": "1.1.0",
+      "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+      "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+      "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+      "yes_floors": {
+        "benefit": 0.55,
+        "delivery_confidence": 0.55,
+        "cost_efficiency": 0.45,
+        "downside_risk": 0.55
+      },
+      "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+      "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+      "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+      "dimensions": {},
+      "merit_recommendation": null,
+      "merit_reason": null,
+      "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+    },
+    "merit_recommendation": null,
+    "merit_reason": null
+  },
+  "decision_contract": {
+    "policy": "balanced-return-risk-v1",
+    "model_vote_influence": 0,
+    "weights_version": "1.1.0",
+    "weights_hash": "b1e1e6a44a38bc4c2952f3adb203d805acf7b975fd437b6aaabd0498c97c819b",
+    "composite_formula": "40% ecosystem benefit + 25% delivery confidence + 20% cost efficiency + 15% downside protection - 0.50",
+    "benefit_formula": "18% critical infrastructure + 8% open source + 15% adoption + 12% ecosystem leverage + 10% strategic necessity + 10% prior delivery + 10% established service + 8% builder dependency + 5% low substitutability + 4% non-funding disruption risk",
+    "yes_floors": {
+      "benefit": 0.55,
+      "delivery_confidence": 0.55,
+      "cost_efficiency": 0.45,
+      "downside_risk": 0.55
+    },
+    "yes_rule": "All quality floors, independently verified evidence, verified NCL, and portfolio capacity must pass.",
+    "no_rule": "Requires affirmative independently verified waste/harm plus ecosystem benefit below 55%; missing evidence alone is never NO.",
+    "portfolio_gate": "Verified on-chain Net Change Limit and opportunity-cost portfolio eligibility are mandatory for treasury direction.",
+    "dimensions": {},
+    "merit_recommendation": null,
+    "merit_reason": null,
+    "execution_note": "Merit is evaluated independently; the executable recommendation also requires verified NCL and portfolio capacity."
+  },
+  "proposal_evidence": {
+    "available": true,
+    "fetch_status": "ok",
+    "content_type": "application/json",
+    "http_status": "200",
+    "source_anchor_url": "https://gateway.pinata.cloud/ipfs/bafkreidy6ftyudcx6lwkualmjbgkurhlqo35s6jarq3phxendcr5el6n34",
+    "anchor_hash": "e32f6117912d810c82f0f153e7bf787024870ddb82601113e580c7d86bd8f384",
+    "file_sha256": "78f1678a0c57f2ecaa016c484caa44eb83b7d979208c36f3dc8d18a3d22fcddf",
+    "content_bytes": "22208",
+    "fetched_at_utc": "2026-09-12T11:30:06Z",
+    "download_path": "/proposals/75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0.json",
+    "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
+  },
+  "deep_research": null,
+  "flags": [],
+  "treasury_capacity": null,
+  "reproducibility": {
+    "soul_repo": "beacn-drep-soul",
+    "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
+    "resources_repo": "beacn-drep-resources",
+    "resources_commit": "bd2895f90a3cd964e102675461b8ea0fbc829ea1",
+    "core_commit": "68199f1f67ec6f3ddbb95af51b34f8009676a7fd",
+    "resource_ids_used": [
+      "gov_actions_snapshot",
+      "drep_vote_history_snapshot",
+      "gov_actions_all_snapshot",
+      "gov_actions_active_snapshot",
+      "gov_action_flags_snapshot",
+      "gov_poll_runs_snapshot",
+      "top_drep_votes_snapshot",
+      "gov_anchor_documents",
+      "governance_outcomes",
+      "protocol_readiness_profiles"
+    ]
+  },
+  "inputs_used": [
+    {
+      "resource_id": "gov_actions_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "drep_vote_history_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_all_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_actions_active_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_action_flags_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_poll_runs_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "top_drep_votes_snapshot",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "gov_anchor_documents",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "governance_outcomes",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    },
+    {
+      "resource_id": "protocol_readiness_profiles",
+      "type": "csv",
+      "path": "registries/resource_registry.csv"
+    }
+  ],
+  "scoring": {
+    "binding_score": 0.0,
+    "raw_score": 0.0,
+    "directional_threshold": 0.12,
+    "confidence": 0.5,
+    "model_vote_influence": 0
+  },
+  "freshness": {
+    "snapshot_age_seconds": 0,
+    "max_allowed_seconds": 21600,
+    "is_stale": false,
+    "snapshot_time": "2026-09-12T11:48:09.622218Z",
+    "freshness_source": "deep_research_dossiers.csv"
+  }
+}

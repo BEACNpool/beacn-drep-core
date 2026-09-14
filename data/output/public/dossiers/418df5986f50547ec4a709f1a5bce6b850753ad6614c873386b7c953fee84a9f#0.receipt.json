@@ -1,0 +1,149 @@
+{
+  "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
+  "action_metadata": {
+    "action_type": "TreasuryWithdrawals",
+    "expires_after_epoch": "661",
+    "metadata_title": "Withdraw 11,787,063 ada for the OpenZeppelin Stack administered by Intersect",
+    "proposed_epoch": "654",
+    "treasury_amount_lovelace": ""
+  },
+  "anchor": {
+    "action_id": "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0",
+    "anchor_read": true,
+    "anchor_url": "https://ipfs.io/ipfs/bafkreih7qyzwndjjrltybe4ft3a5ryl56gqzof3d4u55jzv2zhatmrqape",
+    "content_chars": 26878,
+    "fetch_status": "ok",
+    "file_path": "data/input/governance/anchors/418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f-0-20260909T113005Z.bin",
+    "file_sha256": "ff8633668d298ae78093859ec1d8e17df1a1971763e53bd4e6bac9c136460079",
+    "reason": null
+  },
+  "anchor_sha256": "6163cd82b02d1415d31eeb454e0a5b2465924272a1dab85d19813ffa5a4b9241",
+  "backend": "codex",
+  "doctrine_files": [
+    "values_hierarchy.md",
+    "treasury_spending_doctrine.md"
+  ],
+  "doctrine_sha256": "c2233eb4f9d92ce5385e4e388f4d8d46a6bf47773880dc6b9cb954135b6ec7b4",
+  "generated_at_utc": "2026-09-09T11:35:35+00:00",
+  "model": "gpt-5.5",
+  "onchain_context": "treasury flow (36 epochs): inflow 157728860954329 lovelace, enacted withdrawals 337395629000000 lovelace, ratio 2.139086",
+  "output_sha256": "30080b552aa69030e3b219c080d45c48a7f456e742ac4d65069cb9b8f3a980df",
+  "prompt_sha256": "da41f944231e309761845f041414a583321aae159a7a2eed80f7305229da357d",
+  "review_status": "approved_agentic",
+  "treasury_doctrine_version": "1.6.0",
+  "verification": {
+    "backend": "codex",
+    "contradicted": 0,
+    "fact_count": 17,
+    "fact_verdicts": [
+      {
+        "fact": "1. Action 418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0 is a TreasuryWithdrawals action titled \"Withdraw 11,787,063 ada for the OpenZeppelin Stack administered by Intersect,\" proposed in epoch 654 and expiring after epoch 661.",
+        "note": "Source Material 0 states the same action ID, type, title, proposed epoch, and expiration epoch.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "2. The anchor title is \"Withdraw 11,787,063 ada for the OpenZeppelin Stack administered by Intersect.\"",
+        "note": "The anchor's body.title matches exactly.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "3. The anchor on-chain object lists one treasury withdrawal reward to stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v with value \"11787063000000\" lovelace and policy_hash \"fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64\".",
+        "note": "The gov_action contains exactly one reward with that key and value and gives that policy hash.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "4. The proposal requests a total treasury withdrawal of 11,787,063 ada, consisting of 11,443,750 ada for delivery and a 343,313 ada Intersect administration fee described as 3%.",
+        "note": "All stated amounts and the 3% description appear in the Budget Summary.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "5. The delivery budget is stated as USD $1,831,000 over 12 months, calculated at a reference rate of USD 0.16 per ada.",
+        "note": "The Budget Summary states the delivery funding, duration, and reference exchange rate.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "6. The proposed disbursement structure is a 20% kick-off payment of 2,288,750 ada / 366,200 USD-denominated stablecoin after legal contract signature, followed by four 20% milestone payments of 2,288,750 ada / 366,200 USD-denominated stablecoin each.",
+        "note": "The narrative and budget table specify a 20% kick-off upon contract signing and four equal 20% milestone payments with those amounts.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "7. The proposal says each milestone payment requires a Milestone Acceptance Form with publicly accessible evidence against every acceptance criterion and Intersect Delivery Assurance verification and approval.",
+        "note": "Both stated release conditions appear verbatim in the Budget Summary.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "8. The proposal says funds remaining in the contract at expiry sweep back to the Cardano Treasury automatically at the contract level.",
+        "note": "This is stated explicitly in the Budget Summary.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "9. The delivery plan runs twelve months in four quarterly milestones from Q1 October 1, 2026 - December 31, 2026 through Q4 July 1, 2027 - September 30, 2027.",
+        "note": "The milestones section states twelve months and lists four quarterly milestones with those opening and closing date ranges.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "10. The three bundled workstreams are Reference Implementations, a Contracts Library for Cardano, and a Security Retainer.",
+        "note": "The abstract identifies these three workstreams.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "11. The Security Retainer is stated as 22 researcher-weeks over 12 months, covering audits, full-stack security reviews, penetration testing where applicable, Continuous Coverage, AI-Security Agent support, and Immunefi bug bounty assistance.",
+        "note": "Workstream C states the duration, capacity, and all listed coverage items.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "12. The proposal says all code is released open source, with milestone 1 acceptance requiring public GitHub repositories under MIT license and OpenZeppelin tooling under AGPL 3.0.",
+        "note": "The rationale says all code is open source, and Milestone 1 specifies public GitHub publication under MIT with OpenZeppelin tooling under AGPL 3.0.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "13. The proposal says it is not sponsored or endorsed by Intersect, that OpenZeppelin independently brought the proposal forward, and that Intersect is prepared to act as administrator if approved.",
+        "note": "All three statements appear in the Continued Commitment section.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "14. OpenZeppelin discloses that it has not received ada from the Cardano Treasury within the prior 24 months, nor Project Catalyst funding, and describes this as its first Cardano Treasury funding request.",
+        "note": "The Prior Treasury Funding Disclosure states each of these points.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "15. The proposal claims the requested amount does not at submission, alone or in aggregate, breach the applicable 500M Net Change Limit covering Epoch 613 to Epoch 713.",
+        "note": "The Net Change Limit Compliance section makes this claim with the same limit and epoch range.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "16. The supplied on-chain treasury-flow context states: inflow 157728860954329 lovelace, enacted withdrawals 337395629000000 lovelace, ratio 2.139086 over 36 epochs.",
+        "note": "Source Material 1 gives exactly these figures and the 36-epoch period.",
+        "verdict": "supported"
+      },
+      {
+        "fact": "17. BEACN doctrine ranks treasury stewardship and downside protection above evidence quality, public-benefit ecosystem growth, and execution speed; it also states incomplete independently verified diligence is a hard gate to NEEDS_MORE_INFO, not an automatic NO.",
+        "note": "The values hierarchy establishes that ordering, and the doctrine's hard-gate posture explicitly requires NEEDS_MORE_INFO rather than an automatic NO for incomplete independently verified diligence.",
+        "verdict": "supported"
+      }
+    ],
+    "filtered_legacy_snapshot_items": [],
+    "gates": {
+      "anchor_sha256_matches_draft": true,
+      "different_model_from_drafter": true,
+      "dossier_and_receipt_present": true,
+      "financial_and_risk_rows_present": true,
+      "sections_grounded_7of7": true
+    },
+    "material_discrepancies": [],
+    "model": "gpt-5.6-sol",
+    "not_found": 0,
+    "output_sha256": "75b8217e550675092d9586ef595f28dfd241fa5878fa23ec30d802b745ab33a5",
+    "passed": true,
+    "prompt_sha256": "1fec8ec8de67a6998f17608aface79a8fdba8898c881f0839723f513b7e45a89",
+    "summary": "All 17 dossier facts are supported by the supplied source material. No contradictions or invented specifics were identified.",
+    "support_ratio": 1.0,
+    "supported": 17,
+    "thresholds": {
+      "max_material_discrepancies": 0,
+      "min_fact_support_ratio": 0.9
+    },
+    "verdicts_returned": 17,
+    "verified_at_utc": "2026-09-09T11:35:35+00:00"
+  }
+}

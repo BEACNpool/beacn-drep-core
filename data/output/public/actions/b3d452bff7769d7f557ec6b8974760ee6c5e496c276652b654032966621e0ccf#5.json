@@ -5,14 +5,14 @@
   "status": "enacted",
   "source": {
     "origin": "governance fetch pipeline",
-    "raw_input_hash": "sha256:f20b4f83afeedf9f5a00c268b0c317229edd0defb19515dd2f93d17bf5ce818b",
+    "raw_input_hash": "sha256:3197977b4198f2d63645cb02992da88582ed6e579996cb31cfe0b30bb076bbf0",
     "detected_at": "2026-07-07T21:00:01.830677+00:00"
   },
   "decision": {
     "vote": "NEEDS_MORE_INFO",
     "onchain_vote": "NO",
     "diverged": true,
-    "published_at": "2026-09-04T11:30:05.204553+00:00",
+    "published_at": "2026-09-12T11:30:04.877745+00:00",
     "signed": true,
     "submitted": true,
     "transaction_hash": "008a436aee48fa0d114caa24aaa9513f075bd7005bd3bf076239b3c8dca72ee6",
@@ -40,26 +40,26 @@
   },
   "current": {
     "vote": "NEEDS_MORE_INFO",
-    "score": -0.12,
-    "confidence": 0.75,
-    "input_hash": "f20b4f83afeedf9f5a00c268b0c317229edd0defb19515dd2f93d17bf5ce818b",
-    "snapshot_bundle_hash": "7e0c9818d492af997baf1b48756086993b40542379321b232e249420139fe436",
+    "score": -0.02,
+    "confidence": 0.725,
+    "input_hash": "3197977b4198f2d63645cb02992da88582ed6e579996cb31cfe0b30bb076bbf0",
+    "snapshot_bundle_hash": "8c4d468e69e4ad04d5836be5c9d7ef5e2cd05e5ca315e75a44aad18d55d45bc2",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
-    "resources_commit": "dc656aa3e4c4b3f765fea44bdb4daf06c96f58a8",
-    "core_commit": "aab79d0790045a3f1790206a2ce19bc164f3bbda",
-    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-f20b4f83afee.md",
+    "resources_commit": "bd2895f90a3cd964e102675461b8ea0fbc829ea1",
+    "core_commit": "68199f1f67ec6f3ddbb95af51b34f8009676a7fd",
+    "rationale_markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-3197977b4198.md",
     "rationale_anchor_url": null,
     "rationale_anchor_hash": null
   },
   "rationale": {
-    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal states that Mithril is fully aligned with Infrastructure & Research Excellence and Adoption & Utility, and partially aligned with Community & Ecosystem Growth.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal states that full node synchronization is slow and light clients rely on centralized trust today. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.12; confidence 75.0%.",
+    "summary": "Vote: NEEDS_MORE_INFO. For this TreasuryWithdrawals (enacted), critical information needed for a responsible directional vote is still missing. Decisive reason: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty. Weighed against it: the proposal substantiates \"The proposal states that Mithril is fully aligned with Infrastructure & Research Excellence and Adoption & Utility, and partially aligned with Community & Ecosystem Growth.\" and clears the evidence gates. What would enable a directional vote: Provide: cost comparables, budget proportionality, or sustainability evidence; Provide independent evidence for: The proposal states that full node synchronization is slow and light clients rely on centralized trust today. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 647, ~8 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.02; confidence 72.5%.",
     "summary_raw": "DRep ratification support is material but below threshold; treated as a modest context signal.",
     "top_fixes": [
       "Provide: cost comparables, budget proportionality, or sustainability evidence",
       "Provide independent evidence for: The proposal states that full node synchronization is slow and light clients rely on centralized trust today.",
       "Provide line-item budget."
     ],
-    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-f20b4f83afee.md",
+    "markdown_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-3197977b4198.md",
     "missing_evidence": [
       "cost comparables, budget proportionality, or sustainability evidence"
     ],
@@ -123,7 +123,7 @@
             "Clawback/refund path: unknown",
             "Cost/benefit clarity: unknown",
             "Recurring funding dependency: unknown",
-            "Six-month treasury flow regime: unsustainable (basis: total inflow (tau + donations) vs enacted withdrawals)",
+            "Six-month treasury flow regime: unknown (stale snapshot) (basis: total inflow (tau + donations) vs enacted withdrawals)",
             "Financial confidence: 0.45"
           ],
           "missing": [
@@ -177,7 +177,7 @@
       ],
       "blocking_questions": []
     },
-    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-f20b4f83afee.assessment.json",
+    "assessment_path": "/data/output/public/rationales/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5-3197977b4198.assessment.json",
     "treasury_dimensions": {
       "actionable_asks": [
         "Publish a line-item budget: what is being bought, at what unit cost.",
@@ -287,7 +287,7 @@
     "anchor_hash": "c8700afb0a090e80de6e3924e97b160ea174ecab35bfe2d786ad26c47cd1a0fb",
     "file_sha256": "2af1e8a10b4ea68000d814f03d71020dfb2ced553ab65eafeb78bad836e86288",
     "content_bytes": "12836",
-    "fetched_at_utc": "2026-09-04T11:30:06Z",
+    "fetched_at_utc": "2026-09-12T11:30:11Z",
     "download_path": "/proposals/b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5.json",
     "preview": "{\n  \"@context\": {\n    \"@language\": \"en\",\n    \"CIP100\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#\",\n    \"CIP108\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#\",\n    \"CIP116\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#\",\n    \"CIP169\": \"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#\",\n    \"hashAlgorithm\": \"CIP100:hashAlgorithm\",\n    \"body\": {\n      \"@id\": \"CIP108:body\",\n      \"@context\": {\n        \"references\": {\n          \"@id\": \"CIP108:references\",\n          \"@container\": \"@set\",\n          \"@context\": {\n            \"GovernanceMetadata\": \"CIP100:GovernanceMetadataReference\",\n            \"Other\": \"CIP100:OtherReference\",\n            \"label\": \"CIP100:reference-label\",\n            \"uri\": \"CIP100:reference-uri\",\n            \"referenceHash\": {\n              \"@id\": \"CIP108:referenceHash\",\n              \"@context\": {\n                \"hashDigest\": \"CIP108:hashDigest\",\n                \"hashAlgorithm\": \"CIP100:hashAlgorithm\"\n              }\n            }\n          }\n        },\n        \"title\": \"CIP108:title\",\n        \"abstract\": \"CIP108:abstract\",\n        \"motivation\": "
   },
@@ -343,8 +343,8 @@
     "soul_repo": "beacn-drep-soul",
     "soul_commit": "c813ed97f64dba61150d01964327553baf720d38",
     "resources_repo": "beacn-drep-resources",
-    "resources_commit": "dc656aa3e4c4b3f765fea44bdb4daf06c96f58a8",
-    "core_commit": "aab79d0790045a3f1790206a2ce19bc164f3bbda",
+    "resources_commit": "bd2895f90a3cd964e102675461b8ea0fbc829ea1",
+    "core_commit": "68199f1f67ec6f3ddbb95af51b34f8009676a7fd",
     "resource_ids_used": [
       "gov_actions_snapshot",
       "treasury_withdrawals_snapshot",
@@ -447,17 +447,17 @@
     }
   ],
   "scoring": {
-    "binding_score": -0.12,
-    "raw_score": -0.12,
+    "binding_score": -0.02,
+    "raw_score": -0.02,
     "directional_threshold": 0.06,
-    "confidence": 0.75,
+    "confidence": 0.725,
     "model_vote_influence": 0
   },
   "freshness": {
     "snapshot_age_seconds": 1,
     "max_allowed_seconds": 21600,
     "is_stale": false,
-    "snapshot_time": "2026-09-04T11:32:13.357889Z",
+    "snapshot_time": "2026-09-12T11:48:09.622218Z",
     "freshness_source": "deep_research_dossiers.csv"
   }
 }

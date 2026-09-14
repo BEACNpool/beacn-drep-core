@@ -4,10 +4,10 @@
 - Decision: **NO**
 - Action type: `TreasuryWithdrawals`
 - Status: `active`
-- Published at: `2026-09-04T11:30:05.204553+00:00`
+- Published at: `2026-09-12T11:30:04.877745+00:00`
 
 ## Human-readable rationale
-Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "The proposal argues that Cardano lacks a structured, data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The project will deliver a practical Governance Incentives Framework, public dataset and dashboard, documented incentive models and formula outputs, research publications, controlled pilot findings, and a governance integration pathway." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied. Confidence context: score -0.15; confidence 75.8%.
+Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeguards outweighed demonstrated benefit in the current evidence set. Decisive reason: a material claim is unsupported — "Cardano currently lacks a structured and data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time." — so cost or precedent may outweigh the benefit. Weighed against it: the proposal substantiates "The proposal requests a total treasury withdrawal of ₳4,207,967 across conceptualization, engagement, modeling, data engineering, website/dashboard, administration, research, pilot, additional costs, contingency, and independent audit/oversight workstreams." and clears the evidence gates. What would change this vote to YES: Provide line-item budget; Provide milestone-gated disbursement. Residual uncertainty: Treasury fee-flow snapshot is stale (epoch 647, ~8 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics. Confidence context: score -0.05; confidence 73.2%.
 
 ## Assessment tree
 - assessment_status: `incomplete`
@@ -25,14 +25,14 @@ Vote: NO. For this TreasuryWithdrawals (active), downside risk and/or weak safeg
 - Claims and evidence: Proposal anchor: pinned and replayable
 - Treasury analysis: Requested ADA: 4207967
 - Risk review: Execution risk: unknown
-- Counterargument pass: Strongest YES: the proposal substantiates "The project will deliver a practical Governance Incentives Framework, public dataset and dashboard, documented incentive models and formula outputs, research publications, controlled pilot findings, and a governance integration pathway." and clears the evidence gates.
+- Counterargument pass: Strongest YES: the proposal substantiates "The proposal requests a total treasury withdrawal of ₳4,207,967 across conceptualization, engagement, modeling, data engineering, website/dashboard, administration, research, pilot, additional costs, contingency, and independent audit/oversight workstreams." and clears the evidence gates.
 - Synthesis: Final vote must be derived from completed sections above, not from a prose summary.
 
 ## Remaining uncertainty
-- Treasury flow signal is in unsustainable regime, ratio 2.14 (total inflow (tau + donations) vs enacted withdrawals); advisory penalty applied.
+- Treasury fee-flow snapshot is stale (epoch 647, ~8 epochs behind); regime treated as UNKNOWN and NOT scored. Refresh export_governance_risk_metrics.
 - DRep ratification support is below threshold; this is not treated as active opposition.
-- Claims and evidence missing: Independent evidence for: The proposal argues that Cardano lacks a structured, data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time.
-- Claims and evidence missing: Independent evidence for: The named team members and consultant cite Cardano governance, Catalyst delivery, ambassador, committee, blockchain instruction, consulting, and research experience as relevant track record.
+- Claims and evidence missing: Independent evidence for: Cardano currently lacks a structured and data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time.
+- Claims and evidence missing: Independent evidence for: The team claims relevant Cardano governance, Catalyst delivery, research, consulting, and technical experience, including prior closed-out Catalyst proposals and Governance Incentives Working Group involvement.
 - Claims and evidence status is thin.
 - Treasury analysis missing: line-item budget
 - Treasury analysis missing: milestone-gated disbursement

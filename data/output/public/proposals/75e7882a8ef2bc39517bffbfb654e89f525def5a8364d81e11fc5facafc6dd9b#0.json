@@ -1,0 +1,333 @@
+{
+  "@context": {
+    "@language": "en",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "CIP116": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0116/README.md#",
+    "CIP169": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0169/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP108:body",
+      "@context": {
+        "references": {
+          "@id": "CIP108:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP108:referenceHash",
+              "@context": {
+                "hashDigest": "CIP108:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "motivation": "CIP108:motivation",
+        "rationale": "CIP108:rationale",
+        "onChain": {
+          "@id": "CIP169:onChain",
+          "@context": {
+            "deposit": {
+              "@id": "CIP116:deposit",
+              "@type": "CIP116:UInt64"
+            },
+            "reward_account": {
+              "@id": "CIP116:reward_account",
+              "@type": "CIP116:RewardAddress"
+            },
+            "gov_action": {
+              "@id": "CIP116:GovAction",
+              "@context": {
+                "tag": "CIP116:parameter_change_action",
+                "gov_action_id": {
+                  "@id": "CIP116:gov_action_id",
+                  "@context": {
+                    "transaction_id": {
+                      "@id": "CIP116:transaction_id",
+                      "@type": "CIP116:TransactionHash"
+                    },
+                    "gov_action_index": {
+                      "@id": "CIP116:gov_action_index",
+                      "@type": "CIP116:UInt16"
+                    }
+                  }
+                },
+                "protocol_param_update": {
+                  "@id": "CIP116:protocol_param_update",
+                  "@context": {
+                    "minfee_a": {
+                      "@id": "CIP116:minfee_a",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "minfee_b": {
+                      "@id": "CIP116:minfee_b",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "max_block_body_size": {
+                      "@id": "CIP116:max_block_body_size",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "max_tx_size": {
+                      "@id": "CIP116:max_tx_size",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "max_block_header_size": {
+                      "@id": "CIP116:max_block_header_size",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "key_deposit": {
+                      "@id": "CIP116:key_deposit",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "pool_deposit": {
+                      "@id": "CIP116:pool_deposit",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "max_epoch": {
+                      "@id": "CIP116:max_epoch",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "n_opt": {
+                      "@id": "CIP116:n_opt",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "pool_pledge_influence": {
+                      "@id": "CIP116:pool_pledge_influence",
+                      "@type": "CIP116:UnitInterval"
+                    },
+                    "expansion_rate": {
+                      "@id": "CIP116:expansion_rate",
+                      "@type": "CIP116:UnitInterval"
+                    },
+                    "treasury_growth_rate": {
+                      "@id": "CIP116:treasury_growth_rate",
+                      "@type": "CIP116:UnitInterval"
+                    },
+                    "d": {
+                      "@id": "CIP116:d",
+                      "@type": "CIP116:UnitInterval"
+                    },
+                    "protocol_version": {
+                      "@id": "CIP116:protocol_version",
+                      "@context": {
+                        "major": {
+                          "@id": "CIP116:major"
+                        },
+                        "minor": {
+                          "@id": "CIP116:minor"
+                        }
+                      }
+                    },
+                    "min_pool_cost": {
+                      "@id": "CIP116:min_pool_cost",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "ada_per_utxo_byte": {
+                      "@id": "CIP116:ada_per_utxo_byte",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "cost_models": {
+                      "@id": "CIP116:cost_models",
+                      "@context": {
+                        "plutus_v1": {
+                          "@id": "CIP116:plutus_v1",
+                          "@container": "@list",
+                          "@type": "CIP116:Int128"
+                        },
+                        "plutus_v2": {
+                          "@id": "CIP116:plutus_v2",
+                          "@container": "@list",
+                          "@type": "CIP116:Int128"
+                        },
+                        "plutus_v3": {
+                          "@id": "CIP116:plutus_v3",
+                          "@container": "@list",
+                          "@type": "CIP116:Int128"
+                        }
+                      }
+                    },
+                    "execution_costs": {
+                      "@id": "CIP116:execution_costs",
+                      "@type": "CIP116:ExUnitPrices"
+                    },
+                    "max_tx_ex_units": {
+                      "@id": "CIP116:max_tx_ex_units",
+                      "@type": "CIP116:ExUnits"
+                    },
+                    "max_block_ex_units": {
+                      "@id": "CIP116:max_block_ex_units",
+                      "@type": "CIP116:ExUnits"
+                    },
+                    "max_value_size": {
+                      "@id": "CIP116:max_value_size",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "collateral_percentage": {
+                      "@id": "CIP116:collateral_percentage",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "max_collateral_inputs": {
+                      "@id": "CIP116:max_collateral_inputs",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "pool_voting_thresholds": {
+                      "@id": "CIP116:pool_voting_thresholds",
+                      "@type": "CIP116:PoolVotingThresholds"
+                    },
+                    "drep_voting_thresholds": {
+                      "@id": "CIP116:drep_voting_thresholds",
+                      "@type": "CIP116:DRepVotingThresholds"
+                    },
+                    "committee_min_size": {
+                      "@id": "CIP116:committee_min_size",
+                      "@type": "CIP116:UInt16"
+                    },
+                    "committee_max_term_length": {
+                      "@id": "CIP116:committee_max_term_length",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "gov_action_lifetime": {
+                      "@id": "CIP116:gov_action_lifetime",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "gov_action_deposit": {
+                      "@id": "CIP116:gov_action_deposit",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "drep_deposit": {
+                      "@id": "CIP116:drep_deposit",
+                      "@type": "CIP116:UInt64"
+                    },
+                    "drep_activity": {
+                      "@id": "CIP116:drep_activity",
+                      "@type": "CIP116:UInt32"
+                    },
+                    "min_fee_ref_script_cost_per_byte": {
+                      "@id": "CIP116:min_fee_ref_script_cost_per_byte",
+                      "@type": "CIP116:NonnegativeInterval"
+                    }
+                  }
+                },
+                "policy_hash": {
+                  "@id": "CIP116:policy_hash",
+                  "@type": "CIP116:ScriptHash"
+                }
+              }
+            }
+          }
+        },
+        "cip179": {
+          "@id": "CIP179:link",
+          "@context": {
+            "specVersion": "CIP179:specVersion",
+            "kind": "CIP179:kind",
+            "surveyTxId": "CIP179:surveyTxId",
+            "surveyIndex": "CIP179:surveyIndex"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    },
+    "CIP179": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0179/README.md#"
+  },
+  "authors": [
+    {
+      "name": "Cerkoryn",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "48beefba877b1255cc9a9350c539699b54d22754977331f1cf85585ec3c1a5cd",
+        "signature": "402afcd602cae4eb1f0610de5c6d3276768feff3559d4a845fa6693078a236c72f29d4938e34d810845c7e9df696cb22135717517ed66d98c1dc33ce25729f06"
+      }
+    }
+  ],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "title": "Reduce minPoolCost to 75 ada",
+    "abstract": "This governance action proposes reducing `minPoolCost` from 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%. No other protocol parameters are changed by this action.",
+    "motivation": "**minPoolCost.** `minPoolCost` was reduced from 340 ada to 170 ada in 2023 (PCP-001), but the relief that reduction provided has been substantially eroded by the continuing decline in reserve-funded block rewards: the delegator penalty on single-block pools, which fell to ~28.3% after the 2023 change, has since climbed back to ~52.8% and is projected to reach 100% by around epoch 758 (February 2028) if unaddressed. IO Research's updated incentives report has also reversed its earlier position, now assessing that a high fixed-fee floor favours rather than deters Sybil-style stake fragmentation by large operators. PCP-006 (Cerkoryn, 2026) proposes a further reduction to 75 ada as an evidence-based interim step, pending the more structural solution of a proportional `minPoolMargin` (CIP-0023).",
+    "rationale": "### minPoolCost Technical Evaluation and Committee Process\n\nThe current 170 ada setting was recommended by Intersect's Parameter Committee in PCP-001 (2023) and enacted in epoch 445 (October 2023), prior to the availability of on-chain Parameter Update governance actions under CIP-1694. The proposed further reduction to 75 ada is the subject of PCP-006, authored by Cerkoryn and published on the Cardano Forum on 30 March 2026, which explicitly requests Intersect Technical Steering Committee (TSC) endorsement as part of its acceptance criteria. The TSC ratified this reduction on 2026-07-09. This governance action, and the evidentiary record below, is intended to support that endorsement process and the subsequent on-chain vote.\n\n### minPoolCost Inflation Model and Declining Reward Economics\n\nAt Shelley launch, `minPoolCost` was calibrated against prevailing ada price, the then-current inflation schedule, and estimated SPO operating costs. All three inputs have shifted materially since 2020: block rewards have fallen from roughly 1,800 ada to around 300 ada per block as the reserve depletes, while infrastructure costs have broadly risen. `minPoolCost` now represents a disproportionately large share of total rewards for small pools producing only one or a few blocks per epoch, as shown using PCP-001 appendix data (Epoch 415, approximate gross reward per block ~300 ada):\n\n| Blocks/Epoch | minPoolCost (ada) | minPoolCost as % of Gross Reward |\n| :---- | :---- | :---- |\n| 1 | 340 | ~113% (no reward) |\n| 1 | 170 | ~57% |\n| 1 | 75 | ~25% |\n| 2 | 340 | ~57% |\n| 2 | 170 | ~28% |\n| 5 | 340 | ~23% |\n| 5 | 170 | ~11% |\n\n### minPoolCost Competitive Dynamics and Treasury Impact\n\nBecause delegators can observe a pool's advertised Return on Staking (RoS), small pools operating at the `minPoolCost` floor are structurally disadvantaged relative to larger pools. Lowering `minPoolCost` does not force any SPO to reduce their fee, but market pressure is expected to lead small pools currently at the floor to adopt the new, lower floor, improving their competitiveness. This is directly relevant to `stakePoolTargetNum` (k): a healthy ecosystem of smaller pools must be economically viable before any future k increase is effective, so improving small-pool economics via this reduction is a prerequisite step, not an alternative. Separately, a reduction in `minPoolCost` marginally decreases treasury inflow; the Parameter Committee's economic working group assessed, in connection with the 2023 reduction, that treasury balance was above forecast projections and that a reduction posed no risk to long-term economic stability. No evidence has since emerged to change that assessment.\n\n### minPoolCost Sybil Attack Considerations\n\nThe original rationale for `minPoolCost` as a Sybil mitigation rested on imposing a minimum cost floor on an adversary seeking to accumulate controlling stake by operating pools at a loss. PCP-001's 2023 analysis found that, under a non-myopic game-theoretic equilibrium, `minPoolCost` is not strictly necessary to prevent Sybil attacks, but under an adversarial-actor model (where an attacker is prepared to subsidise pool operation indefinitely to pursue consensus manipulation), it imposes a tangible cost. IO Research's updated incentives report has since revised this assessment, concluding that a high fixed-fee floor now more plausibly favours Sybil-style stake fragmentation by large, well-capitalised operators (who can split stake across many pools to harvest the fixed fee repeatedly) than it deters it, and recommends `minPoolCost` be lowered toward zero, ideally paired with a proportional `minPoolMargin` mechanism. This weakens, but does not eliminate, the case for preserving a high floor on security grounds, which is why this proposal recommends a further staged reduction to 75 ada rather than an immediate move to zero.\n\n### minPoolCost Empirical Evidence Since 2023\n\nTwo years of post-2023 data are now available that were not available at the time of PCP-001. Contrary to \"race to the bottom\" concerns raised in 2023, the market did not collapse toward the new floor: 340 ada remained the dominant fixed-fee setting across pool sizes after the reduction to 170 ada, with only smaller, competitively positioned pools adopting the lower floor, thereby answering the empirical question PCP-001 left open. The IOR report also documents persistent ecosystem stratification: of 1,614 active pools, 873 operators (54%) remain below the roughly 3M ada delegation threshold associated with consistent block production, while only 289 pools could theoretically saturate given current delegated stake, indicating the 2023 reduction alone did not resolve the underlying structural pressure.\n\n### minPoolCost Live Proposal PCP-006 and Future Trajectory\n\nAs of 30 March 2026, PCP-006 (Cerkoryn) requests a reduction from 170 ada to 75 ada, calibrated to restore the delegator penalty on single-block pools closer to the range experienced in early Shelley, and framed as a stopgap while the more complete structural solutions, such as a `minPoolMargin` parameter (CIP-0023), work toward implementation. Beyond this proposal, the long-term trajectory for `minPoolCost` points toward either zero or functional irrelevance: either via continued incremental Parameter Update reductions (as argued more aggressively by CIP-0074), or via structural replacement through CIP-0023's `minPoolMargin`, which scales proportionally with pool rewards and would eliminate the competitive distortion inherent in a fixed fee. CIP-0082 lays out a staged combined roadmap across `minPoolCost` and `stakePoolTargetNum` (k) consistent with this sequencing. This proposal is the near-term, low-risk step available now, ahead of and independent from that longer structural process.\n\n### minPoolCost Proposed Parameter Change\n\n`minPoolCost` will be decreased from its current setting of 170,000,000 Lovelace (170 ada) to 75,000,000 Lovelace (75 ada), a decrease of approximately 55.9%.\n\n### minPoolCost Consistency with Guardrails\n\n* **PARAM-05a** (DRep vote for governance-critical parameters): `minPoolCost` is listed among parameters critical to the governance system. The constitutional minimum is more than 50% of active voting stake and the current ledger threshold for the economic parameter group is 67% of the applicable DRep voting power. Constitutional Committee approval is also required. A minPoolCost parameter change does not require SPO approval.  \n* **PARAM-06a** (90-day notice): PCP-006 was published on the Cardano Forum on 30 March 2026. This governance action is not intended for submission before 30 June 2026, satisfying the notice period; it also builds on public discussion dating back to PCP-001 (2023) and community advocacy since 2022.  \n* **MPC-01**: the proposed setting (75,000,000 Lovelace) is positive.  \n* **MPC-02**: the proposed setting is well below the 500,000,000 Lovelace ceiling.  \n* **MPC-03**: the proposed 75 ada setting is calibrated, per PCP-006, to restore the delegator penalty on single-block pools to a level closer to that experienced in early Shelley, reflecting current SPO operating costs and reward levels rather than the 2020 launch-era calibration.\n\n### Reversion Plan\n\n**minPoolCost.** This change affects reward distribution only and has no bearing on block production, propagation, or execution limits, so since it has not been reduced to zero, it carries minimal security or performance risk. If monitoring reveals adverse effects, for example, evidence of Sybil-style stake fragmentation exploiting the lower floor, or unexpected treasury impact, then `minPoolCost` could be reverted to 170 ada via a subsequent action. However, `minPoolCost` is enforced only at the point a pool registers or updates its certificate; it is not retroactively re-applied to certificates already on-chain. Consequently, SPOs who lower their declared cost below 170 ada while the floor is 75 ada cannot be compelled to raise it back to 170 ada if the parameter is later reverted: their existing registration remains valid until they next choose to submit a new certificate. Reversion would therefore only constrain new pool registrations and any pool that voluntarily re-registers after the revert; it would not force any DApp, script, or transaction-level rework, nor would it force already-registered SPOs to change their pricing.\n\nAn optional CIP-179 survey is linked to this action. Survey responses do not count toward ratification of this governance action.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Cardano Parameter Committee (2023). PCP-001: k Parameter and minPoolCost.",
+        "uri": "https://forum.cardano.org/t/pcp-001-k-parameter-and-minpoolcost/123713"
+      },
+      {
+        "@type": "Other",
+        "label": "Cerkoryn (2026). PCP-006: Proposal to Reduce minPoolCost from 170 ada to 75 ada.",
+        "uri": "https://forum.cardano.org/t/pcp-006-minpoolcost-cerkoryn/153833"
+      },
+      {
+        "@type": "Other",
+        "label": "Input Output Research (2025–2026). SPO Incentives Report.",
+        "uri": "https://github.com/input-output-hk/spo-incentives/blob/main/report-november-2025/report.pdf"
+      },
+      {
+        "@type": "Other",
+        "label": "McMurdo, S., Wiley, R. (2021, updated 2025). CIP-23: Fair Min Fees.",
+        "uri": "https://cips.cardano.org/cip/CIP-23"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-74: Set minPoolCost to 0.",
+        "uri": "https://cips.cardano.org/cip/CIP-74"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-82: Improved Rewards Scheme Parameters.",
+        "uri": "https://cips.cardano.org/cip/CIP-0082"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-1694: An On-Chain Decentralized Governance Mechanism for Voltaire.",
+        "uri": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-1694/README.md"
+      },
+      {
+        "@type": "Other",
+        "label": "Cardano Constitution, Appendix I: Cardano Blockchain Guardrails.",
+        "uri": "https://cardano.org/constitution/"
+      }
+    ],
+    "onChain": {
+      "deposit": "100000000000",
+      "reward_account": "stake1uygyajn4dq8smt779tyaf7f8ha2x5veyuehmtd9lvy8kjjqwmde62",
+      "gov_action": {
+        "tag": "parameter_change_action",
+        "policy_hash": "fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64",
+        "gov_action_id": {
+          "transaction_id": "c75bb221606687aa858ec89c7a15c88e9c17054f2e045ae31ecc8a9687cd206e",
+          "gov_action_index": "0"
+        },
+        "protocol_param_update": {
+          "min_pool_cost": "75000000"
+        }
+      }
+    },
+    "cip179": {
+      "specVersion": 5,
+      "kind": "survey-link",
+      "surveyTxId": "ae8683acd550d7448fbd790c6f3b3b8ac7c90dc482faccc0eeedc21d7c8fc217",
+      "surveyIndex": 0
+    }
+  }
+}

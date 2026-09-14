@@ -1,0 +1,93 @@
+{
+  "schema_version": "assessment-tree-v1",
+  "action_id": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+  "action_type": "ParameterChange",
+  "overall_status": "incomplete",
+  "sections": [
+    {
+      "title": "Intake",
+      "status": "complete",
+      "findings": [
+        "Action type: ParameterChange",
+        "Status: active",
+        "Proposed epoch: 654",
+        "Expires after epoch: 661",
+        "Treasury request: not specified",
+        "Anchor pinned locally: yes"
+      ],
+      "missing": [],
+      "conclusion": "Baseline fields and source anchors establish whether the proposal can be reviewed at all."
+    },
+    {
+      "title": "Claims and evidence",
+      "status": "thin",
+      "findings": [
+        "Proposal anchor: pinned and replayable",
+        "Proposal document read by reasoning layer: yes",
+        "Snapshot freshness source: deep_research_dossiers.csv",
+        "Deep research dossier: not required",
+        "Requested: Reduce the Cardano protocol parameter minPoolCost from 170,000,000 lovelace (170 ada) to 75,000,000 lovelace (75 ada), with no other protocol parameters changed.",
+        "Recipient: not applicable; this is a protocol parameter change, not a treasury payment",
+        "Stated amount: 0; no treasury withdrawal is requested",
+        "Deliverables: Set min_pool_cost to 75,000,000 lovelace",
+        "Deadline/expiry: not stated in document",
+        "Claim (technical, supported_in_proposal, high materiality): The proposal changes only minPoolCost to 75,000,000 lovelace, a decrease of approximately 55.9% from 170 ada.",
+        "Claim (economic, proposer_asserted, high materiality): The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.",
+        "Claim (economic, proposer_asserted, high materiality): The document states that lowering minPoolCost is expected to improve small-pool competitiveness because delegators can observe advertised Return on Staking and small pools at the fixed-fee floor are structurally disadvantaged versus larger pools.",
+        "Claim (technical, independently_verifiable, high materiality): The proposal asserts that Input Output Research's updated incentives report concludes a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally paired with minPoolMargin.",
+        "Claim (economic, proposer_asserted, medium materiality): The document says two years of post-2023 data show the market did not collapse to the 170 ada floor, with 340 ada remaining the dominant fixed-fee setting and mostly smaller competitive pools adopting the lower floor.",
+        "Claim (adoption, independently_verifiable, medium materiality): The proposal states that 873 of 1,614 active pools remain below the roughly 3M ada delegation threshold associated with consistent block production, while only 289 pools could theoretically saturate given current delegated stake."
+      ],
+      "missing": [
+        "Independent evidence for: The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.",
+        "Independent evidence for: The document states that lowering minPoolCost is expected to improve small-pool competitiveness because delegators can observe advertised Return on Staking and small pools at the fixed-fee floor are structurally disadvantaged versus larger pools.",
+        "Independent evidence for: The document says two years of post-2023 data show the market did not collapse to the 170 ada floor, with 340 ada remaining the dominant fixed-fee setting and mostly smaller competitive pools adopting the lower floor.",
+        "Independent evidence for: The proposer claims the change affects reward distribution only and has no bearing on block production, propagation, execution limits, DApps, scripts, or transaction-level rework."
+      ],
+      "conclusion": "Each claim must map to replayable public evidence; proposer assertions alone are not enough for confidence."
+    },
+    {
+      "title": "Risk review",
+      "status": "thin",
+      "findings": [
+        "Execution risk: unknown",
+        "Governance risk: unknown",
+        "Technical risk: unknown",
+        "Treasury exposure risk: unknown",
+        "Mitigation evidence: unknown",
+        "Independent assurance: unknown",
+        "Rollback/remedy path: unknown",
+        "Flag count: 0"
+      ],
+      "missing": [
+        "mitigation evidence",
+        "independent assurance",
+        "rollback/remedy path",
+        "dependency map"
+      ],
+      "conclusion": "Risk is not a side note; unmitigated execution or governance risk can dominate an otherwise attractive proposal."
+    },
+    {
+      "title": "Counterargument pass",
+      "status": "complete",
+      "findings": [
+        "Strongest YES: the proposal substantiates \"The proposal changes only minPoolCost to 75,000,000 lovelace, a decrease of approximately 55.9% from 170 ada.\" and clears the evidence gates.",
+        "Strongest NO: a material claim is unsupported \u2014 \"The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.\" \u2014 so cost or precedent may outweigh the benefit.",
+        "Strongest hold: if claims cannot be tied to replayable evidence, abstaining avoids overclaiming certainty."
+      ],
+      "missing": [],
+      "conclusion": "A defensible rationale must show the best opposing case before it reaches a vote."
+    },
+    {
+      "title": "Synthesis",
+      "status": "ready",
+      "findings": [
+        "Final vote must be derived from completed sections above, not from a prose summary.",
+        "The public rationale should name the decisive section and the strongest counterargument."
+      ],
+      "missing": [],
+      "conclusion": "The vote is only credible if the assessment tree shows enough work for a skeptical delegator to audit."
+    }
+  ],
+  "blocking_questions": []
+}

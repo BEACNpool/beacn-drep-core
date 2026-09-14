@@ -359,6 +359,94 @@
     },
     "message": "BEACN voted NEEDS_MORE_INFO because a directional treasury vote is blocked until the applicable Net Change Limit is pinned and independently verified from public chain evidence. This is a conservative, evidence-based hold, not a rejection of the idea.\n\nThe action requests 4,969,231 ada to fund Phase 2 of a Cardano-native ticketing platform operated by Sellout.io and built by Anvil Development Agency. The proposal says the funds would support an on-chain secondary marketplace, royalty enforcement, anti-scalping controls, wallet onboarding, organizer tools, an independent audit, launch marketing, public metrics, and governance reporting over eight months. It also claims repayment to the Cardano Treasury through revenue sharing, with Intersect administering funds through the Sundae Labs TRSC/PSSC framework.\n\nSeveral important claims were supported in the proposal, including the requested amount, the eight-month milestone structure, the Phase 2 deliverables, the administration fee, and the proposed repayment mechanism. But several high-materiality adoption and execution claims remain proposer-asserted rather than independently evidenced, including that Phase 1 is already live on Cardano mainnet with CIP-68 ticketing and attendance verification, that Sellout has 200,000+ registered users and 250,000+ tickets issued, and that it supports 350+ events annually. The review also found thin claims-and-evidence status, unknown execution risk, missing independent assurance, and no clear rollback or remedy path.\n\nBecause this is a treasury withdrawal, BEACN applies elevated scrutiny: spending shared ADA requires replayable public evidence, not just plausible claims. A directional vote would be unblocked by a pinned, independently verified Net Change Limit from public chain evidence, plus independent evidence for the Phase 1 mainnet activity and the major adoption claims, along with stronger assurance and remedy details for execution risk."
   },
+  "418df5986f50547ec4a709f1a5bce6b850753ad6614c873386b7c953fee84a9f#0": {
+    "claims": {
+      "claims": [
+        {
+          "category": "economic",
+          "claim": "The proposal requests a total withdrawal of 11,787,063 ada, consisting of 11,443,750 ada for delivery and a 343,313 ada Intersect administration fee.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The delivery budget is stated as USD $1,831,000 over 12 months, calculated at a reference rate of USD $0.16 per ada.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The project will deliver three production-ready Cardano reference implementations for liquid staking, self-repaying loans, and a tokenized money market fund.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The project will create a secure, audited, documented contracts library for Cardano with components such as access control, cryptographic utilities, DeFi primitives, governance, credentials, multi-signature tools, vesting, messaging, and a proposed contract ABI.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "OpenZeppelin states that all code will be released open source, with milestone criteria requiring public GitHub repositories under MIT license and OpenZeppelin tooling under AGPL 3.0.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The security retainer commits 22 researcher-weeks over 12 months for audits, full-stack reviews, penetration testing, AI-security support, and publication of security findings and reports.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "Milestone payments after kickoff are conditioned on publicly accessible milestone evidence and Intersect Delivery Assurance verification and approval, with unspent funds at contract expiry sweeping back to the Cardano Treasury.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "adoption",
+          "claim": "OpenZeppelin claims its existing contracts ecosystem has processed over $36 trillion in value transferred, supports $110B+ TVL importing its contracts, has about 85% market share in top 50 DeFi protocols, and receives about 590K weekly NPM downloads.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal states the requested amount did not breach the applicable 500M Net Change Limit at submission and links to a Cardanoscan governance action for the NCL.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "OpenZeppelin discloses that it has not received ada from the Cardano Treasury within the prior 24 months and has not received Project Catalyst funding.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        }
+      ],
+      "request": {
+        "amount_ada": "11,787,063",
+        "deadline": "Twelve months across four quarterly milestones from October 1, 2026 to September 30, 2027, commencing after the legal contract is signed.",
+        "deliverables": [
+          "Three reference implementations: Cardano Liquid Staking Protocol, Self-Repaying Loans Protocol, and Tokenized Money Market Fund.",
+          "OpenZeppelin Contracts Library for Cardano with audited components and documentation.",
+          "Contracts Wizard, UI Builder, AI-enhanced development tools, and Cardano documentation.",
+          "22 researcher-weeks of security capacity, audits, reviews, penetration testing, and published reports.",
+          "Developer enablement and co-marketing activities including tutorials, workshops, demos, community sessions, and a Cardano network page."
+        ],
+        "recipient": "Intersect as administrator for an OpenZeppelin-led delivery engagement",
+        "what": "Treasury withdrawal to fund the OpenZeppelin Stack for Cardano, including reference implementations, a contracts library, security retainer, developer tools, documentation, and enablement/co-marketing."
+      },
+      "summary": "The document describes a large 11,787,063 ada treasury request administered by Intersect for an OpenZeppelin-led 12-month Cardano development, security, and adoption program with detailed milestones, payment mechanics, and public deliverables."
+    },
+    "lean": {
+      "confidence": 0.65,
+      "direction": "NEUTRAL",
+      "doctrine_basis": "Treasury stewardship and downside protection; evidence quality and reproducibility; hard-gate posture for incomplete executable diligence.",
+      "rationale": "The claims show detailed milestones, disbursement controls, open-source deliverables, and potential public-benefit infrastructure, but some material adoption and track-record claims are proposer-asserted and the deterministic assessment is already blocked for the missing or non-positive treasury_amount_lovelace intake field; no additional advisory nudge is warranted.",
+      "score_adjustment": 0.0
+    },
+    "message": "BEACN voted ABSTAIN because a required baseline treasury field was missing or invalid: the review could not verify a positive `treasury_amount_lovelace` value for this Treasury Withdrawal. That makes this a conservative, evidence-based hold, not a judgment that the proposal is bad.\n\nThe proposal asks to withdraw 11,787,063 ada, administered by Intersect for an OpenZeppelin-led engagement. It describes a 12-month program to deliver three Cardano reference implementations, a Cardano contracts library, developer tools and documentation, 22 researcher-weeks of security work, and enablement and co-marketing. The proposal itself supports several key claims, including the stated ada amount, delivery budget, open-source licensing, milestone-based payments, Delivery Assurance checks, and return of unspent funds at contract expiry.\n\nHowever, the review gates did not clear. The proposal anchor was pinned and replayable, but intake and synthesis were blocked by the missing treasury amount field. Claims and evidence were rated thin because some material claims still needed independent support, including OpenZeppelin\u2019s adoption statistics and its disclosure about not receiving recent Cardano Treasury or Catalyst funding. Treasury analysis also lacked a sustainability path and cost-benefit clarity, while the risk review found high execution risk and missing independent assurance and dependency mapping.\n\nA directional YES or NO would be unblocked by backfilling and verifying the treasury amount field, plus stronger independent evidence for the unsupported material claims and clearer treasury/risk evidence. Until then, BEACN abstained because the evidence record was not complete enough for a responsible treasury vote."
+  },
   "4b7abfa70d98858750c50cd651d54c2955303b5410b34f40eb259f2fffc7c939#0": {
     "claims": {
       "claims": [
@@ -891,85 +979,167 @@
     },
     "message": "BEACN voted ABSTAIN because the proposal did not meet the evidence threshold for a directional vote. The core action was clear, but important governance evidence was missing or only asserted.\n\nThe proposal asks to update the Constitutional Committee at Epoch 653 by replacing expiring seats and appointing Marek Mahut, Phil_uplc/Philip DiSarro, Leandros BSP, and Cardano Curia to terms ending at Epoch 799, while keeping the signature threshold at 2/3 and leaving Eastern Cardano Council, Tingvard, and Ace Alliance unchanged. The review found support for the basic election-result claims, the incoming member list, the 146-epoch term structure, the Epoch 653 timing constraint, and the fact that no treasury withdrawal was requested.\n\nThe hold comes from what was not sufficiently evidenced. The claimed DQuadrant audit was treated as proposer-asserted without independent evidence in the review, and the document did not provide candidate track records or conflict-of-interest disclosures. The risk review was also thin: execution risk was unknown, with mitigation evidence and independent assurance missing.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the committee update. A directional vote would need replayable independent evidence for the audit claim, clearer track-record and independence/conflict disclosures for the incoming members, and stronger risk or mitigation assurance around execution."
   },
-  "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0": {
+  "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0": {
     "claims": {
       "claims": [
         {
-          "category": "governance",
-          "claim": "An Info governance action titled Cardano\u306e\u751f\u304d\u304c\u3044 - Ikigai - was submitted in September 2024 shortly after the Chang hard fork.",
-          "materiality": "medium",
-          "support": "independently_verifiable"
-        },
-        {
-          "category": "governance",
-          "claim": "The Ikigai Info governance action was symbolic and asked the community to agree with a statement thanking contributors and expressing hope for Cardano's future.",
-          "materiality": "low",
-          "support": "proposer_asserted"
-        },
-        {
           "category": "technical",
-          "claim": "A Cardano node bug permitted an unregistered stake key to be used in the governance action, preventing the submitter from recovering the 100,000 ADA deposit.",
-          "materiality": "high",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "governance",
-          "claim": "The proposer says there was significant community sentiment that the submitter should be reimbursed for the lost deposit.",
-          "materiality": "medium",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "governance",
-          "claim": "The Cardano in Oceania initiative included this reimbursement in its budget Info governance action, but that action was not approved.",
-          "materiality": "medium",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "economic",
-          "claim": "The requested 103,000 ADA consists of the original 100,000 ADA deposit plus 3,000 ADA for claimed lost staking rewards calculated at 2% per annum.",
+          "claim": "The proposal changes only minPoolCost to 75,000,000 lovelace, a decrease of approximately 55.9% from 170 ada.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "economic",
-          "claim": "The recipient has not previously received funds from the Cardano treasury.",
+          "claim": "The proposer says declining reserve-funded block rewards have increased the delegator penalty on single-block pools from about 28.3% after the 2023 change to about 52.8%, with a projection to reach 100% around epoch 758 if unaddressed.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The document states that lowering minPoolCost is expected to improve small-pool competitiveness because delegators can observe advertised Return on Staking and small pools at the fixed-fee floor are structurally disadvantaged versus larger pools.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposal asserts that Input Output Research's updated incentives report concludes a high fixed-fee floor may favor Sybil-style stake fragmentation by large operators and recommends lowering minPoolCost toward zero, ideally paired with minPoolMargin.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "economic",
+          "claim": "The document says two years of post-2023 data show the market did not collapse to the 170 ada floor, with 340 ada remaining the dominant fixed-fee setting and mostly smaller competitive pools adopting the lower floor.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposal states that 873 of 1,614 active pools remain below the roughly 3M ada delegation threshold associated with consistent block production, while only 289 pools could theoretically saturate given current delegated stake.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposer says the TSC ratified the proposed reduction on 2026-07-09 after PCP-006 was published on the Cardano Forum on 30 March 2026.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposal includes a reversion plan stating minPoolCost could be restored to 170 ada by a later action, but already-registered pools that lowered costs below 170 ada would not be forced to raise them until submitting a new certificate.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposer claims the change affects reward distribution only and has no bearing on block production, propagation, execution limits, DApps, scripts, or transaction-level rework.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        }
+      ],
+      "request": {
+        "amount_ada": "0; no treasury withdrawal is requested",
+        "deadline": "not stated in document",
+        "deliverables": [
+          "Set min_pool_cost to 75,000,000 lovelace"
+        ],
+        "recipient": "not applicable; this is a protocol parameter change, not a treasury payment",
+        "what": "Reduce the Cardano protocol parameter minPoolCost from 170,000,000 lovelace (170 ada) to 75,000,000 lovelace (75 ada), with no other protocol parameters changed."
+      },
+      "summary": "The document proposes a non-treasury parameter change lowering minPoolCost to 75 ada, supported by economic rationale, external references, governance-process claims, and a partial rollback plan with acknowledged limits."
+    },
+    "lean": {
+      "confidence": 0.63,
+      "direction": "YES",
+      "doctrine_basis": "Parameter Change Doctrine: support changes with strong evidence and operational feasibility; Values Hierarchy: evidence quality and reproducibility after protocol safety and treasury stewardship.",
+      "rationale": "The proposal is aligned with the parameter-change doctrine's preference for clear rationale, measurable economic effects, SPO impact discussion, and a rollback plan, but the deterministic assessment notes a thin risk review and several key impact claims remain asserted rather than fully demonstrated in-document, so only a very small positive nudge is justified.",
+      "score_adjustment": 0.01
+    },
+    "message": "BEACN voted ABSTAIN because this protocol parameter change did not include enough independently pinned readiness and risk evidence for a system-wide change.\n\nThe action asks to reduce minPoolCost from 170 ada to 75 ada, with no treasury withdrawal and no other parameter changes. The proposal clearly supports the basic change itself, includes a rollback path by later action, and states that only reward distribution is affected. It also claims the change would improve small-pool competitiveness and respond to rising single-block-pool delegation penalties, but those key economic impact claims were not independently evidenced in the review.\n\nSeveral review gates were thin or incomplete. The anchor document was available and replayable, and the strongest YES case was that the proposal clearly specifies the minPoolCost reduction. However, the protocol-readiness packet was incomplete, including constitutional alignment, impact analysis, rollback or containment detail, and safety margin evidence. The risk review also lacked mitigation evidence and independent assurance, leaving execution risk unknown.\n\nThis ABSTAIN is a conservative, evidence-based hold, not a rejection of the goal. A directional vote would be unblocked by independently pinned evidence for the claimed delegator-penalty figures and small-pool competitiveness effects, plus a fuller readiness and risk packet showing impact analysis, safety margins, mitigation evidence, and independent assurance."
+  },
+  "7d37220b71806410cc8adfbdafbad494e1ce3fdc674ab13c88a72b3b27de78d9#0": {
+    "claims": {
+      "claims": [
+        {
+          "category": "governance",
+          "claim": "The proposal says the Ikigai Info governance action was submitted in September 2024 shortly after the Chang hard fork.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal says the Ikigai Info governance action was symbolic and thanked contributors while expressing hope for Cardano's future.",
+          "materiality": "low",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "technical",
+          "claim": "The proposer states that a Cardano node bug allowed an unregistered stake key to be used and prevented recovery of the 100,000 ADA deposit.",
+          "materiality": "high",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "adoption",
+          "claim": "The proposer states that there was significant community sentiment that the submitter should be reimbursed because they were an early pioneer of Cardano governance.",
           "materiality": "medium",
           "support": "proposer_asserted"
         },
         {
           "category": "economic",
-          "claim": "The requested amount does not exceed the current Net Change Limit.",
+          "claim": "The proposal requests 103,000 ADA, consisting of the original 100,000 ADA deposit plus 3,000 ADA for estimated lost staking rewards at 2% per annum.",
           "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposer states that the Cardano in Oceania initiative included this reimbursement in its budget Info governance action, but that action was not approved.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal states there are no costs or expenses associated with the treasury withdrawal beyond the reimbursement itself.",
+          "materiality": "medium",
+          "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposal states there are no circumstances under which the withdrawal would be refunded to the Cardano Treasury.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "economic",
+          "claim": "The proposer states the recipient has not previously received funds from the treasury.",
+          "materiality": "medium",
           "support": "proposer_asserted"
         },
         {
           "category": "governance",
-          "claim": "The funds would be made directly available to the intended recipient and the distribution would be auditable on-chain.",
+          "claim": "The proposer states the requested amount does not exceed the current Net Change Limit.",
           "materiality": "high",
-          "support": "independently_verifiable"
+          "support": "proposer_asserted"
         }
       ],
       "request": {
         "amount_ada": "103000",
-        "deadline": "Instantly as part of governance action enactment on-chain",
+        "deadline": "instantly performed as part of the governance action\u2019s enactment on-chain",
         "deliverables": [
-          "Reimburse the claimed 100,000 ADA lost governance action deposit",
-          "Pay an additional 3,000 ADA for claimed lost staking rewards",
-          "Distribute funds directly on-chain to the intended recipient upon enactment"
+          "Instant on-chain distribution to the intended recipient upon enactment"
         ],
-        "recipient": "Ikigai Info governance action submitter / intended recipient; specific identity or address not stated in document",
-        "what": "Treasury withdrawal to reimburse the lost Ikigai Info governance action deposit and claimed lost staking rewards."
+        "recipient": "the Ikigai Info governance action submitter; specific recipient address not stated in document",
+        "what": "Withdraw 103,000 ADA from the treasury to reimburse the Ikigai Info governance action deposit and compensate estimated lost staking rewards."
       },
-      "summary": "The document requests 103,000 ADA to reimburse a claimed unrecoverable 100,000 ADA governance action deposit and 3,000 ADA in claimed lost staking rewards, with direct on-chain distribution to the original submitter."
+      "summary": "The proposal seeks a 103,000 ADA treasury withdrawal to reimburse an alleged unrecoverable 100,000 ADA governance-action deposit plus 3,000 ADA in estimated staking rewards, with several central factual claims asserted but only the referenced governance action itself clearly checkable from the document."
     },
     "lean": {
-      "confidence": 0.62,
-      "direction": "NEUTRAL",
-      "doctrine_basis": "Treasury Spending Doctrine dossier gate: incomplete independently verified diligence remains a needs-more-info state rather than a directional penalty; values hierarchy prioritizes treasury stewardship and evidence quality.",
-      "rationale": "No additional adjustment is justified because the reimbursive purpose and direct on-chain distribution fit treasury stewardship, but the material facts about the node bug, unrecovered deposit, recipient history, and NCL compliance are mostly proposer-asserted, and the deterministic assessment already captures the thin and incomplete evidence state.",
-      "score_adjustment": 0.0
+      "confidence": 0.55,
+      "direction": "NO",
+      "doctrine_basis": "Evidence quality and reproducibility; treasury stewardship and downside protection",
+      "rationale": "The request has a clear reimbursement theory, but the document provides thin evidence for the key treasury-relevant facts: the node bug, inability to recover the deposit, recipient identity, prior funding status, and NCL adherence are mostly asserted rather than documented. Because the deterministic engine already marks the review incomplete, the nudge is small and cautionary rather than dispositive.",
+      "score_adjustment": -0.02
     },
-    "message": "BEACN voted NEEDS_MORE_INFO because this treasury withdrawal cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action asks for 103,000 ADA: 100,000 ADA to reimburse the lost Ikigai Info governance action deposit, plus 3,000 ADA for claimed lost staking rewards. The proposer says a September 2024 Info action, \u201cCardano\u306e\u751f\u304d\u304c\u3044 - Ikigai -,\u201d was affected by a Cardano node bug that allowed an unregistered stake key, preventing deposit recovery. The proposal also says there was community support for reimbursement and that the funds would go directly on-chain to the intended recipient.\n\nSome parts were reviewable: the anchor document was pinned and replayable, the prior Info action itself was independently verifiable, the 103,000 ADA breakdown was stated, and direct on-chain distribution would be auditable. But key claims remained unsupported by independent evidence, especially the claimed node bug and deposit-loss mechanism. The NCL claim was also proposer-asserted rather than independently verified.\n\nThis is a conservative, evidence-based hold, not a rejection. A directional vote would be unblocked by pinned public-chain evidence for the applicable Net Change Limit, plus independent evidence supporting the bug claim and how it caused the unrecoverable 100,000 ADA deposit loss."
+    "message": "BEACN voted NEEDS_MORE_INFO because the treasury withdrawal cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe action asks for 103,000 ADA from the treasury to reimburse a 100,000 ADA Ikigai Info governance action deposit plus 3,000 ADA in estimated lost staking rewards. The proposer says the original action was submitted in September 2024, was symbolic, and that a Cardano node bug made the deposit unrecoverable. The amount requested is clearly stated, and the proposal anchor was pinned and replayable, but the recipient address was not stated in the document.\n\nThe strongest supported point was that the Ikigai Info action was submitted shortly after the Chang hard fork. However, several treasury-relevant claims were mostly asserted rather than independently evidenced, including the node bug, inability to recover the deposit, community sentiment, prior treasury funding status, and Net Change Limit adherence. Treasury withdrawals require elevated scrutiny because they spend shared ADA and can set precedent.\n\nThis is a conservative, evidence-based hold, not a rejection. A directional vote would be unblocked by a pinned, independently verified Net Change Limit from public chain evidence; stronger public evidence for the unrecoverable deposit claim and recipient details would also reduce the remaining uncertainty."
   },
   "8721696358acdd43e34e5ed9ef1b3e2a1d2af9c1aa1972e017b9b9271b7ddc70#0": {
     "claims": {
@@ -2617,64 +2787,64 @@
     "claims": {
       "claims": [
         {
-          "category": "governance",
-          "claim": "The project will deliver a practical Governance Incentives Framework, public dataset and dashboard, documented incentive models and formula outputs, research publications, controlled pilot findings, and a governance integration pathway.",
-          "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "governance",
-          "claim": "The proposal states that the Governance Incentives Working Group has mapped 49 relevant efforts, proposals, research papers, tools, and initiatives related to governance incentives.",
-          "materiality": "medium",
-          "support": "independently_verifiable"
-        },
-        {
-          "category": "governance",
-          "claim": "The proposal states that active DReps declined in every 12-epoch period during Cardano's first year of on-chain governance, the DRep Gini coefficient rose from 0.92 to 0.94, and 11-16 DReps represent 51% of voting power.",
-          "materiality": "high",
-          "support": "independently_verifiable"
-        },
-        {
-          "category": "governance",
-          "claim": "The proposal argues that Cardano lacks a structured, data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time.",
-          "materiality": "high",
-          "support": "proposer_asserted"
-        },
-        {
-          "category": "governance",
-          "claim": "The project will evaluate incentive mechanisms for participation quality, reward distribution, concentration effects, gaming risk, accountability, decentralization, and budget sustainability rather than treating higher turnout alone as success.",
+          "category": "economic",
+          "claim": "The proposal requests a total treasury withdrawal of \u20b34,207,967 across conceptualization, engagement, modeling, data engineering, website/dashboard, administration, research, pilot, additional costs, contingency, and independent audit/oversight workstreams.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
           "category": "technical",
-          "claim": "The project is planned across seven staged milestones over 12 months, with public outputs and acceptance criteria for discovery, framework definition, data collection, modeling, dashboarding, validation, and final governance integration.",
+          "claim": "The project will be delivered over 12 months through seven staged milestones from discovery through final reporting and governance integration.",
           "materiality": "high",
           "support": "supported_in_proposal"
         },
         {
-          "category": "adoption",
-          "claim": "The proposal sets KPIs including 50+ unique governance actors engaged, 10+ public workshops, 12 monthly progress updates, 50+ simulation scenarios, 99% monitoring service availability, sub-1-hour database update latency, and 5+ meaningful dashboards.",
-          "materiality": "medium",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "economic",
-          "claim": "The budget requests \u20b34,207,967 and provides workstream-level allocations, while stating that the detailed operational budget is maintained separately for audit, administration, and delivery management.",
+          "category": "governance",
+          "claim": "Cardano currently lacks a structured and data-driven framework for determining how governance contributions should be incentivized, measured, or supported over time.",
           "materiality": "high",
-          "support": "supported_in_proposal"
-        },
-        {
-          "category": "adoption",
-          "claim": "The named team members and consultant cite Cardano governance, Catalyst delivery, ambassador, committee, blockchain instruction, consulting, and research experience as relevant track record.",
-          "materiality": "medium",
           "support": "proposer_asserted"
         },
         {
           "category": "governance",
-          "claim": "The proposal claims the framework aligns primarily with Cardano 2030 Pillar 3 Governance and secondarily with Pillar 5 Ecosystem Sustainability and Resilience and Pillar 1 Infrastructure and Research Excellence.",
+          "claim": "The Governance Incentives Working Group has identified 49 relevant efforts, proposals, research papers, tools, and initiatives related to governance incentives.",
+          "materiality": "medium",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "adoption",
+          "claim": "During Cardano\u2019s first year of on-chain governance, active DReps declined in every 12-epoch period, the DRep Gini coefficient increased from 0.92 to 0.94, and 11-16 DReps represented 51% of voting power.",
+          "materiality": "high",
+          "support": "independently_verifiable"
+        },
+        {
+          "category": "governance",
+          "claim": "Poorly designed governance incentives could reward surface-level activity, reinforce voting-power concentration, encourage gaming, or spend treasury resources without creating meaningful governance value.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The project will evaluate incentive models against participation, decentralization, concentration risk, accountability, gaming risk, and budget sustainability rather than treating higher turnout alone as success.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "governance",
+          "claim": "The proposal includes public transparency outputs such as a website, dashboard, datasets with methodology and limitations, monthly progress updates, community feedback documentation, and final public reports.",
+          "materiality": "medium",
+          "support": "supported_in_proposal"
+        },
+        {
+          "category": "other",
+          "claim": "The team claims relevant Cardano governance, Catalyst delivery, research, consulting, and technical experience, including prior closed-out Catalyst proposals and Governance Incentives Working Group involvement.",
           "materiality": "medium",
           "support": "proposer_asserted"
+        },
+        {
+          "category": "economic",
+          "claim": "The detailed operational budget is maintained separately for audit, administration, and delivery management, while the proposal presents only workstream-level allocations.",
+          "materiality": "high",
+          "support": "supported_in_proposal"
         }
       ],
       "request": {
@@ -2683,26 +2853,26 @@
         "deliverables": [
           "Governance Incentives Framework",
           "public dataset and dashboard",
-          "documented model and formula outputs",
-          "research publications",
+          "documented incentive models and formula outputs",
           "controlled incentive pilot findings",
-          "submitted Governance Incentives Framework CIP",
+          "at least one publication-ready research paper submitted for peer review",
+          "Governance Incentives Framework CIP",
           "governance integration pathway",
           "final financial and milestone report"
         ],
         "recipient": "not stated in document",
-        "what": "Governance Incentives Framework 2026 treasury withdrawal to fund a 12-month governance incentives research, modeling, data, dashboard, pilot, and governance integration project."
+        "what": "Fund a 12-month Governance Incentives Framework 2026 project to research, model, test, document, and propose governance incentive mechanisms for Cardano."
       },
-      "summary": "The document requests \u20b34,207,967 for a 12-month governance incentives R&D program centered on evidence review, data infrastructure, modeling, community validation, a controlled pilot, dashboarding, publications, a CIP, and a governance integration pathway."
+      "summary": "The document describes a large 12-month treasury request for a research, data, modeling, pilot, dashboard, and governance-integration program intended to inform future Cardano governance incentive mechanisms, with detailed milestones and KPIs but only workstream-level budget disclosure in the anchor text."
     },
     "lean": {
       "confidence": 0.58,
       "direction": "YES",
-      "doctrine_basis": "Evidence quality and reproducibility; public-benefit ecosystem growth; treasury stewardship and downside protection",
-      "rationale": "A small positive nudge is justified because the extracted claims show unusually explicit alignment with evidence quality, reproducibility, public datasets, model disclosure, pilot validation, and governance-risk controls, while the large treasury request and only workstream-level budget keep the nudge modest.",
-      "score_adjustment": 0.02
+      "doctrine_basis": "Evidence quality and reproducibility; treasury stewardship and downside protection; public-benefit ecosystem growth",
+      "rationale": "A very small positive nudge is justified because the proposal emphasizes evidence generation before adoption, public datasets and dashboards, staged validation, anti-gaming and concentration-risk analysis, and audit/oversight; however, the large spend and separately maintained detailed operational budget keep the adjustment minimal.",
+      "score_adjustment": 0.01
     },
-    "message": "BEACN voted NEEDS_MORE_INFO because this is a treasury withdrawal and the applicable Net Change Limit was not pinned and independently verified from public chain evidence. Until that check is complete, BEACN treats a directional treasury vote as blocked.\n\nThe proposal requests \u20b34,207,967 for a 12-month Governance Incentives Framework project covering research, modeling, datasets, dashboards, a controlled pilot, a CIP submission, governance integration, and final reporting. The recipient was not stated. The proposal gave a replayable pinned anchor and supported several major claims, including staged milestones, public outputs, acceptance criteria, incentive modeling, risk controls, KPIs, and workstream-level budget allocations.\n\nThe hold is conservative and evidence-based. A YES case exists: the proposal substantiates useful public governance outputs and clears some evidence gates. But important support is still thin: independent evidence is missing for the claim that Cardano lacks such a framework and for the cited team track record, while treasury review is missing a line-item budget and milestone-gated disbursement, and risk review is missing independent assurance and a dependency map.\n\nA directional vote would be unblocked by the verified Net Change Limit from public chain evidence. Stronger independent evidence for the unsupported claims, plus clearer budget, disbursement, assurance, and dependency details, would also make the final vote more auditable for delegators."
+    "message": "BEACN voted NEEDS_MORE_INFO because this treasury withdrawal cannot receive a directional vote until the applicable Net Change Limit is pinned and independently verified from public chain evidence.\n\nThe proposal asks for \u20b34,207,967 over 12 months to create a Governance Incentives Framework, including research, models, public data and dashboards, a controlled pilot, a peer-review-ready paper, a CIP, and final reporting. Several claims were supported by the proposal, including the total budget, staged 12-month delivery plan, public transparency outputs, anti-gaming and concentration-risk evaluation criteria, and the risk that poorly designed incentives could worsen governance outcomes. Some context was independently verifiable, including evidence of DRep concentration and declining active DReps, but key claims remained unsupported or thin, including the claim that Cardano lacks a structured governance incentives framework and the team\u2019s claimed experience.\n\nThe review passed the basic anchor and replayability checks, and the strongest case for approval was considered. But treasury actions require elevated scrutiny because they spend shared ADA. The review also found missing or uncertain items: no stated recipient, no line-item budget, no milestone-gated disbursement, no independent assurance, no dependency map, and a stale treasury fee-flow snapshot.\n\nThis is a conservative, evidence-based hold rather than a rejection. A directional vote would be unblocked by a pinned, independently verified Net Change Limit from public chain evidence; the other missing budget, assurance, dependency, and claim-evidence items would also be important for confidence."
   },
   "fbb8d1a4a8d6b62f8cd706944a0582b884c2b90187b8fada7953d5c6a33eb5a7#0": {
     "claims": {

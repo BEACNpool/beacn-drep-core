@@ -1,5 +1,7 @@
 # beacn-drep-core
 
+> **Retired — September 2026.** The BEACN DRep deregistered on 13 September 2026 (UTC) and will cast no further votes. This pipeline is kept as a public record of how every vote was produced and is no longer developed. [Voting record](https://beacnpool.github.io/beacn-drep-web/) · [BEACN archive](https://beacnpool.github.io/ABCDE/pool/)
+
 Execution layer for the BEACN DRep system.
 
 Contains logic only:
